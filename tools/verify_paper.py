@@ -21,7 +21,8 @@ def sha(path):
 
 def normalise(tex):
     # A literal pipe inside a GitHub table is written as the equivalent TeX macro.
-    return re.sub(r"\s+", "", tex.replace(r"\vert ", "|"))
+    # GitHub currently rejects operatorname; upright function names preserve meaning.
+    return re.sub(r"\s+", "", tex.replace(r"\vert ", "|").replace(r"\operatorname", r"\mathrm"))
 
 
 def verify():
@@ -38,7 +39,9 @@ def verify():
     for m in pattern.finditer(text):
         kind = m.lastgroup
         expressions.append({"kind": kind, "tex": normalise(m[kind])})
-    require(expressions == expected["formulas"], "Formula content or ordering changed during publication")
+    expected_formulas = [{"kind": x["kind"], "tex": normalise(x["tex"])} for x in expected["formulas"]]
+    require(expressions == expected_formulas, "Formula content or ordering changed during publication")
+    require(r"\operatorname" not in text, "GitHub rejects the operatorname macro in this publication")
     require(len(expressions) == 370, "Unexpected paper formula count")
     for line in text.splitlines():
         if line.startswith("|"):

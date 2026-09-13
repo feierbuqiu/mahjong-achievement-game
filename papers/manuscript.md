@@ -64,7 +64,7 @@ A meld is either a triplet of one kind or a numerical sequence $`(r,r+1,r+2)`$ i
 A four-copy kind contributes only one kind towards seven pairs. A formal meld decomposition that requires five or more copies of a kind is invalid. Winning is the upward-closed predicate
 
 ```math
-\operatorname{Win}(x)\iff\exists w\in\mathcal W\;(w\le x).
+\mathrm{Win}(x)\iff\exists w\in\mathcal W\;(w\le x).
 \tag{1}
 ```
 
@@ -77,9 +77,9 @@ The game is finite because every move increases $`|x|`$. There is no nonwinning 
 Define
 
 ```math
-\operatorname{Safe}(x)\iff
-\neg\operatorname{Win}(x)\ \land\
-\forall t\,[x_t<4\Rightarrow\neg\operatorname{Win}(x+e_t)].
+\mathrm{Safe}(x)\iff
+\neg\mathrm{Win}(x)\ \land\
+\forall t\,[x_t<4\Rightarrow\neg\mathrm{Win}(x+e_t)].
 \tag{2}
 ```
 
@@ -105,7 +105,7 @@ The SAFE normal-play game permits exactly the additions $`x\to x+e_t`$ whose des
 
 This is a P/N and strategy statement. We do not assign the original immediate-achievement convention the same full Sprague–Grundy values merely because its SAFE reduction has those values. The Lean development explicitly connects the normal-play outcome to a strategy ending in an actual winning hand; an abstract no-move convention alone would leave a semantic gap (E09).
 
-For SAFE states define $`g(x)=\operatorname{mex}\{g(y):x\to y\text{ is SAFE}\}`$. The standard impartial normal-play theory identifies P with $`g=0`$ and N with $`g>0`$; see [Sprague (1935)](https://www.jstage.jst.go.jp/article/tmj1911/41/0/41_0_438/_article) and [Siegel (2013)](https://bookstore.ams.org/view?ProductCode=GSM%2F146). An N outcome does not specify the positive integer $`g`$.
+For SAFE states define $`g(x)=\mathrm{mex}\{g(y):x\to y\text{ is SAFE}\}`$. The standard impartial normal-play theory identifies P with $`g=0`$ and N with $`g>0`$; see [Sprague (1935)](https://www.jstage.jst.go.jp/article/tmj1911/41/0/41_0_438/_article) and [Siegel (2013)](https://bookstore.ams.org/view?ProductCode=GSM%2F146). An N outcome does not specify the positive integer $`g`$.
 
 ### 2.4. Legal symmetries
 
@@ -127,7 +127,7 @@ Arbitrary permutations of ranks within a suit are not symmetries: they generally
 **Theorem 3 (largest nonwinning and SAFE tables; mathematical proof, independently corroborated by enumeration).**
 
 ```math
-\max_{\neg\operatorname{Win}(x)}|x|=37,
+\max_{\neg\mathrm{Win}(x)}|x|=37,
 \qquad
 \max_{x\in\mathcal K}|x|=34.
 \tag{4}
@@ -163,7 +163,7 @@ No valid fourteen-tile winning target uses four copies of an honour: ordinary ha
 **Theorem 4 (honour-pass identity; mathematical proof).** For a SAFE state $`x`$, let $`B`$ replace all its honour counts equal to three by four, and let $`p`$ be the number of replaced coordinates. Then
 
 ```math
-g(x)=g(B)\mathbin{\operatorname{xor}}(p\bmod2).
+g(x)=g(B)\mathbin{\mathrm{xor}}(p\bmod2).
 \tag{6}
 ```
 
@@ -224,7 +224,7 @@ R\in\{\varnothing,[3],[4],[5],[6],[3,3]\}.
 Writing $`\nu(x)=1`$ for N and $`0`$ for P, the classification is
 
 ```math
-\nu(x)=(|x|\bmod2)\operatorname{xor}\mathbf1_{R=[3]}.
+\nu(x)=(|x|\bmod2)\mathrm{xor}\mathbf1_{R=[3]}.
 \tag{8}
 ```
 
@@ -378,9 +378,9 @@ abc,\quad \binom{a+1}{2}c,\quad a\binom{b+1}{2},
 according as all groups differ, the first two agree, the last two agree, or all three agree. Repetition is allowed because different suits may have the same local code. With indices $`0\le u\le v\le w`$, the repeated-group colex ranks are
 
 ```math
-\operatorname{rank}_2(u,v)=\binom{v+1}{2}+u,
+\mathrm{rank}_2(u,v)=\binom{v+1}{2}+u,
 \quad
-\operatorname{rank}_3(u,v,w)=\binom{w+2}{3}+\binom{v+1}{2}+u.
+\mathrm{rank}_3(u,v,w)=\binom{w+2}{3}+\binom{v+1}{2}+u.
 \tag{11}
 ```
 
@@ -395,7 +395,7 @@ Normalising all honour triplets to quads was assessed but was not the main globa
 Let $`K_n`$ be the SAFE orbits with $`n`$ tiles and $`P_n\subseteq K_n`$ their P orbits. Then
 
 ```math
-N_n=\operatorname{Pre}(P_{n+1}),\qquad
+N_n=\mathrm{Pre}(P_{n+1}),\qquad
 P_n=K_n\setminus N_n.
 \tag{12}
 ```
@@ -502,7 +502,7 @@ None of the following has a complete formalisation in the successful chain: the 
 A response certificate consists of SAFE P states. For each row $`x`$ and **each legal first action** $`a`$, it supplies a legal second action $`b`$ satisfying one of two conditions:
 
 ```math
-\operatorname{Win}(x+e_a+e_b),
+\mathrm{Win}(x+e_a+e_b),
 \quad\text{or}\quad
 x+e_a+e_b=\gamma(y)
 \tag{13}
@@ -827,8 +827,8 @@ In the fixed family rooted at $`3m\;7m\;H_1^3H_2^3H_3^3H_4^2`$, the other two nu
 
 ```math
 f(0)=0,\qquad
-f(n)=\operatorname{mex}_{1\le r\le n}
-\left\{f(\max(0,r-3))\operatorname{xor}f(\max(0,n-r-2))\right\}.
+f(n)=\mathrm{mex}_{1\le r\le n}
+\left\{f(\max(0,r-3))\mathrm{xor}f(\max(0,n-r-2))\right\}.
 \tag{B2}
 ```
 

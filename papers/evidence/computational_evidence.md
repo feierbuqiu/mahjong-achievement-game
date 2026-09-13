@@ -150,8 +150,8 @@ A state preserves each numeric code's identity through a pair (group, member). T
 For group sizes a,b,c, a block has size abc if all groups differ, C(a+1,2)c if only the first two agree, aC(b+1,2) if only the last two agree, and C(a+2,3) if all agree. Prefix sums give block offsets. Distinct-group coordinates use mixed radix. Repeated-group members 0 ≤ x ≤ y ≤ z use
 
 ```math
-\operatorname{rank}_2(x,y)=x+\binom{y+1}{2},\qquad
-\operatorname{rank}_3(x,y,z)=x+\binom{y+1}{2}+\binom{z+2}{3}.
+\mathrm{rank}_2(x,y)=x+\binom{y+1}{2},\qquad
+\mathrm{rank}_3(x,y,z)=x+\binom{y+1}{2}+\binom{z+2}{3}.
 ```
 
 The inverse chooses the greatest binomial prefix not exceeding the remainder, then decodes the remaining coordinates. Sorting by (group, member) instead of numerical base-5 code changes the chosen representative ordering but still bijectively represents the unordered multiset of the three reflected suit states.
@@ -167,7 +167,7 @@ Source: runs/global_retro/index/provenance_v1.json and the full-edge/low-layer s
 With K_n the n-tile SAFE orbits,
 
 ```math
-N_n=\operatorname{Pre}(P_{n+1}),\qquad
+N_n=\mathrm{Pre}(P_{n+1}),\qquad
 P_n=K_n\setminus N_n.
 ```
 

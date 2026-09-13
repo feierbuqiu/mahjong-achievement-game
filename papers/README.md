@@ -2,8 +2,8 @@
 
 **[Read the English paper](manuscript.md)**
 
-*Mahjong Achievement on a Shared Table: A Computational Second-Player Win and Partial Lean Certification*  
-**feierbuqiu** · Research report · 13 September 2026
+*Mahjong Achievement on a Shared Table: A Computational Second-Player Win and Partial Lean Certification*
+**feierbuqiu** 路 Research report 路 13 September 2026
 
 The complete report includes the rules and mathematical proofs, local classifications, the global computational result, partial Lean certification, limitations, references, and seven appendices. The opening has a completed computational second-player win. Its end-to-end Lean theorem remains incomplete; the newest individually certified root has twelve tiles.
 

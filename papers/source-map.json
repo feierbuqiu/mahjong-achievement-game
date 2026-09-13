@@ -1744,8 +1744,8 @@
       "availability": "PUBLIC_COPY",
       "note": "Selected public evidence. Private workstation paths are replaced; archival scripts are inspection copies, not supported reproduction entrypoints.",
       "published_path": "papers/evidence/computational_evidence.md",
-      "published_bytes": 47405,
-      "published_sha256": "3059f62eb121aa5c658e01378736c2403b907f7d2e6ee15b138da37eb3989ede"
+      "published_bytes": 47387,
+      "published_sha256": "813214cf097151ebe87781120279717d321d6252bf57cfda0f9a95137a76c31e"
     },
     {
       "id": "source-173",
