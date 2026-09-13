@@ -290,21 +290,21 @@ The following is recommended manuscript prose, rather than another result claim.
 
 ```math
 n=3t+r+(q-t)=2t+q+r.
-\tag{A1}
+\qquad\text{(A1)}
 ```
 
 Partition each suit into the three fixed blocks 123,456,789. Let s count the blocks all of whose ranks occur in R. These blocks provide s mutually disjoint runs, disjoint also from the removed triplets. The other nine−s blocks contain at most two supported ranks, while honours contribute at most seven. Therefore
 
 ```math
 r\le3s+2(9-s)+7=25+s.
-\tag{A2}
+\qquad\text{(A2)}
 ```
 
 Suppose n≥38 and x is nonwinning. Seven pairs gives q≤6. Five triplets would supply four triplets and a pair, so t≤4; if t=4, an additional paired kind would win, hence q=4. Combining (A1)–(A2) yields
 
 ```math
 t+s\ge13-t-q.
-\tag{A3}
+\qquad\text{(A3)}
 ```
 
 If t≥1 and t+q≤8, at least five disjoint melds exist, including a triplet. Reserve two tiles of that triplet as the pair and choose four other melds. If t=0, (A3) supplies at least seven disjoint runs. Because n≥38 exceeds the number of kinds, some pair exists; selecting it removes at most two of those runs and leaves at least four.
@@ -319,7 +319,7 @@ Now suppose a SAFE table has n≥35. It must have q≤5: with six paired kinds, 
 
 ```math
 n\le2t+q+25+s\le28+t+q.
-\tag{A4}
+\qquad\text{(A4)}
 ```
 
 Since t≤3 and q≤5, only (t,q)=(3,4),(3,5),(2,5) remain possible.

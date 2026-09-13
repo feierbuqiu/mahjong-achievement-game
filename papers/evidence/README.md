@@ -1992,7 +1992,7 @@ Selected public evidence. Private workstation paths are replaced; archival scrip
 
 Original SHA-256: `b84459b76937e3490b2cb8be34cfefa3c7c7187f10a7822744a440d421fc9921`. Size: 62,823 bytes.
 
-Public SHA-256: `b69a9703dd3e2df8c947a3d87e2c4d148f7aa4ee2b6448b9f5267ed2cab04d14`.
+Public SHA-256: `79b78824047dacdf3f54b70aeb6b04f812cf37a3600623cfea9167b0d60605fd`.
 
 ## source-175
 

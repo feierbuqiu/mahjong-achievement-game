@@ -65,7 +65,7 @@ A four-copy kind contributes only one kind towards seven pairs. A formal meld de
 
 ```math
 \mathrm{Win}(x)\iff\exists w\in\mathcal W\;(w\le x).
-\tag{1}
+\qquad\text{(1)}
 ```
 
 Thus a table may have more than fourteen tiles when the game ends. The unused tiles do not invalidate a winning subset. The records store the 34 coordinates in the order displayed above, with honours ordered East, South, West, North, White, Green, Red. Permuting honour names preserves these rules.
@@ -80,7 +80,7 @@ Define
 \mathrm{Safe}(x)\iff
 \neg\mathrm{Win}(x)\ \land\
 \forall t\,[x_t<4\Rightarrow\neg\mathrm{Win}(x+e_t)].
-\tag{2}
+\qquad\text{(2)}
 ```
 
 Let $`\mathcal K`$ be the valid SAFE tables. A position with at most twelve tiles is automatically SAFE. The thirteen-tile lower shadow of the winning family is
@@ -113,7 +113,7 @@ The group used throughout the computation is
 
 ```math
 G=S_7\times(C_2^3\rtimes S_3),\qquad |G|=241,920.
-\tag{3}
+\qquad\text{(3)}
 ```
 
 Its generators permute the seven honours, permute the three numerical suits, and independently reflect each suit by $`r\mapsto10-r`$. Each generator preserves stock limits, legal additions, and all three winning forms; consequently it preserves SAFE and P/N. The corresponding generator actions and their finite compositions are formalised in Lean.
@@ -130,7 +130,7 @@ Arbitrary permutations of ranks within a suit are not symmetries: they generally
 \max_{\neg\mathrm{Win}(x)}|x|=37,
 \qquad
 \max_{x\in\mathcal K}|x|=34.
-\tag{4}
+\qquad\text{(4)}
 ```
 
 Appendix A gives the full counting argument, including the capacity checks when a missing sequence tile is added. These are mathematical proofs in the research record; the current successful Lean certificate chain does not formalise the two global bounds.
@@ -147,7 +147,7 @@ The table
 
 ```math
 S_{13}=H^4(3m)^4(5m)^4(4m)
-\tag{5}
+\qquad\text{(5)}
 ```
 
 is SAFE and has no SAFE extension (E01–E02). Its response can be checked directly. If the opponent adds another $`4m`$, add a third $`4m`$ and use a $`345m`$ sequence, triplets of $`3m,5m,H`$, and the remaining $`4m`$ pair. If the opponent adds a new kind $`u`$, add the same kind and use $`345m`$, those three triplets, and $`uu`$. The saturated kinds cannot be added. Thus this odd thirteen-tile table is a P terminal of the SAFE game. The 34-tile witness in Theorem 3 is an even P terminal.
@@ -164,7 +164,7 @@ No valid fourteen-tile winning target uses four copies of an honour: ordinary ha
 
 ```math
 g(x)=g(B)\mathbin{\mathrm{xor}}(p\bmod2).
-\tag{6}
+\qquad\text{(6)}
 ```
 
 *Proof.* The future game on all other coordinates is unchanged by any of these replacements. Each unplayed fourth honour is an independent component with one legal move and then none. The game is the disjunctive sum of the game at $`B`$ and $`p`$ copies of the one-move game. Its Grundy value follows by the sum rule. ∎
@@ -188,7 +188,7 @@ Local statistics describing obtainable melds, pairs, or current missing tiles ar
 ```math
 X=789999s\;666777z,\qquad
 Y=567999s\;666777z
-\tag{7}
+\qquad\text{(7)}
 ```
 
 have the same recorded current profile, but $`X`$ is P and $`Y`$ is N. Here digits in $`z`$ name distinct honour kinds. The retained direct analysis finds two independent SAFE moves from the first endgame and three from the second (E02). This is a concrete counterexample to equating future games from a static winning profile.
@@ -225,7 +225,7 @@ Writing $`\nu(x)=1`$ for N and $`0`$ for P, the classification is
 
 ```math
 \nu(x)=(|x|\bmod2)\mathrm{xor}\mathbf1_{R=[3]}.
-\tag{8}
+\qquad\text{(8)}
 ```
 
 This is a mathematical classification of the SAFE region, not a declaration that every positive Grundy value equals one. For the $`\binom{34}{6}=1,344,904`$ bare six-pair supports, the resulting count is 1,266,064 P and 78,840 N. Appendix B explains the local reduction and records its source, including the differing terminal sizes of the six support types.
@@ -236,7 +236,7 @@ This is a mathematical classification of the SAFE region, not a declaration that
 
 ```math
 H^3J^3X^2Y^2Z^2
-\tag{9}
+\qquad\text{(9)}
 ```
 
 is P. The three other kinds may be numerical or honours.
@@ -372,7 +372,7 @@ Sort the three suits by their group and within-group member identifiers. For a c
 ```math
 abc,\quad \binom{a+1}{2}c,\quad a\binom{b+1}{2},
 \quad\text{or}\quad\binom{a+2}{3},
-\tag{10}
+\qquad\text{(10)}
 ```
 
 according as all groups differ, the first two agree, the last two agree, or all three agree. Repetition is allowed because different suits may have the same local code. With indices $`0\le u\le v\le w`$, the repeated-group colex ranks are
@@ -381,7 +381,7 @@ according as all groups differ, the first two agree, the last two agree, or all 
 \mathrm{rank}_2(u,v)=\binom{v+1}{2}+u,
 \quad
 \mathrm{rank}_3(u,v,w)=\binom{w+2}{3}+\binom{v+1}{2}+u.
-\tag{11}
+\qquad\text{(11)}
 ```
 
 Prefix sums of block sizes give a dense rank within each tile-count/honour bucket; the complete stored identity is $`(n,h,\mathrm{rank})`$. Mixed-radix indexing handles distinct groups. The actual layout contains 60,789,499 compatible blocks across all layers, stored in 3,686 nonempty buckets. The complete layer totals agree with the earlier independent count. Small-layer and terminal-layer rank/unrank and physical-edge checks test more than cardinality agreement; equal totals alone would not prove a bijection.
@@ -397,7 +397,7 @@ Let $`K_n`$ be the SAFE orbits with $`n`$ tiles and $`P_n\subseteq K_n`$ their P
 ```math
 N_n=\mathrm{Pre}(P_{n+1}),\qquad
 P_n=K_n\setminus N_n.
-\tag{12}
+\qquad\text{(12)}
 ```
 
 Every SAFE edge adds one tile. By Theorem 3, $`K_{35}=\varnothing`$, so all $`K_{34}`$ are P. Induction determines every earlier layer. The terminal base layer was also checked directly against physical SAFE successors.
@@ -505,7 +505,7 @@ A response certificate consists of SAFE P states. For each row $`x`$ and **each 
 \mathrm{Win}(x+e_a+e_b),
 \quad\text{or}\quad
 x+e_a+e_b=\gamma(y)
-\tag{13}
+\qquad\text{(13)}
 ```
 
 for an already proved P state $`y`$ and a checked rule symmetry $`\gamma`$. SAFE proves that the first action cannot itself win. The winning branch includes an explicit valid fourteen-tile target. Internal P references must have a strictly smaller proof-row identifier; an external reference must return a Lean value carrying a proof of the referenced state. These conditions permit well-founded induction on rows.
@@ -534,7 +534,7 @@ The newest certified root is
 
 ```math
 x_{12}=99m\;6789p\;456888s,
-\tag{14}
+\qquad\text{(14)}
 ```
 
 with exact count string
@@ -708,14 +708,14 @@ Let $`n=|x|`$, $`q=|\{i:x_i\ge2\}|`$, and $`t=|\{i:x_i\ge3\}|`$. Remove one trip
 
 ```math
 n=3t+r+(q-t)=2t+q+r.
-\tag{A1}
+\qquad\text{(A1)}
 ```
 
 Partition each numerical suit into the fixed blocks 123, 456, and 789. Let $`s`$ count the blocks whose three ranks are all in the residual support. The blocks provide $`s`$ mutually disjoint sequences, also disjoint in physical copies from the removed triplets. The other blocks contain at most two supported ranks each. Including the seven honours gives
 
 ```math
 r\le3s+2(9-s)+7=25+s.
-\tag{A2}
+\qquad\text{(A2)}
 ```
 
 The original table consequently contains $`t+s`$ disjoint melds. These inequalities do not assume that an arbitrary numerical rank permutation is legal.
@@ -726,7 +726,7 @@ Suppose $`n\ge38`$ and the table is nonwinning. Seven pairs forces $`q\le6`$. Fi
 
 ```math
 t+s\ge13-t-q.
-\tag{A3}
+\qquad\text{(A3)}
 ```
 
 If $`t\ge1`$ and $`t+q\le8`$, at least five disjoint melds exist, including a triplet. Reserve two copies of that triplet as a pair and choose four other melds. Their copies are disjoint, so the target respects capacity and is already contained in the table.
@@ -745,7 +745,7 @@ Now suppose a SAFE table has $`n\ge35`$. It has $`q\le5`$: six pair kinds occupy
 
 ```math
 n\le2t+q+25+s\le28+t+q.
-\tag{A4}
+\qquad\text{(A4)}
 ```
 
 As $`t\le3`$ and $`q\le5`$, only $`(t,q)=(3,4),(3,5),(2,5)`$ remain.
@@ -802,7 +802,7 @@ Every complete SAFE play from a given pattern ends at its row's common size $`L`
 
 ```math
 g(x)=(L-|x|)\bmod2.
-\tag{B1}
+\qquad\text{(B1)}
 ```
 
 In this particular region the exact Grundy values really are only zero and one. Equation (8) follows because only $`L=15`$, the $`[3]`$ case, is odd. The retained checks cover 13,616 support orbits, all 9,926,064 assignments of counts 2/3/4 on those representatives, and 1,604,100 SAFE edges. Of the assignments, 891,815 are SAFE; this is not a separately deduplicated global orbit count. The mathematical classification is the reason for the formula, and the enumeration checks its implementation (E03).
@@ -829,7 +829,7 @@ In the fixed family rooted at $`3m\;7m\;H_1^3H_2^3H_3^3H_4^2`$, the other two nu
 f(0)=0,\qquad
 f(n)=\mathrm{mex}_{1\le r\le n}
 \left\{f(\max(0,r-3))\mathrm{xor}f(\max(0,n-r-2))\right\}.
-\tag{B2}
+\qquad\text{(B2)}
 ```
 
 For $`n=0,\ldots,9`$, the values are $`(0,1,1,1,2,2,0,3,3,1)`$. XOR the remaining interval values with the parity of the available honour moves. Each nine-rank suit has 41 admissible singleton supports, so the fixed family has $`41^2 2^6=107,584`$ count vectors. The exact blocked-move and orphan exclusions establishing the decomposition are proved in `mahjong_round2/math/two_suit_family.md` (E03). The ordinary suits cannot be XOR-combined before those exclusions have been established.

@@ -22,6 +22,7 @@ def sha(path):
 def normalise(tex):
     # A literal pipe inside a GitHub table is written as the equivalent TeX macro.
     # GitHub currently rejects operatorname; upright function names preserve meaning.
+    tex = re.sub(r"\\tag\{([^}]+)\}", lambda m: r"\qquad\text{(" + m[1] + ")}", tex)
     return re.sub(r"\s+", "", tex.replace(r"\vert ", "|").replace(r"\operatorname", r"\mathrm"))
 
 
@@ -51,7 +52,8 @@ def verify():
     table_text = re.sub(r"\[([^\]]+)\]\([^)]+\)", r"\1", table_text)
     numbers = re.findall(r"\d+(?:,\d{3})*(?:\.\d+)?", table_text)
     require(numbers == expected["table_numeric_tokens"], "A numerical table changed")
-    require(re.findall(r"\\tag\{([^}]+)\}", text) == expected["equation_tags"], "Equation labels changed")
+    require(r"\tag{" not in text, "Tagged MathML rows have an incompatible browser layout")
+    require(re.findall(r"\\qquad\s*\\text\{\(([^)]+)\)\}", text) == expected["equation_tags"], "Equation labels changed")
     for state in re.findall(r"(?<!\d)[0-4]{34}(?!\d)", text):
         require(state in expected["physical_states"], "A physical state changed")
     sources = json.loads((ROOT / "papers/source-map.json").read_text())["sources"]

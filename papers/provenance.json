@@ -7,14 +7,15 @@
   "original_bytes": 117039,
   "original_sha256": "f1d521177f2270e4340703faddaa6f9426108e939cd19cfeb71b4f2fc5fbe2e5",
   "published_path": "papers/manuscript.md",
-  "published_bytes": 117195,
-  "published_sha256": "6b0a1fe0371642998c710475660ed2075129dd0cf0618116da3041a4abfad3b9",
+  "published_bytes": 117375,
+  "published_sha256": "375b7444ab9f7de5cb01053232c7d637aab873bbcc8a0416ed1da88f5c001dea",
   "transformations": [
     "Convert TeX inline delimiters to GitHub code-form math and display delimiters to math fences; protect literal table pipes with equivalent TeX vert macros.",
     "Remap local evidence links to public copies or explicit retained-source availability entries.",
     "Add a publication note and replace Appendix G.2 with the portable latest-proof replay; keep the v0.1.0 historical boundary.",
     "Preserve scientific claims, formulas, numerical tables, author and attribution; do not publish the Chinese manuscript.",
-    "Replace operatorname with the equivalent upright named-function notation using mathrm after GitHub rejected that macro during actual rendering."
+    "Replace operatorname with the equivalent upright named-function notation using mathrm after GitHub rejected that macro during actual rendering.",
+    "Preserve equation numbers as inline parenthesised text after each display: GitHub-generated tagged MathML rows were visually stacked in the tested browser."
   ],
   "scope": "Publishing and document validation do not constitute a new whole-game computation, independent human peer review or a closed empty-position Lean theorem."
 }
