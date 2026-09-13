@@ -1,0 +1,6074 @@
+{
+  "schema": "CHECKED_RESPONSE_TABLE_EXTERNAL_REGISTRY_V1",
+  "status": "EXACT_ROWS_OF_KERNEL_CHECKED_EXTERNAL_TABLE",
+  "empty_game": "NOT_VERIFIED",
+  "module": "MahjongScale.Actual12Registry",
+  "registry": "Mahjong.Actual12Registry.registry",
+  "table_module": "MahjongScale.Actual12V2.Root",
+  "input_sha256": {
+    "runs/lean_scale/actual12/pruned_v1/responses.json": "a917aa5649940f01c5ae6cf7ca4f69f5c988bd78fb0fa8d9ba55a4572c81c31b",
+    "runs/lean_scale/actual12_registry_kernel_v1/result.json": "9355a8cd9a7d54dd10e51873f47596f18c965df9667c74c800a9ddb7d0b42ff2",
+    "build/lean_scale/proof/MahjongScale/Actual12Registry.lean": "63b19f9cfc7134e97ade7af3c1359566cc938843f584a598ae48c2b112343140",
+    "runs/lean_scale/actual12/grouped_generation_v2.json": "a270e3ccb9733e5bf3e8d6cf9fd8577051bb23fcb4aeee245baa8d3bbe94f04c",
+    "build/lean_scale/register_actual12.py": "aea9578fc69cdde6231a5e0100fe76768c43140d4787fd182e2b808a68a37750"
+  },
+  "usage": "Import the actual typed Lean registry. JSON IDs and P labels supply no proof premises.",
+  "entries": [
+    {
+      "registry_id": 0,
+      "proof_row_id": 0,
+      "source_node_id": 2702,
+      "digits": "0100011110401120011001001021111111",
+      "tiles": 26,
+      "lean_state": "Mahjong.Scale12V2.state0"
+    },
+    {
+      "registry_id": 1,
+      "proof_row_id": 1,
+      "source_node_id": 2703,
+      "digits": "0100011110101210401001001021111111",
+      "tiles": 26,
+      "lean_state": "Mahjong.Scale12V2.state1"
+    },
+    {
+      "registry_id": 2,
+      "proof_row_id": 2,
+      "source_node_id": 2704,
+      "digits": "0010011110401210011001001021111111",
+      "tiles": 26,
+      "lean_state": "Mahjong.Scale12V2.state2"
+    },
+    {
+      "registry_id": 3,
+      "proof_row_id": 3,
+      "source_node_id": 2705,
+      "digits": "0010011110101210401001001021111111",
+      "tiles": 26,
+      "lean_state": "Mahjong.Scale12V2.state3"
+    },
+    {
+      "registry_id": 4,
+      "proof_row_id": 4,
+      "source_node_id": 2706,
+      "digits": "0010011110101210311001001021111111",
+      "tiles": 26,
+      "lean_state": "Mahjong.Scale12V2.state4"
+    },
+    {
+      "registry_id": 5,
+      "proof_row_id": 5,
+      "source_node_id": 2707,
+      "digits": "0010011110401120011001001021111111",
+      "tiles": 26,
+      "lean_state": "Mahjong.Scale12V2.state5"
+    },
+    {
+      "registry_id": 6,
+      "proof_row_id": 6,
+      "source_node_id": 2708,
+      "digits": "0101210401000011111001001021111111",
+      "tiles": 26,
+      "lean_state": "Mahjong.Scale12V2.state6"
+    },
+    {
+      "registry_id": 7,
+      "proof_row_id": 7,
+      "source_node_id": 2711,
+      "digits": "0100100120101120311000011111111111",
+      "tiles": 26,
+      "lean_state": "Mahjong.Scale12V2.state7"
+    },
+    {
+      "registry_id": 8,
+      "proof_row_id": 8,
+      "source_node_id": 2712,
+      "digits": "0100011110100100121001210311111111",
+      "tiles": 26,
+      "lean_state": "Mahjong.Scale12V2.state8"
+    },
+    {
+      "registry_id": 9,
+      "proof_row_id": 9,
+      "source_node_id": 2713,
+      "digits": "0100011110100100121002110311111111",
+      "tiles": 26,
+      "lean_state": "Mahjong.Scale12V2.state9"
+    },
+    {
+      "registry_id": 10,
+      "proof_row_id": 10,
+      "source_node_id": 2714,
+      "digits": "0100011110100100121001120311111111",
+      "tiles": 26,
+      "lean_state": "Mahjong.Scale12V2.state10"
+    },
+    {
+      "registry_id": 11,
+      "proof_row_id": 11,
+      "source_node_id": 2715,
+      "digits": "0100011110100100120101120311111111",
+      "tiles": 26,
+      "lean_state": "Mahjong.Scale12V2.state11"
+    },
+    {
+      "registry_id": 12,
+      "proof_row_id": 12,
+      "source_node_id": 2716,
+      "digits": "0100011110100100120101210311111111",
+      "tiles": 26,
+      "lean_state": "Mahjong.Scale12V2.state12"
+    },
+    {
+      "registry_id": 13,
+      "proof_row_id": 13,
+      "source_node_id": 2717,
+      "digits": "0010011110100100121001210311111111",
+      "tiles": 26,
+      "lean_state": "Mahjong.Scale12V2.state13"
+    },
+    {
+      "registry_id": 14,
+      "proof_row_id": 14,
+      "source_node_id": 2718,
+      "digits": "0010011110100100121002110311111111",
+      "tiles": 26,
+      "lean_state": "Mahjong.Scale12V2.state14"
+    },
+    {
+      "registry_id": 15,
+      "proof_row_id": 15,
+      "source_node_id": 2719,
+      "digits": "0010011110100100121001120311111111",
+      "tiles": 26,
+      "lean_state": "Mahjong.Scale12V2.state15"
+    },
+    {
+      "registry_id": 16,
+      "proof_row_id": 16,
+      "source_node_id": 2720,
+      "digits": "0010011110100100120101120311111111",
+      "tiles": 26,
+      "lean_state": "Mahjong.Scale12V2.state16"
+    },
+    {
+      "registry_id": 17,
+      "proof_row_id": 17,
+      "source_node_id": 2721,
+      "digits": "0010011110100100120101210311111111",
+      "tiles": 26,
+      "lean_state": "Mahjong.Scale12V2.state17"
+    },
+    {
+      "registry_id": 18,
+      "proof_row_id": 18,
+      "source_node_id": 2722,
+      "digits": "0100100120101210311000011111111111",
+      "tiles": 26,
+      "lean_state": "Mahjong.Scale12V2.state18"
+    },
+    {
+      "registry_id": 19,
+      "proof_row_id": 19,
+      "source_node_id": 2723,
+      "digits": "0100011110401120011001000121111111",
+      "tiles": 26,
+      "lean_state": "Mahjong.Scale12V2.state19"
+    },
+    {
+      "registry_id": 20,
+      "proof_row_id": 20,
+      "source_node_id": 2724,
+      "digits": "0010011110401120011001000121111111",
+      "tiles": 26,
+      "lean_state": "Mahjong.Scale12V2.state20"
+    },
+    {
+      "registry_id": 21,
+      "proof_row_id": 21,
+      "source_node_id": 2725,
+      "digits": "0100011110101120311000100121111111",
+      "tiles": 26,
+      "lean_state": "Mahjong.Scale12V2.state21"
+    },
+    {
+      "registry_id": 22,
+      "proof_row_id": 22,
+      "source_node_id": 2726,
+      "digits": "0010011110101120311000100121111111",
+      "tiles": 26,
+      "lean_state": "Mahjong.Scale12V2.state22"
+    },
+    {
+      "registry_id": 23,
+      "proof_row_id": 23,
+      "source_node_id": 2727,
+      "digits": "0100011110401120011000100121111111",
+      "tiles": 26,
+      "lean_state": "Mahjong.Scale12V2.state23"
+    },
+    {
+      "registry_id": 24,
+      "proof_row_id": 24,
+      "source_node_id": 2728,
+      "digits": "0010011110401120011000100121111111",
+      "tiles": 26,
+      "lean_state": "Mahjong.Scale12V2.state24"
+    },
+    {
+      "registry_id": 25,
+      "proof_row_id": 25,
+      "source_node_id": 2729,
+      "digits": "0100100120401120011000011111111111",
+      "tiles": 26,
+      "lean_state": "Mahjong.Scale12V2.state25"
+    },
+    {
+      "registry_id": 26,
+      "proof_row_id": 26,
+      "source_node_id": 2730,
+      "digits": "0010011110100100120401120011111111",
+      "tiles": 26,
+      "lean_state": "Mahjong.Scale12V2.state26"
+    },
+    {
+      "registry_id": 27,
+      "proof_row_id": 27,
+      "source_node_id": 2731,
+      "digits": "0100011110100100120401120011111111",
+      "tiles": 26,
+      "lean_state": "Mahjong.Scale12V2.state27"
+    },
+    {
+      "registry_id": 28,
+      "proof_row_id": 28,
+      "source_node_id": 2732,
+      "digits": "0100011110401210011001000121111111",
+      "tiles": 26,
+      "lean_state": "Mahjong.Scale12V2.state28"
+    },
+    {
+      "registry_id": 29,
+      "proof_row_id": 29,
+      "source_node_id": 2733,
+      "digits": "0100011110401210011000100121111111",
+      "tiles": 26,
+      "lean_state": "Mahjong.Scale12V2.state29"
+    },
+    {
+      "registry_id": 30,
+      "proof_row_id": 30,
+      "source_node_id": 2734,
+      "digits": "0100011110100100120401210011111111",
+      "tiles": 26,
+      "lean_state": "Mahjong.Scale12V2.state30"
+    },
+    {
+      "registry_id": 31,
+      "proof_row_id": 31,
+      "source_node_id": 2735,
+      "digits": "0010011110401210011000100121111111",
+      "tiles": 26,
+      "lean_state": "Mahjong.Scale12V2.state31"
+    },
+    {
+      "registry_id": 32,
+      "proof_row_id": 32,
+      "source_node_id": 2736,
+      "digits": "0010011110401210011001000121111111",
+      "tiles": 26,
+      "lean_state": "Mahjong.Scale12V2.state32"
+    },
+    {
+      "registry_id": 33,
+      "proof_row_id": 33,
+      "source_node_id": 2737,
+      "digits": "0010011110100100120401210011111111",
+      "tiles": 26,
+      "lean_state": "Mahjong.Scale12V2.state33"
+    },
+    {
+      "registry_id": 34,
+      "proof_row_id": 34,
+      "source_node_id": 2738,
+      "digits": "0100100120401210011000011111111111",
+      "tiles": 26,
+      "lean_state": "Mahjong.Scale12V2.state34"
+    },
+    {
+      "registry_id": 35,
+      "proof_row_id": 35,
+      "source_node_id": 2739,
+      "digits": "0100011110100100120101210401111111",
+      "tiles": 26,
+      "lean_state": "Mahjong.Scale12V2.state35"
+    },
+    {
+      "registry_id": 36,
+      "proof_row_id": 36,
+      "source_node_id": 2740,
+      "digits": "0010011110100100120101210401111111",
+      "tiles": 26,
+      "lean_state": "Mahjong.Scale12V2.state36"
+    },
+    {
+      "registry_id": 37,
+      "proof_row_id": 37,
+      "source_node_id": 2741,
+      "digits": "0101210401000011111000100121111111",
+      "tiles": 26,
+      "lean_state": "Mahjong.Scale12V2.state37"
+    },
+    {
+      "registry_id": 38,
+      "proof_row_id": 38,
+      "source_node_id": 2742,
+      "digits": "0100100120101210401000011111111111",
+      "tiles": 26,
+      "lean_state": "Mahjong.Scale12V2.state38"
+    },
+    {
+      "registry_id": 39,
+      "proof_row_id": 39,
+      "source_node_id": 2743,
+      "digits": "0010011110101210401000100121111111",
+      "tiles": 26,
+      "lean_state": "Mahjong.Scale12V2.state39"
+    },
+    {
+      "registry_id": 40,
+      "proof_row_id": 40,
+      "source_node_id": 2744,
+      "digits": "0100011110101210311000100121111111",
+      "tiles": 26,
+      "lean_state": "Mahjong.Scale12V2.state40"
+    },
+    {
+      "registry_id": 41,
+      "proof_row_id": 41,
+      "source_node_id": 2745,
+      "digits": "0010011110101210311000100121111111",
+      "tiles": 26,
+      "lean_state": "Mahjong.Scale12V2.state41"
+    },
+    {
+      "registry_id": 42,
+      "proof_row_id": 42,
+      "source_node_id": 2746,
+      "digits": "0100011110101210401000100121111111",
+      "tiles": 26,
+      "lean_state": "Mahjong.Scale12V2.state42"
+    },
+    {
+      "registry_id": 43,
+      "proof_row_id": 43,
+      "source_node_id": 2747,
+      "digits": "0100011110101210401001000121111111",
+      "tiles": 26,
+      "lean_state": "Mahjong.Scale12V2.state43"
+    },
+    {
+      "registry_id": 44,
+      "proof_row_id": 44,
+      "source_node_id": 2748,
+      "digits": "0010011110101210311001000121111111",
+      "tiles": 26,
+      "lean_state": "Mahjong.Scale12V2.state44"
+    },
+    {
+      "registry_id": 45,
+      "proof_row_id": 45,
+      "source_node_id": 2749,
+      "digits": "0010011110101210401001000121111111",
+      "tiles": 26,
+      "lean_state": "Mahjong.Scale12V2.state45"
+    },
+    {
+      "registry_id": 46,
+      "proof_row_id": 46,
+      "source_node_id": 2750,
+      "digits": "0101210401000011111001000121111111",
+      "tiles": 26,
+      "lean_state": "Mahjong.Scale12V2.state46"
+    },
+    {
+      "registry_id": 47,
+      "proof_row_id": 47,
+      "source_node_id": 2421,
+      "digits": "0311110011000011111001001020111111",
+      "tiles": 24,
+      "lean_state": "Mahjong.Scale12V2.state47"
+    },
+    {
+      "registry_id": 48,
+      "proof_row_id": 48,
+      "source_node_id": 2422,
+      "digits": "0100011110401120011001001020011111",
+      "tiles": 24,
+      "lean_state": "Mahjong.Scale12V2.state48"
+    },
+    {
+      "registry_id": 49,
+      "proof_row_id": 49,
+      "source_node_id": 2423,
+      "digits": "0100011110101210401001001020011111",
+      "tiles": 24,
+      "lean_state": "Mahjong.Scale12V2.state49"
+    },
+    {
+      "registry_id": 50,
+      "proof_row_id": 50,
+      "source_node_id": 2424,
+      "digits": "0010011110401210011001001020011111",
+      "tiles": 24,
+      "lean_state": "Mahjong.Scale12V2.state50"
+    },
+    {
+      "registry_id": 51,
+      "proof_row_id": 51,
+      "source_node_id": 2425,
+      "digits": "0010011110101210401001001020011111",
+      "tiles": 24,
+      "lean_state": "Mahjong.Scale12V2.state51"
+    },
+    {
+      "registry_id": 52,
+      "proof_row_id": 52,
+      "source_node_id": 2426,
+      "digits": "0010011110101210311001001020011111",
+      "tiles": 24,
+      "lean_state": "Mahjong.Scale12V2.state52"
+    },
+    {
+      "registry_id": 53,
+      "proof_row_id": 53,
+      "source_node_id": 2427,
+      "digits": "1000011111001001021002110310011111",
+      "tiles": 24,
+      "lean_state": "Mahjong.Scale12V2.state53"
+    },
+    {
+      "registry_id": 54,
+      "proof_row_id": 54,
+      "source_node_id": 2428,
+      "digits": "0010011110401120011001001020011111",
+      "tiles": 24,
+      "lean_state": "Mahjong.Scale12V2.state54"
+    },
+    {
+      "registry_id": 55,
+      "proof_row_id": 55,
+      "source_node_id": 2429,
+      "digits": "0000011110301120011001001021111111",
+      "tiles": 24,
+      "lean_state": "Mahjong.Scale12V2.state55"
+    },
+    {
+      "registry_id": 56,
+      "proof_row_id": 56,
+      "source_node_id": 2430,
+      "digits": "0101210401000011111001001020011111",
+      "tiles": 24,
+      "lean_state": "Mahjong.Scale12V2.state56"
+    },
+    {
+      "registry_id": 57,
+      "proof_row_id": 57,
+      "source_node_id": 2431,
+      "digits": "0011110311000011111001001020111111",
+      "tiles": 24,
+      "lean_state": "Mahjong.Scale12V2.state57"
+    },
+    {
+      "registry_id": 58,
+      "proof_row_id": 58,
+      "source_node_id": 2436,
+      "digits": "0100001021000011111001120310111111",
+      "tiles": 24,
+      "lean_state": "Mahjong.Scale12V2.state58"
+    },
+    {
+      "registry_id": 59,
+      "proof_row_id": 59,
+      "source_node_id": 2437,
+      "digits": "0100100120101120311000011110011111",
+      "tiles": 24,
+      "lean_state": "Mahjong.Scale12V2.state59"
+    },
+    {
+      "registry_id": 60,
+      "proof_row_id": 60,
+      "source_node_id": 2438,
+      "digits": "0100010021000011111001120310111111",
+      "tiles": 24,
+      "lean_state": "Mahjong.Scale12V2.state60"
+    },
+    {
+      "registry_id": 61,
+      "proof_row_id": 61,
+      "source_node_id": 2439,
+      "digits": "0100100020101120311000011110111111",
+      "tiles": 24,
+      "lean_state": "Mahjong.Scale12V2.state61"
+    },
+    {
+      "registry_id": 62,
+      "proof_row_id": 62,
+      "source_node_id": 2440,
+      "digits": "0001120310100000121000011111111111",
+      "tiles": 24,
+      "lean_state": "Mahjong.Scale12V2.state62"
+    },
+    {
+      "registry_id": 63,
+      "proof_row_id": 63,
+      "source_node_id": 2441,
+      "digits": "0100011110100100121001210310011111",
+      "tiles": 24,
+      "lean_state": "Mahjong.Scale12V2.state63"
+    },
+    {
+      "registry_id": 64,
+      "proof_row_id": 64,
+      "source_node_id": 2442,
+      "digits": "0100011110100100121002110310011111",
+      "tiles": 24,
+      "lean_state": "Mahjong.Scale12V2.state64"
+    },
+    {
+      "registry_id": 65,
+      "proof_row_id": 65,
+      "source_node_id": 2443,
+      "digits": "0100000120100011111002110310111111",
+      "tiles": 24,
+      "lean_state": "Mahjong.Scale12V2.state65"
+    },
+    {
+      "registry_id": 66,
+      "proof_row_id": 66,
+      "source_node_id": 2444,
+      "digits": "0100011110100100121001120310011111",
+      "tiles": 24,
+      "lean_state": "Mahjong.Scale12V2.state66"
+    },
+    {
+      "registry_id": 67,
+      "proof_row_id": 67,
+      "source_node_id": 2445,
+      "digits": "0100011110100100120101120310011111",
+      "tiles": 24,
+      "lean_state": "Mahjong.Scale12V2.state67"
+    },
+    {
+      "registry_id": 68,
+      "proof_row_id": 68,
+      "source_node_id": 2446,
+      "digits": "0100011110100100120101210310011111",
+      "tiles": 24,
+      "lean_state": "Mahjong.Scale12V2.state68"
+    },
+    {
+      "registry_id": 69,
+      "proof_row_id": 69,
+      "source_node_id": 2447,
+      "digits": "0100000120100011110101120310111111",
+      "tiles": 24,
+      "lean_state": "Mahjong.Scale12V2.state69"
+    },
+    {
+      "registry_id": 70,
+      "proof_row_id": 70,
+      "source_node_id": 2448,
+      "digits": "0011110310100001020100011111111111",
+      "tiles": 24,
+      "lean_state": "Mahjong.Scale12V2.state70"
+    },
+    {
+      "registry_id": 71,
+      "proof_row_id": 71,
+      "source_node_id": 2449,
+      "digits": "0001210310100011110100100021111111",
+      "tiles": 24,
+      "lean_state": "Mahjong.Scale12V2.state71"
+    },
+    {
+      "registry_id": 72,
+      "proof_row_id": 72,
+      "source_node_id": 2450,
+      "digits": "0011110310100010020100011111111111",
+      "tiles": 24,
+      "lean_state": "Mahjong.Scale12V2.state72"
+    },
+    {
+      "registry_id": 73,
+      "proof_row_id": 73,
+      "source_node_id": 2451,
+      "digits": "0100000120100011111001110311111111",
+      "tiles": 24,
+      "lean_state": "Mahjong.Scale12V2.state73"
+    },
+    {
+      "registry_id": 74,
+      "proof_row_id": 74,
+      "source_node_id": 2452,
+      "digits": "0100000120100011110101110311111111",
+      "tiles": 24,
+      "lean_state": "Mahjong.Scale12V2.state74"
+    },
+    {
+      "registry_id": 75,
+      "proof_row_id": 75,
+      "source_node_id": 2453,
+      "digits": "0002110310100000120100011111111111",
+      "tiles": 24,
+      "lean_state": "Mahjong.Scale12V2.state75"
+    },
+    {
+      "registry_id": 76,
+      "proof_row_id": 76,
+      "source_node_id": 2454,
+      "digits": "0001120310100000120100011111111111",
+      "tiles": 24,
+      "lean_state": "Mahjong.Scale12V2.state76"
+    },
+    {
+      "registry_id": 77,
+      "proof_row_id": 77,
+      "source_node_id": 2455,
+      "digits": "0010011110100100121001210310011111",
+      "tiles": 24,
+      "lean_state": "Mahjong.Scale12V2.state77"
+    },
+    {
+      "registry_id": 78,
+      "proof_row_id": 78,
+      "source_node_id": 2456,
+      "digits": "0010011110100100121002110310011111",
+      "tiles": 24,
+      "lean_state": "Mahjong.Scale12V2.state78"
+    },
+    {
+      "registry_id": 79,
+      "proof_row_id": 79,
+      "source_node_id": 2457,
+      "digits": "0010011110100000121002110310111111",
+      "tiles": 24,
+      "lean_state": "Mahjong.Scale12V2.state79"
+    },
+    {
+      "registry_id": 80,
+      "proof_row_id": 80,
+      "source_node_id": 2458,
+      "digits": "0010011110100100121001120310011111",
+      "tiles": 24,
+      "lean_state": "Mahjong.Scale12V2.state80"
+    },
+    {
+      "registry_id": 81,
+      "proof_row_id": 81,
+      "source_node_id": 2459,
+      "digits": "0010011110100100120101120310011111",
+      "tiles": 24,
+      "lean_state": "Mahjong.Scale12V2.state81"
+    },
+    {
+      "registry_id": 82,
+      "proof_row_id": 82,
+      "source_node_id": 2460,
+      "digits": "0010011110100100120101210310011111",
+      "tiles": 24,
+      "lean_state": "Mahjong.Scale12V2.state82"
+    },
+    {
+      "registry_id": 83,
+      "proof_row_id": 83,
+      "source_node_id": 2461,
+      "digits": "0010011110011110310100001021111111",
+      "tiles": 24,
+      "lean_state": "Mahjong.Scale12V2.state83"
+    },
+    {
+      "registry_id": 84,
+      "proof_row_id": 84,
+      "source_node_id": 2462,
+      "digits": "0001120310010011110100000121111111",
+      "tiles": 24,
+      "lean_state": "Mahjong.Scale12V2.state84"
+    },
+    {
+      "registry_id": 85,
+      "proof_row_id": 85,
+      "source_node_id": 2463,
+      "digits": "0010011110011110310100010021111111",
+      "tiles": 24,
+      "lean_state": "Mahjong.Scale12V2.state85"
+    },
+    {
+      "registry_id": 86,
+      "proof_row_id": 86,
+      "source_node_id": 2464,
+      "digits": "0010011110100000120101110311111111",
+      "tiles": 24,
+      "lean_state": "Mahjong.Scale12V2.state86"
+    },
+    {
+      "registry_id": 87,
+      "proof_row_id": 87,
+      "source_node_id": 2465,
+      "digits": "0001210310010011110100100021111111",
+      "tiles": 24,
+      "lean_state": "Mahjong.Scale12V2.state87"
+    },
+    {
+      "registry_id": 88,
+      "proof_row_id": 88,
+      "source_node_id": 2466,
+      "digits": "0010011110100000121001110311111111",
+      "tiles": 24,
+      "lean_state": "Mahjong.Scale12V2.state88"
+    },
+    {
+      "registry_id": 89,
+      "proof_row_id": 89,
+      "source_node_id": 2467,
+      "digits": "0002110310010011110100000121111111",
+      "tiles": 24,
+      "lean_state": "Mahjong.Scale12V2.state89"
+    },
+    {
+      "registry_id": 90,
+      "proof_row_id": 90,
+      "source_node_id": 2468,
+      "digits": "0100001021000011111002110310111111",
+      "tiles": 24,
+      "lean_state": "Mahjong.Scale12V2.state90"
+    },
+    {
+      "registry_id": 91,
+      "proof_row_id": 91,
+      "source_node_id": 2469,
+      "digits": "0100010021000011111002110310111111",
+      "tiles": 24,
+      "lean_state": "Mahjong.Scale12V2.state91"
+    },
+    {
+      "registry_id": 92,
+      "proof_row_id": 92,
+      "source_node_id": 2470,
+      "digits": "0000011110100100021002110311111111",
+      "tiles": 24,
+      "lean_state": "Mahjong.Scale12V2.state92"
+    },
+    {
+      "registry_id": 93,
+      "proof_row_id": 93,
+      "source_node_id": 2471,
+      "digits": "0100100120101210311000011110011111",
+      "tiles": 24,
+      "lean_state": "Mahjong.Scale12V2.state93"
+    },
+    {
+      "registry_id": 94,
+      "proof_row_id": 94,
+      "source_node_id": 2472,
+      "digits": "0011110310100001021000011111111111",
+      "tiles": 24,
+      "lean_state": "Mahjong.Scale12V2.state94"
+    },
+    {
+      "registry_id": 95,
+      "proof_row_id": 95,
+      "source_node_id": 2473,
+      "digits": "0011110310100010021000011111111111",
+      "tiles": 24,
+      "lean_state": "Mahjong.Scale12V2.state95"
+    },
+    {
+      "registry_id": 96,
+      "proof_row_id": 96,
+      "source_node_id": 2474,
+      "digits": "0010010020011110311000011111111111",
+      "tiles": 24,
+      "lean_state": "Mahjong.Scale12V2.state96"
+    },
+    {
+      "registry_id": 97,
+      "proof_row_id": 97,
+      "source_node_id": 2475,
+      "digits": "0010001020011110310100011111111111",
+      "tiles": 24,
+      "lean_state": "Mahjong.Scale12V2.state97"
+    },
+    {
+      "registry_id": 98,
+      "proof_row_id": 98,
+      "source_node_id": 2476,
+      "digits": "0010000120010011110011110311111111",
+      "tiles": 24,
+      "lean_state": "Mahjong.Scale12V2.state98"
+    },
+    {
+      "registry_id": 99,
+      "proof_row_id": 99,
+      "source_node_id": 2477,
+      "digits": "0010000120011110311000011111111111",
+      "tiles": 24,
+      "lean_state": "Mahjong.Scale12V2.state99"
+    },
+    {
+      "registry_id": 100,
+      "proof_row_id": 100,
+      "source_node_id": 2478,
+      "digits": "0010000120011110310100011111111111",
+      "tiles": 24,
+      "lean_state": "Mahjong.Scale12V2.state100"
+    },
+    {
+      "registry_id": 101,
+      "proof_row_id": 101,
+      "source_node_id": 2479,
+      "digits": "1000011111001000121002110310011111",
+      "tiles": 24,
+      "lean_state": "Mahjong.Scale12V2.state101"
+    },
+    {
+      "registry_id": 102,
+      "proof_row_id": 102,
+      "source_node_id": 2480,
+      "digits": "0100011110401120011001000120011111",
+      "tiles": 24,
+      "lean_state": "Mahjong.Scale12V2.state102"
+    },
+    {
+      "registry_id": 103,
+      "proof_row_id": 103,
+      "source_node_id": 2481,
+      "digits": "0010011110401120011001000120011111",
+      "tiles": 24,
+      "lean_state": "Mahjong.Scale12V2.state103"
+    },
+    {
+      "registry_id": 104,
+      "proof_row_id": 104,
+      "source_node_id": 2482,
+      "digits": "0000011110301120011001000121111111",
+      "tiles": 24,
+      "lean_state": "Mahjong.Scale12V2.state104"
+    },
+    {
+      "registry_id": 105,
+      "proof_row_id": 105,
+      "source_node_id": 2483,
+      "digits": "1000011111000100121001120310011111",
+      "tiles": 24,
+      "lean_state": "Mahjong.Scale12V2.state105"
+    },
+    {
+      "registry_id": 106,
+      "proof_row_id": 106,
+      "source_node_id": 2484,
+      "digits": "0000100120001120311000011111111111",
+      "tiles": 24,
+      "lean_state": "Mahjong.Scale12V2.state106"
+    },
+    {
+      "registry_id": 107,
+      "proof_row_id": 107,
+      "source_node_id": 2485,
+      "digits": "0100011110101120311000100120011111",
+      "tiles": 24,
+      "lean_state": "Mahjong.Scale12V2.state107"
+    },
+    {
+      "registry_id": 108,
+      "proof_row_id": 108,
+      "source_node_id": 2486,
+      "digits": "0010011110101120311000100120011111",
+      "tiles": 24,
+      "lean_state": "Mahjong.Scale12V2.state108"
+    },
+    {
+      "registry_id": 109,
+      "proof_row_id": 109,
+      "source_node_id": 2487,
+      "digits": "0000011110001120311000100121111111",
+      "tiles": 24,
+      "lean_state": "Mahjong.Scale12V2.state109"
+    },
+    {
+      "registry_id": 110,
+      "proof_row_id": 110,
+      "source_node_id": 2488,
+      "digits": "0000011110000100121001120311111111",
+      "tiles": 24,
+      "lean_state": "Mahjong.Scale12V2.state110"
+    },
+    {
+      "registry_id": 111,
+      "proof_row_id": 111,
+      "source_node_id": 2489,
+      "digits": "0010011110311110011000010021111111",
+      "tiles": 24,
+      "lean_state": "Mahjong.Scale12V2.state111"
+    },
+    {
+      "registry_id": 112,
+      "proof_row_id": 112,
+      "source_node_id": 2490,
+      "digits": "0010011110100010020311110011111111",
+      "tiles": 24,
+      "lean_state": "Mahjong.Scale12V2.state112"
+    },
+    {
+      "registry_id": 113,
+      "proof_row_id": 113,
+      "source_node_id": 2491,
+      "digits": "0010010020311110011000011111111111",
+      "tiles": 24,
+      "lean_state": "Mahjong.Scale12V2.state113"
+    },
+    {
+      "registry_id": 114,
+      "proof_row_id": 114,
+      "source_node_id": 2492,
+      "digits": "0100010020100011110311110011111111",
+      "tiles": 24,
+      "lean_state": "Mahjong.Scale12V2.state114"
+    },
+    {
+      "registry_id": 115,
+      "proof_row_id": 115,
+      "source_node_id": 2493,
+      "digits": "0010010020010011110311110011111111",
+      "tiles": 24,
+      "lean_state": "Mahjong.Scale12V2.state115"
+    },
+    {
+      "registry_id": 116,
+      "proof_row_id": 116,
+      "source_node_id": 2494,
+      "digits": "1000011111000100121002110310011111",
+      "tiles": 24,
+      "lean_state": "Mahjong.Scale12V2.state116"
+    },
+    {
+      "registry_id": 117,
+      "proof_row_id": 117,
+      "source_node_id": 2495,
+      "digits": "0100011110401120011000100120011111",
+      "tiles": 24,
+      "lean_state": "Mahjong.Scale12V2.state117"
+    },
+    {
+      "registry_id": 118,
+      "proof_row_id": 118,
+      "source_node_id": 2496,
+      "digits": "0010011110401120011000100120011111",
+      "tiles": 24,
+      "lean_state": "Mahjong.Scale12V2.state118"
+    },
+    {
+      "registry_id": 119,
+      "proof_row_id": 119,
+      "source_node_id": 2497,
+      "digits": "0000011110301120011000100121111111",
+      "tiles": 24,
+      "lean_state": "Mahjong.Scale12V2.state119"
+    },
+    {
+      "registry_id": 120,
+      "proof_row_id": 120,
+      "source_node_id": 2498,
+      "digits": "0100100120401120011000011110011111",
+      "tiles": 24,
+      "lean_state": "Mahjong.Scale12V2.state120"
+    },
+    {
+      "registry_id": 121,
+      "proof_row_id": 121,
+      "source_node_id": 2499,
+      "digits": "0010011110100100120401120010011111",
+      "tiles": 24,
+      "lean_state": "Mahjong.Scale12V2.state121"
+    },
+    {
+      "registry_id": 122,
+      "proof_row_id": 122,
+      "source_node_id": 2500,
+      "digits": "0100011110100100120401120010011111",
+      "tiles": 24,
+      "lean_state": "Mahjong.Scale12V2.state122"
+    },
+    {
+      "registry_id": 123,
+      "proof_row_id": 123,
+      "source_node_id": 2501,
+      "digits": "0010000120311110011000011111111111",
+      "tiles": 24,
+      "lean_state": "Mahjong.Scale12V2.state123"
+    },
+    {
+      "registry_id": 124,
+      "proof_row_id": 124,
+      "source_node_id": 2502,
+      "digits": "0010000120100011110311110011111111",
+      "tiles": 24,
+      "lean_state": "Mahjong.Scale12V2.state124"
+    },
+    {
+      "registry_id": 125,
+      "proof_row_id": 125,
+      "source_node_id": 2503,
+      "digits": "0010000120010011110311110011111111",
+      "tiles": 24,
+      "lean_state": "Mahjong.Scale12V2.state125"
+    },
+    {
+      "registry_id": 126,
+      "proof_row_id": 126,
+      "source_node_id": 2504,
+      "digits": "0010000121000011111002110310111111",
+      "tiles": 24,
+      "lean_state": "Mahjong.Scale12V2.state126"
+    },
+    {
+      "registry_id": 127,
+      "proof_row_id": 127,
+      "source_node_id": 2505,
+      "digits": "0000100120301120011000011111111111",
+      "tiles": 24,
+      "lean_state": "Mahjong.Scale12V2.state127"
+    },
+    {
+      "registry_id": 128,
+      "proof_row_id": 128,
+      "source_node_id": 2506,
+      "digits": "0100011110401210011001000120011111",
+      "tiles": 24,
+      "lean_state": "Mahjong.Scale12V2.state128"
+    },
+    {
+      "registry_id": 129,
+      "proof_row_id": 129,
+      "source_node_id": 2507,
+      "digits": "0100011110401210011000100120011111",
+      "tiles": 24,
+      "lean_state": "Mahjong.Scale12V2.state129"
+    },
+    {
+      "registry_id": 130,
+      "proof_row_id": 130,
+      "source_node_id": 2508,
+      "digits": "0100011110401110011000100120111111",
+      "tiles": 24,
+      "lean_state": "Mahjong.Scale12V2.state130"
+    },
+    {
+      "registry_id": 131,
+      "proof_row_id": 131,
+      "source_node_id": 2509,
+      "digits": "0100000120100011110302110011111111",
+      "tiles": 24,
+      "lean_state": "Mahjong.Scale12V2.state131"
+    },
+    {
+      "registry_id": 132,
+      "proof_row_id": 132,
+      "source_node_id": 2510,
+      "digits": "0100011110100100120401210010011111",
+      "tiles": 24,
+      "lean_state": "Mahjong.Scale12V2.state132"
+    },
+    {
+      "registry_id": 133,
+      "proof_row_id": 133,
+      "source_node_id": 2511,
+      "digits": "0100000120100011110301210011111111",
+      "tiles": 24,
+      "lean_state": "Mahjong.Scale12V2.state133"
+    },
+    {
+      "registry_id": 134,
+      "proof_row_id": 134,
+      "source_node_id": 2512,
+      "digits": "0001000120100011110401110011111111",
+      "tiles": 24,
+      "lean_state": "Mahjong.Scale12V2.state134"
+    },
+    {
+      "registry_id": 135,
+      "proof_row_id": 135,
+      "source_node_id": 2513,
+      "digits": "0100011110301120011000000121111111",
+      "tiles": 24,
+      "lean_state": "Mahjong.Scale12V2.state135"
+    },
+    {
+      "registry_id": 136,
+      "proof_row_id": 136,
+      "source_node_id": 2514,
+      "digits": "0000100120100011110301120011111111",
+      "tiles": 24,
+      "lean_state": "Mahjong.Scale12V2.state136"
+    },
+    {
+      "registry_id": 137,
+      "proof_row_id": 137,
+      "source_node_id": 2515,
+      "digits": "0100000120100011110301120011111111",
+      "tiles": 24,
+      "lean_state": "Mahjong.Scale12V2.state137"
+    },
+    {
+      "registry_id": 138,
+      "proof_row_id": 138,
+      "source_node_id": 2516,
+      "digits": "0010011110401210011000100120011111",
+      "tiles": 24,
+      "lean_state": "Mahjong.Scale12V2.state138"
+    },
+    {
+      "registry_id": 139,
+      "proof_row_id": 139,
+      "source_node_id": 2517,
+      "digits": "0010011110401210011001000120011111",
+      "tiles": 24,
+      "lean_state": "Mahjong.Scale12V2.state139"
+    },
+    {
+      "registry_id": 140,
+      "proof_row_id": 140,
+      "source_node_id": 2518,
+      "digits": "0010011110401110011000000121111111",
+      "tiles": 24,
+      "lean_state": "Mahjong.Scale12V2.state140"
+    },
+    {
+      "registry_id": 141,
+      "proof_row_id": 141,
+      "source_node_id": 2519,
+      "digits": "0010011110100100120401210010011111",
+      "tiles": 24,
+      "lean_state": "Mahjong.Scale12V2.state141"
+    },
+    {
+      "registry_id": 142,
+      "proof_row_id": 142,
+      "source_node_id": 2520,
+      "digits": "0000100120010011110301210011111111",
+      "tiles": 24,
+      "lean_state": "Mahjong.Scale12V2.state142"
+    },
+    {
+      "registry_id": 143,
+      "proof_row_id": 143,
+      "source_node_id": 2521,
+      "digits": "0010011110100000120401110011111111",
+      "tiles": 24,
+      "lean_state": "Mahjong.Scale12V2.state143"
+    },
+    {
+      "registry_id": 144,
+      "proof_row_id": 144,
+      "source_node_id": 2522,
+      "digits": "0010011110100000120302110011111111",
+      "tiles": 24,
+      "lean_state": "Mahjong.Scale12V2.state144"
+    },
+    {
+      "registry_id": 145,
+      "proof_row_id": 145,
+      "source_node_id": 2523,
+      "digits": "0001000120010011110401110011111111",
+      "tiles": 24,
+      "lean_state": "Mahjong.Scale12V2.state145"
+    },
+    {
+      "registry_id": 146,
+      "proof_row_id": 146,
+      "source_node_id": 2524,
+      "digits": "0010011110100000120301120011111111",
+      "tiles": 24,
+      "lean_state": "Mahjong.Scale12V2.state146"
+    },
+    {
+      "registry_id": 147,
+      "proof_row_id": 147,
+      "source_node_id": 2526,
+      "digits": "0010000121000011111001120310111111",
+      "tiles": 24,
+      "lean_state": "Mahjong.Scale12V2.state147"
+    },
+    {
+      "registry_id": 148,
+      "proof_row_id": 148,
+      "source_node_id": 2527,
+      "digits": "0100100120401210011000011110011111",
+      "tiles": 24,
+      "lean_state": "Mahjong.Scale12V2.state148"
+    },
+    {
+      "registry_id": 149,
+      "proof_row_id": 149,
+      "source_node_id": 2528,
+      "digits": "1000011111000100121001210310011111",
+      "tiles": 24,
+      "lean_state": "Mahjong.Scale12V2.state149"
+    },
+    {
+      "registry_id": 150,
+      "proof_row_id": 150,
+      "source_node_id": 2529,
+      "digits": "0000100120301210011000011111111111",
+      "tiles": 24,
+      "lean_state": "Mahjong.Scale12V2.state150"
+    },
+    {
+      "registry_id": 151,
+      "proof_row_id": 151,
+      "source_node_id": 2530,
+      "digits": "0000011110301210011000100121111111",
+      "tiles": 24,
+      "lean_state": "Mahjong.Scale12V2.state151"
+    },
+    {
+      "registry_id": 152,
+      "proof_row_id": 152,
+      "source_node_id": 2531,
+      "digits": "0000011110000100121001210311111111",
+      "tiles": 24,
+      "lean_state": "Mahjong.Scale12V2.state152"
+    },
+    {
+      "registry_id": 153,
+      "proof_row_id": 153,
+      "source_node_id": 2532,
+      "digits": "0311110011000011111001000120111111",
+      "tiles": 24,
+      "lean_state": "Mahjong.Scale12V2.state153"
+    },
+    {
+      "registry_id": 154,
+      "proof_row_id": 154,
+      "source_node_id": 2533,
+      "digits": "1000011111001000121001210310011111",
+      "tiles": 24,
+      "lean_state": "Mahjong.Scale12V2.state154"
+    },
+    {
+      "registry_id": 155,
+      "proof_row_id": 155,
+      "source_node_id": 2534,
+      "digits": "0000011110301210011001000121111111",
+      "tiles": 24,
+      "lean_state": "Mahjong.Scale12V2.state155"
+    },
+    {
+      "registry_id": 156,
+      "proof_row_id": 156,
+      "source_node_id": 2535,
+      "digits": "0100001020311110011000011111111111",
+      "tiles": 24,
+      "lean_state": "Mahjong.Scale12V2.state156"
+    },
+    {
+      "registry_id": 157,
+      "proof_row_id": 157,
+      "source_node_id": 2536,
+      "digits": "0311110011000011111000100120111111",
+      "tiles": 24,
+      "lean_state": "Mahjong.Scale12V2.state157"
+    },
+    {
+      "registry_id": 158,
+      "proof_row_id": 158,
+      "source_node_id": 2537,
+      "digits": "0100011110100100020401110011111111",
+      "tiles": 24,
+      "lean_state": "Mahjong.Scale12V2.state158"
+    },
+    {
+      "registry_id": 159,
+      "proof_row_id": 159,
+      "source_node_id": 2538,
+      "digits": "0100001020100011110311110011111111",
+      "tiles": 24,
+      "lean_state": "Mahjong.Scale12V2.state159"
+    },
+    {
+      "registry_id": 160,
+      "proof_row_id": 160,
+      "source_node_id": 2539,
+      "digits": "0100011110100100120101210400011111",
+      "tiles": 24,
+      "lean_state": "Mahjong.Scale12V2.state160"
+    },
+    {
+      "registry_id": 161,
+      "proof_row_id": 161,
+      "source_node_id": 2540,
+      "digits": "0010011110100100020301210011111111",
+      "tiles": 24,
+      "lean_state": "Mahjong.Scale12V2.state161"
+    },
+    {
+      "registry_id": 162,
+      "proof_row_id": 162,
+      "source_node_id": 2541,
+      "digits": "0010011110100001020311110011111111",
+      "tiles": 24,
+      "lean_state": "Mahjong.Scale12V2.state162"
+    },
+    {
+      "registry_id": 163,
+      "proof_row_id": 163,
+      "source_node_id": 2542,
+      "digits": "0010011110100100120101210400011111",
+      "tiles": 24,
+      "lean_state": "Mahjong.Scale12V2.state163"
+    },
+    {
+      "registry_id": 164,
+      "proof_row_id": 164,
+      "source_node_id": 2543,
+      "digits": "0101210401000011111000100120011111",
+      "tiles": 24,
+      "lean_state": "Mahjong.Scale12V2.state164"
+    },
+    {
+      "registry_id": 165,
+      "proof_row_id": 165,
+      "source_node_id": 2544,
+      "digits": "0100100120101210401000011110011111",
+      "tiles": 24,
+      "lean_state": "Mahjong.Scale12V2.state165"
+    },
+    {
+      "registry_id": 166,
+      "proof_row_id": 166,
+      "source_node_id": 2545,
+      "digits": "0010011110101210401000100120011111",
+      "tiles": 24,
+      "lean_state": "Mahjong.Scale12V2.state166"
+    },
+    {
+      "registry_id": 167,
+      "proof_row_id": 167,
+      "source_node_id": 2546,
+      "digits": "0100011110101210311000100120011111",
+      "tiles": 24,
+      "lean_state": "Mahjong.Scale12V2.state167"
+    },
+    {
+      "registry_id": 168,
+      "proof_row_id": 168,
+      "source_node_id": 2547,
+      "digits": "0010011110101210311000100120011111",
+      "tiles": 24,
+      "lean_state": "Mahjong.Scale12V2.state168"
+    },
+    {
+      "registry_id": 169,
+      "proof_row_id": 169,
+      "source_node_id": 2548,
+      "digits": "0100011110101210401000100120011111",
+      "tiles": 24,
+      "lean_state": "Mahjong.Scale12V2.state169"
+    },
+    {
+      "registry_id": 170,
+      "proof_row_id": 170,
+      "source_node_id": 2549,
+      "digits": "0100011110101210401001000120011111",
+      "tiles": 24,
+      "lean_state": "Mahjong.Scale12V2.state170"
+    },
+    {
+      "registry_id": 171,
+      "proof_row_id": 171,
+      "source_node_id": 2550,
+      "digits": "0010011110101210311001000120011111",
+      "tiles": 24,
+      "lean_state": "Mahjong.Scale12V2.state171"
+    },
+    {
+      "registry_id": 172,
+      "proof_row_id": 172,
+      "source_node_id": 2551,
+      "digits": "0010011110101210401001000120011111",
+      "tiles": 24,
+      "lean_state": "Mahjong.Scale12V2.state172"
+    },
+    {
+      "registry_id": 173,
+      "proof_row_id": 173,
+      "source_node_id": 2552,
+      "digits": "0101210401000011111001000120011111",
+      "tiles": 24,
+      "lean_state": "Mahjong.Scale12V2.state173"
+    },
+    {
+      "registry_id": 174,
+      "proof_row_id": 174,
+      "source_node_id": 2553,
+      "digits": "0011110311000011111001000120111111",
+      "tiles": 24,
+      "lean_state": "Mahjong.Scale12V2.state174"
+    },
+    {
+      "registry_id": 175,
+      "proof_row_id": 175,
+      "source_node_id": 1953,
+      "digits": "0311110011000011111001001020001111",
+      "tiles": 22,
+      "lean_state": "Mahjong.Scale12V2.state175"
+    },
+    {
+      "registry_id": 176,
+      "proof_row_id": 176,
+      "source_node_id": 1954,
+      "digits": "0100011110401120011001001020000111",
+      "tiles": 22,
+      "lean_state": "Mahjong.Scale12V2.state176"
+    },
+    {
+      "registry_id": 177,
+      "proof_row_id": 177,
+      "source_node_id": 1955,
+      "digits": "0100011110101210401001001020000111",
+      "tiles": 22,
+      "lean_state": "Mahjong.Scale12V2.state177"
+    },
+    {
+      "registry_id": 178,
+      "proof_row_id": 178,
+      "source_node_id": 1956,
+      "digits": "0010011110401210011001001020000111",
+      "tiles": 22,
+      "lean_state": "Mahjong.Scale12V2.state178"
+    },
+    {
+      "registry_id": 179,
+      "proof_row_id": 179,
+      "source_node_id": 1957,
+      "digits": "0010011110101210401001001020000111",
+      "tiles": 22,
+      "lean_state": "Mahjong.Scale12V2.state179"
+    },
+    {
+      "registry_id": 180,
+      "proof_row_id": 180,
+      "source_node_id": 1958,
+      "digits": "0010011110101210311001001020000111",
+      "tiles": 22,
+      "lean_state": "Mahjong.Scale12V2.state180"
+    },
+    {
+      "registry_id": 181,
+      "proof_row_id": 181,
+      "source_node_id": 1959,
+      "digits": "1000011111001001021002110310000111",
+      "tiles": 22,
+      "lean_state": "Mahjong.Scale12V2.state181"
+    },
+    {
+      "registry_id": 182,
+      "proof_row_id": 182,
+      "source_node_id": 1960,
+      "digits": "0010011110401120011001001020000111",
+      "tiles": 22,
+      "lean_state": "Mahjong.Scale12V2.state182"
+    },
+    {
+      "registry_id": 183,
+      "proof_row_id": 183,
+      "source_node_id": 1961,
+      "digits": "0000011110301120011001001020011111",
+      "tiles": 22,
+      "lean_state": "Mahjong.Scale12V2.state183"
+    },
+    {
+      "registry_id": 184,
+      "proof_row_id": 184,
+      "source_node_id": 1962,
+      "digits": "0101210401000011111001001020000111",
+      "tiles": 22,
+      "lean_state": "Mahjong.Scale12V2.state184"
+    },
+    {
+      "registry_id": 185,
+      "proof_row_id": 185,
+      "source_node_id": 1963,
+      "digits": "0011110311000011111001001020001111",
+      "tiles": 22,
+      "lean_state": "Mahjong.Scale12V2.state185"
+    },
+    {
+      "registry_id": 186,
+      "proof_row_id": 186,
+      "source_node_id": 1968,
+      "digits": "0100001021000011111001120310001111",
+      "tiles": 22,
+      "lean_state": "Mahjong.Scale12V2.state186"
+    },
+    {
+      "registry_id": 187,
+      "proof_row_id": 187,
+      "source_node_id": 1969,
+      "digits": "0100100120101120311000011110000111",
+      "tiles": 22,
+      "lean_state": "Mahjong.Scale12V2.state187"
+    },
+    {
+      "registry_id": 188,
+      "proof_row_id": 188,
+      "source_node_id": 1970,
+      "digits": "0100010021000011111001120310001111",
+      "tiles": 22,
+      "lean_state": "Mahjong.Scale12V2.state188"
+    },
+    {
+      "registry_id": 189,
+      "proof_row_id": 189,
+      "source_node_id": 1971,
+      "digits": "0100000120101120311000011110001111",
+      "tiles": 22,
+      "lean_state": "Mahjong.Scale12V2.state189"
+    },
+    {
+      "registry_id": 190,
+      "proof_row_id": 190,
+      "source_node_id": 1972,
+      "digits": "0100100020101120311000011110001111",
+      "tiles": 22,
+      "lean_state": "Mahjong.Scale12V2.state190"
+    },
+    {
+      "registry_id": 191,
+      "proof_row_id": 191,
+      "source_node_id": 1973,
+      "digits": "0001120310100000021000011110111111",
+      "tiles": 22,
+      "lean_state": "Mahjong.Scale12V2.state191"
+    },
+    {
+      "registry_id": 192,
+      "proof_row_id": 192,
+      "source_node_id": 1974,
+      "digits": "0100011110100100121001210310000111",
+      "tiles": 22,
+      "lean_state": "Mahjong.Scale12V2.state192"
+    },
+    {
+      "registry_id": 193,
+      "proof_row_id": 193,
+      "source_node_id": 1975,
+      "digits": "0100011110100100121002110310000111",
+      "tiles": 22,
+      "lean_state": "Mahjong.Scale12V2.state193"
+    },
+    {
+      "registry_id": 194,
+      "proof_row_id": 194,
+      "source_node_id": 1976,
+      "digits": "0100000120100011111002110310001111",
+      "tiles": 22,
+      "lean_state": "Mahjong.Scale12V2.state194"
+    },
+    {
+      "registry_id": 195,
+      "proof_row_id": 195,
+      "source_node_id": 1977,
+      "digits": "0100011110100100121001120310000111",
+      "tiles": 22,
+      "lean_state": "Mahjong.Scale12V2.state195"
+    },
+    {
+      "registry_id": 196,
+      "proof_row_id": 196,
+      "source_node_id": 1978,
+      "digits": "0100011110100100120101120310000111",
+      "tiles": 22,
+      "lean_state": "Mahjong.Scale12V2.state196"
+    },
+    {
+      "registry_id": 197,
+      "proof_row_id": 197,
+      "source_node_id": 1979,
+      "digits": "0100011110100100120101210310000111",
+      "tiles": 22,
+      "lean_state": "Mahjong.Scale12V2.state197"
+    },
+    {
+      "registry_id": 198,
+      "proof_row_id": 198,
+      "source_node_id": 1980,
+      "digits": "0100000120100011110101110310011111",
+      "tiles": 22,
+      "lean_state": "Mahjong.Scale12V2.state198"
+    },
+    {
+      "registry_id": 199,
+      "proof_row_id": 199,
+      "source_node_id": 1981,
+      "digits": "0011110310100001020100011110011111",
+      "tiles": 22,
+      "lean_state": "Mahjong.Scale12V2.state199"
+    },
+    {
+      "registry_id": 200,
+      "proof_row_id": 200,
+      "source_node_id": 1982,
+      "digits": "0001210310100011110100100020011111",
+      "tiles": 22,
+      "lean_state": "Mahjong.Scale12V2.state200"
+    },
+    {
+      "registry_id": 201,
+      "proof_row_id": 201,
+      "source_node_id": 1983,
+      "digits": "0001120310100000120100011110011111",
+      "tiles": 22,
+      "lean_state": "Mahjong.Scale12V2.state201"
+    },
+    {
+      "registry_id": 202,
+      "proof_row_id": 202,
+      "source_node_id": 1984,
+      "digits": "0011110310100010020100011110011111",
+      "tiles": 22,
+      "lean_state": "Mahjong.Scale12V2.state202"
+    },
+    {
+      "registry_id": 203,
+      "proof_row_id": 203,
+      "source_node_id": 1985,
+      "digits": "0100000120100011111001110310011111",
+      "tiles": 22,
+      "lean_state": "Mahjong.Scale12V2.state203"
+    },
+    {
+      "registry_id": 204,
+      "proof_row_id": 204,
+      "source_node_id": 1986,
+      "digits": "0002110310100000120100011110011111",
+      "tiles": 22,
+      "lean_state": "Mahjong.Scale12V2.state204"
+    },
+    {
+      "registry_id": 205,
+      "proof_row_id": 205,
+      "source_node_id": 1987,
+      "digits": "0001110310100000020100011111111111",
+      "tiles": 22,
+      "lean_state": "Mahjong.Scale12V2.state205"
+    },
+    {
+      "registry_id": 206,
+      "proof_row_id": 206,
+      "source_node_id": 1988,
+      "digits": "0010011110100100121001210310000111",
+      "tiles": 22,
+      "lean_state": "Mahjong.Scale12V2.state206"
+    },
+    {
+      "registry_id": 207,
+      "proof_row_id": 207,
+      "source_node_id": 1989,
+      "digits": "0010011110100100121002110310000111",
+      "tiles": 22,
+      "lean_state": "Mahjong.Scale12V2.state207"
+    },
+    {
+      "registry_id": 208,
+      "proof_row_id": 208,
+      "source_node_id": 1990,
+      "digits": "0010011110100000121002110310001111",
+      "tiles": 22,
+      "lean_state": "Mahjong.Scale12V2.state208"
+    },
+    {
+      "registry_id": 209,
+      "proof_row_id": 209,
+      "source_node_id": 1991,
+      "digits": "0010011110100100121001120310000111",
+      "tiles": 22,
+      "lean_state": "Mahjong.Scale12V2.state209"
+    },
+    {
+      "registry_id": 210,
+      "proof_row_id": 210,
+      "source_node_id": 1992,
+      "digits": "0010011110100100120101120310000111",
+      "tiles": 22,
+      "lean_state": "Mahjong.Scale12V2.state210"
+    },
+    {
+      "registry_id": 211,
+      "proof_row_id": 211,
+      "source_node_id": 1993,
+      "digits": "0010011110100100120101210310000111",
+      "tiles": 22,
+      "lean_state": "Mahjong.Scale12V2.state211"
+    },
+    {
+      "registry_id": 212,
+      "proof_row_id": 212,
+      "source_node_id": 1994,
+      "digits": "0010011110011110310100001020011111",
+      "tiles": 22,
+      "lean_state": "Mahjong.Scale12V2.state212"
+    },
+    {
+      "registry_id": 213,
+      "proof_row_id": 213,
+      "source_node_id": 1995,
+      "digits": "0001120310010011110100000120011111",
+      "tiles": 22,
+      "lean_state": "Mahjong.Scale12V2.state213"
+    },
+    {
+      "registry_id": 214,
+      "proof_row_id": 214,
+      "source_node_id": 1996,
+      "digits": "0010011110011110310100010020011111",
+      "tiles": 22,
+      "lean_state": "Mahjong.Scale12V2.state214"
+    },
+    {
+      "registry_id": 215,
+      "proof_row_id": 215,
+      "source_node_id": 1997,
+      "digits": "0010011110100000120101110310011111",
+      "tiles": 22,
+      "lean_state": "Mahjong.Scale12V2.state215"
+    },
+    {
+      "registry_id": 216,
+      "proof_row_id": 216,
+      "source_node_id": 1998,
+      "digits": "0001210310010011110100100020011111",
+      "tiles": 22,
+      "lean_state": "Mahjong.Scale12V2.state216"
+    },
+    {
+      "registry_id": 217,
+      "proof_row_id": 217,
+      "source_node_id": 1999,
+      "digits": "0010011110100000121001110310011111",
+      "tiles": 22,
+      "lean_state": "Mahjong.Scale12V2.state217"
+    },
+    {
+      "registry_id": 218,
+      "proof_row_id": 218,
+      "source_node_id": 2000,
+      "digits": "0002110310010011110100000120011111",
+      "tiles": 22,
+      "lean_state": "Mahjong.Scale12V2.state218"
+    },
+    {
+      "registry_id": 219,
+      "proof_row_id": 219,
+      "source_node_id": 2001,
+      "digits": "0001110310010011110100000021111111",
+      "tiles": 22,
+      "lean_state": "Mahjong.Scale12V2.state219"
+    },
+    {
+      "registry_id": 220,
+      "proof_row_id": 220,
+      "source_node_id": 2002,
+      "digits": "0100001021000011111002110310001111",
+      "tiles": 22,
+      "lean_state": "Mahjong.Scale12V2.state220"
+    },
+    {
+      "registry_id": 221,
+      "proof_row_id": 221,
+      "source_node_id": 2003,
+      "digits": "0100010021000011111002110310001111",
+      "tiles": 22,
+      "lean_state": "Mahjong.Scale12V2.state221"
+    },
+    {
+      "registry_id": 222,
+      "proof_row_id": 222,
+      "source_node_id": 2004,
+      "digits": "0010011110100100021002110310001111",
+      "tiles": 22,
+      "lean_state": "Mahjong.Scale12V2.state222"
+    },
+    {
+      "registry_id": 223,
+      "proof_row_id": 223,
+      "source_node_id": 2005,
+      "digits": "0000011110100000021002110310111111",
+      "tiles": 22,
+      "lean_state": "Mahjong.Scale12V2.state223"
+    },
+    {
+      "registry_id": 224,
+      "proof_row_id": 224,
+      "source_node_id": 2006,
+      "digits": "0100100120101210311000011110000111",
+      "tiles": 22,
+      "lean_state": "Mahjong.Scale12V2.state224"
+    },
+    {
+      "registry_id": 225,
+      "proof_row_id": 225,
+      "source_node_id": 2007,
+      "digits": "0011110310100001021000011110011111",
+      "tiles": 22,
+      "lean_state": "Mahjong.Scale12V2.state225"
+    },
+    {
+      "registry_id": 226,
+      "proof_row_id": 226,
+      "source_node_id": 2008,
+      "digits": "0011110310100010021000011110011111",
+      "tiles": 22,
+      "lean_state": "Mahjong.Scale12V2.state226"
+    },
+    {
+      "registry_id": 227,
+      "proof_row_id": 227,
+      "source_node_id": 2009,
+      "digits": "0010010020011110311000011110011111",
+      "tiles": 22,
+      "lean_state": "Mahjong.Scale12V2.state227"
+    },
+    {
+      "registry_id": 228,
+      "proof_row_id": 228,
+      "source_node_id": 2010,
+      "digits": "0010001020011110310100011110011111",
+      "tiles": 22,
+      "lean_state": "Mahjong.Scale12V2.state228"
+    },
+    {
+      "registry_id": 229,
+      "proof_row_id": 229,
+      "source_node_id": 2011,
+      "digits": "0010000120010011110011110310011111",
+      "tiles": 22,
+      "lean_state": "Mahjong.Scale12V2.state229"
+    },
+    {
+      "registry_id": 230,
+      "proof_row_id": 230,
+      "source_node_id": 2012,
+      "digits": "0010000120011110311000011110011111",
+      "tiles": 22,
+      "lean_state": "Mahjong.Scale12V2.state230"
+    },
+    {
+      "registry_id": 231,
+      "proof_row_id": 231,
+      "source_node_id": 2013,
+      "digits": "0010000120011110310100011110011111",
+      "tiles": 22,
+      "lean_state": "Mahjong.Scale12V2.state231"
+    },
+    {
+      "registry_id": 232,
+      "proof_row_id": 232,
+      "source_node_id": 2014,
+      "digits": "1000011111001000121002110310000111",
+      "tiles": 22,
+      "lean_state": "Mahjong.Scale12V2.state232"
+    },
+    {
+      "registry_id": 233,
+      "proof_row_id": 233,
+      "source_node_id": 2015,
+      "digits": "0001000121000011111002110310001111",
+      "tiles": 22,
+      "lean_state": "Mahjong.Scale12V2.state233"
+    },
+    {
+      "registry_id": 234,
+      "proof_row_id": 234,
+      "source_node_id": 2016,
+      "digits": "0100011110401120011001000120000111",
+      "tiles": 22,
+      "lean_state": "Mahjong.Scale12V2.state234"
+    },
+    {
+      "registry_id": 235,
+      "proof_row_id": 235,
+      "source_node_id": 2017,
+      "digits": "0001000120100011110401120010001111",
+      "tiles": 22,
+      "lean_state": "Mahjong.Scale12V2.state235"
+    },
+    {
+      "registry_id": 236,
+      "proof_row_id": 236,
+      "source_node_id": 2018,
+      "digits": "0010011110401120011001000120000111",
+      "tiles": 22,
+      "lean_state": "Mahjong.Scale12V2.state236"
+    },
+    {
+      "registry_id": 237,
+      "proof_row_id": 237,
+      "source_node_id": 2019,
+      "digits": "0001000120010011110401120010001111",
+      "tiles": 22,
+      "lean_state": "Mahjong.Scale12V2.state237"
+    },
+    {
+      "registry_id": 238,
+      "proof_row_id": 238,
+      "source_node_id": 2020,
+      "digits": "0000011110301120011001000120011111",
+      "tiles": 22,
+      "lean_state": "Mahjong.Scale12V2.state238"
+    },
+    {
+      "registry_id": 239,
+      "proof_row_id": 239,
+      "source_node_id": 2021,
+      "digits": "1000011111000100121001120310000111",
+      "tiles": 22,
+      "lean_state": "Mahjong.Scale12V2.state239"
+    },
+    {
+      "registry_id": 240,
+      "proof_row_id": 240,
+      "source_node_id": 2022,
+      "digits": "0000100120001120311000011110011111",
+      "tiles": 22,
+      "lean_state": "Mahjong.Scale12V2.state240"
+    },
+    {
+      "registry_id": 241,
+      "proof_row_id": 241,
+      "source_node_id": 2023,
+      "digits": "0100011110101120311000100120000111",
+      "tiles": 22,
+      "lean_state": "Mahjong.Scale12V2.state241"
+    },
+    {
+      "registry_id": 242,
+      "proof_row_id": 242,
+      "source_node_id": 2024,
+      "digits": "0010011110101120311000100120000111",
+      "tiles": 22,
+      "lean_state": "Mahjong.Scale12V2.state242"
+    },
+    {
+      "registry_id": 243,
+      "proof_row_id": 243,
+      "source_node_id": 2025,
+      "digits": "0000011110001120311000100120011111",
+      "tiles": 22,
+      "lean_state": "Mahjong.Scale12V2.state243"
+    },
+    {
+      "registry_id": 244,
+      "proof_row_id": 244,
+      "source_node_id": 2026,
+      "digits": "0000011110000100121001120310011111",
+      "tiles": 22,
+      "lean_state": "Mahjong.Scale12V2.state244"
+    },
+    {
+      "registry_id": 245,
+      "proof_row_id": 245,
+      "source_node_id": 2027,
+      "digits": "0010011110100100120101120300001111",
+      "tiles": 22,
+      "lean_state": "Mahjong.Scale12V2.state245"
+    },
+    {
+      "registry_id": 246,
+      "proof_row_id": 246,
+      "source_node_id": 2028,
+      "digits": "0010011110311110011000010020011111",
+      "tiles": 22,
+      "lean_state": "Mahjong.Scale12V2.state246"
+    },
+    {
+      "registry_id": 247,
+      "proof_row_id": 247,
+      "source_node_id": 2029,
+      "digits": "0010011110100010020311110010011111",
+      "tiles": 22,
+      "lean_state": "Mahjong.Scale12V2.state247"
+    },
+    {
+      "registry_id": 248,
+      "proof_row_id": 248,
+      "source_node_id": 2030,
+      "digits": "0010010020311110011000011110011111",
+      "tiles": 22,
+      "lean_state": "Mahjong.Scale12V2.state248"
+    },
+    {
+      "registry_id": 249,
+      "proof_row_id": 249,
+      "source_node_id": 2031,
+      "digits": "0100010020100011110311110010011111",
+      "tiles": 22,
+      "lean_state": "Mahjong.Scale12V2.state249"
+    },
+    {
+      "registry_id": 250,
+      "proof_row_id": 250,
+      "source_node_id": 2032,
+      "digits": "0010010020010011110311110010011111",
+      "tiles": 22,
+      "lean_state": "Mahjong.Scale12V2.state250"
+    },
+    {
+      "registry_id": 251,
+      "proof_row_id": 251,
+      "source_node_id": 2033,
+      "digits": "1000011111000100121002110310000111",
+      "tiles": 22,
+      "lean_state": "Mahjong.Scale12V2.state251"
+    },
+    {
+      "registry_id": 252,
+      "proof_row_id": 252,
+      "source_node_id": 2034,
+      "digits": "0100011110401120011000100120000111",
+      "tiles": 22,
+      "lean_state": "Mahjong.Scale12V2.state252"
+    },
+    {
+      "registry_id": 253,
+      "proof_row_id": 253,
+      "source_node_id": 2035,
+      "digits": "0010011110401120011000100120000111",
+      "tiles": 22,
+      "lean_state": "Mahjong.Scale12V2.state253"
+    },
+    {
+      "registry_id": 254,
+      "proof_row_id": 254,
+      "source_node_id": 2036,
+      "digits": "0000011110301120011000100120011111",
+      "tiles": 22,
+      "lean_state": "Mahjong.Scale12V2.state254"
+    },
+    {
+      "registry_id": 255,
+      "proof_row_id": 255,
+      "source_node_id": 2037,
+      "digits": "0100100120401120011000011110000111",
+      "tiles": 22,
+      "lean_state": "Mahjong.Scale12V2.state255"
+    },
+    {
+      "registry_id": 256,
+      "proof_row_id": 256,
+      "source_node_id": 2038,
+      "digits": "0010011110100100120401120010000111",
+      "tiles": 22,
+      "lean_state": "Mahjong.Scale12V2.state256"
+    },
+    {
+      "registry_id": 257,
+      "proof_row_id": 257,
+      "source_node_id": 2039,
+      "digits": "0100011110100100120401120010000111",
+      "tiles": 22,
+      "lean_state": "Mahjong.Scale12V2.state257"
+    },
+    {
+      "registry_id": 258,
+      "proof_row_id": 258,
+      "source_node_id": 2040,
+      "digits": "0010000120311110011000011110011111",
+      "tiles": 22,
+      "lean_state": "Mahjong.Scale12V2.state258"
+    },
+    {
+      "registry_id": 259,
+      "proof_row_id": 259,
+      "source_node_id": 2041,
+      "digits": "0010000120100011110311110010011111",
+      "tiles": 22,
+      "lean_state": "Mahjong.Scale12V2.state259"
+    },
+    {
+      "registry_id": 260,
+      "proof_row_id": 260,
+      "source_node_id": 2042,
+      "digits": "0010000120010011110311110010011111",
+      "tiles": 22,
+      "lean_state": "Mahjong.Scale12V2.state260"
+    },
+    {
+      "registry_id": 261,
+      "proof_row_id": 261,
+      "source_node_id": 2043,
+      "digits": "0010000121000011111002110310001111",
+      "tiles": 22,
+      "lean_state": "Mahjong.Scale12V2.state261"
+    },
+    {
+      "registry_id": 262,
+      "proof_row_id": 262,
+      "source_node_id": 2044,
+      "digits": "0000100120301120011000011110011111",
+      "tiles": 22,
+      "lean_state": "Mahjong.Scale12V2.state262"
+    },
+    {
+      "registry_id": 263,
+      "proof_row_id": 263,
+      "source_node_id": 2045,
+      "digits": "0100011110401210011001000120000111",
+      "tiles": 22,
+      "lean_state": "Mahjong.Scale12V2.state263"
+    },
+    {
+      "registry_id": 264,
+      "proof_row_id": 264,
+      "source_node_id": 2046,
+      "digits": "0100011110401110011000000120011111",
+      "tiles": 22,
+      "lean_state": "Mahjong.Scale12V2.state264"
+    },
+    {
+      "registry_id": 265,
+      "proof_row_id": 265,
+      "source_node_id": 2047,
+      "digits": "0100000120100011110302110010011111",
+      "tiles": 22,
+      "lean_state": "Mahjong.Scale12V2.state265"
+    },
+    {
+      "registry_id": 266,
+      "proof_row_id": 266,
+      "source_node_id": 2048,
+      "digits": "0100011110100100120401210010000111",
+      "tiles": 22,
+      "lean_state": "Mahjong.Scale12V2.state266"
+    },
+    {
+      "registry_id": 267,
+      "proof_row_id": 267,
+      "source_node_id": 2049,
+      "digits": "0000100120100011110401110010011111",
+      "tiles": 22,
+      "lean_state": "Mahjong.Scale12V2.state267"
+    },
+    {
+      "registry_id": 268,
+      "proof_row_id": 268,
+      "source_node_id": 2050,
+      "digits": "0100000120100011110301210010011111",
+      "tiles": 22,
+      "lean_state": "Mahjong.Scale12V2.state268"
+    },
+    {
+      "registry_id": 269,
+      "proof_row_id": 269,
+      "source_node_id": 2051,
+      "digits": "0001000120100011110401110010011111",
+      "tiles": 22,
+      "lean_state": "Mahjong.Scale12V2.state269"
+    },
+    {
+      "registry_id": 270,
+      "proof_row_id": 270,
+      "source_node_id": 2052,
+      "digits": "0100000120100011110301120010011111",
+      "tiles": 22,
+      "lean_state": "Mahjong.Scale12V2.state270"
+    },
+    {
+      "registry_id": 271,
+      "proof_row_id": 271,
+      "source_node_id": 2053,
+      "digits": "0000000120100011110301110011111111",
+      "tiles": 22,
+      "lean_state": "Mahjong.Scale12V2.state271"
+    },
+    {
+      "registry_id": 272,
+      "proof_row_id": 272,
+      "source_node_id": 2054,
+      "digits": "0010011110401210011000100120000111",
+      "tiles": 22,
+      "lean_state": "Mahjong.Scale12V2.state272"
+    },
+    {
+      "registry_id": 273,
+      "proof_row_id": 273,
+      "source_node_id": 2055,
+      "digits": "0010011110401110011000000120011111",
+      "tiles": 22,
+      "lean_state": "Mahjong.Scale12V2.state273"
+    },
+    {
+      "registry_id": 274,
+      "proof_row_id": 274,
+      "source_node_id": 2056,
+      "digits": "0010011110401210011001000120000111",
+      "tiles": 22,
+      "lean_state": "Mahjong.Scale12V2.state274"
+    },
+    {
+      "registry_id": 275,
+      "proof_row_id": 275,
+      "source_node_id": 2057,
+      "digits": "0000100120010011110301210010011111",
+      "tiles": 22,
+      "lean_state": "Mahjong.Scale12V2.state275"
+    },
+    {
+      "registry_id": 276,
+      "proof_row_id": 276,
+      "source_node_id": 2058,
+      "digits": "0010011110100100120401210010000111",
+      "tiles": 22,
+      "lean_state": "Mahjong.Scale12V2.state276"
+    },
+    {
+      "registry_id": 277,
+      "proof_row_id": 277,
+      "source_node_id": 2059,
+      "digits": "0010011110100000120401110010011111",
+      "tiles": 22,
+      "lean_state": "Mahjong.Scale12V2.state277"
+    },
+    {
+      "registry_id": 278,
+      "proof_row_id": 278,
+      "source_node_id": 2060,
+      "digits": "0010011110100000120302110010011111",
+      "tiles": 22,
+      "lean_state": "Mahjong.Scale12V2.state278"
+    },
+    {
+      "registry_id": 279,
+      "proof_row_id": 279,
+      "source_node_id": 2061,
+      "digits": "0001000120010011110401110010011111",
+      "tiles": 22,
+      "lean_state": "Mahjong.Scale12V2.state279"
+    },
+    {
+      "registry_id": 280,
+      "proof_row_id": 280,
+      "source_node_id": 2062,
+      "digits": "0010011110100000120301120010011111",
+      "tiles": 22,
+      "lean_state": "Mahjong.Scale12V2.state280"
+    },
+    {
+      "registry_id": 281,
+      "proof_row_id": 281,
+      "source_node_id": 2063,
+      "digits": "0000000120010011110301110011111111",
+      "tiles": 22,
+      "lean_state": "Mahjong.Scale12V2.state281"
+    },
+    {
+      "registry_id": 282,
+      "proof_row_id": 282,
+      "source_node_id": 2065,
+      "digits": "0010000121000011111001120310001111",
+      "tiles": 22,
+      "lean_state": "Mahjong.Scale12V2.state282"
+    },
+    {
+      "registry_id": 283,
+      "proof_row_id": 283,
+      "source_node_id": 2066,
+      "digits": "0100100120401210011000011110000111",
+      "tiles": 22,
+      "lean_state": "Mahjong.Scale12V2.state283"
+    },
+    {
+      "registry_id": 284,
+      "proof_row_id": 284,
+      "source_node_id": 2067,
+      "digits": "1000011111000100121001210310000111",
+      "tiles": 22,
+      "lean_state": "Mahjong.Scale12V2.state284"
+    },
+    {
+      "registry_id": 285,
+      "proof_row_id": 285,
+      "source_node_id": 2068,
+      "digits": "0000100120301210011000011110011111",
+      "tiles": 22,
+      "lean_state": "Mahjong.Scale12V2.state285"
+    },
+    {
+      "registry_id": 286,
+      "proof_row_id": 286,
+      "source_node_id": 2069,
+      "digits": "0100011110401210011000100120000111",
+      "tiles": 22,
+      "lean_state": "Mahjong.Scale12V2.state286"
+    },
+    {
+      "registry_id": 287,
+      "proof_row_id": 287,
+      "source_node_id": 2070,
+      "digits": "0000011110301210011000100120011111",
+      "tiles": 22,
+      "lean_state": "Mahjong.Scale12V2.state287"
+    },
+    {
+      "registry_id": 288,
+      "proof_row_id": 288,
+      "source_node_id": 2071,
+      "digits": "0000011110000100121001210310011111",
+      "tiles": 22,
+      "lean_state": "Mahjong.Scale12V2.state288"
+    },
+    {
+      "registry_id": 289,
+      "proof_row_id": 289,
+      "source_node_id": 2072,
+      "digits": "0311110011000011111001000120001111",
+      "tiles": 22,
+      "lean_state": "Mahjong.Scale12V2.state289"
+    },
+    {
+      "registry_id": 290,
+      "proof_row_id": 290,
+      "source_node_id": 2073,
+      "digits": "1000011111001000121001210310000111",
+      "tiles": 22,
+      "lean_state": "Mahjong.Scale12V2.state290"
+    },
+    {
+      "registry_id": 291,
+      "proof_row_id": 291,
+      "source_node_id": 2074,
+      "digits": "0000011110301210011001000120011111",
+      "tiles": 22,
+      "lean_state": "Mahjong.Scale12V2.state291"
+    },
+    {
+      "registry_id": 292,
+      "proof_row_id": 292,
+      "source_node_id": 2075,
+      "digits": "0100001020311110011000011110011111",
+      "tiles": 22,
+      "lean_state": "Mahjong.Scale12V2.state292"
+    },
+    {
+      "registry_id": 293,
+      "proof_row_id": 293,
+      "source_node_id": 2076,
+      "digits": "0311110011000011111000100120001111",
+      "tiles": 22,
+      "lean_state": "Mahjong.Scale12V2.state293"
+    },
+    {
+      "registry_id": 294,
+      "proof_row_id": 294,
+      "source_node_id": 2077,
+      "digits": "0100011110100100020401110010011111",
+      "tiles": 22,
+      "lean_state": "Mahjong.Scale12V2.state294"
+    },
+    {
+      "registry_id": 295,
+      "proof_row_id": 295,
+      "source_node_id": 2078,
+      "digits": "0100001020100011110311110010011111",
+      "tiles": 22,
+      "lean_state": "Mahjong.Scale12V2.state295"
+    },
+    {
+      "registry_id": 296,
+      "proof_row_id": 296,
+      "source_node_id": 2079,
+      "digits": "0100000020100011110301110011111111",
+      "tiles": 22,
+      "lean_state": "Mahjong.Scale12V2.state296"
+    },
+    {
+      "registry_id": 297,
+      "proof_row_id": 297,
+      "source_node_id": 2080,
+      "digits": "0100011110100100120101210400000111",
+      "tiles": 22,
+      "lean_state": "Mahjong.Scale12V2.state297"
+    },
+    {
+      "registry_id": 298,
+      "proof_row_id": 298,
+      "source_node_id": 2081,
+      "digits": "0010011110100100020301210010011111",
+      "tiles": 22,
+      "lean_state": "Mahjong.Scale12V2.state298"
+    },
+    {
+      "registry_id": 299,
+      "proof_row_id": 299,
+      "source_node_id": 2082,
+      "digits": "0010011110100001020311110010011111",
+      "tiles": 22,
+      "lean_state": "Mahjong.Scale12V2.state299"
+    },
+    {
+      "registry_id": 300,
+      "proof_row_id": 300,
+      "source_node_id": 2083,
+      "digits": "0010011110100000020301110011111111",
+      "tiles": 22,
+      "lean_state": "Mahjong.Scale12V2.state300"
+    },
+    {
+      "registry_id": 301,
+      "proof_row_id": 301,
+      "source_node_id": 2084,
+      "digits": "0010011110100100120101210400000111",
+      "tiles": 22,
+      "lean_state": "Mahjong.Scale12V2.state301"
+    },
+    {
+      "registry_id": 302,
+      "proof_row_id": 302,
+      "source_node_id": 2085,
+      "digits": "0101210401000011111000100120000111",
+      "tiles": 22,
+      "lean_state": "Mahjong.Scale12V2.state302"
+    },
+    {
+      "registry_id": 303,
+      "proof_row_id": 303,
+      "source_node_id": 2086,
+      "digits": "0100100120101210401000011110000111",
+      "tiles": 22,
+      "lean_state": "Mahjong.Scale12V2.state303"
+    },
+    {
+      "registry_id": 304,
+      "proof_row_id": 304,
+      "source_node_id": 2087,
+      "digits": "0010011110101210401000100120000111",
+      "tiles": 22,
+      "lean_state": "Mahjong.Scale12V2.state304"
+    },
+    {
+      "registry_id": 305,
+      "proof_row_id": 305,
+      "source_node_id": 2088,
+      "digits": "0100011110101210311000100120000111",
+      "tiles": 22,
+      "lean_state": "Mahjong.Scale12V2.state305"
+    },
+    {
+      "registry_id": 306,
+      "proof_row_id": 306,
+      "source_node_id": 2089,
+      "digits": "0010011110101210311000100120000111",
+      "tiles": 22,
+      "lean_state": "Mahjong.Scale12V2.state306"
+    },
+    {
+      "registry_id": 307,
+      "proof_row_id": 307,
+      "source_node_id": 2090,
+      "digits": "0100011110101210401000100120000111",
+      "tiles": 22,
+      "lean_state": "Mahjong.Scale12V2.state307"
+    },
+    {
+      "registry_id": 308,
+      "proof_row_id": 308,
+      "source_node_id": 2091,
+      "digits": "0002110400010011110100100120001111",
+      "tiles": 22,
+      "lean_state": "Mahjong.Scale12V2.state308"
+    },
+    {
+      "registry_id": 309,
+      "proof_row_id": 309,
+      "source_node_id": 2092,
+      "digits": "0100011110101210401001000120000111",
+      "tiles": 22,
+      "lean_state": "Mahjong.Scale12V2.state309"
+    },
+    {
+      "registry_id": 310,
+      "proof_row_id": 310,
+      "source_node_id": 2093,
+      "digits": "0010011110101210311001000120000111",
+      "tiles": 22,
+      "lean_state": "Mahjong.Scale12V2.state310"
+    },
+    {
+      "registry_id": 311,
+      "proof_row_id": 311,
+      "source_node_id": 2094,
+      "digits": "0001210400010011111001000120001111",
+      "tiles": 22,
+      "lean_state": "Mahjong.Scale12V2.state311"
+    },
+    {
+      "registry_id": 312,
+      "proof_row_id": 312,
+      "source_node_id": 2095,
+      "digits": "0010011110101210401001000120000111",
+      "tiles": 22,
+      "lean_state": "Mahjong.Scale12V2.state312"
+    },
+    {
+      "registry_id": 313,
+      "proof_row_id": 313,
+      "source_node_id": 2096,
+      "digits": "0101210401000011111001000120000111",
+      "tiles": 22,
+      "lean_state": "Mahjong.Scale12V2.state313"
+    },
+    {
+      "registry_id": 314,
+      "proof_row_id": 314,
+      "source_node_id": 2097,
+      "digits": "0001000120101210401000011110001111",
+      "tiles": 22,
+      "lean_state": "Mahjong.Scale12V2.state314"
+    },
+    {
+      "registry_id": 315,
+      "proof_row_id": 315,
+      "source_node_id": 2098,
+      "digits": "0011110311000011111001000120001111",
+      "tiles": 22,
+      "lean_state": "Mahjong.Scale12V2.state315"
+    },
+    {
+      "registry_id": 316,
+      "proof_row_id": 316,
+      "source_node_id": 1404,
+      "digits": "0311110011000011111001001020000011",
+      "tiles": 20,
+      "lean_state": "Mahjong.Scale12V2.state316"
+    },
+    {
+      "registry_id": 317,
+      "proof_row_id": 317,
+      "source_node_id": 1405,
+      "digits": "0100011110401120011001001020000001",
+      "tiles": 20,
+      "lean_state": "Mahjong.Scale12V2.state317"
+    },
+    {
+      "registry_id": 318,
+      "proof_row_id": 318,
+      "source_node_id": 1406,
+      "digits": "0100011110101210401001001020000001",
+      "tiles": 20,
+      "lean_state": "Mahjong.Scale12V2.state318"
+    },
+    {
+      "registry_id": 319,
+      "proof_row_id": 319,
+      "source_node_id": 1407,
+      "digits": "0002110400100011111001001020000011",
+      "tiles": 20,
+      "lean_state": "Mahjong.Scale12V2.state319"
+    },
+    {
+      "registry_id": 320,
+      "proof_row_id": 320,
+      "source_node_id": 1408,
+      "digits": "0010011110401210011001001020000001",
+      "tiles": 20,
+      "lean_state": "Mahjong.Scale12V2.state320"
+    },
+    {
+      "registry_id": 321,
+      "proof_row_id": 321,
+      "source_node_id": 1409,
+      "digits": "0010011110101210401001001020000001",
+      "tiles": 20,
+      "lean_state": "Mahjong.Scale12V2.state321"
+    },
+    {
+      "registry_id": 322,
+      "proof_row_id": 322,
+      "source_node_id": 1410,
+      "digits": "0010011110101210311001001020000001",
+      "tiles": 20,
+      "lean_state": "Mahjong.Scale12V2.state322"
+    },
+    {
+      "registry_id": 323,
+      "proof_row_id": 323,
+      "source_node_id": 1411,
+      "digits": "0001210400010011111001001020000011",
+      "tiles": 20,
+      "lean_state": "Mahjong.Scale12V2.state323"
+    },
+    {
+      "registry_id": 324,
+      "proof_row_id": 324,
+      "source_node_id": 1412,
+      "digits": "1000011111001001021002110310000001",
+      "tiles": 20,
+      "lean_state": "Mahjong.Scale12V2.state324"
+    },
+    {
+      "registry_id": 325,
+      "proof_row_id": 325,
+      "source_node_id": 1413,
+      "digits": "0010011110401120011001001020000001",
+      "tiles": 20,
+      "lean_state": "Mahjong.Scale12V2.state325"
+    },
+    {
+      "registry_id": 326,
+      "proof_row_id": 326,
+      "source_node_id": 1414,
+      "digits": "0000011110301120011001001020000111",
+      "tiles": 20,
+      "lean_state": "Mahjong.Scale12V2.state326"
+    },
+    {
+      "registry_id": 327,
+      "proof_row_id": 327,
+      "source_node_id": 1415,
+      "digits": "0101210401000011111001001020000001",
+      "tiles": 20,
+      "lean_state": "Mahjong.Scale12V2.state327"
+    },
+    {
+      "registry_id": 328,
+      "proof_row_id": 328,
+      "source_node_id": 1416,
+      "digits": "0101110401000011111001001020000011",
+      "tiles": 20,
+      "lean_state": "Mahjong.Scale12V2.state328"
+    },
+    {
+      "registry_id": 329,
+      "proof_row_id": 329,
+      "source_node_id": 1417,
+      "digits": "0011110311000011111001001020000011",
+      "tiles": 20,
+      "lean_state": "Mahjong.Scale12V2.state329"
+    },
+    {
+      "registry_id": 330,
+      "proof_row_id": 330,
+      "source_node_id": 1418,
+      "digits": "0002110400010011111001001020000011",
+      "tiles": 20,
+      "lean_state": "Mahjong.Scale12V2.state330"
+    },
+    {
+      "registry_id": 331,
+      "proof_row_id": 331,
+      "source_node_id": 1423,
+      "digits": "0002110311000011111001001020000011",
+      "tiles": 20,
+      "lean_state": "Mahjong.Scale12V2.state331"
+    },
+    {
+      "registry_id": 332,
+      "proof_row_id": 332,
+      "source_node_id": 1424,
+      "digits": "0100001021000011111001120310000011",
+      "tiles": 20,
+      "lean_state": "Mahjong.Scale12V2.state332"
+    },
+    {
+      "registry_id": 333,
+      "proof_row_id": 333,
+      "source_node_id": 1425,
+      "digits": "0100100120101120311000011110000001",
+      "tiles": 20,
+      "lean_state": "Mahjong.Scale12V2.state333"
+    },
+    {
+      "registry_id": 334,
+      "proof_row_id": 334,
+      "source_node_id": 1426,
+      "digits": "0100010021000011111001120310000011",
+      "tiles": 20,
+      "lean_state": "Mahjong.Scale12V2.state334"
+    },
+    {
+      "registry_id": 335,
+      "proof_row_id": 335,
+      "source_node_id": 1427,
+      "digits": "0100100020101120311000011110000011",
+      "tiles": 20,
+      "lean_state": "Mahjong.Scale12V2.state335"
+    },
+    {
+      "registry_id": 336,
+      "proof_row_id": 336,
+      "source_node_id": 1428,
+      "digits": "0100000120101120311000011110000011",
+      "tiles": 20,
+      "lean_state": "Mahjong.Scale12V2.state336"
+    },
+    {
+      "registry_id": 337,
+      "proof_row_id": 337,
+      "source_node_id": 1429,
+      "digits": "0001120310100000021000011110001111",
+      "tiles": 20,
+      "lean_state": "Mahjong.Scale12V2.state337"
+    },
+    {
+      "registry_id": 338,
+      "proof_row_id": 338,
+      "source_node_id": 1430,
+      "digits": "0100011110100100121001210310000001",
+      "tiles": 20,
+      "lean_state": "Mahjong.Scale12V2.state338"
+    },
+    {
+      "registry_id": 339,
+      "proof_row_id": 339,
+      "source_node_id": 1431,
+      "digits": "0100000120100011111002110310000011",
+      "tiles": 20,
+      "lean_state": "Mahjong.Scale12V2.state339"
+    },
+    {
+      "registry_id": 340,
+      "proof_row_id": 340,
+      "source_node_id": 1432,
+      "digits": "0100011110100100121001120310000001",
+      "tiles": 20,
+      "lean_state": "Mahjong.Scale12V2.state340"
+    },
+    {
+      "registry_id": 341,
+      "proof_row_id": 341,
+      "source_node_id": 1433,
+      "digits": "0100011110100100120101120310000001",
+      "tiles": 20,
+      "lean_state": "Mahjong.Scale12V2.state341"
+    },
+    {
+      "registry_id": 342,
+      "proof_row_id": 342,
+      "source_node_id": 1434,
+      "digits": "0100011110100100120101210310000001",
+      "tiles": 20,
+      "lean_state": "Mahjong.Scale12V2.state342"
+    },
+    {
+      "registry_id": 343,
+      "proof_row_id": 343,
+      "source_node_id": 1435,
+      "digits": "0100000120100011110101110310000111",
+      "tiles": 20,
+      "lean_state": "Mahjong.Scale12V2.state343"
+    },
+    {
+      "registry_id": 344,
+      "proof_row_id": 344,
+      "source_node_id": 1436,
+      "digits": "0011110310100001020100011110000111",
+      "tiles": 20,
+      "lean_state": "Mahjong.Scale12V2.state344"
+    },
+    {
+      "registry_id": 345,
+      "proof_row_id": 345,
+      "source_node_id": 1437,
+      "digits": "0100011110100100121002110310000001",
+      "tiles": 20,
+      "lean_state": "Mahjong.Scale12V2.state345"
+    },
+    {
+      "registry_id": 346,
+      "proof_row_id": 346,
+      "source_node_id": 1438,
+      "digits": "0001210310100011110100100020000111",
+      "tiles": 20,
+      "lean_state": "Mahjong.Scale12V2.state346"
+    },
+    {
+      "registry_id": 347,
+      "proof_row_id": 347,
+      "source_node_id": 1439,
+      "digits": "0001120310100000120100011110000111",
+      "tiles": 20,
+      "lean_state": "Mahjong.Scale12V2.state347"
+    },
+    {
+      "registry_id": 348,
+      "proof_row_id": 348,
+      "source_node_id": 1440,
+      "digits": "0011110310100010020100011110000111",
+      "tiles": 20,
+      "lean_state": "Mahjong.Scale12V2.state348"
+    },
+    {
+      "registry_id": 349,
+      "proof_row_id": 349,
+      "source_node_id": 1441,
+      "digits": "0100000120100011111001110310000111",
+      "tiles": 20,
+      "lean_state": "Mahjong.Scale12V2.state349"
+    },
+    {
+      "registry_id": 350,
+      "proof_row_id": 350,
+      "source_node_id": 1442,
+      "digits": "0002110310100000120100011110000111",
+      "tiles": 20,
+      "lean_state": "Mahjong.Scale12V2.state350"
+    },
+    {
+      "registry_id": 351,
+      "proof_row_id": 351,
+      "source_node_id": 1443,
+      "digits": "0001110310100000020100011110011111",
+      "tiles": 20,
+      "lean_state": "Mahjong.Scale12V2.state351"
+    },
+    {
+      "registry_id": 352,
+      "proof_row_id": 352,
+      "source_node_id": 1444,
+      "digits": "0010011110100100121001210310000001",
+      "tiles": 20,
+      "lean_state": "Mahjong.Scale12V2.state352"
+    },
+    {
+      "registry_id": 353,
+      "proof_row_id": 353,
+      "source_node_id": 1445,
+      "digits": "0010011110100000121002110310000011",
+      "tiles": 20,
+      "lean_state": "Mahjong.Scale12V2.state353"
+    },
+    {
+      "registry_id": 354,
+      "proof_row_id": 354,
+      "source_node_id": 1446,
+      "digits": "0010011110100100121001120310000001",
+      "tiles": 20,
+      "lean_state": "Mahjong.Scale12V2.state354"
+    },
+    {
+      "registry_id": 355,
+      "proof_row_id": 355,
+      "source_node_id": 1447,
+      "digits": "0010011110100100120101120310000001",
+      "tiles": 20,
+      "lean_state": "Mahjong.Scale12V2.state355"
+    },
+    {
+      "registry_id": 356,
+      "proof_row_id": 356,
+      "source_node_id": 1448,
+      "digits": "0010011110100100020101210310000011",
+      "tiles": 20,
+      "lean_state": "Mahjong.Scale12V2.state356"
+    },
+    {
+      "registry_id": 357,
+      "proof_row_id": 357,
+      "source_node_id": 1449,
+      "digits": "0010011110011110310100001020000111",
+      "tiles": 20,
+      "lean_state": "Mahjong.Scale12V2.state357"
+    },
+    {
+      "registry_id": 358,
+      "proof_row_id": 358,
+      "source_node_id": 1450,
+      "digits": "0010011110100100121002110310000001",
+      "tiles": 20,
+      "lean_state": "Mahjong.Scale12V2.state358"
+    },
+    {
+      "registry_id": 359,
+      "proof_row_id": 359,
+      "source_node_id": 1451,
+      "digits": "0001120310010011110100000120000111",
+      "tiles": 20,
+      "lean_state": "Mahjong.Scale12V2.state359"
+    },
+    {
+      "registry_id": 360,
+      "proof_row_id": 360,
+      "source_node_id": 1452,
+      "digits": "0010011110011110310100010020000111",
+      "tiles": 20,
+      "lean_state": "Mahjong.Scale12V2.state360"
+    },
+    {
+      "registry_id": 361,
+      "proof_row_id": 361,
+      "source_node_id": 1453,
+      "digits": "0010011110100000121001110310000111",
+      "tiles": 20,
+      "lean_state": "Mahjong.Scale12V2.state361"
+    },
+    {
+      "registry_id": 362,
+      "proof_row_id": 362,
+      "source_node_id": 1454,
+      "digits": "0010011110100000120101110310000111",
+      "tiles": 20,
+      "lean_state": "Mahjong.Scale12V2.state362"
+    },
+    {
+      "registry_id": 363,
+      "proof_row_id": 363,
+      "source_node_id": 1455,
+      "digits": "0002110310010011110100000120000111",
+      "tiles": 20,
+      "lean_state": "Mahjong.Scale12V2.state363"
+    },
+    {
+      "registry_id": 364,
+      "proof_row_id": 364,
+      "source_node_id": 1456,
+      "digits": "0001210310010011110100100020000111",
+      "tiles": 20,
+      "lean_state": "Mahjong.Scale12V2.state364"
+    },
+    {
+      "registry_id": 365,
+      "proof_row_id": 365,
+      "source_node_id": 1457,
+      "digits": "0001110310010011110100000020011111",
+      "tiles": 20,
+      "lean_state": "Mahjong.Scale12V2.state365"
+    },
+    {
+      "registry_id": 366,
+      "proof_row_id": 366,
+      "source_node_id": 1458,
+      "digits": "0100001021000011111002110310000011",
+      "tiles": 20,
+      "lean_state": "Mahjong.Scale12V2.state366"
+    },
+    {
+      "registry_id": 367,
+      "proof_row_id": 367,
+      "source_node_id": 1459,
+      "digits": "0100010021000011111002110310000011",
+      "tiles": 20,
+      "lean_state": "Mahjong.Scale12V2.state367"
+    },
+    {
+      "registry_id": 368,
+      "proof_row_id": 368,
+      "source_node_id": 1460,
+      "digits": "0010011110100100021002110310000011",
+      "tiles": 20,
+      "lean_state": "Mahjong.Scale12V2.state368"
+    },
+    {
+      "registry_id": 369,
+      "proof_row_id": 369,
+      "source_node_id": 1461,
+      "digits": "0000011110100000021002110310001111",
+      "tiles": 20,
+      "lean_state": "Mahjong.Scale12V2.state369"
+    },
+    {
+      "registry_id": 370,
+      "proof_row_id": 370,
+      "source_node_id": 1462,
+      "digits": "0100100120101210311000011110000001",
+      "tiles": 20,
+      "lean_state": "Mahjong.Scale12V2.state370"
+    },
+    {
+      "registry_id": 371,
+      "proof_row_id": 371,
+      "source_node_id": 1463,
+      "digits": "0011110310100001021000011110000111",
+      "tiles": 20,
+      "lean_state": "Mahjong.Scale12V2.state371"
+    },
+    {
+      "registry_id": 372,
+      "proof_row_id": 372,
+      "source_node_id": 1464,
+      "digits": "0010011110100100120101210310000001",
+      "tiles": 20,
+      "lean_state": "Mahjong.Scale12V2.state372"
+    },
+    {
+      "registry_id": 373,
+      "proof_row_id": 373,
+      "source_node_id": 1465,
+      "digits": "0011110310100010021000011110000111",
+      "tiles": 20,
+      "lean_state": "Mahjong.Scale12V2.state373"
+    },
+    {
+      "registry_id": 374,
+      "proof_row_id": 374,
+      "source_node_id": 1466,
+      "digits": "0010010020011110311000011110000111",
+      "tiles": 20,
+      "lean_state": "Mahjong.Scale12V2.state374"
+    },
+    {
+      "registry_id": 375,
+      "proof_row_id": 375,
+      "source_node_id": 1467,
+      "digits": "0010001020011110310100011110000111",
+      "tiles": 20,
+      "lean_state": "Mahjong.Scale12V2.state375"
+    },
+    {
+      "registry_id": 376,
+      "proof_row_id": 376,
+      "source_node_id": 1468,
+      "digits": "0010000120010011110011110310000111",
+      "tiles": 20,
+      "lean_state": "Mahjong.Scale12V2.state376"
+    },
+    {
+      "registry_id": 377,
+      "proof_row_id": 377,
+      "source_node_id": 1469,
+      "digits": "0010000120011110311000011110000111",
+      "tiles": 20,
+      "lean_state": "Mahjong.Scale12V2.state377"
+    },
+    {
+      "registry_id": 378,
+      "proof_row_id": 378,
+      "source_node_id": 1470,
+      "digits": "0010000120011110310100011110000111",
+      "tiles": 20,
+      "lean_state": "Mahjong.Scale12V2.state378"
+    },
+    {
+      "registry_id": 379,
+      "proof_row_id": 379,
+      "source_node_id": 1471,
+      "digits": "1000011111001000121002110310000001",
+      "tiles": 20,
+      "lean_state": "Mahjong.Scale12V2.state379"
+    },
+    {
+      "registry_id": 380,
+      "proof_row_id": 380,
+      "source_node_id": 1472,
+      "digits": "0001000121000011111002110310000011",
+      "tiles": 20,
+      "lean_state": "Mahjong.Scale12V2.state380"
+    },
+    {
+      "registry_id": 381,
+      "proof_row_id": 381,
+      "source_node_id": 1473,
+      "digits": "0001000120002110311000011110000111",
+      "tiles": 20,
+      "lean_state": "Mahjong.Scale12V2.state381"
+    },
+    {
+      "registry_id": 382,
+      "proof_row_id": 382,
+      "source_node_id": 1474,
+      "digits": "0100011110401120011001000120000001",
+      "tiles": 20,
+      "lean_state": "Mahjong.Scale12V2.state382"
+    },
+    {
+      "registry_id": 383,
+      "proof_row_id": 383,
+      "source_node_id": 1475,
+      "digits": "0001000120100011110401120010000011",
+      "tiles": 20,
+      "lean_state": "Mahjong.Scale12V2.state383"
+    },
+    {
+      "registry_id": 384,
+      "proof_row_id": 384,
+      "source_node_id": 1476,
+      "digits": "0001000120002110400100011110000111",
+      "tiles": 20,
+      "lean_state": "Mahjong.Scale12V2.state384"
+    },
+    {
+      "registry_id": 385,
+      "proof_row_id": 385,
+      "source_node_id": 1477,
+      "digits": "0010011110401120011001000120000001",
+      "tiles": 20,
+      "lean_state": "Mahjong.Scale12V2.state385"
+    },
+    {
+      "registry_id": 386,
+      "proof_row_id": 386,
+      "source_node_id": 1478,
+      "digits": "0001000120002110400010011110000111",
+      "tiles": 20,
+      "lean_state": "Mahjong.Scale12V2.state386"
+    },
+    {
+      "registry_id": 387,
+      "proof_row_id": 387,
+      "source_node_id": 1479,
+      "digits": "0001000120010011110401120010000011",
+      "tiles": 20,
+      "lean_state": "Mahjong.Scale12V2.state387"
+    },
+    {
+      "registry_id": 388,
+      "proof_row_id": 388,
+      "source_node_id": 1480,
+      "digits": "0000011110301120011001000120000111",
+      "tiles": 20,
+      "lean_state": "Mahjong.Scale12V2.state388"
+    },
+    {
+      "registry_id": 389,
+      "proof_row_id": 389,
+      "source_node_id": 1481,
+      "digits": "0000011110001000120301120010001111",
+      "tiles": 20,
+      "lean_state": "Mahjong.Scale12V2.state389"
+    },
+    {
+      "registry_id": 390,
+      "proof_row_id": 390,
+      "source_node_id": 1482,
+      "digits": "1000011111000100121001120310000001",
+      "tiles": 20,
+      "lean_state": "Mahjong.Scale12V2.state390"
+    },
+    {
+      "registry_id": 391,
+      "proof_row_id": 391,
+      "source_node_id": 1483,
+      "digits": "0000100120001120311000011110000111",
+      "tiles": 20,
+      "lean_state": "Mahjong.Scale12V2.state391"
+    },
+    {
+      "registry_id": 392,
+      "proof_row_id": 392,
+      "source_node_id": 1484,
+      "digits": "0100011110101120311000100120000001",
+      "tiles": 20,
+      "lean_state": "Mahjong.Scale12V2.state392"
+    },
+    {
+      "registry_id": 393,
+      "proof_row_id": 393,
+      "source_node_id": 1485,
+      "digits": "0000100120100011110101120310000011",
+      "tiles": 20,
+      "lean_state": "Mahjong.Scale12V2.state393"
+    },
+    {
+      "registry_id": 394,
+      "proof_row_id": 394,
+      "source_node_id": 1486,
+      "digits": "0010011110100100120101120300000011",
+      "tiles": 20,
+      "lean_state": "Mahjong.Scale12V2.state394"
+    },
+    {
+      "registry_id": 395,
+      "proof_row_id": 395,
+      "source_node_id": 1487,
+      "digits": "0010011110101120311000100120000001",
+      "tiles": 20,
+      "lean_state": "Mahjong.Scale12V2.state395"
+    },
+    {
+      "registry_id": 396,
+      "proof_row_id": 396,
+      "source_node_id": 1488,
+      "digits": "0000011110001120311000100120000111",
+      "tiles": 20,
+      "lean_state": "Mahjong.Scale12V2.state396"
+    },
+    {
+      "registry_id": 397,
+      "proof_row_id": 397,
+      "source_node_id": 1489,
+      "digits": "0000011110000100121001120310000111",
+      "tiles": 20,
+      "lean_state": "Mahjong.Scale12V2.state397"
+    },
+    {
+      "registry_id": 398,
+      "proof_row_id": 398,
+      "source_node_id": 1490,
+      "digits": "0010011110101120301000100120000011",
+      "tiles": 20,
+      "lean_state": "Mahjong.Scale12V2.state398"
+    },
+    {
+      "registry_id": 399,
+      "proof_row_id": 399,
+      "source_node_id": 1491,
+      "digits": "0100100120101120301000011110000011",
+      "tiles": 20,
+      "lean_state": "Mahjong.Scale12V2.state399"
+    },
+    {
+      "registry_id": 400,
+      "proof_row_id": 400,
+      "source_node_id": 1492,
+      "digits": "0000100120010011110101120300000111",
+      "tiles": 20,
+      "lean_state": "Mahjong.Scale12V2.state400"
+    },
+    {
+      "registry_id": 401,
+      "proof_row_id": 401,
+      "source_node_id": 1493,
+      "digits": "0010011110311110011000010020000111",
+      "tiles": 20,
+      "lean_state": "Mahjong.Scale12V2.state401"
+    },
+    {
+      "registry_id": 402,
+      "proof_row_id": 402,
+      "source_node_id": 1494,
+      "digits": "0010011110100010020311110010000111",
+      "tiles": 20,
+      "lean_state": "Mahjong.Scale12V2.state402"
+    },
+    {
+      "registry_id": 403,
+      "proof_row_id": 403,
+      "source_node_id": 1495,
+      "digits": "0010010020311110011000011110000111",
+      "tiles": 20,
+      "lean_state": "Mahjong.Scale12V2.state403"
+    },
+    {
+      "registry_id": 404,
+      "proof_row_id": 404,
+      "source_node_id": 1496,
+      "digits": "0100010020100011110311110010000111",
+      "tiles": 20,
+      "lean_state": "Mahjong.Scale12V2.state404"
+    },
+    {
+      "registry_id": 405,
+      "proof_row_id": 405,
+      "source_node_id": 1497,
+      "digits": "0010010020010011110311110010000111",
+      "tiles": 20,
+      "lean_state": "Mahjong.Scale12V2.state405"
+    },
+    {
+      "registry_id": 406,
+      "proof_row_id": 406,
+      "source_node_id": 1498,
+      "digits": "1000011111000100121002110310000001",
+      "tiles": 20,
+      "lean_state": "Mahjong.Scale12V2.state406"
+    },
+    {
+      "registry_id": 407,
+      "proof_row_id": 407,
+      "source_node_id": 1499,
+      "digits": "0100011110401120011000100120000001",
+      "tiles": 20,
+      "lean_state": "Mahjong.Scale12V2.state407"
+    },
+    {
+      "registry_id": 408,
+      "proof_row_id": 408,
+      "source_node_id": 1500,
+      "digits": "0010011110401120011000100120000001",
+      "tiles": 20,
+      "lean_state": "Mahjong.Scale12V2.state408"
+    },
+    {
+      "registry_id": 409,
+      "proof_row_id": 409,
+      "source_node_id": 1501,
+      "digits": "0000011110301120011000100120000111",
+      "tiles": 20,
+      "lean_state": "Mahjong.Scale12V2.state409"
+    },
+    {
+      "registry_id": 410,
+      "proof_row_id": 410,
+      "source_node_id": 1502,
+      "digits": "0100100120401120011000011110000001",
+      "tiles": 20,
+      "lean_state": "Mahjong.Scale12V2.state410"
+    },
+    {
+      "registry_id": 411,
+      "proof_row_id": 411,
+      "source_node_id": 1503,
+      "digits": "0010011110100100120401120010000001",
+      "tiles": 20,
+      "lean_state": "Mahjong.Scale12V2.state411"
+    },
+    {
+      "registry_id": 412,
+      "proof_row_id": 412,
+      "source_node_id": 1504,
+      "digits": "0100011110100100120401120010000001",
+      "tiles": 20,
+      "lean_state": "Mahjong.Scale12V2.state412"
+    },
+    {
+      "registry_id": 413,
+      "proof_row_id": 413,
+      "source_node_id": 1505,
+      "digits": "0010000120311110011000011110000111",
+      "tiles": 20,
+      "lean_state": "Mahjong.Scale12V2.state413"
+    },
+    {
+      "registry_id": 414,
+      "proof_row_id": 414,
+      "source_node_id": 1506,
+      "digits": "0010000120100011110311110010000111",
+      "tiles": 20,
+      "lean_state": "Mahjong.Scale12V2.state414"
+    },
+    {
+      "registry_id": 415,
+      "proof_row_id": 415,
+      "source_node_id": 1507,
+      "digits": "0010000120010011110311110010000111",
+      "tiles": 20,
+      "lean_state": "Mahjong.Scale12V2.state415"
+    },
+    {
+      "registry_id": 416,
+      "proof_row_id": 416,
+      "source_node_id": 1508,
+      "digits": "0010000121000011111002110310000011",
+      "tiles": 20,
+      "lean_state": "Mahjong.Scale12V2.state416"
+    },
+    {
+      "registry_id": 417,
+      "proof_row_id": 417,
+      "source_node_id": 1509,
+      "digits": "0000100120301120011000011110000111",
+      "tiles": 20,
+      "lean_state": "Mahjong.Scale12V2.state417"
+    },
+    {
+      "registry_id": 418,
+      "proof_row_id": 418,
+      "source_node_id": 1510,
+      "digits": "0100011110401210011001000120000001",
+      "tiles": 20,
+      "lean_state": "Mahjong.Scale12V2.state418"
+    },
+    {
+      "registry_id": 419,
+      "proof_row_id": 419,
+      "source_node_id": 1511,
+      "digits": "0100011110401110011000000120000111",
+      "tiles": 20,
+      "lean_state": "Mahjong.Scale12V2.state419"
+    },
+    {
+      "registry_id": 420,
+      "proof_row_id": 420,
+      "source_node_id": 1512,
+      "digits": "0100000120100011110302110010000111",
+      "tiles": 20,
+      "lean_state": "Mahjong.Scale12V2.state420"
+    },
+    {
+      "registry_id": 421,
+      "proof_row_id": 421,
+      "source_node_id": 1513,
+      "digits": "0100011110100100120401210010000001",
+      "tiles": 20,
+      "lean_state": "Mahjong.Scale12V2.state421"
+    },
+    {
+      "registry_id": 422,
+      "proof_row_id": 422,
+      "source_node_id": 1514,
+      "digits": "0000100120100011110401110010000111",
+      "tiles": 20,
+      "lean_state": "Mahjong.Scale12V2.state422"
+    },
+    {
+      "registry_id": 423,
+      "proof_row_id": 423,
+      "source_node_id": 1515,
+      "digits": "0100000120100011110301210010000111",
+      "tiles": 20,
+      "lean_state": "Mahjong.Scale12V2.state423"
+    },
+    {
+      "registry_id": 424,
+      "proof_row_id": 424,
+      "source_node_id": 1516,
+      "digits": "0001000120100011110401110010000111",
+      "tiles": 20,
+      "lean_state": "Mahjong.Scale12V2.state424"
+    },
+    {
+      "registry_id": 425,
+      "proof_row_id": 425,
+      "source_node_id": 1517,
+      "digits": "0100000120100011110301120010000111",
+      "tiles": 20,
+      "lean_state": "Mahjong.Scale12V2.state425"
+    },
+    {
+      "registry_id": 426,
+      "proof_row_id": 426,
+      "source_node_id": 1518,
+      "digits": "0000000120100011110301110010011111",
+      "tiles": 20,
+      "lean_state": "Mahjong.Scale12V2.state426"
+    },
+    {
+      "registry_id": 427,
+      "proof_row_id": 427,
+      "source_node_id": 1519,
+      "digits": "0010011110401210011000100120000001",
+      "tiles": 20,
+      "lean_state": "Mahjong.Scale12V2.state427"
+    },
+    {
+      "registry_id": 428,
+      "proof_row_id": 428,
+      "source_node_id": 1520,
+      "digits": "0010011110401110011000000120000111",
+      "tiles": 20,
+      "lean_state": "Mahjong.Scale12V2.state428"
+    },
+    {
+      "registry_id": 429,
+      "proof_row_id": 429,
+      "source_node_id": 1521,
+      "digits": "0001000120010011110401210010000011",
+      "tiles": 20,
+      "lean_state": "Mahjong.Scale12V2.state429"
+    },
+    {
+      "registry_id": 430,
+      "proof_row_id": 430,
+      "source_node_id": 1522,
+      "digits": "0000100120010011110301210010000111",
+      "tiles": 20,
+      "lean_state": "Mahjong.Scale12V2.state430"
+    },
+    {
+      "registry_id": 431,
+      "proof_row_id": 431,
+      "source_node_id": 1523,
+      "digits": "0010011110100100120401210010000001",
+      "tiles": 20,
+      "lean_state": "Mahjong.Scale12V2.state431"
+    },
+    {
+      "registry_id": 432,
+      "proof_row_id": 432,
+      "source_node_id": 1524,
+      "digits": "0010011110100000120401110010000111",
+      "tiles": 20,
+      "lean_state": "Mahjong.Scale12V2.state432"
+    },
+    {
+      "registry_id": 433,
+      "proof_row_id": 433,
+      "source_node_id": 1525,
+      "digits": "0010011110100000120302110010000111",
+      "tiles": 20,
+      "lean_state": "Mahjong.Scale12V2.state433"
+    },
+    {
+      "registry_id": 434,
+      "proof_row_id": 434,
+      "source_node_id": 1526,
+      "digits": "0001000120010011110401110010000111",
+      "tiles": 20,
+      "lean_state": "Mahjong.Scale12V2.state434"
+    },
+    {
+      "registry_id": 435,
+      "proof_row_id": 435,
+      "source_node_id": 1527,
+      "digits": "0010011110100000120301120010000111",
+      "tiles": 20,
+      "lean_state": "Mahjong.Scale12V2.state435"
+    },
+    {
+      "registry_id": 436,
+      "proof_row_id": 436,
+      "source_node_id": 1528,
+      "digits": "0000000120010011110301110010011111",
+      "tiles": 20,
+      "lean_state": "Mahjong.Scale12V2.state436"
+    },
+    {
+      "registry_id": 437,
+      "proof_row_id": 437,
+      "source_node_id": 1530,
+      "digits": "0010000121000011111001120310000011",
+      "tiles": 20,
+      "lean_state": "Mahjong.Scale12V2.state437"
+    },
+    {
+      "registry_id": 438,
+      "proof_row_id": 438,
+      "source_node_id": 1532,
+      "digits": "0100100120401210011000011110000001",
+      "tiles": 20,
+      "lean_state": "Mahjong.Scale12V2.state438"
+    },
+    {
+      "registry_id": 439,
+      "proof_row_id": 439,
+      "source_node_id": 1533,
+      "digits": "1000011111000100121001210310000001",
+      "tiles": 20,
+      "lean_state": "Mahjong.Scale12V2.state439"
+    },
+    {
+      "registry_id": 440,
+      "proof_row_id": 440,
+      "source_node_id": 1534,
+      "digits": "0000100120301210011000011110000111",
+      "tiles": 20,
+      "lean_state": "Mahjong.Scale12V2.state440"
+    },
+    {
+      "registry_id": 441,
+      "proof_row_id": 441,
+      "source_node_id": 1535,
+      "digits": "0100011110401210011000100120000001",
+      "tiles": 20,
+      "lean_state": "Mahjong.Scale12V2.state441"
+    },
+    {
+      "registry_id": 442,
+      "proof_row_id": 442,
+      "source_node_id": 1536,
+      "digits": "0000011110301210011000100120000111",
+      "tiles": 20,
+      "lean_state": "Mahjong.Scale12V2.state442"
+    },
+    {
+      "registry_id": 443,
+      "proof_row_id": 443,
+      "source_node_id": 1537,
+      "digits": "0000011110000100121001210310000111",
+      "tiles": 20,
+      "lean_state": "Mahjong.Scale12V2.state443"
+    },
+    {
+      "registry_id": 444,
+      "proof_row_id": 444,
+      "source_node_id": 1538,
+      "digits": "0311110011000011111001000120000011",
+      "tiles": 20,
+      "lean_state": "Mahjong.Scale12V2.state444"
+    },
+    {
+      "registry_id": 445,
+      "proof_row_id": 445,
+      "source_node_id": 1539,
+      "digits": "1000011111001000121001210310000001",
+      "tiles": 20,
+      "lean_state": "Mahjong.Scale12V2.state445"
+    },
+    {
+      "registry_id": 446,
+      "proof_row_id": 446,
+      "source_node_id": 1540,
+      "digits": "0010011110401210011001000120000001",
+      "tiles": 20,
+      "lean_state": "Mahjong.Scale12V2.state446"
+    },
+    {
+      "registry_id": 447,
+      "proof_row_id": 447,
+      "source_node_id": 1541,
+      "digits": "0000011110301210011001000120000111",
+      "tiles": 20,
+      "lean_state": "Mahjong.Scale12V2.state447"
+    },
+    {
+      "registry_id": 448,
+      "proof_row_id": 448,
+      "source_node_id": 1542,
+      "digits": "0100001020311110011000011110000111",
+      "tiles": 20,
+      "lean_state": "Mahjong.Scale12V2.state448"
+    },
+    {
+      "registry_id": 449,
+      "proof_row_id": 449,
+      "source_node_id": 1543,
+      "digits": "0001000120311110011000011110000111",
+      "tiles": 20,
+      "lean_state": "Mahjong.Scale12V2.state449"
+    },
+    {
+      "registry_id": 450,
+      "proof_row_id": 450,
+      "source_node_id": 1544,
+      "digits": "0311110011000011111000100120000011",
+      "tiles": 20,
+      "lean_state": "Mahjong.Scale12V2.state450"
+    },
+    {
+      "registry_id": 451,
+      "proof_row_id": 451,
+      "source_node_id": 1545,
+      "digits": "0100011110100100020401110010000111",
+      "tiles": 20,
+      "lean_state": "Mahjong.Scale12V2.state451"
+    },
+    {
+      "registry_id": 452,
+      "proof_row_id": 452,
+      "source_node_id": 1546,
+      "digits": "0100001020100011110311110010000111",
+      "tiles": 20,
+      "lean_state": "Mahjong.Scale12V2.state452"
+    },
+    {
+      "registry_id": 453,
+      "proof_row_id": 453,
+      "source_node_id": 1547,
+      "digits": "0100000020100011110301110010011111",
+      "tiles": 20,
+      "lean_state": "Mahjong.Scale12V2.state453"
+    },
+    {
+      "registry_id": 454,
+      "proof_row_id": 454,
+      "source_node_id": 1548,
+      "digits": "0100011110100100120101210400000001",
+      "tiles": 20,
+      "lean_state": "Mahjong.Scale12V2.state454"
+    },
+    {
+      "registry_id": 455,
+      "proof_row_id": 455,
+      "source_node_id": 1549,
+      "digits": "0010011110100100020301210010000111",
+      "tiles": 20,
+      "lean_state": "Mahjong.Scale12V2.state455"
+    },
+    {
+      "registry_id": 456,
+      "proof_row_id": 456,
+      "source_node_id": 1550,
+      "digits": "0010011110100001020311110010000111",
+      "tiles": 20,
+      "lean_state": "Mahjong.Scale12V2.state456"
+    },
+    {
+      "registry_id": 457,
+      "proof_row_id": 457,
+      "source_node_id": 1551,
+      "digits": "0010011110100000020301110010011111",
+      "tiles": 20,
+      "lean_state": "Mahjong.Scale12V2.state457"
+    },
+    {
+      "registry_id": 458,
+      "proof_row_id": 458,
+      "source_node_id": 1552,
+      "digits": "0010011110100100120101210400000001",
+      "tiles": 20,
+      "lean_state": "Mahjong.Scale12V2.state458"
+    },
+    {
+      "registry_id": 459,
+      "proof_row_id": 459,
+      "source_node_id": 1553,
+      "digits": "0010011110100000120101210400000011",
+      "tiles": 20,
+      "lean_state": "Mahjong.Scale12V2.state459"
+    },
+    {
+      "registry_id": 460,
+      "proof_row_id": 460,
+      "source_node_id": 1554,
+      "digits": "0101210401000011111000100120000001",
+      "tiles": 20,
+      "lean_state": "Mahjong.Scale12V2.state460"
+    },
+    {
+      "registry_id": 461,
+      "proof_row_id": 461,
+      "source_node_id": 1555,
+      "digits": "0100100120101210401000011110000001",
+      "tiles": 20,
+      "lean_state": "Mahjong.Scale12V2.state461"
+    },
+    {
+      "registry_id": 462,
+      "proof_row_id": 462,
+      "source_node_id": 1556,
+      "digits": "0000100120101210401000011110000011",
+      "tiles": 20,
+      "lean_state": "Mahjong.Scale12V2.state462"
+    },
+    {
+      "registry_id": 463,
+      "proof_row_id": 463,
+      "source_node_id": 1557,
+      "digits": "0010011110101210401000100120000001",
+      "tiles": 20,
+      "lean_state": "Mahjong.Scale12V2.state463"
+    },
+    {
+      "registry_id": 464,
+      "proof_row_id": 464,
+      "source_node_id": 1558,
+      "digits": "0010011110101210401000100020000011",
+      "tiles": 20,
+      "lean_state": "Mahjong.Scale12V2.state464"
+    },
+    {
+      "registry_id": 465,
+      "proof_row_id": 465,
+      "source_node_id": 1559,
+      "digits": "0100011110101210311000100120000001",
+      "tiles": 20,
+      "lean_state": "Mahjong.Scale12V2.state465"
+    },
+    {
+      "registry_id": 466,
+      "proof_row_id": 466,
+      "source_node_id": 1560,
+      "digits": "0010011110101210311000100020000011",
+      "tiles": 20,
+      "lean_state": "Mahjong.Scale12V2.state466"
+    },
+    {
+      "registry_id": 467,
+      "proof_row_id": 467,
+      "source_node_id": 1561,
+      "digits": "0010011110101210311000100120000001",
+      "tiles": 20,
+      "lean_state": "Mahjong.Scale12V2.state467"
+    },
+    {
+      "registry_id": 468,
+      "proof_row_id": 468,
+      "source_node_id": 1562,
+      "digits": "0000100120010011110101210310000011",
+      "tiles": 20,
+      "lean_state": "Mahjong.Scale12V2.state468"
+    },
+    {
+      "registry_id": 469,
+      "proof_row_id": 469,
+      "source_node_id": 1563,
+      "digits": "0010011110100100021001210310000011",
+      "tiles": 20,
+      "lean_state": "Mahjong.Scale12V2.state469"
+    },
+    {
+      "registry_id": 470,
+      "proof_row_id": 470,
+      "source_node_id": 1564,
+      "digits": "0100011110101210401000100120000001",
+      "tiles": 20,
+      "lean_state": "Mahjong.Scale12V2.state470"
+    },
+    {
+      "registry_id": 471,
+      "proof_row_id": 471,
+      "source_node_id": 1565,
+      "digits": "0002110400100100121000011110000011",
+      "tiles": 20,
+      "lean_state": "Mahjong.Scale12V2.state471"
+    },
+    {
+      "registry_id": 472,
+      "proof_row_id": 472,
+      "source_node_id": 1566,
+      "digits": "0002110400100011111000100120000011",
+      "tiles": 20,
+      "lean_state": "Mahjong.Scale12V2.state472"
+    },
+    {
+      "registry_id": 473,
+      "proof_row_id": 473,
+      "source_node_id": 1567,
+      "digits": "0002110400010011110100100020000111",
+      "tiles": 20,
+      "lean_state": "Mahjong.Scale12V2.state473"
+    },
+    {
+      "registry_id": 474,
+      "proof_row_id": 474,
+      "source_node_id": 1568,
+      "digits": "0000100120010011110401120010000011",
+      "tiles": 20,
+      "lean_state": "Mahjong.Scale12V2.state474"
+    },
+    {
+      "registry_id": 475,
+      "proof_row_id": 475,
+      "source_node_id": 1569,
+      "digits": "0002110400010011111000100120000011",
+      "tiles": 20,
+      "lean_state": "Mahjong.Scale12V2.state475"
+    },
+    {
+      "registry_id": 476,
+      "proof_row_id": 476,
+      "source_node_id": 1570,
+      "digits": "0100011110101210401001000120000001",
+      "tiles": 20,
+      "lean_state": "Mahjong.Scale12V2.state476"
+    },
+    {
+      "registry_id": 477,
+      "proof_row_id": 477,
+      "source_node_id": 1571,
+      "digits": "0001000120100011110101210400000011",
+      "tiles": 20,
+      "lean_state": "Mahjong.Scale12V2.state477"
+    },
+    {
+      "registry_id": 478,
+      "proof_row_id": 478,
+      "source_node_id": 1572,
+      "digits": "0001210300010011111001000120000111",
+      "tiles": 20,
+      "lean_state": "Mahjong.Scale12V2.state478"
+    },
+    {
+      "registry_id": 479,
+      "proof_row_id": 479,
+      "source_node_id": 1573,
+      "digits": "0001000120010011110101210310000011",
+      "tiles": 20,
+      "lean_state": "Mahjong.Scale12V2.state479"
+    },
+    {
+      "registry_id": 480,
+      "proof_row_id": 480,
+      "source_node_id": 1574,
+      "digits": "0001000120010011110101210400000011",
+      "tiles": 20,
+      "lean_state": "Mahjong.Scale12V2.state480"
+    },
+    {
+      "registry_id": 481,
+      "proof_row_id": 481,
+      "source_node_id": 1575,
+      "digits": "0001000120101210401000011110000011",
+      "tiles": 20,
+      "lean_state": "Mahjong.Scale12V2.state481"
+    },
+    {
+      "registry_id": 482,
+      "proof_row_id": 482,
+      "source_node_id": 1576,
+      "digits": "0001000120101110401000011110000111",
+      "tiles": 20,
+      "lean_state": "Mahjong.Scale12V2.state482"
+    },
+    {
+      "registry_id": 483,
+      "proof_row_id": 483,
+      "source_node_id": 1577,
+      "digits": "0011110311000011111001000120000011",
+      "tiles": 20,
+      "lean_state": "Mahjong.Scale12V2.state483"
+    },
+    {
+      "registry_id": 484,
+      "proof_row_id": 484,
+      "source_node_id": 1578,
+      "digits": "0001000120011110311000011110000111",
+      "tiles": 20,
+      "lean_state": "Mahjong.Scale12V2.state484"
+    },
+    {
+      "registry_id": 485,
+      "proof_row_id": 485,
+      "source_node_id": 718,
+      "digits": "0311110011000011111001001020000000",
+      "tiles": 18,
+      "lean_state": "Mahjong.Scale12V2.state485"
+    },
+    {
+      "registry_id": 486,
+      "proof_row_id": 486,
+      "source_node_id": 719,
+      "digits": "0001111301000011111001001020000001",
+      "tiles": 18,
+      "lean_state": "Mahjong.Scale12V2.state486"
+    },
+    {
+      "registry_id": 487,
+      "proof_row_id": 487,
+      "source_node_id": 720,
+      "digits": "0100011110401120011000001020000000",
+      "tiles": 18,
+      "lean_state": "Mahjong.Scale12V2.state487"
+    },
+    {
+      "registry_id": 488,
+      "proof_row_id": 488,
+      "source_node_id": 721,
+      "digits": "0100011110101210401000001020000000",
+      "tiles": 18,
+      "lean_state": "Mahjong.Scale12V2.state488"
+    },
+    {
+      "registry_id": 489,
+      "proof_row_id": 489,
+      "source_node_id": 722,
+      "digits": "0002110400100011111001001020000000",
+      "tiles": 18,
+      "lean_state": "Mahjong.Scale12V2.state489"
+    },
+    {
+      "registry_id": 490,
+      "proof_row_id": 490,
+      "source_node_id": 723,
+      "digits": "0001110400100011111001001020000001",
+      "tiles": 18,
+      "lean_state": "Mahjong.Scale12V2.state490"
+    },
+    {
+      "registry_id": 491,
+      "proof_row_id": 491,
+      "source_node_id": 724,
+      "digits": "0010011110401210011000001020000000",
+      "tiles": 18,
+      "lean_state": "Mahjong.Scale12V2.state491"
+    },
+    {
+      "registry_id": 492,
+      "proof_row_id": 492,
+      "source_node_id": 725,
+      "digits": "0010011110101210401000001020000000",
+      "tiles": 18,
+      "lean_state": "Mahjong.Scale12V2.state492"
+    },
+    {
+      "registry_id": 493,
+      "proof_row_id": 493,
+      "source_node_id": 726,
+      "digits": "0010011110101210311000001020000000",
+      "tiles": 18,
+      "lean_state": "Mahjong.Scale12V2.state493"
+    },
+    {
+      "registry_id": 494,
+      "proof_row_id": 494,
+      "source_node_id": 727,
+      "digits": "0001210300010011111001001020000001",
+      "tiles": 18,
+      "lean_state": "Mahjong.Scale12V2.state494"
+    },
+    {
+      "registry_id": 495,
+      "proof_row_id": 495,
+      "source_node_id": 728,
+      "digits": "1000001021000011111002110310000000",
+      "tiles": 18,
+      "lean_state": "Mahjong.Scale12V2.state495"
+    },
+    {
+      "registry_id": 496,
+      "proof_row_id": 496,
+      "source_node_id": 729,
+      "digits": "0010011110401120011000001020000000",
+      "tiles": 18,
+      "lean_state": "Mahjong.Scale12V2.state496"
+    },
+    {
+      "registry_id": 497,
+      "proof_row_id": 497,
+      "source_node_id": 730,
+      "digits": "0000011110301120011001001020000001",
+      "tiles": 18,
+      "lean_state": "Mahjong.Scale12V2.state497"
+    },
+    {
+      "registry_id": 498,
+      "proof_row_id": 498,
+      "source_node_id": 731,
+      "digits": "0101110401000011111001001020000000",
+      "tiles": 18,
+      "lean_state": "Mahjong.Scale12V2.state498"
+    },
+    {
+      "registry_id": 499,
+      "proof_row_id": 499,
+      "source_node_id": 732,
+      "digits": "0000011110101110401001001020000001",
+      "tiles": 18,
+      "lean_state": "Mahjong.Scale12V2.state499"
+    },
+    {
+      "registry_id": 500,
+      "proof_row_id": 500,
+      "source_node_id": 733,
+      "digits": "0011110311000011111001001020000000",
+      "tiles": 18,
+      "lean_state": "Mahjong.Scale12V2.state500"
+    },
+    {
+      "registry_id": 501,
+      "proof_row_id": 501,
+      "source_node_id": 734,
+      "digits": "0011110301000011111001001020000001",
+      "tiles": 18,
+      "lean_state": "Mahjong.Scale12V2.state501"
+    },
+    {
+      "registry_id": 502,
+      "proof_row_id": 502,
+      "source_node_id": 735,
+      "digits": "0002110311000011111001001020000000",
+      "tiles": 18,
+      "lean_state": "Mahjong.Scale12V2.state502"
+    },
+    {
+      "registry_id": 503,
+      "proof_row_id": 503,
+      "source_node_id": 736,
+      "digits": "0002110400010011111001001020000000",
+      "tiles": 18,
+      "lean_state": "Mahjong.Scale12V2.state503"
+    },
+    {
+      "registry_id": 504,
+      "proof_row_id": 504,
+      "source_node_id": 737,
+      "digits": "1000001021000011111001120310000000",
+      "tiles": 18,
+      "lean_state": "Mahjong.Scale12V2.state504"
+    },
+    {
+      "registry_id": 505,
+      "proof_row_id": 505,
+      "source_node_id": 738,
+      "digits": "0100011110101120311000001020000000",
+      "tiles": 18,
+      "lean_state": "Mahjong.Scale12V2.state505"
+    },
+    {
+      "registry_id": 506,
+      "proof_row_id": 506,
+      "source_node_id": 739,
+      "digits": "0010011110101120311000001020000000",
+      "tiles": 18,
+      "lean_state": "Mahjong.Scale12V2.state506"
+    },
+    {
+      "registry_id": 507,
+      "proof_row_id": 507,
+      "source_node_id": 741,
+      "digits": "0000011110002110301001001020000011",
+      "tiles": 18,
+      "lean_state": "Mahjong.Scale12V2.state507"
+    },
+    {
+      "registry_id": 508,
+      "proof_row_id": 508,
+      "source_node_id": 742,
+      "digits": "0100001021000011111001120310000000",
+      "tiles": 18,
+      "lean_state": "Mahjong.Scale12V2.state508"
+    },
+    {
+      "registry_id": 509,
+      "proof_row_id": 509,
+      "source_node_id": 743,
+      "digits": "0100100020101120311000011110000000",
+      "tiles": 18,
+      "lean_state": "Mahjong.Scale12V2.state509"
+    },
+    {
+      "registry_id": 510,
+      "proof_row_id": 510,
+      "source_node_id": 744,
+      "digits": "0100010021000011111001120310000000",
+      "tiles": 18,
+      "lean_state": "Mahjong.Scale12V2.state510"
+    },
+    {
+      "registry_id": 511,
+      "proof_row_id": 511,
+      "source_node_id": 745,
+      "digits": "0100000120101120311000011110000000",
+      "tiles": 18,
+      "lean_state": "Mahjong.Scale12V2.state511"
+    },
+    {
+      "registry_id": 512,
+      "proof_row_id": 512,
+      "source_node_id": 746,
+      "digits": "0001120310100000021000011110000011",
+      "tiles": 18,
+      "lean_state": "Mahjong.Scale12V2.state512"
+    },
+    {
+      "registry_id": 513,
+      "proof_row_id": 513,
+      "source_node_id": 747,
+      "digits": "0100000120100011111001110310000001",
+      "tiles": 18,
+      "lean_state": "Mahjong.Scale12V2.state513"
+    },
+    {
+      "registry_id": 514,
+      "proof_row_id": 514,
+      "source_node_id": 748,
+      "digits": "0100000120100011110101110310000001",
+      "tiles": 18,
+      "lean_state": "Mahjong.Scale12V2.state514"
+    },
+    {
+      "registry_id": 515,
+      "proof_row_id": 515,
+      "source_node_id": 749,
+      "digits": "0011110310100001020100011110000001",
+      "tiles": 18,
+      "lean_state": "Mahjong.Scale12V2.state515"
+    },
+    {
+      "registry_id": 516,
+      "proof_row_id": 516,
+      "source_node_id": 750,
+      "digits": "0002110310100000120100011110000001",
+      "tiles": 18,
+      "lean_state": "Mahjong.Scale12V2.state516"
+    },
+    {
+      "registry_id": 517,
+      "proof_row_id": 517,
+      "source_node_id": 751,
+      "digits": "0001210310100011110100100020000001",
+      "tiles": 18,
+      "lean_state": "Mahjong.Scale12V2.state517"
+    },
+    {
+      "registry_id": 518,
+      "proof_row_id": 518,
+      "source_node_id": 752,
+      "digits": "0001120310100000120100011110000001",
+      "tiles": 18,
+      "lean_state": "Mahjong.Scale12V2.state518"
+    },
+    {
+      "registry_id": 519,
+      "proof_row_id": 519,
+      "source_node_id": 753,
+      "digits": "0011110310100010020100011110000001",
+      "tiles": 18,
+      "lean_state": "Mahjong.Scale12V2.state519"
+    },
+    {
+      "registry_id": 520,
+      "proof_row_id": 520,
+      "source_node_id": 754,
+      "digits": "0001110310100000020100011110000111",
+      "tiles": 18,
+      "lean_state": "Mahjong.Scale12V2.state520"
+    },
+    {
+      "registry_id": 521,
+      "proof_row_id": 521,
+      "source_node_id": 755,
+      "digits": "0010011110100000121001110310000001",
+      "tiles": 18,
+      "lean_state": "Mahjong.Scale12V2.state521"
+    },
+    {
+      "registry_id": 522,
+      "proof_row_id": 522,
+      "source_node_id": 756,
+      "digits": "0010011110100100020101110310000001",
+      "tiles": 18,
+      "lean_state": "Mahjong.Scale12V2.state522"
+    },
+    {
+      "registry_id": 523,
+      "proof_row_id": 523,
+      "source_node_id": 757,
+      "digits": "0010011110011110310100001020000001",
+      "tiles": 18,
+      "lean_state": "Mahjong.Scale12V2.state523"
+    },
+    {
+      "registry_id": 524,
+      "proof_row_id": 524,
+      "source_node_id": 758,
+      "digits": "0002110310010011110100000120000001",
+      "tiles": 18,
+      "lean_state": "Mahjong.Scale12V2.state524"
+    },
+    {
+      "registry_id": 525,
+      "proof_row_id": 525,
+      "source_node_id": 759,
+      "digits": "0001210310010011110100100020000001",
+      "tiles": 18,
+      "lean_state": "Mahjong.Scale12V2.state525"
+    },
+    {
+      "registry_id": 526,
+      "proof_row_id": 526,
+      "source_node_id": 760,
+      "digits": "0001120310010011110100000120000001",
+      "tiles": 18,
+      "lean_state": "Mahjong.Scale12V2.state526"
+    },
+    {
+      "registry_id": 527,
+      "proof_row_id": 527,
+      "source_node_id": 761,
+      "digits": "0010011110011110310100010020000001",
+      "tiles": 18,
+      "lean_state": "Mahjong.Scale12V2.state527"
+    },
+    {
+      "registry_id": 528,
+      "proof_row_id": 528,
+      "source_node_id": 762,
+      "digits": "0001110310010011110100000020000111",
+      "tiles": 18,
+      "lean_state": "Mahjong.Scale12V2.state528"
+    },
+    {
+      "registry_id": 529,
+      "proof_row_id": 529,
+      "source_node_id": 763,
+      "digits": "0100001021000011111002110310000000",
+      "tiles": 18,
+      "lean_state": "Mahjong.Scale12V2.state529"
+    },
+    {
+      "registry_id": 530,
+      "proof_row_id": 530,
+      "source_node_id": 764,
+      "digits": "0100000120100011111002110310000000",
+      "tiles": 18,
+      "lean_state": "Mahjong.Scale12V2.state530"
+    },
+    {
+      "registry_id": 531,
+      "proof_row_id": 531,
+      "source_node_id": 765,
+      "digits": "0010011110100100021002110310000000",
+      "tiles": 18,
+      "lean_state": "Mahjong.Scale12V2.state531"
+    },
+    {
+      "registry_id": 532,
+      "proof_row_id": 532,
+      "source_node_id": 766,
+      "digits": "0100010021000011111002110310000000",
+      "tiles": 18,
+      "lean_state": "Mahjong.Scale12V2.state532"
+    },
+    {
+      "registry_id": 533,
+      "proof_row_id": 533,
+      "source_node_id": 767,
+      "digits": "0000011110100000021002110310000011",
+      "tiles": 18,
+      "lean_state": "Mahjong.Scale12V2.state533"
+    },
+    {
+      "registry_id": 534,
+      "proof_row_id": 534,
+      "source_node_id": 768,
+      "digits": "0100011110100100020101210310000000",
+      "tiles": 18,
+      "lean_state": "Mahjong.Scale12V2.state534"
+    },
+    {
+      "registry_id": 535,
+      "proof_row_id": 535,
+      "source_node_id": 769,
+      "digits": "0100100120101110311000011110000000",
+      "tiles": 18,
+      "lean_state": "Mahjong.Scale12V2.state535"
+    },
+    {
+      "registry_id": 536,
+      "proof_row_id": 536,
+      "source_node_id": 770,
+      "digits": "0011110310100001021000011110000001",
+      "tiles": 18,
+      "lean_state": "Mahjong.Scale12V2.state536"
+    },
+    {
+      "registry_id": 537,
+      "proof_row_id": 537,
+      "source_node_id": 771,
+      "digits": "0100100020101210311000011110000000",
+      "tiles": 18,
+      "lean_state": "Mahjong.Scale12V2.state537"
+    },
+    {
+      "registry_id": 538,
+      "proof_row_id": 538,
+      "source_node_id": 772,
+      "digits": "0010011110100100021001210310000000",
+      "tiles": 18,
+      "lean_state": "Mahjong.Scale12V2.state538"
+    },
+    {
+      "registry_id": 539,
+      "proof_row_id": 539,
+      "source_node_id": 773,
+      "digits": "0001210310010011110100100120000000",
+      "tiles": 18,
+      "lean_state": "Mahjong.Scale12V2.state539"
+    },
+    {
+      "registry_id": 540,
+      "proof_row_id": 540,
+      "source_node_id": 774,
+      "digits": "0010011110100000120101120310000000",
+      "tiles": 18,
+      "lean_state": "Mahjong.Scale12V2.state540"
+    },
+    {
+      "registry_id": 541,
+      "proof_row_id": 541,
+      "source_node_id": 775,
+      "digits": "0010011110100000121001120310000000",
+      "tiles": 18,
+      "lean_state": "Mahjong.Scale12V2.state541"
+    },
+    {
+      "registry_id": 542,
+      "proof_row_id": 542,
+      "source_node_id": 776,
+      "digits": "0001120310010011110100100120000000",
+      "tiles": 18,
+      "lean_state": "Mahjong.Scale12V2.state542"
+    },
+    {
+      "registry_id": 543,
+      "proof_row_id": 543,
+      "source_node_id": 777,
+      "digits": "0011110310100010021000011110000001",
+      "tiles": 18,
+      "lean_state": "Mahjong.Scale12V2.state543"
+    },
+    {
+      "registry_id": 544,
+      "proof_row_id": 544,
+      "source_node_id": 778,
+      "digits": "0010010020011110311000011110000001",
+      "tiles": 18,
+      "lean_state": "Mahjong.Scale12V2.state544"
+    },
+    {
+      "registry_id": 545,
+      "proof_row_id": 545,
+      "source_node_id": 779,
+      "digits": "0010001020011110310100011110000001",
+      "tiles": 18,
+      "lean_state": "Mahjong.Scale12V2.state545"
+    },
+    {
+      "registry_id": 546,
+      "proof_row_id": 546,
+      "source_node_id": 780,
+      "digits": "0010000120010011110011110310000001",
+      "tiles": 18,
+      "lean_state": "Mahjong.Scale12V2.state546"
+    },
+    {
+      "registry_id": 547,
+      "proof_row_id": 547,
+      "source_node_id": 781,
+      "digits": "0000011110010000120011110310000011",
+      "tiles": 18,
+      "lean_state": "Mahjong.Scale12V2.state547"
+    },
+    {
+      "registry_id": 548,
+      "proof_row_id": 548,
+      "source_node_id": 782,
+      "digits": "0001000121000011111002110310000000",
+      "tiles": 18,
+      "lean_state": "Mahjong.Scale12V2.state548"
+    },
+    {
+      "registry_id": 549,
+      "proof_row_id": 549,
+      "source_node_id": 783,
+      "digits": "0001000020002110311000011110000011",
+      "tiles": 18,
+      "lean_state": "Mahjong.Scale12V2.state549"
+    },
+    {
+      "registry_id": 550,
+      "proof_row_id": 550,
+      "source_node_id": 784,
+      "digits": "0001000120100011110401120010000000",
+      "tiles": 18,
+      "lean_state": "Mahjong.Scale12V2.state550"
+    },
+    {
+      "registry_id": 551,
+      "proof_row_id": 551,
+      "source_node_id": 785,
+      "digits": "0001000020002110400100011110000011",
+      "tiles": 18,
+      "lean_state": "Mahjong.Scale12V2.state551"
+    },
+    {
+      "registry_id": 552,
+      "proof_row_id": 552,
+      "source_node_id": 786,
+      "digits": "0001000120010011110401120010000000",
+      "tiles": 18,
+      "lean_state": "Mahjong.Scale12V2.state552"
+    },
+    {
+      "registry_id": 553,
+      "proof_row_id": 553,
+      "source_node_id": 787,
+      "digits": "0001000020002110400010011110000011",
+      "tiles": 18,
+      "lean_state": "Mahjong.Scale12V2.state553"
+    },
+    {
+      "registry_id": 554,
+      "proof_row_id": 554,
+      "source_node_id": 788,
+      "digits": "0000011110301120011001000120000001",
+      "tiles": 18,
+      "lean_state": "Mahjong.Scale12V2.state554"
+    },
+    {
+      "registry_id": 555,
+      "proof_row_id": 555,
+      "source_node_id": 789,
+      "digits": "0000011110001000120301120010000011",
+      "tiles": 18,
+      "lean_state": "Mahjong.Scale12V2.state555"
+    },
+    {
+      "registry_id": 556,
+      "proof_row_id": 556,
+      "source_node_id": 790,
+      "digits": "0000011110001000120002110300000111",
+      "tiles": 18,
+      "lean_state": "Mahjong.Scale12V2.state556"
+    },
+    {
+      "registry_id": 557,
+      "proof_row_id": 557,
+      "source_node_id": 791,
+      "digits": "1000011111000100021001120310000000",
+      "tiles": 18,
+      "lean_state": "Mahjong.Scale12V2.state557"
+    },
+    {
+      "registry_id": 558,
+      "proof_row_id": 558,
+      "source_node_id": 792,
+      "digits": "0000100120001120311000011110000001",
+      "tiles": 18,
+      "lean_state": "Mahjong.Scale12V2.state558"
+    },
+    {
+      "registry_id": 559,
+      "proof_row_id": 559,
+      "source_node_id": 793,
+      "digits": "0100011110101120301000100120000000",
+      "tiles": 18,
+      "lean_state": "Mahjong.Scale12V2.state559"
+    },
+    {
+      "registry_id": 560,
+      "proof_row_id": 560,
+      "source_node_id": 794,
+      "digits": "0100011110100100120101120300000000",
+      "tiles": 18,
+      "lean_state": "Mahjong.Scale12V2.state560"
+    },
+    {
+      "registry_id": 561,
+      "proof_row_id": 561,
+      "source_node_id": 795,
+      "digits": "0000100020100011110101120310000001",
+      "tiles": 18,
+      "lean_state": "Mahjong.Scale12V2.state561"
+    },
+    {
+      "registry_id": 562,
+      "proof_row_id": 562,
+      "source_node_id": 796,
+      "digits": "0010011110100100120302110010000000",
+      "tiles": 18,
+      "lean_state": "Mahjong.Scale12V2.state562"
+    },
+    {
+      "registry_id": 563,
+      "proof_row_id": 563,
+      "source_node_id": 797,
+      "digits": "0010011110100100020101120300000001",
+      "tiles": 18,
+      "lean_state": "Mahjong.Scale12V2.state563"
+    },
+    {
+      "registry_id": 564,
+      "proof_row_id": 564,
+      "source_node_id": 798,
+      "digits": "0302110011000011111000100120000000",
+      "tiles": 18,
+      "lean_state": "Mahjong.Scale12V2.state564"
+    },
+    {
+      "registry_id": 565,
+      "proof_row_id": 565,
+      "source_node_id": 799,
+      "digits": "0010011110101120301000100120000000",
+      "tiles": 18,
+      "lean_state": "Mahjong.Scale12V2.state565"
+    },
+    {
+      "registry_id": 566,
+      "proof_row_id": 566,
+      "source_node_id": 800,
+      "digits": "0000011110001120311000100120000001",
+      "tiles": 18,
+      "lean_state": "Mahjong.Scale12V2.state566"
+    },
+    {
+      "registry_id": 567,
+      "proof_row_id": 567,
+      "source_node_id": 801,
+      "digits": "0100011110100100120302110010000000",
+      "tiles": 18,
+      "lean_state": "Mahjong.Scale12V2.state567"
+    },
+    {
+      "registry_id": 568,
+      "proof_row_id": 568,
+      "source_node_id": 802,
+      "digits": "0000011110000100121001120310000001",
+      "tiles": 18,
+      "lean_state": "Mahjong.Scale12V2.state568"
+    },
+    {
+      "registry_id": 569,
+      "proof_row_id": 569,
+      "source_node_id": 803,
+      "digits": "0100100020101120301000011110000001",
+      "tiles": 18,
+      "lean_state": "Mahjong.Scale12V2.state569"
+    },
+    {
+      "registry_id": 570,
+      "proof_row_id": 570,
+      "source_node_id": 804,
+      "digits": "0010011110101120301000100020000001",
+      "tiles": 18,
+      "lean_state": "Mahjong.Scale12V2.state570"
+    },
+    {
+      "registry_id": 571,
+      "proof_row_id": 571,
+      "source_node_id": 805,
+      "digits": "0000011110000100120101120300000011",
+      "tiles": 18,
+      "lean_state": "Mahjong.Scale12V2.state571"
+    },
+    {
+      "registry_id": 572,
+      "proof_row_id": 572,
+      "source_node_id": 806,
+      "digits": "0010011110311110011000010020000001",
+      "tiles": 18,
+      "lean_state": "Mahjong.Scale12V2.state572"
+    },
+    {
+      "registry_id": 573,
+      "proof_row_id": 573,
+      "source_node_id": 807,
+      "digits": "0010011110100010020311110010000001",
+      "tiles": 18,
+      "lean_state": "Mahjong.Scale12V2.state573"
+    },
+    {
+      "registry_id": 574,
+      "proof_row_id": 574,
+      "source_node_id": 808,
+      "digits": "0010010020311110011000011110000001",
+      "tiles": 18,
+      "lean_state": "Mahjong.Scale12V2.state574"
+    },
+    {
+      "registry_id": 575,
+      "proof_row_id": 575,
+      "source_node_id": 809,
+      "digits": "0100010020100011110311110010000001",
+      "tiles": 18,
+      "lean_state": "Mahjong.Scale12V2.state575"
+    },
+    {
+      "registry_id": 576,
+      "proof_row_id": 576,
+      "source_node_id": 810,
+      "digits": "0000010020010011110311110010000011",
+      "tiles": 18,
+      "lean_state": "Mahjong.Scale12V2.state576"
+    },
+    {
+      "registry_id": 577,
+      "proof_row_id": 577,
+      "source_node_id": 811,
+      "digits": "1000000121000011111002110310000000",
+      "tiles": 18,
+      "lean_state": "Mahjong.Scale12V2.state577"
+    },
+    {
+      "registry_id": 578,
+      "proof_row_id": 578,
+      "source_node_id": 812,
+      "digits": "0100011110401120011000000120000000",
+      "tiles": 18,
+      "lean_state": "Mahjong.Scale12V2.state578"
+    },
+    {
+      "registry_id": 579,
+      "proof_row_id": 579,
+      "source_node_id": 813,
+      "digits": "0010011110401120011000000120000000",
+      "tiles": 18,
+      "lean_state": "Mahjong.Scale12V2.state579"
+    },
+    {
+      "registry_id": 580,
+      "proof_row_id": 580,
+      "source_node_id": 814,
+      "digits": "0000011110301120011000100120000001",
+      "tiles": 18,
+      "lean_state": "Mahjong.Scale12V2.state580"
+    },
+    {
+      "registry_id": 581,
+      "proof_row_id": 581,
+      "source_node_id": 815,
+      "digits": "0100000120401120011000011110000000",
+      "tiles": 18,
+      "lean_state": "Mahjong.Scale12V2.state581"
+    },
+    {
+      "registry_id": 582,
+      "proof_row_id": 582,
+      "source_node_id": 816,
+      "digits": "0010011110100000120301120010000001",
+      "tiles": 18,
+      "lean_state": "Mahjong.Scale12V2.state582"
+    },
+    {
+      "registry_id": 583,
+      "proof_row_id": 583,
+      "source_node_id": 817,
+      "digits": "0000011110100100120401120010000000",
+      "tiles": 18,
+      "lean_state": "Mahjong.Scale12V2.state583"
+    },
+    {
+      "registry_id": 584,
+      "proof_row_id": 584,
+      "source_node_id": 818,
+      "digits": "0010000120311110011000011110000001",
+      "tiles": 18,
+      "lean_state": "Mahjong.Scale12V2.state584"
+    },
+    {
+      "registry_id": 585,
+      "proof_row_id": 585,
+      "source_node_id": 819,
+      "digits": "0010000120100011110311110010000001",
+      "tiles": 18,
+      "lean_state": "Mahjong.Scale12V2.state585"
+    },
+    {
+      "registry_id": 586,
+      "proof_row_id": 586,
+      "source_node_id": 820,
+      "digits": "0010000120010011110311110010000001",
+      "tiles": 18,
+      "lean_state": "Mahjong.Scale12V2.state586"
+    },
+    {
+      "registry_id": 587,
+      "proof_row_id": 587,
+      "source_node_id": 821,
+      "digits": "0010000121000011111002110310000000",
+      "tiles": 18,
+      "lean_state": "Mahjong.Scale12V2.state587"
+    },
+    {
+      "registry_id": 588,
+      "proof_row_id": 588,
+      "source_node_id": 822,
+      "digits": "0000100120301120011000011110000001",
+      "tiles": 18,
+      "lean_state": "Mahjong.Scale12V2.state588"
+    },
+    {
+      "registry_id": 589,
+      "proof_row_id": 589,
+      "source_node_id": 823,
+      "digits": "0100011110401110011000000120000001",
+      "tiles": 18,
+      "lean_state": "Mahjong.Scale12V2.state589"
+    },
+    {
+      "registry_id": 590,
+      "proof_row_id": 590,
+      "source_node_id": 824,
+      "digits": "0100000120100011110302110010000001",
+      "tiles": 18,
+      "lean_state": "Mahjong.Scale12V2.state590"
+    },
+    {
+      "registry_id": 591,
+      "proof_row_id": 591,
+      "source_node_id": 825,
+      "digits": "0001000120100011110401110010000001",
+      "tiles": 18,
+      "lean_state": "Mahjong.Scale12V2.state591"
+    },
+    {
+      "registry_id": 592,
+      "proof_row_id": 592,
+      "source_node_id": 826,
+      "digits": "0000100120100011110401110010000001",
+      "tiles": 18,
+      "lean_state": "Mahjong.Scale12V2.state592"
+    },
+    {
+      "registry_id": 593,
+      "proof_row_id": 593,
+      "source_node_id": 827,
+      "digits": "0100000120100011110301210010000001",
+      "tiles": 18,
+      "lean_state": "Mahjong.Scale12V2.state593"
+    },
+    {
+      "registry_id": 594,
+      "proof_row_id": 594,
+      "source_node_id": 828,
+      "digits": "0100000120100011110301120010000001",
+      "tiles": 18,
+      "lean_state": "Mahjong.Scale12V2.state594"
+    },
+    {
+      "registry_id": 595,
+      "proof_row_id": 595,
+      "source_node_id": 829,
+      "digits": "0000000120100011110301110010000111",
+      "tiles": 18,
+      "lean_state": "Mahjong.Scale12V2.state595"
+    },
+    {
+      "registry_id": 596,
+      "proof_row_id": 596,
+      "source_node_id": 830,
+      "digits": "0010011110401110011000000120000001",
+      "tiles": 18,
+      "lean_state": "Mahjong.Scale12V2.state596"
+    },
+    {
+      "registry_id": 597,
+      "proof_row_id": 597,
+      "source_node_id": 831,
+      "digits": "0001000120010011110401110010000001",
+      "tiles": 18,
+      "lean_state": "Mahjong.Scale12V2.state597"
+    },
+    {
+      "registry_id": 598,
+      "proof_row_id": 598,
+      "source_node_id": 832,
+      "digits": "0000100120010011110301210010000001",
+      "tiles": 18,
+      "lean_state": "Mahjong.Scale12V2.state598"
+    },
+    {
+      "registry_id": 599,
+      "proof_row_id": 599,
+      "source_node_id": 833,
+      "digits": "0010011110100000120401110010000001",
+      "tiles": 18,
+      "lean_state": "Mahjong.Scale12V2.state599"
+    },
+    {
+      "registry_id": 600,
+      "proof_row_id": 600,
+      "source_node_id": 834,
+      "digits": "0010011110100000120302110010000001",
+      "tiles": 18,
+      "lean_state": "Mahjong.Scale12V2.state600"
+    },
+    {
+      "registry_id": 601,
+      "proof_row_id": 601,
+      "source_node_id": 835,
+      "digits": "0000000120010011110301110010000111",
+      "tiles": 18,
+      "lean_state": "Mahjong.Scale12V2.state601"
+    },
+    {
+      "registry_id": 602,
+      "proof_row_id": 602,
+      "source_node_id": 836,
+      "digits": "1000000121000011111001120310000000",
+      "tiles": 18,
+      "lean_state": "Mahjong.Scale12V2.state602"
+    },
+    {
+      "registry_id": 603,
+      "proof_row_id": 603,
+      "source_node_id": 837,
+      "digits": "0010000121000011111001120310000000",
+      "tiles": 18,
+      "lean_state": "Mahjong.Scale12V2.state603"
+    },
+    {
+      "registry_id": 604,
+      "proof_row_id": 604,
+      "source_node_id": 839,
+      "digits": "0100000120100011111001120310000000",
+      "tiles": 18,
+      "lean_state": "Mahjong.Scale12V2.state604"
+    },
+    {
+      "registry_id": 605,
+      "proof_row_id": 605,
+      "source_node_id": 840,
+      "digits": "0100100120401110011000011110000000",
+      "tiles": 18,
+      "lean_state": "Mahjong.Scale12V2.state605"
+    },
+    {
+      "registry_id": 606,
+      "proof_row_id": 606,
+      "source_node_id": 841,
+      "digits": "0000100120010011110401210010000000",
+      "tiles": 18,
+      "lean_state": "Mahjong.Scale12V2.state606"
+    },
+    {
+      "registry_id": 607,
+      "proof_row_id": 607,
+      "source_node_id": 842,
+      "digits": "0010011110401110011000100120000000",
+      "tiles": 18,
+      "lean_state": "Mahjong.Scale12V2.state607"
+    },
+    {
+      "registry_id": 608,
+      "proof_row_id": 608,
+      "source_node_id": 843,
+      "digits": "0000100120301210011000011110000001",
+      "tiles": 18,
+      "lean_state": "Mahjong.Scale12V2.state608"
+    },
+    {
+      "registry_id": 609,
+      "proof_row_id": 609,
+      "source_node_id": 844,
+      "digits": "0100011110100100120301210010000000",
+      "tiles": 18,
+      "lean_state": "Mahjong.Scale12V2.state609"
+    },
+    {
+      "registry_id": 610,
+      "proof_row_id": 610,
+      "source_node_id": 845,
+      "digits": "0000011110301210011000100120000001",
+      "tiles": 18,
+      "lean_state": "Mahjong.Scale12V2.state610"
+    },
+    {
+      "registry_id": 611,
+      "proof_row_id": 611,
+      "source_node_id": 846,
+      "digits": "0000011110000100121001210310000001",
+      "tiles": 18,
+      "lean_state": "Mahjong.Scale12V2.state611"
+    },
+    {
+      "registry_id": 612,
+      "proof_row_id": 612,
+      "source_node_id": 847,
+      "digits": "0001000120311110011000011110000001",
+      "tiles": 18,
+      "lean_state": "Mahjong.Scale12V2.state612"
+    },
+    {
+      "registry_id": 613,
+      "proof_row_id": 613,
+      "source_node_id": 848,
+      "digits": "0001000121000011111001110310000001",
+      "tiles": 18,
+      "lean_state": "Mahjong.Scale12V2.state613"
+    },
+    {
+      "registry_id": 614,
+      "proof_row_id": 614,
+      "source_node_id": 850,
+      "digits": "0000011110301210011001000120000001",
+      "tiles": 18,
+      "lean_state": "Mahjong.Scale12V2.state614"
+    },
+    {
+      "registry_id": 615,
+      "proof_row_id": 615,
+      "source_node_id": 851,
+      "digits": "0100001020311110011000011110000001",
+      "tiles": 18,
+      "lean_state": "Mahjong.Scale12V2.state615"
+    },
+    {
+      "registry_id": 616,
+      "proof_row_id": 616,
+      "source_node_id": 852,
+      "digits": "0001000120001111301000011110000011",
+      "tiles": 18,
+      "lean_state": "Mahjong.Scale12V2.state616"
+    },
+    {
+      "registry_id": 617,
+      "proof_row_id": 617,
+      "source_node_id": 853,
+      "digits": "0311110011000011111000100120000000",
+      "tiles": 18,
+      "lean_state": "Mahjong.Scale12V2.state617"
+    },
+    {
+      "registry_id": 618,
+      "proof_row_id": 618,
+      "source_node_id": 854,
+      "digits": "0001111301000011111000100120000001",
+      "tiles": 18,
+      "lean_state": "Mahjong.Scale12V2.state618"
+    },
+    {
+      "registry_id": 619,
+      "proof_row_id": 619,
+      "source_node_id": 855,
+      "digits": "0100011110100100020401110010000001",
+      "tiles": 18,
+      "lean_state": "Mahjong.Scale12V2.state619"
+    },
+    {
+      "registry_id": 620,
+      "proof_row_id": 620,
+      "source_node_id": 856,
+      "digits": "0100001020100011110311110010000001",
+      "tiles": 18,
+      "lean_state": "Mahjong.Scale12V2.state620"
+    },
+    {
+      "registry_id": 621,
+      "proof_row_id": 621,
+      "source_node_id": 857,
+      "digits": "0100000020100011110301110010000111",
+      "tiles": 18,
+      "lean_state": "Mahjong.Scale12V2.state621"
+    },
+    {
+      "registry_id": 622,
+      "proof_row_id": 622,
+      "source_node_id": 858,
+      "digits": "0100000120100011110101210400000000",
+      "tiles": 18,
+      "lean_state": "Mahjong.Scale12V2.state622"
+    },
+    {
+      "registry_id": 623,
+      "proof_row_id": 623,
+      "source_node_id": 859,
+      "digits": "0002110400100011110100100120000000",
+      "tiles": 18,
+      "lean_state": "Mahjong.Scale12V2.state623"
+    },
+    {
+      "registry_id": 624,
+      "proof_row_id": 624,
+      "source_node_id": 860,
+      "digits": "0100011110100100020101210400000000",
+      "tiles": 18,
+      "lean_state": "Mahjong.Scale12V2.state624"
+    },
+    {
+      "registry_id": 625,
+      "proof_row_id": 625,
+      "source_node_id": 861,
+      "digits": "0010011110100100020301210010000001",
+      "tiles": 18,
+      "lean_state": "Mahjong.Scale12V2.state625"
+    },
+    {
+      "registry_id": 626,
+      "proof_row_id": 626,
+      "source_node_id": 862,
+      "digits": "0010011110100001020311110010000001",
+      "tiles": 18,
+      "lean_state": "Mahjong.Scale12V2.state626"
+    },
+    {
+      "registry_id": 627,
+      "proof_row_id": 627,
+      "source_node_id": 863,
+      "digits": "0010011110100000020301110010000111",
+      "tiles": 18,
+      "lean_state": "Mahjong.Scale12V2.state627"
+    },
+    {
+      "registry_id": 628,
+      "proof_row_id": 628,
+      "source_node_id": 864,
+      "digits": "0010011110100100120101110400000000",
+      "tiles": 18,
+      "lean_state": "Mahjong.Scale12V2.state628"
+    },
+    {
+      "registry_id": 629,
+      "proof_row_id": 629,
+      "source_node_id": 865,
+      "digits": "0010011110100100120101210300000000",
+      "tiles": 18,
+      "lean_state": "Mahjong.Scale12V2.state629"
+    },
+    {
+      "registry_id": 630,
+      "proof_row_id": 630,
+      "source_node_id": 866,
+      "digits": "0010011110100000120101110400000001",
+      "tiles": 18,
+      "lean_state": "Mahjong.Scale12V2.state630"
+    },
+    {
+      "registry_id": 631,
+      "proof_row_id": 631,
+      "source_node_id": 867,
+      "digits": "0002110400010011110100100120000000",
+      "tiles": 18,
+      "lean_state": "Mahjong.Scale12V2.state631"
+    },
+    {
+      "registry_id": 632,
+      "proof_row_id": 632,
+      "source_node_id": 868,
+      "digits": "0001210400010011110100100120000000",
+      "tiles": 18,
+      "lean_state": "Mahjong.Scale12V2.state632"
+    },
+    {
+      "registry_id": 633,
+      "proof_row_id": 633,
+      "source_node_id": 869,
+      "digits": "0101110401000011111000100120000000",
+      "tiles": 18,
+      "lean_state": "Mahjong.Scale12V2.state633"
+    },
+    {
+      "registry_id": 634,
+      "proof_row_id": 634,
+      "source_node_id": 870,
+      "digits": "0000100120101210401000011110000000",
+      "tiles": 18,
+      "lean_state": "Mahjong.Scale12V2.state634"
+    },
+    {
+      "registry_id": 635,
+      "proof_row_id": 635,
+      "source_node_id": 871,
+      "digits": "0100100120101120301000011110000000",
+      "tiles": 18,
+      "lean_state": "Mahjong.Scale12V2.state635"
+    },
+    {
+      "registry_id": 636,
+      "proof_row_id": 636,
+      "source_node_id": 872,
+      "digits": "0000100120101110401000011110000001",
+      "tiles": 18,
+      "lean_state": "Mahjong.Scale12V2.state636"
+    },
+    {
+      "registry_id": 637,
+      "proof_row_id": 637,
+      "source_node_id": 873,
+      "digits": "0010011110101110401000100020000001",
+      "tiles": 18,
+      "lean_state": "Mahjong.Scale12V2.state637"
+    },
+    {
+      "registry_id": 638,
+      "proof_row_id": 638,
+      "source_node_id": 874,
+      "digits": "0000100020010011110101210400000001",
+      "tiles": 18,
+      "lean_state": "Mahjong.Scale12V2.state638"
+    },
+    {
+      "registry_id": 639,
+      "proof_row_id": 639,
+      "source_node_id": 875,
+      "digits": "0101210401000011111000100020000000",
+      "tiles": 18,
+      "lean_state": "Mahjong.Scale12V2.state639"
+    },
+    {
+      "registry_id": 640,
+      "proof_row_id": 640,
+      "source_node_id": 876,
+      "digits": "0100011110101210311000100020000000",
+      "tiles": 18,
+      "lean_state": "Mahjong.Scale12V2.state640"
+    },
+    {
+      "registry_id": 641,
+      "proof_row_id": 641,
+      "source_node_id": 877,
+      "digits": "0010011110101210301000100020000001",
+      "tiles": 18,
+      "lean_state": "Mahjong.Scale12V2.state641"
+    },
+    {
+      "registry_id": 642,
+      "proof_row_id": 642,
+      "source_node_id": 878,
+      "digits": "0010011110101210301000100120000000",
+      "tiles": 18,
+      "lean_state": "Mahjong.Scale12V2.state642"
+    },
+    {
+      "registry_id": 643,
+      "proof_row_id": 643,
+      "source_node_id": 879,
+      "digits": "0100100020401210011000011110000000",
+      "tiles": 18,
+      "lean_state": "Mahjong.Scale12V2.state643"
+    },
+    {
+      "registry_id": 644,
+      "proof_row_id": 644,
+      "source_node_id": 880,
+      "digits": "0000100020101210401000011110000001",
+      "tiles": 18,
+      "lean_state": "Mahjong.Scale12V2.state644"
+    },
+    {
+      "registry_id": 645,
+      "proof_row_id": 645,
+      "source_node_id": 881,
+      "digits": "0000100020001210310010011110000011",
+      "tiles": 18,
+      "lean_state": "Mahjong.Scale12V2.state645"
+    },
+    {
+      "registry_id": 646,
+      "proof_row_id": 646,
+      "source_node_id": 882,
+      "digits": "0100011110101110401000100120000000",
+      "tiles": 18,
+      "lean_state": "Mahjong.Scale12V2.state646"
+    },
+    {
+      "registry_id": 647,
+      "proof_row_id": 647,
+      "source_node_id": 883,
+      "digits": "0002110400100100021000011110000001",
+      "tiles": 18,
+      "lean_state": "Mahjong.Scale12V2.state647"
+    },
+    {
+      "registry_id": 648,
+      "proof_row_id": 648,
+      "source_node_id": 884,
+      "digits": "0002110400100011111000100020000001",
+      "tiles": 18,
+      "lean_state": "Mahjong.Scale12V2.state648"
+    },
+    {
+      "registry_id": 649,
+      "proof_row_id": 649,
+      "source_node_id": 885,
+      "digits": "0002110400010011110100100020000001",
+      "tiles": 18,
+      "lean_state": "Mahjong.Scale12V2.state649"
+    },
+    {
+      "registry_id": 650,
+      "proof_row_id": 650,
+      "source_node_id": 886,
+      "digits": "0000011110000100120401120010000001",
+      "tiles": 18,
+      "lean_state": "Mahjong.Scale12V2.state650"
+    },
+    {
+      "registry_id": 651,
+      "proof_row_id": 651,
+      "source_node_id": 887,
+      "digits": "0000100020002110400010011110000011",
+      "tiles": 18,
+      "lean_state": "Mahjong.Scale12V2.state651"
+    },
+    {
+      "registry_id": 652,
+      "proof_row_id": 652,
+      "source_node_id": 888,
+      "digits": "0001000120100011110101110400000001",
+      "tiles": 18,
+      "lean_state": "Mahjong.Scale12V2.state652"
+    },
+    {
+      "registry_id": 653,
+      "proof_row_id": 653,
+      "source_node_id": 889,
+      "digits": "0001000020100011110101210400000001",
+      "tiles": 18,
+      "lean_state": "Mahjong.Scale12V2.state653"
+    },
+    {
+      "registry_id": 654,
+      "proof_row_id": 654,
+      "source_node_id": 890,
+      "digits": "0001000120001210300010011110000011",
+      "tiles": 18,
+      "lean_state": "Mahjong.Scale12V2.state654"
+    },
+    {
+      "registry_id": 655,
+      "proof_row_id": 655,
+      "source_node_id": 891,
+      "digits": "0001000020010011110401210010000001",
+      "tiles": 18,
+      "lean_state": "Mahjong.Scale12V2.state655"
+    },
+    {
+      "registry_id": 656,
+      "proof_row_id": 656,
+      "source_node_id": 892,
+      "digits": "0001000020010011110101210400000001",
+      "tiles": 18,
+      "lean_state": "Mahjong.Scale12V2.state656"
+    },
+    {
+      "registry_id": 657,
+      "proof_row_id": 657,
+      "source_node_id": 893,
+      "digits": "0001000020010011110101210310000001",
+      "tiles": 18,
+      "lean_state": "Mahjong.Scale12V2.state657"
+    },
+    {
+      "registry_id": 658,
+      "proof_row_id": 658,
+      "source_node_id": 894,
+      "digits": "0001000020101110401000011110000011",
+      "tiles": 18,
+      "lean_state": "Mahjong.Scale12V2.state658"
+    },
+    {
+      "registry_id": 659,
+      "proof_row_id": 659,
+      "source_node_id": 895,
+      "digits": "0001000120011110311000011110000001",
+      "tiles": 18,
+      "lean_state": "Mahjong.Scale12V2.state659"
+    },
+    {
+      "registry_id": 660,
+      "proof_row_id": 660,
+      "source_node_id": 896,
+      "digits": "0001000120011110301000011110000011",
+      "tiles": 18,
+      "lean_state": "Mahjong.Scale12V2.state660"
+    },
+    {
+      "registry_id": 661,
+      "proof_row_id": 661,
+      "source_node_id": 897,
+      "digits": "0001000021000011111001120310000001",
+      "tiles": 18,
+      "lean_state": "Mahjong.Scale12V2.state661"
+    },
+    {
+      "registry_id": 662,
+      "proof_row_id": 662,
+      "source_node_id": 898,
+      "digits": "0001000020100011110101120310000001",
+      "tiles": 18,
+      "lean_state": "Mahjong.Scale12V2.state662"
+    },
+    {
+      "registry_id": 663,
+      "proof_row_id": 663,
+      "source_node_id": 899,
+      "digits": "0001000020010011110101120310000001",
+      "tiles": 18,
+      "lean_state": "Mahjong.Scale12V2.state663"
+    },
+    {
+      "registry_id": 664,
+      "proof_row_id": 664,
+      "source_node_id": 194,
+      "digits": "0001111301000001021000011110000000",
+      "tiles": 16,
+      "lean_state": "Mahjong.Scale12V2.state664"
+    },
+    {
+      "registry_id": 665,
+      "proof_row_id": 665,
+      "source_node_id": 195,
+      "digits": "0001110400100011111000001020000000",
+      "tiles": 16,
+      "lean_state": "Mahjong.Scale12V2.state665"
+    },
+    {
+      "registry_id": 666,
+      "proof_row_id": 666,
+      "source_node_id": 196,
+      "digits": "0001210300010011111000001020000000",
+      "tiles": 16,
+      "lean_state": "Mahjong.Scale12V2.state666"
+    },
+    {
+      "registry_id": 667,
+      "proof_row_id": 667,
+      "source_node_id": 197,
+      "digits": "0000011110301120011000001020000000",
+      "tiles": 16,
+      "lean_state": "Mahjong.Scale12V2.state667"
+    },
+    {
+      "registry_id": 668,
+      "proof_row_id": 668,
+      "source_node_id": 198,
+      "digits": "0000011110101110401000001020000000",
+      "tiles": 16,
+      "lean_state": "Mahjong.Scale12V2.state668"
+    },
+    {
+      "registry_id": 669,
+      "proof_row_id": 669,
+      "source_node_id": 199,
+      "digits": "0011110301000001021000011110000000",
+      "tiles": 16,
+      "lean_state": "Mahjong.Scale12V2.state669"
+    },
+    {
+      "registry_id": 670,
+      "proof_row_id": 670,
+      "source_node_id": 200,
+      "digits": "0000011110002110301001001020000000",
+      "tiles": 16,
+      "lean_state": "Mahjong.Scale12V2.state670"
+    },
+    {
+      "registry_id": 671,
+      "proof_row_id": 671,
+      "source_node_id": 201,
+      "digits": "0000011110001120311000001020000000",
+      "tiles": 16,
+      "lean_state": "Mahjong.Scale12V2.state671"
+    },
+    {
+      "registry_id": 672,
+      "proof_row_id": 672,
+      "source_node_id": 202,
+      "digits": "0000011110001110301001001020000001",
+      "tiles": 16,
+      "lean_state": "Mahjong.Scale12V2.state672"
+    },
+    {
+      "registry_id": 673,
+      "proof_row_id": 673,
+      "source_node_id": 203,
+      "digits": "0001120310100000021000011110000000",
+      "tiles": 16,
+      "lean_state": "Mahjong.Scale12V2.state673"
+    },
+    {
+      "registry_id": 674,
+      "proof_row_id": 674,
+      "source_node_id": 204,
+      "digits": "0001110310100000020100011110000001",
+      "tiles": 16,
+      "lean_state": "Mahjong.Scale12V2.state674"
+    },
+    {
+      "registry_id": 675,
+      "proof_row_id": 675,
+      "source_node_id": 205,
+      "digits": "0001110310010011110100000020000001",
+      "tiles": 16,
+      "lean_state": "Mahjong.Scale12V2.state675"
+    },
+    {
+      "registry_id": 676,
+      "proof_row_id": 676,
+      "source_node_id": 206,
+      "digits": "0000011110100000021002110310000000",
+      "tiles": 16,
+      "lean_state": "Mahjong.Scale12V2.state676"
+    },
+    {
+      "registry_id": 677,
+      "proof_row_id": 677,
+      "source_node_id": 207,
+      "digits": "0000011110100100020101110310000000",
+      "tiles": 16,
+      "lean_state": "Mahjong.Scale12V2.state677"
+    },
+    {
+      "registry_id": 678,
+      "proof_row_id": 678,
+      "source_node_id": 208,
+      "digits": "0000011110011110310100001020000000",
+      "tiles": 16,
+      "lean_state": "Mahjong.Scale12V2.state678"
+    },
+    {
+      "registry_id": 679,
+      "proof_row_id": 679,
+      "source_node_id": 209,
+      "digits": "0000011110001210310100100020000000",
+      "tiles": 16,
+      "lean_state": "Mahjong.Scale12V2.state679"
+    },
+    {
+      "registry_id": 680,
+      "proof_row_id": 680,
+      "source_node_id": 210,
+      "digits": "0000011110001120310100000120000000",
+      "tiles": 16,
+      "lean_state": "Mahjong.Scale12V2.state680"
+    },
+    {
+      "registry_id": 681,
+      "proof_row_id": 681,
+      "source_node_id": 211,
+      "digits": "0000011110011110310100010020000000",
+      "tiles": 16,
+      "lean_state": "Mahjong.Scale12V2.state681"
+    },
+    {
+      "registry_id": 682,
+      "proof_row_id": 682,
+      "source_node_id": 212,
+      "digits": "0010010020011110301000011110000000",
+      "tiles": 16,
+      "lean_state": "Mahjong.Scale12V2.state682"
+    },
+    {
+      "registry_id": 683,
+      "proof_row_id": 683,
+      "source_node_id": 213,
+      "digits": "0010001020011110300100011110000000",
+      "tiles": 16,
+      "lean_state": "Mahjong.Scale12V2.state683"
+    },
+    {
+      "registry_id": 684,
+      "proof_row_id": 684,
+      "source_node_id": 214,
+      "digits": "0010000120010011110011110300000000",
+      "tiles": 16,
+      "lean_state": "Mahjong.Scale12V2.state684"
+    },
+    {
+      "registry_id": 685,
+      "proof_row_id": 685,
+      "source_node_id": 215,
+      "digits": "0000011110010000020011110310000001",
+      "tiles": 16,
+      "lean_state": "Mahjong.Scale12V2.state685"
+    },
+    {
+      "registry_id": 686,
+      "proof_row_id": 686,
+      "source_node_id": 216,
+      "digits": "0001000020002110311000011110000000",
+      "tiles": 16,
+      "lean_state": "Mahjong.Scale12V2.state686"
+    },
+    {
+      "registry_id": 687,
+      "proof_row_id": 687,
+      "source_node_id": 217,
+      "digits": "0001000020002110400100011110000000",
+      "tiles": 16,
+      "lean_state": "Mahjong.Scale12V2.state687"
+    },
+    {
+      "registry_id": 688,
+      "proof_row_id": 688,
+      "source_node_id": 218,
+      "digits": "0001000020002110400010011110000000",
+      "tiles": 16,
+      "lean_state": "Mahjong.Scale12V2.state688"
+    },
+    {
+      "registry_id": 689,
+      "proof_row_id": 689,
+      "source_node_id": 219,
+      "digits": "0000011110001000120301120010000000",
+      "tiles": 16,
+      "lean_state": "Mahjong.Scale12V2.state689"
+    },
+    {
+      "registry_id": 690,
+      "proof_row_id": 690,
+      "source_node_id": 220,
+      "digits": "0000011110001000020002110300000011",
+      "tiles": 16,
+      "lean_state": "Mahjong.Scale12V2.state690"
+    },
+    {
+      "registry_id": 691,
+      "proof_row_id": 691,
+      "source_node_id": 221,
+      "digits": "0000100020001120311000011110000000",
+      "tiles": 16,
+      "lean_state": "Mahjong.Scale12V2.state691"
+    },
+    {
+      "registry_id": 692,
+      "proof_row_id": 692,
+      "source_node_id": 222,
+      "digits": "0000100020100011110101120300000000",
+      "tiles": 16,
+      "lean_state": "Mahjong.Scale12V2.state692"
+    },
+    {
+      "registry_id": 693,
+      "proof_row_id": 693,
+      "source_node_id": 223,
+      "digits": "0001120300010011110100100020000000",
+      "tiles": 16,
+      "lean_state": "Mahjong.Scale12V2.state693"
+    },
+    {
+      "registry_id": 694,
+      "proof_row_id": 694,
+      "source_node_id": 224,
+      "digits": "0000011110001120301000100120000000",
+      "tiles": 16,
+      "lean_state": "Mahjong.Scale12V2.state694"
+    },
+    {
+      "registry_id": 695,
+      "proof_row_id": 695,
+      "source_node_id": 225,
+      "digits": "0000011110000100120302110010000000",
+      "tiles": 16,
+      "lean_state": "Mahjong.Scale12V2.state695"
+    },
+    {
+      "registry_id": 696,
+      "proof_row_id": 696,
+      "source_node_id": 226,
+      "digits": "0000011110000100020101120300000001",
+      "tiles": 16,
+      "lean_state": "Mahjong.Scale12V2.state696"
+    },
+    {
+      "registry_id": 697,
+      "proof_row_id": 697,
+      "source_node_id": 227,
+      "digits": "0001111300010011111000010020000000",
+      "tiles": 16,
+      "lean_state": "Mahjong.Scale12V2.state697"
+    },
+    {
+      "registry_id": 698,
+      "proof_row_id": 698,
+      "source_node_id": 228,
+      "digits": "0001111300010011110100010020000000",
+      "tiles": 16,
+      "lean_state": "Mahjong.Scale12V2.state698"
+    },
+    {
+      "registry_id": 699,
+      "proof_row_id": 699,
+      "source_node_id": 229,
+      "digits": "0001111300010010021000011110000000",
+      "tiles": 16,
+      "lean_state": "Mahjong.Scale12V2.state699"
+    },
+    {
+      "registry_id": 700,
+      "proof_row_id": 700,
+      "source_node_id": 230,
+      "digits": "0001111300100010020100011110000000",
+      "tiles": 16,
+      "lean_state": "Mahjong.Scale12V2.state700"
+    },
+    {
+      "registry_id": 701,
+      "proof_row_id": 701,
+      "source_node_id": 231,
+      "digits": "0000010020000011110311110010000001",
+      "tiles": 16,
+      "lean_state": "Mahjong.Scale12V2.state701"
+    },
+    {
+      "registry_id": 702,
+      "proof_row_id": 702,
+      "source_node_id": 232,
+      "digits": "0000011110301120011000000120000000",
+      "tiles": 16,
+      "lean_state": "Mahjong.Scale12V2.state702"
+    },
+    {
+      "registry_id": 703,
+      "proof_row_id": 703,
+      "source_node_id": 233,
+      "digits": "0000011110100000120301120010000000",
+      "tiles": 16,
+      "lean_state": "Mahjong.Scale12V2.state703"
+    },
+    {
+      "registry_id": 704,
+      "proof_row_id": 704,
+      "source_node_id": 234,
+      "digits": "0000011110010000120311110010000000",
+      "tiles": 16,
+      "lean_state": "Mahjong.Scale12V2.state704"
+    },
+    {
+      "registry_id": 705,
+      "proof_row_id": 705,
+      "source_node_id": 235,
+      "digits": "0000000120301120011000011110000000",
+      "tiles": 16,
+      "lean_state": "Mahjong.Scale12V2.state705"
+    },
+    {
+      "registry_id": 706,
+      "proof_row_id": 706,
+      "source_node_id": 236,
+      "digits": "0000000120100011110301110010000001",
+      "tiles": 16,
+      "lean_state": "Mahjong.Scale12V2.state706"
+    },
+    {
+      "registry_id": 707,
+      "proof_row_id": 707,
+      "source_node_id": 237,
+      "digits": "0000000120010011110301110010000001",
+      "tiles": 16,
+      "lean_state": "Mahjong.Scale12V2.state707"
+    },
+    {
+      "registry_id": 708,
+      "proof_row_id": 708,
+      "source_node_id": 238,
+      "digits": "0000000120000011111001120310000000",
+      "tiles": 16,
+      "lean_state": "Mahjong.Scale12V2.state708"
+    },
+    {
+      "registry_id": 709,
+      "proof_row_id": 709,
+      "source_node_id": 239,
+      "digits": "0000011110000100120401110010000000",
+      "tiles": 16,
+      "lean_state": "Mahjong.Scale12V2.state709"
+    },
+    {
+      "registry_id": 710,
+      "proof_row_id": 710,
+      "source_node_id": 240,
+      "digits": "0000011110000100120301210010000000",
+      "tiles": 16,
+      "lean_state": "Mahjong.Scale12V2.state710"
+    },
+    {
+      "registry_id": 711,
+      "proof_row_id": 711,
+      "source_node_id": 241,
+      "digits": "0000011110001000120301110010000001",
+      "tiles": 16,
+      "lean_state": "Mahjong.Scale12V2.state711"
+    },
+    {
+      "registry_id": 712,
+      "proof_row_id": 712,
+      "source_node_id": 242,
+      "digits": "0001111300100001021000011110000000",
+      "tiles": 16,
+      "lean_state": "Mahjong.Scale12V2.state712"
+    },
+    {
+      "registry_id": 713,
+      "proof_row_id": 713,
+      "source_node_id": 243,
+      "digits": "0001000020001111301000011110000001",
+      "tiles": 16,
+      "lean_state": "Mahjong.Scale12V2.state713"
+    },
+    {
+      "registry_id": 714,
+      "proof_row_id": 714,
+      "source_node_id": 244,
+      "digits": "0001111301000011111000100020000000",
+      "tiles": 16,
+      "lean_state": "Mahjong.Scale12V2.state714"
+    },
+    {
+      "registry_id": 715,
+      "proof_row_id": 715,
+      "source_node_id": 245,
+      "digits": "0001111300010000121000011110000000",
+      "tiles": 16,
+      "lean_state": "Mahjong.Scale12V2.state715"
+    },
+    {
+      "registry_id": 716,
+      "proof_row_id": 716,
+      "source_node_id": 246,
+      "digits": "0001000020311110011000011110000000",
+      "tiles": 16,
+      "lean_state": "Mahjong.Scale12V2.state716"
+    },
+    {
+      "registry_id": 717,
+      "proof_row_id": 717,
+      "source_node_id": 247,
+      "digits": "0100000020100011110301110010000001",
+      "tiles": 16,
+      "lean_state": "Mahjong.Scale12V2.state717"
+    },
+    {
+      "registry_id": 718,
+      "proof_row_id": 718,
+      "source_node_id": 248,
+      "digits": "0100000120100011110101110300000000",
+      "tiles": 16,
+      "lean_state": "Mahjong.Scale12V2.state718"
+    },
+    {
+      "registry_id": 719,
+      "proof_row_id": 719,
+      "source_node_id": 249,
+      "digits": "0011110300100001020100011110000000",
+      "tiles": 16,
+      "lean_state": "Mahjong.Scale12V2.state719"
+    },
+    {
+      "registry_id": 720,
+      "proof_row_id": 720,
+      "source_node_id": 250,
+      "digits": "0002110300100000120100011110000000",
+      "tiles": 16,
+      "lean_state": "Mahjong.Scale12V2.state720"
+    },
+    {
+      "registry_id": 721,
+      "proof_row_id": 721,
+      "source_node_id": 251,
+      "digits": "0001210300100011110100100020000000",
+      "tiles": 16,
+      "lean_state": "Mahjong.Scale12V2.state721"
+    },
+    {
+      "registry_id": 722,
+      "proof_row_id": 722,
+      "source_node_id": 252,
+      "digits": "0001120300100000120100011110000000",
+      "tiles": 16,
+      "lean_state": "Mahjong.Scale12V2.state722"
+    },
+    {
+      "registry_id": 723,
+      "proof_row_id": 723,
+      "source_node_id": 253,
+      "digits": "0001110400100011110100100020000000",
+      "tiles": 16,
+      "lean_state": "Mahjong.Scale12V2.state723"
+    },
+    {
+      "registry_id": 724,
+      "proof_row_id": 724,
+      "source_node_id": 254,
+      "digits": "0010011110100000020301110010000001",
+      "tiles": 16,
+      "lean_state": "Mahjong.Scale12V2.state724"
+    },
+    {
+      "registry_id": 725,
+      "proof_row_id": 725,
+      "source_node_id": 255,
+      "digits": "0010011110100000120101110300000000",
+      "tiles": 16,
+      "lean_state": "Mahjong.Scale12V2.state725"
+    },
+    {
+      "registry_id": 726,
+      "proof_row_id": 726,
+      "source_node_id": 256,
+      "digits": "0010011110011110300100001020000000",
+      "tiles": 16,
+      "lean_state": "Mahjong.Scale12V2.state726"
+    },
+    {
+      "registry_id": 727,
+      "proof_row_id": 727,
+      "source_node_id": 257,
+      "digits": "0002110300010011110100000120000000",
+      "tiles": 16,
+      "lean_state": "Mahjong.Scale12V2.state727"
+    },
+    {
+      "registry_id": 728,
+      "proof_row_id": 728,
+      "source_node_id": 258,
+      "digits": "0001210300010011110100100020000000",
+      "tiles": 16,
+      "lean_state": "Mahjong.Scale12V2.state728"
+    },
+    {
+      "registry_id": 729,
+      "proof_row_id": 729,
+      "source_node_id": 259,
+      "digits": "0001110400010011110100000120000000",
+      "tiles": 16,
+      "lean_state": "Mahjong.Scale12V2.state729"
+    },
+    {
+      "registry_id": 730,
+      "proof_row_id": 730,
+      "source_node_id": 260,
+      "digits": "0000100120101110301000011110000000",
+      "tiles": 16,
+      "lean_state": "Mahjong.Scale12V2.state730"
+    },
+    {
+      "registry_id": 731,
+      "proof_row_id": 731,
+      "source_node_id": 261,
+      "digits": "0000100020010011110101110400000000",
+      "tiles": 16,
+      "lean_state": "Mahjong.Scale12V2.state731"
+    },
+    {
+      "registry_id": 732,
+      "proof_row_id": 732,
+      "source_node_id": 262,
+      "digits": "0000011110101210301000100020000000",
+      "tiles": 16,
+      "lean_state": "Mahjong.Scale12V2.state732"
+    },
+    {
+      "registry_id": 733,
+      "proof_row_id": 733,
+      "source_node_id": 263,
+      "digits": "0000100020001210401000011110000000",
+      "tiles": 16,
+      "lean_state": "Mahjong.Scale12V2.state733"
+    },
+    {
+      "registry_id": 734,
+      "proof_row_id": 734,
+      "source_node_id": 264,
+      "digits": "0000100020001210300010011110000001",
+      "tiles": 16,
+      "lean_state": "Mahjong.Scale12V2.state734"
+    },
+    {
+      "registry_id": 735,
+      "proof_row_id": 735,
+      "source_node_id": 265,
+      "digits": "0000011110101110401000100020000000",
+      "tiles": 16,
+      "lean_state": "Mahjong.Scale12V2.state735"
+    },
+    {
+      "registry_id": 736,
+      "proof_row_id": 736,
+      "source_node_id": 266,
+      "digits": "0000011110000100020002110400000001",
+      "tiles": 16,
+      "lean_state": "Mahjong.Scale12V2.state736"
+    },
+    {
+      "registry_id": 737,
+      "proof_row_id": 737,
+      "source_node_id": 267,
+      "digits": "0001000020001110400100011110000001",
+      "tiles": 16,
+      "lean_state": "Mahjong.Scale12V2.state737"
+    },
+    {
+      "registry_id": 738,
+      "proof_row_id": 738,
+      "source_node_id": 268,
+      "digits": "0001000020001210300010011110000001",
+      "tiles": 16,
+      "lean_state": "Mahjong.Scale12V2.state738"
+    },
+    {
+      "registry_id": 739,
+      "proof_row_id": 739,
+      "source_node_id": 269,
+      "digits": "0000011110001000020101110400000001",
+      "tiles": 16,
+      "lean_state": "Mahjong.Scale12V2.state739"
+    },
+    {
+      "registry_id": 740,
+      "proof_row_id": 740,
+      "source_node_id": 270,
+      "digits": "0001000020011110301000011110000001",
+      "tiles": 16,
+      "lean_state": "Mahjong.Scale12V2.state740"
+    },
+    {
+      "registry_id": 741,
+      "proof_row_id": 741,
+      "source_node_id": 271,
+      "digits": "0000011110001000020001120310000001",
+      "tiles": 16,
+      "lean_state": "Mahjong.Scale12V2.state741"
+    },
+    {
+      "registry_id": 742,
+      "proof_row_id": 742,
+      "source_node_id": 22,
+      "digits": "0000011110001110301000001020000000",
+      "tiles": 14,
+      "lean_state": "Mahjong.Scale12V2.state742"
+    },
+    {
+      "registry_id": 743,
+      "proof_row_id": 743,
+      "source_node_id": 23,
+      "digits": "0000011110001110310100000020000000",
+      "tiles": 14,
+      "lean_state": "Mahjong.Scale12V2.state743"
+    },
+    {
+      "registry_id": 744,
+      "proof_row_id": 744,
+      "source_node_id": 24,
+      "digits": "0000011110010000020011110300000000",
+      "tiles": 14,
+      "lean_state": "Mahjong.Scale12V2.state744"
+    },
+    {
+      "registry_id": 745,
+      "proof_row_id": 745,
+      "source_node_id": 25,
+      "digits": "0000011110001000020002110300000000",
+      "tiles": 14,
+      "lean_state": "Mahjong.Scale12V2.state745"
+    },
+    {
+      "registry_id": 746,
+      "proof_row_id": 746,
+      "source_node_id": 26,
+      "digits": "0000011110000100020001120300000000",
+      "tiles": 14,
+      "lean_state": "Mahjong.Scale12V2.state746"
+    },
+    {
+      "registry_id": 747,
+      "proof_row_id": 747,
+      "source_node_id": 27,
+      "digits": "0000010020000011110001111300000000",
+      "tiles": 14,
+      "lean_state": "Mahjong.Scale12V2.state747"
+    },
+    {
+      "registry_id": 748,
+      "proof_row_id": 748,
+      "source_node_id": 28,
+      "digits": "0000000120000011110301110010000000",
+      "tiles": 14,
+      "lean_state": "Mahjong.Scale12V2.state748"
+    },
+    {
+      "registry_id": 749,
+      "proof_row_id": 749,
+      "source_node_id": 29,
+      "digits": "0000000020001111301000011110000000",
+      "tiles": 14,
+      "lean_state": "Mahjong.Scale12V2.state749"
+    },
+    {
+      "registry_id": 750,
+      "proof_row_id": 750,
+      "source_node_id": 30,
+      "digits": "0001110300100000020100011110000000",
+      "tiles": 14,
+      "lean_state": "Mahjong.Scale12V2.state750"
+    },
+    {
+      "registry_id": 751,
+      "proof_row_id": 751,
+      "source_node_id": 31,
+      "digits": "0001110300010011110100000020000000",
+      "tiles": 14,
+      "lean_state": "Mahjong.Scale12V2.state751"
+    },
+    {
+      "registry_id": 752,
+      "proof_row_id": 752,
+      "source_node_id": 32,
+      "digits": "0000011110000100020101110300000000",
+      "tiles": 14,
+      "lean_state": "Mahjong.Scale12V2.state752"
+    },
+    {
+      "registry_id": 753,
+      "proof_row_id": 753,
+      "source_node_id": 33,
+      "digits": "0000011110000100020001210300000000",
+      "tiles": 14,
+      "lean_state": "Mahjong.Scale12V2.state753"
+    },
+    {
+      "registry_id": 754,
+      "proof_row_id": 754,
+      "source_node_id": 34,
+      "digits": "0000011110000100020001110400000000",
+      "tiles": 14,
+      "lean_state": "Mahjong.Scale12V2.state754"
+    },
+    {
+      "registry_id": 755,
+      "proof_row_id": 755,
+      "source_node_id": 35,
+      "digits": "0000011110001000020001110300000001",
+      "tiles": 14,
+      "lean_state": "Mahjong.Scale12V2.state755"
+    },
+    {
+      "registry_id": 756,
+      "proof_row_id": 756,
+      "source_node_id": 0,
+      "digits": "0000000020000011110001110300000000",
+      "tiles": 12,
+      "lean_state": "Mahjong.Scale12V2.state756"
+    }
+  ]
+}

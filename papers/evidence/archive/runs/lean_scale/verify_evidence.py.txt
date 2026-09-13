@@ -1,0 +1,157 @@
+"""Verify retained proof objects and their dependency-exact cache provenance.
+
+This is a receipt audit, not a replacement for Lean kernel checking. Native
+results are kept separate from the concrete, unconditional 12-tile theorem.
+"""
+from pathlib import Path
+import datetime
+import hashlib
+import json
+import re
+
+HERE = Path(__file__).resolve().parent
+ROOT = HERE.parents[1]
+LEAN = ROOT / "build/toolchain/lean-4.33.1-windows/bin/lean.exe"
+EXPECTED_LEAN = "af49bacfabaa1fea71332ca0feae0fa1a60912219d5902291adc79f905bffb8d"
+records = {}
+hashes = {}
+reuse_edges = 0
+
+
+def digest(path):
+    path = Path(path).resolve()
+    signature = (path, path.stat().st_size, path.stat().st_mtime_ns)
+    if signature not in hashes:
+        with path.open("rb") as source:
+            hashes[signature] = hashlib.file_digest(source, "sha256").hexdigest()
+    return hashes[signature]
+
+
+def read(path):
+    return json.loads(Path(path).read_text(encoding="utf-8-sig"))
+
+
+def receipt(path):
+    path = Path(path).resolve()
+    return {"path": path.relative_to(ROOT).as_posix(), "bytes": path.stat().st_size, "sha256": digest(path)}
+
+
+def verify_map(mapping, base=ROOT):
+    for path, expected in mapping.items():
+        assert digest(base / path) == expected, str(base / path)
+
+
+def kernel(folder):
+    global reuse_edges
+    folder = Path(folder).resolve()
+    assert folder.is_relative_to(ROOT / "runs")
+    if folder in records:
+        return records[folder]
+    result = read(folder / "result.json")
+    assert result["kernel_modules"] == "PASS" and result["trust_level"] == 0
+    assert result["source_unchanged"] and result["empty_game"] == "NOT_VERIFIED"
+    assert result["passed_modules"] == result["total_modules"] == len(result["steps"])
+    assert digest(folder / "runner.py") == result["runner_sha256"]
+    assert digest(LEAN) == result["toolchain_sha256"] == EXPECTED_LEAN
+    verify_map(result["source_sha256"], folder / "source")
+    verify_map(result["artifacts_sha256"], folder / "modules")
+    records[folder] = result
+    for item in result.get("reuse_receipts", []):
+        assert digest(ROOT / item["path"] / "result.json") == item["sha256"]
+    for step in result["steps"]:
+        assert step["return_code"] == 0 and step["stop_reason"] is None
+        assert "--trust=0" in step["command"]
+        assert digest(step["log"]) == step["log_sha256"]
+        rel = Path(step["module"].replace(".", "/"))
+        obj = rel.with_suffix(".olean")
+        src = rel.with_suffix(".lean")
+        assert digest(folder / "modules" / obj) == step["olean_sha256"]
+        if "reused_from" not in step:
+            continue
+        previous = Path(step["reused_from"])
+        prior = kernel(previous)
+        expected = {str((ROOT / item["path"]).resolve()): item["sha256"]
+                    for item in result.get("reuse_receipts", [])}.get(str(previous.resolve()))
+        if expected is None:
+            expected = result["reused_base_receipt_sha256"]
+        assert digest(previous / "result.json") == expected
+        assert digest(folder / "source" / src) == digest(previous / "source" / src)
+        assert digest(folder / "modules" / obj) == digest(previous / "modules" / obj)
+        assert any(s["module"] == step["module"] and s["olean_sha256"] == step["olean_sha256"] for s in prior["steps"])
+        text = (folder / "source" / src).read_text(encoding="utf-8-sig")
+        imports = re.findall(r"^import\s+([A-Za-z][A-Za-z0-9_.]*)\s*(?:--.*)?$", text, re.M)
+        for dependency in imports:
+            dep = Path(dependency.replace(".", "/") + ".olean")
+            if (folder / "modules" / dep).exists():
+                assert digest(folder / "modules" / dep) == digest(previous / "modules" / dep), (step["module"], dependency)
+                reuse_edges += 1
+    audit = (folder / (result["entry"] + ".log")).read_text(encoding="utf-8-sig")
+    assert "AXIOM_AUDIT_PASS" in audit and "END_TO_END_NOT_VERIFIED" in audit
+    assert "END_TO_END_CLOSED_THEOREM_PRESENT" not in audit
+    return result
+
+
+def main():
+    final = kernel(HERE / "actual12_kernel_v1")
+    registered = kernel(HERE / "actual12_registry_kernel_v1")
+    assert final["actual_12_tiles"] == registered["actual_12_tiles"] == "PASS"
+    assert final["passed_modules"] == 326 and final["audited_theorems"] == 1438
+    assert final["peak_sampled_process_tree_private_bytes"] < 16_000_000_000
+    groups = [s for s in final["steps"] if s["module"].startswith("MahjongScale.Actual12V2.Group")]
+    assert len(groups) == 95
+    data = read(HERE / "actual12/grouped_generation_v2.json")
+    assert data["rows"] == 757 and data["root_proof_id"] == 756
+    assert data["root_digits"] == "0000000020000011110001110300000000"
+    assert data["groups"] == [[i, 8*i, min(8, 757-8*i)] for i in range(95)]
+    verify_map(data["source_sha256"], ROOT / "build/lean_scale/proof")
+    verify_map(data["input_sha256"])
+    responses = read(HERE / "actual12/pruned_v1/generation.json")
+    verify_map(responses["input_sha256"])
+    assert responses["physical_legal_first_moves"] == 25510
+    assert digest(HERE / "actual12/pruned_v1/responses.json") == responses["response_sha256"]
+    assert digest(HERE / "actual12/pruned_v1/leaf_states.json") == responses["leaf_states_sha256"]
+    leaves = read(HERE / "actual12/leaves_generation.json")
+    assert len(leaves["leaves"]) == 86
+    assert digest(leaves["generator_path"]) == leaves["generator_sha256"]
+    for source in leaves["sources"] + leaves["input_sources"]:
+        assert digest(source["path"]) == source["sha256"]
+    review = read(HERE / "theory/actual12_source_hashes.json")
+    assert review["status"] == "SOURCE_CHECKS_PASS" and review["source_unchanged"]
+    verify_map(review["source_sha256"])
+    registry = read(HERE / "actual12/checked_registry.json")
+    assert len(registry["entries"]) == 757
+    verify_map(registry["input_sha256"])
+    manifest = read(HERE / "endgames/actual12_c_v1/export/manifest.json")
+    assert manifest["summary"]["status"] == "CANDIDATE_CLOSED"
+    verify_map(manifest["files_sha256"], HERE / "endgames/actual12_c_v1/export")
+    native_acceptance = ROOT / "runs/global_retro/verification/final_v1/acceptance.json"
+    assert digest(native_acceptance) == "1cc4b9dc7bd287e976d42d6b7fb41eb548651529016e53485008828c97d826a5"
+    producer = read(HERE / "producer/round_result.json")
+    assert producer["status"] == "PARTIAL_BOUNDED_ADVANCEMENT_SAVED"
+    assert producer["formal_proof"] is False and producer["original_source_unchanged"]
+    cp = producer["checkpoint"]
+    assert digest(ROOT / cp["path"]) == cp["sha256"]
+    assert (ROOT / cp["path"]).stat().st_size == cp["bytes"]
+    assert digest(ROOT / producer["selection"]["source"] / "graph.sqlite") == producer["selection"]["source_sha256"]
+    progress = read(Path(ROOT / cp["path"]).parent / "progress.latest.json")
+    for name in ["nodes", "edges", "expanded_nodes", "pending_nodes"]:
+        assert progress[name] == producer["current_graph"][name]
+    assert progress["status"] == "PARTIAL"
+    result = {"schema": "LEAN_SCALE_EVIDENCE_AUDIT_V1", "status": "PASS",
+        "created_utc": datetime.datetime.now(datetime.timezone.utc).isoformat(),
+        "actual_12_tiles": "PASS", "empty_game": "NOT_VERIFIED",
+        "receipt_audit_is_not_a_new_kernel_proof": True,
+        "verified_kernel_runs": [receipt(p / "result.json") for p in records],
+        "dependency_exact_reuse_edges_checked": reuse_edges,
+        "distinct_retained_files_hashed": len(hashes),
+        "native_acceptance": receipt(native_acceptance),
+        "native_checkpoint": cp, "verifier": receipt(Path(__file__))}
+    out = HERE / "evidence_verification.json"
+    with out.open("x", encoding="utf-8") as stream:
+        json.dump(result, stream, indent=2)
+        stream.write("\n")
+    print(json.dumps({k: v for k, v in result.items() if k not in ["verified_kernel_runs", "native_acceptance", "native_checkpoint", "verifier"]}))
+
+
+if __name__ == "__main__":
+    main()

@@ -21,8 +21,8 @@ rules, index, recurrence, implementation, and stored values.
 ## Formal verification
 
 An end-to-end Lean theorem for this concrete opening is **not published**.
-This repository now includes closed original-game proofs for three specific
-nonempty states with 20, 32, and 34 tiles, with Lean 4.33.1 source and a clean
+This repository now indexes closed original-game proofs for eight specific
+nonempty states with 12, 14, 20, 28, 30, 32, and 34 tiles, with Lean 4.33.1 source and a clean
 kernel replay. Their exact physical states, theorem names, allowed axioms,
 and reproducible audit commands are listed in [formal status](../formal/README.md).
 The opening candidate graph remains partial. Generic reduction lemmas,
@@ -57,6 +57,13 @@ imply that every historical working file is included here. The public source
 and reproduction guide form the supported path for a fresh run.
 
 ## Corrections
+
+The [English paper](../papers/manuscript.md) gives the complete argument and
+research history. Its [source catalogue](../papers/evidence/README.md) marks
+each cited item as a public copy or a retained source. Original hashes in the
+paper identify original evidence; selected or sanitised public copies have
+separate hashes. Archival notes and source excerpts do not imply that every
+historical runner or dependency is a supported portable reproduction package.
 
 An earlier snapshot reported UNKNOWN. The complete computation supersedes
 that opening status, without turning earlier timeouts into successful runs.

@@ -1,0 +1,15 @@
+import MahjongScale.RangeBench.Index
+
+set_option maxRecDepth 32768
+set_option maxHeartbeats 100000000
+
+namespace Mahjong.Scale.RangeBench.Indexed1
+open Scale12V2
+
+theorem checked : IndexedRange.checkExternalRange registry overrides bounds database index 744 8 = true := by decide +kernel
+theorem original_checked : ExternalResponses.checkRange registry overrides bounds database 744 8 = true :=
+  (IndexedRange.checkExternalRange_eq registry overrides bounds database index same 744 8).symm.trans checked
+
+end Mahjong.Scale.RangeBench.Indexed1
+#print axioms Mahjong.Scale.RangeBench.Indexed1.checked
+#print axioms Mahjong.Scale.RangeBench.Indexed1.original_checked

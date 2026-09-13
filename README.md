@@ -6,6 +6,16 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
 [![Formal verification: in progress](https://img.shields.io/badge/Lean-verification_in_progress-yellow.svg)](formal/README.md)
 
+## Read the paper
+
+**[Mahjong Achievement on a Shared Table: A Computational Second-Player Win and Partial Lean Certification](papers/manuscript.md)**  
+**feierbuqiu** · English research report · September 13, 2026
+
+The full paper contains the mathematical arguments, computational results,
+Lean milestones, references, and seven appendices. Formulas render directly
+on GitHub. See the [paper overview](papers/README.md),
+[evidence catalogue](papers/evidence/README.md), and [latest progress](CHANGELOG.md).
+
 ## Result
 
 The completed computation classifies the empty position as **P: the second
@@ -14,8 +24,10 @@ N. A second algorithm, using reverse physical-tile deletion, replayed the
 complete P/N table with zero mismatches.
 
 **End-to-end Lean verification is in progress.** Closed original-game Lean
-proofs are now published for three concrete nonempty positions with 20, 32,
-and 34 tiles, together with pinned source and a clean kernel-replay command.
+proofs are now indexed for eight concrete nonempty positions with 12, 14, 20,
+28, 30, 32, and 34 tiles, together with 1,008 pinned source modules and a clean
+kernel-replay command. The newest 12-tile certificate has 757 reusable P rows
+covering 25,510 legal first actions. The 10-tile candidate is still partial.
 The empty-position theorem remains unproved in Lean. The two full-table
 computational algorithms share the foundational rule implementation and state
 index. See the [formal progress and reproduction](formal/README.md) and
@@ -32,6 +44,9 @@ index. See the [formal progress and reproduction](formal/README.md) and
 | Full table payload | 97,316,623,312 bytes |
 
 These are the recorded results of the September 13, 2026 research snapshot.
+The latest formal evidence was finalised at 07:42 UTC that day; the paper
+includes those milestones. The opening candidate graph has 9,765,237 nodes
+and remains partial. Node counts are not a formal-proof completion percentage.
 The [acceptance receipt](results/acceptance.json), [opening queries](results/opening.jsonl),
 and [machine-readable status](RESEARCH_STATUS.json) state their scope.
 
@@ -70,13 +85,14 @@ hashes and exact reconstruction commands are included. See [data availability](d
 
 ## Research materials
 
+- [Full English paper](papers/manuscript.md): primary research report and appendices.
 - [Rules and SAFE reduction](docs/RULES.md): the exact game and normal-play recurrence.
 - [Methods and strategy](docs/METHODS.md): symmetry indexing, forward generation, and reverse replay.
 - [Evidence and limitations](docs/EVIDENCE.md): what each recorded check establishes.
 - [Reproduction](docs/REPRODUCIBILITY.md): commands, expected outcomes, and resources.
 - [Data availability](docs/DATA_AVAILABILITY.md): distributed artifacts and retained tables.
 - [Research integrity](docs/RESEARCH_INTEGRITY.md): provenance, corrections, and AI assistance.
-- [Formal verification](formal/README.md): three closed nonempty-position proofs,
+- [Formal verification](formal/README.md): eight indexed nonempty-position roots,
   source replay, and the remaining opening proof work.
 - [Signed contributions](CONTRIBUTING.md) and [signature verification](docs/SIGNING.md).
 

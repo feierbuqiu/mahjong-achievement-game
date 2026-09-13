@@ -1,0 +1,83 @@
+{
+  "status": "PUBLISHED_MAIN_VERIFIED",
+  "pull_request": 4,
+  "branch_commit": "08a1d526af4578949cd8244a69cbcf19137952a9",
+  "github_commit_verification": {
+    "verified": true,
+    "reason": "valid"
+  },
+  "local_replay": {
+    "kernel_modules": "PASS",
+    "passed_modules": 686,
+    "total_modules": 686,
+    "audits": {
+      "ContinuationAudit": {
+        "audited_theorems": 14760,
+        "status": "PASS"
+      },
+      "PipelineAudit": {
+        "audited_theorems": 522,
+        "status": "PASS"
+      }
+    },
+    "empty_game_lean": "NOT_VERIFIED",
+    "source_unchanged": true,
+    "wall_seconds": 1012.782,
+    "exit_code": 0
+  },
+  "local_receipt_sha256": "b89b1ee660ecd34d8d771c1c3488209fd25781c027ca2566df14fddd89892be6",
+  "pull_request_run": 34742138497,
+  "failed_linux_runs": [
+    34741295413,
+    34741993285
+  ],
+  "linux_failure": "kernel excessive memory consumption at -M2048",
+  "memory_fix": "default -M3072; trust level remains 0",
+  "bounded_final_runner_replay": {
+    "kernel_modules": "PASS",
+    "total_modules": 20,
+    "passed_modules": 20,
+    "audits": {
+      "PipelineAudit": {
+        "audited_theorems": 522,
+        "status": "PASS"
+      }
+    },
+    "memory_mb_per_process": 3072,
+    "empty_game_lean": "NOT_VERIFIED",
+    "exit_code": 0
+  },
+  "pull_request_url": "https://github.com/feierbuqiu/mahjong-achievement-game/pull/4",
+  "pull_request_state": "MERGED",
+  "merged_at": "2026-09-13T06:24:45Z",
+  "main_commit": "6fc0c04ad3b5397893c3937560dab40d516d6c59",
+  "main_github_verification": {
+    "verified": true,
+    "reason": "valid"
+  },
+  "tested_tree": "0026dd97a95730bb3613af775accf84471d5626e",
+  "main_tree_matches_tested_head": true,
+  "post_merge_local_artifact_check": "PASS",
+  "working_tree_clean": true,
+  "pull_request_checks": {
+    "Repository checks": "success",
+    "C++ smoke (ubuntu-latest)": "success",
+    "C++ smoke (windows-latest)": "success",
+    "Lean kernel (nonempty proofs)": "success"
+  },
+  "linux_replay": {
+    "modules": 686,
+    "status": "PASS",
+    "trust_level": 0,
+    "memory_mb_per_process": 3072,
+    "wall_seconds": 618.491,
+    "empty_game_lean": "NOT_VERIFIED",
+    "log_sha256": "e83b8a76a670d83c8ce12f5ac2ec51c0f7f3cfc99ec57b7f94bada81477d5cdf"
+  },
+  "post_merge_run": {
+    "id": 34742679213,
+    "status_at_publication": "in_progress",
+    "scope": "Automatic replay of the exact tree already verified in the pull request"
+  },
+  "publication_scope": "English frozen Lean source and reproducible progress. Closed nonempty roots only; no closed opening theorem."
+}

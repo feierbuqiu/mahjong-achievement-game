@@ -1,0 +1,193 @@
+"""Freeze checked continuation results, preserving the unproved empty-game boundary."""
+from pathlib import Path
+import datetime
+import hashlib
+import json
+import msvcrt
+import sqlite3
+
+import psutil
+
+HERE = Path(__file__).resolve().parent
+ROOT = HERE.parents[1]
+
+
+def digest(path):
+    with Path(path).open("rb") as source:
+        return hashlib.file_digest(source, "sha256").hexdigest()
+
+
+def read(path):
+    return json.loads(Path(path).read_text(encoding="utf-8-sig"))
+
+
+def receipt(path):
+    path = Path(path)
+    return {"path": path.relative_to(ROOT).as_posix(), "bytes": path.stat().st_size, "sha256": digest(path)}
+
+
+def check_clean(name):
+    folder = HERE / name
+    result = read(folder / "result.json")
+    assert result["kernel_modules"] == "PASS"
+    assert result["trust_level"] == 0 and result["empty_game"] == "NOT_VERIFIED"
+    assert result["passed_modules"] == result["total_modules"] == len(result["steps"])
+    assert result["source_unchanged"]
+    assert digest(folder / "runner.py") == result["runner_sha256"]
+    assert digest(ROOT / "build/toolchain/lean-4.33.1-windows/bin/lean.exe") == result["toolchain_sha256"]
+    for path, expected in result["source_sha256"].items():
+        assert digest(folder / "source" / path) == expected, path
+    for path, expected in result["artifacts_sha256"].items():
+        assert digest(folder / "modules" / path) == expected, path
+    for step in result["steps"]:
+        assert step["return_code"] == 0 and step["stop_reason"] is None
+        assert "--trust=0" in step["command"]
+        assert digest(step["log"]) == step["log_sha256"]
+        if "reused_from" in step:
+            assert digest(Path(step["reused_from"]) / "result.json") == result["reused_base_receipt_sha256"]
+    log = (folder / (result["entry"] + ".log")).read_text(encoding="utf-8-sig")
+    assert "AXIOM_AUDIT_PASS" in log and "END_TO_END_NOT_VERIFIED" in log
+    assert "END_TO_END_CLOSED_THEOREM_PRESENT" not in log
+    return result
+
+
+def stopped_progress(folder):
+    with (folder / "run.lock").open("r+b") as handle:
+        handle.seek(0)
+        msvcrt.locking(handle.fileno(), msvcrt.LK_NBLCK, 1)
+        try:
+            return read(folder / "progress.latest.json")
+        finally:
+            handle.seek(0)
+            msvcrt.locking(handle.fileno(), msvcrt.LK_UNLCK, 1)
+
+
+def main():
+    for name in ["FINAL_STATUS.json", "certified_roots.json", "release_manifest.json"]:
+        if (HERE / name).exists():
+            raise ValueError("refusing overwrite: " + name)
+    clean = {name: check_clean(name) for name in ["greedy20_kernel_v1", "reflected20_kernel_v1", "actual14_kernel_v2"]}
+    actual = clean["actual14_kernel_v2"]
+    assert actual["actual_14_tiles"] == "PASS" and actual["previous_P_certificate_imported"] is False
+    metrics = read(HERE / "actual14_kernel_v2_metrics/result.json")
+    assert metrics["audit_result_sha256"] == digest(HERE / "actual14_kernel_v2/result.json")
+    assert metrics["return_code"] == 2 and metrics["stop_reason"] is None
+    assert metrics["peak_sampled_process_tree_private_bytes"] < 16_000_000_000
+    assert metrics["audit_runner_sha256"] == actual["runner_sha256"]
+    generation = read(HERE / "Actual14Grouped/generation.json")
+    assert generation["rows"] == 50 and generation["legal_response_cases"] == 1700
+    for path, expected in generation["source_inputs_sha256"].items():
+        assert digest(ROOT / path) == expected, path
+    for path, expected in generation["source_sha256"].items():
+        assert digest(ROOT / "build/lean_next/proof" / path) == expected, path
+    review = read(HERE / "theory/actual14_source_checks.json")
+    assert review["status"] == "SOURCE_CHECKS_PASS" and not review["issues"]
+    for path, expected in review["source_sha256"].items():
+        assert digest(ROOT / path) == expected, path
+    for path, expected in read(HERE / "endgames/actual14_frontier_v1/export/manifest.json")["files_sha256"].items():
+        assert digest(HERE / "endgames/actual14_frontier_v1/export" / path) == expected
+    producer = read(HERE / "producer/round_result.json")
+    progress = stopped_progress(HERE / "producer/opening_control_v4")
+    assert progress["status"] == "PARTIAL"
+    assert (HERE / "producer/opening_control_v4/STOP").exists()
+    for key in ["nodes", "edges", "expanded_nodes", "pending_nodes"]:
+        assert progress[key] == producer["current_graph"][key]
+    for key in ["primary_checkpoint", "frozen_source"]:
+        item = producer[key]
+        assert digest(ROOT / item["path"]) == item["sha256"]
+    for path, expected in producer["source_sha256"].items():
+        assert digest(ROOT / path) == expected
+    db_path = (HERE / "producer/opening_control_v4/graph.sqlite").resolve()
+    with sqlite3.connect(db_path.as_uri() + "?mode=ro", uri=True) as db:
+        row = db.execute("SELECT state,outcome FROM nodes WHERE id=?", (7229057,)).fetchone()
+    assert row == (generation["original_root_digits"], "P"), row
+    for name in ["raw20_v1", "actual14_frontier_v1"]:
+        closed = stopped_progress(HERE / "endgames" / name)
+        assert closed["status"] == "CANDIDATE_CLOSED"
+    acceptance = ROOT / "runs/global_retro/verification/final_v1/acceptance.json"
+    assert digest(acceptance) == "1cc4b9dc7bd287e976d42d6b7fb41eb548651529016e53485008828c97d826a5"
+    global_result = read(acceptance)
+    assert global_result["status"] == "PASS_COMPUTATION_AND_FULL_REVERSE_REPLAY"
+    assert global_result["empty_state"] == "P"
+    live = []
+    for proc in psutil.process_iter(["pid", "name", "cmdline"]):
+        try:
+            info = proc.info
+            if info["name"].lower() in {"lean.exe", "strategy_worker_v3.exe", "strategy_worker_v5.exe"}:
+                if str(ROOT).lower() in " ".join(info["cmdline"] or []).lower():
+                    live.append({"pid": info["pid"], "name": info["name"]})
+        except (psutil.Error, AttributeError):
+            pass
+    assert not live, live
+
+    facts = {"schema": "MAHJONG_CHECKED_PHYSICAL_ROOT_REGISTRY_V1", "status": "KERNEL_PASS_FOR_LISTED_ROOTS_ONLY",
+        "empty_game": "NOT_VERIFIED", "native_checkpoint_modified_by_registration": False,
+        "usage": "Import the named checked module and actual ProvedP theorem; an external JSON record is never a Lean premise.",
+        "roots": [
+            {"digits": generation["original_root_digits"], "tiles": 14,
+             "module": "MahjongNext.Actual14.Root", "original_fact": "Mahjong.Actual14.original_proved",
+             "canonical_fact": "Mahjong.Actual14.root_proved", "canonical_state": "Mahjong.Actual14.state49",
+             "winner_theorem": "Mahjong.Actual14.original_second_player_wins",
+             "opening_candidate_node_id": 7229057,
+             "receipt": receipt(HERE / "actual14_kernel_v2/result.json"),
+             "object": receipt(HERE / "actual14_kernel_v2/modules/MahjongNext/Actual14/Root.olean")},
+            {"digits": "0110330311010110001010110000000000", "tiles": 20,
+             "module": "MahjongNext.ResponseTableFull20", "original_fact": "Mahjong.ResponseTableFull20.original_proved",
+             "canonical_fact": "Mahjong.ResponseTableFull20.root_proved",
+             "winner_theorem": "Mahjong.ResponseTableFull20.original_second_player_wins",
+             "receipt": receipt(HERE / "reflected20_kernel_v1/result.json"),
+             "object": receipt(HERE / "reflected20_kernel_v1/modules/MahjongNext/ResponseTableFull20.olean")}]}
+    (HERE / "certified_roots.json").write_text(json.dumps(facts, indent=2) + "\n")
+    status = {"schema": "MAHJONG_LEAN_NEXT_FINAL_STATUS_V1",
+        "created_utc": datetime.datetime.now(datetime.timezone.utc).isoformat(),
+        "status": "NEW_14_TILE_BRANCH_AND_COMPACT_20_TILE_CERTIFICATES_VERIFIED_EMPTY_NOT_VERIFIED",
+        "global_computation": {"status": global_result["status"], "empty": "P", "winner": "second_player",
+            "receipt": receipt(acceptance), "global_bit_payload_reread_this_finalizer": False},
+        "empty_Lean": "NOT_VERIFIED", "whole_opening_strategy_graph": "PARTIAL",
+        "actual_14": {"status": "KERNEL_PASS", "digits": generation["original_root_digits"],
+            "P_rows": 50, "physical_legal_first_moves": 1700, "win_replies": 1383, "back_replies": 317,
+            "safe_leaves": 6, "leaf_tile_counts": [24,24,26,26,26,26],
+            "theorem": "Mahjong.Actual14.original_second_player_wins",
+            "audit": {k: actual[k] for k in ["total_modules", "reused_modules", "newly_compiled_modules", "audited_theorems", "wall_seconds", "workers"]},
+            "measurement": {k: metrics[k] for k in ["wall_seconds", "peak_sampled_process_tree_private_bytes", "peak_concurrent_lean_processes", "sampled_average_core_equivalents", "sampled_16_logical_thread_capacity_percent"]},
+            "prior_P_certificate_imported": False, "opening_candidate_node_id": 7229057,
+            "opening_reachability_scope": "Membership in the native candidate strategy, not complete formal coverage from empty."},
+        "actual_20": {"digits": "0110330311010110001010110000000000", "previous_P_rows": 610,
+            "new_P_rows": 24, "cause_scope": "Different response selection and symmetry sharing on this one exact root.",
+            "whole_table_compile_seconds": 15.484, "whole_table_peak_private_bytes": 2246823936,
+            "grouped_compile_seconds": 23.969, "grouped_peak_private_bytes": 1513234432,
+            "independent_replay": {k: clean["reflected20_kernel_v1"][k] for k in ["total_modules", "newly_compiled_modules", "reused_modules", "wall_seconds", "audited_theorems"]}},
+        "native_producer": {"selected": "v4_frozen_copy", "v5_end_to_end_speedup": producer["comparison_speedup_v5"],
+            "totals": producer["totals"], "graph": producer["current_graph"],
+            "checkpoint": producer["primary_checkpoint"], "old_checkpoint_unchanged": True,
+            "saved_and_stopped": True, "future_required_graph_size": None},
+        "limits": {"preferred_total_bytes": 16000000000, "audit_aggregate_watchdog_bytes": 15000000000,
+            "per_Lean_watchdog_bytes": 3000000000, "max_Lean_workers_in_actual14_audit": 4},
+        "retained_failures": ["actual14_kernel_v1: final audit reserved identifier syntax error; root and other 39 modules compiled; only corrected v2 is accepted.",
+            "Actual14ResponsesV1: missing early 24-tile SAFE leaves rejected; V2 uses all six leaves.",
+            "batch monolithic 32-row test: private-memory watchdog stopped; bounded groups retained."],
+        "work_remaining": "Complete and compress the empty-root response certificate, then kernel-check every required row and its original-rule SAFE bound. Native P labels are not formal premises.",
+        "resource_conclusion": "No memory shortage demonstrated. Certificate size and producer/checker throughput remain the unresolved constraints; no few-day completion promise.",
+        "owned_live_compute_processes": live}
+    (HERE / "FINAL_STATUS.json").write_text(json.dumps(status, indent=2) + "\n")
+    important = [HERE / p for p in ["RESULT.md", "RESUME.md", "FINAL_STATUS.json", "certified_roots.json", "finalize.py",
+        "clean_audit.py", "measure_audit.py", "Actual14Grouped/generation.json", "Actual14ResponsesV2/generation.json",
+        "Actual14ResponsesV2/responses.json", "actual14/all_leaves.json", "actual14/leaves_delivery.json",
+        "actual14/LEAVES_README.md", "theory/actual14_review.md", "theory/actual14_source_checks.json",
+        "theory/full20_whole_v1/result.json", "theory/groups/grouped20_v3/result.json", "theory/groups/README.md",
+        "batch/summary.json", "batch/README.md", "producer/round_result.json", "producer/release_manifest.json",
+        "producer/README.md", "producer/BOTTLENECK.md", "producer/frontier/actual14_window002/candidates.json",
+        "greedy20_kernel_v1/result.json", "reflected20_kernel_v1/result.json", "actual14_kernel_v2/result.json",
+        "actual14_kernel_v2_metrics/result.json", "endgames/actual14_frontier_v1/export/manifest.json"]]
+    important += [ROOT / "build/lean_next" / name for name in ["make_grouped_certificate.py", "convert_graph_v3.py", "endgame_producer.py"]]
+    release = {"schema": "MAHJONG_LEAN_NEXT_RELEASE_MANIFEST_V1", "created_utc": status["created_utc"],
+        "empty_Lean": "NOT_VERIFIED", "files": [receipt(p) for p in important],
+        "checked_audits": [receipt(HERE / name / "result.json") for name in clean],
+        "native_checkpoint": producer["primary_checkpoint"], "certified_root_registry": receipt(HERE / "certified_roots.json")}
+    (HERE / "release_manifest.json").write_text(json.dumps(release, indent=2) + "\n")
+    print(json.dumps({"actual_14": "KERNEL_PASS", "actual_20": "KERNEL_PASS", "empty_Lean": "NOT_VERIFIED",
+        "evidence_files": len(important), "checkpoint_saved_and_stopped": True}))
+
+
+if __name__ == "__main__":
+    main()

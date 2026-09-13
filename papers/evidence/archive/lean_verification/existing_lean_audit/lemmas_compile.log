@@ -1,0 +1,30 @@
+== Sun Sep 13 14:05:11 AUSEST 2026 == lean --version
+Lean (version 4.33.0, x86_64-w64-windows-gnu, commit d8b18978322de05a8f3dba51ef03cf5461676c17, Release)
+== sha256 of MahjongVerify/Lemmas.lean and Basic.lean ==
+f71bf6cd4d22391b90777aa118e410e625bd5987827db58535a190abb1d242d9 *MahjongVerify/Lemmas.lean
+fdebb17ad9bf8a8917a47da435bd294f16d63bd4b84a35215a8903fea81f84d9 *MahjongVerify/Basic.lean
+== lake env lean MahjongVerify/Lemmas.lean ==
+'SharedMahjong.contains_trans' does not depend on any axioms
+'SharedMahjong.win_mono' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SharedMahjong.add_add_comm' depends on axioms: [propext, Quot.sound]
+'SharedMahjong.safe_downward' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SharedMahjong.size_pairOn' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SharedMahjong.size_standard' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SharedMahjong.size_sevenPairs' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SharedMahjong.size_thirteenOrphans' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SharedMahjong.win_size_ge' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SharedMahjong.safe_of_size_le_12' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SharedMahjong.safe_empty' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SharedMahjong.safe_single' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SharedMahjong.safe_reduction' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SharedMahjong.outcomeK_true_iff' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SharedMahjong.empty_reduction' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SharedMahjong.first_move_reduction' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SharedMahjong.winning_honor_le_three' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SharedMahjong.win_add_honor_iff' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SharedMahjong.safe_add_honor_iff' depends on axioms: [propext, Classical.choice, Quot.sound]
+
+real	0m36.172s
+user	0m0.030s
+sys	0m0.000s
+== exit code: 0 ==

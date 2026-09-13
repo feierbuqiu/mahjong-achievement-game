@@ -1,0 +1,228 @@
+{
+  "schema": "MAHJONG_AGGREGATE_KERNEL_MEASUREMENT_V1",
+  "created_utc": "2026-09-13T06:18:37.311562+00:00",
+  "command": [
+    "<user-home>\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+    "<research-root>\\runs\\lean_next\\clean_audit.py",
+    "--output",
+    "actual14_kernel_v2",
+    "--entry",
+    "Actual14Audit",
+    "--workers",
+    "4",
+    "--reuse-checked",
+    "reflected20_kernel_v1"
+  ],
+  "return_code": 2,
+  "stop_reason": null,
+  "wall_seconds": 44.67199999996228,
+  "sampling_seconds": 0.05,
+  "samples": 758,
+  "peak_sampled_process_tree_private_bytes": 5644115968,
+  "peak_sampled_process_tree_rss_bytes": 3868704768,
+  "peak_concurrent_lean_processes": 4,
+  "sampled_CPU_seconds": 93.796875,
+  "sampled_average_core_equivalents": 2.0996793293355838,
+  "sampled_16_logical_thread_capacity_percent": 13.1229958083474,
+  "CPU_sampling_note": "Last 50 ms sample per process; short final intervals can be omitted. This is approximate monitored CPU, not exact accounting.",
+  "aggregate_private_limit_bytes": 15000000000,
+  "per_lean_private_watchdog_bytes": 3000000000,
+  "observed_processes": {
+    "24368": {
+      "name": "python.exe",
+      "created": 1789280272.6437333
+    },
+    "28760": {
+      "name": "conhost.exe",
+      "created": 1789280272.6502323
+    },
+    "29376": {
+      "name": "lean.exe",
+      "created": 1789280272.8300705
+    },
+    "6704": {
+      "name": "lean.exe",
+      "created": 1789280272.831923
+    },
+    "28436": {
+      "name": "lean.exe",
+      "created": 1789280272.8358712
+    },
+    "6456": {
+      "name": "conhost.exe",
+      "created": 1789280272.841564
+    },
+    "23288": {
+      "name": "conhost.exe",
+      "created": 1789280272.8369567
+    },
+    "24308": {
+      "name": "conhost.exe",
+      "created": 1789280272.8358524
+    },
+    "29260": {
+      "name": "lean.exe",
+      "created": 1789280274.8477714
+    },
+    "1668": {
+      "name": "lean.exe",
+      "created": 1789280274.848428
+    },
+    "6336": {
+      "name": "lean.exe",
+      "created": 1789280274.8485527
+    },
+    "4976": {
+      "name": "lean.exe",
+      "created": 1789280274.8487284
+    },
+    "11648": {
+      "name": "conhost.exe",
+      "created": 1789280274.854221
+    },
+    "18084": {
+      "name": "conhost.exe",
+      "created": 1789280274.854216
+    },
+    "11500": {
+      "name": "conhost.exe",
+      "created": 1789280274.853772
+    },
+    "28692": {
+      "name": "conhost.exe",
+      "created": 1789280274.853381
+    },
+    "8756": {
+      "name": "lean.exe",
+      "created": 1789280276.564632
+    },
+    "22244": {
+      "name": "lean.exe",
+      "created": 1789280276.5662386
+    },
+    "15660": {
+      "name": "lean.exe",
+      "created": 1789280276.5664537
+    },
+    "27252": {
+      "name": "conhost.exe",
+      "created": 1789280276.5723853
+    },
+    "7508": {
+      "name": "conhost.exe",
+      "created": 1789280276.5724504
+    },
+    "28004": {
+      "name": "conhost.exe",
+      "created": 1789280276.5703526
+    },
+    "29264": {
+      "name": "lean.exe",
+      "created": 1789280276.661694
+    },
+    "5448": {
+      "name": "conhost.exe",
+      "created": 1789280276.6678402
+    },
+    "14184": {
+      "name": "lean.exe",
+      "created": 1789280282.494697
+    },
+    "24836": {
+      "name": "lean.exe",
+      "created": 1789280282.4951847
+    },
+    "3088": {
+      "name": "conhost.exe",
+      "created": 1789280282.50452
+    },
+    "22060": {
+      "name": "conhost.exe",
+      "created": 1789280282.501658
+    },
+    "9680": {
+      "name": "lean.exe",
+      "created": 1789280284.2094717
+    },
+    "6448": {
+      "name": "conhost.exe",
+      "created": 1789280284.2150192
+    },
+    "7912": {
+      "name": "lean.exe",
+      "created": 1789280284.310568
+    },
+    "18100": {
+      "name": "conhost.exe",
+      "created": 1789280284.315934
+    },
+    "27952": {
+      "name": "lean.exe",
+      "created": 1789280290.539868
+    },
+    "17488": {
+      "name": "conhost.exe",
+      "created": 1789280290.5457296
+    },
+    "10356": {
+      "name": "lean.exe",
+      "created": 1789280300.2969253
+    },
+    "4304": {
+      "name": "lean.exe",
+      "created": 1789280300.2972102
+    },
+    "28824": {
+      "name": "lean.exe",
+      "created": 1789280300.2974734
+    },
+    "21412": {
+      "name": "lean.exe",
+      "created": 1789280300.2976277
+    },
+    "29556": {
+      "name": "conhost.exe",
+      "created": 1789280300.304137
+    },
+    "13872": {
+      "name": "conhost.exe",
+      "created": 1789280300.3032951
+    },
+    "7652": {
+      "name": "conhost.exe",
+      "created": 1789280300.3033333
+    },
+    "29524": {
+      "name": "conhost.exe",
+      "created": 1789280305.1283612
+    },
+    "20212": {
+      "name": "lean.exe",
+      "created": 1789280305.4247005
+    },
+    "29576": {
+      "name": "conhost.exe",
+      "created": 1789280305.4305327
+    },
+    "28972": {
+      "name": "lean.exe",
+      "created": 1789280311.7543027
+    },
+    "26640": {
+      "name": "conhost.exe",
+      "created": 1789280311.760175
+    },
+    "29240": {
+      "name": "lean.exe",
+      "created": 1789280313.1688309
+    },
+    "24920": {
+      "name": "conhost.exe",
+      "created": 1789280313.1742976
+    }
+  },
+  "source_sha256": "8f2868e7a1f5efd434a593c34b6d8c7189c00d9eefa2eff0fec38b0dd81fb5a0",
+  "audit_runner_sha256": "fb642644794447cd55ea70c14d45661339a27f5e588f51049b85fb9463bfee90",
+  "driver_log_sha256": "516defe5fd87403f8f11b9449b33afec8a1b36c9ab3baed060f8b804c7fe9645",
+  "audit_result_sha256": "15e94b816a87c23f0315f3ed96a709e7e04a1842b55187350114894623148b9b"
+}

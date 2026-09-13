@@ -1,0 +1,15 @@
+{
+  "schema": "DEPENDENCY_EXACT_CACHE_REGRESSION_V1",
+  "status": "PASS_EXPECTED_REJECTION",
+  "baseline": "KERNEL_PASS",
+  "changed_dependency": "RECOMPILED_AND_REJECTED",
+  "dependent_source_unchanged": true,
+  "fixture_source_restored": true,
+  "Mahjong_conclusion": "NOT_ASSERTED_BY_FIXTURE",
+  "sha256": {
+    "runs/lean_scale/check_dependency_cache.py": "b0332245620ee93ba70e67294a696b94cd41ffc90a9c73c887085f16b44b245f",
+    "runs/lean_scale/kernel_audit_v2.py": "1a6c619495e60ed1379d56f152dd47d03bada2d46fedffe3844f35c4a275ea22",
+    "runs/lean_scale/cache_baseline_v2/result.json": "628906e9379008c3056f5ec202331dc918277c1cc9223b96540488f378c98b38",
+    "runs/lean_scale/cache_changed_dependency_v2/result.json": "fd1119492711b284a1c8e6c650388fb65d1e5987fd3de21a7b30af632d9369b3"
+  }
+}

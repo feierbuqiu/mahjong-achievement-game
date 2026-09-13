@@ -1,0 +1,46 @@
+"""Discovery metadata for an actual Lean registry; metadata is never a P premise."""
+from pathlib import Path
+import hashlib
+import json
+
+ROOT = Path(__file__).resolve().parents[2]
+BASE = ROOT / "runs/lean_scale"
+
+
+def sha(path):
+    with path.open("rb") as stream:
+        return hashlib.file_digest(stream, "sha256").hexdigest()
+
+
+def main():
+    incoming = BASE / "actual12/pruned_v1/responses.json"
+    kernel = BASE / "actual12_registry_kernel_v1/result.json"
+    record = json.loads(kernel.read_text(encoding="utf-8-sig"))
+    assert record["kernel_modules"] == "PASS" and record["actual_12_tiles"] == "PASS"
+    assert record["empty_game"] == "NOT_VERIFIED" and record["trust_level"] == 0
+    rows = json.loads(incoming.read_text(encoding="utf-8"))
+    rows.sort(key=lambda r: (-sum(map(int, r["state"])), r["id"]))
+    assert len(rows) == 757 and rows[756]["state"] == "0000000020000011110001110300000000"
+    source = ROOT / "build/lean_scale/proof/MahjongScale/Actual12Registry.lean"
+    sources = [incoming, kernel, source, BASE / "actual12/grouped_generation_v2.json", Path(__file__)]
+    result = {
+        "schema": "CHECKED_RESPONSE_TABLE_EXTERNAL_REGISTRY_V1",
+        "status": "EXACT_ROWS_OF_KERNEL_CHECKED_EXTERNAL_TABLE",
+        "empty_game": "NOT_VERIFIED",
+        "module": "MahjongScale.Actual12Registry",
+        "registry": "Mahjong.Actual12Registry.registry",
+        "table_module": "MahjongScale.Actual12V2.Root",
+        "input_sha256": {p.relative_to(ROOT).as_posix(): sha(p) for p in sources},
+        "usage": "Import the actual typed Lean registry. JSON IDs and P labels supply no proof premises.",
+        "entries": [{"registry_id": i, "proof_row_id": i, "source_node_id": r["id"],
+            "digits": r["state"], "tiles": sum(map(int, r["state"])),
+            "lean_state": f"Mahjong.Scale12V2.state{i}"} for i, r in enumerate(rows)]}
+    out = BASE / "actual12/checked_registry.json"
+    with out.open("x", encoding="utf-8") as stream:
+        json.dump(result, stream, ensure_ascii=True, indent=2)
+        stream.write("\n")
+    print(json.dumps({"registry_entries": len(rows), "sha256": sha(out)}))
+
+
+if __name__ == "__main__":
+    main()

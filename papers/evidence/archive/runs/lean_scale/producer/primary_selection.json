@@ -1,0 +1,26 @@
+{
+  "schema": "MAHJONG_COMPACT_PRODUCER_SELECTION_V1",
+  "formal_proof": false,
+  "compact_qualified": true,
+  "minimum_repeat_speedup": 1.0748083037217522,
+  "total_baseline_seconds": 61.21899999998277,
+  "total_compact_seconds": 50.81300000002375,
+  "aggregate_speedup": 1.2047901127655158,
+  "repeat_speedups": [
+    1.3491153750289,
+    1.0748083037217522
+  ],
+  "selected_run": "opening_compact_v6",
+  "producer": "producer_compact_v6.py",
+  "kind": "compact",
+  "threads": 1,
+  "batch": 1024,
+  "source": "runs/lean_next/producer/opening_control_v4",
+  "source_sha256": "271ada1415af87307a7e360f4fbf5c43635fc419d3d52522dc2147bb0bbd33a2",
+  "comparison_sha256": {
+    "runs\\lean_scale\\producer\\benchmarks\\end_to_end_round1\\result.json": "1c78db1d7175161a8f34b51d1f6a2d6faf605b91bce2884c03ca1b60f2586f34",
+    "runs\\lean_scale\\producer\\benchmarks\\end_to_end_round2\\result.json": "be9e251e1ac228467542c8234f8dbc5d19419a3f838178e491b9e597b38a3da2"
+  },
+  "criterion": "Both counterbalanced >=500k-node equal-work repeats must give >=5% full-wall improvement.",
+  "scope": "Measured on the retained P12 frontier, not a speed guarantee for all subsequent layers."
+}

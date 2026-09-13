@@ -1,0 +1,39 @@
+{
+  "repository": "https://github.com/feierbuqiu/mahjong-achievement-game",
+  "publication_checkout": "build/publication/mahjong-achievement-game",
+  "initial_commit": "124fe98fdd9ca39808c0f19af3cbed6833f5dd71",
+  "publication_update_pr": 3,
+  "current_main": "5a942090ac77fdf63a3d528054dd2c0cbaab138f",
+  "signing_fingerprint": "SHA256:H5cL4K55IvTfqUcpF875bUBm06T4HWzY+aDa9tMUPTc",
+  "rulesets": {
+    "all_branches": 23131337,
+    "main": 23131616,
+    "version_tags": 23131617
+  },
+  "private_vulnerability_reporting": true,
+  "publication_scope": "English source and lightweight research evidence. Full 97.32 GB table and active Lean working tree remain outside the public repository.",
+  "local_validation": "results/publication-validation.json in the public checkout",
+  "release_status": "published_and_verified",
+  "post_merge_run": 34738071284,
+  "release_url": "https://github.com/feierbuqiu/mahjong-achievement-game/releases/tag/v0.1.0",
+  "tag": "v0.1.0",
+  "tag_object": "1edc0c24e0f8cdd92c8abd2f3290d0e3be8bab08",
+  "tag_target": "5a942090ac77fdf63a3d528054dd2c0cbaab138f",
+  "github_tag_verification": {
+    "verified": true,
+    "reason": "valid"
+  },
+  "main_commit_verification": {
+    "verified": true,
+    "reason": "valid"
+  },
+  "post_merge_checks": {
+    "Repository checks": "success",
+    "C++ smoke (ubuntu-latest)": "success",
+    "C++ smoke (windows-latest)": "success"
+  },
+  "open_pull_requests": 0,
+  "local_checkout_clean": true,
+  "github_community_profile_health_percentage": 100,
+  "note": "Version tag is protected against rewriting/deletion by its ruleset. Release description immutability is not enabled. Private SSH key stays outside the public checkout."
+}

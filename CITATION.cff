@@ -1,5 +1,5 @@
 cff-version: 1.2.0
-message: "Please cite this research software and include the exact commit or release tag used."
+message: "Please cite the English research report and include the exact repository commit used. Cite v0.1.0 separately for the original computational software snapshot."
 type: software
 title: "Mahjong Achievement Game: Exact Computation and Reproducible Research"
 authors:
@@ -10,6 +10,15 @@ url: "https://github.com/feierbuqiu/mahjong-achievement-game"
 version: 0.1.0
 date-released: 2026-09-13
 license: MIT
+preferred-citation:
+  type: report
+  title: "Mahjong Achievement on a Shared Table: A Computational Second-Player Win and Partial Lean Certification"
+  authors:
+    - family-names: "feierbuqiu"
+  year: 2026
+  month: 9
+  date-published: 2026-09-13
+  url: "https://github.com/feierbuqiu/mahjong-achievement-game/blob/main/papers/manuscript.md"
 keywords:
   - combinatorial games
   - mahjong

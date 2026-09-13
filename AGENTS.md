@@ -14,7 +14,9 @@ docs/REPRODUCIBILITY.md before changing research claims or algorithms.
   the publication manifests when an artifact legitimately changes.
 - Put generated binaries, tables, logs, and checkpoints in build/ or runs/.
   Concurrent computations need separate output directories.
-- Use English. Never publish private keys, tokens, or personal workstation paths.
+- Use English. Preserve original proper names and bibliographic titles in
+  citations. Do not upload the Chinese manuscript. Never publish private keys,
+  tokens, or personal workstation paths.
 - Sign every commit. Use a topic branch and pull request after bootstrap;
   do not bypass signature or CI rules or force-push main.
 - Do not spawn sub-agents unless the user explicitly authorizes delegation.

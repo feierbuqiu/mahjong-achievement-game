@@ -1,0 +1,902 @@
+{
+  "schema": "MAHJONG_GROUPED_MULTI_LEAF_RESPONSE_CERTIFICATE_V1",
+  "status": "GENERATED_NOT_VERIFIED",
+  "source_inputs_sha256": {
+    "runs\\lean_next\\Actual14ResponsesV2\\responses.json": "89c26335294c01743b716234abacc0684668f53f71ced80affff52a754c6273e",
+    "runs\\lean_next\\actual14\\all_leaves.json": "8f4a81240d123a0a96511e907dfbb9ffb1132417686e905511d27bb4600c4eb2",
+    "runs\\lean_next\\endgames\\actual14_frontier_v1\\export\\manifest.json": "b724a8f65fabf6709a2c8e6a309db7ba9346eabaf87cd1ec3c399a781cf80f3d",
+    "runs\\lean_next\\endgames\\actual14_frontier_v1\\export\\nodes.jsonl": "03df8713427c3fe3ca04854aebe2973e87a122bf57f864c9f01dd52d7aab5201",
+    "build\\lean_next\\make_grouped_certificate.py": "1082a0e004bf655480823170b17038e03f67fad7afbc6819727dc3295af8fba2",
+    "runs\\lean_next\\theory\\make_response_full20.py": "f7b3f1550e5b98a22c150e186daeb5960ffc6e73027ce4ee9231ac48e10ea109",
+    "runs\\lean_next\\theory\\make_response_sample.py": "e4a61c2ce5a791120c4238dd174da07b796128a6ad9bd7cd9d1de2e76fd8ea7e"
+  },
+  "source_sha256": {
+    "MahjongNext\\Actual14\\Data.lean": "7005ba5aa2e1e547b4b4f4112dfe6a37259281870bb4f94b61229e77e95bbccf",
+    "MahjongNext\\Actual14\\Group0.lean": "f176ef57eff78c9ff529b40ef2da6c07de35b216b6e77fba813fe03694c66603",
+    "MahjongNext\\Actual14\\Group1.lean": "2888cffc5fff6486b5acc6520261d17fb674dc740ecc185fc733f6b5c2f01309",
+    "MahjongNext\\Actual14\\Group2.lean": "a23403ff7d0e7d3c13de85ec9cdd2548c9ea1ef4faa901c3d244b7a97fa8d184",
+    "MahjongNext\\Actual14\\Group3.lean": "7da2f611aa1f573f563c3ca7898b75f197bc6080a78778c70f296a10da08048d",
+    "MahjongNext\\Actual14\\Group4.lean": "abbfc2b8715b3976f82af6702241dfd2279444152275963678b8bc73dbbf4a81",
+    "MahjongNext\\Actual14\\Group5.lean": "5d7d86de543df0d24636aca27bb08d6617e82bc7d25dd90bbd654214c021b98a",
+    "MahjongNext\\Actual14\\Group6.lean": "96d4cdafd0937bdee003e5d466593e65c8907bd4ca4e8441bb8097da7f724d96",
+    "MahjongNext\\Actual14\\Root.lean": "c2b2aba60d4a3fd14a532e7e6e847f3d8012c2be49cc72d889e0a91975e5c159"
+  },
+  "module": "MahjongNext.Actual14",
+  "namespace": "Mahjong.Actual14",
+  "rows": 50,
+  "groups": [
+    [
+      0,
+      0,
+      8
+    ],
+    [
+      1,
+      8,
+      8
+    ],
+    [
+      2,
+      16,
+      8
+    ],
+    [
+      3,
+      24,
+      8
+    ],
+    [
+      4,
+      32,
+      8
+    ],
+    [
+      5,
+      40,
+      8
+    ],
+    [
+      6,
+      48,
+      2
+    ]
+  ],
+  "legal_response_cases": 1700,
+  "back_responses": 317,
+  "positive_responses": 1383,
+  "source_ids_in_proof_order": [
+    177,
+    178,
+    179,
+    180,
+    159,
+    160,
+    161,
+    162,
+    163,
+    164,
+    165,
+    166,
+    133,
+    134,
+    135,
+    136,
+    137,
+    138,
+    139,
+    140,
+    101,
+    102,
+    103,
+    104,
+    105,
+    106,
+    107,
+    108,
+    109,
+    110,
+    111,
+    53,
+    54,
+    55,
+    56,
+    57,
+    58,
+    59,
+    60,
+    61,
+    62,
+    63,
+    64,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    0
+  ],
+  "root_source_id": 0,
+  "root_proof_id": 49,
+  "original_root_digits": "0000011110001000020001120300000000",
+  "canonical_root_digits": "0000011110001000020001120300000000",
+  "original_root_tiles": 14,
+  "root_path": [],
+  "safe_leaf_count": 6,
+  "safe_leaves": [
+    {
+      "digits": "0010011110101120311001000121111111",
+      "module": "Mahjong.Actual14LeavesV1.L000003",
+      "state": "Mahjong.Actual14LeavesV1.L000003.state",
+      "valid": "Mahjong.Actual14LeavesV1.L000003.valid",
+      "safe": "Mahjong.Actual14LeavesV1.L000003.safe"
+    },
+    {
+      "digits": "0010011110101120311001001021111111",
+      "module": "Mahjong.Actual14LeavesV1.L000002",
+      "state": "Mahjong.Actual14LeavesV1.L000002.state",
+      "valid": "Mahjong.Actual14LeavesV1.L000002.valid",
+      "safe": "Mahjong.Actual14LeavesV1.L000002.safe"
+    },
+    {
+      "digits": "0100011110101120311001000121111111",
+      "module": "Mahjong.Actual14LeavesV1.L000001",
+      "state": "Mahjong.Actual14LeavesV1.L000001.state",
+      "valid": "Mahjong.Actual14LeavesV1.L000001.valid",
+      "safe": "Mahjong.Actual14LeavesV1.L000001.safe"
+    },
+    {
+      "digits": "0100011110101120311001001021111111",
+      "module": "Mahjong.Actual14LeavesV1.L000000",
+      "state": "Mahjong.Actual14LeavesV1.L000000.state",
+      "valid": "Mahjong.Actual14LeavesV1.L000000.valid",
+      "safe": "Mahjong.Actual14LeavesV1.L000000.safe"
+    },
+    {
+      "digits": "1000011111001000121001120310011111",
+      "module": "Mahjong.Actual14ExtraLeavesV1.L000001",
+      "state": "Mahjong.Actual14ExtraLeavesV1.L000001.state",
+      "valid": "Mahjong.Actual14ExtraLeavesV1.L000001.valid",
+      "safe": "Mahjong.Actual14ExtraLeavesV1.L000001.safe"
+    },
+    {
+      "digits": "1000011111001001021001120310011111",
+      "module": "Mahjong.Actual14ExtraLeavesV1.L000000",
+      "state": "Mahjong.Actual14ExtraLeavesV1.L000000.state",
+      "valid": "Mahjong.Actual14ExtraLeavesV1.L000000.valid",
+      "safe": "Mahjong.Actual14ExtraLeavesV1.L000000.safe"
+    }
+  ],
+  "bound_specs": {
+    "0": {
+      "leaf": "0100011110101120311001001021111111",
+      "path": []
+    },
+    "1": {
+      "leaf": "0100011110101120311001000121111111",
+      "path": []
+    },
+    "2": {
+      "leaf": "0010011110101120311001001021111111",
+      "path": []
+    },
+    "3": {
+      "leaf": "0010011110101120311001000121111111",
+      "path": []
+    },
+    "4": {
+      "leaf": "1000011111001001021001120310011111",
+      "path": []
+    },
+    "5": {
+      "leaf": "1000011111001000121001120310011111",
+      "path": []
+    },
+    "6": {
+      "leaf": "0100011110101120311001001021111111",
+      "path": []
+    },
+    "7": {
+      "leaf": "0100011110101120311001000121111111",
+      "path": []
+    },
+    "8": {
+      "leaf": "0010011110101120311001001021111111",
+      "path": []
+    },
+    "9": {
+      "leaf": "0010011110101120311001000121111111",
+      "path": []
+    },
+    "10": {
+      "leaf": "0100011110101120311001001021111111",
+      "path": []
+    },
+    "11": {
+      "leaf": "0100011110101120311001000121111111",
+      "path": []
+    },
+    "12": {
+      "leaf": "1000011111001001021001120310011111",
+      "path": [
+        {
+          "op": "swapHonors",
+          "a": 0,
+          "b": 3
+        },
+        {
+          "op": "swapHonors",
+          "a": 1,
+          "b": 2
+        },
+        {
+          "op": "swapHonors",
+          "a": 2,
+          "b": 3
+        }
+      ]
+    },
+    "13": {
+      "leaf": "1000011111001000121001120310011111",
+      "path": [
+        {
+          "op": "swapHonors",
+          "a": 0,
+          "b": 3
+        },
+        {
+          "op": "swapHonors",
+          "a": 1,
+          "b": 2
+        },
+        {
+          "op": "swapHonors",
+          "a": 2,
+          "b": 3
+        }
+      ]
+    },
+    "14": {
+      "leaf": "0100011110101120311001001021111111",
+      "path": []
+    },
+    "15": {
+      "leaf": "0100011110101120311001000121111111",
+      "path": []
+    },
+    "16": {
+      "leaf": "0010011110101120311001001021111111",
+      "path": []
+    },
+    "17": {
+      "leaf": "0010011110101120311001000121111111",
+      "path": []
+    },
+    "18": {
+      "leaf": "1000011111001001021001120310011111",
+      "path": [
+        {
+          "op": "swapSuits",
+          "a": 1,
+          "b": 2
+        }
+      ]
+    },
+    "19": {
+      "leaf": "1000011111001000121001120310011111",
+      "path": [
+        {
+          "op": "swapSuits",
+          "a": 1,
+          "b": 2
+        }
+      ]
+    },
+    "20": {
+      "leaf": "1000011111001001021001120310011111",
+      "path": [
+        {
+          "op": "swapHonors",
+          "a": 0,
+          "b": 5
+        },
+        {
+          "op": "swapHonors",
+          "a": 1,
+          "b": 4
+        },
+        {
+          "op": "swapHonors",
+          "a": 2,
+          "b": 3
+        },
+        {
+          "op": "swapHonors",
+          "a": 4,
+          "b": 5
+        }
+      ]
+    },
+    "21": {
+      "leaf": "1000011111001000121001120310011111",
+      "path": [
+        {
+          "op": "swapHonors",
+          "a": 0,
+          "b": 5
+        },
+        {
+          "op": "swapHonors",
+          "a": 1,
+          "b": 4
+        },
+        {
+          "op": "swapHonors",
+          "a": 2,
+          "b": 3
+        },
+        {
+          "op": "swapHonors",
+          "a": 4,
+          "b": 5
+        }
+      ]
+    },
+    "22": {
+      "leaf": "1000011111001000121001120310011111",
+      "path": [
+        {
+          "op": "swapSuits",
+          "a": 0,
+          "b": 1
+        },
+        {
+          "op": "swapHonors",
+          "a": 0,
+          "b": 4
+        },
+        {
+          "op": "swapHonors",
+          "a": 1,
+          "b": 3
+        },
+        {
+          "op": "swapHonors",
+          "a": 3,
+          "b": 4
+        }
+      ]
+    },
+    "23": {
+      "leaf": "0100011110101120311001001021111111",
+      "path": []
+    },
+    "24": {
+      "leaf": "0100011110101120311001000121111111",
+      "path": []
+    },
+    "25": {
+      "leaf": "0100011110101120311001000121111111",
+      "path": [
+        {
+          "op": "swapSuits",
+          "a": 0,
+          "b": 2
+        },
+        {
+          "op": "swapSuits",
+          "a": 1,
+          "b": 2
+        }
+      ]
+    },
+    "26": {
+      "leaf": "0010011110101120311001001021111111",
+      "path": []
+    },
+    "27": {
+      "leaf": "0010011110101120311001000121111111",
+      "path": []
+    },
+    "28": {
+      "leaf": "0010011110101120311001000121111111",
+      "path": [
+        {
+          "op": "swapSuits",
+          "a": 0,
+          "b": 2
+        },
+        {
+          "op": "swapSuits",
+          "a": 1,
+          "b": 2
+        }
+      ]
+    },
+    "29": {
+      "leaf": "1000011111001001021001120310011111",
+      "path": [
+        {
+          "op": "swapSuits",
+          "a": 1,
+          "b": 2
+        },
+        {
+          "op": "swapHonors",
+          "a": 0,
+          "b": 3
+        },
+        {
+          "op": "swapHonors",
+          "a": 1,
+          "b": 2
+        },
+        {
+          "op": "swapHonors",
+          "a": 2,
+          "b": 3
+        }
+      ]
+    },
+    "30": {
+      "leaf": "1000011111001000121001120310011111",
+      "path": [
+        {
+          "op": "swapSuits",
+          "a": 1,
+          "b": 2
+        },
+        {
+          "op": "swapHonors",
+          "a": 0,
+          "b": 3
+        },
+        {
+          "op": "swapHonors",
+          "a": 1,
+          "b": 2
+        },
+        {
+          "op": "swapHonors",
+          "a": 2,
+          "b": 3
+        }
+      ]
+    },
+    "31": {
+      "leaf": "1000011111001001021001120310011111",
+      "path": [
+        {
+          "op": "swapSuits",
+          "a": 0,
+          "b": 2
+        },
+        {
+          "op": "swapSuits",
+          "a": 1,
+          "b": 2
+        },
+        {
+          "op": "reverseSuit",
+          "suit": 0
+        },
+        {
+          "op": "swapHonors",
+          "a": 0,
+          "b": 6
+        },
+        {
+          "op": "swapHonors",
+          "a": 1,
+          "b": 5
+        },
+        {
+          "op": "swapHonors",
+          "a": 2,
+          "b": 4
+        },
+        {
+          "op": "swapHonors",
+          "a": 5,
+          "b": 6
+        }
+      ]
+    },
+    "32": {
+      "leaf": "1000011111001000121001120310011111",
+      "path": [
+        {
+          "op": "swapSuits",
+          "a": 0,
+          "b": 1
+        },
+        {
+          "op": "swapHonors",
+          "a": 0,
+          "b": 6
+        },
+        {
+          "op": "swapHonors",
+          "a": 1,
+          "b": 5
+        },
+        {
+          "op": "swapHonors",
+          "a": 2,
+          "b": 4
+        },
+        {
+          "op": "swapHonors",
+          "a": 5,
+          "b": 6
+        }
+      ]
+    },
+    "33": {
+      "leaf": "1000011111001000121001120310011111",
+      "path": [
+        {
+          "op": "swapSuits",
+          "a": 0,
+          "b": 1
+        },
+        {
+          "op": "swapSuits",
+          "a": 1,
+          "b": 2
+        },
+        {
+          "op": "reverseSuit",
+          "suit": 1
+        },
+        {
+          "op": "swapHonors",
+          "a": 0,
+          "b": 5
+        },
+        {
+          "op": "swapHonors",
+          "a": 1,
+          "b": 4
+        },
+        {
+          "op": "swapHonors",
+          "a": 2,
+          "b": 3
+        },
+        {
+          "op": "swapHonors",
+          "a": 4,
+          "b": 5
+        }
+      ]
+    },
+    "34": {
+      "leaf": "0100011110101120311001001021111111",
+      "path": []
+    },
+    "35": {
+      "leaf": "0100011110101120311001000121111111",
+      "path": [
+        {
+          "op": "swapSuits",
+          "a": 0,
+          "b": 2
+        },
+        {
+          "op": "swapSuits",
+          "a": 1,
+          "b": 2
+        }
+      ]
+    },
+    "36": {
+      "leaf": "0100011110101120311001000121111111",
+      "path": [
+        {
+          "op": "swapSuits",
+          "a": 0,
+          "b": 2
+        },
+        {
+          "op": "swapSuits",
+          "a": 1,
+          "b": 2
+        }
+      ]
+    },
+    "37": {
+      "leaf": "0010011110101120311001001021111111",
+      "path": []
+    },
+    "38": {
+      "leaf": "0010011110101120311001000121111111",
+      "path": [
+        {
+          "op": "swapSuits",
+          "a": 0,
+          "b": 2
+        },
+        {
+          "op": "swapSuits",
+          "a": 1,
+          "b": 2
+        }
+      ]
+    },
+    "39": {
+      "leaf": "0010011110101120311001000121111111",
+      "path": [
+        {
+          "op": "swapSuits",
+          "a": 0,
+          "b": 2
+        },
+        {
+          "op": "swapSuits",
+          "a": 1,
+          "b": 2
+        }
+      ]
+    },
+    "40": {
+      "leaf": "1000011111001001021001120310011111",
+      "path": [
+        {
+          "op": "swapSuits",
+          "a": 1,
+          "b": 2
+        },
+        {
+          "op": "swapHonors",
+          "a": 0,
+          "b": 5
+        },
+        {
+          "op": "swapHonors",
+          "a": 1,
+          "b": 4
+        },
+        {
+          "op": "swapHonors",
+          "a": 2,
+          "b": 3
+        },
+        {
+          "op": "swapHonors",
+          "a": 4,
+          "b": 5
+        }
+      ]
+    },
+    "41": {
+      "leaf": "1000011111001000121001120310011111",
+      "path": [
+        {
+          "op": "swapSuits",
+          "a": 1,
+          "b": 2
+        },
+        {
+          "op": "swapHonors",
+          "a": 0,
+          "b": 5
+        },
+        {
+          "op": "swapHonors",
+          "a": 1,
+          "b": 4
+        },
+        {
+          "op": "swapHonors",
+          "a": 2,
+          "b": 3
+        },
+        {
+          "op": "swapHonors",
+          "a": 4,
+          "b": 5
+        }
+      ]
+    },
+    "42": {
+      "leaf": "1000011111001000121001120310011111",
+      "path": [
+        {
+          "op": "swapHonors",
+          "a": 0,
+          "b": 4
+        },
+        {
+          "op": "swapHonors",
+          "a": 1,
+          "b": 3
+        },
+        {
+          "op": "swapHonors",
+          "a": 3,
+          "b": 4
+        }
+      ]
+    },
+    "43": {
+      "leaf": "1000011111001001021001120310011111",
+      "path": [
+        {
+          "op": "swapSuits",
+          "a": 0,
+          "b": 1
+        },
+        {
+          "op": "swapSuits",
+          "a": 1,
+          "b": 2
+        },
+        {
+          "op": "reverseSuit",
+          "suit": 1
+        },
+        {
+          "op": "swapHonors",
+          "a": 0,
+          "b": 6
+        },
+        {
+          "op": "swapHonors",
+          "a": 1,
+          "b": 5
+        },
+        {
+          "op": "swapHonors",
+          "a": 2,
+          "b": 4
+        },
+        {
+          "op": "swapHonors",
+          "a": 5,
+          "b": 6
+        }
+      ]
+    },
+    "44": {
+      "leaf": "0100011110101120311001001021111111",
+      "path": [
+        {
+          "op": "swapSuits",
+          "a": 0,
+          "b": 2
+        },
+        {
+          "op": "swapSuits",
+          "a": 1,
+          "b": 2
+        }
+      ]
+    },
+    "45": {
+      "leaf": "0010011110101120311001001021111111",
+      "path": [
+        {
+          "op": "swapSuits",
+          "a": 0,
+          "b": 2
+        },
+        {
+          "op": "swapSuits",
+          "a": 1,
+          "b": 2
+        }
+      ]
+    },
+    "46": {
+      "leaf": "1000011111001001021001120310011111",
+      "path": [
+        {
+          "op": "swapSuits",
+          "a": 1,
+          "b": 2
+        },
+        {
+          "op": "swapHonors",
+          "a": 0,
+          "b": 6
+        },
+        {
+          "op": "swapHonors",
+          "a": 1,
+          "b": 5
+        },
+        {
+          "op": "swapHonors",
+          "a": 2,
+          "b": 4
+        },
+        {
+          "op": "swapHonors",
+          "a": 5,
+          "b": 6
+        }
+      ]
+    },
+    "47": {
+      "leaf": "1000011111001000121001120310011111",
+      "path": [
+        {
+          "op": "swapHonors",
+          "a": 0,
+          "b": 6
+        },
+        {
+          "op": "swapHonors",
+          "a": 1,
+          "b": 5
+        },
+        {
+          "op": "swapHonors",
+          "a": 2,
+          "b": 4
+        },
+        {
+          "op": "swapHonors",
+          "a": 5,
+          "b": 6
+        }
+      ]
+    },
+    "48": {
+      "leaf": "1000011111001000121001120310011111",
+      "path": [
+        {
+          "op": "swapHonors",
+          "a": 0,
+          "b": 5
+        },
+        {
+          "op": "swapHonors",
+          "a": 1,
+          "b": 4
+        },
+        {
+          "op": "swapHonors",
+          "a": 2,
+          "b": 3
+        },
+        {
+          "op": "swapHonors",
+          "a": 4,
+          "b": 5
+        }
+      ]
+    },
+    "49": {
+      "leaf": "1000011111001001021001120310011111",
+      "path": [
+        {
+          "op": "swapHonors",
+          "a": 0,
+          "b": 6
+        },
+        {
+          "op": "swapHonors",
+          "a": 1,
+          "b": 5
+        },
+        {
+          "op": "swapHonors",
+          "a": 2,
+          "b": 4
+        },
+        {
+          "op": "swapHonors",
+          "a": 5,
+          "b": 6
+        }
+      ]
+    }
+  },
+  "path_length_before": 1120,
+  "path_length_after": 922,
+  "P_proofs_imported": 0,
+  "actual_game_searches_run": 0,
+  "empty_game": "NOT_VERIFIED"
+}

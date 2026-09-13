@@ -3,27 +3,58 @@
   "snapshot_date": "2026-09-13",
   "opening_outcome": "P",
   "winner_from_empty": "second_player",
-  "first_move_orbit_outcomes": ["N", "N", "N", "N", "N", "N"],
+  "first_move_orbit_outcomes": [
+    "N",
+    "N",
+    "N",
+    "N",
+    "N",
+    "N"
+  ],
   "evidence_level": "complete_computation_with_full_reverse_replay",
   "SAFE_symmetry_orbits": 778532864302,
   "P_orbits": 203051492021,
   "N_orbits": 575481372281,
   "nonempty_buckets": 3686,
-  "layers": {"first": 0, "last": 34},
+  "layers": {
+    "first": 0,
+    "last": 34
+  },
   "table_payload_bytes": 97316623312,
   "table_format": "MJGLOBAL_PN_V1",
   "index_fingerprint": "5a45ff3ea0fcf356",
-  "table_bit_encoding": {"1": "P", "0": "N"},
+  "table_bit_encoding": {
+    "1": "P",
+    "0": "N"
+  },
   "formal_verification": {
     "status": "in_progress",
     "end_to_end_Lean_theorem_published": false,
-    "closed_nonempty_original_game_roots_published": 3,
-    "closed_root_tile_counts": [20, 32, 34],
+    "closed_nonempty_original_game_roots_published": 8,
+    "closed_root_tile_counts": [
+      12,
+      14,
+      20,
+      28,
+      30,
+      32,
+      34
+    ],
     "progress_receipt": "formal/STATUS.json",
     "lean_toolchain": "leanprover/lean4:v4.33.1",
-    "note": "Three concrete nonempty-position proofs and their source are published. The empty-position theorem is still NOT_VERIFIED."
+    "note": "Eight concrete nonempty roots are indexed. New 12- and 14-tile proofs and compressed 20-tile certificates are published. Empty and 10-tile formal roots remain NOT_VERIFIED.",
+    "source_modules": 1008
   },
-  "shared_trust_dependencies": ["foundational rule implementation", "global state index"],
+  "shared_trust_dependencies": [
+    "foundational rule implementation",
+    "global state index"
+  ],
   "full_table_distributed_in_git": false,
-  "acceptance_receipt": "results/acceptance.json"
+  "acceptance_receipt": "results/acceptance.json",
+  "paper": {
+    "primary_language": "en",
+    "manuscript": "papers/manuscript.md",
+    "evidence_catalogue": "papers/evidence/README.md",
+    "chinese_manuscript_published": false
+  }
 }

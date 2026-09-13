@@ -1,0 +1,85 @@
+"""Compare equal-work compact/full checkpoints by complete logical fields."""
+import argparse
+import hashlib
+import itertools
+import json
+import time
+import baseline_v4 as old
+import producer_compact_v6 as compact
+
+
+def main():
+    parser=argparse.ArgumentParser(description=__doc__)
+    parser.add_argument('--left',required=True)
+    parser.add_argument('--right',required=True)
+    parser.add_argument('--output',required=True)
+    args=parser.parse_args()
+    output=old.run_path(args.output);output.mkdir(parents=True,exist_ok=False)
+    directories=[old.run_path(args.left),old.run_path(args.right)]
+    results=[json.loads((path/'progress.latest.json').read_text()) for path in directories]
+    invocations=[json.loads((path/result['attempt']/'invocation.json').read_text()) for path,result in zip(directories,results)]
+    fields=['nodes','edges','expanded_nodes','pending_nodes','layers']
+    for result,invocation in zip(results,invocations):
+        if result['reason']!='new_nodes_budget' or not result.get('incremental_counts_match_final_SQL'):
+            raise ValueError('did not stop at equal-work node budget with reconciled counters')
+        if result['nodes']-invocation['start_snapshot']['nodes']<500000:
+            raise ValueError('less than 500k added nodes')
+    for field in fields:
+        if results[0][field]!=results[1][field] or invocations[0]['start_snapshot'][field]!=invocations[1]['start_snapshot'][field]:
+            raise ValueError('start/final logical counts differ: '+field)
+    initial=invocations[0]['start_snapshot']
+    began=time.monotonic();comparisons=[]
+    with old.connect(directories[0]/'graph.sqlite',readonly=True) as left, compact.connect(directories[1]/'graph.sqlite',readonly=True) as right:
+        for db,result in zip((left,right),results):
+            db.execute('BEGIN')
+            if db.execute('SELECT max(id) FROM nodes').fetchone()[0]+1!=result['nodes']:
+                raise ValueError('node IDs not dense')
+            if db.execute('SELECT min(id) FROM nodes WHERE expanded=0').fetchone()[0]!=result['expanded_nodes']:
+                raise ValueError('expanded nodes are not a BFS ID prefix')
+        sections=[('new_nodes',left.execute('SELECT * FROM nodes WHERE id>=? ORDER BY id',(initial['nodes'],)),
+                   right.execute('SELECT * FROM nodes WHERE id>=? ORDER BY id',(initial['nodes'],)),results[0]['nodes']-initial['nodes']),
+                  ('new_parent_updates',left.execute('SELECT * FROM nodes WHERE id>=? AND expanded=1 ORDER BY id',(initial['expanded_nodes'],)),
+                   right.execute('SELECT * FROM nodes WHERE id>=? AND expanded=1 ORDER BY id',(initial['expanded_nodes'],)),results[0]['expanded_nodes']-initial['expanded_nodes']),
+                  ('new_logical_edges',left.execute('SELECT * FROM edges WHERE parent>=? ORDER BY parent,tile',(initial['expanded_nodes'],)),
+                   compact.logical_edges(right,initial['expanded_nodes']-1),results[0]['edges']-initial['edges'])]
+        for name,a,b,expected in sections:
+            digest=hashlib.sha256();count=0
+            for x,y in itertools.zip_longest(a,b):
+                if x is None or y is None:
+                    raise ValueError('different row counts: '+name)
+                x=tuple(x);y=tuple(y.values()) if isinstance(y,dict) else tuple(y)
+                if x!=y:
+                    raise ValueError('complete logical field mismatch in '+name)
+                digest.update(old.dumps(x).encode());digest.update(b'\n');count+=1
+            if count!=expected:
+                raise ValueError('missing appended rows: '+name)
+            comparisons.append({'section':name,'equal_rows':count,'sha256':digest.hexdigest()})
+    measured=[]
+    for path,result,invocation in zip(directories,results,invocations):
+        resource=result['last_resources'];wall=result['wall_seconds']
+        migration=json.loads((path/'migration.json').read_text())
+        measured.append({'run':path.name,'attempt':result['attempt'],'wall_seconds':wall,
+            'new_nodes':result['nodes']-initial['nodes'],'newly_expanded_nodes':result['expanded_nodes']-initial['expanded_nodes'],
+            'new_edges':result['edges']-initial['edges'],
+            'expanded_per_hour':(result['expanded_nodes']-initial['expanded_nodes'])/wall*3600,
+            'monitored_cpu_seconds':resource['cpu_seconds_since_monitor_start'],
+            'monitored_seconds':resource['elapsed_seconds'],
+            'monitored_average_cores':resource['cpu_seconds_since_monitor_start']/resource['elapsed_seconds'],
+            'peak_process_tree_private_bytes':result['peak_process_tree_private_bytes'],
+            'database_bytes':(path/'graph.sqlite').stat().st_size,'database_bytes_after_source_conversion':migration['database_bytes'],
+            'result_path':str((path/result['attempt']/'result.json').relative_to(old.ROOT)),
+            'exact_argv':invocation['argv'],'result_sha256':old.digest(path/result['attempt']/'result.json')})
+    report={'status':'PASS_COMPLETE_APPENDED_LOGICAL_FIELDS_MATCH','formal_proof':False,'comparison':comparisons,
+            'runs':measured,'compact_speedup':measured[0]['wall_seconds']/measured[1]['wall_seconds'],
+            'compact_database_size_ratio':measured[1]['database_bytes']/measured[0]['database_bytes'],
+            'start_snapshot':initial,'final_snapshot':{key:results[0][key] for key in fields},
+            'comparison_seconds':time.monotonic()-began,
+            'source_sha256':{str(path.relative_to(old.ROOT)):old.digest(path) for path in
+                             [old.HERE/'baseline_v4.py',old.HERE/'producer_compact_v6.py',__import__('pathlib').Path(__file__)]},
+            'caveat':'Wall includes initial/final SQL and saving. CPU/private samples cover monitored worker interval. Logical equality is not Lean acceptance.'}
+    old.atomic_json(output/'result.json',report)
+    print(old.dumps(report),flush=True)
+
+
+if __name__=='__main__':
+    main()

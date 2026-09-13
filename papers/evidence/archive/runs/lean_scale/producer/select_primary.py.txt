@@ -1,0 +1,29 @@
+"""Require repeated same-work evidence before selecting the new storage format."""
+import json
+import baseline_v4 as p
+
+reports=[]
+for name in ('end_to_end_round1','end_to_end_round2'):
+    path=p.HERE/'benchmarks'/name/'result.json'
+    result=json.loads(path.read_text())
+    if result['status']!='PASS_COMPLETE_APPENDED_LOGICAL_FIELDS_MATCH':
+        raise ValueError('comparison not complete')
+    reports.append(result)
+baseline=sum(report['runs'][0]['wall_seconds'] for report in reports)
+candidate=sum(report['runs'][1]['wall_seconds'] for report in reports)
+promote=all(report['compact_speedup']>=1.05 for report in reports) and baseline/candidate>=1.05
+choice={'schema':'MAHJONG_COMPACT_PRODUCER_SELECTION_V1','formal_proof':False,
+        'compact_qualified':promote,'minimum_repeat_speedup':min(report['compact_speedup'] for report in reports),
+        'total_baseline_seconds':baseline,'total_compact_seconds':candidate,'aggregate_speedup':baseline/candidate,
+        'repeat_speedups':[report['compact_speedup'] for report in reports],
+        'selected_run':'opening_compact_v6' if promote else 'opening_v4_copy',
+        'producer':'producer_compact_v6.py' if promote else 'baseline_v4.py',
+        'kind':'compact' if promote else 'baseline','threads':1,'batch':1024,
+        'source':'runs/lean_next/producer/opening_control_v4',
+        'source_sha256':'271ada1415af87307a7e360f4fbf5c43635fc419d3d52522dc2147bb0bbd33a2',
+        'comparison_sha256':{str((p.HERE/'benchmarks'/name/'result.json').relative_to(p.ROOT)):p.digest(p.HERE/'benchmarks'/name/'result.json')
+                             for name in ('end_to_end_round1','end_to_end_round2')},
+        'criterion':'Both counterbalanced >=500k-node equal-work repeats must give >=5% full-wall improvement.',
+        'scope':'Measured on the retained P12 frontier, not a speed guarantee for all subsequent layers.'}
+p.atomic_json(p.HERE/'primary_selection.json',choice)
+print(p.dumps(choice),flush=True)

@@ -1,0 +1,62 @@
+{
+  "schema": "LEAN_SCALE_EVIDENCE_AUDIT_V1",
+  "status": "PASS",
+  "created_utc": "2026-09-13T07:22:08.933315+00:00",
+  "actual_12_tiles": "PASS",
+  "empty_game": "NOT_VERIFIED",
+  "receipt_audit_is_not_a_new_kernel_proof": true,
+  "verified_kernel_runs": [
+    {
+      "path": "runs/lean_scale/actual12_kernel_v1/result.json",
+      "bytes": 560533,
+      "sha256": "528aa59d3590c29ed05a21dbfea088aefdd4de11c76853e2303beceb1f488a6d"
+    },
+    {
+      "path": "runs/lean_scale/actual12_pilot_v2/result.json",
+      "bytes": 403609,
+      "sha256": "4593bf354a0b638e045c3545853453271a2a0491e058a83b95aaa744b83a8430"
+    },
+    {
+      "path": "runs/lean_scale/leaves_kernel_v1/result.json",
+      "bytes": 303701,
+      "sha256": "9dab1f3e170dade4708c0a3eb6d2a2bc5a3f5bdcaf31eb4fdfc193f15f37ab7d"
+    },
+    {
+      "path": "runs/lean_next/actual14_kernel_v2/result.json",
+      "bytes": 66702,
+      "sha256": "15e94b816a87c23f0315f3ed96a709e7e04a1842b55187350114894623148b9b"
+    },
+    {
+      "path": "runs/lean_next/reflected20_kernel_v1/result.json",
+      "bytes": 94901,
+      "sha256": "ab984f5f72118e2a66c1c2c6e79c519ac0345f07ca897433ea75b205bf20bb0a"
+    },
+    {
+      "path": "runs/lean_next/greedy20_kernel_v1/result.json",
+      "bytes": 127261,
+      "sha256": "5dad92683fc04868022f0c38a7cb22ef39af18b9451b2c22d8c392ef3a78c6c2"
+    },
+    {
+      "path": "runs/lean_scale/actual12_registry_kernel_v1/result.json",
+      "bytes": 571901,
+      "sha256": "9355a8cd9a7d54dd10e51873f47596f18c965df9667c74c800a9ddb7d0b42ff2"
+    }
+  ],
+  "dependency_exact_reuse_edges_checked": 1514,
+  "distinct_retained_files_hashed": 3201,
+  "native_acceptance": {
+    "path": "runs/global_retro/verification/final_v1/acceptance.json",
+    "bytes": 9940,
+    "sha256": "1cc4b9dc7bd287e976d42d6b7fb41eb548651529016e53485008828c97d826a5"
+  },
+  "native_checkpoint": {
+    "path": "runs\\lean_scale\\producer\\opening_compact_v6\\graph.sqlite",
+    "sha256": "8b2357959053838050e96c1cacaa4c401e5222bd00ebdd2fbfcbeb5a40ff901d",
+    "bytes": 2119254016
+  },
+  "verifier": {
+    "path": "runs/lean_scale/verify_evidence.py",
+    "bytes": 7976,
+    "sha256": "fd976d7a80e136d84ad86a40e0fa347f64b97be3127b81871bd2dd91021f779b"
+  }
+}

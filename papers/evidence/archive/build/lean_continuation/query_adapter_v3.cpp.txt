@@ -1,0 +1,172 @@
+// Historical-oracle checks and read-only queries of completed global P/N layers.
+// Invoke via verify_oracles_run.cjs to also recheck every historical source SHA-256.
+#include "global_index.hpp"
+#include <filesystem>
+#include <regex>
+#include <set>
+#include <memory>
+#include <iomanip>
+
+namespace oq {
+namespace fs=std::filesystem;
+using u64=uint64_t;
+struct Missing:std::runtime_error{using std::runtime_error::runtime_error;};
+void require(bool yes,const std::string&s){if(!yes)throw std::runtime_error(s);}
+std::string quote(const std::string&s){std::string r="\"";for(unsigned char c:s){if(c=='\\'||c=='"'){r+='\\';r+=char(c);}else if(c=='\n')r+="\\n";else if(c=='\r')r+="\\r";else if(c=='\t')r+="\\t";else if(c>=32)r+=char(c);}return r+'"';}
+std::string text_file(const fs::path&p){std::ifstream f(p,std::ios::binary);require(bool(f),"cannot read "+p.u8string());return {std::istreambuf_iterator<char>(f),{}};}
+std::string prop(const std::string&j,const std::string&name,const std::string&pattern){
+    static std::map<std::string,std::regex> compiled;
+    const std::string key=name+'\n'+pattern;auto it=compiled.find(key);
+    if(it==compiled.end())it=compiled.emplace(key,std::regex("\\\""+name+"\\\"\\s*:\\s*("+pattern+")\\s*(?=[,}])")).first;
+    std::sregex_iterator p(j.begin(),j.end(),it->second),end;require(p!=end,"missing or malformed metadata field "+name);
+    std::string v=(*p)[1].str();require(++p==end,"duplicate metadata field "+name);return v;
+}
+std::string str(const std::string&j,const std::string&name){auto s=prop(j,name,"\\\"[^\\\"\\\\]*\\\"");return s.substr(1,s.size()-2);}
+u64 num(const std::string&j,const std::string&name){return std::stoull(prop(j,name,"[0-9]+"));}
+std::string hex(u64 x){std::ostringstream s;s<<std::hex<<std::setw(16)<<std::setfill('0')<<x;return s.str();}
+std::string stem(int n,int h){std::ostringstream s;s<<'n'<<std::setw(2)<<std::setfill('0')<<n<<"_h"<<std::setw(3)<<h;return s.str();}
+State strict_state(const std::string&s){require(s.size()==34&&s.find_first_not_of("01234")==std::string::npos,"state must be exactly 34 digits in 0..4");return ::canon(::parse(s));}
+int tiles(const State&s){int n=0;for(auto c:s.c)for(;c;c/=5)n+=c%5;return n;}
+u64 little_word(u64 x){const uint16_t probe=1;return *reinterpret_cast<const uint8_t*>(&probe)?x:__builtin_bswap64(x);}
+
+struct Meta{int n=0,h=0;u64 size=0,words=0,p=0,hash=0;fs::path file,completion;};
+struct Lookup{bool known=false,p=false;int n=0,h=-1;u64 rank=retro::BAD_RANK;std::string state,reason,bucket;};
+class Database {
+    const retro::Index& idx_;std::vector<fs::path> dirs_;
+    struct Layer{bool examined=false,complete=false;std::vector<int> missing;};
+    std::array<Layer,36> layers_;
+    std::map<std::pair<int,int>,Meta> meta_;
+    struct Open{retro::Bucket bucket;std::ifstream file;std::vector<u64> small;u64 used=0;};
+    std::map<std::pair<int,int>,std::unique_ptr<Open>> open_;
+    std::set<std::pair<int,int>> validated_;u64 tick_=0;
+    const Clock::time_point began_=Clock::now();double seconds_;
+    std::unique_ptr<Meta> locate(int n,int h){
+        std::unique_ptr<Meta> selected;
+        for(const auto&dir:dirs_){const auto base=stem(n,h);auto complete=dir/(base+".complete.json");if(!fs::exists(complete))continue;
+            const auto j=text_file(complete);Meta m;m.n=n;m.h=h;m.size=idx_.bucket_size(n,h);m.words=(m.size+63)/64;m.file=dir/(base+".bits");m.completion=complete;
+            require(str(j,"schema")=="MJGLOBAL_PN_V1","wrong database schema in "+complete.u8string());
+            require(prop(j,"completed","true|false")=="true","completion marker is not true in "+complete.u8string());
+            require(str(j,"index_fingerprint")==hex(idx_.fingerprint),"index fingerprint mismatch in "+complete.u8string());
+            require(num(j,"n")==u64(n)&&num(j,"h")==u64(h),"bucket identity mismatch in "+complete.u8string());
+            require(num(j,"honor_code")==idx_.honors[h].code&&num(j,"states")==m.size&&num(j,"word_count")==m.words,"bucket layout mismatch in "+complete.u8string());
+            m.p=num(j,"p_states");require(m.p<=m.size,"invalid P count in "+complete.u8string());
+            auto hs=str(j,"payload_hash64");require(hs.size()==16&&hs.find_first_not_of("0123456789abcdefABCDEF")==std::string::npos,"malformed payload hash");m.hash=std::stoull(hs,nullptr,16);
+            require(fs::exists(m.file)&&fs::file_size(m.file)==m.words*8,"completed payload missing or wrong length: "+m.file.u8string());
+            if(selected)require(selected->p==m.p&&selected->hash==m.hash,"conflicting completed copies of "+base);
+            else selected=std::make_unique<Meta>(m);
+        }
+        return selected;
+    }
+    void validate_payload(const Meta&m){
+        const auto k=std::make_pair(m.n,m.h);if(validated_.count(k))return;
+        std::ifstream f(m.file,std::ios::binary);require(bool(f),"cannot open completed payload");
+        std::vector<u64> buffer(1<<17);u64 remain=m.words,hash=1469598103934665603ULL,p=0,last=0;
+        while(remain){check_budget();size_t count=size_t(std::min<u64>(remain,buffer.size()));require(bool(f.read(reinterpret_cast<char*>(buffer.data()),std::streamsize(count*8))),"short completed payload read");
+            for(size_t i=0;i<count;++i){last=little_word(buffer[i]);hash^=last;hash*=1099511628211ULL;p+=__builtin_popcountll(last);}remain-=count;
+        }
+        require(hash==m.hash&&p==m.p,"completed payload checksum or P count mismatch: "+m.file.u8string());
+        require(!(m.size&63)||!(last>>(m.size&63)),"nonzero payload padding: "+m.file.u8string());
+        validated_.insert(k);verified_payload_bytes+=m.words*8;
+    }
+    Open& load(int n,int h){
+        const auto k=std::make_pair(n,h);auto hit=open_.find(k);if(hit!=open_.end()){hit->second->used=++tick_;return *hit->second;}
+        const auto found=meta_.find(k);require(found!=meta_.end(),"metadata cache lacks completed bucket");validate_payload(found->second);
+        if(open_.size()>=32){auto victim=open_.begin();for(auto i=open_.begin();i!=open_.end();++i)if(i->second->used<victim->second->used)victim=i;open_.erase(victim);}
+        auto t=std::make_unique<Open>();t->bucket=idx_.make_bucket(n,h);t->file.open(found->second.file,std::ios::binary);require(bool(t->file),"cannot reopen payload");t->used=++tick_;
+        // Bounded read-only payload cache. Large buckets retain the same seek
+        // reader; 32 directory LRU entries plus at most 256 MiB payload memory.
+        u64 cached=0;for(const auto&entry:open_)cached+=entry.second->small.size()*8;
+        const auto bytes=found->second.words*8;
+        if(bytes<=(16ULL<<20)&&cached+bytes<=(256ULL<<20)){
+            t->small.resize(size_t(found->second.words));
+            require(bool(t->file.read(reinterpret_cast<char*>(t->small.data()),std::streamsize(bytes))),"short cached payload read");
+        }
+        auto* answer=t.get();open_.emplace(k,std::move(t));return *answer;
+    }
+public:
+    u64 verified_payload_bytes=0;
+    Database(const retro::Index&idx,std::vector<fs::path> dirs,double seconds):idx_(idx),dirs_(std::move(dirs)),seconds_(seconds){}
+    void check_budget()const{if(std::chrono::duration<double>(Clock::now()-began_).count()>seconds_)throw Missing("query budget exhausted; unchecked results UNKNOWN");}
+    bool layer_complete(int n){
+        check_budget();require(n>=0&&n<=35,"query layer outside range");auto&layer=layers_[n];if(layer.examined)return layer.complete;
+        layer.examined=true;if(n==35){layer.complete=true;return true;}
+        for(int h=0;h<int(idx_.honors.size());++h)if(idx_.bucket_size(n,h)){auto m=locate(n,h);if(!m)layer.missing.push_back(h);else meta_.emplace(std::make_pair(n,h),*m);}
+        layer.complete=layer.missing.empty();return layer.complete;
+    }
+    std::string missing_layers_json()const{
+        std::ostringstream o;o<<'[';bool comma=false;for(int n=0;n<=34;++n)if(layers_[n].examined&&!layers_[n].complete){if(comma)o<<',';comma=true;o<<"{\"n\":"<<n<<",\"missing_nonempty_buckets\":"<<layers_[n].missing.size()<<",\"h\":[";for(size_t i=0;i<layers_[n].missing.size();++i)o<<(i?",":"")<<layers_[n].missing[i];o<<"]}";}return o.str()+']';
+    }
+    Lookup lookup(State s){
+        check_budget();Lookup r;r.state=::repr(::canon(s));r.n=tiles(s);require(::safe(s),"queried/fixture state is not SAFE: "+r.state);
+        auto encoded=idx_.encode(s);require(encoded.second>=0&&encoded.first[2]!=retro::BAD_ID,"SAFE state absent from local index");r.h=encoded.second;
+        if(!layer_complete(r.n)){r.reason="corresponding_layer_incomplete";return r;}
+        auto&t=load(r.n,r.h);r.rank=idx_.rank_sorted(t.bucket,encoded.first);require(r.rank!=retro::BAD_RANK,"SAFE state absent from completed bucket");
+        u64 word=0;if(!t.small.empty())word=t.small[size_t(r.rank>>6)];
+        else{t.file.clear();t.file.seekg(std::streamoff((r.rank>>6)*8),std::ios::beg);require(bool(t.file.read(reinterpret_cast<char*>(&word),8)),"P/N word read failed");}
+        word=little_word(word);
+        r.known=true;r.p=((word>>(r.rank&63))&1)!=0;r.bucket=meta_.at({r.n,r.h}).file.u8string();return r;
+    }
+};
+
+struct Fixture{std::string state,expected,id;size_t evidence_line=0;};
+std::vector<Fixture> fixtures(const fs::path&p){
+    std::ifstream f(p);require(bool(f),"cannot read fixture TSV");std::vector<Fixture> out;std::map<std::string,std::string> seen;std::string line;size_t lineno=0;
+    while(std::getline(f,line)){++lineno;if(!line.empty()&&line.back()=='\r')line.pop_back();if(line.empty()||line[0]=='#')continue;
+        std::stringstream ss(line);Fixture x;std::string row;std::getline(ss,x.state,'\t');std::getline(ss,x.expected,'\t');std::getline(ss,x.id,'\t');std::getline(ss,row,'\t');
+        require(!x.id.empty()&&!row.empty()&&(x.expected=="P"||x.expected=="N"),"invalid fixture row "+std::to_string(lineno));
+        x.state=::repr(strict_state(x.state));x.evidence_line=std::stoull(row);auto it=seen.find(x.state);require(it==seen.end()||it->second==x.expected,"conflicting fixture expectations for "+x.state);seen[x.state]=x.expected;out.push_back(x);
+    }
+    require(!out.empty(),"empty fixture TSV");return out;
+}
+
+struct QueryResult{std::string json;bool unknown=false;};
+QueryResult query(Database&db,const State&s,const std::string&label){
+    const auto value=db.lookup(s);std::ostringstream j;j<<"{\"kind\":\"query\",\"label\":"<<quote(label)<<",\"state\":"<<quote(value.state)<<",\"n\":"<<value.n<<",\"h\":"<<value.h;
+    if(!value.known){j<<",\"outcome\":\"UNKNOWN\",\"reason\":"<<quote(value.reason)<<'}';return {j.str(),true};}
+    j<<",\"outcome\":\""<<(value.p?"P":"N")<<"\",\"rank\":"<<value.rank<<",\"bucket\":"<<quote(value.bucket)<<",\"layer_metadata_complete\":true,\"queried_payload_integrity_verified\":true";
+    if(!db.layer_complete(value.n+1)){j<<",\"recurrence_check\":\"UNKNOWN\",\"reason\":\"successor_layer_incomplete\"}";return {j.str(),true};}
+    const auto children=::moves(s);bool found=false;State witness{};
+    for(const auto&child:children){auto v=db.lookup(child);require(v.known,"completed child layer returned UNKNOWN");if(v.p){found=true;witness=child;break;}}
+    require(value.p?!found:found,"completed database violates one-step P/N recurrence at "+value.state);
+    j<<",\"recurrence_check\":\"PASS\"";
+    if(!value.p){int winning_tile=-1;std::string raw_child;
+        for(int tile=0;tile<34&&winning_tile<0;++tile){const int b=tile<27?tile/9:3,position=tile<27?8-(tile%9):6-(tile-27);if((s.c[b]/::pw[position])%5==4)continue;State t=s;t.c[b]+=::pw[position];if(::safe(t)&&::canon(t)==witness){winning_tile=tile;raw_child=::repr(t);}}
+        require(winning_tile>=0,"P witness is not a legal one-tile addition");j<<",\"winning_child\":"<<quote(::repr(witness))<<",\"winning_tile_index_zero_based\":"<<winning_tile<<",\"winning_child_before_canonicalization\":"<<quote(raw_child);
+    }else j<<",\"all_SAFE_children_N\":true,\"SAFE_child_orbits\":"<<children.size();
+    j<<'}';return {j.str(),false};
+}
+}
+
+int main(int argc,char**argv){try{
+    using namespace oq;std::vector<fs::path> dirs;fs::path fixture_path,output;std::vector<std::string> states;bool opening=false;int sample_layer=-1;double seconds=120;
+    for(int i=1;i<argc;++i){std::string a=argv[i];if(a=="--opening"){opening=true;continue;}require(i+1<argc,"missing option value for "+a);std::string v=argv[++i];
+        if(a=="--data")dirs.push_back(fs::u8path(v));else if(a=="--fixtures")fixture_path=fs::u8path(v);else if(a=="--state")states.push_back(v);else if(a=="--output")output=fs::u8path(v);else if(a=="--sample-layer")sample_layer=std::stoi(v);else if(a=="--seconds")seconds=std::stod(v);else throw std::runtime_error("unknown option "+a);
+    }
+    require(!dirs.empty(),"provide at least one --data directory; it may be repeated");require(!fixture_path.empty()||!states.empty()||opening||sample_layer>=0,"select --fixtures, --state, --opening, or --sample-layer");require(seconds>0,"query budget must be positive");
+    const auto start=Clock::now();retro::Index idx;Database db(idx,dirs,seconds);std::ofstream file;
+    if(!output.empty()){if(!output.parent_path().empty())fs::create_directories(output.parent_path());file.open(output,std::ios::binary);require(bool(file),"cannot create result file");}
+    auto emit=[&](const std::string&line,bool console){if(file)file<<line<<'\n';if(console)std::cout<<line<<std::endl;};
+    u64 matched=0,conflicts=0,unknown=0,query_count=0;
+    if(!fixture_path.empty()){
+        auto rows=fixtures(fixture_path);
+        // Preserve fixture IDs/provenance while querying each (layer,honor) bucket
+        // together; the historical state order otherwise thrashes 25 MB directories.
+        std::stable_sort(rows.begin(),rows.end(),[](const Fixture&a,const Fixture&b){
+            int an=0,bn=0;for(char c:a.state)an+=c-'0';for(char c:b.state)bn+=c-'0';
+            return an!=bn?an<bn:a.state.compare(27,7,b.state,27,7)<0;
+        });
+        for(const auto&f:rows){auto r=db.lookup(strict_state(f.state));std::ostringstream j;j<<"{\"kind\":\"oracle\",\"id\":"<<quote(f.id)<<",\"provenance_jsonl_line\":"<<f.evidence_line<<",\"state\":"<<quote(f.state)<<",\"expected\":"<<quote(f.expected);
+            if(!r.known){++unknown;j<<",\"actual\":\"UNKNOWN\",\"status\":\"UNKNOWN\",\"reason\":"<<quote(r.reason);}
+            else{const std::string actual=r.p?"P":"N";const bool same=actual==f.expected;if(same)++matched;else++conflicts;j<<",\"actual\":"<<quote(actual)<<",\"status\":\""<<(same?"MATCH":"CONFLICT")<<"\",\"n\":"<<r.n<<",\"h\":"<<r.h<<",\"rank\":"<<r.rank;}
+            j<<'}';emit(j.str(),r.known&&(r.p?"P":"N")!=f.expected);
+        }
+    }
+    auto runquery=[&](const State&s,const std::string&label){auto q=query(db,s,label);++query_count;if(q.unknown)++unknown;emit(q.json,true);};
+    for(const auto&s:states)runquery(strict_state(s),"requested_state");
+    if(sample_layer>=0){require(sample_layer<=34,"invalid sample layer");bool found=false;for(int h=0;h<int(idx.honors.size())&&!found;++h)if(idx.bucket_size(sample_layer,h)){auto b=idx.make_bucket(sample_layer,h);runquery(idx.physical(idx.decode(b,0),h),"first_indexed_state_in_layer");found=true;}require(found,"sample layer is empty");}
+    if(opening){State empty{};runquery(empty,"empty_state");const auto first=::moves(empty);require(first.size()==6,"unexpected first-move orbit count");for(size_t i=0;i<first.size();++i)runquery(first[i],"first_move_orbit_"+std::to_string(i));}
+    const char*status=conflicts?"FAIL":unknown?"UNKNOWN":"PASS";std::ostringstream sum;sum<<"{\"kind\":\"summary\",\"schema\":\"MAHJONG_GLOBAL_ORACLE_QUERY_V1\",\"status\":\""<<status<<"\",\"index_fingerprint\":"<<quote(hex(idx.fingerprint))<<",\"matched_oracles\":"<<matched<<",\"conflicting_oracles\":"<<conflicts<<",\"unknown_items\":"<<unknown<<",\"queries\":"<<query_count<<",\"verified_payload_bytes\":"<<db.verified_payload_bytes<<",\"incomplete_layers\":"<<db.missing_layers_json()<<",\"seconds\":"<<std::chrono::duration<double>(Clock::now()-start).count()<<'}';emit(sum.str(),true);
+    return conflicts?1:unknown?2:0;
+}catch(const oq::Missing&e){std::cerr<<"{\"status\":\"UNKNOWN\",\"reason\":"<<oq::quote(e.what())<<"}"<<std::endl;return 2;}
+catch(const std::exception&e){std::cerr<<"{\"status\":\"FAIL\",\"reason\":"<<oq::quote(e.what())<<"}"<<std::endl;return 1;}}
+

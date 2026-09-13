@@ -1,0 +1,106 @@
+{
+  "schema": "PRUNED_PHYSICAL_RESPONSE_CANDIDATE_V1",
+  "status": "GENERATED_NOT_VERIFIED",
+  "empty_game": "NOT_VERIFIED",
+  "original_manifest": "runs\\lean_scale\\endgames\\actual12_c_v1\\export\\manifest.json",
+  "input_sha256": {
+    "runs\\lean_scale\\endgames\\actual12_c_v1\\export\\manifest.json": "d931e0b4b4791826e207da882a5ff08ceee1e7af58f9db373e469a0abfd700d9",
+    "runs\\lean_scale\\endgames\\actual12_c_v1\\export\\nodes.jsonl": "3506a0d01854bccf110351739a685e330a3b98fc03812466de4f75514dbb9de1",
+    "runs\\lean_scale\\endgames\\actual12_c_v1\\export\\edges.jsonl": "1ad0db41136f67b32071a12ff5b3f869c7fa941e6ea8199bc2675ced1ce069f8",
+    "runs\\lean_scale\\theory\\actual14_registry.json": "0a52df239c72fbf4c7c90034a27d466181965d54b4a771cc59abbb7f37abe032",
+    "build\\lean_scale\\extract_responses.py": "078bd1b12aef5a3b14685cae6414698b8b8a8bbff57b27be15d0e0bf553e4d57",
+    "build\\lean_next\\convert_graph_v3.py": "4ac1fa2f952c75b1b70b6e00bf77bc63ea2344d584afef7a35876e97d12d9517"
+  },
+  "root_info": {
+    "schema": "MAHJONG_STRATEGY_WORKER_V1",
+    "kind": "root",
+    "input_state": "0000000020000011110001110300000000",
+    "canonical_state": "0000000020000011110001110300000000",
+    "root_witness": [],
+    "outcome": "P",
+    "n": 12,
+    "h": 0,
+    "rank": 40904247,
+    "edges": [],
+    "physical_safe_moves": 0,
+    "retained_candidates": 0,
+    "requests": 1,
+    "database_lookups": 1,
+    "cache_hits": 0,
+    "verified_payload_bytes": 7952656
+  },
+  "root_source_id": 0,
+  "original_P_rows": 790,
+  "retained_local_P_rows": 757,
+  "original_registered_matches": 33,
+  "external_boundary_count": 11,
+  "external_boundary": {
+    "740": {
+      "state": "0000011110001120311001001020000001",
+      "registry_id": 40,
+      "registry_source_node_id": 62
+    },
+    "838": {
+      "state": "0001000121000011111001120310000000",
+      "registry_id": 32,
+      "registry_source_node_id": 54
+    },
+    "849": {
+      "state": "0001000120302110011000011110000001",
+      "registry_id": 33,
+      "registry_source_node_id": 55
+    },
+    "900": {
+      "state": "0000011110001000120001120310000011",
+      "registry_id": 42,
+      "registry_source_node_id": 64
+    },
+    "1419": {
+      "state": "1000011111001001021001120310000001",
+      "registry_id": 20,
+      "registry_source_node_id": 101
+    },
+    "1420": {
+      "state": "0100011110101120311001001020000001",
+      "registry_id": 23,
+      "registry_source_node_id": 104
+    },
+    "1421": {
+      "state": "0010011110101120311001001020000001",
+      "registry_id": 26,
+      "registry_source_node_id": 107
+    },
+    "1529": {
+      "state": "1000011111001000121001120310000001",
+      "registry_id": 21,
+      "registry_source_node_id": 102
+    },
+    "1531": {
+      "state": "0001000121000011111001120310000011",
+      "registry_id": 22,
+      "registry_source_node_id": 103
+    },
+    "1579": {
+      "state": "0001000120100011110101120310000011",
+      "registry_id": 25,
+      "registry_source_node_id": 106
+    },
+    "1580": {
+      "state": "0001000120010011110101120310000011",
+      "registry_id": 28,
+      "registry_source_node_id": 109
+    }
+  },
+  "retained_terminal_leaves": 86,
+  "terminal_layers": {
+    "26": 47,
+    "24": 39
+  },
+  "physical_legal_first_moves": 25510,
+  "back_replies": 4643,
+  "external_back_replies": 80,
+  "positive_replies": 20867,
+  "response_sha256": "a917aa5649940f01c5ae6cf7ca4f69f5c988bd78fb0fa8d9ba55a4572c81c31b",
+  "leaf_states_sha256": "484c4b0c0b9e85af9930c6990c581da00cb5078ddd50982524aeabf0daa22985",
+  "wall_seconds": 40.76600000000326
+}

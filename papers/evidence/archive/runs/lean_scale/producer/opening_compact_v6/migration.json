@@ -1,0 +1,219 @@
+{
+  "schema": "MAHJONG_COMPACT_EDGE_CHECKPOINT_MIGRATION_V1",
+  "status": "PASS_COMPLETE_SOURCE_FIELD_RECONSTRUCTION",
+  "source": "runs\\lean_next\\producer\\opening_control_v4",
+  "source_sha256": "271ada1415af87307a7e360f4fbf5c43635fc419d3d52522dc2147bb0bbd33a2",
+  "target": "opening_compact_v6",
+  "source_config": {
+    "schema": "MAHJONG_STRATEGY_GRAPH_V1",
+    "policy": "batch_greedy_existing_then_cover_then_future_degree_then_lex_v1",
+    "batch": 1024,
+    "root_requested": "0000000000000000000000000000000000",
+    "data_directory": "<research-root>\\runs\\global_retro\\pilot_v1\\data",
+    "index_fingerprint": "5a45ff3ea0fcf356",
+    "source_sha256": {
+      "runs\\lean_next\\producer\\baseline_v4.py": "835a4436afb4893f9e0375b84f011a567f51ae10add2e3da64c903ae014a6164",
+      "build\\lean_continuation\\strategy_worker_v3.cpp": "90a55d55eaebccdd09e7855331a750f3f49a096b9d39fe1660562a3043785226",
+      "build\\lean_continuation\\strategy_worker_v3.exe": "92eef64bba8727c6905cbc2f652b2fb59115ee8f817283952b083e46ba8364b8",
+      "build\\lean_continuation\\query_adapter_v3.cpp": "383643f508cea959ac7ed05bc6a1c54ce98c0a8583db5a1c3755b13b4d5ddd64",
+      "build\\lean_verification\\query_adapter.cpp": "7c536d43d791d6b65d8ad9ebb5348d75a43cb444c971c5e53583c76d41bce1ba",
+      "build\\global_retro\\global_index.hpp": "b742e5bbb20ed0df50665c0d454d3bf4b7691dabc4d2d0380e7159766f8bf0c8",
+      "mahjong_progress\\solver\\solver.cpp": "1194d941c55b48c4ac686f29518c3fe032723a431125610b2a3509f8db04242f",
+      "runs\\global_retro\\index\\bucket_catalog.json": "18de78e94271d760e58f9ae8f47dd9c5615a3d6dc1cc59a69f24e7524752c551"
+    },
+    "witness_direction": "canonical_child_to_physical_successor_left_to_right",
+    "formal_proof": false
+  },
+  "target_config": {
+    "schema": "MAHJONG_STRATEGY_GRAPH_V2_COMPACT_EDGES",
+    "policy": "batch_greedy_existing_then_cover_then_future_degree_then_lex_v1",
+    "batch": 1024,
+    "root_requested": "0000000000000000000000000000000000",
+    "data_directory": "<research-root>\\runs\\global_retro\\pilot_v1\\data",
+    "index_fingerprint": "5a45ff3ea0fcf356",
+    "source_sha256": {
+      "runs\\lean_scale\\producer\\producer_compact_v6.py": "c22fc6859988025a55d2bd067bd93b8f478fb3338d42889e1332fabbd512793d",
+      "build\\lean_continuation\\strategy_worker_v3.cpp": "90a55d55eaebccdd09e7855331a750f3f49a096b9d39fe1660562a3043785226",
+      "build\\lean_continuation\\strategy_worker_v3.exe": "92eef64bba8727c6905cbc2f652b2fb59115ee8f817283952b083e46ba8364b8",
+      "build\\lean_continuation\\query_adapter_v3.cpp": "383643f508cea959ac7ed05bc6a1c54ce98c0a8583db5a1c3755b13b4d5ddd64",
+      "build\\lean_verification\\query_adapter.cpp": "7c536d43d791d6b65d8ad9ebb5348d75a43cb444c971c5e53583c76d41bce1ba",
+      "build\\global_retro\\global_index.hpp": "b742e5bbb20ed0df50665c0d454d3bf4b7691dabc4d2d0380e7159766f8bf0c8",
+      "mahjong_progress\\solver\\solver.cpp": "1194d941c55b48c4ac686f29518c3fe032723a431125610b2a3509f8db04242f",
+      "runs\\global_retro\\index\\bucket_catalog.json": "18de78e94271d760e58f9ae8f47dd9c5615a3d6dc1cc59a69f24e7524752c551"
+    },
+    "witness_direction": "canonical_child_to_physical_successor_left_to_right",
+    "formal_proof": false
+  },
+  "formal_proof": false,
+  "copy_conditioning": "Both baseline and compact comparison copies rebuild all nodes/edges in identical ID order.",
+  "source_columns_checked": "all raw_successor equal parent+tile; all canonical_successor equal child.state",
+  "source_sha256_of_converter": "b217412d277dc6eeef8119a4fbebe8c3a35f1376f0fdaf4c101144355d739bc5",
+  "graph": {
+    "nodes": 8394609,
+    "expanded_nodes": 3888634,
+    "pending_nodes": 4505975,
+    "edges": 13157103,
+    "layers": [
+      {
+        "n": 0,
+        "nodes": 1,
+        "expanded": 1,
+        "P": 1,
+        "N": 0,
+        "pending": 0
+      },
+      {
+        "n": 1,
+        "nodes": 6,
+        "expanded": 6,
+        "P": 0,
+        "N": 6,
+        "pending": 0
+      },
+      {
+        "n": 2,
+        "nodes": 4,
+        "expanded": 4,
+        "P": 4,
+        "N": 0,
+        "pending": 0
+      },
+      {
+        "n": 3,
+        "nodes": 56,
+        "expanded": 56,
+        "P": 0,
+        "N": 56,
+        "pending": 0
+      },
+      {
+        "n": 4,
+        "nodes": 29,
+        "expanded": 29,
+        "P": 29,
+        "N": 0,
+        "pending": 0
+      },
+      {
+        "n": 5,
+        "nodes": 518,
+        "expanded": 518,
+        "P": 0,
+        "N": 518,
+        "pending": 0
+      },
+      {
+        "n": 6,
+        "nodes": 251,
+        "expanded": 251,
+        "P": 251,
+        "N": 0,
+        "pending": 0
+      },
+      {
+        "n": 7,
+        "nodes": 5017,
+        "expanded": 5017,
+        "P": 0,
+        "N": 5017,
+        "pending": 0
+      },
+      {
+        "n": 8,
+        "nodes": 2300,
+        "expanded": 2300,
+        "P": 2300,
+        "N": 0,
+        "pending": 0
+      },
+      {
+        "n": 9,
+        "nodes": 50677,
+        "expanded": 50677,
+        "P": 0,
+        "N": 50677,
+        "pending": 0
+      },
+      {
+        "n": 10,
+        "nodes": 23663,
+        "expanded": 23663,
+        "P": 23663,
+        "N": 0,
+        "pending": 0
+      },
+      {
+        "n": 11,
+        "nodes": 550110,
+        "expanded": 550110,
+        "P": 0,
+        "N": 550110,
+        "pending": 0
+      },
+      {
+        "n": 12,
+        "nodes": 257730,
+        "expanded": 257730,
+        "P": 257730,
+        "N": 0,
+        "pending": 0
+      },
+      {
+        "n": 13,
+        "nodes": 6104821,
+        "expanded": 2998272,
+        "P": 0,
+        "N": 6104821,
+        "pending": 3106549
+      },
+      {
+        "n": 14,
+        "nodes": 1399426,
+        "expanded": 0,
+        "P": 1399426,
+        "N": 0,
+        "pending": 1399426
+      }
+    ],
+    "status": "PARTIAL",
+    "formal_proof": false,
+    "schema": "MAHJONG_STRATEGY_GRAPH_V2_COMPACT_EDGES"
+  },
+  "wall_seconds": 98.43700000003446,
+  "cpu_seconds": 97.015625,
+  "peak_private_bytes": 160657408,
+  "database_bytes": 1769312256,
+  "phases": [
+    {
+      "phase": "source_recoverable_fields_checked",
+      "seconds": 13.375,
+      "elapsed": 18.18700000003446,
+      "private_bytes": 15724544
+    },
+    {
+      "phase": "nodes_copied_with_identical_ids",
+      "seconds": 44.56299999996554,
+      "elapsed": 62.75,
+      "private_bytes": 92262400
+    },
+    {
+      "phase": "edges_batches_meta_copied",
+      "seconds": 22.39000000001397,
+      "elapsed": 85.14000000001397,
+      "private_bytes": 92266496
+    }
+  ],
+  "exact_argv": [
+    "runs/lean_scale/producer/prepare_checkpoint.py",
+    "--source",
+    "runs/lean_next/producer/opening_control_v4",
+    "--source-sha256",
+    "271ada1415af87307a7e360f4fbf5c43635fc419d3d52522dc2147bb0bbd33a2",
+    "--target",
+    "opening_compact_v6",
+    "--kind",
+    "compact",
+    "--seconds",
+    "240"
+  ]
+}

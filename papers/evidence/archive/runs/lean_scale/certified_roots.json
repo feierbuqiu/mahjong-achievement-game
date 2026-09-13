@@ -1,0 +1,49 @@
+{
+  "schema": "MAHJONG_CHECKED_PHYSICAL_ROOT_REGISTRY_V1",
+  "status": "KERNEL_PASS_FOR_LISTED_ROOTS_ONLY",
+  "empty_game": "NOT_VERIFIED",
+  "native_checkpoint_modified_by_registration": false,
+  "usage": "Import the named checked theorem or typed P registry; this JSON is not a Lean premise.",
+  "roots": [
+    {
+      "digits": "0000000020000011110001110300000000",
+      "tiles": 12,
+      "module": "MahjongScale.Actual12V2.Root",
+      "original_fact": "Mahjong.Scale12V2.original_proved",
+      "canonical_fact": "Mahjong.Scale12V2.root_proved",
+      "canonical_state": "Mahjong.Scale12V2.state756",
+      "winner_theorem": "Mahjong.Scale12V2.original_second_player_wins",
+      "opening_candidate_node_id": 652738,
+      "receipt": {
+        "path": "runs/lean_scale/actual12_kernel_v1/result.json",
+        "bytes": 560533,
+        "sha256": "528aa59d3590c29ed05a21dbfea088aefdd4de11c76853e2303beceb1f488a6d"
+      },
+      "object": {
+        "path": "runs/lean_scale/actual12_kernel_v1/modules/MahjongScale/Actual12V2/Root.olean",
+        "bytes": 232240,
+        "sha256": "3f6ef0b8e9c734fc98340f9a69f0b41fdc4c2b13f6b64e39822a257d5994e8fd"
+      }
+    }
+  ],
+  "previous_registry": {
+    "path": "runs/lean_next/certified_roots.json",
+    "bytes": 2030,
+    "sha256": "f1c380020de1bc4c403b277a9c5e1df85b97b53f59e5e16c656474ab66f9b5ab"
+  },
+  "table_registry": {
+    "module": "MahjongScale.Actual12Registry",
+    "term": "Mahjong.Actual12Registry.registry",
+    "entries": 757,
+    "metadata": {
+      "path": "runs/lean_scale/actual12/checked_registry.json",
+      "bytes": 171554,
+      "sha256": "ddb73a52ce1805303145e428c8e9cb53a9b7b8471082c392ac88b1911acd63d6"
+    },
+    "receipt": {
+      "path": "runs/lean_scale/actual12_registry_kernel_v1/result.json",
+      "bytes": 571901,
+      "sha256": "9355a8cd9a7d54dd10e51873f47596f18c965df9667c74c800a9ddb7d0b42ff2"
+    }
+  }
+}

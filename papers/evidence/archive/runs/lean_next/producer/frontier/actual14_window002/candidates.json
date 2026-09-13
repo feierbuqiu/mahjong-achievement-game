@@ -1,0 +1,1128 @@
+{
+  "schema": "MAHJONG_OPENING_FRONTIER_CANDIDATES_V1",
+  "formal_proof": false,
+  "status": "UNPROVED_CANDIDATES_FROM_ACTUAL_OPENING_GRAPH",
+  "created_at_utc": "2026-09-13T05:57:08.062086+00:00",
+  "source_run": "runs\\lean_next\\producer\\opening_control_v4",
+  "source_database": "runs\\lean_next\\producer\\opening_control_v4\\graph.sqlite",
+  "source_config": {
+    "schema": "MAHJONG_STRATEGY_GRAPH_V1",
+    "policy": "batch_greedy_existing_then_cover_then_future_degree_then_lex_v1",
+    "batch": 1024,
+    "root_requested": "0000000000000000000000000000000000",
+    "data_directory": "<research-root>\\runs\\global_retro\\pilot_v1\\data",
+    "index_fingerprint": "5a45ff3ea0fcf356",
+    "source_sha256": {
+      "runs\\lean_next\\producer\\baseline_v4.py": "835a4436afb4893f9e0375b84f011a567f51ae10add2e3da64c903ae014a6164",
+      "build\\lean_continuation\\strategy_worker_v3.cpp": "90a55d55eaebccdd09e7855331a750f3f49a096b9d39fe1660562a3043785226",
+      "build\\lean_continuation\\strategy_worker_v3.exe": "92eef64bba8727c6905cbc2f652b2fb59115ee8f817283952b083e46ba8364b8",
+      "build\\lean_continuation\\query_adapter_v3.cpp": "383643f508cea959ac7ed05bc6a1c54ce98c0a8583db5a1c3755b13b4d5ddd64",
+      "build\\lean_verification\\query_adapter.cpp": "7c536d43d791d6b65d8ad9ebb5348d75a43cb444c971c5e53583c76d41bce1ba",
+      "build\\global_retro\\global_index.hpp": "b742e5bbb20ed0df50665c0d454d3bf4b7691dabc4d2d0380e7159766f8bf0c8",
+      "mahjong_progress\\solver\\solver.cpp": "1194d941c55b48c4ac686f29518c3fe032723a431125610b2a3509f8db04242f",
+      "runs\\global_retro\\index\\bucket_catalog.json": "18de78e94271d760e58f9ae8f47dd9c5615a3d6dc1cc59a69f24e7524752c551"
+    },
+    "witness_direction": "canonical_child_to_physical_successor_left_to_right",
+    "formal_proof": false
+  },
+  "source_config_canonical_json_sha256": "0ef4a011226890c731ae36270f79750f188ec203eac3fd64120c1cade59d1e18",
+  "source_migration": {
+    "schema": "MAHJONG_NEXT_PRODUCER_BENCHMARK_COPY_V1",
+    "source": "<research-root>\\runs\\lean_continuation\\producer\\opening_v4",
+    "target": "<research-root>\\runs\\lean_next\\producer\\opening_control_v4",
+    "source_sqlite_sha256": "1b3fb7151bd9f36c967f9a97f926392a16d657491ae7f97165ad1b36d7d0ab46",
+    "source_config": {
+      "schema": "MAHJONG_STRATEGY_GRAPH_V1",
+      "policy": "batch_greedy_existing_then_cover_then_future_degree_then_lex_v1",
+      "batch": 1024,
+      "root_requested": "0000000000000000000000000000000000",
+      "data_directory": "<research-root>\\runs\\global_retro\\pilot_v1\\data",
+      "index_fingerprint": "5a45ff3ea0fcf356",
+      "source_sha256": {
+        "runs\\lean_continuation\\producer\\producer_v4.py": "835a4436afb4893f9e0375b84f011a567f51ae10add2e3da64c903ae014a6164",
+        "build\\lean_continuation\\strategy_worker_v3.cpp": "90a55d55eaebccdd09e7855331a750f3f49a096b9d39fe1660562a3043785226",
+        "build\\lean_continuation\\strategy_worker_v3.exe": "92eef64bba8727c6905cbc2f652b2fb59115ee8f817283952b083e46ba8364b8",
+        "build\\lean_continuation\\query_adapter_v3.cpp": "383643f508cea959ac7ed05bc6a1c54ce98c0a8583db5a1c3755b13b4d5ddd64",
+        "build\\lean_verification\\query_adapter.cpp": "7c536d43d791d6b65d8ad9ebb5348d75a43cb444c971c5e53583c76d41bce1ba",
+        "build\\global_retro\\global_index.hpp": "b742e5bbb20ed0df50665c0d454d3bf4b7691dabc4d2d0380e7159766f8bf0c8",
+        "mahjong_progress\\solver\\solver.cpp": "1194d941c55b48c4ac686f29518c3fe032723a431125610b2a3509f8db04242f",
+        "runs\\global_retro\\index\\bucket_catalog.json": "18de78e94271d760e58f9ae8f47dd9c5615a3d6dc1cc59a69f24e7524752c551"
+      },
+      "witness_direction": "canonical_child_to_physical_successor_left_to_right",
+      "formal_proof": false
+    },
+    "candidate_config": {
+      "schema": "MAHJONG_STRATEGY_GRAPH_V1",
+      "policy": "batch_greedy_existing_then_cover_then_future_degree_then_lex_v1",
+      "batch": 1024,
+      "root_requested": "0000000000000000000000000000000000",
+      "data_directory": "<research-root>\\runs\\global_retro\\pilot_v1\\data",
+      "index_fingerprint": "5a45ff3ea0fcf356",
+      "source_sha256": {
+        "runs\\lean_next\\producer\\baseline_v4.py": "835a4436afb4893f9e0375b84f011a567f51ae10add2e3da64c903ae014a6164",
+        "build\\lean_continuation\\strategy_worker_v3.cpp": "90a55d55eaebccdd09e7855331a750f3f49a096b9d39fe1660562a3043785226",
+        "build\\lean_continuation\\strategy_worker_v3.exe": "92eef64bba8727c6905cbc2f652b2fb59115ee8f817283952b083e46ba8364b8",
+        "build\\lean_continuation\\query_adapter_v3.cpp": "383643f508cea959ac7ed05bc6a1c54ce98c0a8583db5a1c3755b13b4d5ddd64",
+        "build\\lean_verification\\query_adapter.cpp": "7c536d43d791d6b65d8ad9ebb5348d75a43cb444c971c5e53583c76d41bce1ba",
+        "build\\global_retro\\global_index.hpp": "b742e5bbb20ed0df50665c0d454d3bf4b7691dabc4d2d0380e7159766f8bf0c8",
+        "mahjong_progress\\solver\\solver.cpp": "1194d941c55b48c4ac686f29518c3fe032723a431125610b2a3509f8db04242f",
+        "runs\\global_retro\\index\\bucket_catalog.json": "18de78e94271d760e58f9ae8f47dd9c5615a3d6dc1cc59a69f24e7524752c551"
+      },
+      "witness_direction": "canonical_child_to_physical_successor_left_to_right",
+      "formal_proof": false
+    },
+    "source_unchanged": true,
+    "promoted_to_primary": false,
+    "formal_proof": false,
+    "initial_graph": {
+      "nodes": 4658934,
+      "expanded_nodes": 791352,
+      "pending_nodes": 3867582,
+      "edges": 6821377,
+      "layers": [
+        {
+          "n": 0,
+          "nodes": 1,
+          "expanded": 1,
+          "P": 1,
+          "N": 0,
+          "pending": 0
+        },
+        {
+          "n": 1,
+          "nodes": 6,
+          "expanded": 6,
+          "P": 0,
+          "N": 6,
+          "pending": 0
+        },
+        {
+          "n": 2,
+          "nodes": 4,
+          "expanded": 4,
+          "P": 4,
+          "N": 0,
+          "pending": 0
+        },
+        {
+          "n": 3,
+          "nodes": 56,
+          "expanded": 56,
+          "P": 0,
+          "N": 56,
+          "pending": 0
+        },
+        {
+          "n": 4,
+          "nodes": 29,
+          "expanded": 29,
+          "P": 29,
+          "N": 0,
+          "pending": 0
+        },
+        {
+          "n": 5,
+          "nodes": 518,
+          "expanded": 518,
+          "P": 0,
+          "N": 518,
+          "pending": 0
+        },
+        {
+          "n": 6,
+          "nodes": 251,
+          "expanded": 251,
+          "P": 251,
+          "N": 0,
+          "pending": 0
+        },
+        {
+          "n": 7,
+          "nodes": 5017,
+          "expanded": 5017,
+          "P": 0,
+          "N": 5017,
+          "pending": 0
+        },
+        {
+          "n": 8,
+          "nodes": 2300,
+          "expanded": 2300,
+          "P": 2300,
+          "N": 0,
+          "pending": 0
+        },
+        {
+          "n": 9,
+          "nodes": 50677,
+          "expanded": 50677,
+          "P": 0,
+          "N": 50677,
+          "pending": 0
+        },
+        {
+          "n": 10,
+          "nodes": 23663,
+          "expanded": 23663,
+          "P": 23663,
+          "N": 0,
+          "pending": 0
+        },
+        {
+          "n": 11,
+          "nodes": 550110,
+          "expanded": 550110,
+          "P": 0,
+          "N": 550110,
+          "pending": 0
+        },
+        {
+          "n": 12,
+          "nodes": 257730,
+          "expanded": 158720,
+          "P": 257730,
+          "N": 0,
+          "pending": 99010
+        },
+        {
+          "n": 13,
+          "nodes": 3768572,
+          "expanded": 0,
+          "P": 0,
+          "N": 3768572,
+          "pending": 3768572
+        }
+      ],
+      "status": "PARTIAL",
+      "formal_proof": false,
+      "schema": "MAHJONG_STRATEGY_GRAPH_V1"
+    },
+    "native_semantic_comparison_sha256": "4f587177f0456e8176876cec38cb54d720f7352e43e99a6933803d212a9d5ef5"
+  },
+  "root": {
+    "id": 0,
+    "state": "0000000000000000000000000000000000",
+    "n": 0,
+    "outcome": "P"
+  },
+  "last_committed_batch_at_snapshot": {
+    "id": 1424,
+    "n": 13,
+    "parent_count": 1024,
+    "new_nodes": 488,
+    "edges": 1024,
+    "attempt": "attempt_20260913_055413"
+  },
+  "window": {
+    "n": 13,
+    "completed_N_parents": 65536,
+    "minimum_parent_id": 1382906,
+    "maximum_parent_id": 1448441,
+    "distinct_retained_P_children": 33105,
+    "native_scored_children": 96
+  },
+  "candidates": [
+    {
+      "node": {
+        "id": 7229057,
+        "state": "0000011110001000020001120300000000",
+        "n": 14,
+        "outcome": "P",
+        "expanded": 0,
+        "physical_safe_moves": null,
+        "candidate_count": null
+      },
+      "score": {
+        "state": "0000011110001000020001120300000000",
+        "n": 14,
+        "safe": true,
+        "physical_safe_degree": 16,
+        "canonical_safe_orbit_degree": 10
+      },
+      "observed_reuse_in_bounded_window": 6,
+      "incoming_edges": [
+        {
+          "parent": {
+            "id": 1387520,
+            "state": "0000011110001000020001110300000000",
+            "n": 13,
+            "outcome": "N"
+          },
+          "tile": 23,
+          "raw_successor": "0000011110001000020001120300000000",
+          "canonical_successor": "0000011110001000020001120300000000",
+          "witness": [],
+          "witness_direction": "canonical_successor to raw_successor, head first"
+        },
+        {
+          "parent": {
+            "id": 1387533,
+            "state": "0000000020000011110001120300000000",
+            "n": 13,
+            "outcome": "N"
+          },
+          "tile": 3,
+          "raw_successor": "0001000020000011110001120300000000",
+          "canonical_successor": "0000011110001000020001120300000000",
+          "witness": [
+            {
+              "op": "swapSuits",
+              "a": 0,
+              "b": 1
+            }
+          ],
+          "witness_direction": "canonical_successor to raw_successor, head first"
+        },
+        {
+          "parent": {
+            "id": 1384966,
+            "state": "0000011110001000020001020300000000",
+            "n": 13,
+            "outcome": "N"
+          },
+          "tile": 22,
+          "raw_successor": "0000011110001000020001120300000000",
+          "canonical_successor": "0000011110001000020001120300000000",
+          "witness": [],
+          "witness_direction": "canonical_successor to raw_successor, head first"
+        },
+        {
+          "parent": {
+            "id": 1384980,
+            "state": "0000011100001000020001120300000000",
+            "n": 13,
+            "outcome": "N"
+          },
+          "tile": 8,
+          "raw_successor": "0000011110001000020001120300000000",
+          "canonical_successor": "0000011110001000020001120300000000",
+          "witness": [],
+          "witness_direction": "canonical_successor to raw_successor, head first"
+        },
+        {
+          "parent": {
+            "id": 1385045,
+            "state": "0000011110001000020001120200000000",
+            "n": 13,
+            "outcome": "N"
+          },
+          "tile": 25,
+          "raw_successor": "0000011110001000020001120300000000",
+          "canonical_successor": "0000011110001000020001120300000000",
+          "witness": [],
+          "witness_direction": "canonical_successor to raw_successor, head first"
+        },
+        {
+          "parent": {
+            "id": 1385065,
+            "state": "0000001110001000020001120300000000",
+            "n": 13,
+            "outcome": "N"
+          },
+          "tile": 5,
+          "raw_successor": "0000011110001000020001120300000000",
+          "canonical_successor": "0000011110001000020001120300000000",
+          "witness": [],
+          "witness_direction": "canonical_successor to raw_successor, head first"
+        }
+      ]
+    },
+    {
+      "node": {
+        "id": 7232986,
+        "state": "0010000020010001110111002110000000",
+        "n": 14,
+        "outcome": "P",
+        "expanded": 0,
+        "physical_safe_moves": null,
+        "candidate_count": null
+      },
+      "score": {
+        "state": "0010000020010001110111002110000000",
+        "n": 14,
+        "safe": true,
+        "physical_safe_degree": 18,
+        "canonical_safe_orbit_degree": 12
+      },
+      "observed_reuse_in_bounded_window": 7,
+      "incoming_edges": [
+        {
+          "parent": {
+            "id": 1393251,
+            "state": "0010000020010001110111002010000000",
+            "n": 13,
+            "outcome": "N"
+          },
+          "tile": 25,
+          "raw_successor": "0010000020010001110111002110000000",
+          "canonical_successor": "0010000020010001110111002110000000",
+          "witness": [],
+          "witness_direction": "canonical_successor to raw_successor, head first"
+        },
+        {
+          "parent": {
+            "id": 1393252,
+            "state": "0010000020010001110111002100000000",
+            "n": 13,
+            "outcome": "N"
+          },
+          "tile": 26,
+          "raw_successor": "0010000020010001110111002110000000",
+          "canonical_successor": "0010000020010001110111002110000000",
+          "witness": [],
+          "witness_direction": "canonical_successor to raw_successor, head first"
+        },
+        {
+          "parent": {
+            "id": 1393334,
+            "state": "0010000020010001110011002110000000",
+            "n": 13,
+            "outcome": "N"
+          },
+          "tile": 19,
+          "raw_successor": "0010000020010001110111002110000000",
+          "canonical_successor": "0010000020010001110111002110000000",
+          "witness": [],
+          "witness_direction": "canonical_successor to raw_successor, head first"
+        },
+        {
+          "parent": {
+            "id": 1392965,
+            "state": "0010000020010001010111002110000000",
+            "n": 13,
+            "outcome": "N"
+          },
+          "tile": 16,
+          "raw_successor": "0010000020010001110111002110000000",
+          "canonical_successor": "0010000020010001110111002110000000",
+          "witness": [],
+          "witness_direction": "canonical_successor to raw_successor, head first"
+        },
+        {
+          "parent": {
+            "id": 1392966,
+            "state": "0010000020010001100111002110000000",
+            "n": 13,
+            "outcome": "N"
+          },
+          "tile": 17,
+          "raw_successor": "0010000020010001110111002110000000",
+          "canonical_successor": "0010000020010001110111002110000000",
+          "witness": [],
+          "witness_direction": "canonical_successor to raw_successor, head first"
+        },
+        {
+          "parent": {
+            "id": 1393227,
+            "state": "0010000020010001110111001110000000",
+            "n": 13,
+            "outcome": "N"
+          },
+          "tile": 24,
+          "raw_successor": "0010000020010001110111002110000000",
+          "canonical_successor": "0010000020010001110111002110000000",
+          "witness": [],
+          "witness_direction": "canonical_successor to raw_successor, head first"
+        },
+        {
+          "parent": {
+            "id": 1393230,
+            "state": "0010000020010001110110002110000000",
+            "n": 13,
+            "outcome": "N"
+          },
+          "tile": 21,
+          "raw_successor": "0010000020010001110111002110000000",
+          "canonical_successor": "0010000020010001110111002110000000",
+          "witness": [],
+          "witness_direction": "canonical_successor to raw_successor, head first"
+        }
+      ]
+    },
+    {
+      "node": {
+        "id": 7258215,
+        "state": "0000200000001011100010112120000000",
+        "n": 14,
+        "outcome": "P",
+        "expanded": 0,
+        "physical_safe_moves": null,
+        "candidate_count": null
+      },
+      "score": {
+        "state": "0000200000001011100010112120000000",
+        "n": 14,
+        "safe": true,
+        "physical_safe_degree": 18,
+        "canonical_safe_orbit_degree": 8
+      },
+      "observed_reuse_in_bounded_window": 7,
+      "incoming_edges": [
+        {
+          "parent": {
+            "id": 1447257,
+            "state": "0000200000001001100010112120000000",
+            "n": 13,
+            "outcome": "N"
+          },
+          "tile": 14,
+          "raw_successor": "0000200000001011100010112120000000",
+          "canonical_successor": "0000200000001011100010112120000000",
+          "witness": [],
+          "witness_direction": "canonical_successor to raw_successor, head first"
+        },
+        {
+          "parent": {
+            "id": 1447473,
+            "state": "0000200000001011100010012120000000",
+            "n": 13,
+            "outcome": "N"
+          },
+          "tile": 22,
+          "raw_successor": "0000200000001011100010112120000000",
+          "canonical_successor": "0000200000001011100010112120000000",
+          "witness": [],
+          "witness_direction": "canonical_successor to raw_successor, head first"
+        },
+        {
+          "parent": {
+            "id": 1447475,
+            "state": "0000112120000200000001011100000000",
+            "n": 13,
+            "outcome": "N"
+          },
+          "tile": 2,
+          "raw_successor": "0010112120000200000001011100000000",
+          "canonical_successor": "0000200000001011100010112120000000",
+          "witness": [
+            {
+              "op": "swapSuits",
+              "a": 1,
+              "b": 2
+            },
+            {
+              "op": "swapSuits",
+              "a": 0,
+              "b": 1
+            }
+          ],
+          "witness_direction": "canonical_successor to raw_successor, head first"
+        },
+        {
+          "parent": {
+            "id": 1445545,
+            "state": "0000200000001011100010112020000000",
+            "n": 13,
+            "outcome": "N"
+          },
+          "tile": 25,
+          "raw_successor": "0000200000001011100010112120000000",
+          "canonical_successor": "0000200000001011100010112120000000",
+          "witness": [],
+          "witness_direction": "canonical_successor to raw_successor, head first"
+        },
+        {
+          "parent": {
+            "id": 1445560,
+            "state": "0000100000001011100010112120000000",
+            "n": 13,
+            "outcome": "N"
+          },
+          "tile": 4,
+          "raw_successor": "0000200000001011100010112120000000",
+          "canonical_successor": "0000200000001011100010112120000000",
+          "witness": [],
+          "witness_direction": "canonical_successor to raw_successor, head first"
+        },
+        {
+          "parent": {
+            "id": 1445190,
+            "state": "0000200000001011100010102120000000",
+            "n": 13,
+            "outcome": "N"
+          },
+          "tile": 23,
+          "raw_successor": "0000200000001011100010112120000000",
+          "canonical_successor": "0000200000001011100010112120000000",
+          "witness": [],
+          "witness_direction": "canonical_successor to raw_successor, head first"
+        },
+        {
+          "parent": {
+            "id": 1445205,
+            "state": "0000011100000200000010112120000000",
+            "n": 13,
+            "outcome": "N"
+          },
+          "tile": 3,
+          "raw_successor": "0001011100000200000010112120000000",
+          "canonical_successor": "0000200000001011100010112120000000",
+          "witness": [
+            {
+              "op": "swapSuits",
+              "a": 0,
+              "b": 1
+            }
+          ],
+          "witness_direction": "canonical_successor to raw_successor, head first"
+        }
+      ]
+    },
+    {
+      "node": {
+        "id": 7234159,
+        "state": "0000001210010001000011101130000000",
+        "n": 14,
+        "outcome": "P",
+        "expanded": 0,
+        "physical_safe_moves": null,
+        "candidate_count": null
+      },
+      "score": {
+        "state": "0000001210010001000011101130000000",
+        "n": 14,
+        "safe": true,
+        "physical_safe_degree": 19,
+        "canonical_safe_orbit_degree": 13
+      },
+      "observed_reuse_in_bounded_window": 6,
+      "incoming_edges": [
+        {
+          "parent": {
+            "id": 1399145,
+            "state": "0000001210001101130010001000000000",
+            "n": 13,
+            "outcome": "N"
+          },
+          "tile": 11,
+          "raw_successor": "0000001210011101130010001000000000",
+          "canonical_successor": "0000001210010001000011101130000000",
+          "witness": [
+            {
+              "op": "swapSuits",
+              "a": 1,
+              "b": 2
+            }
+          ],
+          "witness_direction": "canonical_successor to raw_successor, head first"
+        },
+        {
+          "parent": {
+            "id": 1395838,
+            "state": "0000001210010001000011101030000000",
+            "n": 13,
+            "outcome": "N"
+          },
+          "tile": 25,
+          "raw_successor": "0000001210010001000011101130000000",
+          "canonical_successor": "0000001210010001000011101130000000",
+          "witness": [],
+          "witness_direction": "canonical_successor to raw_successor, head first"
+        },
+        {
+          "parent": {
+            "id": 1395373,
+            "state": "0000001210010001000011101120000000",
+            "n": 13,
+            "outcome": "N"
+          },
+          "tile": 26,
+          "raw_successor": "0000001210010001000011101130000000",
+          "canonical_successor": "0000001210010001000011101130000000",
+          "witness": [],
+          "witness_direction": "canonical_successor to raw_successor, head first"
+        },
+        {
+          "parent": {
+            "id": 1395375,
+            "state": "0000001210010001000011100130000000",
+            "n": 13,
+            "outcome": "N"
+          },
+          "tile": 24,
+          "raw_successor": "0000001210010001000011101130000000",
+          "canonical_successor": "0000001210010001000011101130000000",
+          "witness": [],
+          "witness_direction": "canonical_successor to raw_successor, head first"
+        },
+        {
+          "parent": {
+            "id": 1395545,
+            "state": "0000001210010001000010101130000000",
+            "n": 13,
+            "outcome": "N"
+          },
+          "tile": 21,
+          "raw_successor": "0000001210010001000011101130000000",
+          "canonical_successor": "0000001210010001000011101130000000",
+          "witness": [],
+          "witness_direction": "canonical_successor to raw_successor, head first"
+        },
+        {
+          "parent": {
+            "id": 1395555,
+            "state": "0000001110010001000011101130000000",
+            "n": 13,
+            "outcome": "N"
+          },
+          "tile": 7,
+          "raw_successor": "0000001210010001000011101130000000",
+          "canonical_successor": "0000001210010001000011101130000000",
+          "witness": [],
+          "witness_direction": "canonical_successor to raw_successor, head first"
+        }
+      ]
+    },
+    {
+      "node": {
+        "id": 7239712,
+        "state": "0000001020001011101011101110000000",
+        "n": 14,
+        "outcome": "P",
+        "expanded": 0,
+        "physical_safe_moves": null,
+        "candidate_count": null
+      },
+      "score": {
+        "state": "0000001020001011101011101110000000",
+        "n": 14,
+        "safe": true,
+        "physical_safe_degree": 19,
+        "canonical_safe_orbit_degree": 13
+      },
+      "observed_reuse_in_bounded_window": 6,
+      "incoming_edges": [
+        {
+          "parent": {
+            "id": 1422400,
+            "state": "0000001020001011101010111010000000",
+            "n": 13,
+            "outcome": "N"
+          },
+          "tile": 19,
+          "raw_successor": "0000001020001011101110111010000000",
+          "canonical_successor": "0000001020001011101011101110000000",
+          "witness": [
+            {
+              "op": "reverseSuit",
+              "suit": 2
+            }
+          ],
+          "witness_direction": "canonical_successor to raw_successor, head first"
+        },
+        {
+          "parent": {
+            "id": 1422401,
+            "state": "0000001020001011100110111010000000",
+            "n": 13,
+            "outcome": "N"
+          },
+          "tile": 18,
+          "raw_successor": "0000001020001011101110111010000000",
+          "canonical_successor": "0000001020001011101011101110000000",
+          "witness": [
+            {
+              "op": "reverseSuit",
+              "suit": 2
+            }
+          ],
+          "witness_direction": "canonical_successor to raw_successor, head first"
+        },
+        {
+          "parent": {
+            "id": 1422552,
+            "state": "0000001020000011101011101110000000",
+            "n": 13,
+            "outcome": "N"
+          },
+          "tile": 12,
+          "raw_successor": "0000001020001011101011101110000000",
+          "canonical_successor": "0000001020001011101011101110000000",
+          "witness": [],
+          "witness_direction": "canonical_successor to raw_successor, head first"
+        },
+        {
+          "parent": {
+            "id": 1422556,
+            "state": "0000000020001011101011101110000000",
+            "n": 13,
+            "outcome": "N"
+          },
+          "tile": 6,
+          "raw_successor": "0000001020001011101011101110000000",
+          "canonical_successor": "0000001020001011101011101110000000",
+          "witness": [],
+          "witness_direction": "canonical_successor to raw_successor, head first"
+        },
+        {
+          "parent": {
+            "id": 1406748,
+            "state": "0000001020001011101011001110000000",
+            "n": 13,
+            "outcome": "N"
+          },
+          "tile": 22,
+          "raw_successor": "0000001020001011101011101110000000",
+          "canonical_successor": "0000001020001011101011101110000000",
+          "witness": [],
+          "witness_direction": "canonical_successor to raw_successor, head first"
+        },
+        {
+          "parent": {
+            "id": 1406755,
+            "state": "0000001020001001101011101110000000",
+            "n": 13,
+            "outcome": "N"
+          },
+          "tile": 14,
+          "raw_successor": "0000001020001011101011101110000000",
+          "canonical_successor": "0000001020001011101011101110000000",
+          "witness": [],
+          "witness_direction": "canonical_successor to raw_successor, head first"
+        }
+      ]
+    },
+    {
+      "node": {
+        "id": 7238994,
+        "state": "0000001030010011100011102100000000",
+        "n": 14,
+        "outcome": "P",
+        "expanded": 0,
+        "physical_safe_moves": null,
+        "candidate_count": null
+      },
+      "score": {
+        "state": "0000001030010011100011102100000000",
+        "n": 14,
+        "safe": true,
+        "physical_safe_degree": 20,
+        "canonical_safe_orbit_degree": 14
+      },
+      "observed_reuse_in_bounded_window": 6,
+      "incoming_edges": [
+        {
+          "parent": {
+            "id": 1421397,
+            "state": "0000001030010011100011102000000000",
+            "n": 13,
+            "outcome": "N"
+          },
+          "tile": 25,
+          "raw_successor": "0000001030010011100011102100000000",
+          "canonical_successor": "0000001030010011100011102100000000",
+          "witness": [],
+          "witness_direction": "canonical_successor to raw_successor, head first"
+        },
+        {
+          "parent": {
+            "id": 1421414,
+            "state": "0000001020010011100011102100000000",
+            "n": 13,
+            "outcome": "N"
+          },
+          "tile": 8,
+          "raw_successor": "0000001030010011100011102100000000",
+          "canonical_successor": "0000001030010011100011102100000000",
+          "witness": [],
+          "witness_direction": "canonical_successor to raw_successor, head first"
+        },
+        {
+          "parent": {
+            "id": 1405259,
+            "state": "0000001030010011100011002100000000",
+            "n": 13,
+            "outcome": "N"
+          },
+          "tile": 22,
+          "raw_successor": "0000001030010011100011102100000000",
+          "canonical_successor": "0000001030010011100011102100000000",
+          "witness": [],
+          "witness_direction": "canonical_successor to raw_successor, head first"
+        },
+        {
+          "parent": {
+            "id": 1405265,
+            "state": "0000001030010011000011102100000000",
+            "n": 13,
+            "outcome": "N"
+          },
+          "tile": 16,
+          "raw_successor": "0000001030010011100011102100000000",
+          "canonical_successor": "0000001030010011100011102100000000",
+          "witness": [],
+          "witness_direction": "canonical_successor to raw_successor, head first"
+        },
+        {
+          "parent": {
+            "id": 1405351,
+            "state": "0000001030010001100011102100000000",
+            "n": 13,
+            "outcome": "N"
+          },
+          "tile": 14,
+          "raw_successor": "0000001030010011100011102100000000",
+          "canonical_successor": "0000001030010011100011102100000000",
+          "witness": [],
+          "witness_direction": "canonical_successor to raw_successor, head first"
+        },
+        {
+          "parent": {
+            "id": 1405362,
+            "state": "0000001030001102100010011100000000",
+            "n": 13,
+            "outcome": "N"
+          },
+          "tile": 11,
+          "raw_successor": "0000001030011102100010011100000000",
+          "canonical_successor": "0000001030010011100011102100000000",
+          "witness": [
+            {
+              "op": "swapSuits",
+              "a": 1,
+              "b": 2
+            }
+          ],
+          "witness_direction": "canonical_successor to raw_successor, head first"
+        }
+      ]
+    },
+    {
+      "node": {
+        "id": 7234284,
+        "state": "0001001110010002010011100030000000",
+        "n": 14,
+        "outcome": "P",
+        "expanded": 0,
+        "physical_safe_moves": null,
+        "candidate_count": null
+      },
+      "score": {
+        "state": "0001001110010002010011100030000000",
+        "n": 14,
+        "safe": true,
+        "physical_safe_degree": 21,
+        "canonical_safe_orbit_degree": 15
+      },
+      "observed_reuse_in_bounded_window": 6,
+      "incoming_edges": [
+        {
+          "parent": {
+            "id": 1399572,
+            "state": "0001001110010002010010100030000000",
+            "n": 13,
+            "outcome": "N"
+          },
+          "tile": 21,
+          "raw_successor": "0001001110010002010011100030000000",
+          "canonical_successor": "0001001110010002010011100030000000",
+          "witness": [],
+          "witness_direction": "canonical_successor to raw_successor, head first"
+        },
+        {
+          "parent": {
+            "id": 1399573,
+            "state": "0001001110001100030010002010000000",
+            "n": 13,
+            "outcome": "N"
+          },
+          "tile": 11,
+          "raw_successor": "0001001110011100030010002010000000",
+          "canonical_successor": "0001001110010002010011100030000000",
+          "witness": [
+            {
+              "op": "swapSuits",
+              "a": 1,
+              "b": 2
+            }
+          ],
+          "witness_direction": "canonical_successor to raw_successor, head first"
+        },
+        {
+          "parent": {
+            "id": 1395649,
+            "state": "0001001110010002010011000030000000",
+            "n": 13,
+            "outcome": "N"
+          },
+          "tile": 22,
+          "raw_successor": "0001001110010002010011100030000000",
+          "canonical_successor": "0001001110010002010011100030000000",
+          "witness": [],
+          "witness_direction": "canonical_successor to raw_successor, head first"
+        },
+        {
+          "parent": {
+            "id": 1395656,
+            "state": "0001001110010001010011100030000000",
+            "n": 13,
+            "outcome": "N"
+          },
+          "tile": 15,
+          "raw_successor": "0001001110010002010011100030000000",
+          "canonical_successor": "0001001110010002010011100030000000",
+          "witness": [],
+          "witness_direction": "canonical_successor to raw_successor, head first"
+        },
+        {
+          "parent": {
+            "id": 1395785,
+            "state": "0001001110010002000011100030000000",
+            "n": 13,
+            "outcome": "N"
+          },
+          "tile": 17,
+          "raw_successor": "0001001110010002010011100030000000",
+          "canonical_successor": "0001001110010002010011100030000000",
+          "witness": [],
+          "witness_direction": "canonical_successor to raw_successor, head first"
+        },
+        {
+          "parent": {
+            "id": 1395793,
+            "state": "0000001110010002010011100030000000",
+            "n": 13,
+            "outcome": "N"
+          },
+          "tile": 3,
+          "raw_successor": "0001001110010002010011100030000000",
+          "canonical_successor": "0001001110010002010011100030000000",
+          "witness": [],
+          "witness_direction": "canonical_successor to raw_successor, head first"
+        }
+      ]
+    },
+    {
+      "node": {
+        "id": 7233035,
+        "state": "0010001110110000030110001110000000",
+        "n": 14,
+        "outcome": "P",
+        "expanded": 0,
+        "physical_safe_moves": null,
+        "candidate_count": null
+      },
+      "score": {
+        "state": "0010001110110000030110001110000000",
+        "n": 14,
+        "safe": true,
+        "physical_safe_degree": 25,
+        "canonical_safe_orbit_degree": 19
+      },
+      "observed_reuse_in_bounded_window": 6,
+      "incoming_edges": [
+        {
+          "parent": {
+            "id": 1393077,
+            "state": "0010001110110000030110001010000000",
+            "n": 13,
+            "outcome": "N"
+          },
+          "tile": 25,
+          "raw_successor": "0010001110110000030110001110000000",
+          "canonical_successor": "0010001110110000030110001110000000",
+          "witness": [],
+          "witness_direction": "canonical_successor to raw_successor, head first"
+        },
+        {
+          "parent": {
+            "id": 1393078,
+            "state": "0010001110110000030110001100000000",
+            "n": 13,
+            "outcome": "N"
+          },
+          "tile": 18,
+          "raw_successor": "0010001110110000031110001100000000",
+          "canonical_successor": "0010001110110000030110001110000000",
+          "witness": [
+            {
+              "op": "reverseSuit",
+              "suit": 2
+            }
+          ],
+          "witness_direction": "canonical_successor to raw_successor, head first"
+        },
+        {
+          "parent": {
+            "id": 1393085,
+            "state": "0010001110010001110110000030000000",
+            "n": 13,
+            "outcome": "N"
+          },
+          "tile": 1,
+          "raw_successor": "0110001110010001110110000030000000",
+          "canonical_successor": "0010001110110000030110001110000000",
+          "witness": [
+            {
+              "op": "swapSuits",
+              "a": 1,
+              "b": 2
+            },
+            {
+              "op": "swapSuits",
+              "a": 0,
+              "b": 1
+            }
+          ],
+          "witness_direction": "canonical_successor to raw_successor, head first"
+        },
+        {
+          "parent": {
+            "id": 1393087,
+            "state": "0010001100110000030110001110000000",
+            "n": 13,
+            "outcome": "N"
+          },
+          "tile": 8,
+          "raw_successor": "0010001110110000030110001110000000",
+          "canonical_successor": "0010001110110000030110001110000000",
+          "witness": [],
+          "witness_direction": "canonical_successor to raw_successor, head first"
+        },
+        {
+          "parent": {
+            "id": 1393208,
+            "state": "0010001110110000020110001110000000",
+            "n": 13,
+            "outcome": "N"
+          },
+          "tile": 17,
+          "raw_successor": "0010001110110000030110001110000000",
+          "canonical_successor": "0010001110110000030110001110000000",
+          "witness": [],
+          "witness_direction": "canonical_successor to raw_successor, head first"
+        },
+        {
+          "parent": {
+            "id": 1393214,
+            "state": "0010000030010001110110001110000000",
+            "n": 13,
+            "outcome": "N"
+          },
+          "tile": 1,
+          "raw_successor": "0110000030010001110110001110000000",
+          "canonical_successor": "0010001110110000030110001110000000",
+          "witness": [
+            {
+              "op": "swapSuits",
+              "a": 0,
+              "b": 1
+            }
+          ],
+          "witness_direction": "canonical_successor to raw_successor, head first"
+        }
+      ]
+    }
+  ],
+  "exact_native_command": [
+    "<research-root>\\build\\lean_next\\frontier_score.exe"
+  ],
+  "native_stderr": "",
+  "source_sha256": {
+    "runs\\lean_next\\producer\\select_frontier.py": "767adb7e31668c0af1c38806e169bc65bc9502ab50780cb3e51f717e3aa48963",
+    "build\\lean_next\\frontier_score.cpp": "b143a6b7c2c63d68a21fd40de1c129a75af8365c3d5c9a6bf8502e78f391a41e",
+    "build\\lean_next\\frontier_score.exe": "2a28cdda8e76fc67711e5eaef5c464861f4c941b5b36abf1af0d22d0e2a856c0"
+  },
+  "wall_seconds": 0.5629999999655411,
+  "caveat": "Reuse counts cover only the stated bounded window, not the complete graph. Node labels and native scores are untrusted candidates. These edges are persisted opening strategy data; they do not prove the opening is formally closed."
+}

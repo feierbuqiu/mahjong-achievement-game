@@ -1,0 +1,113 @@
+"""Bounded read-only source conversion into a fresh explicitly versioned graph."""
+import argparse
+import json
+import msvcrt
+import sqlite3
+import time
+from pathlib import Path
+import baseline_v4 as old
+import producer_compact_v6 as compact
+
+
+def main():
+    parser = argparse.ArgumentParser(description=__doc__)
+    parser.add_argument('--source', required=True)
+    parser.add_argument('--source-sha256', required=True)
+    parser.add_argument('--target', required=True)
+    parser.add_argument('--kind', choices=('baseline','compact'), required=True)
+    parser.add_argument('--seconds', type=float, default=240)
+    args = parser.parse_args()
+    if not 0 < args.seconds <= 240:
+        raise ValueError('conversion budget must be <=240 seconds')
+    module = old if args.kind == 'baseline' else compact
+    source = (old.ROOT / args.source).resolve()
+    target = old.run_path(args.target)
+    target.mkdir(exist_ok=False)
+    began = time.monotonic()
+    meter = old.ProcessMeter(__import__('os').getpid())
+    first = meter.sample(); peak = first['private']; last_sample = began
+    phases = []
+    stop = target / 'STOP'
+    def progress():
+        nonlocal peak, last_sample
+        now = time.monotonic()
+        if now - last_sample > .2:
+            last_sample = now
+            peak = max(peak, meter.sample()['private'])
+        return int(now-began > args.seconds or peak > 3_800_000_000 or stop.exists())
+    def phase(name, phase_start):
+        item = {'phase':name,'seconds':time.monotonic()-phase_start,'elapsed':time.monotonic()-began,
+                'private_bytes':meter.sample()['private']}
+        phases.append(item);print(old.dumps(item),flush=True)
+    lock = (source / 'run.lock').open('r+b')
+    lock.seek(0);msvcrt.locking(lock.fileno(),msvcrt.LK_NBLCK,1)
+    try:
+        if old.digest(source/'graph.sqlite') != args.source_sha256:
+            raise ValueError('source hash differs from frozen checkpoint')
+        with old.connect(source/'graph.sqlite',readonly=True) as seed:
+            metadata = old.meta(seed)
+        config = metadata['config']
+        for path, digest in config['source_sha256'].items():
+            if old.digest(old.ROOT/path) != digest:
+                raise ValueError('frozen source implementation changed: '+path)
+        paths = [Path(module.__file__),old.BUILD/'strategy_worker_v3.cpp',old.BUILD/'strategy_worker_v3.exe',old.BUILD/'query_adapter_v3.cpp',
+                 old.ROOT/'build/lean_verification/query_adapter.cpp',old.ROOT/'build/global_retro/global_index.hpp',
+                 old.ROOT/'mahjong_progress/solver/solver.cpp',old.ROOT/'runs/global_retro/index/bucket_catalog.json']
+        updated = {**config,'schema':module.SCHEMA,'source_sha256':{str(path.relative_to(old.ROOT)):old.digest(path) for path in paths}}
+        initialized=module.connect(target/'graph.sqlite')
+        initialized.close()
+        with sqlite3.connect((target/'graph.sqlite').as_uri()+'?mode=rw',uri=True) as db:
+            db.row_factory=sqlite3.Row
+            db.execute('PRAGMA foreign_keys=ON')
+            db.execute('PRAGMA cache_size=-65536')
+            db.execute('PRAGMA journal_mode=WAL')
+            db.execute('PRAGMA synchronous=FULL')
+            db.execute('PRAGMA wal_autocheckpoint=4096')
+            db.set_progress_handler(progress,10000)
+            db.execute('ATTACH DATABASE ? AS seed',((source/'graph.sqlite').as_uri()+'?mode=ro',))
+            with db:
+                # This checks the fields being removed; a frozen hash alone is insufficient.
+                t = time.monotonic()
+                invalid = db.execute("SELECT e.parent FROM seed.edges e JOIN seed.nodes p ON p.id=e.parent JOIN seed.nodes c ON c.id=e.child "
+                    "WHERE e.canonical_successor<>c.state OR substr(p.state,e.tile+1,1)>='4' OR "
+                    "e.raw_successor<>(substr(p.state,1,e.tile)||CAST(CAST(substr(p.state,e.tile+1,1) AS INTEGER)+1 AS TEXT)||substr(p.state,e.tile+2)) LIMIT 1").fetchone()
+                if invalid is not None:
+                    raise ValueError('source edge cannot be reconstructed exactly')
+                phase('source_recoverable_fields_checked',t)
+                t=time.monotonic()
+                db.execute('INSERT INTO main.nodes SELECT * FROM seed.nodes ORDER BY id')
+                phase('nodes_copied_with_identical_ids',t)
+                t=time.monotonic()
+                columns='parent,tile,child,witness' if args.kind=='compact' else 'parent,tile,child,raw_successor,canonical_successor,witness'
+                db.execute('INSERT INTO main.edges SELECT '+columns+' FROM seed.edges ORDER BY parent,tile')
+                db.execute('INSERT INTO main.batches SELECT * FROM seed.batches ORDER BY id')
+                db.execute('INSERT INTO main.meta SELECT * FROM seed.meta')
+                phase('edges_batches_meta_copied',t)
+                old.set_meta(db,'config',updated)
+                record={'schema':'MAHJONG_COMPACT_EDGE_CHECKPOINT_MIGRATION_V1','status':'PASS_COMPLETE_SOURCE_FIELD_RECONSTRUCTION',
+                        'source':str(source.relative_to(old.ROOT)),'source_sha256':args.source_sha256,'target':args.target,
+                        'source_config':config,'target_config':updated,'formal_proof':False,
+                        'copy_conditioning':'Both baseline and compact comparison copies rebuild all nodes/edges in identical ID order.',
+                        'source_columns_checked':'all raw_successor equal parent+tile; all canonical_successor equal child.state',
+                        'source_sha256_of_converter':old.digest(Path(__file__))}
+                old.set_meta(db,'compact_edge_migration',record)
+            db.execute('PRAGMA wal_checkpoint(TRUNCATE)')
+            counts=module.snapshot(db)
+            db.set_progress_handler(None,0)
+        db.close()
+        last=meter.sample()
+        record.update({'graph':counts,'wall_seconds':time.monotonic()-began,'cpu_seconds':last['cpu_seconds']-first['cpu_seconds'],
+                       'peak_private_bytes':max(peak,last['private']),'database_bytes':(target/'graph.sqlite').stat().st_size,
+                       'phases':phases,'exact_argv':__import__('sys').argv})
+        old.atomic_json(target/'migration.json',record)
+        print(old.dumps({'target':args.target,'status':record['status'],'wall_seconds':record['wall_seconds'],
+                         'bytes':record['database_bytes'],'peak_private_bytes':record['peak_private_bytes']}),flush=True)
+    except BaseException as error:
+        old.atomic_json(target/'migration.failure.json',{'status':'FAIL','error':repr(error),'wall_seconds':time.monotonic()-began})
+        raise
+    finally:
+        lock.seek(0);msvcrt.locking(lock.fileno(),msvcrt.LK_UNLCK,1);lock.close();meter.close()
+
+
+if __name__=='__main__':
+    main()

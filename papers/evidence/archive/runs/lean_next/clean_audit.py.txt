@@ -1,0 +1,110 @@
+"""Clean, dependency-ordered parallel kernel replay of the actual certificate.
+
+Exit 2 explicitly preserves the still-unproved empty-position boundary.
+Every source and artifact is snapshotted. Optional reuse accepts only identical
+source/object/log triples from an earlier successful isolated trust=0 replay.
+"""
+from pathlib import Path
+from concurrent.futures import ThreadPoolExecutor,wait,FIRST_COMPLETED
+import argparse,ctypes,datetime,hashlib,importlib.util,json,os,re,shutil,subprocess,time
+
+HERE=Path(__file__).resolve().parent;ROOT=HERE.parents[1]
+PROJECT=ROOT/'build/lean_next/proof'
+spec=importlib.util.spec_from_file_location('old_driver',ROOT/'runs/lean_verification/run_kernel_audit.py')
+audit=importlib.util.module_from_spec(spec);spec.loader.exec_module(audit)
+
+def main():
+    p=argparse.ArgumentParser();p.add_argument('--output',required=True);p.add_argument('--workers',type=int,default=4)
+    p.add_argument('--entry',default='ContinuationAudit')
+    p.add_argument('--reuse-checked',help='Reuse identical source/object pairs from a prior successful isolated kernel replay')
+    args=p.parse_args()
+    if not 1<=args.workers<=4:raise ValueError('workers 1..4')
+    dest=(HERE/args.output).resolve()
+    if not dest.is_relative_to(HERE):raise ValueError('outside audit directory')
+    dest.mkdir(exist_ok=False);source=dest/'source';modules=dest/'modules';source.mkdir();modules.mkdir()
+    order=[];seen=set();dependencies={}
+    extra={'Mahjong.ResponseCertificateTest':HERE/'theory/ResponseCertificateTest.lean'}
+    def visit(name):
+        if name in seen:return
+        seen.add(name);path=extra.get(name,PROJECT/(name.replace('.','/')+'.lean'))
+        raw=path.read_bytes();imports=re.findall(r'^import\s+(Mahjong(?:Next)?(?:\.\w+)*)\s*$',raw.decode('utf-8-sig'),re.M)
+        dependencies[name]=imports
+        for imp in imports:visit(imp)
+        target=source/(name.replace('.','/')+'.lean');target.parent.mkdir(parents=True,exist_ok=True);target.write_bytes(raw);order.append(name)
+    visit(args.entry)
+    reuse=None;reuse_folder=None;reuse_steps={}
+    if args.reuse_checked:
+        reuse_folder=(HERE/args.reuse_checked).resolve()
+        if not reuse_folder.is_relative_to(HERE):raise ValueError('reuse outside audit directory')
+        reuse=json.loads((reuse_folder/'result.json').read_text())
+        if reuse['kernel_modules']!='PASS' or reuse['trust_level']!=0:raise ValueError('prior replay was not verified')
+        if any(s['return_code']!=0 for s in reuse['steps']):raise ValueError('prior replay contains a failed step')
+        reuse_steps={s['module']:s for s in reuse['steps']}
+    env=os.environ.copy();env['LEAN_PATH']=str(modules)
+    report={'schema':'MAHJONG_NEXT_CLEAN_KERNEL_V1','created_utc':datetime.datetime.now(datetime.timezone.utc).isoformat(),
+        'trust_level':0,'workers':args.workers,'entry':args.entry,'kernel_modules':'INCOMPLETE','empty_game':'NOT_VERIFIED',
+        'total_modules':len(order),'source_sha256':{str(p.relative_to(source)):audit.digest(p) for p in sorted(source.rglob('*.lean'))},
+        'runner_sha256':audit.digest(Path(__file__)),'toolchain_sha256':audit.digest(audit.LEAN),'steps':[]}
+    if reuse is not None:
+        report['reused_base_receipt_sha256']=audit.digest(reuse_folder/'result.json')
+        report['reuse_scope']='Only identical source/object/log triples from the previous passed trust=0 replay; final audit is compiled anew.'
+    shutil.copyfile(__file__,dest/'runner.py');began=time.monotonic();passed=set();failed=False;inflight={};pending=list(order)
+    def check(name):
+        rel=Path(name.replace('.','/'));obj=modules/rel.with_suffix('.olean');obj.parent.mkdir(parents=True,exist_ok=True)
+        prior=reuse_steps.get(name)
+        if prior is not None and name!=args.entry:
+            previous_source=reuse_folder/'source'/rel.with_suffix('.lean')
+            previous_object=reuse_folder/'modules'/rel.with_suffix('.olean')
+            if audit.digest(previous_source)==audit.digest(source/rel.with_suffix('.lean')):
+                if audit.digest(previous_object)!=prior['olean_sha256'] or audit.digest(Path(prior['log']))!=prior['log_sha256']:
+                    raise ValueError('prior artifact changed: '+name)
+                shutil.copyfile(previous_object,obj)
+                return {'module':name,'return_code':0,'stop_reason':None,'wall_seconds':0,
+                    'peak_private_bytes':0,'peak_rss_bytes':0,'olean_sha256':prior['olean_sha256'],
+                    'log':prior['log'],'log_sha256':prior['log_sha256'],
+                    'command':prior['command'],'reused_from':str(reuse_folder)}
+        command=[str(audit.LEAN),'--trust=0','-M2048','-j1','-R',str(source),'-o',str(obj),str(source/rel.with_suffix('.lean'))]
+        step=audit.execute(command,dest/(name+'.log'),env,120)
+        step['module']=name
+        if step['return_code']==0:step['olean_sha256']=audit.digest(obj)
+        return step
+    with ThreadPoolExecutor(max_workers=args.workers) as pool:
+        while pending or inflight:
+            if not failed and not (dest/'STOP').exists():
+                ready=[n for n in pending if set(dependencies[n])<=passed]
+                for name in ready[:args.workers-len(inflight)]:
+                    inflight[pool.submit(check,name)]=name;pending.remove(name)
+            if not inflight:break
+            done,_=wait(inflight,return_when=FIRST_COMPLETED)
+            for f in done:
+                name=inflight.pop(f);step=f.result();report['steps'].append(step)
+                if step['return_code']==0:passed.add(name)
+                else:failed=True
+                report['passed_modules']=len(passed);report['wall_seconds']=round(time.monotonic()-began,3)
+                (dest/'result.json').write_text(json.dumps(report,indent=2)+'\n')
+                if len(passed)%20==0 or step['return_code']!=0 or name==args.entry:
+                    print(json.dumps({'passed':len(passed),'total':len(order),**{k:step[k] for k in ['module','return_code','wall_seconds','peak_private_bytes','stop_reason']}}),flush=True)
+    if len(passed)==len(order):
+        log=(dest/(args.entry+'.log')).read_text(encoding='utf-8')
+        m=re.search(r'AXIOM_AUDIT_PASS theorem_count=(\d+)',log)
+        if m:
+            report['kernel_modules']='PASS';report['audited_theorems']=int(m[1])
+            if 'ACTUAL_20_TILE_CLOSED_THEOREM_PRESENT' in log or 'GREEDY_20_TILE_CLOSED_THEOREM_PRESENT' in log:report['actual_20_tiles']='PASS'
+            if 'REFLECTED_20_TILE_CLOSED_THEOREM_PRESENT' in log:report['reflected_20_tiles']='PASS'
+            if 'ACTUAL_14_TILE_CLOSED_THEOREM_PRESENT' in log:report['actual_14_tiles']='PASS'
+            if 'NO_PREVIOUS_P_CERTIFICATE_IMPORTED' in log:report['previous_P_certificate_imported']=False
+            if 'EXTRACTED_32_TILE_CLOSED_THEOREM_PRESENT' in log:report['actual_32_tiles']='PASS'
+            if 'FRESH_34_TILE_CLOSED_THEOREM_PRESENT' in log:report['fresh_34_tiles']='PASS'
+            if 'NO_PREVIOUS_ANCHOR_IMPORTED' in log:report['previous_anchor_imported']=False
+            report['empty_game']='PASS' if 'END_TO_END_CLOSED_THEOREM_PRESENT' in log else 'NOT_VERIFIED'
+    report['source_unchanged']=all(audit.digest(source/name)==digest for name,digest in report['source_sha256'].items())
+    report['artifacts_sha256']={str(p.relative_to(modules)):audit.digest(p) for p in sorted(modules.rglob('*.olean'))}
+    report['wall_seconds']=round(time.monotonic()-began,3)
+    report['reused_modules']=sum('reused_from' in s for s in report['steps'])
+    report['newly_compiled_modules']=len(report['steps'])-report['reused_modules']
+    report['exit_code']=1 if report['kernel_modules']!='PASS' else 0 if report['empty_game']=='PASS' else 2
+    (dest/'result.json').write_text(json.dumps(report,indent=2)+'\n')
+    print(json.dumps({k:report.get(k) for k in ['kernel_modules','actual_20_tiles','actual_32_tiles','empty_game','audited_theorems','wall_seconds','exit_code']}),flush=True)
+    return report['exit_code']
+if __name__=='__main__':raise SystemExit(main())
+

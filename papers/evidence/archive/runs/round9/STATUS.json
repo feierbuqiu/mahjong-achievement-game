@@ -1,0 +1,108 @@
+{
+  "date_local": "2026-09-13",
+  "round": 9,
+  "opening_outcome": "UNKNOWN",
+  "first_move_orbits": [
+    "UNKNOWN",
+    "UNKNOWN",
+    "UNKNOWN",
+    "UNKNOWN",
+    "UNKNOWN",
+    "UNKNOWN"
+  ],
+  "final_lean_proof_available": false,
+  "M_before": {
+    "P": 12,
+    "N": 0,
+    "UNKNOWN": 23
+  },
+  "M_after": {
+    "P": 17,
+    "N": 0,
+    "UNKNOWN": 18
+  },
+  "original_S_frontier_before": 41,
+  "original_S_frontier_after": 35,
+  "closed_original_S": [
+    "0000000000000000002000000120000022",
+    "0000000000000000000001200200000022",
+    "0000000000000000000002100200000022",
+    "0000000000000000000001202000000022",
+    "0000000000000000000020012000000022",
+    "0000000000000000000002120000000022"
+  ],
+  "new_M": [
+    {
+      "state": "0000000000000000000000200200000022",
+      "same_suit_pair_ranks": [
+        2,
+        5
+      ],
+      "honors": "two distinct honor pairs",
+      "outcome": "P"
+    },
+    {
+      "state": "0000000000000000000002000200000022",
+      "same_suit_pair_ranks": [
+        2,
+        6
+      ],
+      "honors": "two distinct honor pairs",
+      "outcome": "P"
+    },
+    {
+      "state": "0000000000000000000002020000000022",
+      "same_suit_pair_ranks": [
+        4,
+        6
+      ],
+      "honors": "two distinct honor pairs",
+      "outcome": "P"
+    },
+    {
+      "state": "0000000000000000000020002000000022",
+      "same_suit_pair_ranks": [
+        3,
+        7
+      ],
+      "honors": "two distinct honor pairs",
+      "outcome": "P"
+    },
+    {
+      "state": "0000000000000000002000000020000022",
+      "same_suit_pair_ranks": [
+        1,
+        9
+      ],
+      "honors": "two distinct honor pairs",
+      "outcome": "P"
+    }
+  ],
+  "symmetric_pair_family": {
+    "rank_pairs": [
+      [
+        1,
+        9
+      ],
+      [
+        2,
+        8
+      ],
+      [
+        3,
+        7
+      ],
+      [
+        4,
+        6
+      ]
+    ],
+    "outcome": "P",
+    "requires_exact_bare_state": true
+  },
+  "facts": "runs/round9_math/round9_final_facts.json",
+  "frontier": "runs/round9_math/round9_final_frontier.json",
+  "response_certificate": "runs/round9_math/round9_final_response_certificate_portable.json",
+  "original_delivered_files_verified": 1105,
+  "all_original_hashes_unchanged": true
+}

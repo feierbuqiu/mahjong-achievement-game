@@ -1,0 +1,138 @@
+{
+  "schema": "ACTUAL_EARLIER_FRONTIER_V2",
+  "status": "UNPROVED_CANDIDATE_SELECTION",
+  "formal_proof": false,
+  "created_at_utc": "2026-09-13T07:19:12.829063+00:00",
+  "selected_12_root": {
+    "id": 652738,
+    "state": "0000000020000011110001110300000000",
+    "n": 12,
+    "outcome": "P",
+    "expanded": 1,
+    "physical_safe_moves": 27,
+    "candidate_count": 27
+  },
+  "selected_12_Lean_status": "Final Lean audit is in progress; this selector makes no acceptance claim.",
+  "source_database": "runs\\lean_scale\\producer\\opening_compact_v6\\graph.sqlite",
+  "source_database_bytes": 2119254016,
+  "source_database_sha256": "8b2357959053838050e96c1cacaa4c401e5222bd00ebdd2fbfcbeb5a40ff901d",
+  "database_sha256_recomputed_by_this_small_selection": false,
+  "source_hash_evidence": "runs\\lean_scale\\producer\\round_result.json",
+  "source_hash_evidence_sha256": "1a06c4ab1138abd519fdab6e8a0223ef57a0486fbd2c38b1f67e6e35beac4af4",
+  "source_latest_attempt": "attempt_20260913_065750",
+  "source_index_fingerprint": "5a45ff3ea0fcf356",
+  "selection_method": "Delete one positive count and canonicalize only to locate candidates; require actual stored edges at both steps.",
+  "source_read_scope": "Indexed state/id/parent lookups only; no full nodes/edges scan, no new indexes, no payload tables read.",
+  "queries": 95,
+  "cached_nodes": 47,
+  "incoming_N11_to_target": [
+    {
+      "node": {
+        "id": 124955,
+        "state": "0000000020000011110001110200000000",
+        "n": 11,
+        "outcome": "N",
+        "expanded": 1,
+        "physical_safe_moves": 34,
+        "candidate_count": 6
+      },
+      "edge": {
+        "parent": 124955,
+        "tile": 25,
+        "child": 652738,
+        "parent_state": "0000000020000011110001110200000000",
+        "raw_successor": "0000000020000011110001110300000000",
+        "canonical_successor": "0000000020000011110001110300000000",
+        "witness": [],
+        "witness_direction": "canonical_child_to_physical_successor_left_to_right"
+      }
+    }
+  ],
+  "recommended_10_node": 60591,
+  "priority_rule": "More physical first moves reusing the selected 12P; then fewer distinct retained P12 replies; then fewer N11 orbits and ID.",
+  "candidates": [
+    {
+      "node": {
+        "id": 60591,
+        "state": "0000000020000001110001110200000000",
+        "n": 10,
+        "outcome": "P",
+        "expanded": 1,
+        "physical_safe_moves": 34,
+        "candidate_count": 34
+      },
+      "two_step_connections": [
+        {
+          "first": {
+            "parent": 60591,
+            "tile": 14,
+            "child": 124955,
+            "parent_state": "0000000020000001110001110200000000",
+            "raw_successor": "0000000020000011110001110200000000",
+            "canonical_successor": "0000000020000011110001110200000000",
+            "witness": [],
+            "witness_direction": "canonical_child_to_physical_successor_left_to_right"
+          },
+          "middle_node": {
+            "id": 124955,
+            "state": "0000000020000011110001110200000000",
+            "n": 11,
+            "outcome": "N",
+            "expanded": 1,
+            "physical_safe_moves": 34,
+            "candidate_count": 6
+          },
+          "second": {
+            "parent": 124955,
+            "tile": 25,
+            "child": 652738,
+            "parent_state": "0000000020000011110001110200000000",
+            "raw_successor": "0000000020000011110001110300000000",
+            "canonical_successor": "0000000020000011110001110300000000",
+            "witness": [],
+            "witness_direction": "canonical_child_to_physical_successor_left_to_right"
+          },
+          "physical_root_frame": {
+            "first_tile": 14,
+            "reply_tile": 25,
+            "after_first": "0000000020000011110001110200000000",
+            "after_reply": "0000000020000011110001110300000000",
+            "target_12_to_after_reply_witness": []
+          }
+        }
+      ],
+      "selection_features": {
+        "physical_safe_first_moves": 34,
+        "distinct_stored_N11_children": 28,
+        "distinct_selected_P12_responses": 18,
+        "first_move_tiles_reusing_target_12": [
+          14
+        ],
+        "target_reuse_first_move_count": 1,
+        "other_selected_P12_node_ids": [
+          650545,
+          650952,
+          651136,
+          651902,
+          652606,
+          652627,
+          652645,
+          652668,
+          652692,
+          652719,
+          652731,
+          652736,
+          652737,
+          652739,
+          652740,
+          652741,
+          652742
+        ]
+      },
+      "priority_rank": 1
+    }
+  ],
+  "wall_seconds": 0.0,
+  "selector_sha256": "0e0333e601174462834d0826ca840f7d9f0cce5663173cb46a78b5ceda30a1d9",
+  "caveat": "Canonicalization and path replay here are untrusted selection checks, not Lean proofs. Connections show genuine stored opening-strategy ancestry; they do not close the 10-tile root or force this branch from the empty state. The database SHA is retained from its frozen verified record, not rehashed during this bounded lookup."
+}

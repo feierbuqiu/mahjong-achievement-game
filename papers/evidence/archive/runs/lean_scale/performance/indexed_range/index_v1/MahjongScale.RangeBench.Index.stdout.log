@@ -1,0 +1,4 @@
+elaboration took 115ms
+'Mahjong.Scale.RangeBench.sizes_checked' depends on axioms: [propext]
+'Mahjong.Scale.RangeBench.same' depends on axioms: [propext]
+'Mahjong.Scale.RangeBench.every_range' depends on axioms: [propext, Quot.sound]

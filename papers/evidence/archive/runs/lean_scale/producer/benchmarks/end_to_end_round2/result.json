@@ -1,0 +1,337 @@
+{
+  "status": "PASS_COMPLETE_APPENDED_LOGICAL_FIELDS_MATCH",
+  "formal_proof": false,
+  "comparison": [
+    {
+      "section": "new_nodes",
+      "equal_rows": 501150,
+      "sha256": "5e4f52a0c451a1156b662622f0e4012f2cff9fc2ad9fce7a2ff4315565d02c8d"
+    },
+    {
+      "section": "new_parent_updates",
+      "equal_rows": 21504,
+      "sha256": "9a18264872af606878afa4b9463bef316708b443d47bdfeaf9984de43a593c96"
+    },
+    {
+      "section": "new_logical_edges",
+      "equal_rows": 720540,
+      "sha256": "2bd6c1cc25b8d121507bcfb1490467edff719d8523b5254c0c39e37478308d4a"
+    }
+  ],
+  "runs": [
+    {
+      "run": "compare_control_v4_r1",
+      "attempt": "attempt_20260913_064902",
+      "wall_seconds": 28.73499999998603,
+      "new_nodes": 501150,
+      "newly_expanded_nodes": 21504,
+      "new_edges": 720540,
+      "expanded_per_hour": 2694080.3897698848,
+      "monitored_cpu_seconds": 24.09375,
+      "monitored_seconds": 22.46799999999348,
+      "monitored_average_cores": 1.072358465373286,
+      "peak_process_tree_private_bytes": 2103431168,
+      "database_bytes": 1776205824,
+      "database_bytes_after_source_conversion": 1464434688,
+      "result_path": "runs\\lean_scale\\producer\\compare_control_v4_r1\\attempt_20260913_064902\\result.json",
+      "exact_argv": [
+        "runs/lean_scale/producer/baseline_v4.py",
+        "run",
+        "--run",
+        "compare_control_v4_r1",
+        "--seconds",
+        "120",
+        "--batch",
+        "1024",
+        "--threads",
+        "1",
+        "--max-new-nodes",
+        "500000"
+      ],
+      "result_sha256": "69efbdc8a696d050b0e73f7c09ee1c068f5f66dbfbc2deda13c1bac5e4af8d92"
+    },
+    {
+      "run": "compare_compact_v6_r1",
+      "attempt": "attempt_20260913_064712",
+      "wall_seconds": 26.73499999998603,
+      "new_nodes": 501150,
+      "newly_expanded_nodes": 21504,
+      "new_edges": 720540,
+      "expanded_per_hour": 2895619.9738186067,
+      "monitored_cpu_seconds": 22.765625,
+      "monitored_seconds": 20.79599999997299,
+      "monitored_average_cores": 1.0947117234097694,
+      "peak_process_tree_private_bytes": 2102112256,
+      "database_bytes": 1180594176,
+      "database_bytes_after_source_conversion": 972623872,
+      "result_path": "runs\\lean_scale\\producer\\compare_compact_v6_r1\\attempt_20260913_064712\\result.json",
+      "exact_argv": [
+        "runs/lean_scale/producer/producer_compact_v6.py",
+        "run",
+        "--run",
+        "compare_compact_v6_r1",
+        "--seconds",
+        "120",
+        "--batch",
+        "1024",
+        "--threads",
+        "1",
+        "--max-new-nodes",
+        "500000"
+      ],
+      "result_sha256": "05f27e2c8901be1d4ed3e3c56187e782c0eba9c4715be91c3d51403c97ffa6a6"
+    }
+  ],
+  "compact_speedup": 1.0748083037217522,
+  "compact_database_size_ratio": 0.6646719428840246,
+  "start_snapshot": {
+    "nodes": 5158988,
+    "expanded_nodes": 812856,
+    "pending_nodes": 4346132,
+    "edges": 7542043,
+    "layers": [
+      {
+        "n": 0,
+        "nodes": 1,
+        "expanded": 1,
+        "P": 1,
+        "N": 0,
+        "pending": 0
+      },
+      {
+        "n": 1,
+        "nodes": 6,
+        "expanded": 6,
+        "P": 0,
+        "N": 6,
+        "pending": 0
+      },
+      {
+        "n": 2,
+        "nodes": 4,
+        "expanded": 4,
+        "P": 4,
+        "N": 0,
+        "pending": 0
+      },
+      {
+        "n": 3,
+        "nodes": 56,
+        "expanded": 56,
+        "P": 0,
+        "N": 56,
+        "pending": 0
+      },
+      {
+        "n": 4,
+        "nodes": 29,
+        "expanded": 29,
+        "P": 29,
+        "N": 0,
+        "pending": 0
+      },
+      {
+        "n": 5,
+        "nodes": 518,
+        "expanded": 518,
+        "P": 0,
+        "N": 518,
+        "pending": 0
+      },
+      {
+        "n": 6,
+        "nodes": 251,
+        "expanded": 251,
+        "P": 251,
+        "N": 0,
+        "pending": 0
+      },
+      {
+        "n": 7,
+        "nodes": 5017,
+        "expanded": 5017,
+        "P": 0,
+        "N": 5017,
+        "pending": 0
+      },
+      {
+        "n": 8,
+        "nodes": 2300,
+        "expanded": 2300,
+        "P": 2300,
+        "N": 0,
+        "pending": 0
+      },
+      {
+        "n": 9,
+        "nodes": 50677,
+        "expanded": 50677,
+        "P": 0,
+        "N": 50677,
+        "pending": 0
+      },
+      {
+        "n": 10,
+        "nodes": 23663,
+        "expanded": 23663,
+        "P": 23663,
+        "N": 0,
+        "pending": 0
+      },
+      {
+        "n": 11,
+        "nodes": 550110,
+        "expanded": 550110,
+        "P": 0,
+        "N": 550110,
+        "pending": 0
+      },
+      {
+        "n": 12,
+        "nodes": 257730,
+        "expanded": 180224,
+        "P": 257730,
+        "N": 0,
+        "pending": 77506
+      },
+      {
+        "n": 13,
+        "nodes": 4268626,
+        "expanded": 0,
+        "P": 0,
+        "N": 4268626,
+        "pending": 4268626
+      }
+    ],
+    "status": "PARTIAL",
+    "formal_proof": false,
+    "schema": "MAHJONG_STRATEGY_GRAPH_V1"
+  },
+  "final_snapshot": {
+    "nodes": 5660138,
+    "edges": 8262583,
+    "expanded_nodes": 834360,
+    "pending_nodes": 4825778,
+    "layers": [
+      {
+        "n": 0,
+        "nodes": 1,
+        "expanded": 1,
+        "P": 1,
+        "N": 0,
+        "pending": 0
+      },
+      {
+        "n": 1,
+        "nodes": 6,
+        "expanded": 6,
+        "P": 0,
+        "N": 6,
+        "pending": 0
+      },
+      {
+        "n": 2,
+        "nodes": 4,
+        "expanded": 4,
+        "P": 4,
+        "N": 0,
+        "pending": 0
+      },
+      {
+        "n": 3,
+        "nodes": 56,
+        "expanded": 56,
+        "P": 0,
+        "N": 56,
+        "pending": 0
+      },
+      {
+        "n": 4,
+        "nodes": 29,
+        "expanded": 29,
+        "P": 29,
+        "N": 0,
+        "pending": 0
+      },
+      {
+        "n": 5,
+        "nodes": 518,
+        "expanded": 518,
+        "P": 0,
+        "N": 518,
+        "pending": 0
+      },
+      {
+        "n": 6,
+        "nodes": 251,
+        "expanded": 251,
+        "P": 251,
+        "N": 0,
+        "pending": 0
+      },
+      {
+        "n": 7,
+        "nodes": 5017,
+        "expanded": 5017,
+        "P": 0,
+        "N": 5017,
+        "pending": 0
+      },
+      {
+        "n": 8,
+        "nodes": 2300,
+        "expanded": 2300,
+        "P": 2300,
+        "N": 0,
+        "pending": 0
+      },
+      {
+        "n": 9,
+        "nodes": 50677,
+        "expanded": 50677,
+        "P": 0,
+        "N": 50677,
+        "pending": 0
+      },
+      {
+        "n": 10,
+        "nodes": 23663,
+        "expanded": 23663,
+        "P": 23663,
+        "N": 0,
+        "pending": 0
+      },
+      {
+        "n": 11,
+        "nodes": 550110,
+        "expanded": 550110,
+        "P": 0,
+        "N": 550110,
+        "pending": 0
+      },
+      {
+        "n": 12,
+        "nodes": 257730,
+        "expanded": 201728,
+        "P": 257730,
+        "N": 0,
+        "pending": 56002
+      },
+      {
+        "n": 13,
+        "nodes": 4769776,
+        "expanded": 0,
+        "P": 0,
+        "N": 4769776,
+        "pending": 4769776
+      }
+    ]
+  },
+  "comparison_seconds": 9.719000000040978,
+  "source_sha256": {
+    "runs\\lean_scale\\producer\\baseline_v4.py": "835a4436afb4893f9e0375b84f011a567f51ae10add2e3da64c903ae014a6164",
+    "runs\\lean_scale\\producer\\producer_compact_v6.py": "c22fc6859988025a55d2bd067bd93b8f478fb3338d42889e1332fabbd512793d",
+    "runs\\lean_scale\\producer\\compare_appends.py": "2102108b8b3f94db09dff8b96c4dd8bfbe87eef1be8e1cbe9a3bfea6b4873fa7"
+  },
+  "caveat": "Wall includes initial/final SQL and saving. CPU/private samples cover monitored worker interval. Logical equality is not Lean acceptance."
+}

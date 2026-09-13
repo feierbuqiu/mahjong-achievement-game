@@ -1,0 +1,123 @@
+"""Convert a closed untrusted native graph to physical responses, then prune at checked facts.
+
+No native P/N label is a Lean premise. Generated witnesses and every retained
+physical reply must be checked by the later original-rule theorem.
+"""
+from pathlib import Path
+from collections import defaultdict, Counter
+import argparse
+import importlib.util
+import json
+import time
+
+ROOT = Path(__file__).resolve().parents[2]
+spec = importlib.util.spec_from_file_location("response_helpers", ROOT / "build/lean_next/convert_graph_v3.py")
+h = importlib.util.module_from_spec(spec)
+spec.loader.exec_module(h)
+
+
+def main():
+    parser = argparse.ArgumentParser()
+    parser.add_argument("--export", required=True)
+    parser.add_argument("--registry", required=True)
+    parser.add_argument("--out", required=True)
+    args = parser.parse_args()
+    source, rp, out = ((ROOT / x).resolve() for x in [args.export, args.registry, args.out])
+    assert out.is_relative_to(ROOT / "runs/lean_scale")
+    out.mkdir(parents=True, exist_ok=False)
+    started = time.monotonic()
+    manifest = json.loads((source / "manifest.json").read_text(encoding="utf-8"))
+    assert manifest["summary"]["status"] == "CANDIDATE_CLOSED"
+    for file, expected in manifest["files_sha256"].items():
+        assert h.sha(source / file) == expected
+    nodes = {n["id"]: n for n in map(json.loads, (source / "nodes.jsonl").read_text(encoding="utf-8").splitlines())}
+    edges = defaultdict(dict)
+    for e in map(json.loads, (source / "edges.jsonl").read_text(encoding="utf-8").splitlines()):
+        parent, child = nodes[e["parent"]], nodes[e["child"]]
+        assert e["tile"] not in edges[parent["id"]]
+        assert parent["outcome"] != child["outcome"] and parent["n"] + 1 == child["n"]
+        assert child["state"] == e["canonical_successor"]
+        assert h.added(parent["state"], e["tile"]) == e["raw_successor"]
+        assert h.transformed(child["state"], e["witness"]) == e["raw_successor"]
+        edges[parent["id"]][e["tile"]] = e
+    for n in nodes.values():
+        assert n["expanded"] == 1 and len(n["state"]) == 34
+        assert set(n["state"]) <= set("01234") and sum(map(int, n["state"])) == n["n"]
+        if n["outcome"] == "N":
+            assert len(edges[n["id"]]) == 1
+    registry = json.loads(rp.read_text(encoding="utf-8"))
+    by_state = {r["digits"]: r for r in registry["entries"]}
+    external = {n["id"]: by_state[n["state"]] for n in nodes.values() if n["outcome"] == "P" and n["state"] in by_state}
+    root = next(n["id"] for n in nodes.values() if n["state"] == manifest["metadata"]["root"]["canonical_state"])
+    keep, boundary = set(), set()
+
+    def visit(ident):
+        if ident in external:
+            boundary.add(ident)
+            return
+        if ident in keep:
+            return
+        keep.add(ident)
+        for edge in edges[ident].values():
+            reply = next(iter(edges[edge["child"]].values()))
+            visit(reply["child"])
+
+    visit(root)
+    assert root in keep
+    rows = []
+    for ident in sorted(keep, key=lambda i: (-nodes[i]["n"], i)):
+        n = nodes[ident]
+        assert n["outcome"] == "P"
+        state = n["state"]
+        row = {"id": ident, "state": state, "responses": {}, "back": {}, "positive_witnesses": {}}
+        for t in range(34):
+            if state[t] == "4":
+                continue
+            if t in edges[ident]:
+                edge = edges[ident][t]
+                reply = next(iter(edges[edge["child"]].values()))
+                target = reply["child"]
+                second = h.tile_path(reply["tile"], edge["witness"])
+                path = reply["witness"] + edge["witness"]
+                assert target in keep or target in boundary
+                assert h.transformed(nodes[target]["state"], path) == h.added(h.added(state, t), second)
+                row["back"][str(t)] = [target, path]
+            else:
+                one = h.added(state, t)
+                for second in range(34):
+                    if one[second] == "4":
+                        continue
+                    try:
+                        witness = h.find_win(tuple(map(int, h.added(one, second))))
+                    except RuntimeError:
+                        continue
+                    row["positive_witnesses"][str(t)] = witness
+                    break
+                else:
+                    raise ValueError("missing actual winning reply")
+            row["responses"][str(t)] = second
+        rows.append(row)
+        h.wins.find_melds.cache_clear()
+    leaves = [r["state"] for r in rows if not r["back"]]
+    (out / "responses.json").write_text(json.dumps(rows, indent=2)+"\n", encoding="utf-8")
+    (out / "leaf_states.json").write_text(json.dumps(leaves, indent=2)+"\n", encoding="utf-8")
+    result = {"schema": "PRUNED_PHYSICAL_RESPONSE_CANDIDATE_V1", "status": "GENERATED_NOT_VERIFIED", "empty_game": "NOT_VERIFIED",
+        "original_manifest": str((source / "manifest.json").relative_to(ROOT)),
+        "input_sha256": {str(p.relative_to(ROOT)): h.sha(p) for p in [source / "manifest.json", source / "nodes.jsonl", source / "edges.jsonl", rp, Path(__file__), ROOT / "build/lean_next/convert_graph_v3.py"]},
+        "root_info": manifest["metadata"]["root"], "root_source_id": root,
+        "original_P_rows": sum(n["outcome"] == "P" for n in nodes.values()), "retained_local_P_rows": len(rows),
+        "original_registered_matches": len(external), "external_boundary_count": len(boundary),
+        "external_boundary": {str(i): {"state": nodes[i]["state"], "registry_id": external[i]["registry_id"], "registry_source_node_id": external[i]["source_node_id"]} for i in sorted(boundary)},
+        "retained_terminal_leaves": len(leaves), "terminal_layers": dict(Counter(sum(map(int, s)) for s in leaves)),
+        "physical_legal_first_moves": sum(len(r["responses"]) for r in rows),
+        "back_replies": sum(len(r["back"]) for r in rows),
+        "external_back_replies": sum(target in boundary for r in rows for target, path in r["back"].values()),
+        "positive_replies": sum(len(r["positive_witnesses"]) for r in rows),
+        "response_sha256": h.sha(out / "responses.json"), "leaf_states_sha256": h.sha(out / "leaf_states.json"),
+        "wall_seconds": time.monotonic()-started}
+    (out / "generation.json").write_text(json.dumps(result, indent=2)+"\n", encoding="utf-8")
+    print(json.dumps({k: result[k] for k in ["status", "original_P_rows", "retained_local_P_rows", "external_boundary_count", "retained_terminal_leaves", "physical_legal_first_moves", "external_back_replies", "wall_seconds"]}), flush=True)
+
+
+if __name__ == "__main__":
+    main()

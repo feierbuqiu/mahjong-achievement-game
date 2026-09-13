@@ -1,0 +1,427 @@
+import MahjongVerify.Basic
+
+/-!
+# Foundational lemmas for the shared-table Mahjong game (verification agent D)
+
+Everything here is proved against the unchanged definitions of `MahjongVerify.Basic`
+(a verbatim copy of `mahjong_round2/lean/SharedMahjong.lean`).
+No `sorry`, no new axioms, no `native_decide`, no `unsafe`.
+
+Contents
+* containment / monotonicity: `contains_trans`, `win_mono`, `add_add_comm`, `safe_downward`
+* sizes: `size_pairOn`, `size_standard`, `size_sevenPairs`, `size_thirteenOrphans`,
+  `win_size_ge`, `safe_of_size_le_12`, `safe_empty`, `safe_single`
+* SAFE reduction (the original achievement game and the SAFE normal-play game have the
+  same outcome on every SAFE table): `safe_reduction`, `empty_reduction`
+* honor pass invariance (the fourth copy of an honor never changes `Win` or `Safe`):
+  `win_add_honor_iff`, `safe_add_honor_iff`
+-/
+
+namespace SharedMahjong
+
+/-! ## Containment and monotonicity -/
+
+theorem contains_refl (x : Table) : Contains x x := fun _ => le_rfl
+
+theorem contains_trans {x y z : Table} (hxy : Contains x y) (hyz : Contains y z) :
+    Contains x z := fun i => le_trans (hyz i) (hxy i)
+
+theorem valid_of_contains {x y : Table} (hx : Valid x) (hxy : Contains x y) : Valid y :=
+  fun i => le_trans (hxy i) (hx i)
+
+/-- Winning is upward closed: a table containing a winning table is winning. -/
+theorem win_mono {x y : Table} (hxy : Contains x y) (hy : Win y) : Win x := by
+  obtain ⟨h, hv, hs, hc⟩ := hy
+  exact ⟨h, hv, hs, contains_trans hxy hc⟩
+
+theorem add_add_comm (x : Table) (i j : Tile) : add (add x i) j = add (add x j) i := by
+  funext k
+  simp only [add]
+  omega
+
+theorem contains_add_of_lt {x y : Table} (hxy : Contains x y) (i : Tile) (h : y i < x i) :
+    Contains x (add y i) := by
+  intro k
+  by_cases hk : k = i
+  · subst hk
+    simp only [add_self]
+    omega
+  · simpa [add, unit, hk] using hxy k
+
+theorem contains_add_add {x y : Table} (hxy : Contains x y) (i : Tile) :
+    Contains (add x i) (add y i) := by
+  intro k
+  simp only [add]
+  have := hxy k
+  omega
+
+/-- SAFE is downward closed (used by the child-driven retrograde: deleting a tile from a
+SAFE state gives a SAFE state, so predecessors need no SAFE check). -/
+theorem safe_downward {x y : Table} (hx : Safe x) (hxy : Contains x y) : Safe y := by
+  obtain ⟨hv, hnw, hone⟩ := hx
+  refine ⟨valid_of_contains hv hxy, fun hw => hnw (win_mono hxy hw), ?_⟩
+  intro i _ hw
+  by_cases h : y i < x i
+  · exact hnw (win_mono (contains_add_of_lt hxy i h) hw)
+  · have hxi : x i < 4 := by
+      have := hxy i
+      have := hv i
+      omega
+    exact hone i hxi (win_mono (contains_add_add hxy i) hw)
+
+/-! ## Sizes of winning shapes -/
+
+theorem size_le_of_contains {x y : Table} (h : Contains x y) : size y ≤ size x :=
+  Finset.sum_le_sum (fun i _ => h i)
+
+theorem size_pairOn (D : Table) (i : Tile) : size (PairOn D i) = size D + 2 := by
+  simp [PairOn, size_add]
+
+theorem size_standard {h : Table} (hs : Standard h) : size h = 14 := by
+  obtain ⟨D, i, hD, rfl⟩ := hs
+  rw [size_pairOn, four_melds_size hD]
+
+theorem size_sevenPairs {h : Table} (hs : SevenPairs h) : size h = 14 := by
+  obtain ⟨p, hp, hh⟩ := hs
+  have e : h = fun i => if i ∈ p then 2 else 0 := funext hh
+  rw [e]
+  simp only [size]
+  rw [Finset.sum_ite_mem, Finset.univ_inter, Finset.sum_const, hp]
+  rfl
+
+theorem orphans_card : orphans.card = 13 := by decide
+
+theorem size_thirteenOrphans {h : Table} (hs : ThirteenOrphans h) : size h = 14 := by
+  obtain ⟨p, _, hh⟩ := hs
+  have e : h = fun i => (if i ∈ orphans then 1 else 0) + unit p i := funext hh
+  rw [e]
+  simp only [size, Finset.sum_add_distrib]
+  rw [Finset.sum_ite_mem, Finset.univ_inter, Finset.sum_const, orphans_card]
+  have hu : ∑ i, unit p i = 1 := size_unit p
+  rw [hu]
+  rfl
+
+/-- Every winning table has at least 14 tiles. -/
+theorem win_size_ge {x : Table} (hw : Win x) : 14 ≤ size x := by
+  obtain ⟨h, _, hs, hc⟩ := hw
+  have h14 : size h = 14 := by
+    rcases hs with hs | hs | hs
+    · exact size_standard hs
+    · exact size_sevenPairs hs
+    · exact size_thirteenOrphans hs
+  calc 14 = size h := h14.symm
+    _ ≤ size x := size_le_of_contains hc
+
+/-- Any valid table with at most 12 tiles is SAFE (layers 0..12 are entirely SAFE). -/
+theorem safe_of_size_le_12 {x : Table} (hv : Valid x) (hs : size x ≤ 12) : Safe x := by
+  refine ⟨hv, fun hw => ?_, fun i _ hw => ?_⟩
+  · have := win_size_ge hw
+    omega
+  · have := win_size_ge hw
+    rw [size_add] at this
+    omega
+
+theorem size_empty : size (fun _ : Tile => 0) = 0 := by simp [size]
+
+theorem valid_empty : Valid (fun _ : Tile => 0) := fun _ => Nat.zero_le _
+
+theorem safe_empty : Safe (fun _ : Tile => 0) :=
+  safe_of_size_le_12 valid_empty (by rw [size_empty]; omega)
+
+theorem safe_single (i : Tile) : Safe (unit i) :=
+  safe_of_size_le_12 (fun j => by simp only [unit]; split_ifs <;> omega)
+    (by rw [size_unit]; omega)
+
+/-! ## The SAFE reduction
+
+`movesG` is the original achievement game: from a valid table that does not yet contain a
+winning hand, the player to move adds any tile that still has stock; a table that already
+contains a winning hand has no moves (the previous mover has won).  `movesK` is the SAFE
+normal-play game: only additions that keep the table SAFE are allowed, and a SAFE table with
+no SAFE successor is lost for the player to move.  Outcomes are computed by the well-founded
+recursion `solve` of `MahjongVerify.Basic` (`true` = player to move can force a win).
+-/
+
+section Reduction
+open Classical
+
+/-- Original achievement game move list. -/
+noncomputable def movesG (x : Table) : List Table :=
+  if Valid x ∧ ¬ Win x then
+    ((List.finRange 34).filter (fun i => decide (x i < 4))).map (fun i => add x i)
+  else []
+
+/-- SAFE normal-play move list. -/
+noncomputable def movesK (x : Table) : List Table :=
+  if Safe x then
+    ((List.finRange 34).filter (fun i => decide (x i < 4 ∧ Safe (add x i)))).map
+      (fun i => add x i)
+  else []
+
+/-- Remaining stock; every move strictly decreases it. -/
+def rank (x : Table) : ℕ := 136 - size x
+
+theorem mem_movesG {x t : Table} (hv : Valid x) (hn : ¬ Win x) :
+    t ∈ movesG x ↔ ∃ i, x i < 4 ∧ t = add x i := by
+  simp only [movesG, hv, hn, not_false_eq_true, and_self, if_true, List.mem_map,
+    List.mem_filter, List.mem_finRange, true_and, decide_eq_true_eq]
+  constructor
+  · rintro ⟨i, h1, h2⟩
+    exact ⟨i, h1, h2.symm⟩
+  · rintro ⟨i, h1, h2⟩
+    exact ⟨i, h1, h2.symm⟩
+
+theorem mem_movesK {x t : Table} (hs : Safe x) :
+    t ∈ movesK x ↔ ∃ i, x i < 4 ∧ Safe (add x i) ∧ t = add x i := by
+  simp only [movesK, hs, if_true, List.mem_map, List.mem_filter, List.mem_finRange, true_and,
+    decide_eq_true_eq]
+  constructor
+  · rintro ⟨i, ⟨h1, h2⟩, h3⟩
+    exact ⟨i, h1, h2, h3.symm⟩
+  · rintro ⟨i, h1, h2, h3⟩
+    exact ⟨i, ⟨h1, h2⟩, h3.symm⟩
+
+theorem movesG_decreases : ∀ s t, t ∈ movesG s → rank t < rank s := by
+  intro s t ht
+  by_cases h : Valid s ∧ ¬ Win s
+  · obtain ⟨i, hi, rfl⟩ := (mem_movesG h.1 h.2).mp ht
+    have h1 := size_le_136 (add s i) (valid_add s i h.1 hi)
+    rw [size_add] at h1
+    unfold rank
+    rw [size_add]
+    omega
+  · simp [movesG, h] at ht
+
+theorem movesK_decreases : ∀ s t, t ∈ movesK s → rank t < rank s := by
+  intro s t ht
+  by_cases h : Safe s
+  · obtain ⟨i, hi, _, rfl⟩ := (mem_movesK h).mp ht
+    have h1 := size_le_136 (add s i) (valid_add s i h.1 hi)
+    rw [size_add] at h1
+    unfold rank
+    rw [size_add]
+    omega
+  · simp [movesK, h] at ht
+
+/-- Outcome of the original achievement game for the player to move. -/
+noncomputable def outcomeG : Table → Bool := solve movesG rank movesG_decreases
+
+/-- Outcome of the SAFE normal-play game for the player to move. -/
+noncomputable def outcomeK : Table → Bool := solve movesK rank movesK_decreases
+
+theorem outcomeG_eq (x : Table) :
+    outcomeG x = (movesG x).any (fun t => !(outcomeG t)) := by
+  unfold outcomeG
+  exact solve_eq movesG rank movesG_decreases x
+
+theorem outcomeK_eq (x : Table) :
+    outcomeK x = (movesK x).any (fun t => !(outcomeK t)) := by
+  unfold outcomeK
+  exact solve_eq movesK rank movesK_decreases x
+
+/-- A table that already contains a winning hand is lost for the player to move
+(the previous mover has just won). -/
+theorem outcomeG_of_win {y : Table} (hy : Win y) : outcomeG y = false := by
+  rw [outcomeG_eq]
+  have : movesG y = [] := by simp [movesG, hy]
+  rw [this]
+  rfl
+
+/-- Leaving SAFE without winning hands the opponent an immediate win. -/
+theorem outcomeG_true_of_not_safe {y : Table} (hv : Valid y) (hn : ¬ Win y)
+    (hns : ¬ Safe y) : outcomeG y = true := by
+  have : ∃ j, y j < 4 ∧ Win (add y j) := by
+    by_contra hcon
+    push Not at hcon
+    exact hns ⟨hv, hn, hcon⟩
+  obtain ⟨j, hj, hw⟩ := this
+  rw [outcomeG_eq]
+  apply List.any_eq_true.mpr
+  refine ⟨add y j, (mem_movesG hv hn).mpr ⟨j, hj, rfl⟩, ?_⟩
+  rw [outcomeG_of_win hw]
+  rfl
+
+/-- **SAFE reduction.** On every SAFE table the original achievement game and the SAFE
+normal-play game have the same outcome for the player to move. -/
+theorem safe_reduction : ∀ x, Safe x → outcomeG x = outcomeK x := by
+  intro x
+  induction h : rank x using Nat.strong_induction_on generalizing x with
+  | h n ih =>
+    intro hx
+    have hv : Valid x := hx.1
+    have hn : ¬ Win x := hx.2.1
+    rw [outcomeG_eq, outcomeK_eq]
+    apply Bool.eq_iff_iff.mpr
+    simp only [List.any_eq_true, Bool.not_eq_eq_eq_not, Bool.not_true]
+    constructor
+    · rintro ⟨t, ht, hft⟩
+      obtain ⟨i, hi, rfl⟩ := (mem_movesG hv hn).mp ht
+      have hsafe : Safe (add x i) := by
+        by_contra hns
+        have := outcomeG_true_of_not_safe (valid_add x i hv hi) (hx.2.2 i hi) hns
+        rw [this] at hft
+        exact Bool.noConfusion hft
+      refine ⟨add x i, (mem_movesK hx).mpr ⟨i, hi, hsafe, rfl⟩, ?_⟩
+      have hr : rank (add x i) < n := by
+        rw [← h]
+        exact movesG_decreases x (add x i) ht
+      rw [← ih _ hr (add x i) rfl hsafe]
+      exact hft
+    · rintro ⟨t, ht, hft⟩
+      obtain ⟨i, hi, hsafe, rfl⟩ := (mem_movesK hx).mp ht
+      refine ⟨add x i, (mem_movesG hv hn).mpr ⟨i, hi, rfl⟩, ?_⟩
+      have hr : rank (add x i) < n := by
+        rw [← h]
+        exact movesK_decreases x (add x i) ht
+      rw [ih _ hr (add x i) rfl hsafe]
+      exact hft
+
+/-- The child-driven recurrence used by the layered retrograde: a SAFE table is N
+(`true`) iff some legal addition keeps it SAFE and leads to a P (`false`) table.
+In particular a SAFE table without SAFE successors (layer 34) is P. -/
+theorem outcomeK_true_iff {x : Table} (hx : Safe x) :
+    outcomeK x = true ↔ ∃ i, x i < 4 ∧ Safe (add x i) ∧ outcomeK (add x i) = false := by
+  rw [outcomeK_eq]
+  simp only [List.any_eq_true, Bool.not_eq_eq_eq_not, Bool.not_true]
+  constructor
+  · rintro ⟨t, ht, hft⟩
+    obtain ⟨i, hi, hs, rfl⟩ := (mem_movesK hx).mp ht
+    exact ⟨i, hi, hs, hft⟩
+  · rintro ⟨i, hi, hs, hf⟩
+    exact ⟨add x i, (mem_movesK hx).mpr ⟨i, hi, hs, rfl⟩, hf⟩
+
+/-- The empty table is SAFE, so its original-game outcome is the SAFE-game outcome. -/
+theorem empty_reduction : outcomeG (fun _ => 0) = outcomeK (fun _ => 0) :=
+  safe_reduction _ safe_empty
+
+/-- Every first move leads to a SAFE table, so the same holds one ply down. -/
+theorem first_move_reduction (i : Tile) : outcomeG (unit i) = outcomeK (unit i) :=
+  safe_reduction _ (safe_single i)
+
+end Reduction
+
+/-! ## The fourth copy of an honor is invisible to `Win` and `Safe`
+
+No allowed winning hand uses more than three copies of any honor kind (index ≥ 27):
+honors have no sequences, and a triplet plus a pair of the same kind would need five.
+Hence adding the fourth copy of an honor that already has three never changes `Win`,
+and never changes `Safe`.  This is the rule-level content of "honor 3→4 is an independent
+pass" (math_strategy.md Theorem 3, theory.md §6); the game-theoretic xor identity is not
+formalised here.
+-/
+
+section HonorPass
+
+theorem seqTile_val_lt_27 (s : Fin 3) (r : Fin 7) (k : Fin 3) : (seqTile s r k).val < 27 := by
+  simp only [seqTile]
+  omega
+
+theorem sequence_honor (s : Fin 3) (r : Fin 7) {i : Tile} (hi : 27 ≤ i.val) :
+    sequence s r i = 0 := by
+  have h0 := seqTile_val_lt_27 s r 0
+  have h1 := seqTile_val_lt_27 s r 1
+  have h2 := seqTile_val_lt_27 s r 2
+  simp only [sequence, unit]
+  rw [if_neg, if_neg, if_neg]
+  · intro e
+    have := congrArg Fin.val e
+    omega
+  · intro e
+    have := congrArg Fin.val e
+    omega
+  · intro e
+    have := congrArg Fin.val e
+    omega
+
+theorem meld_honor {m : Table} (hm : Meld m) {i : Tile} (hi : 27 ≤ i.val) :
+    m i = 0 ∨ m i = 3 := by
+  cases hm with
+  | triplet j =>
+    simp only [triplet, unit]
+    split_ifs <;> simp
+  | sequence s r =>
+    left
+    exact sequence_honor s r hi
+
+/-- A valid winning hand uses at most three copies of any honor. -/
+theorem winning_honor_le_three {h : Table} (hv : Valid h)
+    (hs : Standard h ∨ SevenPairs h ∨ ThirteenOrphans h) {i : Tile} (hi : 27 ≤ i.val) :
+    h i ≤ 3 := by
+  rcases hs with ⟨D, j, ⟨a, b, c, d, ha, hb, hc, hd, hD⟩, rfl⟩ | ⟨p, _, hp⟩ | ⟨p, _, hp⟩
+  · have hvi := hv i
+    have hDi := hD i
+    simp only [PairOn, add, unit] at hvi ⊢
+    rcases meld_honor ha hi with h1 | h1 <;> rcases meld_honor hb hi with h2 | h2 <;>
+      rcases meld_honor hc hi with h3 | h3 <;> rcases meld_honor hd hi with h4 | h4 <;>
+      split_ifs at hvi ⊢ <;> omega
+  · rw [hp]
+    split_ifs <;> omega
+  · rw [hp]
+    simp only [unit]
+    split_ifs <;> omega
+
+theorem win_add_honor_iff {x : Table} {i : Tile} (hi : 27 ≤ i.val) (h3 : x i = 3) :
+    Win (add x i) ↔ Win x := by
+  constructor
+  · rintro ⟨h, hv, hs, hc⟩
+    refine ⟨h, hv, hs, ?_⟩
+    intro k
+    have hk := hc k
+    by_cases e : k = i
+    · subst e
+      have := winning_honor_le_three hv hs hi
+      simp only [add_self] at hk
+      omega
+    · simpa [add, unit, e] using hk
+  · exact fun hw => win_mono (add_contains x i) hw
+
+theorem safe_add_honor_iff {x : Table} {i : Tile} (hi : 27 ≤ i.val) (h3 : x i = 3)
+    (hv : Valid x) : Safe (add x i) ↔ Safe x := by
+  constructor
+  · rintro ⟨_, hn, hone⟩
+    refine ⟨hv, fun hw => hn ((win_add_honor_iff hi h3).mpr hw), ?_⟩
+    intro j hj hw
+    by_cases e : j = i
+    · subst e
+      exact hn hw
+    · have hj' : add x i j < 4 := by simpa [add, unit, e] using hj
+      apply hone j hj'
+      rw [add_add_comm]
+      have h3' : add x j i = 3 := by simpa [add, unit, Ne.symm e] using h3
+      exact (win_add_honor_iff hi h3').mpr hw
+  · rintro ⟨_, hn, hone⟩
+    refine ⟨valid_add x i hv (by omega), fun hw => hn ((win_add_honor_iff hi h3).mp hw), ?_⟩
+    intro j hj hw
+    by_cases e : j = i
+    · subst e
+      simp only [add_self] at hj
+      omega
+    · have hj' : x j < 4 := by simpa [add, unit, e] using hj
+      apply hone j hj'
+      rw [add_add_comm] at hw
+      have h3' : add x j i = 3 := by simpa [add, unit, Ne.symm e] using h3
+      exact (win_add_honor_iff hi h3').mp hw
+
+end HonorPass
+
+#print axioms contains_trans
+#print axioms win_mono
+#print axioms add_add_comm
+#print axioms safe_downward
+#print axioms size_pairOn
+#print axioms size_standard
+#print axioms size_sevenPairs
+#print axioms size_thirteenOrphans
+#print axioms win_size_ge
+#print axioms safe_of_size_le_12
+#print axioms safe_empty
+#print axioms safe_single
+#print axioms safe_reduction
+#print axioms outcomeK_true_iff
+#print axioms empty_reduction
+#print axioms first_move_reduction
+#print axioms winning_honor_le_three
+#print axioms win_add_honor_iff
+#print axioms safe_add_honor_iff
+
+end SharedMahjong

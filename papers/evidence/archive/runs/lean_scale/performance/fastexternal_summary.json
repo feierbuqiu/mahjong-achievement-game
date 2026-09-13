@@ -1,0 +1,192 @@
+{
+  "schema": "LEAN_SCALE_FAST_EXTERNAL_ACTUAL14_GROUP_COMPARISON_V1",
+  "status": "KERNEL_PASS",
+  "implementation": {
+    "path": "<research-root>\\build\\lean_scale\\performance\\MahjongScale\\FastExternal.lean",
+    "sha256": "7d0c24cf616b4053e0353ab77989fa4590a42d7c9df982209ba5761707350f9b"
+  },
+  "object": {
+    "path": "<research-root>\\build\\lean_scale\\performance\\MahjongScale\\FastExternal.olean",
+    "sha256": "50b531c2e5bc6694d4c5e72ef31ce5bad6e0f42a2046e1f0701e08ff603503a3"
+  },
+  "module": "MahjongScale.FastExternal",
+  "namespace": "Mahjong.Scale.FastExternal",
+  "generic_proof": {
+    "path": "<research-root>\\runs\\lean_scale\\performance\\external_logic_v2\\result.json",
+    "sha256": "ee8d2545f8e8ee8cf32bfd143c4e25c47151464de05044f93c3ec23b58bdced8"
+  },
+  "generation": {
+    "path": "<research-root>\\runs\\lean_scale\\performance\\external_generation.json",
+    "sha256": "e5b23a544892cb771f36f453119347b7c7cac93f177cc4cebb11cf4c5b924d51"
+  },
+  "kernel": {
+    "path": "<research-root>\\runs\\lean_scale\\performance\\external_paired_v1\\result.json",
+    "sha256": "7366ae792b7c09727fca5e05e3db11f26fe75d54d82cf6799173b5f124a176d2"
+  },
+  "library_provenance": {
+    "path": "<research-root>\\runs\\lean_scale\\performance\\external_library_provenance.json",
+    "sha256": "d99c73ffbd5b265db3b8b0b24ffdbc35df2d6c2bc167d05a0b37b2c2bd4f0546"
+  },
+  "namespace_path_provenance": {
+    "path": "<research-root>\\runs\\lean_scale\\performance\\external_namespace_paths.json",
+    "sha256": "7596f4ac03a396d10477b358f0033bbb8630954120419919cfad44cda4a37ccf"
+  },
+  "measurements": {
+    "Baseline": {
+      "groups": [
+        {
+          "module": "MahjongScale.ExternalBench.Baseline.Group0",
+          "success": true,
+          "source_sha256": "15224e538988ebc81e73f360e121911beb73a2c94bbfac064baf37bce17c3d8b",
+          "source_snapshot": "<research-root>\\runs\\lean_scale\\performance\\external_paired_v1\\MahjongScale.ExternalBench.Baseline.Group0.lean",
+          "command": "<research-root>\\build\\toolchain\\lean-4.33.1-windows\\bin\\lean.exe --trust=0 --profile -M2400 -j1 -o MahjongScale/ExternalBench/Baseline/Group0.olean MahjongScale/ExternalBench/Baseline/Group0.lean",
+          "cwd": "<research-root>\\build\\lean_scale\\performance",
+          "lean_path": "<research-root>\\build\\lean_scale\\performance;<research-root>\\build\\lean_scale\\performance\\library",
+          "exit_code": 0,
+          "terminated": false,
+          "reason": "",
+          "wall_seconds": 4.8849199,
+          "cpu_seconds": 4.8125,
+          "peak_private_bytes": 1316323328,
+          "peak_rss_bytes": 851828736,
+          "stdout": "<research-root>\\runs\\lean_scale\\performance\\external_paired_v1\\MahjongScale.ExternalBench.Baseline.Group0.stdout.log",
+          "stderr": "<research-root>\\runs\\lean_scale\\performance\\external_paired_v1\\MahjongScale.ExternalBench.Baseline.Group0.stderr.log",
+          "olean_sha256": "51a7ac0dc348078a8b2c1dffd7374dcb3c0f5bdee014213fca0af2da3a72eae1"
+        },
+        {
+          "module": "MahjongScale.ExternalBench.Baseline.Group5",
+          "success": true,
+          "source_sha256": "60e97aae3eac7f826867071787ca6466476900bd84be86cd88867ccc73be3674",
+          "source_snapshot": "<research-root>\\runs\\lean_scale\\performance\\external_paired_v1\\MahjongScale.ExternalBench.Baseline.Group5.lean",
+          "command": "<research-root>\\build\\toolchain\\lean-4.33.1-windows\\bin\\lean.exe --trust=0 --profile -M2400 -j1 -o MahjongScale/ExternalBench/Baseline/Group5.olean MahjongScale/ExternalBench/Baseline/Group5.lean",
+          "cwd": "<research-root>\\build\\lean_scale\\performance",
+          "lean_path": "<research-root>\\build\\lean_scale\\performance;<research-root>\\build\\lean_scale\\performance\\library",
+          "exit_code": 0,
+          "terminated": false,
+          "reason": "",
+          "wall_seconds": 7.2054266,
+          "cpu_seconds": 7.15625,
+          "peak_private_bytes": 1645899776,
+          "peak_rss_bytes": 1178050560,
+          "stdout": "<research-root>\\runs\\lean_scale\\performance\\external_paired_v1\\MahjongScale.ExternalBench.Baseline.Group5.stdout.log",
+          "stderr": "<research-root>\\runs\\lean_scale\\performance\\external_paired_v1\\MahjongScale.ExternalBench.Baseline.Group5.stderr.log",
+          "olean_sha256": "239a766b81318d8e6fc3b32f036c2654407b18d1f1136091cb80ece726082870"
+        },
+        {
+          "module": "MahjongScale.ExternalBench.Baseline.Group6",
+          "success": true,
+          "source_sha256": "dd4c08347324b7f495dce788f30a5d45ad83e5cecba97f28de4e98eebb2c46e5",
+          "source_snapshot": "<research-root>\\runs\\lean_scale\\performance\\external_paired_v1\\MahjongScale.ExternalBench.Baseline.Group6.lean",
+          "command": "<research-root>\\build\\toolchain\\lean-4.33.1-windows\\bin\\lean.exe --trust=0 --profile -M2400 -j1 -o MahjongScale/ExternalBench/Baseline/Group6.olean MahjongScale/ExternalBench/Baseline/Group6.lean",
+          "cwd": "<research-root>\\build\\lean_scale\\performance",
+          "lean_path": "<research-root>\\build\\lean_scale\\performance;<research-root>\\build\\lean_scale\\performance\\library",
+          "exit_code": 0,
+          "terminated": false,
+          "reason": "",
+          "wall_seconds": 3.2195732,
+          "cpu_seconds": 3.15625,
+          "peak_private_bytes": 1114611712,
+          "peak_rss_bytes": 663830528,
+          "stdout": "<research-root>\\runs\\lean_scale\\performance\\external_paired_v1\\MahjongScale.ExternalBench.Baseline.Group6.stdout.log",
+          "stderr": "<research-root>\\runs\\lean_scale\\performance\\external_paired_v1\\MahjongScale.ExternalBench.Baseline.Group6.stderr.log",
+          "olean_sha256": "fb4e6fee1a7c9d92c3122496d042a00e6cf76625aaec9cedf9becde288470fe6"
+        }
+      ],
+      "rows": 18,
+      "legal_actions": 612,
+      "external_overrides": 125,
+      "ordinary_fallbacks": 487,
+      "wall_seconds": 15.309919699999998,
+      "cpu_seconds": 15.125,
+      "peak_private_bytes": 1645899776
+    },
+    "Optimized": {
+      "groups": [
+        {
+          "module": "MahjongScale.ExternalBench.Optimized.Group0",
+          "success": true,
+          "source_sha256": "8e9557efac5660d71837a55e009de078c2085acd1e706af35ce4ffa9744449c1",
+          "source_snapshot": "<research-root>\\runs\\lean_scale\\performance\\external_paired_v1\\MahjongScale.ExternalBench.Optimized.Group0.lean",
+          "command": "<research-root>\\build\\toolchain\\lean-4.33.1-windows\\bin\\lean.exe --trust=0 --profile -M2400 -j1 -o MahjongScale/ExternalBench/Optimized/Group0.olean MahjongScale/ExternalBench/Optimized/Group0.lean",
+          "cwd": "<research-root>\\build\\lean_scale\\performance",
+          "lean_path": "<research-root>\\build\\lean_scale\\performance;<research-root>\\build\\lean_scale\\performance\\library",
+          "exit_code": 0,
+          "terminated": false,
+          "reason": "",
+          "wall_seconds": 2.9965814,
+          "cpu_seconds": 2.953125,
+          "peak_private_bytes": 1081053184,
+          "peak_rss_bytes": 623591424,
+          "stdout": "<research-root>\\runs\\lean_scale\\performance\\external_paired_v1\\MahjongScale.ExternalBench.Optimized.Group0.stdout.log",
+          "stderr": "<research-root>\\runs\\lean_scale\\performance\\external_paired_v1\\MahjongScale.ExternalBench.Optimized.Group0.stderr.log",
+          "olean_sha256": "cca621653e832bada85d8fb90c4b8f4fdc3c8674940cb68b2bef722488ef7fd0"
+        },
+        {
+          "module": "MahjongScale.ExternalBench.Optimized.Group5",
+          "success": true,
+          "source_sha256": "619f08f4581713a55b0585ddb6c95c8793e72290b8db70643cabb3aac682f8ba",
+          "source_snapshot": "<research-root>\\runs\\lean_scale\\performance\\external_paired_v1\\MahjongScale.ExternalBench.Optimized.Group5.lean",
+          "command": "<research-root>\\build\\toolchain\\lean-4.33.1-windows\\bin\\lean.exe --trust=0 --profile -M2400 -j1 -o MahjongScale/ExternalBench/Optimized/Group5.olean MahjongScale/ExternalBench/Optimized/Group5.lean",
+          "cwd": "<research-root>\\build\\lean_scale\\performance",
+          "lean_path": "<research-root>\\build\\lean_scale\\performance;<research-root>\\build\\lean_scale\\performance\\library",
+          "exit_code": 0,
+          "terminated": false,
+          "reason": "",
+          "wall_seconds": 5.1978505,
+          "cpu_seconds": 5.109375,
+          "peak_private_bytes": 1383342080,
+          "peak_rss_bytes": 931500032,
+          "stdout": "<research-root>\\runs\\lean_scale\\performance\\external_paired_v1\\MahjongScale.ExternalBench.Optimized.Group5.stdout.log",
+          "stderr": "<research-root>\\runs\\lean_scale\\performance\\external_paired_v1\\MahjongScale.ExternalBench.Optimized.Group5.stderr.log",
+          "olean_sha256": "f7782c0ebdd9f6161945818c7e4a6c1b536e8a9e01424ced7938298b1e159018"
+        },
+        {
+          "module": "MahjongScale.ExternalBench.Optimized.Group6",
+          "success": true,
+          "source_sha256": "dcf823625e87caee5cb38e2e4a900d6c0208d2e0640a61a076c0f25160909ffa",
+          "source_snapshot": "<research-root>\\runs\\lean_scale\\performance\\external_paired_v1\\MahjongScale.ExternalBench.Optimized.Group6.lean",
+          "command": "<research-root>\\build\\toolchain\\lean-4.33.1-windows\\bin\\lean.exe --trust=0 --profile -M2400 -j1 -o MahjongScale/ExternalBench/Optimized/Group6.olean MahjongScale/ExternalBench/Optimized/Group6.lean",
+          "cwd": "<research-root>\\build\\lean_scale\\performance",
+          "lean_path": "<research-root>\\build\\lean_scale\\performance;<research-root>\\build\\lean_scale\\performance\\library",
+          "exit_code": 0,
+          "terminated": false,
+          "reason": "",
+          "wall_seconds": 2.6443676,
+          "cpu_seconds": 2.609375,
+          "peak_private_bytes": 1047429120,
+          "peak_rss_bytes": 596140032,
+          "stdout": "<research-root>\\runs\\lean_scale\\performance\\external_paired_v1\\MahjongScale.ExternalBench.Optimized.Group6.stdout.log",
+          "stderr": "<research-root>\\runs\\lean_scale\\performance\\external_paired_v1\\MahjongScale.ExternalBench.Optimized.Group6.stderr.log",
+          "olean_sha256": "8c524eab0f26178b6f9739346933bdc6da09be67d5db9340f3013f51aaf8725c"
+        }
+      ],
+      "rows": 18,
+      "legal_actions": 612,
+      "external_overrides": 125,
+      "ordinary_fallbacks": 487,
+      "wall_seconds": 10.8387995,
+      "cpu_seconds": 10.671875,
+      "peak_private_bytes": 1383342080
+    }
+  },
+  "cpu_ratio": 0.7055785123966942,
+  "wall_ratio": 0.7079592651292613,
+  "peak_private_ratio": 0.840477713267518,
+  "allowed_axioms": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ],
+  "missing_reference_rejected_even_with_valid_ordinary_action": true,
+  "some_branch_definitionally_unchanged": true,
+  "checkRange_exact_equality_for_all_inputs": true,
+  "scope": "Three complete real groups (0,5,6) of the exact prior 50-row Actual14 table. Every original back action in these groups is overridden by the matching prior proved registry entry.",
+  "new_game_root_claim": false,
+  "empty_position_claim": false,
+  "prior_14_proof_used_as_external_registry": true,
+  "limitations": [
+    "This is a real 18-row component comparison, not an end-to-end 12-tile proof or a measurement of the 790-row certificate.",
+    "External registry lookup is kept identical. The improvement comes from internal positive ordinary fallbacks."
+  ],
+  "writer_sha256": "6f7832f6bede80bdbda9a64541772ec9dae61af977434bb97bc448c907d26e5e"
+}

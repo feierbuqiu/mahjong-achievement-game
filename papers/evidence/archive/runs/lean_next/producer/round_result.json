@@ -1,0 +1,772 @@
+{
+  "schema": "MAHJONG_OPENING_EXTRACTION_NEXT_ROUND_V1",
+  "formal_proof": false,
+  "status": "PARTIAL_BOUNDED_ADVANCEMENT_SAVED",
+  "created_at_utc": "2026-09-13T06:06:59.555563+00:00",
+  "primary_selection": {
+    "schema": "MAHJONG_STRATEGY_PRIMARY_SELECTION_V1",
+    "selected_run": "opening_control_v4",
+    "producer": "runs/lean_next/producer/baseline_v4.py",
+    "threads": 1,
+    "batch": 1024,
+    "comparison": "runs/lean_next/producer/benchmarks/full_checkpoint_append_v5/result.json",
+    "comparison_status": "PASS_IDENTICAL_APPENDED_NODES_EDGES_AND_PARENT_UPDATES",
+    "v5_speedup": 0.9731989708404771,
+    "promotion_threshold": 1.05,
+    "reason": "The parallel bucket cache did not improve measured whole-pipeline throughput. Continue the faster frozen v4 implementation in a new run directory.",
+    "original_opening_v4_modified": false,
+    "configured_bounded_advancement_seconds": [
+      295,
+      280
+    ],
+    "second_block_stopped_early": true,
+    "advancement_completed_and_stopped": true,
+    "actual_total_advancement_wall_seconds": 574.906,
+    "formal_proof": false,
+    "future_required_graph_size": null
+  },
+  "comparison": "runs\\lean_next\\producer\\benchmarks\\full_checkpoint_append_v5\\result.json",
+  "comparison_sha256": "4c3880a5ab967882afc24e90afc3416c6e6157fe836567c38b19a659744012b7",
+  "comparison_speedup_v5": 0.9731989708404771,
+  "attempts": [
+    {
+      "attempt": "attempt_20260913_055413",
+      "exact_argv": [
+        "runs/lean_next/producer/baseline_v4.py",
+        "run",
+        "--run",
+        "opening_control_v4",
+        "--seconds",
+        "295",
+        "--batch",
+        "1024",
+        "--threads",
+        "1"
+      ],
+      "configured_worker_seconds": 295.0,
+      "reason": "seconds_budget",
+      "wall_seconds_including_initial_and_final_SQL": 315.094000000041,
+      "monitored_worker_seconds": 295.01600000000326,
+      "initial_and_final_overhead_seconds": 20.07800000003772,
+      "newly_expanded_nodes": 1436354,
+      "new_nodes": 2477395,
+      "new_edges": 3975636,
+      "newly_expanded_nodes_per_hour": 16410577.161098996,
+      "monitored_CPU_seconds": 464.203125,
+      "monitored_average_core_equivalents": 1.5734845737180183,
+      "monitored_16_logical_thread_capacity_percent": 9.834278585737614,
+      "peak_monitored_process_tree_private_bytes": 2210693120,
+      "peak_monitored_process_tree_rss_bytes": 2193948672,
+      "initial_snapshot": {
+        "nodes": 5158988,
+        "expanded_nodes": 812856,
+        "pending_nodes": 4346132,
+        "edges": 7542043,
+        "layers": [
+          {
+            "n": 0,
+            "nodes": 1,
+            "expanded": 1,
+            "P": 1,
+            "N": 0,
+            "pending": 0
+          },
+          {
+            "n": 1,
+            "nodes": 6,
+            "expanded": 6,
+            "P": 0,
+            "N": 6,
+            "pending": 0
+          },
+          {
+            "n": 2,
+            "nodes": 4,
+            "expanded": 4,
+            "P": 4,
+            "N": 0,
+            "pending": 0
+          },
+          {
+            "n": 3,
+            "nodes": 56,
+            "expanded": 56,
+            "P": 0,
+            "N": 56,
+            "pending": 0
+          },
+          {
+            "n": 4,
+            "nodes": 29,
+            "expanded": 29,
+            "P": 29,
+            "N": 0,
+            "pending": 0
+          },
+          {
+            "n": 5,
+            "nodes": 518,
+            "expanded": 518,
+            "P": 0,
+            "N": 518,
+            "pending": 0
+          },
+          {
+            "n": 6,
+            "nodes": 251,
+            "expanded": 251,
+            "P": 251,
+            "N": 0,
+            "pending": 0
+          },
+          {
+            "n": 7,
+            "nodes": 5017,
+            "expanded": 5017,
+            "P": 0,
+            "N": 5017,
+            "pending": 0
+          },
+          {
+            "n": 8,
+            "nodes": 2300,
+            "expanded": 2300,
+            "P": 2300,
+            "N": 0,
+            "pending": 0
+          },
+          {
+            "n": 9,
+            "nodes": 50677,
+            "expanded": 50677,
+            "P": 0,
+            "N": 50677,
+            "pending": 0
+          },
+          {
+            "n": 10,
+            "nodes": 23663,
+            "expanded": 23663,
+            "P": 23663,
+            "N": 0,
+            "pending": 0
+          },
+          {
+            "n": 11,
+            "nodes": 550110,
+            "expanded": 550110,
+            "P": 0,
+            "N": 550110,
+            "pending": 0
+          },
+          {
+            "n": 12,
+            "nodes": 257730,
+            "expanded": 180224,
+            "P": 257730,
+            "N": 0,
+            "pending": 77506
+          },
+          {
+            "n": 13,
+            "nodes": 4268626,
+            "expanded": 0,
+            "P": 0,
+            "N": 4268626,
+            "pending": 4268626
+          }
+        ],
+        "status": "PARTIAL",
+        "formal_proof": false,
+        "schema": "MAHJONG_STRATEGY_GRAPH_V1"
+      },
+      "final_snapshot": {
+        "nodes": 7636383,
+        "edges": 11517679,
+        "expanded_nodes": 2249210,
+        "pending_nodes": 5387173,
+        "layers": [
+          {
+            "n": 0,
+            "nodes": 1,
+            "expanded": 1,
+            "P": 1,
+            "N": 0,
+            "pending": 0
+          },
+          {
+            "n": 1,
+            "nodes": 6,
+            "expanded": 6,
+            "P": 0,
+            "N": 6,
+            "pending": 0
+          },
+          {
+            "n": 2,
+            "nodes": 4,
+            "expanded": 4,
+            "P": 4,
+            "N": 0,
+            "pending": 0
+          },
+          {
+            "n": 3,
+            "nodes": 56,
+            "expanded": 56,
+            "P": 0,
+            "N": 56,
+            "pending": 0
+          },
+          {
+            "n": 4,
+            "nodes": 29,
+            "expanded": 29,
+            "P": 29,
+            "N": 0,
+            "pending": 0
+          },
+          {
+            "n": 5,
+            "nodes": 518,
+            "expanded": 518,
+            "P": 0,
+            "N": 518,
+            "pending": 0
+          },
+          {
+            "n": 6,
+            "nodes": 251,
+            "expanded": 251,
+            "P": 251,
+            "N": 0,
+            "pending": 0
+          },
+          {
+            "n": 7,
+            "nodes": 5017,
+            "expanded": 5017,
+            "P": 0,
+            "N": 5017,
+            "pending": 0
+          },
+          {
+            "n": 8,
+            "nodes": 2300,
+            "expanded": 2300,
+            "P": 2300,
+            "N": 0,
+            "pending": 0
+          },
+          {
+            "n": 9,
+            "nodes": 50677,
+            "expanded": 50677,
+            "P": 0,
+            "N": 50677,
+            "pending": 0
+          },
+          {
+            "n": 10,
+            "nodes": 23663,
+            "expanded": 23663,
+            "P": 23663,
+            "N": 0,
+            "pending": 0
+          },
+          {
+            "n": 11,
+            "nodes": 550110,
+            "expanded": 550110,
+            "P": 0,
+            "N": 550110,
+            "pending": 0
+          },
+          {
+            "n": 12,
+            "nodes": 257730,
+            "expanded": 257730,
+            "P": 257730,
+            "N": 0,
+            "pending": 0
+          },
+          {
+            "n": 13,
+            "nodes": 6104821,
+            "expanded": 1358848,
+            "P": 0,
+            "N": 6104821,
+            "pending": 4745973
+          },
+          {
+            "n": 14,
+            "nodes": 641200,
+            "expanded": 0,
+            "P": 641200,
+            "N": 0,
+            "pending": 641200
+          }
+        ],
+        "status": "PARTIAL"
+      },
+      "result_path": "runs\\lean_next\\producer\\opening_control_v4\\attempt_20260913_055413\\result.json",
+      "result_sha256": "6e99db25d96c5dfc2b999c9a4f392eddee9740777a456e5c3cd226c576f69da1"
+    },
+    {
+      "attempt": "attempt_20260913_060000",
+      "exact_argv": [
+        "runs/lean_next/producer/baseline_v4.py",
+        "run",
+        "--run",
+        "opening_control_v4",
+        "--seconds",
+        "280",
+        "--batch",
+        "1024",
+        "--threads",
+        "1"
+      ],
+      "configured_worker_seconds": 280.0,
+      "reason": "STOP_file",
+      "wall_seconds_including_initial_and_final_SQL": 259.81199999997625,
+      "monitored_worker_seconds": 251.64000000001397,
+      "initial_and_final_overhead_seconds": 8.171999999962281,
+      "newly_expanded_nodes": 1639424,
+      "new_nodes": 758226,
+      "new_edges": 1639424,
+      "newly_expanded_nodes_per_hour": 22716142.441459745,
+      "monitored_CPU_seconds": 444.453125,
+      "monitored_average_core_equivalents": 1.7662260570655512,
+      "monitored_16_logical_thread_capacity_percent": 11.038912856659696,
+      "peak_monitored_process_tree_private_bytes": 2186305536,
+      "peak_monitored_process_tree_rss_bytes": 2172981248,
+      "initial_snapshot": {
+        "nodes": 7636383,
+        "expanded_nodes": 2249210,
+        "pending_nodes": 5387173,
+        "edges": 11517679,
+        "layers": [
+          {
+            "n": 0,
+            "nodes": 1,
+            "expanded": 1,
+            "P": 1,
+            "N": 0,
+            "pending": 0
+          },
+          {
+            "n": 1,
+            "nodes": 6,
+            "expanded": 6,
+            "P": 0,
+            "N": 6,
+            "pending": 0
+          },
+          {
+            "n": 2,
+            "nodes": 4,
+            "expanded": 4,
+            "P": 4,
+            "N": 0,
+            "pending": 0
+          },
+          {
+            "n": 3,
+            "nodes": 56,
+            "expanded": 56,
+            "P": 0,
+            "N": 56,
+            "pending": 0
+          },
+          {
+            "n": 4,
+            "nodes": 29,
+            "expanded": 29,
+            "P": 29,
+            "N": 0,
+            "pending": 0
+          },
+          {
+            "n": 5,
+            "nodes": 518,
+            "expanded": 518,
+            "P": 0,
+            "N": 518,
+            "pending": 0
+          },
+          {
+            "n": 6,
+            "nodes": 251,
+            "expanded": 251,
+            "P": 251,
+            "N": 0,
+            "pending": 0
+          },
+          {
+            "n": 7,
+            "nodes": 5017,
+            "expanded": 5017,
+            "P": 0,
+            "N": 5017,
+            "pending": 0
+          },
+          {
+            "n": 8,
+            "nodes": 2300,
+            "expanded": 2300,
+            "P": 2300,
+            "N": 0,
+            "pending": 0
+          },
+          {
+            "n": 9,
+            "nodes": 50677,
+            "expanded": 50677,
+            "P": 0,
+            "N": 50677,
+            "pending": 0
+          },
+          {
+            "n": 10,
+            "nodes": 23663,
+            "expanded": 23663,
+            "P": 23663,
+            "N": 0,
+            "pending": 0
+          },
+          {
+            "n": 11,
+            "nodes": 550110,
+            "expanded": 550110,
+            "P": 0,
+            "N": 550110,
+            "pending": 0
+          },
+          {
+            "n": 12,
+            "nodes": 257730,
+            "expanded": 257730,
+            "P": 257730,
+            "N": 0,
+            "pending": 0
+          },
+          {
+            "n": 13,
+            "nodes": 6104821,
+            "expanded": 1358848,
+            "P": 0,
+            "N": 6104821,
+            "pending": 4745973
+          },
+          {
+            "n": 14,
+            "nodes": 641200,
+            "expanded": 0,
+            "P": 641200,
+            "N": 0,
+            "pending": 641200
+          }
+        ],
+        "status": "PARTIAL",
+        "formal_proof": false,
+        "schema": "MAHJONG_STRATEGY_GRAPH_V1"
+      },
+      "final_snapshot": {
+        "nodes": 8394609,
+        "edges": 13157103,
+        "expanded_nodes": 3888634,
+        "pending_nodes": 4505975,
+        "layers": [
+          {
+            "n": 0,
+            "nodes": 1,
+            "expanded": 1,
+            "P": 1,
+            "N": 0,
+            "pending": 0
+          },
+          {
+            "n": 1,
+            "nodes": 6,
+            "expanded": 6,
+            "P": 0,
+            "N": 6,
+            "pending": 0
+          },
+          {
+            "n": 2,
+            "nodes": 4,
+            "expanded": 4,
+            "P": 4,
+            "N": 0,
+            "pending": 0
+          },
+          {
+            "n": 3,
+            "nodes": 56,
+            "expanded": 56,
+            "P": 0,
+            "N": 56,
+            "pending": 0
+          },
+          {
+            "n": 4,
+            "nodes": 29,
+            "expanded": 29,
+            "P": 29,
+            "N": 0,
+            "pending": 0
+          },
+          {
+            "n": 5,
+            "nodes": 518,
+            "expanded": 518,
+            "P": 0,
+            "N": 518,
+            "pending": 0
+          },
+          {
+            "n": 6,
+            "nodes": 251,
+            "expanded": 251,
+            "P": 251,
+            "N": 0,
+            "pending": 0
+          },
+          {
+            "n": 7,
+            "nodes": 5017,
+            "expanded": 5017,
+            "P": 0,
+            "N": 5017,
+            "pending": 0
+          },
+          {
+            "n": 8,
+            "nodes": 2300,
+            "expanded": 2300,
+            "P": 2300,
+            "N": 0,
+            "pending": 0
+          },
+          {
+            "n": 9,
+            "nodes": 50677,
+            "expanded": 50677,
+            "P": 0,
+            "N": 50677,
+            "pending": 0
+          },
+          {
+            "n": 10,
+            "nodes": 23663,
+            "expanded": 23663,
+            "P": 23663,
+            "N": 0,
+            "pending": 0
+          },
+          {
+            "n": 11,
+            "nodes": 550110,
+            "expanded": 550110,
+            "P": 0,
+            "N": 550110,
+            "pending": 0
+          },
+          {
+            "n": 12,
+            "nodes": 257730,
+            "expanded": 257730,
+            "P": 257730,
+            "N": 0,
+            "pending": 0
+          },
+          {
+            "n": 13,
+            "nodes": 6104821,
+            "expanded": 2998272,
+            "P": 0,
+            "N": 6104821,
+            "pending": 3106549
+          },
+          {
+            "n": 14,
+            "nodes": 1399426,
+            "expanded": 0,
+            "P": 1399426,
+            "N": 0,
+            "pending": 1399426
+          }
+        ],
+        "status": "PARTIAL"
+      },
+      "result_path": "runs\\lean_next\\producer\\opening_control_v4\\attempt_20260913_060000\\result.json",
+      "result_sha256": "11cf1d4c4ee61948b5e4352e518c50c2235140e7444f42c24b7b30a45c961f22"
+    }
+  ],
+  "totals": {
+    "wall_seconds_including_initial_and_final_SQL": 574.9060000000172,
+    "newly_expanded_nodes": 3075778,
+    "new_nodes": 3235621,
+    "new_edges": 5615060,
+    "newly_expanded_nodes_per_hour": 19260193.492500808,
+    "new_nodes_per_hour": 20261113.295042407,
+    "monitored_worker_seconds": 546.6560000000172,
+    "monitored_CPU_seconds": 908.65625,
+    "monitored_average_core_equivalents": 1.6622085004097118,
+    "monitored_16_logical_thread_capacity_percent": 10.3888031275607,
+    "peak_monitored_process_tree_private_bytes": 2210693120
+  },
+  "current_graph": {
+    "nodes": 8394609,
+    "edges": 13157103,
+    "expanded_nodes": 3888634,
+    "pending_nodes": 4505975,
+    "layers": [
+      {
+        "n": 0,
+        "nodes": 1,
+        "expanded": 1,
+        "P": 1,
+        "N": 0,
+        "pending": 0
+      },
+      {
+        "n": 1,
+        "nodes": 6,
+        "expanded": 6,
+        "P": 0,
+        "N": 6,
+        "pending": 0
+      },
+      {
+        "n": 2,
+        "nodes": 4,
+        "expanded": 4,
+        "P": 4,
+        "N": 0,
+        "pending": 0
+      },
+      {
+        "n": 3,
+        "nodes": 56,
+        "expanded": 56,
+        "P": 0,
+        "N": 56,
+        "pending": 0
+      },
+      {
+        "n": 4,
+        "nodes": 29,
+        "expanded": 29,
+        "P": 29,
+        "N": 0,
+        "pending": 0
+      },
+      {
+        "n": 5,
+        "nodes": 518,
+        "expanded": 518,
+        "P": 0,
+        "N": 518,
+        "pending": 0
+      },
+      {
+        "n": 6,
+        "nodes": 251,
+        "expanded": 251,
+        "P": 251,
+        "N": 0,
+        "pending": 0
+      },
+      {
+        "n": 7,
+        "nodes": 5017,
+        "expanded": 5017,
+        "P": 0,
+        "N": 5017,
+        "pending": 0
+      },
+      {
+        "n": 8,
+        "nodes": 2300,
+        "expanded": 2300,
+        "P": 2300,
+        "N": 0,
+        "pending": 0
+      },
+      {
+        "n": 9,
+        "nodes": 50677,
+        "expanded": 50677,
+        "P": 0,
+        "N": 50677,
+        "pending": 0
+      },
+      {
+        "n": 10,
+        "nodes": 23663,
+        "expanded": 23663,
+        "P": 23663,
+        "N": 0,
+        "pending": 0
+      },
+      {
+        "n": 11,
+        "nodes": 550110,
+        "expanded": 550110,
+        "P": 0,
+        "N": 550110,
+        "pending": 0
+      },
+      {
+        "n": 12,
+        "nodes": 257730,
+        "expanded": 257730,
+        "P": 257730,
+        "N": 0,
+        "pending": 0
+      },
+      {
+        "n": 13,
+        "nodes": 6104821,
+        "expanded": 2998272,
+        "P": 0,
+        "N": 6104821,
+        "pending": 3106549
+      },
+      {
+        "n": 14,
+        "nodes": 1399426,
+        "expanded": 0,
+        "P": 1399426,
+        "N": 0,
+        "pending": 1399426
+      }
+    ],
+    "status": "PARTIAL"
+  },
+  "frozen_source": {
+    "path": "runs\\lean_continuation\\producer\\opening_v4\\graph.sqlite",
+    "sha256": "1b3fb7151bd9f36c967f9a97f926392a16d657491ae7f97165ad1b36d7d0ab46",
+    "unchanged": true
+  },
+  "primary_checkpoint": {
+    "path": "runs\\lean_next\\producer\\opening_control_v4\\graph.sqlite",
+    "sha256": "271ada1415af87307a7e360f4fbf5c43635fc419d3d52522dc2147bb0bbd33a2",
+    "bytes": 2736427008
+  },
+  "actual_opening_frontier_candidates": "runs/lean_next/producer/frontier/actual14_window002/candidates.json",
+  "future_required_graph_size": null,
+  "budget_note": "The first configured 295-second monitored block took over 300 seconds including final SQL/WAL cleanup. The second block was stopped early through STOP to leave cleanup room. Exact observed wall times are preserved.",
+  "caveat": "This is candidate-production throughput, not Lean checking. Pending nodes are discovered work only, not the eventual total. CPU and private-byte samples cover the monitored producer/native-worker interval; initial/final SQL overhead is included separately in throughput wall time.",
+  "source_sha256": {
+    "runs\\lean_next\\producer\\finalize_round.py": "dde03b302eb4dd1e5d2e32705d02ef39d93847ae5ad09c0f083f9d004c752fdf",
+    "runs\\lean_next\\producer\\baseline_v4.py": "835a4436afb4893f9e0375b84f011a567f51ae10add2e3da64c903ae014a6164",
+    "runs\\lean_next\\producer\\producer_v5.py": "5c0c12f6291245326365f56e77ef41b50b71074ea0e6c65f87c0b35cab5fb168",
+    "runs\\lean_next\\producer\\select_frontier.py": "767adb7e31668c0af1c38806e169bc65bc9502ab50780cb3e51f717e3aa48963",
+    "build\\lean_next\\strategy_worker_v5.cpp": "8be8935526a71900fc36f153c0b73b9dcf63b3693a290040d57850908dedd830",
+    "build\\lean_next\\strategy_worker_v5.exe": "c4369847d24121b310c04427e04d648879b56f765bee4ed3c205d0f381b32e86",
+    "build\\lean_continuation\\pn_bucket_cache.hpp": "180f217896c454cfffe1d4243e92296a1561bfd1172a41a51affa16a365fe306"
+  }
+}

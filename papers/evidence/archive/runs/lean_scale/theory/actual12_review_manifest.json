@@ -1,0 +1,15 @@
+{
+  "schema": "ACTUAL12_INDEPENDENT_REVIEW_ARTIFACTS_V1",
+  "status": "PASS",
+  "scope": "exact original 12-tile root and checked P registry",
+  "empty_game": "NOT_VERIFIED",
+  "sha256": {
+    "runs\\lean_scale\\theory\\actual12_review.md": "0c936c4bb318a568809f2dc600a9ddd01e4f479e1110919d54e52514027fc810",
+    "runs\\lean_scale\\theory\\actual12_source_hashes.json": "d2f41d0be58a3cc4398973c250c21cb0d5cb84160127443e3877367174b122e7",
+    "runs\\lean_scale\\theory\\actual12_kernel_receipt_checks.json": "8e2cc7f8333e219dac54247ed7847a59d3ea3979a84ea22a96742328bb2c044b",
+    "runs\\lean_scale\\theory\\actual12_registry_checks.json": "daaa1dada31351e9898b8eba01cb90b9786a98ecfe2cdacd4212ec5e795a4bee",
+    "runs\\lean_scale\\theory\\review_actual12_sources.py": "caee40889915140e14c3ff357581358bea40486d5c9a1faa3ad309483c07292e",
+    "runs\\lean_scale\\theory\\review_actual12_receipt.py": "ae155ddd0477ba7e31aa7864c4751d46c2f0ab47e716bfaf16d2acdf0dfcec62",
+    "runs\\lean_scale\\theory\\review_actual12_registry.py": "206228fa1eace1b11e600293731cfb57d934309d4a2530f559e776660cf49407"
+  }
+}

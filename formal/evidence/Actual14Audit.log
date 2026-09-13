@@ -1,0 +1,4 @@
+AXIOM_AUDIT_PASS theorem_count=606; only propext, Classical.choice, Quot.sound allowed
+NO_PREVIOUS_P_CERTIFICATE_IMPORTED
+ACTUAL_14_TILE_CLOSED_THEOREM_PRESENT
+END_TO_END_NOT_VERIFIED: concrete 14-tile branch does not close the empty-position strategy
