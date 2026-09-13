@@ -9,7 +9,7 @@
 ## Read the paper
 
 **[Mahjong Achievement on a Shared Table: A Computational Second-Player Win and Partial Lean Certification](papers/manuscript.md)**
-**feierbuqiu** 路 English research report 路 September 13, 2026
+**feierbuqiu** · English research report · September 13, 2026
 
 The full paper contains the mathematical arguments, computational results,
 Lean milestones, references, and seven appendices. Formulas render directly
