@@ -10,14 +10,18 @@
 - Per-bucket table SHA-256 values, integrity-audit summary, build provenance,
   and measured generation/replay receipts.
 - Source/artifact checksums and scripts for bounded checks and full reconstruction.
+- Frozen Lean 4.33.1 source for three closed nonempty-position proofs, historical
+  kernel-replay extracts, and a clean source-replay tool. See [formal materials](../formal/README.md).
 
 ## Retained outside Git
 
 The complete padded table payload is **97,316,623,312 bytes**. It is not included
 in this Git repository or offered as a public download in version 0.1.0.
 No external archive, DOI, or permanent table-hosting service is claimed.
-Historical large search caches and the active Lean working environment are
-also outside this publication.
+Historical large search caches, the incomplete opening candidate-graph database,
+and the active Lean working environment are also outside this publication.
+The completed formal source snapshot is included; compiled Lean modules and
+the Lean toolchain binaries are not stored in Git.
 
 The full table is reconstructible using the [documented generator](REPRODUCIBILITY.md).
 Plan for at least 110 GB of free output storage, with additional space for

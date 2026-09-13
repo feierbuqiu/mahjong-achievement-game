@@ -1,0 +1,6 @@
+name = "mahjong_verification"
+version = "0.1.0"
+defaultTargets = ["Mahjong"]
+
+[[lean_lib]]
+name = "Mahjong"

@@ -7,6 +7,7 @@ import re
 import subprocess
 import sys
 from urllib.parse import unquote
+from verify_lean import check_snapshot
 
 ROOT = Path(__file__).resolve().parents[1]
 
@@ -52,6 +53,10 @@ def main():
     require(status["SAFE_symmetry_orbits"] == acceptance["states"] == expected, "State count mismatch")
     require(status["P_orbits"] + status["N_orbits"] == expected, "P/N total mismatch")
     require(not status["formal_verification"]["end_to_end_Lean_theorem_published"], "This snapshot has no published end-to-end Lean theorem")
+    check_snapshot()
+    formal = read_json("formal/STATUS.json")
+    require(status["formal_verification"]["closed_nonempty_original_game_roots_published"] ==
+            len(formal["closed_nonempty_original_game_proofs"]) == 3, "Formal root count mismatch")
     coverage = read_json("results/replay-coverage.json")
     rows = coverage["coverage"]["records"]
     require(coverage["full_run"]["full_run_pass"] and coverage["coverage"]["full_record_coverage"], "Replay incomplete")
@@ -98,7 +103,8 @@ def main():
                 require((path.parent / target).exists(), f"Broken local link in {rel}: {target}")
     print(json.dumps({"status": "PASS", "distributed_artifacts_hashed": len(hashed),
                       "replay_buckets": len(rows), "SAFE_states": expected, "historical_matches": len(checks),
-                      "files_checked": len(files), "scope": "Published artifact and receipt consistency; no external table replay"}))
+                      "files_checked": len(files), "lean_source_modules": formal["source_modules"],
+                      "scope": "Published artifact and receipt consistency; no external table replay or Lean kernel replay"}))
 
 
 if __name__ == "__main__":

@@ -1,0 +1,15 @@
+{
+  "lean_version": "v4.33.1",
+  "windows": {
+    "url": "https://github.com/leanprover/lean4/releases/download/v4.33.1/lean-4.33.1-windows.zip",
+    "sha256": "c39360867edfff6b090f20c16e18581c969ce839b71e813d76022ec04ec73e4d",
+    "bytes": 842456015,
+    "verified": true
+  },
+  "linux": {
+    "url": "https://github.com/leanprover/lean4/releases/download/v4.33.1/lean-4.33.1-linux.tar.zst",
+    "sha256": "890afd185370f85666025b883914ab4f4b339136f8c96167b69cfb62aecaf235",
+    "bytes": 570405234,
+    "digest_source": "Official leanprover/lean4 GitHub release asset metadata"
+  }
+}

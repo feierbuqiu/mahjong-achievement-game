@@ -16,3 +16,5 @@ Thumbs.db
 id_rsa*
 id_ed25519*
 .lake/
+*.olean
+*.ilean

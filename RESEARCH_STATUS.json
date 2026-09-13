@@ -17,7 +17,11 @@
   "formal_verification": {
     "status": "in_progress",
     "end_to_end_Lean_theorem_published": false,
-    "note": "This publication freezes computational evidence; ongoing formalization is not represented as complete."
+    "closed_nonempty_original_game_roots_published": 3,
+    "closed_root_tile_counts": [20, 32, 34],
+    "progress_receipt": "formal/STATUS.json",
+    "lean_toolchain": "leanprover/lean4:v4.33.1",
+    "note": "Three concrete nonempty-position proofs and their source are published. The empty-position theorem is still NOT_VERIFIED."
   },
   "shared_trust_dependencies": ["foundational rule implementation", "global state index"],
   "full_table_distributed_in_git": false,
