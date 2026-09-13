@@ -7,6 +7,9 @@
 - Freeze 686 distinct Lean source modules, source provenance, and selected
   records of two successful kernel replays. Pin Lean 4.33.1 and add a portable
   clean replay command plus CI for the published nonempty proofs.
+- Give each replay process a configurable 3 GB memory ceiling after the
+  Linux capacity-cache check exceeded 2 GB; preserve trust level 0 and all
+  proof checks, and expose failure diagnostics in CI.
 - Record the partial opening candidate graph and the work still needed to
   close its certificate. The signed v0.1.0 computational snapshot is unchanged.
 

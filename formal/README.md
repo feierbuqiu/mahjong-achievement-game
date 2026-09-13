@@ -54,10 +54,13 @@ Lean from the directory containing the pinned `lean-toolchain` file.
 
 The public runner first verifies the source hashes and dependency closures,
 then copies the source into a new output directory. It compiles the requested
-modules with `--trust=0 -M2048 -j1`, using only newly built project modules on
+modules with `--trust=0 -M3072 -j1`, using only newly built project modules on
 `LEAN_PATH`. No saved project `.olean`, external P/N table, or candidate-graph
 database is required. Logs and a machine-readable receipt are written under
-`runs/`. Two workers can use several GB of memory; use `--workers 1` when needed.
+`runs/`. The memory ceiling is 3 GB per Lean process and can be set with
+`--memory-mb`. A 2 GB ceiling failed on the Linux capacity-cache module;
+allow at least 8 GB of available memory for two workers, or use `--workers 1`.
+The ceiling does not change the kernel trust level or omit any proof check.
 
 To check only the small, independently generated 34-tile pipeline:
 

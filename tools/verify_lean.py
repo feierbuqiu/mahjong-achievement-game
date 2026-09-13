@@ -104,12 +104,15 @@ def main():
     parser.add_argument("--lean", default=os.environ.get("LEAN", "lean"), help="Lean 4.33.1 executable or elan proxy")
     parser.add_argument("--workers", type=int, choices=range(1, 5), default=2)
     parser.add_argument("--module-timeout", type=int, default=300)
+    parser.add_argument("--memory-mb", type=int, default=3072,
+                        help="Per-process Lean memory ceiling in MB (default: 3072)")
     parser.add_argument("--priority-module", action="append", default=[],
                         help="Check this module's dependencies first, while retaining the complete requested replay")
     parser.add_argument("--output", help="New output directory under this repository's build/ or runs/")
     parser.add_argument("--require-opening", action="store_true", help="Return 2 when the empty-position theorem remains unproved")
     args = parser.parse_args()
     require(args.module_timeout > 0, "Module timeout must be positive")
+    require(args.memory_mb > 0, "Memory ceiling must be positive")
     provenance = check_snapshot()
     if args.check_only:
         print(json.dumps({"status": "PASS_ARTIFACT_INTEGRITY", "source_modules": 686, "empty_game_lean": "NOT_VERIFIED"}))
@@ -142,6 +145,7 @@ def main():
     report = {
         "schema": "MJ_PUBLIC_LEAN_REPLAY_V1", "created_utc": datetime.now(timezone.utc).isoformat(),
         "lean_version": version, "trust_level": 0, "workers": args.workers, "entries": entries,
+        "memory_mb_per_process": args.memory_mb,
         "source_sha256": source_hashes, "runner_sha256": sha(Path(__file__)),
         "total_modules": len(dependencies), "passed_modules": 0, "kernel_modules": "INCOMPLETE",
         "empty_game_lean": "NOT_VERIFIED", "steps": [],
@@ -158,7 +162,7 @@ def main():
         obj = modules / relative.with_suffix(".olean")
         obj.parent.mkdir(parents=True, exist_ok=True)
         log = destination / (name + ".log")
-        command = [lean, "--trust=0", "-M2048", "-j1", "-R", str(frozen),
+        command = [lean, "--trust=0", f"-M{args.memory_mb}", "-j1", "-R", str(frozen),
                    "-o", str(obj), str(frozen / relative.with_suffix(".lean"))]
         begin = time.monotonic()
         timeout = False
