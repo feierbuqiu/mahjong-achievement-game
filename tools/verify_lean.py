@@ -104,6 +104,8 @@ def main():
     parser.add_argument("--lean", default=os.environ.get("LEAN", "lean"), help="Lean 4.33.1 executable or elan proxy")
     parser.add_argument("--workers", type=int, choices=range(1, 5), default=2)
     parser.add_argument("--module-timeout", type=int, default=300)
+    parser.add_argument("--priority-module", action="append", default=[],
+                        help="Check this module's dependencies first, while retaining the complete requested replay")
     parser.add_argument("--output", help="New output directory under this repository's build/ or runs/")
     parser.add_argument("--require-opening", action="store_true", help="Return 2 when the empty-position theorem remains unproved")
     args = parser.parse_args()
@@ -118,6 +120,8 @@ def main():
     require(re.search(r"\b4\.33\.1\b", version), f"Expected Lean {VERSION}, got: {version}")
     entries = list(REQUIRED_MARKERS) if args.entry == "all" else [args.entry]
     dependencies = dependency_graph(entries)
+    priority = dependency_graph(args.priority_module)
+    require(set(priority) <= set(dependencies), "Priority module is outside the requested proof closure")
     stamp = datetime.now(timezone.utc).strftime("%Y%m%dT%H%M%S%fZ")
     destination = (ROOT / (args.output or f"runs/lean-{stamp}")).resolve()
     require(any(destination.is_relative_to(ROOT / folder) and destination != ROOT / folder
@@ -173,7 +177,8 @@ def main():
             step["olean_sha256"] = sha(obj)
         return step
 
-    passed, pending, active = set(), list(dependencies), {}
+    order = list(priority) + [name for name in dependencies if name not in priority]
+    passed, pending, active = set(), order, {}
     failed = False
     with ThreadPoolExecutor(max_workers=args.workers) as pool:
         while pending or active:
@@ -193,6 +198,8 @@ def main():
                     passed.add(name)
                 else:
                     failed = True
+                    detail = (destination / step["log"]).read_text(encoding="utf-8", errors="replace")
+                    print(f"Lean failure in {name}:\n{detail[-12000:]}", file=sys.stderr, flush=True)
                 report["passed_modules"] = len(passed)
                 save()
                 if len(passed) % 20 == 0 or name in entries or step["return_code"] != 0:

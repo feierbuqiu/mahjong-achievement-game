@@ -62,4 +62,4 @@ jobs:
           echo "890afd185370f85666025b883914ab4f4b339136f8c96167b69cfb62aecaf235  $RUNNER_TEMP/lean.tar.zst" | sha256sum --check
           tar --zstd --extract --file "$RUNNER_TEMP/lean.tar.zst" --directory "$RUNNER_TEMP"
       - name: Rebuild and audit all published nonempty proofs
-        run: python tools/verify_lean.py --lean "$RUNNER_TEMP/lean-4.33.1-linux/bin/lean" --workers 2 --output runs/lean-ci
+        run: python tools/verify_lean.py --lean "$RUNNER_TEMP/lean-4.33.1-linux/bin/lean" --workers 2 --priority-module Mahjong.BoundCacheInstancesV1 --output runs/lean-ci
