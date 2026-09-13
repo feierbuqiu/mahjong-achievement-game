@@ -1,0 +1,4 @@
+AXIOM_AUDIT_PASS theorem_count=14760; only propext, Classical.choice, Quot.sound allowed
+ACTUAL_20_TILE_CLOSED_THEOREM_PRESENT
+EXTRACTED_32_TILE_CLOSED_THEOREM_PRESENT
+END_TO_END_NOT_VERIFIED: no closed empty-position theorem exists

@@ -84,6 +84,19 @@ output names the physical tile and a P child, or an immediate winning move.
 It must preserve the original 34 input coordinates. Hash verification streams
 all 97.32 GB, so it is a full I/O operation even without game search.
 
+## Lean proofs for nonempty positions
+
+The [formal reproduction guide](../formal/README.md) pins Lean 4.33.1 and
+provides a clean kernel replay of three concrete nonempty-position theorems:
+
+```bash
+python3 tools/verify_lean.py --workers 2
+```
+
+This does not require the 97.32 GB table. A successful replay establishes the
+published local theorems under their audited Lean axioms; the empty-position
+formal proof remains incomplete.
+
 ## Reporting a reproduction
 
 Include the commit/tag, operating system, CPU, RAM, compiler version, build

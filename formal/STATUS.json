@@ -1,0 +1,204 @@
+{
+  "schema": "MJ_PUBLIC_LEAN_PROGRESS_V1",
+  "evidence_created_utc": "2026-09-13T05:32:47.342842+00:00",
+  "published_snapshot_utc": "2026-09-13T05:38:51.776857+00:00",
+  "status": "NONEMPTY_CLOSED_PROOFS_PASS_EMPTY_FORMAL_PROOF_INCOMPLETE",
+  "lean_toolchain": "leanprover/lean4:v4.33.1",
+  "empty_game_lean": "NOT_VERIFIED",
+  "end_to_end_Lean_theorem_published": false,
+  "closed_nonempty_original_game_proofs": [
+    {
+      "tiles": 20,
+      "physical_state": "0110330311010110001010110000000000",
+      "theorem": "Mahjong.AnchorDAG.N24086.original_second_player_wins",
+      "selected_P_nodes": 610,
+      "two_ply_levels": 7,
+      "clean_replay": "formal/evidence/kernel_v1.json",
+      "status": "CLOSED_ORIGINAL_GAME_THEOREM_KERNEL_PASS",
+      "remaining_premises": []
+    },
+    {
+      "tiles": 32,
+      "physical_state": "1010110110000440411010110111111111",
+      "theorem": "Mahjong.Extracted32.original_second_player_wins",
+      "clean_replay": "formal/evidence/kernel_v1.json",
+      "status": "CLOSED_ORIGINAL_GAME_THEOREM_KERNEL_PASS",
+      "remaining_premises": []
+    },
+    {
+      "tiles": 34,
+      "physical_state": "1010440410110110111010110111111111",
+      "theorem": "Mahjong.ExtractedFresh34.original_second_player_wins",
+      "previous_anchor_imported": false,
+      "clean_replay": "formal/evidence/pipeline_kernel_v1.json",
+      "status": "CLOSED_ORIGINAL_GAME_THEOREM_KERNEL_PASS",
+      "remaining_premises": []
+    }
+  ],
+  "clean_kernel_replays": {
+    "main": {
+      "kernel_modules": "PASS",
+      "total_modules": 680,
+      "passed_modules": 680,
+      "audited_theorems": 14760,
+      "wall_seconds": 548.516,
+      "workers": 4,
+      "trust_level": 0,
+      "empty_game": "NOT_VERIFIED",
+      "exit_code": 2
+    },
+    "fresh_leaf_pipeline": {
+      "kernel_modules": "PASS",
+      "total_modules": 20,
+      "passed_modules": 20,
+      "audited_theorems": 522,
+      "wall_seconds": 33.797,
+      "workers": 4,
+      "trust_level": 0,
+      "empty_game": "NOT_VERIFIED",
+      "exit_code": 2
+    }
+  },
+  "source_modules": 686,
+  "allowed_axioms": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ],
+  "native_decide_or_sorry_used": false,
+  "empty_candidate_graph": {
+    "nodes": 4658934,
+    "expanded_nodes": 791352,
+    "pending_nodes": 3867582,
+    "edges": 6821377,
+    "layers": [
+      {
+        "n": 0,
+        "nodes": 1,
+        "expanded": 1,
+        "P": 1,
+        "N": 0,
+        "pending": 0
+      },
+      {
+        "n": 1,
+        "nodes": 6,
+        "expanded": 6,
+        "P": 0,
+        "N": 6,
+        "pending": 0
+      },
+      {
+        "n": 2,
+        "nodes": 4,
+        "expanded": 4,
+        "P": 4,
+        "N": 0,
+        "pending": 0
+      },
+      {
+        "n": 3,
+        "nodes": 56,
+        "expanded": 56,
+        "P": 0,
+        "N": 56,
+        "pending": 0
+      },
+      {
+        "n": 4,
+        "nodes": 29,
+        "expanded": 29,
+        "P": 29,
+        "N": 0,
+        "pending": 0
+      },
+      {
+        "n": 5,
+        "nodes": 518,
+        "expanded": 518,
+        "P": 0,
+        "N": 518,
+        "pending": 0
+      },
+      {
+        "n": 6,
+        "nodes": 251,
+        "expanded": 251,
+        "P": 251,
+        "N": 0,
+        "pending": 0
+      },
+      {
+        "n": 7,
+        "nodes": 5017,
+        "expanded": 5017,
+        "P": 0,
+        "N": 5017,
+        "pending": 0
+      },
+      {
+        "n": 8,
+        "nodes": 2300,
+        "expanded": 2300,
+        "P": 2300,
+        "N": 0,
+        "pending": 0
+      },
+      {
+        "n": 9,
+        "nodes": 50677,
+        "expanded": 50677,
+        "P": 0,
+        "N": 50677,
+        "pending": 0
+      },
+      {
+        "n": 10,
+        "nodes": 23663,
+        "expanded": 23663,
+        "P": 23663,
+        "N": 0,
+        "pending": 0
+      },
+      {
+        "n": 11,
+        "nodes": 550110,
+        "expanded": 550110,
+        "P": 0,
+        "N": 550110,
+        "pending": 0
+      },
+      {
+        "n": 12,
+        "nodes": 257730,
+        "expanded": 158720,
+        "P": 257730,
+        "N": 0,
+        "pending": 99010
+      },
+      {
+        "n": 13,
+        "nodes": 3768572,
+        "expanded": 0,
+        "P": 0,
+        "N": 3768572,
+        "pending": 3768572
+      }
+    ],
+    "status": "PARTIAL",
+    "formal_proof": false,
+    "incremental_counts_match_final_SQL": true,
+    "reason": "new_nodes_budget",
+    "attempt": "attempt_20260913_052343",
+    "wall_seconds": 44.0,
+    "peak_process_tree_private_bytes": 2141511680,
+    "index_fingerprint": "5a45ff3ea0fcf356",
+    "scope": "Selected candidate graph prefix; pending count is not an estimate of all future nodes."
+  },
+  "remaining_work": [
+    "Finish extracting a closed strategy graph from the empty state, or produce a smaller equivalent certificate.",
+    "Generate and kernel-check every required SAFE leaf, physical response and symmetry reference.",
+    "Construct and audit a premise-free theorem of SecondPlayerWins Step Win empty."
+  ],
+  "scope": "Three concrete nonempty positions have closed original-game theorems. The candidate opening graph is partial and its external P/N labels are not Lean proofs. Module and theorem counts from the two replays overlap. No third-party contest acceptance is claimed."
+}

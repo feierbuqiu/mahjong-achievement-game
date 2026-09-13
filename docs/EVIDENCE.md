@@ -15,14 +15,19 @@ rules, index, recurrence, implementation, and stored values.
 | Bucket counts and SHA-256 audit | Coverage, payload identity, padding, and stored P counts | File identity is not mathematical correctness |
 | Opening queries | P at the empty state; N and P replies for all six first-move orbits | Reads the computed table; not a closed strategy certificate |
 | Publication CI | Source builds, small execution checks, and evidence-file consistency | Does not recompute the 97.32 GB database |
+| Lean kernel CI | Fresh source replay of three published nonempty-position proofs and their axiom audits | Does not establish the empty-position theorem |
 | SSH/GitHub signatures | A commit or tag was signed by the identified key | Does not prove its scientific claims |
 
 ## Formal verification
 
-An end-to-end Lean theorem for this concrete opening is **not published** in
-this snapshot. Formalization is actively being developed separately. Generic
-reduction lemmas, executable checks, or a theorem that assumes an external
-checker succeeded do not by themselves close that theorem.
+An end-to-end Lean theorem for this concrete opening is **not published**.
+This repository now includes closed original-game proofs for three specific
+nonempty states with 20, 32, and 34 tiles, with Lean 4.33.1 source and a clean
+kernel replay. Their exact physical states, theorem names, allowed axioms,
+and reproducible audit commands are listed in [formal status](../formal/README.md).
+The opening candidate graph remains partial. Generic reduction lemmas,
+executable checks, or a theorem that assumes an external checker succeeded
+do not by themselves close the opening theorem.
 
 The intended chain connects the original legal-move and winning predicates,
 the SAFE reduction, symmetry/index correctness, complete successor coverage,
@@ -41,6 +46,11 @@ Hashes embedded inside historical receipts continue to identify their
 original inputs. They must not be used as hashes of a transformed publication
 copy. [CHECKSUMS.sha256](../CHECKSUMS.sha256) identifies the distributed
 research artifacts, and the signed Git history identifies the publication.
+
+The later [Lean provenance manifest](../formal/provenance.json) separately
+records the frozen formal source and the selected historical replay fields.
+It preserves source bytes and distinguishes original receipt hashes from
+the hashes of public extracts.
 
 Original research paths in receipt strings describe provenance. They do not
 imply that every historical working file is included here. The public source

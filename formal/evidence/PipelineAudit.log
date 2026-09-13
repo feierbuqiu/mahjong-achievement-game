@@ -1,0 +1,4 @@
+AXIOM_AUDIT_PASS theorem_count=522; only propext, Classical.choice, Quot.sound allowed
+NO_PREVIOUS_ANCHOR_IMPORTED
+FRESH_34_TILE_CLOSED_THEOREM_PRESENT
+END_TO_END_NOT_VERIFIED: this certificate is a 34-tile endgame, not the empty state

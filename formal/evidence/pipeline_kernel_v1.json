@@ -1,0 +1,241 @@
+{
+  "schema": "MJ_PUBLIC_LEAN_KERNEL_REPLAY_V1",
+  "original_schema": "MAHJONG_CONTINUATION_CLEAN_KERNEL_V1",
+  "created_utc": "2026-09-13T05:17:59.873930+00:00",
+  "entry": "PipelineAudit",
+  "trust_level": 0,
+  "workers": 4,
+  "kernel_modules": "PASS",
+  "empty_game": "NOT_VERIFIED",
+  "total_modules": 20,
+  "passed_modules": 20,
+  "audited_theorems": 522,
+  "wall_seconds": 33.797,
+  "source_unchanged": true,
+  "exit_code": 2,
+  "source_sha256": {
+    "Mahjong\\Bridge.lean": "85cf93200015cf06e41abab841f80e14b7ae726d2984923ef78140e33c7c3b3b",
+    "Mahjong\\Certificate.lean": "fe76075239fdeb621c020c5ad03b4c34fde9cec5edfc5845cfe6b72fc067f0e2",
+    "Mahjong\\DownwardClosure.lean": "c72614c8945974da9253f43ab00719923b340a54caa6102689b5a8c05771fef5",
+    "Mahjong\\ExplicitWin.lean": "785f514c9883c98d2b0f3eda62a4f31290945a3ea7e236c05eff0aa7b48037a9",
+    "Mahjong\\ExtractedFresh34\\P000000.lean": "ea68da99854f6a9276f1fc0e811f2cba83ed9d81d7c8b954d441e79f8a9f9fcb",
+    "Mahjong\\ExtractedFresh34\\Root.lean": "c2323e99da7bedc7c880040f7d30240a3ac2e86a8e528bf749aa46cc25939c6b",
+    "Mahjong\\FastRuleChecker.lean": "554b4712cc2c734af54a6dced186f51d818eb6096b5e856af3bd912edc5fe8c3",
+    "Mahjong\\FullWinWitness.lean": "a791cd72a99640964d3f6e16a1753e0c85f3938882b94bf39811ff1f758e8fd7",
+    "Mahjong\\GeneratedLeaf\\Fresh34V1\\Data.lean": "e0eadde2383e6904c5fafa9a59b94ccf2dce9e7a445c4be2ca0af50a7602e8a9",
+    "Mahjong\\GeneratedLeaf\\Fresh34V1.lean": "ca524e917fe792770393b1ac7a97e520a21390907c24dd5dd8b7b408dd4434f2",
+    "Mahjong\\Generators.lean": "3b84f3b6a6705083410c0854faa8fc9815bd7229838da21a94693f3bdc0a6c1e",
+    "Mahjong\\MoveEnumeration.lean": "73bcdaf1a48d4f6e7bccfa1f7c5813555a1c11a29f1d81fe351fc86f57668552",
+    "Mahjong\\Quotient.lean": "e773937b3bd60c496ce0fc07f69ba5a8e99b6c8fdeb18d3a638cb9713096f168",
+    "Mahjong\\ResponseCertificate.lean": "4eb254fad5aa5679bad56c0d56f4fc229b18305866ea2027953a2c92b1cfe58a",
+    "Mahjong\\RuleChecker.lean": "2efa76dd77726d5a269d95e2726dd53e5c6010ecdd37131d8db5fda05cae6a7c",
+    "Mahjong\\Rules.lean": "5b7a4cc92126dbfde43a945414ea756b23e60479800c921f4bb6ac5b31ff4eb3",
+    "Mahjong\\SafeGame.lean": "ef01a38bb161cabe4446274ae744c27bd0936129d1501ce66d35137c3be41028",
+    "Mahjong\\StandardBoundCertificate.lean": "573fcd4d4486e6c4cf324b3af201dbce58d3d9d4261c8fb3c6ef91a6e392d89d",
+    "Mahjong\\Symmetry.lean": "86549f48fc15afeddcda9da02884849f2bb6dd49a9211962fab75607585ed74a",
+    "PipelineAudit.lean": "d938a417dc9f6fb48ef07182069b19fa9ee5f9aec3f496101c9725f5245d0d61"
+  },
+  "steps": [
+    {
+      "module": "Mahjong.SafeGame",
+      "return_code": 0,
+      "wall_seconds": 1.61,
+      "stop_reason": null,
+      "peak_rss_bytes": 451792896,
+      "peak_private_bytes": 871907328,
+      "log_sha256": "fb79bb1be757c227d4e11347e6d77488171c6ab7cb9384c652301983244ddaa1",
+      "olean_sha256": "e099c0888e8a04e13210810296833372118df86186f6510a30d558f5260cedad"
+    },
+    {
+      "module": "Mahjong.Quotient",
+      "return_code": 0,
+      "wall_seconds": 1.515,
+      "stop_reason": null,
+      "peak_rss_bytes": 466116608,
+      "peak_private_bytes": 881549312,
+      "log_sha256": "17c2c2304126aa9c64d7355686fde3d58d8dea64c23da7924b56ffd594296910",
+      "olean_sha256": "c7da4f66030fca8b45715f969a35ad9c606c9730a4473a3128bb83eb2e22a2c5"
+    },
+    {
+      "module": "Mahjong.Certificate",
+      "return_code": 0,
+      "wall_seconds": 1.609,
+      "stop_reason": null,
+      "peak_rss_bytes": 469450752,
+      "peak_private_bytes": 871596032,
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "olean_sha256": "c6dbc86598d2580cb5628a95da15fc94d26dfd2897fcfe872c4313592f064f21"
+    },
+    {
+      "module": "Mahjong.Rules",
+      "return_code": 0,
+      "wall_seconds": 9.641,
+      "stop_reason": null,
+      "peak_rss_bytes": 826478592,
+      "peak_private_bytes": 1269506048,
+      "log_sha256": "70b8f67afef324be959f9596250514b04c881467d735f0aae1d1994c93df920b",
+      "olean_sha256": "6009ddfdccab178c43d2faa66a493740f10e453d0770ae241694cad60cacf330"
+    },
+    {
+      "module": "Mahjong.Bridge",
+      "return_code": 0,
+      "wall_seconds": 1.406,
+      "stop_reason": null,
+      "peak_rss_bytes": 434786304,
+      "peak_private_bytes": 867876864,
+      "log_sha256": "eeafc2dde6f89a4f7563f4804f7cf08a856dc06488c1fad4c7b7a91d34c40fce",
+      "olean_sha256": "8a577808f3a664e79081045b16bf58df7c87adf19af758bd382e869900369346"
+    },
+    {
+      "module": "Mahjong.RuleChecker",
+      "return_code": 0,
+      "wall_seconds": 1.906,
+      "stop_reason": null,
+      "peak_rss_bytes": 479830016,
+      "peak_private_bytes": 892706816,
+      "log_sha256": "af6ba100e30053ddbff076235106854d607cf626c4b3eb6205ed84631d35bc48",
+      "olean_sha256": "ccdc22810a5ed2052398259d9ab0210757a6414b5f96e87ca64650654e42b70e"
+    },
+    {
+      "module": "Mahjong.Symmetry",
+      "return_code": 0,
+      "wall_seconds": 2.312,
+      "stop_reason": null,
+      "peak_rss_bytes": 487600128,
+      "peak_private_bytes": 897703936,
+      "log_sha256": "62f7e30b650ae9be73d42546895a4bc76f1d2a6706d4aeaacbb452f226835b0b",
+      "olean_sha256": "aabca7123bf366a7c2f22629f50df178ecfe5d576b1a5329c7579714dfcec2af"
+    },
+    {
+      "module": "Mahjong.DownwardClosure",
+      "return_code": 0,
+      "wall_seconds": 1.422,
+      "stop_reason": null,
+      "peak_rss_bytes": 454606848,
+      "peak_private_bytes": 881803264,
+      "log_sha256": "11c68db7b1f24b06016748e1a83653a13601292af4ba80d9070f040a05f29d4b",
+      "olean_sha256": "f87e152cd6667ab7a4c5caf9b524058c77ac47840805afc8a3f4097cc13db914"
+    },
+    {
+      "module": "Mahjong.ExplicitWin",
+      "return_code": 0,
+      "wall_seconds": 1.5,
+      "stop_reason": null,
+      "peak_rss_bytes": 462397440,
+      "peak_private_bytes": 880377856,
+      "log_sha256": "13339181cc3fc8d1ae7c6aa588cb92da1bf14a76707b351fa2ec7c556c575f8c",
+      "olean_sha256": "80518a7451021541ca3cf210953a597d1933009d8b2b4d484d3fe9d560af91c4"
+    },
+    {
+      "module": "Mahjong.MoveEnumeration",
+      "return_code": 0,
+      "wall_seconds": 1.5,
+      "stop_reason": null,
+      "peak_rss_bytes": 460480512,
+      "peak_private_bytes": 870469632,
+      "log_sha256": "d5e1e6ba2ec9c5548b985b154fa53ddffe2e6a4ad5ee2f9beb185d904d425332",
+      "olean_sha256": "5243a2608a6a780183e179cc2351050087d607f7bbe468d6a7616610eef17309"
+    },
+    {
+      "module": "Mahjong.FullWinWitness",
+      "return_code": 0,
+      "wall_seconds": 1.516,
+      "stop_reason": null,
+      "peak_rss_bytes": 464019456,
+      "peak_private_bytes": 894062592,
+      "log_sha256": "72e5f1e6ccfc8cde55d37f97ff3a6c473863ded6c9161f2772ae7fe58d580459",
+      "olean_sha256": "c99e3df4eba1b76c86412dbea9cf8e0251883417d52fbce078687ca1c575165d"
+    },
+    {
+      "module": "Mahjong.FastRuleChecker",
+      "return_code": 0,
+      "wall_seconds": 1.703,
+      "stop_reason": null,
+      "peak_rss_bytes": 471060480,
+      "peak_private_bytes": 887279616,
+      "log_sha256": "5ba4a5e4cfa3e17ea4c11c180f106a7f7773ade800247d70d0e3be4bc5bd8e72",
+      "olean_sha256": "8e8091c5b3f50ee7eaed10e4da37d5d1f561eb272d9170de1dd54170f2c882e8"
+    },
+    {
+      "module": "Mahjong.StandardBoundCertificate",
+      "return_code": 0,
+      "wall_seconds": 1.922,
+      "stop_reason": null,
+      "peak_rss_bytes": 482639872,
+      "peak_private_bytes": 892571648,
+      "log_sha256": "da51d23a5d26a02c82b0e2f6f8419dc8ed4deabb7e6dc7519fa0151d9add8224",
+      "olean_sha256": "4fc85ab4fcfd7f70b252d410b78b2d9a736f36e1f4ca93fdb8baee0d9ae9ba5f"
+    },
+    {
+      "module": "Mahjong.GeneratedLeaf.Fresh34V1.Data",
+      "return_code": 0,
+      "wall_seconds": 1.61,
+      "stop_reason": null,
+      "peak_rss_bytes": 442425344,
+      "peak_private_bytes": 867651584,
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "olean_sha256": "2cbc3432976e71d7214c71e4e7c4d7a249036c4e4af884b6a69b74b6265386b4"
+    },
+    {
+      "module": "Mahjong.GeneratedLeaf.Fresh34V1",
+      "return_code": 0,
+      "wall_seconds": 6.937,
+      "stop_reason": null,
+      "peak_rss_bytes": 1142702080,
+      "peak_private_bytes": 1574371328,
+      "log_sha256": "eef835b7c94a057ce9f77fae1286991c6521a08d381a69957fec322c23f84db7",
+      "olean_sha256": "c463f190f4bf6c87e3740065894ca9a94cf9d3b094739e22acdc0a69682c188d"
+    },
+    {
+      "module": "Mahjong.Generators",
+      "return_code": 0,
+      "wall_seconds": 13.563,
+      "stop_reason": null,
+      "peak_rss_bytes": 978862080,
+      "peak_private_bytes": 1410539520,
+      "log_sha256": "f940e66a05eb1cf51af71ed43b165e25ed810734a741088de92da00b12f6af8f",
+      "olean_sha256": "f5d9c975baf69583038bfdfa0bbb820895a700ee91f263ec24a01cf55a391b9f"
+    },
+    {
+      "module": "Mahjong.ResponseCertificate",
+      "return_code": 0,
+      "wall_seconds": 1.422,
+      "stop_reason": null,
+      "peak_rss_bytes": 456630272,
+      "peak_private_bytes": 881930240,
+      "log_sha256": "6f1282971c08c382ce337b62152993daa1c82d67f7bb2447310e1d4f5cb1befa",
+      "olean_sha256": "b2ad13cda74fcd7a40e46d4f18550b8aca721207c9c647082499364ace2567ef"
+    },
+    {
+      "module": "Mahjong.ExtractedFresh34.P000000",
+      "return_code": 0,
+      "wall_seconds": 2.312,
+      "stop_reason": null,
+      "peak_rss_bytes": 599937024,
+      "peak_private_bytes": 1026895872,
+      "log_sha256": "de812e0a0be71641e9c57048ea70b91c62e72588595aa04c074471efbb87bcb0",
+      "olean_sha256": "efa91cb62d2902b25bdf2c71d92b1f24faa41ac6cefd7cefa9a4ecd4d3a3cc80"
+    },
+    {
+      "module": "Mahjong.ExtractedFresh34.Root",
+      "return_code": 0,
+      "wall_seconds": 1.406,
+      "stop_reason": null,
+      "peak_rss_bytes": 466112512,
+      "peak_private_bytes": 894402560,
+      "log_sha256": "a320d2a285cf7576a37b4e0ac726c5c9938f595a628fa2927f7d74876af09599",
+      "olean_sha256": "df5961017aa42159f2af885b76192fb4d6460cd48288ee703bb4fd7a004ad975"
+    },
+    {
+      "module": "PipelineAudit",
+      "return_code": 0,
+      "wall_seconds": 3.109,
+      "stop_reason": null,
+      "peak_rss_bytes": 921640960,
+      "peak_private_bytes": 2267279360,
+      "log_sha256": "036133ae12563c217107f10be3b631a6bb38510d4643bbfc75493ff1e7fda8c7",
+      "olean_sha256": "dfe10e37456dfceae6c80a4b2e9f3dff10ce3de52119633a398c1d07cfb0ca66"
+    }
+  ],
+  "scope": "Historical clean replay of the published frozen source. Workstation paths, process IDs and compiled artifacts omitted. Exit 2 records the still-unproved empty position; every module passed."
+}

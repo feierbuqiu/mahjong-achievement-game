@@ -4,4 +4,6 @@ src/** -text
 mahjong_progress/** -text
 compat/** -text
 results/** -text
+formal/lean/** -text
+formal/evidence/** -text
 *.pub text eol=lf

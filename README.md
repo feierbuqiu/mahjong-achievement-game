@@ -13,10 +13,13 @@ player wins under optimal play**. All six symmetry classes of first moves are
 N. A second algorithm, using reverse physical-tile deletion, replayed the
 complete P/N table with zero mismatches.
 
-**End-to-end Lean verification is in progress.** The two computational
-algorithms share the foundational rule implementation and state index. This
-release provides a computational result and its evidence; it does not claim a
-kernel-checked theorem about the opening. See the [evidence boundaries](docs/EVIDENCE.md).
+**End-to-end Lean verification is in progress.** Closed original-game Lean
+proofs are now published for three concrete nonempty positions with 20, 32,
+and 34 tiles, together with pinned source and a clean kernel-replay command.
+The empty-position theorem remains unproved in Lean. The two full-table
+computational algorithms share the foundational rule implementation and state
+index. See the [formal progress and reproduction](formal/README.md) and
+[evidence boundaries](docs/EVIDENCE.md).
 
 | Recorded result | Value |
 | --- | ---: |
@@ -73,7 +76,8 @@ hashes and exact reconstruction commands are included. See [data availability](d
 - [Reproduction](docs/REPRODUCIBILITY.md): commands, expected outcomes, and resources.
 - [Data availability](docs/DATA_AVAILABILITY.md): distributed artifacts and retained tables.
 - [Research integrity](docs/RESEARCH_INTEGRITY.md): provenance, corrections, and AI assistance.
-- [Formal verification status](formal/README.md): the remaining Lean evidence chain.
+- [Formal verification](formal/README.md): three closed nonempty-position proofs,
+  source replay, and the remaining opening proof work.
 - [Signed contributions](CONTRIBUTING.md) and [signature verification](docs/SIGNING.md).
 
 ## Citation and license
