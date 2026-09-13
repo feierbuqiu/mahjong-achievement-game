@@ -1,0 +1,4 @@
+AXIOM_AUDIT_PASS theorem_count=1438; only standard three axioms allowed
+ACTUAL_12_TILE_CLOSED_THEOREM_PRESENT
+CHECKED_12_TABLE_REGISTRY_PRESENT: 757 local P entries plus their existing proof dependencies
+END_TO_END_NOT_VERIFIED: registered concrete table; empty strategy not closed

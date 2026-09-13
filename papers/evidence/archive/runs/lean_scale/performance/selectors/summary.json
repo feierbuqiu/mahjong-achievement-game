@@ -1,0 +1,231 @@
+{
+  "schema": "ACTUAL12_SELECTOR_LAYOUT_COMPARISON_V1",
+  "status": "DEFINITION_COMPILATION_PASS_WITH_PARTIAL_OPTIONAL_EQUIVALENCE_AUDIT",
+  "generation": {
+    "path": "<research-root>\\runs\\lean_scale\\performance\\selectors\\generation.json",
+    "sha256": "e3b57493de4cfd7ea0d0feb06141e80376667aa91971bc8fef2a08fd85fd5c76"
+  },
+  "definition_receipts": [
+    {
+      "path": "<research-root>\\runs\\lean_scale\\performance\\selectors\\bound_dense_v1\\result.json",
+      "sha256": "44344f8f134572f83e51a07e829713988d26c58e4c160d816bac62d41a294af2"
+    },
+    {
+      "path": "<research-root>\\runs\\lean_scale\\performance\\selectors\\balanced_and_external_v1\\result.json",
+      "sha256": "17591fec65acfa901b405037e7ad6abb2ad585e6d1a66b919bf041e55bfc762e"
+    },
+    {
+      "path": "<research-root>\\runs\\lean_scale\\performance\\selectors\\override_variants_v1\\result.json",
+      "sha256": "279d667729973663e780decf126412b11a0cb3f1636c64ed45b07e61e78376c0"
+    }
+  ],
+  "records": [
+    {
+      "module": "MahjongScale.Selectors.BoundDense757",
+      "success": true,
+      "source_sha256": "445cbb240ebe3c58b7c92c40893d41452d1afeaa6c83a6241473e6a6d1c2953f",
+      "source_snapshot": "<research-root>\\runs\\lean_scale\\performance\\selectors\\bound_dense_v1\\MahjongScale.Selectors.BoundDense757.lean",
+      "command": "<research-root>\\build\\toolchain\\lean-4.33.1-windows\\bin\\lean.exe --trust=0 --profile -M2400 -j1 -o MahjongScale/Selectors/BoundDense757.olean MahjongScale/Selectors/BoundDense757.lean",
+      "cwd": "<research-root>\\build\\lean_scale\\performance",
+      "lean_path": "<research-root>\\build\\lean_scale\\performance;<research-root>\\build\\lean_scale\\performance\\library",
+      "exit_code": 0,
+      "terminated": false,
+      "reason": "",
+      "wall_seconds": 5.7143997,
+      "cpu_seconds": 5.65625,
+      "peak_private_bytes": 946733056,
+      "peak_rss_bytes": 523296768,
+      "stdout": "<research-root>\\runs\\lean_scale\\performance\\selectors\\bound_dense_v1\\MahjongScale.Selectors.BoundDense757.stdout.log",
+      "stderr": "<research-root>\\runs\\lean_scale\\performance\\selectors\\bound_dense_v1\\MahjongScale.Selectors.BoundDense757.stderr.log",
+      "olean_sha256": "9ed90ecff3a99dd61409a9df61251a4e33b1cadc9a10a906e5173ca46993d224"
+    },
+    {
+      "module": "MahjongScale.Selectors.BoundBalanced757",
+      "success": true,
+      "source_sha256": "0f404de4f31a1d73e148a264f7e3bb4eb09f5f7bf34d59098c40cb4373b2142f",
+      "source_snapshot": "<research-root>\\runs\\lean_scale\\performance\\selectors\\balanced_and_external_v1\\MahjongScale.Selectors.BoundBalanced757.lean",
+      "command": "<research-root>\\build\\toolchain\\lean-4.33.1-windows\\bin\\lean.exe --trust=0 --profile -M2400 -j1 -o MahjongScale/Selectors/BoundBalanced757.olean MahjongScale/Selectors/BoundBalanced757.lean",
+      "cwd": "<research-root>\\build\\lean_scale\\performance",
+      "lean_path": "<research-root>\\build\\lean_scale\\performance;<research-root>\\build\\lean_scale\\performance\\library",
+      "exit_code": 0,
+      "terminated": false,
+      "reason": "",
+      "wall_seconds": 5.3043713,
+      "cpu_seconds": 5.25,
+      "peak_private_bytes": 986841088,
+      "peak_rss_bytes": 563683328,
+      "stdout": "<research-root>\\runs\\lean_scale\\performance\\selectors\\balanced_and_external_v1\\MahjongScale.Selectors.BoundBalanced757.stdout.log",
+      "stderr": "<research-root>\\runs\\lean_scale\\performance\\selectors\\balanced_and_external_v1\\MahjongScale.Selectors.BoundBalanced757.stderr.log",
+      "olean_sha256": "7e72c71bc844d646f6389f1640ce96c4f3688875fb551e24df5483e3320ee979"
+    },
+    {
+      "module": "MahjongScale.Selectors.ExternalRows",
+      "success": true,
+      "source_sha256": "40766fe207e737569377d82da906e87aa30ee5d0afe6a274a3a3a206ac37ed08",
+      "source_snapshot": "<research-root>\\runs\\lean_scale\\performance\\selectors\\balanced_and_external_v1\\MahjongScale.Selectors.ExternalRows.lean",
+      "command": "<research-root>\\build\\toolchain\\lean-4.33.1-windows\\bin\\lean.exe --trust=0 --profile -M2400 -j1 -o MahjongScale/Selectors/ExternalRows.olean MahjongScale/Selectors/ExternalRows.lean",
+      "cwd": "<research-root>\\build\\lean_scale\\performance",
+      "lean_path": "<research-root>\\build\\lean_scale\\performance;<research-root>\\build\\lean_scale\\performance\\library",
+      "exit_code": 0,
+      "terminated": false,
+      "reason": "",
+      "wall_seconds": 3.5221213,
+      "cpu_seconds": 3.515625,
+      "peak_private_bytes": 947609600,
+      "peak_rss_bytes": 527708160,
+      "stdout": "<research-root>\\runs\\lean_scale\\performance\\selectors\\balanced_and_external_v1\\MahjongScale.Selectors.ExternalRows.stdout.log",
+      "stderr": "<research-root>\\runs\\lean_scale\\performance\\selectors\\balanced_and_external_v1\\MahjongScale.Selectors.ExternalRows.stderr.log",
+      "olean_sha256": "047d03a09dc42fe060ce9324f7fc18860b270e7bd698b3dfafae92950a1696de"
+    },
+    {
+      "module": "MahjongScale.Selectors.OverridesDense757",
+      "success": true,
+      "source_sha256": "7fa0ab04d660255289901decdd83e65225209eed663eb1de45b18631909627e4",
+      "source_snapshot": "<research-root>\\runs\\lean_scale\\performance\\selectors\\override_variants_v1\\MahjongScale.Selectors.OverridesDense757.lean",
+      "command": "<research-root>\\build\\toolchain\\lean-4.33.1-windows\\bin\\lean.exe --trust=0 --profile -M2400 -j1 -o MahjongScale/Selectors/OverridesDense757.olean MahjongScale/Selectors/OverridesDense757.lean",
+      "cwd": "<research-root>\\build\\lean_scale\\performance",
+      "lean_path": "<research-root>\\build\\lean_scale\\performance;<research-root>\\build\\lean_scale\\performance\\library",
+      "exit_code": 0,
+      "terminated": false,
+      "reason": "",
+      "wall_seconds": 3.8418255,
+      "cpu_seconds": 3.78125,
+      "peak_private_bytes": 907673600,
+      "peak_rss_bytes": 467955712,
+      "stdout": "<research-root>\\runs\\lean_scale\\performance\\selectors\\override_variants_v1\\MahjongScale.Selectors.OverridesDense757.stdout.log",
+      "stderr": "<research-root>\\runs\\lean_scale\\performance\\selectors\\override_variants_v1\\MahjongScale.Selectors.OverridesDense757.stderr.log",
+      "olean_sha256": "732eabe38449582409a5c907bd4c92964199d66e7f1e9abb61060658863a66c5"
+    },
+    {
+      "module": "MahjongScale.Selectors.OverridesBalanced757",
+      "success": true,
+      "source_sha256": "2f4c4532e02fe0e89883e6aeafc0cbded430dc58ffa0c3f1d2161e565d0fd43d",
+      "source_snapshot": "<research-root>\\runs\\lean_scale\\performance\\selectors\\override_variants_v1\\MahjongScale.Selectors.OverridesBalanced757.lean",
+      "command": "<research-root>\\build\\toolchain\\lean-4.33.1-windows\\bin\\lean.exe --trust=0 --profile -M2400 -j1 -o MahjongScale/Selectors/OverridesBalanced757.olean MahjongScale/Selectors/OverridesBalanced757.lean",
+      "cwd": "<research-root>\\build\\lean_scale\\performance",
+      "lean_path": "<research-root>\\build\\lean_scale\\performance;<research-root>\\build\\lean_scale\\performance\\library",
+      "exit_code": 0,
+      "terminated": false,
+      "reason": "",
+      "wall_seconds": 3.0646519,
+      "cpu_seconds": 3.046875,
+      "peak_private_bytes": 938921984,
+      "peak_rss_bytes": 495566848,
+      "stdout": "<research-root>\\runs\\lean_scale\\performance\\selectors\\override_variants_v1\\MahjongScale.Selectors.OverridesBalanced757.stdout.log",
+      "stderr": "<research-root>\\runs\\lean_scale\\performance\\selectors\\override_variants_v1\\MahjongScale.Selectors.OverridesBalanced757.stderr.log",
+      "olean_sha256": "a9bc8c697920fdbb30352ae0f7817e40f1f22ac8b5ff8cd822a8ec179dc853cf"
+    },
+    {
+      "module": "MahjongScale.Selectors.OverridesSparseBalanced",
+      "success": true,
+      "source_sha256": "5341e90ca462b511bc6d242c3efbd058f0f8e2ec7d72e94f526b29e21faa7f38",
+      "source_snapshot": "<research-root>\\runs\\lean_scale\\performance\\selectors\\override_variants_v1\\MahjongScale.Selectors.OverridesSparseBalanced.lean",
+      "command": "<research-root>\\build\\toolchain\\lean-4.33.1-windows\\bin\\lean.exe --trust=0 --profile -M2400 -j1 -o MahjongScale/Selectors/OverridesSparseBalanced.olean MahjongScale/Selectors/OverridesSparseBalanced.lean",
+      "cwd": "<research-root>\\build\\lean_scale\\performance",
+      "lean_path": "<research-root>\\build\\lean_scale\\performance;<research-root>\\build\\lean_scale\\performance\\library",
+      "exit_code": 0,
+      "terminated": false,
+      "reason": "",
+      "wall_seconds": 1.4568237,
+      "cpu_seconds": 1.390625,
+      "peak_private_bytes": 870096896,
+      "peak_rss_bytes": 428269568,
+      "stdout": "<research-root>\\runs\\lean_scale\\performance\\selectors\\override_variants_v1\\MahjongScale.Selectors.OverridesSparseBalanced.stdout.log",
+      "stderr": "<research-root>\\runs\\lean_scale\\performance\\selectors\\override_variants_v1\\MahjongScale.Selectors.OverridesSparseBalanced.stderr.log",
+      "olean_sha256": "6a8e73876b75d5ce66e3044e4e3fee7a3d28f199eaa88bd5936a12f4475a46b1"
+    }
+  ],
+  "original_data": {
+    "path": "<research-root>\\build\\lean_scale\\proof\\MahjongScale\\Actual12\\Data.lean",
+    "sha256": "0c25f63b3703898c16c165e0d51694c0b5cbffb9807f3e12d30e8a377932d6e1",
+    "bytes": 3063469,
+    "lines": 40875
+  },
+  "actual_mapping": {
+    "rows": 757,
+    "nonempty_override_rows": [
+      504,
+      505,
+      506,
+      602,
+      613,
+      661,
+      662,
+      663,
+      671,
+      672,
+      708,
+      711,
+      741
+    ],
+    "nonempty_override_rows_count": 13,
+    "empty_override_rows_count": 744,
+    "some_branches": 80
+  },
+  "semantic_validation": {
+    "status": "PARTIAL_NOT_FULL",
+    "receipt": {
+      "path": "<research-root>\\runs\\lean_scale\\performance\\selectors\\semantics_v1\\result.json",
+      "sha256": "78833b13cfca779f13e45b7008523cc34b4fc365ace662a2fc3c700475325858"
+    },
+    "passed_modules": [
+      "MahjongScale.Selectors.Semantics0",
+      "MahjongScale.Selectors.Semantics1",
+      "MahjongScale.Selectors.Semantics2",
+      "MahjongScale.Selectors.Semantics3"
+    ],
+    "passed_id_range": [
+      0,
+      511
+    ],
+    "closed_equalities": 1536,
+    "override_equalities_are_functions_of_all_Tile_arguments": true,
+    "stopped_modules": [
+      "MahjongScale.Selectors.Semantics4"
+    ],
+    "unrun_modules": [
+      "MahjongScale.Selectors.Rows64",
+      "MahjongScale.Selectors.Rows128",
+      "MahjongScale.Selectors.Semantics5",
+      "MahjongScale.Selectors.Defaults"
+    ],
+    "stop_record": {
+      "path": "<research-root>\\runs\\lean_scale\\performance\\selectors\\manual_stop.json",
+      "sha256": "320695031830c78ffdf1891eb5c595a5a5ea0965c34b167778103e536451543b"
+    },
+    "full_757_equivalence_claim": false,
+    "default_case_theorems_passed": false
+  },
+  "original_input_modified": false,
+  "monolithic_Data_recompiled": false,
+  "whole_game_or_table_recomputed": false,
+  "conclusions": [
+    "Neither isolated 757-branch selector approached 3 GB; the single large Data failure cannot be attributed only to either selector.",
+    "Sparse override dispatch omits 744 provably syntactic all-none rows from the selector representation and measurably reduces definition compilation cost.",
+    "Balanced bound selection had only a small compile-time effect and slightly higher measured private memory; it is not the main measured fix.",
+    "The parent independently completed the actual 757-row certificate after data-module splitting. The completed whole certificate is separate evidence."
+  ],
+  "parent_whole_certificate": {
+    "receipt": {
+      "path": "<research-root>\\runs\\lean_scale\\actual12_kernel_v1\\result.json",
+      "sha256": "528aa59d3590c29ed05a21dbfea088aefdd4de11c76853e2303beceb1f488a6d"
+    },
+    "kernel_modules": "PASS",
+    "passed_modules": 326,
+    "total_modules": 326,
+    "wall_seconds": 67.26600000000326,
+    "sampled_CPU_seconds": 463.0625,
+    "configured_workers": 12,
+    "peak_concurrent_lean_processes": 9,
+    "peak_sampled_process_tree_private_bytes": 12719529984,
+    "actual_12_tiles": "PASS",
+    "empty_game": "NOT_VERIFIED"
+  },
+  "budget": {
+    "concurrent_owned_lean_processes": 1,
+    "private_rss_limit_bytes": 3000000000,
+    "wall_limit_per_module_seconds": 90
+  },
+  "processes_held_at_delivery": 0,
+  "writer_sha256": "704e5816dc574196908af700712f843848c979f437f9983b8d5da76005314850"
+}

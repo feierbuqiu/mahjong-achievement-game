@@ -1,0 +1,195 @@
+{
+  "schema": "MAHJONG_OPENING_PRODUCER_NEXT_ROUND_RELEASE_V1",
+  "created_at_utc": "2026-09-13T06:06:59.677247+00:00",
+  "status": "FROZEN_PARTIAL_CANDIDATE_GRAPH",
+  "formal_proof": false,
+  "compiler_path_prepend": "<research-root>\\build\\toolchain\\w64devkit\\bin",
+  "exact_native_compile_argv": [
+    [
+      "build/toolchain/w64devkit/bin/g++.exe",
+      "-std=c++17",
+      "-O3",
+      "-Ibuild/compat",
+      "-Ibuild/global_retro",
+      "build/lean_next/strategy_worker_v5.cpp",
+      "-o",
+      "build/lean_next/strategy_worker_v5.exe"
+    ],
+    [
+      "build/toolchain/w64devkit/bin/g++.exe",
+      "-std=c++17",
+      "-O3",
+      "-Ibuild/compat",
+      "build/lean_next/frontier_score.cpp",
+      "-o",
+      "build/lean_next/frontier_score.exe"
+    ]
+  ],
+  "compile_cwd": "<research-root>",
+  "compile_result": "Both succeeded; legacy included main renamed as helper warns control may reach end. Actual new entry points return explicit status.",
+  "files": [
+    {
+      "path": "build\\global_retro\\global_index.hpp",
+      "bytes": 16787,
+      "sha256": "b742e5bbb20ed0df50665c0d454d3bf4b7691dabc4d2d0380e7159766f8bf0c8"
+    },
+    {
+      "path": "build\\lean_continuation\\pn_bucket_cache.hpp",
+      "bytes": 9244,
+      "sha256": "180f217896c454cfffe1d4243e92296a1561bfd1172a41a51affa16a365fe306"
+    },
+    {
+      "path": "build\\lean_continuation\\query_adapter_v3.cpp",
+      "bytes": 16345,
+      "sha256": "383643f508cea959ac7ed05bc6a1c54ce98c0a8583db5a1c3755b13b4d5ddd64"
+    },
+    {
+      "path": "build\\lean_continuation\\strategy_worker_v3.cpp",
+      "bytes": 8684,
+      "sha256": "90a55d55eaebccdd09e7855331a750f3f49a096b9d39fe1660562a3043785226"
+    },
+    {
+      "path": "build\\lean_continuation\\strategy_worker_v3.exe",
+      "bytes": 3520120,
+      "sha256": "92eef64bba8727c6905cbc2f652b2fb59115ee8f817283952b083e46ba8364b8"
+    },
+    {
+      "path": "build\\lean_next\\frontier_score.cpp",
+      "bytes": 1403,
+      "sha256": "b143a6b7c2c63d68a21fd40de1c129a75af8365c3d5c9a6bf8502e78f391a41e"
+    },
+    {
+      "path": "build\\lean_next\\frontier_score.exe",
+      "bytes": 2722706,
+      "sha256": "2a28cdda8e76fc67711e5eaef5c464861f4c941b5b36abf1af0d22d0e2a856c0"
+    },
+    {
+      "path": "build\\lean_next\\strategy_worker_v5.cpp",
+      "bytes": 9126,
+      "sha256": "8be8935526a71900fc36f153c0b73b9dcf63b3693a290040d57850908dedd830"
+    },
+    {
+      "path": "build\\lean_next\\strategy_worker_v5.exe",
+      "bytes": 3549579,
+      "sha256": "c4369847d24121b310c04427e04d648879b56f765bee4ed3c205d0f381b32e86"
+    },
+    {
+      "path": "build\\lean_verification\\query_adapter.cpp",
+      "bytes": 15690,
+      "sha256": "7c536d43d791d6b65d8ad9ebb5348d75a43cb444c971c5e53583c76d41bce1ba"
+    },
+    {
+      "path": "build\\toolchain\\w64devkit\\bin\\g++.exe",
+      "bytes": 2442384,
+      "sha256": "4f40f17d8a5a1052b83de568fe2e951fa37a3a21c38676e5b1da5707029cce61"
+    },
+    {
+      "path": "mahjong_progress\\solver\\solver.cpp",
+      "bytes": 9354,
+      "sha256": "1194d941c55b48c4ac686f29518c3fe032723a431125610b2a3509f8db04242f"
+    },
+    {
+      "path": "runs\\global_retro\\index\\bucket_catalog.json",
+      "bytes": 335471,
+      "sha256": "18de78e94271d760e58f9ae8f47dd9c5615a3d6dc1cc59a69f24e7524752c551"
+    },
+    {
+      "path": "runs\\lean_next\\producer\\baseline_v4.py",
+      "bytes": 33506,
+      "sha256": "835a4436afb4893f9e0375b84f011a567f51ae10add2e3da64c903ae014a6164"
+    },
+    {
+      "path": "runs\\lean_next\\producer\\benchmark_v5.py",
+      "bytes": 7452,
+      "sha256": "cc6dacf35aa1eb21e681e510981882f989519a4470d0d8cb1215518d3e6376db"
+    },
+    {
+      "path": "runs\\lean_next\\producer\\benchmarks\\comparison_v5\\result.json",
+      "bytes": 14873,
+      "sha256": "4f587177f0456e8176876cec38cb54d720f7352e43e99a6933803d212a9d5ef5"
+    },
+    {
+      "path": "runs\\lean_next\\producer\\benchmarks\\full_checkpoint_append_v5\\result.json",
+      "bytes": 5277,
+      "sha256": "4c3880a5ab967882afc24e90afc3416c6e6157fe836567c38b19a659744012b7"
+    },
+    {
+      "path": "runs\\lean_next\\producer\\compare_end_to_end.py",
+      "bytes": 5285,
+      "sha256": "9631735da922d420e093f0afea77a38f3e1d79bf4f3baddbc8e4720413815b05"
+    },
+    {
+      "path": "runs\\lean_next\\producer\\finalize_round.py",
+      "bytes": 9761,
+      "sha256": "dde03b302eb4dd1e5d2e32705d02ef39d93847ae5ad09c0f083f9d004c752fdf"
+    },
+    {
+      "path": "runs\\lean_next\\producer\\freeze_release.py",
+      "bytes": 2906,
+      "sha256": "207555c68dad8e0e32d0acfa626b552ff015e12090adc4f0468d18242430ee71"
+    },
+    {
+      "path": "runs\\lean_next\\producer\\frontier\\actual14_window002\\candidates.json",
+      "bytes": 37961,
+      "sha256": "1a9539d4b08405cf51eaae5ec4619138449a9c11b660e4a6db7359e2775a9459"
+    },
+    {
+      "path": "runs\\lean_next\\producer\\opening_candidate_v5\\migration.json",
+      "bytes": 5866,
+      "sha256": "55938802a828ab439e5396595caea83f6d25c8d95957661a6decdb1a3c9e2112"
+    },
+    {
+      "path": "runs\\lean_next\\producer\\opening_control_v4\\migration.json",
+      "bytes": 5881,
+      "sha256": "43313c8249ed9d2128aa08085f98f9622dbd94eacd8684ba0e7b7104c76f11fa"
+    },
+    {
+      "path": "runs\\lean_next\\producer\\prepare_comparison.py",
+      "bytes": 3548,
+      "sha256": "dba79ba587f75fc3a5658ed2f41ac9642c2d2e31f54bde4101fae6055c6a27b7"
+    },
+    {
+      "path": "runs\\lean_next\\producer\\primary.latest.json",
+      "bytes": 882,
+      "sha256": "2e5361e3bdd4e2c0926ce24deca04d436a1675617e01ed6b01594735f81ad553"
+    },
+    {
+      "path": "runs\\lean_next\\producer\\producer_v5.py",
+      "bytes": 33520,
+      "sha256": "5c0c12f6291245326365f56e77ef41b50b71074ea0e6c65f87c0b35cab5fb168"
+    },
+    {
+      "path": "runs\\lean_next\\producer\\README.md",
+      "bytes": 6880,
+      "sha256": "fe5b88e13811c4bc87eed6eeb8df625e3ca007fb496989dcdf024e0e35d844de"
+    },
+    {
+      "path": "runs\\lean_next\\producer\\round_result.json",
+      "bytes": 19650,
+      "sha256": "c83c525d60c845240b84ae9d65aef0806ed943491c75bee4a6b5c8f32150fe19"
+    },
+    {
+      "path": "runs\\lean_next\\producer\\ROUND_RESULT.md",
+      "bytes": 1931,
+      "sha256": "846769e954dabd39db5572276cbf19a4d7bf1e7113eecc79c0be30fa0dc6d215"
+    },
+    {
+      "path": "runs\\lean_next\\producer\\select_frontier.py",
+      "bytes": 8334,
+      "sha256": "767adb7e31668c0af1c38806e169bc65bc9502ab50780cb3e51f717e3aa48963"
+    }
+  ],
+  "primary_checkpoint": {
+    "path": "runs\\lean_next\\producer\\opening_control_v4\\graph.sqlite",
+    "sha256": "271ada1415af87307a7e360f4fbf5c43635fc419d3d52522dc2147bb0bbd33a2",
+    "bytes": 2736427008
+  },
+  "frozen_original": {
+    "path": "runs\\lean_continuation\\producer\\opening_v4\\graph.sqlite",
+    "sha256": "1b3fb7151bd9f36c967f9a97f926392a16d657491ae7f97165ad1b36d7d0ab46",
+    "unchanged": true
+  },
+  "semantic_output_and_stored_append_comparisons": "PASS",
+  "v5_promoted": false,
+  "caveat": "Frozen hashes identify evidence and implementations; they are not Lean proof assumptions. Opening certification remains incomplete."
+}

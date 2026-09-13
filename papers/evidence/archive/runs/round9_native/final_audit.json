@@ -1,0 +1,231 @@
+{
+  "status": "PASS",
+  "utc": "2026-09-12T18:42:38.154697+00:00",
+  "facts_sha256": "f49f4db8e1757da424cfe5874f54ead59a34518e1ed1ba7772f23be88e4dadce",
+  "certificate_sha256": "9208b6ad6d090ec7b9f82c557554171a4b47212c005bea96b700c9c34c68d817",
+  "audit_script_sha256": "883d2abe3ff827e7d4453dcb59df07902cfa1ad9d4b4b00608849097df2c7c85",
+  "source_hashes_verified": 36,
+  "all_certificate_premises_match_facts": true,
+  "numeric_symmetry_method": "explicit 48 operations; honor permutation canonicalized by sorting",
+  "physical_actions_checked": 374,
+  "P_response_premises_checked": 143,
+  "inference_DAG_facts_checked": 316,
+  "inference_rules": {
+    "all_children_N": 11,
+    "source": 258,
+    "P_successor": 43,
+    "exact_sg_honor_pass": 4
+  },
+  "inference_cycles": 0,
+  "roots": {
+    "T1": {
+      "state": "0000000000000000000001200200000023",
+      "tiles": 10,
+      "physical_actions": 34,
+      "child_orbits": 17,
+      "all_replies_legal_P": true
+    },
+    "T2": {
+      "state": "0000000000000000000001202000000023",
+      "tiles": 10,
+      "physical_actions": 34,
+      "child_orbits": 17,
+      "all_replies_legal_P": true
+    },
+    "T3": {
+      "state": "0000000000000000000002100200000023",
+      "tiles": 10,
+      "physical_actions": 34,
+      "child_orbits": 17,
+      "all_replies_legal_P": true
+    },
+    "T4": {
+      "state": "0000000000000000000002120000000023",
+      "tiles": 10,
+      "physical_actions": 34,
+      "child_orbits": 13,
+      "all_replies_legal_P": true
+    },
+    "T5": {
+      "state": "0000000000000000000020012000000023",
+      "tiles": 10,
+      "physical_actions": 34,
+      "child_orbits": 17,
+      "all_replies_legal_P": true
+    },
+    "T6": {
+      "state": "0000000000000000002000000120000023",
+      "tiles": 10,
+      "physical_actions": 34,
+      "child_orbits": 17,
+      "all_replies_legal_P": true
+    },
+    "M1": {
+      "state": "0000000000000000000000200200000022",
+      "tiles": 8,
+      "physical_actions": 34,
+      "child_orbits": 16,
+      "all_replies_legal_P": true
+    },
+    "M2": {
+      "state": "0000000000000000000002000200000022",
+      "tiles": 8,
+      "physical_actions": 34,
+      "child_orbits": 16,
+      "all_replies_legal_P": true
+    },
+    "M3": {
+      "state": "0000000000000000000002020000000022",
+      "tiles": 8,
+      "physical_actions": 34,
+      "child_orbits": 12,
+      "all_replies_legal_P": true
+    },
+    "M4": {
+      "state": "0000000000000000000020002000000022",
+      "tiles": 8,
+      "physical_actions": 34,
+      "child_orbits": 12,
+      "all_replies_legal_P": true
+    },
+    "M5": {
+      "state": "0000000000000000002000000020000022",
+      "tiles": 8,
+      "physical_actions": 34,
+      "child_orbits": 12,
+      "all_replies_legal_P": true
+    }
+  },
+  "new_T_P": 6,
+  "new_M_P": 5,
+  "new_M_same_suit_rank_supports": [
+    [
+      1,
+      9
+    ],
+    [
+      2,
+      5
+    ],
+    [
+      2,
+      6
+    ],
+    [
+      3,
+      7
+    ],
+    [
+      4,
+      6
+    ]
+  ],
+  "M_orbits": 35,
+  "M_P": 17,
+  "M_UNKNOWN": 18,
+  "original_S_frontier": 41,
+  "S_now_N": 6,
+  "S_still_UNKNOWN": 35,
+  "cold_recurrence_audits": [
+    {
+      "path": "runs/round9_solver/cold_P12.jsonl",
+      "sha256": "a1b745b23c1a4e6a7f44f1c13402e94e7c75a9750b36ce69ffafe15a976ef31b",
+      "P_roots": 1,
+      "all_SAFE_N_edges_independently_enumerated": 26,
+      "no_facts": true,
+      "no_prepass": true,
+      "complete": true
+    },
+    {
+      "path": "runs/round9_solver/nearest7_cold.jsonl",
+      "sha256": "1be510c002c046abf6c7ef1818d431664a5f6702a9de285b7307576b0be64150",
+      "P_roots": 7,
+      "all_SAFE_N_edges_independently_enumerated": 133,
+      "no_facts": true,
+      "no_prepass": true,
+      "complete": true
+    },
+    {
+      "path": "runs/round9_solver/next6_cold.jsonl",
+      "sha256": "cbeb0576d3dfc405f77aac1a2d634a25ff98e6dd8e09800730770aeeef58a164",
+      "P_roots": 6,
+      "all_SAFE_N_edges_independently_enumerated": 122,
+      "no_facts": true,
+      "no_prepass": true,
+      "complete": true
+    },
+    {
+      "path": "runs/round9_boundary/center_cold_full.jsonl",
+      "sha256": "2de8b9dd3442ddaef4c07a41c55c12ee0ced87bd8bc37cd6c44078ee9aa4bd3f",
+      "P_roots": 6,
+      "all_SAFE_N_edges_independently_enumerated": 97,
+      "no_facts": true,
+      "no_prepass": true,
+      "complete": true
+    },
+    {
+      "path": "runs/round9_boundary/endpoint_cold_full.jsonl",
+      "sha256": "05b202b97ca337fa378051a8325a13f52d43793f975bcff7cdb456a633d8dcc0",
+      "P_roots": 12,
+      "all_SAFE_N_edges_independently_enumerated": 246,
+      "no_facts": true,
+      "no_prepass": true,
+      "complete": true
+    },
+    {
+      "path": "runs/round9_solver/last_P12_cold.jsonl",
+      "sha256": "a9a424afe5d4fbeebe55314626abe6f79dc54aec81a3b0b209a6d487f4c995fe",
+      "P_roots": 1,
+      "all_SAFE_N_edges_independently_enumerated": 26,
+      "no_facts": true,
+      "no_prepass": true,
+      "complete": true
+    },
+    {
+      "path": "runs/round9_solver/final2_cold.jsonl",
+      "sha256": "f3aa6db7acf0771b2b942e79dae5cb163ec30afd60e6606f4976aab71f7ba5d3",
+      "P_roots": 2,
+      "all_SAFE_N_edges_independently_enumerated": 43,
+      "no_facts": true,
+      "no_prepass": true,
+      "complete": true
+    }
+  ],
+  "original_driver_decisive_rechecks": [
+    {
+      "label": "breakthrough_cold",
+      "P_roots": 4,
+      "cold_ordinary_recurrence_crosschecked": true,
+      "source_sha256": "076af17844c53cc606ed5a775e59f2b707e495febaa54641cfd9dd797d3fb6ff",
+      "binary_sha256": "a3ca78e912c8ad45ab37666180cb917813a96579452f1eabb45d33c4a96b6b17",
+      "log_sha256": "235e8faac0f632b5093c7db9e4beb33d0fc0e7deb7ac4f4cdaed39e8e07ba2e7",
+      "complete": true
+    },
+    {
+      "label": "center_original_cold",
+      "P_roots": 6,
+      "cold_ordinary_recurrence_crosschecked": true,
+      "source_sha256": "076af17844c53cc606ed5a775e59f2b707e495febaa54641cfd9dd797d3fb6ff",
+      "binary_sha256": "a3ca78e912c8ad45ab37666180cb917813a96579452f1eabb45d33c4a96b6b17",
+      "log_sha256": "db37cb65cafa9cbae5f6ae68f431fd6ecde9eaff9caaa0028e45540d49247996",
+      "complete": true
+    },
+    {
+      "label": "endpoint_original_cold",
+      "P_roots": 3,
+      "cold_ordinary_recurrence_crosschecked": true,
+      "source_sha256": "076af17844c53cc606ed5a775e59f2b707e495febaa54641cfd9dd797d3fb6ff",
+      "binary_sha256": "a3ca78e912c8ad45ab37666180cb917813a96579452f1eabb45d33c4a96b6b17",
+      "log_sha256": "b34aa1eeaffb49f845cb69ad59f9c4b811b7053f5b7776fce1f062f4b86fdb75",
+      "complete": true
+    }
+  ],
+  "README_fixed_process_local_PATH": true,
+  "README_sha256": "4b697d3098e02c5dfb453faf0df13ae03184d9c72f49ac12d8c64d91270bd78a",
+  "limitations": [
+    "Computational P premises are audited against their exact logged source identities and hashes; this audit does not replay full minimax trees.",
+    "Cold SAFE-child enumeration independently validates physical recurrence coverage; child game values remain exact solver computations.",
+    "No initial-position or first-move winner is established.",
+    "Counts refer only to the named 35 M states and original 41 S frontier."
+  ]
+}

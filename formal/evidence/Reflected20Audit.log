@@ -1,0 +1,4 @@
+AXIOM_AUDIT_PASS theorem_count=593; only propext, Classical.choice, Quot.sound allowed
+NO_PREVIOUS_20_TILE_ROOT_IMPORTED
+REFLECTED_20_TILE_CLOSED_THEOREM_PRESENT
+END_TO_END_NOT_VERIFIED: reflected certificate is for the concrete 20-tile game

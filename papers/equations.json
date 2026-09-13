@@ -1,0 +1,2067 @@
+{
+  "schema": "MJ_PAPER_FORMULA_PRESERVATION_V1",
+  "original_manuscript_sha256": "f1d521177f2270e4340703faddaa6f9426108e939cd19cfeb71b4f2fc5fbe2e5",
+  "formulas": [
+    {
+      "kind": "display",
+      "tex": "T=\\{1m,\\ldots,9m,1p,\\ldots,9p,1s,\\ldots,9s,H_1,\\ldots,H_7\\}."
+    },
+    {
+      "kind": "inline",
+      "tex": "m,p,s"
+    },
+    {
+      "kind": "inline",
+      "tex": "H_i"
+    },
+    {
+      "kind": "inline",
+      "tex": "x:T\\to\\{0,1,2,3,4\\}"
+    },
+    {
+      "kind": "inline",
+      "tex": "|x|=\\sum_{t\\inT}x_t"
+    },
+    {
+      "kind": "inline",
+      "tex": "u\\lex"
+    },
+    {
+      "kind": "inline",
+      "tex": "t"
+    },
+    {
+      "kind": "inline",
+      "tex": "x_t<4"
+    },
+    {
+      "kind": "inline",
+      "tex": "x"
+    },
+    {
+      "kind": "inline",
+      "tex": "x+e_t"
+    },
+    {
+      "kind": "inline",
+      "tex": "(r,r+1,r+2)"
+    },
+    {
+      "kind": "inline",
+      "tex": "1\\ler\\le7"
+    },
+    {
+      "kind": "inline",
+      "tex": "\\mathcalW"
+    },
+    {
+      "kind": "display",
+      "tex": "\\operatorname{Win}(x)\\iff\\existsw\\in\\mathcalW\\;(w\\lex).\\tag{1}"
+    },
+    {
+      "kind": "inline",
+      "tex": "|x|"
+    },
+    {
+      "kind": "display",
+      "tex": "\\operatorname{Safe}(x)\\iff\\neg\\operatorname{Win}(x)\\\\land\\\\forallt\\,[x_t<4\\Rightarrow\\neg\\operatorname{Win}(x+e_t)].\\tag{2}"
+    },
+    {
+      "kind": "inline",
+      "tex": "\\mathcalK"
+    },
+    {
+      "kind": "display",
+      "tex": "\\partial\\mathcalW=\\{w-e_t:w\\in\\mathcalW,\\w_t>0\\}."
+    },
+    {
+      "kind": "inline",
+      "tex": "x"
+    },
+    {
+      "kind": "inline",
+      "tex": "\\partial\\mathcalW"
+    },
+    {
+      "kind": "inline",
+      "tex": "x"
+    },
+    {
+      "kind": "inline",
+      "tex": "x"
+    },
+    {
+      "kind": "inline",
+      "tex": "w-e_t\\lex"
+    },
+    {
+      "kind": "inline",
+      "tex": "w\\lex"
+    },
+    {
+      "kind": "inline",
+      "tex": "t"
+    },
+    {
+      "kind": "inline",
+      "tex": "x_t=w_t-1<4"
+    },
+    {
+      "kind": "inline",
+      "tex": "\\mathcalK"
+    },
+    {
+      "kind": "inline",
+      "tex": "x\\tox+e_t"
+    },
+    {
+      "kind": "inline",
+      "tex": "\\mathcalK"
+    },
+    {
+      "kind": "inline",
+      "tex": "g(x)=\\operatorname{mex}\\{g(y):x\\toy\\text{isSAFE}\\}"
+    },
+    {
+      "kind": "inline",
+      "tex": "g=0"
+    },
+    {
+      "kind": "inline",
+      "tex": "g>0"
+    },
+    {
+      "kind": "inline",
+      "tex": "g"
+    },
+    {
+      "kind": "display",
+      "tex": "G=S_7\\times(C_2^3\\rtimesS_3),\\qquad|G|=241,920.\\tag{3}"
+    },
+    {
+      "kind": "inline",
+      "tex": "r\\mapsto10-r"
+    },
+    {
+      "kind": "inline",
+      "tex": "|G|"
+    },
+    {
+      "kind": "display",
+      "tex": "\\max_{\\neg\\operatorname{Win}(x)}|x|=37,\\qquad\\max_{x\\in\\mathcalK}|x|=34.\\tag{4}"
+    },
+    {
+      "kind": "inline",
+      "tex": "1,2,4,5,7,8"
+    },
+    {
+      "kind": "display",
+      "tex": "S_{13}=H^4(3m)^4(5m)^4(4m)\\tag{5}"
+    },
+    {
+      "kind": "inline",
+      "tex": "4m"
+    },
+    {
+      "kind": "inline",
+      "tex": "4m"
+    },
+    {
+      "kind": "inline",
+      "tex": "345m"
+    },
+    {
+      "kind": "inline",
+      "tex": "3m,5m,H"
+    },
+    {
+      "kind": "inline",
+      "tex": "4m"
+    },
+    {
+      "kind": "inline",
+      "tex": "u"
+    },
+    {
+      "kind": "inline",
+      "tex": "345m"
+    },
+    {
+      "kind": "inline",
+      "tex": "uu"
+    },
+    {
+      "kind": "inline",
+      "tex": "x"
+    },
+    {
+      "kind": "inline",
+      "tex": "B"
+    },
+    {
+      "kind": "inline",
+      "tex": "p"
+    },
+    {
+      "kind": "display",
+      "tex": "g(x)=g(B)\\mathbin{\\operatorname{xor}}(p\\bmod2).\\tag{6}"
+    },
+    {
+      "kind": "inline",
+      "tex": "B"
+    },
+    {
+      "kind": "inline",
+      "tex": "p"
+    },
+    {
+      "kind": "inline",
+      "tex": "1m"
+    },
+    {
+      "kind": "inline",
+      "tex": "3m"
+    },
+    {
+      "kind": "display",
+      "tex": "111m+333m+444m+123m+22m."
+    },
+    {
+      "kind": "inline",
+      "tex": "3\\to4"
+    },
+    {
+      "kind": "inline",
+      "tex": "g(B)=2"
+    },
+    {
+      "kind": "inline",
+      "tex": "g(x)=3"
+    },
+    {
+      "kind": "inline",
+      "tex": "\\{0,1,\\ge2\\}"
+    },
+    {
+      "kind": "inline",
+      "tex": "\\ge2"
+    },
+    {
+      "kind": "display",
+      "tex": "X=789999s\\;666777z,\\qquadY=567999s\\;666777z\\tag{7}"
+    },
+    {
+      "kind": "inline",
+      "tex": "X"
+    },
+    {
+      "kind": "inline",
+      "tex": "Y"
+    },
+    {
+      "kind": "inline",
+      "tex": "z"
+    },
+    {
+      "kind": "inline",
+      "tex": "G"
+    },
+    {
+      "kind": "inline",
+      "tex": "c"
+    },
+    {
+      "kind": "inline",
+      "tex": "H"
+    },
+    {
+      "kind": "inline",
+      "tex": "\\{4c,6c\\}"
+    },
+    {
+      "kind": "inline",
+      "tex": "5c"
+    },
+    {
+      "kind": "inline",
+      "tex": "H^4(4c)^4(6c)^4"
+    },
+    {
+      "kind": "inline",
+      "tex": "5c"
+    },
+    {
+      "kind": "inline",
+      "tex": "H"
+    },
+    {
+      "kind": "inline",
+      "tex": "y"
+    },
+    {
+      "kind": "inline",
+      "tex": "HHH+(4c)^3+(6c)^3+(4c,5c,6c)+yy"
+    },
+    {
+      "kind": "inline",
+      "tex": "y=5c"
+    },
+    {
+      "kind": "inline",
+      "tex": "a"
+    },
+    {
+      "kind": "inline",
+      "tex": "\\pi(a)"
+    },
+    {
+      "kind": "inline",
+      "tex": "a"
+    },
+    {
+      "kind": "inline",
+      "tex": "\\pi^{-1}(a)"
+    },
+    {
+      "kind": "inline",
+      "tex": "a"
+    },
+    {
+      "kind": "inline",
+      "tex": "q(x)=|\\{t:x_t\\ge2\\}|"
+    },
+    {
+      "kind": "inline",
+      "tex": "T(x)=|\\{t:x_t\\ge3\\}|"
+    },
+    {
+      "kind": "inline",
+      "tex": "H222"
+    },
+    {
+      "kind": "inline",
+      "tex": "H222"
+    },
+    {
+      "kind": "inline",
+      "tex": "H33"
+    },
+    {
+      "kind": "inline",
+      "tex": "a,b,c"
+    },
+    {
+      "kind": "inline",
+      "tex": "R"
+    },
+    {
+      "kind": "display",
+      "tex": "R\\in\\{\\varnothing,[3],[4],[5],[6],[3,3]\\}."
+    },
+    {
+      "kind": "inline",
+      "tex": "\\nu(x)=1"
+    },
+    {
+      "kind": "inline",
+      "tex": "0"
+    },
+    {
+      "kind": "display",
+      "tex": "\\nu(x)=(|x|\\bmod2)\\operatorname{xor}\\mathbf1_{R=[3]}.\\tag{8}"
+    },
+    {
+      "kind": "inline",
+      "tex": "\\binom{34}{6}=1,344,904"
+    },
+    {
+      "kind": "inline",
+      "tex": "H,J"
+    },
+    {
+      "kind": "inline",
+      "tex": "X,Y,Z"
+    },
+    {
+      "kind": "display",
+      "tex": "H^3J^3X^2Y^2Z^2\\tag{9}"
+    },
+    {
+      "kind": "inline",
+      "tex": "A^4B^4C^2D^2E^2"
+    },
+    {
+      "kind": "inline",
+      "tex": "D"
+    },
+    {
+      "kind": "inline",
+      "tex": "u"
+    },
+    {
+      "kind": "inline",
+      "tex": "D_u\\le2"
+    },
+    {
+      "kind": "inline",
+      "tex": "D+2e_u"
+    },
+    {
+      "kind": "inline",
+      "tex": "D_u=4"
+    },
+    {
+      "kind": "inline",
+      "tex": "D_u=3"
+    },
+    {
+      "kind": "inline",
+      "tex": "H222"
+    },
+    {
+      "kind": "inline",
+      "tex": "H33"
+    },
+    {
+      "kind": "inline",
+      "tex": "H23"
+    },
+    {
+      "kind": "inline",
+      "tex": "H33"
+    },
+    {
+      "kind": "inline",
+      "tex": "H224"
+    },
+    {
+      "kind": "inline",
+      "tex": "H223"
+    },
+    {
+      "kind": "inline",
+      "tex": "H224"
+    },
+    {
+      "kind": "inline",
+      "tex": "a^2b^2H222"
+    },
+    {
+      "kind": "inline",
+      "tex": "a,b"
+    },
+    {
+      "kind": "inline",
+      "tex": "a^3b^3H22"
+    },
+    {
+      "kind": "inline",
+      "tex": "a^2b^2H33"
+    },
+    {
+      "kind": "inline",
+      "tex": "a^2b^2c^2H33"
+    },
+    {
+      "kind": "inline",
+      "tex": "a^3b^3H^3J^3"
+    },
+    {
+      "kind": "inline",
+      "tex": "a^4b^4H^2J^2"
+    },
+    {
+      "kind": "inline",
+      "tex": "3^34^2H^3J^2"
+    },
+    {
+      "kind": "inline",
+      "tex": "q=4"
+    },
+    {
+      "kind": "inline",
+      "tex": "H222"
+    },
+    {
+      "kind": "inline",
+      "tex": "a^2b^2c^2H22"
+    },
+    {
+      "kind": "display",
+      "tex": "\\{1,2,3\\},\\{1,2,7\\},\\{1,2,9\\},\\{1,3,5\\},\\{1,4,5\\},\\{1,5,6\\},"
+    },
+    {
+      "kind": "display",
+      "tex": "\\{1,6,7\\},\\{2,3,4\\},\\{2,5,6\\},\\{3,4,7\\},\\{3,5,6\\},\\{4,5,6\\},"
+    },
+    {
+      "kind": "inline",
+      "tex": "M=a^2b^2H22"
+    },
+    {
+      "kind": "inline",
+      "tex": "c"
+    },
+    {
+      "kind": "inline",
+      "tex": "S=a^2b^2cH22"
+    },
+    {
+      "kind": "inline",
+      "tex": "S"
+    },
+    {
+      "kind": "inline",
+      "tex": "c"
+    },
+    {
+      "kind": "inline",
+      "tex": "M"
+    },
+    {
+      "kind": "inline",
+      "tex": "S"
+    },
+    {
+      "kind": "inline",
+      "tex": "M"
+    },
+    {
+      "kind": "inline",
+      "tex": "S"
+    },
+    {
+      "kind": "inline",
+      "tex": "\\{1,9\\},\\{2,5\\},\\{2,6\\},\\{3,7\\},\\{4,6\\}"
+    },
+    {
+      "kind": "inline",
+      "tex": "\\{2,8\\}"
+    },
+    {
+      "kind": "inline",
+      "tex": "r^2(10-r)^2H^2J^2"
+    },
+    {
+      "kind": "inline",
+      "tex": "1\\ler\\le4"
+    },
+    {
+      "kind": "inline",
+      "tex": "M"
+    },
+    {
+      "kind": "inline",
+      "tex": "\\{1,2\\},\\{1,4\\},\\{4,5\\}"
+    },
+    {
+      "kind": "inline",
+      "tex": "S"
+    },
+    {
+      "kind": "inline",
+      "tex": "H22"
+    },
+    {
+      "kind": "inline",
+      "tex": "H24"
+    },
+    {
+      "kind": "inline",
+      "tex": "3m\\;7m\\;H_1^3H_2^3H_3^3H_4^2"
+    },
+    {
+      "kind": "inline",
+      "tex": "m"
+    },
+    {
+      "kind": "inline",
+      "tex": "g(H333)=0"
+    },
+    {
+      "kind": "inline",
+      "tex": "H443"
+    },
+    {
+      "kind": "inline",
+      "tex": "H433"
+    },
+    {
+      "kind": "inline",
+      "tex": "H444"
+    },
+    {
+      "kind": "inline",
+      "tex": "H233"
+    },
+    {
+      "kind": "inline",
+      "tex": "H333=P"
+    },
+    {
+      "kind": "inline",
+      "tex": "(1m)^3(2m)^3(4m)^3(7m)^2"
+    },
+    {
+      "kind": "inline",
+      "tex": "K_r=r^2H33"
+    },
+    {
+      "kind": "inline",
+      "tex": "R_r=r^3H33"
+    },
+    {
+      "kind": "inline",
+      "tex": "Q_r=r^4H33"
+    },
+    {
+      "kind": "inline",
+      "tex": "r"
+    },
+    {
+      "kind": "inline",
+      "tex": "K_r"
+    },
+    {
+      "kind": "inline",
+      "tex": "R_r"
+    },
+    {
+      "kind": "inline",
+      "tex": "Q_r"
+    },
+    {
+      "kind": "inline",
+      "tex": "K_r"
+    },
+    {
+      "kind": "inline",
+      "tex": "R_r"
+    },
+    {
+      "kind": "inline",
+      "tex": "a,b,c"
+    },
+    {
+      "kind": "inline",
+      "tex": "H_1^3H_2^2H_3^2"
+    },
+    {
+      "kind": "inline",
+      "tex": "(1,4,2)"
+    },
+    {
+      "kind": "inline",
+      "tex": "(2,4,1)"
+    },
+    {
+      "kind": "inline",
+      "tex": "q"
+    },
+    {
+      "kind": "inline",
+      "tex": "T"
+    },
+    {
+      "kind": "inline",
+      "tex": "T"
+    },
+    {
+      "kind": "inline",
+      "tex": "q"
+    },
+    {
+      "kind": "inline",
+      "tex": "q=4"
+    },
+    {
+      "kind": "inline",
+      "tex": "n"
+    },
+    {
+      "kind": "inline",
+      "tex": "(F_{1,n}+3F_{2,n}+2F_{3,n})/6"
+    },
+    {
+      "kind": "inline",
+      "tex": "G"
+    },
+    {
+      "kind": "inline",
+      "tex": "a,b,c"
+    },
+    {
+      "kind": "display",
+      "tex": "abc,\\quad\\binom{a+1}{2}c,\\quada\\binom{b+1}{2},\\quad\\text{or}\\quad\\binom{a+2}{3},\\tag{10}"
+    },
+    {
+      "kind": "inline",
+      "tex": "0\\leu\\lev\\lew"
+    },
+    {
+      "kind": "display",
+      "tex": "\\operatorname{rank}_2(u,v)=\\binom{v+1}{2}+u,\\quad\\operatorname{rank}_3(u,v,w)=\\binom{w+2}{3}+\\binom{v+1}{2}+u.\\tag{11}"
+    },
+    {
+      "kind": "inline",
+      "tex": "(n,h,\\mathrm{rank})"
+    },
+    {
+      "kind": "inline",
+      "tex": "0,1,2,3"
+    },
+    {
+      "kind": "inline",
+      "tex": "K_n"
+    },
+    {
+      "kind": "inline",
+      "tex": "n"
+    },
+    {
+      "kind": "inline",
+      "tex": "P_n\\subseteqK_n"
+    },
+    {
+      "kind": "display",
+      "tex": "N_n=\\operatorname{Pre}(P_{n+1}),\\qquadP_n=K_n\\setminusN_n.\\tag{12}"
+    },
+    {
+      "kind": "inline",
+      "tex": "K_{35}=\\varnothing"
+    },
+    {
+      "kind": "inline",
+      "tex": "K_{34}"
+    },
+    {
+      "kind": "inline",
+      "tex": "1m"
+    },
+    {
+      "kind": "inline",
+      "tex": "1m"
+    },
+    {
+      "kind": "inline",
+      "tex": "11m"
+    },
+    {
+      "kind": "inline",
+      "tex": "2m"
+    },
+    {
+      "kind": "inline",
+      "tex": "3m"
+    },
+    {
+      "kind": "inline",
+      "tex": "23m"
+    },
+    {
+      "kind": "inline",
+      "tex": "3m"
+    },
+    {
+      "kind": "inline",
+      "tex": "2m"
+    },
+    {
+      "kind": "inline",
+      "tex": "23m"
+    },
+    {
+      "kind": "inline",
+      "tex": "4m"
+    },
+    {
+      "kind": "inline",
+      "tex": "2m"
+    },
+    {
+      "kind": "inline",
+      "tex": "24m"
+    },
+    {
+      "kind": "inline",
+      "tex": "5m"
+    },
+    {
+      "kind": "inline",
+      "tex": "5p"
+    },
+    {
+      "kind": "inline",
+      "tex": "5m\\;5p"
+    },
+    {
+      "kind": "inline",
+      "tex": "H"
+    },
+    {
+      "kind": "inline",
+      "tex": "2m"
+    },
+    {
+      "kind": "inline",
+      "tex": "2m\\;H"
+    },
+    {
+      "kind": "inline",
+      "tex": "x"
+    },
+    {
+      "kind": "inline",
+      "tex": "a"
+    },
+    {
+      "kind": "inline",
+      "tex": "b"
+    },
+    {
+      "kind": "display",
+      "tex": "\\operatorname{Win}(x+e_a+e_b),\\quad\\text{or}\\quadx+e_a+e_b=\\gamma(y)\\tag{13}"
+    },
+    {
+      "kind": "inline",
+      "tex": "y"
+    },
+    {
+      "kind": "inline",
+      "tex": "\\gamma"
+    },
+    {
+      "kind": "inline",
+      "tex": "x\\le\\gamma(z)"
+    },
+    {
+      "kind": "inline",
+      "tex": "z"
+    },
+    {
+      "kind": "inline",
+      "tex": "x"
+    },
+    {
+      "kind": "inline",
+      "tex": "\\le34"
+    },
+    {
+      "kind": "display",
+      "tex": "x_{12}=99m\\;6789p\\;456888s,\\tag{14}"
+    },
+    {
+      "kind": "inline",
+      "tex": "x_{12}"
+    },
+    {
+      "kind": "inline",
+      "tex": "x_{12}"
+    },
+    {
+      "kind": "inline",
+      "tex": "M"
+    },
+    {
+      "kind": "inline",
+      "tex": "n=|x|"
+    },
+    {
+      "kind": "inline",
+      "tex": "q=|\\{i:x_i\\ge2\\}|"
+    },
+    {
+      "kind": "inline",
+      "tex": "t=|\\{i:x_i\\ge3\\}|"
+    },
+    {
+      "kind": "inline",
+      "tex": "t"
+    },
+    {
+      "kind": "inline",
+      "tex": "R"
+    },
+    {
+      "kind": "inline",
+      "tex": "q-t"
+    },
+    {
+      "kind": "inline",
+      "tex": "r"
+    },
+    {
+      "kind": "display",
+      "tex": "n=3t+r+(q-t)=2t+q+r.\\tag{A1}"
+    },
+    {
+      "kind": "inline",
+      "tex": "s"
+    },
+    {
+      "kind": "inline",
+      "tex": "s"
+    },
+    {
+      "kind": "display",
+      "tex": "r\\le3s+2(9-s)+7=25+s.\\tag{A2}"
+    },
+    {
+      "kind": "inline",
+      "tex": "t+s"
+    },
+    {
+      "kind": "inline",
+      "tex": "n\\ge38"
+    },
+    {
+      "kind": "inline",
+      "tex": "q\\le6"
+    },
+    {
+      "kind": "inline",
+      "tex": "t\\le4"
+    },
+    {
+      "kind": "inline",
+      "tex": "t=4"
+    },
+    {
+      "kind": "inline",
+      "tex": "q=4"
+    },
+    {
+      "kind": "display",
+      "tex": "t+s\\ge13-t-q.\\tag{A3}"
+    },
+    {
+      "kind": "inline",
+      "tex": "t\\ge1"
+    },
+    {
+      "kind": "inline",
+      "tex": "t+q\\le8"
+    },
+    {
+      "kind": "inline",
+      "tex": "t=0"
+    },
+    {
+      "kind": "inline",
+      "tex": "t=3,q=6"
+    },
+    {
+      "kind": "inline",
+      "tex": "R"
+    },
+    {
+      "kind": "inline",
+      "tex": "R"
+    },
+    {
+      "kind": "inline",
+      "tex": "n\\le37"
+    },
+    {
+      "kind": "inline",
+      "tex": "D"
+    },
+    {
+      "kind": "inline",
+      "tex": "D_i\\le2"
+    },
+    {
+      "kind": "inline",
+      "tex": "D+e_i"
+    },
+    {
+      "kind": "inline",
+      "tex": "D+2e_i"
+    },
+    {
+      "kind": "inline",
+      "tex": "D_i=4"
+    },
+    {
+      "kind": "inline",
+      "tex": "D_i=3"
+    },
+    {
+      "kind": "inline",
+      "tex": "n\\ge35"
+    },
+    {
+      "kind": "inline",
+      "tex": "q\\le5"
+    },
+    {
+      "kind": "inline",
+      "tex": "t+s\\le3"
+    },
+    {
+      "kind": "display",
+      "tex": "n\\le2t+q+25+s\\le28+t+q.\\tag{A4}"
+    },
+    {
+      "kind": "inline",
+      "tex": "t\\le3"
+    },
+    {
+      "kind": "inline",
+      "tex": "q\\le5"
+    },
+    {
+      "kind": "inline",
+      "tex": "(t,q)=(3,4),(3,5),(2,5)"
+    },
+    {
+      "kind": "inline",
+      "tex": "t=3"
+    },
+    {
+      "kind": "inline",
+      "tex": "q\\ge4"
+    },
+    {
+      "kind": "inline",
+      "tex": "t=2,q=5"
+    },
+    {
+      "kind": "inline",
+      "tex": "r=n-9\\ge26"
+    },
+    {
+      "kind": "inline",
+      "tex": "C"
+    },
+    {
+      "kind": "inline",
+      "tex": "C"
+    },
+    {
+      "kind": "inline",
+      "tex": "C"
+    },
+    {
+      "kind": "inline",
+      "tex": "C"
+    },
+    {
+      "kind": "inline",
+      "tex": "C"
+    },
+    {
+      "kind": "inline",
+      "tex": "D"
+    },
+    {
+      "kind": "inline",
+      "tex": "C"
+    },
+    {
+      "kind": "inline",
+      "tex": "R"
+    },
+    {
+      "kind": "inline",
+      "tex": "D"
+    },
+    {
+      "kind": "inline",
+      "tex": "C"
+    },
+    {
+      "kind": "inline",
+      "tex": "D"
+    },
+    {
+      "kind": "inline",
+      "tex": "9+2=11"
+    },
+    {
+      "kind": "inline",
+      "tex": "n\\le34"
+    },
+    {
+      "kind": "inline",
+      "tex": "R"
+    },
+    {
+      "kind": "inline",
+      "tex": "R"
+    },
+    {
+      "kind": "inline",
+      "tex": "L"
+    },
+    {
+      "kind": "inline",
+      "tex": "\\varnothing"
+    },
+    {
+      "kind": "inline",
+      "tex": "[3]"
+    },
+    {
+      "kind": "inline",
+      "tex": "[4]"
+    },
+    {
+      "kind": "inline",
+      "tex": "[5]"
+    },
+    {
+      "kind": "inline",
+      "tex": "[6]"
+    },
+    {
+      "kind": "inline",
+      "tex": "[3,3]"
+    },
+    {
+      "kind": "inline",
+      "tex": "[3]"
+    },
+    {
+      "kind": "inline",
+      "tex": "abc"
+    },
+    {
+      "kind": "inline",
+      "tex": "U,V,W"
+    },
+    {
+      "kind": "inline",
+      "tex": "abc"
+    },
+    {
+      "kind": "inline",
+      "tex": "[4]"
+    },
+    {
+      "kind": "inline",
+      "tex": "abcd"
+    },
+    {
+      "kind": "inline",
+      "tex": "U,V"
+    },
+    {
+      "kind": "inline",
+      "tex": "abc"
+    },
+    {
+      "kind": "inline",
+      "tex": "abc"
+    },
+    {
+      "kind": "inline",
+      "tex": "bcd"
+    },
+    {
+      "kind": "inline",
+      "tex": "[5]"
+    },
+    {
+      "kind": "inline",
+      "tex": "abcde"
+    },
+    {
+      "kind": "inline",
+      "tex": "U"
+    },
+    {
+      "kind": "inline",
+      "tex": "a"
+    },
+    {
+      "kind": "inline",
+      "tex": "U"
+    },
+    {
+      "kind": "inline",
+      "tex": "aaa+bcd+bcd+UUU+ee"
+    },
+    {
+      "kind": "inline",
+      "tex": "b"
+    },
+    {
+      "kind": "inline",
+      "tex": "U"
+    },
+    {
+      "kind": "inline",
+      "tex": "bbb+cde+cde+UUU+aa"
+    },
+    {
+      "kind": "inline",
+      "tex": "d"
+    },
+    {
+      "kind": "inline",
+      "tex": "U"
+    },
+    {
+      "kind": "inline",
+      "tex": "ddd+abc+abc+UUU+ee"
+    },
+    {
+      "kind": "inline",
+      "tex": "e"
+    },
+    {
+      "kind": "inline",
+      "tex": "U"
+    },
+    {
+      "kind": "inline",
+      "tex": "eee+bcd+bcd+UUU+aa"
+    },
+    {
+      "kind": "inline",
+      "tex": "U"
+    },
+    {
+      "kind": "inline",
+      "tex": "a"
+    },
+    {
+      "kind": "inline",
+      "tex": "aaa+bcd+bcd+UUU+ee"
+    },
+    {
+      "kind": "inline",
+      "tex": "c"
+    },
+    {
+      "kind": "inline",
+      "tex": "c"
+    },
+    {
+      "kind": "inline",
+      "tex": "abc+abc+cde+cde+UU"
+    },
+    {
+      "kind": "inline",
+      "tex": "[6]"
+    },
+    {
+      "kind": "inline",
+      "tex": "[3,3]"
+    },
+    {
+      "kind": "inline",
+      "tex": "L"
+    },
+    {
+      "kind": "display",
+      "tex": "g(x)=(L-|x|)\\bmod2.\\tag{B1}"
+    },
+    {
+      "kind": "inline",
+      "tex": "L=15"
+    },
+    {
+      "kind": "inline",
+      "tex": "[3]"
+    },
+    {
+      "kind": "inline",
+      "tex": "F=H^3J^3X^2Y^2Z^2"
+    },
+    {
+      "kind": "inline",
+      "tex": "H,J"
+    },
+    {
+      "kind": "inline",
+      "tex": "XYZ"
+    },
+    {
+      "kind": "inline",
+      "tex": "XYZ"
+    },
+    {
+      "kind": "inline",
+      "tex": "u"
+    },
+    {
+      "kind": "inline",
+      "tex": "u"
+    },
+    {
+      "kind": "inline",
+      "tex": "X,Y,Z"
+    },
+    {
+      "kind": "inline",
+      "tex": "u"
+    },
+    {
+      "kind": "inline",
+      "tex": "u"
+    },
+    {
+      "kind": "inline",
+      "tex": "u"
+    },
+    {
+      "kind": "inline",
+      "tex": "3m\\;7m\\;H_1^3H_2^3H_3^3H_4^2"
+    },
+    {
+      "kind": "inline",
+      "tex": "n"
+    },
+    {
+      "kind": "inline",
+      "tex": "f(n)"
+    },
+    {
+      "kind": "inline",
+      "tex": "r"
+    },
+    {
+      "kind": "display",
+      "tex": "f(0)=0,\\qquadf(n)=\\operatorname{mex}_{1\\ler\\len}\\left\\{f(\\max(0,r-3))\\operatorname{xor}f(\\max(0,n-r-2))\\right\\}.\\tag{B2}"
+    },
+    {
+      "kind": "inline",
+      "tex": "n=0,\\ldots,9"
+    },
+    {
+      "kind": "inline",
+      "tex": "(0,1,1,1,2,2,0,3,3,1)"
+    },
+    {
+      "kind": "inline",
+      "tex": "41^22^6=107,584"
+    },
+    {
+      "kind": "inline",
+      "tex": "S=U^4V^4A^2B^2C^2"
+    },
+    {
+      "kind": "inline",
+      "tex": "UUU"
+    },
+    {
+      "kind": "inline",
+      "tex": "VVV"
+    },
+    {
+      "kind": "inline",
+      "tex": "UAB"
+    },
+    {
+      "kind": "inline",
+      "tex": "VVV"
+    },
+    {
+      "kind": "inline",
+      "tex": "CCC"
+    },
+    {
+      "kind": "inline",
+      "tex": "UU"
+    },
+    {
+      "kind": "inline",
+      "tex": "ABC"
+    },
+    {
+      "kind": "inline",
+      "tex": "D=UUU+VVV+2(ABC)"
+    },
+    {
+      "kind": "inline",
+      "tex": "D"
+    },
+    {
+      "kind": "inline",
+      "tex": "U,V"
+    },
+    {
+      "kind": "inline",
+      "tex": "S"
+    },
+    {
+      "kind": "inline",
+      "tex": "x"
+    },
+    {
+      "kind": "inline",
+      "tex": "x"
+    },
+    {
+      "kind": "inline",
+      "tex": "ABx"
+    },
+    {
+      "kind": "inline",
+      "tex": "x"
+    },
+    {
+      "kind": "inline",
+      "tex": "2(ABx)+UUU+VVV+CC"
+    },
+    {
+      "kind": "inline",
+      "tex": "UUU"
+    },
+    {
+      "kind": "inline",
+      "tex": "VVV"
+    },
+    {
+      "kind": "inline",
+      "tex": "x"
+    },
+    {
+      "kind": "inline",
+      "tex": "U^4V^4A^2B^2C^2x^2"
+    },
+    {
+      "kind": "inline",
+      "tex": "(1m)^4(2m)^4(1p)^2(2p)^2(3p)^2"
+    },
+    {
+      "kind": "inline",
+      "tex": "3m"
+    },
+    {
+      "kind": "inline",
+      "tex": "111m+123m+123p+123p+22m"
+    },
+    {
+      "kind": "inline",
+      "tex": "M"
+    },
+    {
+      "kind": "inline",
+      "tex": "M"
+    },
+    {
+      "kind": "inline",
+      "tex": "(1m)^2(2m)^2H^2J^2"
+    },
+    {
+      "kind": "inline",
+      "tex": "7m"
+    },
+    {
+      "kind": "inline",
+      "tex": "(1m)^2(4m)^2H^2J^2"
+    },
+    {
+      "kind": "inline",
+      "tex": "5m"
+    },
+    {
+      "kind": "inline",
+      "tex": "(4m)^2(5m)^2H^2J^2"
+    },
+    {
+      "kind": "inline",
+      "tex": "2p"
+    },
+    {
+      "kind": "inline",
+      "tex": "S41"
+    },
+    {
+      "kind": "inline",
+      "tex": "T=S+H"
+    },
+    {
+      "kind": "inline",
+      "tex": "S"
+    },
+    {
+      "kind": "inline",
+      "tex": "1m"
+    }
+  ],
+  "table_numeric_tokens": [
+    "222",
+    "33",
+    "23",
+    "33",
+    "224",
+    "223",
+    "224",
+    "2",
+    "2",
+    "222",
+    "3",
+    "3",
+    "22",
+    "35",
+    "2",
+    "2",
+    "33",
+    "2",
+    "2",
+    "2",
+    "33",
+    "5",
+    "3",
+    "3",
+    "3",
+    "3",
+    "4",
+    "4",
+    "2",
+    "2",
+    "3",
+    "34",
+    "2",
+    "3",
+    "2",
+    "4",
+    "44",
+    "32",
+    "12",
+    "100",
+    "98",
+    "2",
+    "35",
+    "35",
+    "0",
+    "179",
+    "165",
+    "14",
+    "1",
+    "2",
+    "4",
+    "6",
+    "8",
+    "9",
+    "3",
+    "5",
+    "7",
+    "19,077,162,130,853,393",
+    "8,970,524,587,826",
+    "37",
+    "1,395,152,864,631,635",
+    "778,532,864,302",
+    "34",
+    "203,051,492,021",
+    "575,481,372,281",
+    "778,532,864,302",
+    "1",
+    "1",
+    "11",
+    "2",
+    "3",
+    "23",
+    "3",
+    "2",
+    "23",
+    "4",
+    "2",
+    "24",
+    "5",
+    "5",
+    "5",
+    "5",
+    "2",
+    "2",
+    "73.52",
+    "69.10",
+    "69.17",
+    "10.64",
+    "88.84",
+    "16",
+    "24",
+    "23",
+    "529.58",
+    "490.42",
+    "192.08",
+    "4.198",
+    "86.60",
+    "16",
+    "34",
+    "20,776",
+    "91",
+    "4,563",
+    "80",
+    "25,510",
+    "35",
+    "4.6",
+    "7",
+    "3.3",
+    "3",
+    "4",
+    "2",
+    "16",
+    "73",
+    "3",
+    "2",
+    "222",
+    "223",
+    "224",
+    "233",
+    "234",
+    "15",
+    "16",
+    "4",
+    "2",
+    "2",
+    "2",
+    "3",
+    "2",
+    "2",
+    "3",
+    "4",
+    "2",
+    "2",
+    "4",
+    "14",
+    "5",
+    "5",
+    "2",
+    "12",
+    "1",
+    "6",
+    "2",
+    "12",
+    "1",
+    "3",
+    "3",
+    "2",
+    "12",
+    "1",
+    "1",
+    "2",
+    "2",
+    "2",
+    "2",
+    "2",
+    "7",
+    "0000000000000000000010000220000022",
+    "1",
+    "2",
+    "4",
+    "2",
+    "2",
+    "2",
+    "5",
+    "0000000000000000000000120020000022",
+    "4",
+    "2",
+    "5",
+    "2",
+    "2",
+    "2",
+    "2",
+    "0000000000000000100000220000000022",
+    "0",
+    "1",
+    "1",
+    "0",
+    "1",
+    "1",
+    "6",
+    "0",
+    "6",
+    "2",
+    "2",
+    "47",
+    "14",
+    "33",
+    "4",
+    "3",
+    "298",
+    "46",
+    "252",
+    "7",
+    "4",
+    "1,725",
+    "404",
+    "1,321",
+    "12",
+    "5",
+    "8,967",
+    "1,679",
+    "7,288",
+    "18",
+    "6",
+    "42,793",
+    "11,159",
+    "31,634",
+    "27",
+    "7",
+    "187,376",
+    "34,632",
+    "152,744",
+    "38",
+    "8",
+    "760,493",
+    "187,425",
+    "573,068",
+    "52",
+    "9",
+    "2,874,880",
+    "531,639",
+    "2,343,241",
+    "68",
+    "10",
+    "10,187,475",
+    "2,248,838",
+    "7,938,637",
+    "87",
+    "11",
+    "34,006,368",
+    "5,951,610",
+    "28,054,758",
+    "107",
+    "12",
+    "107,440,638",
+    "21,282,781",
+    "86,157,857",
+    "130",
+    "13",
+    "321,356,083",
+    "52,530,670",
+    "268,825,413",
+    "148",
+    "14",
+    "903,209,000",
+    "172,931,755",
+    "730,277,245",
+    "163",
+    "15",
+    "2,346,950,750",
+    "387,779,363",
+    "1,959,171,387",
+    "170",
+    "16",
+    "5,544,554,559",
+    "1,146,615,962",
+    "4,397,938,597",
+    "174",
+    "17",
+    "11,780,250,236",
+    "2,127,213,505",
+    "9,653,036,731",
+    "173",
+    "18",
+    "22,376,865,721",
+    "5,169,175,844",
+    "17,207,689,877",
+    "173",
+    "19",
+    "37,804,625,883",
+    "7,545,862,761",
+    "30,258,763,122",
+    "173",
+    "20",
+    "56,566,252,124",
+    "14,418,956,851",
+    "42,147,295,273",
+    "173",
+    "21",
+    "75,050,088,557",
+    "16,379,219,048",
+    "58,670,869,509",
+    "172",
+    "22",
+    "89,127,184,893",
+    "24,583,507,136",
+    "64,543,677,757",
+    "170",
+    "23",
+    "96,268,928,092",
+    "22,390,373,365",
+    "73,878,554,727",
+    "167",
+    "24",
+    "96,065,224,588",
+    "27,864,862,842",
+    "68,200,361,746",
+    "163",
+    "25",
+    "88,982,128,123",
+    "21,663,176,175",
+    "67,318,951,948",
+    "160",
+    "26",
+    "75,440,492,234",
+    "22,885,068,257",
+    "52,555,423,977",
+    "158",
+    "27",
+    "56,645,165,793",
+    "14,906,959,805",
+    "41,738,205,988",
+    "157",
+    "28",
+    "35,949,118,771",
+    "11,937,273,296",
+    "24,011,845,475",
+    "153",
+    "29",
+    "18,221,731,480",
+    "5,735,300,814",
+    "12,486,430,666",
+    "143",
+    "30",
+    "6,893,983,233",
+    "2,718,161,072",
+    "4,175,822,161",
+    "126",
+    "31",
+    "1,786,188,250",
+    "805,422,067",
+    "980,766,183",
+    "99",
+    "32",
+    "280,542,509",
+    "116,909,120",
+    "163,633,389",
+    "68",
+    "33",
+    "21,924,455",
+    "13,354,184",
+    "8,570,271",
+    "37",
+    "34",
+    "587,901",
+    "587,901",
+    "0",
+    "13",
+    "778,532,864,302",
+    "203,051,492,021",
+    "575,481,372,281",
+    "3,686",
+    "01",
+    "02",
+    "03",
+    "04",
+    "35",
+    "179",
+    "220",
+    "05",
+    "9",
+    "9",
+    "06",
+    "4",
+    "07",
+    "08",
+    "09",
+    "10",
+    "11",
+    "12",
+    "13",
+    "757",
+    "326",
+    "14",
+    "327",
+    "15",
+    "16",
+    "44",
+    "17",
+    "18",
+    "256",
+    "1",
+    "4",
+    "9",
+    "7",
+    "287",
+    "976",
+    "42",
+    "6",
+    "7",
+    "41",
+    "548651529016",
+    "53485008828",
+    "97",
+    "826",
+    "5",
+    "256",
+    "590",
+    "16189",
+    "9",
+    "22",
+    "18",
+    "8",
+    "95095",
+    "9",
+    "9926",
+    "2",
+    "6",
+    "585511",
+    "21",
+    "88",
+    "1194",
+    "941",
+    "55",
+    "48",
+    "4",
+    "686",
+    "29518",
+    "3",
+    "032723",
+    "431125610",
+    "2",
+    "3509",
+    "8",
+    "04242",
+    "742",
+    "5",
+    "20",
+    "0",
+    "50665",
+    "0",
+    "454",
+    "3",
+    "4",
+    "7691",
+    "4",
+    "2",
+    "0380",
+    "7159766",
+    "8",
+    "0",
+    "8",
+    "757",
+    "917",
+    "5649940",
+    "01",
+    "5",
+    "6",
+    "7",
+    "4",
+    "69",
+    "5",
+    "988",
+    "78",
+    "0",
+    "8",
+    "9",
+    "55",
+    "4572",
+    "81",
+    "31",
+    "3",
+    "4",
+    "43",
+    "9466",
+    "74",
+    "4",
+    "14263",
+    "73",
+    "9751",
+    "570",
+    "889020654",
+    "524648",
+    "796151",
+    "326",
+    "528",
+    "59",
+    "3590",
+    "29",
+    "05",
+    "21",
+    "088",
+    "4",
+    "11",
+    "76853",
+    "2303",
+    "1",
+    "488",
+    "6",
+    "9355",
+    "8",
+    "9",
+    "7",
+    "54",
+    "10",
+    "51873",
+    "47596",
+    "18",
+    "965",
+    "9667",
+    "74",
+    "800",
+    "9",
+    "7",
+    "0",
+    "42",
+    "2",
+    "12",
+    "0000000020000011110001110300000000",
+    "12",
+    "2",
+    "13",
+    "14",
+    "0000011110001000020001120300000000",
+    "14",
+    "12",
+    "20",
+    "0110330311010110001010110000000000",
+    "24086",
+    "20",
+    "20",
+    "11",
+    "12",
+    "28",
+    "0110440411010110101010110000001111",
+    "09818",
+    "11",
+    "30",
+    "0110440411010110111010110000011111",
+    "02076",
+    "11",
+    "32",
+    "1010110110000440411010110111111111",
+    "32",
+    "11",
+    "34",
+    "1010440410110110111010110111111111",
+    "34",
+    "11",
+    "34",
+    "0110440411010110111010110111111111",
+    "09"
+  ],
+  "equation_tags": [
+    "1",
+    "2",
+    "3",
+    "4",
+    "5",
+    "6",
+    "7",
+    "8",
+    "9",
+    "10",
+    "11",
+    "12",
+    "13",
+    "14",
+    "A1",
+    "A2",
+    "A3",
+    "A4",
+    "B1",
+    "B2"
+  ],
+  "physical_states": [
+    "0000000000000000000000102020000023",
+    "0000000000000000000000120020000022",
+    "0000000000000000000010000220000022",
+    "0000000000000000100000220000000022",
+    "0000000020000011110001110300000000",
+    "0000011110001000020001120300000000",
+    "0110330311010110001010110000000000",
+    "0110440411010110101010110000001111",
+    "0110440411010110111010110000011111",
+    "0110440411010110111010110111111111",
+    "1000000000000000000000000000000000",
+    "1010110110000440411010110111111111",
+    "1010440410110110111010110111111111"
+  ]
+}

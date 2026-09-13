@@ -1,0 +1,341 @@
+import Mathlib
+
+/-!
+Formal infrastructure for the shared-table Mahjong achievement game.
+This file does NOT determine the winner at the empty table.
+-/
+namespace SharedMahjong
+
+abbrev Tile := Fin 34
+abbrev Table := Tile → ℕ
+
+def unit (i : Tile) : Table := fun j => if j = i then 1 else 0
+def add (x : Table) (i : Tile) : Table := fun j => x j + unit i j
+def Valid (x : Table) : Prop := ∀ i, x i ≤ 4
+def Contains (x y : Table) : Prop := ∀ i, y i ≤ x i
+def size (x : Table) : ℕ := ∑ i, x i
+
+@[simp] theorem unit_self (i : Tile) : unit i i = 1 := by simp [unit]
+@[simp] theorem add_self (x : Table) (i : Tile) : add x i i = x i + 1 := by simp [add]
+@[simp] theorem size_unit (i : Tile) : size (unit i) = 1 := by simp [size, unit]
+@[simp] theorem size_add (x : Table) (i : Tile) : size (add x i) = size x + 1 := by
+  simp [size, add, unit, Finset.sum_add_distrib]
+
+theorem valid_add (x : Table) (i : Tile) (hx : Valid x) (hi : x i < 4) :
+    Valid (add x i) := by
+  intro j
+  by_cases h : j = i
+  · subst j
+    simp only [add_self]
+    omega
+  · simpa [add, unit, h] using hx j
+
+theorem add_contains (x : Table) (i : Tile) : Contains (add x i) x := by
+  intro j
+  simp [add]
+
+theorem size_le_136 (x : Table) (hx : Valid x) : size x ≤ 136 := by
+  calc
+    size x ≤ ∑ _i : Tile, 4 := Finset.sum_le_sum (fun i _ => hx i)
+    _ = 136 := by decide
+
+/-- Theorem independent of the particular winning targets: every move decreases stock. -/
+theorem stock_strict (x : Table) (i : Tile) (hx : Valid x) (hi : x i < 4) :
+    136 - size (add x i) < 136 - size x := by
+  have h := size_le_136 (add x i) (valid_add x i hx hi)
+  rw [size_add] at h ⊢
+  omega
+
+
+/- Exact winning-shape definitions; tile indices 0..26 are m,p,s,
+   27..33 are seven distinct honors. -/
+def triplet (i : Tile) : Table := fun j => 3 * unit i j
+def seqTile (s : Fin 3) (r : Fin 7) (k : Fin 3) : Tile :=
+  ⟨9 * s.val + r.val + k.val, by omega⟩
+def sequence (s : Fin 3) (r : Fin 7) : Table :=
+  fun j => unit (seqTile s r 0) j + unit (seqTile s r 1) j + unit (seqTile s r 2) j
+
+inductive Meld : Table → Prop
+  | triplet (i : Tile) : Meld (SharedMahjong.triplet i)
+  | sequence (s : Fin 3) (r : Fin 7) : Meld (SharedMahjong.sequence s r)
+
+def FourMelds (D : Table) : Prop :=
+  ∃ a b c d, Meld a ∧ Meld b ∧ Meld c ∧ Meld d ∧
+    ∀ i, D i = a i + b i + c i + d i
+
+def PairOn (D : Table) (i : Tile) : Table := add (add D i) i
+def Standard (h : Table) : Prop := ∃ D i, FourMelds D ∧ h = PairOn D i
+def SevenPairs (h : Table) : Prop :=
+  ∃ p : Finset Tile, p.card = 7 ∧ ∀ i, h i = if i ∈ p then 2 else 0
+def orphans : Finset Tile := {0, 8, 9, 17, 18, 26, 27, 28, 29, 30, 31, 32, 33}
+def ThirteenOrphans (h : Table) : Prop :=
+  ∃ p ∈ orphans, ∀ i, h i = (if i ∈ orphans then 1 else 0) + unit p i
+
+def Win (x : Table) : Prop :=
+  ∃ h, Valid h ∧ (Standard h ∨ SevenPairs h ∨ ThirteenOrphans h) ∧ Contains x h
+
+def Safe (x : Table) : Prop :=
+  Valid x ∧ ¬ Win x ∧ ∀ i, x i < 4 → ¬ Win (add x i)
+
+theorem meld_size {m : Table} (hm : Meld m) : size m = 3 := by
+  cases hm with
+  | triplet i => simp [size, triplet, unit]
+  | sequence s r => simp [size, sequence, unit, Finset.sum_add_distrib]
+
+theorem four_melds_size {D : Table} (hD : FourMelds D) : size D = 12 := by
+  obtain ⟨a, b, c, d, ha, hb, hc, hd, he⟩ := hD
+  have e : D = fun i => a i + b i + c i + d i := funext he
+  rw [e]
+  simp only [size, Finset.sum_add_distrib]
+  change size a + size b + size c + size d = 12
+  rw [meld_size ha, meld_size hb, meld_size hc, meld_size hd]
+
+theorem pairOn_valid {D : Table} (hD : Valid D) (i : Tile) (hi : D i ≤ 2) :
+    Valid (PairOn D i) := by
+  intro j
+  by_cases h : j = i
+  · subst j
+    simp only [PairOn, add_self]
+    omega
+  · simpa [PairOn, add, unit, h] using hD j
+
+theorem standard_win {x D : Table} (hD : FourMelds D) (hv : Valid D)
+    (i : Tile) (hi : D i ≤ 2) (hc : Contains x (PairOn D i)) : Win x := by
+  exact ⟨PairOn D i, pairOn_valid hv i hi, Or.inl ⟨D, i, hD, rfl⟩, hc⟩
+
+
+/-- A concrete winning subset in the fully exhausted inventory. -/
+def fourHonorMelds : Table :=
+  fun i => triplet 27 i + triplet 28 i + triplet 29 i + triplet 30 i
+
+theorem full_table_win : Win (fun _ : Tile => 4) := by
+  apply standard_win (D := fourHonorMelds) (i := 31)
+  · exact ⟨triplet 27, triplet 28, triplet 29, triplet 30,
+      Meld.triplet 27, Meld.triplet 28, Meld.triplet 29, Meld.triplet 30,
+      fun _ => rfl⟩
+  · unfold Valid
+    decide
+  · decide
+  · unfold Contains
+    decide
+
+/-- A valid table without a winning subset always has remaining inventory.
+    Thus the original achievement game cannot terminate in an exhausted-stock draw. -/
+theorem nonwinning_has_legal_move {x : Table} (hx : Valid x) (hn : ¬ Win x) :
+    ∃ i, x i < 4 := by
+  by_contra h
+  push Not at h
+  have he : x = fun _ : Tile => 4 := by
+    funext i
+    have := hx i
+    have := h i
+    omega
+  rw [he] at hn
+  exact hn full_table_win
+
+#print axioms nonwinning_has_legal_move
+
+/-- A safe table containing four melds can exceed their counts only
+    by adding the fourth copy of a kind that occurs three times in D. -/
+theorem four_meld_extension {x D : Table} (hD : FourMelds D)
+    (hx : Safe x) (hc : Contains x D) (i : Tile) (hi : D i < x i) :
+    D i = 3 ∧ x i = 4 := by
+  have hvD : Valid D := fun j => le_trans (hc j) (hx.1 j)
+  have hxi := hx.1 i
+  by_cases hlow : D i ≤ 2
+  · by_cases htwo : D i + 2 ≤ x i
+    · have hh : Contains x (PairOn D i) := by
+        intro j
+        by_cases he : j = i
+        · subst j
+          simp only [PairOn, add_self]
+          omega
+        · simpa [PairOn, add, unit, he] using hc j
+      exact False.elim (hx.2.1 (standard_win hD hvD i hlow hh))
+    · have hstock : x i < 4 := by omega
+      have hh : Contains (add x i) (PairOn D i) := by
+        intro j
+        by_cases he : j = i
+        · subst j
+          simp only [PairOn, add_self]
+          omega
+        · simpa [PairOn, add, unit, he] using hc j
+      exact False.elim (hx.2.2 i hstock (standard_win hD hvD i hlow hh))
+  · omega
+
+/-- There are at most four kinds whose fourth copy can remain to be played. -/
+theorem four_meld_candidates {D : Table} (hD : FourMelds D) :
+    (Finset.univ.filter fun i => D i = 3).card ≤ 4 := by
+  let C := Finset.univ.filter fun i => D i = 3
+  have hsum : ∑ i ∈ C, D i = C.card * 3 := by
+    calc
+      ∑ i ∈ C, D i = ∑ _i ∈ C, 3 := by
+        apply Finset.sum_congr rfl
+        intro i hi
+        exact (Finset.mem_filter.mp hi).2
+      _ = C.card * 3 := by simp
+  have hle : ∑ i ∈ C, D i ≤ size D := by
+    apply Finset.sum_le_sum_of_subset
+    exact Finset.filter_subset _ _
+  have hsize := four_melds_size hD
+  change C.card ≤ 4
+  omega
+
+#print axioms four_meld_extension
+#print axioms four_meld_candidates
+
+/- Arbitrary normal-play move graph with a decreasing natural rank. -/
+section RankedGame
+variable {S : Type} (moves : S → List S) (rank : S → ℕ)
+variable (decreases : ∀ s t, t ∈ moves s → rank t < rank s)
+
+/-- Exact terminating win/loss decision; true means player to move can force a win. -/
+def solve (moves : S → List S) (rank : S → ℕ)
+    (decreases : ∀ s t, t ∈ moves s → rank t < rank s) (s : S) : Bool :=
+  (moves s).attach.any fun t => !(solve moves rank decreases t.val)
+termination_by rank s
+decreasing_by exact decreases _ _ t.property
+
+theorem solve_eq (s : S) :
+    solve moves rank decreases s =
+      (moves s).any (fun t => !(solve moves rank decreases t)) := by
+  rw [solve]
+  apply Bool.eq_iff_iff.mpr
+  simp only [List.any_eq_true]
+  constructor
+  · rintro ⟨t, _, ht⟩
+    exact ⟨t.val, t.property, ht⟩
+  · rintro ⟨t, ht, hf⟩
+    exact ⟨⟨t, ht⟩, List.mem_attach _ _, hf⟩
+
+/-- A local W/L labelling is a strategy certificate:
+ winning rows provide a losing successor; losing rows cover every successor. -/
+def Certificate (label : S → Bool) : Prop :=
+  ∀ s, (label s = true → ∃ t ∈ moves s, label t = false) ∧
+       (label s = false → ∀ t ∈ moves s, label t = true)
+
+/-- Soundness does not depend on the search order or heuristic that found the labels. -/
+theorem certificate_sound (label : S → Bool) (hc : Certificate moves label) :
+    ∀ s, label s = solve moves rank decreases s := by
+  intro s
+  induction h : rank s using Nat.strong_induction_on generalizing s with
+  | h n ih =>
+    rw [solve_eq]
+    cases hl : label s with
+    | false =>
+      apply Eq.symm
+      apply List.any_eq_false.mpr
+      intro t ht
+      have e := ih (rank t) (by simpa [h] using decreases s t ht) t rfl
+      rw [← e, (hc s).2 hl t ht]
+      simp
+    | true =>
+      apply Eq.symm
+      apply List.any_eq_true.mpr
+      obtain ⟨t, ht, hlt⟩ := (hc s).1 hl
+      refine ⟨t, ht, ?_⟩
+      have e := ih (rank t) (by simpa [h] using decreases s t ht) t rfl
+      rw [← e, hlt]
+      rfl
+
+
+/-- Local criterion for a finite/partial strategy DAG. Only certified states matter. -/
+def PartialCertificate (domain : S → Prop) (label : S → Bool) : Prop :=
+  ∀ s, domain s →
+    (label s = true → ∃ t ∈ moves s, domain t ∧ label t = false) ∧
+    (label s = false → ∀ t ∈ moves s, domain t ∧ label t = true)
+
+theorem partial_certificate_sound (domain : S → Prop) (label : S → Bool)
+    (hc : PartialCertificate moves domain label) :
+    ∀ s, domain s → label s = solve moves rank decreases s := by
+  intro s
+  induction h : rank s using Nat.strong_induction_on generalizing s with
+  | h n ih =>
+    intro hs
+    rw [solve_eq]
+    cases hl : label s with
+    | false =>
+      apply Eq.symm
+      apply List.any_eq_false.mpr
+      intro t ht
+      obtain ⟨htd, hlt⟩ := (hc s hs).2 hl t ht
+      have e := ih (rank t) (by simpa [h] using decreases s t ht) t rfl htd
+      rw [← e, hlt]
+      simp
+    | true =>
+      apply Eq.symm
+      apply List.any_eq_true.mpr
+      obtain ⟨t, ht, htd, hlt⟩ := (hc s hs).1 hl
+      refine ⟨t, ht, ?_⟩
+      have e := ih (rank t) (by simpa [h] using decreases s t ht) t rfl htd
+      rw [← e, hlt]
+      rfl
+
+/-- Executable finite W/L certificate checker; membership and labels are exact. -/
+def checkCertificate [DecidableEq S] (rows : List S) (label : S → Bool) : Bool :=
+  rows.all fun s =>
+    if label s then
+      (moves s).any fun t => decide (t ∈ rows) && !(label t)
+    else
+      (moves s).all fun t => decide (t ∈ rows) && label t
+
+theorem checkCertificate_implies [DecidableEq S] (rows : List S) (label : S → Bool)
+    (hc : checkCertificate moves rows label = true) :
+    PartialCertificate moves (fun s => s ∈ rows) label := by
+  intro s hs
+  have hr := List.all_eq_true.mp hc s hs
+  constructor
+  · intro hl
+    simp only [hl, if_true] at hr
+    obtain ⟨t, ht, hh⟩ := List.any_eq_true.mp hr
+    have hd : t ∈ rows ∧ label t = false := by simpa using hh
+    exact ⟨t, ht, hd⟩
+  · intro hl t ht
+    simp only [hl, Bool.false_eq_true, if_false] at hr
+    have h := List.all_eq_true.mp hr t ht
+    simpa using h
+
+theorem checkCertificate_sound [DecidableEq S] (rows : List S) (label : S → Bool)
+    (hc : checkCertificate moves rows label = true) (s : S) (hs : s ∈ rows) :
+    label s = solve moves rank decreases s :=
+  partial_certificate_sound moves rank decreases (fun t => t ∈ rows) label
+    (checkCertificate_implies moves rows label hc) s hs
+
+#print axioms checkCertificate_sound
+
+
+/-- A reply strategy that restores an invariant after each opponent move
+    certifies every invariant position as losing for the player to move. -/
+theorem response_invariant_losing (I : S → Prop)
+    (reply : ∀ s, I s → ∀ t ∈ moves s, ∃ u ∈ moves t, I u) :
+    ∀ s, I s → solve moves rank decreases s = false := by
+  intro s
+  induction h : rank s using Nat.strong_induction_on generalizing s with
+  | h n ih =>
+    intro hs
+    rw [solve_eq]
+    apply List.any_eq_false.mpr
+    intro t ht
+    obtain ⟨u, hu, hiu⟩ := reply s hs t ht
+    have hlt : rank u < n := by
+      have h1 := decreases s t ht
+      have h2 := decreases t u hu
+      omega
+    have huf := ih (rank u) hlt u rfl hiu
+    have htw : solve moves rank decreases t = true := by
+      rw [solve_eq]
+      apply List.any_eq_true.mpr
+      exact ⟨u, hu, by rw [huf]; rfl⟩
+    rw [htw]
+    simp
+
+#print axioms response_invariant_losing
+
+end RankedGame
+
+#print axioms stock_strict
+#print axioms certificate_sound
+
+#eval Lean.versionString
+
+end SharedMahjong

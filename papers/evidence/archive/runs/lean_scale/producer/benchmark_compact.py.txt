@@ -1,0 +1,129 @@
+"""Same-input bounded v1/v2 candidate throughput and full semantic comparison."""
+import argparse
+import hashlib
+import json
+import time
+from pathlib import Path
+import baseline_v4 as v1
+import producer_compact_v6 as v2
+
+VOLATILE = {"requests", "database_lookups", "cache_hits", "verified_payload_bytes"}
+
+
+def semantic(value):
+    result = {k: v for k, v in value.items() if k not in VOLATILE}
+    result["edges"] = [{**edge, "witness": json.loads(edge["witness"]) if isinstance(edge["witness"], str) else edge["witness"]}
+                       for edge in value["edges"]]
+    return result
+
+
+def graph_digest(db, module):
+    digest = hashlib.sha256()
+    queries = [db.execute("SELECT * FROM nodes ORDER BY id"),
+               (module.logical_edges(db) if hasattr(module, "logical_edges") else db.execute("SELECT * FROM edges ORDER BY parent,tile")),
+               db.execute("SELECT id,n,parent_count,new_nodes,edges FROM batches ORDER BY id")]
+    for rows in queries:
+        for row in rows:
+            digest.update(v1.dumps(tuple(row.values()) if isinstance(row, dict) else tuple(row)).encode())
+            digest.update(b"\n")
+    return digest.hexdigest()
+
+
+def main():
+    parser = argparse.ArgumentParser(description=__doc__)
+    parser.add_argument("--name", default="comparison_compact")
+    parser.add_argument("--parents", type=int, default=4096)
+    args = parser.parse_args()
+    output = v1.HERE / "benchmarks" / args.name
+    output.mkdir(parents=True, exist_ok=False)
+    with v1.connect(v1.ROOT / "runs/lean_continuation/producer/opening_v4/graph.sqlite", readonly=True) as db:
+        fixtures = {name: [dict(x) for x in db.execute("SELECT * FROM nodes WHERE n=? ORDER BY id LIMIT ?", (n, args.parents))]
+                    for name, n in (("P12", 12), ("N13", 13))}
+    v1.atomic_json(output / "fixtures.json", fixtures)
+    reference = {}
+    results = []
+    for label, module, executable, threads in (("v4_t1", v1, "strategy_worker_v3.exe", 1),
+                                              ("v6_t1", v2, "strategy_worker_v3.exe", 1)):
+        directory = output / label
+        directory.mkdir()
+        command = [str(module.BUILD / executable), str(v1.ROOT / "runs/global_retro/pilot_v1/data"), "120", v1.FINGERPRINT]
+        if threads:
+            command.append(str(threads))
+        worker = module.Worker(command, directory, 120, 3_800_000_000, directory / "STOP")
+        result = {"variant": label, "threads": threads or 1, "command": command, "phases": []}
+        try:
+            for name, inputs in fixtures.items():
+                db = module.connect(directory / (name + ".sqlite"))
+                with db:
+                    db.executemany("INSERT INTO nodes(id,state,n,outcome) VALUES(?,?,?,?)",
+                                   [(i, x["state"], x["n"], x["outcome"]) for i, x in enumerate(inputs)])
+                rows = db.execute("SELECT * FROM nodes ORDER BY id").fetchall()
+                phase = {"phase": name, "parents": len(rows), "wall_seconds": 0.0, "python_cpu_seconds": 0.0,
+                         "native_cpu_seconds": 0.0, "steps": {"batch": 0.0, "validate": 0.0, "choose": 0.0, "commit": 0.0}}
+                baseline_file = output / (name + ".baseline_semantic.jsonl")
+                stream = baseline_file.open("w" if label == "v4_t1" else "r", encoding="utf-8")
+                digest = hashlib.sha256()
+                for offset in range(0, len(rows), 1024):
+                    batch = rows[offset:offset+1024]
+                    before_py = worker.self_meter.sample()["cpu_seconds"]
+                    before_native = worker.child_meter.sample()["cpu_seconds"]
+                    start = time.monotonic()
+                    checkpoint = start
+                    responses = worker.batch([r["state"] for r in batch])
+                    now = time.monotonic();phase["steps"]["batch"] += now-checkpoint;checkpoint=now
+                    for row, value in zip(batch, responses, strict=True):
+                        module.validate_response(row, value)
+                    now = time.monotonic();phase["steps"]["validate"] += now-checkpoint;checkpoint=now
+                    selected = ([x["edges"] for x in responses] if name == "P12" else module.choose_replies(db, batch, responses))
+                    now = time.monotonic();phase["steps"]["choose"] += now-checkpoint;checkpoint=now
+                    module.commit_batch(db, batch, responses, selected, label)
+                    now = time.monotonic();phase["steps"]["commit"] += now-checkpoint
+                    phase["wall_seconds"] += now-start
+                    phase["python_cpu_seconds"] += worker.self_meter.sample()["cpu_seconds"]-before_py
+                    phase["native_cpu_seconds"] += worker.child_meter.sample()["cpu_seconds"]-before_native
+                    # Compare every actual field except explicitly listed volatile
+                    # performance counters. Comparison I/O is outside timing.
+                    for value in responses:
+                        value = semantic(value)
+                        if label == "v4_t1":
+                            stream.write(v1.dumps(value) + "\n")
+                        elif value != json.loads(stream.readline()):
+                            raise ValueError("complete semantic output differs: " + label + "/" + name)
+                        digest.update(v1.dumps(value).encode());digest.update(b"\n")
+                if label != "v4_t1" and stream.readline():
+                    raise ValueError("baseline output length mismatch")
+                stream.close()
+                phase["semantic_sha256"] = digest.hexdigest()
+                phase["graph_sha256"] = graph_digest(db, module)
+                phase["snapshot"] = module.snapshot(db)
+                phase["bytes_before_final_checkpoint"] = sum(file.stat().st_size for file in directory.glob(name + ".sqlite*"))
+                db.execute("PRAGMA wal_checkpoint(TRUNCATE)")
+                phase["database_bytes_after_checkpoint"] = (directory / (name + ".sqlite")).stat().st_size
+                if label == "v4_t1":
+                    reference[name] = phase
+                else:
+                    if phase["graph_sha256"] != reference[name]["graph_sha256"]:
+                        raise ValueError("saved graph differs: " + label + "/" + name)
+                    phase["speedup_vs_v1"] = reference[name]["wall_seconds"] / phase["wall_seconds"]
+                phase["parents_per_hour"] = len(rows) / phase["wall_seconds"] * 3600
+                phase["average_core_equivalents"] = (phase["python_cpu_seconds"]+phase["native_cpu_seconds"])/phase["wall_seconds"]
+                db.close()
+                result["phases"].append(phase)
+            result["peak_private_bytes"] = worker.peak_private
+            results.append(result)
+            v1.atomic_json(directory / "result.json", result)
+            print(v1.dumps(result), flush=True)
+        finally:
+            worker.close()
+    report = {"status": "PASS_COMPLETE_LOGICAL_EDGES_NODES_RESPONSES_MATCH", "formal_proof": False,
+              "runtime_counters_excluded_from_comparison": sorted(VOLATILE), "variants": results,
+              "storage_difference": "v6 stores parent,tile,child,witness; logical raw/canonical states are reconstructed",
+              "source_sha256": {str(path.relative_to(v1.ROOT)): v1.digest(path) for path in
+                                [v1.HERE / "baseline_v4.py", v1.HERE / "producer_compact_v6.py", Path(__file__),
+                                 v1.BUILD / "strategy_worker_v3.cpp", v1.BUILD / "query_adapter_v3.cpp", v1.BUILD / "strategy_worker_v3.exe"]}}
+    v1.atomic_json(output / "result.json", report)
+    print(report["status"])
+
+
+if __name__ == "__main__":
+    main()

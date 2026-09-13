@@ -1,0 +1,199 @@
+"""Version 2: bounded row modules, balanced SAFE selector, sparse external selector."""
+from pathlib import Path
+import importlib.util
+import json
+
+ROOT = Path(__file__).resolve().parents[2]
+HELPERS = ROOT / "runs/lean_next/theory"
+spec = importlib.util.spec_from_file_location("normalization", HELPERS / "make_response_full20.py")
+normalizer = importlib.util.module_from_spec(spec)
+spec.loader.exec_module(normalizer)
+h, normalize = normalizer.data, normalizer.normalize
+PROJECT = ROOT / "build/lean_scale/proof"
+EVIDENCE = ROOT / "runs/lean_scale/actual12"
+
+
+def main():
+    incoming = EVIDENCE / "pruned_v1"
+    manifest_path, responses_path = incoming / "generation.json", incoming / "responses.json"
+    leaf_path = EVIDENCE / "leaves_generation.json"
+    manifest = json.loads(manifest_path.read_text(encoding="utf-8"))
+    assert h.digest(responses_path) == manifest["response_sha256"]
+    rows = {r["id"]: r for r in json.loads(responses_path.read_text(encoding="utf-8"))}
+    external = {int(i): item for i, item in manifest["external_boundary"].items()}
+    leaves = {r["digits"]: r for r in json.loads(leaf_path.read_text(encoding="utf-8"))["leaves"]}
+    selected = sorted(rows, key=lambda i: (-sum(map(int, rows[i]["state"])), i))
+    ids = {i: k for k, i in enumerate(selected)}
+    bounds = {i: ("external", i, []) for i in external}
+    normalized = {}
+    for ident in selected:
+        row = rows[ident]
+        legal = {str(t) for t, c in enumerate(row["state"]) if c != "4"}
+        assert set(row["responses"]) == legal
+        assert set(row["back"]) | set(row["positive_witnesses"]) == legal
+        assert not set(row["back"]) & set(row["positive_witnesses"])
+        normalized[ident] = {}
+        for first, (target, path) in row["back"].items():
+            assert target in external or ids[target] < ids[ident]
+            normalized[ident][first] = (target, normalize(path))
+        if not row["back"]:
+            assert row["state"] in leaves
+            bounds[ident] = ("leaf", row["state"], [])
+        else:
+            target, path = next(iter(normalized[ident].values()))
+            kind, key, inherited = bounds[target]
+            origin = external[key]["state"] if kind == "external" else key
+            combined = normalize(inherited + path)
+            reduced = [g for g in combined if g["op"] != "swapHonors"]
+            if h.transformed(origin, reduced) == h.transformed(origin, combined):
+                combined = reduced
+            bounds[ident] = (kind, key, combined)
+        kind, key, path = bounds[ident]
+        origin = external[key]["state"] if kind == "external" else key
+        assert all(a <= b for a, b in zip(map(int, row["state"]), h.transformed(origin, path)))
+    origins = list(dict.fromkeys((bounds[i][0], bounds[i][1]) for i in selected))
+    origin_ids = {origin: i for i, origin in enumerate(origins)}
+    dest = PROJECT / "MahjongScale/Actual12V2"
+    dest.mkdir(parents=True, exist_ok=False)
+    namespace = "Mahjong.Scale12V2"
+    module = "MahjongScale.Actual12V2"
+    prelude = ["set_option maxRecDepth 32768", "set_option maxHeartbeats 100000000", ""]
+    lines = ["import MahjongScale.FastExternal", "import MahjongScale.Actual14Registry", "import MahjongNext.SafeBounds"]
+    lines += ["import " + leaves[key]["module"] for kind, key in origins if kind == "leaf"]
+    lines += [""] + prelude + ["namespace " + namespace, "open ResponseTable ResponseCertificate Generators", ""]
+    for reg in sorted({external[key]["registry_id"] for kind, key in origins if kind == "external"}):
+        lines += [f"def externalFact{reg} : ProvedP Actual14.state{reg} :=",
+            "  ResponseTable.checkDatabase_sound Actual14.bounds Actual14.validBounds Actual14.safeBounds",
+            f"    Actual14.database Actual14.checked {reg} Actual14.row{reg} (by rfl)", ""]
+    lines += ["def originFact (i : Nat) : SafeBounds.Fact :=", "  match i with"]
+
+    def fact(kind, key):
+        if kind == "leaf":
+            entry = leaves[key]
+            return "⟨" + ", ".join(entry[k] for k in ("state", "valid", "safe")) + "⟩"
+        reg = external[key]["registry_id"]
+        return f"⟨Actual14.state{reg}, externalFact{reg}.valid, externalFact{reg}.safe⟩"
+
+    for origin, ident in origin_ids.items():
+        lines.append(f"  | {ident} => " + fact(*origin))
+    lines += ["  | _ => " + fact(*origins[0]), ""]
+
+    def balanced(keys, value, variable, fallback=None):
+        if not keys:
+            assert fallback is not None
+            return fallback
+        if len(keys) == 1:
+            if fallback is None:
+                return value(keys[0])
+            return f"(if {variable} = {keys[0]} then {value(keys[0])} else {fallback})"
+        mid = len(keys)//2
+        return f"(if {variable} < {keys[mid]} then " + balanced(keys[:mid],value,variable,fallback) + " else " + balanced(keys[mid:],value,variable,fallback) + ")"
+
+    def bound_value(pid):
+        kind, key, path = bounds[selected[pid]]
+        return f"({origin_ids[(kind,key)]}, {h.lean_path(path)})"
+
+    lines += ["def boundSpec (i : Nat) : Nat × List Generator :=",
+        f"  if i < {len(selected)} then " + balanced(list(range(len(selected))), bound_value, "i") + " else (0, [])", "",
+        "def boundFact (i : Nat) : SafeBounds.Fact := (originFact (boundSpec i).1).alongPath (boundSpec i).2",
+        "def bounds (i : Nat) : State := (boundFact i).state",
+        "theorem validBounds (i : Nat) : Valid (bounds i) := (boundFact i).valid",
+        "theorem safeBounds (i : Nat) : IsSafe (bounds i) := (boundFact i).safe", "",
+        "def registry : ExternalResponses.Registry := Actual14Registry.registry", "", "end " + namespace, ""]
+    (dest / "Base.lean").write_text("\n".join(lines), encoding="utf-8")
+    sparse_ids, row_modules = [], []
+    for ordinal, ident in enumerate(selected):
+        if ordinal % 64 == 0:
+            chunk = ordinal//64
+            row_modules.append(f"{module}.Rows{chunk:03d}")
+            lines = [f"import {module}.Base", ""] + prelude + ["namespace " + namespace,
+                "open ResponseTable ResponseCertificate Generators", ""]
+        pid, row = ids[ident], rows[ident]
+        lines.append(h.match_def(f"state{pid}", "Nat", dict(enumerate(row["state"])), "0"))
+        actions, overrides = {}, {}
+        for first, second in row["responses"].items():
+            if first in row["back"]:
+                target, path = normalized[ident][first]
+                if target in external:
+                    reg = external[target]["registry_id"]
+                    overrides[int(first)] = f"some ⟨{second}, {reg}, {h.lean_path(path)}⟩"
+                else:
+                    actions[int(first)] = f".back {second} {ids[target]} {h.lean_path(path)}"
+            else:
+                actions[int(first)] = f".win {second} (" + h.witness(row["positive_witnesses"][first]) + ")"
+        lines.append(h.match_def(f"action{pid}", "Action", actions, ".win 0 (FullWinWitness.orphans 0)"))
+        if overrides:
+            sparse_ids.append(pid)
+            lines.append(h.match_def(f"external{pid}", "Option ExternalResponses.Ref", overrides, "none"))
+        lines.append(f"def row{pid} : Row := ⟨{pid}, state{pid}, {pid}, action{pid}⟩\n")
+        if ordinal % 64 == 63 or ordinal == len(selected)-1:
+            lines += ["end " + namespace, ""]
+            (dest / f"Rows{chunk:03d}.lean").write_text("\n".join(lines), encoding="utf-8")
+    lines = ["import " + name for name in row_modules] + [""] + prelude + ["namespace " + namespace,
+        "open ResponseTable ResponseCertificate Generators", "",
+        "def overrides (id : Nat) (first : Tile) : Option ExternalResponses.Ref :=",
+        "  " + balanced(sparse_ids, lambda pid: f"external{pid} first", "id", "none"), ""]
+
+    def tree(indices):
+        if not indices:
+            return ".empty"
+        mid = len(indices)//2
+        return "(.branch " + tree(indices[:mid]) + " row" + str(indices[mid]) + " " + tree(indices[mid+1:]) + ")"
+
+    count = len(rows)
+    lines += ["def database : Tree := " + tree(list(range(count))), "", "end " + namespace, ""]
+    (dest / "Data.lean").write_text("\n".join(lines), encoding="utf-8")
+    groups = []
+    for group, start in enumerate(range(0, count, 8)):
+        size = min(8, count-start); groups.append((group, start, size))
+        lines = [f"import {module}.Data", ""] + prelude + ["namespace " + namespace, "",
+            f"theorem group{group}_fast_checked : Scale.FastExternal.checkRange registry overrides bounds database {start} {size} = true := by decide +kernel", "",
+            f"theorem group{group}_checked : ExternalResponses.checkRange registry overrides bounds database {start} {size} = true :=",
+            f"  (Scale.FastExternal.checkRange_eq registry overrides bounds database {start} {size}).symm.trans group{group}_fast_checked",
+            "", "end " + namespace, "", f"#print axioms {namespace}.group{group}_checked", ""]
+        (dest / f"Group{group:03d}.lean").write_text("\n".join(lines), encoding="utf-8")
+    lines = [f"import {module}.Group{g:03d}" for g, _, _ in groups] + [""] + prelude
+    lines += ["namespace " + namespace, "open ResponseTable ResponseCertificate Generators", ""]
+    accumulated, checked = groups[0][2], "group0_checked"
+    for group, start, size in groups[1:]:
+        assert start == accumulated
+        label = f"first{accumulated+size}_checked"
+        lines += [f"theorem {label} : ExternalResponses.checkRange registry overrides bounds database 0 {accumulated+size} = true :=",
+            f"  ExternalResponses.checkRange_append registry overrides bounds database 0 {accumulated} {size} {checked} group{group}_checked", ""]
+        accumulated += size; checked = label
+    root_pid = ids[manifest["root_source_id"]]
+    root_info = manifest["root_info"]
+    path = normalize(root_info["root_witness"])
+    assert h.transformed(root_info["canonical_state"], path) == list(map(int, root_info["input_state"]))
+    lines += [f"theorem complete_coverage : (ResponseGroups.rows database).length ≤ {count} := by decide +kernel", "",
+        "theorem checked : ExternalResponses.checkDatabase registry overrides bounds database = true :=",
+        f"  ExternalResponses.checkDatabase_of_full_range registry overrides bounds database {count} complete_coverage {checked}", "",
+        f"theorem root_proved : ProvedP state{root_pid} :=",
+        f"  ExternalResponses.checkDatabase_sound registry overrides bounds validBounds safeBounds database checked {root_pid} row{root_pid} (by rfl)", "",
+        h.match_def("original", "Nat", dict(enumerate(root_info["input_state"])), "0"),
+        f"theorem original_checked : Generators.checkReference {h.lean_path(path)} state{root_pid} original = true := by decide +kernel",
+        "theorem original_proved : ProvedP original :=",
+        f"  root_proved.ofPath {h.lean_path(path)} (Generators.stateEqB_sound original_checked)",
+        "theorem original_tiles : total original = 12 := by decide +kernel",
+        "theorem original_second_player_wins : SafeGame.SecondPlayerWins Step Win original := original_proved.secondPlayerWins",
+        "", "end " + namespace, ""]
+    lines += [f"#print axioms {namespace}.{name}" for name in ["complete_coverage", "checked", "root_proved", "original_second_player_wins"]]
+    (dest / "Root.lean").write_text("\n".join(lines)+"\n", encoding="utf-8")
+    result = {"schema": "GROUPED_EXTERNAL_ORIGINAL_GAME_CERTIFICATE_V1", "status": "GENERATED_NOT_VERIFIED",
+        "rows": count, "groups": groups, "root_source_id": manifest["root_source_id"], "root_proof_id": root_pid,
+        "root_digits": root_info["input_state"], "external_boundary": external,
+        "bound_origins": [{"kind": kind, "key": key} for kind, key in origins],
+        "bounds": {str(ids[i]): {"kind": kind, "key": key, "path": path} for i, (kind,key,path) in bounds.items() if i in ids},
+        "source_sha256": {str(p.relative_to(PROJECT)): h.digest(p) for p in sorted(dest.glob("*.lean"))},
+        "input_sha256": {str(p.relative_to(ROOT)): h.digest(p) for p in [manifest_path, responses_path, leaf_path, Path(__file__), HELPERS / "make_response_full20.py", HELPERS / "make_response_sample.py"]},
+        "empty_game": "NOT_VERIFIED"}
+    result["layout"] = {"row_modules": row_modules, "maximum_rows_per_module": 64,
+        "SAFE_bound_selector": "balanced_inequalities", "external_selector": "sparse_balanced_exact_ids", "external_row_ids": sparse_ids}
+    target = EVIDENCE / "grouped_generation_v2.json"
+    assert not target.exists()
+    target.write_text(json.dumps(result, indent=2)+"\n", encoding="utf-8")
+    print(json.dumps({"status": result["status"], "rows": count, "groups": len(groups), "origins": len(origins), "root_proof_id": root_pid}), flush=True)
+
+
+if __name__ == "__main__":
+    main()

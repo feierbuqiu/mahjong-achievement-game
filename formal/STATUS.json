@@ -1,12 +1,28 @@
 {
   "schema": "MJ_PUBLIC_LEAN_PROGRESS_V1",
-  "evidence_created_utc": "2026-09-13T05:32:47.342842+00:00",
-  "published_snapshot_utc": "2026-09-13T05:38:51.776857+00:00",
+  "evidence_created_utc": "2026-09-13T07:42:26.801941+00:00",
+  "published_snapshot_utc": "2026-09-13T08:57:46.398988+00:00",
   "status": "NONEMPTY_CLOSED_PROOFS_PASS_EMPTY_FORMAL_PROOF_INCOMPLETE",
   "lean_toolchain": "leanprover/lean4:v4.33.1",
   "empty_game_lean": "NOT_VERIFIED",
   "end_to_end_Lean_theorem_published": false,
   "closed_nonempty_original_game_proofs": [
+    {
+      "tiles": 12,
+      "physical_state": "0000000020000011110001110300000000",
+      "theorem": "Mahjong.Scale12V2.original_second_player_wins",
+      "historical_replay": "formal/evidence/Scale12Audit.json",
+      "status": "CLOSED_ORIGINAL_GAME_THEOREM_KERNEL_PASS",
+      "remaining_premises": []
+    },
+    {
+      "tiles": 14,
+      "physical_state": "0000011110001000020001120300000000",
+      "theorem": "Mahjong.Actual14.original_second_player_wins",
+      "historical_replay": "formal/evidence/Actual14Audit.json",
+      "status": "CLOSED_ORIGINAL_GAME_THEOREM_KERNEL_PASS",
+      "remaining_premises": []
+    },
     {
       "tiles": 20,
       "physical_state": "0110330311010110001010110000000000",
@@ -15,7 +31,30 @@
       "two_ply_levels": 7,
       "clean_replay": "formal/evidence/kernel_v1.json",
       "status": "CLOSED_ORIGINAL_GAME_THEOREM_KERNEL_PASS",
-      "remaining_premises": []
+      "remaining_premises": [],
+      "additional_theorems": [
+        "Mahjong.ResponseTableFull20.original_second_player_wins",
+        "Mahjong.ResponseTableGrouped20.original_second_player_wins"
+      ],
+      "compressed_selected_P_nodes": 24
+    },
+    {
+      "tiles": 28,
+      "physical_state": "0110440411010110101010110000001111",
+      "theorem": "Mahjong.AnchorDAG.N09818.original_second_player_wins",
+      "clean_replay": "formal/evidence/kernel_v1.json",
+      "status": "CLOSED_ORIGINAL_GAME_THEOREM_KERNEL_PASS",
+      "remaining_premises": [],
+      "note": "Already present in the earlier checked source; newly indexed here, not newly proved."
+    },
+    {
+      "tiles": 30,
+      "physical_state": "0110440411010110111010110000011111",
+      "theorem": "Mahjong.AnchorDAG.N02076.original_second_player_wins",
+      "clean_replay": "formal/evidence/kernel_v1.json",
+      "status": "CLOSED_ORIGINAL_GAME_THEOREM_KERNEL_PASS",
+      "remaining_premises": [],
+      "note": "Already present in the earlier checked source; newly indexed here, not newly proved."
     },
     {
       "tiles": 32,
@@ -24,6 +63,15 @@
       "clean_replay": "formal/evidence/kernel_v1.json",
       "status": "CLOSED_ORIGINAL_GAME_THEOREM_KERNEL_PASS",
       "remaining_premises": []
+    },
+    {
+      "tiles": 34,
+      "physical_state": "0110440411010110111010110111111111",
+      "theorem": "Mahjong.ActualCertificateSmoke.candidate_original_second_player_wins",
+      "clean_replay": "formal/evidence/kernel_v1.json",
+      "status": "CLOSED_ORIGINAL_GAME_THEOREM_KERNEL_PASS",
+      "remaining_premises": [],
+      "note": "Already present in the earlier checked source; newly indexed here, not newly proved."
     },
     {
       "tiles": 34,
@@ -59,7 +107,7 @@
       "exit_code": 2
     }
   },
-  "source_modules": 686,
+  "source_modules": 1008,
   "allowed_axioms": [
     "propext",
     "Classical.choice",
@@ -67,138 +115,44 @@
   ],
   "native_decide_or_sorry_used": false,
   "empty_candidate_graph": {
-    "nodes": 4658934,
-    "expanded_nodes": 791352,
-    "pending_nodes": 3867582,
-    "edges": 6821377,
-    "layers": [
-      {
-        "n": 0,
-        "nodes": 1,
-        "expanded": 1,
-        "P": 1,
-        "N": 0,
-        "pending": 0
-      },
-      {
-        "n": 1,
-        "nodes": 6,
-        "expanded": 6,
-        "P": 0,
-        "N": 6,
-        "pending": 0
-      },
-      {
-        "n": 2,
-        "nodes": 4,
-        "expanded": 4,
-        "P": 4,
-        "N": 0,
-        "pending": 0
-      },
-      {
-        "n": 3,
-        "nodes": 56,
-        "expanded": 56,
-        "P": 0,
-        "N": 56,
-        "pending": 0
-      },
-      {
-        "n": 4,
-        "nodes": 29,
-        "expanded": 29,
-        "P": 29,
-        "N": 0,
-        "pending": 0
-      },
-      {
-        "n": 5,
-        "nodes": 518,
-        "expanded": 518,
-        "P": 0,
-        "N": 518,
-        "pending": 0
-      },
-      {
-        "n": 6,
-        "nodes": 251,
-        "expanded": 251,
-        "P": 251,
-        "N": 0,
-        "pending": 0
-      },
-      {
-        "n": 7,
-        "nodes": 5017,
-        "expanded": 5017,
-        "P": 0,
-        "N": 5017,
-        "pending": 0
-      },
-      {
-        "n": 8,
-        "nodes": 2300,
-        "expanded": 2300,
-        "P": 2300,
-        "N": 0,
-        "pending": 0
-      },
-      {
-        "n": 9,
-        "nodes": 50677,
-        "expanded": 50677,
-        "P": 0,
-        "N": 50677,
-        "pending": 0
-      },
-      {
-        "n": 10,
-        "nodes": 23663,
-        "expanded": 23663,
-        "P": 23663,
-        "N": 0,
-        "pending": 0
-      },
-      {
-        "n": 11,
-        "nodes": 550110,
-        "expanded": 550110,
-        "P": 0,
-        "N": 550110,
-        "pending": 0
-      },
-      {
-        "n": 12,
-        "nodes": 257730,
-        "expanded": 158720,
-        "P": 257730,
-        "N": 0,
-        "pending": 99010
-      },
-      {
-        "n": 13,
-        "nodes": 3768572,
-        "expanded": 0,
-        "P": 0,
-        "N": 3768572,
-        "pending": 3768572
-      }
-    ],
     "status": "PARTIAL",
     "formal_proof": false,
-    "incremental_counts_match_final_SQL": true,
-    "reason": "new_nodes_budget",
-    "attempt": "attempt_20260913_052343",
-    "wall_seconds": 44.0,
-    "peak_process_tree_private_bytes": 2141511680,
-    "index_fingerprint": "5a45ff3ea0fcf356",
-    "scope": "Selected candidate graph prefix; pending count is not an estimate of all future nodes."
+    "nodes": 9765237,
+    "edges": 16179951,
+    "expanded_nodes": 6911482,
+    "pending_nodes": 2853755,
+    "checkpoint_bytes": 2119254016,
+    "checkpoint_sha256": "8b2357959053838050e96c1cacaa4c401e5222bd00ebdd2fbfcbeb5a40ff901d",
+    "scope": "Candidate graph prefix only; pending count is not an estimate of all future work."
   },
   "remaining_work": [
     "Finish extracting a closed strategy graph from the empty state, or produce a smaller equivalent certificate.",
     "Generate and kernel-check every required SAFE leaf, physical response and symmetry reference.",
     "Construct and audit a premise-free theorem of SecondPlayerWins Step Win empty."
   ],
-  "scope": "Three concrete nonempty positions have closed original-game theorems. The candidate opening graph is partial and its external P/N labels are not Lean proofs. Module and theorem counts from the two replays overlap. No third-party contest acceptance is claimed."
+  "scope": "Eight individually specified nonempty roots are indexed. The 12- and 14-tile roots and compressed 20-tile proof are new in this publication. Empty and 10-tile formal roots remain unverified. Counts overlap and are not a proof-completion percentage.",
+  "latest_certificate": {
+    "tiles": 12,
+    "P_rows": 757,
+    "legal_first_actions": 25510,
+    "winning_replies": 20867,
+    "internal_P_replies": 4563,
+    "external_P_replies": 80,
+    "external_boundary_states": 11,
+    "independent_SAFE_leaves": 86,
+    "registry_entries": 757,
+    "recorded_audit_modules": 326,
+    "newly_compiled_modules": 95,
+    "reused_modules": 231,
+    "recorded_wall_seconds": 67.266,
+    "timing_scope": "Historical mixed fresh/reused run; not a complete cold replay."
+  },
+  "earlier_candidate": {
+    "tiles": 10,
+    "status": "NOT_VERIFIED",
+    "graph_status": "PARTIAL",
+    "nodes": 112490,
+    "expanded_nodes": 33127,
+    "pending_nodes": 79363
+  }
 }

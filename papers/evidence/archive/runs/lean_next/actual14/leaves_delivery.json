@@ -1,0 +1,197 @@
+{
+  "schema": "ACTUAL14_SIX_RAW_SAFE_LEAVES_DELIVERY_V1",
+  "status": "KERNEL_PASS",
+  "created_utc": "2026-09-13T06:16:13.827Z",
+  "scope": "Six supplied literal original-rule states are Valid and IsSafe, with no external hypotheses.",
+  "leaf_count": 6,
+  "leaves": [
+    {
+      "digits": "0100011110101120311001001021111111",
+      "total": 26,
+      "module": "Mahjong.Actual14LeavesV1.L000000",
+      "state": "Mahjong.Actual14LeavesV1.L000000.state",
+      "valid": "Mahjong.Actual14LeavesV1.L000000.valid",
+      "safe": "Mahjong.Actual14LeavesV1.L000000.safe",
+      "checker_true": "Mahjong.Actual14LeavesV1.L000000.checkSafe_true",
+      "legal_first_additions": 34,
+      "source_sha256": "ad92ced33701953f8cdbb2edde2cc820d47f7f6f374e0cc3b2be4bd9add4f219",
+      "olean_sha256": "3fc8276d0429808bffdb94258b44ad6e4802fd4d03e836aedeffb7bb144e5419",
+      "leaf_module_wall_seconds": 5.2024573,
+      "leaf_module_peak_private_bytes": 1406091264
+    },
+    {
+      "digits": "0100011110101120311001000121111111",
+      "total": 26,
+      "module": "Mahjong.Actual14LeavesV1.L000001",
+      "state": "Mahjong.Actual14LeavesV1.L000001.state",
+      "valid": "Mahjong.Actual14LeavesV1.L000001.valid",
+      "safe": "Mahjong.Actual14LeavesV1.L000001.safe",
+      "checker_true": "Mahjong.Actual14LeavesV1.L000001.checkSafe_true",
+      "legal_first_additions": 34,
+      "source_sha256": "2e5fbb6cf7e64e35e6ef301e897740b5005188eb151c75779cd257370c8a47d6",
+      "olean_sha256": "d3f3ef1f5252c71f9ec91269122f41d9f82f89a0346c603c16c0422b180b9fc8",
+      "leaf_module_wall_seconds": 5.5024299,
+      "leaf_module_peak_private_bytes": 1406066688
+    },
+    {
+      "digits": "0010011110101120311001001021111111",
+      "total": 26,
+      "module": "Mahjong.Actual14LeavesV1.L000002",
+      "state": "Mahjong.Actual14LeavesV1.L000002.state",
+      "valid": "Mahjong.Actual14LeavesV1.L000002.valid",
+      "safe": "Mahjong.Actual14LeavesV1.L000002.safe",
+      "checker_true": "Mahjong.Actual14LeavesV1.L000002.checkSafe_true",
+      "legal_first_additions": 34,
+      "source_sha256": "e3d88a7b8a702cef2bdc0eea2bb436773128b450caf0e7a86b20d3a89a0c5d9e",
+      "olean_sha256": "97b242db8cf226499b16668ba39f458d2710ac4ac2a66808879c8cf9b74906c3",
+      "leaf_module_wall_seconds": 5.2188704,
+      "leaf_module_peak_private_bytes": 1406038016
+    },
+    {
+      "digits": "0010011110101120311001000121111111",
+      "total": 26,
+      "module": "Mahjong.Actual14LeavesV1.L000003",
+      "state": "Mahjong.Actual14LeavesV1.L000003.state",
+      "valid": "Mahjong.Actual14LeavesV1.L000003.valid",
+      "safe": "Mahjong.Actual14LeavesV1.L000003.safe",
+      "checker_true": "Mahjong.Actual14LeavesV1.L000003.checkSafe_true",
+      "legal_first_additions": 34,
+      "source_sha256": "1a5f1917fc3cc8005217f41d05a73ae67756bd3203fe9e01ad6dfc618474d6fa",
+      "olean_sha256": "60a6a7a1df923ecf88cbaaab541784846411e5836d0555e1cf731a2c8975a8ed",
+      "leaf_module_wall_seconds": 5.1765024,
+      "leaf_module_peak_private_bytes": 1406033920
+    },
+    {
+      "digits": "1000011111001001021001120310011111",
+      "total": 24,
+      "module": "Mahjong.Actual14ExtraLeavesV1.L000000",
+      "state": "Mahjong.Actual14ExtraLeavesV1.L000000.state",
+      "valid": "Mahjong.Actual14ExtraLeavesV1.L000000.valid",
+      "safe": "Mahjong.Actual14ExtraLeavesV1.L000000.safe",
+      "checker_true": "Mahjong.Actual14ExtraLeavesV1.L000000.checkSafe_true",
+      "legal_first_additions": 34,
+      "source_sha256": "2402f0626ada2a284ae9b4e538e7193b564d0d47ff5a44773e16edf2a79b6cfa",
+      "olean_sha256": "c538253eac4408a8d56b696e999ff1fd2bc6e34b0d8e40fd77ae759737ad58ff",
+      "leaf_module_wall_seconds": 6.0938803,
+      "leaf_module_peak_private_bytes": 1540530176
+    },
+    {
+      "digits": "1000011111001000121001120310011111",
+      "total": 24,
+      "module": "Mahjong.Actual14ExtraLeavesV1.L000001",
+      "state": "Mahjong.Actual14ExtraLeavesV1.L000001.state",
+      "valid": "Mahjong.Actual14ExtraLeavesV1.L000001.valid",
+      "safe": "Mahjong.Actual14ExtraLeavesV1.L000001.safe",
+      "checker_true": "Mahjong.Actual14ExtraLeavesV1.L000001.checkSafe_true",
+      "legal_first_additions": 34,
+      "source_sha256": "9749796dfd460dc89d8b563b73f3207568d529b181f58fff0d74198435af05c9",
+      "olean_sha256": "04107f90a8ae9e813538efeb14dc6537579515e07691c58d358b3b58a8cb73b4",
+      "leaf_module_wall_seconds": 6.4834617,
+      "leaf_module_peak_private_bytes": 1506897920
+    }
+  ],
+  "acceptance": [
+    {
+      "generation": {
+        "path": "<research-root>\\runs\\lean_next\\actual14\\leaves_generation.json",
+        "sha256": "5d004580904126456160def372fe09e0fa5d295ce1c87deace6d404655eab59e"
+      },
+      "kernel": {
+        "path": "<research-root>\\runs\\lean_next\\actual14\\leaves_kernel_v1\\result.json",
+        "sha256": "fdc075c2b5a159fb29c44d6f89c3dc48180a106c0f8cb44944a672cf00a244ca"
+      },
+      "passed_modules": 9,
+      "wall_seconds": 31.5523277,
+      "cpu_seconds": 29.1875,
+      "peak_private_bytes": 1406091264,
+      "maximum_module_wall_seconds": 5.5024299,
+      "compiler_sha256": "af49bacfabaa1fea71332ca0feae0fa1a60912219d5902291adc79f905bffb8d",
+      "trust_level": 0,
+      "concurrent_processes": 1,
+      "wall_budget_per_module": 90,
+      "private_rss_budget_bytes": 3000000000
+    },
+    {
+      "generation": {
+        "path": "<research-root>\\runs\\lean_next\\actual14\\extra_leaves_generation.json",
+        "sha256": "bd7ff22e6740123a456588fb58e0eb47dbe39a20b330ee90d2389530cb123128"
+      },
+      "kernel": {
+        "path": "<research-root>\\runs\\lean_next\\actual14\\extra_leaves_kernel_v1\\result.json",
+        "sha256": "730602efbe724f148d861b9949fedcffcccda59a49307e4b208c32b99c536744"
+      },
+      "passed_modules": 5,
+      "wall_seconds": 17.2650032,
+      "cpu_seconds": 16.9375,
+      "peak_private_bytes": 1540530176,
+      "maximum_module_wall_seconds": 6.4834617,
+      "compiler_sha256": "af49bacfabaa1fea71332ca0feae0fa1a60912219d5902291adc79f905bffb8d",
+      "trust_level": 0,
+      "concurrent_processes": 1,
+      "wall_budget_per_module": 90,
+      "private_rss_budget_bytes": 3000000000
+    },
+    {
+      "generation": {
+        "path": "<research-root>\\runs\\lean_next\\actual14\\leaf_audit_generation_v2.json",
+        "sha256": "f9b8dff038f4c6a015b0b98907788a02c7c3edfe84ce2edee4905111c6fdf3ee"
+      },
+      "kernel": {
+        "path": "<research-root>\\runs\\lean_next\\actual14\\leaf_audit_kernel_v2\\result.json",
+        "sha256": "41e13b48cc0393a726ad56100a68c59997db94209ab3a1f20b1e5931a886ec68"
+      },
+      "passed_modules": 1,
+      "wall_seconds": 3.677949,
+      "cpu_seconds": 3.5625,
+      "peak_private_bytes": 2320891904,
+      "maximum_module_wall_seconds": 3.6161434,
+      "compiler_sha256": "af49bacfabaa1fea71332ca0feae0fa1a60912219d5902291adc79f905bffb8d",
+      "trust_level": 0,
+      "concurrent_processes": 1,
+      "wall_budget_per_module": 90,
+      "private_rss_budget_bytes": 3000000000
+    }
+  ],
+  "dependency_provenance": {
+    "path": "<research-root>\\runs\\lean_next\\actual14\\leaf_dependencies.json",
+    "sha256": "7adf7109bf08888ab63f5060e4d5b191ab899d4648efe17e3783bec955d29b75"
+  },
+  "frozen_generator": {
+    "path": "<research-root>\\build\\lean_continuation\\generate_safe_leaves.cjs",
+    "sha256": "610f73ae5b08597ae721fceacf7e8dab8b8c98c9b3a0cf34cc6823557e106abe"
+  },
+  "runner": {
+    "path": "<research-root>\\runs\\lean_next\\actual14\\compile_leaves.ps1",
+    "sha256": "192658c81dc48f9a5bfac86590096c757bac2b35efee2315a8e13abad20f5b13"
+  },
+  "audit_generator": {
+    "path": "<research-root>\\runs\\lean_next\\actual14\\generate_leaf_audit.cjs",
+    "sha256": "dc1229517e9b04527944e0743d342602a5122866f39ea8dd42ecc041251e2da7"
+  },
+  "original_leaf_compile_wall_seconds": 48.8173309,
+  "exact_input_audit_wall_seconds": 3.677949,
+  "exact_input_audit_module": "Mahjong.Actual14LeafAuditV2",
+  "audited_theorems": 18,
+  "allowed_axioms": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ],
+  "prior_failed_audit": {
+    "result": {
+      "path": "<research-root>\\runs\\lean_next\\actual14\\leaf_audit_kernel_v1\\result.json",
+      "sha256": "a859ddf2347fd0edbc98b4a6fd285bc31d452c4eb536d72139de634254e6d9d0"
+    },
+    "reason": "Prefix enumeration counted compiler-generated auxiliary theorems; the expected-count guard failed. V2 explicitly names all 18 required facts and passed.",
+    "counted_as_pass": false
+  },
+  "anchor_theorem_used": false,
+  "cpp_or_database_premise_used": false,
+  "game_PN_claim": false,
+  "empty_position_claim": false,
+  "limitations": [
+    "SAFE does not by itself establish P or close a response strategy. The parent converter separately proves replies and combines the root strategy.",
+    "This is a bounded six-state verification, not a Lean proof of the empty position."
+  ],
+  "writer_sha256": "a38ce661e746797f873b8dc15e6967fd63f2873268e43390cc660d69b06a0ec6"
+}

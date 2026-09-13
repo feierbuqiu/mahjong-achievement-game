@@ -1,0 +1,156 @@
+import MahjongScale.FastExternal
+
+namespace Mahjong.Scale.IndexedRange
+
+open ResponseTable
+
+/-- Cached lengths are untrusted data until WellSized has been proved. -/
+inductive Raw where
+  | empty
+  | branch (cached : Nat) (left : Raw) (row : Row) (right : Raw)
+
+def Raw.size : Raw → Nat
+  | .empty => 0
+  | .branch cached _ _ _ => cached
+
+def Raw.erase : Raw → Tree
+  | .empty => .empty
+  | .branch _ left row right => .branch left.erase row right.erase
+
+def WellSized : Raw → Prop
+  | .empty => True
+  | .branch cached left _ right =>
+      WellSized left ∧ WellSized right ∧ cached = left.size + 1 + right.size
+
+def wellSizedB : Raw → Bool
+  | .empty => true
+  | .branch cached left _ right =>
+      wellSizedB left && (wellSizedB right && decide (cached = left.size + 1 + right.size))
+
+theorem wellSizedB_iff (raw : Raw) : wellSizedB raw = true ↔ WellSized raw := by
+  induction raw with
+  | empty => simp only [wellSizedB, WellSized, true_iff]
+  | branch cached left row right ihl ihr =>
+      simp only [wellSizedB, WellSized, Bool.and_eq_true, decide_eq_true_eq, ihl, ihr]
+
+theorem size_eq_length (raw : Raw) (well : WellSized raw) :
+    raw.size = (ResponseGroups.rows raw.erase).length := by
+  induction raw with
+  | empty => rfl
+  | branch cached left row right ihl ihr =>
+      obtain ⟨hl, hr, hc⟩ := well
+      have ll := ihl hl
+      have lr := ihr hr
+      simp only [Raw.size, Raw.erase, ResponseGroups.rows, List.length_append, List.length_cons]
+      omega
+
+structure Index where
+  raw : Raw
+  well : WellSized raw
+
+def Index.tree (index : Index) : Tree := index.raw.erase
+
+/-- The only supplied integer cache fields accepted by this constructor have
+    passed a complete recursive size check, subsequently proved sound. -/
+def fromChecked (raw : Raw) (checked : wellSizedB raw = true) : Index :=
+  ⟨raw, (wellSizedB_iff raw).1 checked⟩
+
+def buildRaw : Tree → Raw
+  | .empty => .empty
+  | .branch left row right =>
+      let l := buildRaw left
+      let r := buildRaw right
+      .branch (l.size + 1 + r.size) l row r
+
+theorem buildRaw_well (tree : Tree) : WellSized (buildRaw tree) := by
+  induction tree with
+  | empty => trivial
+  | branch left row right ihl ihr => exact ⟨ihl, ihr, rfl⟩
+
+theorem erase_buildRaw (tree : Tree) : (buildRaw tree).erase = tree := by
+  induction tree with
+  | empty => rfl
+  | branch left row right ihl ihr => simp only [buildRaw, Raw.erase, ihl, ihr]
+
+/-- A direct proved conversion is available; large generated certificates can
+    instead provide literal cached sizes through fromChecked. -/
+def fromTree (tree : Tree) : Index := ⟨buildRaw tree, buildRaw_well tree⟩
+
+theorem fromTree_tree (tree : Tree) : (fromTree tree).tree = tree := erase_buildRaw tree
+
+def slice (rows : List Row) (start count : Nat) : List Row := (rows.drop start).take count
+
+theorem slice_append (xs ys : List Row) (start count : Nat) :
+    slice (xs ++ ys) start count =
+      slice xs start count ++ slice ys (start - xs.length) (count - (xs.length - start)) := by
+  simp only [slice, List.drop_append, List.take_append, List.length_drop]
+
+/-- A disjoint subtree is skipped from its proved O(1) size field. Partial
+    intersections use exactly the arithmetic of slicing a concatenation. -/
+def rawRead (raw : Raw) (start count : Nat) : List Row :=
+  if count = 0 ∨ raw.size ≤ start then [] else
+    match raw with
+    | .empty => []
+    | .branch _ left row right =>
+        let tailStart := start - left.size
+        let tailCount := count - (left.size - start)
+        rawRead left start count ++
+          (slice [row] tailStart tailCount ++
+            rawRead right (tailStart - 1) (tailCount - (1 - tailStart)))
+
+theorem rawRead_eq (raw : Raw) (well : WellSized raw) (start count : Nat) :
+    rawRead raw start count = slice (ResponseGroups.rows raw.erase) start count := by
+  induction raw generalizing start count with
+  | empty => simp [rawRead, Raw.erase, ResponseGroups.rows, slice]
+  | branch cached left row right ihl ihr =>
+      have allWell := well
+      obtain ⟨hl, hr, hc⟩ := well
+      by_cases stop : count = 0 ∨ (Raw.branch cached left row right).size ≤ start
+      · rw [rawRead, if_pos stop]
+        rcases stop with zero | outside
+        · simp [slice, zero]
+        · have lengthBound : (ResponseGroups.rows (Raw.branch cached left row right).erase).length ≤ start := by
+            rw [← size_eq_length _ allWell]
+            exact outside
+          simp [slice, List.drop_eq_nil_of_le lengthBound]
+      · rw [rawRead, if_neg stop]
+        simp only []
+        rw [ihl hl, ihr hr]
+        change _ = slice (ResponseGroups.rows left.erase ++ ([row] ++ ResponseGroups.rows right.erase)) start count
+        rw [slice_append, slice_append]
+        rw [← size_eq_length left hl]
+        rfl
+
+def read (index : Index) (start count : Nat) : List Row := rawRead index.raw start count
+
+theorem read_eq (index : Index) (start count : Nat) :
+    read index start count = slice (ResponseGroups.rows index.tree) start count :=
+  rawRead_eq index.raw index.well start count
+
+def checkRange (bounds : Nat → State) (tree : Tree) (index : Index) (start count : Nat) : Bool :=
+  (read index start count).all (ResponseTable.checkRow bounds tree)
+
+theorem checkRange_eq (bounds : Nat → State) (tree : Tree) (index : Index)
+    (same : index.tree = tree) (start count : Nat) :
+    checkRange bounds tree index start count = ResponseGroups.checkRange bounds tree start count := by
+  simp only [checkRange, read_eq, same, slice, ResponseGroups.checkRange]
+
+def checkExternalRange (registry : ExternalResponses.Registry) (overrides : ExternalResponses.Overrides)
+    (bounds : Nat → State) (tree : Tree) (index : Index) (start count : Nat) : Bool :=
+  (read index start count).all (FastExternal.checkRow registry overrides bounds tree)
+
+theorem checkExternalRange_eq (registry : ExternalResponses.Registry) (overrides : ExternalResponses.Overrides)
+    (bounds : Nat → State) (tree : Tree) (index : Index)
+    (same : index.tree = tree) (start count : Nat) :
+    checkExternalRange registry overrides bounds tree index start count =
+      ExternalResponses.checkRange registry overrides bounds tree start count := by
+  have rowCheck := funext (FastExternal.checkRow_eq registry overrides bounds tree)
+  simp only [checkExternalRange, read_eq, same, slice, rowCheck, ExternalResponses.checkRange]
+
+end Mahjong.Scale.IndexedRange
+
+#print axioms Mahjong.Scale.IndexedRange.wellSizedB_iff
+#print axioms Mahjong.Scale.IndexedRange.size_eq_length
+#print axioms Mahjong.Scale.IndexedRange.rawRead_eq
+#print axioms Mahjong.Scale.IndexedRange.checkRange_eq
+#print axioms Mahjong.Scale.IndexedRange.checkExternalRange_eq

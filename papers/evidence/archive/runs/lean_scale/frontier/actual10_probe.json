@@ -1,0 +1,4052 @@
+{
+  "schema": "ACTUAL10_BOUNDED_NATIVE_PROBE_V1",
+  "status": "PARTIAL",
+  "formal_proof": false,
+  "source_opening_node_id": 60591,
+  "root": {
+    "id": 0,
+    "state": "0000000020000001110001110200000000",
+    "n": 10,
+    "outcome": "P",
+    "expanded": 1,
+    "physical_safe_moves": 34,
+    "candidate_count": 34
+  },
+  "run": "runs\\lean_scale\\endgames\\actual10_a_v1",
+  "reason": "new_nodes_budget",
+  "exact_argv": [
+    "build/lean_scale/endgame_producer.py",
+    "run",
+    "--run",
+    "actual10_a_v1",
+    "--root",
+    "0000000020000001110001110200000000",
+    "--seconds",
+    "90",
+    "--batch",
+    "1024",
+    "--threads",
+    "1",
+    "--max-new-nodes",
+    "100000",
+    "--memory-limit",
+    "2800000000"
+  ],
+  "configured_work_seconds": 90,
+  "configured_new_node_threshold": 100000,
+  "configured_memory_limit_bytes": 2800000000,
+  "actual_committed_new_nodes": 112489,
+  "strict_new_node_cap_respected": false,
+  "new_node_threshold_overshoot": 12489,
+  "final_committed_batch": {
+    "id": 39,
+    "n": 18,
+    "parent_count": 1024,
+    "new_nodes": 13755,
+    "edges": 20475,
+    "attempt": "attempt_20260913_072422"
+  },
+  "budget_note": "The requested unchanged producer checks max-new-nodes only after an atomic batch commit. Actual overshoot is retained transparently; no continuation or additional budget was used.",
+  "wall_seconds": 11.85999999998603,
+  "monitored_seconds": 11.39100000000326,
+  "peak_process_tree_private_bytes": 2274783232,
+  "peak_process_tree_rss_bytes": 2219413504,
+  "average_monitored_cpu_cores": 1.2948819243258518,
+  "graph": {
+    "nodes": 112490,
+    "edges": 173085,
+    "expanded_nodes": 33127,
+    "pending_nodes": 79363,
+    "layers": [
+      {
+        "n": 10,
+        "nodes": 1,
+        "expanded": 1,
+        "P": 1,
+        "N": 0,
+        "pending": 0
+      },
+      {
+        "n": 11,
+        "nodes": 28,
+        "expanded": 28,
+        "P": 0,
+        "N": 28,
+        "pending": 0
+      },
+      {
+        "n": 12,
+        "nodes": 17,
+        "expanded": 17,
+        "P": 17,
+        "N": 0,
+        "pending": 0
+      },
+      {
+        "n": 13,
+        "nodes": 390,
+        "expanded": 390,
+        "P": 0,
+        "N": 390,
+        "pending": 0
+      },
+      {
+        "n": 14,
+        "nodes": 174,
+        "expanded": 174,
+        "P": 174,
+        "N": 0,
+        "pending": 0
+      },
+      {
+        "n": 15,
+        "nodes": 3389,
+        "expanded": 3389,
+        "P": 0,
+        "N": 3389,
+        "pending": 0
+      },
+      {
+        "n": 16,
+        "nodes": 1407,
+        "expanded": 1407,
+        "P": 1407,
+        "N": 0,
+        "pending": 0
+      },
+      {
+        "n": 17,
+        "nodes": 22601,
+        "expanded": 22601,
+        "P": 0,
+        "N": 22601,
+        "pending": 0
+      },
+      {
+        "n": 18,
+        "nodes": 8802,
+        "expanded": 5120,
+        "P": 8802,
+        "N": 0,
+        "pending": 3682
+      },
+      {
+        "n": 19,
+        "nodes": 75681,
+        "expanded": 0,
+        "P": 0,
+        "N": 75681,
+        "pending": 75681
+      }
+    ]
+  },
+  "depth": {
+    "root_tiles": 10,
+    "deepest_discovered_tiles": 19,
+    "deepest_expanded_tiles": 18,
+    "maximum_discovered_ply_from_root": 9
+  },
+  "registry_intersection": {
+    "registry_path": "runs\\lean_scale\\actual12\\checked_registry.json",
+    "registry_sha256": "ddb73a52ce1805303145e428c8e9cb53a9b7b8471082c392ac88b1911acd63d6",
+    "registry_status": "EXACT_ROWS_OF_KERNEL_CHECKED_EXTERNAL_TABLE",
+    "registry_module": "MahjongScale.Actual12Registry",
+    "typed_registry": "Mahjong.Actual12Registry.registry",
+    "registry_entries": 757,
+    "registry_distinct_states": 757,
+    "probe_P_nodes": 10401,
+    "exact_matched_registry_rows": 202,
+    "exact_matched_probe_nodes": 202,
+    "exact_matches_by_layer": {
+      "12": 1,
+      "14": 14,
+      "16": 64,
+      "18": 123
+    },
+    "exact_matches": [
+      {
+        "registry_entry": {
+          "registry_id": 485,
+          "proof_row_id": 485,
+          "source_node_id": 718,
+          "digits": "0311110011000011111001001020000000",
+          "tiles": 18,
+          "lean_state": "Mahjong.Scale12V2.state485"
+        },
+        "probe_node": {
+          "id": 34590,
+          "state": "0311110011000011111001001020000000",
+          "n": 18,
+          "outcome": "P",
+          "expanded": 0,
+          "physical_safe_moves": null,
+          "candidate_count": null
+        }
+      },
+      {
+        "registry_entry": {
+          "registry_id": 486,
+          "proof_row_id": 486,
+          "source_node_id": 719,
+          "digits": "0001111301000011111001001020000001",
+          "tiles": 18,
+          "lean_state": "Mahjong.Scale12V2.state486"
+        },
+        "probe_node": {
+          "id": 34591,
+          "state": "0001111301000011111001001020000001",
+          "n": 18,
+          "outcome": "P",
+          "expanded": 0,
+          "physical_safe_moves": null,
+          "candidate_count": null
+        }
+      },
+      {
+        "registry_entry": {
+          "registry_id": 487,
+          "proof_row_id": 487,
+          "source_node_id": 720,
+          "digits": "0100011110401120011000001020000000",
+          "tiles": 18,
+          "lean_state": "Mahjong.Scale12V2.state487"
+        },
+        "probe_node": {
+          "id": 34592,
+          "state": "0100011110401120011000001020000000",
+          "n": 18,
+          "outcome": "P",
+          "expanded": 0,
+          "physical_safe_moves": null,
+          "candidate_count": null
+        }
+      },
+      {
+        "registry_entry": {
+          "registry_id": 488,
+          "proof_row_id": 488,
+          "source_node_id": 721,
+          "digits": "0100011110101210401000001020000000",
+          "tiles": 18,
+          "lean_state": "Mahjong.Scale12V2.state488"
+        },
+        "probe_node": {
+          "id": 34595,
+          "state": "0100011110101210401000001020000000",
+          "n": 18,
+          "outcome": "P",
+          "expanded": 0,
+          "physical_safe_moves": null,
+          "candidate_count": null
+        }
+      },
+      {
+        "registry_entry": {
+          "registry_id": 489,
+          "proof_row_id": 489,
+          "source_node_id": 722,
+          "digits": "0002110400100011111001001020000000",
+          "tiles": 18,
+          "lean_state": "Mahjong.Scale12V2.state489"
+        },
+        "probe_node": {
+          "id": 34594,
+          "state": "0002110400100011111001001020000000",
+          "n": 18,
+          "outcome": "P",
+          "expanded": 0,
+          "physical_safe_moves": null,
+          "candidate_count": null
+        }
+      },
+      {
+        "registry_entry": {
+          "registry_id": 490,
+          "proof_row_id": 490,
+          "source_node_id": 723,
+          "digits": "0001110400100011111001001020000001",
+          "tiles": 18,
+          "lean_state": "Mahjong.Scale12V2.state490"
+        },
+        "probe_node": {
+          "id": 34612,
+          "state": "0001110400100011111001001020000001",
+          "n": 18,
+          "outcome": "P",
+          "expanded": 0,
+          "physical_safe_moves": null,
+          "candidate_count": null
+        }
+      },
+      {
+        "registry_entry": {
+          "registry_id": 491,
+          "proof_row_id": 491,
+          "source_node_id": 724,
+          "digits": "0010011110401210011000001020000000",
+          "tiles": 18,
+          "lean_state": "Mahjong.Scale12V2.state491"
+        },
+        "probe_node": {
+          "id": 34596,
+          "state": "0010011110401210011000001020000000",
+          "n": 18,
+          "outcome": "P",
+          "expanded": 0,
+          "physical_safe_moves": null,
+          "candidate_count": null
+        }
+      },
+      {
+        "registry_entry": {
+          "registry_id": 492,
+          "proof_row_id": 492,
+          "source_node_id": 725,
+          "digits": "0010011110101210401000001020000000",
+          "tiles": 18,
+          "lean_state": "Mahjong.Scale12V2.state492"
+        },
+        "probe_node": {
+          "id": 34597,
+          "state": "0010011110101210401000001020000000",
+          "n": 18,
+          "outcome": "P",
+          "expanded": 0,
+          "physical_safe_moves": null,
+          "candidate_count": null
+        }
+      },
+      {
+        "registry_entry": {
+          "registry_id": 493,
+          "proof_row_id": 493,
+          "source_node_id": 726,
+          "digits": "0010011110101210311000001020000000",
+          "tiles": 18,
+          "lean_state": "Mahjong.Scale12V2.state493"
+        },
+        "probe_node": {
+          "id": 34598,
+          "state": "0010011110101210311000001020000000",
+          "n": 18,
+          "outcome": "P",
+          "expanded": 0,
+          "physical_safe_moves": null,
+          "candidate_count": null
+        }
+      },
+      {
+        "registry_entry": {
+          "registry_id": 494,
+          "proof_row_id": 494,
+          "source_node_id": 727,
+          "digits": "0001210300010011111001001020000001",
+          "tiles": 18,
+          "lean_state": "Mahjong.Scale12V2.state494"
+        },
+        "probe_node": {
+          "id": 34599,
+          "state": "0001210300010011111001001020000001",
+          "n": 18,
+          "outcome": "P",
+          "expanded": 0,
+          "physical_safe_moves": null,
+          "candidate_count": null
+        }
+      },
+      {
+        "registry_entry": {
+          "registry_id": 495,
+          "proof_row_id": 495,
+          "source_node_id": 728,
+          "digits": "1000001021000011111002110310000000",
+          "tiles": 18,
+          "lean_state": "Mahjong.Scale12V2.state495"
+        },
+        "probe_node": {
+          "id": 34600,
+          "state": "1000001021000011111002110310000000",
+          "n": 18,
+          "outcome": "P",
+          "expanded": 0,
+          "physical_safe_moves": null,
+          "candidate_count": null
+        }
+      },
+      {
+        "registry_entry": {
+          "registry_id": 496,
+          "proof_row_id": 496,
+          "source_node_id": 729,
+          "digits": "0010011110401120011000001020000000",
+          "tiles": 18,
+          "lean_state": "Mahjong.Scale12V2.state496"
+        },
+        "probe_node": {
+          "id": 34601,
+          "state": "0010011110401120011000001020000000",
+          "n": 18,
+          "outcome": "P",
+          "expanded": 0,
+          "physical_safe_moves": null,
+          "candidate_count": null
+        }
+      },
+      {
+        "registry_entry": {
+          "registry_id": 497,
+          "proof_row_id": 497,
+          "source_node_id": 730,
+          "digits": "0000011110301120011001001020000001",
+          "tiles": 18,
+          "lean_state": "Mahjong.Scale12V2.state497"
+        },
+        "probe_node": {
+          "id": 34602,
+          "state": "0000011110301120011001001020000001",
+          "n": 18,
+          "outcome": "P",
+          "expanded": 0,
+          "physical_safe_moves": null,
+          "candidate_count": null
+        }
+      },
+      {
+        "registry_entry": {
+          "registry_id": 498,
+          "proof_row_id": 498,
+          "source_node_id": 731,
+          "digits": "0101110401000011111001001020000000",
+          "tiles": 18,
+          "lean_state": "Mahjong.Scale12V2.state498"
+        },
+        "probe_node": {
+          "id": 34603,
+          "state": "0101110401000011111001001020000000",
+          "n": 18,
+          "outcome": "P",
+          "expanded": 0,
+          "physical_safe_moves": null,
+          "candidate_count": null
+        }
+      },
+      {
+        "registry_entry": {
+          "registry_id": 499,
+          "proof_row_id": 499,
+          "source_node_id": 732,
+          "digits": "0000011110101110401001001020000001",
+          "tiles": 18,
+          "lean_state": "Mahjong.Scale12V2.state499"
+        },
+        "probe_node": {
+          "id": 34613,
+          "state": "0000011110101110401001001020000001",
+          "n": 18,
+          "outcome": "P",
+          "expanded": 0,
+          "physical_safe_moves": null,
+          "candidate_count": null
+        }
+      },
+      {
+        "registry_entry": {
+          "registry_id": 500,
+          "proof_row_id": 500,
+          "source_node_id": 733,
+          "digits": "0011110311000011111001001020000000",
+          "tiles": 18,
+          "lean_state": "Mahjong.Scale12V2.state500"
+        },
+        "probe_node": {
+          "id": 34604,
+          "state": "0011110311000011111001001020000000",
+          "n": 18,
+          "outcome": "P",
+          "expanded": 0,
+          "physical_safe_moves": null,
+          "candidate_count": null
+        }
+      },
+      {
+        "registry_entry": {
+          "registry_id": 501,
+          "proof_row_id": 501,
+          "source_node_id": 734,
+          "digits": "0011110301000011111001001020000001",
+          "tiles": 18,
+          "lean_state": "Mahjong.Scale12V2.state501"
+        },
+        "probe_node": {
+          "id": 34605,
+          "state": "0011110301000011111001001020000001",
+          "n": 18,
+          "outcome": "P",
+          "expanded": 0,
+          "physical_safe_moves": null,
+          "candidate_count": null
+        }
+      },
+      {
+        "registry_entry": {
+          "registry_id": 502,
+          "proof_row_id": 502,
+          "source_node_id": 735,
+          "digits": "0002110311000011111001001020000000",
+          "tiles": 18,
+          "lean_state": "Mahjong.Scale12V2.state502"
+        },
+        "probe_node": {
+          "id": 34606,
+          "state": "0002110311000011111001001020000000",
+          "n": 18,
+          "outcome": "P",
+          "expanded": 0,
+          "physical_safe_moves": null,
+          "candidate_count": null
+        }
+      },
+      {
+        "registry_entry": {
+          "registry_id": 503,
+          "proof_row_id": 503,
+          "source_node_id": 736,
+          "digits": "0002110400010011111001001020000000",
+          "tiles": 18,
+          "lean_state": "Mahjong.Scale12V2.state503"
+        },
+        "probe_node": {
+          "id": 34607,
+          "state": "0002110400010011111001001020000000",
+          "n": 18,
+          "outcome": "P",
+          "expanded": 0,
+          "physical_safe_moves": null,
+          "candidate_count": null
+        }
+      },
+      {
+        "registry_entry": {
+          "registry_id": 504,
+          "proof_row_id": 504,
+          "source_node_id": 737,
+          "digits": "1000001021000011111001120310000000",
+          "tiles": 18,
+          "lean_state": "Mahjong.Scale12V2.state504"
+        },
+        "probe_node": {
+          "id": 34608,
+          "state": "1000001021000011111001120310000000",
+          "n": 18,
+          "outcome": "P",
+          "expanded": 0,
+          "physical_safe_moves": null,
+          "candidate_count": null
+        }
+      },
+      {
+        "registry_entry": {
+          "registry_id": 505,
+          "proof_row_id": 505,
+          "source_node_id": 738,
+          "digits": "0100011110101120311000001020000000",
+          "tiles": 18,
+          "lean_state": "Mahjong.Scale12V2.state505"
+        },
+        "probe_node": {
+          "id": 34609,
+          "state": "0100011110101120311000001020000000",
+          "n": 18,
+          "outcome": "P",
+          "expanded": 0,
+          "physical_safe_moves": null,
+          "candidate_count": null
+        }
+      },
+      {
+        "registry_entry": {
+          "registry_id": 506,
+          "proof_row_id": 506,
+          "source_node_id": 739,
+          "digits": "0010011110101120311000001020000000",
+          "tiles": 18,
+          "lean_state": "Mahjong.Scale12V2.state506"
+        },
+        "probe_node": {
+          "id": 34610,
+          "state": "0010011110101120311000001020000000",
+          "n": 18,
+          "outcome": "P",
+          "expanded": 0,
+          "physical_safe_moves": null,
+          "candidate_count": null
+        }
+      },
+      {
+        "registry_entry": {
+          "registry_id": 509,
+          "proof_row_id": 509,
+          "source_node_id": 743,
+          "digits": "0100100020101120311000011110000000",
+          "tiles": 18,
+          "lean_state": "Mahjong.Scale12V2.state509"
+        },
+        "probe_node": {
+          "id": 34658,
+          "state": "0100100020101120311000011110000000",
+          "n": 18,
+          "outcome": "P",
+          "expanded": 0,
+          "physical_safe_moves": null,
+          "candidate_count": null
+        }
+      },
+      {
+        "registry_entry": {
+          "registry_id": 511,
+          "proof_row_id": 511,
+          "source_node_id": 745,
+          "digits": "0100000120101120311000011110000000",
+          "tiles": 18,
+          "lean_state": "Mahjong.Scale12V2.state511"
+        },
+        "probe_node": {
+          "id": 34644,
+          "state": "0100000120101120311000011110000000",
+          "n": 18,
+          "outcome": "P",
+          "expanded": 0,
+          "physical_safe_moves": null,
+          "candidate_count": null
+        }
+      },
+      {
+        "registry_entry": {
+          "registry_id": 513,
+          "proof_row_id": 513,
+          "source_node_id": 747,
+          "digits": "0100000120100011111001110310000001",
+          "tiles": 18,
+          "lean_state": "Mahjong.Scale12V2.state513"
+        },
+        "probe_node": {
+          "id": 33106,
+          "state": "0100000120100011111001110310000001",
+          "n": 18,
+          "outcome": "P",
+          "expanded": 1,
+          "physical_safe_moves": 10,
+          "candidate_count": 10
+        }
+      },
+      {
+        "registry_entry": {
+          "registry_id": 515,
+          "proof_row_id": 515,
+          "source_node_id": 749,
+          "digits": "0011110310100001020100011110000001",
+          "tiles": 18,
+          "lean_state": "Mahjong.Scale12V2.state515"
+        },
+        "probe_node": {
+          "id": 34621,
+          "state": "0011110310100001020100011110000001",
+          "n": 18,
+          "outcome": "P",
+          "expanded": 0,
+          "physical_safe_moves": null,
+          "candidate_count": null
+        }
+      },
+      {
+        "registry_entry": {
+          "registry_id": 516,
+          "proof_row_id": 516,
+          "source_node_id": 750,
+          "digits": "0002110310100000120100011110000001",
+          "tiles": 18,
+          "lean_state": "Mahjong.Scale12V2.state516"
+        },
+        "probe_node": {
+          "id": 34622,
+          "state": "0002110310100000120100011110000001",
+          "n": 18,
+          "outcome": "P",
+          "expanded": 0,
+          "physical_safe_moves": null,
+          "candidate_count": null
+        }
+      },
+      {
+        "registry_entry": {
+          "registry_id": 517,
+          "proof_row_id": 517,
+          "source_node_id": 751,
+          "digits": "0001210310100011110100100020000001",
+          "tiles": 18,
+          "lean_state": "Mahjong.Scale12V2.state517"
+        },
+        "probe_node": {
+          "id": 34623,
+          "state": "0001210310100011110100100020000001",
+          "n": 18,
+          "outcome": "P",
+          "expanded": 0,
+          "physical_safe_moves": null,
+          "candidate_count": null
+        }
+      },
+      {
+        "registry_entry": {
+          "registry_id": 518,
+          "proof_row_id": 518,
+          "source_node_id": 752,
+          "digits": "0001120310100000120100011110000001",
+          "tiles": 18,
+          "lean_state": "Mahjong.Scale12V2.state518"
+        },
+        "probe_node": {
+          "id": 34624,
+          "state": "0001120310100000120100011110000001",
+          "n": 18,
+          "outcome": "P",
+          "expanded": 0,
+          "physical_safe_moves": null,
+          "candidate_count": null
+        }
+      },
+      {
+        "registry_entry": {
+          "registry_id": 519,
+          "proof_row_id": 519,
+          "source_node_id": 753,
+          "digits": "0011110310100010020100011110000001",
+          "tiles": 18,
+          "lean_state": "Mahjong.Scale12V2.state519"
+        },
+        "probe_node": {
+          "id": 34625,
+          "state": "0011110310100010020100011110000001",
+          "n": 18,
+          "outcome": "P",
+          "expanded": 0,
+          "physical_safe_moves": null,
+          "candidate_count": null
+        }
+      },
+      {
+        "registry_entry": {
+          "registry_id": 520,
+          "proof_row_id": 520,
+          "source_node_id": 754,
+          "digits": "0001110310100000020100011110000111",
+          "tiles": 18,
+          "lean_state": "Mahjong.Scale12V2.state520"
+        },
+        "probe_node": {
+          "id": 34626,
+          "state": "0001110310100000020100011110000111",
+          "n": 18,
+          "outcome": "P",
+          "expanded": 0,
+          "physical_safe_moves": null,
+          "candidate_count": null
+        }
+      },
+      {
+        "registry_entry": {
+          "registry_id": 521,
+          "proof_row_id": 521,
+          "source_node_id": 755,
+          "digits": "0010011110100000121001110310000001",
+          "tiles": 18,
+          "lean_state": "Mahjong.Scale12V2.state521"
+        },
+        "probe_node": {
+          "id": 33113,
+          "state": "0010011110100000121001110310000001",
+          "n": 18,
+          "outcome": "P",
+          "expanded": 1,
+          "physical_safe_moves": 10,
+          "candidate_count": 10
+        }
+      },
+      {
+        "registry_entry": {
+          "registry_id": 523,
+          "proof_row_id": 523,
+          "source_node_id": 757,
+          "digits": "0010011110011110310100001020000001",
+          "tiles": 18,
+          "lean_state": "Mahjong.Scale12V2.state523"
+        },
+        "probe_node": {
+          "id": 34628,
+          "state": "0010011110011110310100001020000001",
+          "n": 18,
+          "outcome": "P",
+          "expanded": 0,
+          "physical_safe_moves": null,
+          "candidate_count": null
+        }
+      },
+      {
+        "registry_entry": {
+          "registry_id": 524,
+          "proof_row_id": 524,
+          "source_node_id": 758,
+          "digits": "0002110310010011110100000120000001",
+          "tiles": 18,
+          "lean_state": "Mahjong.Scale12V2.state524"
+        },
+        "probe_node": {
+          "id": 34629,
+          "state": "0002110310010011110100000120000001",
+          "n": 18,
+          "outcome": "P",
+          "expanded": 0,
+          "physical_safe_moves": null,
+          "candidate_count": null
+        }
+      },
+      {
+        "registry_entry": {
+          "registry_id": 525,
+          "proof_row_id": 525,
+          "source_node_id": 759,
+          "digits": "0001210310010011110100100020000001",
+          "tiles": 18,
+          "lean_state": "Mahjong.Scale12V2.state525"
+        },
+        "probe_node": {
+          "id": 34630,
+          "state": "0001210310010011110100100020000001",
+          "n": 18,
+          "outcome": "P",
+          "expanded": 0,
+          "physical_safe_moves": null,
+          "candidate_count": null
+        }
+      },
+      {
+        "registry_entry": {
+          "registry_id": 526,
+          "proof_row_id": 526,
+          "source_node_id": 760,
+          "digits": "0001120310010011110100000120000001",
+          "tiles": 18,
+          "lean_state": "Mahjong.Scale12V2.state526"
+        },
+        "probe_node": {
+          "id": 34631,
+          "state": "0001120310010011110100000120000001",
+          "n": 18,
+          "outcome": "P",
+          "expanded": 0,
+          "physical_safe_moves": null,
+          "candidate_count": null
+        }
+      },
+      {
+        "registry_entry": {
+          "registry_id": 527,
+          "proof_row_id": 527,
+          "source_node_id": 761,
+          "digits": "0010011110011110310100010020000001",
+          "tiles": 18,
+          "lean_state": "Mahjong.Scale12V2.state527"
+        },
+        "probe_node": {
+          "id": 34632,
+          "state": "0010011110011110310100010020000001",
+          "n": 18,
+          "outcome": "P",
+          "expanded": 0,
+          "physical_safe_moves": null,
+          "candidate_count": null
+        }
+      },
+      {
+        "registry_entry": {
+          "registry_id": 528,
+          "proof_row_id": 528,
+          "source_node_id": 762,
+          "digits": "0001110310010011110100000020000111",
+          "tiles": 18,
+          "lean_state": "Mahjong.Scale12V2.state528"
+        },
+        "probe_node": {
+          "id": 34633,
+          "state": "0001110310010011110100000020000111",
+          "n": 18,
+          "outcome": "P",
+          "expanded": 0,
+          "physical_safe_moves": null,
+          "candidate_count": null
+        }
+      },
+      {
+        "registry_entry": {
+          "registry_id": 529,
+          "proof_row_id": 529,
+          "source_node_id": 763,
+          "digits": "0100001021000011111002110310000000",
+          "tiles": 18,
+          "lean_state": "Mahjong.Scale12V2.state529"
+        },
+        "probe_node": {
+          "id": 34634,
+          "state": "0100001021000011111002110310000000",
+          "n": 18,
+          "outcome": "P",
+          "expanded": 0,
+          "physical_safe_moves": null,
+          "candidate_count": null
+        }
+      },
+      {
+        "registry_entry": {
+          "registry_id": 530,
+          "proof_row_id": 530,
+          "source_node_id": 764,
+          "digits": "0100000120100011111002110310000000",
+          "tiles": 18,
+          "lean_state": "Mahjong.Scale12V2.state530"
+        },
+        "probe_node": {
+          "id": 34635,
+          "state": "0100000120100011111002110310000000",
+          "n": 18,
+          "outcome": "P",
+          "expanded": 0,
+          "physical_safe_moves": null,
+          "candidate_count": null
+        }
+      },
+      {
+        "registry_entry": {
+          "registry_id": 531,
+          "proof_row_id": 531,
+          "source_node_id": 765,
+          "digits": "0010011110100100021002110310000000",
+          "tiles": 18,
+          "lean_state": "Mahjong.Scale12V2.state531"
+        },
+        "probe_node": {
+          "id": 34637,
+          "state": "0010011110100100021002110310000000",
+          "n": 18,
+          "outcome": "P",
+          "expanded": 0,
+          "physical_safe_moves": null,
+          "candidate_count": null
+        }
+      },
+      {
+        "registry_entry": {
+          "registry_id": 532,
+          "proof_row_id": 532,
+          "source_node_id": 766,
+          "digits": "0100010021000011111002110310000000",
+          "tiles": 18,
+          "lean_state": "Mahjong.Scale12V2.state532"
+        },
+        "probe_node": {
+          "id": 34638,
+          "state": "0100010021000011111002110310000000",
+          "n": 18,
+          "outcome": "P",
+          "expanded": 0,
+          "physical_safe_moves": null,
+          "candidate_count": null
+        }
+      },
+      {
+        "registry_entry": {
+          "registry_id": 533,
+          "proof_row_id": 533,
+          "source_node_id": 767,
+          "digits": "0000011110100000021002110310000011",
+          "tiles": 18,
+          "lean_state": "Mahjong.Scale12V2.state533"
+        },
+        "probe_node": {
+          "id": 34639,
+          "state": "0000011110100000021002110310000011",
+          "n": 18,
+          "outcome": "P",
+          "expanded": 0,
+          "physical_safe_moves": null,
+          "candidate_count": null
+        }
+      },
+      {
+        "registry_entry": {
+          "registry_id": 536,
+          "proof_row_id": 536,
+          "source_node_id": 770,
+          "digits": "0011110310100001021000011110000001",
+          "tiles": 18,
+          "lean_state": "Mahjong.Scale12V2.state536"
+        },
+        "probe_node": {
+          "id": 34643,
+          "state": "0011110310100001021000011110000001",
+          "n": 18,
+          "outcome": "P",
+          "expanded": 0,
+          "physical_safe_moves": null,
+          "candidate_count": null
+        }
+      },
+      {
+        "registry_entry": {
+          "registry_id": 537,
+          "proof_row_id": 537,
+          "source_node_id": 771,
+          "digits": "0100100020101210311000011110000000",
+          "tiles": 18,
+          "lean_state": "Mahjong.Scale12V2.state537"
+        },
+        "probe_node": {
+          "id": 34616,
+          "state": "0100100020101210311000011110000000",
+          "n": 18,
+          "outcome": "P",
+          "expanded": 0,
+          "physical_safe_moves": null,
+          "candidate_count": null
+        }
+      },
+      {
+        "registry_entry": {
+          "registry_id": 540,
+          "proof_row_id": 540,
+          "source_node_id": 774,
+          "digits": "0010011110100000120101120310000000",
+          "tiles": 18,
+          "lean_state": "Mahjong.Scale12V2.state540"
+        },
+        "probe_node": {
+          "id": 34646,
+          "state": "0010011110100000120101120310000000",
+          "n": 18,
+          "outcome": "P",
+          "expanded": 0,
+          "physical_safe_moves": null,
+          "candidate_count": null
+        }
+      },
+      {
+        "registry_entry": {
+          "registry_id": 541,
+          "proof_row_id": 541,
+          "source_node_id": 775,
+          "digits": "0010011110100000121001120310000000",
+          "tiles": 18,
+          "lean_state": "Mahjong.Scale12V2.state541"
+        },
+        "probe_node": {
+          "id": 34647,
+          "state": "0010011110100000121001120310000000",
+          "n": 18,
+          "outcome": "P",
+          "expanded": 0,
+          "physical_safe_moves": null,
+          "candidate_count": null
+        }
+      },
+      {
+        "registry_entry": {
+          "registry_id": 543,
+          "proof_row_id": 543,
+          "source_node_id": 777,
+          "digits": "0011110310100010021000011110000001",
+          "tiles": 18,
+          "lean_state": "Mahjong.Scale12V2.state543"
+        },
+        "probe_node": {
+          "id": 34648,
+          "state": "0011110310100010021000011110000001",
+          "n": 18,
+          "outcome": "P",
+          "expanded": 0,
+          "physical_safe_moves": null,
+          "candidate_count": null
+        }
+      },
+      {
+        "registry_entry": {
+          "registry_id": 544,
+          "proof_row_id": 544,
+          "source_node_id": 778,
+          "digits": "0010010020011110311000011110000001",
+          "tiles": 18,
+          "lean_state": "Mahjong.Scale12V2.state544"
+        },
+        "probe_node": {
+          "id": 34649,
+          "state": "0010010020011110311000011110000001",
+          "n": 18,
+          "outcome": "P",
+          "expanded": 0,
+          "physical_safe_moves": null,
+          "candidate_count": null
+        }
+      },
+      {
+        "registry_entry": {
+          "registry_id": 545,
+          "proof_row_id": 545,
+          "source_node_id": 779,
+          "digits": "0010001020011110310100011110000001",
+          "tiles": 18,
+          "lean_state": "Mahjong.Scale12V2.state545"
+        },
+        "probe_node": {
+          "id": 34650,
+          "state": "0010001020011110310100011110000001",
+          "n": 18,
+          "outcome": "P",
+          "expanded": 0,
+          "physical_safe_moves": null,
+          "candidate_count": null
+        }
+      },
+      {
+        "registry_entry": {
+          "registry_id": 546,
+          "proof_row_id": 546,
+          "source_node_id": 780,
+          "digits": "0010000120010011110011110310000001",
+          "tiles": 18,
+          "lean_state": "Mahjong.Scale12V2.state546"
+        },
+        "probe_node": {
+          "id": 34651,
+          "state": "0010000120010011110011110310000001",
+          "n": 18,
+          "outcome": "P",
+          "expanded": 0,
+          "physical_safe_moves": null,
+          "candidate_count": null
+        }
+      },
+      {
+        "registry_entry": {
+          "registry_id": 547,
+          "proof_row_id": 547,
+          "source_node_id": 781,
+          "digits": "0000011110010000120011110310000011",
+          "tiles": 18,
+          "lean_state": "Mahjong.Scale12V2.state547"
+        },
+        "probe_node": {
+          "id": 34652,
+          "state": "0000011110010000120011110310000011",
+          "n": 18,
+          "outcome": "P",
+          "expanded": 0,
+          "physical_safe_moves": null,
+          "candidate_count": null
+        }
+      },
+      {
+        "registry_entry": {
+          "registry_id": 548,
+          "proof_row_id": 548,
+          "source_node_id": 782,
+          "digits": "0001000121000011111002110310000000",
+          "tiles": 18,
+          "lean_state": "Mahjong.Scale12V2.state548"
+        },
+        "probe_node": {
+          "id": 33094,
+          "state": "0001000121000011111002110310000000",
+          "n": 18,
+          "outcome": "P",
+          "expanded": 1,
+          "physical_safe_moves": 8,
+          "candidate_count": 8
+        }
+      },
+      {
+        "registry_entry": {
+          "registry_id": 549,
+          "proof_row_id": 549,
+          "source_node_id": 783,
+          "digits": "0001000020002110311000011110000011",
+          "tiles": 18,
+          "lean_state": "Mahjong.Scale12V2.state549"
+        },
+        "probe_node": {
+          "id": 34732,
+          "state": "0001000020002110311000011110000011",
+          "n": 18,
+          "outcome": "P",
+          "expanded": 0,
+          "physical_safe_moves": null,
+          "candidate_count": null
+        }
+      },
+      {
+        "registry_entry": {
+          "registry_id": 550,
+          "proof_row_id": 550,
+          "source_node_id": 784,
+          "digits": "0001000120100011110401120010000000",
+          "tiles": 18,
+          "lean_state": "Mahjong.Scale12V2.state550"
+        },
+        "probe_node": {
+          "id": 33095,
+          "state": "0001000120100011110401120010000000",
+          "n": 18,
+          "outcome": "P",
+          "expanded": 1,
+          "physical_safe_moves": 8,
+          "candidate_count": 8
+        }
+      },
+      {
+        "registry_entry": {
+          "registry_id": 552,
+          "proof_row_id": 552,
+          "source_node_id": 786,
+          "digits": "0001000120010011110401120010000000",
+          "tiles": 18,
+          "lean_state": "Mahjong.Scale12V2.state552"
+        },
+        "probe_node": {
+          "id": 33096,
+          "state": "0001000120010011110401120010000000",
+          "n": 18,
+          "outcome": "P",
+          "expanded": 1,
+          "physical_safe_moves": 8,
+          "candidate_count": 8
+        }
+      },
+      {
+        "registry_entry": {
+          "registry_id": 554,
+          "proof_row_id": 554,
+          "source_node_id": 788,
+          "digits": "0000011110301120011001000120000001",
+          "tiles": 18,
+          "lean_state": "Mahjong.Scale12V2.state554"
+        },
+        "probe_node": {
+          "id": 33085,
+          "state": "0000011110301120011001000120000001",
+          "n": 18,
+          "outcome": "P",
+          "expanded": 1,
+          "physical_safe_moves": 11,
+          "candidate_count": 11
+        }
+      },
+      {
+        "registry_entry": {
+          "registry_id": 555,
+          "proof_row_id": 555,
+          "source_node_id": 789,
+          "digits": "0000011110001000120301120010000011",
+          "tiles": 18,
+          "lean_state": "Mahjong.Scale12V2.state555"
+        },
+        "probe_node": {
+          "id": 34656,
+          "state": "0000011110001000120301120010000011",
+          "n": 18,
+          "outcome": "P",
+          "expanded": 0,
+          "physical_safe_moves": null,
+          "candidate_count": null
+        }
+      },
+      {
+        "registry_entry": {
+          "registry_id": 557,
+          "proof_row_id": 557,
+          "source_node_id": 791,
+          "digits": "1000011111000100021001120310000000",
+          "tiles": 18,
+          "lean_state": "Mahjong.Scale12V2.state557"
+        },
+        "probe_node": {
+          "id": 34657,
+          "state": "1000011111000100021001120310000000",
+          "n": 18,
+          "outcome": "P",
+          "expanded": 0,
+          "physical_safe_moves": null,
+          "candidate_count": null
+        }
+      },
+      {
+        "registry_entry": {
+          "registry_id": 558,
+          "proof_row_id": 558,
+          "source_node_id": 792,
+          "digits": "0000100120001120311000011110000001",
+          "tiles": 18,
+          "lean_state": "Mahjong.Scale12V2.state558"
+        },
+        "probe_node": {
+          "id": 34659,
+          "state": "0000100120001120311000011110000001",
+          "n": 18,
+          "outcome": "P",
+          "expanded": 0,
+          "physical_safe_moves": null,
+          "candidate_count": null
+        }
+      },
+      {
+        "registry_entry": {
+          "registry_id": 560,
+          "proof_row_id": 560,
+          "source_node_id": 794,
+          "digits": "0100011110100100120101120300000000",
+          "tiles": 18,
+          "lean_state": "Mahjong.Scale12V2.state560"
+        },
+        "probe_node": {
+          "id": 34661,
+          "state": "0100011110100100120101120300000000",
+          "n": 18,
+          "outcome": "P",
+          "expanded": 0,
+          "physical_safe_moves": null,
+          "candidate_count": null
+        }
+      },
+      {
+        "registry_entry": {
+          "registry_id": 562,
+          "proof_row_id": 562,
+          "source_node_id": 796,
+          "digits": "0010011110100100120302110010000000",
+          "tiles": 18,
+          "lean_state": "Mahjong.Scale12V2.state562"
+        },
+        "probe_node": {
+          "id": 33099,
+          "state": "0010011110100100120302110010000000",
+          "n": 18,
+          "outcome": "P",
+          "expanded": 1,
+          "physical_safe_moves": 8,
+          "candidate_count": 8
+        }
+      },
+      {
+        "registry_entry": {
+          "registry_id": 564,
+          "proof_row_id": 564,
+          "source_node_id": 798,
+          "digits": "0302110011000011111000100120000000",
+          "tiles": 18,
+          "lean_state": "Mahjong.Scale12V2.state564"
+        },
+        "probe_node": {
+          "id": 33097,
+          "state": "0302110011000011111000100120000000",
+          "n": 18,
+          "outcome": "P",
+          "expanded": 1,
+          "physical_safe_moves": 8,
+          "candidate_count": 8
+        }
+      },
+      {
+        "registry_entry": {
+          "registry_id": 566,
+          "proof_row_id": 566,
+          "source_node_id": 800,
+          "digits": "0000011110001120311000100120000001",
+          "tiles": 18,
+          "lean_state": "Mahjong.Scale12V2.state566"
+        },
+        "probe_node": {
+          "id": 34665,
+          "state": "0000011110001120311000100120000001",
+          "n": 18,
+          "outcome": "P",
+          "expanded": 0,
+          "physical_safe_moves": null,
+          "candidate_count": null
+        }
+      },
+      {
+        "registry_entry": {
+          "registry_id": 567,
+          "proof_row_id": 567,
+          "source_node_id": 801,
+          "digits": "0100011110100100120302110010000000",
+          "tiles": 18,
+          "lean_state": "Mahjong.Scale12V2.state567"
+        },
+        "probe_node": {
+          "id": 33098,
+          "state": "0100011110100100120302110010000000",
+          "n": 18,
+          "outcome": "P",
+          "expanded": 1,
+          "physical_safe_moves": 8,
+          "candidate_count": 8
+        }
+      },
+      {
+        "registry_entry": {
+          "registry_id": 568,
+          "proof_row_id": 568,
+          "source_node_id": 802,
+          "digits": "0000011110000100121001120310000001",
+          "tiles": 18,
+          "lean_state": "Mahjong.Scale12V2.state568"
+        },
+        "probe_node": {
+          "id": 33100,
+          "state": "0000011110000100121001120310000001",
+          "n": 18,
+          "outcome": "P",
+          "expanded": 1,
+          "physical_safe_moves": 11,
+          "candidate_count": 11
+        }
+      },
+      {
+        "registry_entry": {
+          "registry_id": 570,
+          "proof_row_id": 570,
+          "source_node_id": 804,
+          "digits": "0010011110101120301000100020000001",
+          "tiles": 18,
+          "lean_state": "Mahjong.Scale12V2.state570"
+        },
+        "probe_node": {
+          "id": 34664,
+          "state": "0010011110101120301000100020000001",
+          "n": 18,
+          "outcome": "P",
+          "expanded": 0,
+          "physical_safe_moves": null,
+          "candidate_count": null
+        }
+      },
+      {
+        "registry_entry": {
+          "registry_id": 572,
+          "proof_row_id": 572,
+          "source_node_id": 806,
+          "digits": "0010011110311110011000010020000001",
+          "tiles": 18,
+          "lean_state": "Mahjong.Scale12V2.state572"
+        },
+        "probe_node": {
+          "id": 34667,
+          "state": "0010011110311110011000010020000001",
+          "n": 18,
+          "outcome": "P",
+          "expanded": 0,
+          "physical_safe_moves": null,
+          "candidate_count": null
+        }
+      },
+      {
+        "registry_entry": {
+          "registry_id": 573,
+          "proof_row_id": 573,
+          "source_node_id": 807,
+          "digits": "0010011110100010020311110010000001",
+          "tiles": 18,
+          "lean_state": "Mahjong.Scale12V2.state573"
+        },
+        "probe_node": {
+          "id": 34668,
+          "state": "0010011110100010020311110010000001",
+          "n": 18,
+          "outcome": "P",
+          "expanded": 0,
+          "physical_safe_moves": null,
+          "candidate_count": null
+        }
+      },
+      {
+        "registry_entry": {
+          "registry_id": 574,
+          "proof_row_id": 574,
+          "source_node_id": 808,
+          "digits": "0010010020311110011000011110000001",
+          "tiles": 18,
+          "lean_state": "Mahjong.Scale12V2.state574"
+        },
+        "probe_node": {
+          "id": 34669,
+          "state": "0010010020311110011000011110000001",
+          "n": 18,
+          "outcome": "P",
+          "expanded": 0,
+          "physical_safe_moves": null,
+          "candidate_count": null
+        }
+      },
+      {
+        "registry_entry": {
+          "registry_id": 575,
+          "proof_row_id": 575,
+          "source_node_id": 809,
+          "digits": "0100010020100011110311110010000001",
+          "tiles": 18,
+          "lean_state": "Mahjong.Scale12V2.state575"
+        },
+        "probe_node": {
+          "id": 34670,
+          "state": "0100010020100011110311110010000001",
+          "n": 18,
+          "outcome": "P",
+          "expanded": 0,
+          "physical_safe_moves": null,
+          "candidate_count": null
+        }
+      },
+      {
+        "registry_entry": {
+          "registry_id": 576,
+          "proof_row_id": 576,
+          "source_node_id": 810,
+          "digits": "0000010020010011110311110010000011",
+          "tiles": 18,
+          "lean_state": "Mahjong.Scale12V2.state576"
+        },
+        "probe_node": {
+          "id": 34671,
+          "state": "0000010020010011110311110010000011",
+          "n": 18,
+          "outcome": "P",
+          "expanded": 0,
+          "physical_safe_moves": null,
+          "candidate_count": null
+        }
+      },
+      {
+        "registry_entry": {
+          "registry_id": 577,
+          "proof_row_id": 577,
+          "source_node_id": 811,
+          "digits": "1000000121000011111002110310000000",
+          "tiles": 18,
+          "lean_state": "Mahjong.Scale12V2.state577"
+        },
+        "probe_node": {
+          "id": 33082,
+          "state": "1000000121000011111002110310000000",
+          "n": 18,
+          "outcome": "P",
+          "expanded": 1,
+          "physical_safe_moves": 9,
+          "candidate_count": 9
+        }
+      },
+      {
+        "registry_entry": {
+          "registry_id": 578,
+          "proof_row_id": 578,
+          "source_node_id": 812,
+          "digits": "0100011110401120011000000120000000",
+          "tiles": 18,
+          "lean_state": "Mahjong.Scale12V2.state578"
+        },
+        "probe_node": {
+          "id": 33083,
+          "state": "0100011110401120011000000120000000",
+          "n": 18,
+          "outcome": "P",
+          "expanded": 1,
+          "physical_safe_moves": 9,
+          "candidate_count": 9
+        }
+      },
+      {
+        "registry_entry": {
+          "registry_id": 579,
+          "proof_row_id": 579,
+          "source_node_id": 813,
+          "digits": "0010011110401120011000000120000000",
+          "tiles": 18,
+          "lean_state": "Mahjong.Scale12V2.state579"
+        },
+        "probe_node": {
+          "id": 33084,
+          "state": "0010011110401120011000000120000000",
+          "n": 18,
+          "outcome": "P",
+          "expanded": 1,
+          "physical_safe_moves": 9,
+          "candidate_count": 9
+        }
+      },
+      {
+        "registry_entry": {
+          "registry_id": 580,
+          "proof_row_id": 580,
+          "source_node_id": 814,
+          "digits": "0000011110301120011000100120000001",
+          "tiles": 18,
+          "lean_state": "Mahjong.Scale12V2.state580"
+        },
+        "probe_node": {
+          "id": 33086,
+          "state": "0000011110301120011000100120000001",
+          "n": 18,
+          "outcome": "P",
+          "expanded": 1,
+          "physical_safe_moves": 11,
+          "candidate_count": 11
+        }
+      },
+      {
+        "registry_entry": {
+          "registry_id": 581,
+          "proof_row_id": 581,
+          "source_node_id": 815,
+          "digits": "0100000120401120011000011110000000",
+          "tiles": 18,
+          "lean_state": "Mahjong.Scale12V2.state581"
+        },
+        "probe_node": {
+          "id": 33087,
+          "state": "0100000120401120011000011110000000",
+          "n": 18,
+          "outcome": "P",
+          "expanded": 1,
+          "physical_safe_moves": 8,
+          "candidate_count": 8
+        }
+      },
+      {
+        "registry_entry": {
+          "registry_id": 582,
+          "proof_row_id": 582,
+          "source_node_id": 816,
+          "digits": "0010011110100000120301120010000001",
+          "tiles": 18,
+          "lean_state": "Mahjong.Scale12V2.state582"
+        },
+        "probe_node": {
+          "id": 34686,
+          "state": "0010011110100000120301120010000001",
+          "n": 18,
+          "outcome": "P",
+          "expanded": 0,
+          "physical_safe_moves": null,
+          "candidate_count": null
+        }
+      },
+      {
+        "registry_entry": {
+          "registry_id": 584,
+          "proof_row_id": 584,
+          "source_node_id": 818,
+          "digits": "0010000120311110011000011110000001",
+          "tiles": 18,
+          "lean_state": "Mahjong.Scale12V2.state584"
+        },
+        "probe_node": {
+          "id": 33091,
+          "state": "0010000120311110011000011110000001",
+          "n": 18,
+          "outcome": "P",
+          "expanded": 1,
+          "physical_safe_moves": 6,
+          "candidate_count": 6
+        }
+      },
+      {
+        "registry_entry": {
+          "registry_id": 585,
+          "proof_row_id": 585,
+          "source_node_id": 819,
+          "digits": "0010000120100011110311110010000001",
+          "tiles": 18,
+          "lean_state": "Mahjong.Scale12V2.state585"
+        },
+        "probe_node": {
+          "id": 33092,
+          "state": "0010000120100011110311110010000001",
+          "n": 18,
+          "outcome": "P",
+          "expanded": 1,
+          "physical_safe_moves": 6,
+          "candidate_count": 6
+        }
+      },
+      {
+        "registry_entry": {
+          "registry_id": 586,
+          "proof_row_id": 586,
+          "source_node_id": 820,
+          "digits": "0010000120010011110311110010000001",
+          "tiles": 18,
+          "lean_state": "Mahjong.Scale12V2.state586"
+        },
+        "probe_node": {
+          "id": 33093,
+          "state": "0010000120010011110311110010000001",
+          "n": 18,
+          "outcome": "P",
+          "expanded": 1,
+          "physical_safe_moves": 6,
+          "candidate_count": 6
+        }
+      },
+      {
+        "registry_entry": {
+          "registry_id": 587,
+          "proof_row_id": 587,
+          "source_node_id": 821,
+          "digits": "0010000121000011111002110310000000",
+          "tiles": 18,
+          "lean_state": "Mahjong.Scale12V2.state587"
+        },
+        "probe_node": {
+          "id": 33101,
+          "state": "0010000121000011111002110310000000",
+          "n": 18,
+          "outcome": "P",
+          "expanded": 1,
+          "physical_safe_moves": 7,
+          "candidate_count": 7
+        }
+      },
+      {
+        "registry_entry": {
+          "registry_id": 588,
+          "proof_row_id": 588,
+          "source_node_id": 822,
+          "digits": "0000100120301120011000011110000001",
+          "tiles": 18,
+          "lean_state": "Mahjong.Scale12V2.state588"
+        },
+        "probe_node": {
+          "id": 33102,
+          "state": "0000100120301120011000011110000001",
+          "n": 18,
+          "outcome": "P",
+          "expanded": 1,
+          "physical_safe_moves": 10,
+          "candidate_count": 10
+        }
+      },
+      {
+        "registry_entry": {
+          "registry_id": 589,
+          "proof_row_id": 589,
+          "source_node_id": 823,
+          "digits": "0100011110401110011000000120000001",
+          "tiles": 18,
+          "lean_state": "Mahjong.Scale12V2.state589"
+        },
+        "probe_node": {
+          "id": 33103,
+          "state": "0100011110401110011000000120000001",
+          "n": 18,
+          "outcome": "P",
+          "expanded": 1,
+          "physical_safe_moves": 10,
+          "candidate_count": 10
+        }
+      },
+      {
+        "registry_entry": {
+          "registry_id": 590,
+          "proof_row_id": 590,
+          "source_node_id": 824,
+          "digits": "0100000120100011110302110010000001",
+          "tiles": 18,
+          "lean_state": "Mahjong.Scale12V2.state590"
+        },
+        "probe_node": {
+          "id": 33107,
+          "state": "0100000120100011110302110010000001",
+          "n": 18,
+          "outcome": "P",
+          "expanded": 1,
+          "physical_safe_moves": 8,
+          "candidate_count": 8
+        }
+      },
+      {
+        "registry_entry": {
+          "registry_id": 591,
+          "proof_row_id": 591,
+          "source_node_id": 825,
+          "digits": "0001000120100011110401110010000001",
+          "tiles": 18,
+          "lean_state": "Mahjong.Scale12V2.state591"
+        },
+        "probe_node": {
+          "id": 33104,
+          "state": "0001000120100011110401110010000001",
+          "n": 18,
+          "outcome": "P",
+          "expanded": 1,
+          "physical_safe_moves": 9,
+          "candidate_count": 9
+        }
+      },
+      {
+        "registry_entry": {
+          "registry_id": 593,
+          "proof_row_id": 593,
+          "source_node_id": 827,
+          "digits": "0100000120100011110301210010000001",
+          "tiles": 18,
+          "lean_state": "Mahjong.Scale12V2.state593"
+        },
+        "probe_node": {
+          "id": 33108,
+          "state": "0100000120100011110301210010000001",
+          "n": 18,
+          "outcome": "P",
+          "expanded": 1,
+          "physical_safe_moves": 9,
+          "candidate_count": 9
+        }
+      },
+      {
+        "registry_entry": {
+          "registry_id": 595,
+          "proof_row_id": 595,
+          "source_node_id": 829,
+          "digits": "0000000120100011110301110010000111",
+          "tiles": 18,
+          "lean_state": "Mahjong.Scale12V2.state595"
+        },
+        "probe_node": {
+          "id": 33109,
+          "state": "0000000120100011110301110010000111",
+          "n": 18,
+          "outcome": "P",
+          "expanded": 1,
+          "physical_safe_moves": 15,
+          "candidate_count": 15
+        }
+      },
+      {
+        "registry_entry": {
+          "registry_id": 596,
+          "proof_row_id": 596,
+          "source_node_id": 830,
+          "digits": "0010011110401110011000000120000001",
+          "tiles": 18,
+          "lean_state": "Mahjong.Scale12V2.state596"
+        },
+        "probe_node": {
+          "id": 33110,
+          "state": "0010011110401110011000000120000001",
+          "n": 18,
+          "outcome": "P",
+          "expanded": 1,
+          "physical_safe_moves": 10,
+          "candidate_count": 10
+        }
+      },
+      {
+        "registry_entry": {
+          "registry_id": 597,
+          "proof_row_id": 597,
+          "source_node_id": 831,
+          "digits": "0001000120010011110401110010000001",
+          "tiles": 18,
+          "lean_state": "Mahjong.Scale12V2.state597"
+        },
+        "probe_node": {
+          "id": 33111,
+          "state": "0001000120010011110401110010000001",
+          "n": 18,
+          "outcome": "P",
+          "expanded": 1,
+          "physical_safe_moves": 9,
+          "candidate_count": 9
+        }
+      },
+      {
+        "registry_entry": {
+          "registry_id": 599,
+          "proof_row_id": 599,
+          "source_node_id": 833,
+          "digits": "0010011110100000120401110010000001",
+          "tiles": 18,
+          "lean_state": "Mahjong.Scale12V2.state599"
+        },
+        "probe_node": {
+          "id": 33089,
+          "state": "0010011110100000120401110010000001",
+          "n": 18,
+          "outcome": "P",
+          "expanded": 1,
+          "physical_safe_moves": 9,
+          "candidate_count": 9
+        }
+      },
+      {
+        "registry_entry": {
+          "registry_id": 600,
+          "proof_row_id": 600,
+          "source_node_id": 834,
+          "digits": "0010011110100000120302110010000001",
+          "tiles": 18,
+          "lean_state": "Mahjong.Scale12V2.state600"
+        },
+        "probe_node": {
+          "id": 33114,
+          "state": "0010011110100000120302110010000001",
+          "n": 18,
+          "outcome": "P",
+          "expanded": 1,
+          "physical_safe_moves": 8,
+          "candidate_count": 8
+        }
+      },
+      {
+        "registry_entry": {
+          "registry_id": 601,
+          "proof_row_id": 601,
+          "source_node_id": 835,
+          "digits": "0000000120010011110301110010000111",
+          "tiles": 18,
+          "lean_state": "Mahjong.Scale12V2.state601"
+        },
+        "probe_node": {
+          "id": 33116,
+          "state": "0000000120010011110301110010000111",
+          "n": 18,
+          "outcome": "P",
+          "expanded": 1,
+          "physical_safe_moves": 15,
+          "candidate_count": 15
+        }
+      },
+      {
+        "registry_entry": {
+          "registry_id": 611,
+          "proof_row_id": 611,
+          "source_node_id": 846,
+          "digits": "0000011110000100121001210310000001",
+          "tiles": 18,
+          "lean_state": "Mahjong.Scale12V2.state611"
+        },
+        "probe_node": {
+          "id": 33121,
+          "state": "0000011110000100121001210310000001",
+          "n": 18,
+          "outcome": "P",
+          "expanded": 1,
+          "physical_safe_moves": 11,
+          "candidate_count": 11
+        }
+      },
+      {
+        "registry_entry": {
+          "registry_id": 612,
+          "proof_row_id": 612,
+          "source_node_id": 847,
+          "digits": "0001000120311110011000011110000001",
+          "tiles": 18,
+          "lean_state": "Mahjong.Scale12V2.state612"
+        },
+        "probe_node": {
+          "id": 34673,
+          "state": "0001000120311110011000011110000001",
+          "n": 18,
+          "outcome": "P",
+          "expanded": 0,
+          "physical_safe_moves": null,
+          "candidate_count": null
+        }
+      },
+      {
+        "registry_entry": {
+          "registry_id": 615,
+          "proof_row_id": 615,
+          "source_node_id": 851,
+          "digits": "0100001020311110011000011110000001",
+          "tiles": 18,
+          "lean_state": "Mahjong.Scale12V2.state615"
+        },
+        "probe_node": {
+          "id": 34672,
+          "state": "0100001020311110011000011110000001",
+          "n": 18,
+          "outcome": "P",
+          "expanded": 0,
+          "physical_safe_moves": null,
+          "candidate_count": null
+        }
+      },
+      {
+        "registry_entry": {
+          "registry_id": 616,
+          "proof_row_id": 616,
+          "source_node_id": 852,
+          "digits": "0001000120001111301000011110000011",
+          "tiles": 18,
+          "lean_state": "Mahjong.Scale12V2.state616"
+        },
+        "probe_node": {
+          "id": 34674,
+          "state": "0001000120001111301000011110000011",
+          "n": 18,
+          "outcome": "P",
+          "expanded": 0,
+          "physical_safe_moves": null,
+          "candidate_count": null
+        }
+      },
+      {
+        "registry_entry": {
+          "registry_id": 617,
+          "proof_row_id": 617,
+          "source_node_id": 853,
+          "digits": "0311110011000011111000100120000000",
+          "tiles": 18,
+          "lean_state": "Mahjong.Scale12V2.state617"
+        },
+        "probe_node": {
+          "id": 34675,
+          "state": "0311110011000011111000100120000000",
+          "n": 18,
+          "outcome": "P",
+          "expanded": 0,
+          "physical_safe_moves": null,
+          "candidate_count": null
+        }
+      },
+      {
+        "registry_entry": {
+          "registry_id": 618,
+          "proof_row_id": 618,
+          "source_node_id": 854,
+          "digits": "0001111301000011111000100120000001",
+          "tiles": 18,
+          "lean_state": "Mahjong.Scale12V2.state618"
+        },
+        "probe_node": {
+          "id": 34676,
+          "state": "0001111301000011111000100120000001",
+          "n": 18,
+          "outcome": "P",
+          "expanded": 0,
+          "physical_safe_moves": null,
+          "candidate_count": null
+        }
+      },
+      {
+        "registry_entry": {
+          "registry_id": 620,
+          "proof_row_id": 620,
+          "source_node_id": 856,
+          "digits": "0100001020100011110311110010000001",
+          "tiles": 18,
+          "lean_state": "Mahjong.Scale12V2.state620"
+        },
+        "probe_node": {
+          "id": 34678,
+          "state": "0100001020100011110311110010000001",
+          "n": 18,
+          "outcome": "P",
+          "expanded": 0,
+          "physical_safe_moves": null,
+          "candidate_count": null
+        }
+      },
+      {
+        "registry_entry": {
+          "registry_id": 621,
+          "proof_row_id": 621,
+          "source_node_id": 857,
+          "digits": "0100000020100011110301110010000111",
+          "tiles": 18,
+          "lean_state": "Mahjong.Scale12V2.state621"
+        },
+        "probe_node": {
+          "id": 34679,
+          "state": "0100000020100011110301110010000111",
+          "n": 18,
+          "outcome": "P",
+          "expanded": 0,
+          "physical_safe_moves": null,
+          "candidate_count": null
+        }
+      },
+      {
+        "registry_entry": {
+          "registry_id": 623,
+          "proof_row_id": 623,
+          "source_node_id": 859,
+          "digits": "0002110400100011110100100120000000",
+          "tiles": 18,
+          "lean_state": "Mahjong.Scale12V2.state623"
+        },
+        "probe_node": {
+          "id": 34682,
+          "state": "0002110400100011110100100120000000",
+          "n": 18,
+          "outcome": "P",
+          "expanded": 0,
+          "physical_safe_moves": null,
+          "candidate_count": null
+        }
+      },
+      {
+        "registry_entry": {
+          "registry_id": 626,
+          "proof_row_id": 626,
+          "source_node_id": 862,
+          "digits": "0010011110100001020311110010000001",
+          "tiles": 18,
+          "lean_state": "Mahjong.Scale12V2.state626"
+        },
+        "probe_node": {
+          "id": 34685,
+          "state": "0010011110100001020311110010000001",
+          "n": 18,
+          "outcome": "P",
+          "expanded": 0,
+          "physical_safe_moves": null,
+          "candidate_count": null
+        }
+      },
+      {
+        "registry_entry": {
+          "registry_id": 627,
+          "proof_row_id": 627,
+          "source_node_id": 863,
+          "digits": "0010011110100000020301110010000111",
+          "tiles": 18,
+          "lean_state": "Mahjong.Scale12V2.state627"
+        },
+        "probe_node": {
+          "id": 34687,
+          "state": "0010011110100000020301110010000111",
+          "n": 18,
+          "outcome": "P",
+          "expanded": 0,
+          "physical_safe_moves": null,
+          "candidate_count": null
+        }
+      },
+      {
+        "registry_entry": {
+          "registry_id": 628,
+          "proof_row_id": 628,
+          "source_node_id": 864,
+          "digits": "0010011110100100120101110400000000",
+          "tiles": 18,
+          "lean_state": "Mahjong.Scale12V2.state628"
+        },
+        "probe_node": {
+          "id": 34689,
+          "state": "0010011110100100120101110400000000",
+          "n": 18,
+          "outcome": "P",
+          "expanded": 0,
+          "physical_safe_moves": null,
+          "candidate_count": null
+        }
+      },
+      {
+        "registry_entry": {
+          "registry_id": 629,
+          "proof_row_id": 629,
+          "source_node_id": 865,
+          "digits": "0010011110100100120101210300000000",
+          "tiles": 18,
+          "lean_state": "Mahjong.Scale12V2.state629"
+        },
+        "probe_node": {
+          "id": 34688,
+          "state": "0010011110100100120101210300000000",
+          "n": 18,
+          "outcome": "P",
+          "expanded": 0,
+          "physical_safe_moves": null,
+          "candidate_count": null
+        }
+      },
+      {
+        "registry_entry": {
+          "registry_id": 631,
+          "proof_row_id": 631,
+          "source_node_id": 867,
+          "digits": "0002110400010011110100100120000000",
+          "tiles": 18,
+          "lean_state": "Mahjong.Scale12V2.state631"
+        },
+        "probe_node": {
+          "id": 34690,
+          "state": "0002110400010011110100100120000000",
+          "n": 18,
+          "outcome": "P",
+          "expanded": 0,
+          "physical_safe_moves": null,
+          "candidate_count": null
+        }
+      },
+      {
+        "registry_entry": {
+          "registry_id": 634,
+          "proof_row_id": 634,
+          "source_node_id": 870,
+          "digits": "0000100120101210401000011110000000",
+          "tiles": 18,
+          "lean_state": "Mahjong.Scale12V2.state634"
+        },
+        "probe_node": {
+          "id": 34695,
+          "state": "0000100120101210401000011110000000",
+          "n": 18,
+          "outcome": "P",
+          "expanded": 0,
+          "physical_safe_moves": null,
+          "candidate_count": null
+        }
+      },
+      {
+        "registry_entry": {
+          "registry_id": 638,
+          "proof_row_id": 638,
+          "source_node_id": 874,
+          "digits": "0000100020010011110101210400000001",
+          "tiles": 18,
+          "lean_state": "Mahjong.Scale12V2.state638"
+        },
+        "probe_node": {
+          "id": 34697,
+          "state": "0000100020010011110101210400000001",
+          "n": 18,
+          "outcome": "P",
+          "expanded": 0,
+          "physical_safe_moves": null,
+          "candidate_count": null
+        }
+      },
+      {
+        "registry_entry": {
+          "registry_id": 639,
+          "proof_row_id": 639,
+          "source_node_id": 875,
+          "digits": "0101210401000011111000100020000000",
+          "tiles": 18,
+          "lean_state": "Mahjong.Scale12V2.state639"
+        },
+        "probe_node": {
+          "id": 34693,
+          "state": "0101210401000011111000100020000000",
+          "n": 18,
+          "outcome": "P",
+          "expanded": 0,
+          "physical_safe_moves": null,
+          "candidate_count": null
+        }
+      },
+      {
+        "registry_entry": {
+          "registry_id": 640,
+          "proof_row_id": 640,
+          "source_node_id": 876,
+          "digits": "0100011110101210311000100020000000",
+          "tiles": 18,
+          "lean_state": "Mahjong.Scale12V2.state640"
+        },
+        "probe_node": {
+          "id": 34698,
+          "state": "0100011110101210311000100020000000",
+          "n": 18,
+          "outcome": "P",
+          "expanded": 0,
+          "physical_safe_moves": null,
+          "candidate_count": null
+        }
+      },
+      {
+        "registry_entry": {
+          "registry_id": 641,
+          "proof_row_id": 641,
+          "source_node_id": 877,
+          "digits": "0010011110101210301000100020000001",
+          "tiles": 18,
+          "lean_state": "Mahjong.Scale12V2.state641"
+        },
+        "probe_node": {
+          "id": 34699,
+          "state": "0010011110101210301000100020000001",
+          "n": 18,
+          "outcome": "P",
+          "expanded": 0,
+          "physical_safe_moves": null,
+          "candidate_count": null
+        }
+      },
+      {
+        "registry_entry": {
+          "registry_id": 642,
+          "proof_row_id": 642,
+          "source_node_id": 878,
+          "digits": "0010011110101210301000100120000000",
+          "tiles": 18,
+          "lean_state": "Mahjong.Scale12V2.state642"
+        },
+        "probe_node": {
+          "id": 34700,
+          "state": "0010011110101210301000100120000000",
+          "n": 18,
+          "outcome": "P",
+          "expanded": 0,
+          "physical_safe_moves": null,
+          "candidate_count": null
+        }
+      },
+      {
+        "registry_entry": {
+          "registry_id": 643,
+          "proof_row_id": 643,
+          "source_node_id": 879,
+          "digits": "0100100020401210011000011110000000",
+          "tiles": 18,
+          "lean_state": "Mahjong.Scale12V2.state643"
+        },
+        "probe_node": {
+          "id": 34707,
+          "state": "0100100020401210011000011110000000",
+          "n": 18,
+          "outcome": "P",
+          "expanded": 0,
+          "physical_safe_moves": null,
+          "candidate_count": null
+        }
+      },
+      {
+        "registry_entry": {
+          "registry_id": 645,
+          "proof_row_id": 645,
+          "source_node_id": 881,
+          "digits": "0000100020001210310010011110000011",
+          "tiles": 18,
+          "lean_state": "Mahjong.Scale12V2.state645"
+        },
+        "probe_node": {
+          "id": 34710,
+          "state": "0000100020001210310010011110000011",
+          "n": 18,
+          "outcome": "P",
+          "expanded": 0,
+          "physical_safe_moves": null,
+          "candidate_count": null
+        }
+      },
+      {
+        "registry_entry": {
+          "registry_id": 646,
+          "proof_row_id": 646,
+          "source_node_id": 882,
+          "digits": "0100011110101110401000100120000000",
+          "tiles": 18,
+          "lean_state": "Mahjong.Scale12V2.state646"
+        },
+        "probe_node": {
+          "id": 34711,
+          "state": "0100011110101110401000100120000000",
+          "n": 18,
+          "outcome": "P",
+          "expanded": 0,
+          "physical_safe_moves": null,
+          "candidate_count": null
+        }
+      },
+      {
+        "registry_entry": {
+          "registry_id": 650,
+          "proof_row_id": 650,
+          "source_node_id": 886,
+          "digits": "0000011110000100120401120010000001",
+          "tiles": 18,
+          "lean_state": "Mahjong.Scale12V2.state650"
+        },
+        "probe_node": {
+          "id": 34714,
+          "state": "0000011110000100120401120010000001",
+          "n": 18,
+          "outcome": "P",
+          "expanded": 0,
+          "physical_safe_moves": null,
+          "candidate_count": null
+        }
+      },
+      {
+        "registry_entry": {
+          "registry_id": 653,
+          "proof_row_id": 653,
+          "source_node_id": 889,
+          "digits": "0001000020100011110101210400000001",
+          "tiles": 18,
+          "lean_state": "Mahjong.Scale12V2.state653"
+        },
+        "probe_node": {
+          "id": 34716,
+          "state": "0001000020100011110101210400000001",
+          "n": 18,
+          "outcome": "P",
+          "expanded": 0,
+          "physical_safe_moves": null,
+          "candidate_count": null
+        }
+      },
+      {
+        "registry_entry": {
+          "registry_id": 654,
+          "proof_row_id": 654,
+          "source_node_id": 890,
+          "digits": "0001000120001210300010011110000011",
+          "tiles": 18,
+          "lean_state": "Mahjong.Scale12V2.state654"
+        },
+        "probe_node": {
+          "id": 34717,
+          "state": "0001000120001210300010011110000011",
+          "n": 18,
+          "outcome": "P",
+          "expanded": 0,
+          "physical_safe_moves": null,
+          "candidate_count": null
+        }
+      },
+      {
+        "registry_entry": {
+          "registry_id": 655,
+          "proof_row_id": 655,
+          "source_node_id": 891,
+          "digits": "0001000020010011110401210010000001",
+          "tiles": 18,
+          "lean_state": "Mahjong.Scale12V2.state655"
+        },
+        "probe_node": {
+          "id": 34718,
+          "state": "0001000020010011110401210010000001",
+          "n": 18,
+          "outcome": "P",
+          "expanded": 0,
+          "physical_safe_moves": null,
+          "candidate_count": null
+        }
+      },
+      {
+        "registry_entry": {
+          "registry_id": 656,
+          "proof_row_id": 656,
+          "source_node_id": 892,
+          "digits": "0001000020010011110101210400000001",
+          "tiles": 18,
+          "lean_state": "Mahjong.Scale12V2.state656"
+        },
+        "probe_node": {
+          "id": 34719,
+          "state": "0001000020010011110101210400000001",
+          "n": 18,
+          "outcome": "P",
+          "expanded": 0,
+          "physical_safe_moves": null,
+          "candidate_count": null
+        }
+      },
+      {
+        "registry_entry": {
+          "registry_id": 657,
+          "proof_row_id": 657,
+          "source_node_id": 893,
+          "digits": "0001000020010011110101210310000001",
+          "tiles": 18,
+          "lean_state": "Mahjong.Scale12V2.state657"
+        },
+        "probe_node": {
+          "id": 34720,
+          "state": "0001000020010011110101210310000001",
+          "n": 18,
+          "outcome": "P",
+          "expanded": 0,
+          "physical_safe_moves": null,
+          "candidate_count": null
+        }
+      },
+      {
+        "registry_entry": {
+          "registry_id": 659,
+          "proof_row_id": 659,
+          "source_node_id": 895,
+          "digits": "0001000120011110311000011110000001",
+          "tiles": 18,
+          "lean_state": "Mahjong.Scale12V2.state659"
+        },
+        "probe_node": {
+          "id": 34727,
+          "state": "0001000120011110311000011110000001",
+          "n": 18,
+          "outcome": "P",
+          "expanded": 0,
+          "physical_safe_moves": null,
+          "candidate_count": null
+        }
+      },
+      {
+        "registry_entry": {
+          "registry_id": 664,
+          "proof_row_id": 664,
+          "source_node_id": 194,
+          "digits": "0001111301000001021000011110000000",
+          "tiles": 16,
+          "lean_state": "Mahjong.Scale12V2.state664"
+        },
+        "probe_node": {
+          "id": 4947,
+          "state": "0001111301000001021000011110000000",
+          "n": 16,
+          "outcome": "P",
+          "expanded": 1,
+          "physical_safe_moves": 9,
+          "candidate_count": 9
+        }
+      },
+      {
+        "registry_entry": {
+          "registry_id": 665,
+          "proof_row_id": 665,
+          "source_node_id": 195,
+          "digits": "0001110400100011111000001020000000",
+          "tiles": 16,
+          "lean_state": "Mahjong.Scale12V2.state665"
+        },
+        "probe_node": {
+          "id": 4948,
+          "state": "0001110400100011111000001020000000",
+          "n": 16,
+          "outcome": "P",
+          "expanded": 1,
+          "physical_safe_moves": 12,
+          "candidate_count": 12
+        }
+      },
+      {
+        "registry_entry": {
+          "registry_id": 666,
+          "proof_row_id": 666,
+          "source_node_id": 196,
+          "digits": "0001210300010011111000001020000000",
+          "tiles": 16,
+          "lean_state": "Mahjong.Scale12V2.state666"
+        },
+        "probe_node": {
+          "id": 4949,
+          "state": "0001210300010011111000001020000000",
+          "n": 16,
+          "outcome": "P",
+          "expanded": 1,
+          "physical_safe_moves": 12,
+          "candidate_count": 12
+        }
+      },
+      {
+        "registry_entry": {
+          "registry_id": 667,
+          "proof_row_id": 667,
+          "source_node_id": 197,
+          "digits": "0000011110301120011000001020000000",
+          "tiles": 16,
+          "lean_state": "Mahjong.Scale12V2.state667"
+        },
+        "probe_node": {
+          "id": 4950,
+          "state": "0000011110301120011000001020000000",
+          "n": 16,
+          "outcome": "P",
+          "expanded": 1,
+          "physical_safe_moves": 13,
+          "candidate_count": 13
+        }
+      },
+      {
+        "registry_entry": {
+          "registry_id": 668,
+          "proof_row_id": 668,
+          "source_node_id": 198,
+          "digits": "0000011110101110401000001020000000",
+          "tiles": 16,
+          "lean_state": "Mahjong.Scale12V2.state668"
+        },
+        "probe_node": {
+          "id": 4951,
+          "state": "0000011110101110401000001020000000",
+          "n": 16,
+          "outcome": "P",
+          "expanded": 1,
+          "physical_safe_moves": 12,
+          "candidate_count": 12
+        }
+      },
+      {
+        "registry_entry": {
+          "registry_id": 669,
+          "proof_row_id": 669,
+          "source_node_id": 199,
+          "digits": "0011110301000001021000011110000000",
+          "tiles": 16,
+          "lean_state": "Mahjong.Scale12V2.state669"
+        },
+        "probe_node": {
+          "id": 4952,
+          "state": "0011110301000001021000011110000000",
+          "n": 16,
+          "outcome": "P",
+          "expanded": 1,
+          "physical_safe_moves": 9,
+          "candidate_count": 9
+        }
+      },
+      {
+        "registry_entry": {
+          "registry_id": 670,
+          "proof_row_id": 670,
+          "source_node_id": 200,
+          "digits": "0000011110002110301001001020000000",
+          "tiles": 16,
+          "lean_state": "Mahjong.Scale12V2.state670"
+        },
+        "probe_node": {
+          "id": 4953,
+          "state": "0000011110002110301001001020000000",
+          "n": 16,
+          "outcome": "P",
+          "expanded": 1,
+          "physical_safe_moves": 13,
+          "candidate_count": 13
+        }
+      },
+      {
+        "registry_entry": {
+          "registry_id": 671,
+          "proof_row_id": 671,
+          "source_node_id": 201,
+          "digits": "0000011110001120311000001020000000",
+          "tiles": 16,
+          "lean_state": "Mahjong.Scale12V2.state671"
+        },
+        "probe_node": {
+          "id": 4954,
+          "state": "0000011110001120311000001020000000",
+          "n": 16,
+          "outcome": "P",
+          "expanded": 1,
+          "physical_safe_moves": 13,
+          "candidate_count": 13
+        }
+      },
+      {
+        "registry_entry": {
+          "registry_id": 672,
+          "proof_row_id": 672,
+          "source_node_id": 202,
+          "digits": "0000011110001110301001001020000001",
+          "tiles": 16,
+          "lean_state": "Mahjong.Scale12V2.state672"
+        },
+        "probe_node": {
+          "id": 4955,
+          "state": "0000011110001110301001001020000001",
+          "n": 16,
+          "outcome": "P",
+          "expanded": 1,
+          "physical_safe_moves": 18,
+          "candidate_count": 18
+        }
+      },
+      {
+        "registry_entry": {
+          "registry_id": 674,
+          "proof_row_id": 674,
+          "source_node_id": 204,
+          "digits": "0001110310100000020100011110000001",
+          "tiles": 16,
+          "lean_state": "Mahjong.Scale12V2.state674"
+        },
+        "probe_node": {
+          "id": 4957,
+          "state": "0001110310100000020100011110000001",
+          "n": 16,
+          "outcome": "P",
+          "expanded": 1,
+          "physical_safe_moves": 16,
+          "candidate_count": 16
+        }
+      },
+      {
+        "registry_entry": {
+          "registry_id": 675,
+          "proof_row_id": 675,
+          "source_node_id": 205,
+          "digits": "0001110310010011110100000020000001",
+          "tiles": 16,
+          "lean_state": "Mahjong.Scale12V2.state675"
+        },
+        "probe_node": {
+          "id": 4958,
+          "state": "0001110310010011110100000020000001",
+          "n": 16,
+          "outcome": "P",
+          "expanded": 1,
+          "physical_safe_moves": 16,
+          "candidate_count": 16
+        }
+      },
+      {
+        "registry_entry": {
+          "registry_id": 676,
+          "proof_row_id": 676,
+          "source_node_id": 206,
+          "digits": "0000011110100000021002110310000000",
+          "tiles": 16,
+          "lean_state": "Mahjong.Scale12V2.state676"
+        },
+        "probe_node": {
+          "id": 4959,
+          "state": "0000011110100000021002110310000000",
+          "n": 16,
+          "outcome": "P",
+          "expanded": 1,
+          "physical_safe_moves": 14,
+          "candidate_count": 14
+        }
+      },
+      {
+        "registry_entry": {
+          "registry_id": 677,
+          "proof_row_id": 677,
+          "source_node_id": 207,
+          "digits": "0000011110100100020101110310000000",
+          "tiles": 16,
+          "lean_state": "Mahjong.Scale12V2.state677"
+        },
+        "probe_node": {
+          "id": 4960,
+          "state": "0000011110100100020101110310000000",
+          "n": 16,
+          "outcome": "P",
+          "expanded": 1,
+          "physical_safe_moves": 13,
+          "candidate_count": 13
+        }
+      },
+      {
+        "registry_entry": {
+          "registry_id": 678,
+          "proof_row_id": 678,
+          "source_node_id": 208,
+          "digits": "0000011110011110310100001020000000",
+          "tiles": 16,
+          "lean_state": "Mahjong.Scale12V2.state678"
+        },
+        "probe_node": {
+          "id": 4961,
+          "state": "0000011110011110310100001020000000",
+          "n": 16,
+          "outcome": "P",
+          "expanded": 1,
+          "physical_safe_moves": 10,
+          "candidate_count": 10
+        }
+      },
+      {
+        "registry_entry": {
+          "registry_id": 680,
+          "proof_row_id": 680,
+          "source_node_id": 210,
+          "digits": "0000011110001120310100000120000000",
+          "tiles": 16,
+          "lean_state": "Mahjong.Scale12V2.state680"
+        },
+        "probe_node": {
+          "id": 4962,
+          "state": "0000011110001120310100000120000000",
+          "n": 16,
+          "outcome": "P",
+          "expanded": 1,
+          "physical_safe_moves": 13,
+          "candidate_count": 13
+        }
+      },
+      {
+        "registry_entry": {
+          "registry_id": 681,
+          "proof_row_id": 681,
+          "source_node_id": 211,
+          "digits": "0000011110011110310100010020000000",
+          "tiles": 16,
+          "lean_state": "Mahjong.Scale12V2.state681"
+        },
+        "probe_node": {
+          "id": 4963,
+          "state": "0000011110011110310100010020000000",
+          "n": 16,
+          "outcome": "P",
+          "expanded": 1,
+          "physical_safe_moves": 10,
+          "candidate_count": 10
+        }
+      },
+      {
+        "registry_entry": {
+          "registry_id": 682,
+          "proof_row_id": 682,
+          "source_node_id": 212,
+          "digits": "0010010020011110301000011110000000",
+          "tiles": 16,
+          "lean_state": "Mahjong.Scale12V2.state682"
+        },
+        "probe_node": {
+          "id": 4964,
+          "state": "0010010020011110301000011110000000",
+          "n": 16,
+          "outcome": "P",
+          "expanded": 1,
+          "physical_safe_moves": 8,
+          "candidate_count": 8
+        }
+      },
+      {
+        "registry_entry": {
+          "registry_id": 683,
+          "proof_row_id": 683,
+          "source_node_id": 213,
+          "digits": "0010001020011110300100011110000000",
+          "tiles": 16,
+          "lean_state": "Mahjong.Scale12V2.state683"
+        },
+        "probe_node": {
+          "id": 4965,
+          "state": "0010001020011110300100011110000000",
+          "n": 16,
+          "outcome": "P",
+          "expanded": 1,
+          "physical_safe_moves": 8,
+          "candidate_count": 8
+        }
+      },
+      {
+        "registry_entry": {
+          "registry_id": 684,
+          "proof_row_id": 684,
+          "source_node_id": 214,
+          "digits": "0010000120010011110011110300000000",
+          "tiles": 16,
+          "lean_state": "Mahjong.Scale12V2.state684"
+        },
+        "probe_node": {
+          "id": 4966,
+          "state": "0010000120010011110011110300000000",
+          "n": 16,
+          "outcome": "P",
+          "expanded": 1,
+          "physical_safe_moves": 8,
+          "candidate_count": 8
+        }
+      },
+      {
+        "registry_entry": {
+          "registry_id": 685,
+          "proof_row_id": 685,
+          "source_node_id": 215,
+          "digits": "0000011110010000020011110310000001",
+          "tiles": 16,
+          "lean_state": "Mahjong.Scale12V2.state685"
+        },
+        "probe_node": {
+          "id": 4967,
+          "state": "0000011110010000020011110310000001",
+          "n": 16,
+          "outcome": "P",
+          "expanded": 1,
+          "physical_safe_moves": 12,
+          "candidate_count": 12
+        }
+      },
+      {
+        "registry_entry": {
+          "registry_id": 686,
+          "proof_row_id": 686,
+          "source_node_id": 216,
+          "digits": "0001000020002110311000011110000000",
+          "tiles": 16,
+          "lean_state": "Mahjong.Scale12V2.state686"
+        },
+        "probe_node": {
+          "id": 4968,
+          "state": "0001000020002110311000011110000000",
+          "n": 16,
+          "outcome": "P",
+          "expanded": 1,
+          "physical_safe_moves": 11,
+          "candidate_count": 11
+        }
+      },
+      {
+        "registry_entry": {
+          "registry_id": 687,
+          "proof_row_id": 687,
+          "source_node_id": 217,
+          "digits": "0001000020002110400100011110000000",
+          "tiles": 16,
+          "lean_state": "Mahjong.Scale12V2.state687"
+        },
+        "probe_node": {
+          "id": 4969,
+          "state": "0001000020002110400100011110000000",
+          "n": 16,
+          "outcome": "P",
+          "expanded": 1,
+          "physical_safe_moves": 11,
+          "candidate_count": 11
+        }
+      },
+      {
+        "registry_entry": {
+          "registry_id": 688,
+          "proof_row_id": 688,
+          "source_node_id": 218,
+          "digits": "0001000020002110400010011110000000",
+          "tiles": 16,
+          "lean_state": "Mahjong.Scale12V2.state688"
+        },
+        "probe_node": {
+          "id": 4970,
+          "state": "0001000020002110400010011110000000",
+          "n": 16,
+          "outcome": "P",
+          "expanded": 1,
+          "physical_safe_moves": 11,
+          "candidate_count": 11
+        }
+      },
+      {
+        "registry_entry": {
+          "registry_id": 689,
+          "proof_row_id": 689,
+          "source_node_id": 219,
+          "digits": "0000011110001000120301120010000000",
+          "tiles": 16,
+          "lean_state": "Mahjong.Scale12V2.state689"
+        },
+        "probe_node": {
+          "id": 4651,
+          "state": "0000011110001000120301120010000000",
+          "n": 16,
+          "outcome": "P",
+          "expanded": 1,
+          "physical_safe_moves": 13,
+          "candidate_count": 13
+        }
+      },
+      {
+        "registry_entry": {
+          "registry_id": 691,
+          "proof_row_id": 691,
+          "source_node_id": 221,
+          "digits": "0000100020001120311000011110000000",
+          "tiles": 16,
+          "lean_state": "Mahjong.Scale12V2.state691"
+        },
+        "probe_node": {
+          "id": 4972,
+          "state": "0000100020001120311000011110000000",
+          "n": 16,
+          "outcome": "P",
+          "expanded": 1,
+          "physical_safe_moves": 12,
+          "candidate_count": 12
+        }
+      },
+      {
+        "registry_entry": {
+          "registry_id": 692,
+          "proof_row_id": 692,
+          "source_node_id": 222,
+          "digits": "0000100020100011110101120300000000",
+          "tiles": 16,
+          "lean_state": "Mahjong.Scale12V2.state692"
+        },
+        "probe_node": {
+          "id": 4973,
+          "state": "0000100020100011110101120300000000",
+          "n": 16,
+          "outcome": "P",
+          "expanded": 1,
+          "physical_safe_moves": 11,
+          "candidate_count": 11
+        }
+      },
+      {
+        "registry_entry": {
+          "registry_id": 693,
+          "proof_row_id": 693,
+          "source_node_id": 223,
+          "digits": "0001120300010011110100100020000000",
+          "tiles": 16,
+          "lean_state": "Mahjong.Scale12V2.state693"
+        },
+        "probe_node": {
+          "id": 4974,
+          "state": "0001120300010011110100100020000000",
+          "n": 16,
+          "outcome": "P",
+          "expanded": 1,
+          "physical_safe_moves": 11,
+          "candidate_count": 11
+        }
+      },
+      {
+        "registry_entry": {
+          "registry_id": 695,
+          "proof_row_id": 695,
+          "source_node_id": 225,
+          "digits": "0000011110000100120302110010000000",
+          "tiles": 16,
+          "lean_state": "Mahjong.Scale12V2.state695"
+        },
+        "probe_node": {
+          "id": 4652,
+          "state": "0000011110000100120302110010000000",
+          "n": 16,
+          "outcome": "P",
+          "expanded": 1,
+          "physical_safe_moves": 13,
+          "candidate_count": 13
+        }
+      },
+      {
+        "registry_entry": {
+          "registry_id": 697,
+          "proof_row_id": 697,
+          "source_node_id": 227,
+          "digits": "0001111300010011111000010020000000",
+          "tiles": 16,
+          "lean_state": "Mahjong.Scale12V2.state697"
+        },
+        "probe_node": {
+          "id": 4976,
+          "state": "0001111300010011111000010020000000",
+          "n": 16,
+          "outcome": "P",
+          "expanded": 1,
+          "physical_safe_moves": 8,
+          "candidate_count": 8
+        }
+      },
+      {
+        "registry_entry": {
+          "registry_id": 698,
+          "proof_row_id": 698,
+          "source_node_id": 228,
+          "digits": "0001111300010011110100010020000000",
+          "tiles": 16,
+          "lean_state": "Mahjong.Scale12V2.state698"
+        },
+        "probe_node": {
+          "id": 4977,
+          "state": "0001111300010011110100010020000000",
+          "n": 16,
+          "outcome": "P",
+          "expanded": 1,
+          "physical_safe_moves": 8,
+          "candidate_count": 8
+        }
+      },
+      {
+        "registry_entry": {
+          "registry_id": 699,
+          "proof_row_id": 699,
+          "source_node_id": 229,
+          "digits": "0001111300010010021000011110000000",
+          "tiles": 16,
+          "lean_state": "Mahjong.Scale12V2.state699"
+        },
+        "probe_node": {
+          "id": 4978,
+          "state": "0001111300010010021000011110000000",
+          "n": 16,
+          "outcome": "P",
+          "expanded": 1,
+          "physical_safe_moves": 8,
+          "candidate_count": 8
+        }
+      },
+      {
+        "registry_entry": {
+          "registry_id": 700,
+          "proof_row_id": 700,
+          "source_node_id": 230,
+          "digits": "0001111300100010020100011110000000",
+          "tiles": 16,
+          "lean_state": "Mahjong.Scale12V2.state700"
+        },
+        "probe_node": {
+          "id": 4979,
+          "state": "0001111300100010020100011110000000",
+          "n": 16,
+          "outcome": "P",
+          "expanded": 1,
+          "physical_safe_moves": 8,
+          "candidate_count": 8
+        }
+      },
+      {
+        "registry_entry": {
+          "registry_id": 701,
+          "proof_row_id": 701,
+          "source_node_id": 231,
+          "digits": "0000010020000011110311110010000001",
+          "tiles": 16,
+          "lean_state": "Mahjong.Scale12V2.state701"
+        },
+        "probe_node": {
+          "id": 4980,
+          "state": "0000010020000011110311110010000001",
+          "n": 16,
+          "outcome": "P",
+          "expanded": 1,
+          "physical_safe_moves": 12,
+          "candidate_count": 12
+        }
+      },
+      {
+        "registry_entry": {
+          "registry_id": 702,
+          "proof_row_id": 702,
+          "source_node_id": 232,
+          "digits": "0000011110301120011000000120000000",
+          "tiles": 16,
+          "lean_state": "Mahjong.Scale12V2.state702"
+        },
+        "probe_node": {
+          "id": 4648,
+          "state": "0000011110301120011000000120000000",
+          "n": 16,
+          "outcome": "P",
+          "expanded": 1,
+          "physical_safe_moves": 14,
+          "candidate_count": 14
+        }
+      },
+      {
+        "registry_entry": {
+          "registry_id": 704,
+          "proof_row_id": 704,
+          "source_node_id": 234,
+          "digits": "0000011110010000120311110010000000",
+          "tiles": 16,
+          "lean_state": "Mahjong.Scale12V2.state704"
+        },
+        "probe_node": {
+          "id": 4650,
+          "state": "0000011110010000120311110010000000",
+          "n": 16,
+          "outcome": "P",
+          "expanded": 1,
+          "physical_safe_moves": 10,
+          "candidate_count": 10
+        }
+      },
+      {
+        "registry_entry": {
+          "registry_id": 705,
+          "proof_row_id": 705,
+          "source_node_id": 235,
+          "digits": "0000000120301120011000011110000000",
+          "tiles": 16,
+          "lean_state": "Mahjong.Scale12V2.state705"
+        },
+        "probe_node": {
+          "id": 4653,
+          "state": "0000000120301120011000011110000000",
+          "n": 16,
+          "outcome": "P",
+          "expanded": 1,
+          "physical_safe_moves": 14,
+          "candidate_count": 14
+        }
+      },
+      {
+        "registry_entry": {
+          "registry_id": 706,
+          "proof_row_id": 706,
+          "source_node_id": 236,
+          "digits": "0000000120100011110301110010000001",
+          "tiles": 16,
+          "lean_state": "Mahjong.Scale12V2.state706"
+        },
+        "probe_node": {
+          "id": 4654,
+          "state": "0000000120100011110301110010000001",
+          "n": 16,
+          "outcome": "P",
+          "expanded": 1,
+          "physical_safe_moves": 17,
+          "candidate_count": 17
+        }
+      },
+      {
+        "registry_entry": {
+          "registry_id": 707,
+          "proof_row_id": 707,
+          "source_node_id": 237,
+          "digits": "0000000120010011110301110010000001",
+          "tiles": 16,
+          "lean_state": "Mahjong.Scale12V2.state707"
+        },
+        "probe_node": {
+          "id": 4655,
+          "state": "0000000120010011110301110010000001",
+          "n": 16,
+          "outcome": "P",
+          "expanded": 1,
+          "physical_safe_moves": 17,
+          "candidate_count": 17
+        }
+      },
+      {
+        "registry_entry": {
+          "registry_id": 712,
+          "proof_row_id": 712,
+          "source_node_id": 242,
+          "digits": "0001111300100001021000011110000000",
+          "tiles": 16,
+          "lean_state": "Mahjong.Scale12V2.state712"
+        },
+        "probe_node": {
+          "id": 4981,
+          "state": "0001111300100001021000011110000000",
+          "n": 16,
+          "outcome": "P",
+          "expanded": 1,
+          "physical_safe_moves": 8,
+          "candidate_count": 8
+        }
+      },
+      {
+        "registry_entry": {
+          "registry_id": 713,
+          "proof_row_id": 713,
+          "source_node_id": 243,
+          "digits": "0001000020001111301000011110000001",
+          "tiles": 16,
+          "lean_state": "Mahjong.Scale12V2.state713"
+        },
+        "probe_node": {
+          "id": 4982,
+          "state": "0001000020001111301000011110000001",
+          "n": 16,
+          "outcome": "P",
+          "expanded": 1,
+          "physical_safe_moves": 10,
+          "candidate_count": 10
+        }
+      },
+      {
+        "registry_entry": {
+          "registry_id": 714,
+          "proof_row_id": 714,
+          "source_node_id": 244,
+          "digits": "0001111301000011111000100020000000",
+          "tiles": 16,
+          "lean_state": "Mahjong.Scale12V2.state714"
+        },
+        "probe_node": {
+          "id": 4983,
+          "state": "0001111301000011111000100020000000",
+          "n": 16,
+          "outcome": "P",
+          "expanded": 1,
+          "physical_safe_moves": 9,
+          "candidate_count": 9
+        }
+      },
+      {
+        "registry_entry": {
+          "registry_id": 715,
+          "proof_row_id": 715,
+          "source_node_id": 245,
+          "digits": "0001111300010000121000011110000000",
+          "tiles": 16,
+          "lean_state": "Mahjong.Scale12V2.state715"
+        },
+        "probe_node": {
+          "id": 4984,
+          "state": "0001111300010000121000011110000000",
+          "n": 16,
+          "outcome": "P",
+          "expanded": 1,
+          "physical_safe_moves": 8,
+          "candidate_count": 8
+        }
+      },
+      {
+        "registry_entry": {
+          "registry_id": 716,
+          "proof_row_id": 716,
+          "source_node_id": 246,
+          "digits": "0001000020311110011000011110000000",
+          "tiles": 16,
+          "lean_state": "Mahjong.Scale12V2.state716"
+        },
+        "probe_node": {
+          "id": 4985,
+          "state": "0001000020311110011000011110000000",
+          "n": 16,
+          "outcome": "P",
+          "expanded": 1,
+          "physical_safe_moves": 10,
+          "candidate_count": 10
+        }
+      },
+      {
+        "registry_entry": {
+          "registry_id": 717,
+          "proof_row_id": 717,
+          "source_node_id": 247,
+          "digits": "0100000020100011110301110010000001",
+          "tiles": 16,
+          "lean_state": "Mahjong.Scale12V2.state717"
+        },
+        "probe_node": {
+          "id": 4986,
+          "state": "0100000020100011110301110010000001",
+          "n": 16,
+          "outcome": "P",
+          "expanded": 1,
+          "physical_safe_moves": 16,
+          "candidate_count": 16
+        }
+      },
+      {
+        "registry_entry": {
+          "registry_id": 718,
+          "proof_row_id": 718,
+          "source_node_id": 248,
+          "digits": "0100000120100011110101110300000000",
+          "tiles": 16,
+          "lean_state": "Mahjong.Scale12V2.state718"
+        },
+        "probe_node": {
+          "id": 4987,
+          "state": "0100000120100011110101110300000000",
+          "n": 16,
+          "outcome": "P",
+          "expanded": 1,
+          "physical_safe_moves": 12,
+          "candidate_count": 12
+        }
+      },
+      {
+        "registry_entry": {
+          "registry_id": 719,
+          "proof_row_id": 719,
+          "source_node_id": 249,
+          "digits": "0011110300100001020100011110000000",
+          "tiles": 16,
+          "lean_state": "Mahjong.Scale12V2.state719"
+        },
+        "probe_node": {
+          "id": 4988,
+          "state": "0011110300100001020100011110000000",
+          "n": 16,
+          "outcome": "P",
+          "expanded": 1,
+          "physical_safe_moves": 8,
+          "candidate_count": 8
+        }
+      },
+      {
+        "registry_entry": {
+          "registry_id": 720,
+          "proof_row_id": 720,
+          "source_node_id": 250,
+          "digits": "0002110300100000120100011110000000",
+          "tiles": 16,
+          "lean_state": "Mahjong.Scale12V2.state720"
+        },
+        "probe_node": {
+          "id": 4989,
+          "state": "0002110300100000120100011110000000",
+          "n": 16,
+          "outcome": "P",
+          "expanded": 1,
+          "physical_safe_moves": 11,
+          "candidate_count": 11
+        }
+      },
+      {
+        "registry_entry": {
+          "registry_id": 721,
+          "proof_row_id": 721,
+          "source_node_id": 251,
+          "digits": "0001210300100011110100100020000000",
+          "tiles": 16,
+          "lean_state": "Mahjong.Scale12V2.state721"
+        },
+        "probe_node": {
+          "id": 4990,
+          "state": "0001210300100011110100100020000000",
+          "n": 16,
+          "outcome": "P",
+          "expanded": 1,
+          "physical_safe_moves": 12,
+          "candidate_count": 12
+        }
+      },
+      {
+        "registry_entry": {
+          "registry_id": 722,
+          "proof_row_id": 722,
+          "source_node_id": 252,
+          "digits": "0001120300100000120100011110000000",
+          "tiles": 16,
+          "lean_state": "Mahjong.Scale12V2.state722"
+        },
+        "probe_node": {
+          "id": 4991,
+          "state": "0001120300100000120100011110000000",
+          "n": 16,
+          "outcome": "P",
+          "expanded": 1,
+          "physical_safe_moves": 11,
+          "candidate_count": 11
+        }
+      },
+      {
+        "registry_entry": {
+          "registry_id": 723,
+          "proof_row_id": 723,
+          "source_node_id": 253,
+          "digits": "0001110400100011110100100020000000",
+          "tiles": 16,
+          "lean_state": "Mahjong.Scale12V2.state723"
+        },
+        "probe_node": {
+          "id": 4992,
+          "state": "0001110400100011110100100020000000",
+          "n": 16,
+          "outcome": "P",
+          "expanded": 1,
+          "physical_safe_moves": 12,
+          "candidate_count": 12
+        }
+      },
+      {
+        "registry_entry": {
+          "registry_id": 724,
+          "proof_row_id": 724,
+          "source_node_id": 254,
+          "digits": "0010011110100000020301110010000001",
+          "tiles": 16,
+          "lean_state": "Mahjong.Scale12V2.state724"
+        },
+        "probe_node": {
+          "id": 4993,
+          "state": "0010011110100000020301110010000001",
+          "n": 16,
+          "outcome": "P",
+          "expanded": 1,
+          "physical_safe_moves": 16,
+          "candidate_count": 16
+        }
+      },
+      {
+        "registry_entry": {
+          "registry_id": 725,
+          "proof_row_id": 725,
+          "source_node_id": 255,
+          "digits": "0010011110100000120101110300000000",
+          "tiles": 16,
+          "lean_state": "Mahjong.Scale12V2.state725"
+        },
+        "probe_node": {
+          "id": 4994,
+          "state": "0010011110100000120101110300000000",
+          "n": 16,
+          "outcome": "P",
+          "expanded": 1,
+          "physical_safe_moves": 12,
+          "candidate_count": 12
+        }
+      },
+      {
+        "registry_entry": {
+          "registry_id": 726,
+          "proof_row_id": 726,
+          "source_node_id": 256,
+          "digits": "0010011110011110300100001020000000",
+          "tiles": 16,
+          "lean_state": "Mahjong.Scale12V2.state726"
+        },
+        "probe_node": {
+          "id": 4995,
+          "state": "0010011110011110300100001020000000",
+          "n": 16,
+          "outcome": "P",
+          "expanded": 1,
+          "physical_safe_moves": 8,
+          "candidate_count": 8
+        }
+      },
+      {
+        "registry_entry": {
+          "registry_id": 727,
+          "proof_row_id": 727,
+          "source_node_id": 257,
+          "digits": "0002110300010011110100000120000000",
+          "tiles": 16,
+          "lean_state": "Mahjong.Scale12V2.state727"
+        },
+        "probe_node": {
+          "id": 4996,
+          "state": "0002110300010011110100000120000000",
+          "n": 16,
+          "outcome": "P",
+          "expanded": 1,
+          "physical_safe_moves": 11,
+          "candidate_count": 11
+        }
+      },
+      {
+        "registry_entry": {
+          "registry_id": 728,
+          "proof_row_id": 728,
+          "source_node_id": 258,
+          "digits": "0001210300010011110100100020000000",
+          "tiles": 16,
+          "lean_state": "Mahjong.Scale12V2.state728"
+        },
+        "probe_node": {
+          "id": 4997,
+          "state": "0001210300010011110100100020000000",
+          "n": 16,
+          "outcome": "P",
+          "expanded": 1,
+          "physical_safe_moves": 12,
+          "candidate_count": 12
+        }
+      },
+      {
+        "registry_entry": {
+          "registry_id": 729,
+          "proof_row_id": 729,
+          "source_node_id": 259,
+          "digits": "0001110400010011110100000120000000",
+          "tiles": 16,
+          "lean_state": "Mahjong.Scale12V2.state729"
+        },
+        "probe_node": {
+          "id": 4998,
+          "state": "0001110400010011110100000120000000",
+          "n": 16,
+          "outcome": "P",
+          "expanded": 1,
+          "physical_safe_moves": 12,
+          "candidate_count": 12
+        }
+      },
+      {
+        "registry_entry": {
+          "registry_id": 731,
+          "proof_row_id": 731,
+          "source_node_id": 261,
+          "digits": "0000100020010011110101110400000000",
+          "tiles": 16,
+          "lean_state": "Mahjong.Scale12V2.state731"
+        },
+        "probe_node": {
+          "id": 5000,
+          "state": "0000100020010011110101110400000000",
+          "n": 16,
+          "outcome": "P",
+          "expanded": 1,
+          "physical_safe_moves": 11,
+          "candidate_count": 11
+        }
+      },
+      {
+        "registry_entry": {
+          "registry_id": 732,
+          "proof_row_id": 732,
+          "source_node_id": 262,
+          "digits": "0000011110101210301000100020000000",
+          "tiles": 16,
+          "lean_state": "Mahjong.Scale12V2.state732"
+        },
+        "probe_node": {
+          "id": 5001,
+          "state": "0000011110101210301000100020000000",
+          "n": 16,
+          "outcome": "P",
+          "expanded": 1,
+          "physical_safe_moves": 13,
+          "candidate_count": 13
+        }
+      },
+      {
+        "registry_entry": {
+          "registry_id": 734,
+          "proof_row_id": 734,
+          "source_node_id": 264,
+          "digits": "0000100020001210300010011110000001",
+          "tiles": 16,
+          "lean_state": "Mahjong.Scale12V2.state734"
+        },
+        "probe_node": {
+          "id": 5006,
+          "state": "0000100020001210300010011110000001",
+          "n": 16,
+          "outcome": "P",
+          "expanded": 1,
+          "physical_safe_moves": 13,
+          "candidate_count": 13
+        }
+      },
+      {
+        "registry_entry": {
+          "registry_id": 735,
+          "proof_row_id": 735,
+          "source_node_id": 265,
+          "digits": "0000011110101110401000100020000000",
+          "tiles": 16,
+          "lean_state": "Mahjong.Scale12V2.state735"
+        },
+        "probe_node": {
+          "id": 5007,
+          "state": "0000011110101110401000100020000000",
+          "n": 16,
+          "outcome": "P",
+          "expanded": 1,
+          "physical_safe_moves": 12,
+          "candidate_count": 12
+        }
+      },
+      {
+        "registry_entry": {
+          "registry_id": 737,
+          "proof_row_id": 737,
+          "source_node_id": 267,
+          "digits": "0001000020001110400100011110000001",
+          "tiles": 16,
+          "lean_state": "Mahjong.Scale12V2.state737"
+        },
+        "probe_node": {
+          "id": 5009,
+          "state": "0001000020001110400100011110000001",
+          "n": 16,
+          "outcome": "P",
+          "expanded": 1,
+          "physical_safe_moves": 13,
+          "candidate_count": 13
+        }
+      },
+      {
+        "registry_entry": {
+          "registry_id": 738,
+          "proof_row_id": 738,
+          "source_node_id": 268,
+          "digits": "0001000020001210300010011110000001",
+          "tiles": 16,
+          "lean_state": "Mahjong.Scale12V2.state738"
+        },
+        "probe_node": {
+          "id": 5010,
+          "state": "0001000020001210300010011110000001",
+          "n": 16,
+          "outcome": "P",
+          "expanded": 1,
+          "physical_safe_moves": 13,
+          "candidate_count": 13
+        }
+      },
+      {
+        "registry_entry": {
+          "registry_id": 739,
+          "proof_row_id": 739,
+          "source_node_id": 269,
+          "digits": "0000011110001000020101110400000001",
+          "tiles": 16,
+          "lean_state": "Mahjong.Scale12V2.state739"
+        },
+        "probe_node": {
+          "id": 5012,
+          "state": "0000011110001000020101110400000001",
+          "n": 16,
+          "outcome": "P",
+          "expanded": 1,
+          "physical_safe_moves": 13,
+          "candidate_count": 13
+        }
+      },
+      {
+        "registry_entry": {
+          "registry_id": 740,
+          "proof_row_id": 740,
+          "source_node_id": 270,
+          "digits": "0001000020011110301000011110000001",
+          "tiles": 16,
+          "lean_state": "Mahjong.Scale12V2.state740"
+        },
+        "probe_node": {
+          "id": 5013,
+          "state": "0001000020011110301000011110000001",
+          "n": 16,
+          "outcome": "P",
+          "expanded": 1,
+          "physical_safe_moves": 10,
+          "candidate_count": 10
+        }
+      },
+      {
+        "registry_entry": {
+          "registry_id": 742,
+          "proof_row_id": 742,
+          "source_node_id": 22,
+          "digits": "0000011110001110301000001020000000",
+          "tiles": 14,
+          "lean_state": "Mahjong.Scale12V2.state742"
+        },
+        "probe_node": {
+          "id": 541,
+          "state": "0000011110001110301000001020000000",
+          "n": 14,
+          "outcome": "P",
+          "expanded": 1,
+          "physical_safe_moves": 20,
+          "candidate_count": 20
+        }
+      },
+      {
+        "registry_entry": {
+          "registry_id": 743,
+          "proof_row_id": 743,
+          "source_node_id": 23,
+          "digits": "0000011110001110310100000020000000",
+          "tiles": 14,
+          "lean_state": "Mahjong.Scale12V2.state743"
+        },
+        "probe_node": {
+          "id": 542,
+          "state": "0000011110001110310100000020000000",
+          "n": 14,
+          "outcome": "P",
+          "expanded": 1,
+          "physical_safe_moves": 20,
+          "candidate_count": 20
+        }
+      },
+      {
+        "registry_entry": {
+          "registry_id": 744,
+          "proof_row_id": 744,
+          "source_node_id": 24,
+          "digits": "0000011110010000020011110300000000",
+          "tiles": 14,
+          "lean_state": "Mahjong.Scale12V2.state744"
+        },
+        "probe_node": {
+          "id": 543,
+          "state": "0000011110010000020011110300000000",
+          "n": 14,
+          "outcome": "P",
+          "expanded": 1,
+          "physical_safe_moves": 14,
+          "candidate_count": 14
+        }
+      },
+      {
+        "registry_entry": {
+          "registry_id": 745,
+          "proof_row_id": 745,
+          "source_node_id": 25,
+          "digits": "0000011110001000020002110300000000",
+          "tiles": 14,
+          "lean_state": "Mahjong.Scale12V2.state745"
+        },
+        "probe_node": {
+          "id": 544,
+          "state": "0000011110001000020002110300000000",
+          "n": 14,
+          "outcome": "P",
+          "expanded": 1,
+          "physical_safe_moves": 16,
+          "candidate_count": 16
+        }
+      },
+      {
+        "registry_entry": {
+          "registry_id": 746,
+          "proof_row_id": 746,
+          "source_node_id": 26,
+          "digits": "0000011110000100020001120300000000",
+          "tiles": 14,
+          "lean_state": "Mahjong.Scale12V2.state746"
+        },
+        "probe_node": {
+          "id": 545,
+          "state": "0000011110000100020001120300000000",
+          "n": 14,
+          "outcome": "P",
+          "expanded": 1,
+          "physical_safe_moves": 16,
+          "candidate_count": 16
+        }
+      },
+      {
+        "registry_entry": {
+          "registry_id": 747,
+          "proof_row_id": 747,
+          "source_node_id": 27,
+          "digits": "0000010020000011110001111300000000",
+          "tiles": 14,
+          "lean_state": "Mahjong.Scale12V2.state747"
+        },
+        "probe_node": {
+          "id": 546,
+          "state": "0000010020000011110001111300000000",
+          "n": 14,
+          "outcome": "P",
+          "expanded": 1,
+          "physical_safe_moves": 14,
+          "candidate_count": 14
+        }
+      },
+      {
+        "registry_entry": {
+          "registry_id": 748,
+          "proof_row_id": 748,
+          "source_node_id": 28,
+          "digits": "0000000120000011110301110010000000",
+          "tiles": 14,
+          "lean_state": "Mahjong.Scale12V2.state748"
+        },
+        "probe_node": {
+          "id": 500,
+          "state": "0000000120000011110301110010000000",
+          "n": 14,
+          "outcome": "P",
+          "expanded": 1,
+          "physical_safe_moves": 21,
+          "candidate_count": 21
+        }
+      },
+      {
+        "registry_entry": {
+          "registry_id": 749,
+          "proof_row_id": 749,
+          "source_node_id": 29,
+          "digits": "0000000020001111301000011110000000",
+          "tiles": 14,
+          "lean_state": "Mahjong.Scale12V2.state749"
+        },
+        "probe_node": {
+          "id": 547,
+          "state": "0000000020001111301000011110000000",
+          "n": 14,
+          "outcome": "P",
+          "expanded": 1,
+          "physical_safe_moves": 16,
+          "candidate_count": 16
+        }
+      },
+      {
+        "registry_entry": {
+          "registry_id": 750,
+          "proof_row_id": 750,
+          "source_node_id": 30,
+          "digits": "0001110300100000020100011110000000",
+          "tiles": 14,
+          "lean_state": "Mahjong.Scale12V2.state750"
+        },
+        "probe_node": {
+          "id": 548,
+          "state": "0001110300100000020100011110000000",
+          "n": 14,
+          "outcome": "P",
+          "expanded": 1,
+          "physical_safe_moves": 20,
+          "candidate_count": 20
+        }
+      },
+      {
+        "registry_entry": {
+          "registry_id": 751,
+          "proof_row_id": 751,
+          "source_node_id": 31,
+          "digits": "0001110300010011110100000020000000",
+          "tiles": 14,
+          "lean_state": "Mahjong.Scale12V2.state751"
+        },
+        "probe_node": {
+          "id": 549,
+          "state": "0001110300010011110100000020000000",
+          "n": 14,
+          "outcome": "P",
+          "expanded": 1,
+          "physical_safe_moves": 20,
+          "candidate_count": 20
+        }
+      },
+      {
+        "registry_entry": {
+          "registry_id": 752,
+          "proof_row_id": 752,
+          "source_node_id": 32,
+          "digits": "0000011110000100020101110300000000",
+          "tiles": 14,
+          "lean_state": "Mahjong.Scale12V2.state752"
+        },
+        "probe_node": {
+          "id": 550,
+          "state": "0000011110000100020101110300000000",
+          "n": 14,
+          "outcome": "P",
+          "expanded": 1,
+          "physical_safe_moves": 17,
+          "candidate_count": 17
+        }
+      },
+      {
+        "registry_entry": {
+          "registry_id": 753,
+          "proof_row_id": 753,
+          "source_node_id": 33,
+          "digits": "0000011110000100020001210300000000",
+          "tiles": 14,
+          "lean_state": "Mahjong.Scale12V2.state753"
+        },
+        "probe_node": {
+          "id": 551,
+          "state": "0000011110000100020001210300000000",
+          "n": 14,
+          "outcome": "P",
+          "expanded": 1,
+          "physical_safe_moves": 17,
+          "candidate_count": 17
+        }
+      },
+      {
+        "registry_entry": {
+          "registry_id": 754,
+          "proof_row_id": 754,
+          "source_node_id": 34,
+          "digits": "0000011110000100020001110400000000",
+          "tiles": 14,
+          "lean_state": "Mahjong.Scale12V2.state754"
+        },
+        "probe_node": {
+          "id": 552,
+          "state": "0000011110000100020001110400000000",
+          "n": 14,
+          "outcome": "P",
+          "expanded": 1,
+          "physical_safe_moves": 17,
+          "candidate_count": 17
+        }
+      },
+      {
+        "registry_entry": {
+          "registry_id": 755,
+          "proof_row_id": 755,
+          "source_node_id": 35,
+          "digits": "0000011110001000020001110300000001",
+          "tiles": 14,
+          "lean_state": "Mahjong.Scale12V2.state755"
+        },
+        "probe_node": {
+          "id": 553,
+          "state": "0000011110001000020001110300000001",
+          "n": 14,
+          "outcome": "P",
+          "expanded": 1,
+          "physical_safe_moves": 21,
+          "candidate_count": 21
+        }
+      },
+      {
+        "registry_entry": {
+          "registry_id": 756,
+          "proof_row_id": 756,
+          "source_node_id": 0,
+          "digits": "0000000020000011110001110300000000",
+          "tiles": 12,
+          "lean_state": "Mahjong.Scale12V2.state756"
+        },
+        "probe_node": {
+          "id": 38,
+          "state": "0000000020000011110001110300000000",
+          "n": 12,
+          "outcome": "P",
+          "expanded": 1,
+          "physical_safe_moves": 27,
+          "candidate_count": 27
+        }
+      }
+    ],
+    "symmetry_only_matched_probe_nodes": 0,
+    "symmetry_only_matches": [],
+    "registry_input_hash_checks": [
+      {
+        "path": "runs/lean_scale/actual12/pruned_v1/responses.json",
+        "sha256": "a917aa5649940f01c5ae6cf7ca4f69f5c988bd78fb0fa8d9ba55a4572c81c31b",
+        "matches": true
+      },
+      {
+        "path": "runs/lean_scale/actual12_registry_kernel_v1/result.json",
+        "sha256": "9355a8cd9a7d54dd10e51873f47596f18c965df9667c74c800a9ddb7d0b42ff2",
+        "matches": true
+      },
+      {
+        "path": "build/lean_scale/proof/MahjongScale/Actual12Registry.lean",
+        "sha256": "63b19f9cfc7134e97ade7af3c1359566cc938843f584a598ae48c2b112343140",
+        "matches": true
+      },
+      {
+        "path": "runs/lean_scale/actual12/grouped_generation_v2.json",
+        "sha256": "a270e3ccb9733e5bf3e8d6cf9fd8577051bb23fcb4aeee245baa8d3bbe94f04c",
+        "matches": true
+      },
+      {
+        "path": "build/lean_scale/register_actual12.py",
+        "sha256": "aea9578fc69cdde6231a5e0100fe76768c43140d4787fd182e2b808a68a37750",
+        "matches": true
+      }
+    ],
+    "registry_kernel_audit": "PASS --trust=0",
+    "caveat": "Set intersection does not close this strategy graph. A Lean proof must import the actual typed registry and verify each state/reference; JSON P labels and IDs are not proof premises."
+  },
+  "checkpoint": {
+    "path": "runs\\lean_scale\\endgames\\actual10_a_v1\\graph.sqlite",
+    "sha256": "f06f6837562a6a60c12f47cc5041fe00c06e98134050d353d8c761873e09c7c9",
+    "bytes": 37269504
+  },
+  "evidence_sha256": {
+    "runs\\lean_scale\\endgames\\actual10_a_v1\\summarize_probe.py": "529b2b099dd5f3901a70772639396ce34a26aae815437416d262f6f4d9718665",
+    "runs\\lean_scale\\endgames\\actual10_a_v1\\progress.latest.json": "3da7fb38227e175ca11e23b88569a94d8bbde1eae95931ba01a7b4435f5d4ea5",
+    "runs\\lean_scale\\endgames\\actual10_a_v1\\attempt_20260913_072422\\result.json": "3da7fb38227e175ca11e23b88569a94d8bbde1eae95931ba01a7b4435f5d4ea5",
+    "runs\\lean_scale\\endgames\\actual10_a_v1\\attempt_20260913_072422\\invocation.json": "efa71990528e07e3932de06718c054ce18ab9cbb7d53370d4bc957c54bc8bc96",
+    "build\\lean_scale\\endgame_producer.py": "b6287d0c3cac155ebc9c4555c969e9c2f162c1abb26a07669992597f21cc5c20",
+    "runs\\lean_scale\\frontier\\actual10_candidates.json": "913d875731aa7df3fdf512937d11b99b3db280189e0976bc6ef1f7e95ba00809"
+  },
+  "closure_note": "PARTIAL means the root is not certified and unknown continuations remain. No extra run is authorized or started by this report."
+}

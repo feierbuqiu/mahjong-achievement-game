@@ -1,0 +1,199 @@
+"""Untrusted data conversion to bounded, original-game Lean response checks.
+
+This performs no P/N search and trusts no P/N result. Each final proof imports
+only generic soundness and concrete SAFE/Valid leaf proofs. Lean checks every
+legal physical first move, every reply, and every strictly decreasing reference.
+"""
+from __future__ import annotations
+
+import argparse
+import importlib.util
+import json
+import re
+from pathlib import Path
+
+ROOT = Path(__file__).resolve().parents[2]
+HELPERS = ROOT / "runs/lean_next/theory"
+spec = importlib.util.spec_from_file_location("response_normalization", HELPERS / "make_response_full20.py")
+normalizer = importlib.util.module_from_spec(spec)
+spec.loader.exec_module(normalizer)
+data = normalizer.data
+normalize = normalizer.normalize
+PROJECT = ROOT / "build/lean_next/proof"
+
+
+def main():
+    parser = argparse.ArgumentParser()
+    parser.add_argument("--export", required=True)
+    parser.add_argument("--responses", required=True)
+    parser.add_argument("--leaves", required=True)
+    parser.add_argument("--name", required=True)
+    parser.add_argument("--group-size", type=int, default=8)
+    args = parser.parse_args()
+    if not re.fullmatch(r"[A-Za-z][A-Za-z0-9_]*", args.name):
+        raise ValueError("invalid namespace")
+    if not 1 <= args.group_size <= 8:
+        raise ValueError("bounded group size must be 1..8")
+    export = (ROOT / args.export).resolve()
+    rp, lp = (ROOT / args.responses).resolve(), (ROOT / args.leaves).resolve()
+    manifest_path, graph_path = export / "manifest.json", export / "nodes.jsonl"
+    manifest = json.loads(manifest_path.read_text())
+    if manifest["summary"]["status"] != "CANDIDATE_CLOSED":
+        raise ValueError("cannot certify an incomplete graph")
+    graph = {r["id"]: r for r in map(json.loads, graph_path.read_text().splitlines())}
+    raw_rows = json.loads(rp.read_text())
+    rows = {r["id"]: r for r in raw_rows}
+    if len(rows) != len(raw_rows):
+        raise ValueError("duplicate response IDs")
+    expected_ids = {i for i, r in graph.items() if r["outcome"] == "P"}
+    if set(rows) != expected_ids:
+        raise ValueError("response rows must cover the complete P-node set")
+    leaf_registry = json.loads(lp.read_text())["leaves"]
+    leaves = {item["digits"]: item for item in leaf_registry}
+    terminal_states = {r["state"] for r in rows.values() if not r["back"]}
+    if not terminal_states <= set(leaves):
+        raise ValueError("missing concrete SAFE leaves")
+    used_leaves = sorted(terminal_states)
+    leaf_ids = {digits: i for i, digits in enumerate(used_leaves)}
+    selected = sorted(rows, key=lambda i: (-graph[i]["n"], i))
+    ids = {i: pid for pid, i in enumerate(selected)}
+    root_info = manifest["metadata"]["root"]
+    root = next(i for i, row in rows.items() if row["state"] == root_info["canonical_state"])
+    bound_specs, normalized = {}, {}
+    path_before = path_after = 0
+    for ident in selected:
+        row = rows[ident]
+        assert row["state"] == graph[ident]["state"]
+        legal = {str(i) for i, n in enumerate(row["state"]) if int(n) < 4}
+        assert set(row["responses"]) == legal
+        assert set(row["back"]) | set(row["positive_witnesses"]) == legal
+        assert not (set(row["back"]) & set(row["positive_witnesses"]))
+        normalized[ident] = {}
+        for first, (target, path) in row["back"].items():
+            assert target in ids and ids[target] < ids[ident]
+            new_path = normalize(path)
+            normalized[ident][first] = (target, new_path)
+            path_before += len(path)
+            path_after += len(new_path)
+        if not row["back"]:
+            bound_specs[ident] = (row["state"], [])
+        else:
+            target, path = next(iter(normalized[ident].values()))
+            leaf, inherited_path = bound_specs[target]
+            inherited = normalize(inherited_path + path)
+            reduced = [g for g in inherited if g["op"] != "swapHonors"]
+            # Drop honor generators only after exact equality for this leaf.
+            if data.transformed(leaf, inherited) == data.transformed(leaf, reduced):
+                inherited = reduced
+            bound_specs[ident] = (leaf, inherited)
+        leaf, path = bound_specs[ident]
+        assert all(a <= b for a, b in zip(map(int, row["state"]), data.transformed(leaf, path)))
+
+    dest = PROJECT / "MahjongNext" / args.name
+    evidence = ROOT / "runs/lean_next" / (args.name + "Grouped")
+    dest.mkdir(parents=True, exist_ok=False)
+    evidence.mkdir(parents=True, exist_ok=False)
+    ns = "Mahjong." + args.name
+    module = "MahjongNext." + args.name
+    prelude = ["set_option maxRecDepth 16384", "set_option maxHeartbeats 100000000", ""]
+    lines = ["import MahjongNext.ResponseGroups", "import MahjongNext.SafeBounds"]
+    lines += ["import " + leaves[digits]["module"] for digits in used_leaves]
+    lines += [""] + prelude + ["namespace " + ns,
+        "open ResponseTable ResponseCertificate Generators", "",
+        "def leafFact (i : Nat) : SafeBounds.Fact :=", "  match i with"]
+    for digits in used_leaves:
+        entry = leaves[digits]
+        fact = "⟨" + ", ".join(entry[key] for key in ("state", "valid", "safe")) + "⟩"
+        lines.append("  | " + str(leaf_ids[digits]) + " => " + fact)
+    first_leaf = leaves[used_leaves[0]]
+    lines += ["  | _ => ⟨" + ", ".join(first_leaf[key] for key in ("state", "valid", "safe")) + "⟩", "",
+        "def boundSpec (i : Nat) : Nat × List Generator :=", "  match i with"]
+    for ident in selected:
+        leaf, path = bound_specs[ident]
+        lines.append(f"  | {ids[ident]} => ({leaf_ids[leaf]}, {data.lean_path(path)})")
+    lines += ["  | _ => (0, [])", "",
+        "def boundFact (i : Nat) : SafeBounds.Fact :=",
+        "  (leafFact (boundSpec i).1).alongPath (boundSpec i).2",
+        "def bounds (i : Nat) : State := (boundFact i).state", "",
+        "theorem validBounds (i : Nat) : Valid (bounds i) := (boundFact i).valid",
+        "theorem safeBounds (i : Nat) : IsSafe (bounds i) := (boundFact i).safe", ""]
+    for ident in selected:
+        pid, row = ids[ident], rows[ident]
+        lines.append(data.match_def("state" + str(pid), "Nat", dict(enumerate(row["state"])), "0"))
+        actions = {}
+        for first, second in row["responses"].items():
+            if first in row["back"]:
+                target, path = normalized[ident][first]
+                actions[int(first)] = f".back {second} {ids[target]} " + data.lean_path(path)
+            else:
+                actions[int(first)] = f".win {second} (" + data.witness(row["positive_witnesses"][first]) + ")"
+        lines.append(data.match_def("action" + str(pid), "Action", actions, ".win 0 (FullWinWitness.orphans 0)"))
+        lines.append(f"def row{pid} : Row := ⟨{pid}, state{pid}, {pid}, action{pid}⟩\n")
+
+    def tree(indices):
+        if not indices:
+            return ".empty"
+        middle = len(indices) // 2
+        return "(.branch " + tree(indices[:middle]) + " row" + str(indices[middle]) + " " + tree(indices[middle + 1:]) + ")"
+
+    count = len(selected)
+    lines += ["def database : Tree := " + tree(list(range(count))), "", "end " + ns, ""]
+    (dest / "Data.lean").write_text("\n".join(lines), encoding="utf-8")
+    groups = []
+    for g, start in enumerate(range(0, count, args.group_size)):
+        size = min(args.group_size, count - start)
+        groups.append((g, start, size))
+        lines = [f"import {module}.Data", ""] + prelude + ["namespace " + ns, "open ResponseGroups", "",
+            f"theorem group{g}_checked : checkRange bounds database {start} {size} = true := by decide +kernel",
+            "", "end " + ns, "", f"#print axioms {ns}.group{g}_checked", ""]
+        (dest / f"Group{g}.lean").write_text("\n".join(lines), encoding="utf-8")
+    lines = [f"import {module}.Group{g}" for g, _, _ in groups] + [""] + prelude + ["namespace " + ns,
+        "open ResponseTable ResponseGroups ResponseCertificate Generators", ""]
+    accumulated = groups[0][2]
+    checked = "group0_checked"
+    for g, start, size in groups[1:]:
+        assert start == accumulated
+        new_name = f"first{accumulated + size}_checked"
+        lines += [f"theorem {new_name} : checkRange bounds database 0 {accumulated + size} = true :=",
+            f"  checkRange_append bounds database 0 {accumulated} {size} {checked} group{g}_checked", ""]
+        accumulated += size
+        checked = new_name
+    pid = ids[root]
+    root_path = normalize(root_info["root_witness"])
+    assert data.transformed(root_info["canonical_state"], root_path) == list(map(int, root_info["input_state"]))
+    total = sum(map(int, root_info["input_state"]))
+    lines += [f"theorem complete_coverage : (rows database).length ≤ {count} := by decide +kernel", "",
+        "theorem checked : checkDatabase bounds database = true :=",
+        f"  checkDatabase_of_full_range bounds database {count} complete_coverage {checked}", "",
+        f"theorem root_proved : ProvedP state{pid} :=",
+        f"  checkDatabase_sound bounds validBounds safeBounds database checked {pid} row{pid} (by rfl)", "",
+        data.match_def("original", "Nat", dict(enumerate(root_info["input_state"])), "0"),
+        f"theorem original_checked : Generators.checkReference {data.lean_path(root_path)} state{pid} original = true := by decide +kernel",
+        "theorem original_proved : ProvedP original :=",
+        f"  root_proved.ofPath {data.lean_path(root_path)} (Generators.stateEqB_sound original_checked)",
+        f"theorem original_tiles : total original = {total} := by decide +kernel",
+        "theorem original_second_player_wins : SafeGame.SecondPlayerWins Step Win original :=",
+        "  original_proved.secondPlayerWins", "", "end " + ns, ""]
+    lines += [f"#print axioms {ns}.{name}" for name in ["complete_coverage", "checked", "root_proved", "original_proved", "original_second_player_wins"]]
+    (dest / "Root.lean").write_text("\n".join(lines) + "\n", encoding="utf-8")
+    inputs = [rp, lp, manifest_path, graph_path, Path(__file__), HELPERS / "make_response_full20.py", HELPERS / "make_response_sample.py"]
+    result = {"schema": "MAHJONG_GROUPED_MULTI_LEAF_RESPONSE_CERTIFICATE_V1", "status": "GENERATED_NOT_VERIFIED",
+        "source_inputs_sha256": {str(p.relative_to(ROOT)): data.digest(p) for p in inputs},
+        "source_sha256": {str(p.relative_to(PROJECT)): data.digest(p) for p in sorted(dest.glob("*.lean"))},
+        "module": module, "namespace": ns, "rows": count, "groups": groups,
+        "legal_response_cases": sum(len(row["responses"]) for row in rows.values()),
+        "back_responses": sum(len(row["back"]) for row in rows.values()),
+        "positive_responses": sum(len(row["positive_witnesses"]) for row in rows.values()),
+        "source_ids_in_proof_order": selected, "root_source_id": root, "root_proof_id": pid,
+        "original_root_digits": root_info["input_state"], "canonical_root_digits": root_info["canonical_state"],
+        "original_root_tiles": total, "root_path": root_path, "safe_leaf_count": len(used_leaves),
+        "safe_leaves": [{k: leaves[d][k] for k in ("digits", "module", "state", "valid", "safe")} for d in used_leaves],
+        "bound_specs": {str(ids[i]): {"leaf": leaf, "path": path} for i, (leaf, path) in bound_specs.items()},
+        "path_length_before": path_before, "path_length_after": path_after,
+        "P_proofs_imported": 0, "actual_game_searches_run": 0, "empty_game": "NOT_VERIFIED"}
+    (evidence / "generation.json").write_text(json.dumps(result, indent=2) + "\n")
+    print(json.dumps({k: result[k] for k in ["status", "rows", "groups", "legal_response_cases", "back_responses", "safe_leaf_count", "original_root_digits"]}))
+
+
+if __name__ == "__main__":
+    main()

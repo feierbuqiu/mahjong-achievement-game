@@ -1,0 +1,75 @@
+{
+  "schema": "RESPONSE_TABLE_FULL20_KERNEL_V1",
+  "status": "PASS_KERNEL_FULL_24P_ORIGINAL_20_TILE_ROOT",
+  "input_sha256": {
+    "runs\\lean_next\\theory\\ResponseTableFull20.lean": "e50fd6f5849d9fe1ae64a160a0e71d4c0a66e34eac6decc307aaed1bcb997c2f",
+    "runs\\lean_next\\theory\\run_full20_check.py": "8b3be6c4ca78b4fe786998958094f1aebc412afb8e077400781f4769ac37ec95",
+    "runs\\lean_continuation\\theory\\run_checks.py": "e89e3b3bd3577a8527abf11628a51e860b0c25d6182da31503bc1f856641853a",
+    "build\\toolchain\\lean-4.33.1-windows\\bin\\lean.exe": "af49bacfabaa1fea71332ca0feae0fa1a60912219d5902291adc79f905bffb8d",
+    "runs\\lean_next\\theory\\full20_generation.json": "000f982ef8f365f2259f0b8b27d6d070bf067d48fd8bbdb8626c962cb985cb5f",
+    "build\\lean_next\\MahjongNext\\ResponseTable.lean": "6644f4d77ebc870caa363c6bbce435ae8974f75a01c358c6dc8b50fbb211e872",
+    "build\\lean_next\\MahjongNext\\ResponseTable.olean": "863dbd1fc689ddf6324e2401cfd510335c3031a3308823f383b2d47139251422",
+    "build\\lean_verification\\Mahjong\\ResponseCertificate.lean": "4eb254fad5aa5679bad56c0d56f4fc229b18305866ea2027953a2c92b1cfe58a",
+    "build\\lean_verification\\Mahjong\\ResponseCertificate.olean": "b2ad13cda74fcd7a40e46d4f18550b8aca721207c9c647082499364ace2567ef",
+    "build\\lean_verification\\Mahjong\\FullWinWitness.lean": "a791cd72a99640964d3f6e16a1753e0c85f3938882b94bf39811ff1f758e8fd7",
+    "build\\lean_verification\\Mahjong\\FullWinWitness.olean": "c99e3df4eba1b76c86412dbea9cf8e0251883417d52fbce078687ca1c575165d",
+    "build\\lean_verification\\Mahjong\\ActualCandidateFacts.lean": "ab877e0bc8f6ad2ef12c4242601995bcfab21bb11b193f0522937eee04c0e5de",
+    "build\\lean_verification\\Mahjong\\ActualCandidateFacts.olean": "7e82e8670a15699e2fe2a4eb7a5a10fe3a51af3d729bfef2f05973d3fd0904e1",
+    "build\\lean_verification\\Mahjong\\ActualCandidateSafe.lean": "87d1d8dcde723478237f0d432a05b63d51f07ff1d0ab77c76f293eea0f022bdf",
+    "build\\lean_verification\\Mahjong\\ActualCandidateSafe.olean": "e45dfe0f145b5f50df32fba474fb7a28af4162e74cacfd9c43d8acaa056141e8",
+    "build\\lean_verification\\Mahjong\\ActualTerminalReplies.lean": "b9ca8056a73c34fe4f794116cfe0c2dfe0d7f8ed5dda7628f7459c02e0c3add5",
+    "build\\lean_verification\\Mahjong\\ActualTerminalReplies.olean": "c828f6e4f81abae2736ea3db806b27aa72e16baf6489123086a847992170ef50"
+  },
+  "lean_path": "<research-root>\\build\\lean_next;<research-root>\\build\\lean_verification",
+  "max_seconds": 90.0,
+  "sampled_private_limit_bytes": 3000000000,
+  "concurrency": 1,
+  "step": {
+    "command": [
+      "<research-root>\\build\\toolchain\\lean-4.33.1-windows\\bin\\lean.exe",
+      "--trust=0",
+      "-M2048",
+      "-j1",
+      "-R",
+      "<research-root>",
+      "-o",
+      "<research-root>\\runs\\lean_next\\theory\\full20_whole_v1\\ResponseTableFull20.olean",
+      "<research-root>\\runs\\lean_next\\theory\\ResponseTableFull20.lean"
+    ],
+    "cwd": "<research-root>\\build\\lean_verification",
+    "pid": 16172,
+    "return_code": 0,
+    "stop_reason": null,
+    "wall_seconds": 15.484,
+    "peak_private_bytes": 2246823936,
+    "peak_rss_bytes": 1785155584,
+    "memory_monitor_errors": [],
+    "log": "<research-root>\\runs\\lean_next\\theory\\full20_whole_v1\\compile.log",
+    "log_sha256": "a4cae86dd19e7b2fd3bce5fc2594948e16f6d7e5c4cf795ad527d0b33a16174e"
+  },
+  "axioms": {
+    "Mahjong.ResponseTableFull20.checked": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "Mahjong.ResponseTableFull20.root_proved": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "Mahjong.ResponseTableFull20.original_proved": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "Mahjong.ResponseTableFull20.original_second_player_wins": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  "unexpected_axioms": {},
+  "missing_axiom_reports": [],
+  "artifact_sha256": "94a241f2a3065f2b6d0f7b9a5a00c0f3316c0ba9f20b3d1e3ab9b7799423bf17"
+}

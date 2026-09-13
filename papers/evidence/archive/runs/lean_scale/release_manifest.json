@@ -1,0 +1,358 @@
+{
+  "schema": "MAHJONG_LEAN_SCALE_RELEASE_FILES_V1",
+  "status": "FROZEN",
+  "empty_game": "NOT_VERIFIED",
+  "files": [
+    {
+      "path": "runs/lean_scale/FINAL_STATUS.json",
+      "bytes": 5026,
+      "sha256": "c82d1d307fd333f995bf74892da3efa414bb4a74b326aadc93e3efa890c180dc"
+    },
+    {
+      "path": "runs/lean_scale/certified_roots.json",
+      "bytes": 1943,
+      "sha256": "9d39dc8a0abad390d9ce5b07d7fefd624f2f623ccfee31a2c619684e5c5c81de"
+    },
+    {
+      "path": "runs/lean_scale/RESULT.md",
+      "bytes": 7009,
+      "sha256": "dad688a4e8d2df19fa1c6e5159dfb3ffe102930f2639d637cf913c0df265670e"
+    },
+    {
+      "path": "runs/lean_scale/RESUME.md",
+      "bytes": 2972,
+      "sha256": "654a32185acde78a4f525d03bfabd0cb064524c60096f572a8c544321bc97cd4"
+    },
+    {
+      "path": "runs/lean_scale/finalize.py",
+      "bytes": 23360,
+      "sha256": "974efad359bfb38b4de2f1d9192d5fadf2cbc8979e995cae1d43f50a157422a3"
+    },
+    {
+      "path": "runs/lean_scale/verify_evidence.py",
+      "bytes": 7976,
+      "sha256": "fd976d7a80e136d84ad86a40e0fa347f64b97be3127b81871bd2dd91021f779b"
+    },
+    {
+      "path": "runs/lean_scale/evidence_verification.json",
+      "bytes": 2285,
+      "sha256": "4c3924108a30de6e7a2fad23a6c7550dc88f3a7cb07ab8a57abc85cb0386442c"
+    },
+    {
+      "path": "runs/lean_scale/kernel_audit.py",
+      "bytes": 12971,
+      "sha256": "3e49679c177048a23b66ac4490f02832891a7d949832ca728fee071e1422edf9"
+    },
+    {
+      "path": "runs/lean_scale/kernel_audit_v2.py",
+      "bytes": 13937,
+      "sha256": "1a6c619495e60ed1379d56f152dd47d03bada2d46fedffe3844f35c4a275ea22"
+    },
+    {
+      "path": "runs/lean_scale/check_dependency_cache.py",
+      "bytes": 2658,
+      "sha256": "b0332245620ee93ba70e67294a696b94cd41ffc90a9c73c887085f16b44b245f"
+    },
+    {
+      "path": "runs/lean_scale/dependency_cache_regression.json",
+      "bytes": 810,
+      "sha256": "768046c376cf211d275e778226c33826c2a5c2892fa731bb2045aaf5d4559b9d"
+    },
+    {
+      "path": "runs/lean_scale/actual12_dependency_checked_v2/result.json",
+      "bytes": 656821,
+      "sha256": "62c726c755246596879331b592c0cf104ec87c96dc0e40785fcbbbe240d4d4ce"
+    },
+    {
+      "path": "runs/lean_scale/actual12_kernel_v1/result.json",
+      "bytes": 560533,
+      "sha256": "528aa59d3590c29ed05a21dbfea088aefdd4de11c76853e2303beceb1f488a6d"
+    },
+    {
+      "path": "runs/lean_scale/actual12_registry_kernel_v1/result.json",
+      "bytes": 571901,
+      "sha256": "9355a8cd9a7d54dd10e51873f47596f18c965df9667c74c800a9ddb7d0b42ff2"
+    },
+    {
+      "path": "runs/lean_scale/actual12_pilot_v1/result.json",
+      "bytes": 377541,
+      "sha256": "52ff22a9302d3254599a7a00f0e9abca0da9e624153e5b065655c525de3a09cb"
+    },
+    {
+      "path": "runs/lean_scale/actual12_pilot_v2/result.json",
+      "bytes": 403609,
+      "sha256": "4593bf354a0b638e045c3545853453271a2a0491e058a83b95aaa744b83a8430"
+    },
+    {
+      "path": "runs/lean_scale/leaves_kernel_v1/result.json",
+      "bytes": 303701,
+      "sha256": "9dab1f3e170dade4708c0a3eb6d2a2bc5a3f5bdcaf31eb4fdfc193f15f37ab7d"
+    },
+    {
+      "path": "runs/lean_scale/actual12/pruned_v1/generation.json",
+      "bytes": 3690,
+      "sha256": "4cf5fb671fbad058f8665b23a1cc278c43829fe6e6ce91bd9e4ad1639a655a39"
+    },
+    {
+      "path": "runs/lean_scale/actual12/pruned_v1/responses.json",
+      "bytes": 10693833,
+      "sha256": "a917aa5649940f01c5ae6cf7ca4f69f5c988bd78fb0fa8d9ba55a4572c81c31b"
+    },
+    {
+      "path": "runs/lean_scale/actual12/grouped_generation_v2.json",
+      "bytes": 201419,
+      "sha256": "a270e3ccb9733e5bf3e8d6cf9fd8577051bb23fcb4aeee245baa8d3bbe94f04c"
+    },
+    {
+      "path": "runs/lean_scale/actual12/leaves_generation.json",
+      "bytes": 2193194,
+      "sha256": "c66f5965141214803a8d31df99759b0c452f8419e25f42bdabbc7730590cb985"
+    },
+    {
+      "path": "runs/lean_scale/actual12/checked_registry.json",
+      "bytes": 171554,
+      "sha256": "ddb73a52ce1805303145e428c8e9cb53a9b7b8471082c392ac88b1911acd63d6"
+    },
+    {
+      "path": "runs/lean_scale/frontier/actual12_candidates.json",
+      "bytes": 6559,
+      "sha256": "8ed7c8df1165675072fe05e0798fffb4e1af55355acc56f9613aee8c43d4e3d8"
+    },
+    {
+      "path": "runs/lean_scale/frontier/actual10_candidates.json",
+      "bytes": 5224,
+      "sha256": "913d875731aa7df3fdf512937d11b99b3db280189e0976bc6ef1f7e95ba00809"
+    },
+    {
+      "path": "runs/lean_scale/frontier/actual10_probe.json",
+      "bytes": 119197,
+      "sha256": "5c9b948a2d48dae75c4ded9378d7d92d8d9ab2db5d271db1b7e304b9cfd019a9"
+    },
+    {
+      "path": "runs/lean_scale/frontier/actual10_pruned_frontier.json",
+      "bytes": 2856014,
+      "sha256": "a0d7eddb9514759bb3fc44ae0b2c77b569da8bbd07bdb3c04cb184317c9d6145"
+    },
+    {
+      "path": "runs/lean_scale/theory/actual12_review_manifest.json",
+      "bytes": 1111,
+      "sha256": "6c03df64672c7d06e302facc84709f8ab8890e3c7b8e6941aa6bbb831cf1d465"
+    },
+    {
+      "path": "runs/lean_scale/theory/actual12_review.md",
+      "bytes": 10710,
+      "sha256": "0c936c4bb318a568809f2dc600a9ddd01e4f479e1110919d54e52514027fc810"
+    },
+    {
+      "path": "runs/lean_scale/performance/fastpositive_summary.json",
+      "bytes": 31141,
+      "sha256": "264223d9566850a4ef8c1d8066c57a9ca078b65ed4cd9767066a05652f04900c"
+    },
+    {
+      "path": "runs/lean_scale/performance/fastexternal_summary.json",
+      "bytes": 15183,
+      "sha256": "185e9e2eac095e2e227bd026677dec0f5271808b3f516f357c6c95b7923e6fd1"
+    },
+    {
+      "path": "runs/lean_scale/performance/selectors/summary.json",
+      "bytes": 16082,
+      "sha256": "73e190ee1ade77c58a668245adacba1846c01474a24642a9ea5274401294687c"
+    },
+    {
+      "path": "runs/lean_scale/performance/indexed_range/summary.json",
+      "bytes": 23832,
+      "sha256": "ff452b5ee08973e48188f680f25d290617fc7816abbca9853cf5f3b79870197a"
+    },
+    {
+      "path": "runs/lean_scale/performance/indexed_range/README.md",
+      "bytes": 5323,
+      "sha256": "e44471ee332b6f5fe27193848841f162f14ad2618dd3c57c24beaee810a7bf91"
+    },
+    {
+      "path": "runs/lean_scale/producer/round_result.json",
+      "bytes": 18203,
+      "sha256": "1a06c4ab1138abd519fdab6e8a0223ef57a0486fbd2c38b1f67e6e35beac4af4"
+    },
+    {
+      "path": "runs/lean_scale/producer/release_manifest.json",
+      "bytes": 5096,
+      "sha256": "1fd0d8a0e22c453426f5a501d3ea2a632b0a91ab51d36c34a2d8b9e56d69428b"
+    },
+    {
+      "path": "runs/lean_scale/endgames/actual12_c_v1/export/manifest.json",
+      "bytes": 8057,
+      "sha256": "d931e0b4b4791826e207da882a5ff08ceee1e7af58f9db373e469a0abfd700d9"
+    },
+    {
+      "path": "build/lean_scale/proof/MahjongScale/Actual12V2/Root.lean",
+      "bytes": 26522,
+      "sha256": "3e4bce43c9466b74a4a14263c73c9751bcef570b889020654c524648c796151e"
+    },
+    {
+      "path": "build/lean_scale/proof/MahjongScale/Actual12Registry.lean",
+      "bytes": 1051,
+      "sha256": "63b19f9cfc7134e97ade7af3c1359566cc938843f584a598ae48c2b112343140"
+    },
+    {
+      "path": "build/lean_scale/make_external_certificate_v2.py",
+      "bytes": 12851,
+      "sha256": "6e66ca2c5c055275b01a6ff325115e2653b711cdc8fdda2c5d3f07fca9324820"
+    },
+    {
+      "path": "build/lean_scale/register_actual12.py",
+      "bytes": 2183,
+      "sha256": "aea9578fc69cdde6231a5e0100fe76768c43140d4787fd182e2b808a68a37750"
+    },
+    {
+      "path": "build/lean_scale/extract_responses.py",
+      "bytes": 6658,
+      "sha256": "078bd1b12aef5a3b14685cae6414698b8b8a8bbff57b27be15d0e0bf553e4d57"
+    },
+    {
+      "path": "build/lean_scale/performance/MahjongScale/FastPositive.lean",
+      "bytes": 4036,
+      "sha256": "ec42b24c5db1aa5982dc1e9a14cd8fdd1460fbeb9aff7a6ea4acdb0b7fe78d2f"
+    },
+    {
+      "path": "build/lean_scale/performance/MahjongScale/FastExternal.lean",
+      "bytes": 4088,
+      "sha256": "7d0c24cf616b4053e0353ab77989fa4590a42d7c9df982209ba5761707350f9b"
+    },
+    {
+      "path": "build/lean_scale/performance/MahjongScale/IndexedRange.lean",
+      "bytes": 6708,
+      "sha256": "b2f894a09457ae7cd110ab8b59a7faa4f72720aa81552ca3cba02518b83d022f"
+    },
+    {
+      "path": "build/lean_scale/theory/MahjongScale/ExternalResponses.lean",
+      "bytes": 8497,
+      "sha256": "60be41a17c7732d6964063c2940c78d7ed2d0e2140c0d56bda76449996242f8a"
+    },
+    {
+      "path": "runs/lean_scale/performance/indexed_range/logic_v1/MahjongScale.IndexedRange.lean",
+      "bytes": 6708,
+      "sha256": "b2f894a09457ae7cd110ab8b59a7faa4f72720aa81552ca3cba02518b83d022f"
+    },
+    {
+      "path": "build/lean_scale/performance/MahjongScale/IndexedRange.olean",
+      "bytes": 360704,
+      "sha256": "9ad5c65484f22532998eaf373802f70e31f2dd73158808f50522ab0a7bad4dd7"
+    },
+    {
+      "path": "runs/lean_scale/performance/indexed_range/logic_v1/MahjongScale.IndexedRange.stdout.log",
+      "bytes": 708,
+      "sha256": "67dd29c57822a181ebccc02dd7678963394a546ae1eef2a06a4c999397925b34"
+    },
+    {
+      "path": "runs/lean_scale/performance/indexed_range/logic_v1/MahjongScale.IndexedRange.stderr.log",
+      "bytes": 652,
+      "sha256": "721ea68e24cc61393a815f9f3988b420933ee0175aece823c8806e577bb81fb8"
+    },
+    {
+      "path": "runs/lean_scale/performance/indexed_range/index_v1/MahjongScale.RangeBench.Index.lean",
+      "bytes": 21056,
+      "sha256": "fc92176081aac7355bf45c9e29d0c1d043eae23974703953d8f38fa89c50f1ed"
+    },
+    {
+      "path": "build/lean_scale/performance/MahjongScale/RangeBench/Index.olean",
+      "bytes": 1461936,
+      "sha256": "bc08383dd223147a424971dd5425ce871b4a16274452c40c2544125e3d3b838b"
+    },
+    {
+      "path": "runs/lean_scale/performance/indexed_range/index_v1/MahjongScale.RangeBench.Index.stdout.log",
+      "bytes": 234,
+      "sha256": "eb75522b2acbfbfd78e908634a79caac08cf0811ea7876406b6cc4169bc51bfc"
+    },
+    {
+      "path": "runs/lean_scale/performance/indexed_range/index_v1/MahjongScale.RangeBench.Index.stderr.log",
+      "bytes": 653,
+      "sha256": "2cf14e4591fbb1677c46de46bdcadac8c8134a60aab1c47b6c44343c558faae7"
+    },
+    {
+      "path": "runs/lean_scale/performance/indexed_range/paired_v1/MahjongScale.RangeBench.Baseline0.lean",
+      "bytes": 630,
+      "sha256": "e1fa0663190e52a96eac2dda32730b44f9bd6b4e20a43a4eb6cc44fe6cbefb53"
+    },
+    {
+      "path": "build/lean_scale/performance/MahjongScale/RangeBench/Baseline0.olean",
+      "bytes": 10304,
+      "sha256": "fe109cd828723303ed37474377aab5e63caeb1510c986d9a2f2f6bec5660cd04"
+    },
+    {
+      "path": "runs/lean_scale/performance/indexed_range/paired_v1/MahjongScale.RangeBench.Baseline0.stdout.log",
+      "bytes": 242,
+      "sha256": "6e5bd82920e23693ea756d23859da6c5c8897368aff4f380d2f8bcb0bee284cc"
+    },
+    {
+      "path": "runs/lean_scale/performance/indexed_range/paired_v1/MahjongScale.RangeBench.Baseline0.stderr.log",
+      "bytes": 507,
+      "sha256": "59372d09f1b27eb0bbe7b59eee7520fc0a6e66e083cc0800bd70ebc29fcd2eed"
+    },
+    {
+      "path": "runs/lean_scale/performance/indexed_range/paired_v1/MahjongScale.RangeBench.Indexed0.lean",
+      "bytes": 659,
+      "sha256": "66d11016c669ef11bc2792248ff51069eb28b4b2738e1087cdf149ed659ac04a"
+    },
+    {
+      "path": "build/lean_scale/performance/MahjongScale/RangeBench/Indexed0.olean",
+      "bytes": 10744,
+      "sha256": "d70aa48d3878d38f79bb50b3ccb3746246817ba0b17e3f24e31c3b014e4c4af7"
+    },
+    {
+      "path": "runs/lean_scale/performance/indexed_range/paired_v1/MahjongScale.RangeBench.Indexed0.stdout.log",
+      "bytes": 239,
+      "sha256": "604bf104803687959e531b2458a5709f594a666fd90630c5fac6126e57bf2bd8"
+    },
+    {
+      "path": "runs/lean_scale/performance/indexed_range/paired_v1/MahjongScale.RangeBench.Indexed0.stderr.log",
+      "bytes": 504,
+      "sha256": "5db0e2fd36fa43d01641a38e0e43e80c521322a9716cedfd4a91d7afc92e3309"
+    },
+    {
+      "path": "runs/lean_scale/performance/indexed_range/paired_v1/MahjongScale.RangeBench.Baseline1.lean",
+      "bytes": 636,
+      "sha256": "a99bbd096372ccf3315ba5e8b4fdfe28ef3fd975cd4e28a2293bb71ffd5064f2"
+    },
+    {
+      "path": "build/lean_scale/performance/MahjongScale/RangeBench/Baseline1.olean",
+      "bytes": 10328,
+      "sha256": "da05b521d0a2ec82649591df0e5ac0331e219e933bc7129b97118ee370a4e568"
+    },
+    {
+      "path": "runs/lean_scale/performance/indexed_range/paired_v1/MahjongScale.RangeBench.Baseline1.stdout.log",
+      "bytes": 242,
+      "sha256": "24466a8eb0be0445cda369fea885fae6e02c1887b4169eac733d9dfea43c24c7"
+    },
+    {
+      "path": "runs/lean_scale/performance/indexed_range/paired_v1/MahjongScale.RangeBench.Baseline1.stderr.log",
+      "bytes": 503,
+      "sha256": "c903e00cb9c6552e6189750c728e7f35fe98c5f77d8eea67ed2b8a4414f20e51"
+    },
+    {
+      "path": "runs/lean_scale/performance/indexed_range/paired_v1/MahjongScale.RangeBench.Indexed1.lean",
+      "bytes": 665,
+      "sha256": "a5ec5e7df026fb4c16f42a98059a463650776e0bf2ad474b19a72ee86592fb69"
+    },
+    {
+      "path": "build/lean_scale/performance/MahjongScale/RangeBench/Indexed1.olean",
+      "bytes": 10720,
+      "sha256": "b4b9c58d8ba64d0514c2457321976984c7bc774b5ceca577396ee8dfc85a5a28"
+    },
+    {
+      "path": "runs/lean_scale/performance/indexed_range/paired_v1/MahjongScale.RangeBench.Indexed1.stdout.log",
+      "bytes": 240,
+      "sha256": "307d1d190d30ebe7a305c036591c289ddd3725605d9619254a30afd18f6de9d8"
+    },
+    {
+      "path": "runs/lean_scale/performance/indexed_range/paired_v1/MahjongScale.RangeBench.Indexed1.stderr.log",
+      "bytes": 502,
+      "sha256": "c806968bcf8dcdaf8aa5fd501a5dd8e3424386ed79740e25736cc8545d1e0440"
+    }
+  ],
+  "large_native_checkpoint": {
+    "path": "runs\\lean_scale\\producer\\opening_compact_v6\\graph.sqlite",
+    "sha256": "8b2357959053838050e96c1cacaa4c401e5222bd00ebdd2fbfcbeb5a40ff901d",
+    "bytes": 2119254016
+  },
+  "source_object_log_detail": "Each kernel result contains complete source, object and log hashes; evidence_verification validates the reuse chain."
+}

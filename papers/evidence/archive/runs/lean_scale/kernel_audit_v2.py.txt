@@ -1,0 +1,251 @@
+"""Dependency-ordered kernel replay with measured aggregate memory and saved work.
+
+Version 2 also requires identical toolchain and every direct dependency object.
+All accepted object reuse requires matching source, object and successful log
+hashes. Final entry is always rebuilt. Empty-game certification is a separate,
+explicit marker, never inferred from successful module compilation.
+"""
+from pathlib import Path
+from concurrent.futures import ThreadPoolExecutor, wait, FIRST_COMPLETED
+import argparse
+import datetime
+import hashlib
+import json
+import os
+import re
+import shutil
+import subprocess
+import threading
+import time
+
+import psutil
+
+HERE = Path(__file__).resolve().parent
+ROOT = HERE.parents[1]
+LEAN = ROOT / "build/toolchain/lean-4.33.1-windows/bin/lean.exe"
+
+
+def digest(path):
+    with Path(path).open("rb") as stream:
+        return hashlib.file_digest(stream, "sha256").hexdigest()
+
+
+def read(path):
+    return json.loads(Path(path).read_text(encoding="utf-8-sig"))
+
+
+def main():
+    parser = argparse.ArgumentParser()
+    parser.add_argument("--entry", required=True)
+    parser.add_argument("--output", required=True)
+    parser.add_argument("--workers", type=int, default=8)
+    parser.add_argument("--memory-budget", type=int, default=12_000_000_000)
+    parser.add_argument("--timeout", type=float, default=120)
+    parser.add_argument("--reuse", action="append", default=[])
+    args = parser.parse_args()
+    assert 1 <= args.workers <= 16 and 2_000_000_000 <= args.memory_budget <= 15_500_000_000
+    dest = (HERE / args.output).resolve()
+    assert dest.is_relative_to(HERE)
+    dest.mkdir(exist_ok=False)
+    source, objects = dest / "source", dest / "modules"
+    source.mkdir(); objects.mkdir()
+    roots = [ROOT / p for p in ["build/lean_scale/proof", "build/lean_scale/performance", "build/lean_scale/theory",
+        "runs/lean_next/actual14_kernel_v2/source", "build/lean_next/proof", "build/lean_verification"]]
+    dependencies, order, seen, visiting = {}, [], set(), set()
+
+    def visit(name):
+        if name in seen:
+            return
+        if name in visiting:
+            raise ValueError("cyclic import: " + name)
+        visiting.add(name)
+        rel = Path(name.replace(".", "/") + ".lean")
+        choices = [r / rel for r in roots if (r / rel).exists()]
+        if not choices:
+            raise ValueError("missing local source: " + name)
+        raw = choices[0].read_bytes()
+        imports = re.findall(r"^import\s+([A-Za-z][A-Za-z0-9_.]*)\s*(?:--.*)?$", raw.decode("utf-8-sig"), re.M)
+        local = [n for n in imports if n.split(".")[0] not in {"Init", "Lean", "Std", "Lake"}]
+        dependencies[name] = local
+        for dep in local:
+            visit(dep)
+        path = source / rel; path.parent.mkdir(parents=True, exist_ok=True); path.write_bytes(raw)
+        order.append(name); seen.add(name); visiting.remove(name)
+
+    visit(args.entry)
+    cache = {}
+    receipts = []
+    for value in args.reuse:
+        folder = (ROOT / value).resolve()
+        assert folder.is_relative_to(ROOT / "runs")
+        record = read(folder / "result.json")
+        assert record["kernel_modules"] == "PASS" and record["trust_level"] == 0
+        assert record["toolchain_sha256"] == digest(LEAN)
+        assert record["passed_modules"] == record["total_modules"]
+        assert all(s["return_code"] == 0 and s["stop_reason"] is None for s in record["steps"])
+        receipts.append({"path": str(folder.relative_to(ROOT)), "sha256": digest(folder / "result.json")})
+        for step in record["steps"]:
+            cache.setdefault(step["module"], []).append((folder, step))
+    report = {"schema": "MAHJONG_RESOURCE_BOUNDED_KERNEL_AUDIT_V2", "created_utc": datetime.datetime.now(datetime.timezone.utc).isoformat(),
+        "entry": args.entry, "kernel_modules": "INCOMPLETE", "empty_game": "NOT_VERIFIED", "trust_level": 0,
+        "workers": args.workers, "aggregate_private_limit_bytes": args.memory_budget, "per_process_private_limit_bytes": 3_000_000_000,
+        "per_module_wall_limit_seconds": args.timeout, "total_modules": len(order), "reuse_receipts": receipts,
+        "runner_sha256": digest(__file__), "toolchain_sha256": digest(LEAN), "steps": [],
+        "source_sha256": {str(p.relative_to(source)): digest(p) for p in sorted(source.rglob("*.lean"))}}
+    shutil.copyfile(__file__, dest / "runner.py")
+    env = os.environ.copy(); env["LEAN_PATH"] = str(objects)
+    began = time.monotonic(); lock = threading.Lock(); active = {}; last_cpu = {}
+    peak = {"private": 0, "rss": 0, "concurrency": 0, "samples": 0}
+    stop_all = threading.Event(); monitor_done = threading.Event()
+    parent = psutil.Process()
+
+    def monitor():
+        while not monitor_done.is_set():
+            try:
+                mem = parent.memory_info(); private, rss = mem.private, mem.rss
+            except psutil.Error:
+                private = rss = 0
+            with lock:
+                running = list(active.items())
+            for pid, item in running:
+                proc = item["process"]
+                try:
+                    mem = proc.memory_info(); cpu = proc.cpu_times()
+                    private += mem.private; rss += mem.rss
+                    with lock:
+                        item["private"] = mem.private
+                        item["peak_private"] = max(item["peak_private"], mem.private, mem.peak_pagefile)
+                        item["peak_rss"] = max(item["peak_rss"], mem.rss)
+                        last_cpu[pid] = cpu.user + cpu.system
+                    if mem.private > 3_000_000_000:
+                        item["stop_reason"] = "per_process_private_limit"; proc.kill()
+                except psutil.Error:
+                    pass
+            peak["private"] = max(peak["private"], private)
+            peak["rss"] = max(peak["rss"], rss)
+            peak["concurrency"] = max(peak["concurrency"], len(running)); peak["samples"] += 1
+            if private > args.memory_budget:
+                stop_all.set()
+                for _, item in running:
+                    item["stop_reason"] = "aggregate_private_limit"
+                    try:
+                        item["process"].kill()
+                    except psutil.Error:
+                        pass
+            monitor_done.wait(0.05)
+
+    monitor_thread = threading.Thread(target=monitor, daemon=True); monitor_thread.start()
+
+    def estimate(name):
+        if name.endswith(".Data"):
+            return 1_150_000_000
+        if ".Group" in name:
+            return 1_650_000_000
+        if ".L" in name and "Leaves" in name:
+            return 1_850_000_000
+        return 1_900_000_000
+
+    def check(name):
+        rel = Path(name.replace(".", "/")); src = source / rel.with_suffix(".lean")
+        obj = objects / rel.with_suffix(".olean"); obj.parent.mkdir(parents=True, exist_ok=True)
+        if name != args.entry:
+            for folder, previous in cache.get(name, []):
+                old_source = folder / "source" / rel.with_suffix(".lean")
+                if digest(old_source) != digest(src):
+                    continue
+                dependency_hashes = {}
+                for dep in dependencies[name]:
+                    dep_rel = Path(dep.replace(".", "/") + ".olean")
+                    before, current = folder / "modules" / dep_rel, objects / dep_rel
+                    if not before.exists() or digest(before) != digest(current):
+                        break
+                    dependency_hashes[dep] = digest(current)
+                if len(dependency_hashes) != len(dependencies[name]):
+                    continue
+                old_obj = folder / "modules" / rel.with_suffix(".olean")
+                assert digest(old_obj) == previous["olean_sha256"] and digest(previous["log"]) == previous["log_sha256"]
+                shutil.copyfile(old_obj, obj)
+                return {"module": name, "return_code": 0, "stop_reason": None, "wall_seconds": 0,
+                    "peak_private_bytes": 0, "peak_rss_bytes": 0, "log": previous["log"], "log_sha256": previous["log_sha256"],
+                    "command": previous["command"], "olean_sha256": previous["olean_sha256"], "reused_from": str(folder),
+                    "reuse_dependency_sha256": dependency_hashes}
+        command = [str(LEAN), "--trust=0", "-M2048", "-j1", "-R", str(source), "-o", str(obj), str(src)]
+        log = dest / (name + ".log"); start = time.monotonic()
+        with log.open("wb") as output:
+            child = subprocess.Popen(command, cwd=ROOT, env=env, stdout=output, stderr=subprocess.STDOUT,
+                creationflags=subprocess.CREATE_NO_WINDOW)
+            proc = psutil.Process(child.pid)
+            item = {"process": proc, "private": 0, "peak_private": 0, "peak_rss": 0, "stop_reason": None}
+            with lock:
+                active[child.pid] = item
+            while child.poll() is None:
+                if time.monotonic() - start > args.timeout:
+                    item["stop_reason"] = "module_wall_limit"; child.kill(); break
+                if stop_all.is_set():
+                    item["stop_reason"] = "aggregate_private_limit"; child.kill(); break
+                time.sleep(0.05)
+            child.wait(timeout=15)
+            with lock:
+                active.pop(child.pid, None)
+        step = {"module": name, "command": command, "pid": child.pid, "return_code": child.returncode,
+            "wall_seconds": time.monotonic()-start, "stop_reason": item["stop_reason"],
+            "peak_private_bytes": item["peak_private"], "peak_rss_bytes": item["peak_rss"],
+            "log": str(log), "log_sha256": digest(log)}
+        if child.returncode == 0:
+            step["olean_sha256"] = digest(obj)
+        return step
+
+    pending, passed, inflight, failed = list(order), set(), {}, False
+    try:
+        with ThreadPoolExecutor(max_workers=args.workers) as pool:
+            while pending or inflight:
+                reserved = sum(estimate(n) for n in inflight.values())
+                if not failed and not stop_all.is_set() and not (dest / "STOP").exists():
+                    ready = [n for n in pending if set(dependencies[n]) <= passed]
+                    for name in ready:
+                        if len(inflight) >= args.workers:
+                            break
+                        if reserved + estimate(name) > args.memory_budget - 250_000_000:
+                            continue
+                        inflight[pool.submit(check, name)] = name; pending.remove(name); reserved += estimate(name)
+                if not inflight:
+                    break
+                done, _ = wait(inflight, timeout=1, return_when=FIRST_COMPLETED)
+                for future in done:
+                    name = inflight.pop(future); step = future.result(); report["steps"].append(step)
+                    if step["return_code"] == 0:
+                        passed.add(name)
+                    else:
+                        failed = True
+                    report["passed_modules"] = len(passed); report["wall_seconds"] = time.monotonic()-began
+                    (dest / "result.json").write_text(json.dumps(report, indent=2)+"\n", encoding="utf-8")
+                    if len(passed) % 20 == 0 or step["return_code"] != 0 or name == args.entry:
+                        print(json.dumps({"passed": len(passed), "total": len(order), "module": name,
+                            "return_code": step["return_code"], "wall_seconds": round(step["wall_seconds"],3),
+                            "peak_private_bytes": step["peak_private_bytes"], "stop_reason": step["stop_reason"]}), flush=True)
+    finally:
+        monitor_done.set(); monitor_thread.join(timeout=2)
+    if len(passed) == len(order):
+        log = (dest / (args.entry + ".log")).read_text(encoding="utf-8")
+        match = re.search(r"AXIOM_AUDIT_PASS theorem_count=(\d+)", log)
+        if match:
+            report["kernel_modules"] = "PASS"; report["audited_theorems"] = int(match[1])
+            report["actual_12_tiles"] = "PASS" if "ACTUAL_12_TILE_CLOSED_THEOREM_PRESENT" in log else "NOT_VERIFIED"
+            report["empty_game"] = "PASS" if "END_TO_END_CLOSED_THEOREM_PRESENT" in log else "NOT_VERIFIED"
+    report.update(wall_seconds=time.monotonic()-began, passed_modules=len(passed),
+        reused_modules=sum("reused_from" in s for s in report["steps"]),
+        newly_compiled_modules=sum("reused_from" not in s for s in report["steps"]),
+        peak_sampled_process_tree_private_bytes=peak["private"], peak_sampled_process_tree_rss_bytes=peak["rss"],
+        peak_concurrent_lean_processes=peak["concurrency"], resource_samples=peak["samples"],
+        sampled_CPU_seconds=sum(last_cpu.values()), sampled_average_core_equivalents=sum(last_cpu.values())/(time.monotonic()-began),
+        CPU_sampling_note="Last 50 ms observation for each Lean child; excludes unobserved final intervals and scheduler CPU.")
+    report["source_unchanged"] = all(digest(source / p) == h for p, h in report["source_sha256"].items())
+    report["artifacts_sha256"] = {str(p.relative_to(objects)): digest(p) for p in sorted(objects.rglob("*.olean"))}
+    report["exit_code"] = 1 if report["kernel_modules"] != "PASS" else 0 if report["empty_game"] == "PASS" else 2
+    (dest / "result.json").write_text(json.dumps(report, indent=2)+"\n", encoding="utf-8")
+    print(json.dumps({k: report[k] for k in ["kernel_modules", "empty_game", "actual_12_tiles", "passed_modules", "total_modules", "wall_seconds", "peak_sampled_process_tree_private_bytes", "peak_concurrent_lean_processes"] if k in report}), flush=True)
+    return report["exit_code"]
+
+
+if __name__ == "__main__":
+    raise SystemExit(main())

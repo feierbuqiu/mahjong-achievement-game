@@ -1,0 +1,378 @@
+{
+  "schema": "MAHJONG_PAPER_SOURCE_LEDGER_V1",
+  "created_utc": "2026-09-13T08:33:33.547284+00:00",
+  "root_convention": "All paths relative to the mahjong_research root",
+  "scope": "Manuscript-cited local files and selected critical sources; no whole bit-table or Lean replay performed by this script",
+  "files": [
+    {
+      "path": "build/global_retro/global_index.hpp",
+      "bytes": 16787,
+      "sha256": "b742e5bbb20ed0df50665c0d454d3bf4b7691dabc4d2d0380e7159766f8bf0c8"
+    },
+    {
+      "path": "build/lean_scale/proof/MahjongScale/Actual12Registry.lean",
+      "bytes": 1051,
+      "sha256": "63b19f9cfc7134e97ade7af3c1359566cc938843f584a598ae48c2b112343140"
+    },
+    {
+      "path": "build/lean_scale/proof/MahjongScale/Actual12V2/Root.lean",
+      "bytes": 26522,
+      "sha256": "3e4bce43c9466b74a4a14263c73c9751bcef570b889020654c524648c796151e"
+    },
+    {
+      "path": "CHECKPOINTS.md",
+      "bytes": 6870,
+      "sha256": "7f52dd4acb5e5a37d3cb72e14913d4cceac23f0b428f64a220b459c75c22d2ff"
+    },
+    {
+      "path": "inputs/Description.txt",
+      "bytes": 43240,
+      "sha256": "8394b12e1578c05eb41466ecf51b408cbd07c5b66ce03315bff39323fa59943e"
+    },
+    {
+      "path": "lean_verification/existing_lean_audit/Lemmas.lean",
+      "bytes": 15659,
+      "sha256": "f71bf6cd4d22391b90777aa118e410e625bd5987827db58535a190abb1d242d9"
+    },
+    {
+      "path": "lean_verification/existing_lean_audit/lemmas_compile.log",
+      "bytes": 2181,
+      "sha256": "5dfd13632242a11c61f48f50beaa39bda77861100de053d5cee65c495dc5a245"
+    },
+    {
+      "path": "mahjong_feasibility_review/layer_counts.jsonl",
+      "bytes": 4488,
+      "sha256": "a7271241c0e031417db59d50eedef76875fc1e0c740b9cc0ad4d4d2e1e74b2e8"
+    },
+    {
+      "path": "mahjong_progress/audit/audit_and_quartet_theorem.md",
+      "bytes": 8674,
+      "sha256": "7f7ea050e11318af81e9d45ffa208b51b3cc27335632a020dd71f235fb21de13"
+    },
+    {
+      "path": "mahjong_progress/mathematics/math_strategy.md",
+      "bytes": 8435,
+      "sha256": "90154c35fd6527758594d45a9190258b43e6c1c34e74f4f44befc11719a40d2b"
+    },
+    {
+      "path": "mahjong_progress/quotient/README.md",
+      "bytes": 10834,
+      "sha256": "9aee8d6573607851b947e16f56a6d2822e16960f3e8e1b386b42cbcd66eaf121"
+    },
+    {
+      "path": "mahjong_progress/solver/solver.cpp",
+      "bytes": 9354,
+      "sha256": "1194d941c55b48c4ac686f29518c3fe032723a431125610b2a3509f8db04242f"
+    },
+    {
+      "path": "mahjong_round2/lean/SharedMahjong.lean",
+      "bytes": 12465,
+      "sha256": "fdebb17ad9bf8a8917a47da435bd294f16d63bd4b84a35215a8903fea81f84d9"
+    },
+    {
+      "path": "mahjong_round2/math/four_honor_pairs.md",
+      "bytes": 5632,
+      "sha256": "e4c59990cf4cc72eff5c330a3bcdcc3605112e1f4265a035e5cbdf2cf3b93625"
+    },
+    {
+      "path": "mahjong_round2/math/two_suit_family.md",
+      "bytes": 4924,
+      "sha256": "11339243faf1ddbb5f82c8fc7d21d8efe044512d859f62a82a23767ec5928983"
+    },
+    {
+      "path": "mahjong_round3/abstraction/README.md",
+      "bytes": 6378,
+      "sha256": "59316a0c39c44cc60101aef20e2140e237937823ecb97ab92543fe4b4486866b"
+    },
+    {
+      "path": "mahjong_round3/five_pair/frozen_five_theorem.md",
+      "bytes": 6954,
+      "sha256": "9f5f791382f4d01eb7b596874c420e8b62496f686abba2fb218562287667a547"
+    },
+    {
+      "path": "mahjong_round3/opening_math/six_pairs_theorem.md",
+      "bytes": 10545,
+      "sha256": "d0dc12fbd8ae31226317e69340f5db6711cf37bc16bb66bead612cd5268aaf12"
+    },
+    {
+      "path": "mahjong_round3/pairing/expanded_invariant.md",
+      "bytes": 5428,
+      "sha256": "3f76a349be9379663825b893a9d17f19c62b413c4b42a042a42894fe785a5b8c"
+    },
+    {
+      "path": "mahjong_round4/context/README.md",
+      "bytes": 8638,
+      "sha256": "21aea186059b452f8cbbb1bc4ede54502c2e8efee0247fa9cb1a169c9bbfec79"
+    },
+    {
+      "path": "mahjong_round4/math/safe_two_quads_three_pairs.md",
+      "bytes": 4552,
+      "sha256": "a6070397c3872fec04019e267b97c4e81f3718a79ee2dacc38cad87a2abde6e2"
+    },
+    {
+      "path": "mahjong_round4/numerical_five/sequence_pair_theorem.md",
+      "bytes": 4319,
+      "sha256": "0c30881a6ea32300c6a8176323b1059f675da35e5d5f1bc68f5cc63cd1e2eb75"
+    },
+    {
+      "path": "mahjong_round5/math/two_honor_triplets_two_pairs.md",
+      "bytes": 4294,
+      "sha256": "ddb17e7e5db978ebf6221726df34e68a75cf7c7ad01d7b835ceddb766fe589a7"
+    },
+    {
+      "path": "mahjong_round6/math/controlled_prefix_and_boundary.md",
+      "bytes": 7964,
+      "sha256": "ac4d905ed6fd59b2ae6a4bdaff159ae31107c31be208d97cba5f108464da2708"
+    },
+    {
+      "path": "mahjong_round6/math/pair_greedy_counterexamples.md",
+      "bytes": 4299,
+      "sha256": "94878b73684b6bdf6ce7bc51245b6162e44c5c21bdcff4f47af803038f95eed3"
+    },
+    {
+      "path": "mahjong_round6/math/two_honor_matrix_mathematics.md",
+      "bytes": 6743,
+      "sha256": "111595257d9b5bce25fa79463f8721b83117d10b52078255233c60acce87727d"
+    },
+    {
+      "path": "mahjong_round7/design/two_numeric_triplets_all_35_theorem.md",
+      "bytes": 4969,
+      "sha256": "7f1475d48d73e440af75416f47763e62320ac9081515654d8fc5507d11a419d1"
+    },
+    {
+      "path": "mahjong_round7/q5/all_three_numeric_pairs_complete.jsonl",
+      "bytes": 44436,
+      "sha256": "d6ce9ce63c377700d9765b5c7b844a51bc34f08ad05da963452b7f5b08ff4c6f"
+    },
+    {
+      "path": "mahjong_round8/audit/mixed_q4_and_T1_review.md",
+      "bytes": 8073,
+      "sha256": "fce4729507ff323eb867b763b8ebe247f24942b29e0833c7a8edc22a63982c29"
+    },
+    {
+      "path": "mahjong_round8/regions/dense_checkpoint.md",
+      "bytes": 4627,
+      "sha256": "d12f4ebfcde6bb431a76c30a83aa942df6bf18891685618b5cef2517b4a529d8"
+    },
+    {
+      "path": "RESEARCH_HANDOFF.md",
+      "bytes": 14340,
+      "sha256": "ccffa3765355d1ffbd31a8d11ed68ea6ce1e1b66b0aa6a245b4d22620e1929cd"
+    },
+    {
+      "path": "runs/competition_20260913/source/docs/REPRODUCIBILITY.md",
+      "bytes": 4420,
+      "sha256": "799910f0e1d02e0d813bf145553056b0fb4c6233c7d70678df46bddf5c06688e"
+    },
+    {
+      "path": "runs/global_feasibility_audit/index/INDEX_AUDIT.md",
+      "bytes": 5818,
+      "sha256": "061aa33d3932e5467efca8f767b9f9301f6163e2464b0da00e4604b6c47fc542"
+    },
+    {
+      "path": "runs/global_feasibility_audit/resources_and_costs.json",
+      "bytes": 4097,
+      "sha256": "62d28c91ba8689ec72487418e30a6d66e631dfeb8e198a5fd753d4d7b336ff02"
+    },
+    {
+      "path": "runs/global_retro/generation_account.json",
+      "bytes": 2000,
+      "sha256": "2f9d02415805924d2c152b7f6e5e49720edf8858cc7c20021f7acd886913520c"
+    },
+    {
+      "path": "runs/global_retro/RESULT.md",
+      "bytes": 7395,
+      "sha256": "b5ff1fa20087114558315bc6668ad4df9962cde220c920949943f33fc1fa9d27"
+    },
+    {
+      "path": "runs/global_retro/verification/final_v1/acceptance.json",
+      "bytes": 9940,
+      "sha256": "1cc4b9dc7bd287e976d42d6b7fb41eb548651529016e53485008828c97d826a5"
+    },
+    {
+      "path": "runs/global_retro/verification/frontier_resolution_v1/README.md",
+      "bytes": 6080,
+      "sha256": "8bb2d01149bef80af3d002ef1a07c56914aa179d24f85e7df767e297131266ce"
+    },
+    {
+      "path": "runs/global_retro/verification/full_integrity/full_v1/sha256_manifest.jsonl",
+      "bytes": 3125248,
+      "sha256": "a590af16189fe9acf22fae18d8a95095bcb9f9926db2d6eaa585511eea21e88c"
+    },
+    {
+      "path": "runs/global_retro/verification/oracles_v1/opening_results.jsonl",
+      "bytes": 3271,
+      "sha256": "8c6ba4d427d97c036ed4b63337e9bd17887b72a095cdbdb57a7022e2ef5f44fb"
+    },
+    {
+      "path": "runs/global_retro/verification/strategy_v1/physical_cases.jsonl",
+      "bytes": 43393,
+      "sha256": "ab7e46b115ece11ec9a7c426f61bf5004e243b12d36eff49e572c598f0410399"
+    },
+    {
+      "path": "runs/global_retro/verification/strategy_v1/README.md",
+      "bytes": 5952,
+      "sha256": "b7e9ec973a2b1ceaae1eaac6e4bc01d0d976a2e826b22a466a008d465ef22a71"
+    },
+    {
+      "path": "runs/lean_continuation/kernel_v1/result.json",
+      "bytes": 1079497,
+      "sha256": "724532e50026bf98a26e98859f0c5d633415b809f560f327b95470456f5dc241"
+    },
+    {
+      "path": "runs/lean_continuation/pipeline_kernel_v1/result.json",
+      "bytes": 32775,
+      "sha256": "7cddf9f8f2d4f33fe10d9cb550405f14ce9ddaca286f2db74bdd303eb2cc75f9"
+    },
+    {
+      "path": "runs/lean_next/actual14_kernel_v2/result.json",
+      "bytes": 66702,
+      "sha256": "15e94b816a87c23f0315f3ed96a709e7e04a1842b55187350114894623148b9b"
+    },
+    {
+      "path": "runs/lean_next/RESULT.md",
+      "bytes": 5829,
+      "sha256": "8bef42e1b5ba0a8e667e3673ccc70c453e373c450a96bcc1dda9479737031ef5"
+    },
+    {
+      "path": "runs/lean_next/theory/actual14_review.md",
+      "bytes": 8839,
+      "sha256": "03ec5d3e7cb4a67df2762a0cdd13c2c81920ce1c43e12a4d576758476d673f0b"
+    },
+    {
+      "path": "runs/lean_next/theory/groups/grouped20_v3/result.json",
+      "bytes": 30041,
+      "sha256": "bc11e6ba876869c8195fc92893f0f39693c9299faeb29cf1005516b367c7d91c"
+    },
+    {
+      "path": "runs/lean_publication_20260913/publication.json",
+      "bytes": 2651,
+      "sha256": "f5ad397eeae721c61970d48f4da33efc44c86647ea354181d4f3278e4b70f329"
+    },
+    {
+      "path": "runs/lean_scale/actual12/checked_registry.json",
+      "bytes": 171554,
+      "sha256": "ddb73a52ce1805303145e428c8e9cb53a9b7b8471082c392ac88b1911acd63d6"
+    },
+    {
+      "path": "runs/lean_scale/actual12/pruned_v1/responses.json",
+      "bytes": 10693833,
+      "sha256": "a917aa5649940f01c5ae6cf7ca4f69f5c988bd78fb0fa8d9ba55a4572c81c31b"
+    },
+    {
+      "path": "runs/lean_scale/actual12_kernel_v1/result.json",
+      "bytes": 560533,
+      "sha256": "528aa59d3590c29ed05a21dbfea088aefdd4de11c76853e2303beceb1f488a6d"
+    },
+    {
+      "path": "runs/lean_scale/actual12_registry_kernel_v1/result.json",
+      "bytes": 571901,
+      "sha256": "9355a8cd9a7d54dd10e51873f47596f18c965df9667c74c800a9ddb7d0b42ff2"
+    },
+    {
+      "path": "runs/lean_scale/endgames/actual10_a_v1/summary.latest.md",
+      "bytes": 831,
+      "sha256": "5b0c5cb2acadfb7cfd6cfcffd4c0e1b41afc46deb61b8d04a1f2d726b29f3e3f"
+    },
+    {
+      "path": "runs/lean_scale/endgames/actual12_a_v1/summary.latest.md",
+      "bytes": 905,
+      "sha256": "79afa1ddf7148fd87c3aaf5a44219e5c98cd1ffee7a9d5833524b4b3c0922421"
+    },
+    {
+      "path": "runs/lean_scale/endgames/actual12_b_v1/summary.latest.md",
+      "bytes": 905,
+      "sha256": "d97acc1124ca24635e5d2c63c0612c8609bf9cf4392d4bb2de7afa727ad8954e"
+    },
+    {
+      "path": "runs/lean_scale/performance/fastpositive_summary.json",
+      "bytes": 31141,
+      "sha256": "264223d9566850a4ef8c1d8066c57a9ca078b65ed4cd9767066a05652f04900c"
+    },
+    {
+      "path": "runs/lean_scale/performance/README.md",
+      "bytes": 5893,
+      "sha256": "ac7ffe3078037a0d077bf231c74f401c4c16ba1e4c4377bcd89e2eb9358ffda3"
+    },
+    {
+      "path": "runs/lean_scale/producer/ROUND_RESULT.md",
+      "bytes": 1763,
+      "sha256": "5f637b36c32605df9a0d9f28f1225465e43450028532dc82aeff8ece484ac7d6"
+    },
+    {
+      "path": "runs/lean_scale/theory/actual12_review.md",
+      "bytes": 10710,
+      "sha256": "0c936c4bb318a568809f2dc600a9ddd01e4f479e1110919d54e52514027fc810"
+    },
+    {
+      "path": "runs/lean_verification/final_review.md",
+      "bytes": 8955,
+      "sha256": "fe0ab3c7095314b0f272591c5b8651b9a324b9517e0683452bf240da5b80d756"
+    },
+    {
+      "path": "runs/lean_verification/RESULT.md",
+      "bytes": 8209,
+      "sha256": "efa3dc221b8968f9c43f877e6a9dd3e51e37003504f6babc50332011e366a621"
+    },
+    {
+      "path": "runs/lean_verification/rules/RULES_INDEX_AUDIT.md",
+      "bytes": 11314,
+      "sha256": "e89db41f73bb99c33eb3bb883298d8715ebd806c890534a734350cf9ad88a2ff"
+    },
+    {
+      "path": "runs/lean_verification/theory_v1/README.md",
+      "bytes": 4313,
+      "sha256": "f23f4ee22ce0ea746c8d88303ffb36f67a12ddc4b158bc1c6c76ebf04be2c52b"
+    },
+    {
+      "path": "runs/paper_20260913/computational_evidence.md",
+      "bytes": 47138,
+      "sha256": "0dc42f85653845fa048b3163e094c21bba8856f9f37fb5e15c05da81fb61e034"
+    },
+    {
+      "path": "runs/paper_20260913/lean_evidence.md",
+      "bytes": 35373,
+      "sha256": "322d17b55ad1cd1062d2e063d1e58433ac48d9fc477d43d79ba7e3fd39f954b7"
+    },
+    {
+      "path": "runs/paper_20260913/mathematical_evidence.md",
+      "bytes": 62823,
+      "sha256": "b84459b76937e3490b2cb8be34cfefa3c7c7187f10a7822744a440d421fc9921"
+    },
+    {
+      "path": "runs/paper_20260913/reference_verification.md",
+      "bytes": 6634,
+      "sha256": "7ae4f1ee8558ac88c026e2ee9b965a7add8718d0719f226b7c31f2281f9d8057"
+    },
+    {
+      "path": "runs/publication_20260913/publication.json",
+      "bytes": 1736,
+      "sha256": "7aea655c65a3eaad8561668896eed51751588ab8bd5b2b52bdb75f530cce7053"
+    },
+    {
+      "path": "runs/round9/STATUS.json",
+      "bytes": 2372,
+      "sha256": "97b7c58e40c63d5f9bc5e0df6bdcb9856fa62ffb2da5880f7fc79fd2a27b0b48"
+    },
+    {
+      "path": "runs/round9_math/round9_final_facts.json",
+      "bytes": 3939024,
+      "sha256": "f49f4db8e1757da424cfe5874f54ead59a34518e1ed1ba7772f23be88e4dadce"
+    },
+    {
+      "path": "runs/round9_native/final_audit.json",
+      "bytes": 7385,
+      "sha256": "652360465c4b38bd10c799311e6b106171ca337ad284c5d667ac711b8f0a5194"
+    },
+    {
+      "path": "runs/round9_solver/README.md",
+      "bytes": 5527,
+      "sha256": "20151a17d5ce4554a11075f88a90b14248020cffb94a4c3afcf9fdc574cfc586"
+    }
+  ],
+  "manuscript": {
+    "path": "runs/paper_20260913/manuscript.md",
+    "bytes": 117039,
+    "sha256": "f1d521177f2270e4340703faddaa6f9426108e939cd19cfeb71b4f2fc5fbe2e5"
+  }
+}

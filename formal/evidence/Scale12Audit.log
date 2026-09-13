@@ -1,0 +1,3 @@
+AXIOM_AUDIT_PASS theorem_count=1438; only standard three axioms allowed
+ACTUAL_12_TILE_CLOSED_THEOREM_PRESENT
+END_TO_END_NOT_VERIFIED: original 12-tile branch certified; empty strategy not closed

@@ -2,6 +2,20 @@
 
 ## Unreleased - 2026-09-13
 
+- Publish the full English research report with seven appendices, GitHub math
+  formatting, a prominent homepage entry, English audit memos, and an explicit
+  catalogue of public evidence and retained historical sources.
+- Add the exact 12- and 14-tile Lean roots, the compressed 24-row proof of the
+  existing 20-tile root, and the typed registry of 757 certified P rows. Index
+  eight concrete roots, including three already present in the earlier source.
+- Expand the portable kernel replay to all 1,008 source modules; `--entry latest`
+  checks the 374-module closure of the new milestone audits from fresh source.
+- Record 25,510 legal first actions covered by the 12-tile certificate and the
+  partial opening graph of 9,765,237 nodes / 16,179,951 edges. The 10-tile probe
+  and empty-position Lean theorem remain unverified.
+
+### Earlier publication on the same date
+
 - Publish closed original-game Lean proofs for three concrete nonempty positions
   with 20, 32, and 34 tiles. The empty-position theorem remains `NOT_VERIFIED`.
 - Freeze 686 distinct Lean source modules, source provenance, and selected

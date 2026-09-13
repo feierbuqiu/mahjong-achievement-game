@@ -1,0 +1,20 @@
+import took 1.2s
+cumulative profiling times:
+	.olean serialization 15ms
+	attribute application 0.0228ms
+	blocked (unaccounted) 3.78s
+	elaboration 4.59ms
+	fix level params 0.019ms
+	import 1.2s
+	initialization 41.2ms
+	instantiate metavars 0.0169ms
+	interpretation 178ms
+	let-to-have transformation 0.0206ms
+	linting 0.566ms
+	module linting 0.0038ms
+	parsing 0.423ms
+	process pre-definitions 0.207ms
+	share common exprs 0.0523ms
+	tactic execution 0.494ms
+	type checking 3.77s
+	typeclass inference 0.826ms

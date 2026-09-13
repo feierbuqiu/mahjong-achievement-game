@@ -1,0 +1,89 @@
+{
+  "status": "PASS_EXACT_LOGICAL_EXPORT_FILES_MATCH",
+  "formal_proof": false,
+  "records": [
+    {
+      "variant": "v4_t1",
+      "manifest": {
+        "schema": "MAHJONG_STRATEGY_GRAPH_V1",
+        "summary": {
+          "nodes": 5967,
+          "expanded_nodes": 4096,
+          "pending_nodes": 1871,
+          "edges": 4096,
+          "layers": [
+            {
+              "n": 13,
+              "nodes": 4096,
+              "expanded": 4096,
+              "P": 0,
+              "N": 4096,
+              "pending": 0
+            },
+            {
+              "n": 14,
+              "nodes": 1871,
+              "expanded": 0,
+              "P": 1871,
+              "N": 0,
+              "pending": 1871
+            }
+          ],
+          "status": "PARTIAL",
+          "formal_proof": false,
+          "schema": "MAHJONG_STRATEGY_GRAPH_V1"
+        },
+        "metadata": {},
+        "files_sha256": {
+          "nodes.jsonl": "3dfe11455f952cd458371e80a97a17731ebd02701b3a1656f2b7f577bd91a08a",
+          "edges.jsonl": "cb51cc866e43497f451dd1b1328a4f46e6f2c910d4130dcc450928a0df48a261"
+        },
+        "discovery_ids_are_not_Lean_proof_ids": true,
+        "proof_order": "Sort nodes by decreasing n, then state; assign new increasing IDs. All edges increase n by one.",
+        "formal_proof": false
+      }
+    },
+    {
+      "variant": "v6_t1",
+      "manifest": {
+        "schema": "MAHJONG_STRATEGY_GRAPH_V1",
+        "storage_schema": "MAHJONG_STRATEGY_GRAPH_V2_COMPACT_EDGES",
+        "summary": {
+          "nodes": 5967,
+          "expanded_nodes": 4096,
+          "pending_nodes": 1871,
+          "edges": 4096,
+          "layers": [
+            {
+              "n": 13,
+              "nodes": 4096,
+              "expanded": 4096,
+              "P": 0,
+              "N": 4096,
+              "pending": 0
+            },
+            {
+              "n": 14,
+              "nodes": 1871,
+              "expanded": 0,
+              "P": 1871,
+              "N": 0,
+              "pending": 1871
+            }
+          ],
+          "status": "PARTIAL",
+          "formal_proof": false,
+          "schema": "MAHJONG_STRATEGY_GRAPH_V2_COMPACT_EDGES"
+        },
+        "metadata": {},
+        "files_sha256": {
+          "nodes.jsonl": "3dfe11455f952cd458371e80a97a17731ebd02701b3a1656f2b7f577bd91a08a",
+          "edges.jsonl": "cb51cc866e43497f451dd1b1328a4f46e6f2c910d4130dcc450928a0df48a261"
+        },
+        "discovery_ids_are_not_Lean_proof_ids": true,
+        "proof_order": "Sort nodes by decreasing n, then state; assign new increasing IDs. All edges increase n by one.",
+        "formal_proof": false
+      }
+    }
+  ]
+}

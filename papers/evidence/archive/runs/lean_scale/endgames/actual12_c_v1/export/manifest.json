@@ -1,0 +1,335 @@
+{
+  "schema": "MAHJONG_STRATEGY_GRAPH_V1",
+  "summary": {
+    "nodes": 2753,
+    "expanded_nodes": 2753,
+    "pending_nodes": 0,
+    "edges": 6756,
+    "layers": [
+      {
+        "n": 12,
+        "nodes": 1,
+        "expanded": 1,
+        "P": 1,
+        "N": 0,
+        "pending": 0
+      },
+      {
+        "n": 13,
+        "nodes": 21,
+        "expanded": 21,
+        "P": 0,
+        "N": 21,
+        "pending": 0
+      },
+      {
+        "n": 14,
+        "nodes": 14,
+        "expanded": 14,
+        "P": 14,
+        "N": 0,
+        "pending": 0
+      },
+      {
+        "n": 15,
+        "nodes": 158,
+        "expanded": 158,
+        "P": 0,
+        "N": 158,
+        "pending": 0
+      },
+      {
+        "n": 16,
+        "nodes": 78,
+        "expanded": 78,
+        "P": 78,
+        "N": 0,
+        "pending": 0
+      },
+      {
+        "n": 17,
+        "nodes": 446,
+        "expanded": 446,
+        "P": 0,
+        "N": 446,
+        "pending": 0
+      },
+      {
+        "n": 18,
+        "nodes": 183,
+        "expanded": 183,
+        "P": 183,
+        "N": 0,
+        "pending": 0
+      },
+      {
+        "n": 19,
+        "nodes": 503,
+        "expanded": 503,
+        "P": 0,
+        "N": 503,
+        "pending": 0
+      },
+      {
+        "n": 20,
+        "nodes": 178,
+        "expanded": 178,
+        "P": 178,
+        "N": 0,
+        "pending": 0
+      },
+      {
+        "n": 21,
+        "nodes": 371,
+        "expanded": 371,
+        "P": 0,
+        "N": 371,
+        "pending": 0
+      },
+      {
+        "n": 22,
+        "nodes": 149,
+        "expanded": 149,
+        "P": 149,
+        "N": 0,
+        "pending": 0
+      },
+      {
+        "n": 23,
+        "nodes": 319,
+        "expanded": 319,
+        "P": 0,
+        "N": 319,
+        "pending": 0
+      },
+      {
+        "n": 24,
+        "nodes": 136,
+        "expanded": 136,
+        "P": 136,
+        "N": 0,
+        "pending": 0
+      },
+      {
+        "n": 25,
+        "nodes": 145,
+        "expanded": 145,
+        "P": 0,
+        "N": 145,
+        "pending": 0
+      },
+      {
+        "n": 26,
+        "nodes": 51,
+        "expanded": 51,
+        "P": 51,
+        "N": 0,
+        "pending": 0
+      }
+    ],
+    "status": "CANDIDATE_CLOSED",
+    "formal_proof": false,
+    "schema": "MAHJONG_STRATEGY_GRAPH_V1"
+  },
+  "metadata": {
+    "config": {
+      "schema": "MAHJONG_STRATEGY_GRAPH_V1",
+      "policy": "batch_greedy_existing_then_cover_then_future_degree_then_lex_v1",
+      "batch": 1024,
+      "root_requested": "0000000020000011110001110300000000",
+      "data_directory": "<research-root>\\runs\\global_retro\\pilot_v1\\data",
+      "index_fingerprint": "5a45ff3ea0fcf356",
+      "source_sha256": {
+        "build\\lean_scale\\endgame_producer.py": "b6287d0c3cac155ebc9c4555c969e9c2f162c1abb26a07669992597f21cc5c20",
+        "build\\lean_continuation\\strategy_worker_v3.cpp": "90a55d55eaebccdd09e7855331a750f3f49a096b9d39fe1660562a3043785226",
+        "build\\lean_continuation\\strategy_worker_v3.exe": "92eef64bba8727c6905cbc2f652b2fb59115ee8f817283952b083e46ba8364b8",
+        "build\\lean_continuation\\query_adapter_v3.cpp": "383643f508cea959ac7ed05bc6a1c54ce98c0a8583db5a1c3755b13b4d5ddd64",
+        "build\\lean_verification\\query_adapter.cpp": "7c536d43d791d6b65d8ad9ebb5348d75a43cb444c971c5e53583c76d41bce1ba",
+        "build\\global_retro\\global_index.hpp": "b742e5bbb20ed0df50665c0d454d3bf4b7691dabc4d2d0380e7159766f8bf0c8",
+        "mahjong_progress\\solver\\solver.cpp": "1194d941c55b48c4ac686f29518c3fe032723a431125610b2a3509f8db04242f",
+        "runs\\global_retro\\index\\bucket_catalog.json": "18de78e94271d760e58f9ae8f47dd9c5615a3d6dc1cc59a69f24e7524752c551"
+      },
+      "witness_direction": "canonical_child_to_physical_successor_left_to_right",
+      "formal_proof": false
+    },
+    "root": {
+      "schema": "MAHJONG_STRATEGY_WORKER_V1",
+      "kind": "root",
+      "input_state": "0000000020000011110001110300000000",
+      "canonical_state": "0000000020000011110001110300000000",
+      "root_witness": [],
+      "outcome": "P",
+      "n": 12,
+      "h": 0,
+      "rank": 40904247,
+      "edges": [],
+      "physical_safe_moves": 0,
+      "retained_candidates": 0,
+      "requests": 1,
+      "database_lookups": 1,
+      "cache_hits": 0,
+      "verified_payload_bytes": 7952656
+    },
+    "latest_attempt": {
+      "nodes": 2753,
+      "expanded_nodes": 2753,
+      "pending_nodes": 0,
+      "edges": 6756,
+      "layers": [
+        {
+          "n": 12,
+          "nodes": 1,
+          "expanded": 1,
+          "P": 1,
+          "N": 0,
+          "pending": 0
+        },
+        {
+          "n": 13,
+          "nodes": 21,
+          "expanded": 21,
+          "P": 0,
+          "N": 21,
+          "pending": 0
+        },
+        {
+          "n": 14,
+          "nodes": 14,
+          "expanded": 14,
+          "P": 14,
+          "N": 0,
+          "pending": 0
+        },
+        {
+          "n": 15,
+          "nodes": 158,
+          "expanded": 158,
+          "P": 0,
+          "N": 158,
+          "pending": 0
+        },
+        {
+          "n": 16,
+          "nodes": 78,
+          "expanded": 78,
+          "P": 78,
+          "N": 0,
+          "pending": 0
+        },
+        {
+          "n": 17,
+          "nodes": 446,
+          "expanded": 446,
+          "P": 0,
+          "N": 446,
+          "pending": 0
+        },
+        {
+          "n": 18,
+          "nodes": 183,
+          "expanded": 183,
+          "P": 183,
+          "N": 0,
+          "pending": 0
+        },
+        {
+          "n": 19,
+          "nodes": 503,
+          "expanded": 503,
+          "P": 0,
+          "N": 503,
+          "pending": 0
+        },
+        {
+          "n": 20,
+          "nodes": 178,
+          "expanded": 178,
+          "P": 178,
+          "N": 0,
+          "pending": 0
+        },
+        {
+          "n": 21,
+          "nodes": 371,
+          "expanded": 371,
+          "P": 0,
+          "N": 371,
+          "pending": 0
+        },
+        {
+          "n": 22,
+          "nodes": 149,
+          "expanded": 149,
+          "P": 149,
+          "N": 0,
+          "pending": 0
+        },
+        {
+          "n": 23,
+          "nodes": 319,
+          "expanded": 319,
+          "P": 0,
+          "N": 319,
+          "pending": 0
+        },
+        {
+          "n": 24,
+          "nodes": 136,
+          "expanded": 136,
+          "P": 136,
+          "N": 0,
+          "pending": 0
+        },
+        {
+          "n": 25,
+          "nodes": 145,
+          "expanded": 145,
+          "P": 0,
+          "N": 145,
+          "pending": 0
+        },
+        {
+          "n": 26,
+          "nodes": 51,
+          "expanded": 51,
+          "P": 51,
+          "N": 0,
+          "pending": 0
+        }
+      ],
+      "status": "CANDIDATE_CLOSED",
+      "formal_proof": false,
+      "schema": "MAHJONG_STRATEGY_GRAPH_V1",
+      "incremental_counts_match_final_SQL": true,
+      "reason": null,
+      "attempt": "attempt_20260913_064125",
+      "wall_seconds": 19.10899999999674,
+      "peak_process_tree_private_bytes": 2298712064,
+      "peak_process_tree_rss_bytes": 2188611584,
+      "last_resources": {
+        "elapsed_seconds": 18.70400000002701,
+        "private_bytes": 2298712064,
+        "rss_bytes": 2187571200,
+        "cpu_seconds_since_monitor_start": 13.359375,
+        "parent": {
+          "private": 22351872,
+          "rss": 32772096,
+          "cpu_seconds": 0.25
+        },
+        "worker": {
+          "private": 2276360192,
+          "rss": 2154799104,
+          "cpu_seconds": 13.203125
+        }
+      },
+      "index_fingerprint": "5a45ff3ea0fcf356"
+    }
+  },
+  "files_sha256": {
+    "nodes.jsonl": "3506a0d01854bccf110351739a685e330a3b98fc03812466de4f75514dbb9de1",
+    "edges.jsonl": "1ad0db41136f67b32071a12ff5b3f869c7fa941e6ea8199bc2675ced1ce069f8"
+  },
+  "discovery_ids_are_not_Lean_proof_ids": true,
+  "proof_order": "Sort nodes by decreasing n, then state; assign new increasing IDs. All edges increase n by one.",
+  "formal_proof": false
+}

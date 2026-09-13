@@ -1,0 +1,755 @@
+{
+  "schema": "LEAN_ACTUAL_DAG_BATCH_COMPARISON_V1",
+  "created_utc": "2026-09-13T05:55:22.716Z",
+  "original_scope": {
+    "total_P_nodes_including_anchor": 610,
+    "repackagable_non_anchor_P_nodes": 609,
+    "audit_path": "runs/lean_continuation/kernel_v1/result.json",
+    "audit_sha256": "724532e50026bf98a26e98859f0c5d633415b809f560f327b95470456f5dc241",
+    "all_modules": 680,
+    "workers": 4,
+    "total_wall_seconds": 548.516,
+    "ordinary_P_module_count": 609,
+    "sum_ordinary_P_module_wall_seconds": 1894.5699999999983,
+    "median_ordinary_P_module_wall_seconds": 3.109,
+    "note": "Historical per-module wall sums under 4 concurrent workers are not CPU seconds; the 680-module audit includes foundation modules and final audit."
+  },
+  "measurements": [
+    {
+      "name": "singles8",
+      "generation": {
+        "path": "runs/lean_next/batch/singles8/generation.json",
+        "sha256": "c99e4dea16f5761904aec5136b37aa1094854ef3087ccb9e2b29f4551d6bc887"
+      },
+      "result": {
+        "path": "runs/lean_next/batch/singles8/kernel_v1/result.json",
+        "sha256": "5ef18c4b83544a3e79793e3588c2f4a803694c03b4feee2e2d5c4d365798c683"
+      },
+      "status": "KERNEL_AND_AXIOM_AUDIT_PASS",
+      "success": true,
+      "node_count": 8,
+      "branches": 248,
+      "layers": {
+        "32": 8
+      },
+      "batch_sizes": 1,
+      "external_dependency_count": 52,
+      "body_processes": 8,
+      "body_wall_seconds": 25.208155199999997,
+      "body_cpu_seconds": 25.0625,
+      "body_seconds_per_node": 3.1510193999999996,
+      "body_milliseconds_per_legal_branch": 101.64578709677419,
+      "audit_wall_seconds": 3.8065078,
+      "audit_cpu_seconds": 3.734375,
+      "import_control_wall_seconds": 1.400306,
+      "peak_observed_private_bytes": 2268413952,
+      "stop_reasons": [],
+      "public_winner_theorems": [
+        {
+          "id": 120,
+          "digits": "0110440411010110111010110100111111",
+          "n": 32,
+          "theorem": "Mahjong.BatchNext.Singles8.Nodes.N00120.original_second_player_wins"
+        },
+        {
+          "id": 121,
+          "digits": "0110440411010110111010110101011111",
+          "n": 32,
+          "theorem": "Mahjong.BatchNext.Singles8.Nodes.N00121.original_second_player_wins"
+        },
+        {
+          "id": 122,
+          "digits": "0110440411010110111010110101101111",
+          "n": 32,
+          "theorem": "Mahjong.BatchNext.Singles8.Nodes.N00122.original_second_player_wins"
+        },
+        {
+          "id": 123,
+          "digits": "0110440411010110111010110101110111",
+          "n": 32,
+          "theorem": "Mahjong.BatchNext.Singles8.Nodes.N00123.original_second_player_wins"
+        },
+        {
+          "id": 124,
+          "digits": "0110440411010110111010110101111011",
+          "n": 32,
+          "theorem": "Mahjong.BatchNext.Singles8.Nodes.N00124.original_second_player_wins"
+        },
+        {
+          "id": 125,
+          "digits": "0110440411010110111010110101111101",
+          "n": 32,
+          "theorem": "Mahjong.BatchNext.Singles8.Nodes.N00125.original_second_player_wins"
+        },
+        {
+          "id": 126,
+          "digits": "0110440411010110111010110101111110",
+          "n": 32,
+          "theorem": "Mahjong.BatchNext.Singles8.Nodes.N00126.original_second_player_wins"
+        },
+        {
+          "id": 127,
+          "digits": "0110440411010110111010110110011111",
+          "n": 32,
+          "theorem": "Mahjong.BatchNext.Singles8.Nodes.N00127.original_second_player_wins"
+        }
+      ]
+    },
+    {
+      "name": "merged8",
+      "generation": {
+        "path": "runs/lean_next/batch/merged8/generation.json",
+        "sha256": "233d81a924595a09118c4825fe1109653717fc895a2d3da11e79a8624ad0b7f4"
+      },
+      "result": {
+        "path": "runs/lean_next/batch/merged8/kernel_v2/result.json",
+        "sha256": "6376514eb843df6bcadd34a83a17a1892788c0be05eef59e3486041d80ecbb64"
+      },
+      "status": "KERNEL_AND_AXIOM_AUDIT_PASS",
+      "success": true,
+      "node_count": 8,
+      "branches": 248,
+      "layers": {
+        "32": 8
+      },
+      "batch_sizes": 8,
+      "external_dependency_count": 52,
+      "body_processes": 1,
+      "body_wall_seconds": 15.4406101,
+      "body_cpu_seconds": 16.03125,
+      "body_seconds_per_node": 1.9300762625,
+      "body_milliseconds_per_legal_branch": 62.2605245967742,
+      "audit_wall_seconds": 7.0469955,
+      "audit_cpu_seconds": 4.5625,
+      "import_control_wall_seconds": 1.3696265,
+      "peak_observed_private_bytes": 2265141248,
+      "stop_reasons": [],
+      "public_winner_theorems": [
+        {
+          "id": 120,
+          "digits": "0110440411010110111010110100111111",
+          "n": 32,
+          "theorem": "Mahjong.BatchNext.Merged8.Nodes.N00120.original_second_player_wins"
+        },
+        {
+          "id": 121,
+          "digits": "0110440411010110111010110101011111",
+          "n": 32,
+          "theorem": "Mahjong.BatchNext.Merged8.Nodes.N00121.original_second_player_wins"
+        },
+        {
+          "id": 122,
+          "digits": "0110440411010110111010110101101111",
+          "n": 32,
+          "theorem": "Mahjong.BatchNext.Merged8.Nodes.N00122.original_second_player_wins"
+        },
+        {
+          "id": 123,
+          "digits": "0110440411010110111010110101110111",
+          "n": 32,
+          "theorem": "Mahjong.BatchNext.Merged8.Nodes.N00123.original_second_player_wins"
+        },
+        {
+          "id": 124,
+          "digits": "0110440411010110111010110101111011",
+          "n": 32,
+          "theorem": "Mahjong.BatchNext.Merged8.Nodes.N00124.original_second_player_wins"
+        },
+        {
+          "id": 125,
+          "digits": "0110440411010110111010110101111101",
+          "n": 32,
+          "theorem": "Mahjong.BatchNext.Merged8.Nodes.N00125.original_second_player_wins"
+        },
+        {
+          "id": 126,
+          "digits": "0110440411010110111010110101111110",
+          "n": 32,
+          "theorem": "Mahjong.BatchNext.Merged8.Nodes.N00126.original_second_player_wins"
+        },
+        {
+          "id": 127,
+          "digits": "0110440411010110111010110110011111",
+          "n": 32,
+          "theorem": "Mahjong.BatchNext.Merged8.Nodes.N00127.original_second_player_wins"
+        }
+      ]
+    },
+    {
+      "name": "merged32",
+      "generation": {
+        "path": "runs/lean_next/batch/merged32/generation.json",
+        "sha256": "baa916fd63824ab2f727267085ad6800a1b3f553026339fb970a555059a06ca9"
+      },
+      "result": {
+        "path": "runs/lean_next/batch/merged32/kernel_v1/result.json",
+        "sha256": "96e9be9781a1aaca6b4a35e05ebad3cbef07f6ad5bf0d7920c7855cff66e8bb5"
+      },
+      "status": "UNVERIFIED",
+      "success": false,
+      "node_count": 32,
+      "branches": 992,
+      "layers": {
+        "30": 4,
+        "32": 28
+      },
+      "batch_sizes": 32,
+      "external_dependency_count": 52,
+      "body_processes": 1,
+      "body_wall_seconds": 34.4243847,
+      "body_cpu_seconds": 38.546875,
+      "body_seconds_per_node": null,
+      "body_milliseconds_per_legal_branch": null,
+      "audit_wall_seconds": null,
+      "audit_cpu_seconds": null,
+      "import_control_wall_seconds": null,
+      "peak_observed_private_bytes": 3000782848,
+      "stop_reasons": [
+        "process_memory_budget"
+      ],
+      "public_winner_theorems": [
+        {
+          "id": 120,
+          "digits": "0110440411010110111010110100111111",
+          "n": 32,
+          "theorem": "Mahjong.BatchNext.Merged32.Nodes.N00120.original_second_player_wins"
+        },
+        {
+          "id": 121,
+          "digits": "0110440411010110111010110101011111",
+          "n": 32,
+          "theorem": "Mahjong.BatchNext.Merged32.Nodes.N00121.original_second_player_wins"
+        },
+        {
+          "id": 122,
+          "digits": "0110440411010110111010110101101111",
+          "n": 32,
+          "theorem": "Mahjong.BatchNext.Merged32.Nodes.N00122.original_second_player_wins"
+        },
+        {
+          "id": 123,
+          "digits": "0110440411010110111010110101110111",
+          "n": 32,
+          "theorem": "Mahjong.BatchNext.Merged32.Nodes.N00123.original_second_player_wins"
+        },
+        {
+          "id": 124,
+          "digits": "0110440411010110111010110101111011",
+          "n": 32,
+          "theorem": "Mahjong.BatchNext.Merged32.Nodes.N00124.original_second_player_wins"
+        },
+        {
+          "id": 125,
+          "digits": "0110440411010110111010110101111101",
+          "n": 32,
+          "theorem": "Mahjong.BatchNext.Merged32.Nodes.N00125.original_second_player_wins"
+        },
+        {
+          "id": 126,
+          "digits": "0110440411010110111010110101111110",
+          "n": 32,
+          "theorem": "Mahjong.BatchNext.Merged32.Nodes.N00126.original_second_player_wins"
+        },
+        {
+          "id": 127,
+          "digits": "0110440411010110111010110110011111",
+          "n": 32,
+          "theorem": "Mahjong.BatchNext.Merged32.Nodes.N00127.original_second_player_wins"
+        },
+        {
+          "id": 128,
+          "digits": "0110440411010110111010110110101111",
+          "n": 32,
+          "theorem": "Mahjong.BatchNext.Merged32.Nodes.N00128.original_second_player_wins"
+        },
+        {
+          "id": 129,
+          "digits": "0110440411010110111010110110110111",
+          "n": 32,
+          "theorem": "Mahjong.BatchNext.Merged32.Nodes.N00129.original_second_player_wins"
+        },
+        {
+          "id": 130,
+          "digits": "0110440411010110111010110110111011",
+          "n": 32,
+          "theorem": "Mahjong.BatchNext.Merged32.Nodes.N00130.original_second_player_wins"
+        },
+        {
+          "id": 131,
+          "digits": "0110440411010110111010110110111101",
+          "n": 32,
+          "theorem": "Mahjong.BatchNext.Merged32.Nodes.N00131.original_second_player_wins"
+        },
+        {
+          "id": 132,
+          "digits": "0110440411010110111010110110111110",
+          "n": 32,
+          "theorem": "Mahjong.BatchNext.Merged32.Nodes.N00132.original_second_player_wins"
+        },
+        {
+          "id": 133,
+          "digits": "0110440411010110111010110111001111",
+          "n": 32,
+          "theorem": "Mahjong.BatchNext.Merged32.Nodes.N00133.original_second_player_wins"
+        },
+        {
+          "id": 134,
+          "digits": "0110440411010110111010110111010111",
+          "n": 32,
+          "theorem": "Mahjong.BatchNext.Merged32.Nodes.N00134.original_second_player_wins"
+        },
+        {
+          "id": 135,
+          "digits": "0110440411010110111010110111011011",
+          "n": 32,
+          "theorem": "Mahjong.BatchNext.Merged32.Nodes.N00135.original_second_player_wins"
+        },
+        {
+          "id": 136,
+          "digits": "0110440411010110111010110111011101",
+          "n": 32,
+          "theorem": "Mahjong.BatchNext.Merged32.Nodes.N00136.original_second_player_wins"
+        },
+        {
+          "id": 137,
+          "digits": "0110440411010110111010110111011110",
+          "n": 32,
+          "theorem": "Mahjong.BatchNext.Merged32.Nodes.N00137.original_second_player_wins"
+        },
+        {
+          "id": 138,
+          "digits": "0110440411010110111010110111100111",
+          "n": 32,
+          "theorem": "Mahjong.BatchNext.Merged32.Nodes.N00138.original_second_player_wins"
+        },
+        {
+          "id": 139,
+          "digits": "0110440411010110111010110111101011",
+          "n": 32,
+          "theorem": "Mahjong.BatchNext.Merged32.Nodes.N00139.original_second_player_wins"
+        },
+        {
+          "id": 140,
+          "digits": "0110440411010110111010110111101101",
+          "n": 32,
+          "theorem": "Mahjong.BatchNext.Merged32.Nodes.N00140.original_second_player_wins"
+        },
+        {
+          "id": 141,
+          "digits": "0110440411010110111010110111101110",
+          "n": 32,
+          "theorem": "Mahjong.BatchNext.Merged32.Nodes.N00141.original_second_player_wins"
+        },
+        {
+          "id": 142,
+          "digits": "0110440411010110111010110111110011",
+          "n": 32,
+          "theorem": "Mahjong.BatchNext.Merged32.Nodes.N00142.original_second_player_wins"
+        },
+        {
+          "id": 143,
+          "digits": "0110440411010110111010110111110101",
+          "n": 32,
+          "theorem": "Mahjong.BatchNext.Merged32.Nodes.N00143.original_second_player_wins"
+        },
+        {
+          "id": 144,
+          "digits": "0110440411010110111010110111110110",
+          "n": 32,
+          "theorem": "Mahjong.BatchNext.Merged32.Nodes.N00144.original_second_player_wins"
+        },
+        {
+          "id": 145,
+          "digits": "0110440411010110111010110111111001",
+          "n": 32,
+          "theorem": "Mahjong.BatchNext.Merged32.Nodes.N00145.original_second_player_wins"
+        },
+        {
+          "id": 146,
+          "digits": "0110440411010110111010110111111010",
+          "n": 32,
+          "theorem": "Mahjong.BatchNext.Merged32.Nodes.N00146.original_second_player_wins"
+        },
+        {
+          "id": 147,
+          "digits": "0110440411010110111010110111111100",
+          "n": 32,
+          "theorem": "Mahjong.BatchNext.Merged32.Nodes.N00147.original_second_player_wins"
+        },
+        {
+          "id": 2076,
+          "digits": "0110440411010110111010110000011111",
+          "n": 30,
+          "theorem": "Mahjong.BatchNext.Merged32.Nodes.N02076.original_second_player_wins"
+        },
+        {
+          "id": 2077,
+          "digits": "0110440411010110111010110000101111",
+          "n": 30,
+          "theorem": "Mahjong.BatchNext.Merged32.Nodes.N02077.original_second_player_wins"
+        },
+        {
+          "id": 2078,
+          "digits": "0110440411010110111010110000110111",
+          "n": 30,
+          "theorem": "Mahjong.BatchNext.Merged32.Nodes.N02078.original_second_player_wins"
+        },
+        {
+          "id": 2079,
+          "digits": "0110440411010110111010110000111011",
+          "n": 30,
+          "theorem": "Mahjong.BatchNext.Merged32.Nodes.N02079.original_second_player_wins"
+        }
+      ]
+    },
+    {
+      "name": "chunked32x8",
+      "generation": {
+        "path": "runs/lean_next/batch/chunked32x8/generation.json",
+        "sha256": "1d5d7bc6c20b41bc46424f06c5ede949b60533408f85c635fa0665d554126796"
+      },
+      "result": {
+        "path": "runs/lean_next/batch/chunked32x8/kernel_v1/result.json",
+        "sha256": "0fe62ab0bff66a53e3e2ed246a892ee6f9ad4e803c6461261abe0e933cd60239"
+      },
+      "status": "KERNEL_AND_AXIOM_AUDIT_PASS",
+      "success": true,
+      "node_count": 32,
+      "branches": 992,
+      "layers": {
+        "30": 4,
+        "32": 28
+      },
+      "batch_sizes": 8,
+      "external_dependency_count": 52,
+      "body_processes": 4,
+      "body_wall_seconds": 62.2316369,
+      "body_cpu_seconds": 63.3125,
+      "body_seconds_per_node": 1.944738653125,
+      "body_milliseconds_per_legal_branch": 62.73350493951612,
+      "audit_wall_seconds": 7.5317687,
+      "audit_cpu_seconds": 7.515625,
+      "import_control_wall_seconds": null,
+      "peak_observed_private_bytes": 2330767360,
+      "stop_reasons": [],
+      "public_winner_theorems": [
+        {
+          "id": 120,
+          "digits": "0110440411010110111010110100111111",
+          "n": 32,
+          "theorem": "Mahjong.BatchNext.Chunked32x8.Nodes.N00120.original_second_player_wins"
+        },
+        {
+          "id": 121,
+          "digits": "0110440411010110111010110101011111",
+          "n": 32,
+          "theorem": "Mahjong.BatchNext.Chunked32x8.Nodes.N00121.original_second_player_wins"
+        },
+        {
+          "id": 122,
+          "digits": "0110440411010110111010110101101111",
+          "n": 32,
+          "theorem": "Mahjong.BatchNext.Chunked32x8.Nodes.N00122.original_second_player_wins"
+        },
+        {
+          "id": 123,
+          "digits": "0110440411010110111010110101110111",
+          "n": 32,
+          "theorem": "Mahjong.BatchNext.Chunked32x8.Nodes.N00123.original_second_player_wins"
+        },
+        {
+          "id": 124,
+          "digits": "0110440411010110111010110101111011",
+          "n": 32,
+          "theorem": "Mahjong.BatchNext.Chunked32x8.Nodes.N00124.original_second_player_wins"
+        },
+        {
+          "id": 125,
+          "digits": "0110440411010110111010110101111101",
+          "n": 32,
+          "theorem": "Mahjong.BatchNext.Chunked32x8.Nodes.N00125.original_second_player_wins"
+        },
+        {
+          "id": 126,
+          "digits": "0110440411010110111010110101111110",
+          "n": 32,
+          "theorem": "Mahjong.BatchNext.Chunked32x8.Nodes.N00126.original_second_player_wins"
+        },
+        {
+          "id": 127,
+          "digits": "0110440411010110111010110110011111",
+          "n": 32,
+          "theorem": "Mahjong.BatchNext.Chunked32x8.Nodes.N00127.original_second_player_wins"
+        },
+        {
+          "id": 128,
+          "digits": "0110440411010110111010110110101111",
+          "n": 32,
+          "theorem": "Mahjong.BatchNext.Chunked32x8.Nodes.N00128.original_second_player_wins"
+        },
+        {
+          "id": 129,
+          "digits": "0110440411010110111010110110110111",
+          "n": 32,
+          "theorem": "Mahjong.BatchNext.Chunked32x8.Nodes.N00129.original_second_player_wins"
+        },
+        {
+          "id": 130,
+          "digits": "0110440411010110111010110110111011",
+          "n": 32,
+          "theorem": "Mahjong.BatchNext.Chunked32x8.Nodes.N00130.original_second_player_wins"
+        },
+        {
+          "id": 131,
+          "digits": "0110440411010110111010110110111101",
+          "n": 32,
+          "theorem": "Mahjong.BatchNext.Chunked32x8.Nodes.N00131.original_second_player_wins"
+        },
+        {
+          "id": 132,
+          "digits": "0110440411010110111010110110111110",
+          "n": 32,
+          "theorem": "Mahjong.BatchNext.Chunked32x8.Nodes.N00132.original_second_player_wins"
+        },
+        {
+          "id": 133,
+          "digits": "0110440411010110111010110111001111",
+          "n": 32,
+          "theorem": "Mahjong.BatchNext.Chunked32x8.Nodes.N00133.original_second_player_wins"
+        },
+        {
+          "id": 134,
+          "digits": "0110440411010110111010110111010111",
+          "n": 32,
+          "theorem": "Mahjong.BatchNext.Chunked32x8.Nodes.N00134.original_second_player_wins"
+        },
+        {
+          "id": 135,
+          "digits": "0110440411010110111010110111011011",
+          "n": 32,
+          "theorem": "Mahjong.BatchNext.Chunked32x8.Nodes.N00135.original_second_player_wins"
+        },
+        {
+          "id": 136,
+          "digits": "0110440411010110111010110111011101",
+          "n": 32,
+          "theorem": "Mahjong.BatchNext.Chunked32x8.Nodes.N00136.original_second_player_wins"
+        },
+        {
+          "id": 137,
+          "digits": "0110440411010110111010110111011110",
+          "n": 32,
+          "theorem": "Mahjong.BatchNext.Chunked32x8.Nodes.N00137.original_second_player_wins"
+        },
+        {
+          "id": 138,
+          "digits": "0110440411010110111010110111100111",
+          "n": 32,
+          "theorem": "Mahjong.BatchNext.Chunked32x8.Nodes.N00138.original_second_player_wins"
+        },
+        {
+          "id": 139,
+          "digits": "0110440411010110111010110111101011",
+          "n": 32,
+          "theorem": "Mahjong.BatchNext.Chunked32x8.Nodes.N00139.original_second_player_wins"
+        },
+        {
+          "id": 140,
+          "digits": "0110440411010110111010110111101101",
+          "n": 32,
+          "theorem": "Mahjong.BatchNext.Chunked32x8.Nodes.N00140.original_second_player_wins"
+        },
+        {
+          "id": 141,
+          "digits": "0110440411010110111010110111101110",
+          "n": 32,
+          "theorem": "Mahjong.BatchNext.Chunked32x8.Nodes.N00141.original_second_player_wins"
+        },
+        {
+          "id": 142,
+          "digits": "0110440411010110111010110111110011",
+          "n": 32,
+          "theorem": "Mahjong.BatchNext.Chunked32x8.Nodes.N00142.original_second_player_wins"
+        },
+        {
+          "id": 143,
+          "digits": "0110440411010110111010110111110101",
+          "n": 32,
+          "theorem": "Mahjong.BatchNext.Chunked32x8.Nodes.N00143.original_second_player_wins"
+        },
+        {
+          "id": 144,
+          "digits": "0110440411010110111010110111110110",
+          "n": 32,
+          "theorem": "Mahjong.BatchNext.Chunked32x8.Nodes.N00144.original_second_player_wins"
+        },
+        {
+          "id": 145,
+          "digits": "0110440411010110111010110111111001",
+          "n": 32,
+          "theorem": "Mahjong.BatchNext.Chunked32x8.Nodes.N00145.original_second_player_wins"
+        },
+        {
+          "id": 146,
+          "digits": "0110440411010110111010110111111010",
+          "n": 32,
+          "theorem": "Mahjong.BatchNext.Chunked32x8.Nodes.N00146.original_second_player_wins"
+        },
+        {
+          "id": 147,
+          "digits": "0110440411010110111010110111111100",
+          "n": 32,
+          "theorem": "Mahjong.BatchNext.Chunked32x8.Nodes.N00147.original_second_player_wins"
+        },
+        {
+          "id": 2076,
+          "digits": "0110440411010110111010110000011111",
+          "n": 30,
+          "theorem": "Mahjong.BatchNext.Chunked32x8.Nodes.N02076.original_second_player_wins"
+        },
+        {
+          "id": 2077,
+          "digits": "0110440411010110111010110000101111",
+          "n": 30,
+          "theorem": "Mahjong.BatchNext.Chunked32x8.Nodes.N02077.original_second_player_wins"
+        },
+        {
+          "id": 2078,
+          "digits": "0110440411010110111010110000110111",
+          "n": 30,
+          "theorem": "Mahjong.BatchNext.Chunked32x8.Nodes.N02078.original_second_player_wins"
+        },
+        {
+          "id": 2079,
+          "digits": "0110440411010110111010110000111011",
+          "n": 30,
+          "theorem": "Mahjong.BatchNext.Chunked32x8.Nodes.N02079.original_second_player_wins"
+        }
+      ]
+    },
+    {
+      "name": "root_sample8",
+      "generation": {
+        "path": "runs/lean_next/batch/root_sample8/generation.json",
+        "sha256": "4d63f505c6aedafed2d746ce9cfb8eb565180635203429c179f3c1b2b823d244"
+      },
+      "result": {
+        "path": "runs/lean_next/batch/root_sample8/kernel_v1/result.json",
+        "sha256": "5153f01e354e38fe9528bdc15a5abcdcc3e8633a4d20db6217cd9d5656c1d0ab"
+      },
+      "status": "KERNEL_AND_AXIOM_AUDIT_PASS",
+      "success": true,
+      "node_count": 8,
+      "branches": 251,
+      "layers": {
+        "20": 1,
+        "32": 7
+      },
+      "batch_sizes": 8,
+      "external_dependency_count": 660,
+      "body_processes": 1,
+      "body_wall_seconds": 16.903935,
+      "body_cpu_seconds": 17.3125,
+      "body_seconds_per_node": 2.112991875,
+      "body_milliseconds_per_legal_branch": 67.34635458167331,
+      "audit_wall_seconds": 4.2603642,
+      "audit_cpu_seconds": 4.25,
+      "import_control_wall_seconds": 1.9553832,
+      "peak_observed_private_bytes": 2619424768,
+      "stop_reasons": [],
+      "public_winner_theorems": [
+        {
+          "id": 120,
+          "digits": "0110440411010110111010110100111111",
+          "n": 32,
+          "theorem": "Mahjong.BatchNext.RootSample8.Nodes.N00120.original_second_player_wins"
+        },
+        {
+          "id": 121,
+          "digits": "0110440411010110111010110101011111",
+          "n": 32,
+          "theorem": "Mahjong.BatchNext.RootSample8.Nodes.N00121.original_second_player_wins"
+        },
+        {
+          "id": 122,
+          "digits": "0110440411010110111010110101101111",
+          "n": 32,
+          "theorem": "Mahjong.BatchNext.RootSample8.Nodes.N00122.original_second_player_wins"
+        },
+        {
+          "id": 123,
+          "digits": "0110440411010110111010110101110111",
+          "n": 32,
+          "theorem": "Mahjong.BatchNext.RootSample8.Nodes.N00123.original_second_player_wins"
+        },
+        {
+          "id": 124,
+          "digits": "0110440411010110111010110101111011",
+          "n": 32,
+          "theorem": "Mahjong.BatchNext.RootSample8.Nodes.N00124.original_second_player_wins"
+        },
+        {
+          "id": 125,
+          "digits": "0110440411010110111010110101111101",
+          "n": 32,
+          "theorem": "Mahjong.BatchNext.RootSample8.Nodes.N00125.original_second_player_wins"
+        },
+        {
+          "id": 126,
+          "digits": "0110440411010110111010110101111110",
+          "n": 32,
+          "theorem": "Mahjong.BatchNext.RootSample8.Nodes.N00126.original_second_player_wins"
+        },
+        {
+          "id": 24086,
+          "digits": "0110330311010110001010110000000000",
+          "n": 20,
+          "theorem": "Mahjong.BatchNext.RootSample8.Nodes.N24086.original_second_player_wins"
+        }
+      ]
+    }
+  ],
+  "same_8_node_comparison": {
+    "same_ids": true,
+    "same_digits": true,
+    "body_wall_reduction_fraction": 0.38747560154659777,
+    "body_speed_ratio": 1.6325880283707181,
+    "body_cpu_reduction_fraction": 0.3603491271820449,
+    "omitted_seven_import_controls_seconds": 9.5873855,
+    "note": "Same actual proof bodies, with namespace/import repackaging and identical literal-state checks. Final audits are recorded separately."
+  },
+  "accepted_axioms": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ],
+  "new_empty_conclusion": false,
+  "single_module_64": {
+    "status": "GENERATED_NOT_RUN",
+    "reason": "32-node single module reached the 3GB bound; no larger single-module run was attempted."
+  },
+  "limits": {
+    "per_process_wall_seconds": 90,
+    "per_process_private_or_rss_bytes": 3000000000,
+    "max_concurrent_owned_Lean_processes": 2,
+    "concurrent_pair": [
+      "chunked32x8",
+      "root_sample8"
+    ],
+    "current_processes_running": false
+  },
+  "scripts": [
+    {
+      "path": "build/lean_next/batch/generate_batches.cjs",
+      "sha256": "fdada11e1da8679f170d80ae85c2d5c52b6b72f797b08755a3cce4d3e80a24b0"
+    },
+    {
+      "path": "build/lean_next/batch/compile_batches.ps1",
+      "sha256": "884940b6a93f8e6a94def13a89765b1922606e9172febfe450bcaf9802681ed8"
+    },
+    {
+      "path": "build/lean_next/batch/summarize.cjs",
+      "sha256": "cd906da3f75e96c9f8f0726b9266c7e689a05515b7c0dace6f467fa7dcc59519"
+    }
+  ]
+}

@@ -1,0 +1,92 @@
+{
+  "schema": "mahjong_global_feasibility_audit_v1",
+  "utc": "2026-09-12T18:35:25.652335+00:00",
+  "status": "ARITHMETIC_AND_HARDWARE_OBSERVED_ONLY",
+  "script_sha256": "f0c5b22a9e4bf911523e307867beeec5d0252eb40239dad790537895bae8453e",
+  "input_sha256": {
+    "mahjong_feasibility_review/layer_counts.jsonl": "a7271241c0e031417db59d50eedef76875fc1e0c740b9cc0ad4d4d2e1e74b2e8",
+    "mahjong_feasibility_review/count_layers.cpp": "877f0b6b4fab7a422c5f47c3246e19de00272d82de584863f33f6b5b84459f83",
+    "mahjong_progress/solver/solver.cpp": "1194d941c55b48c4ac686f29518c3fe032723a431125610b2a3509f8db04242f",
+    "math_strategy.md": "4061aa164afadf62e7537fbf56a6e3f4c8cd39b41cd141ee50d27b32b7310653",
+    "runs/round9_math/latest5_frontier.json": "4a4c12b2cc717284e9f6bbcc1966e0dd212961f2f61a81d08ba8d117cae390bb",
+    "runs/round9_math/latest5_facts.json": "8ed8e3e93f767bcddee94f807c983575ebf28ded621ea27986ee17e64c16e824",
+    "runs/round9_math/latest5_facts_verified.json": "e3d6865a78f1fffa0b6e6e06789ac8f35eecf3f29e3ec27e20e670e833b08d43",
+    "runs/round9_math/latest5_response_certificate_verified.json": "fba6269b2c1b40b9bccf1e3706472469f72516d5e126b2473d02d52e85c79349"
+  },
+  "hardware": {
+    "platform": "Windows-11-10.0.26200-SP0",
+    "logical_processors": 16,
+    "processor_name": "Intel(R) Core(TM) i7-10700KF CPU @ 3.80GHz",
+    "physical_memory_bytes": 34253983744,
+    "available_physical_bytes_at_observation": 21835415552,
+    "gpu_observation": "NVIDIA GeForce RTX 2070 SUPER, 8192 MiB, 616.64",
+    "gpu_probe_exit_code": 0,
+    "workspace_disk_free_bytes": 579945865216
+  },
+  "safe_orbits": 778532864302,
+  "peak_adjacent_layers": [
+    23,
+    24
+  ],
+  "peak_adjacent_orbits": 192334152680,
+  "peak_adjacent_packed_payload_bytes": 24041769085,
+  "all_layers_logical_bit_payload_bytes": 97316608038,
+  "all_layers_separately_byte_padded_payload_bytes": 97316608053,
+  "frontier_reported_by_existing_artifact": {
+    "fact_artifact_sha256": "8ed8e3e93f767bcddee94f807c983575ebf28ded621ea27986ee17e64c16e824",
+    "M_orbits": 35,
+    "M_P": 16,
+    "M_N": 0,
+    "M_UNKNOWN": 19,
+    "original_S_frontier": 41,
+    "S_N": 5,
+    "S_P": 0,
+    "S_UNKNOWN": 36,
+    "opening": "UNKNOWN"
+  },
+  "conditional_costs_NOT_benchmarks": [
+    {
+      "assumed_complete_state_cpu_microseconds": 1,
+      "single_core_days": 9.010797040532408,
+      "days_at_32_physical_cores_and_50pct_efficiency": 0.5631748150332755
+    },
+    {
+      "assumed_complete_state_cpu_microseconds": 3,
+      "single_core_days": 27.03239112159722,
+      "days_at_32_physical_cores_and_50pct_efficiency": 1.6895244450998264
+    },
+    {
+      "assumed_complete_state_cpu_microseconds": 5,
+      "single_core_days": 45.05398520266204,
+      "days_at_32_physical_cores_and_50pct_efficiency": 2.8158740751663776
+    },
+    {
+      "assumed_complete_state_cpu_microseconds": 10,
+      "single_core_days": 90.10797040532408,
+      "days_at_32_physical_cores_and_50pct_efficiency": 5.631748150332755
+    },
+    {
+      "assumed_complete_state_cpu_microseconds": 20,
+      "single_core_days": 180.21594081064816,
+      "days_at_32_physical_cores_and_50pct_efficiency": 11.26349630066551
+    },
+    {
+      "assumed_complete_state_cpu_microseconds": 100,
+      "single_core_days": 901.0797040532407,
+      "days_at_32_physical_cores_and_50pct_efficiency": 56.31748150332754
+    }
+  ],
+  "required_end_to_end_states_per_second": {
+    "1_days": 9010797.040532408,
+    "3_days": 3003599.0135108023,
+    "7_days": 1287256.7200760583,
+    "30_days": 300359.9013510802
+  },
+  "limitations": [
+    "No global rank/unrank or minimax throughput measured by this script.",
+    "Memory payload excludes indices, work buffers, runtime and restart metadata.",
+    "32 cores means physical cores in this conditional arithmetic, not 32 vCPUs.",
+    "Input hashes identify evidence; they do not independently prove minimax values.",
+    "Historical frontier facts remain conditional on their documented computational premises."
+  ]
+}

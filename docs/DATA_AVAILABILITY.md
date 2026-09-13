@@ -1,5 +1,18 @@
 # Data availability
 
+The [primary English paper](../papers/manuscript.md), its English audit memos,
+and selected later progress receipts are distributed with this checkout.
+The [paper source catalogue](../papers/evidence/README.md) separates public
+copies from retained historical sources and records original/public hashes.
+The Chinese manuscript, original-language historical notes, large SQLite
+candidate checkpoints, compiler objects and toolchains are excluded.
+
+The latest [formal source](../formal/README.md) contains the complete replay
+closure for the new 12-tile and 14-tile roots, the compressed 20-tile proof,
+and the 757-entry proved registry. These additions belong to the current
+publication; the original signed `v0.1.0` tag continues to identify its earlier
+computational snapshot.
+
 ## Included in this repository
 
 - Frozen core rules, compact index, forward generator, reverse verifier,
@@ -10,7 +23,7 @@
 - Per-bucket table SHA-256 values, integrity-audit summary, build provenance,
   and measured generation/replay receipts.
 - Source/artifact checksums and scripts for bounded checks and full reconstruction.
-- Frozen Lean 4.33.1 source for three closed nonempty-position proofs, historical
+- Frozen Lean 4.33.1 source for eight indexed closed nonempty-position roots, historical
   kernel-replay extracts, and a clean source-replay tool. See [formal materials](../formal/README.md).
 
 ## Retained outside Git

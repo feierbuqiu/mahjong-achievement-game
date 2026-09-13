@@ -20,6 +20,11 @@ VERSION = "4.33.1"
 REQUIRED_MARKERS = {
     "ContinuationAudit": ["ACTUAL_20_TILE_CLOSED_THEOREM_PRESENT", "EXTRACTED_32_TILE_CLOSED_THEOREM_PRESENT"],
     "PipelineAudit": ["FRESH_34_TILE_CLOSED_THEOREM_PRESENT", "NO_PREVIOUS_ANCHOR_IMPORTED"],
+    "Actual14Audit": ["ACTUAL_14_TILE_CLOSED_THEOREM_PRESENT", "NO_PREVIOUS_P_CERTIFICATE_IMPORTED"],
+    "Reflected20Audit": ["REFLECTED_20_TILE_CLOSED_THEOREM_PRESENT", "NO_PREVIOUS_20_TILE_ROOT_IMPORTED"],
+    "Scale12Audit": ["ACTUAL_12_TILE_CLOSED_THEOREM_PRESENT"],
+    "ScaleRegistryAudit": ["ACTUAL_12_TILE_CLOSED_THEOREM_PRESENT", "CHECKED_12_TABLE_REGISTRY_PRESENT"],
+    "Grouped20Audit": ["GROUPED_20_TILE_CLOSED_THEOREM_PRESENT"],
 }
 
 
@@ -47,7 +52,14 @@ def dependency_graph(entries):
         visiting.add(name)
         path = SOURCE / (name.replace(".", "/") + ".lean")
         require(path.is_file(), f"Missing Lean source: {name}")
-        imports = re.findall(r"^import\s+(Mahjong(?:\.\w+)*)\s*$", path.read_text(encoding="utf-8-sig"), re.M)
+        imports = []
+        for line in path.read_text(encoding="utf-8-sig").splitlines():
+            if line.startswith("import "):
+                for child in line.split("--", 1)[0].split()[1:]:
+                    if child.split(".")[0] in {"Lean", "Std", "Init"}:
+                        continue
+                    require(re.fullmatch(r"Mahjong\w*(?:\.\w+)*", child), f"Unexpected local import: {child}")
+                    imports.append(child)
         for child in imports:
             visit(child)
         visiting.remove(name)
@@ -77,16 +89,21 @@ def check_snapshot():
         seen.add(relative)
     sources = {p.relative_to(ROOT).as_posix() for p in SOURCE.rglob("*.lean")}
     require(sources == {p for p in seen if p.endswith(".lean")}, "Unmanifested or missing Lean source")
-    require(len(sources) == status["source_modules"] == 686, "Unexpected frozen source count")
+    require(len(sources) == status["source_modules"] == 1008, "Unexpected frozen source count")
+    require(set(provenance["entrypoints"]) == set(REQUIRED_MARKERS), "Audit entrypoints changed")
+    covered_sources = set()
     for entry, expected in provenance["entrypoints"].items():
         graph = dependency_graph([entry])
         require(len(graph) == expected["modules"], f"Import closure changed: {entry}")
         paths = {n.replace(".", "/") + ".lean" for n in graph}
         require(paths == {p.replace("\\", "/") for p in expected["source_files"]}, f"Source closure mismatch: {entry}")
+        covered_sources.update("formal/lean/" + p for p in paths)
+    require(covered_sources == sources, "Published source is outside the requested audit closures")
     require(status["empty_game_lean"] == "NOT_VERIFIED" and
             not status["end_to_end_Lean_theorem_published"], "This frozen snapshot has no closed opening theorem")
     roots = status["closed_nonempty_original_game_proofs"]
-    require([r["tiles"] for r in roots] == [20, 32, 34], "Unexpected audited roots")
+    require([r["tiles"] for r in roots] == [12, 14, 20, 28, 30, 32, 34, 34], "Unexpected audited roots")
+    require(len({r["physical_state"] for r in roots}) == len(roots), "Duplicate physical root")
     for row in roots:
         digits = row["physical_state"]
         require(len(digits) == 34 and all(c in "01234" for c in digits), "Invalid physical root")
@@ -100,7 +117,8 @@ def check_snapshot():
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--check-only", action="store_true", help="Check source provenance and import closure without running Lean")
-    parser.add_argument("--entry", choices=["all", *REQUIRED_MARKERS], default="all")
+    parser.add_argument("--entry", choices=["all", "latest", *REQUIRED_MARKERS], default="all",
+                        help="All published proofs, the latest milestones, or one named audit")
     parser.add_argument("--lean", default=os.environ.get("LEAN", "lean"), help="Lean 4.33.1 executable or elan proxy")
     parser.add_argument("--workers", type=int, choices=range(1, 5), default=2)
     parser.add_argument("--module-timeout", type=int, default=300)
@@ -115,13 +133,15 @@ def main():
     require(args.memory_mb > 0, "Memory ceiling must be positive")
     provenance = check_snapshot()
     if args.check_only:
-        print(json.dumps({"status": "PASS_ARTIFACT_INTEGRITY", "source_modules": 686, "empty_game_lean": "NOT_VERIFIED"}))
+        print(json.dumps({"status": "PASS_ARTIFACT_INTEGRITY", "source_modules": 1008, "empty_game_lean": "NOT_VERIFIED"}))
         return 0
     lean = shutil.which(args.lean)
     require(lean is not None, "Lean not found; install the pinned toolchain or pass --lean")
     version = subprocess.check_output([lean, "--version"], cwd=SOURCE, text=True, timeout=30).strip()
     require(re.search(r"\b4\.33\.1\b", version), f"Expected Lean {VERSION}, got: {version}")
     entries = list(REQUIRED_MARKERS) if args.entry == "all" else [args.entry]
+    if args.entry == "latest":
+        entries = [entry for entry, meta in provenance["entrypoints"].items() if meta.get("generation") == "latest"]
     dependencies = dependency_graph(entries)
     priority = dependency_graph(args.priority_module)
     require(set(priority) <= set(dependencies), "Priority module is outside the requested proof closure")
@@ -214,8 +234,8 @@ def main():
             log = (destination / (entry + ".log")).read_text(encoding="utf-8")
             match = re.search(r"AXIOM_AUDIT_PASS theorem_count=(\d+)", log)
             require(match is not None, f"Axiom audit did not pass: {entry}")
-            require(int(match[1]) == provenance["entrypoints"][entry]["audited_theorems"],
-                    f"Audited declaration count changed: {entry}")
+            expected_count = provenance["entrypoints"][entry]["audited_theorems"]
+            require(int(match[1]) == expected_count, f"Audited declaration count changed: {entry}")
             for marker in REQUIRED_MARKERS[entry] + ["END_TO_END_NOT_VERIFIED"]:
                 require(marker in log, f"Missing audit marker: {marker}")
             report["audits"][entry] = {"audited_theorems": int(match[1]), "status": "PASS"}

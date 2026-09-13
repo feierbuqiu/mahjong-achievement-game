@@ -1,0 +1,138 @@
+{
+  "schema": "MAHJONG_PAPER_ASSEMBLY_AUDIT_V1",
+  "created_utc": "2026-09-13T08:33:33.547284+00:00",
+  "status": "PASS",
+  "word_count_approx_including_tables_references_appendices": 15182,
+  "lines": 1037,
+  "reference_entries": 12,
+  "appendices": 7,
+  "local_source_files": 73,
+  "layer_rows": 35,
+  "layer_totals": [
+    778532864302,
+    203051492021,
+    575481372281,
+    3686
+  ],
+  "certified_root_rows": [
+    {
+      "tiles": 12,
+      "state": "0000000020000011110001110300000000",
+      "pass": true
+    },
+    {
+      "tiles": 14,
+      "state": "0000011110001000020001120300000000",
+      "pass": true
+    },
+    {
+      "tiles": 20,
+      "state": "0110330311010110001010110000000000",
+      "pass": true
+    },
+    {
+      "tiles": 28,
+      "state": "0110440411010110101010110000001111",
+      "pass": true
+    },
+    {
+      "tiles": 30,
+      "state": "0110440411010110111010110000011111",
+      "pass": true
+    },
+    {
+      "tiles": 32,
+      "state": "1010110110000440411010110111111111",
+      "pass": true
+    },
+    {
+      "tiles": 34,
+      "state": "1010440410110110111010110111111111",
+      "pass": true
+    },
+    {
+      "tiles": 34,
+      "state": "0110440411010110111010110111111111",
+      "pass": true
+    }
+  ],
+  "unique_34_digit_states": [
+    "0000000000000000000000102020000023",
+    "0000000000000000000000120020000022",
+    "0000000000000000000010000220000022",
+    "0000000000000000100000220000000022",
+    "0000000020000011110001110300000000",
+    "0000011110001000020001120300000000",
+    "0110330311010110001010110000000000",
+    "0110440411010110101010110000001111",
+    "0110440411010110111010110000011111",
+    "0110440411010110111010110111111111",
+    "1000000000000000000000000000000000",
+    "1010110110000440411010110111111111",
+    "1010440410110110111010110111111111"
+  ],
+  "critical_hashes": [
+    {
+      "path": "runs/global_retro/verification/final_v1/acceptance.json",
+      "expected": "1cc4b9dc7bd287e976d42d6b7fb41eb548651529016e53485008828c97d826a5",
+      "actual": "1cc4b9dc7bd287e976d42d6b7fb41eb548651529016e53485008828c97d826a5",
+      "pass": true
+    },
+    {
+      "path": "runs/global_retro/verification/full_integrity/full_v1/sha256_manifest.jsonl",
+      "expected": "a590af16189fe9acf22fae18d8a95095bcb9f9926db2d6eaa585511eea21e88c",
+      "actual": "a590af16189fe9acf22fae18d8a95095bcb9f9926db2d6eaa585511eea21e88c",
+      "pass": true
+    },
+    {
+      "path": "mahjong_progress/solver/solver.cpp",
+      "expected": "1194d941c55b48c4ac686f29518c3fe032723a431125610b2a3509f8db04242f",
+      "actual": "1194d941c55b48c4ac686f29518c3fe032723a431125610b2a3509f8db04242f",
+      "pass": true
+    },
+    {
+      "path": "build/global_retro/global_index.hpp",
+      "expected": "b742e5bbb20ed0df50665c0d454d3bf4b7691dabc4d2d0380e7159766f8bf0c8",
+      "actual": "b742e5bbb20ed0df50665c0d454d3bf4b7691dabc4d2d0380e7159766f8bf0c8",
+      "pass": true
+    },
+    {
+      "path": "runs/lean_scale/actual12/pruned_v1/responses.json",
+      "expected": "a917aa5649940f01c5ae6cf7ca4f69f5c988bd78fb0fa8d9ba55a4572c81c31b",
+      "actual": "a917aa5649940f01c5ae6cf7ca4f69f5c988bd78fb0fa8d9ba55a4572c81c31b",
+      "pass": true
+    },
+    {
+      "path": "build/lean_scale/proof/MahjongScale/Actual12V2/Root.lean",
+      "expected": "3e4bce43c9466b74a4a14263c73c9751bcef570b889020654c524648c796151e",
+      "actual": "3e4bce43c9466b74a4a14263c73c9751bcef570b889020654c524648c796151e",
+      "pass": true
+    },
+    {
+      "path": "runs/lean_scale/actual12_kernel_v1/result.json",
+      "expected": "528aa59d3590c29ed05a21dbfea088aefdd4de11c76853e2303beceb1f488a6d",
+      "actual": "528aa59d3590c29ed05a21dbfea088aefdd4de11c76853e2303beceb1f488a6d",
+      "pass": true
+    },
+    {
+      "path": "runs/lean_scale/actual12_registry_kernel_v1/result.json",
+      "expected": "9355a8cd9a7d54dd10e51873f47596f18c965df9667c74c800a9ddb7d0b42ff2",
+      "actual": "9355a8cd9a7d54dd10e51873f47596f18c965df9667c74c800a9ddb7d0b42ff2",
+      "pass": true
+    },
+    {
+      "path": "runs/global_feasibility_audit/resources_and_costs.json",
+      "expected": "62d28c91ba8689ec72487418e30a6d66e631dfeb8e198a5fd753d4d7b336ff02",
+      "actual": "62d28c91ba8689ec72487418e30a6d66e631dfeb8e198a5fd753d4d7b336ff02",
+      "pass": true
+    }
+  ],
+  "manuscript_sha256": "f1d521177f2270e4340703faddaa6f9426108e939cd19cfeb71b4f2fc5fbe2e5",
+  "source_ledger_sha256": "6f9db23c8d7ef143e70ad403cbfab40f20554f8013371cc26e291d627d5e2680",
+  "scope_limits": [
+    "No global game recomputation",
+    "No fresh Lean kernel compilation",
+    "No external URL liveness guarantee"
+  ],
+  "errors": []
+}

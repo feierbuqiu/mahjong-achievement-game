@@ -1,0 +1,443 @@
+{
+  "schema": "LEAN_INDEXED_RANGE_REAL757_V1",
+  "status": "KERNEL_PASS",
+  "created_utc": "2026-09-13T07:39:03.758Z",
+  "root_game_status": "No new root result; fixed segments of the already-certified Actual12V2 table only.",
+  "generic_module": {
+    "module": "MahjongScale.IndexedRange",
+    "success": true,
+    "source_sha256": "b2f894a09457ae7cd110ab8b59a7faa4f72720aa81552ca3cba02518b83d022f",
+    "source_snapshot": "<research-root>\\runs\\lean_scale\\performance\\indexed_range\\logic_v1\\MahjongScale.IndexedRange.lean",
+    "command": "<research-root>\\build\\toolchain\\lean-4.33.1-windows\\bin\\lean.exe --trust=0 --profile -M2400 -j1 -o MahjongScale/IndexedRange.olean MahjongScale/IndexedRange.lean",
+    "cwd": "<research-root>\\build\\lean_scale\\performance",
+    "lean_path": "<research-root>\\build\\lean_scale\\performance;<research-root>\\build\\lean_scale\\performance\\library",
+    "exit_code": 0,
+    "terminated": false,
+    "reason": "",
+    "wall_seconds": 1.8451846,
+    "cpu_seconds": 1.765625,
+    "peak_private_bytes": 877170688,
+    "peak_rss_bytes": 455933952,
+    "stdout": "<research-root>\\runs\\lean_scale\\performance\\indexed_range\\logic_v1\\MahjongScale.IndexedRange.stdout.log",
+    "stderr": "<research-root>\\runs\\lean_scale\\performance\\indexed_range\\logic_v1\\MahjongScale.IndexedRange.stderr.log",
+    "olean_sha256": "9ad5c65484f22532998eaf373802f70e31f2dd73158808f50522ab0a7bad4dd7"
+  },
+  "literal_index_module": {
+    "module": "MahjongScale.RangeBench.Index",
+    "success": true,
+    "source_sha256": "fc92176081aac7355bf45c9e29d0c1d043eae23974703953d8f38fa89c50f1ed",
+    "source_snapshot": "<research-root>\\runs\\lean_scale\\performance\\indexed_range\\index_v1\\MahjongScale.RangeBench.Index.lean",
+    "command": "<research-root>\\build\\toolchain\\lean-4.33.1-windows\\bin\\lean.exe --trust=0 --profile -M2400 -j1 -o MahjongScale/RangeBench/Index.olean MahjongScale/RangeBench/Index.lean",
+    "cwd": "<research-root>\\build\\lean_scale\\performance",
+    "lean_path": "<research-root>\\build\\lean_scale\\performance;<research-root>\\build\\lean_scale\\performance\\library",
+    "exit_code": 0,
+    "terminated": false,
+    "reason": "",
+    "wall_seconds": 2.1023051,
+    "cpu_seconds": 2.046875,
+    "peak_private_bytes": 1074278400,
+    "peak_rss_bytes": 511414272,
+    "stdout": "<research-root>\\runs\\lean_scale\\performance\\indexed_range\\index_v1\\MahjongScale.RangeBench.Index.stdout.log",
+    "stderr": "<research-root>\\runs\\lean_scale\\performance\\indexed_range\\index_v1\\MahjongScale.RangeBench.Index.stderr.log",
+    "olean_sha256": "bc08383dd223147a424971dd5425ce871b4a16274452c40c2544125e3d3b838b"
+  },
+  "ranges": [
+    {
+      "start": 0,
+      "count": 8,
+      "first_tile_positions": 272,
+      "legal_first_tiles": 266,
+      "rows": [
+        {
+          "id": 0,
+          "digits": "0100011110401120011001001021111111",
+          "legal_first_tiles": 33,
+          "literal_source": "<research-root>\\build\\lean_scale\\performance\\MahjongScale\\Actual12V2\\Rows000.lean",
+          "source_sha256": "61eea5e2b798f05dcf4cb5189b1b7506b189da83deecfd69a8cdb8894bb98a1c"
+        },
+        {
+          "id": 1,
+          "digits": "0100011110101210401001001021111111",
+          "legal_first_tiles": 33,
+          "literal_source": "<research-root>\\build\\lean_scale\\performance\\MahjongScale\\Actual12V2\\Rows000.lean",
+          "source_sha256": "61eea5e2b798f05dcf4cb5189b1b7506b189da83deecfd69a8cdb8894bb98a1c"
+        },
+        {
+          "id": 2,
+          "digits": "0010011110401210011001001021111111",
+          "legal_first_tiles": 33,
+          "literal_source": "<research-root>\\build\\lean_scale\\performance\\MahjongScale\\Actual12V2\\Rows000.lean",
+          "source_sha256": "61eea5e2b798f05dcf4cb5189b1b7506b189da83deecfd69a8cdb8894bb98a1c"
+        },
+        {
+          "id": 3,
+          "digits": "0010011110101210401001001021111111",
+          "legal_first_tiles": 33,
+          "literal_source": "<research-root>\\build\\lean_scale\\performance\\MahjongScale\\Actual12V2\\Rows000.lean",
+          "source_sha256": "61eea5e2b798f05dcf4cb5189b1b7506b189da83deecfd69a8cdb8894bb98a1c"
+        },
+        {
+          "id": 4,
+          "digits": "0010011110101210311001001021111111",
+          "legal_first_tiles": 34,
+          "literal_source": "<research-root>\\build\\lean_scale\\performance\\MahjongScale\\Actual12V2\\Rows000.lean",
+          "source_sha256": "61eea5e2b798f05dcf4cb5189b1b7506b189da83deecfd69a8cdb8894bb98a1c"
+        },
+        {
+          "id": 5,
+          "digits": "0010011110401120011001001021111111",
+          "legal_first_tiles": 33,
+          "literal_source": "<research-root>\\build\\lean_scale\\performance\\MahjongScale\\Actual12V2\\Rows000.lean",
+          "source_sha256": "61eea5e2b798f05dcf4cb5189b1b7506b189da83deecfd69a8cdb8894bb98a1c"
+        },
+        {
+          "id": 6,
+          "digits": "0101210401000011111001001021111111",
+          "legal_first_tiles": 33,
+          "literal_source": "<research-root>\\build\\lean_scale\\performance\\MahjongScale\\Actual12V2\\Rows000.lean",
+          "source_sha256": "61eea5e2b798f05dcf4cb5189b1b7506b189da83deecfd69a8cdb8894bb98a1c"
+        },
+        {
+          "id": 7,
+          "digits": "0100100120101120311000011111111111",
+          "legal_first_tiles": 34,
+          "literal_source": "<research-root>\\build\\lean_scale\\performance\\MahjongScale\\Actual12V2\\Rows000.lean",
+          "source_sha256": "61eea5e2b798f05dcf4cb5189b1b7506b189da83deecfd69a8cdb8894bb98a1c"
+        }
+      ],
+      "baseline": {
+        "module": "MahjongScale.RangeBench.Baseline0",
+        "success": true,
+        "source_sha256": "e1fa0663190e52a96eac2dda32730b44f9bd6b4e20a43a4eb6cc44fe6cbefb53",
+        "source_snapshot": "<research-root>\\runs\\lean_scale\\performance\\indexed_range\\paired_v1\\MahjongScale.RangeBench.Baseline0.lean",
+        "command": "<research-root>\\build\\toolchain\\lean-4.33.1-windows\\bin\\lean.exe --trust=0 --profile -M2400 -j1 -o MahjongScale/RangeBench/Baseline0.olean MahjongScale/RangeBench/Baseline0.lean",
+        "cwd": "<research-root>\\build\\lean_scale\\performance",
+        "lean_path": "<research-root>\\build\\lean_scale\\performance;<research-root>\\build\\lean_scale\\performance\\library",
+        "exit_code": 0,
+        "terminated": false,
+        "reason": "",
+        "wall_seconds": 2.8691564,
+        "cpu_seconds": 2.796875,
+        "peak_private_bytes": 1225900032,
+        "peak_rss_bytes": 664805376,
+        "stdout": "<research-root>\\runs\\lean_scale\\performance\\indexed_range\\paired_v1\\MahjongScale.RangeBench.Baseline0.stdout.log",
+        "stderr": "<research-root>\\runs\\lean_scale\\performance\\indexed_range\\paired_v1\\MahjongScale.RangeBench.Baseline0.stderr.log",
+        "olean_sha256": "fe109cd828723303ed37474377aab5e63caeb1510c986d9a2f2f6bec5660cd04"
+      },
+      "indexed": {
+        "module": "MahjongScale.RangeBench.Indexed0",
+        "success": true,
+        "source_sha256": "66d11016c669ef11bc2792248ff51069eb28b4b2738e1087cdf149ed659ac04a",
+        "source_snapshot": "<research-root>\\runs\\lean_scale\\performance\\indexed_range\\paired_v1\\MahjongScale.RangeBench.Indexed0.lean",
+        "command": "<research-root>\\build\\toolchain\\lean-4.33.1-windows\\bin\\lean.exe --trust=0 --profile -M2400 -j1 -o MahjongScale/RangeBench/Indexed0.olean MahjongScale/RangeBench/Indexed0.lean",
+        "cwd": "<research-root>\\build\\lean_scale\\performance",
+        "lean_path": "<research-root>\\build\\lean_scale\\performance;<research-root>\\build\\lean_scale\\performance\\library",
+        "exit_code": 0,
+        "terminated": false,
+        "reason": "",
+        "wall_seconds": 2.8034462,
+        "cpu_seconds": 2.78125,
+        "peak_private_bytes": 1229119488,
+        "peak_rss_bytes": 649629696,
+        "stdout": "<research-root>\\runs\\lean_scale\\performance\\indexed_range\\paired_v1\\MahjongScale.RangeBench.Indexed0.stdout.log",
+        "stderr": "<research-root>\\runs\\lean_scale\\performance\\indexed_range\\paired_v1\\MahjongScale.RangeBench.Indexed0.stderr.log",
+        "olean_sha256": "d70aa48d3878d38f79bb50b3ccb3746246817ba0b17e3f24e31c3b014e4c4af7"
+      },
+      "cpu_reduction_fraction": 0.005586592178770999,
+      "baseline_profile": {
+        "import_seconds": 1.22,
+        "kernel_type_checking_seconds": 1.23
+      },
+      "indexed_profile": {
+        "import_seconds": 1.18,
+        "kernel_type_checking_seconds": 1.2
+      }
+    },
+    {
+      "start": 744,
+      "count": 8,
+      "first_tile_positions": 272,
+      "legal_first_tiles": 272,
+      "rows": [
+        {
+          "id": 744,
+          "digits": "0000011110010000020011110300000000",
+          "legal_first_tiles": 34,
+          "literal_source": "<research-root>\\build\\lean_scale\\performance\\MahjongScale\\Actual12V2\\Rows011.lean",
+          "source_sha256": "cbd8b03ea3a3fa8d5726517ee2ac3ed2163b7eacec28291092cf6b1ab997e9b4"
+        },
+        {
+          "id": 745,
+          "digits": "0000011110001000020002110300000000",
+          "legal_first_tiles": 34,
+          "literal_source": "<research-root>\\build\\lean_scale\\performance\\MahjongScale\\Actual12V2\\Rows011.lean",
+          "source_sha256": "cbd8b03ea3a3fa8d5726517ee2ac3ed2163b7eacec28291092cf6b1ab997e9b4"
+        },
+        {
+          "id": 746,
+          "digits": "0000011110000100020001120300000000",
+          "legal_first_tiles": 34,
+          "literal_source": "<research-root>\\build\\lean_scale\\performance\\MahjongScale\\Actual12V2\\Rows011.lean",
+          "source_sha256": "cbd8b03ea3a3fa8d5726517ee2ac3ed2163b7eacec28291092cf6b1ab997e9b4"
+        },
+        {
+          "id": 747,
+          "digits": "0000010020000011110001111300000000",
+          "legal_first_tiles": 34,
+          "literal_source": "<research-root>\\build\\lean_scale\\performance\\MahjongScale\\Actual12V2\\Rows011.lean",
+          "source_sha256": "cbd8b03ea3a3fa8d5726517ee2ac3ed2163b7eacec28291092cf6b1ab997e9b4"
+        },
+        {
+          "id": 748,
+          "digits": "0000000120000011110301110010000000",
+          "legal_first_tiles": 34,
+          "literal_source": "<research-root>\\build\\lean_scale\\performance\\MahjongScale\\Actual12V2\\Rows011.lean",
+          "source_sha256": "cbd8b03ea3a3fa8d5726517ee2ac3ed2163b7eacec28291092cf6b1ab997e9b4"
+        },
+        {
+          "id": 749,
+          "digits": "0000000020001111301000011110000000",
+          "legal_first_tiles": 34,
+          "literal_source": "<research-root>\\build\\lean_scale\\performance\\MahjongScale\\Actual12V2\\Rows011.lean",
+          "source_sha256": "cbd8b03ea3a3fa8d5726517ee2ac3ed2163b7eacec28291092cf6b1ab997e9b4"
+        },
+        {
+          "id": 750,
+          "digits": "0001110300100000020100011110000000",
+          "legal_first_tiles": 34,
+          "literal_source": "<research-root>\\build\\lean_scale\\performance\\MahjongScale\\Actual12V2\\Rows011.lean",
+          "source_sha256": "cbd8b03ea3a3fa8d5726517ee2ac3ed2163b7eacec28291092cf6b1ab997e9b4"
+        },
+        {
+          "id": 751,
+          "digits": "0001110300010011110100000020000000",
+          "legal_first_tiles": 34,
+          "literal_source": "<research-root>\\build\\lean_scale\\performance\\MahjongScale\\Actual12V2\\Rows011.lean",
+          "source_sha256": "cbd8b03ea3a3fa8d5726517ee2ac3ed2163b7eacec28291092cf6b1ab997e9b4"
+        }
+      ],
+      "baseline": {
+        "module": "MahjongScale.RangeBench.Baseline1",
+        "success": true,
+        "source_sha256": "a99bbd096372ccf3315ba5e8b4fdfe28ef3fd975cd4e28a2293bb71ffd5064f2",
+        "source_snapshot": "<research-root>\\runs\\lean_scale\\performance\\indexed_range\\paired_v1\\MahjongScale.RangeBench.Baseline1.lean",
+        "command": "<research-root>\\build\\toolchain\\lean-4.33.1-windows\\bin\\lean.exe --trust=0 --profile -M2400 -j1 -o MahjongScale/RangeBench/Baseline1.olean MahjongScale/RangeBench/Baseline1.lean",
+        "cwd": "<research-root>\\build\\lean_scale\\performance",
+        "lean_path": "<research-root>\\build\\lean_scale\\performance;<research-root>\\build\\lean_scale\\performance\\library",
+        "exit_code": 0,
+        "terminated": false,
+        "reason": "",
+        "wall_seconds": 5.6788856,
+        "cpu_seconds": 5.640625,
+        "peak_private_bytes": 1666154496,
+        "peak_rss_bytes": 1078824960,
+        "stdout": "<research-root>\\runs\\lean_scale\\performance\\indexed_range\\paired_v1\\MahjongScale.RangeBench.Baseline1.stdout.log",
+        "stderr": "<research-root>\\runs\\lean_scale\\performance\\indexed_range\\paired_v1\\MahjongScale.RangeBench.Baseline1.stderr.log",
+        "olean_sha256": "da05b521d0a2ec82649591df0e5ac0331e219e933bc7129b97118ee370a4e568"
+      },
+      "indexed": {
+        "module": "MahjongScale.RangeBench.Indexed1",
+        "success": true,
+        "source_sha256": "a5ec5e7df026fb4c16f42a98059a463650776e0bf2ad474b19a72ee86592fb69",
+        "source_snapshot": "<research-root>\\runs\\lean_scale\\performance\\indexed_range\\paired_v1\\MahjongScale.RangeBench.Indexed1.lean",
+        "command": "<research-root>\\build\\toolchain\\lean-4.33.1-windows\\bin\\lean.exe --trust=0 --profile -M2400 -j1 -o MahjongScale/RangeBench/Indexed1.olean MahjongScale/RangeBench/Indexed1.lean",
+        "cwd": "<research-root>\\build\\lean_scale\\performance",
+        "lean_path": "<research-root>\\build\\lean_scale\\performance;<research-root>\\build\\lean_scale\\performance\\library",
+        "exit_code": 0,
+        "terminated": false,
+        "reason": "",
+        "wall_seconds": 5.3993899,
+        "cpu_seconds": 5.359375,
+        "peak_private_bytes": 1630392320,
+        "peak_rss_bytes": 1036288000,
+        "stdout": "<research-root>\\runs\\lean_scale\\performance\\indexed_range\\paired_v1\\MahjongScale.RangeBench.Indexed1.stdout.log",
+        "stderr": "<research-root>\\runs\\lean_scale\\performance\\indexed_range\\paired_v1\\MahjongScale.RangeBench.Indexed1.stderr.log",
+        "olean_sha256": "b4b9c58d8ba64d0514c2457321976984c7bc774b5ceca577396ee8dfc85a5a28"
+      },
+      "cpu_reduction_fraction": 0.049861495844875314,
+      "baseline_profile": {
+        "import_seconds": 1.18,
+        "kernel_type_checking_seconds": 4.06
+      },
+      "indexed_profile": {
+        "import_seconds": 1.2,
+        "kernel_type_checking_seconds": 3.77
+      }
+    }
+  ],
+  "axioms": [
+    {
+      "theorem": "Mahjong.Scale.IndexedRange.wellSizedB_iff",
+      "axioms": [
+        "propext"
+      ]
+    },
+    {
+      "theorem": "Mahjong.Scale.IndexedRange.size_eq_length",
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "Mahjong.Scale.IndexedRange.rawRead_eq",
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "Mahjong.Scale.IndexedRange.checkRange_eq",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "Mahjong.Scale.IndexedRange.checkExternalRange_eq",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "Mahjong.Scale.RangeBench.sizes_checked",
+      "axioms": [
+        "propext"
+      ]
+    },
+    {
+      "theorem": "Mahjong.Scale.RangeBench.same",
+      "axioms": [
+        "propext"
+      ]
+    },
+    {
+      "theorem": "Mahjong.Scale.RangeBench.every_range",
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "Mahjong.Scale.RangeBench.Baseline0.checked",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "Mahjong.Scale.RangeBench.Baseline0.original_checked",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "Mahjong.Scale.RangeBench.Indexed0.checked",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "Mahjong.Scale.RangeBench.Indexed0.original_checked",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "Mahjong.Scale.RangeBench.Baseline1.checked",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "Mahjong.Scale.RangeBench.Baseline1.original_checked",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "Mahjong.Scale.RangeBench.Indexed1.checked",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "Mahjong.Scale.RangeBench.Indexed1.original_checked",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    }
+  ],
+  "all_range_equivalence": "Proved for every start and count, conditional only on Index.tree=the supplied original tree; Index carries proved recursive cache-size validity.",
+  "malformed_size_rejected": "A one-row branch claiming size 2 was kernel-checked false.",
+  "boundary_id_checks": [
+    [
+      0,
+      8
+    ],
+    [
+      744,
+      8
+    ],
+    [
+      752,
+      8
+    ],
+    [
+      757,
+      8
+    ],
+    [
+      750,
+      0
+    ]
+  ],
+  "first_tile_positions": 544,
+  "legal_first_tile_responses": 538,
+  "generation_expected_actions_note": "generation.json expected_actions=544 counts all Tile positions; six positions are illegal (four copies) and skipped. There are 538 legal first-step responses.",
+  "measurements_scope": "One sequential paired run, two actual eight-row ranges. Same FastExternal row checker, same dependencies and same index import on both sides. No million-row or end-to-end speedup measurement.",
+  "data_construction": "Literal cached sizes; fromTree is not used in this benchmark. Full recursive sizes_checked and exact erasure are checked once in a separate module.",
+  "implementation_scope": "rawRead skips disjoint subtrees from cached root fields. The original tree is still used for reply lookup. Append cost and Lean kernel sharing remain; no formal complexity theorem is claimed.",
+  "concurrency": 1,
+  "wall_seconds_limit_per_module": 90,
+  "private_and_rss_byte_limit": 3000000000,
+  "experiments_running": 0,
+  "evidence": [
+    {
+      "tag": "logic_v1",
+      "file": "<research-root>\\runs\\lean_scale\\performance\\indexed_range\\logic_v1\\result.json",
+      "sha256": "63cf393226b83a30c6bb84ba611bf92803833c668d4530b16efbb3340c11054e"
+    },
+    {
+      "tag": "index_v1",
+      "file": "<research-root>\\runs\\lean_scale\\performance\\indexed_range\\index_v1\\result.json",
+      "sha256": "05446e34f4c3b5df198be50a9e4ca7ec31641ca2d26409639c48367e2687b0f4"
+    },
+    {
+      "tag": "paired_v1",
+      "file": "<research-root>\\runs\\lean_scale\\performance\\indexed_range\\paired_v1\\result.json",
+      "sha256": "f4f5072fb54aee49f73ff382e9b826376b78612350b1ef6510f017cf4d6c0f35"
+    }
+  ],
+  "generation_sha256": "04fec550c98fd9a32e77850d337a214e54fece40a4afb7540e7a5825a14b0145",
+  "summarizer_sha256": "7e68aa33145dfa63f31b33f5022bc58afabc39c6b6a698f6b06e99f9c9594e9e",
+  "preserved": "No changes to frozen parent proof, generator, database, or checkpoint."
+}

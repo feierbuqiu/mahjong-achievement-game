@@ -1,0 +1,43 @@
+from pathlib import Path
+
+root = Path(__file__).resolve().parents[3]
+target = root / 'runs/lean_scale/producer/benchmark_compact.py'
+text = (root / 'runs/lean_next/producer/benchmark_v5.py').read_text(encoding='utf-8')
+text = text.replace('import producer_v5 as v2', 'import producer_compact_v6 as v2')
+text = text.replace('def graph_digest(db):', 'def graph_digest(db, module):')
+old = '''    for query in ("SELECT * FROM nodes ORDER BY id", "SELECT * FROM edges ORDER BY parent,tile",
+                  "SELECT id,n,parent_count,new_nodes,edges FROM batches ORDER BY id"):
+        for row in db.execute(query):
+            digest.update(v1.dumps(tuple(row)).encode())
+            digest.update(b"\\n")
+'''
+new = '''    queries = [db.execute("SELECT * FROM nodes ORDER BY id"),
+               (module.logical_edges(db) if hasattr(module, "logical_edges") else db.execute("SELECT * FROM edges ORDER BY parent,tile")),
+               db.execute("SELECT id,n,parent_count,new_nodes,edges FROM batches ORDER BY id")]
+    for rows in queries:
+        for row in rows:
+            digest.update(v1.dumps(tuple(row.values()) if isinstance(row, dict) else tuple(row)).encode())
+            digest.update(b"\\n")
+'''
+if old not in text:
+    raise RuntimeError('graph digest replacement not found')
+text = text.replace(old, new)
+text = text.replace('default="comparison_v5"', 'default="comparison_compact"')
+text = text.replace('("v5_t1", v2, "strategy_worker_v5.exe", 1),\n                                              ("v5_t4", v2, "strategy_worker_v5.exe", 4),\n                                              ("v5_t8", v2, "strategy_worker_v5.exe", 8)', '("v6_t1", v2, "strategy_worker_v3.exe", 1)')
+text = text.replace('graph_digest(db)', 'graph_digest(db, module)')
+text = text.replace('phase["snapshot"] = module.snapshot(db)', '''phase["snapshot"] = module.snapshot(db)
+                phase["bytes_before_final_checkpoint"] = sum(file.stat().st_size for file in directory.glob(name + ".sqlite*"))
+                db.execute("PRAGMA wal_checkpoint(TRUNCATE)")
+                phase["database_bytes_after_checkpoint"] = (directory / (name + ".sqlite")).stat().st_size''')
+start = text.index('    report = {"status":')
+end = text.index('    v1.atomic_json(output / "result.json", report)', start)
+text = text[:start] + '''    report = {"status": "PASS_COMPLETE_LOGICAL_EDGES_NODES_RESPONSES_MATCH", "formal_proof": False,
+              "runtime_counters_excluded_from_comparison": sorted(VOLATILE), "variants": results,
+              "storage_difference": "v6 stores parent,tile,child,witness; logical raw/canonical states are reconstructed",
+              "source_sha256": {str(path.relative_to(v1.ROOT)): v1.digest(path) for path in
+                                [v1.HERE / "baseline_v4.py", v1.HERE / "producer_compact_v6.py", Path(__file__),
+                                 v1.BUILD / "strategy_worker_v3.cpp", v1.BUILD / "query_adapter_v3.cpp", v1.BUILD / "strategy_worker_v3.exe"]}}
+''' + text[end:]
+text = text.replace('import time\n', 'import time\nfrom pathlib import Path\n')
+target.write_text(text, encoding='utf-8')
+print(target)

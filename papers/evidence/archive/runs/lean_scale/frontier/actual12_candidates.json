@@ -1,0 +1,195 @@
+{
+  "schema": "ACTUAL_EARLIER_FRONTIER_V1",
+  "status": "UNPROVED_CANDIDATE_SELECTION",
+  "checked_14_root": "0000011110001000020001120300000000",
+  "checked_14_node": 7229057,
+  "source": "runs\\lean_next\\producer\\frontier\\actual14_window002\\candidates.json",
+  "source_sha256": "1a9539d4b08405cf51eaae5ec4619138449a9c11b660e4a6db7359e2775a9459",
+  "source_database": "runs\\lean_next\\producer\\opening_control_v4\\graph.sqlite",
+  "canonicalization_scope": "Untrusted selection only; actual witnesses remain checked by the producer and Lean.",
+  "candidates": [
+    {
+      "node": {
+        "id": 652642,
+        "state": "0000011100001000020001020300000000",
+        "n": 12,
+        "outcome": "P",
+        "expanded": 1,
+        "physical_safe_moves": 34,
+        "candidate_count": 34
+      },
+      "two_step_connections": [
+        {
+          "first": {
+            "parent": 652642,
+            "tile": 8,
+            "child": 1384966,
+            "raw_successor": "0000011110001000020001020300000000",
+            "canonical_successor": "0000011110001000020001020300000000",
+            "witness": "[]"
+          },
+          "second": {
+            "parent": {
+              "id": 1384966,
+              "state": "0000011110001000020001020300000000",
+              "n": 13,
+              "outcome": "N"
+            },
+            "tile": 22,
+            "raw_successor": "0000011110001000020001120300000000",
+            "canonical_successor": "0000011110001000020001120300000000",
+            "witness": [],
+            "witness_direction": "canonical_successor to raw_successor, head first"
+          }
+        },
+        {
+          "first": {
+            "parent": 652642,
+            "tile": 22,
+            "child": 1384980,
+            "raw_successor": "0000011100001000020001120300000000",
+            "canonical_successor": "0000011100001000020001120300000000",
+            "witness": "[]"
+          },
+          "second": {
+            "parent": {
+              "id": 1384980,
+              "state": "0000011100001000020001120300000000",
+              "n": 13,
+              "outcome": "N"
+            },
+            "tile": 8,
+            "raw_successor": "0000011110001000020001120300000000",
+            "canonical_successor": "0000011110001000020001120300000000",
+            "witness": [],
+            "witness_direction": "canonical_successor to raw_successor, head first"
+          }
+        }
+      ]
+    },
+    {
+      "node": {
+        "id": 652645,
+        "state": "0000001110001000020001120200000000",
+        "n": 12,
+        "outcome": "P",
+        "expanded": 1,
+        "physical_safe_moves": 34,
+        "candidate_count": 34
+      },
+      "two_step_connections": [
+        {
+          "first": {
+            "parent": 652645,
+            "tile": 5,
+            "child": 1385045,
+            "raw_successor": "0000011110001000020001120200000000",
+            "canonical_successor": "0000011110001000020001120200000000",
+            "witness": "[]"
+          },
+          "second": {
+            "parent": {
+              "id": 1385045,
+              "state": "0000011110001000020001120200000000",
+              "n": 13,
+              "outcome": "N"
+            },
+            "tile": 25,
+            "raw_successor": "0000011110001000020001120300000000",
+            "canonical_successor": "0000011110001000020001120300000000",
+            "witness": [],
+            "witness_direction": "canonical_successor to raw_successor, head first"
+          }
+        },
+        {
+          "first": {
+            "parent": 652645,
+            "tile": 25,
+            "child": 1385065,
+            "raw_successor": "0000001110001000020001120300000000",
+            "canonical_successor": "0000001110001000020001120300000000",
+            "witness": "[]"
+          },
+          "second": {
+            "parent": {
+              "id": 1385065,
+              "state": "0000001110001000020001120300000000",
+              "n": 13,
+              "outcome": "N"
+            },
+            "tile": 5,
+            "raw_successor": "0000011110001000020001120300000000",
+            "canonical_successor": "0000011110001000020001120300000000",
+            "witness": [],
+            "witness_direction": "canonical_successor to raw_successor, head first"
+          }
+        }
+      ]
+    },
+    {
+      "node": {
+        "id": 652738,
+        "state": "0000000020000011110001110300000000",
+        "n": 12,
+        "outcome": "P",
+        "expanded": 1,
+        "physical_safe_moves": 27,
+        "candidate_count": 27
+      },
+      "two_step_connections": [
+        {
+          "first": {
+            "parent": 652738,
+            "tile": 3,
+            "child": 1387520,
+            "raw_successor": "0001000020000011110001110300000000",
+            "canonical_successor": "0000011110001000020001110300000000",
+            "witness": "[{\"op\":\"swapSuits\",\"a\":0,\"b\":1}]"
+          },
+          "second": {
+            "parent": {
+              "id": 1387520,
+              "state": "0000011110001000020001110300000000",
+              "n": 13,
+              "outcome": "N"
+            },
+            "tile": 23,
+            "raw_successor": "0000011110001000020001120300000000",
+            "canonical_successor": "0000011110001000020001120300000000",
+            "witness": [],
+            "witness_direction": "canonical_successor to raw_successor, head first"
+          }
+        },
+        {
+          "first": {
+            "parent": 652738,
+            "tile": 23,
+            "child": 1387533,
+            "raw_successor": "0000000020000011110001120300000000",
+            "canonical_successor": "0000000020000011110001120300000000",
+            "witness": "[]"
+          },
+          "second": {
+            "parent": {
+              "id": 1387533,
+              "state": "0000000020000011110001120300000000",
+              "n": 13,
+              "outcome": "N"
+            },
+            "tile": 3,
+            "raw_successor": "0001000020000011110001120300000000",
+            "canonical_successor": "0000011110001000020001120300000000",
+            "witness": [
+              {
+                "op": "swapSuits",
+                "a": 0,
+                "b": 1
+              }
+            ],
+            "witness_direction": "canonical_successor to raw_successor, head first"
+          }
+        }
+      ]
+    }
+  ]
+}

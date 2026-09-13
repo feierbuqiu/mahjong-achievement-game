@@ -1,0 +1,47 @@
+{
+  "schema": "MAHJONG_CHECKED_PHYSICAL_ROOT_REGISTRY_V1",
+  "status": "KERNEL_PASS_FOR_LISTED_ROOTS_ONLY",
+  "empty_game": "NOT_VERIFIED",
+  "native_checkpoint_modified_by_registration": false,
+  "usage": "Import the named checked module and actual ProvedP theorem; an external JSON record is never a Lean premise.",
+  "roots": [
+    {
+      "digits": "0000011110001000020001120300000000",
+      "tiles": 14,
+      "module": "MahjongNext.Actual14.Root",
+      "original_fact": "Mahjong.Actual14.original_proved",
+      "canonical_fact": "Mahjong.Actual14.root_proved",
+      "canonical_state": "Mahjong.Actual14.state49",
+      "winner_theorem": "Mahjong.Actual14.original_second_player_wins",
+      "opening_candidate_node_id": 7229057,
+      "receipt": {
+        "path": "runs/lean_next/actual14_kernel_v2/result.json",
+        "bytes": 66702,
+        "sha256": "15e94b816a87c23f0315f3ed96a709e7e04a1842b55187350114894623148b9b"
+      },
+      "object": {
+        "path": "runs/lean_next/actual14_kernel_v2/modules/MahjongNext/Actual14/Root.olean",
+        "bytes": 118176,
+        "sha256": "7d3dcaeba5eefb658624e48a58ad7a3ceb06deb153c81d837af2332007c8e4c5"
+      }
+    },
+    {
+      "digits": "0110330311010110001010110000000000",
+      "tiles": 20,
+      "module": "MahjongNext.ResponseTableFull20",
+      "original_fact": "Mahjong.ResponseTableFull20.original_proved",
+      "canonical_fact": "Mahjong.ResponseTableFull20.root_proved",
+      "winner_theorem": "Mahjong.ResponseTableFull20.original_second_player_wins",
+      "receipt": {
+        "path": "runs/lean_next/reflected20_kernel_v1/result.json",
+        "bytes": 94901,
+        "sha256": "ab984f5f72118e2a66c1c2c6e79c519ac0345f07ca897433ea75b205bf20bb0a"
+      },
+      "object": {
+        "path": "runs/lean_next/reflected20_kernel_v1/modules/MahjongNext/ResponseTableFull20.olean",
+        "bytes": 4322008,
+        "sha256": "50ce0ca821a3c12eb6c04012a8cbb6a375f2b762b39f6c51df29bfbbccc89682"
+      }
+    }
+  ]
+}

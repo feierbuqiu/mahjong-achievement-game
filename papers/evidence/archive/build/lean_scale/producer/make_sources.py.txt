@@ -1,0 +1,41 @@
+from pathlib import Path
+
+root = Path(__file__).resolve().parents[3]
+target = root / 'runs/lean_scale/producer'
+target.mkdir(parents=True, exist_ok=True)
+original = (root / 'runs/lean_next/producer/baseline_v4.py').read_bytes()
+baseline = target / 'baseline_v4.py'
+baseline.write_bytes(original)
+text = original.decode('utf-8')
+text = text.replace('SCHEMA = "MAHJONG_STRATEGY_GRAPH_V1"', 'SCHEMA = "MAHJONG_STRATEGY_GRAPH_V2_COMPACT_EDGES"\nLOGICAL_EXPORT_SCHEMA = "MAHJONG_STRATEGY_GRAPH_V1"')
+text = text.replace('child INTEGER NOT NULL REFERENCES nodes(id), raw_successor TEXT NOT NULL,\n          canonical_successor TEXT NOT NULL,witness TEXT NOT NULL,', 'child INTEGER NOT NULL REFERENCES nodes(id), witness TEXT NOT NULL,')
+text = text.replace('db.executemany("INSERT INTO edges VALUES(?,?,?,?,?,?)",\n                       ((row["id"], edge["tile"], found[edge["canonical_successor"]]["id"], edge["raw_successor"],\n                         edge["canonical_successor"], edge["witness"])', 'db.executemany("INSERT INTO edges VALUES(?,?,?,?)",\n                       ((row["id"], edge["tile"], found[edge["canonical_successor"]]["id"], edge["witness"])')
+helper = '''def logical_edges(db, minimum_parent=None):
+    """Recover the complete V1 logical edge from IDs and the physical addition."""
+    query = ("SELECT e.parent,e.tile,e.child,p.state AS parent_state,"
+             "c.state AS canonical_successor,e.witness FROM edges e "
+             "JOIN nodes p ON p.id=e.parent JOIN nodes c ON c.id=e.child ")
+    parameters = ()
+    if minimum_parent is not None:
+        query += "WHERE e.parent>? "
+        parameters = (minimum_parent,)
+    query += "ORDER BY e.parent,e.tile"
+    for row in db.execute(query, parameters):
+        parent, tile = row["parent_state"], row["tile"]
+        if not 0 <= tile < 34 or len(parent) != 34 or parent[tile] >= "4":
+            raise ValueError("compact edge is not a legal physical addition")
+        raw = parent[:tile] + str(int(parent[tile]) + 1) + parent[tile+1:]
+        yield {"parent": row["parent"], "tile": tile, "child": row["child"],
+               "raw_successor": raw, "canonical_successor": row["canonical_successor"],
+               "witness": row["witness"]}
+
+
+'''
+text = text.replace('def export(args):\n', helper + 'def export(args):\n')
+text = text.replace('for row in db.execute("SELECT * FROM edges ORDER BY parent,tile"):\n                edge = dict(row)', 'for edge in logical_edges(db):')
+text = text.replace('atomic_json(output / "manifest.json", {"schema": SCHEMA, "summary": summary, "metadata": metadata,', 'atomic_json(output / "manifest.json", {"schema": LOGICAL_EXPORT_SCHEMA, "storage_schema": SCHEMA, "summary": summary, "metadata": metadata,')
+text = text.replace('p.add_argument("--threads", type=int, default=4)', 'p.add_argument("--threads", type=int, default=1)')
+if 'raw_successor TEXT NOT NULL' in text or 'INSERT INTO edges VALUES(?,?,?,?,?,?)' in text:
+    raise RuntimeError('compact schema substitutions did not apply')
+(target / 'producer_compact_v6.py').write_text(text, encoding='utf-8', newline='\n')
+print(target)

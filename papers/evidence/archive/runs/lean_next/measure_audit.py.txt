@@ -1,0 +1,107 @@
+"""Bounded aggregate resource observation for this task's own audit process tree."""
+import argparse
+import datetime
+import hashlib
+import json
+import os
+from pathlib import Path
+import subprocess
+import time
+
+import psutil
+
+HERE = Path(__file__).resolve().parent
+ROOT = HERE.parents[1]
+
+
+def digest(path):
+    with Path(path).open("rb") as source:
+        return hashlib.file_digest(source, "sha256").hexdigest()
+
+
+def main():
+    parser = argparse.ArgumentParser()
+    parser.add_argument("--output", required=True)
+    parser.add_argument("--entry", required=True)
+    parser.add_argument("--workers", type=int, required=True)
+    parser.add_argument("--reuse-checked", required=True)
+    args = parser.parse_args()
+    folder = (HERE / (args.output + "_metrics")).resolve()
+    if not folder.is_relative_to(HERE):
+        raise ValueError("outside task outputs")
+    folder.mkdir(exist_ok=False)
+    command = [os.sys.executable, str(HERE / "clean_audit.py"), "--output", args.output,
+        "--entry", args.entry, "--workers", str(args.workers), "--reuse-checked", args.reuse_checked]
+    began = time.monotonic()
+    peak_private = peak_rss = peak_concurrent = 0
+    last_cpu, observed, samples = {}, {}, 0
+    reason = None
+    with (folder / "driver.log").open("wb") as log:
+        process = subprocess.Popen(command, cwd=ROOT, stdout=log, stderr=subprocess.STDOUT,
+            creationflags=subprocess.CREATE_NO_WINDOW)
+        parent = psutil.Process(process.pid)
+        tracked = {process.pid: parent}
+        while process.poll() is None:
+            try:
+                for child in parent.children(recursive=True):
+                    tracked[child.pid] = child
+            except psutil.Error:
+                pass
+            private = rss = concurrent = 0
+            for pid, child in list(tracked.items()):
+                try:
+                    mem = child.memory_info()
+                    cpu = child.cpu_times()
+                    last_cpu[pid] = cpu.user + cpu.system
+                    observed.setdefault(str(pid), {"name": child.name(), "created": child.create_time()})
+                    private += mem.private
+                    rss += mem.rss
+                    if child.name().lower() == "lean.exe":
+                        concurrent += 1
+                except psutil.Error:
+                    continue
+            peak_private, peak_rss = max(peak_private, private), max(peak_rss, rss)
+            peak_concurrent = max(peak_concurrent, concurrent)
+            samples += 1
+            if private > 15_000_000_000:
+                reason = "aggregate_private_memory_limit"
+            if time.monotonic() - began > 300:
+                reason = "aggregate_wall_limit"
+            if reason:
+                # Only processes reached from this freshly launched audit parent.
+                for pid, child in tracked.items():
+                    try:
+                        child.kill()
+                    except psutil.Error:
+                        pass
+                process.wait(timeout=20)
+                break
+            time.sleep(0.05)
+        process.wait(timeout=20)
+    elapsed = time.monotonic() - began
+    result_path = HERE / args.output / "result.json"
+    result = {"schema": "MAHJONG_AGGREGATE_KERNEL_MEASUREMENT_V1",
+        "created_utc": datetime.datetime.now(datetime.timezone.utc).isoformat(),
+        "command": command, "return_code": process.returncode, "stop_reason": reason,
+        "wall_seconds": elapsed, "sampling_seconds": 0.05, "samples": samples,
+        "peak_sampled_process_tree_private_bytes": peak_private,
+        "peak_sampled_process_tree_rss_bytes": peak_rss,
+        "peak_concurrent_lean_processes": peak_concurrent,
+        "sampled_CPU_seconds": sum(last_cpu.values()),
+        "sampled_average_core_equivalents": sum(last_cpu.values()) / elapsed,
+        "sampled_16_logical_thread_capacity_percent": sum(last_cpu.values()) / elapsed / 16 * 100,
+        "CPU_sampling_note": "Last 50 ms sample per process; short final intervals can be omitted. This is approximate monitored CPU, not exact accounting.",
+        "aggregate_private_limit_bytes": 15_000_000_000,
+        "per_lean_private_watchdog_bytes": 3_000_000_000,
+        "observed_processes": observed, "source_sha256": digest(__file__),
+        "audit_runner_sha256": digest(HERE / "clean_audit.py"),
+        "driver_log_sha256": digest(folder / "driver.log"),
+        "audit_result_sha256": digest(result_path) if result_path.exists() else None}
+    (folder / "result.json").write_text(json.dumps(result, indent=2) + "\n")
+    print(json.dumps({k: result[k] for k in ["return_code", "stop_reason", "wall_seconds",
+        "peak_sampled_process_tree_private_bytes", "peak_concurrent_lean_processes", "sampled_average_core_equivalents"]}), flush=True)
+    return process.returncode
+
+
+if __name__ == "__main__":
+    raise SystemExit(main())

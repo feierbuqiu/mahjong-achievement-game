@@ -8,6 +8,7 @@ import subprocess
 import sys
 from urllib.parse import unquote
 from verify_lean import check_snapshot
+from verify_paper import verify as verify_paper
 
 ROOT = Path(__file__).resolve().parents[1]
 
@@ -54,9 +55,10 @@ def main():
     require(status["P_orbits"] + status["N_orbits"] == expected, "P/N total mismatch")
     require(not status["formal_verification"]["end_to_end_Lean_theorem_published"], "This snapshot has no published end-to-end Lean theorem")
     check_snapshot()
+    verify_paper()
     formal = read_json("formal/STATUS.json")
     require(status["formal_verification"]["closed_nonempty_original_game_roots_published"] ==
-            len(formal["closed_nonempty_original_game_proofs"]) == 3, "Formal root count mismatch")
+            len(formal["closed_nonempty_original_game_proofs"]) == 8, "Formal root count mismatch")
     coverage = read_json("results/replay-coverage.json")
     rows = coverage["coverage"]["records"]
     require(coverage["full_run"]["full_run_pass"] and coverage["coverage"]["full_record_coverage"], "Replay incomplete")
@@ -92,7 +94,12 @@ def main():
             continue
         require(path.stat().st_size < 50_000_000, f"Unexpected large artifact: {rel}")
         data = path.read_text(encoding="utf-8-sig")
-        require(not re.search(r"[\u3400-\u4dbf\u4e00-\u9fff]", data), f"Non-English CJK content: {rel}")
+        language_text = data
+        if rel in {"papers/manuscript.md", "papers/evidence/reference_verification.md"}:
+            # Preserve the author's original source credit and bibliographic title.
+            for proper_name in ["\u96f6\u4e4b\u5ba1\u5224\u8005", "\u5446\u997c\u95ee\u9898"]:
+                language_text = language_text.replace(proper_name, "")
+        require(not re.search(r"[\u3400-\u4dbf\u4e00-\u9fff]", language_text), f"Non-English CJK content: {rel}")
         require(not re.search(r"[A-Za-z]:[\\/](?:Users|home)[\\/]", data), f"Private workstation path: {rel}")
         require(not re.search(r"-----BEGIN (?:OPENSSH |RSA |EC )?PRIVATE KEY-----|gh[pousr]_[A-Za-z0-9]{30,}", data), f"Potential secret: {rel}")
         if path.suffix == ".md":

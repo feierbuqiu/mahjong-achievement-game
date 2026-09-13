@@ -1,0 +1,23 @@
+"""Exercise both actual export commands on equal real N13/P14 fixture graphs."""
+import json
+import sqlite3
+from types import SimpleNamespace
+import baseline_v4 as old
+import producer_compact_v6 as compact
+
+records=[]
+for module,variant,name in ((old,'v4_t1','export_smoke_v4'),(compact,'v6_t1','export_smoke_v6')):
+    directory=old.HERE/name;directory.mkdir(exist_ok=False)
+    source=old.HERE/'benchmarks/comparison_compact'/variant/'N13.sqlite'
+    with sqlite3.connect(source.as_uri()+'?mode=ro',uri=True) as src, sqlite3.connect(directory/'graph.sqlite') as dst:
+        src.backup(dst)
+    module.export(SimpleNamespace(run=name,output=name+'/export',require_closed=False))
+    manifest=json.loads((directory/'export/manifest.json').read_text())
+    records.append({'variant':variant,'manifest':manifest})
+if records[0]['manifest']['files_sha256']!=records[1]['manifest']['files_sha256']:
+    raise ValueError('actual logical exported files differ')
+if any(record['manifest']['schema']!='MAHJONG_STRATEGY_GRAPH_V1' for record in records):
+    raise ValueError('export logical schema changed')
+old.atomic_json(old.HERE/'export_roundtrip.result.json',{'status':'PASS_EXACT_LOGICAL_EXPORT_FILES_MATCH',
+                 'formal_proof':False,'records':records})
+print('PASS_EXACT_LOGICAL_EXPORT_FILES_MATCH')

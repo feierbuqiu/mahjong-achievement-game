@@ -1,0 +1,200 @@
+"""Turn a CLOSED untrusted P/N graph into kernel-checkable two-step P modules.
+
+Leaves use independently generated SAFE proofs; every legal opponent first move
+gets an explicit response. Table labels, hashes and graph closure are NOT axioms.
+"""
+from pathlib import Path
+from collections import defaultdict
+import argparse, hashlib, importlib.util, json
+
+ROOT=Path(__file__).resolve().parents[2]
+PROJECT=ROOT/'build/lean_next/proof'
+ANCHOR='0110440411010110111010110111111111'
+spec=importlib.util.spec_from_file_location('positive_producer',ROOT/'runs/lean_verification/certificate/terminal_replies/generate.py')
+wins=importlib.util.module_from_spec(spec);spec.loader.exec_module(wins)
+
+def sha(p):return hashlib.sha256(p.read_bytes()).hexdigest()
+def added(s,t):
+    if not 0<=t<34 or s[t]=='4':raise ValueError('illegal addition')
+    return s[:t]+str(int(s[t])+1)+s[t+1:]
+def tile_action(t,g):
+    if g['op']=='reverseSuit':
+        b=g['suit'];assert 0<=b<3
+        return 9*b+8-t%9 if t<27 and t//9==b else t
+    if g['op']=='swapSuits':
+        a,b=g['a'],g['b'];assert 0<=a<3 and 0<=b<3
+        return (9*b+t%9 if t//9==a else 9*a+t%9 if t//9==b else t) if t<27 else t
+    if g['op']=='swapHonors':
+        a,b=g['a'],g['b'];assert 0<=a<7 and 0<=b<7
+        return 27+b if t==27+a else 27+a if t==27+b else t
+    raise ValueError('bad generator')
+def tile_path(t,path):
+    for g in path:t=tile_action(t,g)
+    return t
+def transformed(s,path):
+    for g in path:
+        out=['0']*34
+        for t in range(34):out[tile_action(t,g)]=s[t]
+        s=''.join(out)
+    return s
+def lean_path(path):
+    def one(g):
+        if g['op']=='reverseSuit':return '.reverseSuit '+str(g['suit'])
+        return '.'+g['op']+' '+str(g['a'])+' '+str(g['b'])
+    return '['+', '.join(one(g) for g in path)+']'
+def matched(name,typ,values,default):
+    lines=[f'def {name} (t : Tile) : {typ} :=','  match t.val with']
+    for value in dict.fromkeys(values.values()):
+        lines.append('  | '+' | '.join(str(t) for t,v in values.items() if v==value)+' => '+value)
+    return '\n'.join(lines+['  | _ => '+default,''])
+def witness_term(w):
+    if w['kind']=='seven':return 'FullWinWitness.seven '+' '.join(map(str,w['pairs']))
+    if w['kind']=='orphans':return 'FullWinWitness.orphans '+str(w['pair'])
+    return 'FullWinWitness.standard '+' '.join('('+wins.MELDS[m][0]+')' for m in w['melds'])+' '+str(w['pair'])
+def find_win(counts):
+    pairs=[t for t,c in enumerate(counts) if c>=2]
+    if len(pairs)>=7:return {'kind':'seven','pairs':pairs[:7],'tiles':sum(([t,t] for t in pairs[:7]),[])}
+    return wins.witness(counts)
+
+def main():
+    parser=argparse.ArgumentParser();parser.add_argument('--export',required=True)
+    parser.add_argument('--name',required=True)
+    parser.add_argument('--leaf-manifest')
+    args=parser.parse_args()
+    if not args.name.isidentifier():raise ValueError('bad Lean namespace')
+    export=(ROOT/args.export).resolve();manifest=json.loads((export/'manifest.json').read_text(encoding='utf-8'))
+    if manifest['summary']['status']!='CANDIDATE_CLOSED':raise ValueError('PARTIAL is not a complete certificate')
+    for file,digest in manifest['files_sha256'].items():
+        if sha(export/file)!=digest:raise ValueError('export hash mismatch')
+    nodes={n['id']:n for n in map(json.loads,(export/'nodes.jsonl').read_text().splitlines())}
+    edges=defaultdict(dict)
+    for e in map(json.loads,(export/'edges.jsonl').read_text().splitlines()):
+        p,c=nodes[e['parent']],nodes[e['child']];t=e['tile']
+        if t in edges[p['id']]:raise ValueError('duplicate first tile')
+        if c['state']!=e['canonical_successor'] or p['n']+1!=c['n']:raise ValueError('wrong reference')
+        if p['outcome']==c['outcome']:raise ValueError('not alternating P/N')
+        if added(p['state'],t)!=e['raw_successor'] or transformed(c['state'],e['witness'])!=e['raw_successor']:
+            raise ValueError('bad physical edge')
+        edges[p['id']][t]=e
+    for n in nodes.values():
+        if n['expanded']!=1 or len(n['state'])!=34 or any(c not in '01234' for c in n['state']):raise ValueError('incomplete/invalid node')
+        if sum(map(int,n['state']))!=n['n']:raise ValueError('wrong tile total')
+        if n['outcome']=='N' and len(edges[n['id']])!=1:raise ValueError('N must have one reply')
+    out=ROOT/'runs/lean_next'/args.name
+    if out.exists():raise ValueError('refusing overwrite')
+    out.mkdir();srcdir=PROJECT/'Mahjong'/args.name;srcdir.mkdir(parents=True,exist_ok=True)
+    proven={};proof_modules=[];data_nodes=[]
+    leaf_registry={}
+    if args.leaf_manifest:
+        leaf_json=json.loads((ROOT/args.leaf_manifest).read_text(encoding='utf-8'))
+        leaf_registry={r['digits']:r for r in leaf_json['leaves']}
+    def nm(id):return args.name+f'.P{id:06d}'
+    for n in sorted((n for n in nodes.values() if n['outcome']=='P'),key=lambda n:(-n['n'],n['state'])):
+        id=n['id'];state=n['state']
+        if state==ANCHOR:
+            proven[id]=('AnchorDAG.N00000.state','AnchorDAG.N00000.proved','Mahjong.AnchorDAG.N00000');continue
+        back={};reply={};witnesses={}
+        for t in range(34):
+            if state[t]=='4':continue
+            if t in edges[id]:
+                e=edges[id][t];ne=next(iter(edges[e['child']].values()))
+                target=ne['child'];r=tile_path(ne['tile'],e['witness']);path=ne['witness']+e['witness']
+                if target not in proven:raise ValueError('unproved continuation')
+                if transformed(nodes[target]['state'],path)!=added(added(state,t),r):raise ValueError('bad composed symmetry')
+                back[t]=(target,path);reply[t]=r
+            else:
+                one=added(state,t)
+                for r in range(34):
+                    if one[r]=='4':continue
+                    try:w=find_win(tuple(map(int,added(one,r))))
+                    except RuntimeError:continue
+                    reply[t]=r;witnesses[t]=w;break
+                else:raise ValueError('missing a verified response candidate')
+        if not back:
+            leaf=leaf_registry.get(state)
+            if not leaf:raise ValueError('independent terminal SAFE proof required: '+state)
+            module='Mahjong.'+nm(id)
+            lines=['import Mahjong.FullWinWitness','import Mahjong.ResponseCertificate','import '+leaf['module'],
+                '', 'set_option maxRecDepth 8192','set_option maxHeartbeats 10000000',
+                'namespace Mahjong.'+nm(id),'open ResponseCertificate',
+                matched('state','Nat',dict(enumerate(state)),'0'),
+                matched('reply','Tile',{t:str(r) for t,r in reply.items()},'0'),
+                matched('witness','FullWinWitness.Witness',{t:witness_term(w) for t,w in witnesses.items()},'FullWinWitness.orphans 0'),
+                f'theorem actual_state : state = {leaf["state"]} :=',
+                '  (MoveEnumeration.stateEqB_iff _ _).1 (by decide +kernel)',
+                f'theorem valid : Valid state := by rw [actual_state]; exact {leaf["valid"]}',
+                f'theorem safe : IsSafe state := by rw [actual_state]; exact {leaf["safe"]}',
+                'def afterReply (t : Tile) : State := addTile (addTile state t) (reply t)',
+                'theorem reply_bound : ∀ t : Tile, state t < 4 → (addTile state t) (reply t) < 4 := by decide +kernel',
+                'theorem win_checked : ∀ t : Tile, state t < 4 → FullWinWitness.check (afterReply t) (witness t) = true := by decide +kernel',
+                'theorem responses : Responses state := by','  intro t hl',
+                '  have legal : LegalAdd (addTile state t) (reply t) := ⟨valid_add hl.1 hl.2, reply_bound t hl.2⟩',
+                '  exact Reply.win (reply t) legal (FullWinWitness.sound _ _ (valid_add legal.1 legal.2) (win_checked t hl.2))',
+                'theorem proved : ProvedP state := node valid safe responses',
+                'end Mahjong.'+nm(id),'','#print axioms Mahjong.'+nm(id)+'.proved','']
+            src=PROJECT/(module.replace('.','/')+'.lean');src.write_text('\n'.join(lines),encoding='utf-8')
+            proven[id]=(nm(id)+'.state',nm(id)+'.proved',module);proof_modules.append(module)
+            data_nodes.append({'id':id,'state':state,'responses':reply,'back':back,'positive_witnesses':witnesses})
+            wins.find_melds.cache_clear();continue
+        first=next(iter(back));target,path=back[first]
+        anchor_state=f'(Generators.applyPath {lean_path(path)} {proven[target][0]})'
+        anchor_proof=f'({proven[target][1]}).alongPath {lean_path(path)}'
+        module='Mahjong.'+nm(id);deps={proven[k][2] for k,_ in back.values()}
+        lines=['import Mahjong.FullWinWitness']+['import '+d for d in sorted(deps)]
+        lines+=['','set_option maxRecDepth 8192','set_option maxHeartbeats 10000000','',
+            'namespace Mahjong.'+nm(id),'open ResponseCertificate','',matched('state','Nat',dict(enumerate(state)),'0'),
+            matched('reply','Tile',{t:str(r) for t,r in reply.items()},'0'),
+            matched('winning','Bool',{t:'true' for t in witnesses},'false'),
+            matched('witness','FullWinWitness.Witness',{t:witness_term(w) for t,w in witnesses.items()},'FullWinWitness.orphans 0')]
+        continuation={t:f'Generators.applyPath {lean_path(p)} {proven[k][0]}' for t,(k,p) in back.items()}
+        lines += [matched('continuation','State',continuation,anchor_state),
+            'def afterReply (t : Tile) : State := addTile (addTile state t) (reply t)',
+            f'theorem anchor_proved : ProvedP {anchor_state} := {anchor_proof}',
+            f'theorem contained : Contains state {anchor_state} :=',
+            '  (RuleChecker.containsB_iff _ _).1 (by decide +kernel)',
+            'theorem valid : Valid state := contains_valid contained anchor_proved.valid',
+            'theorem reply_bound : ∀ t : Tile, state t < 4 → (addTile state t) (reply t) < 4 := by decide +kernel',
+            'theorem win_checked : ∀ t : Tile, state t < 4 → winning t = true →',
+            '    FullWinWitness.check (afterReply t) (witness t) = true := by decide +kernel',
+            'theorem back_checked : ∀ t : Tile, state t < 4 → winning t = false →',
+            '    MoveEnumeration.stateEqB (afterReply t) (continuation t) = true := by decide +kernel',
+            'theorem continuation_proved (t : Tile) : ProvedP (continuation t) := by',
+            '  have ht := mem_allTiles t',
+            '  simp only [allTiles, List.mem_cons, List.not_mem_nil, or_false] at ht',
+            '  rcases ht with '+' | '.join(['rfl']*34)]
+        for t in range(34):
+            term=anchor_proof if t not in back else f'({proven[back[t][0]][1]}).alongPath {lean_path(back[t][1])}'
+            lines.append('  · exact '+term)
+        lines+=['theorem responses : Responses state := by','  intro t hl',
+            '  have legal : LegalAdd (addTile state t) (reply t) := ⟨valid_add hl.1 hl.2, reply_bound t hl.2⟩',
+            '  cases h : winning t with','  | false =>','      apply Reply.back (reply t) legal',
+            '      have same := (MoveEnumeration.stateEqB_iff _ _).1 (back_checked t hl.2 h)',
+            '      change ProvedP (afterReply t)','      rw [same]','      exact continuation_proved t',
+            '  | true =>','      exact Reply.win (reply t) legal',
+            '        (FullWinWitness.sound _ _ (valid_add legal.1 legal.2) (win_checked t hl.2 h))',
+            'theorem proved : ProvedP state := node_of_proved_extension contained anchor_proved responses',
+            'end Mahjong.'+nm(id),'','#print axioms Mahjong.'+nm(id)+'.proved','']
+        src=PROJECT/(module.replace('.','/')+'.lean');src.write_text('\n'.join(lines),encoding='utf-8')
+        proven[id]=(nm(id)+'.state',nm(id)+'.proved',module);proof_modules.append(module)
+        data_nodes.append({'id':id,'state':state,'responses':reply,'back':back,'positive_witnesses':witnesses})
+        wins.find_melds.cache_clear()
+    root=manifest['metadata']['root'];rid=next(id for id,n in nodes.items() if n['state']==root['canonical_state'])
+    if root['outcome']!='P':raise ValueError('expected P root')
+    if transformed(root['canonical_state'],root['root_witness'])!=root['input_state']:raise ValueError('bad root witness')
+    module='Mahjong.'+args.name+'.Root';proof_modules.append(module)
+    lines=['import '+proven[rid][2],'','namespace Mahjong.'+args.name,
+        matched('original','Nat',dict(enumerate(root['input_state'])),'0'),
+        f'theorem original_checked : Generators.checkReference {lean_path(root["root_witness"])} {proven[rid][0]} original = true := by decide +kernel',
+        'theorem original_proved : ResponseCertificate.ProvedP original :=',
+        f'  ({proven[rid][1]}).ofPath {lean_path(root["root_witness"])} (Generators.stateEqB_sound original_checked)',
+        'theorem original_second_player_wins : SafeGame.SecondPlayerWins Step Win original := original_proved.secondPlayerWins',
+        'end Mahjong.'+args.name,'','#print axioms Mahjong.'+args.name+'.original_second_player_wins','']
+    (PROJECT/(module.replace('.','/')+'.lean')).write_text('\n'.join(lines),encoding='utf-8')
+    report={'schema':'MAHJONG_PN_TO_RESPONSE_PROOF_V3_OUTDIR_ONLY','status':'GENERATED_NOT_VERIFIED',
+        'root':root['input_state'],'modules':proof_modules,'input_manifest_sha256':sha(export/'manifest.json'),
+        'generator_sha256':sha(Path(__file__)),'source_sha256':{m:sha(PROJECT/(m.replace('.','/')+'.lean')) for m in proof_modules}}
+    (out/'generation.json').write_text(json.dumps(report,indent=2)+'\n')
+    (out/'responses.json').write_text(json.dumps(data_nodes,indent=2)+'\n')
+    print(json.dumps(report))
+if __name__=='__main__':main()
+

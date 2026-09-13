@@ -87,7 +87,7 @@ all 97.32 GB, so it is a full I/O operation even without game search.
 ## Lean proofs for nonempty positions
 
 The [formal reproduction guide](../formal/README.md) pins Lean 4.33.1 and
-provides a clean kernel replay of three concrete nonempty-position theorems:
+provides a clean kernel replay of eight indexed concrete nonempty-position roots:
 
 ```bash
 python3 tools/verify_lean.py --workers 2
@@ -96,6 +96,20 @@ python3 tools/verify_lean.py --workers 2
 This does not require the 97.32 GB table. A successful replay establishes the
 published local theorems under their audited Lean axioms; the empty-position
 formal proof remains incomplete.
+
+Use `--entry latest` for the 374-module closure of the new 12-tile, 14-tile,
+compressed 20-tile and registry audits. The default covers all 1,008 source
+modules, including the earlier proof DAG. Every run starts with fresh project
+objects. Historical 67-second measurements include reused dependencies and
+are not cold replay timings.
+
+## English paper and document checks
+
+Read the [English paper](../papers/manuscript.md) directly on GitHub. Run
+`python3 tools/verify_paper.py` to check its published hash, all 370 preserved
+formulas, equation tags, tables, and evidence links. The source catalogue
+explicitly identifies historical attachments not included in this publication.
+This check validates publication integrity; it does not prove the mathematics.
 
 ## Reporting a reproduction
 

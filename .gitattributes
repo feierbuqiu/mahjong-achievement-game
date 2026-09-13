@@ -6,4 +6,5 @@ compat/** -text
 results/** -text
 formal/lean/** -text
 formal/evidence/** -text
+papers/evidence/archive/** -text
 *.pub text eol=lf
