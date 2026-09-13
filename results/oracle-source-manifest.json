@@ -1,0 +1,275 @@
+{
+  "schema": "MAHJONG_HISTORICAL_ORACLES_V1",
+  "created_utc": "2026-09-12T19:26:52.623Z",
+  "rules": "original shared-table achievement game; complete physical SAFE P/N",
+  "expected_convention": "P=next player loses; N=next player wins; TSV P/N is not database bit encoding",
+  "fixture_count": 16240,
+  "category_counts": {
+    "named_H33": 1,
+    "named_H222": 1,
+    "round9_final": 16237,
+    "named_H224": 1,
+    "round9_M": 17,
+    "round9_S": 6,
+    "roots35": 35,
+    "roots179": 179,
+    "boundary445": 445
+  },
+  "excluded_unknown_records": 625,
+  "source_files": [
+    {
+      "path": "mahjong_round7/regions/standalone_roots35.jsonl",
+      "sha256": "e4bc2225746d0d0f8f32c26c2b928dee86cce99fdc40dbba2d52deb16ce4acaf",
+      "bytes": 8108
+    },
+    {
+      "path": "mahjong_round7/q5/all_three_numeric_pairs_complete.jsonl",
+      "sha256": "d6ce9ce63c377700d9765b5c7b844a51bc34f08ad05da963452b7f5b08ff4c6f",
+      "bytes": 44436
+    },
+    {
+      "path": "mahjong_round8/math/honor_upgrade_augmented_facts.json",
+      "sha256": "0e1e18898c33a6783caa74690f2b1a1903af22c678be1989b2e267c8d1804d2c",
+      "bytes": 112074
+    },
+    {
+      "path": "mahjong_round8/math/honor_upgrade_augmented_facts.tsv",
+      "sha256": "e48b2eb2f953132e1f38117cb943275905e718f1542c360a17afedf951779570",
+      "bytes": 16465
+    },
+    {
+      "path": "runs/round9_math/round9_final_facts.json",
+      "sha256": "f49f4db8e1757da424cfe5874f54ead59a34518e1ed1ba7772f23be88e4dadce",
+      "bytes": 3939024
+    },
+    {
+      "path": "runs/round9_math/round9_final_facts.tsv",
+      "sha256": "bc80175d0ed78cf24b6f8cba573b5d264a89ab317326d7f9804510b11779fe1b",
+      "bytes": 617006
+    },
+    {
+      "path": "mahjong_round7/search/shallow_new_oracles_facts.json",
+      "sha256": "65ff26881acf36ffe3aa9da9f27ca8d7ccb993886a43726a9132722594bc84b2",
+      "bytes": 58188
+    },
+    {
+      "path": "mahjong_round7/search/shallow_new_oracles_proved.jsonl",
+      "sha256": "36c3f521d8b4d31bf294ace174dac5fd530448c40fd180880ac6e83d2b6c084e",
+      "bytes": 3810686
+    },
+    {
+      "path": "mahjong_round7/math/three_triplet_frontier_matrix.jsonl",
+      "sha256": "a12a74c608dbfcc68788c362db4832b6670b2b432ace4eb4010246a9345d556a",
+      "bytes": 22851
+    },
+    {
+      "path": "mahjong_round7/q5/boundary_matrix.jsonl",
+      "sha256": "b5031bebf61c8b2d320f83b50edb02307891a5ac81cdd1a12fbc3cd2f5c07b4e",
+      "bytes": 4409
+    },
+    {
+      "path": "mahjong_round7/q5/counterexample_witness.jsonl",
+      "sha256": "575dc1ff37ac1d8f21b76a9744d2cc6da11b035952b5448b497412d65bc109e7",
+      "bytes": 692
+    },
+    {
+      "path": "mahjong_round7/audit/counterexample_rank1_witness.jsonl",
+      "sha256": "ba88099b87485cf323feae640bc67cf1a0f2cc1089f519a84e4ec91e6307a26a",
+      "bytes": 399
+    },
+    {
+      "path": "mahjong_round8/math/honor_upgrade_cross_targets.jsonl",
+      "sha256": "de73e72a0512f75e3b367b1cd887b2186cbc67faaa118738eda0e6698a7aef02",
+      "bytes": 4913
+    },
+    {
+      "path": "mahjong_round8/math/honor_upgrade_numeric_promote_targets.jsonl",
+      "sha256": "df02e0a506e956e6be2391c4345eedd32f69f6c70e578b285b8ad70e722297c5",
+      "bytes": 10067
+    },
+    {
+      "path": "mahjong_round7/math/even_two_honor_predecessors.jsonl",
+      "sha256": "a080ec3c1e1789bc7b32ecb0d27d382f9f621cc8893e7f63ee56db19719ef169",
+      "bytes": 466
+    },
+    {
+      "path": "mahjong_round5/pairs/proved_facts.json",
+      "sha256": "c8b05fe14d3191cca7db1109d4eefcdfea8349e9cac71fd28f3baf91cce4ecd7",
+      "bytes": 3179
+    },
+    {
+      "path": "mahjong_round6/math/pair_L_facts.json",
+      "sha256": "db2366fb21835a163937a5029732d83543f317119af7a593aff291f97ec4e84e",
+      "bytes": 2224
+    },
+    {
+      "path": "runs/round9_math/quotient13_facts.json",
+      "sha256": "3ef78e98090b7467681581d49a4ddadc3ac1da5dceefbc2589b163656b63c51c",
+      "bytes": 1401819
+    },
+    {
+      "path": "runs/round9_boundary/priority_base.stdout.jsonl",
+      "sha256": "f4c83ea30a7850e2906c6871ed9bd9fdde375afdebbba22a61f16bc6633bef00",
+      "bytes": 3814
+    },
+    {
+      "path": "runs/round9_boundary/priority_reorder.stdout.jsonl",
+      "sha256": "6b1bc9a29dfc2cd851f7863398a6bf21ea47e9e994012cf0ad8d0ac74d45fe9b",
+      "bytes": 3816
+    },
+    {
+      "path": "runs/round9_boundary/all_targets.stdout.jsonl",
+      "sha256": "773d47ac9f7babc59a8e74d5cbcd45e5bb7e86a2729b371e6475b8335d97feb9",
+      "bytes": 331355
+    },
+    {
+      "path": "runs/round9_solver/second_T_probe.jsonl",
+      "sha256": "9f95322e00c1c22d45f517dab944caec4cdf35a3b0e054f74d6a0eb88f419027",
+      "bytes": 1703
+    },
+    {
+      "path": "runs/round9_solver/cold_P12.jsonl",
+      "sha256": "a1b745b23c1a4e6a7f44f1c13402e94e7c75a9750b36ce69ffafe15a976ef31b",
+      "bytes": 2950
+    },
+    {
+      "path": "runs/round9_solver/nearest4_probe.jsonl",
+      "sha256": "ddee347ec8af0f39c9c439e9589721375abdb19185f710cd8f5f322680b9df93",
+      "bytes": 3054
+    },
+    {
+      "path": "runs/round9_solver/nearest7_cold.jsonl",
+      "sha256": "1be510c002c046abf6c7ef1818d431664a5f6702a9de285b7307576b0be64150",
+      "bytes": 14724
+    },
+    {
+      "path": "runs/round9_solver/remaining9_probe.jsonl",
+      "sha256": "e3747e7045a92f7dcc4686823dae595bab016d8c21c9ef97a029aa173e99de3d",
+      "bytes": 2013
+    },
+    {
+      "path": "runs/round9_solver/next6_cold.jsonl",
+      "sha256": "cbeb0576d3dfc405f77aac1a2d634a25ff98e6dd8e09800730770aeeef58a164",
+      "bytes": 13427
+    },
+    {
+      "path": "runs/round9_boundary/center_probe.jsonl",
+      "sha256": "d02d37a0faa8de701d1bebe4d8e16f27a3de5b60ad0cbafdc6e3653cde915346",
+      "bytes": 1851
+    },
+    {
+      "path": "runs/round9_boundary/center_original_cold.stdout.jsonl",
+      "sha256": "db37cb65cafa9cbae5f6ae68f431fd6ecde9eaff9caaa0028e45540d49247996",
+      "bytes": 1130
+    },
+    {
+      "path": "runs/round9_boundary/center_cold_full.jsonl",
+      "sha256": "2de8b9dd3442ddaef4c07a41c55c12ee0ced87bd8bc37cd6c44078ee9aa4bd3f",
+      "bytes": 10982
+    },
+    {
+      "path": "runs/round9_boundary/endpoint_probe.jsonl",
+      "sha256": "78661c4b3def8648d802e254cbaa4f918c56d5b3ba5a6eb3edd338b3f73b11d5",
+      "bytes": 2969
+    },
+    {
+      "path": "runs/round9_boundary/endpoint_responses.jsonl",
+      "sha256": "1837847169a6467e94f0d48a1a22353b954b8a3fd8c17495060155c2c0f0dd9a",
+      "bytes": 27590
+    },
+    {
+      "path": "runs/round9_boundary/endpoint_original_cold.stdout.jsonl",
+      "sha256": "b34aa1eeaffb49f845cb69ad59f9c4b811b7053f5b7776fce1f062f4b86fdb75",
+      "bytes": 565
+    },
+    {
+      "path": "runs/round9_boundary/endpoint_cold_full.jsonl",
+      "sha256": "05b202b97ca337fa378051a8325a13f52d43793f975bcff7cdb456a633d8dcc0",
+      "bytes": 26868
+    },
+    {
+      "path": "runs/round9_solver/last_T1_candidates.jsonl",
+      "sha256": "c9976b608f0c81f183d7750b179d901416922ecb5666d0fa32fe725f884a639e",
+      "bytes": 4022
+    },
+    {
+      "path": "runs/round9_solver/last_T1_large_cache.jsonl",
+      "sha256": "45d26857699d956bcf10804ee37315d40973091ba8ef8edf5647e3273e677b5a",
+      "bytes": 428
+    },
+    {
+      "path": "runs/round9_solver/last_P12_cold.jsonl",
+      "sha256": "a9a424afe5d4fbeebe55314626abe6f79dc54aec81a3b0b209a6d487f4c995fe",
+      "bytes": 2950
+    },
+    {
+      "path": "runs/round9_solver/final2_probe.jsonl",
+      "sha256": "0f6c97bf659ba1893feb74a0e35ec31b239986b5f277d55e5cbd5bfd2a853684",
+      "bytes": 665
+    },
+    {
+      "path": "runs/round9_solver/final2_cold.jsonl",
+      "sha256": "f3aa6db7acf0771b2b942e79dae5cb163ec30afd60e6606f4976aab71f7ba5d3",
+      "bytes": 4830
+    },
+    {
+      "path": "mahjong_round3/five_pair/frozen_five_theorem.md",
+      "sha256": "9f5f791382f4d01eb7b596874c420e8b62496f686abba2fb218562287667a547",
+      "bytes": 6954
+    },
+    {
+      "path": "mahjong_round7/math/four_pair_unknown_frontier.json",
+      "sha256": "c790ff93aae7212b30e9466893923684c29fabd8d90f164d864685be73727c37",
+      "bytes": 185346
+    },
+    {
+      "path": "runs/round9_math/round9_final_frontier.json",
+      "sha256": "5450b07ba1548baa4d6100f351ee41fbce7e30a705fc9ff15c141b3fdbd7844f",
+      "bytes": 1534072
+    },
+    {
+      "path": "runs/round9_math/round9_final_summary.json",
+      "sha256": "af77d367f69818685a0a5aed506325526aceb7c1647f3499e126c2e22b192163",
+      "bytes": 3180
+    },
+    {
+      "path": "mahjong_round5/boolean/composition_result.json",
+      "sha256": "d272beda7e51f10672b8ceeee32e0b3931a89afee49423a6b3b74e6d244b8aee",
+      "bytes": 184
+    },
+    {
+      "path": "mahjong_round5/math/eight_tile_and_six_tile_reduction.md",
+      "sha256": "027a038c8b5ed9c3b940d0827e3c3c4afc605c949f5eac0abf7ef1b43ff3ee0e",
+      "bytes": 8703
+    },
+    {
+      "path": "mahjong_round6/regions/q2_root_continuation.jsonl",
+      "sha256": "11b2ffca7e033598578da7a565ad1bb58525a9668ab6ea95d6926e2cdef51243",
+      "bytes": 1575
+    },
+    {
+      "path": "mahjong_round4/search/honor_adaptive_final_run.json",
+      "sha256": "8a07d8258bb653769ab6957ff290f9e998c2b83469140a81b2516c5a88ec082a",
+      "bytes": 1901
+    }
+  ],
+  "outputs": [
+    {
+      "path": "runs/global_retro/verification/oracles_v1/fixtures.jsonl",
+      "sha256": "33b4391e5d13274638fb67cf4e1adccd3dff85e10b5cdbdb3f9f0b82fcb5ca70"
+    },
+    {
+      "path": "runs/global_retro/verification/oracles_v1/fixtures.tsv",
+      "sha256": "81dec989b95ca185741345fd0fcc82797281a02122e568662a630b70f02300ae"
+    },
+    {
+      "path": "runs/global_retro/verification/oracles_v1/excluded_unknown.jsonl",
+      "sha256": "b05e6887e23fc67d628aa211d96e223f9a9244701873d20fa2df012a03cc025a"
+    }
+  ],
+  "generator": {
+    "path": "build/global_retro/verify_oracles_build.cjs",
+    "sha256": "b2b5f94a04bbe49ac202d45423ea9afa544892f76cca090e722ba4a425514ccf"
+  },
+  "scope_note": "Historical exact outcomes only; generated without consulting the new global database. Per-fact JSONL retains immediate source line/hash and the original closure proof/source chain."
+}

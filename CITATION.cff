@@ -1,0 +1,24 @@
+cff-version: 1.2.0
+message: "Please cite this research software and include the exact commit or release tag used."
+type: software
+title: "Mahjong Achievement Game: Exact Computation and Reproducible Research"
+authors:
+  - family-names: "feierbuqiu"
+    website: "https://github.com/feierbuqiu"
+repository-code: "https://github.com/feierbuqiu/mahjong-achievement-game"
+url: "https://github.com/feierbuqiu/mahjong-achievement-game"
+version: 0.1.0
+date-released: 2026-09-13
+license: MIT
+keywords:
+  - combinatorial games
+  - mahjong
+  - retrograde analysis
+  - reproducible research
+  - computational mathematics
+abstract: >-
+  Research software and computational evidence for a deterministic two-player
+  shared-pool Mahjong achievement game. Complete SAFE-state retrograde analysis
+  and reverse-direction replay classify the empty position as a second-player
+  win. The computational algorithms share rules and indexing. End-to-end Lean
+  verification remains in progress at this release.

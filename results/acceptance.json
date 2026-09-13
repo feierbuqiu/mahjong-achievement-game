@@ -1,0 +1,97 @@
+{
+  "schema": "MJ_PUBLIC_COMPUTATIONAL_ACCEPTANCE_V1",
+  "status": "PASS_COMPUTATION_AND_FULL_REVERSE_REPLAY",
+  "created_utc": "2026-09-13T00:17:36.351800+00:00",
+  "empty_state": "P",
+  "winner_from_empty": "second_player",
+  "first_move_classes": {
+    "N": 6,
+    "P": 0
+  },
+  "states": 778532864302,
+  "buckets": 3686,
+  "P": 203051492021,
+  "N": 575481372281,
+  "data_bytes": 97316623312,
+  "historical_oracles": {
+    "kind": "summary",
+    "schema": "MAHJONG_GLOBAL_ORACLE_QUERY_V1",
+    "status": "PASS",
+    "index_fingerprint": "5a45ff3ea0fcf356",
+    "matched_oracles": 16240,
+    "conflicting_oracles": 0,
+    "unknown_items": 0,
+    "queries": 0,
+    "verified_payload_bytes": 1127936,
+    "incomplete_layers": [],
+    "seconds": 1.14877
+  },
+  "physical_strategy_cases": 44,
+  "full_reverse_native_final": {
+    "status": "PASS_ALL_REQUESTED_LAYERS",
+    "verified_states": 778532864302,
+    "new_verified_buckets": 3236,
+    "reused_verified_buckets": 450,
+    "new_verified_states": 765885524853,
+    "reused_verified_states": 12647339449,
+    "physical_deletions": 2914412897457,
+    "P_child_visits": 444332201413,
+    "new_N_marks": 565884213190,
+    "mismatches": 0,
+    "max_rss_kib": 4079452,
+    "seconds": 11522.2
+  },
+  "full_record_coverage": true,
+  "full_run_pass": true,
+  "generation_account": {
+    "schema": "MAHJONG_DISTINCT_GENERATION_ACCOUNT_V1",
+    "utc": "2026-09-12T20:40:22.502981+00:00",
+    "exact_states": 778532864302,
+    "generation_parts": [
+      {
+        "name": "initial_34_to32",
+        "receipt": "pilot_v1/progress.json",
+        "build_id": "development",
+        "threads": 8,
+        "new_distinct_states": 303054865,
+        "engine_wall_seconds": 19.893651
+      },
+      {
+        "name": "retained_31_h148_calibration",
+        "receipt": "calibration_0508/phases/03-fresh8/result-00.json",
+        "build_id": "v2_963d49a204974120",
+        "threads": 8,
+        "new_distinct_states": 869763665,
+        "engine_wall_seconds": 10.590345
+      },
+      {
+        "name": "remaining_31_to29",
+        "receipt": "batch16_0510/phases/01-full_layers_31_to29/result-00.json",
+        "build_id": "v2_963d49a204974120",
+        "threads": 16,
+        "new_distinct_states": 26032139298,
+        "engine_wall_seconds": 234.769344
+      },
+      {
+        "name": "full_28_to0",
+        "receipt": "production_v3_0523/phases/01-full_layers_28_to0/result-00.json",
+        "build_id": "v3_6664c16ab99d0584",
+        "threads": 16,
+        "new_distinct_states": 751327906474,
+        "engine_wall_seconds": 4146.218582
+      }
+    ],
+    "sum_of_nonoverlapping_generation_wall_seconds": 4411.471922000001,
+    "sum_of_nonoverlapping_generation_wall_minutes": 73.52453203333334,
+    "aggregate_states_per_hour_for_retained_generation": 635324980197.6637,
+    "main_continuous_phase_wall_seconds_including_supervision": 4150.062999999995,
+    "main_continuous_phase_average_cpu_pct": 88.84237777685556,
+    "main_continuous_phase_max_private_bytes": 10641879040,
+    "main_continuous_phase_max_rss_bytes": 10580824064,
+    "scope": "Sum of measured generation runs whose disjoint states populate the final table. Includes each engine initialization/load/save, excludes development, repeated calibration and independent verification; not a claim that one fresh single-version job of this exact duration was run."
+  },
+  "scope": "Full P/N table generation, different physical-delete recurrence replay, historical oracle and payload integrity checks. Rules and Index remain shared; no Lean formalization.",
+  "formal_verification": "in_progress; no end-to-end Lean theorem is published in this snapshot",
+  "original_acceptance_sha256": "1cc4b9dc7bd287e976d42d6b7fb41eb548651529016e53485008828c97d826a5",
+  "publication_note": "Selected computational fields from the original acceptance receipt; local operational metadata omitted."
+}

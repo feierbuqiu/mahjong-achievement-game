@@ -1,0 +1,96 @@
+{
+  "schema": "MJGLOBAL_INTEGRITY_RUN_V1",
+  "updated_utc": "2026-09-12T20:51:12.260Z",
+  "status": "PASS",
+  "full_database_scope": true,
+  "full_database_integrity_complete": true,
+  "files_verified": 3686,
+  "files_expected": 3686,
+  "states_verified": 778532864302,
+  "states_expected": 778532864302,
+  "p_states_verified": 203051492021,
+  "bytes_verified": 97316623312,
+  "bytes_expected": 97316623312,
+  "source_and_binary": [
+    {
+      "path": "research-snapshot\\build\\global_retro\\audit_tables.py",
+      "bytes": 19125,
+      "sha256": "394d8e6135773ea16a4602a6200671fe32c33f2b18af778aaa60fa34ea72badc"
+    },
+    {
+      "path": "research-snapshot\\build\\global_retro\\audit_tables.cpp",
+      "bytes": 14219,
+      "sha256": "c2b0d926972a545ab0733c4574ff9069125ab21d055218acea8a76536ad3f361"
+    },
+    {
+      "path": "research-snapshot\\build\\global_retro\\audit_tables.exe",
+      "bytes": 3124607,
+      "sha256": "c0c088cd3d5600c5a5a582c76ccb29f3f59a1eb258d1b565d6588d26e8d240b7"
+    },
+    {
+      "path": "research-snapshot\\runs\\global_retro\\summarize.py",
+      "bytes": 29329,
+      "sha256": "953477a57a54f02478de28658dacacf65a1ecffbf8f8cd7e4fd27a655adf1bf4"
+    }
+  ],
+  "reference": {
+    "counts_path": "research-snapshot\\runs\\global_feasibility_audit\\index\\counts.jsonl",
+    "counts_sha256": "7659b310e8f79c99bd78e7b823ce92cc0d3eb709278cafeeacb8f343a8e7d278",
+    "exact_states": 778532864302,
+    "honor_classes": 184,
+    "index_provenance_path": "research-snapshot\\runs\\global_retro\\index\\provenance_v1.json",
+    "index_provenance_sha256": "a2890f7530fbce7fac1b7f4ac8c7aa948c0a59e06be23511179fa7b986916ec1",
+    "catalog_path": "research-snapshot\\runs\\global_retro\\index\\bucket_catalog.json",
+    "catalog_sha256": "18de78e94271d760e58f9ae8f47dd9c5615a3d6dc1cc59a69f24e7524752c551",
+    "catalog_buckets": 6440,
+    "catalog_nonempty_buckets": 3686,
+    "index_fingerprint": "5a45ff3ea0fcf356",
+    "catalog_available": true,
+    "completion_basis": "per-bucket catalog, metadata, file lengths and exact layer counts"
+  },
+  "native_wall_seconds": 217.806239,
+  "native_bytes_read": 97316623312,
+  "native_cpu_seconds": 208.90625,
+  "max_native_rss_bytes": 32677888,
+  "max_native_private_bytes": 28049408,
+  "native_attempts": [
+    {
+      "schema": "MJGLOBAL_INTEGRITY_AUDIT_V1",
+      "utc": "2026-09-12T20:51:08.377Z",
+      "status": "PASS",
+      "reason": "",
+      "final": true,
+      "plan_sha256": "f03147755350bbd31f1adeaabbe439a6758c6595c096d51fa1fcae314470183e",
+      "n": 0,
+      "h": 0,
+      "files_planned": 3686,
+      "files_completed": 3686,
+      "bytes_read": 97316623312,
+      "bytes_completed": 97316623312,
+      "states_verified": 778532864302,
+      "wall_seconds": 217.806239,
+      "bytes_per_second": 446803653.37,
+      "cpu_seconds": 208.90625,
+      "max_rss_bytes": 32677888,
+      "max_private_bytes": 28049408,
+      "buffer_bytes": 8388608,
+      "independent_recurrence_proof": false
+    }
+  ],
+  "warnings": [],
+  "conditions_verified": [
+    "frozen exact bucket catalog and layer totals",
+    "metadata schema, fingerprint and fields",
+    "payload length and stable metadata/file identity",
+    "engine word-FNV64",
+    "P popcount",
+    "zero tail padding",
+    "payload SHA-256 generated"
+  ],
+  "independent_recurrence_proof": false,
+  "limitation": "Integrity of the saved outputs is checked; correctness of their P/N recurrence requires separate independent verification.",
+  "native_bytes_per_second": 446803653.37009466,
+  "manifest_path": "research-snapshot\\runs\\global_retro\\verification\\full_integrity\\full_v1\\sha256_manifest.jsonl",
+  "manifest_sha256": "a590af16189fe9acf22fae18d8a95095bcb9f9926db2d6eaa585511eea21e88c",
+  "last_native_exit_code": 0
+}

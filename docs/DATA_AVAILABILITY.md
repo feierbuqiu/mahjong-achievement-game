@@ -1,0 +1,42 @@
+# Data availability
+
+## Included in this repository
+
+- Frozen core rules, compact index, forward generator, reverse verifier,
+  index checks, table-query code, and an English physical-strategy adapter.
+- The computational acceptance extract and seven opening query results.
+- Complete per-bucket replay coverage and original record hashes.
+- All 16,240 historical expected values, their provenance records, and query results.
+- Per-bucket table SHA-256 values, integrity-audit summary, build provenance,
+  and measured generation/replay receipts.
+- Source/artifact checksums and scripts for bounded checks and full reconstruction.
+
+## Retained outside Git
+
+The complete padded table payload is **97,316,623,312 bytes**. It is not included
+in this Git repository or offered as a public download in version 0.1.0.
+No external archive, DOI, or permanent table-hosting service is claimed.
+Historical large search caches and the active Lean working environment are
+also outside this publication.
+
+The full table is reconstructible using the [documented generator](REPRODUCIBILITY.md).
+Plan for at least 110 GB of free output storage, with additional space for
+logs and any retained checkpoints. Avoid full generation in a synchronizing
+folder. Use a new output directory for each independent run.
+
+## Validating a reconstructed table
+
+Run the full reverse replay, query the opening, and compare the historical
+fixtures. Use `tools/check_table_hashes.py` to compare bucket payloads with
+the published SHA-256 manifest. The payload encoding is deterministic for
+the published index and values; timestamps, build IDs, and timing fields in
+new metadata will differ from the original run.
+
+Individual `nNN_hHHH.bits` files contain padded little-endian 64-bit words,
+where bit 1 is P and bit 0 is N. A bucket's corresponding `.complete.json`
+and its layer's completion metadata are required by the table reader.
+Do not interpret an absent, partial, incompatible, or corrupt bucket as P.
+
+The publication checksum manifest validates the **distributed artifacts**.
+The table manifest validates the **external payload files**. Neither operation
+alone checks the P/N recurrence.

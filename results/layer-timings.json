@@ -1,0 +1,78 @@
+{
+  "status": "MEASURED_COMPLETED_LAYERS",
+  "utc": "2026-09-12T20:03:40.805147+00:00",
+  "producer_log": "research-snapshot\\runs\\global_retro\\production_v3_0523\\phases\\01-full_layers_28_to0\\engine.stdout.log",
+  "log_snapshot_bytes": 688791,
+  "log_snapshot_sha256": "70a95df1290911cb2d15a30f115d6a3afe1ef777fb3f45354f87df0885895f4a",
+  "index_fingerprint": "5a45ff3ea0fcf356",
+  "threads": 16,
+  "scope": "Timing for completed layers in this fresh producer run; includes initialization for first layer, read/write/checkpoint and inter-layer setup. No independent payload or recurrence verification.",
+  "layers": [
+    {
+      "n": 28,
+      "states": 35949118771,
+      "complete_buckets": 153,
+      "seconds_including_between_layer_setup_and_io": 167.930561,
+      "states_per_hour": 770656792932.4073,
+      "checkpoint_seconds": 7.192881,
+      "load_seconds": 2.242235,
+      "start_log_elapsed": 0,
+      "end_log_elapsed": 167.930561
+    },
+    {
+      "n": 27,
+      "states": 56645165793,
+      "complete_buckets": 157,
+      "seconds_including_between_layer_setup_and_io": 256.46833799999996,
+      "states_per_hour": 795118019031.2616,
+      "checkpoint_seconds": 10.097895999999999,
+      "load_seconds": 4.047624,
+      "start_log_elapsed": 167.930561,
+      "end_log_elapsed": 424.398899
+    },
+    {
+      "n": 26,
+      "states": 75440492234,
+      "complete_buckets": 158,
+      "seconds_including_between_layer_setup_and_io": 397.82637300000005,
+      "states_per_hour": 682674127394.7667,
+      "checkpoint_seconds": 13.532238000000003,
+      "load_seconds": 5.9762129999999996,
+      "start_log_elapsed": 424.398899,
+      "end_log_elapsed": 822.225272
+    },
+    {
+      "n": 25,
+      "states": 88982128123,
+      "complete_buckets": 160,
+      "seconds_including_between_layer_setup_and_io": 440.060214,
+      "states_per_hour": 727935975695.3625,
+      "checkpoint_seconds": 14.956416999999998,
+      "load_seconds": 10.113566,
+      "start_log_elapsed": 822.225272,
+      "end_log_elapsed": 1262.285486
+    },
+    {
+      "n": 24,
+      "states": 96065224588,
+      "complete_buckets": 163,
+      "seconds_including_between_layer_setup_and_io": 529.578317,
+      "states_per_hour": 653038082215.8926,
+      "checkpoint_seconds": 15.577219999999997,
+      "load_seconds": 12.903382999999998,
+      "start_log_elapsed": 1262.285486,
+      "end_log_elapsed": 1791.863803
+    },
+    {
+      "n": 23,
+      "states": 96268928092,
+      "complete_buckets": 167,
+      "seconds_including_between_layer_setup_and_io": 490.42135299999995,
+      "states_per_hour": 706674248605.1582,
+      "checkpoint_seconds": 15.560106000000005,
+      "load_seconds": 14.392488,
+      "start_log_elapsed": 1791.863803,
+      "end_log_elapsed": 2282.285156
+    }
+  ]
+}

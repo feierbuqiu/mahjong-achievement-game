@@ -1,0 +1,7 @@
+* text=auto eol=lf
+# Preserve imported scientific source and evidence bytes for their manifests.
+src/** -text
+mahjong_progress/** -text
+compat/** -text
+results/** -text
+*.pub text eol=lf

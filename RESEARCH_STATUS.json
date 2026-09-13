@@ -1,0 +1,25 @@
+{
+  "schema": "MJ_PUBLIC_RESEARCH_STATUS_V1",
+  "snapshot_date": "2026-09-13",
+  "opening_outcome": "P",
+  "winner_from_empty": "second_player",
+  "first_move_orbit_outcomes": ["N", "N", "N", "N", "N", "N"],
+  "evidence_level": "complete_computation_with_full_reverse_replay",
+  "SAFE_symmetry_orbits": 778532864302,
+  "P_orbits": 203051492021,
+  "N_orbits": 575481372281,
+  "nonempty_buckets": 3686,
+  "layers": {"first": 0, "last": 34},
+  "table_payload_bytes": 97316623312,
+  "table_format": "MJGLOBAL_PN_V1",
+  "index_fingerprint": "5a45ff3ea0fcf356",
+  "table_bit_encoding": {"1": "P", "0": "N"},
+  "formal_verification": {
+    "status": "in_progress",
+    "end_to_end_Lean_theorem_published": false,
+    "note": "This publication freezes computational evidence; ongoing formalization is not represented as complete."
+  },
+  "shared_trust_dependencies": ["foundational rule implementation", "global state index"],
+  "full_table_distributed_in_git": false,
+  "acceptance_receipt": "results/acceptance.json"
+}

@@ -1,0 +1,23 @@
+name: Research question or discrepancy
+description: Discuss a theorem, rule interpretation, algorithm, or evidence gap.
+title: "[Research] "
+body:
+  - type: textarea
+    id: claim
+    attributes:
+      label: Claim or question
+      description: Link to the exact claim and specify the version.
+    validations:
+      required: true
+  - type: textarea
+    id: evidence
+    attributes:
+      label: Evidence or proposed argument
+      description: Include concrete states, complete assumptions, or a reproducible counterexample.
+    validations:
+      required: true
+  - type: textarea
+    id: scope
+    attributes:
+      label: Scope and uncertainty
+      description: Distinguish mathematical proof, computation, sampling, and conjecture.

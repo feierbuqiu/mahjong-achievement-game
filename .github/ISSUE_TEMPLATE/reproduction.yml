@@ -1,0 +1,32 @@
+name: Reproduction failure
+description: Report an unexpected output, incomplete run, or build failure.
+title: "[Reproduction] "
+body:
+  - type: input
+    id: version
+    attributes:
+      label: Commit or release tag
+    validations:
+      required: true
+  - type: textarea
+    id: environment
+    attributes:
+      label: Environment
+      description: OS, compiler and Python versions, CPU, RAM, and available disk.
+    validations:
+      required: true
+  - type: textarea
+    id: command
+    attributes:
+      label: Exact command and input
+      description: Remove personal paths and secrets. Include the state and data version.
+      render: shell
+    validations:
+      required: true
+  - type: textarea
+    id: result
+    attributes:
+      label: Observed and expected results
+      description: Include exit code, final coverage, logs, and artifact hashes where relevant.
+    validations:
+      required: true

@@ -1,0 +1,62 @@
+[
+  {
+    "path": "research-snapshot\\build\\global_retro\\global_index.hpp",
+    "bytes": 16787,
+    "sha256": "b742e5bbb20ed0df50665c0d454d3bf4b7691dabc4d2d0380e7159766f8bf0c8"
+  },
+  {
+    "path": "research-snapshot\\build\\global_retro\\push_verify.cpp",
+    "bytes": 16138,
+    "sha256": "9ccfc34ff7aec44237161a53469717ed6bf1f7f6d1529eb413de7f28ba70e75f"
+  },
+  {
+    "path": "research-snapshot\\build\\global_retro\\push_verify_parallel_v2.cpp",
+    "bytes": 29514,
+    "sha256": "cd708ad9a441766c7aa53e6d316f9de1495d732a55ee5a3fad6688aa1cfa2d78"
+  },
+  {
+    "path": "research-snapshot\\build\\global_retro\\push_verify_parallel_v2.exe",
+    "bytes": 3494162,
+    "sha256": "9ff1b21b0583625f9ac98c69e4d265d461b5f4a33fdf2e51a85276bb348db20c"
+  },
+  {
+    "path": "research-snapshot\\build\\global_retro\\push_verify_parallel_v3.cpp",
+    "bytes": 33316,
+    "sha256": "0c50fc58e8f1ae422d85a5a19a290b5d0a45d4fe6b96941fb8134a54dff7c9fd"
+  },
+  {
+    "path": "research-snapshot\\build\\global_retro\\push_verify_parallel_v3.exe",
+    "bytes": 3502944,
+    "sha256": "0c091c3be5b0425e33dee2c56d586187d95fcbc83ec077c8b3b0a410fadb5612"
+  },
+  {
+    "path": "research-snapshot\\mahjong_progress\\solver\\solver.cpp",
+    "bytes": 9354,
+    "sha256": "1194d941c55b48c4ac686f29518c3fe032723a431125610b2a3509f8db04242f"
+  },
+  {
+    "path": "research-snapshot\\runs\\global_retro\\control.py",
+    "bytes": 37088,
+    "sha256": "7b0597bde09ac2838263da66cc58e1ffd5477230f341b04a2112b6eddfdbb5ef"
+  },
+  {
+    "path": "research-snapshot\\runs\\global_retro\\verification\\full_v2_seed_manifest.json",
+    "bytes": 37804,
+    "sha256": "8780e07786a6894ba937bc21198f40c1330ce90a30d751c1d7cbff6849d4a2ed"
+  },
+  {
+    "path": "research-snapshot\\runs\\global_retro\\verification\\parallel_v2_v3_compatibility.json",
+    "bytes": 3855,
+    "sha256": "74a6c36e73cc548d91ff4561fe9f33ebbcb62249ed5460bf61b55bcfeaea7e70"
+  },
+  {
+    "path": "research-snapshot\\runs\\global_retro\\verification\\parallel_v3_compatibility.cjs",
+    "bytes": 3989,
+    "sha256": "a7dbafad434e0ee9d8c03b3c64f890c259dd4a6ce5780869729ac8cf206de853"
+  },
+  {
+    "path": "research-snapshot\\runs\\global_retro\\verification\\parallel_v3_tests_20260912T205604059690Z\\result.json",
+    "bytes": 31034,
+    "sha256": "30516e93262fa68b1c9eaf103a18f0835c6c621b947a4d1cff3d97f355810aa8"
+  }
+]

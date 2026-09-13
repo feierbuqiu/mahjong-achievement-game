@@ -1,0 +1,27 @@
+{
+  "version": "v3",
+  "build_id": "v3_6664c16ab99d0584",
+  "utc": "2026-09-12T19:11:24.406455+00:00",
+  "command": [
+    "research-snapshot\\build\\toolchain\\w64devkit\\bin\\g++.exe",
+    "-O3",
+    "-march=native",
+    "-std=c++17",
+    "-pthread",
+    "-I",
+    "research-snapshot\\build\\compat",
+    "-DRETRO_BUILD_ID=\"v3_6664c16ab99d0584\"",
+    "research-snapshot\\build\\global_retro\\global_retro.cpp",
+    "-lpsapi",
+    "-o",
+    "research-snapshot\\build\\global_retro\\global_retro.exe"
+  ],
+  "seconds": 8.296999999991385,
+  "exit_code": 0,
+  "source_sha256": "6664c16ab99d058478cc10d7b85edbf43328884f5c1a8d5abf12fecf274acee8",
+  "index_sha256": "b742e5bbb20ed0df50665c0d454d3bf4b7691dabc4d2d0380e7159766f8bf0c8",
+  "rules_sha256": "1194d941c55b48c4ac686f29518c3fe032723a431125610b2a3509f8db04242f",
+  "compat_sha256": "82fb71e84d2af54eb0faf0a23a55fdf58036ecac5b5ffe51582c73f9512eeddd",
+  "note": "Index fingerprint controls table compatibility; build_id records this exact producer.",
+  "binary_sha256": "14b51a105924a20d925bccebb33ec85961760620b268ac67a96c335ffc124735"
+}
