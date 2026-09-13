@@ -23,7 +23,7 @@ computational snapshot.
 - Per-bucket table SHA-256 values, integrity-audit summary, build provenance,
   and measured generation/replay receipts.
 - Source/artifact checksums and scripts for bounded checks and full reconstruction.
-- Frozen Lean 4.33.1 source for three closed nonempty-position proofs, historical
+- Frozen Lean 4.33.1 source for eight indexed closed nonempty-position roots, historical
   kernel-replay extracts, and a clean source-replay tool. See [formal materials](../formal/README.md).
 
 ## Retained outside Git
