@@ -1,0 +1,1 @@
+{"status": "PASS_PUBLIC_HANDOFF", "artifacts": 470, "checker_source_modules": 56, "benchmark_cases": 47, "evaluations": 745472, "unique_sampled_slots": 356352, "scope": "Artifact identity and receipt arithmetic; no large data scan or opening proof."}

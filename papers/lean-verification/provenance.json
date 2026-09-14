@@ -1,0 +1,199 @@
+{
+  "schema": "MJ_LEAN_SUPPLEMENT_PUBLICATION_V1",
+  "created_utc": "2026-09-14T18:38:09.312045+00:00",
+  "release": "v1.0.0",
+  "primary_language": "en",
+  "chinese_manuscript_published": false,
+  "original_manuscript_sha256": "ddfa77cc571f9fa36623ae605c74a39156d96af9cd41db2640f6501c841db6e5",
+  "published_manuscript_sha256": "79d9945471e5564a8ac8551a62086b1c1770a7a0694a4301ba383bae2f2655e6",
+  "artifacts": [
+    {
+      "original_path": "runs/lean_supplement_20260915/reproduction/optimized_source_v2/result.json",
+      "original_bytes": 129387,
+      "original_sha256": "b77ccc01b5f1c2fcaf09f116068daa3631cd0f51d7e74df0ba470301b6648cef",
+      "published_path": "papers/lean-verification/reproduction/source-replay.json",
+      "published_bytes": 102525,
+      "published_sha256": "d57d5899c42365813420cce729053fa1fac8f36d1cf2e39c11ff67f4e231e887",
+      "transformations": [
+        "Replace private research and user-home paths with explicit placeholders; serialize a public JSON extract. Original embedded evidence hashes continue to identify retained original files."
+      ]
+    },
+    {
+      "original_path": "runs/lean_supplement_20260915/reproduction/recipient_delivery_test/current_model_source_bundle/recipient_replay_new/result.json",
+      "original_bytes": 143328,
+      "original_sha256": "df7371b2d6d3cc3780c9a7052fd026765f047e8178e2f980c70d2a9f7d4a9ba3",
+      "published_path": "papers/lean-verification/reproduction/recipient-replay.json",
+      "published_bytes": 116466,
+      "published_sha256": "bf19f54a5e3aa98c26e240b6d16b8ecfa8ef8fcbe35082165af5f914ec612d19",
+      "transformations": [
+        "Replace private research and user-home paths with explicit placeholders; serialize a public JSON extract. Original embedded evidence hashes continue to identify retained original files."
+      ]
+    },
+    {
+      "original_path": "runs/lean_supplement_20260915/reproduction/recipient_delivery_validation.json",
+      "original_bytes": 2065,
+      "original_sha256": "5f41c6414476bfb1e815de9c61717b3dd5fc54b5157dc1e806b66c5a0eb2893e",
+      "published_path": "papers/lean-verification/reproduction/recipient_delivery_validation.json",
+      "published_bytes": 2065,
+      "published_sha256": "5f41c6414476bfb1e815de9c61717b3dd5fc54b5157dc1e806b66c5a0eb2893e",
+      "transformations": []
+    },
+    {
+      "original_path": "runs/lean_supplement_20260915/reproduction/inventory.json",
+      "original_bytes": 9150,
+      "original_sha256": "14f69b0b4e44ddf16dd7d717dd331a70c3bd4f0b97ec7e229a6643786dc4e8c0",
+      "published_path": "papers/lean-verification/reproduction/inventory.json",
+      "published_bytes": 9150,
+      "published_sha256": "14f69b0b4e44ddf16dd7d717dd331a70c3bd4f0b97ec7e229a6643786dc4e8c0",
+      "transformations": []
+    },
+    {
+      "original_path": "runs/lean_supplement_20260915/reproduction/public_availability.json",
+      "original_bytes": 2067,
+      "original_sha256": "c4c8408679b0984922e0d7b021ef77beac6152031c021c4eb664e43bfcac12c3",
+      "published_path": "papers/lean-verification/reproduction/public_availability.json",
+      "published_bytes": 2067,
+      "published_sha256": "c4c8408679b0984922e0d7b021ef77beac6152031c021c4eb664e43bfcac12c3",
+      "transformations": []
+    },
+    {
+      "original_path": "runs/lean_supplement_20260915/reproduction/package_validation.json",
+      "original_bytes": 2604,
+      "original_sha256": "fbf77741ab541fcb0440bde21e4b3fc9bb2f2968143f83be96a1cca17d901deb",
+      "published_path": "papers/lean-verification/reproduction/package_validation.json",
+      "published_bytes": 2604,
+      "published_sha256": "fbf77741ab541fcb0440bde21e4b3fc9bb2f2968143f83be96a1cca17d901deb",
+      "transformations": []
+    },
+    {
+      "original_path": "runs/lean_supplement_20260915/reproduction/current_retained_evidence_check.log",
+      "original_bytes": 189,
+      "original_sha256": "61bef8239330c10a5e695473ddd0e09b361534bd8e53041afeeb2e43ebab4826",
+      "published_path": "papers/lean-verification/reproduction/current_retained_evidence_check.log",
+      "published_bytes": 189,
+      "published_sha256": "61bef8239330c10a5e695473ddd0e09b361534bd8e53041afeeb2e43ebab4826",
+      "transformations": []
+    },
+    {
+      "original_path": "runs/lean_supplement_20260915/reproduction/public_v030_handoff_check.log",
+      "original_bytes": 252,
+      "original_sha256": "15c625f740608b9df72b19843d67f5a6d26b94d28d6918bdde4bf3fa2deef308",
+      "published_path": "papers/lean-verification/reproduction/public_v030_handoff_check.log",
+      "published_bytes": 252,
+      "published_sha256": "15c625f740608b9df72b19843d67f5a6d26b94d28d6918bdde4bf3fa2deef308",
+      "transformations": []
+    },
+    {
+      "original_path": "runs/lean_supplement_20260915/reproduction/public_v030_formal_integrity.log",
+      "original_bytes": 98,
+      "original_sha256": "1a477c0a05551713c9039a3b4e9af504d3278bc8d5da6357791ed71353de6a40",
+      "published_path": "papers/lean-verification/reproduction/public_v030_formal_integrity.log",
+      "published_bytes": 98,
+      "published_sha256": "1a477c0a05551713c9039a3b4e9af504d3278bc8d5da6357791ed71353de6a40",
+      "transformations": []
+    },
+    {
+      "original_path": "runs/lean_supplement_20260915/reproduction/current_model_source_bundle/source_manifest.json",
+      "original_bytes": 25345,
+      "original_sha256": "b65d9a5514684cdd4cd8366d28616024b0313885c38e159ea381d7bae06749d2",
+      "published_path": "papers/lean-verification/reproduction/model-source-manifest.json",
+      "published_bytes": 25345,
+      "published_sha256": "b65d9a5514684cdd4cd8366d28616024b0313885c38e159ea381d7bae06749d2",
+      "transformations": []
+    },
+    {
+      "original_path": "runs/lean_supplement_20260915/reproduction/current_model_source_bundle/REPLAY.json",
+      "original_bytes": 1389,
+      "original_sha256": "f6217d209ef9dbd08379a68c8c49e12cd25a97022e8183cdd094c68dfe43adcb",
+      "published_path": "papers/lean-verification/reproduction/model-bundle-replay.json",
+      "published_bytes": 1389,
+      "published_sha256": "f6217d209ef9dbd08379a68c8c49e12cd25a97022e8183cdd094c68dfe43adcb",
+      "transformations": []
+    },
+    {
+      "original_path": "runs/lean_supplement_20260915/reproduction/current_model_source_bundle/README.md",
+      "original_bytes": 3752,
+      "original_sha256": "8bbe7cdcaf8f16571057a4ea821afee2b31b6c64708fdf0498b07a8176ab3766",
+      "published_path": "papers/lean-verification/reproduction/model-bundle-instructions.md",
+      "published_bytes": 3752,
+      "published_sha256": "8bbe7cdcaf8f16571057a4ea821afee2b31b6c64708fdf0498b07a8176ab3766",
+      "transformations": []
+    },
+    {
+      "original_path": "runs/lean_supplement_20260915/empirical_evidence.json",
+      "original_bytes": 98466,
+      "original_sha256": "88a4140eadbc1a1629cacb4bdddeb9e95012bcd839050e4d11380edbaaa950e9",
+      "published_path": "papers/lean-verification/empirical_evidence.json",
+      "published_bytes": 95568,
+      "published_sha256": "bf3810ca9372bb66ac416e229f5bd5c629c004d08f7f18466e6187485c8fabec",
+      "transformations": [
+        "Omit four redundant non-English free-text detail/phase fields; preserve numeric evidence, machine states and source hashes.",
+        "Removed JSON pointers: /native_actual_layers/summary_full_v1/detail, /native_actual_layers/terminal_layer34_v1/detail, /native_actual_layers/layer33_v1/detail, /daemon_census/status/phase",
+        "Serialize the public extract as UTF-8 JSON."
+      ]
+    },
+    {
+      "original_path": "runs/lean_supplement_20260915/manuscript.md",
+      "original_bytes": 81657,
+      "original_sha256": "ddfa77cc571f9fa36623ae605c74a39156d96af9cd41db2640f6501c841db6e5",
+      "published_path": "papers/lean-verification/manuscript.md",
+      "published_bytes": 82602,
+      "published_sha256": "79d9945471e5564a8ac8551a62086b1c1770a7a0694a4301ba383bae2f2655e6",
+      "transformations": [
+        "Remap local evidence links to existing public copies, accompanying records, release assets or explicit retained-source catalogue entries.",
+        "Use GitHub math fences and code-form inline math; protect literal vertical bars; use upright named functions and in-expression equation numbers without changing formula content.",
+        "Identify v1.0.0 as the publication version, add release/maintenance scope and current checkout commands, and clarify which larger evidence remains outside the release. Preserve the scientific claims, numerical tables and original historical baseline."
+      ]
+    },
+    {
+      "original_path": "runs/lean_supplement_20260915/formal_evidence.md",
+      "original_bytes": 36683,
+      "original_sha256": "594f1d2217547ad4742329ebd06ebee92f6f10abf942904e5dca6c439fad4ee1",
+      "published_path": "papers/lean-verification/formal_evidence.md",
+      "published_bytes": 36683,
+      "published_sha256": "594f1d2217547ad4742329ebd06ebee92f6f10abf942904e5dca6c439fad4ee1",
+      "transformations": [
+        "Remap local evidence links to existing public copies, accompanying records, release assets or explicit retained-source catalogue entries.",
+        "Use GitHub math fences and code-form inline math; protect literal vertical bars; use upright named functions and in-expression equation numbers without changing formula content."
+      ]
+    },
+    {
+      "original_path": "runs/lean_supplement_20260915/empirical_evidence.md",
+      "original_bytes": 30009,
+      "original_sha256": "d9e911eb9ca048fc1033eac9343f65127b40b07580b00687827794fa009ea9ce",
+      "published_path": "papers/lean-verification/empirical_evidence.md",
+      "published_bytes": 30009,
+      "published_sha256": "d9e911eb9ca048fc1033eac9343f65127b40b07580b00687827794fa009ea9ce",
+      "transformations": [
+        "Remap local evidence links to existing public copies, accompanying records, release assets or explicit retained-source catalogue entries.",
+        "Use GitHub math fences and code-form inline math; protect literal vertical bars; use upright named functions and in-expression equation numbers without changing formula content."
+      ]
+    },
+    {
+      "original_path": "runs/lean_supplement_20260915/reproduction_evidence.md",
+      "original_bytes": 24954,
+      "original_sha256": "f2eae00b51da5653a6460cafa0cc9b8b2313bb619ab19ce77267a1c76eb7f919",
+      "published_path": "papers/lean-verification/reproduction_evidence.md",
+      "published_bytes": 25251,
+      "published_sha256": "2ea96281ab2c7a0c7f90a13c9c1c1522407601b03a4947da43633cf6f08ebe29",
+      "transformations": [
+        "Remap local evidence links to existing public copies, accompanying records, release assets or explicit retained-source catalogue entries.",
+        "Use GitHub math fences and code-form inline math; protect literal vertical bars; use upright named functions and in-expression equation numbers without changing formula content.",
+        "Add a publication note separating historical availability observations from the new release."
+      ]
+    },
+    {
+      "original_path": "runs/lean_supplement_20260915/reference_verification.md",
+      "original_bytes": 3497,
+      "original_sha256": "adde09950a789a5f44e844793b7eb098fb7a4babc786339d34e9ea0eb4eb10d5",
+      "published_path": "papers/lean-verification/reference_verification.md",
+      "published_bytes": 3497,
+      "published_sha256": "adde09950a789a5f44e844793b7eb098fb7a4babc786339d34e9ea0eb4eb10d5",
+      "transformations": [
+        "Remap local evidence links to existing public copies, accompanying records, release assets or explicit retained-source catalogue entries.",
+        "Use GitHub math fences and code-form inline math; protect literal vertical bars; use upright named functions and in-expression equation numbers without changing formula content."
+      ]
+    }
+  ],
+  "scope": "English publication and reproduction evidence; no new historical P/N coverage, no end-to-end opening theorem, no complete distribution of the later P-fact bank or large native inputs."
+}

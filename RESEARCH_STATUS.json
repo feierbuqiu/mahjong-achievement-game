@@ -2,10 +2,9 @@
   "schema": "MJ_PUBLIC_RESEARCH_STATUS_V1",
   "snapshot_date": "2026-09-15",
   "computational_result_date": "2026-09-13",
-  "maintainer_research_status": "NO_FURTHER_MAINTAINER_END_TO_END_LEAN_VERIFICATION",
+  "maintainer_research_status": "ACTIVE_RESEARCH_PHASE_COMPLETE_MAINTENANCE_ON_DEMAND",
   "research_handoff": "research/2026-09-14/README.md",
   "hardware_receipt": "research/2026-09-14/hardware.json",
-  "new_release_created_for_this_update": false,
   "opening_outcome": "P",
   "winner_from_empty": "second_player",
   "first_move_orbit_outcomes": [
@@ -86,16 +85,41 @@
     "primary_language": "en",
     "manuscript": "papers/manuscript.md",
     "evidence_catalogue": "papers/evidence/README.md",
-    "chinese_manuscript_published": false
+    "chinese_manuscript_published": false,
+    "lean_supplement": "papers/lean-verification/manuscript.md",
+    "collection": "papers/README.md",
+    "reports": [
+      {
+        "date": "2026-09-13",
+        "title": "Mahjong Achievement on a Shared Table: A Computational Second-Player Win and Partial Lean Certification",
+        "manuscript": "papers/manuscript.md"
+      },
+      {
+        "date": "2026-09-15",
+        "title": "Lean Verification of the Mahjong Achievement Game: Strategy Certificates, Enumeration, and Retrograde Models",
+        "manuscript": "papers/lean-verification/manuscript.md"
+      }
+    ],
+    "companion_identity": "papers/lean-verification/companion.json"
   },
   "current_lean_progress": "research/2026-09-15/README.md",
-  "repository_development_status": "OPEN_TO_UPDATES_AND_CONTRIBUTIONS",
-  "current_work_frozen": false,
+  "repository_development_status": "SUBSTANTIVE_NEW_RESULTS_OR_NECESSARY_CORRECTIONS_ONLY",
+  "current_work_frozen": true,
   "maintainer_scope": {
     "decision_date": "2026-09-15",
     "further_end_to_end_full_scale_verification_planned": false,
     "accepts_expert_and_compute_contributions": true,
-    "status_note": "The maintainer will not undertake further end-to-end or full-scale Lean closure verification. Documentation, reports, corrections and contributed results remain welcome.",
-    "separate_lean_progress_report": "PLANNED_NOT_PUBLISHED_BY_THIS_UPDATE"
-  }
+    "status_note": "The maintainer is concluding the active research phase and will not undertake further end-to-end/full-scale Lean closure verification. Future follow-up is expected only for substantive new results or concrete correction/reproduction needs; expert and compute contributions remain welcome.",
+    "separate_lean_progress_report": "PUBLISHED_WITH_V1_0_0",
+    "routine_progress_followup_planned": false
+  },
+  "release": {
+    "version": "1.0.0",
+    "tag": "v1.0.0",
+    "date": "2026-09-15",
+    "url": "https://github.com/feierbuqiu/mahjong-achievement-game/releases/tag/v1.0.0",
+    "scope": "Immutable delivery of the current English papers, source, public evidence and reproduction materials; not completion of the opening Lean theorem."
+  },
+  "repository_archived": false,
+  "project_status_document": "docs/PROJECT_STATUS.md"
 }

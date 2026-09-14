@@ -28,8 +28,9 @@ As of **September 15, 2026**, the maintainer **will not undertake further
 end-to-end or full-scale closure verification**. The
 [current status](../research/2026-09-15/README.md) describes the latest results,
 remaining premises and source availability. The repository remains open to
-reports, corrections and independent contributions; this update does not
-freeze current work. The package described below remains reproducible.
+corrections and independent contributions. The v1.0.0 release fixes the current
+public delivery and closes the maintainer's active phase; see
+[project status](PROJECT_STATUS.md). The package described below remains reproducible.
 
 This repository now indexes closed original-game proofs for eight specific
 nonempty states with 12, 14, 20, 28, 30, 32, and 34 tiles, with Lean 4.33.1 source and a clean
@@ -76,6 +77,14 @@ subset is supplied. All original digests were rechecked locally for this
 publication. A public hash/receipt check covers the supplied subset, and the
 optional Lean command freshly checks the published mathematical models.
 Neither operation replays historical full-table P/N data.
+
+The [Lean verification paper](../papers/lean-verification/manuscript.md) now
+documents this development alongside the original computational paper. Its
+[publication provenance](../papers/lean-verification/provenance.json) records
+the new English audit material, selected replay records, public path placeholders
+and the exact companion-archive identity. The two new paper-preparation
+replays check the existing 84-module closure and 79 theorem declarations;
+they do not extend the historical P/N coverage or establish independent human review.
 
 Original research paths in receipt strings describe provenance. They do not
 imply that every historical working file is included here. The public source

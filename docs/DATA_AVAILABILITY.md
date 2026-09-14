@@ -1,7 +1,7 @@
 # Data availability
 
-The [primary English paper](../papers/manuscript.md), its English audit memos,
-and selected later progress receipts are distributed with this checkout.
+Both [English research papers](../papers/README.md), their English audit memos,
+and selected progress/reproduction receipts are distributed with v1.0.0.
 The [paper source catalogue](../papers/evidence/README.md) separates public
 copies from retained historical sources and records original/public hashes.
 The Chinese manuscript, original-language historical notes, large SQLite
@@ -23,7 +23,14 @@ Its [manifest](../research/2026-09-15/provenance.json) identifies every public
 copy. The 5,329 files named by the original local acceptance record are not
 all distributed: native test inputs, compiled objects, operational harnesses
 and the complete intermediate evidence chain remain outside this package.
-The repository remains open to additions, including a planned separate Lean report.
+The [new Lean paper](../papers/lean-verification/manuscript.md) and its
+[supporting records](../papers/lean-verification/README.md) are now published.
+The release also supplies the exact tested 175,554-byte standalone model-source
+ZIP as a separate asset; its [identity and scope](../papers/lean-verification/companion.json)
+distinguish it from the full source ZIP and Git history bundle. The two new
+paper-preparation replay receipts concern the same 84-module closure and do
+not add historical P/N coverage. See [project status](PROJECT_STATUS.md)
+for the completed stage and future maintenance scope.
 
 The latest [formal source](../formal/README.md) contains the complete replay
 closure for the new 12-tile and 14-tile roots, the compressed 20-tile proof,

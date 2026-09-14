@@ -4,6 +4,10 @@ Thank you for helping make this result inspectable and reproducible.
 Use English for repository documentation, issues, pull requests, and commit
 messages. Keep changes focused and explain any effect on the research claim.
 
+The [v1.0.0 delivery](docs/PROJECT_STATUS.md) closes the maintainer's active
+research phase. Substantive new findings, necessary corrections and reproducibility
+improvements remain welcome, but routine progress or a review schedule is not promised.
+
 ## Workflow
 
 1. Open an issue for a substantial change in the model, algorithm, evidence,

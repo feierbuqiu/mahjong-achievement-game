@@ -1,0 +1,14 @@
+{
+  "schema": "MJ_LEAN_COMPANION_V1",
+  "release": "v1.0.0",
+  "filename": "current_model_source_bundle.zip",
+  "url": "https://github.com/feierbuqiu/mahjong-achievement-game/releases/download/v1.0.0/current_model_source_bundle.zip",
+  "bytes": 175554,
+  "sha256": "fdd9e7ebaaaeac891e746b69f604ee9fc92ccdb85c4c03f92b4affd164f4da33",
+  "source_modules": 84,
+  "input_files": 91,
+  "proof_sources_match": "research/2026-09-15/lean",
+  "source_manifest": "reproduction/model-source-manifest.json",
+  "platform": "Windows replay controller; Python 3.11+, psutil 7.2.2 and Lean 4.33.1",
+  "publication": "Release asset; the original archive bytes and internal manifests are preserved."
+}

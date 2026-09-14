@@ -1,0 +1,31 @@
+{
+  "status": "PASS_RECIPIENT_PATH_KERNEL_SOURCE",
+  "tested_archive_sha256": "ff9a3e9986770dd52191bb93d767a2046054ce629545bdb1539c9709c38479e9",
+  "source_modules": 84,
+  "audited_declarations": 79,
+  "receipt_sha256": "df7371b2d6d3cc3780c9a7052fd026765f047e8178e2f980c70d2a9f7d4a9ba3",
+  "driver_sha256": "7bb0062947ab614fb34b9c895208087c85e9c4feb6da7a8c15159f5aeda16b0c",
+  "wall_seconds": 93.922,
+  "peak_process_tree_private_bytes": 2305208320,
+  "peak_lean_processes": 2,
+  "resource_limits": {
+    "lean_heap_mib": 3072,
+    "threads_per_lean": 1,
+    "workers": 2,
+    "memory_hard_cap_bytes": 15500000000,
+    "cpu_cap_percent": 80,
+    "overall_deadline_seconds": 300
+  },
+  "trust_level": 0,
+  "lean_version": "Lean (version 4.33.1, x86_64-w64-windows-gnu, commit 819816b2e0a3bf405af45ae5c7af2491d8f5bee6, Release)",
+  "lean_sha256": "af49bacfabaa1fea71332ca0feae0fa1a60912219d5902291adc79f905bffb8d",
+  "no_source_root_override": true,
+  "original_research_sources_used": false,
+  "reused_project_objects": false,
+  "native_workers_executed": false,
+  "historical_pn_payloads_read": false,
+  "new_historical_pn_rows": 0,
+  "empty_game_lean": "NOT_VERIFIED",
+  "platform": "Windows; Linux/macOS not tested",
+  "scope": "Exact packaged replay.py, extracted from the tested ZIP into a new directory; fixed external Lean/Python dependencies only."
+}

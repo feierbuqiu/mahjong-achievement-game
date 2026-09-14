@@ -6,8 +6,10 @@ docs/REPRODUCIBILITY.md before changing research claims or algorithms.
 - The published computational opening result is P (second-player win), with
   complete reverse replay. As of September 15, 2026, the maintainer will not
   undertake further end-to-end/full-scale Lean closure verification; the
-  opening theorem is NOT_VERIFIED. The repository remains open to reports,
-  corrections and independent contributions; current work is not frozen.
+  opening theorem is NOT_VERIFIED. v1.0.0 closes the maintainer's active phase
+  and freezes the current public delivery. Further updates are expected only
+  for substantive new results or necessary corrections. Read docs/PROJECT_STATUS.md
+  and both English reports listed in papers/README.md; keep their evidence scopes separate.
   Read research/2026-09-15/README.md for current evidence and boundaries, and
   research/2026-09-14/README.md for hardware and full-scan benchmarks.
   Do not restart research jobs or provision compute without a new request.

@@ -1,6 +1,21 @@
 # Changelog
 
-## Unreleased - 2026-09-15
+## 1.0.0 - 2026-09-15
+
+- Publish the English Lean verification paper alongside the original English
+  computational paper, with 26 preserved expressions, corrected resource links,
+  an evidence-availability catalogue and selected reproduction records.
+- Distribute the exact tested standalone model-source ZIP as a release asset:
+  84 Lean modules, 79 audited declarations and a Windows replay controller.
+  This improves delivery and reproducibility; it adds no historical P/N rows.
+- Freeze the current papers, code and public evidence as a signed immutable
+  major release. Close the maintainer's active research phase; further follow-up
+  is expected only for substantive new progress or concrete maintenance needs.
+- Preserve the computational second-player conclusion, the NOT_VERIFIED opening
+  Lean status, and the remaining implementation/data-binding obligations.
+  Version 1 denotes completion of this research delivery, not a full formal proof.
+
+### Earlier status synchronization on September 15
 
 - Synchronize the latest finite Lean model and bounded production-test progress:
   10 core model modules, 79 audited theorems, 102 synthetic configurations and

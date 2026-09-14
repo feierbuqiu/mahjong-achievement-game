@@ -105,11 +105,18 @@ are not cold replay timings.
 
 ## English paper and document checks
 
-Read the [English paper](../papers/manuscript.md) directly on GitHub. Run
+Read both [English papers](../papers/README.md) directly on GitHub. Run
 `python3 tools/verify_paper.py` to check its published hash, all 370 preserved
 formulas, equation tags, tables, and evidence links. The source catalogue
 explicitly identifies historical attachments not included in this publication.
 This check validates publication integrity; it does not prove the mathematics.
+
+Run `python3 tools/verify_lean_supplement.py` for the new Lean paper's 26
+expressions, numerical tables, evidence links, provenance and replay records.
+Its [publication overview](../papers/lean-verification/README.md) links the
+exact Windows model-source companion ZIP supplied with v1.0.0. The archive
+and its extracted replay controller preserve the original tested bytes;
+the instructions distinguish source-only replay from unavailable large-input tasks.
 
 ## Reporting a reproduction
 
