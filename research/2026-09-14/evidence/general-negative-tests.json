@@ -1,0 +1,29 @@
+{
+  "status": "PASS",
+  "outcomes": [
+    {
+      "case": "valid",
+      "exit_code": 0,
+      "accepted_output": true
+    },
+    {
+      "case": "source_label_flip",
+      "exit_code": 1,
+      "accepted_output": false
+    },
+    {
+      "case": "missing_target_bucket",
+      "exit_code": 1,
+      "accepted_output": false
+    },
+    {
+      "case": "missing_symmetry_path",
+      "exit_code": 1,
+      "accepted_output": false
+    }
+  ],
+  "worker_sha256": "08edfbb561c43b215e8336a852d710afff6628796e706a24d16e4532060f2c4f",
+  "fault_worker_sha256": "4504136956d27583f9cd3c8ef3faffb0e17b59c6983ef0f2a008e95c25658398",
+  "test_sha256": "fe1ef5047856b986334124d2e43d0bcfbe8f2bad8cf598abbeb6c5741aca6105",
+  "production_coverage_credit": 0
+}

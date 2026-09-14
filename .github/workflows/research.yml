@@ -26,6 +26,7 @@ jobs:
         with:
           python-version: '3.12'
       - run: python tools/verify_repository.py
+      - run: python research/2026-09-14/verify.py
   cpp:
     name: C++ smoke (${{ matrix.os }})
     runs-on: ${{ matrix.os }}

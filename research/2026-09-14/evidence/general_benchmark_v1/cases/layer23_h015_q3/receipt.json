@@ -1,0 +1,58 @@
+{
+  "manifest_sha256": "6278e8d0667d33f0fd7034b785fc3d5ca5bf79911941521be8bc0936853813d8",
+  "accepted": {
+    "case": "layer23_h015_q3",
+    "layer": 23,
+    "bucket": 15,
+    "start": 9222778038,
+    "rows": 8192,
+    "processes": 1,
+    "threads_per_process": 12,
+    "wall_seconds": 6.954000000027008,
+    "scan_critical_seconds": 4.8800999,
+    "rows_per_second_end_to_end": 1178.0270347955397,
+    "rows_per_second_scan": 1678.654160337988,
+    "peak_private_bytes": 5109805056,
+    "peak_sampled_cpu_percent": 75.04618227358438,
+    "average_cpu_percent": 53.111293859442846,
+    "outputs": [
+      {
+        "path": "cases\\layer23_h015_q3\\0.json",
+        "sha256": "02865fff792900f67004ae269fcadc097768d10b5cd4e56983035b67d2679779",
+        "value": {
+          "schema": "LEAN_GENERAL_BUCKET_CHUNK_V1",
+          "status": "PASS",
+          "layer": 23,
+          "bucket": 15,
+          "start": 9222778038,
+          "count": 8192,
+          "threads": 12,
+          "load_nanoseconds": 1733299900,
+          "scan_nanoseconds": 4880099900,
+          "worker_nanoseconds": 57268669000,
+          "target_buckets": [
+            15,
+            16,
+            35
+          ],
+          "full_table_Lean": "NOT_VERIFIED",
+          "scope": "row equations and all physical references; target correctness supplied separately"
+        },
+        "command": [
+          "<research-root>\\build\\lean_table_checker\\GeneralWorker.exe",
+          "<research-root>\\runs\\lean_table_checker\\summary_full_v1\\inputs",
+          "<research-root>\\runs\\lean_table_checker\\general_peak_input_v1",
+          "<research-root>\\runs\\global_retro\\pilot_v1\\data",
+          "<research-root>\\runs\\lean_table_checker\\general_peak_input_v1\\catalog.tsv",
+          "23",
+          "15",
+          "9222778038",
+          "8192",
+          "12",
+          "<research-root>\\runs\\lean_table_checker\\general_benchmark_v1\\cases\\layer23_h015_q3\\0.json"
+        ]
+      }
+    ]
+  },
+  "utc": "2026-09-14T06:45:57Z"
+}

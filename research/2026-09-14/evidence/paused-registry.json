@@ -1,0 +1,78 @@
+{
+  "schema": "UNATTENDED_LEAN_STATUS_V1",
+  "utc": "2026-09-14T04:01:26Z",
+  "state": "PAUSED",
+  "discovered": 26139,
+  "expanded": 21530,
+  "certified": 24655,
+  "new_certificates": 283,
+  "targets": [
+    {
+      "state": "0000000020000001110001110200000000",
+      "tiles": 10,
+      "certified": false
+    },
+    {
+      "state": "0000000000000000000000000000000000",
+      "tiles": 0,
+      "certified": false
+    }
+  ],
+  "certified_by_layer": [
+    {
+      "n": 12,
+      "count": 4
+    },
+    {
+      "n": 14,
+      "count": 43
+    },
+    {
+      "n": 16,
+      "count": 277
+    },
+    {
+      "n": 18,
+      "count": 693
+    },
+    {
+      "n": 20,
+      "count": 860
+    },
+    {
+      "n": 22,
+      "count": 1401
+    },
+    {
+      "n": 24,
+      "count": 3621
+    },
+    {
+      "n": 26,
+      "count": 6028
+    },
+    {
+      "n": 28,
+      "count": 5831
+    },
+    {
+      "n": 30,
+      "count": 4458
+    },
+    {
+      "n": 32,
+      "count": 1439
+    }
+  ],
+  "newly_certified_this_session": 15977,
+  "session_seconds": 44756.29351592064,
+  "session_certified_per_hour": 1285.1198229705967,
+  "empty_game_Lean": "NOT_VERIFIED",
+  "peak_private_bytes": 15162486784,
+  "job_memory_ceiling_bytes": 15500000000,
+  "cpu_cap_percent": 80,
+  "model_calls": 0,
+  "subagents": 0,
+  "final_receipt": null,
+  "proof_scope": "Only accepted original-rule theorems count as certified."
+}

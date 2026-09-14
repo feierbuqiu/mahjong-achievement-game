@@ -15,12 +15,18 @@ rules, index, recurrence, implementation, and stored values.
 | Bucket counts and SHA-256 audit | Coverage, payload identity, padding, and stored P counts | File identity is not mathematical correctness |
 | Opening queries | P at the empty state; N and P replies for all six first-move orbits | Reads the computed table; not a closed strategy certificate |
 | Publication CI | Source builds, small execution checks, and evidence-file consistency | Does not recompute the 97.32 GB database |
-| Lean kernel CI | Fresh source replay of three published nonempty-position proofs and their axiom audits | Does not establish the empty-position theorem |
+| Lean kernel CI | Fresh source replay of eight indexed nonempty-position roots and their axiom audits | Does not establish the empty-position theorem or replay the entire later local registry |
+| September 14 compiled-Lean scans | Complete layer-34 and layer-33 row checks, plus separate bounded general-layer samples | Native compilation/runtime trust; global coverage and final induction remain unfinished |
 | SSH/GitHub signatures | A commit or tag was signed by the identified key | Does not prove its scientific claims |
 
 ## Formal verification
 
 An end-to-end Lean theorem for this concrete opening is **not published**.
+The maintainer's personal effort to complete it is **paused as of September 14,
+2026**. The [dated handoff](../research/2026-09-14/README.md) describes the latest
+results, conditional soundness premises, performance limitations, and retained
+materials. The package described below remains reproducible.
+
 This repository now indexes closed original-game proofs for eight specific
 nonempty states with 12, 14, 20, 28, 30, 32, and 34 tiles, with Lean 4.33.1 source and a clean
 kernel replay. Their exact physical states, theorem names, allowed axioms,
@@ -51,6 +57,12 @@ The later [Lean provenance manifest](../formal/provenance.json) separately
 records the frozen formal source and the selected historical replay fields.
 It preserves source bytes and distinguishes original receipt hashes from
 the hashes of public extracts.
+
+The [September 14 manifest](../research/2026-09-14/provenance.json) covers the
+later checker source and selected run receipts. Its verification helper
+recomputes benchmark counts and weighted rates. Public receipt consistency
+does not establish native execution correctness or independently reproduce
+the later registry's retained concrete proof trees.
 
 Original research paths in receipt strings describe provenance. They do not
 imply that every historical working file is included here. The public source

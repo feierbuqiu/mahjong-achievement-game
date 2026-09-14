@@ -113,6 +113,13 @@ This check validates publication integrity; it does not prove the mathematics.
 
 ## Reporting a reproduction
 
+For the later compiled-checker work, see the
+[September 14 handoff](../research/2026-09-14/README.md). It provides a separate
+receipt-arithmetic check and fresh replay of 56 checker source modules. Its
+native input preparation and scheduling are not yet a portable campaign.
+The maintainer's personal opening-verification effort is paused; these
+reproduction commands remain available to independent contributors.
+
 Include the commit/tag, operating system, CPU, RAM, compiler version, build
 flags, exact input and command, elapsed time, peak memory, exit code, output
 hashes, and final coverage. Keep complete runs separate from partial runs and

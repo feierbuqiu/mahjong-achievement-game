@@ -1,0 +1,1 @@
+{"schema":"LEAN_GENERAL_BUCKET_CHUNK_V1","status":"PASS","layer":32,"bucket":107,"start":2160554,"count":683,"threads":1,"load_nanoseconds":13355900,"scan_nanoseconds":210857800,"worker_nanoseconds":210613700,"target_buckets":[107,110,149],"full_table_Lean":"NOT_VERIFIED","scope":"row equations and all physical references; target correctness supplied separately"}

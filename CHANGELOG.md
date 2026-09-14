@@ -1,6 +1,24 @@
 # Changelog
 
-## Unreleased - 2026-09-13
+## Unreleased - 2026-09-14
+
+- Pause the maintainer's personal end-to-end Lean effort. Preserve the
+  computational second-player conclusion and the NOT_VERIFIED opening and
+  10-tile formal targets; keep replay of existing proofs available.
+- Publish an English handoff with the later local registry's 24,655 P states,
+  the two complete compiled-checker layers (22,512,356 rows), and explicit
+  distinctions between retained proof trees, public kernel proofs, conditional
+  soundness lemmas, and native execution evidence.
+- Add 56 frozen checker source modules, selected exporters and provenance,
+  all 47 bounded benchmark case receipts, negative-test and pause/resume
+  records, and a public consistency/replay helper.
+- Record current workstation specifications and the failed 30-day feasibility
+  target for this implementation. Invite independent verification, algorithm
+  improvements and measured larger-host trials; offer no completion date.
+- Retain the English paper as the homepage's main report. Do not create a new
+  release or change the signed v0.2.0 snapshot.
+
+## 0.2.0 - 2026-09-13
 
 - Publish the full English research report with seven appendices, GitHub math
   formatting, a prominent homepage entry, English audit memos, and an explicit

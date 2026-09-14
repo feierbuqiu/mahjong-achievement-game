@@ -1,0 +1,430 @@
+{
+  "manifest_sha256": "6278e8d0667d33f0fd7034b785fc3d5ca5bf79911941521be8bc0936853813d8",
+  "accepted": {
+    "case": "layer32_h070_q2",
+    "layer": 32,
+    "bucket": 70,
+    "start": 1873483,
+    "rows": 8192,
+    "processes": 12,
+    "threads_per_process": 1,
+    "wall_seconds": 0.4369999999762513,
+    "scan_critical_seconds": 0.2906224,
+    "rows_per_second_end_to_end": 18745.99542435971,
+    "rows_per_second_scan": 28187.779056259944,
+    "peak_private_bytes": 742662144,
+    "peak_sampled_cpu_percent": 61.090896123527685,
+    "average_cpu_percent": 46.25822368672443,
+    "outputs": [
+      {
+        "path": "cases\\layer32_h070_q2\\0.json",
+        "sha256": "3e51c2e76b53f46cf636a9f1b6963a64f54bd0a885b9fd4f1ef7274ee6bc6d20",
+        "value": {
+          "schema": "LEAN_GENERAL_BUCKET_CHUNK_V1",
+          "status": "PASS",
+          "layer": 32,
+          "bucket": 70,
+          "start": 1873483,
+          "count": 682,
+          "threads": 1,
+          "load_nanoseconds": 15069800,
+          "scan_nanoseconds": 251687700,
+          "worker_nanoseconds": 251452800,
+          "target_buckets": [
+            106
+          ],
+          "full_table_Lean": "NOT_VERIFIED",
+          "scope": "row equations and all physical references; target correctness supplied separately"
+        },
+        "command": [
+          "<research-root>\\build\\lean_table_checker\\GeneralWorker.exe",
+          "<research-root>\\runs\\lean_table_checker\\summary_full_v1\\inputs",
+          "<research-root>\\runs\\lean_table_checker\\general_input_v1",
+          "<research-root>\\runs\\global_retro\\pilot_v1\\data",
+          "<research-root>\\runs\\lean_table_checker\\general_input_v1\\catalog.tsv",
+          "32",
+          "70",
+          "1873483",
+          "682",
+          "1",
+          "<research-root>\\runs\\lean_table_checker\\general_benchmark_v1\\cases\\layer32_h070_q2\\0.json"
+        ]
+      },
+      {
+        "path": "cases\\layer32_h070_q2\\1.json",
+        "sha256": "5b5b25d2d334e2808571d6a8142290934eb56c9b878c49001db0e5ae7a41bf73",
+        "value": {
+          "schema": "LEAN_GENERAL_BUCKET_CHUNK_V1",
+          "status": "PASS",
+          "layer": 32,
+          "bucket": 70,
+          "start": 1874165,
+          "count": 683,
+          "threads": 1,
+          "load_nanoseconds": 15107400,
+          "scan_nanoseconds": 219621700,
+          "worker_nanoseconds": 219214800,
+          "target_buckets": [
+            106
+          ],
+          "full_table_Lean": "NOT_VERIFIED",
+          "scope": "row equations and all physical references; target correctness supplied separately"
+        },
+        "command": [
+          "<research-root>\\build\\lean_table_checker\\GeneralWorker.exe",
+          "<research-root>\\runs\\lean_table_checker\\summary_full_v1\\inputs",
+          "<research-root>\\runs\\lean_table_checker\\general_input_v1",
+          "<research-root>\\runs\\global_retro\\pilot_v1\\data",
+          "<research-root>\\runs\\lean_table_checker\\general_input_v1\\catalog.tsv",
+          "32",
+          "70",
+          "1874165",
+          "683",
+          "1",
+          "<research-root>\\runs\\lean_table_checker\\general_benchmark_v1\\cases\\layer32_h070_q2\\1.json"
+        ]
+      },
+      {
+        "path": "cases\\layer32_h070_q2\\2.json",
+        "sha256": "6826ca34ed711b167cb0c0427f307f0555df13b76b3b59857f22ab583e239ffb",
+        "value": {
+          "schema": "LEAN_GENERAL_BUCKET_CHUNK_V1",
+          "status": "PASS",
+          "layer": 32,
+          "bucket": 70,
+          "start": 1874848,
+          "count": 683,
+          "threads": 1,
+          "load_nanoseconds": 13998600,
+          "scan_nanoseconds": 238141500,
+          "worker_nanoseconds": 237550400,
+          "target_buckets": [
+            106
+          ],
+          "full_table_Lean": "NOT_VERIFIED",
+          "scope": "row equations and all physical references; target correctness supplied separately"
+        },
+        "command": [
+          "<research-root>\\build\\lean_table_checker\\GeneralWorker.exe",
+          "<research-root>\\runs\\lean_table_checker\\summary_full_v1\\inputs",
+          "<research-root>\\runs\\lean_table_checker\\general_input_v1",
+          "<research-root>\\runs\\global_retro\\pilot_v1\\data",
+          "<research-root>\\runs\\lean_table_checker\\general_input_v1\\catalog.tsv",
+          "32",
+          "70",
+          "1874848",
+          "683",
+          "1",
+          "<research-root>\\runs\\lean_table_checker\\general_benchmark_v1\\cases\\layer32_h070_q2\\2.json"
+        ]
+      },
+      {
+        "path": "cases\\layer32_h070_q2\\3.json",
+        "sha256": "fd630712634f610abb46f662a90049209d4ecbe9707bcf3acfd10c59e43faa9a",
+        "value": {
+          "schema": "LEAN_GENERAL_BUCKET_CHUNK_V1",
+          "status": "PASS",
+          "layer": 32,
+          "bucket": 70,
+          "start": 1875531,
+          "count": 682,
+          "threads": 1,
+          "load_nanoseconds": 13673100,
+          "scan_nanoseconds": 181971700,
+          "worker_nanoseconds": 181092000,
+          "target_buckets": [
+            106
+          ],
+          "full_table_Lean": "NOT_VERIFIED",
+          "scope": "row equations and all physical references; target correctness supplied separately"
+        },
+        "command": [
+          "<research-root>\\build\\lean_table_checker\\GeneralWorker.exe",
+          "<research-root>\\runs\\lean_table_checker\\summary_full_v1\\inputs",
+          "<research-root>\\runs\\lean_table_checker\\general_input_v1",
+          "<research-root>\\runs\\global_retro\\pilot_v1\\data",
+          "<research-root>\\runs\\lean_table_checker\\general_input_v1\\catalog.tsv",
+          "32",
+          "70",
+          "1875531",
+          "682",
+          "1",
+          "<research-root>\\runs\\lean_table_checker\\general_benchmark_v1\\cases\\layer32_h070_q2\\3.json"
+        ]
+      },
+      {
+        "path": "cases\\layer32_h070_q2\\4.json",
+        "sha256": "2b08b67b67d3ac873dd7bdb53d02229ec9a9c962a2f499586ced61ec56caed5c",
+        "value": {
+          "schema": "LEAN_GENERAL_BUCKET_CHUNK_V1",
+          "status": "PASS",
+          "layer": 32,
+          "bucket": 70,
+          "start": 1876213,
+          "count": 683,
+          "threads": 1,
+          "load_nanoseconds": 16720400,
+          "scan_nanoseconds": 254432300,
+          "worker_nanoseconds": 253980000,
+          "target_buckets": [
+            106
+          ],
+          "full_table_Lean": "NOT_VERIFIED",
+          "scope": "row equations and all physical references; target correctness supplied separately"
+        },
+        "command": [
+          "<research-root>\\build\\lean_table_checker\\GeneralWorker.exe",
+          "<research-root>\\runs\\lean_table_checker\\summary_full_v1\\inputs",
+          "<research-root>\\runs\\lean_table_checker\\general_input_v1",
+          "<research-root>\\runs\\global_retro\\pilot_v1\\data",
+          "<research-root>\\runs\\lean_table_checker\\general_input_v1\\catalog.tsv",
+          "32",
+          "70",
+          "1876213",
+          "683",
+          "1",
+          "<research-root>\\runs\\lean_table_checker\\general_benchmark_v1\\cases\\layer32_h070_q2\\4.json"
+        ]
+      },
+      {
+        "path": "cases\\layer32_h070_q2\\5.json",
+        "sha256": "292a1c69f08c2114cb72e31e28a1749e81b6ed45204bd759c683a96056ec1cd1",
+        "value": {
+          "schema": "LEAN_GENERAL_BUCKET_CHUNK_V1",
+          "status": "PASS",
+          "layer": 32,
+          "bucket": 70,
+          "start": 1876896,
+          "count": 683,
+          "threads": 1,
+          "load_nanoseconds": 13883700,
+          "scan_nanoseconds": 238429500,
+          "worker_nanoseconds": 238018500,
+          "target_buckets": [
+            106
+          ],
+          "full_table_Lean": "NOT_VERIFIED",
+          "scope": "row equations and all physical references; target correctness supplied separately"
+        },
+        "command": [
+          "<research-root>\\build\\lean_table_checker\\GeneralWorker.exe",
+          "<research-root>\\runs\\lean_table_checker\\summary_full_v1\\inputs",
+          "<research-root>\\runs\\lean_table_checker\\general_input_v1",
+          "<research-root>\\runs\\global_retro\\pilot_v1\\data",
+          "<research-root>\\runs\\lean_table_checker\\general_input_v1\\catalog.tsv",
+          "32",
+          "70",
+          "1876896",
+          "683",
+          "1",
+          "<research-root>\\runs\\lean_table_checker\\general_benchmark_v1\\cases\\layer32_h070_q2\\5.json"
+        ]
+      },
+      {
+        "path": "cases\\layer32_h070_q2\\6.json",
+        "sha256": "9fcd41a10b24b40a36296f95172b6c9b0ab5f65834d533025a5a1d261b1efd35",
+        "value": {
+          "schema": "LEAN_GENERAL_BUCKET_CHUNK_V1",
+          "status": "PASS",
+          "layer": 32,
+          "bucket": 70,
+          "start": 1877579,
+          "count": 682,
+          "threads": 1,
+          "load_nanoseconds": 13211600,
+          "scan_nanoseconds": 215625000,
+          "worker_nanoseconds": 215413400,
+          "target_buckets": [
+            106
+          ],
+          "full_table_Lean": "NOT_VERIFIED",
+          "scope": "row equations and all physical references; target correctness supplied separately"
+        },
+        "command": [
+          "<research-root>\\build\\lean_table_checker\\GeneralWorker.exe",
+          "<research-root>\\runs\\lean_table_checker\\summary_full_v1\\inputs",
+          "<research-root>\\runs\\lean_table_checker\\general_input_v1",
+          "<research-root>\\runs\\global_retro\\pilot_v1\\data",
+          "<research-root>\\runs\\lean_table_checker\\general_input_v1\\catalog.tsv",
+          "32",
+          "70",
+          "1877579",
+          "682",
+          "1",
+          "<research-root>\\runs\\lean_table_checker\\general_benchmark_v1\\cases\\layer32_h070_q2\\6.json"
+        ]
+      },
+      {
+        "path": "cases\\layer32_h070_q2\\7.json",
+        "sha256": "0af6b5a31adf57ec3f1e53d9de53e0b2dde7bd185e46bd58eadb5d33c518589e",
+        "value": {
+          "schema": "LEAN_GENERAL_BUCKET_CHUNK_V1",
+          "status": "PASS",
+          "layer": 32,
+          "bucket": 70,
+          "start": 1878261,
+          "count": 683,
+          "threads": 1,
+          "load_nanoseconds": 11985200,
+          "scan_nanoseconds": 271096000,
+          "worker_nanoseconds": 270863000,
+          "target_buckets": [
+            106
+          ],
+          "full_table_Lean": "NOT_VERIFIED",
+          "scope": "row equations and all physical references; target correctness supplied separately"
+        },
+        "command": [
+          "<research-root>\\build\\lean_table_checker\\GeneralWorker.exe",
+          "<research-root>\\runs\\lean_table_checker\\summary_full_v1\\inputs",
+          "<research-root>\\runs\\lean_table_checker\\general_input_v1",
+          "<research-root>\\runs\\global_retro\\pilot_v1\\data",
+          "<research-root>\\runs\\lean_table_checker\\general_input_v1\\catalog.tsv",
+          "32",
+          "70",
+          "1878261",
+          "683",
+          "1",
+          "<research-root>\\runs\\lean_table_checker\\general_benchmark_v1\\cases\\layer32_h070_q2\\7.json"
+        ]
+      },
+      {
+        "path": "cases\\layer32_h070_q2\\8.json",
+        "sha256": "3842c4b164884dfc9a2c6994c6ee4e91736895c646d9c9442b2f640f8d821264",
+        "value": {
+          "schema": "LEAN_GENERAL_BUCKET_CHUNK_V1",
+          "status": "PASS",
+          "layer": 32,
+          "bucket": 70,
+          "start": 1878944,
+          "count": 683,
+          "threads": 1,
+          "load_nanoseconds": 11954600,
+          "scan_nanoseconds": 290622400,
+          "worker_nanoseconds": 290429600,
+          "target_buckets": [
+            106
+          ],
+          "full_table_Lean": "NOT_VERIFIED",
+          "scope": "row equations and all physical references; target correctness supplied separately"
+        },
+        "command": [
+          "<research-root>\\build\\lean_table_checker\\GeneralWorker.exe",
+          "<research-root>\\runs\\lean_table_checker\\summary_full_v1\\inputs",
+          "<research-root>\\runs\\lean_table_checker\\general_input_v1",
+          "<research-root>\\runs\\global_retro\\pilot_v1\\data",
+          "<research-root>\\runs\\lean_table_checker\\general_input_v1\\catalog.tsv",
+          "32",
+          "70",
+          "1878944",
+          "683",
+          "1",
+          "<research-root>\\runs\\lean_table_checker\\general_benchmark_v1\\cases\\layer32_h070_q2\\8.json"
+        ]
+      },
+      {
+        "path": "cases\\layer32_h070_q2\\9.json",
+        "sha256": "daca7077e0673b887923621951d1cb482fc2cf3f4edc09fdb3dbafe288a05bd9",
+        "value": {
+          "schema": "LEAN_GENERAL_BUCKET_CHUNK_V1",
+          "status": "PASS",
+          "layer": 32,
+          "bucket": 70,
+          "start": 1879627,
+          "count": 682,
+          "threads": 1,
+          "load_nanoseconds": 13107400,
+          "scan_nanoseconds": 281520600,
+          "worker_nanoseconds": 281302300,
+          "target_buckets": [
+            106
+          ],
+          "full_table_Lean": "NOT_VERIFIED",
+          "scope": "row equations and all physical references; target correctness supplied separately"
+        },
+        "command": [
+          "<research-root>\\build\\lean_table_checker\\GeneralWorker.exe",
+          "<research-root>\\runs\\lean_table_checker\\summary_full_v1\\inputs",
+          "<research-root>\\runs\\lean_table_checker\\general_input_v1",
+          "<research-root>\\runs\\global_retro\\pilot_v1\\data",
+          "<research-root>\\runs\\lean_table_checker\\general_input_v1\\catalog.tsv",
+          "32",
+          "70",
+          "1879627",
+          "682",
+          "1",
+          "<research-root>\\runs\\lean_table_checker\\general_benchmark_v1\\cases\\layer32_h070_q2\\9.json"
+        ]
+      },
+      {
+        "path": "cases\\layer32_h070_q2\\10.json",
+        "sha256": "e3e99341bcc20c33c9c388ecff473c90b204e9d26a4a5d24f868418970f8382b",
+        "value": {
+          "schema": "LEAN_GENERAL_BUCKET_CHUNK_V1",
+          "status": "PASS",
+          "layer": 32,
+          "bucket": 70,
+          "start": 1880309,
+          "count": 683,
+          "threads": 1,
+          "load_nanoseconds": 10989200,
+          "scan_nanoseconds": 273261700,
+          "worker_nanoseconds": 273059700,
+          "target_buckets": [
+            106
+          ],
+          "full_table_Lean": "NOT_VERIFIED",
+          "scope": "row equations and all physical references; target correctness supplied separately"
+        },
+        "command": [
+          "<research-root>\\build\\lean_table_checker\\GeneralWorker.exe",
+          "<research-root>\\runs\\lean_table_checker\\summary_full_v1\\inputs",
+          "<research-root>\\runs\\lean_table_checker\\general_input_v1",
+          "<research-root>\\runs\\global_retro\\pilot_v1\\data",
+          "<research-root>\\runs\\lean_table_checker\\general_input_v1\\catalog.tsv",
+          "32",
+          "70",
+          "1880309",
+          "683",
+          "1",
+          "<research-root>\\runs\\lean_table_checker\\general_benchmark_v1\\cases\\layer32_h070_q2\\10.json"
+        ]
+      },
+      {
+        "path": "cases\\layer32_h070_q2\\11.json",
+        "sha256": "03460889537ae8658be6ded60961bd08a3e88c7f3349bf651b7ad8a40f223069",
+        "value": {
+          "schema": "LEAN_GENERAL_BUCKET_CHUNK_V1",
+          "status": "PASS",
+          "layer": 32,
+          "bucket": 70,
+          "start": 1880992,
+          "count": 683,
+          "threads": 1,
+          "load_nanoseconds": 9116300,
+          "scan_nanoseconds": 258895800,
+          "worker_nanoseconds": 258737900,
+          "target_buckets": [
+            106
+          ],
+          "full_table_Lean": "NOT_VERIFIED",
+          "scope": "row equations and all physical references; target correctness supplied separately"
+        },
+        "command": [
+          "<research-root>\\build\\lean_table_checker\\GeneralWorker.exe",
+          "<research-root>\\runs\\lean_table_checker\\summary_full_v1\\inputs",
+          "<research-root>\\runs\\lean_table_checker\\general_input_v1",
+          "<research-root>\\runs\\global_retro\\pilot_v1\\data",
+          "<research-root>\\runs\\lean_table_checker\\general_input_v1\\catalog.tsv",
+          "32",
+          "70",
+          "1880992",
+          "683",
+          "1",
+          "<research-root>\\runs\\lean_table_checker\\general_benchmark_v1\\cases\\layer32_h070_q2\\11.json"
+        ]
+      }
+    ]
+  },
+  "utc": "2026-09-14T06:45:34Z"
+}
