@@ -15,4 +15,5 @@ results/** -text
 formal/lean/** -text
 formal/evidence/** -text
 papers/evidence/archive/** -text
+papers/lean-verification/reproduction/** -text whitespace=blank-at-eol,space-before-tab,cr-at-eol,-blank-at-eof
 *.pub text eol=lf

@@ -3,10 +3,12 @@
 **The maintainer will not undertake further end-to-end or full-scale Lean
 closure verification.** Contributors with the necessary formal-methods
 expertise, algorithmic ideas and suitable compute are welcome to continue.
-**The repository remains open to updates.** This status synchronization creates
-no release or tag and does not freeze current work. A separate Lean progress
-report is planned; the existing [English paper](../../papers/manuscript.md)
-retains its September 13 date.
+**Publication update: v1.0.0 now freezes this body of work and closes the maintainer's active phase.** The [new English Lean paper](../../papers/lean-verification/manuscript.md)
+is published alongside the [original English paper](../../papers/manuscript.md).
+Further updates are expected only for substantive new results or necessary
+corrections; see [project status](../../docs/PROJECT_STATUS.md). The earlier
+status-only synchronization created no release; the subsequent v1.0.0 release
+records the completed public delivery.
 
 ## Current result and proof boundary
 
@@ -100,5 +102,5 @@ output, or checker improvements backed by representative measured throughput.
 Use the [issue tracker](https://github.com/feierbuqiu/mahjong-achievement-game/issues)
 or a [signed pull request](../../CONTRIBUTING.md), and include the exact source
 commit, input hashes, resource limits, command, complete outcome and proof scope.
-Documentation, the planned report, corrections and contributed results can
-continue to enter `main`. Existing releases remain historical records.
+Substantive new results and necessary corrections may still enter `main`.
+The immutable v1.0.0 release preserves this completed delivery.

@@ -6,24 +6,29 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
 [![Lean opening: NOT_VERIFIED](https://img.shields.io/badge/Lean_opening-NOT__VERIFIED-orange.svg)](research/2026-09-15/README.md)
 
-> **Status: September 15, 2026.** The maintainer **will not undertake further
-> end-to-end or full-scale Lean closure verification**. The computational
-> result remains a **second-player win**; the empty-position Lean theorem
-> remains **`NOT_VERIFIED`**. Contributors with formal-methods expertise and
-> suitable compute are welcome to continue the work. **The repository remains
-> open to updates; this update creates no release or tag and does not freeze
-> current work.** A separate Lean progress report is planned. See the
-> [current Lean status and available source](research/2026-09-15/README.md).
+> **v1.0.0 — stage complete, September 15, 2026.** This release fixes the
+> current papers, code and public evidence and closes the maintainer's active
+> phase of work. Routine new progress is not planned; further updates are
+> expected only for substantive new results or necessary corrections.
+> The maintainer **will not undertake further end-to-end or full-scale Lean
+> closure verification**. The computational result remains a **second-player
+> win**; the empty-position Lean theorem remains **`NOT_VERIFIED`**.
+> Expert and compute contributions are welcome. Read the
+> [project status](docs/PROJECT_STATUS.md) and
+> [v1.0.0 release](https://github.com/feierbuqiu/mahjong-achievement-game/releases/tag/v1.0.0).
 
-## Read the paper
+## Read the two English papers
 
-**[Mahjong Achievement on a Shared Table: A Computational Second-Player Win and Partial Lean Certification](papers/manuscript.md)**
-**feierbuqiu** · English research report · September 13, 2026
+| English report by feierbuqiu | Date | Focus |
+| --- | --- | --- |
+| [Mahjong Achievement on a Shared Table: A Computational Second-Player Win and Partial Lean Certification](papers/manuscript.md) | September 13, 2026 | Rules, mathematical arguments, exhaustive computation and early Lean milestones |
+| [Lean Verification of the Mahjong Achievement Game: Strategy Certificates, Enumeration, and Retrograde Models](papers/lean-verification/manuscript.md) | September 15, 2026 | Later certification, finite algorithm models, bounded tests and reproducibility |
 
-The full paper contains the mathematical arguments, computational results,
-Lean milestones, references, and seven appendices. Formulas render directly
-on GitHub. See the [paper overview](papers/README.md),
-[evidence catalogue](papers/evidence/README.md), and [latest progress](CHANGELOG.md).
+The reports are presented together, with GitHub-compatible mathematical
+formatting. See the [paper collection](papers/README.md),
+[original evidence catalogue](papers/evidence/README.md),
+[Lean paper and companion replay package](papers/lean-verification/README.md),
+and [changelog](CHANGELOG.md). Chinese manuscripts are excluded from the release.
 
 ## Result
 
@@ -61,7 +66,7 @@ historical full-table output, and the concrete opening theorem remain unfinished
 | Historical position checks | 16,240 matches; 0 conflicts |
 | Full table payload | 97,316,623,312 bytes |
 
-These computational results and the English paper are dated September 13,
+These computational results and the original English paper are dated September 13,
 2026. The [September 14 supplement](research/2026-09-14/README.md) records an
 earlier stage of formal work; [September 15](research/2026-09-15/README.md)
 records later model proofs and the current maintainer decision. The paper's partial opening
@@ -98,10 +103,11 @@ feasibility. Start with the [current proof boundaries and source](research/2026-
 and [hardware and benchmark receipts](research/2026-09-14/README.md)
 and discuss a concrete proposal in the
 [issue tracker](https://github.com/feierbuqiu/mahjong-achievement-game/issues).
-Existing proofs remain reproducible, and their CI checks continue. Documentation,
-the planned separate Lean progress report, corrections, and contributed results
-can still be added to `main`; current work is not frozen. Existing releases
-remain historical records.
+Existing proofs remain reproducible, and their CI checks continue. The
+v1.0.0 release freezes this completed body of work, including both English
+papers. Active follow-up is not planned unless new findings or a concrete
+need warrants it. The repository remains available for justified corrections
+and contributions; the immutable release will retain its original contents.
 
 ## The game
 
@@ -138,7 +144,9 @@ hashes and exact reconstruction commands are included. See [data availability](d
 
 ## Research materials
 
-- [Full English paper](papers/manuscript.md): primary research report and appendices.
+- [Computational research paper](papers/manuscript.md): original full report and appendices.
+- [Lean verification paper](papers/lean-verification/manuscript.md): subsequent formal development and reproduction evidence.
+- [Project status at v1.0.0](docs/PROJECT_STATUS.md): completed delivery and future maintenance scope.
 - [Current Lean status (September 15)](research/2026-09-15/README.md): finite
   algorithm proofs, bounded tests, remaining obligations, and maintainer scope.
 - [September 14 research handoff](research/2026-09-14/README.md): complete-layer

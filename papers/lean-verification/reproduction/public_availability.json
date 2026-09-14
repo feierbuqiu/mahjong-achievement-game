@@ -1,0 +1,56 @@
+{
+  "schema": "LEAN_SUPPLEMENT_PUBLIC_AVAILABILITY_V1",
+  "observed_utc": "2026-09-14 17:13:42 UTC",
+  "access": "Read-only GitHub connector REST GETs",
+  "repository": "feierbuqiu/mahjong-achievement-game",
+  "main": {
+    "sha": "691d2400d09d5ddfb18d4721835d464b0f4ecebb",
+    "url": "https://api.github.com/repos/feierbuqiu/mahjong-achievement-game/git/ref/heads/main"
+  },
+  "release": {
+    "tag": "v0.3.0",
+    "target_commit": "691d2400d09d5ddfb18d4721835d464b0f4ecebb",
+    "published_at": "2026-09-14T09:22:33Z",
+    "immutable": true,
+    "url": "https://github.com/feierbuqiu/mahjong-achievement-game/releases/tag/v0.3.0",
+    "assets": [
+      {
+        "name": "mahjong-achievement-game-v0.3.0-source.zip",
+        "size": 6236462,
+        "digest": "sha256:0fedb8a4d3905d0516c82cc5824e9c8d7ff1608e7eca8ab6e50b314a7056cd0b"
+      },
+      {
+        "name": "mahjong-achievement-game-v0.3.0.git.bundle",
+        "size": 4735086,
+        "digest": "sha256:dc8af6a6a371e409d6606e571979a72ce9df4c81762d14981c0ce2ae9fa268ed"
+      },
+      {
+        "name": "SHA256SUMS",
+        "size": 384,
+        "digest": "sha256:37ec395fcdc08e8ed5c49ce0bc5d6a3529b3250e2e35619a58b15f3eb3dbcd7a"
+      },
+      {
+        "name": "SHA256SUMS.sig",
+        "size": 294,
+        "digest": "sha256:424b71573d2cc5dc3c5e85bf924850609622fd0a56a053502cae825f692922ef"
+      },
+      {
+        "name": "SNAPSHOT.json",
+        "size": 9313,
+        "digest": "sha256:58cd1ee8806051767b36f9f63ecadde9cceecb492ebb8c29860f2a88bbbf1003"
+      },
+      {
+        "name": "SOURCE_FILES.sha256",
+        "size": 203104,
+        "digest": "sha256:5e11eb9fa97f5a2a130fa02ab1ba13006443a83136200db9e7938e182201fc63"
+      }
+    ]
+  },
+  "public_research_directories": [
+    {
+      "path": "research/2026-09-14",
+      "sha": "0248be6c5cf634454ee47463c829291418e6c534"
+    }
+  ],
+  "interpretation": "The current public main equals v0.3.0 at observation. It includes research/2026-09-14 but not research/2026-09-15. A local uncommitted September 15 draft is not evidence of publication."
+}

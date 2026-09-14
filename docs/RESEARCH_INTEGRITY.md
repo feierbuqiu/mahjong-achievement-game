@@ -7,6 +7,11 @@ public release is not represented as a peer-reviewed article, an institutional
 publication, or a completed formal proof. No affiliation or endorsement by a
 Mahjong organization, university, GitHub, or a proof-assistant project is implied.
 
+The [two English reports](../papers/README.md) are fixed together in v1.0.0.
+This major version marks completion of the maintainer's current research
+delivery, with the unresolved Lean obligations retained. The
+[maintenance policy](PROJECT_STATUS.md) does not promise routine new research.
+
 The rules describe the specific deterministic game in this repository.
 The results are not claims about ordinary multiplayer Mahjong strategy or
 gambling outcomes.

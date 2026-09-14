@@ -1,0 +1,181 @@
+{
+  "schema": "MJ_LEAN_SUPPLEMENT_RETAINED_SOURCES_V1",
+  "sources": [
+    {
+      "id": "source-001",
+      "original_path": "runs/lean_solo/RESULT.md",
+      "original_sha256": "c0d9334715aa25783dd371b1812604e84d62b3a812e1ee5db7a92f2d644744b7",
+      "original_bytes": 3011,
+      "availability": "RETAINED_NOT_DISTRIBUTED",
+      "note": "Retained original source. The English audit memos in this paper directory describe its role; this release does not provide its full input/dependency set."
+    },
+    {
+      "id": "source-002",
+      "original_path": "runs/lean_table_checker/old_certificate_pause_snapshot/status.json",
+      "original_sha256": "64c0b38bbc0bf33913451180c52b4142f915dad2970f0c97a1db4f6bc1b093ce",
+      "original_bytes": 1536,
+      "availability": "RETAINED_NOT_DISTRIBUTED",
+      "note": "Retained original source. The English audit memos in this paper directory describe its role; this release does not provide its full input/dependency set."
+    },
+    {
+      "id": "source-003",
+      "original_path": "runs/lean_table_checker/ACTUAL_SCAN.md",
+      "original_sha256": "d7e49018ba4dab67f212f56314720c5feacc13ab4e6fc4eb78e59a25fbc92002",
+      "original_bytes": 5989,
+      "availability": "RETAINED_NOT_DISTRIBUTED",
+      "note": "Retained original source. The English audit memos in this paper directory describe its role; this release does not provide its full input/dependency set."
+    },
+    {
+      "id": "source-004",
+      "original_path": "runs/lean_table_checker/GENERAL_FEASIBILITY.md",
+      "original_sha256": "9bf51f372c161e9467ad03149fd713d0bf60cb3a1fbce353766cec17d604afc0",
+      "original_bytes": 6423,
+      "availability": "RETAINED_NOT_DISTRIBUTED",
+      "note": "Retained original source. The English audit memos in this paper directory describe its role; this release does not provide its full input/dependency set."
+    },
+    {
+      "id": "source-005",
+      "original_path": "runs/lean_table_checker/PRUNING_SPIKE.md",
+      "original_sha256": "4e720f5c61752813ddf62be0c2bda3a38b64a6ec4337b1cc333a883ae1d421d7",
+      "original_bytes": 6757,
+      "availability": "RETAINED_NOT_DISTRIBUTED",
+      "note": "Retained original source. The English audit memos in this paper directory describe its role; this release does not provide its full input/dependency set."
+    },
+    {
+      "id": "source-006",
+      "original_path": "runs/lean_table_checker/FULL_SAFE_AND_ENCODING.md",
+      "original_sha256": "ff055bde537d35ef4bd874def2439640119d965134e0e9f46568ec9dc3c5a6ac",
+      "original_bytes": 6988,
+      "availability": "RETAINED_NOT_DISTRIBUTED",
+      "note": "Retained original source. The English audit memos in this paper directory describe its role; this release does not provide its full input/dependency set."
+    },
+    {
+      "id": "source-007",
+      "original_path": "runs/lean_table_checker/CANONICAL_INVENTORY.md",
+      "original_sha256": "42e9e35982de6ae71baeacb787ae505ce36307a16f9fbc2a17c3b286692e1517",
+      "original_bytes": 8200,
+      "availability": "RETAINED_NOT_DISTRIBUTED",
+      "note": "Retained original source. The English audit memos in this paper directory describe its role; this release does not provide its full input/dependency set."
+    },
+    {
+      "id": "source-008",
+      "original_path": "runs/lean_table_checker/GROUPS_AND_DIRECTORY.md",
+      "original_sha256": "8db3856d1aa3d56369413ca1115d7b017675bc3c0234ee60c9c67e484698e99c",
+      "original_bytes": 6562,
+      "availability": "RETAINED_NOT_DISTRIBUTED",
+      "note": "Retained original source. The English audit memos in this paper directory describe its role; this release does not provide its full input/dependency set."
+    },
+    {
+      "id": "source-009",
+      "original_path": "runs/lean_table_checker/INDEX_ALGORITHMS.md",
+      "original_sha256": "44bc3da4f6e2ad8d93285f2de16d5935612aff3f10f5e571d697c22954334ea4",
+      "original_bytes": 4545,
+      "availability": "RETAINED_NOT_DISTRIBUTED",
+      "note": "Retained original source. The English audit memos in this paper directory describe its role; this release does not provide its full input/dependency set."
+    },
+    {
+      "id": "source-010",
+      "original_path": "runs/lean_table_checker/GLOBAL_ENUMERATION.md",
+      "original_sha256": "a501dc90062a6e5785ce508c15b817fc7fe2876b401e8fa1d8fb1207e4540fab",
+      "original_bytes": 4710,
+      "availability": "RETAINED_NOT_DISTRIBUTED",
+      "note": "Retained original source. The English audit memos in this paper directory describe its role; this release does not provide its full input/dependency set."
+    },
+    {
+      "id": "source-011",
+      "original_path": "runs/lean_table_checker/WORD_REFINEMENT.md",
+      "original_sha256": "5e0762525068639544255217711030a2ae0ec97763519f8a9cbc2525c1e22694",
+      "original_bytes": 4388,
+      "availability": "RETAINED_NOT_DISTRIBUTED",
+      "note": "Retained original source. The English audit memos in this paper directory describe its role; this release does not provide its full input/dependency set."
+    },
+    {
+      "id": "source-012",
+      "original_path": "runs/lean_table_checker/DECODER_REFINEMENT.md",
+      "original_sha256": "34090ed81f6e6c5ebde70aaeb1ffd44d8346ed07ed40b986f1d4ebb928cff379",
+      "original_bytes": 3716,
+      "availability": "RETAINED_NOT_DISTRIBUTED",
+      "note": "Retained original source. The English audit memos in this paper directory describe its role; this release does not provide its full input/dependency set."
+    },
+    {
+      "id": "source-013",
+      "original_path": "runs/lean_table_checker/SUCCESSOR_CACHE.md",
+      "original_sha256": "d1b9d25b316ff5d3f27be5dced6d196c12243fc74aa88db9297516d18584ba91",
+      "original_bytes": 6472,
+      "availability": "RETAINED_NOT_DISTRIBUTED",
+      "note": "Retained original source. The English audit memos in this paper directory describe its role; this release does not provide its full input/dependency set."
+    },
+    {
+      "id": "source-014",
+      "original_path": "runs/lean_table_checker/FINITE_ALGORITHM_REVIEW.md",
+      "original_sha256": "32b80d7eda008421f0b7799a4bb0828450c17d10c099b1eba67e5bd7fe34ecf7",
+      "original_bytes": 8341,
+      "availability": "RETAINED_NOT_DISTRIBUTED",
+      "note": "Retained original source. The English audit memos in this paper directory describe its role; this release does not provide its full input/dependency set."
+    },
+    {
+      "id": "source-015",
+      "original_path": "build/lean_table_checker/build.py",
+      "original_sha256": "e79f311c4d919aadcf9c285d075551dbec1c4263cc1c31bc152ce46fd411b35b",
+      "original_bytes": 5231,
+      "availability": "RETAINED_NOT_DISTRIBUTED",
+      "note": "Retained original source. The English audit memos in this paper directory describe its role; this release does not provide its full input/dependency set."
+    },
+    {
+      "id": "source-016",
+      "original_path": "runs/lean_supplement_20260915/reproduction/replay_current_sources.py",
+      "original_sha256": "a19590acb6207d86c19ad5ce568269c943ecb34cc21d0de0bb02ee6eebf95ee1",
+      "original_bytes": 11372,
+      "availability": "RETAINED_NOT_DISTRIBUTED",
+      "note": "Retained original source. The English audit memos in this paper directory describe its role; this release does not provide its full input/dependency set."
+    },
+    {
+      "id": "source-017",
+      "original_path": "runs/lean_supplement_20260915/reproduction/current_model_source_bundle_tested_v1.zip",
+      "original_sha256": "ff9a3e9986770dd52191bb93d767a2046054ce629545bdb1539c9709c38479e9",
+      "original_bytes": 174170,
+      "availability": "RETAINED_NOT_DISTRIBUTED",
+      "note": "Retained original source. The English audit memos in this paper directory describe its role; this release does not provide its full input/dependency set."
+    },
+    {
+      "id": "source-018",
+      "original_path": "build/lean_table_checker/accept_optimized_retro.py",
+      "original_sha256": "f38d43a7c729fff1bd5d94f7efc9a4a3f95bbfb28130cefedf2762dcf292a779",
+      "original_bytes": 16779,
+      "availability": "RETAINED_NOT_DISTRIBUTED",
+      "note": "Retained original source. The English audit memos in this paper directory describe its role; this release does not provide its full input/dependency set."
+    },
+    {
+      "id": "source-019",
+      "original_path": "build/lean_table_checker/run_retro_operational.py",
+      "original_sha256": "e258a6a3e96fc8da9f4abce6977d4395b2fb4ce4b2587f9cca4aa74a5152cbc0",
+      "original_bytes": 3973,
+      "availability": "RETAINED_NOT_DISTRIBUTED",
+      "note": "Retained original source. The English audit memos in this paper directory describe its role; this release does not provide its full input/dependency set."
+    },
+    {
+      "id": "source-020",
+      "original_path": "build/lean_table_checker/autonomous_near_terminal.py",
+      "original_sha256": "f12afeb3d31607a0db9b4bdbb0495eb8a03cc7f4f86eefc3e136e2704a71356f",
+      "original_bytes": 26100,
+      "availability": "RETAINED_NOT_DISTRIBUTED",
+      "note": "Retained original source. The English audit memos in this paper directory describe its role; this release does not provide its full input/dependency set."
+    },
+    {
+      "id": "source-021",
+      "original_path": "build/lean_table_checker/run_slice_binding.py",
+      "original_sha256": "588107f117bd2c8f9753c28b0ba4732341b7bf12a75f89646655347a382f0e5c",
+      "original_bytes": 7221,
+      "availability": "RETAINED_NOT_DISTRIBUTED",
+      "note": "Retained original source. The English audit memos in this paper directory describe its role; this release does not provide its full input/dependency set."
+    },
+    {
+      "id": "source-022",
+      "original_path": "build/lean_table_checker/run_index_probes.py",
+      "original_sha256": "6494cc6433e40778b45f92aa4bd0c1a46a55691f2cb7f3f2e0b553379581455f",
+      "original_bytes": 8148,
+      "availability": "RETAINED_NOT_DISTRIBUTED",
+      "note": "Retained original source. The English audit memos in this paper directory describe its role; this release does not provide its full input/dependency set."
+    }
+  ]
+}

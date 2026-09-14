@@ -1,0 +1,36 @@
+{
+  "status": "PASS_LOCAL_SOURCE_PACKAGE_INTEGRITY_AND_RELOCATED_CHECK",
+  "source_modules": 84,
+  "source_bytes": 487370,
+  "files": 90,
+  "checks": [
+    {
+      "name": "help",
+      "exit_code": 0,
+      "stdout": "usage: replay.py [-h] [--source-root SOURCE_ROOT] [--lean LEAN] [--check-only]\n                 [--entry ENTRY] [--all-source] [--workers {1,2}]\n                 [--seconds SECONDS] [--label LABEL]\n\nIsolated bounded source-only Lean replay; never executes native workers.\nWindows: Python 3.11+ with psutil and Lean 4.33.1. This local source bundle\ndoes not need the original research tree. Pass --lean and optionally --source-\nroot. All replay outputs remain below this script's own directory. Other\noperating systems are not validated by this Windows Job resource-limited\ndriver.\n\noptions:\n  -h, --help            show this help message and exit\n  --source-root SOURCE_ROOT\n                        Folder holding the exact manifest-listed source files\n  --lean LEAN           Lean 4.33.1 executable or elan proxy\n  --check-only          Validate source hashes and imports without invoking\n                        Lean\n  --entry ENTRY\n  --all-source\n  --workers {1,2}\n  --seconds SECONDS\n  --label LABEL\n",
+      "log_sha256": "0a24ee6fa8235e99ae702a3cc70835eb2730fc283803b2eae6e460ba78f40421"
+    },
+    {
+      "name": "integrity",
+      "exit_code": 0,
+      "stdout": "{\"status\": \"PASS_SOURCE_PACKAGE_INTEGRITY\", \"source_modules\": 84, \"source_bytes\": 487370, \"kernel_replayed\": false, \"empty_game_lean\": \"NOT_VERIFIED\"}\n",
+      "log_sha256": "500519b5d2a46a271eb218ad253c6e503c5fef66388678e5dbec4ea944d8260b"
+    },
+    {
+      "name": "relocated_source",
+      "exit_code": 0,
+      "stdout": "{\"status\": \"PASS_SOURCE_PACKAGE_INTEGRITY\", \"source_modules\": 84, \"source_bytes\": 487370, \"kernel_replayed\": false, \"empty_game_lean\": \"NOT_VERIFIED\"}\n",
+      "log_sha256": "500519b5d2a46a271eb218ad253c6e503c5fef66388678e5dbec4ea944d8260b"
+    }
+  ],
+  "zip_bytes": 174170,
+  "zip_sha256": "ff9a3e9986770dd52191bb93d767a2046054ce629545bdb1539c9709c38479e9",
+  "replay_driver_sha256": "7bb0062947ab614fb34b9c895208087c85e9c4feb6da7a8c15159f5aeda16b0c",
+  "source_replay_receipt_sha256": "b77ccc01b5f1c2fcaf09f116068daa3631cd0f51d7e74df0ba470301b6648cef",
+  "full_compilation_of_packaged_wrapper_performed": false,
+  "source_replay_already_passed": true,
+  "native_data_included": false,
+  "published": false,
+  "platform": "Windows; Linux/macOS not tested",
+  "empty_game_lean": "NOT_VERIFIED"
+}

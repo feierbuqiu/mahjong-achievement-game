@@ -1,0 +1,6 @@
+{
+  "status": "PASS_READ_ONLY_FINITE_RETROGRADE_AUDIT",
+  "files": 5329,
+  "theorems": 79,
+  "acceptance_sha256": "1f23e423794ce0f64a001367d59a41baab82fd517602e9c48046c95a96b14400"
+}

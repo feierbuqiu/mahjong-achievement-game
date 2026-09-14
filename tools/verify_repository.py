@@ -9,6 +9,7 @@ import sys
 from urllib.parse import unquote
 from verify_lean import check_snapshot
 from verify_paper import verify as verify_paper
+from verify_lean_supplement import verify as verify_lean_supplement
 
 ROOT = Path(__file__).resolve().parents[1]
 
@@ -56,6 +57,7 @@ def main():
     require(not status["formal_verification"]["end_to_end_Lean_theorem_published"], "This snapshot has no published end-to-end Lean theorem")
     check_snapshot()
     verify_paper()
+    verify_lean_supplement()
     formal = read_json("formal/STATUS.json")
     require(status["formal_verification"]["closed_nonempty_original_game_roots_published"] ==
             len(formal["closed_nonempty_original_game_proofs"]) == 8, "Formal root count mismatch")
@@ -95,7 +97,8 @@ def main():
         require(path.stat().st_size < 50_000_000, f"Unexpected large artifact: {rel}")
         data = path.read_text(encoding="utf-8-sig")
         language_text = data
-        if rel in {"papers/manuscript.md", "papers/evidence/reference_verification.md"}:
+        if rel in {"papers/manuscript.md", "papers/evidence/reference_verification.md",
+                   "papers/lean-verification/manuscript.md", "papers/lean-verification/reference_verification.md"}:
             # Preserve the author's original source credit and bibliographic title.
             for proper_name in ["\u96f6\u4e4b\u5ba1\u5224\u8005", "\u5446\u997c\u95ee\u9898"]:
                 language_text = language_text.replace(proper_name, "")

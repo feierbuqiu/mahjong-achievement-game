@@ -1,5 +1,5 @@
 cff-version: 1.2.0
-message: "Please cite the English research report and include the exact repository commit used. Cite v0.1.0 separately for the original computational software snapshot."
+message: "Please cite the relevant English report or reports listed below and the exact repository release or commit used."
 type: software
 title: "Mahjong Achievement Game: Exact Computation and Reproducible Research"
 authors:
@@ -7,27 +7,39 @@ authors:
     website: "https://github.com/feierbuqiu"
 repository-code: "https://github.com/feierbuqiu/mahjong-achievement-game"
 url: "https://github.com/feierbuqiu/mahjong-achievement-game"
-version: 0.1.0
-date-released: 2026-09-13
+version: 1.0.0
+date-released: 2026-09-15
 license: MIT
-preferred-citation:
-  type: report
-  title: "Mahjong Achievement on a Shared Table: A Computational Second-Player Win and Partial Lean Certification"
-  authors:
-    - family-names: "feierbuqiu"
-  year: 2026
-  month: 9
-  date-published: 2026-09-13
-  url: "https://github.com/feierbuqiu/mahjong-achievement-game/blob/main/papers/manuscript.md"
+references:
+  - type: report
+    title: "Mahjong Achievement on a Shared Table: A Computational Second-Player Win and Partial Lean Certification"
+    authors:
+      - family-names: "feierbuqiu"
+    year: 2026
+    month: 9
+    date-published: 2026-09-13
+    url: "https://github.com/feierbuqiu/mahjong-achievement-game/blob/v1.0.0/papers/manuscript.md"
+  - type: report
+    title: "Lean Verification of the Mahjong Achievement Game: Strategy Certificates, Enumeration, and Retrograde Models"
+    authors:
+      - family-names: "feierbuqiu"
+    year: 2026
+    month: 9
+    date-published: 2026-09-15
+    url: "https://github.com/feierbuqiu/mahjong-achievement-game/blob/v1.0.0/papers/lean-verification/manuscript.md"
 keywords:
   - combinatorial games
   - mahjong
   - retrograde analysis
   - reproducible research
   - computational mathematics
+  - Lean formalization
 abstract: >-
-  Research software and computational evidence for a deterministic two-player
-  shared-pool Mahjong achievement game. Complete SAFE-state retrograde analysis
-  and reverse-direction replay classify the empty position as a second-player
-  win. The computational algorithms share rules and indexing. End-to-end Lean
-  verification remains in progress at this release.
+  Research software, two English reports and computational/formal evidence for
+  a deterministic two-player shared-pool Mahjong achievement game. Complete
+  SAFE-state retrograde analysis and reverse replay classify the empty position
+  as a second-player win; both algorithms share rules and indexing. Partial
+  Lean certification, finite algorithm models and bounded implementation tests
+  are included. The opening Lean theorem remains NOT_VERIFIED. Version 1 closes
+  the maintainer's active research delivery; future updates are expected only
+  for substantive new findings or necessary corrections.
