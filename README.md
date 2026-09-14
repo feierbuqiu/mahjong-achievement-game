@@ -4,14 +4,16 @@
 
 [![Research checks](https://github.com/feierbuqiu/mahjong-achievement-game/actions/workflows/research.yml/badge.svg)](https://github.com/feierbuqiu/mahjong-achievement-game/actions/workflows/research.yml)
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
-[![Maintainer Lean work: paused](https://img.shields.io/badge/Lean-maintainer_work_paused-orange.svg)](research/2026-09-14/README.md)
+[![Lean opening: NOT_VERIFIED](https://img.shields.io/badge/Lean_opening-NOT__VERIFIED-orange.svg)](research/2026-09-15/README.md)
 
-> **Status: September 14, 2026.** The maintainer has paused personal work on
-> end-to-end Lean verification. The computational result remains a
-> **second-player win**; the empty-position Lean theorem remains
-> **`NOT_VERIFIED`**. Further formal-methods expertise, algorithmic improvements,
-> and access to substantially greater compute are welcome. See the
-> [current findings, hardware measurements, and handoff](research/2026-09-14/README.md).
+> **Status: September 15, 2026.** The maintainer **will not undertake further
+> end-to-end or full-scale Lean closure verification**. The computational
+> result remains a **second-player win**; the empty-position Lean theorem
+> remains **`NOT_VERIFIED`**. Contributors with formal-methods expertise and
+> suitable compute are welcome to continue the work. **The repository remains
+> open to updates; this update creates no release or tag and does not freeze
+> current work.** A separate Lean progress report is planned. See the
+> [current Lean status and available source](research/2026-09-15/README.md).
 
 ## Read the paper
 
@@ -38,8 +40,16 @@ Later local work accumulated a registry reporting **24,655 certified P states**;
 its complete proof trees are retained outside this public package. A newer
 compiled-Lean checker completed layers 34 and 33, covering **22,512,356 rows**.
 Neither route closes the 10-tile or empty-position theorem. See the
-[dated handoff and receipts](research/2026-09-14/README.md),
+[complete-layer receipts](research/2026-09-14/README.md),
 [published nonempty proofs](formal/README.md), and [evidence boundaries](docs/EVIDENCE.md).
+
+The latest work adds **79 audited theorems across 10 finite algorithm-model
+modules** and bounded tests of the production C++ routines: **102 synthetic
+configurations and 13,741,216 row comparisons, with zero mismatches**.
+The [September 15 update](research/2026-09-15/README.md) publishes their
+84-module Lean dependency closure and selected receipts. These tests add
+**zero historical P/N rows**; universal C++ refinement, formal binding of the
+historical full-table output, and the concrete opening theorem remain unfinished.
 
 | Recorded result | Value |
 | --- | ---: |
@@ -52,14 +62,15 @@ Neither route closes the 10-tile or empty-position theorem. See the
 | Full table payload | 97,316,623,312 bytes |
 
 These computational results and the English paper are dated September 13,
-2026. The [September 14 supplement](research/2026-09-14/README.md) records the
-subsequent formal work and the decision to pause. The paper's partial opening
+2026. The [September 14 supplement](research/2026-09-14/README.md) records an
+earlier stage of formal work; [September 15](research/2026-09-15/README.md)
+records later model proofs and the current maintainer decision. The paper's partial opening
 graph and later local registries describe different searches; their counts
 are neither additive nor a formal-proof completion percentage.
 The [acceptance receipt](results/acceptance.json), [opening queries](results/opening.jsonl),
 and [machine-readable status](RESEARCH_STATUS.json) state their scope.
 
-## Why work is paused, and how to help
+## Maintainer scope and contributions
 
 The present workstation has an **Intel Core i7-10700KF (8 cores / 16 threads),
 32 GiB installed RAM, and an NVIDIA RTX 2070 SUPER**. The checker uses the CPU;
@@ -72,20 +83,25 @@ aggregate process memory and 80% of machine CPU capacity.
 | Selected peak-layer-23 buckets, 2 processes x 6 threads | 2,567 rows/second |
 | Average needed for all 778,532,864,302 rows in 30 days | 300,360 rows/second |
 
-These are bounded samples with file-loading time excluded, not a whole-table
+These September 14 measurements are bounded samples with file-loading time excluded, not a whole-table
 runtime forecast. General-layer scaling is currently far below the 30-day
 target, and the final coverage/aggregation proof is still incomplete. The
 maintainer does not expect a near-term breakthrough with the current approach
 and personal resources, and has stopped pursuing that verification campaign.
-No full scan is running and there is no completion date.
+The maintainer will not undertake further end-to-end or full-scale Lean closure
+verification. No full scan is running and no completion date is promised.
 
 Contributions are welcome: a shorter independent argument, a complete Lean
 certificate, profiling and checker improvements, or measured trials on a
 larger compute host. More RAM or advertised core count alone does not establish
-feasibility. Start with the [handoff, source, and benchmark receipts](research/2026-09-14/README.md)
+feasibility. Start with the [current proof boundaries and source](research/2026-09-15/README.md)
+and [hardware and benchmark receipts](research/2026-09-14/README.md)
 and discuss a concrete proposal in the
 [issue tracker](https://github.com/feierbuqiu/mahjong-achievement-game/issues).
-Existing proofs remain reproducible, and their CI checks continue.
+Existing proofs remain reproducible, and their CI checks continue. Documentation,
+the planned separate Lean progress report, corrections, and contributed results
+can still be added to `main`; current work is not frozen. Existing releases
+remain historical records.
 
 ## The game
 
@@ -123,8 +139,10 @@ hashes and exact reconstruction commands are included. See [data availability](d
 ## Research materials
 
 - [Full English paper](papers/manuscript.md): primary research report and appendices.
-- [September 14 research handoff](research/2026-09-14/README.md): paused work,
-  latest findings, hardware, performance evidence, and remaining obligations.
+- [Current Lean status (September 15)](research/2026-09-15/README.md): finite
+  algorithm proofs, bounded tests, remaining obligations, and maintainer scope.
+- [September 14 research handoff](research/2026-09-14/README.md): complete-layer
+  checks, hardware, performance evidence, and the earlier decision to pause.
 - [Rules and SAFE reduction](docs/RULES.md): the exact game and normal-play recurrence.
 - [Methods and strategy](docs/METHODS.md): symmetry indexing, forward generation, and reverse replay.
 - [Evidence and limitations](docs/EVIDENCE.md): what each recorded check establishes.

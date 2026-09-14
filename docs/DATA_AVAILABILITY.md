@@ -15,6 +15,16 @@ input binaries, controllers and later concrete proof trees. The paused local
 registry's 24,655 P states are a recorded local milestone; the public concrete
 proof replay still covers the eight indexed roots below.
 
+The [September 15 status update](../research/2026-09-15/README.md) supplies
+84 Lean modules forming the dependency closure of the finite algorithm
+entry point, selected unmodified acceptance/build/test records, seven C++
+source fragments, and a hash/receipt checker with optional fresh kernel replay.
+Its [manifest](../research/2026-09-15/provenance.json) identifies every public
+copy. The 5,329 files named by the original local acceptance record are not
+all distributed: native test inputs, compiled objects, operational harnesses
+and the complete intermediate evidence chain remain outside this package.
+The repository remains open to additions, including a planned separate Lean report.
+
 The latest [formal source](../formal/README.md) contains the complete replay
 closure for the new 12-tile and 14-tile roots, the compressed 20-tile proof,
 and the 757-entry proved registry. These additions belong to the current
@@ -40,7 +50,7 @@ The complete padded table payload is **97,316,623,312 bytes**. It is not include
 in this Git repository or offered as a public download in version 0.1.0.
 No external archive, DOI, or permanent table-hosting service is claimed.
 Historical large search caches, the incomplete opening candidate-graph database,
-and the paused Lean working environment are also outside this publication.
+and the full Lean working environment are also outside this publication.
 The completed formal source snapshot is included; compiled Lean modules and
 the Lean toolchain binaries are not stored in Git.
 

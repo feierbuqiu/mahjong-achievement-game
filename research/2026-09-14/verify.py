@@ -156,7 +156,8 @@ def verify():
             hardware['cpu']['NumberOfCores'] == 8 and hardware['cpu']['NumberOfLogicalProcessors'] == 16,
             'Hardware summary mismatch')
     status = read(ROOT / 'RESEARCH_STATUS.json')
-    require(status['formal_verification']['status'] == 'incomplete_personal_effort_paused' and
+    # The dated evidence remains valid when the maintainer's current plans change.
+    require(status['formal_verification']['empty_game_lean'] == 'NOT_VERIFIED' and
             status['formal_verification']['compiled_checker_complete_layer_rows'] == 22512356,
             'Homepage status mismatch')
     return dict(status='PASS_PUBLIC_HANDOFF', artifacts=len(by_path), checker_source_modules=len(sources),
@@ -226,6 +227,7 @@ def kernel_replay(executable):
     (destination / 'result.json').write_text(json.dumps(report, indent=2) + '\n', encoding='utf-8')
     print(json.dumps(dict(status=report['status'], modules=len(ordered), wall_seconds=report['wall_seconds'],
                          receipt=str(destination / 'result.json'), empty_game_lean='NOT_VERIFIED')))
+    return destination
 
 
 if __name__ == '__main__':

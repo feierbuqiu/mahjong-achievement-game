@@ -1,8 +1,8 @@
 {
   "schema": "MJ_PUBLIC_RESEARCH_STATUS_V1",
-  "snapshot_date": "2026-09-14",
+  "snapshot_date": "2026-09-15",
   "computational_result_date": "2026-09-13",
-  "maintainer_research_status": "PERSONAL_LEAN_VERIFICATION_PAUSED",
+  "maintainer_research_status": "NO_FURTHER_MAINTAINER_END_TO_END_LEAN_VERIFICATION",
   "research_handoff": "research/2026-09-14/README.md",
   "hardware_receipt": "research/2026-09-14/hardware.json",
   "new_release_created_for_this_update": false,
@@ -33,8 +33,8 @@
     "0": "N"
   },
   "formal_verification": {
-    "status": "incomplete_personal_effort_paused",
-    "paused_since": "2026-09-14",
+    "status": "incomplete_no_further_maintainer_full_closure",
+    "previous_pause_date": "2026-09-14",
     "empty_game_lean": "NOT_VERIFIED",
     "ten_tile_winner_lean": "NOT_VERIFIED",
     "end_to_end_Lean_theorem_published": false,
@@ -50,18 +50,31 @@
     ],
     "progress_receipt": "formal/STATUS.json",
     "lean_toolchain": "leanprover/lean4:v4.33.1",
-    "note": "The September 13 public replay package indexes eight nonempty roots. Later retained proof trees report 24,655 P states; their full dependencies are outside Git. The compiled checker completed layers 34 and 33 only. Personal work toward the empty-position theorem is paused; existing proof CI continues.",
+    "note": "The September 13 package indexes eight closed nonempty roots. The retained registry reports 24,655 P states; its complete later proof trees remain outside Git. Complete compiled checks still cover layers 34 and 33 only. Later finite algorithm proofs and synthetic C++ tests add no historical P/N rows. The maintainer will not undertake further end-to-end/full-scale closure; the repository remains open to reports, corrections and independent contributions.",
     "later_local_registry_recorded_P_states": 24655,
     "later_local_registry_full_proof_trees_published": false,
     "compiled_checker_source_modules_in_supplement": 56,
-    "compiled_checker_complete_layers": [34, 33],
+    "compiled_checker_complete_layers": [
+      34,
+      33
+    ],
     "compiled_checker_complete_layer_rows": 22512356,
     "general_benchmark_evaluations": 745472,
     "general_benchmark_unique_sampled_slots": 356352,
     "general_full_scan_launched": false,
     "whole_campaign_aggregation_complete": false,
-    "latest_receipt": "research/2026-09-14/evidence/STATUS.json",
-    "source_modules": 1008
+    "latest_receipt": "research/2026-09-15/evidence/acceptance.json",
+    "source_modules": 1008,
+    "latest_receipt_utc": "2026-09-14T16:38:57.293257+00:00",
+    "latest_progress_source_modules": 84,
+    "latest_finite_algorithm_proof_modules": 10,
+    "latest_finite_algorithm_audited_theorems": 79,
+    "latest_synthetic_production_configurations": 102,
+    "latest_synthetic_row_comparisons": 13741216,
+    "latest_new_historical_pn_rows": 0,
+    "universal_whole_cpp_refinement": "NOT_VERIFIED",
+    "fully_instantiated_whole_solver_kernel_certificate": "NOT_CONSTRUCTED",
+    "historical_output_formally_bound": false
   },
   "shared_trust_dependencies": [
     "foundational rule implementation",
@@ -74,5 +87,15 @@
     "manuscript": "papers/manuscript.md",
     "evidence_catalogue": "papers/evidence/README.md",
     "chinese_manuscript_published": false
+  },
+  "current_lean_progress": "research/2026-09-15/README.md",
+  "repository_development_status": "OPEN_TO_UPDATES_AND_CONTRIBUTIONS",
+  "current_work_frozen": false,
+  "maintainer_scope": {
+    "decision_date": "2026-09-15",
+    "further_end_to_end_full_scale_verification_planned": false,
+    "accepts_expert_and_compute_contributions": true,
+    "status_note": "The maintainer will not undertake further end-to-end or full-scale Lean closure verification. Documentation, reports, corrections and contributed results remain welcome.",
+    "separate_lean_progress_report": "PLANNED_NOT_PUBLISHED_BY_THIS_UPDATE"
   }
 }

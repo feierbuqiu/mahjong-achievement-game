@@ -117,8 +117,22 @@ For the later compiled-checker work, see the
 [September 14 handoff](../research/2026-09-14/README.md). It provides a separate
 receipt-arithmetic check and fresh replay of 56 checker source modules. Its
 native input preparation and scheduling are not yet a portable campaign.
-The maintainer's personal opening-verification effort is paused; these
-reproduction commands remain available to independent contributors.
+The [September 15 update](../research/2026-09-15/README.md) adds a separate
+84-module dependency closure for the finite algorithm models:
+
+```bash
+python3 research/2026-09-15/verify.py
+python3 research/2026-09-15/verify.py --lean lean
+```
+
+The first command checks public bytes and receipt consistency. The optional
+second command uses Lean 4.33.1, fresh project objects, trust level 0, one
+thread and a 3 GiB heap limit per compiler process. It checks mathematical
+source; it does not execute native workers or read the historical P/N table.
+The native operational test harness and inputs are retained outside Git.
+The maintainer will not undertake further end-to-end or full-scale Lean
+closure verification; these commands remain available to independent
+contributors. Reports, corrections and contributed results can still be published.
 
 Include the commit/tag, operating system, CPU, RAM, compiler version, build
 flags, exact input and command, elapsed time, peak memory, exit code, output
