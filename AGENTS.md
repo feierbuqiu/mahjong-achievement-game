@@ -4,8 +4,12 @@ Read README.md, RESEARCH_STATUS.json, docs/RULES.md, docs/EVIDENCE.md, and
 docs/REPRODUCIBILITY.md before changing research claims or algorithms.
 
 - The published computational opening result is P (second-player win), with
-  complete reverse replay. End-to-end Lean verification is still in progress
-  for this snapshot. Do not confuse historical UNKNOWN with current results.
+  complete reverse replay. The maintainer's personal end-to-end Lean effort
+  is paused as of September 14, 2026; the opening theorem is NOT_VERIFIED.
+  Read research/2026-09-14/README.md for the latest evidence and handoff.
+  Do not restart research jobs or provision compute without a new request.
+  Bounded checks and replay of existing proofs remain appropriate for changes.
+  Do not confuse historical UNKNOWN with current computational results.
 - Keep the shared-pool rules, seven distinct pairs, all physical numeric
   additions, and the stated symmetry group unchanged unless explicitly asked.
 - UNKNOWN/timeouts are never P. N does not mean SG=1. Static winning profiles

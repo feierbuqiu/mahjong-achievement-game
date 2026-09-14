@@ -1,0 +1,10 @@
+{
+  "status": "PASS",
+  "paused_rows": 2048,
+  "completed_rows": 32768,
+  "preserved_receipts": 2,
+  "committed_chunks_reexecuted": 0,
+  "phase": "real table pause/resume",
+  "production_coverage_credit": 0,
+  "runner_sha256": "f3595eb5f361aed4fe1018495f2f0d0c63e8b5bb761dfec36ce4575174a162fb"
+}

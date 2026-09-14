@@ -1,5 +1,12 @@
 # Lean verification progress
 
+> **September 14, 2026: the maintainer's personal verification effort is
+> paused.** The empty-position theorem remains `NOT_VERIFIED`. The
+> [latest handoff](../research/2026-09-14/README.md) records the later local
+> registry of 24,655 P states, completed compiled checks of layers 34 and 33,
+> hardware benchmarks, and the remaining work. This page documents the frozen
+> September 13 concrete-proof package, whose replay and CI remain available.
+
 **Eight concrete nonempty roots are indexed, including the new 12- and 14-tile strategies.
 The empty-position Lean theorem remains `NOT_VERIFIED`.**
 
@@ -146,7 +153,7 @@ original files; distributed hashes identify the public copies.
 
 ## Opening progress and remaining work
 
-The latest frozen candidate graph contains **9,765,237 nodes** and
+The September 13 frozen candidate graph contains **9,765,237 nodes** and
 **16,179,951 edges**: 6,911,482 nodes expanded and 2,853,755 discovered nodes
 pending. Layer 12 is expanded, layer 13 is partial, and layer 14 has pending
 nodes. Its 2,119,254,016-byte SQLite checkpoint remains outside Git.

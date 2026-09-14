@@ -1,6 +1,11 @@
 {
   "schema": "MJ_PUBLIC_RESEARCH_STATUS_V1",
-  "snapshot_date": "2026-09-13",
+  "snapshot_date": "2026-09-14",
+  "computational_result_date": "2026-09-13",
+  "maintainer_research_status": "PERSONAL_LEAN_VERIFICATION_PAUSED",
+  "research_handoff": "research/2026-09-14/README.md",
+  "hardware_receipt": "research/2026-09-14/hardware.json",
+  "new_release_created_for_this_update": false,
   "opening_outcome": "P",
   "winner_from_empty": "second_player",
   "first_move_orbit_outcomes": [
@@ -28,7 +33,10 @@
     "0": "N"
   },
   "formal_verification": {
-    "status": "in_progress",
+    "status": "incomplete_personal_effort_paused",
+    "paused_since": "2026-09-14",
+    "empty_game_lean": "NOT_VERIFIED",
+    "ten_tile_winner_lean": "NOT_VERIFIED",
     "end_to_end_Lean_theorem_published": false,
     "closed_nonempty_original_game_roots_published": 8,
     "closed_root_tile_counts": [
@@ -42,7 +50,17 @@
     ],
     "progress_receipt": "formal/STATUS.json",
     "lean_toolchain": "leanprover/lean4:v4.33.1",
-    "note": "Eight concrete nonempty roots are indexed. New 12- and 14-tile proofs and compressed 20-tile certificates are published. Empty and 10-tile formal roots remain NOT_VERIFIED.",
+    "note": "The September 13 public replay package indexes eight nonempty roots. Later retained proof trees report 24,655 P states; their full dependencies are outside Git. The compiled checker completed layers 34 and 33 only. Personal work toward the empty-position theorem is paused; existing proof CI continues.",
+    "later_local_registry_recorded_P_states": 24655,
+    "later_local_registry_full_proof_trees_published": false,
+    "compiled_checker_source_modules_in_supplement": 56,
+    "compiled_checker_complete_layers": [34, 33],
+    "compiled_checker_complete_layer_rows": 22512356,
+    "general_benchmark_evaluations": 745472,
+    "general_benchmark_unique_sampled_slots": 356352,
+    "general_full_scan_launched": false,
+    "whole_campaign_aggregation_complete": false,
+    "latest_receipt": "research/2026-09-14/evidence/STATUS.json",
     "source_modules": 1008
   },
   "shared_trust_dependencies": [

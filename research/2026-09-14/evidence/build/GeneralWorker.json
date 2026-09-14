@@ -1,0 +1,282 @@
+{
+  "entry": "GeneralWorker",
+  "status": "PASS",
+  "native": true,
+  "steps": [
+    {
+      "module": "Mahjong.Rules",
+      "source_sha256": "5b7a4cc92126dbfde43a945414ea756b23e60479800c921f4bb6ac5b31ff4eb3",
+      "olean_sha256": "6009ddfdccab178c43d2faa66a493740f10e453d0770ae241694cad60cacf330",
+      "c_sha256": "60d5516486030863f211ca7931ec676ac91a57cee9d386d18415cdbdf4a47ac2",
+      "cached": true,
+      "native_object_sha256": "2c3495b379c760a434dc03e644f26650cdf65345b1b88676603971284aeda4ec"
+    },
+    {
+      "module": "Mahjong.SafeGame",
+      "source_sha256": "ef01a38bb161cabe4446274ae744c27bd0936129d1501ce66d35137c3be41028",
+      "olean_sha256": "e099c0888e8a04e13210810296833372118df86186f6510a30d558f5260cedad",
+      "c_sha256": "b2e13b418007f22054051818e4ea10b8e57c001d82d2dc2f410955ae6ab6e036",
+      "cached": true,
+      "native_object_sha256": "b60644b4a5515da4969c11dc8db82b16f1441f80a0eac404c8059cbf50819320"
+    },
+    {
+      "module": "Mahjong.RuleChecker",
+      "source_sha256": "2efa76dd77726d5a269d95e2726dd53e5c6010ecdd37131d8db5fda05cae6a7c",
+      "olean_sha256": "ccdc22810a5ed2052398259d9ab0210757a6414b5f96e87ca64650654e42b70e",
+      "c_sha256": "f41c7d875093cb34760194e8b3823e04c06a1b82bc0506dee44662f685f413fa",
+      "cached": true,
+      "native_object_sha256": "7a2493334814b736b02049b1ca51f3ffe83e42f0237a507849b0118481604bb8"
+    },
+    {
+      "module": "Mahjong.MoveEnumeration",
+      "source_sha256": "73bcdaf1a48d4f6e7bccfa1f7c5813555a1c11a29f1d81fe351fc86f57668552",
+      "olean_sha256": "5243a2608a6a780183e179cc2351050087d607f7bbe468d6a7616610eef17309",
+      "c_sha256": "189077294402973ecfad396bd6744b4f91a12c1b2cf06e4b9f7f18de65ebf58e",
+      "cached": true,
+      "native_object_sha256": "90b0481bea1a6785d8c2da8e5e46bc21b0bd226e7985717355c087896fb4f18f"
+    },
+    {
+      "module": "Mahjong.FastRuleChecker",
+      "source_sha256": "554b4712cc2c734af54a6dced186f51d818eb6096b5e856af3bd912edc5fe8c3",
+      "olean_sha256": "8e8091c5b3f50ee7eaed10e4da37d5d1f561eb272d9170de1dd54170f2c882e8",
+      "c_sha256": "d5f130c585ae0a3d123126e0dd6eb96b4a42b15b3c001ccc9029591df1bf05fd",
+      "cached": true,
+      "native_object_sha256": "ebaf8ba4d543f1db9e69fc5d5fd97a245e0e90760e8c51105b86911566fd609c"
+    },
+    {
+      "module": "Mahjong.StandardBoundCertificate",
+      "source_sha256": "573fcd4d4486e6c4cf324b3af201dbce58d3d9d4261c8fb3c6ef91a6e392d89d",
+      "olean_sha256": "4fc85ab4fcfd7f70b252d410b78b2d9a736f36e1f4ca93fdb8baee0d9ae9ba5f",
+      "c_sha256": "568e239fcc7cec1ceb15c326ac1a07f195028f28deb6abe73430798402661fee",
+      "cached": true,
+      "native_object_sha256": "01d556784025abd8b824930e449c470aa48335072e017e76d64a450e7d2184a7"
+    },
+    {
+      "module": "Mahjong.MaskedLocalBound",
+      "source_sha256": "ebacf4ced36cda91bfe91ef2e452de9ddeef34685bc1965edad310a2136ac321",
+      "olean_sha256": "9274a1c938f45ec178763d7ca3ee5beb9e7d425c1e2041fd3387047df59d76e6",
+      "c_sha256": "7d4e54c19289db151b25b1ddd98af902a21a71a43c650e269d667d56801a8a78",
+      "cached": true,
+      "native_object_sha256": "171d06d52bb27df3849a8131838947c4e11aa5f3f6a267b976040b4c749b379d"
+    },
+    {
+      "module": "Mahjong.CachedStandardBounds",
+      "source_sha256": "0cf17fd72fc0f6c7b8380c88290edc6c99bcd8f32ad48795dfb43822970efe07",
+      "olean_sha256": "5ea18422685490a37ed5a2d7a25adab65c1f3f812ecf227a376afde63d475cf5",
+      "c_sha256": "466beabccb55b8e9891ae38707d26c027bb281d20dd7ef794f1427378286788a",
+      "cached": true,
+      "native_object_sha256": "cc6f9fae779e84a19b5b24f66f1aab033c2561d5b9cdacb050b548d48515aa98"
+    },
+    {
+      "module": "Mahjong.FactorizedRules",
+      "source_sha256": "9b11a1b87ab4de6173fe7ab4f62a733704d9591d0d1f7d8b541603ab8a4512f8",
+      "olean_sha256": "3672dad59a6b8b9b8d203c6328c5be2019f203d0a9248b5ca1015cd1015bc416",
+      "c_sha256": "bedd941d8180a59db63a044cf1b5e1b3b2fc887eeb6951d34a48e6f0c76e1dbd",
+      "cached": true,
+      "native_object_sha256": "7d1e5579f94db2f02b24b132bbfe933b3a64f731c7a5546aa5e976aff4910f9e"
+    },
+    {
+      "module": "Mahjong.FastOrphans",
+      "source_sha256": "8ca1bf4c7ae162a3c46dc0697c14b4894ef95929032559cfd9ef29a809050824",
+      "olean_sha256": "a398e98fbdd676c567571ee0b6c94876bdf52e3ce09ec2733f47f4742e6ccafb",
+      "c_sha256": "b193e9b72b2ebd8dae5d2840506515003cb09a780a77605b214d34e8c72389a1",
+      "cached": true,
+      "native_object_sha256": "22b938cd220b0e16fc5888117a5a8f589cdce3512d949c0e51c0db7aba638faf"
+    },
+    {
+      "module": "Mahjong.CapacityComplete",
+      "source_sha256": "9fc64ad58c1f03520bbb36b29a751a292d84f481f6a76a69aa14ac9165efee77",
+      "olean_sha256": "313b21d64b24404c4ec829f34f132ac94e991772ede49137fb81ebc15c428ddb",
+      "c_sha256": "d46501f2fd4a5eae8fe7af88d48ed4e8338de36dd5f6e4dc4fc28abb3edefbf4",
+      "cached": true,
+      "native_object_sha256": "91cd011cf96896d6b287d276118369dba19d27ad0ab1d479c9525c509f591185"
+    },
+    {
+      "module": "Mahjong.LocalCache",
+      "source_sha256": "fce37db5ae9809160ff1644fd0f98f5b6233523a519692f94e1a81c762118a1e",
+      "olean_sha256": "866613e33f3c6c8697958569915503e1e281b74658fdbebb6b5c855f22f0c16c",
+      "c_sha256": "7d3e55857854cdd94c56a9811aa061349d0dc0c81d6fd023a6dd2ce6bfc1fb78",
+      "cached": true,
+      "native_object_sha256": "0e5687a6ba3277120f7faf1594a41097eee20f9cb9c5a64b54769701287e1d16"
+    },
+    {
+      "module": "Mahjong.MemoRules",
+      "source_sha256": "7fa78466adda06d34ac030dc749c332141b1f76b58177b1f94bd41611bdc290f",
+      "olean_sha256": "441bdb5a2e5ddf91b6157788242cc70dd82cc1d02a5bf3d8e9d95c9291f70023",
+      "c_sha256": "eec392f9e9b0fe2cdb1233af8f661bcf60395d08008fe397efee193cd443ca0c",
+      "cached": true,
+      "native_object_sha256": "b6301322c0b99b72bb30a71eaba0ce7a5ba2e9114c2a7a07ff15097c4f413fab"
+    },
+    {
+      "module": "Mahjong.PairProfile",
+      "source_sha256": "1f413904789e03998275bebfac78b32713e8f8c9fff41dc8d89ce633ded3d4a8",
+      "olean_sha256": "e7b372a556d7720fdd14e209b25b3891c7d56b1fa47f7915f69810ad10d71c17",
+      "c_sha256": "492485cfd66127a0072370dc771e82e463c5676a2d6d600a8e69e4bed39be0e3",
+      "cached": true,
+      "native_object_sha256": "b022795563e4a7f70163a183cadb20e747a85641820d5ac690d2a0e99b0820af"
+    },
+    {
+      "module": "Mahjong.LocalSummary",
+      "source_sha256": "0a00c132270888dca015ceaf51b27cacc90b7e9e637080ac26cb2ec61704c5f3",
+      "olean_sha256": "d6455e4226b2719a82e26d9be170c52b0c162beaae189edf97bc87b91fd50cce",
+      "c_sha256": "3266aabc286effee70569b1ba89aa19053e111000380f6eb39f901c572b24d2e",
+      "cached": true,
+      "native_object_sha256": "0b0a4e8ce05de1aa165293a1d3f08db5f765b23842d35a937cd9f4c914e54f68"
+    },
+    {
+      "module": "Mahjong.FastMemoRules",
+      "source_sha256": "69d478fffa14d7679738d9548d1152959e6fe41cfdf8153ea462f12e6e00c2d6",
+      "olean_sha256": "a61dc661ad4083c3eaf42bc07c3843e2c62f12b1ae03c2ba8f9dceb3c58f7f2c",
+      "c_sha256": "9a657c27002b532d21096140912e955234ea075c136e70b28181d7215ea02125",
+      "cached": true,
+      "native_object_sha256": "3eb203ba652531fe446f41123784a7216a334f772199da845cd8f4c0f6319b3a"
+    },
+    {
+      "module": "Mahjong.ExactMemoRules",
+      "source_sha256": "80f81a5c5ab106db5750387e973064c4a73fffd1f9f8f796f99a4512e993d5cc",
+      "olean_sha256": "91d9592fc353422c68ac29c1dfb8f9afaef4abea0397ee45ad7df9decd6f817c",
+      "c_sha256": "145444a02c10f9b91168ec592939eecbacfa71393310bc229a372b1f205b4bca",
+      "cached": true,
+      "native_object_sha256": "88e72f7943ad34757aa934fbc820a1e9433a180b168730cf439d6050f4442387"
+    },
+    {
+      "module": "Mahjong.SummaryRules",
+      "source_sha256": "396686bbe2b117606eb61d38df0ad25281fc501aca533a1b83fbec83c54addba",
+      "olean_sha256": "c1eabdec92471d18edbb4ea6f27186b871bf34c9e4ab095a0d16d13499ba5029",
+      "c_sha256": "b317228bb09bbdf36018c9aac03545395b3933d46bb46a89db913dc094cf67b3",
+      "cached": true,
+      "native_object_sha256": "446359d9dd1e954edf3193409e7e9329d6d1cdd2499fe07cec932847920cc61d"
+    },
+    {
+      "module": "Mahjong.PackedRules",
+      "source_sha256": "908c4dac5dc4c9d9be0cafe6117ac07c24e672b116114793a7c3482840d0b98d",
+      "olean_sha256": "e8ae6c70d912a3bf56f8f508f8d80236ef0b2c581ce407a88726a73d4329adfc",
+      "c_sha256": "db034646c1005a10765f303127455ee1249da5c22e4fe31f9d0a68b457f83c03",
+      "cached": true,
+      "native_object_sha256": "39588cc538620549acc758801d20340e1fa9a8b6c864c0316bc206b6c4419083"
+    },
+    {
+      "module": "Mahjong.CachedProfiles",
+      "source_sha256": "d17b8d2a647ba72052bcde3b0d58ca442cf0d995f9dfffde28c09df451f04fe7",
+      "olean_sha256": "3b6eaee215c41319f70222ccd7c98b706eb522e5f6026bc0ce31eee53ddfd67d",
+      "c_sha256": "b589fd52aad016d8f8ebf4fde2c51cf1dc50055f5705fda13a041f083dafb2d8",
+      "cached": true,
+      "native_object_sha256": "892711b605006c7db98c250292265ca9d3be08f996d59dcc8e51fb544c54f279"
+    },
+    {
+      "module": "Mahjong.PreloadedRules",
+      "source_sha256": "40fa1f5b77c4eeb038c857ef8d4e5ecb2620a1b46781e54be9b82fda4e47c310",
+      "olean_sha256": "41bc396a24301a0f20d9c2a2e4d2c89e489721efb48e5df85b0229041dff9301",
+      "c_sha256": "6ae69b334359f586ced0e860692c35dfd6593f8edc4436f0b680f4f0af87e9e2",
+      "cached": true,
+      "native_object_sha256": "cc4caa09783123652db237b390d4a5cb6e1fe86324fe70deefac3dd0e48343be"
+    },
+    {
+      "module": "Mahjong.Quotient",
+      "source_sha256": "e773937b3bd60c496ce0fc07f69ba5a8e99b6c8fdeb18d3a638cb9713096f168",
+      "olean_sha256": "c7da4f66030fca8b45715f969a35ad9c606c9730a4473a3128bb83eb2e22a2c5",
+      "c_sha256": "8b242c48e5848d96bbaf8e859050bf1b66177cf0f05ac70b29a7cd7420ee8513",
+      "cached": true,
+      "native_object_sha256": "c78b7df97cb6a711b4062c01f7939ac24b04e919bcea8caa4a1b29776abfb47e"
+    },
+    {
+      "module": "Mahjong.Symmetry",
+      "source_sha256": "86549f48fc15afeddcda9da02884849f2bb6dd49a9211962fab75607585ed74a",
+      "olean_sha256": "aabca7123bf366a7c2f22629f50df178ecfe5d576b1a5329c7579714dfcec2af",
+      "c_sha256": "8583b660530903e7288ff9c667983c07b693dcbcfac6fb91cdea53be8a9ba3d0",
+      "cached": true,
+      "native_object_sha256": "00fdd904e5474f33a0448aa31b7e8e6f7c4b80900f4c47ca5439d9d684056039"
+    },
+    {
+      "module": "Mahjong.Generators",
+      "source_sha256": "3b84f3b6a6705083410c0854faa8fc9815bd7229838da21a94693f3bdc0a6c1e",
+      "olean_sha256": "f5d9c975baf69583038bfdfa0bbb820895a700ee91f263ec24a01cf55a391b9f",
+      "c_sha256": "c71e7baa7930544eb5509cc198a33599a3406dba21e4b884d69c6ffba5ac52a0",
+      "cached": true,
+      "native_object_sha256": "88fca745b95e2b7e624cd48205cdb8ba795411c3d5a96e747313e560a1e156e6"
+    },
+    {
+      "module": "Mahjong.Certificate",
+      "source_sha256": "fe76075239fdeb621c020c5ad03b4c34fde9cec5edfc5845cfe6b72fc067f0e2",
+      "olean_sha256": "c6dbc86598d2580cb5628a95da15fc94d26dfd2897fcfe872c4313592f064f21",
+      "c_sha256": "12166363fa4cc809e9edc8df4f537af48187019b90fea7f3ffc4dbcf1cb80e6f",
+      "cached": true,
+      "native_object_sha256": "376212b3df1bc15c64562360e43181b8407e6b034ba18e68ca6bedb0647e0a3a"
+    },
+    {
+      "module": "Mahjong.Bridge",
+      "source_sha256": "85cf93200015cf06e41abab841f80e14b7ae726d2984923ef78140e33c7c3b3b",
+      "olean_sha256": "8a577808f3a664e79081045b16bf58df7c87adf19af758bd382e869900369346",
+      "c_sha256": "950447518e9ae9602c44997da04a38509269321d822846961d10c8b3536e99fd",
+      "cached": true,
+      "native_object_sha256": "d497b10b5e37b18a569552b0787ae821ad1b1fa0f4052d6bc57b586f21652a7e"
+    },
+    {
+      "module": "Mahjong.PackedInterpretation",
+      "source_sha256": "463c83026cfc47eb201cbd029ff290ab11453b1e9a0a73a29b1f3b1791797a3e",
+      "olean_sha256": "44e63d0ebe3a24d65b9efbfdcf8080ff725b1439e1e63bfb912449c90ba34fb4",
+      "c_sha256": "c5c771dba0a9cfab17a280c17aebc2922c9b8ffe631eb0d52826a31bfe561e29",
+      "cached": true,
+      "native_object_sha256": "59fcdf1ab888c43f0067b609e37cc43568651ecf5f3a51086a7c65114ee9a4b2"
+    },
+    {
+      "module": "Mahjong.GeneralLayer",
+      "source_sha256": "4e15da52ab68c26056b67aeae80a24ce9d628de44ec30fa8ce5a3f1af5f95272",
+      "olean_sha256": "f3b2bd8491a07b91fd31881f857cb2bab38e09d444c3bb71f3f4f1422eb47af5",
+      "c_sha256": "820d56cf050753660fb68c579c400b52d49f9ed46e309d65b3779d7840d23438",
+      "cached": true,
+      "native_object_sha256": "9e118cdbb26e3304eab48c09779712f8112b7f9bc31cf4d11b46626c41cd036e"
+    },
+    {
+      "module": "Mahjong.BucketIndex",
+      "source_sha256": "00f04246ed000c3aad499522f02f2826d7523fd017ed6c5da6d0841f2394152c",
+      "olean_sha256": "db576f685d3edc67c4eb136e1c098f64b7a6df0de37ce4834648eed29a1202f6",
+      "c_sha256": "965db9ec4a71955ad2cbde883242ee89b42f1e50fdd9fd755a36a42b425fcbc2",
+      "cached": true,
+      "native_object_sha256": "0dc2a2a6e8a422c37b7eb906af0d8dfc8e02f7c25b7d8df5e501db64771d2795"
+    },
+    {
+      "module": "Mahjong.LocalCacheEncoding",
+      "source_sha256": "5ef800f8fd4a5470b5278ea5d2d6cbf42d9e7097cffc1df392cf72477b719722",
+      "olean_sha256": "67a9c3f402567b8ff2134c80ebe14d4a20d5ab8f6e05afb41d4f1eac4c47f486",
+      "c_sha256": "37237a1bcc69d7564d8ed9422db2da27947127674715f421d845f2d072106ab4",
+      "cached": true,
+      "native_object_sha256": "42f26285c88ea7de50e98f2ebc7fecb3a0585f0fc1497158633bdbe61b551f94"
+    },
+    {
+      "module": "Mahjong.TerminalBucket",
+      "source_sha256": "19ed504c598335f4bd712edf772b38ac8281e9ed259bc8bbe79553eea8c1afce",
+      "olean_sha256": "7d55963e337c6f576b749b7dad736b07d3964c6bbb4c1dbde14c74242c2a2b86",
+      "c_sha256": "a006abc550755f6a79292668b65a6715da7845dff11323fa880c7c5dd7690eb1",
+      "cached": true,
+      "native_object_sha256": "7d324c4b5add3d6dc5fd13ada219afc52699a8dd8da9f8194696531d01d7af87"
+    },
+    {
+      "module": "Mahjong.GeneralIndex",
+      "source_sha256": "395dda4ed2921c2aa3ace77874770c3122262ded99e367bfd61f99d2f4c100d4",
+      "olean_sha256": "9d60c2f417af4d4d2be5b92c433b628c81dd279c61deb993f687f614886a38a5",
+      "c_sha256": "5f172ee2df7e0f907823e223a9f60fe8643671f8da7686101888da7323d188e6",
+      "cached": true,
+      "native_object_sha256": "e328939de77226e410455e4551b4acc506cf3be5526902c5c4fcff8596e06288"
+    },
+    {
+      "module": "Mahjong.SummaryEncoding",
+      "source_sha256": "23399b8c1f2c941858253745732011c0532cf7080f3b7678df9afea68d21bc37",
+      "olean_sha256": "10e237207e74997ba3c238785a8ca8a119e55d0c367508b166e7bbc648a0b68c",
+      "c_sha256": "d0b74b4d6905e7c39c2775d117e62ed5fe186e178f73b60418c89ace9a0d967a",
+      "cached": true,
+      "native_object_sha256": "f8fb83935a3f4ab245baf20e647fe47cf1abe5fd4603965bdd4cbf5d1e8dd77e"
+    },
+    {
+      "module": "GeneralWorker",
+      "source_sha256": "f0c46faa1320f8c5a23fbf9848b3d7bd2c43e70cc593f46c92b2709da5ff2469",
+      "olean_sha256": "8dfa08ff00b2f57121a54ecf33d7e92a37ce356fdd707e73a16658e471b1be6c",
+      "c_sha256": "e1e3dcf28a8f72248e47de3ca84e69d3993e388f5922d2971b1a57325909f1d3",
+      "cached": false,
+      "native_object_sha256": "0d31d0abb0740710c1f32730317d5251f2878b3025f5a0fc05fbf283168978f5"
+    }
+  ],
+  "seconds": 3.687000000034459,
+  "executable": "<research-root>\\build\\lean_table_checker\\GeneralWorker.exe",
+  "executable_sha256": "08edfbb561c43b215e8336a852d710afff6628796e706a24d16e4532060f2c4f"
+}

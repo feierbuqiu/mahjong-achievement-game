@@ -1,0 +1,193 @@
+{
+  "schema": "MAHJONG_SOLO_LEAN_CONTINUATION_V1",
+  "created_utc": "2026-09-13T12:44:56.837741+00:00",
+  "subagents_used": 0,
+  "empty_game_Lean": "NOT_VERIFIED",
+  "ten_tile_winner_Lean": "NOT_VERIFIED",
+  "certified_new_12_tile_roots": [
+    {
+      "name": "branch34",
+      "digits": "0000000030000001110001110300000000",
+      "root_tiles": 12,
+      "P_rows": 2,
+      "legal_first_responses": 66,
+      "SAFE_leaves": 1,
+      "kernel_modules": 31,
+      "new_modules_in_final_pass": 10,
+      "final_wall_seconds": 23.219000000040978,
+      "final_peak_private_bytes": 2284871680,
+      "final_peak_concurrency": 2,
+      "final_average_cores": 0.8539611955710843,
+      "receipt": {
+        "path": "runs/lean_solo/branch34_kernel_v1/result.json",
+        "bytes": 56673,
+        "sha256": "dba96b592098a885b590663803d917151e43bf1a9f4ab2ef365f81a5b40d9c8c"
+      }
+    },
+    {
+      "name": "branch44",
+      "digits": "0000000020000001110001121200000000",
+      "root_tiles": 12,
+      "P_rows": 1061,
+      "legal_first_responses": 36074,
+      "SAFE_leaves": 103,
+      "kernel_modules": 383,
+      "new_modules_in_final_pass": 133,
+      "final_wall_seconds": 112.10899999999674,
+      "final_peak_private_bytes": 12293799936,
+      "final_peak_concurrency": 8,
+      "final_average_cores": 6.757513892729594,
+      "receipt": {
+        "path": "runs/lean_solo/branch44_kernel_v1/result.json",
+        "bytes": 712082,
+        "sha256": "10891dad74e10bf41f5e2fd2e1ca5b40aa6fd53cf5cc944134aa12cd1cf859ea"
+      },
+      "pilot_wall_seconds": 215.5779999999795,
+      "pilot_peak_private_bytes": 9888903168
+    },
+    {
+      "name": "branch35",
+      "digits": "0000000030001110201000001110000000",
+      "root_tiles": 12,
+      "P_rows": 1491,
+      "legal_first_responses": 50170,
+      "SAFE_leaves": 162,
+      "kernel_modules": 562,
+      "new_modules_in_final_pass": 187,
+      "final_wall_seconds": 122.375,
+      "final_peak_private_bytes": 11702251520,
+      "final_peak_concurrency": 8,
+      "final_average_cores": 6.582992849846782,
+      "receipt": {
+        "path": "runs/lean_solo/branch35_kernel_v1/result.json",
+        "bytes": 1048975,
+        "sha256": "351a674c01cc8df53311fbb86449919ee6ca1a1cbaa213222b82852b0874810c"
+      },
+      "pilot_wall_seconds": 235.18800000002375,
+      "pilot_peak_private_bytes": 11099971584
+    }
+  ],
+  "new_P_rows": 2554,
+  "new_legal_first_responses": 86310,
+  "registered_unique_P_states": 3311,
+  "registry": {
+    "path": "runs/lean_solo/bank2_registry.json",
+    "bytes": 855784,
+    "sha256": "4ed55da76c3df8e5412299308b005fffaf2a21bb133bb1282ac95ae8b13cf02d"
+  },
+  "registry_module_kernel_checked_by": {
+    "path": "runs/lean_solo/coverage10_kernel_v2/result.json",
+    "bytes": 2466194,
+    "sha256": "49f9bb81579ba768fd88170f4f16228d1cdec79e05311fdbb17cf43d6d3b8169"
+  },
+  "partial_10_covered_first_tiles": [
+    8,
+    9,
+    14,
+    23,
+    24,
+    25
+  ],
+  "partial_10_remaining_first_tiles": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    10,
+    11,
+    12,
+    13,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20,
+    21,
+    22,
+    26,
+    27,
+    28,
+    29,
+    30,
+    31,
+    32,
+    33
+  ],
+  "partial_10_scope": "Actual legal replies are proved for the listed first tiles. No P or winner theorem for the 10-tile root is inferred.",
+  "peak_sampled_certifier_private_bytes": 12293799936,
+  "all_compute_processes_stopped": true,
+  "old_release_hashes_unchanged": true,
+  "dependency_exact_reuse_edges_checked": 5247,
+  "verified_kernel_receipts": [
+    {
+      "path": "runs/lean_solo/branch34_kernel_v1/result.json",
+      "bytes": 56673,
+      "sha256": "dba96b592098a885b590663803d917151e43bf1a9f4ab2ef365f81a5b40d9c8c"
+    },
+    {
+      "path": "runs/lean_scale/actual12_registry_kernel_v1/result.json",
+      "bytes": 571901,
+      "sha256": "9355a8cd9a7d54dd10e51873f47596f18c965df9667c74c800a9ddb7d0b42ff2"
+    },
+    {
+      "path": "runs/lean_scale/actual12_kernel_v1/result.json",
+      "bytes": 560533,
+      "sha256": "528aa59d3590c29ed05a21dbfea088aefdd4de11c76853e2303beceb1f488a6d"
+    },
+    {
+      "path": "runs/lean_scale/actual12_pilot_v2/result.json",
+      "bytes": 403609,
+      "sha256": "4593bf354a0b638e045c3545853453271a2a0491e058a83b95aaa744b83a8430"
+    },
+    {
+      "path": "runs/lean_scale/leaves_kernel_v1/result.json",
+      "bytes": 303701,
+      "sha256": "9dab1f3e170dade4708c0a3eb6d2a2bc5a3f5bdcaf31eb4fdfc193f15f37ab7d"
+    },
+    {
+      "path": "runs/lean_next/actual14_kernel_v2/result.json",
+      "bytes": 66702,
+      "sha256": "15e94b816a87c23f0315f3ed96a709e7e04a1842b55187350114894623148b9b"
+    },
+    {
+      "path": "runs/lean_next/reflected20_kernel_v1/result.json",
+      "bytes": 94901,
+      "sha256": "ab984f5f72118e2a66c1c2c6e79c519ac0345f07ca897433ea75b205bf20bb0a"
+    },
+    {
+      "path": "runs/lean_next/greedy20_kernel_v1/result.json",
+      "bytes": 127261,
+      "sha256": "5dad92683fc04868022f0c38a7cb22ef39af18b9451b2c22d8c392ef3a78c6c2"
+    },
+    {
+      "path": "runs/lean_solo/branch44_kernel_v1/result.json",
+      "bytes": 712082,
+      "sha256": "10891dad74e10bf41f5e2fd2e1ca5b40aa6fd53cf5cc944134aa12cd1cf859ea"
+    },
+    {
+      "path": "runs/lean_solo/branch44_pilot_v1/result.json",
+      "bytes": 416282,
+      "sha256": "cbe5053a23547d21167a16d75f697bd4cbcbcc83326264093369f4dee112cf77"
+    },
+    {
+      "path": "runs/lean_solo/branch35_kernel_v1/result.json",
+      "bytes": 1048975,
+      "sha256": "351a674c01cc8df53311fbb86449919ee6ca1a1cbaa213222b82852b0874810c"
+    },
+    {
+      "path": "runs/lean_solo/branch35_pilot_v1/result.json",
+      "bytes": 620410,
+      "sha256": "24988afcf4c0290a752e09c20e17fbe9e01f0761531cba2a90a86ebdd395441c"
+    },
+    {
+      "path": "runs/lean_solo/coverage10_kernel_v2/result.json",
+      "bytes": 2466194,
+      "sha256": "49f9bb81579ba768fd88170f4f16228d1cdec79e05311fdbb17cf43d6d3b8169"
+    }
+  ]
+}

@@ -7,6 +7,14 @@ copies from retained historical sources and records original/public hashes.
 The Chinese manuscript, original-language historical notes, large SQLite
 candidate checkpoints, compiler objects and toolchains are excluded.
 
+The [September 14 handoff](../research/2026-09-14/README.md) adds a frozen
+56-module checker source archive, current hardware specifications, selected
+compiled-scan receipts and all 47 general-benchmark case receipts. Its
+[manifest](../research/2026-09-14/provenance.json) explicitly identifies retained
+input binaries, controllers and later concrete proof trees. The paused local
+registry's 24,655 P states are a recorded local milestone; the public concrete
+proof replay still covers the eight indexed roots below.
+
 The latest [formal source](../formal/README.md) contains the complete replay
 closure for the new 12-tile and 14-tile roots, the compressed 20-tile proof,
 and the 757-entry proved registry. These additions belong to the current
@@ -32,7 +40,7 @@ The complete padded table payload is **97,316,623,312 bytes**. It is not include
 in this Git repository or offered as a public download in version 0.1.0.
 No external archive, DOI, or permanent table-hosting service is claimed.
 Historical large search caches, the incomplete opening candidate-graph database,
-and the active Lean working environment are also outside this publication.
+and the paused Lean working environment are also outside this publication.
 The completed formal source snapshot is included; compiled Lean modules and
 the Lean toolchain binaries are not stored in Git.
 

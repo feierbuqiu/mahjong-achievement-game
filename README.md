@@ -4,7 +4,14 @@
 
 [![Research checks](https://github.com/feierbuqiu/mahjong-achievement-game/actions/workflows/research.yml/badge.svg)](https://github.com/feierbuqiu/mahjong-achievement-game/actions/workflows/research.yml)
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
-[![Formal verification: in progress](https://img.shields.io/badge/Lean-verification_in_progress-yellow.svg)](formal/README.md)
+[![Maintainer Lean work: paused](https://img.shields.io/badge/Lean-maintainer_work_paused-orange.svg)](research/2026-09-14/README.md)
+
+> **Status: September 14, 2026.** The maintainer has paused personal work on
+> end-to-end Lean verification. The computational result remains a
+> **second-player win**; the empty-position Lean theorem remains
+> **`NOT_VERIFIED`**. Further formal-methods expertise, algorithmic improvements,
+> and access to substantially greater compute are welcome. See the
+> [current findings, hardware measurements, and handoff](research/2026-09-14/README.md).
 
 ## Read the paper
 
@@ -23,15 +30,16 @@ player wins under optimal play**. All six symmetry classes of first moves are
 N. A second algorithm, using reverse physical-tile deletion, replayed the
 complete P/N table with zero mismatches.
 
-**End-to-end Lean verification is in progress.** Closed original-game Lean
-proofs are now indexed for eight concrete nonempty positions with 12, 14, 20,
-28, 30, 32, and 34 tiles, together with 1,008 pinned source modules and a clean
-kernel-replay command. The newest 12-tile certificate has 757 reusable P rows
-covering 25,510 legal first actions. The 10-tile candidate is still partial.
-The empty-position theorem remains unproved in Lean. The two full-table
-computational algorithms share the foundational rule implementation and state
-index. See the [formal progress and reproduction](formal/README.md) and
-[evidence boundaries](docs/EVIDENCE.md).
+**The computational conclusion and incomplete formal proof are separate.**
+The two full-table algorithms share the foundational rule implementation and
+state index. The published September 13 proof package contains eight concrete
+nonempty roots and 1,008 Lean modules with a clean kernel-replay command.
+Later local work accumulated a registry reporting **24,655 certified P states**;
+its complete proof trees are retained outside this public package. A newer
+compiled-Lean checker completed layers 34 and 33, covering **22,512,356 rows**.
+Neither route closes the 10-tile or empty-position theorem. See the
+[dated handoff and receipts](research/2026-09-14/README.md),
+[published nonempty proofs](formal/README.md), and [evidence boundaries](docs/EVIDENCE.md).
 
 | Recorded result | Value |
 | --- | ---: |
@@ -43,12 +51,41 @@ index. See the [formal progress and reproduction](formal/README.md) and
 | Historical position checks | 16,240 matches; 0 conflicts |
 | Full table payload | 97,316,623,312 bytes |
 
-These are the recorded results of the September 13, 2026 research snapshot.
-The latest formal evidence was finalised at 07:42 UTC that day; the paper
-includes those milestones. The opening candidate graph has 9,765,237 nodes
-and remains partial. Node counts are not a formal-proof completion percentage.
+These computational results and the English paper are dated September 13,
+2026. The [September 14 supplement](research/2026-09-14/README.md) records the
+subsequent formal work and the decision to pause. The paper's partial opening
+graph and later local registries describe different searches; their counts
+are neither additive nor a formal-proof completion percentage.
 The [acceptance receipt](results/acceptance.json), [opening queries](results/opening.jsonl),
 and [machine-readable status](RESEARCH_STATUS.json) state their scope.
+
+## Why work is paused, and how to help
+
+The present workstation has an **Intel Core i7-10700KF (8 cores / 16 threads),
+32 GiB installed RAM, and an NVIDIA RTX 2070 SUPER**. The checker uses the CPU;
+there is no GPU implementation. The measured jobs were limited to 15.5 GB of
+aggregate process memory and 80% of machine CPU capacity.
+
+| General-row benchmark | Measured scan throughput |
+| --- | ---: |
+| Selected layer-32 buckets, 12 processes x 1 thread | 25,921 rows/second |
+| Selected peak-layer-23 buckets, 2 processes x 6 threads | 2,567 rows/second |
+| Average needed for all 778,532,864,302 rows in 30 days | 300,360 rows/second |
+
+These are bounded samples with file-loading time excluded, not a whole-table
+runtime forecast. General-layer scaling is currently far below the 30-day
+target, and the final coverage/aggregation proof is still incomplete. The
+maintainer does not expect a near-term breakthrough with the current approach
+and personal resources, and has stopped pursuing that verification campaign.
+No full scan is running and there is no completion date.
+
+Contributions are welcome: a shorter independent argument, a complete Lean
+certificate, profiling and checker improvements, or measured trials on a
+larger compute host. More RAM or advertised core count alone does not establish
+feasibility. Start with the [handoff, source, and benchmark receipts](research/2026-09-14/README.md)
+and discuss a concrete proposal in the
+[issue tracker](https://github.com/feierbuqiu/mahjong-achievement-game/issues).
+Existing proofs remain reproducible, and their CI checks continue.
 
 ## The game
 
@@ -86,6 +123,8 @@ hashes and exact reconstruction commands are included. See [data availability](d
 ## Research materials
 
 - [Full English paper](papers/manuscript.md): primary research report and appendices.
+- [September 14 research handoff](research/2026-09-14/README.md): paused work,
+  latest findings, hardware, performance evidence, and remaining obligations.
 - [Rules and SAFE reduction](docs/RULES.md): the exact game and normal-play recurrence.
 - [Methods and strategy](docs/METHODS.md): symmetry indexing, forward generation, and reverse replay.
 - [Evidence and limitations](docs/EVIDENCE.md): what each recorded check establishes.

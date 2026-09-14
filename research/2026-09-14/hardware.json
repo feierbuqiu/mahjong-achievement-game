@@ -1,0 +1,39 @@
+{
+  "schema": "MJ_PUBLIC_WORKSTATION_V1",
+  "observed_utc": "2026-09-14T07:39:41.3725829Z",
+  "collection": "Read-only Windows CIM query; identifying fields were not collected.",
+  "cpu": {
+    "Name": "Intel(R) Core(TM) i7-10700KF CPU @ 3.80GHz",
+    "NumberOfCores": 8,
+    "NumberOfLogicalProcessors": 16,
+    "MaxClockSpeed": 3792
+  },
+  "installed_memory_bytes": 34359738368,
+  "os_visible_physical_memory_bytes": 34253983744,
+  "os": {
+    "Caption": "Microsoft Windows 11 Education",
+    "Version": "10.0.26200",
+    "OSArchitecture": "64-bit"
+  },
+  "gpu": {
+    "Name": "NVIDIA GeForce RTX 2070 SUPER"
+  },
+  "storage": [
+    {
+      "Model": "Samsung SSD 980 PRO 1TB",
+      "Size": 1000202273280,
+      "MediaType": "Fixed hard disk media"
+    },
+    {
+      "Model": "WDC WDS500G2B0C-00PXH0",
+      "Size": 500105249280,
+      "MediaType": "Fixed hard disk media"
+    }
+  ],
+  "benchmark_limits": {
+    "cpu_cap_percent": 80,
+    "memory_hard_cap_bytes": 15500000000
+  },
+  "gpu_used_by_published_checker": false,
+  "scope": "Hardware configuration, not a performance prediction. Memory peaks in run receipts are sampled aggregate process private bytes."
+}

@@ -1,4 +1,8 @@
 * text=auto eol=lf
+# Preserve original artifact bytes, including CRLF line endings.
+research/2026-09-14/lean/** -text whitespace=blank-at-eol,space-before-tab,cr-at-eol
+research/2026-09-14/evidence/** -text whitespace=blank-at-eol,space-before-tab,cr-at-eol
+research/2026-09-14/source/** -text whitespace=blank-at-eol,space-before-tab,cr-at-eol
 # Preserve imported scientific source and evidence bytes for their manifests.
 src/** -text
 mahjong_progress/** -text

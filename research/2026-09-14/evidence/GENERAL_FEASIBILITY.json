@@ -1,0 +1,83 @@
+{
+  "schema": "LEAN_HOME_30_DAY_GATE_V1",
+  "utc": "2026-09-14T07:01:29Z",
+  "decision": "DO_NOT_START_FULL_SCAN_CURRENT_IMPLEMENTATION",
+  "full_scan_launched": false,
+  "full_table_Lean": "NOT_VERIFIED",
+  "hardware": {
+    "cpu": "Intel Core i7-10700KF",
+    "physical_cores": 8,
+    "logical_processors": 16,
+    "physical_memory_bytes": 34253983744,
+    "available_memory_bytes_at_start": 19869368320
+  },
+  "test_evaluations": 745472,
+  "unique_sampled_slots": 356352,
+  "completed_cases": 47,
+  "all_case_receipts_verified": true,
+  "layer32_target_common_inputs_match_completed_layer33": true,
+  "thirty_day_required_rows_per_second": 300359.9013510802,
+  "method": "Size-weighted mean seconds per row within selected buckets; systematic quarter/midpoint windows, not an IID sample or confidence interval. Scan timing excludes repeated startup/file loading.",
+  "representative_layer32": {
+    "rows_per_second": 25921.480222667513,
+    "rows_per_hour": 93317328.80160305,
+    "selected_bucket_mass_fraction": 0.961171770228946,
+    "source_buckets": [
+      148,
+      106,
+      149,
+      151,
+      107,
+      152,
+      109,
+      70
+    ],
+    "configuration": "12 processes x 1 worker thread"
+  },
+  "representative_peak23": {
+    "rows_per_second": 2567.3159882828045,
+    "rows_per_hour": 9242337.557818096,
+    "selected_bucket_mass_fraction": 0.3565727126014669,
+    "source_buckets": [
+      15,
+      5,
+      35
+    ],
+    "configuration": "2 processes x 6 worker threads",
+    "measured_bucket_rate_range": [
+      2209.4395797771062,
+      3413.663747536897
+    ],
+    "peak_private_bytes": 10193907712
+  },
+  "scenarios_not_forecasts": {
+    "all_rows_at_layer32_rate_days": 347.61892311430387,
+    "all_rows_at_weighted_peak_rate_days": 3509.8122247738743,
+    "all_rows_at_observed_peak_rate_range_days": [
+      2639.6264268951736,
+      4078.3179241504486
+    ],
+    "selected_three_peak_buckets_alone_days": 154.75374697444593
+  },
+  "required_speed_factor": {
+    "relative_to_layer32": 11.587297437143462,
+    "relative_to_peak23": 116.9937408257958
+  },
+  "ideal_single_worker_equivalents_at_peak": 425.85476143462284,
+  "no_subagents": true,
+  "model_calls_for_computation": 0,
+  "evidence": [
+    {
+      "path": "general_benchmark_v1/result.json",
+      "sha256": "5be2f029ab4a8e883422567c1d16215313d1e087ef71d16bf61bf494504f4904"
+    },
+    {
+      "path": "peak_parallel_v1/result.json",
+      "sha256": "ca15fb5740de8bfaf43d8b94531a7c7ea2371d235f726b9ee235222977ba9cc4"
+    },
+    {
+      "path": "general_negative_20260914T165100/result.json",
+      "sha256": "7955644418e991d6d53798be06987bfed6a195fea998961faa6fbf605159a026"
+    }
+  ]
+}

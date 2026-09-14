@@ -1,0 +1,1076 @@
+{
+  "status": "PASS_KERNEL_SOURCE",
+  "lean_version": "Lean (version 4.33.1, x86_64-w64-windows-gnu, commit 819816b2e0a3bf405af45ae5c7af2491d8f5bee6, Release)",
+  "trust_level": 0,
+  "source_sha256": {
+    "CachedProfilesBenchmark": "34acc003c7a8ca89adf3745b1d3c185ccd59cb15c14e69ab4d42a1607d72746c",
+    "CandidateTests": "4f9bcbc8f5f732e037c2cfcdc320e862b70544400726bfb2420c710d59470f62",
+    "ExactMemoBenchmark": "193dc74fcf7a798800bc2c910627bbb1c4c873c51b67f9af9ec3e80ce21b469a",
+    "FactorBenchmark": "f03cd29fa2dd3a49618603b5595a2e03c99e1537b4627ab333227f833dc7c07c",
+    "FastMemoBenchmark": "0110413cbe49e2acc20c7458c02da4486519edd58350d8c5c0de64e47769e702",
+    "FlatBenchmark": "5d6eab22bc16ef685ee5614a854720dd449d6846a79b3d2bcfcf057b0c62f32f",
+    "GeneralFaultWorker": "8a2442051671990257422f58e1d5aaafe7a25165d2230ac947b6cca6cb8370f5",
+    "GeneralWorker": "f0c46faa1320f8c5a23fbf9848b3d7bd2c43e70cc593f46c92b2709da5ff2469",
+    "LocalCacheWorker": "b3f7828c6128581b33167b9d9532a5049ff45ec9cb38f009be042daca340b462",
+    "MemoBenchmark": "8543c27c89c19ddd7822bf87ff4379ff416b917e2a3c9ddd8a6a2c4240c61325",
+    "NearTerminalWorker": "89439a31a3e33e4bc25fcdf3371704bdd3427d5244974965f5a940b6709a411b",
+    "PackedBenchmark": "870093448110bb0226947a52dec7ebf9fb999ccaa1d49d4d5e4b943e05218a4b",
+    "PreloadedBenchmark": "10e79634eb07f4123d294ddd8d5647c624ec72943e1710d6c37353da12598b63",
+    "SummaryWorker": "333a6cf68cb157aefe734950c56c4618c90f64ef40bf04044f7d4a9198adb33f",
+    "TableBenchmark": "097b74a4c28a26cd596c5195b06fa3f00f074be7fc0e848106a98717e82c68f6",
+    "TerminalWorker": "0e234b0709ae1162c6ce4fd9effcf4b4277b47f23b351d646d63f52cc4350aa1",
+    "Mahjong.Bridge": "85cf93200015cf06e41abab841f80e14b7ae726d2984923ef78140e33c7c3b3b",
+    "Mahjong.BucketIndex": "00f04246ed000c3aad499522f02f2826d7523fd017ed6c5da6d0841f2394152c",
+    "Mahjong.CachedProfiles": "d17b8d2a647ba72052bcde3b0d58ca442cf0d995f9dfffde28c09df451f04fe7",
+    "Mahjong.CachedStandardBounds": "0cf17fd72fc0f6c7b8380c88290edc6c99bcd8f32ad48795dfb43822970efe07",
+    "Mahjong.CachedWholeTable": "414e333bffb7fa8c07866b2ff09ae34a525be80ed1f3f9ebfd5493c851eb87ce",
+    "Mahjong.CapacityComplete": "9fc64ad58c1f03520bbb36b29a751a292d84f481f6a76a69aa14ac9165efee77",
+    "Mahjong.Certificate": "fe76075239fdeb621c020c5ad03b4c34fde9cec5edfc5845cfe6b72fc067f0e2",
+    "Mahjong.DownwardClosure": "c72614c8945974da9253f43ab00719923b340a54caa6102689b5a8c05771fef5",
+    "Mahjong.ExactMemoRules": "80f81a5c5ab106db5750387e973064c4a73fffd1f9f8f796f99a4512e993d5cc",
+    "Mahjong.FactorizedRules": "9b11a1b87ab4de6173fe7ab4f62a733704d9591d0d1f7d8b541603ab8a4512f8",
+    "Mahjong.FastMemoRules": "69d478fffa14d7679738d9548d1152959e6fe41cfdf8153ea462f12e6e00c2d6",
+    "Mahjong.FastOrphans": "8ca1bf4c7ae162a3c46dc0697c14b4894ef95929032559cfd9ef29a809050824",
+    "Mahjong.FastRuleChecker": "554b4712cc2c734af54a6dced186f51d818eb6096b5e856af3bd912edc5fe8c3",
+    "Mahjong.FlatProfiles": "b32be721b823832726f0221c5f9b081f57fbdc40504f01b11ed933fb873285f3",
+    "Mahjong.FlatRules": "6b1a5ebd8fc675363e4a5beedf746e71c4e8b7eec111e209e264a6ab3a919841",
+    "Mahjong.GeneralIndex": "395dda4ed2921c2aa3ace77874770c3122262ded99e367bfd61f99d2f4c100d4",
+    "Mahjong.GeneralLayer": "4e15da52ab68c26056b67aeae80a24ce9d628de44ec30fa8ce5a3f1af5f95272",
+    "Mahjong.GeneralOriginalSoundness": "9aef35d31a1a5ebd45a9ef6edf4ca3b03910ec98bad55e84ecb83dffd3330f90",
+    "Mahjong.Generators": "3b84f3b6a6705083410c0854faa8fc9815bd7229838da21a94693f3bdc0a6c1e",
+    "Mahjong.LocalCache": "fce37db5ae9809160ff1644fd0f98f5b6233523a519692f94e1a81c762118a1e",
+    "Mahjong.LocalCacheEncoding": "5ef800f8fd4a5470b5278ea5d2d6cbf42d9e7097cffc1df392cf72477b719722",
+    "Mahjong.LocalSummary": "0a00c132270888dca015ceaf51b27cacc90b7e9e637080ac26cb2ec61704c5f3",
+    "Mahjong.MaskedLocalBound": "ebacf4ced36cda91bfe91ef2e452de9ddeef34685bc1965edad310a2136ac321",
+    "Mahjong.MemoRules": "7fa78466adda06d34ac030dc749c332141b1f76b58177b1f94bd41611bdc290f",
+    "Mahjong.MoveEnumeration": "73bcdaf1a48d4f6e7bccfa1f7c5813555a1c11a29f1d81fe351fc86f57668552",
+    "Mahjong.NearTerminalBucket": "6f1b50456aa7befbd3a8cbf715d2a30e029ff21bafe9f147851659525f931181",
+    "Mahjong.PackedInterpretation": "463c83026cfc47eb201cbd029ff290ab11453b1e9a0a73a29b1f3b1791797a3e",
+    "Mahjong.PackedRules": "908c4dac5dc4c9d9be0cafe6117ac07c24e672b116114793a7c3482840d0b98d",
+    "Mahjong.PairProfile": "1f413904789e03998275bebfac78b32713e8f8c9fff41dc8d89ce633ded3d4a8",
+    "Mahjong.PreloadedRules": "40fa1f5b77c4eeb038c857ef8d4e5ecb2620a1b46781e54be9b82fda4e47c310",
+    "Mahjong.Quotient": "e773937b3bd60c496ce0fc07f69ba5a8e99b6c8fdeb18d3a638cb9713096f168",
+    "Mahjong.RuleChecker": "2efa76dd77726d5a269d95e2726dd53e5c6010ecdd37131d8db5fda05cae6a7c",
+    "Mahjong.Rules": "5b7a4cc92126dbfde43a945414ea756b23e60479800c921f4bb6ac5b31ff4eb3",
+    "Mahjong.SafeGame": "ef01a38bb161cabe4446274ae744c27bd0936129d1501ce66d35137c3be41028",
+    "Mahjong.StandardBoundCertificate": "573fcd4d4486e6c4cf324b3af201dbce58d3d9d4261c8fb3c6ef91a6e392d89d",
+    "Mahjong.SummaryEncoding": "23399b8c1f2c941858253745732011c0532cf7080f3b7678df9afea68d21bc37",
+    "Mahjong.SummaryRules": "396686bbe2b117606eb61d38df0ad25281fc501aca533a1b83fbec83c54addba",
+    "Mahjong.Symmetry": "86549f48fc15afeddcda9da02884849f2bb6dd49a9211962fab75607585ed74a",
+    "Mahjong.TerminalBucket": "19ed504c598335f4bd712edf772b38ac8281e9ed259bc8bbe79553eea8c1afce",
+    "Mahjong.WholeTable": "8f979afe5bd4135dcb655d326c6f876002f03196b5c1dfa6d759264c5a4a9e4c"
+  },
+  "steps": [
+    {
+      "module": "Mahjong.Rules",
+      "command": [
+        "<research-root>\\build\\toolchain\\lean-4.33.1-windows\\bin\\lean.exe",
+        "--trust=0",
+        "-M3072",
+        "-j1",
+        "-R",
+        "<research-root>\\build\\publication\\mahjong-achievement-game\\runs\\checker-kernel-20260914T074206828136Z\\source",
+        "-o",
+        "<research-root>\\build\\publication\\mahjong-achievement-game\\runs\\checker-kernel-20260914T074206828136Z\\modules\\Mahjong\\Rules.olean",
+        "<research-root>\\build\\publication\\mahjong-achievement-game\\runs\\checker-kernel-20260914T074206828136Z\\source\\Mahjong\\Rules.lean"
+      ],
+      "return_code": 0,
+      "seconds": 9.719,
+      "log": "Mahjong.Rules.log",
+      "log_sha256": "70b8f67afef324be959f9596250514b04c881467d735f0aae1d1994c93df920b"
+    },
+    {
+      "module": "Mahjong.SafeGame",
+      "command": [
+        "<research-root>\\build\\toolchain\\lean-4.33.1-windows\\bin\\lean.exe",
+        "--trust=0",
+        "-M3072",
+        "-j1",
+        "-R",
+        "<research-root>\\build\\publication\\mahjong-achievement-game\\runs\\checker-kernel-20260914T074206828136Z\\source",
+        "-o",
+        "<research-root>\\build\\publication\\mahjong-achievement-game\\runs\\checker-kernel-20260914T074206828136Z\\modules\\Mahjong\\SafeGame.olean",
+        "<research-root>\\build\\publication\\mahjong-achievement-game\\runs\\checker-kernel-20260914T074206828136Z\\source\\Mahjong\\SafeGame.lean"
+      ],
+      "return_code": 0,
+      "seconds": 1.484,
+      "log": "Mahjong.SafeGame.log",
+      "log_sha256": "fb79bb1be757c227d4e11347e6d77488171c6ab7cb9384c652301983244ddaa1"
+    },
+    {
+      "module": "Mahjong.RuleChecker",
+      "command": [
+        "<research-root>\\build\\toolchain\\lean-4.33.1-windows\\bin\\lean.exe",
+        "--trust=0",
+        "-M3072",
+        "-j1",
+        "-R",
+        "<research-root>\\build\\publication\\mahjong-achievement-game\\runs\\checker-kernel-20260914T074206828136Z\\source",
+        "-o",
+        "<research-root>\\build\\publication\\mahjong-achievement-game\\runs\\checker-kernel-20260914T074206828136Z\\modules\\Mahjong\\RuleChecker.olean",
+        "<research-root>\\build\\publication\\mahjong-achievement-game\\runs\\checker-kernel-20260914T074206828136Z\\source\\Mahjong\\RuleChecker.lean"
+      ],
+      "return_code": 0,
+      "seconds": 1.781,
+      "log": "Mahjong.RuleChecker.log",
+      "log_sha256": "af6ba100e30053ddbff076235106854d607cf626c4b3eb6205ed84631d35bc48"
+    },
+    {
+      "module": "Mahjong.MoveEnumeration",
+      "command": [
+        "<research-root>\\build\\toolchain\\lean-4.33.1-windows\\bin\\lean.exe",
+        "--trust=0",
+        "-M3072",
+        "-j1",
+        "-R",
+        "<research-root>\\build\\publication\\mahjong-achievement-game\\runs\\checker-kernel-20260914T074206828136Z\\source",
+        "-o",
+        "<research-root>\\build\\publication\\mahjong-achievement-game\\runs\\checker-kernel-20260914T074206828136Z\\modules\\Mahjong\\MoveEnumeration.olean",
+        "<research-root>\\build\\publication\\mahjong-achievement-game\\runs\\checker-kernel-20260914T074206828136Z\\source\\Mahjong\\MoveEnumeration.lean"
+      ],
+      "return_code": 0,
+      "seconds": 1.375,
+      "log": "Mahjong.MoveEnumeration.log",
+      "log_sha256": "d5e1e6ba2ec9c5548b985b154fa53ddffe2e6a4ad5ee2f9beb185d904d425332"
+    },
+    {
+      "module": "Mahjong.FastRuleChecker",
+      "command": [
+        "<research-root>\\build\\toolchain\\lean-4.33.1-windows\\bin\\lean.exe",
+        "--trust=0",
+        "-M3072",
+        "-j1",
+        "-R",
+        "<research-root>\\build\\publication\\mahjong-achievement-game\\runs\\checker-kernel-20260914T074206828136Z\\source",
+        "-o",
+        "<research-root>\\build\\publication\\mahjong-achievement-game\\runs\\checker-kernel-20260914T074206828136Z\\modules\\Mahjong\\FastRuleChecker.olean",
+        "<research-root>\\build\\publication\\mahjong-achievement-game\\runs\\checker-kernel-20260914T074206828136Z\\source\\Mahjong\\FastRuleChecker.lean"
+      ],
+      "return_code": 0,
+      "seconds": 1.688,
+      "log": "Mahjong.FastRuleChecker.log",
+      "log_sha256": "5ba4a5e4cfa3e17ea4c11c180f106a7f7773ade800247d70d0e3be4bc5bd8e72"
+    },
+    {
+      "module": "Mahjong.StandardBoundCertificate",
+      "command": [
+        "<research-root>\\build\\toolchain\\lean-4.33.1-windows\\bin\\lean.exe",
+        "--trust=0",
+        "-M3072",
+        "-j1",
+        "-R",
+        "<research-root>\\build\\publication\\mahjong-achievement-game\\runs\\checker-kernel-20260914T074206828136Z\\source",
+        "-o",
+        "<research-root>\\build\\publication\\mahjong-achievement-game\\runs\\checker-kernel-20260914T074206828136Z\\modules\\Mahjong\\StandardBoundCertificate.olean",
+        "<research-root>\\build\\publication\\mahjong-achievement-game\\runs\\checker-kernel-20260914T074206828136Z\\source\\Mahjong\\StandardBoundCertificate.lean"
+      ],
+      "return_code": 0,
+      "seconds": 1.844,
+      "log": "Mahjong.StandardBoundCertificate.log",
+      "log_sha256": "da51d23a5d26a02c82b0e2f6f8419dc8ed4deabb7e6dc7519fa0151d9add8224"
+    },
+    {
+      "module": "Mahjong.MaskedLocalBound",
+      "command": [
+        "<research-root>\\build\\toolchain\\lean-4.33.1-windows\\bin\\lean.exe",
+        "--trust=0",
+        "-M3072",
+        "-j1",
+        "-R",
+        "<research-root>\\build\\publication\\mahjong-achievement-game\\runs\\checker-kernel-20260914T074206828136Z\\source",
+        "-o",
+        "<research-root>\\build\\publication\\mahjong-achievement-game\\runs\\checker-kernel-20260914T074206828136Z\\modules\\Mahjong\\MaskedLocalBound.olean",
+        "<research-root>\\build\\publication\\mahjong-achievement-game\\runs\\checker-kernel-20260914T074206828136Z\\source\\Mahjong\\MaskedLocalBound.lean"
+      ],
+      "return_code": 0,
+      "seconds": 1.437,
+      "log": "Mahjong.MaskedLocalBound.log",
+      "log_sha256": "6016a3e98be23b8a344bffc6f862178ff3fe936ed59b4297b9c959f46a755207"
+    },
+    {
+      "module": "Mahjong.CachedStandardBounds",
+      "command": [
+        "<research-root>\\build\\toolchain\\lean-4.33.1-windows\\bin\\lean.exe",
+        "--trust=0",
+        "-M3072",
+        "-j1",
+        "-R",
+        "<research-root>\\build\\publication\\mahjong-achievement-game\\runs\\checker-kernel-20260914T074206828136Z\\source",
+        "-o",
+        "<research-root>\\build\\publication\\mahjong-achievement-game\\runs\\checker-kernel-20260914T074206828136Z\\modules\\Mahjong\\CachedStandardBounds.olean",
+        "<research-root>\\build\\publication\\mahjong-achievement-game\\runs\\checker-kernel-20260914T074206828136Z\\source\\Mahjong\\CachedStandardBounds.lean"
+      ],
+      "return_code": 0,
+      "seconds": 1.391,
+      "log": "Mahjong.CachedStandardBounds.log",
+      "log_sha256": "f2152e993c459546aa609115f3492ddb25e8c847395a94b66cf4d1f980fbef26"
+    },
+    {
+      "module": "Mahjong.FactorizedRules",
+      "command": [
+        "<research-root>\\build\\toolchain\\lean-4.33.1-windows\\bin\\lean.exe",
+        "--trust=0",
+        "-M3072",
+        "-j1",
+        "-R",
+        "<research-root>\\build\\publication\\mahjong-achievement-game\\runs\\checker-kernel-20260914T074206828136Z\\source",
+        "-o",
+        "<research-root>\\build\\publication\\mahjong-achievement-game\\runs\\checker-kernel-20260914T074206828136Z\\modules\\Mahjong\\FactorizedRules.olean",
+        "<research-root>\\build\\publication\\mahjong-achievement-game\\runs\\checker-kernel-20260914T074206828136Z\\source\\Mahjong\\FactorizedRules.lean"
+      ],
+      "return_code": 0,
+      "seconds": 1.609,
+      "log": "Mahjong.FactorizedRules.log",
+      "log_sha256": "1c7ba8d5ebd04f9e47321b52cf85d58562d954818f879c1ab968f3fb0ed5a48e"
+    },
+    {
+      "module": "Mahjong.FastOrphans",
+      "command": [
+        "<research-root>\\build\\toolchain\\lean-4.33.1-windows\\bin\\lean.exe",
+        "--trust=0",
+        "-M3072",
+        "-j1",
+        "-R",
+        "<research-root>\\build\\publication\\mahjong-achievement-game\\runs\\checker-kernel-20260914T074206828136Z\\source",
+        "-o",
+        "<research-root>\\build\\publication\\mahjong-achievement-game\\runs\\checker-kernel-20260914T074206828136Z\\modules\\Mahjong\\FastOrphans.olean",
+        "<research-root>\\build\\publication\\mahjong-achievement-game\\runs\\checker-kernel-20260914T074206828136Z\\source\\Mahjong\\FastOrphans.lean"
+      ],
+      "return_code": 0,
+      "seconds": 1.453,
+      "log": "Mahjong.FastOrphans.log",
+      "log_sha256": "ab97625f159431fb5c26a214d4885fde8e5853425152ec8a1a6b3e53423c65d3"
+    },
+    {
+      "module": "Mahjong.CapacityComplete",
+      "command": [
+        "<research-root>\\build\\toolchain\\lean-4.33.1-windows\\bin\\lean.exe",
+        "--trust=0",
+        "-M3072",
+        "-j1",
+        "-R",
+        "<research-root>\\build\\publication\\mahjong-achievement-game\\runs\\checker-kernel-20260914T074206828136Z\\source",
+        "-o",
+        "<research-root>\\build\\publication\\mahjong-achievement-game\\runs\\checker-kernel-20260914T074206828136Z\\modules\\Mahjong\\CapacityComplete.olean",
+        "<research-root>\\build\\publication\\mahjong-achievement-game\\runs\\checker-kernel-20260914T074206828136Z\\source\\Mahjong\\CapacityComplete.lean"
+      ],
+      "return_code": 0,
+      "seconds": 1.703,
+      "log": "Mahjong.CapacityComplete.log",
+      "log_sha256": "f8bc5112c294e0a691d435584c23d0045623156805f34e698c3be9a9ee4ccabd"
+    },
+    {
+      "module": "Mahjong.LocalCache",
+      "command": [
+        "<research-root>\\build\\toolchain\\lean-4.33.1-windows\\bin\\lean.exe",
+        "--trust=0",
+        "-M3072",
+        "-j1",
+        "-R",
+        "<research-root>\\build\\publication\\mahjong-achievement-game\\runs\\checker-kernel-20260914T074206828136Z\\source",
+        "-o",
+        "<research-root>\\build\\publication\\mahjong-achievement-game\\runs\\checker-kernel-20260914T074206828136Z\\modules\\Mahjong\\LocalCache.olean",
+        "<research-root>\\build\\publication\\mahjong-achievement-game\\runs\\checker-kernel-20260914T074206828136Z\\source\\Mahjong\\LocalCache.lean"
+      ],
+      "return_code": 0,
+      "seconds": 1.547,
+      "log": "Mahjong.LocalCache.log",
+      "log_sha256": "29b5477b1266a3cb0eb98a46549c87c72ceb9f8c5f6d8d4c38d0b9e65b6a6a37"
+    },
+    {
+      "module": "Mahjong.MemoRules",
+      "command": [
+        "<research-root>\\build\\toolchain\\lean-4.33.1-windows\\bin\\lean.exe",
+        "--trust=0",
+        "-M3072",
+        "-j1",
+        "-R",
+        "<research-root>\\build\\publication\\mahjong-achievement-game\\runs\\checker-kernel-20260914T074206828136Z\\source",
+        "-o",
+        "<research-root>\\build\\publication\\mahjong-achievement-game\\runs\\checker-kernel-20260914T074206828136Z\\modules\\Mahjong\\MemoRules.olean",
+        "<research-root>\\build\\publication\\mahjong-achievement-game\\runs\\checker-kernel-20260914T074206828136Z\\source\\Mahjong\\MemoRules.lean"
+      ],
+      "return_code": 0,
+      "seconds": 1.641,
+      "log": "Mahjong.MemoRules.log",
+      "log_sha256": "050b3a2d058eccdcfdaa70d92b9aabe0d47438410a6aaee248a709d0c0467ec8"
+    },
+    {
+      "module": "Mahjong.PairProfile",
+      "command": [
+        "<research-root>\\build\\toolchain\\lean-4.33.1-windows\\bin\\lean.exe",
+        "--trust=0",
+        "-M3072",
+        "-j1",
+        "-R",
+        "<research-root>\\build\\publication\\mahjong-achievement-game\\runs\\checker-kernel-20260914T074206828136Z\\source",
+        "-o",
+        "<research-root>\\build\\publication\\mahjong-achievement-game\\runs\\checker-kernel-20260914T074206828136Z\\modules\\Mahjong\\PairProfile.olean",
+        "<research-root>\\build\\publication\\mahjong-achievement-game\\runs\\checker-kernel-20260914T074206828136Z\\source\\Mahjong\\PairProfile.lean"
+      ],
+      "return_code": 0,
+      "seconds": 1.859,
+      "log": "Mahjong.PairProfile.log",
+      "log_sha256": "2422329425d418c086be802e8151841072007bcbc80dfaed5839c3cb7eff0180"
+    },
+    {
+      "module": "Mahjong.LocalSummary",
+      "command": [
+        "<research-root>\\build\\toolchain\\lean-4.33.1-windows\\bin\\lean.exe",
+        "--trust=0",
+        "-M3072",
+        "-j1",
+        "-R",
+        "<research-root>\\build\\publication\\mahjong-achievement-game\\runs\\checker-kernel-20260914T074206828136Z\\source",
+        "-o",
+        "<research-root>\\build\\publication\\mahjong-achievement-game\\runs\\checker-kernel-20260914T074206828136Z\\modules\\Mahjong\\LocalSummary.olean",
+        "<research-root>\\build\\publication\\mahjong-achievement-game\\runs\\checker-kernel-20260914T074206828136Z\\source\\Mahjong\\LocalSummary.lean"
+      ],
+      "return_code": 0,
+      "seconds": 1.671,
+      "log": "Mahjong.LocalSummary.log",
+      "log_sha256": "4b989955676f52dfdb21ada4cb0ce79102377b3a5dea4881b23ed46935c878e8"
+    },
+    {
+      "module": "Mahjong.FastMemoRules",
+      "command": [
+        "<research-root>\\build\\toolchain\\lean-4.33.1-windows\\bin\\lean.exe",
+        "--trust=0",
+        "-M3072",
+        "-j1",
+        "-R",
+        "<research-root>\\build\\publication\\mahjong-achievement-game\\runs\\checker-kernel-20260914T074206828136Z\\source",
+        "-o",
+        "<research-root>\\build\\publication\\mahjong-achievement-game\\runs\\checker-kernel-20260914T074206828136Z\\modules\\Mahjong\\FastMemoRules.olean",
+        "<research-root>\\build\\publication\\mahjong-achievement-game\\runs\\checker-kernel-20260914T074206828136Z\\source\\Mahjong\\FastMemoRules.lean"
+      ],
+      "return_code": 0,
+      "seconds": 1.344,
+      "log": "Mahjong.FastMemoRules.log",
+      "log_sha256": "41bbef1d3ad3ca1d8aec876cd957d04c3d982c20cd20187f05a4a17a41a75573"
+    },
+    {
+      "module": "Mahjong.ExactMemoRules",
+      "command": [
+        "<research-root>\\build\\toolchain\\lean-4.33.1-windows\\bin\\lean.exe",
+        "--trust=0",
+        "-M3072",
+        "-j1",
+        "-R",
+        "<research-root>\\build\\publication\\mahjong-achievement-game\\runs\\checker-kernel-20260914T074206828136Z\\source",
+        "-o",
+        "<research-root>\\build\\publication\\mahjong-achievement-game\\runs\\checker-kernel-20260914T074206828136Z\\modules\\Mahjong\\ExactMemoRules.olean",
+        "<research-root>\\build\\publication\\mahjong-achievement-game\\runs\\checker-kernel-20260914T074206828136Z\\source\\Mahjong\\ExactMemoRules.lean"
+      ],
+      "return_code": 0,
+      "seconds": 1.375,
+      "log": "Mahjong.ExactMemoRules.log",
+      "log_sha256": "b0511f7b20b6eca580fd68390e63351dc1e46bbda154ff9c9b01724bf8946ad3"
+    },
+    {
+      "module": "Mahjong.SummaryRules",
+      "command": [
+        "<research-root>\\build\\toolchain\\lean-4.33.1-windows\\bin\\lean.exe",
+        "--trust=0",
+        "-M3072",
+        "-j1",
+        "-R",
+        "<research-root>\\build\\publication\\mahjong-achievement-game\\runs\\checker-kernel-20260914T074206828136Z\\source",
+        "-o",
+        "<research-root>\\build\\publication\\mahjong-achievement-game\\runs\\checker-kernel-20260914T074206828136Z\\modules\\Mahjong\\SummaryRules.olean",
+        "<research-root>\\build\\publication\\mahjong-achievement-game\\runs\\checker-kernel-20260914T074206828136Z\\source\\Mahjong\\SummaryRules.lean"
+      ],
+      "return_code": 0,
+      "seconds": 1.515,
+      "log": "Mahjong.SummaryRules.log",
+      "log_sha256": "1034e61b905a062efdb962c2a0343c595b56a8c0b1f67ba40be28211ff2391af"
+    },
+    {
+      "module": "Mahjong.PackedRules",
+      "command": [
+        "<research-root>\\build\\toolchain\\lean-4.33.1-windows\\bin\\lean.exe",
+        "--trust=0",
+        "-M3072",
+        "-j1",
+        "-R",
+        "<research-root>\\build\\publication\\mahjong-achievement-game\\runs\\checker-kernel-20260914T074206828136Z\\source",
+        "-o",
+        "<research-root>\\build\\publication\\mahjong-achievement-game\\runs\\checker-kernel-20260914T074206828136Z\\modules\\Mahjong\\PackedRules.olean",
+        "<research-root>\\build\\publication\\mahjong-achievement-game\\runs\\checker-kernel-20260914T074206828136Z\\source\\Mahjong\\PackedRules.lean"
+      ],
+      "return_code": 0,
+      "seconds": 1.813,
+      "log": "Mahjong.PackedRules.log",
+      "log_sha256": "8e53a5a03983c638f7d8f5067ddcaaf91a3500adfa0b5e78336c64c1acf3ef6f"
+    },
+    {
+      "module": "Mahjong.CachedProfiles",
+      "command": [
+        "<research-root>\\build\\toolchain\\lean-4.33.1-windows\\bin\\lean.exe",
+        "--trust=0",
+        "-M3072",
+        "-j1",
+        "-R",
+        "<research-root>\\build\\publication\\mahjong-achievement-game\\runs\\checker-kernel-20260914T074206828136Z\\source",
+        "-o",
+        "<research-root>\\build\\publication\\mahjong-achievement-game\\runs\\checker-kernel-20260914T074206828136Z\\modules\\Mahjong\\CachedProfiles.olean",
+        "<research-root>\\build\\publication\\mahjong-achievement-game\\runs\\checker-kernel-20260914T074206828136Z\\source\\Mahjong\\CachedProfiles.lean"
+      ],
+      "return_code": 0,
+      "seconds": 1.453,
+      "log": "Mahjong.CachedProfiles.log",
+      "log_sha256": "56de1cce7d809e6edde0ca724af52de41d06d9a6c4cb0d817d5b350efbb96266"
+    },
+    {
+      "module": "Mahjong.LocalCacheEncoding",
+      "command": [
+        "<research-root>\\build\\toolchain\\lean-4.33.1-windows\\bin\\lean.exe",
+        "--trust=0",
+        "-M3072",
+        "-j1",
+        "-R",
+        "<research-root>\\build\\publication\\mahjong-achievement-game\\runs\\checker-kernel-20260914T074206828136Z\\source",
+        "-o",
+        "<research-root>\\build\\publication\\mahjong-achievement-game\\runs\\checker-kernel-20260914T074206828136Z\\modules\\Mahjong\\LocalCacheEncoding.olean",
+        "<research-root>\\build\\publication\\mahjong-achievement-game\\runs\\checker-kernel-20260914T074206828136Z\\source\\Mahjong\\LocalCacheEncoding.lean"
+      ],
+      "return_code": 0,
+      "seconds": 1.609,
+      "log": "Mahjong.LocalCacheEncoding.log",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "module": "Mahjong.SummaryEncoding",
+      "command": [
+        "<research-root>\\build\\toolchain\\lean-4.33.1-windows\\bin\\lean.exe",
+        "--trust=0",
+        "-M3072",
+        "-j1",
+        "-R",
+        "<research-root>\\build\\publication\\mahjong-achievement-game\\runs\\checker-kernel-20260914T074206828136Z\\source",
+        "-o",
+        "<research-root>\\build\\publication\\mahjong-achievement-game\\runs\\checker-kernel-20260914T074206828136Z\\modules\\Mahjong\\SummaryEncoding.olean",
+        "<research-root>\\build\\publication\\mahjong-achievement-game\\runs\\checker-kernel-20260914T074206828136Z\\source\\Mahjong\\SummaryEncoding.lean"
+      ],
+      "return_code": 0,
+      "seconds": 1.329,
+      "log": "Mahjong.SummaryEncoding.log",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "module": "CachedProfilesBenchmark",
+      "command": [
+        "<research-root>\\build\\toolchain\\lean-4.33.1-windows\\bin\\lean.exe",
+        "--trust=0",
+        "-M3072",
+        "-j1",
+        "-R",
+        "<research-root>\\build\\publication\\mahjong-achievement-game\\runs\\checker-kernel-20260914T074206828136Z\\source",
+        "-o",
+        "<research-root>\\build\\publication\\mahjong-achievement-game\\runs\\checker-kernel-20260914T074206828136Z\\modules\\CachedProfilesBenchmark.olean",
+        "<research-root>\\build\\publication\\mahjong-achievement-game\\runs\\checker-kernel-20260914T074206828136Z\\source\\CachedProfilesBenchmark.lean"
+      ],
+      "return_code": 0,
+      "seconds": 1.5,
+      "log": "CachedProfilesBenchmark.log",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "module": "Mahjong.Quotient",
+      "command": [
+        "<research-root>\\build\\toolchain\\lean-4.33.1-windows\\bin\\lean.exe",
+        "--trust=0",
+        "-M3072",
+        "-j1",
+        "-R",
+        "<research-root>\\build\\publication\\mahjong-achievement-game\\runs\\checker-kernel-20260914T074206828136Z\\source",
+        "-o",
+        "<research-root>\\build\\publication\\mahjong-achievement-game\\runs\\checker-kernel-20260914T074206828136Z\\modules\\Mahjong\\Quotient.olean",
+        "<research-root>\\build\\publication\\mahjong-achievement-game\\runs\\checker-kernel-20260914T074206828136Z\\source\\Mahjong\\Quotient.lean"
+      ],
+      "return_code": 0,
+      "seconds": 1.421,
+      "log": "Mahjong.Quotient.log",
+      "log_sha256": "17c2c2304126aa9c64d7355686fde3d58d8dea64c23da7924b56ffd594296910"
+    },
+    {
+      "module": "Mahjong.Symmetry",
+      "command": [
+        "<research-root>\\build\\toolchain\\lean-4.33.1-windows\\bin\\lean.exe",
+        "--trust=0",
+        "-M3072",
+        "-j1",
+        "-R",
+        "<research-root>\\build\\publication\\mahjong-achievement-game\\runs\\checker-kernel-20260914T074206828136Z\\source",
+        "-o",
+        "<research-root>\\build\\publication\\mahjong-achievement-game\\runs\\checker-kernel-20260914T074206828136Z\\modules\\Mahjong\\Symmetry.olean",
+        "<research-root>\\build\\publication\\mahjong-achievement-game\\runs\\checker-kernel-20260914T074206828136Z\\source\\Mahjong\\Symmetry.lean"
+      ],
+      "return_code": 0,
+      "seconds": 2.172,
+      "log": "Mahjong.Symmetry.log",
+      "log_sha256": "62f7e30b650ae9be73d42546895a4bc76f1d2a6706d4aeaacbb452f226835b0b"
+    },
+    {
+      "module": "Mahjong.Generators",
+      "command": [
+        "<research-root>\\build\\toolchain\\lean-4.33.1-windows\\bin\\lean.exe",
+        "--trust=0",
+        "-M3072",
+        "-j1",
+        "-R",
+        "<research-root>\\build\\publication\\mahjong-achievement-game\\runs\\checker-kernel-20260914T074206828136Z\\source",
+        "-o",
+        "<research-root>\\build\\publication\\mahjong-achievement-game\\runs\\checker-kernel-20260914T074206828136Z\\modules\\Mahjong\\Generators.olean",
+        "<research-root>\\build\\publication\\mahjong-achievement-game\\runs\\checker-kernel-20260914T074206828136Z\\source\\Mahjong\\Generators.lean"
+      ],
+      "return_code": 0,
+      "seconds": 13.297,
+      "log": "Mahjong.Generators.log",
+      "log_sha256": "f940e66a05eb1cf51af71ed43b165e25ed810734a741088de92da00b12f6af8f"
+    },
+    {
+      "module": "Mahjong.Certificate",
+      "command": [
+        "<research-root>\\build\\toolchain\\lean-4.33.1-windows\\bin\\lean.exe",
+        "--trust=0",
+        "-M3072",
+        "-j1",
+        "-R",
+        "<research-root>\\build\\publication\\mahjong-achievement-game\\runs\\checker-kernel-20260914T074206828136Z\\source",
+        "-o",
+        "<research-root>\\build\\publication\\mahjong-achievement-game\\runs\\checker-kernel-20260914T074206828136Z\\modules\\Mahjong\\Certificate.olean",
+        "<research-root>\\build\\publication\\mahjong-achievement-game\\runs\\checker-kernel-20260914T074206828136Z\\source\\Mahjong\\Certificate.lean"
+      ],
+      "return_code": 0,
+      "seconds": 1.516,
+      "log": "Mahjong.Certificate.log",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "module": "Mahjong.Bridge",
+      "command": [
+        "<research-root>\\build\\toolchain\\lean-4.33.1-windows\\bin\\lean.exe",
+        "--trust=0",
+        "-M3072",
+        "-j1",
+        "-R",
+        "<research-root>\\build\\publication\\mahjong-achievement-game\\runs\\checker-kernel-20260914T074206828136Z\\source",
+        "-o",
+        "<research-root>\\build\\publication\\mahjong-achievement-game\\runs\\checker-kernel-20260914T074206828136Z\\modules\\Mahjong\\Bridge.olean",
+        "<research-root>\\build\\publication\\mahjong-achievement-game\\runs\\checker-kernel-20260914T074206828136Z\\source\\Mahjong\\Bridge.lean"
+      ],
+      "return_code": 0,
+      "seconds": 1.375,
+      "log": "Mahjong.Bridge.log",
+      "log_sha256": "eeafc2dde6f89a4f7563f4804f7cf08a856dc06488c1fad4c7b7a91d34c40fce"
+    },
+    {
+      "module": "Mahjong.DownwardClosure",
+      "command": [
+        "<research-root>\\build\\toolchain\\lean-4.33.1-windows\\bin\\lean.exe",
+        "--trust=0",
+        "-M3072",
+        "-j1",
+        "-R",
+        "<research-root>\\build\\publication\\mahjong-achievement-game\\runs\\checker-kernel-20260914T074206828136Z\\source",
+        "-o",
+        "<research-root>\\build\\publication\\mahjong-achievement-game\\runs\\checker-kernel-20260914T074206828136Z\\modules\\Mahjong\\DownwardClosure.olean",
+        "<research-root>\\build\\publication\\mahjong-achievement-game\\runs\\checker-kernel-20260914T074206828136Z\\source\\Mahjong\\DownwardClosure.lean"
+      ],
+      "return_code": 0,
+      "seconds": 1.328,
+      "log": "Mahjong.DownwardClosure.log",
+      "log_sha256": "11c68db7b1f24b06016748e1a83653a13601292af4ba80d9070f040a05f29d4b"
+    },
+    {
+      "module": "Mahjong.WholeTable",
+      "command": [
+        "<research-root>\\build\\toolchain\\lean-4.33.1-windows\\bin\\lean.exe",
+        "--trust=0",
+        "-M3072",
+        "-j1",
+        "-R",
+        "<research-root>\\build\\publication\\mahjong-achievement-game\\runs\\checker-kernel-20260914T074206828136Z\\source",
+        "-o",
+        "<research-root>\\build\\publication\\mahjong-achievement-game\\runs\\checker-kernel-20260914T074206828136Z\\modules\\Mahjong\\WholeTable.olean",
+        "<research-root>\\build\\publication\\mahjong-achievement-game\\runs\\checker-kernel-20260914T074206828136Z\\source\\Mahjong\\WholeTable.lean"
+      ],
+      "return_code": 0,
+      "seconds": 1.484,
+      "log": "Mahjong.WholeTable.log",
+      "log_sha256": "cdabdce76228c36f5bfbe73a29dccc81849c3547b838964b65f42aaa17bb21ea"
+    },
+    {
+      "module": "CandidateTests",
+      "command": [
+        "<research-root>\\build\\toolchain\\lean-4.33.1-windows\\bin\\lean.exe",
+        "--trust=0",
+        "-M3072",
+        "-j1",
+        "-R",
+        "<research-root>\\build\\publication\\mahjong-achievement-game\\runs\\checker-kernel-20260914T074206828136Z\\source",
+        "-o",
+        "<research-root>\\build\\publication\\mahjong-achievement-game\\runs\\checker-kernel-20260914T074206828136Z\\modules\\CandidateTests.olean",
+        "<research-root>\\build\\publication\\mahjong-achievement-game\\runs\\checker-kernel-20260914T074206828136Z\\source\\CandidateTests.lean"
+      ],
+      "return_code": 0,
+      "seconds": 1.453,
+      "log": "CandidateTests.log",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "module": "ExactMemoBenchmark",
+      "command": [
+        "<research-root>\\build\\toolchain\\lean-4.33.1-windows\\bin\\lean.exe",
+        "--trust=0",
+        "-M3072",
+        "-j1",
+        "-R",
+        "<research-root>\\build\\publication\\mahjong-achievement-game\\runs\\checker-kernel-20260914T074206828136Z\\source",
+        "-o",
+        "<research-root>\\build\\publication\\mahjong-achievement-game\\runs\\checker-kernel-20260914T074206828136Z\\modules\\ExactMemoBenchmark.olean",
+        "<research-root>\\build\\publication\\mahjong-achievement-game\\runs\\checker-kernel-20260914T074206828136Z\\source\\ExactMemoBenchmark.lean"
+      ],
+      "return_code": 0,
+      "seconds": 1.438,
+      "log": "ExactMemoBenchmark.log",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "module": "FactorBenchmark",
+      "command": [
+        "<research-root>\\build\\toolchain\\lean-4.33.1-windows\\bin\\lean.exe",
+        "--trust=0",
+        "-M3072",
+        "-j1",
+        "-R",
+        "<research-root>\\build\\publication\\mahjong-achievement-game\\runs\\checker-kernel-20260914T074206828136Z\\source",
+        "-o",
+        "<research-root>\\build\\publication\\mahjong-achievement-game\\runs\\checker-kernel-20260914T074206828136Z\\modules\\FactorBenchmark.olean",
+        "<research-root>\\build\\publication\\mahjong-achievement-game\\runs\\checker-kernel-20260914T074206828136Z\\source\\FactorBenchmark.lean"
+      ],
+      "return_code": 0,
+      "seconds": 1.437,
+      "log": "FactorBenchmark.log",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "module": "FastMemoBenchmark",
+      "command": [
+        "<research-root>\\build\\toolchain\\lean-4.33.1-windows\\bin\\lean.exe",
+        "--trust=0",
+        "-M3072",
+        "-j1",
+        "-R",
+        "<research-root>\\build\\publication\\mahjong-achievement-game\\runs\\checker-kernel-20260914T074206828136Z\\source",
+        "-o",
+        "<research-root>\\build\\publication\\mahjong-achievement-game\\runs\\checker-kernel-20260914T074206828136Z\\modules\\FastMemoBenchmark.olean",
+        "<research-root>\\build\\publication\\mahjong-achievement-game\\runs\\checker-kernel-20260914T074206828136Z\\source\\FastMemoBenchmark.lean"
+      ],
+      "return_code": 0,
+      "seconds": 1.454,
+      "log": "FastMemoBenchmark.log",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "module": "Mahjong.FlatProfiles",
+      "command": [
+        "<research-root>\\build\\toolchain\\lean-4.33.1-windows\\bin\\lean.exe",
+        "--trust=0",
+        "-M3072",
+        "-j1",
+        "-R",
+        "<research-root>\\build\\publication\\mahjong-achievement-game\\runs\\checker-kernel-20260914T074206828136Z\\source",
+        "-o",
+        "<research-root>\\build\\publication\\mahjong-achievement-game\\runs\\checker-kernel-20260914T074206828136Z\\modules\\Mahjong\\FlatProfiles.olean",
+        "<research-root>\\build\\publication\\mahjong-achievement-game\\runs\\checker-kernel-20260914T074206828136Z\\source\\Mahjong\\FlatProfiles.lean"
+      ],
+      "return_code": 0,
+      "seconds": 1.437,
+      "log": "Mahjong.FlatProfiles.log",
+      "log_sha256": "a9afbbe653a898658d4346d384c8734872ab53c78167e5de420acff26bac7f6d"
+    },
+    {
+      "module": "Mahjong.FlatRules",
+      "command": [
+        "<research-root>\\build\\toolchain\\lean-4.33.1-windows\\bin\\lean.exe",
+        "--trust=0",
+        "-M3072",
+        "-j1",
+        "-R",
+        "<research-root>\\build\\publication\\mahjong-achievement-game\\runs\\checker-kernel-20260914T074206828136Z\\source",
+        "-o",
+        "<research-root>\\build\\publication\\mahjong-achievement-game\\runs\\checker-kernel-20260914T074206828136Z\\modules\\Mahjong\\FlatRules.olean",
+        "<research-root>\\build\\publication\\mahjong-achievement-game\\runs\\checker-kernel-20260914T074206828136Z\\source\\Mahjong\\FlatRules.lean"
+      ],
+      "return_code": 0,
+      "seconds": 1.484,
+      "log": "Mahjong.FlatRules.log",
+      "log_sha256": "582e8446cc4fa92b7c7e2aea98b78e7416e948498542088e95f8f7772498fd91"
+    },
+    {
+      "module": "FlatBenchmark",
+      "command": [
+        "<research-root>\\build\\toolchain\\lean-4.33.1-windows\\bin\\lean.exe",
+        "--trust=0",
+        "-M3072",
+        "-j1",
+        "-R",
+        "<research-root>\\build\\publication\\mahjong-achievement-game\\runs\\checker-kernel-20260914T074206828136Z\\source",
+        "-o",
+        "<research-root>\\build\\publication\\mahjong-achievement-game\\runs\\checker-kernel-20260914T074206828136Z\\modules\\FlatBenchmark.olean",
+        "<research-root>\\build\\publication\\mahjong-achievement-game\\runs\\checker-kernel-20260914T074206828136Z\\source\\FlatBenchmark.lean"
+      ],
+      "return_code": 0,
+      "seconds": 1.485,
+      "log": "FlatBenchmark.log",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "module": "Mahjong.PreloadedRules",
+      "command": [
+        "<research-root>\\build\\toolchain\\lean-4.33.1-windows\\bin\\lean.exe",
+        "--trust=0",
+        "-M3072",
+        "-j1",
+        "-R",
+        "<research-root>\\build\\publication\\mahjong-achievement-game\\runs\\checker-kernel-20260914T074206828136Z\\source",
+        "-o",
+        "<research-root>\\build\\publication\\mahjong-achievement-game\\runs\\checker-kernel-20260914T074206828136Z\\modules\\Mahjong\\PreloadedRules.olean",
+        "<research-root>\\build\\publication\\mahjong-achievement-game\\runs\\checker-kernel-20260914T074206828136Z\\source\\Mahjong\\PreloadedRules.lean"
+      ],
+      "return_code": 0,
+      "seconds": 1.469,
+      "log": "Mahjong.PreloadedRules.log",
+      "log_sha256": "eac47682cf1d84b98606693ea18c1b2edf45a6a6800d883665e9dab4b0872601"
+    },
+    {
+      "module": "Mahjong.PackedInterpretation",
+      "command": [
+        "<research-root>\\build\\toolchain\\lean-4.33.1-windows\\bin\\lean.exe",
+        "--trust=0",
+        "-M3072",
+        "-j1",
+        "-R",
+        "<research-root>\\build\\publication\\mahjong-achievement-game\\runs\\checker-kernel-20260914T074206828136Z\\source",
+        "-o",
+        "<research-root>\\build\\publication\\mahjong-achievement-game\\runs\\checker-kernel-20260914T074206828136Z\\modules\\Mahjong\\PackedInterpretation.olean",
+        "<research-root>\\build\\publication\\mahjong-achievement-game\\runs\\checker-kernel-20260914T074206828136Z\\source\\Mahjong\\PackedInterpretation.lean"
+      ],
+      "return_code": 0,
+      "seconds": 1.437,
+      "log": "Mahjong.PackedInterpretation.log",
+      "log_sha256": "a00c174182fb856d682cedb38e1981a07bb5de1bd9b9b26b0619e3fd20f69499"
+    },
+    {
+      "module": "Mahjong.GeneralLayer",
+      "command": [
+        "<research-root>\\build\\toolchain\\lean-4.33.1-windows\\bin\\lean.exe",
+        "--trust=0",
+        "-M3072",
+        "-j1",
+        "-R",
+        "<research-root>\\build\\publication\\mahjong-achievement-game\\runs\\checker-kernel-20260914T074206828136Z\\source",
+        "-o",
+        "<research-root>\\build\\publication\\mahjong-achievement-game\\runs\\checker-kernel-20260914T074206828136Z\\modules\\Mahjong\\GeneralLayer.olean",
+        "<research-root>\\build\\publication\\mahjong-achievement-game\\runs\\checker-kernel-20260914T074206828136Z\\source\\Mahjong\\GeneralLayer.lean"
+      ],
+      "return_code": 0,
+      "seconds": 1.468,
+      "log": "Mahjong.GeneralLayer.log",
+      "log_sha256": "c499b2d1503367d5fa2ba3e80e4dc518cd0e51e63e33bbb767ac85c22a271dc3"
+    },
+    {
+      "module": "Mahjong.BucketIndex",
+      "command": [
+        "<research-root>\\build\\toolchain\\lean-4.33.1-windows\\bin\\lean.exe",
+        "--trust=0",
+        "-M3072",
+        "-j1",
+        "-R",
+        "<research-root>\\build\\publication\\mahjong-achievement-game\\runs\\checker-kernel-20260914T074206828136Z\\source",
+        "-o",
+        "<research-root>\\build\\publication\\mahjong-achievement-game\\runs\\checker-kernel-20260914T074206828136Z\\modules\\Mahjong\\BucketIndex.olean",
+        "<research-root>\\build\\publication\\mahjong-achievement-game\\runs\\checker-kernel-20260914T074206828136Z\\source\\Mahjong\\BucketIndex.lean"
+      ],
+      "return_code": 0,
+      "seconds": 1.516,
+      "log": "Mahjong.BucketIndex.log",
+      "log_sha256": "c31e2903bdfe77109082b45f9e187b463a1768909e6fcae984d09d98d8248eb4"
+    },
+    {
+      "module": "Mahjong.TerminalBucket",
+      "command": [
+        "<research-root>\\build\\toolchain\\lean-4.33.1-windows\\bin\\lean.exe",
+        "--trust=0",
+        "-M3072",
+        "-j1",
+        "-R",
+        "<research-root>\\build\\publication\\mahjong-achievement-game\\runs\\checker-kernel-20260914T074206828136Z\\source",
+        "-o",
+        "<research-root>\\build\\publication\\mahjong-achievement-game\\runs\\checker-kernel-20260914T074206828136Z\\modules\\Mahjong\\TerminalBucket.olean",
+        "<research-root>\\build\\publication\\mahjong-achievement-game\\runs\\checker-kernel-20260914T074206828136Z\\source\\Mahjong\\TerminalBucket.lean"
+      ],
+      "return_code": 0,
+      "seconds": 1.5,
+      "log": "Mahjong.TerminalBucket.log",
+      "log_sha256": "75d23ddda4ef6dd759f6de3ac4037e7300155108ce89b1f17542a9c86cceb3a1"
+    },
+    {
+      "module": "Mahjong.GeneralIndex",
+      "command": [
+        "<research-root>\\build\\toolchain\\lean-4.33.1-windows\\bin\\lean.exe",
+        "--trust=0",
+        "-M3072",
+        "-j1",
+        "-R",
+        "<research-root>\\build\\publication\\mahjong-achievement-game\\runs\\checker-kernel-20260914T074206828136Z\\source",
+        "-o",
+        "<research-root>\\build\\publication\\mahjong-achievement-game\\runs\\checker-kernel-20260914T074206828136Z\\modules\\Mahjong\\GeneralIndex.olean",
+        "<research-root>\\build\\publication\\mahjong-achievement-game\\runs\\checker-kernel-20260914T074206828136Z\\source\\Mahjong\\GeneralIndex.lean"
+      ],
+      "return_code": 0,
+      "seconds": 1.578,
+      "log": "Mahjong.GeneralIndex.log",
+      "log_sha256": "a7c2e6367ed7419d5232feb706bbb734ec0ab6f1dffba56db33c74aae760ba1c"
+    },
+    {
+      "module": "GeneralFaultWorker",
+      "command": [
+        "<research-root>\\build\\toolchain\\lean-4.33.1-windows\\bin\\lean.exe",
+        "--trust=0",
+        "-M3072",
+        "-j1",
+        "-R",
+        "<research-root>\\build\\publication\\mahjong-achievement-game\\runs\\checker-kernel-20260914T074206828136Z\\source",
+        "-o",
+        "<research-root>\\build\\publication\\mahjong-achievement-game\\runs\\checker-kernel-20260914T074206828136Z\\modules\\GeneralFaultWorker.olean",
+        "<research-root>\\build\\publication\\mahjong-achievement-game\\runs\\checker-kernel-20260914T074206828136Z\\source\\GeneralFaultWorker.lean"
+      ],
+      "return_code": 0,
+      "seconds": 1.797,
+      "log": "GeneralFaultWorker.log",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "module": "GeneralWorker",
+      "command": [
+        "<research-root>\\build\\toolchain\\lean-4.33.1-windows\\bin\\lean.exe",
+        "--trust=0",
+        "-M3072",
+        "-j1",
+        "-R",
+        "<research-root>\\build\\publication\\mahjong-achievement-game\\runs\\checker-kernel-20260914T074206828136Z\\source",
+        "-o",
+        "<research-root>\\build\\publication\\mahjong-achievement-game\\runs\\checker-kernel-20260914T074206828136Z\\modules\\GeneralWorker.olean",
+        "<research-root>\\build\\publication\\mahjong-achievement-game\\runs\\checker-kernel-20260914T074206828136Z\\source\\GeneralWorker.lean"
+      ],
+      "return_code": 0,
+      "seconds": 1.734,
+      "log": "GeneralWorker.log",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "module": "LocalCacheWorker",
+      "command": [
+        "<research-root>\\build\\toolchain\\lean-4.33.1-windows\\bin\\lean.exe",
+        "--trust=0",
+        "-M3072",
+        "-j1",
+        "-R",
+        "<research-root>\\build\\publication\\mahjong-achievement-game\\runs\\checker-kernel-20260914T074206828136Z\\source",
+        "-o",
+        "<research-root>\\build\\publication\\mahjong-achievement-game\\runs\\checker-kernel-20260914T074206828136Z\\modules\\LocalCacheWorker.olean",
+        "<research-root>\\build\\publication\\mahjong-achievement-game\\runs\\checker-kernel-20260914T074206828136Z\\source\\LocalCacheWorker.lean"
+      ],
+      "return_code": 0,
+      "seconds": 1.36,
+      "log": "LocalCacheWorker.log",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "module": "Mahjong.CachedWholeTable",
+      "command": [
+        "<research-root>\\build\\toolchain\\lean-4.33.1-windows\\bin\\lean.exe",
+        "--trust=0",
+        "-M3072",
+        "-j1",
+        "-R",
+        "<research-root>\\build\\publication\\mahjong-achievement-game\\runs\\checker-kernel-20260914T074206828136Z\\source",
+        "-o",
+        "<research-root>\\build\\publication\\mahjong-achievement-game\\runs\\checker-kernel-20260914T074206828136Z\\modules\\Mahjong\\CachedWholeTable.olean",
+        "<research-root>\\build\\publication\\mahjong-achievement-game\\runs\\checker-kernel-20260914T074206828136Z\\source\\Mahjong\\CachedWholeTable.lean"
+      ],
+      "return_code": 0,
+      "seconds": 1.375,
+      "log": "Mahjong.CachedWholeTable.log",
+      "log_sha256": "0ee0f5fe13264391d3310340868ccf3d260e4c26cbb7eb1a6c51b1c3ab0c8e93"
+    },
+    {
+      "module": "Mahjong.GeneralOriginalSoundness",
+      "command": [
+        "<research-root>\\build\\toolchain\\lean-4.33.1-windows\\bin\\lean.exe",
+        "--trust=0",
+        "-M3072",
+        "-j1",
+        "-R",
+        "<research-root>\\build\\publication\\mahjong-achievement-game\\runs\\checker-kernel-20260914T074206828136Z\\source",
+        "-o",
+        "<research-root>\\build\\publication\\mahjong-achievement-game\\runs\\checker-kernel-20260914T074206828136Z\\modules\\Mahjong\\GeneralOriginalSoundness.olean",
+        "<research-root>\\build\\publication\\mahjong-achievement-game\\runs\\checker-kernel-20260914T074206828136Z\\source\\Mahjong\\GeneralOriginalSoundness.lean"
+      ],
+      "return_code": 0,
+      "seconds": 1.328,
+      "log": "Mahjong.GeneralOriginalSoundness.log",
+      "log_sha256": "4185c9727be3f24fafe0e17d7866ee25c725444f33fadecca5bf3b6c30dcdb58"
+    },
+    {
+      "module": "Mahjong.NearTerminalBucket",
+      "command": [
+        "<research-root>\\build\\toolchain\\lean-4.33.1-windows\\bin\\lean.exe",
+        "--trust=0",
+        "-M3072",
+        "-j1",
+        "-R",
+        "<research-root>\\build\\publication\\mahjong-achievement-game\\runs\\checker-kernel-20260914T074206828136Z\\source",
+        "-o",
+        "<research-root>\\build\\publication\\mahjong-achievement-game\\runs\\checker-kernel-20260914T074206828136Z\\modules\\Mahjong\\NearTerminalBucket.olean",
+        "<research-root>\\build\\publication\\mahjong-achievement-game\\runs\\checker-kernel-20260914T074206828136Z\\source\\Mahjong\\NearTerminalBucket.lean"
+      ],
+      "return_code": 0,
+      "seconds": 1.453,
+      "log": "Mahjong.NearTerminalBucket.log",
+      "log_sha256": "8267aad0d5a528256f8a4ca1188649ef567b6b3b8bbb56955b92c2e883b952b8"
+    },
+    {
+      "module": "MemoBenchmark",
+      "command": [
+        "<research-root>\\build\\toolchain\\lean-4.33.1-windows\\bin\\lean.exe",
+        "--trust=0",
+        "-M3072",
+        "-j1",
+        "-R",
+        "<research-root>\\build\\publication\\mahjong-achievement-game\\runs\\checker-kernel-20260914T074206828136Z\\source",
+        "-o",
+        "<research-root>\\build\\publication\\mahjong-achievement-game\\runs\\checker-kernel-20260914T074206828136Z\\modules\\MemoBenchmark.olean",
+        "<research-root>\\build\\publication\\mahjong-achievement-game\\runs\\checker-kernel-20260914T074206828136Z\\source\\MemoBenchmark.lean"
+      ],
+      "return_code": 0,
+      "seconds": 1.453,
+      "log": "MemoBenchmark.log",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "module": "NearTerminalWorker",
+      "command": [
+        "<research-root>\\build\\toolchain\\lean-4.33.1-windows\\bin\\lean.exe",
+        "--trust=0",
+        "-M3072",
+        "-j1",
+        "-R",
+        "<research-root>\\build\\publication\\mahjong-achievement-game\\runs\\checker-kernel-20260914T074206828136Z\\source",
+        "-o",
+        "<research-root>\\build\\publication\\mahjong-achievement-game\\runs\\checker-kernel-20260914T074206828136Z\\modules\\NearTerminalWorker.olean",
+        "<research-root>\\build\\publication\\mahjong-achievement-game\\runs\\checker-kernel-20260914T074206828136Z\\source\\NearTerminalWorker.lean"
+      ],
+      "return_code": 0,
+      "seconds": 1.453,
+      "log": "NearTerminalWorker.log",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "module": "PackedBenchmark",
+      "command": [
+        "<research-root>\\build\\toolchain\\lean-4.33.1-windows\\bin\\lean.exe",
+        "--trust=0",
+        "-M3072",
+        "-j1",
+        "-R",
+        "<research-root>\\build\\publication\\mahjong-achievement-game\\runs\\checker-kernel-20260914T074206828136Z\\source",
+        "-o",
+        "<research-root>\\build\\publication\\mahjong-achievement-game\\runs\\checker-kernel-20260914T074206828136Z\\modules\\PackedBenchmark.olean",
+        "<research-root>\\build\\publication\\mahjong-achievement-game\\runs\\checker-kernel-20260914T074206828136Z\\source\\PackedBenchmark.lean"
+      ],
+      "return_code": 0,
+      "seconds": 1.484,
+      "log": "PackedBenchmark.log",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "module": "PreloadedBenchmark",
+      "command": [
+        "<research-root>\\build\\toolchain\\lean-4.33.1-windows\\bin\\lean.exe",
+        "--trust=0",
+        "-M3072",
+        "-j1",
+        "-R",
+        "<research-root>\\build\\publication\\mahjong-achievement-game\\runs\\checker-kernel-20260914T074206828136Z\\source",
+        "-o",
+        "<research-root>\\build\\publication\\mahjong-achievement-game\\runs\\checker-kernel-20260914T074206828136Z\\modules\\PreloadedBenchmark.olean",
+        "<research-root>\\build\\publication\\mahjong-achievement-game\\runs\\checker-kernel-20260914T074206828136Z\\source\\PreloadedBenchmark.lean"
+      ],
+      "return_code": 0,
+      "seconds": 1.5,
+      "log": "PreloadedBenchmark.log",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "module": "SummaryWorker",
+      "command": [
+        "<research-root>\\build\\toolchain\\lean-4.33.1-windows\\bin\\lean.exe",
+        "--trust=0",
+        "-M3072",
+        "-j1",
+        "-R",
+        "<research-root>\\build\\publication\\mahjong-achievement-game\\runs\\checker-kernel-20260914T074206828136Z\\source",
+        "-o",
+        "<research-root>\\build\\publication\\mahjong-achievement-game\\runs\\checker-kernel-20260914T074206828136Z\\modules\\SummaryWorker.olean",
+        "<research-root>\\build\\publication\\mahjong-achievement-game\\runs\\checker-kernel-20260914T074206828136Z\\source\\SummaryWorker.lean"
+      ],
+      "return_code": 0,
+      "seconds": 1.391,
+      "log": "SummaryWorker.log",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "module": "TableBenchmark",
+      "command": [
+        "<research-root>\\build\\toolchain\\lean-4.33.1-windows\\bin\\lean.exe",
+        "--trust=0",
+        "-M3072",
+        "-j1",
+        "-R",
+        "<research-root>\\build\\publication\\mahjong-achievement-game\\runs\\checker-kernel-20260914T074206828136Z\\source",
+        "-o",
+        "<research-root>\\build\\publication\\mahjong-achievement-game\\runs\\checker-kernel-20260914T074206828136Z\\modules\\TableBenchmark.olean",
+        "<research-root>\\build\\publication\\mahjong-achievement-game\\runs\\checker-kernel-20260914T074206828136Z\\source\\TableBenchmark.lean"
+      ],
+      "return_code": 0,
+      "seconds": 1.469,
+      "log": "TableBenchmark.log",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "module": "TerminalWorker",
+      "command": [
+        "<research-root>\\build\\toolchain\\lean-4.33.1-windows\\bin\\lean.exe",
+        "--trust=0",
+        "-M3072",
+        "-j1",
+        "-R",
+        "<research-root>\\build\\publication\\mahjong-achievement-game\\runs\\checker-kernel-20260914T074206828136Z\\source",
+        "-o",
+        "<research-root>\\build\\publication\\mahjong-achievement-game\\runs\\checker-kernel-20260914T074206828136Z\\modules\\TerminalWorker.olean",
+        "<research-root>\\build\\publication\\mahjong-achievement-game\\runs\\checker-kernel-20260914T074206828136Z\\source\\TerminalWorker.lean"
+      ],
+      "return_code": 0,
+      "seconds": 1.5,
+      "log": "TerminalWorker.log",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  ],
+  "empty_game_lean": "NOT_VERIFIED",
+  "scope": "Fresh source checking; compiled workers are not executed.",
+  "wall_seconds": 105.266
+}

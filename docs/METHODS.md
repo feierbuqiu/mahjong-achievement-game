@@ -57,3 +57,8 @@ See [generation receipts](../results/generation-account.json),
 [replay completion](../results/replay-completion.json). Performance depends on
 hardware, storage, compiler, and operating system; these are observations,
 not promises about another machine.
+
+The [September 14 handoff](../research/2026-09-14/README.md) separately records
+the workstation specifications and compiled-Lean general-row benchmarks.
+Those workloads have different costs and remaining proof obligations; the
+above C++ timings are not a runtime estimate for end-to-end Lean verification.

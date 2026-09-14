@@ -1,0 +1,131 @@
+{
+  "schema": "LEAN_COMPILED_TABLE_ROUTE_V1",
+  "utc": "2026-09-14T07:07:17Z",
+  "phase": "GENERAL_LAYER_BOUNDED_TEST_COMPLETE_30_DAY_GATE_FAILED",
+  "old_explicit_certificate_run": "PAUSED",
+  "old_two_hour_automation": "PAUSED",
+  "preserved_P_facts": 24655,
+  "new_checker_soundness": "KERNEL_PASS",
+  "native_candidate_tests": "PASS",
+  "proved_rule_optimization": "KERNEL_PASS",
+  "global_target_slots": 778532864302,
+  "new_route_global_slots_checked": 22512356,
+  "whole_table_adapter_ready": false,
+  "verified_local_profile_cache_ready": true,
+  "full_table_native_run": "PARTIAL_LAYERS_34_33_COMPLETE",
+  "empty_game_Lean": "NOT_VERIFIED",
+  "compilation_trust_boundary_authorized": true,
+  "model_used_for_compute": false,
+  "subagents": 0,
+  "memory_hard_cap_bytes": 15500000000,
+  "cpu_cap_percent": 80,
+  "successor_benchmarks": [
+    {
+      "layer": 0,
+      "reference_ms": 11.5501,
+      "optimized_ms": 10.6916625,
+      "speedup": 1.0802903664420758
+    },
+    {
+      "layer": 12,
+      "reference_ms": 35.7112875,
+      "optimized_ms": 27.05735,
+      "speedup": 1.3198368465500132
+    },
+    {
+      "layer": 18,
+      "reference_ms": 100.1257875,
+      "optimized_ms": 36.2318875,
+      "speedup": 2.76347147247021
+    },
+    {
+      "layer": 23,
+      "reference_ms": 101.4642125,
+      "optimized_ms": 38.3250125,
+      "speedup": 2.6474671730374517
+    },
+    {
+      "layer": 30,
+      "reference_ms": 123.63895000000001,
+      "optimized_ms": 25.2278875,
+      "speedup": 4.900883991971186
+    },
+    {
+      "layer": 34,
+      "reference_ms": 27.9241875,
+      "optimized_ms": 13.4500375,
+      "speedup": 2.0761419810167814
+    }
+  ],
+  "next_work": "Profile and optimize general-row cost and parallel scaling, or benchmark a candidate compute host. Do not start a full scan based on current rates. Preserve target-correctness premises and complete the campaign coverage/aggregation obligations before claiming an opening certificate.",
+  "cached_checker_soundness": "KERNEL_PASS",
+  "verified_local_meld_cache_ready": true,
+  "autonomous_runtime": {
+    "task": "MahjongLeanTable_layer33_v1",
+    "state": "COMPLETE_NEAR_TERMINAL_LAYER",
+    "worker_limit": 12,
+    "model_calls": 0,
+    "report_interval_seconds": 3600,
+    "local_guard_interval_seconds": 7200,
+    "real_table_pause_resume": "PASS; 2048 saved -> 32768 complete; committed reruns 0",
+    "data_negative_tests": "PASS: flipped P/N, bad directory, truncated bits rejected",
+    "windows_notification_helper": "EXIT_0 start and completion",
+    "final_rate_rows_per_hour": 177815912.13742608
+  },
+  "latest_rule_benchmark": [
+    {
+      "wall_seconds": 0.9529999999795109,
+      "peak_private_bytes": 395673600,
+      "exit_codes": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "entry": "PreloadedBenchmark",
+      "evaluations": 8192,
+      "distinct_states": 8,
+      "workers": 8,
+      "rows_per_second": 8596.01259200013,
+      "scope": "Repeated layer-23 rule checks; no table references or P/N"
+    }
+  ],
+  "terminal_bucket_adapter_ready": true,
+  "near_terminal_bucket_adapter_ready": true,
+  "actual_scan_runs": [
+    {
+      "name": "terminal_layer34_v1",
+      "state": "COMPLETE_TERMINAL_LAYER",
+      "rows": 587901
+    },
+    {
+      "name": "layer33_v1",
+      "state": "COMPLETE_NEAR_TERMINAL_LAYER",
+      "rows": 21924455
+    }
+  ],
+  "counts_are_timestamped_snapshot": true,
+  "live_status": "runs/lean_table_checker/GENERAL_FEASIBILITY.json",
+  "completed_actual_layers": [
+    34,
+    33
+  ],
+  "autonomous_queue_complete": true,
+  "overall_actual_scan_acceptance": "runs/lean_table_checker/ACTUAL_SCAN_ACCEPTANCE.json",
+  "general_row_adapter_ready": true,
+  "general_checker_soundness": "KERNEL_PASS_WITH_EXPLICIT_TARGET_CORRECTNESS_PREMISE",
+  "full_campaign_aggregation_ready": false,
+  "general_benchmark_state": "COMPLETE_BOUNDED_TEST",
+  "general_benchmark_evaluations": 745472,
+  "general_benchmark_distinct_sampled_slots": 356352,
+  "sample_counts_excluded_from_complete_layer_coverage": true,
+  "thirty_day_gate": "FAIL_CURRENT_IMPLEMENTATION_ON_THIS_HOST",
+  "general_full_scan_launched": false,
+  "benchmark_workers_running": false,
+  "current_report": "runs/lean_table_checker/GENERAL_FEASIBILITY.md",
+  "general_feasibility": "runs/lean_table_checker/GENERAL_FEASIBILITY.json"
+}
