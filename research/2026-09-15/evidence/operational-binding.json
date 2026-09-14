@@ -1,0 +1,366 @@
+{
+  "schema": "BOUNDED_RETROGRADE_COMPARISON_BINDING_V1",
+  "thread_pairs": [
+    {
+      "n": 5,
+      "h": 0,
+      "synthetic_pattern": 0,
+      "rows": 6946,
+      "one_and_eight_thread_sha256": "4543b18b76c02d1439b2019719d506726c886249ab6d19b4a4289488b34b010b"
+    },
+    {
+      "n": 5,
+      "h": 0,
+      "synthetic_pattern": 1,
+      "rows": 6946,
+      "one_and_eight_thread_sha256": "232885aa9953d5c0890072e5589e9265c9a06f8354cb7403cde80d604c526f09"
+    },
+    {
+      "n": 5,
+      "h": 0,
+      "synthetic_pattern": 2,
+      "rows": 6946,
+      "one_and_eight_thread_sha256": "60fcd36342b64e5ec7151174cff94d3d354193dde04b9784b0a34a67e48c0637"
+    },
+    {
+      "n": 5,
+      "h": 0,
+      "synthetic_pattern": 3,
+      "rows": 6946,
+      "one_and_eight_thread_sha256": "6497d77accb8a408209bbde30a53f9952667b7d585fae3ff27d80c532c692992"
+    },
+    {
+      "n": 5,
+      "h": 0,
+      "synthetic_pattern": 4,
+      "rows": 6946,
+      "one_and_eight_thread_sha256": "d2331e12ea09453e2caed539ec291573703a36397757dec70d2d34438d75edb8"
+    },
+    {
+      "n": 8,
+      "h": 1,
+      "synthetic_pattern": 0,
+      "rows": 135710,
+      "one_and_eight_thread_sha256": "fab44dbaa203156976aec78ca380ae4438609b5a55311689d54e504a28a4d8f6"
+    },
+    {
+      "n": 8,
+      "h": 1,
+      "synthetic_pattern": 1,
+      "rows": 135710,
+      "one_and_eight_thread_sha256": "f0ce09bce4a4d3381dc548c4667811e706db61c443fbd3633ea8a2e60dc42911"
+    },
+    {
+      "n": 8,
+      "h": 1,
+      "synthetic_pattern": 2,
+      "rows": 135710,
+      "one_and_eight_thread_sha256": "2735e35acecf11562796f20e56db6ebe591ad562d4ca366e67a6bc4b4c3da9fa"
+    },
+    {
+      "n": 8,
+      "h": 1,
+      "synthetic_pattern": 3,
+      "rows": 135710,
+      "one_and_eight_thread_sha256": "a1fb2a7720ef38206d6c713722cc6966ecaa027471205f9b75ece0194146bb98"
+    },
+    {
+      "n": 8,
+      "h": 1,
+      "synthetic_pattern": 4,
+      "rows": 135710,
+      "one_and_eight_thread_sha256": "27e0e0c749b34c1d91266c900c2ce0c96fa08149dae30b330ce1aa8e29ca3870"
+    },
+    {
+      "n": 12,
+      "h": 8,
+      "synthetic_pattern": 0,
+      "rows": 135710,
+      "one_and_eight_thread_sha256": "fab44dbaa203156976aec78ca380ae4438609b5a55311689d54e504a28a4d8f6"
+    },
+    {
+      "n": 12,
+      "h": 8,
+      "synthetic_pattern": 1,
+      "rows": 135710,
+      "one_and_eight_thread_sha256": "f0ce09bce4a4d3381dc548c4667811e706db61c443fbd3633ea8a2e60dc42911"
+    },
+    {
+      "n": 12,
+      "h": 8,
+      "synthetic_pattern": 2,
+      "rows": 135710,
+      "one_and_eight_thread_sha256": "5ba78bcb78afcfd59c6ac87132857d936b4dc899126f60236faec38b8a830f9f"
+    },
+    {
+      "n": 12,
+      "h": 8,
+      "synthetic_pattern": 3,
+      "rows": 135710,
+      "one_and_eight_thread_sha256": "e0ca007def776a3ee63eedf711d0560b5846f51902f15e2b398c868a92a6e89f"
+    },
+    {
+      "n": 12,
+      "h": 8,
+      "synthetic_pattern": 4,
+      "rows": 135710,
+      "one_and_eight_thread_sha256": "e72229dfafddf01b107c850385a1da4d695c2d8c1b5362ee97a86b8bff63b74c"
+    },
+    {
+      "n": 16,
+      "h": 76,
+      "synthetic_pattern": 0,
+      "rows": 135710,
+      "one_and_eight_thread_sha256": "fab44dbaa203156976aec78ca380ae4438609b5a55311689d54e504a28a4d8f6"
+    },
+    {
+      "n": 16,
+      "h": 76,
+      "synthetic_pattern": 1,
+      "rows": 135710,
+      "one_and_eight_thread_sha256": "f0ce09bce4a4d3381dc548c4667811e706db61c443fbd3633ea8a2e60dc42911"
+    },
+    {
+      "n": 16,
+      "h": 76,
+      "synthetic_pattern": 2,
+      "rows": 135710,
+      "one_and_eight_thread_sha256": "b5073554ebac1b3801f331cbc56eba43eb808d7449360dfc85804c8605258b0a"
+    },
+    {
+      "n": 16,
+      "h": 76,
+      "synthetic_pattern": 3,
+      "rows": 135710,
+      "one_and_eight_thread_sha256": "37333f8359b71948ca5efee86e805fa81c52c0e71a8574404d593ea0f740b4d1"
+    },
+    {
+      "n": 16,
+      "h": 76,
+      "synthetic_pattern": 4,
+      "rows": 135710,
+      "one_and_eight_thread_sha256": "23fb9eadf7ba843b7395a318d40cfd534da8f53af2828e249863dbd6c0dc4109"
+    },
+    {
+      "n": 20,
+      "h": 60,
+      "synthetic_pattern": 0,
+      "rows": 172714,
+      "one_and_eight_thread_sha256": "c58e609573de324dc2c6e8493fb28ac49715bbaed6781f10935f981c26c4cdb6"
+    },
+    {
+      "n": 20,
+      "h": 60,
+      "synthetic_pattern": 1,
+      "rows": 172714,
+      "one_and_eight_thread_sha256": "f67a32410170340ab5362ee84dac947da9b7569315004e040b8056702987c66a"
+    },
+    {
+      "n": 20,
+      "h": 60,
+      "synthetic_pattern": 2,
+      "rows": 172714,
+      "one_and_eight_thread_sha256": "0edb25f9f081737ecff10870d55cb2840f7b515adfa56be368004fea5949b42c"
+    },
+    {
+      "n": 20,
+      "h": 60,
+      "synthetic_pattern": 3,
+      "rows": 172714,
+      "one_and_eight_thread_sha256": "187fe9b1f0564ba837f7b4d0a761aa2898b3707b332dd5c2adc25ef4c26b64b9"
+    },
+    {
+      "n": 20,
+      "h": 60,
+      "synthetic_pattern": 4,
+      "rows": 172714,
+      "one_and_eight_thread_sha256": "6da86576d7b53c7ae1e04f806d67870f43957c997162ea68d0e13dff66d2ad6a"
+    },
+    {
+      "n": 24,
+      "h": 54,
+      "synthetic_pattern": 0,
+      "rows": 104022,
+      "one_and_eight_thread_sha256": "0b91bb476a0f4e322f2a6ecf084fbbbd48cbbb7882f1a33c2fb16579f1c212a3"
+    },
+    {
+      "n": 24,
+      "h": 54,
+      "synthetic_pattern": 1,
+      "rows": 104022,
+      "one_and_eight_thread_sha256": "c47190f2161949c4bdef9fadf00f147eec5a488a7bbeac8cbedd116459959891"
+    },
+    {
+      "n": 24,
+      "h": 54,
+      "synthetic_pattern": 2,
+      "rows": 104022,
+      "one_and_eight_thread_sha256": "3b0bf4b70f613d49c0ea9987c245b75b159ef9df9b5a0193471e23583e83c3b8"
+    },
+    {
+      "n": 24,
+      "h": 54,
+      "synthetic_pattern": 3,
+      "rows": 104022,
+      "one_and_eight_thread_sha256": "05f5516b17bd27cd36a7811567263c08a1f292e5c7201aedb41fba6d5665b88d"
+    },
+    {
+      "n": 24,
+      "h": 54,
+      "synthetic_pattern": 4,
+      "rows": 104022,
+      "one_and_eight_thread_sha256": "7cdb630437560c5a9820fc5065fb7f34974d3658fe23a7769fbabc164f64a92b"
+    },
+    {
+      "n": 28,
+      "h": 180,
+      "synthetic_pattern": 0,
+      "rows": 171743,
+      "one_and_eight_thread_sha256": "11507fcb52cc84617576493a80ef4067ebd29f31caa549749475a6f106bb0616"
+    },
+    {
+      "n": 28,
+      "h": 180,
+      "synthetic_pattern": 1,
+      "rows": 171743,
+      "one_and_eight_thread_sha256": "f17606c5d82d9635699143bc1613b15165fdb53d078eb419a2285012959723c5"
+    },
+    {
+      "n": 28,
+      "h": 180,
+      "synthetic_pattern": 2,
+      "rows": 171743,
+      "one_and_eight_thread_sha256": "e1910367c1286dff507491db2d848cd08e8ba8a40c6effd91cd6153652a40fb2"
+    },
+    {
+      "n": 28,
+      "h": 180,
+      "synthetic_pattern": 3,
+      "rows": 171743,
+      "one_and_eight_thread_sha256": "23cba39e991521865f7a4683c276b31e250528d22fac9b4b952b2ba9bb9cdb1d"
+    },
+    {
+      "n": 28,
+      "h": 180,
+      "synthetic_pattern": 4,
+      "rows": 171743,
+      "one_and_eight_thread_sha256": "8cc622f33ea7fef54e2037d0412bae9430668c826f680b48157d345079564f9b"
+    },
+    {
+      "n": 31,
+      "h": 168,
+      "synthetic_pattern": 0,
+      "rows": 147651,
+      "one_and_eight_thread_sha256": "dfe44e28daaf0e99f7e79096e9120970fe9db4a4167f8341bfd66729d7cc3029"
+    },
+    {
+      "n": 31,
+      "h": 168,
+      "synthetic_pattern": 1,
+      "rows": 147651,
+      "one_and_eight_thread_sha256": "5e93d31c6451cd5c3facdd8b31d15be1a27df3326cd8d6241d772c9c6c574a62"
+    },
+    {
+      "n": 31,
+      "h": 168,
+      "synthetic_pattern": 2,
+      "rows": 147651,
+      "one_and_eight_thread_sha256": "a1fa4f565a77960bb7c696fd590c941f5060e5faee64fd2c052c97bfe0b6057f"
+    },
+    {
+      "n": 31,
+      "h": 168,
+      "synthetic_pattern": 3,
+      "rows": 147651,
+      "one_and_eight_thread_sha256": "0303999853f0bdbad28f49df6a965e0e2e26a2507f3137460f9850f933bed5a0"
+    },
+    {
+      "n": 31,
+      "h": 168,
+      "synthetic_pattern": 4,
+      "rows": 147651,
+      "one_and_eight_thread_sha256": "54910bfbbd8328b45bc7048f8c4cc9becb064e196e9aa13c69455a16de57e8f8"
+    },
+    {
+      "n": 32,
+      "h": 108,
+      "synthetic_pattern": 0,
+      "rows": 176440,
+      "one_and_eight_thread_sha256": "a8570df73a123747544f2063fbe12f81aba55f1be51ad94fcffdfbf4ef6b33b1"
+    },
+    {
+      "n": 32,
+      "h": 108,
+      "synthetic_pattern": 1,
+      "rows": 176440,
+      "one_and_eight_thread_sha256": "664f8cf3b77bb60d4f3aec388531ef4009c0952c808d3d99b827f25ca41cfd7e"
+    },
+    {
+      "n": 32,
+      "h": 108,
+      "synthetic_pattern": 2,
+      "rows": 176440,
+      "one_and_eight_thread_sha256": "ee094e8afd5339f67354cd00af657ca4efa39f84f88937bbfb0bd09d9b17ded6"
+    },
+    {
+      "n": 32,
+      "h": 108,
+      "synthetic_pattern": 3,
+      "rows": 176440,
+      "one_and_eight_thread_sha256": "a8570df73a123747544f2063fbe12f81aba55f1be51ad94fcffdfbf4ef6b33b1"
+    },
+    {
+      "n": 32,
+      "h": 108,
+      "synthetic_pattern": 4,
+      "rows": 176440,
+      "one_and_eight_thread_sha256": "f825723e0f78b050b102757bd53c1e0d9d616a9d4c6440cb3675234eafa8a211"
+    },
+    {
+      "n": 33,
+      "h": 109,
+      "synthetic_pattern": 0,
+      "rows": 176440,
+      "one_and_eight_thread_sha256": "a8570df73a123747544f2063fbe12f81aba55f1be51ad94fcffdfbf4ef6b33b1"
+    },
+    {
+      "n": 33,
+      "h": 109,
+      "synthetic_pattern": 1,
+      "rows": 176440,
+      "one_and_eight_thread_sha256": "3990ce7b0dda9aaf8c3667e4dcf1267dab8e15e47b150da541513a6d377a7b5d"
+    },
+    {
+      "n": 33,
+      "h": 109,
+      "synthetic_pattern": 2,
+      "rows": 176440,
+      "one_and_eight_thread_sha256": "b80679c1d278ced5925e2e5fa31be0ba308146287fb60a9b9bba8f0a00e8bd2c"
+    },
+    {
+      "n": 33,
+      "h": 109,
+      "synthetic_pattern": 3,
+      "rows": 176440,
+      "one_and_eight_thread_sha256": "a8570df73a123747544f2063fbe12f81aba55f1be51ad94fcffdfbf4ef6b33b1"
+    },
+    {
+      "n": 33,
+      "h": 109,
+      "synthetic_pattern": 4,
+      "rows": 176440,
+      "one_and_eight_thread_sha256": "af62122221f95bd2d6d16c6f3b6a10bbc75538ecec0533f47e74d4e5e9665b65"
+    },
+    {
+      "n": 34,
+      "h": 149,
+      "synthetic_pattern": 0,
+      "rows": 55178,
+      "one_and_eight_thread_sha256": "348a6a15ef17d4020a0f4768ee9f4bd7697a507b41784c4c488a1ca53fbe7ebc"
+    }
+  ],
+  "replayed_solver_rows": 0,
+  "historical_payload_bytes_read": 0,
+  "synthetic_only": true,
+  "checkpoint_done_layout": "52-byte header and 17 bytes per chunk; all final chunk words, counts and checksums matched"
+}

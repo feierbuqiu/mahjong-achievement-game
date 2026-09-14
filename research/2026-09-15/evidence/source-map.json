@@ -1,0 +1,100 @@
+[
+  {
+    "name": "move_plans",
+    "source": "build/global_retro/global_retro.cpp",
+    "source_sha256": "6664c16ab99d058478cc10d7b85edbf43328884f5c1a8d5abf12fecf274acee8",
+    "offset": 9518,
+    "length": 2034,
+    "fragment": "runs/lean_table_checker/optimized_retro_v1/source-map/move_plans.cpp",
+    "sha256": "a6886b6d749bb1f33591948b796b7b3e68df8c40410cd812bbfa323281ead52d",
+    "theorems": [
+      "Mahjong.MovePlanRefinement.planned_offset",
+      "Mahjong.PlanCacheCoverage.every_used_offset_fresh"
+    ],
+    "correspondence": "SOURCE_AND_MODEL_AUDIT_NOT_CPP_LANGUAGE_SEMANTICS"
+  },
+  {
+    "name": "dependency_loading",
+    "source": "build/global_retro/global_retro.cpp",
+    "source_sha256": "6664c16ab99d058478cc10d7b85edbf43328884f5c1a8d5abf12fecf274acee8",
+    "offset": 11552,
+    "length": 2987,
+    "fragment": "runs/lean_table_checker/optimized_retro_v1/source-map/dependency_loading.cpp",
+    "sha256": "8d0d4a580c9c1e584ef1ee2de8268900061c870ed1b064c3ba2d059a8e4adce5",
+    "theorems": [
+      "Mahjong.RetrogradeEvaluation.zero_bucket",
+      "Mahjong.RetrogradeEvaluation.all_p_bucket"
+    ],
+    "correspondence": "SOURCE_AND_MODEL_AUDIT_NOT_CPP_LANGUAGE_SEMANTICS"
+  },
+  {
+    "name": "checkpoint_and_commit",
+    "source": "build/global_retro/global_retro.cpp",
+    "source_sha256": "6664c16ab99d058478cc10d7b85edbf43328884f5c1a8d5abf12fecf274acee8",
+    "offset": 14539,
+    "length": 5070,
+    "fragment": "runs/lean_table_checker/optimized_retro_v1/source-map/checkpoint_and_commit.cpp",
+    "sha256": "8a73dbf551d68ef8d4c837d62c09c4829885696fc511f9cae2e20affc448412f",
+    "theorems": [
+      "Mahjong.ChunkWordOwnership.chunk_word_disjoint"
+    ],
+    "correspondence": "SOURCE_AND_MODEL_AUDIT_NOT_CPP_LANGUAGE_SEMANTICS"
+  },
+  {
+    "name": "completed_guard",
+    "source": "build/global_retro/global_retro.cpp",
+    "source_sha256": "6664c16ab99d058478cc10d7b85edbf43328884f5c1a8d5abf12fecf274acee8",
+    "offset": 19609,
+    "length": 1570,
+    "fragment": "runs/lean_table_checker/optimized_retro_v1/source-map/completed_guard.cpp",
+    "sha256": "ee4fbf1a20a7a25081482107fa823360b8d3872d6c824e1698ef13ffaf0df7a1",
+    "theorems": [],
+    "correspondence": "SOURCE_AND_MODEL_AUDIT_NOT_CPP_LANGUAGE_SEMANTICS"
+  },
+  {
+    "name": "optimized_bucket_loop",
+    "source": "build/global_retro/global_retro.cpp",
+    "source_sha256": "6664c16ab99d058478cc10d7b85edbf43328884f5c1a8d5abf12fecf274acee8",
+    "offset": 21179,
+    "length": 7370,
+    "fragment": "runs/lean_table_checker/optimized_retro_v1/source-map/optimized_bucket_loop.cpp",
+    "sha256": "7062ce60d59c150661d998cfc54201c4aca873ff7924a0392ee94c7155928e93",
+    "theorems": [
+      "Mahjong.MoveNormalization.cached_fast_eq_sort",
+      "Mahjong.OptimizedRowBridge.duplicate_sort_scan",
+      "Mahjong.OptimizedRowBridge.optimized_cached_step",
+      "Mahjong.RetrogradeEvaluation.whole_bucket_p",
+      "Mahjong.ChunkWordOwnership.tail_mask64"
+    ],
+    "correspondence": "SOURCE_AND_MODEL_AUDIT_NOT_CPP_LANGUAGE_SEMANTICS"
+  },
+  {
+    "name": "layer_loop",
+    "source": "build/global_retro/global_retro.cpp",
+    "source_sha256": "6664c16ab99d058478cc10d7b85edbf43328884f5c1a8d5abf12fecf274acee8",
+    "offset": 28549,
+    "length": 2085,
+    "fragment": "runs/lean_table_checker/optimized_retro_v1/source-map/layer_loop.cpp",
+    "sha256": "a29fd8cd02b9c555a346459cfa32ca28f058eb5da491041691f82e0f6c2f2ebf",
+    "theorems": [
+      "Mahjong.LayeredRetrograde.bottom_up_correct",
+      "Mahjong.LayerOrderBridge.terminal_layer_p",
+      "Mahjong.LayerOrderBridge.descending_tiles_order"
+    ],
+    "correspondence": "SOURCE_AND_MODEL_AUDIT_NOT_CPP_LANGUAGE_SEMANTICS"
+  },
+  {
+    "name": "group_and_rank_lookup",
+    "source": "build/global_retro/global_index.hpp",
+    "source_sha256": "b742e5bbb20ed0df50665c0d454d3bf4b7691dabc4d2d0380e7159766f8bf0c8",
+    "offset": 12284,
+    "length": 1067,
+    "fragment": "runs/lean_table_checker/optimized_retro_v1/source-map/group_and_rank_lookup.cpp",
+    "sha256": "122693b605bfc5237bd0f74e89c6d4894bc19d688da4bdd091a8bf3479a0dce3",
+    "theorems": [
+      "Mahjong.MovePlanRefinement.prepared_fast_groups",
+      "Mahjong.MovePlanRefinement.offset_add64"
+    ],
+    "correspondence": "SOURCE_AND_MODEL_AUDIT_NOT_CPP_LANGUAGE_SEMANTICS"
+  }
+]

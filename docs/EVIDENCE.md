@@ -17,15 +17,19 @@ rules, index, recurrence, implementation, and stored values.
 | Publication CI | Source builds, small execution checks, and evidence-file consistency | Does not recompute the 97.32 GB database |
 | Lean kernel CI | Fresh source replay of eight indexed nonempty-position roots and their axiom audits | Does not establish the empty-position theorem or replay the entire later local registry |
 | September 14 compiled-Lean scans | Complete layer-34 and layer-33 row checks, plus separate bounded general-layer samples | Native compilation/runtime trust; global coverage and final induction remain unfinished |
+| September 15 finite algorithm proofs | Audited kernel theorems for successor, optimization, word ownership and bottom-up models under explicit premises | Does not universally refine the entire C++ implementation or instantiate a certificate for all historical values |
+| September 15 production-routine probes | 102 synthetic configurations; 13,741,216 row comparisons with zero mismatches, plus concurrency and recovery controls | Synthetic child labels; zero new historical P/N coverage; bounded tests are not a language-semantics proof |
 | SSH/GitHub signatures | A commit or tag was signed by the identified key | Does not prove its scientific claims |
 
 ## Formal verification
 
 An end-to-end Lean theorem for this concrete opening is **not published**.
-The maintainer's personal effort to complete it is **paused as of September 14,
-2026**. The [dated handoff](../research/2026-09-14/README.md) describes the latest
-results, conditional soundness premises, performance limitations, and retained
-materials. The package described below remains reproducible.
+As of **September 15, 2026**, the maintainer **will not undertake further
+end-to-end or full-scale closure verification**. The
+[current status](../research/2026-09-15/README.md) describes the latest results,
+remaining premises and source availability. The repository remains open to
+reports, corrections and independent contributions; this update does not
+freeze current work. The package described below remains reproducible.
 
 This repository now indexes closed original-game proofs for eight specific
 nonempty states with 12, 14, 20, 28, 30, 32, and 34 tiles, with Lean 4.33.1 source and a clean
@@ -63,6 +67,15 @@ later checker source and selected run receipts. Its verification helper
 recomputes benchmark counts and weighted rates. Public receipt consistency
 does not establish native execution correctness or independently reproduce
 the later registry's retained concrete proof trees.
+
+The [September 15 manifest](../research/2026-09-15/provenance.json) publishes
+the 84-module dependency closure of the finite algorithm entry point and
+selected receipts without byte changes. Its historical acceptance record
+references 5,329 local evidence files; only the explicitly listed publication
+subset is supplied. All original digests were rechecked locally for this
+publication. A public hash/receipt check covers the supplied subset, and the
+optional Lean command freshly checks the published mathematical models.
+Neither operation replays historical full-table P/N data.
 
 Original research paths in receipt strings describe provenance. They do not
 imply that every historical working file is included here. The public source

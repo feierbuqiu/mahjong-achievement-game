@@ -3,6 +3,10 @@
 research/2026-09-14/lean/** -text whitespace=blank-at-eol,space-before-tab,cr-at-eol
 research/2026-09-14/evidence/** -text whitespace=blank-at-eol,space-before-tab,cr-at-eol
 research/2026-09-14/source/** -text whitespace=blank-at-eol,space-before-tab,cr-at-eol
+research/2026-09-15/lean/** -text whitespace=blank-at-eol,space-before-tab,cr-at-eol
+research/2026-09-15/evidence/** -text whitespace=blank-at-eol,space-before-tab,cr-at-eol
+# Trailing blank lines belong to the exact original source slices.
+research/2026-09-15/source/** -text whitespace=blank-at-eol,space-before-tab,cr-at-eol,-blank-at-eof
 # Preserve imported scientific source and evidence bytes for their manifests.
 src/** -text
 mahjong_progress/** -text

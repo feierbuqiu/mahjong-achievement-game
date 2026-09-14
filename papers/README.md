@@ -5,10 +5,13 @@
 *Mahjong Achievement on a Shared Table: A Computational Second-Player Win and Partial Lean Certification*
 **feierbuqiu** · Research report · 13 September 2026
 
-**Current status, September 14:** the maintainer has paused personal work on
-the opening Lean proof. Read the [dated research handoff](../research/2026-09-14/README.md)
-for subsequent local proofs, compiled-checker results, hardware and measured
-limitations. The paper below retains its September 13 content and date.
+**Current status, September 15:** the maintainer will not undertake further
+end-to-end or full-scale Lean closure verification. The opening remains
+`NOT_VERIFIED`. Read the [current Lean update](../research/2026-09-15/README.md)
+for later finite model proofs, synthetic production tests, and precise remaining
+obligations. A separate Lean progress report is planned; this synchronization
+does not publish that report or a new release. The repository remains open to
+updates and contributions. The paper below retains its September 13 content and date.
 
 The complete report includes the rules and mathematical proofs, local classifications, the global computational result, partial Lean certification, limitations, references, and seven appendices. The opening has a completed computational second-player win. Its end-to-end Lean theorem remains incomplete; the newest individually certified root has twelve tiles.
 

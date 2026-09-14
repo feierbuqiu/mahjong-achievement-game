@@ -1,6 +1,21 @@
 # Changelog
 
-## Unreleased - 2026-09-14
+## Unreleased - 2026-09-15
+
+- Synchronize the latest finite Lean model and bounded production-test progress:
+  10 core model modules, 79 audited theorems, 102 synthetic configurations and
+  13,741,216 row comparisons with zero mismatches. Publish the 84-module source
+  dependency closure, selected receipts and a bounded verification command.
+- Keep new historical P/N coverage at zero. Universal whole-C++ refinement,
+  a fully instantiated solver certificate, historical output binding, and the
+  empty-position Lean theorem remain unfinished.
+- Replace the earlier pause with the maintainer's decision not to undertake
+  further end-to-end or full-scale Lean closure verification. Invite expert
+  and compute contributions, while keeping the repository open to updates.
+- Plan a separate Lean progress report. This synchronization creates no new
+  release or tag and does not freeze current work; existing releases are unchanged.
+
+## 0.3.0 - 2026-09-14
 
 - Pause the maintainer's personal end-to-end Lean effort. Preserve the
   computational second-player conclusion and the NOT_VERIFIED opening and
@@ -15,8 +30,8 @@
 - Record current workstation specifications and the failed 30-day feasibility
   target for this implementation. Invite independent verification, algorithm
   improvements and measured larger-host trials; offer no completion date.
-- Retain the English paper as the homepage's main report. Do not create a new
-  release or change the signed v0.2.0 snapshot.
+- Retain the English paper as the homepage's main report. These changes were
+  subsequently captured in the signed v0.3.0 release; the v0.2.0 record is unchanged.
 
 ## 0.2.0 - 2026-09-13
 

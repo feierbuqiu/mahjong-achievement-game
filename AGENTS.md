@@ -4,9 +4,12 @@ Read README.md, RESEARCH_STATUS.json, docs/RULES.md, docs/EVIDENCE.md, and
 docs/REPRODUCIBILITY.md before changing research claims or algorithms.
 
 - The published computational opening result is P (second-player win), with
-  complete reverse replay. The maintainer's personal end-to-end Lean effort
-  is paused as of September 14, 2026; the opening theorem is NOT_VERIFIED.
-  Read research/2026-09-14/README.md for the latest evidence and handoff.
+  complete reverse replay. As of September 15, 2026, the maintainer will not
+  undertake further end-to-end/full-scale Lean closure verification; the
+  opening theorem is NOT_VERIFIED. The repository remains open to reports,
+  corrections and independent contributions; current work is not frozen.
+  Read research/2026-09-15/README.md for current evidence and boundaries, and
+  research/2026-09-14/README.md for hardware and full-scan benchmarks.
   Do not restart research jobs or provision compute without a new request.
   Bounded checks and replay of existing proofs remain appropriate for changes.
   Do not confuse historical UNKNOWN with current computational results.

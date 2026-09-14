@@ -1,10 +1,12 @@
 # Lean verification progress
 
-> **September 14, 2026: the maintainer's personal verification effort is
-> paused.** The empty-position theorem remains `NOT_VERIFIED`. The
-> [latest handoff](../research/2026-09-14/README.md) records the later local
-> registry of 24,655 P states, completed compiled checks of layers 34 and 33,
-> hardware benchmarks, and the remaining work. This page documents the frozen
+> **September 15, 2026: the maintainer will not undertake further end-to-end
+> or full-scale Lean closure verification.** The opening remains `NOT_VERIFIED`.
+> The [current status](../research/2026-09-15/README.md) adds finite algorithm
+> proofs and bounded synthetic C++ tests, with zero new historical P/N coverage.
+> Expert and compute contributions are welcome. The repository remains open
+> to updates and a separate progress report is planned; this is not a new
+> release or a freeze of current work. This page documents the historical
 > September 13 concrete-proof package, whose replay and CI remain available.
 
 **Eight concrete nonempty roots are indexed, including the new 12- and 14-tile strategies.
