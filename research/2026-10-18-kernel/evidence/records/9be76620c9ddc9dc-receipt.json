@@ -1,0 +1,81 @@
+{
+  "CPU_limit_percent": 20,
+  "LEAN_PATH": "<RESEARCH_ROOT>\\runs\\lean_table_checker\\acceleration_20261018_v19\\packed\\bundles\\273afb48452f41ea8145a1a8e53bfae5\\modules",
+  "argv": [
+    "<RESEARCH_ROOT>\\build\\toolchain\\lean-4.33.1-windows\\bin\\leanchecker.exe",
+    "--fresh",
+    "-v",
+    "MetadataSliceVerifyV19"
+  ],
+  "caps_readback_confirmed": true,
+  "checked_utc": "2026-10-18T07:14:39.419243+00:00",
+  "child_assigned_before_resume": true,
+  "child_cpu_seconds": 19.578125,
+  "child_cwd": "<RESEARCH_ROOT>\\runs\\lean_table_checker\\acceleration_20261018_v19\\packed\\bundles\\273afb48452f41ea8145a1a8e53bfae5\\replay_cwd",
+  "child_exit_confirmed": true,
+  "child_wall_seconds": 19.76600000000326,
+  "compiled_module": null,
+  "controller_outside_job": true,
+  "dependency_fingerprints": [],
+  "emitted_c": null,
+  "empty_replay_cwd": true,
+  "executable": {
+    "bytes": 115200,
+    "path": "build/toolchain/lean-4.33.1-windows/bin/leanchecker.exe",
+    "sha256": "31b506f83737b7d629fd11699df5aaf88c3b50be23c28219e6b283f0de98f85c"
+  },
+  "final_kernel_empty_theorem": false,
+  "frozen_replay_root": "<RESEARCH_ROOT>\\runs\\lean_table_checker\\acceleration_20261018_v19\\packed\\bundles\\273afb48452f41ea8145a1a8e53bfae5\\modules",
+  "full_launch_allowed": false,
+  "full_scan_started": false,
+  "input_pilot_modules": [
+    {
+      "bytes": 1544,
+      "path": "runs/lean_table_checker/acceleration_20261018_v19/packed/bundles/273afb48452f41ea8145a1a8e53bfae5/modules/MetadataProofSliceDataV19.olean",
+      "sha256": "e39f4d743f4e314b64824cf46cf65014a91159d6808319baa5fd4f656f3fb5fe"
+    },
+    {
+      "bytes": 7392,
+      "path": "runs/lean_table_checker/acceleration_20261018_v19/packed/bundles/273afb48452f41ea8145a1a8e53bfae5/modules/MetadataSliceVerifyV19.olean",
+      "sha256": "6715aad4bfabd9711a4c16ed825fe0b6a0b5f8e7e14d02dcb445fbfe9449e6a6"
+    }
+  ],
+  "memory_limit_bytes": 3000000000,
+  "meta_plugin": null,
+  "mode": "replay",
+  "module": "MetadataSliceVerifyV19",
+  "native_source": null,
+  "peak_job_committed_bytes": 419885056,
+  "peak_process_pagefile_bytes": 418652160,
+  "peak_process_working_set_bytes": 394985472,
+  "plugin_is_untrusted_input_generator": false,
+  "policy_error": null,
+  "published_module": null,
+  "requested_Lean_threads": 1,
+  "returncode": 0,
+  "schema": "ACTUAL_BOUNDED_KERNEL_PILOT_V19",
+  "source": {
+    "bytes": 634,
+    "path": "runs/lean_table_checker/acceleration_20261018_v19/packed/bundles/273afb48452f41ea8145a1a8e53bfae5/source/MetadataSliceVerifyV19.lean",
+    "sha256": "136ea56b14385b7d0305a6e37f6f0fee596685cc6cb28abeee8da9ab8ff5f623"
+  },
+  "source_executable_import_hashes_unchanged": true,
+  "source_snapshot": {
+    "bytes": 634,
+    "path": "runs/lean_table_checker/acceleration_20261018_v19/packed/attempts/a3083ef04e924014b39c8af680f83af4/source_snapshot/MetadataSliceVerifyV19.lean",
+    "sha256": "136ea56b14385b7d0305a6e37f6f0fee596685cc6cb28abeee8da9ab8ff5f623"
+  },
+  "status": "PASS",
+  "stderr": {
+    "bytes": 0,
+    "path": "runs/lean_table_checker/acceleration_20261018_v19/packed/attempts/a3083ef04e924014b39c8af680f83af4/stderr.log",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "stdout": {
+    "bytes": 46,
+    "path": "runs/lean_table_checker/acceleration_20261018_v19/packed/attempts/a3083ef04e924014b39c8af680f83af4/stdout.log",
+    "sha256": "c2df07a99ac739687d134c0a685601cbcd018c4b833d3b4d7b6859e1b7a98dd2"
+  },
+  "timed_out": false,
+  "wall_seconds": 19.78100000001723
+}

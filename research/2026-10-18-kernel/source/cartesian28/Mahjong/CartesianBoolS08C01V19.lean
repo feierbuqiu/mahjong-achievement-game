@@ -1,0 +1,271 @@
+module
+prelude
+public import Mahjong.CartesianChannels04V19
+import all Mahjong.CartesianChannels04V19
+public import Mahjong.CartesianChannels07V19
+import all Mahjong.CartesianChannels07V19
+public import Mahjong.CartesianChannels10V19
+import all Mahjong.CartesianChannels10V19
+public import Mahjong.CartesianChannels11V19
+import all Mahjong.CartesianChannels11V19
+public import Mahjong.CartesianChannels12V19
+import all Mahjong.CartesianChannels12V19
+public import Mahjong.CartesianChannels13V19
+import all Mahjong.CartesianChannels13V19
+public import Mahjong.CartesianChannels14V19
+import all Mahjong.CartesianChannels14V19
+public import Mahjong.CartesianChannels15V19
+import all Mahjong.CartesianChannels15V19
+public import Mahjong.CartesianChannels16V19
+import all Mahjong.CartesianChannels16V19
+public import Mahjong.CartesianData00V19
+import all Mahjong.CartesianData00V19
+public import Mahjong.CartesianData01V19
+import all Mahjong.CartesianData01V19
+public import Mahjong.CartesianData02V19
+import all Mahjong.CartesianData02V19
+public import Mahjong.CartesianData03V19
+import all Mahjong.CartesianData03V19
+public import Mahjong.CartesianData04V19
+import all Mahjong.CartesianData04V19
+public import Mahjong.CartesianMathV19
+import all Mahjong.CartesianMathV19
+public section
+set_option autoImplicit false
+set_option exponentiation.threshold 16777216
+set_option maxRecDepth 65536
+set_option maxHeartbeats 100000000
+set_option profiler.threshold 0
+namespace Mahjong.CartesianBoolS08C01V19
+namespace B08
+noncomputable def axis0start : Nat := ((((Mahjong.CartesianChannels10V19.channel70 2048 Mahjong.CartesianData02V19.v97) ||| (Mahjong.CartesianChannels10V19.channel71 2048 Mahjong.CartesianData02V19.v101)) ||| ((Mahjong.CartesianChannels10V19.channel72 2048 Mahjong.CartesianData02V19.v105) ||| (Mahjong.CartesianChannels10V19.channel73 2048 Mahjong.CartesianData02V19.v110))) ||| (((Mahjong.CartesianChannels10V19.channel74 2048 Mahjong.CartesianData02V19.v114) ||| (Mahjong.CartesianChannels10V19.channel75 2048 Mahjong.CartesianData02V19.v118)) ||| ((Mahjong.CartesianChannels10V19.channel76 2048 Mahjong.CartesianData02V19.v122) ||| ((Mahjong.CartesianChannels10V19.channel77 2048 Mahjong.CartesianData02V19.v125) ||| (Mahjong.CartesianChannels10V19.channel78 2048 Mahjong.CartesianData02V19.v129)))))
+noncomputable def axis0stage0 : Nat := Mahjong.CartesianMathV19.deltaSwap axis0start Mahjong.CartesianData00V19.v56 16384
+noncomputable def axis0stage1 : Nat := Mahjong.CartesianMathV19.deltaSwap axis0stage0 Mahjong.CartesianData00V19.v55 24576
+noncomputable def axis0stage2 : Nat := Mahjong.CartesianMathV19.deltaSwap axis0stage1 Mahjong.CartesianData00V19.v54 28672
+noncomputable def axis0stage3 : Nat := Mahjong.CartesianMathV19.deltaSwap axis0stage2 Mahjong.CartesianData00V19.v65 30720
+noncomputable def axis0stage4 : Nat := Mahjong.CartesianMathV19.deltaSwap axis0stage3 Mahjong.CartesianData00V19.v64 31744
+noncomputable def axis0stage5 : Nat := Mahjong.CartesianMathV19.deltaSwap axis0stage4 Mahjong.CartesianData00V19.v148 15872
+noncomputable def axis0stage6 : Nat := Mahjong.CartesianMathV19.deltaSwap axis0stage5 Mahjong.CartesianData00V19.v147 7936
+noncomputable def axis0stage7 : Nat := Mahjong.CartesianMathV19.deltaSwap axis0stage6 Mahjong.CartesianData00V19.v146 3968
+noncomputable def axis0stage8 : Nat := Mahjong.CartesianMathV19.deltaSwap axis0stage7 Mahjong.CartesianData00V19.v145 1984
+noncomputable def axis0stage9 : Nat := Mahjong.CartesianMathV19.deltaSwap axis0stage8 Mahjong.CartesianData00V19.v144 992
+noncomputable def axis0stage10 : Nat := Mahjong.CartesianMathV19.deltaSwap axis0stage9 Mahjong.CartesianData00V19.v143 496
+noncomputable def axis0stage11 : Nat := Mahjong.CartesianMathV19.deltaSwap axis0stage10 Mahjong.CartesianData00V19.v142 248
+noncomputable def axis0stage12 : Nat := Mahjong.CartesianMathV19.deltaSwap axis0stage11 Mahjong.CartesianData00V19.v141 124
+noncomputable def axis0stage13 : Nat := Mahjong.CartesianMathV19.deltaSwap axis0stage12 Mahjong.CartesianData02V19.v186 62
+noncomputable def axis0stage14 : Nat := Mahjong.CartesianMathV19.deltaSwap axis0stage13 Mahjong.CartesianData02V19.v185 31
+noncomputable def axis1start : Nat := ((((Mahjong.CartesianChannels10V19.channel70 2048 Mahjong.CartesianData02V19.v97) ||| (Mahjong.CartesianChannels10V19.channel71 2048 Mahjong.CartesianData02V19.v101)) ||| ((Mahjong.CartesianChannels10V19.channel72 2048 Mahjong.CartesianData02V19.v105) ||| (Mahjong.CartesianChannels10V19.channel73 2048 Mahjong.CartesianData02V19.v110))) ||| (((Mahjong.CartesianChannels10V19.channel74 2048 Mahjong.CartesianData02V19.v114) ||| (Mahjong.CartesianChannels10V19.channel75 2048 Mahjong.CartesianData02V19.v118)) ||| ((Mahjong.CartesianChannels10V19.channel76 2048 Mahjong.CartesianData02V19.v122) ||| ((Mahjong.CartesianChannels10V19.channel77 2048 Mahjong.CartesianData02V19.v125) ||| (Mahjong.CartesianChannels10V19.channel78 2048 Mahjong.CartesianData02V19.v129)))))
+noncomputable def axis1stage0 : Nat := Mahjong.CartesianMathV19.deltaSwap axis1start Mahjong.CartesianData00V19.v56 16384
+noncomputable def axis1stage1 : Nat := Mahjong.CartesianMathV19.deltaSwap axis1stage0 Mahjong.CartesianData00V19.v55 24576
+noncomputable def axis1stage2 : Nat := Mahjong.CartesianMathV19.deltaSwap axis1stage1 Mahjong.CartesianData00V19.v54 28672
+noncomputable def axis1stage3 : Nat := Mahjong.CartesianMathV19.deltaSwap axis1stage2 Mahjong.CartesianData00V19.v65 30720
+noncomputable def axis1stage4 : Nat := Mahjong.CartesianMathV19.deltaSwap axis1stage3 Mahjong.CartesianData00V19.v64 31744
+noncomputable def axis1stage5 : Nat := Mahjong.CartesianMathV19.deltaSwap axis1stage4 Mahjong.CartesianData00V19.v148 15872
+noncomputable def axis1stage6 : Nat := Mahjong.CartesianMathV19.deltaSwap axis1stage5 Mahjong.CartesianData00V19.v147 7936
+noncomputable def axis1stage7 : Nat := Mahjong.CartesianMathV19.deltaSwap axis1stage6 Mahjong.CartesianData00V19.v146 3968
+noncomputable def axis1stage8 : Nat := Mahjong.CartesianMathV19.deltaSwap axis1stage7 Mahjong.CartesianData00V19.v145 1984
+noncomputable def axis1stage9 : Nat := Mahjong.CartesianMathV19.deltaSwap axis1stage8 Mahjong.CartesianData00V19.v144 992
+noncomputable def axis2start : Nat := ((((Mahjong.CartesianChannels10V19.channel79 1024 Mahjong.CartesianData02V19.v134) ||| (Mahjong.CartesianChannels10V19.channel80 1024 Mahjong.CartesianData02V19.v138)) ||| ((Mahjong.CartesianChannels10V19.channel81 1024 Mahjong.CartesianData02V19.v142) ||| ((Mahjong.CartesianChannels11V19.channel82 1024 Mahjong.CartesianData02V19.v146) ||| (Mahjong.CartesianChannels11V19.channel83 1024 Mahjong.CartesianData02V19.v150)))) ||| (((Mahjong.CartesianChannels11V19.channel84 1024 Mahjong.CartesianData02V19.v154) ||| (Mahjong.CartesianChannels11V19.channel85 1024 Mahjong.CartesianData02V19.v158)) ||| ((Mahjong.CartesianChannels11V19.channel86 1024 Mahjong.CartesianData02V19.v162) ||| ((Mahjong.CartesianChannels11V19.channel87 1024 Mahjong.CartesianData02V19.v166) ||| (Mahjong.CartesianChannels11V19.channel88 1024 Mahjong.CartesianData02V19.v170)))))
+noncomputable def computedReach : Nat := ((axis0stage14 ||| (axis1stage9 ||| axis2start)) ||| (Mahjong.CartesianData02V19.v174 ||| (Mahjong.CartesianData02V19.v178 ||| Mahjong.CartesianData02V19.v182)))
+end B08
+
+namespace B09
+noncomputable def axis0start : Nat := ((Mahjong.CartesianChannels11V19.channel89 1024 Mahjong.CartesianData03V19.v5) ||| (Mahjong.CartesianChannels11V19.channel90 1024 Mahjong.CartesianData03V19.v9))
+noncomputable def axis0stage0 : Nat := Mahjong.CartesianMathV19.deltaSwap axis0start Mahjong.CartesianData03V19.v41 15872
+noncomputable def axis0stage1 : Nat := Mahjong.CartesianMathV19.deltaSwap axis0stage0 Mahjong.CartesianData03V19.v40 7936
+noncomputable def axis0stage2 : Nat := Mahjong.CartesianMathV19.deltaSwap axis0stage1 Mahjong.CartesianData03V19.v39 3968
+noncomputable def axis0stage3 : Nat := Mahjong.CartesianMathV19.deltaSwap axis0stage2 Mahjong.CartesianData03V19.v38 1984
+noncomputable def axis0stage4 : Nat := Mahjong.CartesianMathV19.deltaSwap axis0stage3 Mahjong.CartesianData03V19.v37 992
+noncomputable def axis0stage5 : Nat := Mahjong.CartesianMathV19.deltaSwap axis0stage4 Mahjong.CartesianData03V19.v36 496
+noncomputable def axis0stage6 : Nat := Mahjong.CartesianMathV19.deltaSwap axis0stage5 Mahjong.CartesianData03V19.v35 248
+noncomputable def axis0stage7 : Nat := Mahjong.CartesianMathV19.deltaSwap axis0stage6 Mahjong.CartesianData03V19.v34 124
+noncomputable def axis0stage8 : Nat := Mahjong.CartesianMathV19.deltaSwap axis0stage7 Mahjong.CartesianData03V19.v33 62
+noncomputable def axis0stage9 : Nat := Mahjong.CartesianMathV19.deltaSwap axis0stage8 Mahjong.CartesianData03V19.v32 31
+noncomputable def axis1start : Nat := (((Mahjong.CartesianChannels11V19.channel91 1024 Mahjong.CartesianData03V19.v13) ||| (Mahjong.CartesianChannels11V19.channel92 1024 Mahjong.CartesianData03V19.v17)) ||| ((Mahjong.CartesianChannels11V19.channel93 1024 Mahjong.CartesianData03V19.v21) ||| (Mahjong.CartesianChannels11V19.channel94 1024 Mahjong.CartesianData03V19.v25)))
+noncomputable def axis1stage0 : Nat := Mahjong.CartesianMathV19.deltaSwap axis1start Mahjong.CartesianData03V19.v41 15872
+noncomputable def axis1stage1 : Nat := Mahjong.CartesianMathV19.deltaSwap axis1stage0 Mahjong.CartesianData03V19.v40 7936
+noncomputable def axis1stage2 : Nat := Mahjong.CartesianMathV19.deltaSwap axis1stage1 Mahjong.CartesianData03V19.v39 3968
+noncomputable def axis1stage3 : Nat := Mahjong.CartesianMathV19.deltaSwap axis1stage2 Mahjong.CartesianData03V19.v38 1984
+noncomputable def axis1stage4 : Nat := Mahjong.CartesianMathV19.deltaSwap axis1stage3 Mahjong.CartesianData03V19.v37 992
+noncomputable def axis2start : Nat := (((Mahjong.CartesianChannels11V19.channel91 1024 Mahjong.CartesianData03V19.v13) ||| (Mahjong.CartesianChannels11V19.channel92 1024 Mahjong.CartesianData03V19.v17)) ||| ((Mahjong.CartesianChannels11V19.channel93 1024 Mahjong.CartesianData03V19.v21) ||| (Mahjong.CartesianChannels11V19.channel94 1024 Mahjong.CartesianData03V19.v25)))
+noncomputable def computedReach : Nat := ((axis0stage9 ||| axis1stage4) ||| (axis2start ||| Mahjong.CartesianData03V19.v29))
+end B09
+
+namespace B10
+noncomputable def axis0start : Nat := ((Mahjong.CartesianChannels11V19.channel95 512 Mahjong.CartesianData03V19.v48) ||| (Mahjong.CartesianChannels11V19.channel96 512 Mahjong.CartesianData03V19.v52))
+noncomputable def axis0stage0 : Nat := Mahjong.CartesianMathV19.deltaSwap axis0start Mahjong.CartesianData03V19.v72 4096
+noncomputable def axis0stage1 : Nat := Mahjong.CartesianMathV19.deltaSwap axis0stage0 Mahjong.CartesianData03V19.v71 2048
+noncomputable def axis0stage2 : Nat := Mahjong.CartesianMathV19.deltaSwap axis0stage1 Mahjong.CartesianData03V19.v70 1024
+noncomputable def axis0stage3 : Nat := Mahjong.CartesianMathV19.deltaSwap axis0stage2 Mahjong.CartesianData03V19.v69 512
+noncomputable def axis0stage4 : Nat := Mahjong.CartesianMathV19.deltaSwap axis0stage3 Mahjong.CartesianData03V19.v68 7936
+noncomputable def axis0stage5 : Nat := Mahjong.CartesianMathV19.deltaSwap axis0stage4 Mahjong.CartesianData03V19.v67 3968
+noncomputable def axis0stage6 : Nat := Mahjong.CartesianMathV19.deltaSwap axis0stage5 Mahjong.CartesianData03V19.v66 1984
+noncomputable def axis0stage7 : Nat := Mahjong.CartesianMathV19.deltaSwap axis0stage6 Mahjong.CartesianData03V19.v65 992
+noncomputable def axis0stage8 : Nat := Mahjong.CartesianMathV19.deltaSwap axis0stage7 Mahjong.CartesianData03V19.v64 496
+noncomputable def axis0stage9 : Nat := Mahjong.CartesianMathV19.deltaSwap axis0stage8 Mahjong.CartesianData03V19.v63 248
+noncomputable def axis0stage10 : Nat := Mahjong.CartesianMathV19.deltaSwap axis0stage9 Mahjong.CartesianData03V19.v62 124
+noncomputable def axis0stage11 : Nat := Mahjong.CartesianMathV19.deltaSwap axis0stage10 Mahjong.CartesianData03V19.v61 62
+noncomputable def axis0stage12 : Nat := Mahjong.CartesianMathV19.deltaSwap axis0stage11 Mahjong.CartesianData03V19.v60 31
+noncomputable def axis1start : Nat := ((Mahjong.CartesianChannels11V19.channel95 512 Mahjong.CartesianData03V19.v48) ||| (Mahjong.CartesianChannels11V19.channel96 512 Mahjong.CartesianData03V19.v52))
+noncomputable def axis1stage0 : Nat := Mahjong.CartesianMathV19.deltaSwap axis1start Mahjong.CartesianData03V19.v72 4096
+noncomputable def axis1stage1 : Nat := Mahjong.CartesianMathV19.deltaSwap axis1stage0 Mahjong.CartesianData03V19.v71 2048
+noncomputable def axis1stage2 : Nat := Mahjong.CartesianMathV19.deltaSwap axis1stage1 Mahjong.CartesianData03V19.v70 1024
+noncomputable def axis1stage3 : Nat := Mahjong.CartesianMathV19.deltaSwap axis1stage2 Mahjong.CartesianData03V19.v69 512
+noncomputable def axis1stage4 : Nat := Mahjong.CartesianMathV19.deltaSwap axis1stage3 Mahjong.CartesianData03V19.v68 7936
+noncomputable def axis1stage5 : Nat := Mahjong.CartesianMathV19.deltaSwap axis1stage4 Mahjong.CartesianData03V19.v67 3968
+noncomputable def axis1stage6 : Nat := Mahjong.CartesianMathV19.deltaSwap axis1stage5 Mahjong.CartesianData03V19.v66 1984
+noncomputable def axis1stage7 : Nat := Mahjong.CartesianMathV19.deltaSwap axis1stage6 Mahjong.CartesianData03V19.v65 992
+noncomputable def axis2start : Nat := 0
+noncomputable def computedReach : Nat := ((axis0stage12 ||| axis1stage7) ||| (axis2start ||| Mahjong.CartesianData03V19.v57))
+end B10
+
+namespace B11
+noncomputable def axis0start : Nat := (((Mahjong.CartesianChannels07V19.channel53 4096 Mahjong.CartesianData03V19.v78) ||| (Mahjong.CartesianChannels11V19.channel97 4096 Mahjong.CartesianData03V19.v82)) ||| ((Mahjong.CartesianChannels07V19.channel54 4096 Mahjong.CartesianData03V19.v86) ||| ((Mahjong.CartesianChannels11V19.channel98 4096 Mahjong.CartesianData03V19.v90) ||| (Mahjong.CartesianChannels11V19.channel99 4096 Mahjong.CartesianData03V19.v94))))
+noncomputable def axis0stage0 : Nat := Mahjong.CartesianMathV19.deltaSwap axis0start Mahjong.CartesianData03V19.v166 14336
+noncomputable def axis0stage1 : Nat := Mahjong.CartesianMathV19.deltaSwap axis0stage0 Mahjong.CartesianData03V19.v165 7168
+noncomputable def axis0stage2 : Nat := Mahjong.CartesianMathV19.deltaSwap axis0stage1 Mahjong.CartesianData03V19.v164 3584
+noncomputable def axis0stage3 : Nat := Mahjong.CartesianMathV19.deltaSwap axis0stage2 Mahjong.CartesianData03V19.v163 1792
+noncomputable def axis0stage4 : Nat := Mahjong.CartesianMathV19.deltaSwap axis0stage3 Mahjong.CartesianData03V19.v162 896
+noncomputable def axis0stage5 : Nat := Mahjong.CartesianMathV19.deltaSwap axis0stage4 Mahjong.CartesianData03V19.v161 448
+noncomputable def axis0stage6 : Nat := Mahjong.CartesianMathV19.deltaSwap axis0stage5 Mahjong.CartesianData03V19.v160 224
+noncomputable def axis0stage7 : Nat := Mahjong.CartesianMathV19.deltaSwap axis0stage6 Mahjong.CartesianData03V19.v159 112
+noncomputable def axis0stage8 : Nat := Mahjong.CartesianMathV19.deltaSwap axis0stage7 Mahjong.CartesianData03V19.v158 56
+noncomputable def axis0stage9 : Nat := Mahjong.CartesianMathV19.deltaSwap axis0stage8 Mahjong.CartesianData03V19.v157 28
+noncomputable def axis0stage10 : Nat := Mahjong.CartesianMathV19.deltaSwap axis0stage9 Mahjong.CartesianData03V19.v156 14
+noncomputable def axis0stage11 : Nat := Mahjong.CartesianMathV19.deltaSwap axis0stage10 Mahjong.CartesianData03V19.v155 7
+noncomputable def axis1start : Nat := ((((Mahjong.CartesianChannels11V19.channel100 512 Mahjong.CartesianData03V19.v100) ||| (Mahjong.CartesianChannels11V19.channel101 512 Mahjong.CartesianData03V19.v104)) ||| ((Mahjong.CartesianChannels11V19.channel102 512 Mahjong.CartesianData03V19.v108) ||| ((Mahjong.CartesianChannels11V19.channel103 512 Mahjong.CartesianData03V19.v112) ||| (Mahjong.CartesianChannels12V19.channel104 512 Mahjong.CartesianData03V19.v116)))) ||| (((Mahjong.CartesianChannels12V19.channel105 512 Mahjong.CartesianData03V19.v120) ||| (Mahjong.CartesianChannels12V19.channel106 512 Mahjong.CartesianData03V19.v124)) ||| ((Mahjong.CartesianChannels12V19.channel107 512 Mahjong.CartesianData03V19.v128) ||| ((Mahjong.CartesianChannels12V19.channel108 512 Mahjong.CartesianData03V19.v132) ||| (Mahjong.CartesianChannels12V19.channel109 512 Mahjong.CartesianData03V19.v136)))))
+noncomputable def axis1stage0 : Nat := Mahjong.CartesianMathV19.deltaSwap axis1start Mahjong.CartesianData03V19.v172 16128
+noncomputable def axis1stage1 : Nat := Mahjong.CartesianMathV19.deltaSwap axis1stage0 Mahjong.CartesianData03V19.v171 8064
+noncomputable def axis1stage2 : Nat := Mahjong.CartesianMathV19.deltaSwap axis1stage1 Mahjong.CartesianData03V19.v170 4032
+noncomputable def axis1stage3 : Nat := Mahjong.CartesianMathV19.deltaSwap axis1stage2 Mahjong.CartesianData03V19.v169 2016
+noncomputable def axis1stage4 : Nat := Mahjong.CartesianMathV19.deltaSwap axis1stage3 Mahjong.CartesianData03V19.v168 1008
+noncomputable def axis1stage5 : Nat := Mahjong.CartesianMathV19.deltaSwap axis1stage4 Mahjong.CartesianData03V19.v167 504
+noncomputable def axis2start : Nat := ((((Mahjong.CartesianChannels11V19.channel100 512 Mahjong.CartesianData03V19.v100) ||| (Mahjong.CartesianChannels11V19.channel101 512 Mahjong.CartesianData03V19.v104)) ||| ((Mahjong.CartesianChannels11V19.channel102 512 Mahjong.CartesianData03V19.v108) ||| ((Mahjong.CartesianChannels11V19.channel103 512 Mahjong.CartesianData03V19.v112) ||| (Mahjong.CartesianChannels12V19.channel104 512 Mahjong.CartesianData03V19.v116)))) ||| (((Mahjong.CartesianChannels12V19.channel105 512 Mahjong.CartesianData03V19.v120) ||| (Mahjong.CartesianChannels12V19.channel106 512 Mahjong.CartesianData03V19.v124)) ||| ((Mahjong.CartesianChannels12V19.channel107 512 Mahjong.CartesianData03V19.v128) ||| ((Mahjong.CartesianChannels12V19.channel108 512 Mahjong.CartesianData03V19.v132) ||| (Mahjong.CartesianChannels12V19.channel109 512 Mahjong.CartesianData03V19.v136)))))
+noncomputable def computedReach : Nat := ((axis0stage11 ||| (axis1stage5 ||| axis2start)) ||| ((Mahjong.CartesianData03V19.v140 ||| Mahjong.CartesianData03V19.v144) ||| (Mahjong.CartesianData03V19.v148 ||| Mahjong.CartesianData03V19.v152)))
+end B11
+
+namespace B12
+noncomputable def axis0start : Nat := (((Mahjong.CartesianChannels12V19.channel110 4096 Mahjong.CartesianData03V19.v178) ||| (Mahjong.CartesianChannels12V19.channel111 4096 Mahjong.CartesianData03V19.v182)) ||| ((Mahjong.CartesianChannels12V19.channel112 4096 Mahjong.CartesianData03V19.v186) ||| ((Mahjong.CartesianChannels12V19.channel113 4096 Mahjong.CartesianData03V19.v190) ||| (Mahjong.CartesianChannels12V19.channel114 4096 Mahjong.CartesianData03V19.v195))))
+noncomputable def axis0stage0 : Nat := Mahjong.CartesianMathV19.deltaSwap axis0start Mahjong.CartesianData03V19.v166 14336
+noncomputable def axis0stage1 : Nat := Mahjong.CartesianMathV19.deltaSwap axis0stage0 Mahjong.CartesianData03V19.v165 7168
+noncomputable def axis0stage2 : Nat := Mahjong.CartesianMathV19.deltaSwap axis0stage1 Mahjong.CartesianData03V19.v164 3584
+noncomputable def axis0stage3 : Nat := Mahjong.CartesianMathV19.deltaSwap axis0stage2 Mahjong.CartesianData03V19.v163 1792
+noncomputable def axis0stage4 : Nat := Mahjong.CartesianMathV19.deltaSwap axis0stage3 Mahjong.CartesianData03V19.v162 896
+noncomputable def axis0stage5 : Nat := Mahjong.CartesianMathV19.deltaSwap axis0stage4 Mahjong.CartesianData03V19.v161 448
+noncomputable def axis0stage6 : Nat := Mahjong.CartesianMathV19.deltaSwap axis0stage5 Mahjong.CartesianData03V19.v160 224
+noncomputable def axis0stage7 : Nat := Mahjong.CartesianMathV19.deltaSwap axis0stage6 Mahjong.CartesianData03V19.v159 112
+noncomputable def axis0stage8 : Nat := Mahjong.CartesianMathV19.deltaSwap axis0stage7 Mahjong.CartesianData03V19.v158 56
+noncomputable def axis0stage9 : Nat := Mahjong.CartesianMathV19.deltaSwap axis0stage8 Mahjong.CartesianData03V19.v157 28
+noncomputable def axis0stage10 : Nat := Mahjong.CartesianMathV19.deltaSwap axis0stage9 Mahjong.CartesianData03V19.v156 14
+noncomputable def axis0stage11 : Nat := Mahjong.CartesianMathV19.deltaSwap axis0stage10 Mahjong.CartesianData03V19.v155 7
+noncomputable def axis1start : Nat := (((Mahjong.CartesianChannels12V19.channel115 2048 Mahjong.CartesianData03V19.v199) ||| (Mahjong.CartesianChannels12V19.channel116 2048 Mahjong.CartesianData03V19.v203)) ||| ((Mahjong.CartesianChannels12V19.channel117 2048 Mahjong.CartesianData03V19.v207) ||| (Mahjong.CartesianChannels12V19.channel118 2048 Mahjong.CartesianData03V19.v211)))
+noncomputable def axis1stage0 : Nat := Mahjong.CartesianMathV19.deltaSwap axis1start Mahjong.CartesianData03V19.v258 15360
+noncomputable def axis1stage1 : Nat := Mahjong.CartesianMathV19.deltaSwap axis1stage0 Mahjong.CartesianData03V19.v257 7680
+noncomputable def axis1stage2 : Nat := Mahjong.CartesianMathV19.deltaSwap axis1stage1 Mahjong.CartesianData03V19.v256 3840
+noncomputable def axis1stage3 : Nat := Mahjong.CartesianMathV19.deltaSwap axis1stage2 Mahjong.CartesianData03V19.v255 1920
+noncomputable def axis1stage4 : Nat := Mahjong.CartesianMathV19.deltaSwap axis1stage3 Mahjong.CartesianData03V19.v254 960
+noncomputable def axis1stage5 : Nat := Mahjong.CartesianMathV19.deltaSwap axis1stage4 Mahjong.CartesianData03V19.v253 480
+noncomputable def axis1stage6 : Nat := Mahjong.CartesianMathV19.deltaSwap axis1stage5 Mahjong.CartesianData03V19.v252 240
+noncomputable def axis1stage7 : Nat := Mahjong.CartesianMathV19.deltaSwap axis1stage6 Mahjong.CartesianData03V19.v251 120
+noncomputable def axis2start : Nat := (((Mahjong.CartesianChannels12V19.channel119 128 Mahjong.CartesianData03V19.v216) ||| ((Mahjong.CartesianChannels12V19.channel120 128 Mahjong.CartesianData03V19.v220) ||| (Mahjong.CartesianChannels13V19.channel121 128 Mahjong.CartesianData03V19.v224))) ||| (((Mahjong.CartesianChannels13V19.channel122 128 Mahjong.CartesianData03V19.v228) ||| (Mahjong.CartesianChannels14V19.channel123 128 Mahjong.CartesianData03V19.v232)) ||| ((Mahjong.CartesianChannels14V19.channel124 128 Mahjong.CartesianData03V19.v236) ||| (Mahjong.CartesianChannels14V19.channel125 128 Mahjong.CartesianData03V19.v240))))
+noncomputable def computedReach : Nat := ((axis0stage11 ||| axis1stage7) ||| (axis2start ||| (Mahjong.CartesianData03V19.v244 ||| Mahjong.CartesianData03V19.v248)))
+end B12
+
+namespace B13
+noncomputable def axis0start : Nat := (((Mahjong.CartesianChannels14V19.channel126 2048 Mahjong.CartesianData03V19.v264) ||| (Mahjong.CartesianChannels14V19.channel127 2048 Mahjong.CartesianData03V19.v268)) ||| ((Mahjong.CartesianChannels14V19.channel128 2048 Mahjong.CartesianData03V19.v273) ||| (Mahjong.CartesianChannels14V19.channel129 2048 Mahjong.CartesianData03V19.v277)))
+noncomputable def axis0stage0 : Nat := Mahjong.CartesianMathV19.deltaSwap axis0start Mahjong.CartesianData03V19.v392 2048
+noncomputable def axis0stage1 : Nat := Mahjong.CartesianMathV19.deltaSwap axis0stage0 Mahjong.CartesianData03V19.v391 3072
+noncomputable def axis0stage2 : Nat := Mahjong.CartesianMathV19.deltaSwap axis0stage1 Mahjong.CartesianData03V19.v390 1536
+noncomputable def axis0stage3 : Nat := Mahjong.CartesianMathV19.deltaSwap axis0stage2 Mahjong.CartesianData03V19.v389 768
+noncomputable def axis0stage4 : Nat := Mahjong.CartesianMathV19.deltaSwap axis0stage3 Mahjong.CartesianData03V19.v388 384
+noncomputable def axis0stage5 : Nat := Mahjong.CartesianMathV19.deltaSwap axis0stage4 Mahjong.CartesianData03V19.v387 192
+noncomputable def axis0stage6 : Nat := Mahjong.CartesianMathV19.deltaSwap axis0stage5 Mahjong.CartesianData03V19.v386 96
+noncomputable def axis0stage7 : Nat := Mahjong.CartesianMathV19.deltaSwap axis0stage6 Mahjong.CartesianData03V19.v385 48
+noncomputable def axis0stage8 : Nat := Mahjong.CartesianMathV19.deltaSwap axis0stage7 Mahjong.CartesianData03V19.v384 24
+noncomputable def axis0stage9 : Nat := Mahjong.CartesianMathV19.deltaSwap axis0stage8 Mahjong.CartesianData03V19.v383 12
+noncomputable def axis0stage10 : Nat := Mahjong.CartesianMathV19.deltaSwap axis0stage9 Mahjong.CartesianData03V19.v382 6
+noncomputable def axis0stage11 : Nat := Mahjong.CartesianMathV19.deltaSwap axis0stage10 Mahjong.CartesianData03V19.v381 3
+noncomputable def axis1start : Nat := ((((Mahjong.CartesianChannels04V19.channel28 256 Mahjong.CartesianData03V19.v281) ||| (Mahjong.CartesianChannels04V19.channel29 256 Mahjong.CartesianData03V19.v285)) ||| ((Mahjong.CartesianChannels04V19.channel30 256 Mahjong.CartesianData03V19.v289) ||| ((Mahjong.CartesianChannels04V19.channel31 256 Mahjong.CartesianData03V19.v293) ||| (Mahjong.CartesianChannels04V19.channel32 256 Mahjong.CartesianData03V19.v297)))) ||| (((Mahjong.CartesianChannels04V19.channel33 256 Mahjong.CartesianData03V19.v301) ||| (Mahjong.CartesianChannels04V19.channel34 256 Mahjong.CartesianData03V19.v305)) ||| ((Mahjong.CartesianChannels04V19.channel35 256 Mahjong.CartesianData03V19.v309) ||| ((Mahjong.CartesianChannels04V19.channel36 256 Mahjong.CartesianData03V19.v313) ||| (Mahjong.CartesianChannels04V19.channel37 256 Mahjong.CartesianData03V19.v317)))))
+noncomputable def axis1stage0 : Nat := Mahjong.CartesianMathV19.deltaSwap axis1start Mahjong.CartesianData03V19.v392 2048
+noncomputable def axis1stage1 : Nat := Mahjong.CartesianMathV19.deltaSwap axis1stage0 Mahjong.CartesianData03V19.v391 3072
+noncomputable def axis1stage2 : Nat := Mahjong.CartesianMathV19.deltaSwap axis1stage1 Mahjong.CartesianData03V19.v400 3584
+noncomputable def axis1stage3 : Nat := Mahjong.CartesianMathV19.deltaSwap axis1stage2 Mahjong.CartesianData03V19.v399 3840
+noncomputable def axis1stage4 : Nat := Mahjong.CartesianMathV19.deltaSwap axis1stage3 Mahjong.CartesianData03V19.v398 3968
+noncomputable def axis1stage5 : Nat := Mahjong.CartesianMathV19.deltaSwap axis1stage4 Mahjong.CartesianData03V19.v397 1984
+noncomputable def axis1stage6 : Nat := Mahjong.CartesianMathV19.deltaSwap axis1stage5 Mahjong.CartesianData03V19.v396 992
+noncomputable def axis1stage7 : Nat := Mahjong.CartesianMathV19.deltaSwap axis1stage6 Mahjong.CartesianData03V19.v395 496
+noncomputable def axis1stage8 : Nat := Mahjong.CartesianMathV19.deltaSwap axis1stage7 Mahjong.CartesianData03V19.v394 248
+noncomputable def axis1stage9 : Nat := Mahjong.CartesianMathV19.deltaSwap axis1stage8 Mahjong.CartesianData03V19.v393 124
+noncomputable def axis2start : Nat := ((((Mahjong.CartesianChannels14V19.channel130 128 Mahjong.CartesianData03V19.v322) ||| ((Mahjong.CartesianChannels14V19.channel131 128 Mahjong.CartesianData03V19.v326) ||| (Mahjong.CartesianChannels14V19.channel132 128 Mahjong.CartesianData03V19.v330))) ||| ((Mahjong.CartesianChannels14V19.channel133 128 Mahjong.CartesianData03V19.v334) ||| ((Mahjong.CartesianChannels15V19.channel134 128 Mahjong.CartesianData03V19.v338) ||| (Mahjong.CartesianChannels15V19.channel135 128 Mahjong.CartesianData03V19.v342)))) ||| (((Mahjong.CartesianChannels15V19.channel136 128 Mahjong.CartesianData03V19.v346) ||| ((Mahjong.CartesianChannels15V19.channel137 128 Mahjong.CartesianData03V19.v350) ||| (Mahjong.CartesianChannels15V19.channel138 128 Mahjong.CartesianData03V19.v354))) ||| ((Mahjong.CartesianChannels15V19.channel139 128 Mahjong.CartesianData03V19.v358) ||| ((Mahjong.CartesianChannels15V19.channel140 128 Mahjong.CartesianData03V19.v362) ||| (Mahjong.CartesianChannels15V19.channel141 128 Mahjong.CartesianData03V19.v366)))))
+noncomputable def computedReach : Nat := ((axis0stage11 ||| (axis1stage9 ||| axis2start)) ||| (Mahjong.CartesianData03V19.v370 ||| (Mahjong.CartesianData03V19.v374 ||| Mahjong.CartesianData03V19.v378)))
+end B13
+
+namespace B14
+noncomputable def axis0start : Nat := (((Mahjong.CartesianChannels11V19.channel89 2048 Mahjong.CartesianData03V19.v406) ||| ((Mahjong.CartesianChannels11V19.channel90 2048 Mahjong.CartesianData03V19.v411) ||| (Mahjong.CartesianChannels15V19.channel142 2048 Mahjong.CartesianData03V19.v415))) ||| ((Mahjong.CartesianChannels15V19.channel143 2048 Mahjong.CartesianData03V19.v419) ||| ((Mahjong.CartesianChannels15V19.channel144 2048 Mahjong.CartesianData03V19.v423) ||| (Mahjong.CartesianChannels15V19.channel145 2048 Mahjong.CartesianData03V19.v427))))
+noncomputable def axis0stage0 : Nat := Mahjong.CartesianMathV19.deltaSwap axis0start Mahjong.CartesianData00V19.v56 16384
+noncomputable def axis0stage1 : Nat := Mahjong.CartesianMathV19.deltaSwap axis0stage0 Mahjong.CartesianData00V19.v55 24576
+noncomputable def axis0stage2 : Nat := Mahjong.CartesianMathV19.deltaSwap axis0stage1 Mahjong.CartesianData00V19.v54 28672
+noncomputable def axis0stage3 : Nat := Mahjong.CartesianMathV19.deltaSwap axis0stage2 Mahjong.CartesianData00V19.v65 30720
+noncomputable def axis0stage4 : Nat := Mahjong.CartesianMathV19.deltaSwap axis0stage3 Mahjong.CartesianData00V19.v64 31744
+noncomputable def axis0stage5 : Nat := Mahjong.CartesianMathV19.deltaSwap axis0stage4 Mahjong.CartesianData00V19.v148 15872
+noncomputable def axis0stage6 : Nat := Mahjong.CartesianMathV19.deltaSwap axis0stage5 Mahjong.CartesianData00V19.v147 7936
+noncomputable def axis0stage7 : Nat := Mahjong.CartesianMathV19.deltaSwap axis0stage6 Mahjong.CartesianData00V19.v146 3968
+noncomputable def axis0stage8 : Nat := Mahjong.CartesianMathV19.deltaSwap axis0stage7 Mahjong.CartesianData00V19.v145 1984
+noncomputable def axis0stage9 : Nat := Mahjong.CartesianMathV19.deltaSwap axis0stage8 Mahjong.CartesianData00V19.v144 992
+noncomputable def axis0stage10 : Nat := Mahjong.CartesianMathV19.deltaSwap axis0stage9 Mahjong.CartesianData00V19.v143 496
+noncomputable def axis0stage11 : Nat := Mahjong.CartesianMathV19.deltaSwap axis0stage10 Mahjong.CartesianData00V19.v142 248
+noncomputable def axis0stage12 : Nat := Mahjong.CartesianMathV19.deltaSwap axis0stage11 Mahjong.CartesianData00V19.v141 124
+noncomputable def axis0stage13 : Nat := Mahjong.CartesianMathV19.deltaSwap axis0stage12 Mahjong.CartesianData02V19.v186 62
+noncomputable def axis0stage14 : Nat := Mahjong.CartesianMathV19.deltaSwap axis0stage13 Mahjong.CartesianData02V19.v185 31
+noncomputable def axis1start : Nat := (((Mahjong.CartesianChannels15V19.channel146 2048 Mahjong.CartesianData03V19.v431) ||| (Mahjong.CartesianChannels15V19.channel147 2048 Mahjong.CartesianData03V19.v435)) ||| ((Mahjong.CartesianChannels15V19.channel148 2048 Mahjong.CartesianData03V19.v439) ||| (Mahjong.CartesianChannels15V19.channel149 2048 Mahjong.CartesianData03V19.v443)))
+noncomputable def axis1stage0 : Nat := Mahjong.CartesianMathV19.deltaSwap axis1start Mahjong.CartesianData00V19.v56 16384
+noncomputable def axis1stage1 : Nat := Mahjong.CartesianMathV19.deltaSwap axis1stage0 Mahjong.CartesianData00V19.v55 24576
+noncomputable def axis1stage2 : Nat := Mahjong.CartesianMathV19.deltaSwap axis1stage1 Mahjong.CartesianData00V19.v54 28672
+noncomputable def axis1stage3 : Nat := Mahjong.CartesianMathV19.deltaSwap axis1stage2 Mahjong.CartesianData00V19.v65 30720
+noncomputable def axis1stage4 : Nat := Mahjong.CartesianMathV19.deltaSwap axis1stage3 Mahjong.CartesianData00V19.v64 31744
+noncomputable def axis1stage5 : Nat := Mahjong.CartesianMathV19.deltaSwap axis1stage4 Mahjong.CartesianData00V19.v148 15872
+noncomputable def axis1stage6 : Nat := Mahjong.CartesianMathV19.deltaSwap axis1stage5 Mahjong.CartesianData00V19.v147 7936
+noncomputable def axis1stage7 : Nat := Mahjong.CartesianMathV19.deltaSwap axis1stage6 Mahjong.CartesianData00V19.v146 3968
+noncomputable def axis1stage8 : Nat := Mahjong.CartesianMathV19.deltaSwap axis1stage7 Mahjong.CartesianData00V19.v145 1984
+noncomputable def axis1stage9 : Nat := Mahjong.CartesianMathV19.deltaSwap axis1stage8 Mahjong.CartesianData00V19.v144 992
+noncomputable def axis2start : Nat := (((Mahjong.CartesianChannels15V19.channel150 1024 Mahjong.CartesianData03V19.v448) ||| ((Mahjong.CartesianChannels15V19.channel151 1024 Mahjong.CartesianData03V19.v452) ||| (Mahjong.CartesianChannels15V19.channel152 1024 Mahjong.CartesianData03V19.v456))) ||| (((Mahjong.CartesianChannels15V19.channel153 1024 Mahjong.CartesianData03V19.v460) ||| (Mahjong.CartesianChannels15V19.channel154 1024 Mahjong.CartesianData03V19.v464)) ||| ((Mahjong.CartesianChannels15V19.channel155 1024 Mahjong.CartesianData03V19.v468) ||| (Mahjong.CartesianChannels15V19.channel156 1024 Mahjong.CartesianData04V19.v0))))
+noncomputable def computedReach : Nat := ((axis0stage14 ||| axis1stage9) ||| (axis2start ||| (Mahjong.CartesianData04V19.v4 ||| Mahjong.CartesianData04V19.v8)))
+end B14
+
+namespace B15
+noncomputable def axis0start : Nat := (((Mahjong.CartesianChannels04V19.channel21 4096 Mahjong.CartesianData04V19.v16) ||| ((Mahjong.CartesianChannels04V19.channel22 4096 Mahjong.CartesianData04V19.v21) ||| (Mahjong.CartesianChannels04V19.channel23 4096 Mahjong.CartesianData04V19.v25))) ||| (((Mahjong.CartesianChannels04V19.channel24 4096 Mahjong.CartesianData04V19.v29) ||| (Mahjong.CartesianChannels04V19.channel25 4096 Mahjong.CartesianData04V19.v33)) ||| ((Mahjong.CartesianChannels04V19.channel26 4096 Mahjong.CartesianData04V19.v37) ||| (Mahjong.CartesianChannels04V19.channel27 4096 Mahjong.CartesianData04V19.v41))))
+noncomputable def axis0stage0 : Nat := Mahjong.CartesianMathV19.deltaSwap axis0start Mahjong.CartesianData01V19.v26 32768
+noncomputable def axis0stage1 : Nat := Mahjong.CartesianMathV19.deltaSwap axis0stage0 Mahjong.CartesianData01V19.v25 16384
+noncomputable def axis0stage2 : Nat := Mahjong.CartesianMathV19.deltaSwap axis0stage1 Mahjong.CartesianData01V19.v24 57344
+noncomputable def axis0stage3 : Nat := Mahjong.CartesianMathV19.deltaSwap axis0stage2 Mahjong.CartesianData01V19.v23 28672
+noncomputable def axis0stage4 : Nat := Mahjong.CartesianMathV19.deltaSwap axis0stage3 Mahjong.CartesianData01V19.v22 63488
+noncomputable def axis0stage5 : Nat := Mahjong.CartesianMathV19.deltaSwap axis0stage4 Mahjong.CartesianData01V19.v21 31744
+noncomputable def axis0stage6 : Nat := Mahjong.CartesianMathV19.deltaSwap axis0stage5 Mahjong.CartesianData01V19.v20 15872
+noncomputable def axis0stage7 : Nat := Mahjong.CartesianMathV19.deltaSwap axis0stage6 Mahjong.CartesianData01V19.v19 7936
+noncomputable def axis0stage8 : Nat := Mahjong.CartesianMathV19.deltaSwap axis0stage7 Mahjong.CartesianData01V19.v18 3968
+noncomputable def axis0stage9 : Nat := Mahjong.CartesianMathV19.deltaSwap axis0stage8 Mahjong.CartesianData01V19.v17 1984
+noncomputable def axis0stage10 : Nat := Mahjong.CartesianMathV19.deltaSwap axis0stage9 Mahjong.CartesianData01V19.v16 992
+noncomputable def axis0stage11 : Nat := Mahjong.CartesianMathV19.deltaSwap axis0stage10 Mahjong.CartesianData01V19.v15 496
+noncomputable def axis0stage12 : Nat := Mahjong.CartesianMathV19.deltaSwap axis0stage11 Mahjong.CartesianData01V19.v14 248
+noncomputable def axis0stage13 : Nat := Mahjong.CartesianMathV19.deltaSwap axis0stage12 Mahjong.CartesianData01V19.v13 124
+noncomputable def axis0stage14 : Nat := Mahjong.CartesianMathV19.deltaSwap axis0stage13 Mahjong.CartesianData01V19.v12 62
+noncomputable def axis0stage15 : Nat := Mahjong.CartesianMathV19.deltaSwap axis0stage14 Mahjong.CartesianData01V19.v11 31
+noncomputable def axis1start : Nat := ((((Mahjong.CartesianChannels10V19.channel70 4096 Mahjong.CartesianData04V19.v45) ||| (Mahjong.CartesianChannels10V19.channel71 4096 Mahjong.CartesianData04V19.v49)) ||| ((Mahjong.CartesianChannels10V19.channel72 4096 Mahjong.CartesianData04V19.v53) ||| (Mahjong.CartesianChannels10V19.channel73 4096 Mahjong.CartesianData04V19.v57))) ||| (((Mahjong.CartesianChannels10V19.channel74 4096 Mahjong.CartesianData04V19.v61) ||| (Mahjong.CartesianChannels10V19.channel75 4096 Mahjong.CartesianData04V19.v65)) ||| ((Mahjong.CartesianChannels10V19.channel76 4096 Mahjong.CartesianData04V19.v69) ||| ((Mahjong.CartesianChannels10V19.channel77 4096 Mahjong.CartesianData04V19.v73) ||| (Mahjong.CartesianChannels10V19.channel78 4096 Mahjong.CartesianData04V19.v77)))))
+noncomputable def axis1stage0 : Nat := Mahjong.CartesianMathV19.deltaSwap axis1start Mahjong.CartesianData01V19.v26 32768
+noncomputable def axis1stage1 : Nat := Mahjong.CartesianMathV19.deltaSwap axis1stage0 Mahjong.CartesianData01V19.v25 16384
+noncomputable def axis1stage2 : Nat := Mahjong.CartesianMathV19.deltaSwap axis1stage1 Mahjong.CartesianData01V19.v24 57344
+noncomputable def axis1stage3 : Nat := Mahjong.CartesianMathV19.deltaSwap axis1stage2 Mahjong.CartesianData01V19.v23 28672
+noncomputable def axis1stage4 : Nat := Mahjong.CartesianMathV19.deltaSwap axis1stage3 Mahjong.CartesianData01V19.v22 63488
+noncomputable def axis1stage5 : Nat := Mahjong.CartesianMathV19.deltaSwap axis1stage4 Mahjong.CartesianData01V19.v21 31744
+noncomputable def axis1stage6 : Nat := Mahjong.CartesianMathV19.deltaSwap axis1stage5 Mahjong.CartesianData01V19.v20 15872
+noncomputable def axis1stage7 : Nat := Mahjong.CartesianMathV19.deltaSwap axis1stage6 Mahjong.CartesianData01V19.v19 7936
+noncomputable def axis1stage8 : Nat := Mahjong.CartesianMathV19.deltaSwap axis1stage7 Mahjong.CartesianData01V19.v18 3968
+noncomputable def axis1stage9 : Nat := Mahjong.CartesianMathV19.deltaSwap axis1stage8 Mahjong.CartesianData01V19.v17 1984
+noncomputable def axis1stage10 : Nat := Mahjong.CartesianMathV19.deltaSwap axis1stage9 Mahjong.CartesianData01V19.v16 992
+noncomputable def axis2start : Nat := (((Mahjong.CartesianChannels15V19.channel157 1024 Mahjong.CartesianData04V19.v82) ||| (Mahjong.CartesianChannels16V19.channel158 1024 Mahjong.CartesianData04V19.v86)) ||| ((Mahjong.CartesianChannels16V19.channel159 1024 Mahjong.CartesianData04V19.v90) ||| ((Mahjong.CartesianChannels16V19.channel160 1024 Mahjong.CartesianData04V19.v94) ||| (Mahjong.CartesianChannels16V19.channel161 1024 Mahjong.CartesianData04V19.v98))))
+noncomputable def computedReach : Nat := ((axis0stage15 ||| axis1stage10) ||| (axis2start ||| (Mahjong.CartesianData04V19.v102 ||| Mahjong.CartesianData04V19.v106)))
+end B15
+noncomputable def checks : Bool := ((((((Mahjong.CartesianData02V19.v94 &&& B08.computedReach) == 0) && ((Mahjong.CartesianData02V19.v94 ||| B08.computedReach) == Mahjong.CartesianData02V19.v183)) && (((Mahjong.CartesianData03V19.v1 &&& B09.computedReach) == 0) && ((Mahjong.CartesianData03V19.v1 ||| B09.computedReach) == Mahjong.CartesianData03V19.v30))) && ((((Mahjong.CartesianData03V19.v45 &&& B10.computedReach) == 0) && ((Mahjong.CartesianData03V19.v45 ||| B10.computedReach) == Mahjong.CartesianData03V19.v58)) && (((Mahjong.CartesianData03V19.v76 &&& B11.computedReach) == 0) && ((Mahjong.CartesianData03V19.v76 ||| B11.computedReach) == Mahjong.CartesianData03V19.v153)))) && (((((Mahjong.CartesianData03V19.v176 &&& B12.computedReach) == 0) && ((Mahjong.CartesianData03V19.v176 ||| B12.computedReach) == Mahjong.CartesianData03V19.v249)) && (((Mahjong.CartesianData03V19.v262 &&& B13.computedReach) == 0) && ((Mahjong.CartesianData03V19.v262 ||| B13.computedReach) == Mahjong.CartesianData03V19.v379))) && ((((Mahjong.CartesianData03V19.v404 &&& B14.computedReach) == 0) && ((Mahjong.CartesianData03V19.v404 ||| B14.computedReach) == Mahjong.CartesianData04V19.v9)) && (((Mahjong.CartesianData04V19.v14 &&& B15.computedReach) == 0) && ((Mahjong.CartesianData04V19.v14 ||| B15.computedReach) == Mahjong.CartesianData04V19.v107)))))
+theorem accepted : checks = true := by exact Eq.refl true
+end Mahjong.CartesianBoolS08C01V19
+#print axioms Mahjong.CartesianBoolS08C01V19.accepted

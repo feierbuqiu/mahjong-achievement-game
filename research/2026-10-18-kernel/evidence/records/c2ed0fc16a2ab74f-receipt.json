@@ -1,0 +1,3101 @@
+{
+  "CPU_limit_percent": 20,
+  "LEAN_PATH": "<RESEARCH_ROOT>\\build\\lean_table_checker\\acceleration_v19\\cartesian_kernel_v19\\modules",
+  "argv": [
+    "<RESEARCH_ROOT>\\build\\toolchain\\lean-4.33.1-windows\\bin\\lean.exe",
+    "--trust=0",
+    "-j1",
+    "-M2048",
+    "--profile",
+    "-Dprofiler.threshold=0",
+    "-R",
+    "<RESEARCH_ROOT>\\build\\lean_table_checker\\acceleration_v19\\cartesian_kernel_v19\\source",
+    "-o",
+    "<RESEARCH_ROOT>\\build\\lean_table_checker\\acceleration_v19\\cartesian_kernel_v19\\o\\afc3b84de368498fa300878e823c7089\\Mahjong\\CartesianBoolAllS02V19.olean",
+    "<RESEARCH_ROOT>\\build\\lean_table_checker\\acceleration_v19\\cartesian_kernel_v19\\source\\Mahjong\\CartesianBoolAllS02V19.lean"
+  ],
+  "caps_readback_confirmed": true,
+  "checked_utc": "2026-10-18T07:36:23.669560+00:00",
+  "child_assigned_before_resume": true,
+  "child_cpu_seconds": 0.328125,
+  "child_cwd": ".",
+  "child_exit_confirmed": true,
+  "child_wall_seconds": 0.34399999998277053,
+  "compiled_module": {
+    "bytes": 9112,
+    "path": "build/lean_table_checker/acceleration_v19/cartesian_kernel_v19/o/afc3b84de368498fa300878e823c7089/Mahjong/CartesianBoolAllS02V19.olean",
+    "sha256": "f7d1979b686f464370e9278da52ae254180261f6cf3f13e09151918987d10cf0"
+  },
+  "controller_outside_job": true,
+  "dependency_fingerprints": [
+    {
+      "axioms": [
+        "propext"
+      ],
+      "name": "Mahjong.CartesianBoolAllS02V19.accepted"
+    }
+  ],
+  "empty_replay_cwd": false,
+  "exclusive_profiler_seconds": {
+    ".olean serialization": 0.013900000000000001,
+    "attribute application": 1.7999999999999997e-05,
+    "blocked (unaccounted)": 0.00495,
+    "elaboration": 0.007549999999999999,
+    "fix level params": 2.04e-05,
+    "import": 0.119,
+    "initialization": 0.046,
+    "instantiate metavars": 2.11e-05,
+    "interpretation": 0.0968,
+    "let-to-have transformation": 2.1000000000000002e-05,
+    "linting": 0.000675,
+    "module linting": 3.6e-06,
+    "parsing": 0.0006590000000000001,
+    "process pre-definitions": 0.000217,
+    "share common exprs": 8.669999999999999e-05,
+    "type checking": 0.000204
+  },
+  "executable": {
+    "bytes": 83456,
+    "path": "build/toolchain/lean-4.33.1-windows/bin/lean.exe",
+    "sha256": "af49bacfabaa1fea71332ca0feae0fa1a60912219d5902291adc79f905bffb8d"
+  },
+  "final_kernel_empty_theorem": false,
+  "frozen_replay_root": null,
+  "full_launch_allowed": false,
+  "full_scan_started": false,
+  "generated_c": null,
+  "input_pilot_modules": [
+    {
+      "bytes": 7840,
+      "path": "build/lean_table_checker/acceleration_v19/cartesian_kernel_v19/modules/Mahjong/CartesianAllEvidenceV19.ir",
+      "sha256": "e9f41cdd3024c8a061a6e9b406eb3db249be5d60a2b5dd73726b0131f2ab2247"
+    },
+    {
+      "bytes": 655896,
+      "path": "build/lean_table_checker/acceleration_v19/cartesian_kernel_v19/modules/Mahjong/CartesianAllEvidenceV19.olean",
+      "sha256": "16bb46b3b91233bc63e655c4185f72cb19d186bf2fb28bbf30573cf7bd3a2ed8"
+    },
+    {
+      "bytes": 8216,
+      "path": "build/lean_table_checker/acceleration_v19/cartesian_kernel_v19/modules/Mahjong/CartesianAllEvidenceV19.olean.private",
+      "sha256": "186fbca7c2edfddc9a10b816213dd7d1f9f61b18983f5ecb2d2f5fe3d7be6be8"
+    },
+    {
+      "bytes": 832,
+      "path": "build/lean_table_checker/acceleration_v19/cartesian_kernel_v19/modules/Mahjong/CartesianAllEvidenceV19.olean.server",
+      "sha256": "89d6ba56d2e985c2a21efa85743ee517869fd4052d5f30c9ff77a6e2d0f76165"
+    },
+    {
+      "bytes": 4480,
+      "path": "build/lean_table_checker/acceleration_v19/cartesian_kernel_v19/modules/Mahjong/CartesianAllPNV19.ir",
+      "sha256": "0692728e685e329305c40b87cc246c82dd91b7718fda4f7d92696f40cbd294f2"
+    },
+    {
+      "bytes": 48720,
+      "path": "build/lean_table_checker/acceleration_v19/cartesian_kernel_v19/modules/Mahjong/CartesianAllPNV19.olean",
+      "sha256": "77c22e9dd50586ae2dc5d7b800917d3793709fcb0fc11f067779902b4717f030"
+    },
+    {
+      "bytes": 4632,
+      "path": "build/lean_table_checker/acceleration_v19/cartesian_kernel_v19/modules/Mahjong/CartesianAllPNV19.olean.private",
+      "sha256": "4a6ea1391dd9accd78e457559364efb6d37e47cc5e797929788d044349500b75"
+    },
+    {
+      "bytes": 832,
+      "path": "build/lean_table_checker/acceleration_v19/cartesian_kernel_v19/modules/Mahjong/CartesianAllPNV19.olean.server",
+      "sha256": "fca02bc4044bac21481e01cf2d10e04fc57346700d9fd952873648c531aa23de"
+    },
+    {
+      "bytes": 4480,
+      "path": "build/lean_table_checker/acceleration_v19/cartesian_kernel_v19/modules/Mahjong/CartesianAllPrepV19.ir",
+      "sha256": "d242d8b81234b338d2d73bc50dff1bd7b96c8f448ad7c6acb6d0defc5a0eba68"
+    },
+    {
+      "bytes": 624136,
+      "path": "build/lean_table_checker/acceleration_v19/cartesian_kernel_v19/modules/Mahjong/CartesianAllPrepV19.olean",
+      "sha256": "4cc968ada306241509206fe60f6d1b338676b54ea5a7aea75085f2c22bafbdc3"
+    },
+    {
+      "bytes": 4632,
+      "path": "build/lean_table_checker/acceleration_v19/cartesian_kernel_v19/modules/Mahjong/CartesianAllPrepV19.olean.private",
+      "sha256": "6ca6d6a6d9aaeb836e8d4e5b5536cc22ec47fd33f1a83dcfb3014b124337095d"
+    },
+    {
+      "bytes": 832,
+      "path": "build/lean_table_checker/acceleration_v19/cartesian_kernel_v19/modules/Mahjong/CartesianAllPrepV19.olean.server",
+      "sha256": "e886ab3857db067a28c2d8695df6e389ed4290894868478bc44469078efe9c84"
+    },
+    {
+      "bytes": 4480,
+      "path": "build/lean_table_checker/acceleration_v19/cartesian_kernel_v19/modules/Mahjong/CartesianBoolAllS01V19.ir",
+      "sha256": "88c8b85101c28bdbdbd46335429833c775a06c5d2b9ceb6259d0b36a279414f4"
+    },
+    {
+      "bytes": 14824,
+      "path": "build/lean_table_checker/acceleration_v19/cartesian_kernel_v19/modules/Mahjong/CartesianBoolAllS01V19.olean",
+      "sha256": "e649a5f5027a4f2c033e00f16472745803c38aedb3757bcd6d30a2c7d2a236a9"
+    },
+    {
+      "bytes": 6192,
+      "path": "build/lean_table_checker/acceleration_v19/cartesian_kernel_v19/modules/Mahjong/CartesianBoolAllS01V19.olean.private",
+      "sha256": "1371d5d9fa85fa0ac5d19df7507d4e72ad2a14c353304d5b2792da677b2c5ce4"
+    },
+    {
+      "bytes": 600,
+      "path": "build/lean_table_checker/acceleration_v19/cartesian_kernel_v19/modules/Mahjong/CartesianBoolAllS01V19.olean.server",
+      "sha256": "0d3f5a0b399e39ed0cb1e512f13db5cb944de56b3e60f80b6ef3a87fab4da72f"
+    },
+    {
+      "bytes": 1576,
+      "path": "build/lean_table_checker/acceleration_v19/cartesian_kernel_v19/modules/Mahjong/CartesianBoolS01C00V19.ir",
+      "sha256": "60dd887efc9f1ea97df171761d1a0dca0b3f196cb4debcf2a5a8a459fe16ee7b"
+    },
+    {
+      "bytes": 11920,
+      "path": "build/lean_table_checker/acceleration_v19/cartesian_kernel_v19/modules/Mahjong/CartesianBoolS01C00V19.olean",
+      "sha256": "07aed519563424cee22365d6ad21e3add3f51cc36606cce0b1c2c0220206d7a0"
+    },
+    {
+      "bytes": 20376,
+      "path": "build/lean_table_checker/acceleration_v19/cartesian_kernel_v19/modules/Mahjong/CartesianBoolS01C00V19.olean.private",
+      "sha256": "e40ff23921266015a6ea4f7cff5f0b231b65d20ff7ef600a1bff3d2f4f2e9d94"
+    },
+    {
+      "bytes": 8032,
+      "path": "build/lean_table_checker/acceleration_v19/cartesian_kernel_v19/modules/Mahjong/CartesianBoolS01C00V19.olean.server",
+      "sha256": "3eed8881140b3d3fe343bb88205d43821c0c96bfd44bf429fe2330310bf38686"
+    },
+    {
+      "bytes": 2184,
+      "path": "build/lean_table_checker/acceleration_v19/cartesian_kernel_v19/modules/Mahjong/CartesianBoolS01C01V19.ir",
+      "sha256": "97b73555796ddb76b9129ec9aa72072c8b724149ec165ab06c1398f08f596f85"
+    },
+    {
+      "bytes": 12528,
+      "path": "build/lean_table_checker/acceleration_v19/cartesian_kernel_v19/modules/Mahjong/CartesianBoolS01C01V19.olean",
+      "sha256": "bc237dabc5c90db9aab5a25f6ac5c690a9618b8fb1e0476c9d298700e1147754"
+    },
+    {
+      "bytes": 22528,
+      "path": "build/lean_table_checker/acceleration_v19/cartesian_kernel_v19/modules/Mahjong/CartesianBoolS01C01V19.olean.private",
+      "sha256": "a806e35756a2588450b121bdbd664e70e999c3d1f0c50a763bc4722fa5d953ba"
+    },
+    {
+      "bytes": 8032,
+      "path": "build/lean_table_checker/acceleration_v19/cartesian_kernel_v19/modules/Mahjong/CartesianBoolS01C01V19.olean.server",
+      "sha256": "7b40218c595190655fa3bbe029b1c6004057a427c8b0dbc81d399e0c3590c320"
+    },
+    {
+      "bytes": 2032,
+      "path": "build/lean_table_checker/acceleration_v19/cartesian_kernel_v19/modules/Mahjong/CartesianBoolS01C02V19.ir",
+      "sha256": "5c234ca5bf793db57cc553c429ac797faa655cc903abefb7e4004a5856ff3b03"
+    },
+    {
+      "bytes": 12376,
+      "path": "build/lean_table_checker/acceleration_v19/cartesian_kernel_v19/modules/Mahjong/CartesianBoolS01C02V19.olean",
+      "sha256": "fb7aa2fcb4bed4ed854d22990997360cc3225348538ed16e34cc5596863507e7"
+    },
+    {
+      "bytes": 22464,
+      "path": "build/lean_table_checker/acceleration_v19/cartesian_kernel_v19/modules/Mahjong/CartesianBoolS01C02V19.olean.private",
+      "sha256": "6fa52521df1f0fdc7b2909a06457842f16b220439af6f0e65b9fc78fad3b7c5e"
+    },
+    {
+      "bytes": 8032,
+      "path": "build/lean_table_checker/acceleration_v19/cartesian_kernel_v19/modules/Mahjong/CartesianBoolS01C02V19.olean.server",
+      "sha256": "607413af5c26ff9434fe7555ed1a58f3aeb66333fb41909ce1eca64f100db719"
+    },
+    {
+      "bytes": 1576,
+      "path": "build/lean_table_checker/acceleration_v19/cartesian_kernel_v19/modules/Mahjong/CartesianBoolS01C03V19.ir",
+      "sha256": "ec620b7e2493e93a0181d97c8ea827c7333e97a48dc22e0e5a05e81490c15a07"
+    },
+    {
+      "bytes": 10720,
+      "path": "build/lean_table_checker/acceleration_v19/cartesian_kernel_v19/modules/Mahjong/CartesianBoolS01C03V19.olean",
+      "sha256": "db35ceb2c3e6f91569ad1fbac34664ce1b9e8c9274f8a27576201e93f170bbb2"
+    },
+    {
+      "bytes": 17928,
+      "path": "build/lean_table_checker/acceleration_v19/cartesian_kernel_v19/modules/Mahjong/CartesianBoolS01C03V19.olean.private",
+      "sha256": "c95898451e3efdccc3e91e9db97db4f17f4ffa5d785360dbbf3672ed9a7aefe4"
+    },
+    {
+      "bytes": 6872,
+      "path": "build/lean_table_checker/acceleration_v19/cartesian_kernel_v19/modules/Mahjong/CartesianBoolS01C03V19.olean.server",
+      "sha256": "7114d0abbe346d6842a175714bde645c8e5557b0126ec6e8937b6de5cc24a17c"
+    },
+    {
+      "bytes": 2032,
+      "path": "build/lean_table_checker/acceleration_v19/cartesian_kernel_v19/modules/Mahjong/CartesianBoolS01C04V19.ir",
+      "sha256": "89e67acef11a2c7dda5c8023edb739ad794b0369c93ecc43aca6a2f781d53af3"
+    },
+    {
+      "bytes": 11656,
+      "path": "build/lean_table_checker/acceleration_v19/cartesian_kernel_v19/modules/Mahjong/CartesianBoolS01C04V19.olean",
+      "sha256": "18c5e0f4664bb962b8e2728c1362a62f591c0d4f7398b86919ae74972ea23a5c"
+    },
+    {
+      "bytes": 21240,
+      "path": "build/lean_table_checker/acceleration_v19/cartesian_kernel_v19/modules/Mahjong/CartesianBoolS01C04V19.olean.private",
+      "sha256": "442356206e92e6109eaad7d821e6c104a5f55855cd6367ed275a7a058726b0db"
+    },
+    {
+      "bytes": 7336,
+      "path": "build/lean_table_checker/acceleration_v19/cartesian_kernel_v19/modules/Mahjong/CartesianBoolS01C04V19.olean.server",
+      "sha256": "ecba4a03bd15ef8d10c782c724abcf6ee7dfd8fefe4081c94d9739f31e71d1e6"
+    },
+    {
+      "bytes": 2032,
+      "path": "build/lean_table_checker/acceleration_v19/cartesian_kernel_v19/modules/Mahjong/CartesianBoolS01C05V19.ir",
+      "sha256": "f1c9f56443cd71177047ffdb7d3f381be07584d7a644a53c9f880657e4fa2dfa"
+    },
+    {
+      "bytes": 12376,
+      "path": "build/lean_table_checker/acceleration_v19/cartesian_kernel_v19/modules/Mahjong/CartesianBoolS01C05V19.olean",
+      "sha256": "d23d097da64f45943586c04569179702cb58b3b2de883812f6f2c78d9c8eaccf"
+    },
+    {
+      "bytes": 19312,
+      "path": "build/lean_table_checker/acceleration_v19/cartesian_kernel_v19/modules/Mahjong/CartesianBoolS01C05V19.olean.private",
+      "sha256": "8d41145e16a96fc95d7bcab529d2aea74a1b1e6616356a42679788fa10cf7a4d"
+    },
+    {
+      "bytes": 8032,
+      "path": "build/lean_table_checker/acceleration_v19/cartesian_kernel_v19/modules/Mahjong/CartesianBoolS01C05V19.olean.server",
+      "sha256": "3e9cdab9b4c48d9cd09c3119bb21a549cf10f8b9ff3112ad8dfd6f755f7eb240"
+    },
+    {
+      "bytes": 1880,
+      "path": "build/lean_table_checker/acceleration_v19/cartesian_kernel_v19/modules/Mahjong/CartesianBoolS01C06V19.ir",
+      "sha256": "e941e0b90112fdaa5f8923c958f51f3b37dc8f76d31d46fa8dd07384396349b5"
+    },
+    {
+      "bytes": 12464,
+      "path": "build/lean_table_checker/acceleration_v19/cartesian_kernel_v19/modules/Mahjong/CartesianBoolS01C06V19.olean",
+      "sha256": "4f55a50e40e499fb16e58319c2b79d2d74966aaac6b0a2fbfa5aca4cf37d4b71"
+    },
+    {
+      "bytes": 20200,
+      "path": "build/lean_table_checker/acceleration_v19/cartesian_kernel_v19/modules/Mahjong/CartesianBoolS01C06V19.olean.private",
+      "sha256": "f166c95616586b70c68fbe2e27c68c5e37ce89cad46cd7f494c6a19efed59467"
+    },
+    {
+      "bytes": 8264,
+      "path": "build/lean_table_checker/acceleration_v19/cartesian_kernel_v19/modules/Mahjong/CartesianBoolS01C06V19.olean.server",
+      "sha256": "83d482243b7b2cb8ab5266c79c64fcb9c1bf1dc30b741bd30d173ee17923254f"
+    },
+    {
+      "bytes": 2032,
+      "path": "build/lean_table_checker/acceleration_v19/cartesian_kernel_v19/modules/Mahjong/CartesianBoolS01C07V19.ir",
+      "sha256": "6ef7ac50ecf614167f989ec26168364c29e9e091289c6e726a40c47be4cff1d1"
+    },
+    {
+      "bytes": 11896,
+      "path": "build/lean_table_checker/acceleration_v19/cartesian_kernel_v19/modules/Mahjong/CartesianBoolS01C07V19.olean",
+      "sha256": "45703905484f464955b49691c0ba18550946690525c870bd75aba0d937f10ab8"
+    },
+    {
+      "bytes": 18256,
+      "path": "build/lean_table_checker/acceleration_v19/cartesian_kernel_v19/modules/Mahjong/CartesianBoolS01C07V19.olean.private",
+      "sha256": "8fbaa10a8757f474fb44284e3880a6006ee083356f48b1bf11d9199b6f108270"
+    },
+    {
+      "bytes": 7568,
+      "path": "build/lean_table_checker/acceleration_v19/cartesian_kernel_v19/modules/Mahjong/CartesianBoolS01C07V19.olean.server",
+      "sha256": "7d75092253582346174b34b0c9549d056c11569d43d3f363403d2b3f7250f91c"
+    },
+    {
+      "bytes": 1880,
+      "path": "build/lean_table_checker/acceleration_v19/cartesian_kernel_v19/modules/Mahjong/CartesianBoolS01C08V19.ir",
+      "sha256": "4c2b65f1669f8a9f9db936fd8adf02c69fd6ef73cd01331b86adbc20781483b8"
+    },
+    {
+      "bytes": 11744,
+      "path": "build/lean_table_checker/acceleration_v19/cartesian_kernel_v19/modules/Mahjong/CartesianBoolS01C08V19.olean",
+      "sha256": "99877fcba526a20f3829e2b3bf328ec317ee91d6c7a6ee73a2deeeb33bdde0eb"
+    },
+    {
+      "bytes": 21720,
+      "path": "build/lean_table_checker/acceleration_v19/cartesian_kernel_v19/modules/Mahjong/CartesianBoolS01C08V19.olean.private",
+      "sha256": "cf4e390ac93713fa4ac0d1d34f128e4bf147ff4469926857104dfd00368552b0"
+    },
+    {
+      "bytes": 7568,
+      "path": "build/lean_table_checker/acceleration_v19/cartesian_kernel_v19/modules/Mahjong/CartesianBoolS01C08V19.olean.server",
+      "sha256": "e6e10d0bcb514e514aacd2ff9c7e704e5d9e23a1748b9d40150ab8452396d0b7"
+    },
+    {
+      "bytes": 1728,
+      "path": "build/lean_table_checker/acceleration_v19/cartesian_kernel_v19/modules/Mahjong/CartesianBoolS01C09V19.ir",
+      "sha256": "43b8b7d5816b768c79872a9ba93d76c67b38d6ac556eee2f6ce1fff490f521d8"
+    },
+    {
+      "bytes": 9192,
+      "path": "build/lean_table_checker/acceleration_v19/cartesian_kernel_v19/modules/Mahjong/CartesianBoolS01C09V19.olean",
+      "sha256": "544304c5048d3880fd469ed8405b9259dec973f11780aa8de437ec374d30fe28"
+    },
+    {
+      "bytes": 13256,
+      "path": "build/lean_table_checker/acceleration_v19/cartesian_kernel_v19/modules/Mahjong/CartesianBoolS01C09V19.olean.private",
+      "sha256": "29d83bdfbd443ba2e7eb9dab40dc17b08bccb5b5d8e526aa6f691677ef22b25f"
+    },
+    {
+      "bytes": 5248,
+      "path": "build/lean_table_checker/acceleration_v19/cartesian_kernel_v19/modules/Mahjong/CartesianBoolS01C09V19.olean.server",
+      "sha256": "ebabedb31d1e269d56d6fb9fc26b62a7ca8c0afbb6c706c0a12963b5b9e85ed2"
+    },
+    {
+      "bytes": 1576,
+      "path": "build/lean_table_checker/acceleration_v19/cartesian_kernel_v19/modules/Mahjong/CartesianBoolS01C10V19.ir",
+      "sha256": "3a60a4ecc81981e99c9551ce1372f5f4a6f1698113687236f0ee53ffc4983704"
+    },
+    {
+      "bytes": 10480,
+      "path": "build/lean_table_checker/acceleration_v19/cartesian_kernel_v19/modules/Mahjong/CartesianBoolS01C10V19.olean",
+      "sha256": "b2aff42236c21441f4cef9a3db92bf40cedae00b2c88786fe338729f39358b21"
+    },
+    {
+      "bytes": 13984,
+      "path": "build/lean_table_checker/acceleration_v19/cartesian_kernel_v19/modules/Mahjong/CartesianBoolS01C10V19.olean.private",
+      "sha256": "e1d1d4b1466aa3d789674708c2a63612c3cf573a2f35ce66683b5e1834acd673"
+    },
+    {
+      "bytes": 6640,
+      "path": "build/lean_table_checker/acceleration_v19/cartesian_kernel_v19/modules/Mahjong/CartesianBoolS01C10V19.olean.server",
+      "sha256": "0a4f68496626b16b9e21cfe19300af1523489e8c04142431462ee605c038e77a"
+    },
+    {
+      "bytes": 1880,
+      "path": "build/lean_table_checker/acceleration_v19/cartesian_kernel_v19/modules/Mahjong/CartesianBoolS01C11V19.ir",
+      "sha256": "cf0766732d0b3ea7f40072921b64e5687485ccdc9b45266d8d08b44a67decc43"
+    },
+    {
+      "bytes": 10064,
+      "path": "build/lean_table_checker/acceleration_v19/cartesian_kernel_v19/modules/Mahjong/CartesianBoolS01C11V19.olean",
+      "sha256": "399a9dae3394dc9a4640f225c3aef2d85881108edb78de915c22591c4e62bc64"
+    },
+    {
+      "bytes": 19640,
+      "path": "build/lean_table_checker/acceleration_v19/cartesian_kernel_v19/modules/Mahjong/CartesianBoolS01C11V19.olean.private",
+      "sha256": "68a2383e56f27134252fd38bf72eaf362efd54047bccec2b59cd9f99ac27e913"
+    },
+    {
+      "bytes": 5944,
+      "path": "build/lean_table_checker/acceleration_v19/cartesian_kernel_v19/modules/Mahjong/CartesianBoolS01C11V19.olean.server",
+      "sha256": "8e7acab788186ae3c40bc5a86e9a5f0be7bfd2621132dac260328b2eeb7ec9ec"
+    },
+    {
+      "bytes": 1880,
+      "path": "build/lean_table_checker/acceleration_v19/cartesian_kernel_v19/modules/Mahjong/CartesianBoolS01C12V19.ir",
+      "sha256": "900ebc2d83701d2a5e2586004dc01ab42d06555fe897bd4d8aafcb8ebf33c080"
+    },
+    {
+      "bytes": 10544,
+      "path": "build/lean_table_checker/acceleration_v19/cartesian_kernel_v19/modules/Mahjong/CartesianBoolS01C12V19.olean",
+      "sha256": "e7edc716dada2fa0deec188ae86c4751710badd411bb967a55966017177596db"
+    },
+    {
+      "bytes": 20664,
+      "path": "build/lean_table_checker/acceleration_v19/cartesian_kernel_v19/modules/Mahjong/CartesianBoolS01C12V19.olean.private",
+      "sha256": "8f27ecb5d3ebfa185daecaa3bbc629e77b58992bdc813ba792f0444c54ecc852"
+    },
+    {
+      "bytes": 6408,
+      "path": "build/lean_table_checker/acceleration_v19/cartesian_kernel_v19/modules/Mahjong/CartesianBoolS01C12V19.olean.server",
+      "sha256": "ea1e04e249f302176c3318353ff20aa69216177e89bf1f356e43f168ab32aa0a"
+    },
+    {
+      "bytes": 1880,
+      "path": "build/lean_table_checker/acceleration_v19/cartesian_kernel_v19/modules/Mahjong/CartesianBoolS01C13V19.ir",
+      "sha256": "bbcaa3ddb1e85aad74f4ffc496219c38a3a61b669157a6612c2aefa16154eaa7"
+    },
+    {
+      "bytes": 11024,
+      "path": "build/lean_table_checker/acceleration_v19/cartesian_kernel_v19/modules/Mahjong/CartesianBoolS01C13V19.olean",
+      "sha256": "66221484383906019ac6e0fdea41bdb92368a8315223e6aae7a7861c221e67b3"
+    },
+    {
+      "bytes": 24600,
+      "path": "build/lean_table_checker/acceleration_v19/cartesian_kernel_v19/modules/Mahjong/CartesianBoolS01C13V19.olean.private",
+      "sha256": "4d685a2a744b02372e4b73e98cbf2aa5bae59456b98782ef73d3d572148724bc"
+    },
+    {
+      "bytes": 6872,
+      "path": "build/lean_table_checker/acceleration_v19/cartesian_kernel_v19/modules/Mahjong/CartesianBoolS01C13V19.olean.server",
+      "sha256": "5b893aba5afd817ae575a2fea51395866c278025d3bca289077285d4d569c791"
+    },
+    {
+      "bytes": 2184,
+      "path": "build/lean_table_checker/acceleration_v19/cartesian_kernel_v19/modules/Mahjong/CartesianBoolS01C14V19.ir",
+      "sha256": "49241afa83b56e62ea7ef3930292ec3011874a618ad3c3264024c28ea1842491"
+    },
+    {
+      "bytes": 12048,
+      "path": "build/lean_table_checker/acceleration_v19/cartesian_kernel_v19/modules/Mahjong/CartesianBoolS01C14V19.olean",
+      "sha256": "cdf0b944bc9731247bc853da267ab6a5a12c6b4b8d1c299eccb16b7e999885e1"
+    },
+    {
+      "bytes": 20880,
+      "path": "build/lean_table_checker/acceleration_v19/cartesian_kernel_v19/modules/Mahjong/CartesianBoolS01C14V19.olean.private",
+      "sha256": "c096f0b3026221d65747fe17351a807b12b5998c2ee30b23dc53d8cf7859b8f5"
+    },
+    {
+      "bytes": 7568,
+      "path": "build/lean_table_checker/acceleration_v19/cartesian_kernel_v19/modules/Mahjong/CartesianBoolS01C14V19.olean.server",
+      "sha256": "52eda2702a89df20a77c96e005e577ee50650cb37f46abc89d89cbf25682949c"
+    },
+    {
+      "bytes": 2184,
+      "path": "build/lean_table_checker/acceleration_v19/cartesian_kernel_v19/modules/Mahjong/CartesianBoolS01C15V19.ir",
+      "sha256": "53b564d83a5706d3080c3bcfd08100de53b6db7b344ca9dbd4ec89e3d1c1d741"
+    },
+    {
+      "bytes": 12528,
+      "path": "build/lean_table_checker/acceleration_v19/cartesian_kernel_v19/modules/Mahjong/CartesianBoolS01C15V19.olean",
+      "sha256": "7003698978c6013458d68daecd2fff078c404ea5852337bc9482ffd0e00e44bb"
+    },
+    {
+      "bytes": 22816,
+      "path": "build/lean_table_checker/acceleration_v19/cartesian_kernel_v19/modules/Mahjong/CartesianBoolS01C15V19.olean.private",
+      "sha256": "a817a9d606b96547aaad646ca4fdd03d90b33dfc6c5f39dad69b133821e42308"
+    },
+    {
+      "bytes": 8032,
+      "path": "build/lean_table_checker/acceleration_v19/cartesian_kernel_v19/modules/Mahjong/CartesianBoolS01C15V19.olean.server",
+      "sha256": "407f7532978fedc99397285f5944f7c9d3881ec42567340986c7952e6fb5e86a"
+    },
+    {
+      "bytes": 2032,
+      "path": "build/lean_table_checker/acceleration_v19/cartesian_kernel_v19/modules/Mahjong/CartesianBoolS01C16V19.ir",
+      "sha256": "adb5b0aba30b0e6ab11d508fb9e50f51eace274b389e15f7a9f474b9e152e1cf"
+    },
+    {
+      "bytes": 12856,
+      "path": "build/lean_table_checker/acceleration_v19/cartesian_kernel_v19/modules/Mahjong/CartesianBoolS01C16V19.olean",
+      "sha256": "863c3cdcf57a80a0a903ad45470e5f6c3cc9724d4a7bb04c132eae9284b73522"
+    },
+    {
+      "bytes": 21992,
+      "path": "build/lean_table_checker/acceleration_v19/cartesian_kernel_v19/modules/Mahjong/CartesianBoolS01C16V19.olean.private",
+      "sha256": "80d1fda15be71037c7eca87a3cd3265ccf1dca86afe1e1ef7bbc2e7817c86dda"
+    },
+    {
+      "bytes": 8496,
+      "path": "build/lean_table_checker/acceleration_v19/cartesian_kernel_v19/modules/Mahjong/CartesianBoolS01C16V19.olean.server",
+      "sha256": "7984d614b6cdfbc6c59f7fd8e9221f170915b0f9fb859a5d083e9d553302a7fe"
+    },
+    {
+      "bytes": 2336,
+      "path": "build/lean_table_checker/acceleration_v19/cartesian_kernel_v19/modules/Mahjong/CartesianBoolS01C17V19.ir",
+      "sha256": "2f18902659babfdeefc9fa5aecc608df612efbfed2f63a2cb70e22db4bb4942f"
+    },
+    {
+      "bytes": 11000,
+      "path": "build/lean_table_checker/acceleration_v19/cartesian_kernel_v19/modules/Mahjong/CartesianBoolS01C17V19.olean",
+      "sha256": "5d9c86bc3a6e630872a025f94d4b84668da87460448c78d17d5dc32e12bc0eee"
+    },
+    {
+      "bytes": 16032,
+      "path": "build/lean_table_checker/acceleration_v19/cartesian_kernel_v19/modules/Mahjong/CartesianBoolS01C17V19.olean.private",
+      "sha256": "6752b621cf2ace04c68c8992e7200f235ee951ef09b29753440f02aa65316816"
+    },
+    {
+      "bytes": 6408,
+      "path": "build/lean_table_checker/acceleration_v19/cartesian_kernel_v19/modules/Mahjong/CartesianBoolS01C17V19.olean.server",
+      "sha256": "b1b54ace4b32b23bf3f8e12f2b7e80a32ccb1f690e09d512ee4546972e799b28"
+    },
+    {
+      "bytes": 1880,
+      "path": "build/lean_table_checker/acceleration_v19/cartesian_kernel_v19/modules/Mahjong/CartesianBoolS01C18V19.ir",
+      "sha256": "279b53e006518b21cdd15bff2ed88b384f8d3bde9ad1228d8846084490686b36"
+    },
+    {
+      "bytes": 10784,
+      "path": "build/lean_table_checker/acceleration_v19/cartesian_kernel_v19/modules/Mahjong/CartesianBoolS01C18V19.olean",
+      "sha256": "ea182cad24d3415a3951109b335230e6184c32df152ad9aad64635ea70a8d9fb"
+    },
+    {
+      "bytes": 17232,
+      "path": "build/lean_table_checker/acceleration_v19/cartesian_kernel_v19/modules/Mahjong/CartesianBoolS01C18V19.olean.private",
+      "sha256": "84e265e0ade366c8ed1342561e686349ab6e48279ae9a9fc2a99dedb56e3dc19"
+    },
+    {
+      "bytes": 6640,
+      "path": "build/lean_table_checker/acceleration_v19/cartesian_kernel_v19/modules/Mahjong/CartesianBoolS01C18V19.olean.server",
+      "sha256": "0665aa98e02717790a542809be469903edb9829ebcfbeb151c978e6761c79dd4"
+    },
+    {
+      "bytes": 2488,
+      "path": "build/lean_table_checker/acceleration_v19/cartesian_kernel_v19/modules/Mahjong/CartesianBoolS01C19V19.ir",
+      "sha256": "b66bb292402774e44fb05873645c6b30afcbbd178ab0ff0156509911e7811916"
+    },
+    {
+      "bytes": 13072,
+      "path": "build/lean_table_checker/acceleration_v19/cartesian_kernel_v19/modules/Mahjong/CartesianBoolS01C19V19.olean",
+      "sha256": "466e62e6206083a62737961809e421b50d0db8767c5cae9598a7fa19c2fb1f15"
+    },
+    {
+      "bytes": 26232,
+      "path": "build/lean_table_checker/acceleration_v19/cartesian_kernel_v19/modules/Mahjong/CartesianBoolS01C19V19.olean.private",
+      "sha256": "8927cf5a8c13f8d0a688844c76b56237ccae90d50a177cfe68c496c014072794"
+    },
+    {
+      "bytes": 8264,
+      "path": "build/lean_table_checker/acceleration_v19/cartesian_kernel_v19/modules/Mahjong/CartesianBoolS01C19V19.olean.server",
+      "sha256": "d84e179687455e5f655c91a69d5b4a6388426f4fb5cb95c57ce85bd614526176"
+    },
+    {
+      "bytes": 2184,
+      "path": "build/lean_table_checker/acceleration_v19/cartesian_kernel_v19/modules/Mahjong/CartesianBoolS01C20V19.ir",
+      "sha256": "430131f5d34a39d67d4937b51abe8a8cb2a49e1f674ffb85a4764d81c4c6a35c"
+    },
+    {
+      "bytes": 12048,
+      "path": "build/lean_table_checker/acceleration_v19/cartesian_kernel_v19/modules/Mahjong/CartesianBoolS01C20V19.olean",
+      "sha256": "799c74c82b70ff00bef1e5946c66c4c6d6d6fbb17806367dc2daac272b62537e"
+    },
+    {
+      "bytes": 18520,
+      "path": "build/lean_table_checker/acceleration_v19/cartesian_kernel_v19/modules/Mahjong/CartesianBoolS01C20V19.olean.private",
+      "sha256": "636fb1759ef4461dc80bf2b17766e17c16db845014c0605d45bfeb1687cf21b6"
+    },
+    {
+      "bytes": 7568,
+      "path": "build/lean_table_checker/acceleration_v19/cartesian_kernel_v19/modules/Mahjong/CartesianBoolS01C20V19.olean.server",
+      "sha256": "640991764aabce71ba3a2266feeb3edf8d6956aed95bbd6aecc51cf014374fa9"
+    },
+    {
+      "bytes": 1880,
+      "path": "build/lean_table_checker/acceleration_v19/cartesian_kernel_v19/modules/Mahjong/CartesianBoolS01C21V19.ir",
+      "sha256": "a790f5461bdb353496262e1f9e6db601140dcbb464213c4d7c93ba3324049732"
+    },
+    {
+      "bytes": 11024,
+      "path": "build/lean_table_checker/acceleration_v19/cartesian_kernel_v19/modules/Mahjong/CartesianBoolS01C21V19.olean",
+      "sha256": "0c84742534a89874b877edce8b7356ae042bf51f513ec4136f20a232003e424f"
+    },
+    {
+      "bytes": 18024,
+      "path": "build/lean_table_checker/acceleration_v19/cartesian_kernel_v19/modules/Mahjong/CartesianBoolS01C21V19.olean.private",
+      "sha256": "ea80acc0f91a577b8c9a2180b945e3819e849b63a0c13a3721216ccd3dca6e2e"
+    },
+    {
+      "bytes": 6872,
+      "path": "build/lean_table_checker/acceleration_v19/cartesian_kernel_v19/modules/Mahjong/CartesianBoolS01C21V19.olean.server",
+      "sha256": "9c6e2632f17c7fc2868b6a07539cc8a15cd76480acb684cf1358d7f537f703ed"
+    },
+    {
+      "bytes": 2184,
+      "path": "build/lean_table_checker/acceleration_v19/cartesian_kernel_v19/modules/Mahjong/CartesianBoolS01C22V19.ir",
+      "sha256": "098cbc69b7900d47de24998eee218a9a73a218f5b09ac6fff394a54bf7519d8c"
+    },
+    {
+      "bytes": 12768,
+      "path": "build/lean_table_checker/acceleration_v19/cartesian_kernel_v19/modules/Mahjong/CartesianBoolS01C22V19.olean",
+      "sha256": "82f89581ac11b5a01019fbdfefabc2df3a8b2b9617d49752b30c27c42c0506b4"
+    },
+    {
+      "bytes": 17880,
+      "path": "build/lean_table_checker/acceleration_v19/cartesian_kernel_v19/modules/Mahjong/CartesianBoolS01C22V19.olean.private",
+      "sha256": "b621ac60703046bef561528eb120f03203cb4d25f03af349023009609650436b"
+    },
+    {
+      "bytes": 8264,
+      "path": "build/lean_table_checker/acceleration_v19/cartesian_kernel_v19/modules/Mahjong/CartesianBoolS01C22V19.olean.server",
+      "sha256": "c9af2aeec1c3acc46fcad22181f7649607d45201bf699aea2b5463eaffd99ac0"
+    },
+    {
+      "bytes": 2640,
+      "path": "build/lean_table_checker/acceleration_v19/cartesian_kernel_v19/modules/Mahjong/CartesianBoolS01C23V19.ir",
+      "sha256": "3adbcdd1f9ab07144bef75dcb7f5856d0df87e12e0da3c2d88e5e35cf4fa9e43"
+    },
+    {
+      "bytes": 12744,
+      "path": "build/lean_table_checker/acceleration_v19/cartesian_kernel_v19/modules/Mahjong/CartesianBoolS01C23V19.olean",
+      "sha256": "0d7b92d393a5c7b4f582199646fecf8ecb6d88016f01b2d84023e934255db7a6"
+    },
+    {
+      "bytes": 20440,
+      "path": "build/lean_table_checker/acceleration_v19/cartesian_kernel_v19/modules/Mahjong/CartesianBoolS01C23V19.olean.private",
+      "sha256": "4109e8794de392e76c0acf3400f5ec4831207943291f99573df1b243a48501d4"
+    },
+    {
+      "bytes": 7800,
+      "path": "build/lean_table_checker/acceleration_v19/cartesian_kernel_v19/modules/Mahjong/CartesianBoolS01C23V19.olean.server",
+      "sha256": "6125566090054972f8591f2d7cecbbbaf2973202cccfea865c3ad80daceba689"
+    },
+    {
+      "bytes": 2184,
+      "path": "build/lean_table_checker/acceleration_v19/cartesian_kernel_v19/modules/Mahjong/CartesianBoolS01C24V19.ir",
+      "sha256": "01d2c20051d6176230f6b176ff2472fd9d342ef6eda09e7281d321c792df5876"
+    },
+    {
+      "bytes": 12048,
+      "path": "build/lean_table_checker/acceleration_v19/cartesian_kernel_v19/modules/Mahjong/CartesianBoolS01C24V19.olean",
+      "sha256": "554fd569001e8937cfe3284f5586c550c43aeaf9f721e90570eb7f8f97322e1e"
+    },
+    {
+      "bytes": 22224,
+      "path": "build/lean_table_checker/acceleration_v19/cartesian_kernel_v19/modules/Mahjong/CartesianBoolS01C24V19.olean.private",
+      "sha256": "c44477ddc814dfd4873b100638226cd31a9d77b0c76477b1d1e4216e84caf22f"
+    },
+    {
+      "bytes": 7568,
+      "path": "build/lean_table_checker/acceleration_v19/cartesian_kernel_v19/modules/Mahjong/CartesianBoolS01C24V19.olean.server",
+      "sha256": "f7531e8572e57ac175ffb816d6cf7851af7dc4bd65712fdf6c875571572817c6"
+    },
+    {
+      "bytes": 2488,
+      "path": "build/lean_table_checker/acceleration_v19/cartesian_kernel_v19/modules/Mahjong/CartesianBoolS01C25V19.ir",
+      "sha256": "c19dac93cb4f52833864b418dec9a2ade609f814089da2341f685df4a14dd9b4"
+    },
+    {
+      "bytes": 12592,
+      "path": "build/lean_table_checker/acceleration_v19/cartesian_kernel_v19/modules/Mahjong/CartesianBoolS01C25V19.olean",
+      "sha256": "18d1fd081bef0ad0ef810a79346aee139bd02f68550924220e1c33704b85c32d"
+    },
+    {
+      "bytes": 18880,
+      "path": "build/lean_table_checker/acceleration_v19/cartesian_kernel_v19/modules/Mahjong/CartesianBoolS01C25V19.olean.private",
+      "sha256": "7b2c17cc11898f89af0c721dc095ed0cba967d5c2e09c7d75cd3e6e17ca3dcbd"
+    },
+    {
+      "bytes": 7800,
+      "path": "build/lean_table_checker/acceleration_v19/cartesian_kernel_v19/modules/Mahjong/CartesianBoolS01C25V19.olean.server",
+      "sha256": "0d1081f87d9342c574b3e94862e883f0a8e7867cd1aee1ceae215475f275d0da"
+    },
+    {
+      "bytes": 2184,
+      "path": "build/lean_table_checker/acceleration_v19/cartesian_kernel_v19/modules/Mahjong/CartesianBoolS01C26V19.ir",
+      "sha256": "09048b5a52f4a99a4ac54292e45c82746f65aa1d7b530944aea30860ed74f47d"
+    },
+    {
+      "bytes": 10848,
+      "path": "build/lean_table_checker/acceleration_v19/cartesian_kernel_v19/modules/Mahjong/CartesianBoolS01C26V19.olean",
+      "sha256": "4aa8264fa362e26f0c9c38aa4074024cf32e14d322bec4630806c03c92272d1d"
+    },
+    {
+      "bytes": 17920,
+      "path": "build/lean_table_checker/acceleration_v19/cartesian_kernel_v19/modules/Mahjong/CartesianBoolS01C26V19.olean.private",
+      "sha256": "8ea9c0ce09a70f9017071fb02508d540cd285b3d87ad9281149b9e9855c2b7bb"
+    },
+    {
+      "bytes": 6408,
+      "path": "build/lean_table_checker/acceleration_v19/cartesian_kernel_v19/modules/Mahjong/CartesianBoolS01C26V19.olean.server",
+      "sha256": "87f4d4b913998853740a83528aa610bbe86feadc365bb9a04796d9844ced1fb0"
+    },
+    {
+      "bytes": 3096,
+      "path": "build/lean_table_checker/acceleration_v19/cartesian_kernel_v19/modules/Mahjong/CartesianBoolS01C27V19.ir",
+      "sha256": "7e0b5e8ce0ce10cea974cc4843172ff3ec01f16ced87977d48da3e0d3d82f848"
+    },
+    {
+      "bytes": 13440,
+      "path": "build/lean_table_checker/acceleration_v19/cartesian_kernel_v19/modules/Mahjong/CartesianBoolS01C27V19.olean",
+      "sha256": "0e0003c9524adf398bb39aba60916b39c5914f1d91d96770bc0e73cf49190729"
+    },
+    {
+      "bytes": 25464,
+      "path": "build/lean_table_checker/acceleration_v19/cartesian_kernel_v19/modules/Mahjong/CartesianBoolS01C27V19.olean.private",
+      "sha256": "fb8458642641df6433419f65de00fbeb45cf383fd5598e2a988ac97bbbeaa8a8"
+    },
+    {
+      "bytes": 8032,
+      "path": "build/lean_table_checker/acceleration_v19/cartesian_kernel_v19/modules/Mahjong/CartesianBoolS01C27V19.olean.server",
+      "sha256": "566fbaa30673aed1c0688ae5244652771247d886486e46d60478d9b7d199aea7"
+    },
+    {
+      "bytes": 2184,
+      "path": "build/lean_table_checker/acceleration_v19/cartesian_kernel_v19/modules/Mahjong/CartesianBoolS02C00V19.ir",
+      "sha256": "3b003eb950a69ed7b7f01abbdc81618de8bbb6f4eaa1332ce20db50da5c2da5a"
+    },
+    {
+      "bytes": 18608,
+      "path": "build/lean_table_checker/acceleration_v19/cartesian_kernel_v19/modules/Mahjong/CartesianBoolS02C00V19.olean",
+      "sha256": "658bafb5e00b4c7e6e8173a9529c2847709d2e398f1a291ca265fdca21291c70"
+    },
+    {
+      "bytes": 38112,
+      "path": "build/lean_table_checker/acceleration_v19/cartesian_kernel_v19/modules/Mahjong/CartesianBoolS02C00V19.olean.private",
+      "sha256": "778cc92f696d9f719f9dc8ff8cc85f4cf4958d2509f6d9529f67916f6a210be3"
+    },
+    {
+      "bytes": 15224,
+      "path": "build/lean_table_checker/acceleration_v19/cartesian_kernel_v19/modules/Mahjong/CartesianBoolS02C00V19.olean.server",
+      "sha256": "2bc36b696b1505c501f6d6d020a746c19cf818b077eaad05f5c434bfc31ce19f"
+    },
+    {
+      "bytes": 2032,
+      "path": "build/lean_table_checker/acceleration_v19/cartesian_kernel_v19/modules/Mahjong/CartesianBoolS02C01V19.ir",
+      "sha256": "0b6b4e262cc690c6591caee95aa349b7fcaf9d741dc63a91c13b46806bcd5633"
+    },
+    {
+      "bytes": 17448,
+      "path": "build/lean_table_checker/acceleration_v19/cartesian_kernel_v19/modules/Mahjong/CartesianBoolS02C01V19.olean",
+      "sha256": "1c93b8092138f587f068798d03fb0f6689b98e11d05f132b3ee705dc081a4b3d"
+    },
+    {
+      "bytes": 32448,
+      "path": "build/lean_table_checker/acceleration_v19/cartesian_kernel_v19/modules/Mahjong/CartesianBoolS02C01V19.olean.private",
+      "sha256": "b7aff414cb3d828c2db0e52030c6233f9a216a1ae4daaff3c29e5ecb89619c40"
+    },
+    {
+      "bytes": 14064,
+      "path": "build/lean_table_checker/acceleration_v19/cartesian_kernel_v19/modules/Mahjong/CartesianBoolS02C01V19.olean.server",
+      "sha256": "49d6aa01b0a1b4375aa0393a3a8ce135fd0b53d41aad4aefe6e45c301c5a01ab"
+    },
+    {
+      "bytes": 2488,
+      "path": "build/lean_table_checker/acceleration_v19/cartesian_kernel_v19/modules/Mahjong/CartesianBoolS02C02V19.ir",
+      "sha256": "4e2bce93acf4ea73a35760a152924a3f3f356dba01f40a85da7caa62aa5773b1"
+    },
+    {
+      "bytes": 18336,
+      "path": "build/lean_table_checker/acceleration_v19/cartesian_kernel_v19/modules/Mahjong/CartesianBoolS02C02V19.olean",
+      "sha256": "d6f81d952579582deb550817660e5a7f9bc8b1f34a1a69ed54968b9b6aca4f67"
+    },
+    {
+      "bytes": 36112,
+      "path": "build/lean_table_checker/acceleration_v19/cartesian_kernel_v19/modules/Mahjong/CartesianBoolS02C02V19.olean.private",
+      "sha256": "3d1499205ec73788b8a63a8ede3ae5351a9aa0e53584498c5449b3bc01a3b6c1"
+    },
+    {
+      "bytes": 14528,
+      "path": "build/lean_table_checker/acceleration_v19/cartesian_kernel_v19/modules/Mahjong/CartesianBoolS02C02V19.olean.server",
+      "sha256": "eb834bce11f2ec50bcf81017300073625dfa64ac0122ed4eb246448e194bb08a"
+    },
+    {
+      "bytes": 2184,
+      "path": "build/lean_table_checker/acceleration_v19/cartesian_kernel_v19/modules/Mahjong/CartesianBoolS02C03V19.ir",
+      "sha256": "6894e334d4ac946a358bcbd38f70866ce2ffc64a73c5a710c41db7f66c9a7362"
+    },
+    {
+      "bytes": 18416,
+      "path": "build/lean_table_checker/acceleration_v19/cartesian_kernel_v19/modules/Mahjong/CartesianBoolS02C03V19.olean",
+      "sha256": "07752f0fac1611e9a7d2ea78c25e2debfcb6dd7948f1bb4652c16077b7ad2720"
+    },
+    {
+      "bytes": 33608,
+      "path": "build/lean_table_checker/acceleration_v19/cartesian_kernel_v19/modules/Mahjong/CartesianBoolS02C03V19.olean.private",
+      "sha256": "95f533fefcf12095f8922840376b00ca5fe0cb3577a72b55d62cbef8745594f1"
+    },
+    {
+      "bytes": 14992,
+      "path": "build/lean_table_checker/acceleration_v19/cartesian_kernel_v19/modules/Mahjong/CartesianBoolS02C03V19.olean.server",
+      "sha256": "1e80fd2a69f90ecf680ce7e449aed62b8ee7d13ee1fe582a03ce032be207063a"
+    },
+    {
+      "bytes": 2032,
+      "path": "build/lean_table_checker/acceleration_v19/cartesian_kernel_v19/modules/Mahjong/CartesianBoolS02C04V19.ir",
+      "sha256": "539c58af59a684e43219ff3259f92b40df3553ddcdf49a52ba5804fdab838285"
+    },
+    {
+      "bytes": 15624,
+      "path": "build/lean_table_checker/acceleration_v19/cartesian_kernel_v19/modules/Mahjong/CartesianBoolS02C04V19.olean",
+      "sha256": "6de9726c0d69be41561fdd2845c867d84eef6035cfa1953647f822c54370450a"
+    },
+    {
+      "bytes": 29608,
+      "path": "build/lean_table_checker/acceleration_v19/cartesian_kernel_v19/modules/Mahjong/CartesianBoolS02C04V19.olean.private",
+      "sha256": "f71debc1f6c4f6c549053cc824138b4ce8c09cea2090817d5e605a9cf3d6c25c"
+    },
+    {
+      "bytes": 11976,
+      "path": "build/lean_table_checker/acceleration_v19/cartesian_kernel_v19/modules/Mahjong/CartesianBoolS02C04V19.olean.server",
+      "sha256": "6479cb0773531d027cabef4c66bbbe20a9631d7a8ccc8f65d5d8a94b4e876e93"
+    },
+    {
+      "bytes": 1880,
+      "path": "build/lean_table_checker/acceleration_v19/cartesian_kernel_v19/modules/Mahjong/CartesianBoolS02C05V19.ir",
+      "sha256": "e8dd31162bea3e32dd67674c310c53deb3b89dd58a1307f9ef587047d99d6431"
+    },
+    {
+      "bytes": 15088,
+      "path": "build/lean_table_checker/acceleration_v19/cartesian_kernel_v19/modules/Mahjong/CartesianBoolS02C05V19.olean",
+      "sha256": "ab5212f9d2f96a9e64c932788977cd324314d56955ddee39c46c0e98c847c38d"
+    },
+    {
+      "bytes": 29448,
+      "path": "build/lean_table_checker/acceleration_v19/cartesian_kernel_v19/modules/Mahjong/CartesianBoolS02C05V19.olean.private",
+      "sha256": "08decb73a635e4a3f6e8c91fd3ee9e0de3060e5c812eaa2c070bb192ea1eece2"
+    },
+    {
+      "bytes": 11744,
+      "path": "build/lean_table_checker/acceleration_v19/cartesian_kernel_v19/modules/Mahjong/CartesianBoolS02C05V19.olean.server",
+      "sha256": "c13777fe954350a560734b7ba3007a8210e7f2b6bd4b8231742594169c750441"
+    },
+    {
+      "bytes": 2184,
+      "path": "build/lean_table_checker/acceleration_v19/cartesian_kernel_v19/modules/Mahjong/CartesianBoolS02C06V19.ir",
+      "sha256": "9085067ac20ac510232a6065f666a121254f2577cbae39e7e06a8651de2f3bbb"
+    },
+    {
+      "bytes": 16016,
+      "path": "build/lean_table_checker/acceleration_v19/cartesian_kernel_v19/modules/Mahjong/CartesianBoolS02C06V19.olean",
+      "sha256": "3612c55c0507d6c61f2f1074c487e74884195c5ed85518390e01cd41ba22d1a6"
+    },
+    {
+      "bytes": 40816,
+      "path": "build/lean_table_checker/acceleration_v19/cartesian_kernel_v19/modules/Mahjong/CartesianBoolS02C06V19.olean.private",
+      "sha256": "e746087d676fe6a487c057f5a73c298f94041e084e95a4f11c515325c92b7f8d"
+    },
+    {
+      "bytes": 12440,
+      "path": "build/lean_table_checker/acceleration_v19/cartesian_kernel_v19/modules/Mahjong/CartesianBoolS02C06V19.olean.server",
+      "sha256": "698fdf4701d36f31fa02ac93102bc765a197c971fa7f46dfa97f63d61a37a281"
+    },
+    {
+      "bytes": 2792,
+      "path": "build/lean_table_checker/acceleration_v19/cartesian_kernel_v19/modules/Mahjong/CartesianBoolS02C07V19.ir",
+      "sha256": "aa10b00ed1c8b7c52043b4c45166595b06b65950803a8e93d958dce79e47c38e"
+    },
+    {
+      "bytes": 18784,
+      "path": "build/lean_table_checker/acceleration_v19/cartesian_kernel_v19/modules/Mahjong/CartesianBoolS02C07V19.olean",
+      "sha256": "323497a333ab940e100001541f8b5c60751ac54935f0b1517a869bb2e3db903c"
+    },
+    {
+      "bytes": 37800,
+      "path": "build/lean_table_checker/acceleration_v19/cartesian_kernel_v19/modules/Mahjong/CartesianBoolS02C07V19.olean.private",
+      "sha256": "f41ddd2364f8aeef14291f7ddfd7a7a3f162837c6c7aa6f05faf384a72f69821"
+    },
+    {
+      "bytes": 14760,
+      "path": "build/lean_table_checker/acceleration_v19/cartesian_kernel_v19/modules/Mahjong/CartesianBoolS02C07V19.olean.server",
+      "sha256": "8d332e28b00f0853edfb1e3c0eda5c583e16fefa888f65d46a29654c4e4010ae"
+    },
+    {
+      "bytes": 2792,
+      "path": "build/lean_table_checker/acceleration_v19/cartesian_kernel_v19/modules/Mahjong/CartesianBoolS02C08V19.ir",
+      "sha256": "1d2c2e2a82507f4e6dc4d5e0bea3acb6f8334f305ec7b5f229c412411910aff6"
+    },
+    {
+      "bytes": 18304,
+      "path": "build/lean_table_checker/acceleration_v19/cartesian_kernel_v19/modules/Mahjong/CartesianBoolS02C08V19.olean",
+      "sha256": "0c0e2bcdb1351e84a6ec47c795a210242e23447cc4abc0eeb80710c6026552d9"
+    },
+    {
+      "bytes": 33608,
+      "path": "build/lean_table_checker/acceleration_v19/cartesian_kernel_v19/modules/Mahjong/CartesianBoolS02C08V19.olean.private",
+      "sha256": "79009470d2108e3e9ea91287046d63b8589f9e360efd83f00800b61c544a6641"
+    },
+    {
+      "bytes": 14064,
+      "path": "build/lean_table_checker/acceleration_v19/cartesian_kernel_v19/modules/Mahjong/CartesianBoolS02C08V19.olean.server",
+      "sha256": "caee55bd65ce4792d340a710b337c5adaf74665a648dfa8c8830f7acbe3fbf60"
+    },
+    {
+      "bytes": 2792,
+      "path": "build/lean_table_checker/acceleration_v19/cartesian_kernel_v19/modules/Mahjong/CartesianBoolS02C09V19.ir",
+      "sha256": "22f54738133f890fd9c9c25d82ea913ca43844cb1097fd42b2af0ad88e7439bf"
+    },
+    {
+      "bytes": 18256,
+      "path": "build/lean_table_checker/acceleration_v19/cartesian_kernel_v19/modules/Mahjong/CartesianBoolS02C09V19.olean",
+      "sha256": "f409371ae6cd7d774ebd1c69a9015b9c59a1ba98005d501ad5b068cf8e2b08b0"
+    },
+    {
+      "bytes": 37256,
+      "path": "build/lean_table_checker/acceleration_v19/cartesian_kernel_v19/modules/Mahjong/CartesianBoolS02C09V19.olean.private",
+      "sha256": "4d48b59db00eadc5cff68b1fbf798867d22973165ab6fa1b9487837c49feafca"
+    },
+    {
+      "bytes": 14064,
+      "path": "build/lean_table_checker/acceleration_v19/cartesian_kernel_v19/modules/Mahjong/CartesianBoolS02C09V19.olean.server",
+      "sha256": "937468b937f5fc7f658ed55c097d2d0f8313422aeefb94a30ba385e7b658a17a"
+    },
+    {
+      "bytes": 2488,
+      "path": "build/lean_table_checker/acceleration_v19/cartesian_kernel_v19/modules/Mahjong/CartesianBoolS02C10V19.ir",
+      "sha256": "410e7201aee3a4e63e5e9bfb606d7f392906afc75f181ea9a24d9b36fcd57650"
+    },
+    {
+      "bytes": 17424,
+      "path": "build/lean_table_checker/acceleration_v19/cartesian_kernel_v19/modules/Mahjong/CartesianBoolS02C10V19.olean",
+      "sha256": "50c1ae6d80d68c7897facdde8e2997238008c1d5670863b30f718d1c95fd967e"
+    },
+    {
+      "bytes": 28520,
+      "path": "build/lean_table_checker/acceleration_v19/cartesian_kernel_v19/modules/Mahjong/CartesianBoolS02C10V19.olean.private",
+      "sha256": "42e94774b1fd18bdf55a58513139e99b1cdbf79af2ab9c0e408b95644b4ee215"
+    },
+    {
+      "bytes": 13600,
+      "path": "build/lean_table_checker/acceleration_v19/cartesian_kernel_v19/modules/Mahjong/CartesianBoolS02C10V19.olean.server",
+      "sha256": "7ca79aa194d62b08af83018ec2654b034d3decf59c5a6325c48f4b20b832ec92"
+    },
+    {
+      "bytes": 2944,
+      "path": "build/lean_table_checker/acceleration_v19/cartesian_kernel_v19/modules/Mahjong/CartesianBoolS02C11V19.ir",
+      "sha256": "37b19ab24081a1ebf8aab66f2f73950ba7cc8ce84717dcc49bc98a09e6cbf221"
+    },
+    {
+      "bytes": 19368,
+      "path": "build/lean_table_checker/acceleration_v19/cartesian_kernel_v19/modules/Mahjong/CartesianBoolS02C11V19.olean",
+      "sha256": "bdc3d73ab04346831a0539b0e5971acd0368e42c83b87cf6cbc59ac954a8170b"
+    },
+    {
+      "bytes": 33456,
+      "path": "build/lean_table_checker/acceleration_v19/cartesian_kernel_v19/modules/Mahjong/CartesianBoolS02C11V19.olean.private",
+      "sha256": "835d6646666c8c8bc8653c875f6638eb2a035c4233450b6be37429b09392cd12"
+    },
+    {
+      "bytes": 15224,
+      "path": "build/lean_table_checker/acceleration_v19/cartesian_kernel_v19/modules/Mahjong/CartesianBoolS02C11V19.olean.server",
+      "sha256": "8da0d5341df2e8cb7b600964fb5f6fd93a44afa090e40c8903071ed05c60f129"
+    },
+    {
+      "bytes": 2944,
+      "path": "build/lean_table_checker/acceleration_v19/cartesian_kernel_v19/modules/Mahjong/CartesianBoolS02C12V19.ir",
+      "sha256": "77128f01603ffc45826358ece8221a8bd1e757e04a78803a144a029feee175b5"
+    },
+    {
+      "bytes": 18696,
+      "path": "build/lean_table_checker/acceleration_v19/cartesian_kernel_v19/modules/Mahjong/CartesianBoolS02C12V19.olean",
+      "sha256": "ee643eed579d7af17d0b5eb98d2bec9829c0362356a25bfa44bb744d23c54796"
+    },
+    {
+      "bytes": 36240,
+      "path": "build/lean_table_checker/acceleration_v19/cartesian_kernel_v19/modules/Mahjong/CartesianBoolS02C12V19.olean.private",
+      "sha256": "a085ffb5f358789e9f9787dd85e74615625c60f50bb9c9605f69c237612189a8"
+    },
+    {
+      "bytes": 14528,
+      "path": "build/lean_table_checker/acceleration_v19/cartesian_kernel_v19/modules/Mahjong/CartesianBoolS02C12V19.olean.server",
+      "sha256": "e0639560bc5e86a1acb3d21ba2e84506772ccecc8775d5b47908b2f943047bf0"
+    },
+    {
+      "bytes": 3552,
+      "path": "build/lean_table_checker/acceleration_v19/cartesian_kernel_v19/modules/Mahjong/CartesianBoolS02C13V19.ir",
+      "sha256": "4326ba079b703acb1d274ecb0740a767c68115c58281cf146ac11f2b60702876"
+    },
+    {
+      "bytes": 18584,
+      "path": "build/lean_table_checker/acceleration_v19/cartesian_kernel_v19/modules/Mahjong/CartesianBoolS02C13V19.olean",
+      "sha256": "a38bc7612adff071dd5c83170d35a453c43d5045b3266f39b7ff42b5d6f0a4ce"
+    },
+    {
+      "bytes": 39088,
+      "path": "build/lean_table_checker/acceleration_v19/cartesian_kernel_v19/modules/Mahjong/CartesianBoolS02C13V19.olean.private",
+      "sha256": "0a6278c3195abd0c82f6726ee12ed2ac13b3ea260b51adcafbea46c13cf2f61f"
+    },
+    {
+      "bytes": 13600,
+      "path": "build/lean_table_checker/acceleration_v19/cartesian_kernel_v19/modules/Mahjong/CartesianBoolS02C13V19.olean.server",
+      "sha256": "d04930b78dab073d791ac5a74a2f051e2f3ba83d0af984d11a1f291978e4066b"
+    },
+    {
+      "bytes": 248264,
+      "path": "build/lean_table_checker/acceleration_v19/cartesian_kernel_v19/modules/Mahjong/CartesianChannels00V19.ir",
+      "sha256": "5724760aff3c9fe4a7615ad14357c95117b6a1fb9c1d39e2e3ac8f62c7e6c794"
+    },
+    {
+      "bytes": 14272,
+      "path": "build/lean_table_checker/acceleration_v19/cartesian_kernel_v19/modules/Mahjong/CartesianChannels00V19.olean",
+      "sha256": "460d91eb9b110699e6d7c1c56aaee47d18b93639dc2a2ad56593d1e948919e90"
+    },
+    {
+      "bytes": 400552,
+      "path": "build/lean_table_checker/acceleration_v19/cartesian_kernel_v19/modules/Mahjong/CartesianChannels00V19.olean.private",
+      "sha256": "50799be76884be30b451bc39a7b5cba1278d9b147e7739a095b51a3e1b3655ed"
+    },
+    {
+      "bytes": 3896,
+      "path": "build/lean_table_checker/acceleration_v19/cartesian_kernel_v19/modules/Mahjong/CartesianChannels00V19.olean.server",
+      "sha256": "bb4ce0a2b24d3c6b7394a0f1f12a9d0ad4a885bc6001096f4ee5d91a7e8d387b"
+    },
+    {
+      "bytes": 316776,
+      "path": "build/lean_table_checker/acceleration_v19/cartesian_kernel_v19/modules/Mahjong/CartesianChannels01V19.ir",
+      "sha256": "a346d2e712ddf4da5412974270632220600393ef97e3386c34e5b4f440259042"
+    },
+    {
+      "bytes": 6784,
+      "path": "build/lean_table_checker/acceleration_v19/cartesian_kernel_v19/modules/Mahjong/CartesianChannels01V19.olean",
+      "sha256": "0243469fded7fe800ed5999a25cb2a8812090bde3e471c878c3586f637d2cf1c"
+    },
+    {
+      "bytes": 706704,
+      "path": "build/lean_table_checker/acceleration_v19/cartesian_kernel_v19/modules/Mahjong/CartesianChannels01V19.olean.private",
+      "sha256": "69796be3d71c7ed6c2b386712b7c4c3fc118d1769fa6bfd5882042687bc233a2"
+    },
+    {
+      "bytes": 880,
+      "path": "build/lean_table_checker/acceleration_v19/cartesian_kernel_v19/modules/Mahjong/CartesianChannels01V19.olean.server",
+      "sha256": "6b47389c6c96b22343d2eb490c77a1f2c80d730ff9e4ca2a00d9eb8a71dc873c"
+    },
+    {
+      "bytes": 714720,
+      "path": "build/lean_table_checker/acceleration_v19/cartesian_kernel_v19/modules/Mahjong/CartesianChannels02V19.ir",
+      "sha256": "5e420ec9f365b59f78f2e8e69ff2d9e4a28f92fa3c91247c14aa5321a59e8cc1"
+    },
+    {
+      "bytes": 6784,
+      "path": "build/lean_table_checker/acceleration_v19/cartesian_kernel_v19/modules/Mahjong/CartesianChannels02V19.olean",
+      "sha256": "b2d5b1004297085a6eec7db456d6163aab4c21a488af14e2f87aee3497ec02d5"
+    },
+    {
+      "bytes": 1479328,
+      "path": "build/lean_table_checker/acceleration_v19/cartesian_kernel_v19/modules/Mahjong/CartesianChannels02V19.olean.private",
+      "sha256": "716249407037b02ae96d02f72e5aa1e31263c0c3c97e3de9947adeac8f652ac5"
+    },
+    {
+      "bytes": 880,
+      "path": "build/lean_table_checker/acceleration_v19/cartesian_kernel_v19/modules/Mahjong/CartesianChannels02V19.olean.server",
+      "sha256": "cd90c6e01ca01535528919eb6daf1f175484f8a43ee25389b679ad6d1891bda4"
+    },
+    {
+      "bytes": 504032,
+      "path": "build/lean_table_checker/acceleration_v19/cartesian_kernel_v19/modules/Mahjong/CartesianChannels03V19.ir",
+      "sha256": "8f99ccd1a3ef5cc46285a74975a5a2be0f38f9a24f415cd748dd877cb1cafe9f"
+    },
+    {
+      "bytes": 6784,
+      "path": "build/lean_table_checker/acceleration_v19/cartesian_kernel_v19/modules/Mahjong/CartesianChannels03V19.olean",
+      "sha256": "c4146228ca691abd8b7d9e09a4d33594accce7543dea3f3d8d50df1464e0072e"
+    },
+    {
+      "bytes": 1043856,
+      "path": "build/lean_table_checker/acceleration_v19/cartesian_kernel_v19/modules/Mahjong/CartesianChannels03V19.olean.private",
+      "sha256": "af8378480c53def848fc3f203e6ec41db44a7a096dbcf21f939ea72b2e433eb3"
+    },
+    {
+      "bytes": 880,
+      "path": "build/lean_table_checker/acceleration_v19/cartesian_kernel_v19/modules/Mahjong/CartesianChannels03V19.olean.server",
+      "sha256": "66a4f3ef26deb1461cde14ddc2eb915a8a78cd7cf71e18cbdc5ef00e97e5f0f9"
+    },
+    {
+      "bytes": 319640,
+      "path": "build/lean_table_checker/acceleration_v19/cartesian_kernel_v19/modules/Mahjong/CartesianChannels04V19.ir",
+      "sha256": "08da15c09667641b7feccc0ad5a7bafdfc69e9e7c8865a5ee23018b766a4f664"
+    },
+    {
+      "bytes": 18304,
+      "path": "build/lean_table_checker/acceleration_v19/cartesian_kernel_v19/modules/Mahjong/CartesianChannels04V19.olean",
+      "sha256": "089a034f51a3deb9d318f3c818c0dfbec6638247eb040b56e4ad851d257e36ce"
+    },
+    {
+      "bytes": 495208,
+      "path": "build/lean_table_checker/acceleration_v19/cartesian_kernel_v19/modules/Mahjong/CartesianChannels04V19.olean.private",
+      "sha256": "9b03fe0bd51e96de15ccb0e5d4efac8b1acc0c33936e187c0b0cc27cd16c783e"
+    },
+    {
+      "bytes": 5520,
+      "path": "build/lean_table_checker/acceleration_v19/cartesian_kernel_v19/modules/Mahjong/CartesianChannels04V19.olean.server",
+      "sha256": "b83626c6e9a5535c8e3ade227355045bff30c846840756e571e0aeabac2fe408"
+    },
+    {
+      "bytes": 553224,
+      "path": "build/lean_table_checker/acceleration_v19/cartesian_kernel_v19/modules/Mahjong/CartesianChannels05V19.ir",
+      "sha256": "13dbb5b6b53e3337a51f1c32ab2830e3acd8b1ac81a350041bfc920642a76840"
+    },
+    {
+      "bytes": 11968,
+      "path": "build/lean_table_checker/acceleration_v19/cartesian_kernel_v19/modules/Mahjong/CartesianChannels05V19.olean",
+      "sha256": "44801b9cd346eebb5cb3a3e77ded0d8338a77695c5c9bb19555bd7f94f23b8c3"
+    },
+    {
+      "bytes": 1016488,
+      "path": "build/lean_table_checker/acceleration_v19/cartesian_kernel_v19/modules/Mahjong/CartesianChannels05V19.olean.private",
+      "sha256": "66e9125793c92c603727feac655206848c256e2c968a56f5239e6a24b9edf25d"
+    },
+    {
+      "bytes": 2968,
+      "path": "build/lean_table_checker/acceleration_v19/cartesian_kernel_v19/modules/Mahjong/CartesianChannels05V19.olean.server",
+      "sha256": "991a634af19e6e75c5341ea68276b79adda1d21eb9d44096c18229d657546e3a"
+    },
+    {
+      "bytes": 321856,
+      "path": "build/lean_table_checker/acceleration_v19/cartesian_kernel_v19/modules/Mahjong/CartesianChannels06V19.ir",
+      "sha256": "fad964fcb46e376183522a2abb5fd4b2b1e109665e88cd7358d64c3bf8b79dc9"
+    },
+    {
+      "bytes": 8512,
+      "path": "build/lean_table_checker/acceleration_v19/cartesian_kernel_v19/modules/Mahjong/CartesianChannels06V19.olean",
+      "sha256": "f2fb4b030638e6c9006e9946ab574621769e5030d53a502530d52eb2975f7d8a"
+    },
+    {
+      "bytes": 631216,
+      "path": "build/lean_table_checker/acceleration_v19/cartesian_kernel_v19/modules/Mahjong/CartesianChannels06V19.olean.private",
+      "sha256": "50ce2ab085d11db02b2296edbbf8db85d25fd8eebd3a6a07b78b4cfa05caba10"
+    },
+    {
+      "bytes": 1576,
+      "path": "build/lean_table_checker/acceleration_v19/cartesian_kernel_v19/modules/Mahjong/CartesianChannels06V19.olean.server",
+      "sha256": "addc5a053da50306b2441a5e8a4959558705ea0873d538eb454e69d8cd9962e7"
+    },
+    {
+      "bytes": 418520,
+      "path": "build/lean_table_checker/acceleration_v19/cartesian_kernel_v19/modules/Mahjong/CartesianChannels07V19.ir",
+      "sha256": "c719367d6000754ca5836e55f5da8144f5ccdcb74d55178a3de069f0e4c68563"
+    },
+    {
+      "bytes": 9088,
+      "path": "build/lean_table_checker/acceleration_v19/cartesian_kernel_v19/modules/Mahjong/CartesianChannels07V19.olean",
+      "sha256": "37ca242a0b152d763e962a4083d10f26bfa64b10252295b32ea7fdd90dd12f18"
+    },
+    {
+      "bytes": 747880,
+      "path": "build/lean_table_checker/acceleration_v19/cartesian_kernel_v19/modules/Mahjong/CartesianChannels07V19.olean.private",
+      "sha256": "7dbe0a594e82c79bc21970b4f63cd487e0bb2ad5c0cb6d42a76038d7aa6d8033"
+    },
+    {
+      "bytes": 1808,
+      "path": "build/lean_table_checker/acceleration_v19/cartesian_kernel_v19/modules/Mahjong/CartesianChannels07V19.olean.server",
+      "sha256": "29d763da35c1117ccc6a877710dd317fc262e175b89318bff68364548d3c9b56"
+    },
+    {
+      "bytes": 547736,
+      "path": "build/lean_table_checker/acceleration_v19/cartesian_kernel_v19/modules/Mahjong/CartesianChannels08V19.ir",
+      "sha256": "ff5d8627d20ae3735e3b499661f167f6c653a1f52d538aa997e6456ffbe8a6d3"
+    },
+    {
+      "bytes": 10816,
+      "path": "build/lean_table_checker/acceleration_v19/cartesian_kernel_v19/modules/Mahjong/CartesianChannels08V19.olean",
+      "sha256": "b322b350708eddec9bf87cf25d82d9d2241aa9c512a5d280631587a35f63ea77"
+    },
+    {
+      "bytes": 1050848,
+      "path": "build/lean_table_checker/acceleration_v19/cartesian_kernel_v19/modules/Mahjong/CartesianChannels08V19.olean.private",
+      "sha256": "d737186201abc86e54045b4e4ac3b65fd288c61cc17d10397ffce53cde3ee6f9"
+    },
+    {
+      "bytes": 2504,
+      "path": "build/lean_table_checker/acceleration_v19/cartesian_kernel_v19/modules/Mahjong/CartesianChannels08V19.olean.server",
+      "sha256": "b9e2ea59da58d8b37e55ee561af60d1dca7ead70fe3b998cbcd9377a7b3f506a"
+    },
+    {
+      "bytes": 435336,
+      "path": "build/lean_table_checker/acceleration_v19/cartesian_kernel_v19/modules/Mahjong/CartesianChannels09V19.ir",
+      "sha256": "6c8a7f1697f4532f049fa30a60a75c0f10db088f7922134e7483e816aa642114"
+    },
+    {
+      "bytes": 8512,
+      "path": "build/lean_table_checker/acceleration_v19/cartesian_kernel_v19/modules/Mahjong/CartesianChannels09V19.olean",
+      "sha256": "e28c058f085dc1dcd9e0f3ec2c2b169087de1bb86dc6477c5a5c6d9afd97e5e6"
+    },
+    {
+      "bytes": 788128,
+      "path": "build/lean_table_checker/acceleration_v19/cartesian_kernel_v19/modules/Mahjong/CartesianChannels09V19.olean.private",
+      "sha256": "d8793afe7e83d7be03b667c56d6a4d09ef201709379290a793f1a5ef9b16ed80"
+    },
+    {
+      "bytes": 1576,
+      "path": "build/lean_table_checker/acceleration_v19/cartesian_kernel_v19/modules/Mahjong/CartesianChannels09V19.olean.server",
+      "sha256": "2b75909f9298c2e8b9f2eebdbdb4151c9c0e9918227548c6b398adf0db8e8a90"
+    },
+    {
+      "bytes": 454288,
+      "path": "build/lean_table_checker/acceleration_v19/cartesian_kernel_v19/modules/Mahjong/CartesianChannels10V19.ir",
+      "sha256": "ed64a6b0561dc0e803b630c4d403b6dba9a10df3e2bdecdd6a8a80e5ad33d25e"
+    },
+    {
+      "bytes": 13696,
+      "path": "build/lean_table_checker/acceleration_v19/cartesian_kernel_v19/modules/Mahjong/CartesianChannels10V19.olean",
+      "sha256": "b4a7e573691452f0dc5ac349fe672eaf62ba807981c433936dbe4bd7df3480d1"
+    },
+    {
+      "bytes": 751136,
+      "path": "build/lean_table_checker/acceleration_v19/cartesian_kernel_v19/modules/Mahjong/CartesianChannels10V19.olean.private",
+      "sha256": "73948d7c15f6b1382f9614aa9b29f3bc44add25df476c769e6f3dd9670e4fa9c"
+    },
+    {
+      "bytes": 3664,
+      "path": "build/lean_table_checker/acceleration_v19/cartesian_kernel_v19/modules/Mahjong/CartesianChannels10V19.olean.server",
+      "sha256": "4464e2ba5e0c1cf96a960166c8f92aaa49581ffa41a35deea21073eed9d3063f"
+    },
+    {
+      "bytes": 404992,
+      "path": "build/lean_table_checker/acceleration_v19/cartesian_kernel_v19/modules/Mahjong/CartesianChannels11V19.ir",
+      "sha256": "a51bc234357e03a129d434715e18b7781b6d839ef7a850e6b7e50c189fac76d1"
+    },
+    {
+      "bytes": 18880,
+      "path": "build/lean_table_checker/acceleration_v19/cartesian_kernel_v19/modules/Mahjong/CartesianChannels11V19.olean",
+      "sha256": "96b66c0c20923e36dd77ed9116c6bb338b97148cbab2ae2b27c1fe793f5ec6bf"
+    },
+    {
+      "bytes": 599472,
+      "path": "build/lean_table_checker/acceleration_v19/cartesian_kernel_v19/modules/Mahjong/CartesianChannels11V19.olean.private",
+      "sha256": "d4fbad69b2f14ebc15b8b79381e897e68bd0950361921115549b9f34758591e0"
+    },
+    {
+      "bytes": 5752,
+      "path": "build/lean_table_checker/acceleration_v19/cartesian_kernel_v19/modules/Mahjong/CartesianChannels11V19.olean.server",
+      "sha256": "a2095d3116aebf2dba963888bad873a6f423d900ac63671a0fa8c3e0315fc65d"
+    },
+    {
+      "bytes": 375648,
+      "path": "build/lean_table_checker/acceleration_v19/cartesian_kernel_v19/modules/Mahjong/CartesianChannels12V19.ir",
+      "sha256": "477e3a4d5cee66509f7bd0bfd5fa57dac471b81588016dd6063d3225fc3e109b"
+    },
+    {
+      "bytes": 16000,
+      "path": "build/lean_table_checker/acceleration_v19/cartesian_kernel_v19/modules/Mahjong/CartesianChannels12V19.olean",
+      "sha256": "6115bfdea1f813e3cec8f182aa8c481ff9d6a146ae822f4219d89e2e5716593e"
+    },
+    {
+      "bytes": 644224,
+      "path": "build/lean_table_checker/acceleration_v19/cartesian_kernel_v19/modules/Mahjong/CartesianChannels12V19.olean.private",
+      "sha256": "29e8e6e2cf7bc60a508bc660756bf26e9720cac415906f175195bfba32ced0e8"
+    },
+    {
+      "bytes": 4592,
+      "path": "build/lean_table_checker/acceleration_v19/cartesian_kernel_v19/modules/Mahjong/CartesianChannels12V19.olean.server",
+      "sha256": "8d630bf987ec62e6c4a8cc8984c0f3f62d705d765ac6e6d93ab467b9b1016389"
+    },
+    {
+      "bytes": 598472,
+      "path": "build/lean_table_checker/acceleration_v19/cartesian_kernel_v19/modules/Mahjong/CartesianChannels13V19.ir",
+      "sha256": "33702d93b27d869b50ab8a90199c03c36355fbef871032adefda4cfd709f78e8"
+    },
+    {
+      "bytes": 7360,
+      "path": "build/lean_table_checker/acceleration_v19/cartesian_kernel_v19/modules/Mahjong/CartesianChannels13V19.olean",
+      "sha256": "862e128fa821bcf7bbca64d1fa293d6a86a59580ac44448fb2926d522efc290e"
+    },
+    {
+      "bytes": 1247056,
+      "path": "build/lean_table_checker/acceleration_v19/cartesian_kernel_v19/modules/Mahjong/CartesianChannels13V19.olean.private",
+      "sha256": "54d32ab315133390da51b1e3986a8e1c3949f253ef46b510ce582289dd0daa89"
+    },
+    {
+      "bytes": 1112,
+      "path": "build/lean_table_checker/acceleration_v19/cartesian_kernel_v19/modules/Mahjong/CartesianChannels13V19.olean.server",
+      "sha256": "ce42704bf05f801f55a4c1fe1aad1903b51313807a76f610992110817b17b0a0"
+    },
+    {
+      "bytes": 435080,
+      "path": "build/lean_table_checker/acceleration_v19/cartesian_kernel_v19/modules/Mahjong/CartesianChannels14V19.ir",
+      "sha256": "94a997c75f4ae7a749fe5893beee2174c7cb4d90bba87250a685f6f1ba90c9e7"
+    },
+    {
+      "bytes": 12544,
+      "path": "build/lean_table_checker/acceleration_v19/cartesian_kernel_v19/modules/Mahjong/CartesianChannels14V19.olean",
+      "sha256": "daacb69919308528da7771e63b9f27bb5ed6da87f2220b8985baf3fc0b1eb8be"
+    },
+    {
+      "bytes": 819176,
+      "path": "build/lean_table_checker/acceleration_v19/cartesian_kernel_v19/modules/Mahjong/CartesianChannels14V19.olean.private",
+      "sha256": "67af7b0ebd8a3c8272902ac435050b1044f32ec9182e05e018528f93ae53db97"
+    },
+    {
+      "bytes": 3200,
+      "path": "build/lean_table_checker/acceleration_v19/cartesian_kernel_v19/modules/Mahjong/CartesianChannels14V19.olean.server",
+      "sha256": "606819d929ed34d7484d4dba99c75b75055e5485f9f4dec61993bc6392be26d3"
+    },
+    {
+      "bytes": 448896,
+      "path": "build/lean_table_checker/acceleration_v19/cartesian_kernel_v19/modules/Mahjong/CartesianChannels15V19.ir",
+      "sha256": "26edbf630ee527ef7252337503d8b55478acfc9197ddb21d46e224629cb7ada0"
+    },
+    {
+      "bytes": 20032,
+      "path": "build/lean_table_checker/acceleration_v19/cartesian_kernel_v19/modules/Mahjong/CartesianChannels15V19.olean",
+      "sha256": "a093c4d98427b60fec2854f99144810817191b89c41dc0b672ce24108929c91d"
+    },
+    {
+      "bytes": 723968,
+      "path": "build/lean_table_checker/acceleration_v19/cartesian_kernel_v19/modules/Mahjong/CartesianChannels15V19.olean.private",
+      "sha256": "73082c9ead6a9b64ba43cb8624fb17fda6a8b12523a1b75dbafc23ae68c4eae7"
+    },
+    {
+      "bytes": 6216,
+      "path": "build/lean_table_checker/acceleration_v19/cartesian_kernel_v19/modules/Mahjong/CartesianChannels15V19.olean.server",
+      "sha256": "dc6d1e84761522e01472a6e2a9255903fb567776f4bcc8172ded01f21579d0f5"
+    },
+    {
+      "bytes": 376472,
+      "path": "build/lean_table_checker/acceleration_v19/cartesian_kernel_v19/modules/Mahjong/CartesianChannels16V19.ir",
+      "sha256": "a6f796cb944585042df1af294e976e100b766e9d31e21fd40706562db22793f3"
+    },
+    {
+      "bytes": 13120,
+      "path": "build/lean_table_checker/acceleration_v19/cartesian_kernel_v19/modules/Mahjong/CartesianChannels16V19.olean",
+      "sha256": "f36a2624689ec5d82a5e54def5e37acd3336460d6bb1f325c26a89ef81981c35"
+    },
+    {
+      "bytes": 630960,
+      "path": "build/lean_table_checker/acceleration_v19/cartesian_kernel_v19/modules/Mahjong/CartesianChannels16V19.olean.private",
+      "sha256": "03578de24b49c31622c51835e7f77a5370e1629be8f8a46506a4d61b10536433"
+    },
+    {
+      "bytes": 3432,
+      "path": "build/lean_table_checker/acceleration_v19/cartesian_kernel_v19/modules/Mahjong/CartesianChannels16V19.olean.server",
+      "sha256": "ff3f9f66d589b2415b063fffecdef9d87341b9bcac88a5113581b02313f4e9a4"
+    },
+    {
+      "bytes": 461320,
+      "path": "build/lean_table_checker/acceleration_v19/cartesian_kernel_v19/modules/Mahjong/CartesianChannels17V19.ir",
+      "sha256": "8130ba31475b668e365034dc2721a51438162aebffac80a91b9c93477f3cc4a4"
+    },
+    {
+      "bytes": 8512,
+      "path": "build/lean_table_checker/acceleration_v19/cartesian_kernel_v19/modules/Mahjong/CartesianChannels17V19.olean",
+      "sha256": "2d26ac81078bd676065ec2c13be12ca3fa66bf596de9e8df25afa27ecf345d14"
+    },
+    {
+      "bytes": 867968,
+      "path": "build/lean_table_checker/acceleration_v19/cartesian_kernel_v19/modules/Mahjong/CartesianChannels17V19.olean.private",
+      "sha256": "93d0f3c570511c1053719f775d55fa445163c36ef4ba1338483999326bdfe021"
+    },
+    {
+      "bytes": 1576,
+      "path": "build/lean_table_checker/acceleration_v19/cartesian_kernel_v19/modules/Mahjong/CartesianChannels17V19.olean.server",
+      "sha256": "1e267e5664330c0cfae0c9b23e3493832ecab40bccc42d5ef78b51805089748a"
+    },
+    {
+      "bytes": 204616,
+      "path": "build/lean_table_checker/acceleration_v19/cartesian_kernel_v19/modules/Mahjong/CartesianChannels18V19.ir",
+      "sha256": "6bf4a66f2daa48d256365de61f8de43c934b70212207d4292e7349ec81873401"
+    },
+    {
+      "bytes": 8512,
+      "path": "build/lean_table_checker/acceleration_v19/cartesian_kernel_v19/modules/Mahjong/CartesianChannels18V19.olean",
+      "sha256": "17891faa373b3994dc9fe594ec3e0be7a03a1b728c5eac3f1f8f4e66ff20d21f"
+    },
+    {
+      "bytes": 426696,
+      "path": "build/lean_table_checker/acceleration_v19/cartesian_kernel_v19/modules/Mahjong/CartesianChannels18V19.olean.private",
+      "sha256": "e1c7f43ef5e17db0dd6f05b7b9232c1246271bad0b56232710424fadf0c727c1"
+    },
+    {
+      "bytes": 1576,
+      "path": "build/lean_table_checker/acceleration_v19/cartesian_kernel_v19/modules/Mahjong/CartesianChannels18V19.olean.server",
+      "sha256": "ad771938f2408393f29acd1e9c17571ecee57464dadda2009dadcfd878194673"
+    },
+    {
+      "bytes": 818632,
+      "path": "build/lean_table_checker/acceleration_v19/cartesian_kernel_v19/modules/Mahjong/CartesianChannels19V19.ir",
+      "sha256": "2f8b93a6f4fcd9dc9f5c848def685276894a53df0df119d4449a7e01f2252c2c"
+    },
+    {
+      "bytes": 6784,
+      "path": "build/lean_table_checker/acceleration_v19/cartesian_kernel_v19/modules/Mahjong/CartesianChannels19V19.olean",
+      "sha256": "7c115755ac1b98f4ae18c2fd4063ae1422c0e9c323604b8a35a6fb517279496e"
+    },
+    {
+      "bytes": 1702952,
+      "path": "build/lean_table_checker/acceleration_v19/cartesian_kernel_v19/modules/Mahjong/CartesianChannels19V19.olean.private",
+      "sha256": "c340af0ef3414707209ad0328c3762099d5ac55d1d6ccde377deb91a8e993a84"
+    },
+    {
+      "bytes": 880,
+      "path": "build/lean_table_checker/acceleration_v19/cartesian_kernel_v19/modules/Mahjong/CartesianChannels19V19.olean.server",
+      "sha256": "2e1fe8235225166db91401fda1197a06255a3c1d187761f74bd2c106d0340489"
+    },
+    {
+      "bytes": 408008,
+      "path": "build/lean_table_checker/acceleration_v19/cartesian_kernel_v19/modules/Mahjong/CartesianChannels20V19.ir",
+      "sha256": "c5ae58d6ee044bddc1ad0308f6cc5d501e77f47b6cf10a79d5c6b967eb9033c8"
+    },
+    {
+      "bytes": 20032,
+      "path": "build/lean_table_checker/acceleration_v19/cartesian_kernel_v19/modules/Mahjong/CartesianChannels20V19.olean",
+      "sha256": "f70c71286c62310d9d549e3cbdccda51b8cb43f28f0c79088de2f8f8c4a5531b"
+    },
+    {
+      "bytes": 656592,
+      "path": "build/lean_table_checker/acceleration_v19/cartesian_kernel_v19/modules/Mahjong/CartesianChannels20V19.olean.private",
+      "sha256": "0121f3990266bc6116a3f7988c7dc9b12137608bcebe43b392a14c93f7772e1e"
+    },
+    {
+      "bytes": 6216,
+      "path": "build/lean_table_checker/acceleration_v19/cartesian_kernel_v19/modules/Mahjong/CartesianChannels20V19.olean.server",
+      "sha256": "10bea5f8066fca1795f759456d5f43c6fe221820dfe7a4ef2b053e0ca10c8bad"
+    },
+    {
+      "bytes": 462856,
+      "path": "build/lean_table_checker/acceleration_v19/cartesian_kernel_v19/modules/Mahjong/CartesianChannels21V19.ir",
+      "sha256": "9f8e310ea5a6b1e335ea7fc42d82f44f48817111accf0b9682c46969215bf4a0"
+    },
+    {
+      "bytes": 10816,
+      "path": "build/lean_table_checker/acceleration_v19/cartesian_kernel_v19/modules/Mahjong/CartesianChannels21V19.olean",
+      "sha256": "13b4b32e7848c7db0e3a0af03f27838d78f4f922a179285ca141f0f3ae044f11"
+    },
+    {
+      "bytes": 715328,
+      "path": "build/lean_table_checker/acceleration_v19/cartesian_kernel_v19/modules/Mahjong/CartesianChannels21V19.olean.private",
+      "sha256": "961dee2825dd309d792da3ba4c4bffc1c3ce073240bba20e31cfbd7e8c34b7d3"
+    },
+    {
+      "bytes": 2504,
+      "path": "build/lean_table_checker/acceleration_v19/cartesian_kernel_v19/modules/Mahjong/CartesianChannels21V19.olean.server",
+      "sha256": "41f234e67fbe4165b274557f11688ab536456f504b208d64166441aed6fb36d5"
+    },
+    {
+      "bytes": 326856,
+      "path": "build/lean_table_checker/acceleration_v19/cartesian_kernel_v19/modules/Mahjong/CartesianChannels22V19.ir",
+      "sha256": "094a49e5dfd318053735e16def02122bc04599ac4a34cd5e786a02aba1787a9d"
+    },
+    {
+      "bytes": 14272,
+      "path": "build/lean_table_checker/acceleration_v19/cartesian_kernel_v19/modules/Mahjong/CartesianChannels22V19.olean",
+      "sha256": "6640d94fccd304bfdd62499fd6299bfa83678368e2f682c9426f6ce71a3a5d34"
+    },
+    {
+      "bytes": 528072,
+      "path": "build/lean_table_checker/acceleration_v19/cartesian_kernel_v19/modules/Mahjong/CartesianChannels22V19.olean.private",
+      "sha256": "d90317d931b491c5424eaedb53d57cdc7bd157e3ae177101f88bf981b245575d"
+    },
+    {
+      "bytes": 3896,
+      "path": "build/lean_table_checker/acceleration_v19/cartesian_kernel_v19/modules/Mahjong/CartesianChannels22V19.olean.server",
+      "sha256": "e624b93effc5ca3ef08e93f1c9fed95309525ea7239576bb2b61afe9faeb748b"
+    },
+    {
+      "bytes": 477712,
+      "path": "build/lean_table_checker/acceleration_v19/cartesian_kernel_v19/modules/Mahjong/CartesianChannels23V19.ir",
+      "sha256": "6c6252ff6120655967b1d56cb37b51ff3a08f4c482d350f2192b61017fae8595"
+    },
+    {
+      "bytes": 8512,
+      "path": "build/lean_table_checker/acceleration_v19/cartesian_kernel_v19/modules/Mahjong/CartesianChannels23V19.olean",
+      "sha256": "6027bb0c1045d3c234f0c2c22235b79d4d7c53402f2468623167b3d1826eec88"
+    },
+    {
+      "bytes": 920864,
+      "path": "build/lean_table_checker/acceleration_v19/cartesian_kernel_v19/modules/Mahjong/CartesianChannels23V19.olean.private",
+      "sha256": "5bd408fb601abc650fcb464969aec39aa724d1d9542cb7ea2daaf404aa45eb02"
+    },
+    {
+      "bytes": 1576,
+      "path": "build/lean_table_checker/acceleration_v19/cartesian_kernel_v19/modules/Mahjong/CartesianChannels23V19.olean.server",
+      "sha256": "1b75296f8bff6100b6d6c3520646d1ace8ee5bb1f0b8a67a3fbb760cedcd4904"
+    },
+    {
+      "bytes": 282792,
+      "path": "build/lean_table_checker/acceleration_v19/cartesian_kernel_v19/modules/Mahjong/CartesianChannels24V19.ir",
+      "sha256": "a43ec00b04c430c4ab2a791a77c34deb8bc11bc3d46ff0a2502b95f48d2eb93e"
+    },
+    {
+      "bytes": 16000,
+      "path": "build/lean_table_checker/acceleration_v19/cartesian_kernel_v19/modules/Mahjong/CartesianChannels24V19.olean",
+      "sha256": "c197482bf72dc7e7a552c748304417864907ff28dfb8f0ee1fb8157ee5839d10"
+    },
+    {
+      "bytes": 432480,
+      "path": "build/lean_table_checker/acceleration_v19/cartesian_kernel_v19/modules/Mahjong/CartesianChannels24V19.olean.private",
+      "sha256": "056786d1853918582faf6378403d5ff56f1278fb5647e9275bd34208621416ec"
+    },
+    {
+      "bytes": 4592,
+      "path": "build/lean_table_checker/acceleration_v19/cartesian_kernel_v19/modules/Mahjong/CartesianChannels24V19.olean.server",
+      "sha256": "2acfea9bbbb9a66fad21f6c1a4b88681ed4341ea86b58e544fa846e66cd0cbb5"
+    },
+    {
+      "bytes": 204352,
+      "path": "build/lean_table_checker/acceleration_v19/cartesian_kernel_v19/modules/Mahjong/CartesianChannels25V19.ir",
+      "sha256": "0e1770bc5d6d0daeec4ecc2f3cb06708e5dae57802128d066dbed28612240517"
+    },
+    {
+      "bytes": 6784,
+      "path": "build/lean_table_checker/acceleration_v19/cartesian_kernel_v19/modules/Mahjong/CartesianChannels25V19.olean",
+      "sha256": "84a1e5f77c63dc7e8115aa4a516f718db68c60cbdb2eccfbf1e9a66aa1ebd793"
+    },
+    {
+      "bytes": 436792,
+      "path": "build/lean_table_checker/acceleration_v19/cartesian_kernel_v19/modules/Mahjong/CartesianChannels25V19.olean.private",
+      "sha256": "85c9056cfbe3091b147f08d528296abc02eea85aab4667127e1c2d2e5f7f1151"
+    },
+    {
+      "bytes": 880,
+      "path": "build/lean_table_checker/acceleration_v19/cartesian_kernel_v19/modules/Mahjong/CartesianChannels25V19.olean.server",
+      "sha256": "8772481744047d1a22fff6e3f8caeed70774071ff7b6228734c8895145698209"
+    },
+    {
+      "bytes": 386720,
+      "path": "build/lean_table_checker/acceleration_v19/cartesian_kernel_v19/modules/Mahjong/CartesianChannels26V19.ir",
+      "sha256": "0888ea8d9ec2ca761f6760460f77b38d42f041727e6c486d7fcbc73311e13125"
+    },
+    {
+      "bytes": 8512,
+      "path": "build/lean_table_checker/acceleration_v19/cartesian_kernel_v19/modules/Mahjong/CartesianChannels26V19.olean",
+      "sha256": "168649fd38fee6331a6c83c3c865e8323610dc443b2845714eabc09c8e8ae65e"
+    },
+    {
+      "bytes": 830768,
+      "path": "build/lean_table_checker/acceleration_v19/cartesian_kernel_v19/modules/Mahjong/CartesianChannels26V19.olean.private",
+      "sha256": "4fd91435d06f3fe913315839af2ff9f4c61e7a44ffaae636e013013948140648"
+    },
+    {
+      "bytes": 1576,
+      "path": "build/lean_table_checker/acceleration_v19/cartesian_kernel_v19/modules/Mahjong/CartesianChannels26V19.olean.server",
+      "sha256": "a87f7860a3cc4c0ba70f5d52fa24a150c0f09d416a29881148d83f6c208b8a8e"
+    },
+    {
+      "bytes": 261056,
+      "path": "build/lean_table_checker/acceleration_v19/cartesian_kernel_v19/modules/Mahjong/CartesianChannels27V19.ir",
+      "sha256": "980bdd16521bde4e475c9742b984b5273d9f641193e21fd66a03b22176cf37b5"
+    },
+    {
+      "bytes": 6784,
+      "path": "build/lean_table_checker/acceleration_v19/cartesian_kernel_v19/modules/Mahjong/CartesianChannels27V19.olean",
+      "sha256": "849f307b02ea00d238fd0aa69aad257f1eaf115bb29487bde0cc6d5d2806e4a6"
+    },
+    {
+      "bytes": 587576,
+      "path": "build/lean_table_checker/acceleration_v19/cartesian_kernel_v19/modules/Mahjong/CartesianChannels27V19.olean.private",
+      "sha256": "72a90e998b0ad6260ede2b4c7e11f267cf21dd4e2d1657eea236177cb9a73134"
+    },
+    {
+      "bytes": 880,
+      "path": "build/lean_table_checker/acceleration_v19/cartesian_kernel_v19/modules/Mahjong/CartesianChannels27V19.olean.server",
+      "sha256": "5479e2f2e8b5f3542794cc7c976f89452130a2972079b7b3eb9d46e877cd74a8"
+    },
+    {
+      "bytes": 436680,
+      "path": "build/lean_table_checker/acceleration_v19/cartesian_kernel_v19/modules/Mahjong/CartesianChannels28V19.ir",
+      "sha256": "5b18c6df99272e9f431194c25cb44e9e9893e9287079ac773289ef4b432ddd6f"
+    },
+    {
+      "bytes": 7360,
+      "path": "build/lean_table_checker/acceleration_v19/cartesian_kernel_v19/modules/Mahjong/CartesianChannels28V19.olean",
+      "sha256": "3f463e4303181176a05961aa8cdf6178cf209b59b486d5c36bc563f6f0e549a4"
+    },
+    {
+      "bytes": 908888,
+      "path": "build/lean_table_checker/acceleration_v19/cartesian_kernel_v19/modules/Mahjong/CartesianChannels28V19.olean.private",
+      "sha256": "2d49c80640342ff2f0b9e8a3430cec615e5a0d0eb4225a3bfb145a8bb12c7f56"
+    },
+    {
+      "bytes": 1112,
+      "path": "build/lean_table_checker/acceleration_v19/cartesian_kernel_v19/modules/Mahjong/CartesianChannels28V19.olean.server",
+      "sha256": "89a579667e9dce747a748c4d387557e33a64a12014f18cbc48185b39822624a8"
+    },
+    {
+      "bytes": 450536,
+      "path": "build/lean_table_checker/acceleration_v19/cartesian_kernel_v19/modules/Mahjong/CartesianChannels29V19.ir",
+      "sha256": "f76a99aac17f94b54e17e9359867b411c63602c9232ec0cc496b801704dc077b"
+    },
+    {
+      "bytes": 7360,
+      "path": "build/lean_table_checker/acceleration_v19/cartesian_kernel_v19/modules/Mahjong/CartesianChannels29V19.olean",
+      "sha256": "72340dc02ea2afa0a6b8bd9d67dedbbb4e9c1ae2d2e94172c2dd720267e12a7d"
+    },
+    {
+      "bytes": 867568,
+      "path": "build/lean_table_checker/acceleration_v19/cartesian_kernel_v19/modules/Mahjong/CartesianChannels29V19.olean.private",
+      "sha256": "1d5bd1f205b6e8fbb0bd5e42864bc96629d09c08e999d7c0b07dc6caf04e437d"
+    },
+    {
+      "bytes": 1112,
+      "path": "build/lean_table_checker/acceleration_v19/cartesian_kernel_v19/modules/Mahjong/CartesianChannels29V19.olean.server",
+      "sha256": "ad6f45cb057615421376fc9ee983b9df0f7788f2610f484728c800cf62179bcf"
+    },
+    {
+      "bytes": 208480,
+      "path": "build/lean_table_checker/acceleration_v19/cartesian_kernel_v19/modules/Mahjong/CartesianChannels30V19.ir",
+      "sha256": "deb1604338a4cd6e94d56c0f8af40e3a510210696b864ac5f47e85f7c62187c9"
+    },
+    {
+      "bytes": 6784,
+      "path": "build/lean_table_checker/acceleration_v19/cartesian_kernel_v19/modules/Mahjong/CartesianChannels30V19.olean",
+      "sha256": "c4c28d72593f8734a0af0797defba9112c3e02a8e8cb1f789f5378ccbef2aa0a"
+    },
+    {
+      "bytes": 459872,
+      "path": "build/lean_table_checker/acceleration_v19/cartesian_kernel_v19/modules/Mahjong/CartesianChannels30V19.olean.private",
+      "sha256": "4eee21a9aee559b0a5ef6115e49e1ff58a17bdafee1ebebea98b6808ec44f905"
+    },
+    {
+      "bytes": 880,
+      "path": "build/lean_table_checker/acceleration_v19/cartesian_kernel_v19/modules/Mahjong/CartesianChannels30V19.olean.server",
+      "sha256": "3409c9c9d8d2244a0864058d7dc1b2b511886b260742e6e7493f5f23ed161935"
+    },
+    {
+      "bytes": 410336,
+      "path": "build/lean_table_checker/acceleration_v19/cartesian_kernel_v19/modules/Mahjong/CartesianChannels31V19.ir",
+      "sha256": "8558167a2b991c2e29019d3bb39f0542202f255eb2aea4063eb274257b511c42"
+    },
+    {
+      "bytes": 6784,
+      "path": "build/lean_table_checker/acceleration_v19/cartesian_kernel_v19/modules/Mahjong/CartesianChannels31V19.olean",
+      "sha256": "fece7c90e64d8514e9b771bd7ba3c6b385bf84dfb23482c52fd9b3137c28b992"
+    },
+    {
+      "bytes": 902472,
+      "path": "build/lean_table_checker/acceleration_v19/cartesian_kernel_v19/modules/Mahjong/CartesianChannels31V19.olean.private",
+      "sha256": "df1e992272938e5d4a66eba0b298a4d11b706799affa119bac3bfe6007dc45f4"
+    },
+    {
+      "bytes": 880,
+      "path": "build/lean_table_checker/acceleration_v19/cartesian_kernel_v19/modules/Mahjong/CartesianChannels31V19.olean.server",
+      "sha256": "8203d6d5179c6a28b20ddee5e13008fdcd7ef650de15d5f1658abb2932b83eb3"
+    },
+    {
+      "bytes": 369720,
+      "path": "build/lean_table_checker/acceleration_v19/cartesian_kernel_v19/modules/Mahjong/CartesianChannels32V19.ir",
+      "sha256": "8569860e1e98e299672ce18e97ea2551fca108b930e5275a391a6df68b35096a"
+    },
+    {
+      "bytes": 8512,
+      "path": "build/lean_table_checker/acceleration_v19/cartesian_kernel_v19/modules/Mahjong/CartesianChannels32V19.olean",
+      "sha256": "2c6d6a494cf04d27c57b1ac92f5cfbf56b475a546cfcc1406b5d6b6f028e16a1"
+    },
+    {
+      "bytes": 702312,
+      "path": "build/lean_table_checker/acceleration_v19/cartesian_kernel_v19/modules/Mahjong/CartesianChannels32V19.olean.private",
+      "sha256": "e2284aafb7a7376f00a424e76e779c48e7ff7576c74eb866664c0a5d221beae4"
+    },
+    {
+      "bytes": 1576,
+      "path": "build/lean_table_checker/acceleration_v19/cartesian_kernel_v19/modules/Mahjong/CartesianChannels32V19.olean.server",
+      "sha256": "25cbfbbd5611328bd1aa63c5630b83d6a8f2c22661ee5f630b4cfe71cf856d85"
+    },
+    {
+      "bytes": 246120,
+      "path": "build/lean_table_checker/acceleration_v19/cartesian_kernel_v19/modules/Mahjong/CartesianChannels33V19.ir",
+      "sha256": "7e811db57567df6c9aba80a661a832f4e7391fd56bb355ba5859bcb592089484"
+    },
+    {
+      "bytes": 7936,
+      "path": "build/lean_table_checker/acceleration_v19/cartesian_kernel_v19/modules/Mahjong/CartesianChannels33V19.olean",
+      "sha256": "318e82626a23ad05988ebe1ccc8c23ecc3734a085af2158698ae8514e63468a1"
+    },
+    {
+      "bytes": 487736,
+      "path": "build/lean_table_checker/acceleration_v19/cartesian_kernel_v19/modules/Mahjong/CartesianChannels33V19.olean.private",
+      "sha256": "da4e0700df629f1d7e2b17112d9a63513aee7b28b3ad8279556edc369f6d2ace"
+    },
+    {
+      "bytes": 1344,
+      "path": "build/lean_table_checker/acceleration_v19/cartesian_kernel_v19/modules/Mahjong/CartesianChannels33V19.olean.server",
+      "sha256": "9134415b2044205299ea12f6f4495468f23e6fbeac47aee1ebcff8d38f732a58"
+    },
+    {
+      "bytes": 2122896,
+      "path": "build/lean_table_checker/acceleration_v19/cartesian_kernel_v19/modules/Mahjong/CartesianData00V19.olean",
+      "sha256": "2da28ec3affc1e62ae23804bc042b6e1a2dd5f279d36fc75111795ba4c4900de"
+    },
+    {
+      "bytes": 3896,
+      "path": "build/lean_table_checker/acceleration_v19/cartesian_kernel_v19/modules/Mahjong/CartesianData00V19.olean.private",
+      "sha256": "23e5f7a1c8519acc7d630515fc0b71b3e8820b8cadbe3a64c61f26c301ed2e32"
+    },
+    {
+      "bytes": 96,
+      "path": "build/lean_table_checker/acceleration_v19/cartesian_kernel_v19/modules/Mahjong/CartesianData00V19.olean.server",
+      "sha256": "13053aac35453cbfe4094be99249dae1d879762705835bf8b2dc03cf9867b0c9"
+    },
+    {
+      "bytes": 2132480,
+      "path": "build/lean_table_checker/acceleration_v19/cartesian_kernel_v19/modules/Mahjong/CartesianData01V19.olean",
+      "sha256": "5d811b57bab8b8e3696144bb2130373219599de5284eb22f4dfa72b05a59bd85"
+    },
+    {
+      "bytes": 2872,
+      "path": "build/lean_table_checker/acceleration_v19/cartesian_kernel_v19/modules/Mahjong/CartesianData01V19.olean.private",
+      "sha256": "7c266f208170d2ecb5d4cfa99b9a85a1bd800ccbfbaa70d1d728f096f1c39a77"
+    },
+    {
+      "bytes": 96,
+      "path": "build/lean_table_checker/acceleration_v19/cartesian_kernel_v19/modules/Mahjong/CartesianData01V19.olean.server",
+      "sha256": "b1e5e0156685684dcaf946374f358cced276e0d00f2a5f257ada81129f466de4"
+    },
+    {
+      "bytes": 2154640,
+      "path": "build/lean_table_checker/acceleration_v19/cartesian_kernel_v19/modules/Mahjong/CartesianData02V19.olean",
+      "sha256": "bef76bcfa58a7259c48d806316d87d179d97a3e559536869f7c5b0e25f05ba3d"
+    },
+    {
+      "bytes": 3224,
+      "path": "build/lean_table_checker/acceleration_v19/cartesian_kernel_v19/modules/Mahjong/CartesianData02V19.olean.private",
+      "sha256": "d9fb5508b0145955ee74b495a88e166e441e30565542c26c0b33b387a2a167d0"
+    },
+    {
+      "bytes": 96,
+      "path": "build/lean_table_checker/acceleration_v19/cartesian_kernel_v19/modules/Mahjong/CartesianData02V19.olean.server",
+      "sha256": "1dfcc10150cda0fb25af5842d7b5b669bf50b6107d51941398519439c81d62b0"
+    },
+    {
+      "bytes": 2243632,
+      "path": "build/lean_table_checker/acceleration_v19/cartesian_kernel_v19/modules/Mahjong/CartesianData03V19.olean",
+      "sha256": "0f9835a11d5d37e8f4af9f7b82e7d22bc7fd5ecc268d450ac6e76673fa559d3a"
+    },
+    {
+      "bytes": 7752,
+      "path": "build/lean_table_checker/acceleration_v19/cartesian_kernel_v19/modules/Mahjong/CartesianData03V19.olean.private",
+      "sha256": "e01dbaf60f4f6c68cd12d57b4588463305e004f9cd897d897275cabe7c6d41ae"
+    },
+    {
+      "bytes": 96,
+      "path": "build/lean_table_checker/acceleration_v19/cartesian_kernel_v19/modules/Mahjong/CartesianData03V19.olean.server",
+      "sha256": "2f2808e24727f84a34050d70c6c8c35b6bdaa7effc3be66ce34bc5e797ecc23e"
+    },
+    {
+      "bytes": 2141912,
+      "path": "build/lean_table_checker/acceleration_v19/cartesian_kernel_v19/modules/Mahjong/CartesianData04V19.olean",
+      "sha256": "6b3c82115510db95da9979f3e3bab2d74d7881807808e4182107598c7def9b49"
+    },
+    {
+      "bytes": 3448,
+      "path": "build/lean_table_checker/acceleration_v19/cartesian_kernel_v19/modules/Mahjong/CartesianData04V19.olean.private",
+      "sha256": "472a73456293f17f07213ac72071be3f3383397f7f2d495e3b718a29118786f7"
+    },
+    {
+      "bytes": 96,
+      "path": "build/lean_table_checker/acceleration_v19/cartesian_kernel_v19/modules/Mahjong/CartesianData04V19.olean.server",
+      "sha256": "6cec55fe64d9bcef1f76b219ea4857586398790d86f732e0ee58f529905be1d4"
+    },
+    {
+      "bytes": 2085256,
+      "path": "build/lean_table_checker/acceleration_v19/cartesian_kernel_v19/modules/Mahjong/CartesianData05V19.olean",
+      "sha256": "e340a7d06c1ffe9eb80a537a649f96bdb0fa299dc7ecbb5a29067a2bcfa9e1d4"
+    },
+    {
+      "bytes": 2488,
+      "path": "build/lean_table_checker/acceleration_v19/cartesian_kernel_v19/modules/Mahjong/CartesianData05V19.olean.private",
+      "sha256": "e84490a3e6cfeab61defc8ae6ef32d6b415ca3c955a76781e2551c8b99c2dd70"
+    },
+    {
+      "bytes": 96,
+      "path": "build/lean_table_checker/acceleration_v19/cartesian_kernel_v19/modules/Mahjong/CartesianData05V19.olean.server",
+      "sha256": "d6deaf0c56b5b109b057920ba77671c7470a84474feeabdc54a73d947f5e4167"
+    },
+    {
+      "bytes": 2138040,
+      "path": "build/lean_table_checker/acceleration_v19/cartesian_kernel_v19/modules/Mahjong/CartesianData06V19.olean",
+      "sha256": "38870a07a22859142336af4c518e0673cb756c8663fc9f03102a1eed5f7335c4"
+    },
+    {
+      "bytes": 2264,
+      "path": "build/lean_table_checker/acceleration_v19/cartesian_kernel_v19/modules/Mahjong/CartesianData06V19.olean.private",
+      "sha256": "8e9a2dc93d8c7cb04000e82104ac559eb0303f523317ff3eb55fe67d46293466"
+    },
+    {
+      "bytes": 96,
+      "path": "build/lean_table_checker/acceleration_v19/cartesian_kernel_v19/modules/Mahjong/CartesianData06V19.olean.server",
+      "sha256": "57a265ffeb7a6e8583cba575a5dec627e555eaf0005d2c902ebee4821c2387e0"
+    },
+    {
+      "bytes": 2138440,
+      "path": "build/lean_table_checker/acceleration_v19/cartesian_kernel_v19/modules/Mahjong/CartesianData07V19.olean",
+      "sha256": "a1bcc7325b2437b132eae025453c5839f66fe6d80f38962ece0af930a1a35f10"
+    },
+    {
+      "bytes": 2328,
+      "path": "build/lean_table_checker/acceleration_v19/cartesian_kernel_v19/modules/Mahjong/CartesianData07V19.olean.private",
+      "sha256": "9285cf0f15629b5580d2cfee39123bb8e09f225dda952c135df7eda577d035a4"
+    },
+    {
+      "bytes": 96,
+      "path": "build/lean_table_checker/acceleration_v19/cartesian_kernel_v19/modules/Mahjong/CartesianData07V19.olean.server",
+      "sha256": "24c8039cd2d036b89715bda446182b1c8b2a17f51ea080836022cbd933210862"
+    },
+    {
+      "bytes": 1961328,
+      "path": "build/lean_table_checker/acceleration_v19/cartesian_kernel_v19/modules/Mahjong/CartesianData08V19.olean",
+      "sha256": "59f563710de495f319d23cae8df3c1ca27364de24e0b600ce1fc62ac060d4769"
+    },
+    {
+      "bytes": 3528,
+      "path": "build/lean_table_checker/acceleration_v19/cartesian_kernel_v19/modules/Mahjong/CartesianData08V19.olean.private",
+      "sha256": "b3857a7e13e63662a2d168f1a5850c44714f87aa7ad4a286f3708bae54a49987"
+    },
+    {
+      "bytes": 96,
+      "path": "build/lean_table_checker/acceleration_v19/cartesian_kernel_v19/modules/Mahjong/CartesianData08V19.olean.server",
+      "sha256": "688cdab7801fda15bed59bf42178bff36de1c23a5847f80fac43cca688c5d94b"
+    },
+    {
+      "bytes": 18064,
+      "path": "build/lean_table_checker/acceleration_v19/cartesian_kernel_v19/modules/Mahjong/CartesianMathV19.ir",
+      "sha256": "2137c06ddad7356b0d3a44f19e25ab746d6214906fc3854b4ef0cfe5e40fec7f"
+    },
+    {
+      "bytes": 22368,
+      "path": "build/lean_table_checker/acceleration_v19/cartesian_kernel_v19/modules/Mahjong/CartesianMathV19.olean",
+      "sha256": "c5e163800ba9beae7ebe3eca9e4787bab2acea30d753da74b09416e99d4e7965"
+    },
+    {
+      "bytes": 62096,
+      "path": "build/lean_table_checker/acceleration_v19/cartesian_kernel_v19/modules/Mahjong/CartesianMathV19.olean.private",
+      "sha256": "7d9a2de3d92d68df964442bf04a3b397ee3f1349b3612f32e5b25c74b4a3b57a"
+    },
+    {
+      "bytes": 2288,
+      "path": "build/lean_table_checker/acceleration_v19/cartesian_kernel_v19/modules/Mahjong/CartesianMathV19.olean.server",
+      "sha256": "eb7dbcfbcf3bacd17c18c9ade4dabf331c356ea6ab33b2974fad081805f4c7b7"
+    },
+    {
+      "bytes": 287200,
+      "path": "build/lean_table_checker/acceleration_v19/cartesian_kernel_v19/modules/Mahjong/CartesianNatLoaderV19.ir",
+      "sha256": "86116e41644167cfa990a996494f2fcf2b7a7cdd96d976e5b64878ee3fab8602"
+    },
+    {
+      "bytes": 306832,
+      "path": "build/lean_table_checker/acceleration_v19/cartesian_kernel_v19/modules/Mahjong/CartesianNatLoaderV19.olean",
+      "sha256": "4d9a881e4041520b5a9c00caef4e7c47f334cd55c61bc3dafceda5bd4f483c70"
+    },
+    {
+      "bytes": 990328,
+      "path": "build/lean_table_checker/acceleration_v19/cartesian_kernel_v19/modules/Mahjong/CartesianNatLoaderV19.olean.private",
+      "sha256": "4c77923871835a64942403e31fef3fcb5b257bafd4da5ed3cba464d94affc580"
+    },
+    {
+      "bytes": 11104,
+      "path": "build/lean_table_checker/acceleration_v19/cartesian_kernel_v19/modules/Mahjong/CartesianNatLoaderV19.olean.server",
+      "sha256": "60bf238651475df5a6ba75a1d711cb8cc381b381debfb5ac0be048ed4389df9d"
+    },
+    {
+      "bytes": 64760,
+      "path": "build/lean_table_checker/acceleration_v19/cartesian_kernel_v19/modules/Mahjong/CartesianPagedWriterV19.ir",
+      "sha256": "5583ce0503a9fb90f88da485294c9cd3959cb3bbb06ee65f0ff16915d03f6e65"
+    },
+    {
+      "bytes": 70104,
+      "path": "build/lean_table_checker/acceleration_v19/cartesian_kernel_v19/modules/Mahjong/CartesianPagedWriterV19.olean",
+      "sha256": "17dfffcad96e852a73e859d2d93f65a071a2e271c7d5a6555e22e2f5ba955686"
+    },
+    {
+      "bytes": 190232,
+      "path": "build/lean_table_checker/acceleration_v19/cartesian_kernel_v19/modules/Mahjong/CartesianPagedWriterV19.olean.private",
+      "sha256": "bcea21a05c7af8586f1fe19dce4103bfa75efd69f10c4a1e627a19ba60d24005"
+    },
+    {
+      "bytes": 1344,
+      "path": "build/lean_table_checker/acceleration_v19/cartesian_kernel_v19/modules/Mahjong/CartesianPagedWriterV19.olean.server",
+      "sha256": "abddf0262bfa45aa00632acb8e2838b8e3fc2c8e53be96c9cebe1216f8bad37f"
+    },
+    {
+      "bytes": 1576,
+      "path": "build/lean_table_checker/acceleration_v19/cartesian_kernel_v19/modules/Mahjong/CartesianPNB00V19.ir",
+      "sha256": "f0968f30be4b76b4cfd8725b4a86cbca63dfb1d78634467c823da30c8498ecb5"
+    },
+    {
+      "bytes": 14568,
+      "path": "build/lean_table_checker/acceleration_v19/cartesian_kernel_v19/modules/Mahjong/CartesianPNB00V19.olean",
+      "sha256": "336660020786fc007cd7ef64243aa59f35eb86361d2711a3c81e01788698b68b"
+    },
+    {
+      "bytes": 19384,
+      "path": "build/lean_table_checker/acceleration_v19/cartesian_kernel_v19/modules/Mahjong/CartesianPNB00V19.olean.private",
+      "sha256": "531e7d21f0c345afde7a7dcb8ccae854a6d41fe181b3bac23f72d4264fc498d3"
+    },
+    {
+      "bytes": 7800,
+      "path": "build/lean_table_checker/acceleration_v19/cartesian_kernel_v19/modules/Mahjong/CartesianPNB00V19.olean.server",
+      "sha256": "0961f6c34c42812ca50037bd4e42947074484bee3797a8e4f2c3daf19147ed6d"
+    },
+    {
+      "bytes": 2184,
+      "path": "build/lean_table_checker/acceleration_v19/cartesian_kernel_v19/modules/Mahjong/CartesianPNB01V19.ir",
+      "sha256": "2cea6927f7b7b86eb58b514b94e9360407fc77599c96a06a10a74afd95ae9d33"
+    },
+    {
+      "bytes": 15176,
+      "path": "build/lean_table_checker/acceleration_v19/cartesian_kernel_v19/modules/Mahjong/CartesianPNB01V19.olean",
+      "sha256": "21b56afd604a50b2e413a21253df7ad3e47c87602d54bfb7ded8df1be58da03a"
+    },
+    {
+      "bytes": 21536,
+      "path": "build/lean_table_checker/acceleration_v19/cartesian_kernel_v19/modules/Mahjong/CartesianPNB01V19.olean.private",
+      "sha256": "b3b39b6012566b65554c1789cec16d9ec64dab9fc5658719db51a7059a79f965"
+    },
+    {
+      "bytes": 7800,
+      "path": "build/lean_table_checker/acceleration_v19/cartesian_kernel_v19/modules/Mahjong/CartesianPNB01V19.olean.server",
+      "sha256": "d35b4a967e04d909a9fdd77b12bc03be88b081c66ff39e3838d0f57bf865ddf8"
+    },
+    {
+      "bytes": 2032,
+      "path": "build/lean_table_checker/acceleration_v19/cartesian_kernel_v19/modules/Mahjong/CartesianPNB02V19.ir",
+      "sha256": "a58b99aaace99558fc3a205407384220dabe978ad4905871ceea479ad3f01212"
+    },
+    {
+      "bytes": 15024,
+      "path": "build/lean_table_checker/acceleration_v19/cartesian_kernel_v19/modules/Mahjong/CartesianPNB02V19.olean",
+      "sha256": "21ab4ea4edffb35849424a87cb57f53efb64fd5e51a432667d5a8c125d795a70"
+    },
+    {
+      "bytes": 21472,
+      "path": "build/lean_table_checker/acceleration_v19/cartesian_kernel_v19/modules/Mahjong/CartesianPNB02V19.olean.private",
+      "sha256": "56b850e1bb0cb5182e5bf0a610c8b7345346bc83429f9a0f2a009a6b50f1b728"
+    },
+    {
+      "bytes": 7800,
+      "path": "build/lean_table_checker/acceleration_v19/cartesian_kernel_v19/modules/Mahjong/CartesianPNB02V19.olean.server",
+      "sha256": "eb596ac48d6e0954179b1c5e5f713bfcc13394f1c6a760308c2cbf268699ffb2"
+    },
+    {
+      "bytes": 1576,
+      "path": "build/lean_table_checker/acceleration_v19/cartesian_kernel_v19/modules/Mahjong/CartesianPNB03V19.ir",
+      "sha256": "72b489fe3c3b685e818ebe469578c2d747d005c1b5d432fa03dda800d5fba404"
+    },
+    {
+      "bytes": 13368,
+      "path": "build/lean_table_checker/acceleration_v19/cartesian_kernel_v19/modules/Mahjong/CartesianPNB03V19.olean",
+      "sha256": "0e11418aad491a878affd99101f49d982c3fb34d907b71914c96df460571305d"
+    },
+    {
+      "bytes": 16936,
+      "path": "build/lean_table_checker/acceleration_v19/cartesian_kernel_v19/modules/Mahjong/CartesianPNB03V19.olean.private",
+      "sha256": "a18c64ee728a8942ba47eee3f89e72194d9d9260c8d4fead68dca94f7255a692"
+    },
+    {
+      "bytes": 6640,
+      "path": "build/lean_table_checker/acceleration_v19/cartesian_kernel_v19/modules/Mahjong/CartesianPNB03V19.olean.server",
+      "sha256": "7304104bf48c9ab016542f82b72c02b0233efa7897a00db340d3b0be415bf4a8"
+    },
+    {
+      "bytes": 2032,
+      "path": "build/lean_table_checker/acceleration_v19/cartesian_kernel_v19/modules/Mahjong/CartesianPNB04V19.ir",
+      "sha256": "050b9a6946f597234dd80d0e7beef174f53f1a5315a87bc697521e63aa311cdd"
+    },
+    {
+      "bytes": 14304,
+      "path": "build/lean_table_checker/acceleration_v19/cartesian_kernel_v19/modules/Mahjong/CartesianPNB04V19.olean",
+      "sha256": "dd47dd4af52c3dba7c605b896780d896f1cf843b1e0b1414856b66e6e4cd4613"
+    },
+    {
+      "bytes": 20248,
+      "path": "build/lean_table_checker/acceleration_v19/cartesian_kernel_v19/modules/Mahjong/CartesianPNB04V19.olean.private",
+      "sha256": "3f5ed133e27c80754847168a8a96fc5fab8f8298e28128976d9c48dbff800619"
+    },
+    {
+      "bytes": 7104,
+      "path": "build/lean_table_checker/acceleration_v19/cartesian_kernel_v19/modules/Mahjong/CartesianPNB04V19.olean.server",
+      "sha256": "6010095ac89091be1da4a44bdeb4f57f4177ac0f4f5966b31d1e72d04763923b"
+    },
+    {
+      "bytes": 2032,
+      "path": "build/lean_table_checker/acceleration_v19/cartesian_kernel_v19/modules/Mahjong/CartesianPNB05V19.ir",
+      "sha256": "59c45f4abc14d50e1a5572e40d30a6ea8c86ce96cdea95d386399b9e159b3366"
+    },
+    {
+      "bytes": 15024,
+      "path": "build/lean_table_checker/acceleration_v19/cartesian_kernel_v19/modules/Mahjong/CartesianPNB05V19.olean",
+      "sha256": "f714901574152720641edbd5bcc5fa79b809fa146a639e49cc05e32846e97a86"
+    },
+    {
+      "bytes": 18320,
+      "path": "build/lean_table_checker/acceleration_v19/cartesian_kernel_v19/modules/Mahjong/CartesianPNB05V19.olean.private",
+      "sha256": "cbe6340929d9cf50365b13452f54ec4afe4ca6b1f762f5a5b7e60ce7060473f1"
+    },
+    {
+      "bytes": 7800,
+      "path": "build/lean_table_checker/acceleration_v19/cartesian_kernel_v19/modules/Mahjong/CartesianPNB05V19.olean.server",
+      "sha256": "a1873fbbddda585985a0cc5ee3cf204af6257e57710977c86bab36bb46c1a283"
+    },
+    {
+      "bytes": 1880,
+      "path": "build/lean_table_checker/acceleration_v19/cartesian_kernel_v19/modules/Mahjong/CartesianPNB06V19.ir",
+      "sha256": "3a148164e50634b89af21027c712adcc6d3e7d7819b6dfb447bdfa1be10ca4fc"
+    },
+    {
+      "bytes": 15112,
+      "path": "build/lean_table_checker/acceleration_v19/cartesian_kernel_v19/modules/Mahjong/CartesianPNB06V19.olean",
+      "sha256": "d06bd7106a1c140b4070914e87c0f2707f4f189e6a4d0e4d9b82746548b4c379"
+    },
+    {
+      "bytes": 19208,
+      "path": "build/lean_table_checker/acceleration_v19/cartesian_kernel_v19/modules/Mahjong/CartesianPNB06V19.olean.private",
+      "sha256": "e7191eda526de66ac0d5b5b69e5370031e177c3de708c5fa2fc0225f931f7d39"
+    },
+    {
+      "bytes": 8032,
+      "path": "build/lean_table_checker/acceleration_v19/cartesian_kernel_v19/modules/Mahjong/CartesianPNB06V19.olean.server",
+      "sha256": "171155781a133071646641bd298935c380083ec9acda39cde1b7ce227e0f1d79"
+    },
+    {
+      "bytes": 2032,
+      "path": "build/lean_table_checker/acceleration_v19/cartesian_kernel_v19/modules/Mahjong/CartesianPNB07V19.ir",
+      "sha256": "90085e43b13eeda3b506049f5e53065640daf7aec9df4fa9aa83fa3158fd8e02"
+    },
+    {
+      "bytes": 14544,
+      "path": "build/lean_table_checker/acceleration_v19/cartesian_kernel_v19/modules/Mahjong/CartesianPNB07V19.olean",
+      "sha256": "70df95bc0455c164bb16f2ae628224e487148279c2cd0ac1f3652339784b3a4d"
+    },
+    {
+      "bytes": 17264,
+      "path": "build/lean_table_checker/acceleration_v19/cartesian_kernel_v19/modules/Mahjong/CartesianPNB07V19.olean.private",
+      "sha256": "dfb748600d491e208e2ad1499354ccc2111ad2aec97bbceb580fbbe7fe20796f"
+    },
+    {
+      "bytes": 7336,
+      "path": "build/lean_table_checker/acceleration_v19/cartesian_kernel_v19/modules/Mahjong/CartesianPNB07V19.olean.server",
+      "sha256": "f2ed497669a29175fb6ab60389ea94d38bdd7831535d95a3693f3fb01699310d"
+    },
+    {
+      "bytes": 1880,
+      "path": "build/lean_table_checker/acceleration_v19/cartesian_kernel_v19/modules/Mahjong/CartesianPNB08V19.ir",
+      "sha256": "6eb711d52820cd04b936d2165ad20454d05917bc024a93c5c339c6a2edfdb2b4"
+    },
+    {
+      "bytes": 14392,
+      "path": "build/lean_table_checker/acceleration_v19/cartesian_kernel_v19/modules/Mahjong/CartesianPNB08V19.olean",
+      "sha256": "b6f2acdee523db385fa99e303b4bf91058cc08e3a6cc0eb2e2a3f9a86231dfda"
+    },
+    {
+      "bytes": 20728,
+      "path": "build/lean_table_checker/acceleration_v19/cartesian_kernel_v19/modules/Mahjong/CartesianPNB08V19.olean.private",
+      "sha256": "b05569c8c9ac53facf747571384383e2362f589478098ce7ca620601c1d4ec1d"
+    },
+    {
+      "bytes": 7336,
+      "path": "build/lean_table_checker/acceleration_v19/cartesian_kernel_v19/modules/Mahjong/CartesianPNB08V19.olean.server",
+      "sha256": "d964374dd02645f59274364b33040f7f0e0c5cd4bfaf74864b82f73db195ba2b"
+    },
+    {
+      "bytes": 1728,
+      "path": "build/lean_table_checker/acceleration_v19/cartesian_kernel_v19/modules/Mahjong/CartesianPNB09V19.ir",
+      "sha256": "449102a9b735f6d1b9e6f4c503ba052b41082a33088818ba94982b7448dddb75"
+    },
+    {
+      "bytes": 11840,
+      "path": "build/lean_table_checker/acceleration_v19/cartesian_kernel_v19/modules/Mahjong/CartesianPNB09V19.olean",
+      "sha256": "469658ebc003b7dff519e414059c569b544494a8971e2d2eafaba614acc4e6a2"
+    },
+    {
+      "bytes": 12264,
+      "path": "build/lean_table_checker/acceleration_v19/cartesian_kernel_v19/modules/Mahjong/CartesianPNB09V19.olean.private",
+      "sha256": "421a74dcbda2e06acc4c44375c81b524741ec482497d725d040e56882eee9281"
+    },
+    {
+      "bytes": 5016,
+      "path": "build/lean_table_checker/acceleration_v19/cartesian_kernel_v19/modules/Mahjong/CartesianPNB09V19.olean.server",
+      "sha256": "72fc635d5b4f46cdb7cf1d50845e07dcf3a1c69497fd4c4d1877e34508b6e8de"
+    },
+    {
+      "bytes": 1576,
+      "path": "build/lean_table_checker/acceleration_v19/cartesian_kernel_v19/modules/Mahjong/CartesianPNB10V19.ir",
+      "sha256": "c42727ee271c3e807725544f724a662b8f319e4df736c00388c4eefe611bf3cd"
+    },
+    {
+      "bytes": 13128,
+      "path": "build/lean_table_checker/acceleration_v19/cartesian_kernel_v19/modules/Mahjong/CartesianPNB10V19.olean",
+      "sha256": "ad8fea0440123f5f04699d4e4e10f21684f9460b6b0ccbc69cee2d944bf36bbd"
+    },
+    {
+      "bytes": 12992,
+      "path": "build/lean_table_checker/acceleration_v19/cartesian_kernel_v19/modules/Mahjong/CartesianPNB10V19.olean.private",
+      "sha256": "96bccc7573843ebee29c3ae81ed63aab3c040fbb6f0cce3df517d57e40043162"
+    },
+    {
+      "bytes": 6408,
+      "path": "build/lean_table_checker/acceleration_v19/cartesian_kernel_v19/modules/Mahjong/CartesianPNB10V19.olean.server",
+      "sha256": "67b05dba530fd216dbd6260ebb771904ab3633a401cbefd7288946387b8e1335"
+    },
+    {
+      "bytes": 1880,
+      "path": "build/lean_table_checker/acceleration_v19/cartesian_kernel_v19/modules/Mahjong/CartesianPNB11V19.ir",
+      "sha256": "7652bc889b6a28d6573506fdd481ed0ec229a9c5697b651921aeb2721a9b4d85"
+    },
+    {
+      "bytes": 12712,
+      "path": "build/lean_table_checker/acceleration_v19/cartesian_kernel_v19/modules/Mahjong/CartesianPNB11V19.olean",
+      "sha256": "a0f9fc505aac7196a345bb84241a6137fabaa54b07a6048be643faa7b818c600"
+    },
+    {
+      "bytes": 18648,
+      "path": "build/lean_table_checker/acceleration_v19/cartesian_kernel_v19/modules/Mahjong/CartesianPNB11V19.olean.private",
+      "sha256": "b4148a17292ea434855199977e0169243dec86429de3a94ae2eb6417510c6f3c"
+    },
+    {
+      "bytes": 5712,
+      "path": "build/lean_table_checker/acceleration_v19/cartesian_kernel_v19/modules/Mahjong/CartesianPNB11V19.olean.server",
+      "sha256": "046c529739826676bb535eb996696354b3cf8fca12af07319e312234512ef314"
+    },
+    {
+      "bytes": 1880,
+      "path": "build/lean_table_checker/acceleration_v19/cartesian_kernel_v19/modules/Mahjong/CartesianPNB12V19.ir",
+      "sha256": "a343520b98870a3b424f4e85384ba22fe5befd9dd7edf8bcdc7b6fa67c397e4a"
+    },
+    {
+      "bytes": 13192,
+      "path": "build/lean_table_checker/acceleration_v19/cartesian_kernel_v19/modules/Mahjong/CartesianPNB12V19.olean",
+      "sha256": "788a42556e71e7de509522f0f24a879f4f1d7ba79d3aa43862fef2158ff4d038"
+    },
+    {
+      "bytes": 19672,
+      "path": "build/lean_table_checker/acceleration_v19/cartesian_kernel_v19/modules/Mahjong/CartesianPNB12V19.olean.private",
+      "sha256": "8f3819105ac80e21ea3c73f19c48652e086801a90fa00f99d7d0befaa5b38e60"
+    },
+    {
+      "bytes": 6176,
+      "path": "build/lean_table_checker/acceleration_v19/cartesian_kernel_v19/modules/Mahjong/CartesianPNB12V19.olean.server",
+      "sha256": "f9612024b55b21f5c5705965c89bc1b92c7eeca0996fa07d392b33fe9a7c66d5"
+    },
+    {
+      "bytes": 1880,
+      "path": "build/lean_table_checker/acceleration_v19/cartesian_kernel_v19/modules/Mahjong/CartesianPNB13V19.ir",
+      "sha256": "1d8bf1f4714a67943194953cb0bc06182ef220a902554cc471f23762e11f4953"
+    },
+    {
+      "bytes": 13672,
+      "path": "build/lean_table_checker/acceleration_v19/cartesian_kernel_v19/modules/Mahjong/CartesianPNB13V19.olean",
+      "sha256": "7a2e8cfda960ec5d85472a8fff311a50aa4d91132781433aaf258dc2d76efba7"
+    },
+    {
+      "bytes": 23608,
+      "path": "build/lean_table_checker/acceleration_v19/cartesian_kernel_v19/modules/Mahjong/CartesianPNB13V19.olean.private",
+      "sha256": "5f7e3310e3ee859e39191b01e71e23489f846e6d38c1bad26951a71d11097394"
+    },
+    {
+      "bytes": 6640,
+      "path": "build/lean_table_checker/acceleration_v19/cartesian_kernel_v19/modules/Mahjong/CartesianPNB13V19.olean.server",
+      "sha256": "e8acfff29a528317d370bb291ba7d8fbbf8da62115f0b8c4824cb11f0f4c100f"
+    },
+    {
+      "bytes": 2184,
+      "path": "build/lean_table_checker/acceleration_v19/cartesian_kernel_v19/modules/Mahjong/CartesianPNB14V19.ir",
+      "sha256": "1f6d8b55b9a970647bea8df3b530a3229b30e4fe8bd6fabee4805df6fd064b16"
+    },
+    {
+      "bytes": 14696,
+      "path": "build/lean_table_checker/acceleration_v19/cartesian_kernel_v19/modules/Mahjong/CartesianPNB14V19.olean",
+      "sha256": "c99bb16edc929885969a7d5c107628b06c1e0c015e350d02445a642b02913b2f"
+    },
+    {
+      "bytes": 19888,
+      "path": "build/lean_table_checker/acceleration_v19/cartesian_kernel_v19/modules/Mahjong/CartesianPNB14V19.olean.private",
+      "sha256": "79ec67d274281113df9dd36bf06a47b6daecec58ef9237d40fdcd8619e8aad8f"
+    },
+    {
+      "bytes": 7336,
+      "path": "build/lean_table_checker/acceleration_v19/cartesian_kernel_v19/modules/Mahjong/CartesianPNB14V19.olean.server",
+      "sha256": "64224014160e9dffa89803f6a0a864a9e2548d102b62e75225be5c9241070129"
+    },
+    {
+      "bytes": 2184,
+      "path": "build/lean_table_checker/acceleration_v19/cartesian_kernel_v19/modules/Mahjong/CartesianPNB15V19.ir",
+      "sha256": "7226c4daccf1e8cd5512da2a4edbf8a7098d00ea76ccee1730eec264b009aa9b"
+    },
+    {
+      "bytes": 15176,
+      "path": "build/lean_table_checker/acceleration_v19/cartesian_kernel_v19/modules/Mahjong/CartesianPNB15V19.olean",
+      "sha256": "dc2b3babfbf8e05e2cd4dd3ca64fb6b2cdcaa37a3539c644010ba71ae6958641"
+    },
+    {
+      "bytes": 21824,
+      "path": "build/lean_table_checker/acceleration_v19/cartesian_kernel_v19/modules/Mahjong/CartesianPNB15V19.olean.private",
+      "sha256": "aaa899f7d2a9af8ba1402fffdb89b3836c30b418162c966eb2e73b35f80a849f"
+    },
+    {
+      "bytes": 7800,
+      "path": "build/lean_table_checker/acceleration_v19/cartesian_kernel_v19/modules/Mahjong/CartesianPNB15V19.olean.server",
+      "sha256": "6987849031b5a8c1d51b6e07d3e3c388c9b7df76c936919cc971773adb812d7a"
+    },
+    {
+      "bytes": 2032,
+      "path": "build/lean_table_checker/acceleration_v19/cartesian_kernel_v19/modules/Mahjong/CartesianPNB16V19.ir",
+      "sha256": "2dd13e942423522812f96bacdba5a71ce37fbe8e05c01877e3d865128f4757cd"
+    },
+    {
+      "bytes": 15504,
+      "path": "build/lean_table_checker/acceleration_v19/cartesian_kernel_v19/modules/Mahjong/CartesianPNB16V19.olean",
+      "sha256": "87220f4b09957f4fbc73a636dfbf3f291b350cae0a799253d61954097ecdd327"
+    },
+    {
+      "bytes": 21000,
+      "path": "build/lean_table_checker/acceleration_v19/cartesian_kernel_v19/modules/Mahjong/CartesianPNB16V19.olean.private",
+      "sha256": "ccb32488486f9315c9b877e71f6c9e62f803f5b4ea545a53eae9a86e72436775"
+    },
+    {
+      "bytes": 8264,
+      "path": "build/lean_table_checker/acceleration_v19/cartesian_kernel_v19/modules/Mahjong/CartesianPNB16V19.olean.server",
+      "sha256": "88d50ccbdb64a7cf9d976944502cb417d9a638bcc1b80369f8c2ec8072019c85"
+    },
+    {
+      "bytes": 2336,
+      "path": "build/lean_table_checker/acceleration_v19/cartesian_kernel_v19/modules/Mahjong/CartesianPNB17V19.ir",
+      "sha256": "c009c7b1b016612df24c8bcab308296a9acb1475cbdfca89ff2c92b5b559eb2f"
+    },
+    {
+      "bytes": 13648,
+      "path": "build/lean_table_checker/acceleration_v19/cartesian_kernel_v19/modules/Mahjong/CartesianPNB17V19.olean",
+      "sha256": "92f5d45aaef62147f891ed9e2c6326037187cc638534b8fbb623f6c4ba80d6ab"
+    },
+    {
+      "bytes": 15040,
+      "path": "build/lean_table_checker/acceleration_v19/cartesian_kernel_v19/modules/Mahjong/CartesianPNB17V19.olean.private",
+      "sha256": "af0219a7b272db8e8f7cd0b3b39aa2da0ba8706478bb7ecfc909e739f2cade77"
+    },
+    {
+      "bytes": 6176,
+      "path": "build/lean_table_checker/acceleration_v19/cartesian_kernel_v19/modules/Mahjong/CartesianPNB17V19.olean.server",
+      "sha256": "4fdfff23c55ee5355e954e68b7f2a4f01629e1541b2800f921a2e0d59fb1e3de"
+    },
+    {
+      "bytes": 1880,
+      "path": "build/lean_table_checker/acceleration_v19/cartesian_kernel_v19/modules/Mahjong/CartesianPNB18V19.ir",
+      "sha256": "e472ee581aded6bdb6b7713049aa66b89d5004ef1954612296f5c7beb6abc871"
+    },
+    {
+      "bytes": 13432,
+      "path": "build/lean_table_checker/acceleration_v19/cartesian_kernel_v19/modules/Mahjong/CartesianPNB18V19.olean",
+      "sha256": "4ba2f3376dc44a601d92ccfe96e4b176ebca5cae76a323f38032776538f34e73"
+    },
+    {
+      "bytes": 16200,
+      "path": "build/lean_table_checker/acceleration_v19/cartesian_kernel_v19/modules/Mahjong/CartesianPNB18V19.olean.private",
+      "sha256": "bf5785720886b2a7a0e1a201d65d34c51cf601a5739ad9e60642671c6bc67926"
+    },
+    {
+      "bytes": 6408,
+      "path": "build/lean_table_checker/acceleration_v19/cartesian_kernel_v19/modules/Mahjong/CartesianPNB18V19.olean.server",
+      "sha256": "d50ce9a75b20a33ae7ecfc1c81407a7f775b615608616435cc47aa5bf86f246f"
+    },
+    {
+      "bytes": 2488,
+      "path": "build/lean_table_checker/acceleration_v19/cartesian_kernel_v19/modules/Mahjong/CartesianPNB19V19.ir",
+      "sha256": "51fea6cc9733ac1a9cc0ffe35cbd3901c753663957793a66651ed7ca9f678e21"
+    },
+    {
+      "bytes": 15720,
+      "path": "build/lean_table_checker/acceleration_v19/cartesian_kernel_v19/modules/Mahjong/CartesianPNB19V19.olean",
+      "sha256": "6472e203836ce3946542be3e7855e2e7fb2ab1f59b4ae2ebacc1fa347405cd8d"
+    },
+    {
+      "bytes": 25240,
+      "path": "build/lean_table_checker/acceleration_v19/cartesian_kernel_v19/modules/Mahjong/CartesianPNB19V19.olean.private",
+      "sha256": "bebf8abf51b9a17ce4a2114a541fbcd1f9a56567913ee584d20b62542cc39fcd"
+    },
+    {
+      "bytes": 8032,
+      "path": "build/lean_table_checker/acceleration_v19/cartesian_kernel_v19/modules/Mahjong/CartesianPNB19V19.olean.server",
+      "sha256": "56ab84375994354dfd517c8d46b981db5909870502b3909155708c088db37c2a"
+    },
+    {
+      "bytes": 2184,
+      "path": "build/lean_table_checker/acceleration_v19/cartesian_kernel_v19/modules/Mahjong/CartesianPNB20V19.ir",
+      "sha256": "9ec805ccb11f945030ee7d21ad3ac8f75dd5d1654b5c5ca4832265db0deba1f0"
+    },
+    {
+      "bytes": 14696,
+      "path": "build/lean_table_checker/acceleration_v19/cartesian_kernel_v19/modules/Mahjong/CartesianPNB20V19.olean",
+      "sha256": "fb85c79f5921f3a5492799051c79987b5fe3da89aa50ceb24761912a1a887dbc"
+    },
+    {
+      "bytes": 17528,
+      "path": "build/lean_table_checker/acceleration_v19/cartesian_kernel_v19/modules/Mahjong/CartesianPNB20V19.olean.private",
+      "sha256": "a26279599cdea777d5c0216f2f8b0f03680a3cf07e6805cdc2796be6acc759fd"
+    },
+    {
+      "bytes": 7336,
+      "path": "build/lean_table_checker/acceleration_v19/cartesian_kernel_v19/modules/Mahjong/CartesianPNB20V19.olean.server",
+      "sha256": "7f57311f03ff51d51cd616a1e089bbac4ca2b3d52a1d3d20d8a0c0213bb5d0cb"
+    },
+    {
+      "bytes": 1880,
+      "path": "build/lean_table_checker/acceleration_v19/cartesian_kernel_v19/modules/Mahjong/CartesianPNB21V19.ir",
+      "sha256": "d9873da5383d4297bc2b4109d505aac104179039f30b802bd544c86a77616175"
+    },
+    {
+      "bytes": 13672,
+      "path": "build/lean_table_checker/acceleration_v19/cartesian_kernel_v19/modules/Mahjong/CartesianPNB21V19.olean",
+      "sha256": "e87657fe123cde30bf3acd0a808de0b7b62d7cbfc001f5e121eb4e82298af029"
+    },
+    {
+      "bytes": 17032,
+      "path": "build/lean_table_checker/acceleration_v19/cartesian_kernel_v19/modules/Mahjong/CartesianPNB21V19.olean.private",
+      "sha256": "5779de32efeb866f9e2c2e0b3dc60d53bbfe6460749b104f6870852433ea480d"
+    },
+    {
+      "bytes": 6640,
+      "path": "build/lean_table_checker/acceleration_v19/cartesian_kernel_v19/modules/Mahjong/CartesianPNB21V19.olean.server",
+      "sha256": "1e22596c6d9ea6d022cd096a67ce24ad6c82fe7ce94077a12357de7919e3a7e9"
+    },
+    {
+      "bytes": 2184,
+      "path": "build/lean_table_checker/acceleration_v19/cartesian_kernel_v19/modules/Mahjong/CartesianPNB22V19.ir",
+      "sha256": "4ace31cd038b0aea14d47daf40dcd46b830ded721a65db35038ae4131dc52f83"
+    },
+    {
+      "bytes": 15416,
+      "path": "build/lean_table_checker/acceleration_v19/cartesian_kernel_v19/modules/Mahjong/CartesianPNB22V19.olean",
+      "sha256": "91e7a9e3c1b547b6d988b76bc01be7d6d2787648016101e86a16c180a584a35d"
+    },
+    {
+      "bytes": 16888,
+      "path": "build/lean_table_checker/acceleration_v19/cartesian_kernel_v19/modules/Mahjong/CartesianPNB22V19.olean.private",
+      "sha256": "4cdc392718014407f017fbbc8f33e05f5051db291f3b539f8172a9d2c56c99f2"
+    },
+    {
+      "bytes": 8032,
+      "path": "build/lean_table_checker/acceleration_v19/cartesian_kernel_v19/modules/Mahjong/CartesianPNB22V19.olean.server",
+      "sha256": "e8fd9946db159fdadbb6e047ee9060426eb76aa8c80130ddc4498edb32fb0e2c"
+    },
+    {
+      "bytes": 2640,
+      "path": "build/lean_table_checker/acceleration_v19/cartesian_kernel_v19/modules/Mahjong/CartesianPNB23V19.ir",
+      "sha256": "d3d0bbbf4840f9c9033fa970970919ed1956063db9b4af9d7c4f392f6d1daf59"
+    },
+    {
+      "bytes": 15392,
+      "path": "build/lean_table_checker/acceleration_v19/cartesian_kernel_v19/modules/Mahjong/CartesianPNB23V19.olean",
+      "sha256": "11e78436224e5669a3b3374634a0f0ad92aebda29290bd050bf7ede9f43881eb"
+    },
+    {
+      "bytes": 19448,
+      "path": "build/lean_table_checker/acceleration_v19/cartesian_kernel_v19/modules/Mahjong/CartesianPNB23V19.olean.private",
+      "sha256": "352f652c11f6a7f5b8d957c7877b3ff86757e4d5dd16bec48fa80168fafb1c55"
+    },
+    {
+      "bytes": 7568,
+      "path": "build/lean_table_checker/acceleration_v19/cartesian_kernel_v19/modules/Mahjong/CartesianPNB23V19.olean.server",
+      "sha256": "ca56469d547b9b003a5c93f9347385413d2a1a0eaba4fa04cf19d860164f3da5"
+    },
+    {
+      "bytes": 2184,
+      "path": "build/lean_table_checker/acceleration_v19/cartesian_kernel_v19/modules/Mahjong/CartesianPNB24V19.ir",
+      "sha256": "227b9d36de245b81af248e02de1fd4609a19157ec1e9161841b967a6120e7ce0"
+    },
+    {
+      "bytes": 14696,
+      "path": "build/lean_table_checker/acceleration_v19/cartesian_kernel_v19/modules/Mahjong/CartesianPNB24V19.olean",
+      "sha256": "e1587855ba087336a7fbd601c2b8159e0de629065a40ce5c510ad275e962e5fe"
+    },
+    {
+      "bytes": 21232,
+      "path": "build/lean_table_checker/acceleration_v19/cartesian_kernel_v19/modules/Mahjong/CartesianPNB24V19.olean.private",
+      "sha256": "e0ddae1efd0da0cfdaf49dd94f437563677872afc78d2a0efda56617d04b5594"
+    },
+    {
+      "bytes": 7336,
+      "path": "build/lean_table_checker/acceleration_v19/cartesian_kernel_v19/modules/Mahjong/CartesianPNB24V19.olean.server",
+      "sha256": "7341e438b0014ab0aad12a51348cc144a5dc1370b66ed861927acb1b46f5834d"
+    },
+    {
+      "bytes": 2488,
+      "path": "build/lean_table_checker/acceleration_v19/cartesian_kernel_v19/modules/Mahjong/CartesianPNB25V19.ir",
+      "sha256": "75cadc620e06f3cf8064f5bfbe0ea1c908636b3420ae0f1a966f02fbce2dcf41"
+    },
+    {
+      "bytes": 15240,
+      "path": "build/lean_table_checker/acceleration_v19/cartesian_kernel_v19/modules/Mahjong/CartesianPNB25V19.olean",
+      "sha256": "2894f84d8abca00b4bb68f62262cc516b18bb448f68af53942a38892c955c09b"
+    },
+    {
+      "bytes": 17848,
+      "path": "build/lean_table_checker/acceleration_v19/cartesian_kernel_v19/modules/Mahjong/CartesianPNB25V19.olean.private",
+      "sha256": "926ed9bced371b28bea1e5869209ba00a39fe73a9c1f1b32e5fd2da096b7a149"
+    },
+    {
+      "bytes": 7568,
+      "path": "build/lean_table_checker/acceleration_v19/cartesian_kernel_v19/modules/Mahjong/CartesianPNB25V19.olean.server",
+      "sha256": "c092b7cd404a170607b0a8595a2445a20d8f8561e2606cacbf94999e277229a5"
+    },
+    {
+      "bytes": 2184,
+      "path": "build/lean_table_checker/acceleration_v19/cartesian_kernel_v19/modules/Mahjong/CartesianPNB26V19.ir",
+      "sha256": "87a703c20723013720c87786cac10213711a6bbe18061a3b0ca7153b5cdce53f"
+    },
+    {
+      "bytes": 13496,
+      "path": "build/lean_table_checker/acceleration_v19/cartesian_kernel_v19/modules/Mahjong/CartesianPNB26V19.olean",
+      "sha256": "6e012633e64852474af5b241ddc472bb46cec63f4d7a86e02a3236fb87d0772e"
+    },
+    {
+      "bytes": 16928,
+      "path": "build/lean_table_checker/acceleration_v19/cartesian_kernel_v19/modules/Mahjong/CartesianPNB26V19.olean.private",
+      "sha256": "7f3f4d94dfb555feb1db4227b5f81d72e6b6c56ea8c09f0056759855aeaad5a5"
+    },
+    {
+      "bytes": 6176,
+      "path": "build/lean_table_checker/acceleration_v19/cartesian_kernel_v19/modules/Mahjong/CartesianPNB26V19.olean.server",
+      "sha256": "053812b47ea897db6bdaddcd50a87f19a9f4f716d5d72e0dcd56b8db4569804a"
+    },
+    {
+      "bytes": 3096,
+      "path": "build/lean_table_checker/acceleration_v19/cartesian_kernel_v19/modules/Mahjong/CartesianPNB27V19.ir",
+      "sha256": "17ca26ea032e592d6202c85b7486be745fc6942c9cd0d7c3152ab80c3659ce14"
+    },
+    {
+      "bytes": 16088,
+      "path": "build/lean_table_checker/acceleration_v19/cartesian_kernel_v19/modules/Mahjong/CartesianPNB27V19.olean",
+      "sha256": "9dd9d5def13f3715d53bebc8c61df2e4f8ed8cfb2d8c0c83359b9ccf6c7dc6b0"
+    },
+    {
+      "bytes": 24472,
+      "path": "build/lean_table_checker/acceleration_v19/cartesian_kernel_v19/modules/Mahjong/CartesianPNB27V19.olean.private",
+      "sha256": "890743a05953ca538f5c7d245e4adea9344837385cbc9d4341577b0447924c56"
+    },
+    {
+      "bytes": 7800,
+      "path": "build/lean_table_checker/acceleration_v19/cartesian_kernel_v19/modules/Mahjong/CartesianPNB27V19.olean.server",
+      "sha256": "65fd8b49b49928153ca3c4ebc76c40fc68efce92aababb350655bc76220c83f8"
+    },
+    {
+      "bytes": 1576,
+      "path": "build/lean_table_checker/acceleration_v19/cartesian_kernel_v19/modules/Mahjong/CartesianPrepB00V19.ir",
+      "sha256": "66115022bc99e54a4974da9e3d2ededb09648d460cd81b439f2e85cd42d94f82"
+    },
+    {
+      "bytes": 34568,
+      "path": "build/lean_table_checker/acceleration_v19/cartesian_kernel_v19/modules/Mahjong/CartesianPrepB00V19.olean",
+      "sha256": "052463dae541ad128782ae0836db936930109207ce7e9f80cca920781ce9cf89"
+    },
+    {
+      "bytes": 8568,
+      "path": "build/lean_table_checker/acceleration_v19/cartesian_kernel_v19/modules/Mahjong/CartesianPrepB00V19.olean.private",
+      "sha256": "5a29aef66487bddd06dcc1c594c151d5570892482827a5cb1513a78ae1255a82"
+    },
+    {
+      "bytes": 600,
+      "path": "build/lean_table_checker/acceleration_v19/cartesian_kernel_v19/modules/Mahjong/CartesianPrepB00V19.olean.server",
+      "sha256": "0cf0399a93e18576ce9ea7530ec74206a2cddfe586b5b4e470eb7001de030aa1"
+    },
+    {
+      "bytes": 2184,
+      "path": "build/lean_table_checker/acceleration_v19/cartesian_kernel_v19/modules/Mahjong/CartesianPrepB01V19.ir",
+      "sha256": "b86c6dc30260c39a6db88cffe7a1f8299ca8d5a2aff9af674cbf238e3b302762"
+    },
+    {
+      "bytes": 45512,
+      "path": "build/lean_table_checker/acceleration_v19/cartesian_kernel_v19/modules/Mahjong/CartesianPrepB01V19.olean",
+      "sha256": "9e08e09d1bb6d8b23065e2edbc6f23f6ab6297c952cbe5fb0deefebf22027320"
+    },
+    {
+      "bytes": 11448,
+      "path": "build/lean_table_checker/acceleration_v19/cartesian_kernel_v19/modules/Mahjong/CartesianPrepB01V19.olean.private",
+      "sha256": "b5af00590cbb90ec954a461d830e16cf6736f830e3396cf3763043fdfe0039c3"
+    },
+    {
+      "bytes": 600,
+      "path": "build/lean_table_checker/acceleration_v19/cartesian_kernel_v19/modules/Mahjong/CartesianPrepB01V19.olean.server",
+      "sha256": "5c77a57e558a75dcc2f3518205c0c6cade65bd4abf90ffd6445a2e18a712f426"
+    },
+    {
+      "bytes": 2032,
+      "path": "build/lean_table_checker/acceleration_v19/cartesian_kernel_v19/modules/Mahjong/CartesianPrepB02V19.ir",
+      "sha256": "570e17bee57b61550a1b5c7ecec9dcd2a21d36210d99c5df8a0db8d1017b93e9"
+    },
+    {
+      "bytes": 52800,
+      "path": "build/lean_table_checker/acceleration_v19/cartesian_kernel_v19/modules/Mahjong/CartesianPrepB02V19.olean",
+      "sha256": "b681cdee95ef93451484d838d6b591804edec7e4cd733a0e8af752f91d5d2074"
+    },
+    {
+      "bytes": 15480,
+      "path": "build/lean_table_checker/acceleration_v19/cartesian_kernel_v19/modules/Mahjong/CartesianPrepB02V19.olean.private",
+      "sha256": "4fa4837768eba5ed5bf8a3e6c79ff9db2f75ede066da1b10d6de13842cf90a95"
+    },
+    {
+      "bytes": 600,
+      "path": "build/lean_table_checker/acceleration_v19/cartesian_kernel_v19/modules/Mahjong/CartesianPrepB02V19.olean.server",
+      "sha256": "449e2e63d63e0d556584acfef4688d83fd89eeb8cac00318b7f818c21ab11b05"
+    },
+    {
+      "bytes": 1576,
+      "path": "build/lean_table_checker/acceleration_v19/cartesian_kernel_v19/modules/Mahjong/CartesianPrepB03V19.ir",
+      "sha256": "fbf0cfe19c3592c1d195b8b6fc073227de21511f69e79f83d2f461983f53b85f"
+    },
+    {
+      "bytes": 28936,
+      "path": "build/lean_table_checker/acceleration_v19/cartesian_kernel_v19/modules/Mahjong/CartesianPrepB03V19.olean",
+      "sha256": "c465bf10c9f79bd686837a25a3eafb96453a0d1e526427f41ae1f9c0e2857017"
+    },
+    {
+      "bytes": 7416,
+      "path": "build/lean_table_checker/acceleration_v19/cartesian_kernel_v19/modules/Mahjong/CartesianPrepB03V19.olean.private",
+      "sha256": "afb5417c1c3d64457519853294ae80c50cc289c0d02f5fae6bf615afdda87da9"
+    },
+    {
+      "bytes": 600,
+      "path": "build/lean_table_checker/acceleration_v19/cartesian_kernel_v19/modules/Mahjong/CartesianPrepB03V19.olean.server",
+      "sha256": "e8d6508634bb7d820c6d86e5ddba85dbaebe40a76f0a6447f397659d874ca573"
+    },
+    {
+      "bytes": 2032,
+      "path": "build/lean_table_checker/acceleration_v19/cartesian_kernel_v19/modules/Mahjong/CartesianPrepB04V19.ir",
+      "sha256": "f496c9df7c910168307936c7ea3f7626e4c85157c44603325f515d6242cbe2cf"
+    },
+    {
+      "bytes": 43120,
+      "path": "build/lean_table_checker/acceleration_v19/cartesian_kernel_v19/modules/Mahjong/CartesianPrepB04V19.olean",
+      "sha256": "7c7e94f81d3367ca07c750b33565f91f48936e5e981b9a3c7eacdd0d25452436"
+    },
+    {
+      "bytes": 11448,
+      "path": "build/lean_table_checker/acceleration_v19/cartesian_kernel_v19/modules/Mahjong/CartesianPrepB04V19.olean.private",
+      "sha256": "30bba2e4195e986948005342a757765aebca51f92a5d026d586f6105e85c6b7c"
+    },
+    {
+      "bytes": 600,
+      "path": "build/lean_table_checker/acceleration_v19/cartesian_kernel_v19/modules/Mahjong/CartesianPrepB04V19.olean.server",
+      "sha256": "8d20e2693e906ce94f9833553e20202d365ad3a1c031b07fe9bbb13d279786a6"
+    },
+    {
+      "bytes": 2032,
+      "path": "build/lean_table_checker/acceleration_v19/cartesian_kernel_v19/modules/Mahjong/CartesianPrepB05V19.ir",
+      "sha256": "bd23401876fc189b798aa0ef7c72e4ef00ff9cc52cbd46457e11bf51bd23adbd"
+    },
+    {
+      "bytes": 37200,
+      "path": "build/lean_table_checker/acceleration_v19/cartesian_kernel_v19/modules/Mahjong/CartesianPrepB05V19.olean",
+      "sha256": "bb7d642e718b39c9e2236abfca688a14b1010c2baa0797d000763a35242fc728"
+    },
+    {
+      "bytes": 7992,
+      "path": "build/lean_table_checker/acceleration_v19/cartesian_kernel_v19/modules/Mahjong/CartesianPrepB05V19.olean.private",
+      "sha256": "c9419032e59264dfd3fd9098d87ff58b416ae06ce0570349e444911ed9c1ebe4"
+    },
+    {
+      "bytes": 600,
+      "path": "build/lean_table_checker/acceleration_v19/cartesian_kernel_v19/modules/Mahjong/CartesianPrepB05V19.olean.server",
+      "sha256": "ede18ebd7c2acefbaf326b06bede7013ccd80d83f83ab2332912d2e01e4512fb"
+    },
+    {
+      "bytes": 1880,
+      "path": "build/lean_table_checker/acceleration_v19/cartesian_kernel_v19/modules/Mahjong/CartesianPrepB06V19.ir",
+      "sha256": "9ff37d10bb6b0c753e06a6f15ba130343134ab5642aa746225cbf6c06e89d98a"
+    },
+    {
+      "bytes": 35288,
+      "path": "build/lean_table_checker/acceleration_v19/cartesian_kernel_v19/modules/Mahjong/CartesianPrepB06V19.olean",
+      "sha256": "c3e6e907cdb82affa540436c952a57a2182e24a3c364686098f34efbc8a2b2d6"
+    },
+    {
+      "bytes": 7992,
+      "path": "build/lean_table_checker/acceleration_v19/cartesian_kernel_v19/modules/Mahjong/CartesianPrepB06V19.olean.private",
+      "sha256": "4f3ce54712f9c9580c76aae0f8dab9c7da227b5fcbe9d2e5f2843e02f8f2d27e"
+    },
+    {
+      "bytes": 600,
+      "path": "build/lean_table_checker/acceleration_v19/cartesian_kernel_v19/modules/Mahjong/CartesianPrepB06V19.olean.server",
+      "sha256": "f026eca4d60dfecc707907a7817b61eb4ffa25905de1300d9872f84611ea80d6"
+    },
+    {
+      "bytes": 2032,
+      "path": "build/lean_table_checker/acceleration_v19/cartesian_kernel_v19/modules/Mahjong/CartesianPrepB07V19.ir",
+      "sha256": "8fd403854624ee964d50a90555c67ff923a46613f9f4f6b7b56f1d7470e56813"
+    },
+    {
+      "bytes": 25016,
+      "path": "build/lean_table_checker/acceleration_v19/cartesian_kernel_v19/modules/Mahjong/CartesianPrepB07V19.olean",
+      "sha256": "e2fd3c8d28c6eb9b234098d0372ac718484ac89fe4e83055107b9c71f8f791d5"
+    },
+    {
+      "bytes": 6264,
+      "path": "build/lean_table_checker/acceleration_v19/cartesian_kernel_v19/modules/Mahjong/CartesianPrepB07V19.olean.private",
+      "sha256": "6e6cd9614f9253743a235b09ad833626ca403d4242d2718b821e9cc6586b7bfe"
+    },
+    {
+      "bytes": 600,
+      "path": "build/lean_table_checker/acceleration_v19/cartesian_kernel_v19/modules/Mahjong/CartesianPrepB07V19.olean.server",
+      "sha256": "7f2d72d7bffe942b877aa1655371515fc382ac09a3c9eff49f3742083e138413"
+    },
+    {
+      "bytes": 1880,
+      "path": "build/lean_table_checker/acceleration_v19/cartesian_kernel_v19/modules/Mahjong/CartesianPrepB08V19.ir",
+      "sha256": "6194d47ca8db80276199c38a85370fe5ba3ffa8ce0166936cc3c420606908f49"
+    },
+    {
+      "bytes": 52320,
+      "path": "build/lean_table_checker/acceleration_v19/cartesian_kernel_v19/modules/Mahjong/CartesianPrepB08V19.olean",
+      "sha256": "1bf778958c0ced42f4c725efbb19428bf771b1e1b4fb8561ae0e14387de23547"
+    },
+    {
+      "bytes": 16056,
+      "path": "build/lean_table_checker/acceleration_v19/cartesian_kernel_v19/modules/Mahjong/CartesianPrepB08V19.olean.private",
+      "sha256": "4d9df08f6240072d1ed71322b59bc33017a7fa45ed0e7bc5b62a871827851425"
+    },
+    {
+      "bytes": 600,
+      "path": "build/lean_table_checker/acceleration_v19/cartesian_kernel_v19/modules/Mahjong/CartesianPrepB08V19.olean.server",
+      "sha256": "94c7a85230819da85e52befec0cab34073e3a9a3878b229345ae04831982ccda"
+    },
+    {
+      "bytes": 1728,
+      "path": "build/lean_table_checker/acceleration_v19/cartesian_kernel_v19/modules/Mahjong/CartesianPrepB09V19.ir",
+      "sha256": "f0f3415a8e38ddc74d875304c12f3b8bb8ad022797574d4510970c886ba77abe"
+    },
+    {
+      "bytes": 26888,
+      "path": "build/lean_table_checker/acceleration_v19/cartesian_kernel_v19/modules/Mahjong/CartesianPrepB09V19.olean",
+      "sha256": "97ddcb81f84dab293ca26b2b13448768f16d72330cde4abf08688a7e0fa343ce"
+    },
+    {
+      "bytes": 7416,
+      "path": "build/lean_table_checker/acceleration_v19/cartesian_kernel_v19/modules/Mahjong/CartesianPrepB09V19.olean.private",
+      "sha256": "a4daeed30c71ba38523c1cd0fd3418276b0a7bcc7881f1a4320a47623a693c63"
+    },
+    {
+      "bytes": 600,
+      "path": "build/lean_table_checker/acceleration_v19/cartesian_kernel_v19/modules/Mahjong/CartesianPrepB09V19.olean.server",
+      "sha256": "5e7331d8f034fb93d856bd10b7c37e3b8e2523d3634ffe5b4eced39c93e7ba81"
+    },
+    {
+      "bytes": 1576,
+      "path": "build/lean_table_checker/acceleration_v19/cartesian_kernel_v19/modules/Mahjong/CartesianPrepB10V19.ir",
+      "sha256": "3113d5b6add0b985398c5182f197f7ed0db42d1f57085e560ba6d9d461843e7e"
+    },
+    {
+      "bytes": 18840,
+      "path": "build/lean_table_checker/acceleration_v19/cartesian_kernel_v19/modules/Mahjong/CartesianPrepB10V19.olean",
+      "sha256": "57d1b2b7ae1c5a67a8b9aca9236e92766e2611993fa5b37b51167f0ffab039fe"
+    },
+    {
+      "bytes": 5112,
+      "path": "build/lean_table_checker/acceleration_v19/cartesian_kernel_v19/modules/Mahjong/CartesianPrepB10V19.olean.private",
+      "sha256": "0864c865c030345f95c32462833322fec9864780d4349678363760e68074610d"
+    },
+    {
+      "bytes": 600,
+      "path": "build/lean_table_checker/acceleration_v19/cartesian_kernel_v19/modules/Mahjong/CartesianPrepB10V19.olean.server",
+      "sha256": "67cbdb4899d1825fffb92bbb92172fb6a5ae1e8d6889d06bd3ea0ae3cf235733"
+    },
+    {
+      "bytes": 1880,
+      "path": "build/lean_table_checker/acceleration_v19/cartesian_kernel_v19/modules/Mahjong/CartesianPrepB11V19.ir",
+      "sha256": "b512cc779cd75cdad1dbf232bc2079fa1f9cea3e11132c5a7dfbb7be888a2bd7"
+    },
+    {
+      "bytes": 51104,
+      "path": "build/lean_table_checker/acceleration_v19/cartesian_kernel_v19/modules/Mahjong/CartesianPrepB11V19.olean",
+      "sha256": "8b1513a0ea9128166e8c2e53aa8f1e45bd85db59c484403b6448493f0f44389f"
+    },
+    {
+      "bytes": 14328,
+      "path": "build/lean_table_checker/acceleration_v19/cartesian_kernel_v19/modules/Mahjong/CartesianPrepB11V19.olean.private",
+      "sha256": "fcdcecee8b95e170de6254d366226f109fbf4a35b84fca2b39625b29ff0461a9"
+    },
+    {
+      "bytes": 600,
+      "path": "build/lean_table_checker/acceleration_v19/cartesian_kernel_v19/modules/Mahjong/CartesianPrepB11V19.olean.server",
+      "sha256": "fe383bd3019df4e52210020b30c3b468c787f27bcdf1bfff18e9082518ee794f"
+    },
+    {
+      "bytes": 1880,
+      "path": "build/lean_table_checker/acceleration_v19/cartesian_kernel_v19/modules/Mahjong/CartesianPrepB12V19.ir",
+      "sha256": "6e8efd222a1794268904c24e3b40efac344440d18c7e920d6977290287cc1fa6"
+    },
+    {
+      "bytes": 50776,
+      "path": "build/lean_table_checker/acceleration_v19/cartesian_kernel_v19/modules/Mahjong/CartesianPrepB12V19.olean",
+      "sha256": "977953dc97bd2e5b774640bd6b75f29e51aa894659ddaf9117fceade0b42047d"
+    },
+    {
+      "bytes": 13752,
+      "path": "build/lean_table_checker/acceleration_v19/cartesian_kernel_v19/modules/Mahjong/CartesianPrepB12V19.olean.private",
+      "sha256": "ed36495226093b0f31344abaa7400565c5c3c3e49ef3cffccef8665bfd10ebbd"
+    },
+    {
+      "bytes": 600,
+      "path": "build/lean_table_checker/acceleration_v19/cartesian_kernel_v19/modules/Mahjong/CartesianPrepB12V19.olean.server",
+      "sha256": "b59b72153397dae7d2cd04485e8f9dcfb0ea32155ebe6b50729827433380188b"
+    },
+    {
+      "bytes": 1880,
+      "path": "build/lean_table_checker/acceleration_v19/cartesian_kernel_v19/modules/Mahjong/CartesianPrepB13V19.ir",
+      "sha256": "355e2eee331cca5445d7cba6cd13cc6a51d110ceee5fa534585a824d3a9baec0"
+    },
+    {
+      "bytes": 67248,
+      "path": "build/lean_table_checker/acceleration_v19/cartesian_kernel_v19/modules/Mahjong/CartesianPrepB13V19.olean",
+      "sha256": "c69b3be794a6d77a2fec932506541292ad2f17ea7dc97f3bcb1bb1e86562ec36"
+    },
+    {
+      "bytes": 20088,
+      "path": "build/lean_table_checker/acceleration_v19/cartesian_kernel_v19/modules/Mahjong/CartesianPrepB13V19.olean.private",
+      "sha256": "1bd24f3c51c7680d5a661a2996ed7d2ced444fedb3b5cc8de218532f00dbe1cd"
+    },
+    {
+      "bytes": 600,
+      "path": "build/lean_table_checker/acceleration_v19/cartesian_kernel_v19/modules/Mahjong/CartesianPrepB13V19.olean.server",
+      "sha256": "c9be7419d8fad0c27275a9eebace6286d851de3d970c9f8bc8a3c26c28f31e49"
+    },
+    {
+      "bytes": 2184,
+      "path": "build/lean_table_checker/acceleration_v19/cartesian_kernel_v19/modules/Mahjong/CartesianPrepB14V19.ir",
+      "sha256": "d3d290015802d5e78ff3fefb83278f1489d7f273cf8989715d7cda172c4a665b"
+    },
+    {
+      "bytes": 48888,
+      "path": "build/lean_table_checker/acceleration_v19/cartesian_kernel_v19/modules/Mahjong/CartesianPrepB14V19.olean",
+      "sha256": "39e5c41988df6448714a8a1afb7c2879d0dc00cecc036b4a7e47494d0cea9dfb"
+    },
+    {
+      "bytes": 14328,
+      "path": "build/lean_table_checker/acceleration_v19/cartesian_kernel_v19/modules/Mahjong/CartesianPrepB14V19.olean.private",
+      "sha256": "4748554f0b358bef38f2bce0194c517bf679b79231c4a4337d01eea3584d42ac"
+    },
+    {
+      "bytes": 600,
+      "path": "build/lean_table_checker/acceleration_v19/cartesian_kernel_v19/modules/Mahjong/CartesianPrepB14V19.olean.server",
+      "sha256": "c36861f0d45ff1b39aa6892245fadf3afbb9343b42b9b8b5d701d7b9d8f44066"
+    },
+    {
+      "bytes": 2184,
+      "path": "build/lean_table_checker/acceleration_v19/cartesian_kernel_v19/modules/Mahjong/CartesianPrepB15V19.ir",
+      "sha256": "1a225a6ab80729070dd102920a84dd50ecf61b8729558133e85bc75090262568"
+    },
+    {
+      "bytes": 55112,
+      "path": "build/lean_table_checker/acceleration_v19/cartesian_kernel_v19/modules/Mahjong/CartesianPrepB15V19.olean",
+      "sha256": "092fd7e9bad1a06ad18e57dcf199c7b860d88afa653070e6e2d1c2afe0199644"
+    },
+    {
+      "bytes": 16632,
+      "path": "build/lean_table_checker/acceleration_v19/cartesian_kernel_v19/modules/Mahjong/CartesianPrepB15V19.olean.private",
+      "sha256": "577e11edb51836cfb627c88668b9c81ba81386e0766e09ae3ae99ce96532e447"
+    },
+    {
+      "bytes": 600,
+      "path": "build/lean_table_checker/acceleration_v19/cartesian_kernel_v19/modules/Mahjong/CartesianPrepB15V19.olean.server",
+      "sha256": "6ff31e5a33bbb202cabd0416da866326ee0771ec5202d3dc1b6f542ee17c1326"
+    },
+    {
+      "bytes": 2032,
+      "path": "build/lean_table_checker/acceleration_v19/cartesian_kernel_v19/modules/Mahjong/CartesianPrepB16V19.ir",
+      "sha256": "ee546cb089f838b2b0c2dbcfb4fdc12504afd26aef34045d438541ca529f3c8b"
+    },
+    {
+      "bytes": 40064,
+      "path": "build/lean_table_checker/acceleration_v19/cartesian_kernel_v19/modules/Mahjong/CartesianPrepB16V19.olean",
+      "sha256": "8432a742326c3fae93405587101e3bae4908e47c5300a990046ea4dec1ecee7b"
+    },
+    {
+      "bytes": 9720,
+      "path": "build/lean_table_checker/acceleration_v19/cartesian_kernel_v19/modules/Mahjong/CartesianPrepB16V19.olean.private",
+      "sha256": "36d2d976e1884e221dea4be7b753740a83423a6253c5ad68549cf470c6dd233a"
+    },
+    {
+      "bytes": 600,
+      "path": "build/lean_table_checker/acceleration_v19/cartesian_kernel_v19/modules/Mahjong/CartesianPrepB16V19.olean.server",
+      "sha256": "d20371b45e75b12d12f2c194227a99be10fdc4cf459c4d2d32cfd4e848a9b059"
+    },
+    {
+      "bytes": 2336,
+      "path": "build/lean_table_checker/acceleration_v19/cartesian_kernel_v19/modules/Mahjong/CartesianPrepB17V19.ir",
+      "sha256": "69fb6a3306159c78223f077ad94ac88537016c94b7997e36c386b4eadbf381f1"
+    },
+    {
+      "bytes": 34616,
+      "path": "build/lean_table_checker/acceleration_v19/cartesian_kernel_v19/modules/Mahjong/CartesianPrepB17V19.olean",
+      "sha256": "3349fc35fe97c45e93775a7053ce4fd56ca7b0bee946912237753425c93ed28c"
+    },
+    {
+      "bytes": 9144,
+      "path": "build/lean_table_checker/acceleration_v19/cartesian_kernel_v19/modules/Mahjong/CartesianPrepB17V19.olean.private",
+      "sha256": "9e9b5571a3f954b86fbb3d93d3a26c523e4df00faeb0e9c032fd802d5fdfc60b"
+    },
+    {
+      "bytes": 600,
+      "path": "build/lean_table_checker/acceleration_v19/cartesian_kernel_v19/modules/Mahjong/CartesianPrepB17V19.olean.server",
+      "sha256": "22d82430178cd7389c964266a0c5db2160503f92d2e3fb869c591dc9cecbc01a"
+    },
+    {
+      "bytes": 1880,
+      "path": "build/lean_table_checker/acceleration_v19/cartesian_kernel_v19/modules/Mahjong/CartesianPrepB18V19.ir",
+      "sha256": "ec6f98565ee0eced0b1553c484c9f79e78bd9ca2bbf109b2af0a1957f7e87fdb"
+    },
+    {
+      "bytes": 28288,
+      "path": "build/lean_table_checker/acceleration_v19/cartesian_kernel_v19/modules/Mahjong/CartesianPrepB18V19.olean",
+      "sha256": "926cbe070193ab3d58a27932add5f53e90b5e19947e9a2125b7409aa01bc88f8"
+    },
+    {
+      "bytes": 7416,
+      "path": "build/lean_table_checker/acceleration_v19/cartesian_kernel_v19/modules/Mahjong/CartesianPrepB18V19.olean.private",
+      "sha256": "16306c90b03b0f07894239d5cf458cd1427f4b91738a155c330b22caacd630da"
+    },
+    {
+      "bytes": 600,
+      "path": "build/lean_table_checker/acceleration_v19/cartesian_kernel_v19/modules/Mahjong/CartesianPrepB18V19.olean.server",
+      "sha256": "f1058413021daf6baab189ea1717ecafab2d21eb264dd14d990769a68dd1a508"
+    },
+    {
+      "bytes": 2488,
+      "path": "build/lean_table_checker/acceleration_v19/cartesian_kernel_v19/modules/Mahjong/CartesianPrepB19V19.ir",
+      "sha256": "a96e0f801fa83e6e753938f661eb88fbd7e639c6d7200561333f67c70be06521"
+    },
+    {
+      "bytes": 67000,
+      "path": "build/lean_table_checker/acceleration_v19/cartesian_kernel_v19/modules/Mahjong/CartesianPrepB19V19.olean",
+      "sha256": "c3a2e8a452115a0e1aec5c758f7e8bc451b59f1df752bda949b96a5fa3d9209d"
+    },
+    {
+      "bytes": 18360,
+      "path": "build/lean_table_checker/acceleration_v19/cartesian_kernel_v19/modules/Mahjong/CartesianPrepB19V19.olean.private",
+      "sha256": "51c5304bb900b57051a8e14e8d205899d5ecb43727bfbf2aab2c31e0879d856d"
+    },
+    {
+      "bytes": 600,
+      "path": "build/lean_table_checker/acceleration_v19/cartesian_kernel_v19/modules/Mahjong/CartesianPrepB19V19.olean.server",
+      "sha256": "65c17ef7dc89f329476f4341a452204fbbb23116df31a99778acd1a7d78d53aa"
+    },
+    {
+      "bytes": 2184,
+      "path": "build/lean_table_checker/acceleration_v19/cartesian_kernel_v19/modules/Mahjong/CartesianPrepB20V19.ir",
+      "sha256": "aacfaaa67eabed9df135856162206b3ffacaa9674a748472afee57d3532723b8"
+    },
+    {
+      "bytes": 27768,
+      "path": "build/lean_table_checker/acceleration_v19/cartesian_kernel_v19/modules/Mahjong/CartesianPrepB20V19.olean",
+      "sha256": "61a9533999549fe7b3356b36d2d0ef3bb195588f81466eb335e9d9d2cdc3e549"
+    },
+    {
+      "bytes": 6840,
+      "path": "build/lean_table_checker/acceleration_v19/cartesian_kernel_v19/modules/Mahjong/CartesianPrepB20V19.olean.private",
+      "sha256": "fdf39a3a0d2faa3e62d1b3b8e51ea0072699868228c063154c4e6c5dfdb2fd53"
+    },
+    {
+      "bytes": 600,
+      "path": "build/lean_table_checker/acceleration_v19/cartesian_kernel_v19/modules/Mahjong/CartesianPrepB20V19.olean.server",
+      "sha256": "571e8c2de253c74d6bfeee9301dde5cf88da65a13611ee7cc0adc7b32566a0b8"
+    },
+    {
+      "bytes": 1880,
+      "path": "build/lean_table_checker/acceleration_v19/cartesian_kernel_v19/modules/Mahjong/CartesianPrepB21V19.ir",
+      "sha256": "9bcb1d74f8d884a3ec9bb6ea850f4724d57c5ea0fa9c487ccf382af7b04180ac"
+    },
+    {
+      "bytes": 32232,
+      "path": "build/lean_table_checker/acceleration_v19/cartesian_kernel_v19/modules/Mahjong/CartesianPrepB21V19.olean",
+      "sha256": "e5cd8b41ce54518ea383fd471a09c25348252b40674fa9fc687c450793734fb4"
+    },
+    {
+      "bytes": 7416,
+      "path": "build/lean_table_checker/acceleration_v19/cartesian_kernel_v19/modules/Mahjong/CartesianPrepB21V19.olean.private",
+      "sha256": "661f5c1f55d705a6b33e2c9448098ad72dfc727355242e5c158b2821b2d667cc"
+    },
+    {
+      "bytes": 600,
+      "path": "build/lean_table_checker/acceleration_v19/cartesian_kernel_v19/modules/Mahjong/CartesianPrepB21V19.olean.server",
+      "sha256": "b40295662e493f3a1afa909a1506d2c20425e4054a6dc848ee4657821e7be614"
+    },
+    {
+      "bytes": 2184,
+      "path": "build/lean_table_checker/acceleration_v19/cartesian_kernel_v19/modules/Mahjong/CartesianPrepB22V19.ir",
+      "sha256": "29b07d377b200559237d0ac19701cad232f589abba446f330d139f6fc691dfbf"
+    },
+    {
+      "bytes": 31592,
+      "path": "build/lean_table_checker/acceleration_v19/cartesian_kernel_v19/modules/Mahjong/CartesianPrepB22V19.olean",
+      "sha256": "e4d3f59cd8c66604ae5f7926fa0e500af1c49177c5bb4d68392f8a562ae1ab4e"
+    },
+    {
+      "bytes": 7416,
+      "path": "build/lean_table_checker/acceleration_v19/cartesian_kernel_v19/modules/Mahjong/CartesianPrepB22V19.olean.private",
+      "sha256": "9c0207fa3bf862313268d42b7d8d00c1754d5bec4e258b240098cbdd432759b3"
+    },
+    {
+      "bytes": 600,
+      "path": "build/lean_table_checker/acceleration_v19/cartesian_kernel_v19/modules/Mahjong/CartesianPrepB22V19.olean.server",
+      "sha256": "ad983392549873034294723f13c3fe02cfe4a70b7bedc7daa3cced94371ab35c"
+    },
+    {
+      "bytes": 2640,
+      "path": "build/lean_table_checker/acceleration_v19/cartesian_kernel_v19/modules/Mahjong/CartesianPrepB23V19.ir",
+      "sha256": "5477d4133319a6791e000d3afbedf078be381fe0291f0bc65e398da210a6eaf0"
+    },
+    {
+      "bytes": 39656,
+      "path": "build/lean_table_checker/acceleration_v19/cartesian_kernel_v19/modules/Mahjong/CartesianPrepB23V19.olean",
+      "sha256": "110ffcf9bcbefe886c8389bfb969cad5c1b88921c0bf38fb653afd4ca670665b"
+    },
+    {
+      "bytes": 9720,
+      "path": "build/lean_table_checker/acceleration_v19/cartesian_kernel_v19/modules/Mahjong/CartesianPrepB23V19.olean.private",
+      "sha256": "4fef9b7227eb0e9a431167a59d60080d375f9c41469aeb85eb57c946dcc1d11e"
+    },
+    {
+      "bytes": 600,
+      "path": "build/lean_table_checker/acceleration_v19/cartesian_kernel_v19/modules/Mahjong/CartesianPrepB23V19.olean.server",
+      "sha256": "21170ac4de2accd94c98d74cd98f4780c5b5e171cc51560173342b3ec3b04200"
+    },
+    {
+      "bytes": 2184,
+      "path": "build/lean_table_checker/acceleration_v19/cartesian_kernel_v19/modules/Mahjong/CartesianPrepB24V19.ir",
+      "sha256": "bd314d4964852b4369475579fb4776c38729d61b789c552630634f9c35594794"
+    },
+    {
+      "bytes": 49976,
+      "path": "build/lean_table_checker/acceleration_v19/cartesian_kernel_v19/modules/Mahjong/CartesianPrepB24V19.olean",
+      "sha256": "99e4e96ccc2cb473db68dd36565831c4d11835e3ed9b98e9798f071a2ba2fe82"
+    },
+    {
+      "bytes": 13176,
+      "path": "build/lean_table_checker/acceleration_v19/cartesian_kernel_v19/modules/Mahjong/CartesianPrepB24V19.olean.private",
+      "sha256": "4dd6abd101b43f12245a42631056c420626b0d4377f52dee2fc56414853d679c"
+    },
+    {
+      "bytes": 600,
+      "path": "build/lean_table_checker/acceleration_v19/cartesian_kernel_v19/modules/Mahjong/CartesianPrepB24V19.olean.server",
+      "sha256": "cd598ed68a05da201f9511f906313d0036fe3aef706271f48dcc6991c39db0d2"
+    },
+    {
+      "bytes": 2488,
+      "path": "build/lean_table_checker/acceleration_v19/cartesian_kernel_v19/modules/Mahjong/CartesianPrepB25V19.ir",
+      "sha256": "15ebd1bb77118310f50ef58843628ceabc9aec4e2c560228b565166e0a8feb49"
+    },
+    {
+      "bytes": 31248,
+      "path": "build/lean_table_checker/acceleration_v19/cartesian_kernel_v19/modules/Mahjong/CartesianPrepB25V19.olean",
+      "sha256": "136155862380ded3e123c48094363cf4de952ef8133816416daa59c1dd6e6517"
+    },
+    {
+      "bytes": 7416,
+      "path": "build/lean_table_checker/acceleration_v19/cartesian_kernel_v19/modules/Mahjong/CartesianPrepB25V19.olean.private",
+      "sha256": "9397dd64d0ccdd16a976fc2906937257345e430e3629dda703cd60828829ea8b"
+    },
+    {
+      "bytes": 600,
+      "path": "build/lean_table_checker/acceleration_v19/cartesian_kernel_v19/modules/Mahjong/CartesianPrepB25V19.olean.server",
+      "sha256": "1eae3a35a1ec2ef4c9d0fd3bc3c4c9d06f090216cc8311a5dab3482eed73bd62"
+    },
+    {
+      "bytes": 2184,
+      "path": "build/lean_table_checker/acceleration_v19/cartesian_kernel_v19/modules/Mahjong/CartesianPrepB26V19.ir",
+      "sha256": "c7bd4340332fc87d6b3a2bcc63168f98b253b3eb17c2f4a876ccddc594fd9721"
+    },
+    {
+      "bytes": 47000,
+      "path": "build/lean_table_checker/acceleration_v19/cartesian_kernel_v19/modules/Mahjong/CartesianPrepB26V19.olean",
+      "sha256": "1b36997bb3544bd9b4ee96df4976e9f5bbd66b5b9179520c56508468d32907f2"
+    },
+    {
+      "bytes": 12600,
+      "path": "build/lean_table_checker/acceleration_v19/cartesian_kernel_v19/modules/Mahjong/CartesianPrepB26V19.olean.private",
+      "sha256": "5306507dce26048a11a65e46113c2fd5700394fd5341afbfaf94e16478695ae0"
+    },
+    {
+      "bytes": 600,
+      "path": "build/lean_table_checker/acceleration_v19/cartesian_kernel_v19/modules/Mahjong/CartesianPrepB26V19.olean.server",
+      "sha256": "ce38b472f1a4e7dafb070c21d5008994e4a4f3661c1163f39298ec03430253e0"
+    },
+    {
+      "bytes": 3096,
+      "path": "build/lean_table_checker/acceleration_v19/cartesian_kernel_v19/modules/Mahjong/CartesianPrepB27V19.ir",
+      "sha256": "815cdd61090e62e4efbd260b337018e93257bb5520fe1381c7aa72be9678ebca"
+    },
+    {
+      "bytes": 64088,
+      "path": "build/lean_table_checker/acceleration_v19/cartesian_kernel_v19/modules/Mahjong/CartesianPrepB27V19.olean",
+      "sha256": "6ac7865a683bdcdc95f2ec782af6fa9f0b629d12672a0d7ce06da5d69af494f2"
+    },
+    {
+      "bytes": 16632,
+      "path": "build/lean_table_checker/acceleration_v19/cartesian_kernel_v19/modules/Mahjong/CartesianPrepB27V19.olean.private",
+      "sha256": "e9deecab733f896a9f2e672082c034ae16bd7ba44a8a29aaf74148cd664f9d6b"
+    },
+    {
+      "bytes": 600,
+      "path": "build/lean_table_checker/acceleration_v19/cartesian_kernel_v19/modules/Mahjong/CartesianPrepB27V19.olean.server",
+      "sha256": "805a7d9705825a3f6a319688dcdd0c6f9533a0f6e85ef5ddb00f7bc9070f8eac"
+    },
+    {
+      "bytes": 1648,
+      "path": "build/lean_table_checker/acceleration_v19/cartesian_kernel_v19/modules/Mahjong/CartesianWriteRemainingV19.ir",
+      "sha256": "793220a38f4f61b7fae1c7c7b145006167fde70dce71eb935115df6dc220c1c1"
+    },
+    {
+      "bytes": 4272,
+      "path": "build/lean_table_checker/acceleration_v19/cartesian_kernel_v19/modules/Mahjong/CartesianWriteRemainingV19.olean",
+      "sha256": "b4c81f3f474eb8838942998330b33e4ff0a15379649bb89c23270a131d20cf7f"
+    },
+    {
+      "bytes": 984,
+      "path": "build/lean_table_checker/acceleration_v19/cartesian_kernel_v19/modules/Mahjong/CartesianWriteRemainingV19.olean.private",
+      "sha256": "3ca86560498a609b42658c700c984f026107d0d6b6c74eb56a0160d15f0080b2"
+    },
+    {
+      "bytes": 616,
+      "path": "build/lean_table_checker/acceleration_v19/cartesian_kernel_v19/modules/Mahjong/CartesianWriteRemainingV19.olean.server",
+      "sha256": "851dc18229bf69f5c552ad7d50250022cb8d96be7821bd4ec0084b48b360f70f"
+    },
+    {
+      "bytes": 217784,
+      "path": "build/lean_table_checker/acceleration_v19/cartesian_kernel_v19/modules/Mahjong/NatDataWriterV19.ir",
+      "sha256": "cc036227cec50b401475eca84b598d11f647223232427e81dc7cc4511e1d08c0"
+    },
+    {
+      "bytes": 224464,
+      "path": "build/lean_table_checker/acceleration_v19/cartesian_kernel_v19/modules/Mahjong/NatDataWriterV19.olean",
+      "sha256": "a75f5d31b915a2e48c40d8614ec1b358839b369aef26ce480a93904f5b11b53b"
+    },
+    {
+      "bytes": 749016,
+      "path": "build/lean_table_checker/acceleration_v19/cartesian_kernel_v19/modules/Mahjong/NatDataWriterV19.olean.private",
+      "sha256": "31390dd26228f85d7b2741a215272e10057aea959763afc3dac5b0b62e07dabc"
+    },
+    {
+      "bytes": 3496,
+      "path": "build/lean_table_checker/acceleration_v19/cartesian_kernel_v19/modules/Mahjong/NatDataWriterV19.olean.server",
+      "sha256": "bf576e677570d57c2f1a84f10b1a3c675528503d28a58427a69c2b479542c60e"
+    }
+  ],
+  "kernel_numeral_limit_overridden": false,
+  "literal_input_files": [
+    {
+      "bytes": 1092072,
+      "path": "build/lean_table_checker/acceleration_v19/cartesian_kernel_v19/PLAN.json",
+      "sha256": "4c2bcc3bfdb2f567ceeacc79d5e84d3c4106d15945a02db0781ad1c254a22e11"
+    }
+  ],
+  "memory_limit_bytes": 3000000000,
+  "meta_plugin": null,
+  "mode": "compile",
+  "module": "Mahjong.CartesianBoolAllS02V19",
+  "native_source": null,
+  "peak_job_committed_bytes": 128303104,
+  "peak_process_pagefile_bytes": 127062016,
+  "peak_process_working_set_bytes": 87674880,
+  "plugin_is_untrusted_Nat_Expr_builder": false,
+  "plugin_used_by_cold_replay": false,
+  "policy_error": null,
+  "published_artifacts": [
+    {
+      "bytes": 2800,
+      "path": "build/lean_table_checker/acceleration_v19/cartesian_kernel_v19/modules/Mahjong/CartesianBoolAllS02V19.ir",
+      "sha256": "f93d5dc2d5a40c2b88a738eef95fab4d239816d06f0ab9527d2dce0ab5c73a3d"
+    },
+    {
+      "bytes": 176,
+      "path": "build/lean_table_checker/acceleration_v19/cartesian_kernel_v19/modules/Mahjong/CartesianBoolAllS02V19.ir.sig",
+      "sha256": "19d3023cf681ff6921f994a82103bdb7238632abb75f44f19c06b32813d608b4"
+    },
+    {
+      "bytes": 9112,
+      "path": "build/lean_table_checker/acceleration_v19/cartesian_kernel_v19/modules/Mahjong/CartesianBoolAllS02V19.olean",
+      "sha256": "f7d1979b686f464370e9278da52ae254180261f6cf3f13e09151918987d10cf0"
+    },
+    {
+      "bytes": 3504,
+      "path": "build/lean_table_checker/acceleration_v19/cartesian_kernel_v19/modules/Mahjong/CartesianBoolAllS02V19.olean.private",
+      "sha256": "a352838517203a5de855be7f470751b51f3527b992d8e2c3e2c6c073e1eec989"
+    },
+    {
+      "bytes": 600,
+      "path": "build/lean_table_checker/acceleration_v19/cartesian_kernel_v19/modules/Mahjong/CartesianBoolAllS02V19.olean.server",
+      "sha256": "f56a12d07c629cb23824ab1bb563cc2004a63e38932c1a130c955239956670a1"
+    }
+  ],
+  "published_module": {
+    "bytes": 9112,
+    "path": "build/lean_table_checker/acceleration_v19/cartesian_kernel_v19/modules/Mahjong/CartesianBoolAllS02V19.olean",
+    "sha256": "f7d1979b686f464370e9278da52ae254180261f6cf3f13e09151918987d10cf0"
+  },
+  "returncode": 0,
+  "schema": "ACTUAL_BOUNDED_CARTESIAN_KERNEL_STAGE_V19",
+  "source": {
+    "bytes": 2226,
+    "path": "build/lean_table_checker/acceleration_v19/cartesian_kernel_v19/source/Mahjong/CartesianBoolAllS02V19.lean",
+    "sha256": "1fc1094ddf09292166d639506ada8756e4bb7f851389cf97b4879e55b918d217"
+  },
+  "source_executable_import_hashes_unchanged": true,
+  "source_snapshot": {
+    "bytes": 2226,
+    "path": "runs/lean_table_checker/acceleration_20261018_v19/cartesian_kernel_v19/attempts/afc3b84de368498fa300878e823c7089/source_snapshot/Mahjong/CartesianBoolAllS02V19.lean",
+    "sha256": "1fc1094ddf09292166d639506ada8756e4bb7f851389cf97b4879e55b918d217"
+  },
+  "status": "PASS",
+  "stderr": {
+    "bytes": 47183,
+    "path": "runs/lean_table_checker/acceleration_20261018_v19/cartesian_kernel_v19/attempts/afc3b84de368498fa300878e823c7089/stderr.log",
+    "sha256": "1ffefde8fb1b28229f3e49ccbef56f89bed156692f506a17c102d55773fa14b7"
+  },
+  "stdout": {
+    "bytes": 941,
+    "path": "runs/lean_table_checker/acceleration_20261018_v19/cartesian_kernel_v19/attempts/afc3b84de368498fa300878e823c7089/stdout.log",
+    "sha256": "b634894e67c7be68b175c11d6fd9eebd6aadfc65be130e04fdb415792348cbb5"
+  },
+  "timed_out": false,
+  "wall_seconds": 1.7030000000377186
+}

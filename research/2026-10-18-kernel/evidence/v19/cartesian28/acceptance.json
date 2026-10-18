@@ -1,0 +1,2076 @@
+{
+  "actual_blocks": 28,
+  "all_attempt_CPU_seconds": 344.578125,
+  "all_attempt_controller_wall_seconds": 488.9719999996596,
+  "all_attempts": [
+    {
+      "CPU_seconds": 0.828125,
+      "peak_job_memory_bytes": 129232896,
+      "receipt": {
+        "bytes": 108549,
+        "path": "runs/lean_table_checker/acceleration_20261018_v19/cartesian_kernel_v19/attempts/00902a7c8d524dce86c447493346fb09/receipt.json",
+        "sha256": "59cf5a2ad7e3d17c3cfa6c1f8c4869a55dbf05b10079ef4e73d98265ce7e9289"
+      },
+      "status": "FAILED_OR_INCOMPLETE",
+      "wall_seconds": 1.8130000000237487
+    },
+    {
+      "CPU_seconds": 0.375,
+      "peak_job_memory_bytes": 93671424,
+      "receipt": {
+        "bytes": 121537,
+        "path": "runs/lean_table_checker/acceleration_20261018_v19/cartesian_kernel_v19/attempts/00afa9646c0c408b9e44bd631afc66d5/receipt.json",
+        "sha256": "82f283353856c3259f27e3d09993810c43c50de7654e712e92c1c7c7d3f1e610"
+      },
+      "status": "PASS",
+      "wall_seconds": 1.4380000000237487
+    },
+    {
+      "CPU_seconds": 0.40625,
+      "peak_job_memory_bytes": 111841280,
+      "receipt": {
+        "bytes": 83780,
+        "path": "runs/lean_table_checker/acceleration_20261018_v19/cartesian_kernel_v19/attempts/024bae9f72a34b44b68a938a8d0c6ad2/receipt.json",
+        "sha256": "659605dd263a56b1468fcbed4a2fe99d8bd873eb3dc0026e98f9daf6c2c54015"
+      },
+      "status": "PASS",
+      "wall_seconds": 1.312999999965541
+    },
+    {
+      "CPU_seconds": 1.796875,
+      "peak_job_memory_bytes": 168955904,
+      "receipt": {
+        "bytes": 24338,
+        "path": "runs/lean_table_checker/acceleration_20261018_v19/cartesian_kernel_v19/attempts/02d35064165143c8a47483e98344fa7f/receipt.json",
+        "sha256": "85ddfa1fdf404cc2e2c502ef9b2d4921d469e8449ea7fc9e3e2bc064d58be7fe"
+      },
+      "status": "PASS",
+      "wall_seconds": 2.0160000000032596
+    },
+    {
+      "CPU_seconds": 0.359375,
+      "peak_job_memory_bytes": 97456128,
+      "receipt": {
+        "bytes": 116501,
+        "path": "runs/lean_table_checker/acceleration_20261018_v19/cartesian_kernel_v19/attempts/034ff705afb340e6967dd76d5ee6b6bc/receipt.json",
+        "sha256": "74cb58babea13e1120502ad768b9be4f98cfa1ce9c49dd87125a39a5646d21db"
+      },
+      "status": "PASS",
+      "wall_seconds": 1.437000000034459
+    },
+    {
+      "CPU_seconds": 0.96875,
+      "peak_job_memory_bytes": 347656192,
+      "receipt": {
+        "bytes": 99592,
+        "path": "runs/lean_table_checker/acceleration_20261018_v19/cartesian_kernel_v19/attempts/053f1f6486824c81835ccad0459ecbbe/receipt.json",
+        "sha256": "701d5b0f57fe8a74a4dc6ae65ed94d173ec8d2bdfb31c67a956f4094c86ae170"
+      },
+      "status": "PASS",
+      "wall_seconds": 1.8900000000139698
+    },
+    {
+      "CPU_seconds": 3.53125,
+      "peak_job_memory_bytes": 209506304,
+      "receipt": {
+        "bytes": 19283,
+        "path": "runs/lean_table_checker/acceleration_20261018_v19/cartesian_kernel_v19/attempts/05ac6cad66624181bd65a655ad7432eb/receipt.json",
+        "sha256": "eaff5e3b5a8d28e7d65a48e403373edfc787497b2b590e2488a1964440b76d6d"
+      },
+      "status": "PASS",
+      "wall_seconds": 3.6089999999967404
+    },
+    {
+      "CPU_seconds": 0.375,
+      "peak_job_memory_bytes": 107032576,
+      "receipt": {
+        "bytes": 59197,
+        "path": "runs/lean_table_checker/acceleration_20261018_v19/cartesian_kernel_v19/attempts/0602318690744d0bb3eb782df2062771/receipt.json",
+        "sha256": "673c7d3127f2939eb4ced5ea2442da4d169646b1517b6a14f0eda631e7dfc1f3"
+      },
+      "status": "PASS",
+      "wall_seconds": 1.0619999999762513
+    },
+    {
+      "CPU_seconds": 3.125,
+      "peak_job_memory_bytes": 242348032,
+      "receipt": {
+        "bytes": 46376,
+        "path": "runs/lean_table_checker/acceleration_20261018_v19/cartesian_kernel_v19/attempts/0615530581d24508a4091087cc5d9dc1/receipt.json",
+        "sha256": "e379e643e4ff1649b38792e1f39bf8316fd89647b792ea3f7ef098da635b58d7"
+      },
+      "status": "PASS",
+      "wall_seconds": 3.375
+    },
+    {
+      "CPU_seconds": 0.390625,
+      "peak_job_memory_bytes": 106663936,
+      "receipt": {
+        "bytes": 98604,
+        "path": "runs/lean_table_checker/acceleration_20261018_v19/cartesian_kernel_v19/attempts/0a3ff4b314c1476ea90337f2ef99094b/receipt.json",
+        "sha256": "2b5bab4a6de6e6afb3d332d8a7eeb4f40dcc3f94e9f322cadbd13dd8cb794b0c"
+      },
+      "status": "PASS",
+      "wall_seconds": 1.327999999979511
+    },
+    {
+      "CPU_seconds": 0.6875,
+      "peak_job_memory_bytes": 171188224,
+      "receipt": {
+        "bytes": 127533,
+        "path": "runs/lean_table_checker/acceleration_20261018_v19/cartesian_kernel_v19/attempts/0b157346741142d3a35d6463cb5d5c79/receipt.json",
+        "sha256": "e9a864d8a84cd02ed4d3ef94acb96408a49b23a19164ebdd924abef046a374e4"
+      },
+      "status": "PASS",
+      "wall_seconds": 1.797000000020489
+    },
+    {
+      "CPU_seconds": 5.765625,
+      "peak_job_memory_bytes": 2040270848,
+      "receipt": {
+        "bytes": 12585,
+        "path": "runs/lean_table_checker/acceleration_20261018_v19/cartesian_kernel_v19/attempts/0cc64a76e34a4310911b0c84c9559f90/receipt.json",
+        "sha256": "f4f3cb54653fc0fd11a429cb2dd2393d578996ef3d985aeb962ebfc71d775e28"
+      },
+      "status": "FAILED_OR_INCOMPLETE",
+      "wall_seconds": 6.14100000000326
+    },
+    {
+      "CPU_seconds": 0.421875,
+      "peak_job_memory_bytes": 115118080,
+      "receipt": {
+        "bytes": 70955,
+        "path": "runs/lean_table_checker/acceleration_20261018_v19/cartesian_kernel_v19/attempts/0e4e6a6ca2ed4afb9be371c49d8bd493/receipt.json",
+        "sha256": "c593d12cf475f97c5316ee5e8467bbb6d9823bbdcd9669c52a9ba5aafc606cd1"
+      },
+      "status": "PASS",
+      "wall_seconds": 1.1880000000237487
+    },
+    {
+      "CPU_seconds": 2.609375,
+      "peak_job_memory_bytes": 196206592,
+      "receipt": {
+        "bytes": 39382,
+        "path": "runs/lean_table_checker/acceleration_20261018_v19/cartesian_kernel_v19/attempts/0f2bcae4154842c3885c68f5c839f181/receipt.json",
+        "sha256": "333036e7e9031a8457353790d5098b3666461915b571a17ee9e8495cb068162c"
+      },
+      "status": "PASS",
+      "wall_seconds": 2.9839999999967404
+    },
+    {
+      "CPU_seconds": 0.6875,
+      "peak_job_memory_bytes": 155262976,
+      "receipt": {
+        "bytes": 88688,
+        "path": "runs/lean_table_checker/acceleration_20261018_v19/cartesian_kernel_v19/attempts/1007b80b81f342fcab9b29f1a5e97cbc/receipt.json",
+        "sha256": "46233940111fb84714a8f00bc758a9992ec2c26a9e1f747d3bcb78997cf4f1f9"
+      },
+      "status": "PASS",
+      "wall_seconds": 1.547000000020489
+    },
+    {
+      "CPU_seconds": 0.734375,
+      "peak_job_memory_bytes": 99811328,
+      "receipt": {
+        "bytes": 80873,
+        "path": "runs/lean_table_checker/acceleration_20261018_v19/cartesian_kernel_v19/attempts/10c3de5e85a343c9a3033388f6bb7a21/receipt.json",
+        "sha256": "e406a54aa7a342320a8e75855fe740c59520faf25ca2e0ee1ddb743b7242dee5"
+      },
+      "status": "FAILED_OR_INCOMPLETE",
+      "wall_seconds": 1.577999999979511
+    },
+    {
+      "CPU_seconds": 0.3125,
+      "peak_job_memory_bytes": 98996224,
+      "receipt": {
+        "bytes": 58184,
+        "path": "runs/lean_table_checker/acceleration_20261018_v19/cartesian_kernel_v19/attempts/12627ea4e29e44748c754d9dd51e987c/receipt.json",
+        "sha256": "789d2841386112e95ea874d1f817bd036f55b56868920e1f14951d980e0a7d9c"
+      },
+      "status": "PASS",
+      "wall_seconds": 1.0320000000065193
+    },
+    {
+      "CPU_seconds": 0.34375,
+      "peak_job_memory_bytes": 97320960,
+      "receipt": {
+        "bytes": 65059,
+        "path": "runs/lean_table_checker/acceleration_20261018_v19/cartesian_kernel_v19/attempts/14c622ace9934d40bd28b947689e7d23/receipt.json",
+        "sha256": "917a9a9fc97855d3aae7b70377da1390fc6e1b339c343d25568ce5210ff640a6"
+      },
+      "status": "PASS",
+      "wall_seconds": 1.077999999979511
+    },
+    {
+      "CPU_seconds": 0.453125,
+      "peak_job_memory_bytes": 134500352,
+      "receipt": {
+        "bytes": 105538,
+        "path": "runs/lean_table_checker/acceleration_20261018_v19/cartesian_kernel_v19/attempts/1717b533054e44cdb46ff0b34e3f78c1/receipt.json",
+        "sha256": "91f397b4f3313114d3dfeaafeee3bab83a2eaeeb34c1f291bf816d6f981a424f"
+      },
+      "status": "PASS",
+      "wall_seconds": 1.4530000000377186
+    },
+    {
+      "CPU_seconds": 0.5,
+      "peak_job_memory_bytes": 129196032,
+      "receipt": {
+        "bytes": 129576,
+        "path": "runs/lean_table_checker/acceleration_20261018_v19/cartesian_kernel_v19/attempts/1798dc9fa65a426d85c6cea1f22c1bc2/receipt.json",
+        "sha256": "ce731ac4329f9d705ab1666f09b5eba82c59dcfdaed3051d3360d3749cafb905"
+      },
+      "status": "PASS",
+      "wall_seconds": 1.6410000000032596
+    },
+    {
+      "CPU_seconds": 0.328125,
+      "peak_job_memory_bytes": 93061120,
+      "receipt": {
+        "bytes": 63127,
+        "path": "runs/lean_table_checker/acceleration_20261018_v19/cartesian_kernel_v19/attempts/1823a7ac4fde4b9c86a80d6e6a65b614/receipt.json",
+        "sha256": "c2bcea5358708d4cf28203c150650e3b58535ad5cfda1d59df4ea9775fd4f716"
+      },
+      "status": "PASS",
+      "wall_seconds": 1.0459999999729916
+    },
+    {
+      "CPU_seconds": 5.046875,
+      "peak_job_memory_bytes": 1804808192,
+      "receipt": {
+        "bytes": 8211,
+        "path": "runs/lean_table_checker/acceleration_20261018_v19/cartesian_kernel_v19/attempts/1835c70b678348fa8cc41036eb967734/receipt.json",
+        "sha256": "006b9009deb295b8ee9337e8850ba3e0adbbd6997a793b860fc69fb14f2b423a"
+      },
+      "status": "PASS",
+      "wall_seconds": 5.186999999976251
+    },
+    {
+      "CPU_seconds": 0.515625,
+      "peak_job_memory_bytes": 167129088,
+      "receipt": {
+        "bytes": 71921,
+        "path": "runs/lean_table_checker/acceleration_20261018_v19/cartesian_kernel_v19/attempts/1895a592c6894ae684f7a897ec3b2082/receipt.json",
+        "sha256": "bf1781d4e97867902ba019754070fe1b7d122f210c16450644c5f26355f1f465"
+      },
+      "status": "PASS",
+      "wall_seconds": 1.3589999999967404
+    },
+    {
+      "CPU_seconds": 0.125,
+      "peak_job_memory_bytes": 103800832,
+      "receipt": {
+        "bytes": 6874,
+        "path": "runs/lean_table_checker/acceleration_20261018_v19/cartesian_kernel_v19/attempts/18e4f94bb8ee46e89270577c80f1c8e2/receipt.json",
+        "sha256": "6745013989e9ffec51bb264463928be9a69794849883933c4c3a167c2dab03a4"
+      },
+      "status": "PASS",
+      "wall_seconds": 2.1410000000032596
+    },
+    {
+      "CPU_seconds": 2.921875,
+      "peak_job_memory_bytes": 243785728,
+      "receipt": {
+        "bytes": 49471,
+        "path": "runs/lean_table_checker/acceleration_20261018_v19/cartesian_kernel_v19/attempts/192e37382f0944cfaa907ee1a644f723/receipt.json",
+        "sha256": "35990a13adf7828908b89673dd11cc5b030ea56726636b302c7054c6f80294b8"
+      },
+      "status": "PASS",
+      "wall_seconds": 3.235000000044238
+    },
+    {
+      "CPU_seconds": 0.5,
+      "peak_job_memory_bytes": 106569728,
+      "receipt": {
+        "bytes": 143570,
+        "path": "runs/lean_table_checker/acceleration_20261018_v19/cartesian_kernel_v19/attempts/1aa734a0aafd40859961aa4dd5d1c6f7/receipt.json",
+        "sha256": "1fe7ceaf1ba747d97e5f796e0c267c5761893e593f8bc8a369700440aafdd5d9"
+      },
+      "status": "PASS",
+      "wall_seconds": 1.672000000020489
+    },
+    {
+      "CPU_seconds": 3.15625,
+      "peak_job_memory_bytes": 160645120,
+      "receipt": {
+        "bytes": 50489,
+        "path": "runs/lean_table_checker/acceleration_20261018_v19/cartesian_kernel_v19/attempts/1bbff3e6b8044d53aceec2e955dcac01/receipt.json",
+        "sha256": "62064d5ba892a3307a96ee00b8cdbf1d0df5cbd41bb64e15252d67a8e9fea48b"
+      },
+      "status": "PASS",
+      "wall_seconds": 3.5160000000032596
+    },
+    {
+      "CPU_seconds": 0.484375,
+      "peak_job_memory_bytes": 150409216,
+      "receipt": {
+        "bytes": 97618,
+        "path": "runs/lean_table_checker/acceleration_20261018_v19/cartesian_kernel_v19/attempts/1cc6fca317ce4740814851cf21d1658b/receipt.json",
+        "sha256": "d89fd8d9f1f25bed079a3fe0106b0492415a404ecf1af8811597f85cf8623eb2"
+      },
+      "status": "PASS",
+      "wall_seconds": 1.4219999999622814
+    },
+    {
+      "CPU_seconds": 1.484375,
+      "peak_job_memory_bytes": 276791296,
+      "receipt": {
+        "bytes": 154581,
+        "path": "runs/lean_table_checker/acceleration_20261018_v19/cartesian_kernel_v19/attempts/1e2b635a34f9443f82e30893c1a327fd/receipt.json",
+        "sha256": "81e042e66672704d69952bc59a38d0274db3f8c924f035685aa385c6f0350323"
+      },
+      "status": "PASS",
+      "wall_seconds": 2.9689999999827705
+    },
+    {
+      "CPU_seconds": 0.671875,
+      "peak_job_memory_bytes": 155648000,
+      "receipt": {
+        "bytes": 92684,
+        "path": "runs/lean_table_checker/acceleration_20261018_v19/cartesian_kernel_v19/attempts/1e60b9b4c0e24367ac7418ca6e0b9844/receipt.json",
+        "sha256": "bcf13d99c8c2e740806af3884e9e546d0aaf2e7fcd225574b6ac5487ba90a390"
+      },
+      "status": "PASS",
+      "wall_seconds": 1.5939999999827705
+    },
+    {
+      "CPU_seconds": 8.125,
+      "peak_job_memory_bytes": 255979520,
+      "receipt": {
+        "bytes": 68992,
+        "path": "runs/lean_table_checker/acceleration_20261018_v19/cartesian_kernel_v19/attempts/1eae357a34294c4ab8bf74b050c5fedf/receipt.json",
+        "sha256": "4a322a1b1aa85b699efd5a39e6977180d1a0fe5dd51cffffeb664bf8a303ce34"
+      },
+      "status": "PASS",
+      "wall_seconds": 8.875
+    },
+    {
+      "CPU_seconds": 0.546875,
+      "peak_job_memory_bytes": 123490304,
+      "receipt": {
+        "bytes": 81812,
+        "path": "runs/lean_table_checker/acceleration_20261018_v19/cartesian_kernel_v19/attempts/1fa2ec90cd794318bfa8ce57a8ee85b0/receipt.json",
+        "sha256": "067b85d53ccead8ad5cfdec3e1ac68fd25885af25bc402a2fec760311e300ee1"
+      },
+      "status": "PASS",
+      "wall_seconds": 1.4060000000172295
+    },
+    {
+      "CPU_seconds": 2.796875,
+      "peak_job_memory_bytes": 359788544,
+      "receipt": {
+        "bytes": 162600,
+        "path": "runs/lean_table_checker/acceleration_20261018_v19/cartesian_kernel_v19/attempts/1fd5a52724e547288ba9d85a456af35d/receipt.json",
+        "sha256": "836aa4f990486a4d4376391bfde2b08dcb56e33a0772a9e8e4b3f8a22dee8f00"
+      },
+      "status": "PASS",
+      "wall_seconds": 4.452999999979511
+    },
+    {
+      "CPU_seconds": 0.296875,
+      "peak_job_memory_bytes": 126697472,
+      "receipt": {
+        "bytes": 166533,
+        "path": "runs/lean_table_checker/acceleration_20261018_v19/cartesian_kernel_v19/attempts/219deeb049bf401a8df1333c050d96c7/receipt.json",
+        "sha256": "bee30931be6e5ce4063027861f3afc12a49fc70bbdd3818998b56e7547d3716b"
+      },
+      "status": "PASS",
+      "wall_seconds": 1.6570000000065193
+    },
+    {
+      "CPU_seconds": 0.71875,
+      "peak_job_memory_bytes": 120782848,
+      "receipt": {
+        "bytes": 156558,
+        "path": "runs/lean_table_checker/acceleration_20261018_v19/cartesian_kernel_v19/attempts/233d3c7a98ee4cfcaaad45436468c5ba/receipt.json",
+        "sha256": "14513fcf29105039e4ebef8bc903516f246c75222a3fb1387992030aba3491f9"
+      },
+      "status": "PASS",
+      "wall_seconds": 2.077999999979511
+    },
+    {
+      "CPU_seconds": 0.34375,
+      "peak_job_memory_bytes": 102248448,
+      "receipt": {
+        "bytes": 135555,
+        "path": "runs/lean_table_checker/acceleration_20261018_v19/cartesian_kernel_v19/attempts/24efa6327ad1469fbdbf35035ab364c8/receipt.json",
+        "sha256": "10d67c8a719ff904187e430181944d70146c98f431d83ff15ac0fd5f2337d2a2"
+      },
+      "status": "PASS",
+      "wall_seconds": 1.5320000000065193
+    },
+    {
+      "CPU_seconds": 4.265625,
+      "peak_job_memory_bytes": 225583104,
+      "receipt": {
+        "bytes": 41390,
+        "path": "runs/lean_table_checker/acceleration_20261018_v19/cartesian_kernel_v19/attempts/254a73f2e72847f19d4c98ba603f82b8/receipt.json",
+        "sha256": "3b3f7129731e494745be870ff069203fcdc5f71c861c24826f59b81de79023ab"
+      },
+      "status": "PASS",
+      "wall_seconds": 4.5
+    },
+    {
+      "CPU_seconds": 0.640625,
+      "peak_job_memory_bytes": 169660416,
+      "receipt": {
+        "bytes": 106535,
+        "path": "runs/lean_table_checker/acceleration_20261018_v19/cartesian_kernel_v19/attempts/2afff725e43d41ad8d8d5a67e0a2dff2/receipt.json",
+        "sha256": "5786ee26aece83af943068491529624eb4717d13a38fc45e55ab7934af8bd063"
+      },
+      "status": "PASS",
+      "wall_seconds": 1.6099999999860302
+    },
+    {
+      "CPU_seconds": 0.328125,
+      "peak_job_memory_bytes": 93478912,
+      "receipt": {
+        "bytes": 128552,
+        "path": "runs/lean_table_checker/acceleration_20261018_v19/cartesian_kernel_v19/attempts/2cba31802a5f43efacf69adddcca2b96/receipt.json",
+        "sha256": "f2d16e81356f7dced5a7c9b57cf453fdd7460d854e06d7dd599dd9efc69d14ed"
+      },
+      "status": "PASS",
+      "wall_seconds": 1.4540000000270084
+    },
+    {
+      "CPU_seconds": 2.625,
+      "peak_job_memory_bytes": 176066560,
+      "receipt": {
+        "bytes": 28324,
+        "path": "runs/lean_table_checker/acceleration_20261018_v19/cartesian_kernel_v19/attempts/2d2ee8b913b44f87a349e681b1275203/receipt.json",
+        "sha256": "2fcdfce0d6753b186153c0bc9e8d6a6b764c439b8c006ac17c95032082ecb398"
+      },
+      "status": "PASS",
+      "wall_seconds": 2.875
+    },
+    {
+      "CPU_seconds": 0.515625,
+      "peak_job_memory_bytes": 116875264,
+      "receipt": {
+        "bytes": 115512,
+        "path": "runs/lean_table_checker/acceleration_20261018_v19/cartesian_kernel_v19/attempts/2fafe2bf797f47628a5f65cf8e34bbff/receipt.json",
+        "sha256": "0b34e65c1a7eec101ea054f1cacbeec696d8c7502ed8c7d3248c81b7ec9e9ebf"
+      },
+      "status": "PASS",
+      "wall_seconds": 1.547000000020489
+    },
+    {
+      "CPU_seconds": 0.34375,
+      "peak_job_memory_bytes": 89624576,
+      "receipt": {
+        "bytes": 110516,
+        "path": "runs/lean_table_checker/acceleration_20261018_v19/cartesian_kernel_v19/attempts/312e6115101740009710808b3d740805/receipt.json",
+        "sha256": "f3fcabb3c4ee7e12fc8ea07237c8dbddfc62c7651b46dbaddae51f9cae81c9b6"
+      },
+      "status": "PASS",
+      "wall_seconds": 1.4380000000237487
+    },
+    {
+      "CPU_seconds": 0.34375,
+      "peak_job_memory_bytes": 99741696,
+      "receipt": {
+        "bytes": 60164,
+        "path": "runs/lean_table_checker/acceleration_20261018_v19/cartesian_kernel_v19/attempts/316180a303d24db58e89c047636525e2/receipt.json",
+        "sha256": "8fe06a870ad4d19c3333ebb320eb09f7f1387b9429583f4bde86a800058ef75b"
+      },
+      "status": "PASS",
+      "wall_seconds": 1.0459999999729916
+    },
+    {
+      "CPU_seconds": 0.421875,
+      "peak_job_memory_bytes": 121700352,
+      "receipt": {
+        "bytes": 75864,
+        "path": "runs/lean_table_checker/acceleration_20261018_v19/cartesian_kernel_v19/attempts/31e6faea05474030b0920d4d3874d934/receipt.json",
+        "sha256": "ba6aac7476ba83f60e61ce46804dfea623043a00c29f128240a7c2856aff71b1"
+      },
+      "status": "PASS",
+      "wall_seconds": 1.2190000000409782
+    },
+    {
+      "CPU_seconds": 0.8125,
+      "peak_job_memory_bytes": 129921024,
+      "receipt": {
+        "bytes": 93656,
+        "path": "runs/lean_table_checker/acceleration_20261018_v19/cartesian_kernel_v19/attempts/33f593325c81451d9638b2a91ca0670b/receipt.json",
+        "sha256": "7bfb710a92d3b7c6613f956b67270b6eb75c7f2e3607da1db6110ed781b48271"
+      },
+      "status": "PASS",
+      "wall_seconds": 1.6880000000237487
+    },
+    {
+      "CPU_seconds": 0.59375,
+      "peak_job_memory_bytes": 175816704,
+      "receipt": {
+        "bytes": 81782,
+        "path": "runs/lean_table_checker/acceleration_20261018_v19/cartesian_kernel_v19/attempts/38642bcec6e944f691686931453c072e/receipt.json",
+        "sha256": "11adaf454102918adf48ae70229acb012e538732df7e5ef3f3153a1a43bc3bca"
+      },
+      "status": "PASS",
+      "wall_seconds": 1.547000000020489
+    },
+    {
+      "CPU_seconds": 0.515625,
+      "peak_job_memory_bytes": 149254144,
+      "receipt": {
+        "bytes": 102514,
+        "path": "runs/lean_table_checker/acceleration_20261018_v19/cartesian_kernel_v19/attempts/38731bcf79664cf88dede900ce839d70/receipt.json",
+        "sha256": "bef684e5d97b5f429c2ab3a3a34a1485a53506966c381837115464a1e9c2b8f3"
+      },
+      "status": "PASS",
+      "wall_seconds": 1.4839999999967404
+    },
+    {
+      "CPU_seconds": 0.9375,
+      "peak_job_memory_bytes": 201342976,
+      "receipt": {
+        "bytes": 139532,
+        "path": "runs/lean_table_checker/acceleration_20261018_v19/cartesian_kernel_v19/attempts/3befee98607f497c81c750b3d0978179/receipt.json",
+        "sha256": "dbde5da59bb7be6e721a60cea5bf6914dff8527ce0a5d24591cdb2ece94b0309"
+      },
+      "status": "PASS",
+      "wall_seconds": 2.0939999999827705
+    },
+    {
+      "CPU_seconds": 0.515625,
+      "peak_job_memory_bytes": 212242432,
+      "receipt": {
+        "bytes": 85768,
+        "path": "runs/lean_table_checker/acceleration_20261018_v19/cartesian_kernel_v19/attempts/3c836086141e405dbbcfd737e0e42206/receipt.json",
+        "sha256": "2934ddc991db08a05d1b2038efac096b04279244d6e6a4b97b6520174ae94eb8"
+      },
+      "status": "PASS",
+      "wall_seconds": 1.422000000020489
+    },
+    {
+      "CPU_seconds": 2.296875,
+      "peak_job_memory_bytes": 136683520,
+      "receipt": {
+        "bytes": 40415,
+        "path": "runs/lean_table_checker/acceleration_20261018_v19/cartesian_kernel_v19/attempts/3f29c0ec02824179b256ccf48f666a8d/receipt.json",
+        "sha256": "e785df855e7ea6a40746404f7dd7fa70c395d343bda4a3b8879b16f63f6abca7"
+      },
+      "status": "PASS",
+      "wall_seconds": 2.625
+    },
+    {
+      "CPU_seconds": 0.296875,
+      "peak_job_memory_bytes": 90730496,
+      "receipt": {
+        "bytes": 52337,
+        "path": "runs/lean_table_checker/acceleration_20261018_v19/cartesian_kernel_v19/attempts/3f67423e59624fdb8595dabc75d24d6d/receipt.json",
+        "sha256": "2ff449c926c142d004f65caa5d9b4b200a83bc5811aa3e223c1e8cb1174018c2"
+      },
+      "status": "PASS",
+      "wall_seconds": 1.0
+    },
+    {
+      "CPU_seconds": 1.34375,
+      "peak_job_memory_bytes": 204886016,
+      "receipt": {
+        "bytes": 157646,
+        "path": "runs/lean_table_checker/acceleration_20261018_v19/cartesian_kernel_v19/attempts/44b2b1e114b2443d86b618dadf50de4d/receipt.json",
+        "sha256": "1921585b2349649893821c0f12ac1bfa915a0c658a4fae96a86bcd8b86fffade"
+      },
+      "status": "PASS",
+      "wall_seconds": 2.6869999999762513
+    },
+    {
+      "CPU_seconds": 3.015625,
+      "peak_job_memory_bytes": 157777920,
+      "receipt": {
+        "bytes": 38363,
+        "path": "runs/lean_table_checker/acceleration_20261018_v19/cartesian_kernel_v19/attempts/475eedae25d847e18e76aa22eb117b55/receipt.json",
+        "sha256": "a5a31c16bd998b95eff3fa2ca1a20b9829cc9df8a1dc341f32eb15edef9ca471"
+      },
+      "status": "PASS",
+      "wall_seconds": 3.3130000000237487
+    },
+    {
+      "CPU_seconds": 2.0625,
+      "peak_job_memory_bytes": 254365696,
+      "receipt": {
+        "bytes": 152535,
+        "path": "runs/lean_table_checker/acceleration_20261018_v19/cartesian_kernel_v19/attempts/481de88cc0044b019ba32278a85f8bcc/receipt.json",
+        "sha256": "53b4665d029dad78a8e064b31f436ac74f0988e8409aa089386846b13730f37c"
+      },
+      "status": "PASS",
+      "wall_seconds": 4.078000000037719
+    },
+    {
+      "CPU_seconds": 0.34375,
+      "peak_job_memory_bytes": 100876288,
+      "receipt": {
+        "bytes": 124546,
+        "path": "runs/lean_table_checker/acceleration_20261018_v19/cartesian_kernel_v19/attempts/4c3a1a9ec2cb4b229b5f69122ec9efa0/receipt.json",
+        "sha256": "a4607fa80f1ea5f18838a144623f0917bbcd3674adfcd601d7d7ce008f164913"
+      },
+      "status": "PASS",
+      "wall_seconds": 1.4839999999967404
+    },
+    {
+      "CPU_seconds": 0.546875,
+      "peak_job_memory_bytes": 146382848,
+      "receipt": {
+        "bytes": 112590,
+        "path": "runs/lean_table_checker/acceleration_20261018_v19/cartesian_kernel_v19/attempts/4c4358d59df14c9f92fc92619dc6c6e8/receipt.json",
+        "sha256": "e4bc91cef3f8d797cfbb70b5450f40524a4fc3f4af1cb6c2ed5e6caa435f7b09"
+      },
+      "status": "PASS",
+      "wall_seconds": 1.6410000000032596
+    },
+    {
+      "CPU_seconds": 0.390625,
+      "peak_job_memory_bytes": 116457472,
+      "receipt": {
+        "bytes": 57194,
+        "path": "runs/lean_table_checker/acceleration_20261018_v19/cartesian_kernel_v19/attempts/4e7162175fa64fce9342ddc74599f805/receipt.json",
+        "sha256": "8d6a85ec95a8a113bff9b8c5c568a4d83cea4a9c92a5a8612f6cf3afd110bb48"
+      },
+      "status": "PASS",
+      "wall_seconds": 1.0790000000270084
+    },
+    {
+      "CPU_seconds": 0.5625,
+      "peak_job_memory_bytes": 193343488,
+      "receipt": {
+        "bytes": 53263,
+        "path": "runs/lean_table_checker/acceleration_20261018_v19/cartesian_kernel_v19/attempts/53484678055b4c9782cc20cc5802d7d1/receipt.json",
+        "sha256": "fcfc2ba191e746c4bb2c1611efc8dec7fc4c2149d807bde703eba2f0ebbeb6d0"
+      },
+      "status": "PASS",
+      "wall_seconds": 1.2809999999590218
+    },
+    {
+      "CPU_seconds": 0.46875,
+      "peak_job_memory_bytes": 138891264,
+      "receipt": {
+        "bytes": 108414,
+        "path": "runs/lean_table_checker/acceleration_20261018_v19/cartesian_kernel_v19/attempts/5681d78c175a42859cf7f261dedf6eba/receipt.json",
+        "sha256": "48bb3b4e16bdd3b3a45a1aa62784fc573ae39b116f919f41827de33a26107c8b"
+      },
+      "status": "PASS",
+      "wall_seconds": 1.5320000000065193
+    },
+    {
+      "CPU_seconds": 0.625,
+      "peak_job_memory_bytes": 160563200,
+      "receipt": {
+        "bytes": 122533,
+        "path": "runs/lean_table_checker/acceleration_20261018_v19/cartesian_kernel_v19/attempts/578f4a3c69594c5090e29d269abe697f/receipt.json",
+        "sha256": "2765922d961202f8b7bcdd588347e6dfc48e5a549d8899a79a06c96e1f751204"
+      },
+      "status": "PASS",
+      "wall_seconds": 1.7179999999934807
+    },
+    {
+      "CPU_seconds": 0.796875,
+      "peak_job_memory_bytes": 175157248,
+      "receipt": {
+        "bytes": 141526,
+        "path": "runs/lean_table_checker/acceleration_20261018_v19/cartesian_kernel_v19/attempts/58183f27c0324e8f8f1aa3554cf7bad6/receipt.json",
+        "sha256": "30a2a2aa1350e7df3b25e93ca8a98caac4d666c338e4de7c86bd9256ceced6ef"
+      },
+      "status": "PASS",
+      "wall_seconds": 1.9679999999934807
+    },
+    {
+      "CPU_seconds": 0.671875,
+      "peak_job_memory_bytes": 167043072,
+      "receipt": {
+        "bytes": 130529,
+        "path": "runs/lean_table_checker/acceleration_20261018_v19/cartesian_kernel_v19/attempts/5a5fbe6e3a4648349a3d1233bfa3eb7d/receipt.json",
+        "sha256": "5be57656434b96bd8b39e83b9a58716e23324645dfa8ba73f39b14fe95aa33c3"
+      },
+      "status": "PASS",
+      "wall_seconds": 1.8429999999934807
+    },
+    {
+      "CPU_seconds": 0.328125,
+      "peak_job_memory_bytes": 81960960,
+      "receipt": {
+        "bytes": 165721,
+        "path": "runs/lean_table_checker/acceleration_20261018_v19/cartesian_kernel_v19/attempts/5abb7f9cfb6a4b9f81895d6289ca039a/receipt.json",
+        "sha256": "396cba16be67d97c4a183966eab213f91bee784f8676491a5eb2f8a7d52164ed"
+      },
+      "status": "FAILED_OR_INCOMPLETE",
+      "wall_seconds": 1.687999999965541
+    },
+    {
+      "CPU_seconds": 0.40625,
+      "peak_job_memory_bytes": 96493568,
+      "receipt": {
+        "bytes": 123485,
+        "path": "runs/lean_table_checker/acceleration_20261018_v19/cartesian_kernel_v19/attempts/5af25f6bce2e41ab8a65adec625f44fe/receipt.json",
+        "sha256": "3699e34f88c47cb10f6e3745750c6fd00165c154a729c41782e0118b8cd0da0d"
+      },
+      "status": "PASS",
+      "wall_seconds": 1.4689999999827705
+    },
+    {
+      "CPU_seconds": 0.453125,
+      "peak_job_memory_bytes": 186773504,
+      "receipt": {
+        "bytes": 101582,
+        "path": "runs/lean_table_checker/acceleration_20261018_v19/cartesian_kernel_v19/attempts/5b252898a7a04fbe948d162d775bf9ee/receipt.json",
+        "sha256": "afe96face1721089993feadc3a0ffff17b2cd09ef4363477802891fea9438732"
+      },
+      "status": "PASS",
+      "wall_seconds": 1.4369999999762513
+    },
+    {
+      "CPU_seconds": 0.328125,
+      "peak_job_memory_bytes": 83869696,
+      "receipt": {
+        "bytes": 18283,
+        "path": "runs/lean_table_checker/acceleration_20261018_v19/cartesian_kernel_v19/attempts/5ca4dd5d60134621bc1648a03273f092/receipt.json",
+        "sha256": "7f79cc407fa474736f1d2f93e6926064e91d37ae4430dcc82bb0a47d21c1815d"
+      },
+      "status": "PASS",
+      "wall_seconds": 0.5780000000377186
+    },
+    {
+      "CPU_seconds": 0.59375,
+      "peak_job_memory_bytes": 158044160,
+      "receipt": {
+        "bytes": 140549,
+        "path": "runs/lean_table_checker/acceleration_20261018_v19/cartesian_kernel_v19/attempts/5ce1d19294a7410986bd7ec0d9303def/receipt.json",
+        "sha256": "838166cced755f01dcc7f7bde6c630c64534af18fc0fa8cb8fd441f537dbc4b7"
+      },
+      "status": "PASS",
+      "wall_seconds": 1.812999999965541
+    },
+    {
+      "CPU_seconds": 0.625,
+      "peak_job_memory_bytes": 148533248,
+      "receipt": {
+        "bytes": 150592,
+        "path": "runs/lean_table_checker/acceleration_20261018_v19/cartesian_kernel_v19/attempts/5f1cc6102f214dd390c7e44d32c8523a/receipt.json",
+        "sha256": "3aeff238900c2e30f2cf04810de7a3a36bf131c2af2e11828a78d4b510c9dd21"
+      },
+      "status": "PASS",
+      "wall_seconds": 1.875
+    },
+    {
+      "CPU_seconds": 1.015625,
+      "peak_job_memory_bytes": 203657216,
+      "receipt": {
+        "bytes": 137555,
+        "path": "runs/lean_table_checker/acceleration_20261018_v19/cartesian_kernel_v19/attempts/5faf9592a31c48f684af89c7e9ab8aaf/receipt.json",
+        "sha256": "500c48fb1f97d63a34cc5c50346b29b93a108bdf698b39bd675e6e738698d276"
+      },
+      "status": "PASS",
+      "wall_seconds": 2.2339999999967404
+    },
+    {
+      "CPU_seconds": 0.828125,
+      "peak_job_memory_bytes": 227098624,
+      "receipt": {
+        "bytes": 107513,
+        "path": "runs/lean_table_checker/acceleration_20261018_v19/cartesian_kernel_v19/attempts/61998190c1dc4b74a21985aa89814d9e/receipt.json",
+        "sha256": "b08c14022f7529872aa070a47bc158ba19ff384626b05aa3e81cc588786ac449"
+      },
+      "status": "PASS",
+      "wall_seconds": 1.8119999999762513
+    },
+    {
+      "CPU_seconds": 0.3125,
+      "peak_job_memory_bytes": 82239488,
+      "receipt": {
+        "bytes": 50638,
+        "path": "runs/lean_table_checker/acceleration_20261018_v19/cartesian_kernel_v19/attempts/64b59bc4423542a88003b687ea858bc1/receipt.json",
+        "sha256": "020d07ed0687a860d18aae173e1dcfebdaefe2e9582fab35cdbdc0e81cbd3115"
+      },
+      "status": "FAILED_OR_INCOMPLETE",
+      "wall_seconds": 0.9530000000377186
+    },
+    {
+      "CPU_seconds": 2.140625,
+      "peak_job_memory_bytes": 154673152,
+      "receipt": {
+        "bytes": 48472,
+        "path": "runs/lean_table_checker/acceleration_20261018_v19/cartesian_kernel_v19/attempts/64be1a8f7eec46fd9cb2576c6e82cd14/receipt.json",
+        "sha256": "f602bc25bf2b53ad61b7c5c20a6d944a9e868fe4e55d805ac512480bf8b8c5fc"
+      },
+      "status": "PASS",
+      "wall_seconds": 2.6560000000172295
+    },
+    {
+      "CPU_seconds": 0.453125,
+      "peak_job_memory_bytes": 106463232,
+      "receipt": {
+        "bytes": 117486,
+        "path": "runs/lean_table_checker/acceleration_20261018_v19/cartesian_kernel_v19/attempts/65a372d443a9488084dfeb247ac67b33/receipt.json",
+        "sha256": "bf43808cc08cca91fcb9facdbad8a0dd82b8ed2e2ab6c32285fb4aaecc23eb7a"
+      },
+      "status": "PASS",
+      "wall_seconds": 1.5
+    },
+    {
+      "CPU_seconds": 2.296875,
+      "peak_job_memory_bytes": 185294848,
+      "receipt": {
+        "bytes": 25282,
+        "path": "runs/lean_table_checker/acceleration_20261018_v19/cartesian_kernel_v19/attempts/6853b0af44f346198ccbb9d96bcc3124/receipt.json",
+        "sha256": "26dca15077ce996cc2ffe77e1fc637848db2f17f55dddd06e02cd7aa00308db3"
+      },
+      "status": "PASS",
+      "wall_seconds": 2.5
+    },
+    {
+      "CPU_seconds": 1.21875,
+      "peak_job_memory_bytes": 258293760,
+      "receipt": {
+        "bytes": 159595,
+        "path": "runs/lean_table_checker/acceleration_20261018_v19/cartesian_kernel_v19/attempts/6b982ac9486e47ef9ca77f4d76193da6/receipt.json",
+        "sha256": "32337a51d01eff6b3842b5e051b38d3a29921bb6906ca990c692a60750650d0a"
+      },
+      "status": "PASS",
+      "wall_seconds": 2.577999999979511
+    },
+    {
+      "CPU_seconds": 0.328125,
+      "peak_job_memory_bytes": 104435712,
+      "receipt": {
+        "bytes": 73906,
+        "path": "runs/lean_table_checker/acceleration_20261018_v19/cartesian_kernel_v19/attempts/6c4b2a8102314baea3da7639aac268a7/receipt.json",
+        "sha256": "b279931b08758ed57ccd4aaab0624f83be76a26f597fab8b9ce97388f8dbdc5e"
+      },
+      "status": "PASS",
+      "wall_seconds": 1.125
+    },
+    {
+      "CPU_seconds": 1.09375,
+      "peak_job_memory_bytes": 193249280,
+      "receipt": {
+        "bytes": 155624,
+        "path": "runs/lean_table_checker/acceleration_20261018_v19/cartesian_kernel_v19/attempts/6cc6a5a25d1040f8aeced49cda8c7a74/receipt.json",
+        "sha256": "e3c0e9fa9bac539735e0826e1d6c454500840dbb94cc1a77252cd2f47dd5ed21"
+      },
+      "status": "PASS",
+      "wall_seconds": 2.3429999999934807
+    },
+    {
+      "CPU_seconds": 3.234375,
+      "peak_job_memory_bytes": 211406848,
+      "receipt": {
+        "bytes": 35361,
+        "path": "runs/lean_table_checker/acceleration_20261018_v19/cartesian_kernel_v19/attempts/6debcc4674fc4c6592a40b886900ef89/receipt.json",
+        "sha256": "d9a01ea30c46a464c63528f30fce04f53cc6b025926e6733281b789e11c24c6b"
+      },
+      "status": "PASS",
+      "wall_seconds": 3.5
+    },
+    {
+      "CPU_seconds": 2.6875,
+      "peak_job_memory_bytes": 200146944,
+      "receipt": {
+        "bytes": 27309,
+        "path": "runs/lean_table_checker/acceleration_20261018_v19/cartesian_kernel_v19/attempts/6eb90b7e07144f92bff5808211a897dc/receipt.json",
+        "sha256": "7272e49b351346c31199d113ec229551b480c00b6d3fcff8aa080c8fb342ccf4"
+      },
+      "status": "PASS",
+      "wall_seconds": 2.827999999979511
+    },
+    {
+      "CPU_seconds": 0.65625,
+      "peak_job_memory_bytes": 173080576,
+      "receipt": {
+        "bytes": 104545,
+        "path": "runs/lean_table_checker/acceleration_20261018_v19/cartesian_kernel_v19/attempts/6ecb8d3dbdfa41beb96dfc2946e5d450/receipt.json",
+        "sha256": "c3129fd5bfe9dc07136f64317c7a8502eca6ef04dba392edd9edb27a67752243"
+      },
+      "status": "PASS",
+      "wall_seconds": 1.6089999999967404
+    },
+    {
+      "CPU_seconds": 3.8125,
+      "peak_job_memory_bytes": 169922560,
+      "receipt": {
+        "bytes": 33377,
+        "path": "runs/lean_table_checker/acceleration_20261018_v19/cartesian_kernel_v19/attempts/71614bb41fa94a109ed60da50da4fd89/receipt.json",
+        "sha256": "c04053387f387ad6a0bb3a2e4920a39abf666987e9bc8baadcafd1d151b4d855"
+      },
+      "status": "PASS",
+      "wall_seconds": 3.85999999998603
+    },
+    {
+      "CPU_seconds": 1.859375,
+      "peak_job_memory_bytes": 321957888,
+      "receipt": {
+        "bytes": 165601,
+        "path": "runs/lean_table_checker/acceleration_20261018_v19/cartesian_kernel_v19/attempts/71f6caef26c541afa14580b9939d7b91/receipt.json",
+        "sha256": "3d5e771d3ea287d86465e25201399509ac87cdbd2aeee895bf80535ff84d0009"
+      },
+      "status": "PASS",
+      "wall_seconds": 3.2040000000270084
+    },
+    {
+      "CPU_seconds": 2.5625,
+      "peak_job_memory_bytes": 159092736,
+      "receipt": {
+        "bytes": 29307,
+        "path": "runs/lean_table_checker/acceleration_20261018_v19/cartesian_kernel_v19/attempts/7426ef6bc3674bca99d71db537f1a15f/receipt.json",
+        "sha256": "08d83b74c38dcc9422cc3dc91f42c56f78265156e5daaa0ba955c94edc81e5f9"
+      },
+      "status": "PASS",
+      "wall_seconds": 2.8910000000032596
+    },
+    {
+      "CPU_seconds": 0.3125,
+      "peak_job_memory_bytes": 94679040,
+      "receipt": {
+        "bytes": 69998,
+        "path": "runs/lean_table_checker/acceleration_20261018_v19/cartesian_kernel_v19/attempts/74adac2c40014c62981293c5598beba8/receipt.json",
+        "sha256": "e6c43459787f078098a1b932444c723d802276a2d82c4d51c63c79d236091bbf"
+      },
+      "status": "PASS",
+      "wall_seconds": 1.1089999999967404
+    },
+    {
+      "CPU_seconds": 2.15625,
+      "peak_job_memory_bytes": 198578176,
+      "receipt": {
+        "bytes": 30350,
+        "path": "runs/lean_table_checker/acceleration_20261018_v19/cartesian_kernel_v19/attempts/74bdb5d48f97456a8a064bb254f94652/receipt.json",
+        "sha256": "46a2d146ce1a43573937529fba92d554b4947983958b6b996a4c69f057d65bf7"
+      },
+      "status": "PASS",
+      "wall_seconds": 2.4369999999762513
+    },
+    {
+      "CPU_seconds": 0.53125,
+      "peak_job_memory_bytes": 117817344,
+      "receipt": {
+        "bytes": 142561,
+        "path": "runs/lean_table_checker/acceleration_20261018_v19/cartesian_kernel_v19/attempts/7624f717508b400c8b22d6a8317a0742/receipt.json",
+        "sha256": "c1b8f7292792db54d4a6cec7f7fe8ce0042f8f8cede0c1967d0cc4bbee6ef98e"
+      },
+      "status": "PASS",
+      "wall_seconds": 1.7349999999860302
+    },
+    {
+      "CPU_seconds": 0.453125,
+      "peak_job_memory_bytes": 115810304,
+      "receipt": {
+        "bytes": 125490,
+        "path": "runs/lean_table_checker/acceleration_20261018_v19/cartesian_kernel_v19/attempts/777028b871de45fd908c9d181323d182/receipt.json",
+        "sha256": "cc72b5ccd6374b40c9c7e16e8a90012bb84bd4411635ff0a3ad6f2124b154ed9"
+      },
+      "status": "PASS",
+      "wall_seconds": 1.577999999979511
+    },
+    {
+      "CPU_seconds": 1.171875,
+      "peak_job_memory_bytes": 154890240,
+      "receipt": {
+        "bytes": 36356,
+        "path": "runs/lean_table_checker/acceleration_20261018_v19/cartesian_kernel_v19/attempts/7890f4199aab4b078940fc12d3d819a2/receipt.json",
+        "sha256": "f595e72632c6fabad29da13d2f6a484c3a81bd9cc4ebe0e6096ec3a8618cc5de"
+      },
+      "status": "PASS",
+      "wall_seconds": 1.6089999999967404
+    },
+    {
+      "CPU_seconds": 7.6875,
+      "peak_job_memory_bytes": 254803968,
+      "receipt": {
+        "bytes": 69460,
+        "path": "runs/lean_table_checker/acceleration_20261018_v19/cartesian_kernel_v19/attempts/7b4c5bda8a78439b83d67eedcf5d474b/receipt.json",
+        "sha256": "88722e3e082d343341c04ab720abfd3ad488bbf1052a71f1491eb937a12c7d4f"
+      },
+      "status": "PASS",
+      "wall_seconds": 8.436999999976251
+    },
+    {
+      "CPU_seconds": 0.34375,
+      "peak_job_memory_bytes": 83890176,
+      "receipt": {
+        "bytes": 17247,
+        "path": "runs/lean_table_checker/acceleration_20261018_v19/cartesian_kernel_v19/attempts/7d6a869f9bb144d6a26b7418fcbcc619/receipt.json",
+        "sha256": "2f2467cdc2ff7c42f0d0dd8cc285b554f1a544d6d05c8f2571c827f83da5237f"
+      },
+      "status": "PASS",
+      "wall_seconds": 0.5779999999795109
+    },
+    {
+      "CPU_seconds": 4.5625,
+      "peak_job_memory_bytes": 214224896,
+      "receipt": {
+        "bytes": 44386,
+        "path": "runs/lean_table_checker/acceleration_20261018_v19/cartesian_kernel_v19/attempts/7dc1f6f94c5f4266819e806c119a0441/receipt.json",
+        "sha256": "d8353c95e5deba855ff10d8b9fd4b06b333b435ef3f22dcc0172086e782ec806"
+      },
+      "status": "PASS",
+      "wall_seconds": 4.875
+    },
+    {
+      "CPU_seconds": 0.359375,
+      "peak_job_memory_bytes": 107548672,
+      "receipt": {
+        "bytes": 87735,
+        "path": "runs/lean_table_checker/acceleration_20261018_v19/cartesian_kernel_v19/attempts/7f3d1fe43d47441e97d8298111c7e3f0/receipt.json",
+        "sha256": "0e96c110beb2dbb48d407c206feecf63b62a5d3dc11eaa9b36aca21d25a78dcd"
+      },
+      "status": "PASS",
+      "wall_seconds": 1.2660000000032596
+    },
+    {
+      "CPU_seconds": 9.734375,
+      "peak_job_memory_bytes": 2223267840,
+      "receipt": {
+        "bytes": 14517,
+        "path": "runs/lean_table_checker/acceleration_20261018_v19/cartesian_kernel_v19/attempts/8437945689124937b3de264f0799f7e7/receipt.json",
+        "sha256": "da8e67ba95301d264a224198575cb76164ccc8fd5827eff327a11fb7c5b3d459"
+      },
+      "status": "PASS",
+      "wall_seconds": 10.14000000001397
+    },
+    {
+      "CPU_seconds": 0.4375,
+      "peak_job_memory_bytes": 134955008,
+      "receipt": {
+        "bytes": 100582,
+        "path": "runs/lean_table_checker/acceleration_20261018_v19/cartesian_kernel_v19/attempts/84e30949fbc747dcb131674654e060e8/receipt.json",
+        "sha256": "70fe31d437f118997bc6f40c5b7524497084b1ca7b5a5b140b9980b171793879"
+      },
+      "status": "PASS",
+      "wall_seconds": 1.3589999999967404
+    },
+    {
+      "CPU_seconds": 0.40625,
+      "peak_job_memory_bytes": 119754752,
+      "receipt": {
+        "bytes": 77828,
+        "path": "runs/lean_table_checker/acceleration_20261018_v19/cartesian_kernel_v19/attempts/8686baa4531e4d60a3de4196b496e58f/receipt.json",
+        "sha256": "7dfb027fa6fd5621ee95e9070f912055c945229a3514c3910b215a981e6a468c"
+      },
+      "status": "PASS",
+      "wall_seconds": 1.2179999999934807
+    },
+    {
+      "CPU_seconds": 1.65625,
+      "peak_job_memory_bytes": 134049792,
+      "receipt": {
+        "bytes": 18288,
+        "path": "runs/lean_table_checker/acceleration_20261018_v19/cartesian_kernel_v19/attempts/86c3a498ffbc4f75860591df675470ee/receipt.json",
+        "sha256": "e903984bf687a93499bf03dd2cb57d7d813017f8cd009436ded711414c4c7e90"
+      },
+      "status": "PASS",
+      "wall_seconds": 1.8599999999860302
+    },
+    {
+      "CPU_seconds": 0.3125,
+      "peak_job_memory_bytes": 91623424,
+      "receipt": {
+        "bytes": 90669,
+        "path": "runs/lean_table_checker/acceleration_20261018_v19/cartesian_kernel_v19/attempts/871568d0302e440d966b9c06b409cfe7/receipt.json",
+        "sha256": "7307aee1807b45dd855a5d33e6e526808bc7491873c822d0ff93ba989269e7e0"
+      },
+      "status": "PASS",
+      "wall_seconds": 1.2959999999729916
+    },
+    {
+      "CPU_seconds": 0.515625,
+      "peak_job_memory_bytes": 124358656,
+      "receipt": {
+        "bytes": 80856,
+        "path": "runs/lean_table_checker/acceleration_20261018_v19/cartesian_kernel_v19/attempts/887e2e9db5d1432f9cbceb0e17f5517a/receipt.json",
+        "sha256": "ea5c98416c33a3e841d446ded75cfb432eb92fac1a531b1213778ed9d663316e"
+      },
+      "status": "PASS",
+      "wall_seconds": 1.3589999999967404
+    },
+    {
+      "CPU_seconds": 0.40625,
+      "peak_job_memory_bytes": 108204032,
+      "receipt": {
+        "bytes": 131533,
+        "path": "runs/lean_table_checker/acceleration_20261018_v19/cartesian_kernel_v19/attempts/888c47e6f3bd4a3891337eac6094440b/receipt.json",
+        "sha256": "374b25a5085dbe10b25848be18484060fe85a5989ba7981d780526a6558f43a6"
+      },
+      "status": "PASS",
+      "wall_seconds": 1.5469999999622814
+    },
+    {
+      "CPU_seconds": 1.6875,
+      "peak_job_memory_bytes": 158072832,
+      "receipt": {
+        "bytes": 42427,
+        "path": "runs/lean_table_checker/acceleration_20261018_v19/cartesian_kernel_v19/attempts/8bff92f3045f461d96c60edf34bd5463/receipt.json",
+        "sha256": "1644f7b7c40df4154da251fbdbbb66d7fa7ad091527a5bc978481449a075dbd2"
+      },
+      "status": "PASS",
+      "wall_seconds": 2.1719999999622814
+    },
+    {
+      "CPU_seconds": 0.5625,
+      "peak_job_memory_bytes": 236523520,
+      "receipt": {
+        "bytes": 103557,
+        "path": "runs/lean_table_checker/acceleration_20261018_v19/cartesian_kernel_v19/attempts/8c1742a4193a4d8c8a026488d81f4b85/receipt.json",
+        "sha256": "c0905b7e48eb7757fd33d5964a1d38a4763931fae0c2510024d030708beb3af9"
+      },
+      "status": "PASS",
+      "wall_seconds": 1.5619999999762513
+    },
+    {
+      "CPU_seconds": 1.578125,
+      "peak_job_memory_bytes": 139161600,
+      "receipt": {
+        "bytes": 51456,
+        "path": "runs/lean_table_checker/acceleration_20261018_v19/cartesian_kernel_v19/attempts/8cfc6179fb844b388e7642d4a28ae532/receipt.json",
+        "sha256": "afbd8ae82ce6a7eaa7879f744bb110501f2aac671e3a07b54323f21fea25da1a"
+      },
+      "status": "PASS",
+      "wall_seconds": 2.0790000000270084
+    },
+    {
+      "CPU_seconds": 0.5,
+      "peak_job_memory_bytes": 116682752,
+      "receipt": {
+        "bytes": 126556,
+        "path": "runs/lean_table_checker/acceleration_20261018_v19/cartesian_kernel_v19/attempts/8dd40a56b73e440388f28fa3b5830a08/receipt.json",
+        "sha256": "65b1d9373d76d5926f25c7acee500bb5f15847724f068284cfb6108f739344ad"
+      },
+      "status": "PASS",
+      "wall_seconds": 1.6410000000032596
+    },
+    {
+      "CPU_seconds": 0.421875,
+      "peak_job_memory_bytes": 126586880,
+      "receipt": {
+        "bytes": 54271,
+        "path": "runs/lean_table_checker/acceleration_20261018_v19/cartesian_kernel_v19/attempts/9041b26886314dbfbbf56324f4976ee1/receipt.json",
+        "sha256": "a9ca7ee7618d8a5b9e8c939351d3d33f1cd1e400397646a69fdceeabd7454edc"
+      },
+      "status": "PASS",
+      "wall_seconds": 1.0929999999934807
+    },
+    {
+      "CPU_seconds": 97.25,
+      "peak_job_memory_bytes": 3033534464,
+      "receipt": {
+        "bytes": 8740,
+        "path": "runs/lean_table_checker/acceleration_20261018_v19/cartesian_kernel_v19/attempts/93817857023e429c852ea63d8fcb8373/receipt.json",
+        "sha256": "f480fbfeccd74a3fb290f7d5e86d987518ee505626897a50faefa2139da6a5a2"
+      },
+      "status": "FAILED_OR_INCOMPLETE",
+      "wall_seconds": 97.93799999996554
+    },
+    {
+      "CPU_seconds": 0.5,
+      "peak_job_memory_bytes": 110960640,
+      "receipt": {
+        "bytes": 114507,
+        "path": "runs/lean_table_checker/acceleration_20261018_v19/cartesian_kernel_v19/attempts/94104e14491041e79430b8033b9b4a06/receipt.json",
+        "sha256": "750137d58216b70da57f4ca6204d19cdc3430779faf48d54d456c3731c8c4f6a"
+      },
+      "status": "PASS",
+      "wall_seconds": 1.5309999999590218
+    },
+    {
+      "CPU_seconds": 0.359375,
+      "peak_job_memory_bytes": 127029248,
+      "receipt": {
+        "bytes": 161581,
+        "path": "runs/lean_table_checker/acceleration_20261018_v19/cartesian_kernel_v19/attempts/94556008195947eeb9edebd244509f7c/receipt.json",
+        "sha256": "ebfe31a905bc4a54700bde0d57a6246806a43122679ea9c0cea017e33a9dceee"
+      },
+      "status": "PASS",
+      "wall_seconds": 1.6880000000237487
+    },
+    {
+      "CPU_seconds": 0.375,
+      "peak_job_memory_bytes": 105230336,
+      "receipt": {
+        "bytes": 132586,
+        "path": "runs/lean_table_checker/acceleration_20261018_v19/cartesian_kernel_v19/attempts/9807620bbaa74df59065390eb538ba77/receipt.json",
+        "sha256": "be5c57f4d0a52442dea1fb35dee96c14ffdc7e8eec228efc38e34ef31943c8ca"
+      },
+      "status": "PASS",
+      "wall_seconds": 1.547000000020489
+    },
+    {
+      "CPU_seconds": 1.828125,
+      "peak_job_memory_bytes": 267231232,
+      "receipt": {
+        "bytes": 163593,
+        "path": "runs/lean_table_checker/acceleration_20261018_v19/cartesian_kernel_v19/attempts/9b1e36d7023b4d4cabb9c3bd435077b8/receipt.json",
+        "sha256": "684d4cd12b6eb5732cdfcae9e78d9fe0a7967beb3ceb82938bbc74227eb5b9bc"
+      },
+      "status": "PASS",
+      "wall_seconds": 3.25
+    },
+    {
+      "CPU_seconds": 0.40625,
+      "peak_job_memory_bytes": 120205312,
+      "receipt": {
+        "bytes": 89718,
+        "path": "runs/lean_table_checker/acceleration_20261018_v19/cartesian_kernel_v19/attempts/9b96947c45c4451a8f6a02a13bf5cb58/receipt.json",
+        "sha256": "8b95598ffb7fdf183cc358646f5dcf2cb8916eb1c3eeb7026a5cd97becb3e7bc"
+      },
+      "status": "PASS",
+      "wall_seconds": 1.312999999965541
+    },
+    {
+      "CPU_seconds": 3.09375,
+      "peak_job_memory_bytes": 219369472,
+      "receipt": {
+        "bytes": 26334,
+        "path": "runs/lean_table_checker/acceleration_20261018_v19/cartesian_kernel_v19/attempts/9ee3f45524984195adaea10c1e772d81/receipt.json",
+        "sha256": "9d7b57f0b2bab7f05c09b6f6501e9d62c2d9a705b758001eddd8367928db0642"
+      },
+      "status": "PASS",
+      "wall_seconds": 3.125
+    },
+    {
+      "CPU_seconds": 4.375,
+      "peak_job_memory_bytes": 200155136,
+      "receipt": {
+        "bytes": 23301,
+        "path": "runs/lean_table_checker/acceleration_20261018_v19/cartesian_kernel_v19/attempts/9face9d6d90f4b5c98b0cab158d1a55b/receipt.json",
+        "sha256": "e9e6281cdfe7c2fa3aa65ddc5fd0f6edbaa859c2ec9aec1a1cd207ff70595375"
+      },
+      "status": "PASS",
+      "wall_seconds": 4.297000000020489
+    },
+    {
+      "CPU_seconds": 1.875,
+      "peak_job_memory_bytes": 321921024,
+      "receipt": {
+        "bytes": 160593,
+        "path": "runs/lean_table_checker/acceleration_20261018_v19/cartesian_kernel_v19/attempts/a09f8a732af344ebb40b61760331db33/receipt.json",
+        "sha256": "d5b75b8fe5a46b16f1a159012530efc1f1e9d65ab41caacb44f179b6bb86ab42"
+      },
+      "status": "PASS",
+      "wall_seconds": 3.1560000000172295
+    },
+    {
+      "CPU_seconds": 0.484375,
+      "peak_job_memory_bytes": 158384128,
+      "receipt": {
+        "bytes": 86741,
+        "path": "runs/lean_table_checker/acceleration_20261018_v19/cartesian_kernel_v19/attempts/a0b0c8e06d66427c8e2db2a06144348f/receipt.json",
+        "sha256": "76c06bafd203fbc2047a9a66448a53ff7afb1b07d7566705bcb46f3a597d1888"
+      },
+      "status": "PASS",
+      "wall_seconds": 1.375
+    },
+    {
+      "CPU_seconds": 2.578125,
+      "peak_job_memory_bytes": 145182720,
+      "receipt": {
+        "bytes": 34341,
+        "path": "runs/lean_table_checker/acceleration_20261018_v19/cartesian_kernel_v19/attempts/a0ca88d020944f84ba92d593d8808966/receipt.json",
+        "sha256": "b5955b14a41067cc76f45d06bf8d860feebd46ebf5a23c7111ebfaf3676a6cd2"
+      },
+      "status": "PASS",
+      "wall_seconds": 2.73499999998603
+    },
+    {
+      "CPU_seconds": 0.390625,
+      "peak_job_memory_bytes": 113774592,
+      "receipt": {
+        "bytes": 68013,
+        "path": "runs/lean_table_checker/acceleration_20261018_v19/cartesian_kernel_v19/attempts/a2d3cd70e8c64220ad79babfe05ade00/receipt.json",
+        "sha256": "3e48cdfb48f4f3464e005c9f38dcca98cc02367144d0b7428019de5b3a3d2653"
+      },
+      "status": "PASS",
+      "wall_seconds": 1.2030000000377186
+    },
+    {
+      "CPU_seconds": 0.71875,
+      "peak_job_memory_bytes": 202547200,
+      "receipt": {
+        "bytes": 78768,
+        "path": "runs/lean_table_checker/acceleration_20261018_v19/cartesian_kernel_v19/attempts/a6188e7d20dc4e8681082a5696e04732/receipt.json",
+        "sha256": "c60822d60a6cc41b5f8cc750208f67d6970b2c1dbd205611d7607de3971f569a"
+      },
+      "status": "PASS",
+      "wall_seconds": 1.5
+    },
+    {
+      "CPU_seconds": 0.453125,
+      "peak_job_memory_bytes": 128413696,
+      "receipt": {
+        "bytes": 133520,
+        "path": "runs/lean_table_checker/acceleration_20261018_v19/cartesian_kernel_v19/attempts/a691d9a38b6747978cb3e8e575a8f945/receipt.json",
+        "sha256": "07368419ec4bd39b592d7328630e7c8df03aa353e7686c3adf5bf9df6c340e86"
+      },
+      "status": "PASS",
+      "wall_seconds": 1.6400000000139698
+    },
+    {
+      "CPU_seconds": 2.34375,
+      "peak_job_memory_bytes": 144097280,
+      "receipt": {
+        "bytes": 22299,
+        "path": "runs/lean_table_checker/acceleration_20261018_v19/cartesian_kernel_v19/attempts/a76eb4f44b0c421e914349068d041a4d/receipt.json",
+        "sha256": "648d331b78780410d9669a22fe1a2552df6bd4366c7c75de27c7c72f12e14600"
+      },
+      "status": "PASS",
+      "wall_seconds": 2.4530000000377186
+    },
+    {
+      "CPU_seconds": 0.8125,
+      "peak_job_memory_bytes": 166494208,
+      "receipt": {
+        "bytes": 145561,
+        "path": "runs/lean_table_checker/acceleration_20261018_v19/cartesian_kernel_v19/attempts/a7e6b749475945e0a75849f244f18aca/receipt.json",
+        "sha256": "4d8690aac8c6ca2b03a050bb11c147fb3c0779854e8a029bd905107db070e405"
+      },
+      "status": "PASS",
+      "wall_seconds": 2.062999999965541
+    },
+    {
+      "CPU_seconds": 0.359375,
+      "peak_job_memory_bytes": 91504640,
+      "receipt": {
+        "bytes": 113549,
+        "path": "runs/lean_table_checker/acceleration_20261018_v19/cartesian_kernel_v19/attempts/a936f5c9f095490b96644d2bcf8e6d4c/receipt.json",
+        "sha256": "935f1cf450c7c467a2741a4572dc4d95220776a0f2ee89d22c9ae84c2bdfc304"
+      },
+      "status": "PASS",
+      "wall_seconds": 1.375
+    },
+    {
+      "CPU_seconds": 0.328125,
+      "peak_job_memory_bytes": 101933056,
+      "receipt": {
+        "bytes": 76836,
+        "path": "runs/lean_table_checker/acceleration_20261018_v19/cartesian_kernel_v19/attempts/ac3da4d5575c448181525b3dfeb33c19/receipt.json",
+        "sha256": "1e4f5b437d1b853e0ac435e794907b334e0fe30891248f171ac4cf03f9014e30"
+      },
+      "status": "PASS",
+      "wall_seconds": 1.125
+    },
+    {
+      "CPU_seconds": 0.8125,
+      "peak_job_memory_bytes": 210829312,
+      "receipt": {
+        "bytes": 95638,
+        "path": "runs/lean_table_checker/acceleration_20261018_v19/cartesian_kernel_v19/attempts/ad1ef51cd0bb407b9a9440169f113121/receipt.json",
+        "sha256": "19580fbef6963920ba30817390bc65e3b7116a93cca77b2d009a55f06acf4156"
+      },
+      "status": "PASS",
+      "wall_seconds": 1.75
+    },
+    {
+      "CPU_seconds": 0.609375,
+      "peak_job_memory_bytes": 174002176,
+      "receipt": {
+        "bytes": 81801,
+        "path": "runs/lean_table_checker/acceleration_20261018_v19/cartesian_kernel_v19/attempts/ae0f54abc9974ad89e221c28c3410a9d/receipt.json",
+        "sha256": "ce0cda8ff28f94dcb02236dbe1aacdaf586eac0a9050ce2ea8d3ae53b83ca37a"
+      },
+      "status": "PASS",
+      "wall_seconds": 1.5320000000065193
+    },
+    {
+      "CPU_seconds": 0.328125,
+      "peak_job_memory_bytes": 128303104,
+      "receipt": {
+        "bytes": 153558,
+        "path": "runs/lean_table_checker/acceleration_20261018_v19/cartesian_kernel_v19/attempts/afc3b84de368498fa300878e823c7089/receipt.json",
+        "sha256": "c2ed0fc16a2ab74f871908c8ae43994b7443979c67986ad1412831f792f494b9"
+      },
+      "status": "PASS",
+      "wall_seconds": 1.7030000000377186
+    },
+    {
+      "CPU_seconds": 0.453125,
+      "peak_job_memory_bytes": 96940032,
+      "receipt": {
+        "bytes": 144560,
+        "path": "runs/lean_table_checker/acceleration_20261018_v19/cartesian_kernel_v19/attempts/b285b2b7cd2346b39bc4af76db58a604/receipt.json",
+        "sha256": "7cbbaa7d7379d62bd7c398e12a13700428147694cb51d574b2af9ecf2116402f"
+      },
+      "status": "PASS",
+      "wall_seconds": 1.6570000000065193
+    },
+    {
+      "CPU_seconds": 0.4375,
+      "peak_job_memory_bytes": 104992768,
+      "receipt": {
+        "bytes": 67035,
+        "path": "runs/lean_table_checker/acceleration_20261018_v19/cartesian_kernel_v19/attempts/b6e3403be4004483aa00e858a353c169/receipt.json",
+        "sha256": "bfba01c09e7c7a69c870bf1a95b947949219e8e727618b6175af22d5c6bc7715"
+      },
+      "status": "PASS",
+      "wall_seconds": 1.1570000000065193
+    },
+    {
+      "CPU_seconds": 2.53125,
+      "peak_job_memory_bytes": 182947840,
+      "receipt": {
+        "bytes": 32348,
+        "path": "runs/lean_table_checker/acceleration_20261018_v19/cartesian_kernel_v19/attempts/b98168595cca486db2767f3630c087e4/receipt.json",
+        "sha256": "ef0696fbe7224e6f01c4cfa5026e9cd757345af93b40a222f60ba6444a116579"
+      },
+      "status": "PASS",
+      "wall_seconds": 2.8280000000377186
+    },
+    {
+      "CPU_seconds": 10.65625,
+      "peak_job_memory_bytes": 435965952,
+      "receipt": {
+        "bytes": 94097,
+        "path": "runs/lean_table_checker/acceleration_20261018_v19/cartesian_kernel_v19/attempts/ba3006cb44714e92baaeab7048d399bb/receipt.json",
+        "sha256": "1dc512c4a47e4bfb7b8a326b412177392cf398a5111f6d702a3871aa0e25d989"
+      },
+      "status": "PASS",
+      "wall_seconds": 11.545999999972992
+    },
+    {
+      "CPU_seconds": 0.5,
+      "peak_job_memory_bytes": 123412480,
+      "receipt": {
+        "bytes": 81780,
+        "path": "runs/lean_table_checker/acceleration_20261018_v19/cartesian_kernel_v19/attempts/baa3f8c564d94df79bfd38217073ffdd/receipt.json",
+        "sha256": "46f7f18fd35199dc853831f1920970cf565b3b97db7577e10afdc5b9eafeb884"
+      },
+      "status": "PASS",
+      "wall_seconds": 1.3910000000032596
+    },
+    {
+      "CPU_seconds": 0.328125,
+      "peak_job_memory_bytes": 87302144,
+      "receipt": {
+        "bytes": 120564,
+        "path": "runs/lean_table_checker/acceleration_20261018_v19/cartesian_kernel_v19/attempts/bbc83fb463324e28a1a6c6b9a3a3f7e5/receipt.json",
+        "sha256": "f8a65d2bc0cd3d928d42928714b366d1c5c698173181e7fd47f4927b4ce65521"
+      },
+      "status": "PASS",
+      "wall_seconds": 1.4059999999590218
+    },
+    {
+      "CPU_seconds": 0.9375,
+      "peak_job_memory_bytes": 137379840,
+      "receipt": {
+        "bytes": 151577,
+        "path": "runs/lean_table_checker/acceleration_20261018_v19/cartesian_kernel_v19/attempts/bcb7a3ff416d456692bcadfc24a1cca3/receipt.json",
+        "sha256": "63d399b82eb60d1174f70a67d605ef973ad05e81b0a45ba6a1a7cdd637731301"
+      },
+      "status": "PASS",
+      "wall_seconds": 3.0310000000172295
+    },
+    {
+      "CPU_seconds": 0.625,
+      "peak_job_memory_bytes": 184242176,
+      "receipt": {
+        "bytes": 84752,
+        "path": "runs/lean_table_checker/acceleration_20261018_v19/cartesian_kernel_v19/attempts/c10f86f0de1340c7b7874ca9699f29b5/receipt.json",
+        "sha256": "a1cb956e77cd384ab7a947280d8aa9fab2d9f721aa8eed1878de692d3ffb4471"
+      },
+      "status": "PASS",
+      "wall_seconds": 1.5160000000032596
+    },
+    {
+      "CPU_seconds": 0.34375,
+      "peak_job_memory_bytes": 130371584,
+      "receipt": {
+        "bytes": 138546,
+        "path": "runs/lean_table_checker/acceleration_20261018_v19/cartesian_kernel_v19/attempts/c1601e1a7dab4d9188f9ebd7a10c8f43/receipt.json",
+        "sha256": "7799a4c6cbb1d6c7762134e36e3ed4fb6fb5d6eb890d54160352d3e0e4b14103"
+      },
+      "status": "PASS",
+      "wall_seconds": 1.5309999999590218
+    },
+    {
+      "CPU_seconds": 1.1875,
+      "peak_job_memory_bytes": 154951680,
+      "receipt": {
+        "bytes": 43402,
+        "path": "runs/lean_table_checker/acceleration_20261018_v19/cartesian_kernel_v19/attempts/c3c997f5914244ee950d5dc539f6b692/receipt.json",
+        "sha256": "1ea3a8e3e79c493c1ad11b65ab9260929373c104128c7594528fbe4a424f78dc"
+      },
+      "status": "PASS",
+      "wall_seconds": 1.6869999999762513
+    },
+    {
+      "CPU_seconds": 0.875,
+      "peak_job_memory_bytes": 196562944,
+      "receipt": {
+        "bytes": 111499,
+        "path": "runs/lean_table_checker/acceleration_20261018_v19/cartesian_kernel_v19/attempts/c51b9ee27d474f54bff9e122f62ff5f0/receipt.json",
+        "sha256": "c31848575b1ed3bd26b6df938d286fd2b797d6e66dea18e822d533b3d90e9847"
+      },
+      "status": "PASS",
+      "wall_seconds": 1.9839999999967404
+    },
+    {
+      "CPU_seconds": 0.3125,
+      "peak_job_memory_bytes": 96780288,
+      "receipt": {
+        "bytes": 72875,
+        "path": "runs/lean_table_checker/acceleration_20261018_v19/cartesian_kernel_v19/attempts/c609bb229dfe4ee7a3864609519b79ae/receipt.json",
+        "sha256": "e8684098d4d7d27f893d6970bed19cbb846c70c57273a392ea43e2124c8cd8d1"
+      },
+      "status": "PASS",
+      "wall_seconds": 1.125
+    },
+    {
+      "CPU_seconds": 1.515625,
+      "peak_job_memory_bytes": 252358656,
+      "receipt": {
+        "bytes": 158591,
+        "path": "runs/lean_table_checker/acceleration_20261018_v19/cartesian_kernel_v19/attempts/c61380b806d2489787b6ad0f97cf3a99/receipt.json",
+        "sha256": "3ac31cf112424e83d23f14be73e07ab769897ec757e782c92e500ecc7421a29d"
+      },
+      "status": "PASS",
+      "wall_seconds": 2.8910000000032596
+    },
+    {
+      "CPU_seconds": 6.25,
+      "peak_job_memory_bytes": 2055639040,
+      "receipt": {
+        "bytes": 10884,
+        "path": "runs/lean_table_checker/acceleration_20261018_v19/cartesian_kernel_v19/attempts/c718ca8d09cd471ba568056a65c8ffe0/receipt.json",
+        "sha256": "32e5065dee9063831f58ce48135c47154dd3877f3251dd601ae02ea2925a9281"
+      },
+      "status": "PASS",
+      "wall_seconds": 6.467999999993481
+    },
+    {
+      "CPU_seconds": 0.421875,
+      "peak_job_memory_bytes": 98246656,
+      "receipt": {
+        "bytes": 118502,
+        "path": "runs/lean_table_checker/acceleration_20261018_v19/cartesian_kernel_v19/attempts/ca324e45af394802b93c2c7add42d427/receipt.json",
+        "sha256": "29978c254082fa68530a934d7c7dc1dbcfed9dce95294148b7c9a776bb564c70"
+      },
+      "status": "PASS",
+      "wall_seconds": 1.5
+    },
+    {
+      "CPU_seconds": 0.9375,
+      "peak_job_memory_bytes": 222556160,
+      "receipt": {
+        "bytes": 147548,
+        "path": "runs/lean_table_checker/acceleration_20261018_v19/cartesian_kernel_v19/attempts/ca42df666db4408fa68fcabf27c4d431/receipt.json",
+        "sha256": "992939cc47fd4b97b2379d0ebc1ed1b372400c6fa2a4e1dc85a4ca918e871d50"
+      },
+      "status": "PASS",
+      "wall_seconds": 2.14000000001397
+    },
+    {
+      "CPU_seconds": 0.28125,
+      "peak_job_memory_bytes": 90705920,
+      "receipt": {
+        "bytes": 61107,
+        "path": "runs/lean_table_checker/acceleration_20261018_v19/cartesian_kernel_v19/attempts/ca95aa2bbba6420bb5a5be4f56d82f95/receipt.json",
+        "sha256": "8a469eb5dbf6a0ba552de51617a7b72abb1fc12dd2c8bde2cc725200a15a996e"
+      },
+      "status": "PASS",
+      "wall_seconds": 1.0
+    },
+    {
+      "CPU_seconds": 0.359375,
+      "peak_job_memory_bytes": 101556224,
+      "receipt": {
+        "bytes": 66042,
+        "path": "runs/lean_table_checker/acceleration_20261018_v19/cartesian_kernel_v19/attempts/cac525d63c4942ae9bc610c047016bac/receipt.json",
+        "sha256": "a200a5cef917a608cbdc4b7aea15a1ca470aed8a968a0f6596131a9cc66bb4fc"
+      },
+      "status": "PASS",
+      "wall_seconds": 1.077999999979511
+    },
+    {
+      "CPU_seconds": 0.53125,
+      "peak_job_memory_bytes": 120545280,
+      "receipt": {
+        "bytes": 134551,
+        "path": "runs/lean_table_checker/acceleration_20261018_v19/cartesian_kernel_v19/attempts/cdd0e62f97ee4de0a2aeeb95d3cf7888/receipt.json",
+        "sha256": "247fce558aab5de7530c62946843b9c5d85ba354c0e947e043c42f1942033a49"
+      },
+      "status": "PASS",
+      "wall_seconds": 1.7189999999827705
+    },
+    {
+      "CPU_seconds": 0.546875,
+      "peak_job_memory_bytes": 181145600,
+      "receipt": {
+        "bytes": 96627,
+        "path": "runs/lean_table_checker/acceleration_20261018_v19/cartesian_kernel_v19/attempts/cdd74ec71517411db4abe7e2d3664504/receipt.json",
+        "sha256": "69261bdaa2cce0a21df63900dd903624b0fa77e07989e48256c499b3ab3f636b"
+      },
+      "status": "PASS",
+      "wall_seconds": 1.5
+    },
+    {
+      "CPU_seconds": 0.34375,
+      "peak_job_memory_bytes": 90619904,
+      "receipt": {
+        "bytes": 55265,
+        "path": "runs/lean_table_checker/acceleration_20261018_v19/cartesian_kernel_v19/attempts/cf67f22cf0ec4497996e79a42b4f6d1d/receipt.json",
+        "sha256": "8e0f5753e50cd71d83dafb370df6abab412b82c6d967528d9dd8e6326374a62d"
+      },
+      "status": "PASS",
+      "wall_seconds": 1.0
+    },
+    {
+      "CPU_seconds": 1.625,
+      "peak_job_memory_bytes": 182939648,
+      "receipt": {
+        "bytes": 45405,
+        "path": "runs/lean_table_checker/acceleration_20261018_v19/cartesian_kernel_v19/attempts/cf9caecca73949e3890038f3a086e9ed/receipt.json",
+        "sha256": "4c23cb75a72eadb77f252b98823cfcd6003f4e8a6bc57a275226e855530be090"
+      },
+      "status": "PASS",
+      "wall_seconds": 2.125
+    },
+    {
+      "CPU_seconds": 6.015625,
+      "peak_job_memory_bytes": 275501056,
+      "receipt": {
+        "bytes": 21320,
+        "path": "runs/lean_table_checker/acceleration_20261018_v19/cartesian_kernel_v19/attempts/d244279dcc274aceabd52c2f8e8de7dd/receipt.json",
+        "sha256": "5add7e58e5a2caa0f9e377fa75a44f0b6d98ea6cb14e6b0eef1ee9447771648b"
+      },
+      "status": "PASS",
+      "wall_seconds": 6.0
+    },
+    {
+      "CPU_seconds": 5.59375,
+      "peak_job_memory_bytes": 383827968,
+      "receipt": {
+        "bytes": 20282,
+        "path": "runs/lean_table_checker/acceleration_20261018_v19/cartesian_kernel_v19/attempts/d31d66cdef65487c9abaf40d747e9d0a/receipt.json",
+        "sha256": "273f971e0e3b48975068941bbe410b67eb41a798fe291a41ded8b236c071825c"
+      },
+      "status": "PASS",
+      "wall_seconds": 5.26600000000326
+    },
+    {
+      "CPU_seconds": 0.390625,
+      "peak_job_memory_bytes": 110886912,
+      "receipt": {
+        "bytes": 56250,
+        "path": "runs/lean_table_checker/acceleration_20261018_v19/cartesian_kernel_v19/attempts/d49f7a804858432cb76582ca740b1572/receipt.json",
+        "sha256": "99a7a1125d41532091ad7edd39b66aa1e7f5bbc5d4babfc71df9637ae190f40f"
+      },
+      "status": "PASS",
+      "wall_seconds": 1.0790000000270084
+    },
+    {
+      "CPU_seconds": 0.5625,
+      "peak_job_memory_bytes": 140308480,
+      "receipt": {
+        "bytes": 148612,
+        "path": "runs/lean_table_checker/acceleration_20261018_v19/cartesian_kernel_v19/attempts/d5e1812d61374c72a22d28254bde03a3/receipt.json",
+        "sha256": "991a63c7e40705c3090844f0e46b2629ec3658f203fbfd45e6fb8f0b0489c37d"
+      },
+      "status": "PASS",
+      "wall_seconds": 1.7969999999622814
+    },
+    {
+      "CPU_seconds": 0.59375,
+      "peak_job_memory_bytes": 131989504,
+      "receipt": {
+        "bytes": 91680,
+        "path": "runs/lean_table_checker/acceleration_20261018_v19/cartesian_kernel_v19/attempts/d7c737c4f92640ab8f817fc3d505e83d/receipt.json",
+        "sha256": "4a2de5a9e8cb72ab69ce1512c619dbe1d257a0e2fd8907125d79b4a8a66e6e9a"
+      },
+      "status": "PASS",
+      "wall_seconds": 1.5
+    },
+    {
+      "CPU_seconds": 3.59375,
+      "peak_job_memory_bytes": 235466752,
+      "receipt": {
+        "bytes": 47379,
+        "path": "runs/lean_table_checker/acceleration_20261018_v19/cartesian_kernel_v19/attempts/d7d6c25331c543b59f22cc6053402c28/receipt.json",
+        "sha256": "3a2f5baa18f15b38921c15e67a9c5387a20af8417be0016b911940b4af9d8e8e"
+      },
+      "status": "PASS",
+      "wall_seconds": 3.875
+    },
+    {
+      "CPU_seconds": 0.640625,
+      "peak_job_memory_bytes": 172965888,
+      "receipt": {
+        "bytes": 81798,
+        "path": "runs/lean_table_checker/acceleration_20261018_v19/cartesian_kernel_v19/attempts/dba7adee98084d50858d64344c9227ef/receipt.json",
+        "sha256": "ac9513862e415dd5f344a5ce2f34c70564341e70eea06517aef37bb5987e9bc7"
+      },
+      "status": "PASS",
+      "wall_seconds": 1.5160000000032596
+    },
+    {
+      "CPU_seconds": 0.859375,
+      "peak_job_memory_bytes": 185561088,
+      "receipt": {
+        "bytes": 149587,
+        "path": "runs/lean_table_checker/acceleration_20261018_v19/cartesian_kernel_v19/attempts/e11a64c76266460d813e038af48b478f/receipt.json",
+        "sha256": "0b77c8a66d6a2ac99cfb633816f8b8a0b77c64522729e1bd5798cb42374e4762"
+      },
+      "status": "PASS",
+      "wall_seconds": 2.0619999999762513
+    },
+    {
+      "CPU_seconds": 1.5,
+      "peak_job_memory_bytes": 134709248,
+      "receipt": {
+        "bytes": 18285,
+        "path": "runs/lean_table_checker/acceleration_20261018_v19/cartesian_kernel_v19/attempts/e2a630f322b04b6ebd7cc9efd03b4164/receipt.json",
+        "sha256": "77edd9d119f4a289358f31442666cce80108a22fffa3cab813c7865126b74096"
+      },
+      "status": "PASS",
+      "wall_seconds": 1.687999999965541
+    },
+    {
+      "CPU_seconds": 0.390625,
+      "peak_job_memory_bytes": 90968064,
+      "receipt": {
+        "bytes": 119492,
+        "path": "runs/lean_table_checker/acceleration_20261018_v19/cartesian_kernel_v19/attempts/e2af560f96fa47449073be41baf72170/receipt.json",
+        "sha256": "bcec0215730be309a5f255e3c56b1da1188b58126c7db1b73a56253bff97f02b"
+      },
+      "status": "PASS",
+      "wall_seconds": 1.4219999999622814
+    },
+    {
+      "CPU_seconds": 11.890625,
+      "peak_job_memory_bytes": 406118400,
+      "receipt": {
+        "bytes": 37352,
+        "path": "runs/lean_table_checker/acceleration_20261018_v19/cartesian_kernel_v19/attempts/e2dcc4015bcf4197838f14176f5922d4/receipt.json",
+        "sha256": "de38a5d1ddb04f5b39d17e3ec263bc1e548032816ebddab5f18a7ae6438ceb61"
+      },
+      "status": "PASS",
+      "wall_seconds": 11.688000000023749
+    },
+    {
+      "CPU_seconds": 0.390625,
+      "peak_job_memory_bytes": 135110656,
+      "receipt": {
+        "bytes": 79719,
+        "path": "runs/lean_table_checker/acceleration_20261018_v19/cartesian_kernel_v19/attempts/e5b80958a8e14401b347024872abc215/receipt.json",
+        "sha256": "014772899fd7a7fe9c2f764d31533bdc0ee10b21ac88e2ec73f7d381369a4a98"
+      },
+      "status": "PASS",
+      "wall_seconds": 1.1869999999762513
+    },
+    {
+      "CPU_seconds": 0.65625,
+      "peak_job_memory_bytes": 100814848,
+      "receipt": {
+        "bytes": 80916,
+        "path": "runs/lean_table_checker/acceleration_20261018_v19/cartesian_kernel_v19/attempts/e7ae1fee099e448aa1c1c65e30a3c490/receipt.json",
+        "sha256": "31013bc698b430007824517cdb04a33ed537e89ec23bdde40f5a5d543a586b46"
+      },
+      "status": "FAILED_OR_INCOMPLETE",
+      "wall_seconds": 1.5160000000032596
+    },
+    {
+      "CPU_seconds": 0.515625,
+      "peak_job_memory_bytes": 118513664,
+      "receipt": {
+        "bytes": 136556,
+        "path": "runs/lean_table_checker/acceleration_20261018_v19/cartesian_kernel_v19/attempts/e917f1609f364a7db5a8e382de889683/receipt.json",
+        "sha256": "7e540625277c461a59a4656bddbd7f579ac01e07c12e1e7cc8181e6caf9b2a2c"
+      },
+      "status": "PASS",
+      "wall_seconds": 1.6719999999622814
+    },
+    {
+      "CPU_seconds": 1.65625,
+      "peak_job_memory_bytes": 138784768,
+      "receipt": {
+        "bytes": 17252,
+        "path": "runs/lean_table_checker/acceleration_20261018_v19/cartesian_kernel_v19/attempts/ec1f10ab660b420d91842f93410bf82e/receipt.json",
+        "sha256": "1ff0aa280d05373db3d4cfbe2e6b07119c04c5016861a0f33f8410054615a94e"
+      },
+      "status": "FAILED_OR_INCOMPLETE",
+      "wall_seconds": 1.8589999999967404
+    },
+    {
+      "CPU_seconds": 0.34375,
+      "peak_job_memory_bytes": 72818688,
+      "receipt": {
+        "bytes": 15474,
+        "path": "runs/lean_table_checker/acceleration_20261018_v19/cartesian_kernel_v19/attempts/ecfa8daa7af64468ab52fbc86fa4d36b/receipt.json",
+        "sha256": "8673a17371392277d1fb4b5288d98dcd08c61c5a2ae649c80e533d36492381f5"
+      },
+      "status": "FAILED_OR_INCOMPLETE",
+      "wall_seconds": 0.5469999999622814
+    },
+    {
+      "CPU_seconds": 7.546875,
+      "peak_job_memory_bytes": 308891648,
+      "receipt": {
+        "bytes": 31313,
+        "path": "runs/lean_table_checker/acceleration_20261018_v19/cartesian_kernel_v19/attempts/ee3db6ee3c884b37b7fa0c885fda0419/receipt.json",
+        "sha256": "f7becdb082e86ecfbd380a4482803338a598f7a521e2193d8a1df013bc419604"
+      },
+      "status": "PASS",
+      "wall_seconds": 7.51500000001397
+    },
+    {
+      "CPU_seconds": 0.75,
+      "peak_job_memory_bytes": 220942336,
+      "receipt": {
+        "bytes": 82754,
+        "path": "runs/lean_table_checker/acceleration_20261018_v19/cartesian_kernel_v19/attempts/f33e1735e4fc4289afabbb1fb6740181/receipt.json",
+        "sha256": "05907640a8c042cbe98d3bd0d49642b6261952cd9f17ed165a4c1a05c36f422a"
+      },
+      "status": "PASS",
+      "wall_seconds": 1.6570000000065193
+    },
+    {
+      "CPU_seconds": 0.375,
+      "peak_job_memory_bytes": 114196480,
+      "receipt": {
+        "bytes": 74893,
+        "path": "runs/lean_table_checker/acceleration_20261018_v19/cartesian_kernel_v19/attempts/f3e84f49938043b7beb1316d84f55cb4/receipt.json",
+        "sha256": "0c8e6810237c9da0519d3e4b41768779eb6602b5243fa48e8f73494b266d7f20"
+      },
+      "status": "PASS",
+      "wall_seconds": 1.172000000020489
+    },
+    {
+      "CPU_seconds": 0.453125,
+      "peak_job_memory_bytes": 159223808,
+      "receipt": {
+        "bytes": 64079,
+        "path": "runs/lean_table_checker/acceleration_20261018_v19/cartesian_kernel_v19/attempts/f672c66b9003474185ed3cb1199b220a/receipt.json",
+        "sha256": "3c2136555b21bde81cf157801b346b67256c1fbe01bd3871689f68c8428ce3e0"
+      },
+      "status": "PASS",
+      "wall_seconds": 1.202999999979511
+    },
+    {
+      "CPU_seconds": 0.609375,
+      "peak_job_memory_bytes": 142368768,
+      "receipt": {
+        "bytes": 146568,
+        "path": "runs/lean_table_checker/acceleration_20261018_v19/cartesian_kernel_v19/attempts/f9885890942f451bb2005791aa9f3441/receipt.json",
+        "sha256": "95ecceb52f5af5921a27b2441ba13402e6ac701efbb45201f95ff3883ff701e2"
+      },
+      "status": "PASS",
+      "wall_seconds": 1.875
+    },
+    {
+      "CPU_seconds": 2.53125,
+      "peak_job_memory_bytes": 395378688,
+      "receipt": {
+        "bytes": 164609,
+        "path": "runs/lean_table_checker/acceleration_20261018_v19/cartesian_kernel_v19/attempts/fafee33b704b4d5faa364488a28e35ac/receipt.json",
+        "sha256": "d88028bfaf7e57fdec2809c8f7aecc925f861c99d3dd0d765f3621a93c4967c3"
+      },
+      "status": "PASS",
+      "wall_seconds": 3.952999999979511
+    },
+    {
+      "CPU_seconds": 0.640625,
+      "peak_job_memory_bytes": 175030272,
+      "receipt": {
+        "bytes": 94608,
+        "path": "runs/lean_table_checker/acceleration_20261018_v19/cartesian_kernel_v19/attempts/fc68d174bbbd4d2eaca57717ec572a25/receipt.json",
+        "sha256": "1462c6a4f0ddbfa1c934fdaeac09b8722100953cbe909a81ffde6230f150055a"
+      },
+      "status": "PASS",
+      "wall_seconds": 1.5630000000237487
+    },
+    {
+      "CPU_seconds": 0.53125,
+      "peak_job_memory_bytes": 155877376,
+      "receipt": {
+        "bytes": 68960,
+        "path": "runs/lean_table_checker/acceleration_20261018_v19/cartesian_kernel_v19/attempts/fc7edfe1e1b447aba9f1e7f07ceb14fc/receipt.json",
+        "sha256": "85a6c61c68ee1ec36f539ed5da9027575eed93559ae9cc389ad3ff12262702cb"
+      },
+      "status": "PASS",
+      "wall_seconds": 1.312000000034459
+    },
+    {
+      "CPU_seconds": 0.375,
+      "peak_job_memory_bytes": 89448448,
+      "receipt": {
+        "bytes": 110528,
+        "path": "runs/lean_table_checker/acceleration_20261018_v19/cartesian_kernel_v19/attempts/fc82c40e96264ea0a8b9e0f4f1757596/receipt.json",
+        "sha256": "b6061331c1af72bc837bbfd505cebbabd8a8621d8bd2be07d2addc58a8a98256"
+      },
+      "status": "PASS",
+      "wall_seconds": 1.452999999979511
+    },
+    {
+      "CPU_seconds": 0.546875,
+      "peak_job_memory_bytes": 145199104,
+      "receipt": {
+        "bytes": 109483,
+        "path": "runs/lean_table_checker/acceleration_20261018_v19/cartesian_kernel_v19/attempts/fe6522aaec75498384e3c08764d99006/receipt.json",
+        "sha256": "be1a23eba1cf4d70c867dbf90f2f5935061985c90b38f1c32c0b6f3834f8958c"
+      },
+      "status": "PASS",
+      "wall_seconds": 1.547000000020489
+    },
+    {
+      "CPU_seconds": 0.296875,
+      "peak_job_memory_bytes": 87564288,
+      "receipt": {
+        "bytes": 62105,
+        "path": "runs/lean_table_checker/acceleration_20261018_v19/cartesian_kernel_v19/attempts/fea335677de0477194cbabc99d613a35/receipt.json",
+        "sha256": "7e1f6b2a0ca2cf58e0d905788818fca04f43dfefdbf0974d79958c4191aa9626"
+      },
+      "status": "PASS",
+      "wall_seconds": 1.0309999999590218
+    }
+  ],
+  "all_owned_children_confirmed_exited": true,
+  "cold_replays": {
+    "PN_and_preparation": {
+      "CPU_seconds": 10.65625,
+      "bundle": {
+        "bytes": 214744,
+        "path": "runs/lean_table_checker/acceleration_20261018_v19/cartesian_kernel_v19/bundles/c405740a8def47f5b0c4bd8b4171d8e3/BUNDLE.json",
+        "sha256": "f8279ffa99a3a7096ccffae00748f49a2e982eb00466b5cc586813aa48273f96"
+      },
+      "certificate_bytes": 49191312,
+      "peak_job_memory_bytes": 435965952,
+      "receipt": {
+        "bytes": 94097,
+        "path": "runs/lean_table_checker/acceleration_20261018_v19/cartesian_kernel_v19/attempts/ba3006cb44714e92baaeab7048d399bb/receipt.json",
+        "sha256": "1dc512c4a47e4bfb7b8a326b412177392cf398a5111f6d702a3871aa0e25d989"
+      },
+      "wall_seconds": 11.545999999972992
+    },
+    "original_PN": {
+      "CPU_seconds": 8.125,
+      "bundle": {
+        "bytes": 154753,
+        "path": "runs/lean_table_checker/acceleration_20261018_v19/cartesian_kernel_v19/bundles/5f0bec866ec7464d85f68e2215b1efe3/BUNDLE.json",
+        "sha256": "c6e5b06253092ada216b0a9ae9d9f187288e672face511493191d4a5db44ab03"
+      },
+      "certificate_bytes": 47086432,
+      "peak_job_memory_bytes": 255979520,
+      "receipt": {
+        "bytes": 68992,
+        "path": "runs/lean_table_checker/acceleration_20261018_v19/cartesian_kernel_v19/attempts/1eae357a34294c4ab8bf74b050c5fedf/receipt.json",
+        "sha256": "4a322a1b1aa85b699efd5a39e6977180d1a0fe5dd51cffffeb664bf8a303ce34"
+      },
+      "wall_seconds": 8.875
+    },
+    "two_PN_Bool_chunk1": {
+      "CPU_seconds": 7.6875,
+      "bundle": {
+        "bytes": 69510,
+        "path": "runs/lean_table_checker/acceleration_20261018_v19/cartesian_kernel_v19/bundles/b2b047ba7fc04114810f7db88edefc80/BUNDLE.json",
+        "sha256": "aa89b3aebfa02bb783f1708857df5e1aae99432de3d7f9fa58aea1fe21047226"
+      },
+      "certificate_bytes": 47014072,
+      "peak_job_memory_bytes": 254803968,
+      "receipt": {
+        "bytes": 69460,
+        "path": "runs/lean_table_checker/acceleration_20261018_v19/cartesian_kernel_v19/attempts/7b4c5bda8a78439b83d67eedcf5d474b/receipt.json",
+        "sha256": "88722e3e082d343341c04ab720abfd3ad488bbf1052a71f1491eb937a12c7d4f"
+      },
+      "wall_seconds": 8.436999999976251
+    }
+  },
+  "data_modules": 9,
+  "failures_preserved": true,
+  "false_union_negative": {
+    "bytes": 165721,
+    "path": "runs/lean_table_checker/acceleration_20261018_v19/cartesian_kernel_v19/attempts/5abb7f9cfb6a4b9f81895d6289ca039a/receipt.json",
+    "sha256": "396cba16be67d97c4a183966eab213f91bee784f8676491a5eb2f8a7d52164ed"
+  },
+  "full_launch_allowed": false,
+  "full_scan_started": false,
+  "global_game_or_SAFE_semantics_proved": false,
+  "group_function_calls": 356,
+  "numeric_kernel_batch_speedup_observed": false,
+  "per_process": {
+    "CPU_percent": 20,
+    "memory_bytes": 3000000000,
+    "trust": 0,
+    "wall_seconds": 120
+  },
+  "raw_and_layout_words": 402,
+  "schema": "ACTUAL_CARTESIAN_28_BLOCK_KERNEL_ACCEPTANCE_V19",
+  "shared_group_functions": 265,
+  "source_Cartesian_rows": 1077270,
+  "source_original_colex_rows": 1035129,
+  "status": "PASS_ORDINARY_KERNEL_PROVIDED_PN_AND_NUMERIC_LAYOUTS_ONLY",
+  "successful_phases": {
+    "libraries": {
+      "CPU_seconds": 111.59375,
+      "kernel_typechecking_seconds": 0.19837,
+      "modules": 35,
+      "peak_job_memory_bytes": 406118400,
+      "receipt": {
+        "bytes": 103037,
+        "path": "runs/lean_table_checker/acceleration_20261018_v19/cartesian_kernel_v19/phase_libraries_a300c46d26dd45778dbc8b1a42b00c3d/PHASE.json",
+        "sha256": "853807fc0222093dfa1b14a5e6d87e204b32205b2af29d99fc52a98bc331879f"
+      },
+      "wall_seconds": 119.48700000013923
+    },
+    "numeric_preparation": {
+      "CPU_seconds": 16.15625,
+      "kernel_typechecking_seconds": 3.5147,
+      "modules": 28,
+      "peak_job_memory_bytes": 347656192,
+      "receipt": {
+        "bytes": 80190,
+        "path": "runs/lean_table_checker/acceleration_20261018_v19/cartesian_kernel_v19/phase_prep_fff62d16d4df4f50a34db890b8076650/PHASE.json",
+        "sha256": "f3872bd3406591dfcd13670aae3d9e04a0f1abb8ddc1e77e481a2ff3f7e3f6f8"
+      },
+      "wall_seconds": 42.172999999893364
+    },
+    "original_PN": {
+      "CPU_seconds": 11.0,
+      "kernel_typechecking_seconds": 2.22669,
+      "modules": 28,
+      "peak_job_memory_bytes": 202547200,
+      "receipt": {
+        "bytes": 79502,
+        "path": "runs/lean_table_checker/acceleration_20261018_v19/cartesian_kernel_v19/phase_pn_d9f2fe8fdffc45dda16127518683ef43/PHASE.json",
+        "sha256": "5047dbc91a6383afbd496083ee914c084a6e6d14b45c0ceba9164ac70d649b7a"
+      },
+      "wall_seconds": 31.919999999983702
+    }
+  },
+  "two_equation_Bool_chunk_comparison": {
+    "1": {
+      "numeric_kernel_seconds": 2.15382,
+      "numeric_wall_seconds": 44.749999999883585,
+      "peak_job_memory_bytes": 203657216,
+      "receipt": {
+        "bytes": 43267,
+        "path": "runs/lean_table_checker/acceleration_20261018_v19/cartesian_kernel_v19/bool_s1_41e8b4c3dd114bcf9d928ef3ad0fff2d/MEASUREMENTS.json",
+        "sha256": "f4332286ebc37ca5da824e3e7ecb7dffd26f2f9ec39ef6962e446295f66af044"
+      }
+    },
+    "2": {
+      "numeric_kernel_seconds": 2.5082,
+      "numeric_wall_seconds": 29.859999999927823,
+      "peak_job_memory_bytes": 254365696,
+      "receipt": {
+        "bytes": 22465,
+        "path": "runs/lean_table_checker/acceleration_20261018_v19/cartesian_kernel_v19/bool_s2_4cacbf074c4e4731a47d17d85847bb53/MEASUREMENTS.json",
+        "sha256": "b9b24aa6f7682c6214e27890652fd38707c3dd56a46bb3b85c018b7d718734e6"
+      }
+    },
+    "4": {
+      "numeric_kernel_seconds": 2.3453,
+      "numeric_wall_seconds": 18.701999999932013,
+      "peak_job_memory_bytes": 321921024,
+      "receipt": {
+        "bytes": 12414,
+        "path": "runs/lean_table_checker/acceleration_20261018_v19/cartesian_kernel_v19/bool_s4_e1c69d8cd0444b6a81fa5db2a100bb46/MEASUREMENTS.json",
+        "sha256": "aa885907d3483e5d0ff4e587d769a513a3ce088f5e71683ee62224f98a8d2b1f"
+      }
+    },
+    "8": {
+      "numeric_kernel_seconds": 2.585,
+      "numeric_wall_seconds": 14.85999999998603,
+      "peak_job_memory_bytes": 395378688,
+      "receipt": {
+        "bytes": 7917,
+        "path": "runs/lean_table_checker/acceleration_20261018_v19/cartesian_kernel_v19/bool_s8_74f717a3250045c492e192040f167a96/MEASUREMENTS.json",
+        "sha256": "eca471e2b1c80dad532de3f80cf775100d95da25e27db61d1e88264bdc48a9ca"
+      }
+    }
+  }
+}

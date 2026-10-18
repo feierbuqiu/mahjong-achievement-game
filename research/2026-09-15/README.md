@@ -1,5 +1,5 @@
-> **Historical 2026-09-15 snapshot.** The [October 18 update](../2026-10-18/README.md)
-> records later V16 acceleration, independent review and the unstarted final campaign.
+> **Historical 2026-09-15 snapshot.** The [later October update](../2026-10-18-kernel/README.md)
+> records persistent kernel proofs, a small closed pilot and remaining gaps.
 
 # Lean status: September 15, 2026
 

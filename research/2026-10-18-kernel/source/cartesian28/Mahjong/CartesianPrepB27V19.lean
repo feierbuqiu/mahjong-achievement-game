@@ -1,0 +1,111 @@
+module
+prelude
+public import Mahjong.CartesianChannels11V19
+import all Mahjong.CartesianChannels11V19
+public import Mahjong.CartesianChannels12V19
+import all Mahjong.CartesianChannels12V19
+public import Mahjong.CartesianChannels26V19
+import all Mahjong.CartesianChannels26V19
+public import Mahjong.CartesianChannels27V19
+import all Mahjong.CartesianChannels27V19
+public import Mahjong.CartesianChannels28V19
+import all Mahjong.CartesianChannels28V19
+public import Mahjong.CartesianChannels29V19
+import all Mahjong.CartesianChannels29V19
+public import Mahjong.CartesianChannels30V19
+import all Mahjong.CartesianChannels30V19
+public import Mahjong.CartesianChannels31V19
+import all Mahjong.CartesianChannels31V19
+public import Mahjong.CartesianChannels32V19
+import all Mahjong.CartesianChannels32V19
+public import Mahjong.CartesianChannels33V19
+import all Mahjong.CartesianChannels33V19
+public import Mahjong.CartesianData00V19
+import all Mahjong.CartesianData00V19
+public import Mahjong.CartesianData08V19
+import all Mahjong.CartesianData08V19
+public import Mahjong.CartesianMathV19
+import all Mahjong.CartesianMathV19
+public section
+set_option autoImplicit false
+set_option synthInstance.maxSize 4096
+set_option maxRecDepth 131072
+set_option maxHeartbeats 100000000
+set_option profiler.threshold 0
+namespace Mahjong.CartesianPrepB27V19
+theorem every_layout_and_valid_mask :
+  ((((((Mahjong.CartesianData08V19.v100 = Mahjong.CartesianMathV19.pad 2 52 500 1 6 9 Mahjong.CartesianData08V19.v97 ∧
+  Mahjong.CartesianData08V19.v98 = (Mahjong.CartesianMathV19.permute 16 (List.cons (0,1) (List.cons (1,2) (List.cons (2,3) (List.cons (3,4) (List.cons (4,5) (List.cons (5,6) (List.cons (6,7) (List.cons (7,8) (List.cons (8,9) (List.cons (9,10) (List.cons (10,11) (List.cons (11,12) (List.cons (12,13) (List.cons (13,14) (List.cons (14,15) List.nil))))))))))))))) Mahjong.CartesianData08V19.v100)) ∧
+  (Mahjong.CartesianData08V19.v99 = (Mahjong.CartesianMathV19.permute 16 (List.cons (1,7) (List.cons (2,8) (List.cons (3,9) (List.cons (4,10) (List.cons (5,11) (List.cons (6,12) (List.cons (7,13) (List.cons (8,14) (List.cons (9,15) (List.cons (10,13) (List.cons (11,14) (List.cons (12,15) List.nil)))))))))))) Mahjong.CartesianData08V19.v100) ∧
+  Mahjong.CartesianData08V19.v104 = Mahjong.CartesianMathV19.pad 11 52 500 4 6 9 Mahjong.CartesianData08V19.v101)) ∧
+  ((Mahjong.CartesianData08V19.v102 = (Mahjong.CartesianMathV19.permute 19 (List.cons (0,4) (List.cons (1,5) (List.cons (2,6) (List.cons (3,7) (List.cons (4,8) (List.cons (5,9) (List.cons (6,10) (List.cons (7,11) (List.cons (8,12) (List.cons (9,13) (List.cons (10,14) (List.cons (11,15) (List.cons (12,16) (List.cons (13,17) (List.cons (14,18) (List.cons (15,16) (List.cons (16,17) (List.cons (17,18) List.nil)))))))))))))))))) Mahjong.CartesianData08V19.v104) ∧
+  Mahjong.CartesianData08V19.v103 = (Mahjong.CartesianMathV19.permute 19 (List.cons (4,10) (List.cons (5,11) (List.cons (6,12) (List.cons (7,13) (List.cons (8,14) (List.cons (9,15) (List.cons (10,16) (List.cons (11,17) (List.cons (12,18) (List.cons (13,16) (List.cons (14,17) (List.cons (15,18) List.nil)))))))))))) Mahjong.CartesianData08V19.v104)) ∧
+  (Mahjong.CartesianData08V19.v108 = Mahjong.CartesianMathV19.pad 4 52 500 2 6 9 Mahjong.CartesianData08V19.v105 ∧
+  (Mahjong.CartesianData08V19.v106 = (Mahjong.CartesianMathV19.permute 17 (List.cons (0,2) (List.cons (1,3) (List.cons (2,4) (List.cons (3,5) (List.cons (4,6) (List.cons (5,7) (List.cons (6,8) (List.cons (7,9) (List.cons (8,10) (List.cons (9,11) (List.cons (10,12) (List.cons (11,13) (List.cons (12,14) (List.cons (13,15) (List.cons (14,16) (List.cons (15,16) List.nil)))))))))))))))) Mahjong.CartesianData08V19.v108) ∧
+  Mahjong.CartesianData08V19.v107 = (Mahjong.CartesianMathV19.permute 17 (List.cons (2,8) (List.cons (3,9) (List.cons (4,10) (List.cons (5,11) (List.cons (6,12) (List.cons (7,13) (List.cons (8,14) (List.cons (9,15) (List.cons (10,16) (List.cons (11,14) (List.cons (12,15) (List.cons (13,16) List.nil)))))))))))) Mahjong.CartesianData08V19.v108))))) ∧
+  (((Mahjong.CartesianData08V19.v112 = Mahjong.CartesianMathV19.pad 5 52 500 3 6 9 Mahjong.CartesianData08V19.v109 ∧
+  Mahjong.CartesianData08V19.v110 = (Mahjong.CartesianMathV19.permute 18 (List.cons (0,3) (List.cons (1,4) (List.cons (2,5) (List.cons (3,6) (List.cons (4,7) (List.cons (5,8) (List.cons (6,9) (List.cons (7,10) (List.cons (8,11) (List.cons (9,12) (List.cons (10,13) (List.cons (11,14) (List.cons (12,15) (List.cons (13,16) (List.cons (14,17) List.nil))))))))))))))) Mahjong.CartesianData08V19.v112)) ∧
+  (Mahjong.CartesianData08V19.v111 = (Mahjong.CartesianMathV19.permute 18 (List.cons (3,9) (List.cons (4,10) (List.cons (5,11) (List.cons (6,12) (List.cons (7,13) (List.cons (8,14) (List.cons (9,15) (List.cons (10,16) (List.cons (11,17) (List.cons (12,15) (List.cons (13,16) (List.cons (14,17) List.nil)))))))))))) Mahjong.CartesianData08V19.v112) ∧
+  Mahjong.CartesianData08V19.v116 = Mahjong.CartesianMathV19.pad 2 16 500 1 4 9 Mahjong.CartesianData08V19.v113)) ∧
+  ((Mahjong.CartesianData08V19.v114 = (Mahjong.CartesianMathV19.permute 14 (List.cons (0,1) (List.cons (1,2) (List.cons (2,3) (List.cons (3,4) (List.cons (4,5) (List.cons (5,6) (List.cons (6,7) (List.cons (7,8) (List.cons (8,9) (List.cons (9,10) (List.cons (10,11) (List.cons (11,12) (List.cons (12,13) List.nil))))))))))))) Mahjong.CartesianData08V19.v116) ∧
+  Mahjong.CartesianData08V19.v115 = (Mahjong.CartesianMathV19.permute 14 (List.cons (1,5) (List.cons (2,6) (List.cons (3,7) (List.cons (4,8) (List.cons (5,9) (List.cons (6,10) (List.cons (7,11) (List.cons (8,12) (List.cons (9,13) (List.cons (10,13) (List.cons (11,13) (List.cons (12,13) List.nil)))))))))))) Mahjong.CartesianData08V19.v116)) ∧
+  (Mahjong.CartesianData08V19.v120 = Mahjong.CartesianMathV19.pad 2 5 500 1 3 9 Mahjong.CartesianData08V19.v117 ∧
+  (Mahjong.CartesianData08V19.v118 = (Mahjong.CartesianMathV19.permute 13 (List.cons (0,1) (List.cons (1,2) (List.cons (2,3) (List.cons (3,4) (List.cons (4,5) (List.cons (5,6) (List.cons (6,7) (List.cons (7,8) (List.cons (8,9) (List.cons (9,10) (List.cons (10,11) (List.cons (11,12) List.nil)))))))))))) Mahjong.CartesianData08V19.v120) ∧
+  Mahjong.CartesianData08V19.v119 = (Mahjong.CartesianMathV19.permute 13 (List.cons (1,4) (List.cons (2,5) (List.cons (3,6) (List.cons (4,7) (List.cons (5,8) (List.cons (6,9) (List.cons (7,10) (List.cons (8,11) (List.cons (9,12) List.nil))))))))) Mahjong.CartesianData08V19.v120)))))) ∧
+  ((((Mahjong.CartesianData08V19.v124 = Mahjong.CartesianMathV19.pad 2 78 500 1 7 9 Mahjong.CartesianData08V19.v121 ∧
+  Mahjong.CartesianData08V19.v122 = (Mahjong.CartesianMathV19.permute 17 (List.cons (0,1) (List.cons (1,2) (List.cons (2,3) (List.cons (3,4) (List.cons (4,5) (List.cons (5,6) (List.cons (6,7) (List.cons (7,8) (List.cons (8,9) (List.cons (9,10) (List.cons (10,11) (List.cons (11,12) (List.cons (12,13) (List.cons (13,14) (List.cons (14,15) (List.cons (15,16) List.nil)))))))))))))))) Mahjong.CartesianData08V19.v124)) ∧
+  (Mahjong.CartesianData08V19.v123 = (Mahjong.CartesianMathV19.permute 17 (List.cons (1,8) (List.cons (2,9) (List.cons (3,10) (List.cons (4,11) (List.cons (5,12) (List.cons (6,13) (List.cons (7,14) (List.cons (8,15) (List.cons (9,16) (List.cons (10,15) (List.cons (11,16) (List.cons (12,15) (List.cons (13,16) (List.cons (14,15) (List.cons (15,16) List.nil))))))))))))))) Mahjong.CartesianData08V19.v124) ∧
+  Mahjong.CartesianData08V19.v128 = Mahjong.CartesianMathV19.pad 2 52 500 1 6 9 Mahjong.CartesianData08V19.v125)) ∧
+  ((Mahjong.CartesianData08V19.v126 = (Mahjong.CartesianMathV19.permute 16 (List.cons (0,1) (List.cons (1,2) (List.cons (2,3) (List.cons (3,4) (List.cons (4,5) (List.cons (5,6) (List.cons (6,7) (List.cons (7,8) (List.cons (8,9) (List.cons (9,10) (List.cons (10,11) (List.cons (11,12) (List.cons (12,13) (List.cons (13,14) (List.cons (14,15) List.nil))))))))))))))) Mahjong.CartesianData08V19.v128) ∧
+  Mahjong.CartesianData08V19.v127 = (Mahjong.CartesianMathV19.permute 16 (List.cons (1,7) (List.cons (2,8) (List.cons (3,9) (List.cons (4,10) (List.cons (5,11) (List.cons (6,12) (List.cons (7,13) (List.cons (8,14) (List.cons (9,15) (List.cons (10,13) (List.cons (11,14) (List.cons (12,15) List.nil)))))))))))) Mahjong.CartesianData08V19.v128)) ∧
+  (Mahjong.CartesianData08V19.v132 = Mahjong.CartesianMathV19.pad 2 52 262 1 6 9 Mahjong.CartesianData08V19.v129 ∧
+  (Mahjong.CartesianData08V19.v130 = (Mahjong.CartesianMathV19.permute 16 (List.cons (0,1) (List.cons (1,2) (List.cons (2,3) (List.cons (3,4) (List.cons (4,5) (List.cons (5,6) (List.cons (6,7) (List.cons (7,8) (List.cons (8,9) (List.cons (9,10) (List.cons (10,11) (List.cons (11,12) (List.cons (12,13) (List.cons (13,14) (List.cons (14,15) List.nil))))))))))))))) Mahjong.CartesianData08V19.v132) ∧
+  Mahjong.CartesianData08V19.v131 = (Mahjong.CartesianMathV19.permute 16 (List.cons (1,7) (List.cons (2,8) (List.cons (3,9) (List.cons (4,10) (List.cons (5,11) (List.cons (6,12) (List.cons (7,13) (List.cons (8,14) (List.cons (9,15) (List.cons (10,13) (List.cons (11,14) (List.cons (12,15) List.nil)))))))))))) Mahjong.CartesianData08V19.v132))))) ∧
+  (((Mahjong.CartesianData08V19.v136 = Mahjong.CartesianMathV19.pad 2 52 388 1 6 9 Mahjong.CartesianData08V19.v133 ∧
+  Mahjong.CartesianData08V19.v134 = (Mahjong.CartesianMathV19.permute 16 (List.cons (0,1) (List.cons (1,2) (List.cons (2,3) (List.cons (3,4) (List.cons (4,5) (List.cons (5,6) (List.cons (6,7) (List.cons (7,8) (List.cons (8,9) (List.cons (9,10) (List.cons (10,11) (List.cons (11,12) (List.cons (12,13) (List.cons (13,14) (List.cons (14,15) List.nil))))))))))))))) Mahjong.CartesianData08V19.v136)) ∧
+  (Mahjong.CartesianData08V19.v135 = (Mahjong.CartesianMathV19.permute 16 (List.cons (1,7) (List.cons (2,8) (List.cons (3,9) (List.cons (4,10) (List.cons (5,11) (List.cons (6,12) (List.cons (7,13) (List.cons (8,14) (List.cons (9,15) (List.cons (10,13) (List.cons (11,14) (List.cons (12,15) List.nil)))))))))))) Mahjong.CartesianData08V19.v136) ∧
+  Mahjong.CartesianData08V19.v140 = Mahjong.CartesianMathV19.pad 2 52 20 1 6 5 Mahjong.CartesianData08V19.v137)) ∧
+  ((Mahjong.CartesianData08V19.v138 = (Mahjong.CartesianMathV19.permute 12 (List.cons (0,1) (List.cons (1,2) (List.cons (2,3) (List.cons (3,4) (List.cons (4,5) (List.cons (5,6) (List.cons (6,7) (List.cons (7,8) (List.cons (8,9) (List.cons (9,10) (List.cons (10,11) List.nil))))))))))) Mahjong.CartesianData08V19.v140) ∧
+  Mahjong.CartesianData08V19.v139 = (Mahjong.CartesianMathV19.permute 12 (List.cons (1,7) (List.cons (2,8) (List.cons (3,9) (List.cons (4,10) (List.cons (5,11) (List.cons (6,7) (List.cons (7,8) (List.cons (8,9) (List.cons (9,10) (List.cons (10,11) List.nil)))))))))) Mahjong.CartesianData08V19.v140)) ∧
+  (Mahjong.CartesianData08V19.v144 = Mahjong.CartesianMathV19.pad 2 52 364 1 6 9 Mahjong.CartesianData08V19.v141 ∧
+  (Mahjong.CartesianData08V19.v142 = (Mahjong.CartesianMathV19.permute 16 (List.cons (0,1) (List.cons (1,2) (List.cons (2,3) (List.cons (3,4) (List.cons (4,5) (List.cons (5,6) (List.cons (6,7) (List.cons (7,8) (List.cons (8,9) (List.cons (9,10) (List.cons (10,11) (List.cons (11,12) (List.cons (12,13) (List.cons (13,14) (List.cons (14,15) List.nil))))))))))))))) Mahjong.CartesianData08V19.v144) ∧
+  Mahjong.CartesianData08V19.v143 = (Mahjong.CartesianMathV19.permute 16 (List.cons (1,7) (List.cons (2,8) (List.cons (3,9) (List.cons (4,10) (List.cons (5,11) (List.cons (6,12) (List.cons (7,13) (List.cons (8,14) (List.cons (9,15) (List.cons (10,13) (List.cons (11,14) (List.cons (12,15) List.nil)))))))))))) Mahjong.CartesianData08V19.v144))))))) ∧
+  (((((Mahjong.CartesianData08V19.v148 = Mahjong.CartesianMathV19.pad 2 52 373 1 6 9 Mahjong.CartesianData08V19.v145 ∧
+  Mahjong.CartesianData08V19.v146 = (Mahjong.CartesianMathV19.permute 16 (List.cons (0,1) (List.cons (1,2) (List.cons (2,3) (List.cons (3,4) (List.cons (4,5) (List.cons (5,6) (List.cons (6,7) (List.cons (7,8) (List.cons (8,9) (List.cons (9,10) (List.cons (10,11) (List.cons (11,12) (List.cons (12,13) (List.cons (13,14) (List.cons (14,15) List.nil))))))))))))))) Mahjong.CartesianData08V19.v148)) ∧
+  (Mahjong.CartesianData08V19.v147 = (Mahjong.CartesianMathV19.permute 16 (List.cons (1,7) (List.cons (2,8) (List.cons (3,9) (List.cons (4,10) (List.cons (5,11) (List.cons (6,12) (List.cons (7,13) (List.cons (8,14) (List.cons (9,15) (List.cons (10,13) (List.cons (11,14) (List.cons (12,15) List.nil)))))))))))) Mahjong.CartesianData08V19.v148) ∧
+  Mahjong.CartesianData08V19.v152 = Mahjong.CartesianMathV19.pad 2 52 1038 1 6 11 Mahjong.CartesianData08V19.v149)) ∧
+  ((Mahjong.CartesianData08V19.v150 = (Mahjong.CartesianMathV19.permute 18 (List.cons (0,1) (List.cons (1,2) (List.cons (2,3) (List.cons (3,4) (List.cons (4,5) (List.cons (5,6) (List.cons (6,7) (List.cons (7,8) (List.cons (8,9) (List.cons (9,10) (List.cons (10,11) (List.cons (11,12) (List.cons (12,13) (List.cons (13,14) (List.cons (14,15) (List.cons (15,16) (List.cons (16,17) List.nil))))))))))))))))) Mahjong.CartesianData08V19.v152) ∧
+  Mahjong.CartesianData08V19.v151 = (Mahjong.CartesianMathV19.permute 18 (List.cons (1,7) (List.cons (2,8) (List.cons (3,9) (List.cons (4,10) (List.cons (5,11) (List.cons (6,12) (List.cons (7,13) (List.cons (8,14) (List.cons (9,15) (List.cons (10,16) (List.cons (11,17) (List.cons (12,13) (List.cons (13,14) (List.cons (14,15) (List.cons (15,16) (List.cons (16,17) List.nil)))))))))))))))) Mahjong.CartesianData08V19.v152)) ∧
+  (Mahjong.CartesianData08V19.v156 = Mahjong.CartesianMathV19.pad 2 52 813 1 6 10 Mahjong.CartesianData08V19.v153 ∧
+  (Mahjong.CartesianData08V19.v154 = (Mahjong.CartesianMathV19.permute 17 (List.cons (0,1) (List.cons (1,2) (List.cons (2,3) (List.cons (3,4) (List.cons (4,5) (List.cons (5,6) (List.cons (6,7) (List.cons (7,8) (List.cons (8,9) (List.cons (9,10) (List.cons (10,11) (List.cons (11,12) (List.cons (12,13) (List.cons (13,14) (List.cons (14,15) (List.cons (15,16) List.nil)))))))))))))))) Mahjong.CartesianData08V19.v156) ∧
+  Mahjong.CartesianData08V19.v155 = (Mahjong.CartesianMathV19.permute 17 (List.cons (1,7) (List.cons (2,8) (List.cons (3,9) (List.cons (4,10) (List.cons (5,11) (List.cons (6,12) (List.cons (7,13) (List.cons (8,14) (List.cons (9,15) (List.cons (10,16) (List.cons (11,13) (List.cons (12,14) (List.cons (13,15) (List.cons (14,16) List.nil)))))))))))))) Mahjong.CartesianData08V19.v156))))) ∧
+  (((Mahjong.CartesianData08V19.v160 = Mahjong.CartesianMathV19.pad 2 52 881 1 6 10 Mahjong.CartesianData08V19.v157 ∧
+  Mahjong.CartesianData08V19.v158 = (Mahjong.CartesianMathV19.permute 17 (List.cons (0,1) (List.cons (1,2) (List.cons (2,3) (List.cons (3,4) (List.cons (4,5) (List.cons (5,6) (List.cons (6,7) (List.cons (7,8) (List.cons (8,9) (List.cons (9,10) (List.cons (10,11) (List.cons (11,12) (List.cons (12,13) (List.cons (13,14) (List.cons (14,15) (List.cons (15,16) List.nil)))))))))))))))) Mahjong.CartesianData08V19.v160)) ∧
+  (Mahjong.CartesianData08V19.v159 = (Mahjong.CartesianMathV19.permute 17 (List.cons (1,7) (List.cons (2,8) (List.cons (3,9) (List.cons (4,10) (List.cons (5,11) (List.cons (6,12) (List.cons (7,13) (List.cons (8,14) (List.cons (9,15) (List.cons (10,16) (List.cons (11,13) (List.cons (12,14) (List.cons (13,15) (List.cons (14,16) List.nil)))))))))))))) Mahjong.CartesianData08V19.v160) ∧
+  Mahjong.CartesianData08V19.v164 = Mahjong.CartesianMathV19.pad 2 52 40 1 6 6 Mahjong.CartesianData08V19.v161)) ∧
+  ((Mahjong.CartesianData08V19.v162 = (Mahjong.CartesianMathV19.permute 13 (List.cons (0,1) (List.cons (1,2) (List.cons (2,3) (List.cons (3,4) (List.cons (4,5) (List.cons (5,6) (List.cons (6,7) (List.cons (7,8) (List.cons (8,9) (List.cons (9,10) (List.cons (10,11) (List.cons (11,12) List.nil)))))))))))) Mahjong.CartesianData08V19.v164) ∧
+  Mahjong.CartesianData08V19.v163 = (Mahjong.CartesianMathV19.permute 13 (List.cons (1,7) (List.cons (2,8) (List.cons (3,9) (List.cons (4,10) (List.cons (5,11) (List.cons (6,12) List.nil)))))) Mahjong.CartesianData08V19.v164)) ∧
+  (Mahjong.CartesianData08V19.v168 = Mahjong.CartesianMathV19.pad 2 52 149 1 6 8 Mahjong.CartesianData08V19.v165 ∧
+  (Mahjong.CartesianData08V19.v166 = (Mahjong.CartesianMathV19.permute 15 (List.cons (0,1) (List.cons (1,2) (List.cons (2,3) (List.cons (3,4) (List.cons (4,5) (List.cons (5,6) (List.cons (6,7) (List.cons (7,8) (List.cons (8,9) (List.cons (9,10) (List.cons (10,11) (List.cons (11,12) (List.cons (12,13) (List.cons (13,14) List.nil)))))))))))))) Mahjong.CartesianData08V19.v168) ∧
+  Mahjong.CartesianData08V19.v167 = (Mahjong.CartesianMathV19.permute 15 (List.cons (1,7) (List.cons (2,8) (List.cons (3,9) (List.cons (4,10) (List.cons (5,11) (List.cons (6,12) (List.cons (7,13) (List.cons (8,14) (List.cons (9,13) (List.cons (10,14) (List.cons (11,13) (List.cons (12,14) List.nil)))))))))))) Mahjong.CartesianData08V19.v168)))))) ∧
+  ((((Mahjong.CartesianData08V19.v172 = Mahjong.CartesianMathV19.pad 2 52 113 1 6 7 Mahjong.CartesianData08V19.v169 ∧
+  Mahjong.CartesianData08V19.v170 = (Mahjong.CartesianMathV19.permute 14 (List.cons (0,1) (List.cons (1,2) (List.cons (2,3) (List.cons (3,4) (List.cons (4,5) (List.cons (5,6) (List.cons (6,7) (List.cons (7,8) (List.cons (8,9) (List.cons (9,10) (List.cons (10,11) (List.cons (11,12) (List.cons (12,13) List.nil))))))))))))) Mahjong.CartesianData08V19.v172)) ∧
+  (Mahjong.CartesianData08V19.v171 = (Mahjong.CartesianMathV19.permute 14 (List.cons (1,7) (List.cons (2,8) (List.cons (3,9) (List.cons (4,10) (List.cons (5,11) (List.cons (6,12) (List.cons (7,13) (List.cons (8,13) (List.cons (9,13) (List.cons (10,13) (List.cons (11,13) (List.cons (12,13) List.nil)))))))))))) Mahjong.CartesianData08V19.v172) ∧
+  Mahjong.CartesianData08V19.v176 = Mahjong.CartesianMathV19.pad 2 52 284 1 6 9 Mahjong.CartesianData08V19.v173)) ∧
+  ((Mahjong.CartesianData08V19.v174 = (Mahjong.CartesianMathV19.permute 16 (List.cons (0,1) (List.cons (1,2) (List.cons (2,3) (List.cons (3,4) (List.cons (4,5) (List.cons (5,6) (List.cons (6,7) (List.cons (7,8) (List.cons (8,9) (List.cons (9,10) (List.cons (10,11) (List.cons (11,12) (List.cons (12,13) (List.cons (13,14) (List.cons (14,15) List.nil))))))))))))))) Mahjong.CartesianData08V19.v176) ∧
+  Mahjong.CartesianData08V19.v175 = (Mahjong.CartesianMathV19.permute 16 (List.cons (1,7) (List.cons (2,8) (List.cons (3,9) (List.cons (4,10) (List.cons (5,11) (List.cons (6,12) (List.cons (7,13) (List.cons (8,14) (List.cons (9,15) (List.cons (10,13) (List.cons (11,14) (List.cons (12,15) List.nil)))))))))))) Mahjong.CartesianData08V19.v176)) ∧
+  (Mahjong.CartesianData08V19.v180 = Mahjong.CartesianMathV19.pad 2 52 218 1 6 8 Mahjong.CartesianData08V19.v177 ∧
+  (Mahjong.CartesianData08V19.v178 = (Mahjong.CartesianMathV19.permute 15 (List.cons (0,1) (List.cons (1,2) (List.cons (2,3) (List.cons (3,4) (List.cons (4,5) (List.cons (5,6) (List.cons (6,7) (List.cons (7,8) (List.cons (8,9) (List.cons (9,10) (List.cons (10,11) (List.cons (11,12) (List.cons (12,13) (List.cons (13,14) List.nil)))))))))))))) Mahjong.CartesianData08V19.v180) ∧
+  Mahjong.CartesianData08V19.v179 = (Mahjong.CartesianMathV19.permute 15 (List.cons (1,7) (List.cons (2,8) (List.cons (3,9) (List.cons (4,10) (List.cons (5,11) (List.cons (6,12) (List.cons (7,13) (List.cons (8,14) (List.cons (9,13) (List.cons (10,14) (List.cons (11,13) (List.cons (12,14) List.nil)))))))))))) Mahjong.CartesianData08V19.v180))))) ∧
+  (((Mahjong.CartesianData08V19.v184 = Mahjong.CartesianMathV19.pad 2 52 89 1 6 7 Mahjong.CartesianData08V19.v181 ∧
+  Mahjong.CartesianData08V19.v182 = (Mahjong.CartesianMathV19.permute 14 (List.cons (0,1) (List.cons (1,2) (List.cons (2,3) (List.cons (3,4) (List.cons (4,5) (List.cons (5,6) (List.cons (6,7) (List.cons (7,8) (List.cons (8,9) (List.cons (9,10) (List.cons (10,11) (List.cons (11,12) (List.cons (12,13) List.nil))))))))))))) Mahjong.CartesianData08V19.v184)) ∧
+  (Mahjong.CartesianData08V19.v183 = (Mahjong.CartesianMathV19.permute 14 (List.cons (1,7) (List.cons (2,8) (List.cons (3,9) (List.cons (4,10) (List.cons (5,11) (List.cons (6,12) (List.cons (7,13) (List.cons (8,13) (List.cons (9,13) (List.cons (10,13) (List.cons (11,13) (List.cons (12,13) List.nil)))))))))))) Mahjong.CartesianData08V19.v184) ∧
+  (Mahjong.CartesianData08V19.v188 = Mahjong.CartesianMathV19.pad 2 52 500 1 6 9 Mahjong.CartesianData08V19.v185 ∧
+  Mahjong.CartesianData08V19.v186 = (Mahjong.CartesianMathV19.permute 16 (List.cons (0,1) (List.cons (1,2) (List.cons (2,3) (List.cons (3,4) (List.cons (4,5) (List.cons (5,6) (List.cons (6,7) (List.cons (7,8) (List.cons (8,9) (List.cons (9,10) (List.cons (10,11) (List.cons (11,12) (List.cons (12,13) (List.cons (13,14) (List.cons (14,15) List.nil))))))))))))))) Mahjong.CartesianData08V19.v188)))) ∧
+  ((Mahjong.CartesianData08V19.v187 = (Mahjong.CartesianMathV19.permute 16 (List.cons (1,7) (List.cons (2,8) (List.cons (3,9) (List.cons (4,10) (List.cons (5,11) (List.cons (6,12) (List.cons (7,13) (List.cons (8,14) (List.cons (9,15) (List.cons (10,13) (List.cons (11,14) (List.cons (12,15) List.nil)))))))))))) Mahjong.CartesianData08V19.v188) ∧
+  Mahjong.CartesianData08V19.v192 = Mahjong.CartesianMathV19.pad 2 52 500 1 6 9 Mahjong.CartesianData08V19.v189) ∧
+  (Mahjong.CartesianData08V19.v190 = (Mahjong.CartesianMathV19.permute 16 (List.cons (0,1) (List.cons (1,2) (List.cons (2,3) (List.cons (3,4) (List.cons (4,5) (List.cons (5,6) (List.cons (6,7) (List.cons (7,8) (List.cons (8,9) (List.cons (9,10) (List.cons (10,11) (List.cons (11,12) (List.cons (12,13) (List.cons (13,14) (List.cons (14,15) List.nil))))))))))))))) Mahjong.CartesianData08V19.v192) ∧
+  (Mahjong.CartesianData08V19.v191 = (Mahjong.CartesianMathV19.permute 16 (List.cons (1,7) (List.cons (2,8) (List.cons (3,9) (List.cons (4,10) (List.cons (5,11) (List.cons (6,12) (List.cons (7,13) (List.cons (8,14) (List.cons (9,15) (List.cons (10,13) (List.cons (11,14) (List.cons (12,15) List.nil)))))))))))) Mahjong.CartesianData08V19.v192) ∧
+  Mahjong.CartesianData08V19.v193 = Mahjong.CartesianMathV19.pad 2 52 500 1 6 9 (2^52000-1)))))))) := by decide +kernel
+end Mahjong.CartesianPrepB27V19
+#print axioms Mahjong.CartesianPrepB27V19.every_layout_and_valid_mask

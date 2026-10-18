@@ -1,6 +1,19 @@
 # Changelog
 
-## Unreleased - 2026-10-18
+## Unreleased - later 2026-10-18 kernel-certificate update
+
+- Publish V17 generic composition, V18 saved/cold-replayed actual-data pilot,
+  and selected completed V19 numeric/layout/local-certificate source and receipts.
+- Replace imminent/sub-20-hour wording with the actual current target:
+  persistent closed kernel proofs and compression. The earlier native cost
+  screen does not apply to proof persistence and cold replay; no 20/24-hour
+  whole-task bound or actual opening theorem is established.
+- Keep compiled-row coverage, closed nonempty strategies, supplied numerical
+  relations and general conditional bridges separate. Document the partial
+  V19 source distribution and unresolved reconstruction dependencies.
+- Preserve historical papers/releases and the legacy whole-table STOP.
+
+### Earlier V16 status synchronization on October 18
 
 - Publish V16 source and existing evidence: 132 linked Lean modules, 104
   selected recorded theorem fingerprints/axiom logs, GPU and controller code,

@@ -1,0 +1,1419 @@
+{
+  "CPU_limit_percent": 20,
+  "LEAN_PATH": "<RESEARCH_ROOT>\\build\\lean_table_checker\\acceleration_v19\\packed\\modules;<RESEARCH_ROOT>\\build\\lean_table_checker\\kernel_pilot_v18\\modules",
+  "argv": [
+    "<RESEARCH_ROOT>\\build\\toolchain\\lean-4.33.1-windows\\bin\\lean.exe",
+    "--trust=0",
+    "--profile",
+    "-j1",
+    "-M2605",
+    "-R",
+    "<RESEARCH_ROOT>\\build\\lean_table_checker\\acceleration_v19\\packed\\source",
+    "-o",
+    "<RESEARCH_ROOT>\\runs\\lean_table_checker\\acceleration_20261018_v19\\packed\\attempts\\04bcb99b440e4d1fa22d4beffed8d47c\\modules\\DiagonalActualV19.olean",
+    "<RESEARCH_ROOT>\\build\\lean_table_checker\\acceleration_v19\\packed\\source\\DiagonalActualV19.lean"
+  ],
+  "caps_readback_confirmed": true,
+  "checked_utc": "2026-10-18T07:41:46.983721+00:00",
+  "child_assigned_before_resume": true,
+  "child_cpu_seconds": 49.0625,
+  "child_cwd": "<RESEARCH_ROOT>",
+  "child_exit_confirmed": true,
+  "child_wall_seconds": 49.18800000002375,
+  "compiled_module": {
+    "bytes": 897744,
+    "path": "runs/lean_table_checker/acceleration_20261018_v19/packed/attempts/04bcb99b440e4d1fa22d4beffed8d47c/modules/DiagonalActualV19.olean",
+    "sha256": "08b0a2a36fa8e1ef12761893aea99b394cffe69f0e4d796f9cbb4956da90b0ad"
+  },
+  "controller_outside_job": true,
+  "dependency_fingerprints": [
+    {
+      "axioms": [
+        "propext"
+      ],
+      "name": "DiagonalActualV19.masks_checked"
+    },
+    {
+      "axioms": [
+        "propext"
+      ],
+      "name": "DiagonalActualV19.entire_block_PN"
+    },
+    {
+      "axioms": [
+        "propext"
+      ],
+      "name": "DiagonalActualV19.exact_actual_reach"
+    }
+  ],
+  "emitted_c": null,
+  "empty_replay_cwd": null,
+  "executable": {
+    "bytes": 83456,
+    "path": "build/toolchain/lean-4.33.1-windows/bin/lean.exe",
+    "sha256": "af49bacfabaa1fea71332ca0feae0fa1a60912219d5902291adc79f905bffb8d"
+  },
+  "final_kernel_empty_theorem": false,
+  "frozen_replay_root": null,
+  "full_launch_allowed": false,
+  "full_scan_started": false,
+  "input_pilot_modules": [
+    {
+      "bytes": 1310128,
+      "path": "build/lean_table_checker/acceleration_v19/packed/modules/ActualCompleteBlockDataV19.olean",
+      "sha256": "2e4d432aa58b8b0d8896cb890f5dbdfb410576cb757b544c265e13f69a8f821b"
+    },
+    {
+      "bytes": 16600,
+      "path": "build/lean_table_checker/acceleration_v19/packed/modules/ActualCompleteBlockV19.olean",
+      "sha256": "80926cfbda40cf0c8dc2d3e6b07d269044d116bb7d350379bfa55291bd97a14a"
+    },
+    {
+      "bytes": 5681360,
+      "path": "build/lean_table_checker/acceleration_v19/packed/modules/ActualGrammarMiddleDataV19.olean",
+      "sha256": "f6c3fbd06cd162f1e17f3a84654a262061851527267fadcc2008740a2ff54a7a"
+    },
+    {
+      "bytes": 9240,
+      "path": "build/lean_table_checker/acceleration_v19/packed/modules/ActualGrammarMiddleV19.olean",
+      "sha256": "352e6ea8107680c850c0c7395936d989d739a0e4edaed7918077913a551667eb"
+    },
+    {
+      "bytes": 4995656,
+      "path": "build/lean_table_checker/acceleration_v19/packed/modules/ActualGrammarStartDataV19.olean",
+      "sha256": "6355f22b38f04952396bb65a03628898179cd69a539b2e4cbf705f76780a11cd"
+    },
+    {
+      "bytes": 14064,
+      "path": "build/lean_table_checker/acceleration_v19/packed/modules/ActualGrammarStartV19.olean",
+      "sha256": "32967f92bfc1b71ebead56a91db0e510dd347e9d1d6181d4cfa1a7416a26ad9d"
+    },
+    {
+      "bytes": 20816,
+      "path": "build/lean_table_checker/acceleration_v19/packed/modules/ActualNoRefsV19.olean",
+      "sha256": "2ca541a5ec1ac59f8ff816df61faf50317141d67a2d0e39c80e43b777f56d588"
+    },
+    {
+      "bytes": 10600,
+      "path": "build/lean_table_checker/acceleration_v19/packed/modules/ActualPackedClosureV19.olean",
+      "sha256": "8c49d27286c8e771dbee72d564e6fb4cdb39f5247d425d6d7db16f71239f7521"
+    },
+    {
+      "bytes": 748112,
+      "path": "build/lean_table_checker/acceleration_v19/packed/modules/ActualPlaneLargeDataV19.olean",
+      "sha256": "9f07b6613c17e0cd243f2b523682970c3a3544ea5b0dfb6a93a5342f75020a26"
+    },
+    {
+      "bytes": 14152,
+      "path": "build/lean_table_checker/acceleration_v19/packed/modules/ActualPlaneLargeV19.olean",
+      "sha256": "5eddcf11be7244a0752a50af8715fcabb1d6135b710ce425f6bccb7b3461199d"
+    },
+    {
+      "bytes": 345440,
+      "path": "build/lean_table_checker/acceleration_v19/packed/modules/ActualPlaneSmallDataV19.olean",
+      "sha256": "a101e96e5d2edaf01394e183fcd0f0593c790d63def7e18278c0f9c8e57d13b1"
+    },
+    {
+      "bytes": 14152,
+      "path": "build/lean_table_checker/acceleration_v19/packed/modules/ActualPlaneSmallV19.olean",
+      "sha256": "40a34eff522aab062c4644ae99d6527ae0ec09a5519dbfcea6a258beea9cf520"
+    },
+    {
+      "bytes": 1959336,
+      "path": "build/lean_table_checker/acceleration_v19/packed/modules/ActualTensorBlockDataV19.olean",
+      "sha256": "9111f9f63a42d4c314f043d8c9049ba373dce007e80ecceda2b8ffb071165db8"
+    },
+    {
+      "bytes": 11576,
+      "path": "build/lean_table_checker/acceleration_v19/packed/modules/ActualTensorBlockV19.olean",
+      "sha256": "d91a4ffa0a02ed6d799d2fd4979454aed4ecfb4c4a2bca1cbff8ea3fd9f97f39"
+    },
+    {
+      "bytes": 7600,
+      "path": "build/lean_table_checker/acceleration_v19/packed/modules/ActualTensorComparisonV19.olean",
+      "sha256": "362ee75b83f399c9277eac2afd48e014316981b7940dd0aafca4f1f9efbb19cd"
+    },
+    {
+      "bytes": 375080,
+      "path": "build/lean_table_checker/acceleration_v19/packed/modules/ActualTransposeSourceDataV19.olean",
+      "sha256": "78b414854438fc7b42644a39b391b4076ecf8ef05240f3b3fa5ca8d3745708d7"
+    },
+    {
+      "bytes": 13944,
+      "path": "build/lean_table_checker/acceleration_v19/packed/modules/ActualTransposeSourceV19.olean",
+      "sha256": "3c228e569f2c019ba53529147a8396e299f7d3121eb773afdb5a1c1bbc41d72c"
+    },
+    {
+      "bytes": 1457800,
+      "path": "build/lean_table_checker/acceleration_v19/packed/modules/ActualTransposeTargetDataV19.olean",
+      "sha256": "732763a969de09f4ed77b5493f806dff36606af19ff7987db01d6588c97bf485"
+    },
+    {
+      "bytes": 13944,
+      "path": "build/lean_table_checker/acceleration_v19/packed/modules/ActualTransposeTargetV19.olean",
+      "sha256": "bd975f74f05c00b09751baa5e4f6410b853d8ccd85e23258bba577d83df66892"
+    },
+    {
+      "bytes": 145784,
+      "path": "build/lean_table_checker/acceleration_v19/packed/modules/BitPermuteV19.olean",
+      "sha256": "e1c9bbe52f2536e8f885e052a52f2f1cebd0362eb78ff54536c9d4719021dc50"
+    },
+    {
+      "bytes": 1544,
+      "path": "build/lean_table_checker/acceleration_v19/packed/modules/CandidateActualDataV19.olean",
+      "sha256": "c92a146174cb5309324d8ae8b7e1d6dd20026415a6638e09acc5b693915ebba8"
+    },
+    {
+      "bytes": 3584,
+      "path": "build/lean_table_checker/acceleration_v19/packed/modules/CandidateActualExportV19.olean",
+      "sha256": "11b22ec460bf3b9d32c4f1fe91f0af38de175da653a3903114e1ea6b007a637b"
+    },
+    {
+      "bytes": 7576,
+      "path": "build/lean_table_checker/acceleration_v19/packed/modules/CandidateActualVerifyV19.olean",
+      "sha256": "f688694e217020c76b8b56ce86e9909e08d0cbba467589c1e778f06fc5703e2b"
+    },
+    {
+      "bytes": 438664,
+      "path": "build/lean_table_checker/acceleration_v19/packed/modules/CandidateBoolWriterV19.olean",
+      "sha256": "2d558a4705678536b6fb5e34547f38eb81b28ecb8c3a3a1fed1ebb274bb901ea"
+    },
+    {
+      "bytes": 7008,
+      "path": "build/lean_table_checker/acceleration_v19/packed/modules/CandidateFalseCheckV19.olean",
+      "sha256": "eba44b46eeb962080ccbfaa31dd594f57668da9ef996a4495339958e031a4466"
+    },
+    {
+      "bytes": 3576,
+      "path": "build/lean_table_checker/acceleration_v19/packed/modules/CandidateFalseExportV19.olean",
+      "sha256": "8932c9f6a455d5c42f49f76f8924ca64f2c202501ba8a93ed42f4c61fefabcd3"
+    },
+    {
+      "bytes": 348224,
+      "path": "build/lean_table_checker/acceleration_v19/packed/modules/CompactStreamTransport.olean",
+      "sha256": "72fbb2700739ff4256809c69f73bdd836cc0cf263e1448dda35555ce32793557"
+    },
+    {
+      "bytes": 384632,
+      "path": "build/lean_table_checker/acceleration_v19/packed/modules/DiagonalMaskInputsV19.olean",
+      "sha256": "aae41e30ed5334eee9bda7b9d959107d1039190d00dcc4f4924c49e59c39f2be"
+    },
+    {
+      "bytes": 18752,
+      "path": "build/lean_table_checker/acceleration_v19/packed/modules/DirectBlockCheckV19.olean",
+      "sha256": "c25747841bc3ca01061f8c6acf3aa5b5f2b68426c6c02d92f3c8167c46c01058"
+    },
+    {
+      "bytes": 3656,
+      "path": "build/lean_table_checker/acceleration_v19/packed/modules/DirectBoolExportV19.olean",
+      "sha256": "ddfb6af16c4e4c3b1e86ecb6250db69518bf805e9cad4ec382aa5d109325183b"
+    },
+    {
+      "bytes": 439384,
+      "path": "build/lean_table_checker/acceleration_v19/packed/modules/DirectBoolProofWriterV19.olean",
+      "sha256": "8aecc762ddd1560aef985097c1cc10465cd490035a7586c49480ff915165c516"
+    },
+    {
+      "bytes": 3616,
+      "path": "build/lean_table_checker/acceleration_v19/packed/modules/DirectKernelBoolExportV19.olean",
+      "sha256": "a4eca53946053b1858446a46f0889c7dae07687533ef56ca50027f67daf80364"
+    },
+    {
+      "bytes": 1544,
+      "path": "build/lean_table_checker/acceleration_v19/packed/modules/DirectKernelPNEvidenceV19.olean",
+      "sha256": "19d3a75fa719dfd8c40cb43a14c91a85b0a4c74285eee32c4d124e692fbde2c4"
+    },
+    {
+      "bytes": 7576,
+      "path": "build/lean_table_checker/acceleration_v19/packed/modules/DirectKernelPNVerifyV19.olean",
+      "sha256": "b0298a311d5ded6f27fb45e6cd274b85300e535dfbc8fbd8cf3a80c06eb201f3"
+    },
+    {
+      "bytes": 440312,
+      "path": "build/lean_table_checker/acceleration_v19/packed/modules/DirectKernelProofWriterV19.olean",
+      "sha256": "3af953e4beedea76051fad57b5b63abf0abaaaa77bf63004cb52c016a1605bc3"
+    },
+    {
+      "bytes": 2936,
+      "path": "build/lean_table_checker/acceleration_v19/packed/modules/DirectPNEvidenceV19.olean",
+      "sha256": "15867920432d8a89325b3f35c7bda0de064c8cd281a4a2282b3d72dfc26f1c6f"
+    },
+    {
+      "bytes": 857552,
+      "path": "build/lean_table_checker/acceleration_v19/packed/modules/FactoredTensorBlockDataV19.olean",
+      "sha256": "ccb1442df5614a02cd6aaf79bd44e4de0bb7852e5f2064420435775fc75fa20c"
+    },
+    {
+      "bytes": 12552,
+      "path": "build/lean_table_checker/acceleration_v19/packed/modules/FactoredTensorBlockV19.olean",
+      "sha256": "b47764c3dc7084fb81ff0431782f6bb4c187240dc48f7032967cd779cb5b7cc1"
+    },
+    {
+      "bytes": 1544,
+      "path": "build/lean_table_checker/acceleration_v19/packed/modules/GameProofSliceDataV19.olean",
+      "sha256": "d7d6a04aeb4cc9a25f48900920c0b446914fec37073c1fe44cf238d4f67f8904"
+    },
+    {
+      "bytes": 3656,
+      "path": "build/lean_table_checker/acceleration_v19/packed/modules/GameProofSliceExportV19.olean",
+      "sha256": "67ba8c28b4fd3b8744efe37df30c0f698e90d4ced06d8511abd11e5b38558198"
+    },
+    {
+      "bytes": 6680,
+      "path": "build/lean_table_checker/acceleration_v19/packed/modules/GameProofSliceVerifyV19.olean",
+      "sha256": "73badfcea3419e2948825f01e5aac2bb1f05030f291077cc19276fa9df46a8c4"
+    },
+    {
+      "bytes": 141000,
+      "path": "build/lean_table_checker/acceleration_v19/packed/modules/GenericLocalNextV19.olean",
+      "sha256": "c717db624675aaf857615135e19d0ded7e21d20dd711467736c4851631ea048d"
+    },
+    {
+      "bytes": 153960,
+      "path": "build/lean_table_checker/acceleration_v19/packed/modules/GenericLocalRefV19.olean",
+      "sha256": "36ad21de28d206697116bf2658671b3fd1250ea65c914133c4b3f0ae1735f7a7"
+    },
+    {
+      "bytes": 152136,
+      "path": "build/lean_table_checker/acceleration_v19/packed/modules/GhostNatBytesV19.olean",
+      "sha256": "74f0cf116bc4721ec531a7e346398917daebd1bee95e44879d49e27a061b671a"
+    },
+    {
+      "bytes": 289256,
+      "path": "build/lean_table_checker/acceleration_v19/packed/modules/GroupChannelActualV19.olean",
+      "sha256": "b730c47224f38ecfa40e32b2c87e1484fb9eb1d468ec6584f0b7eae24cf8fb50"
+    },
+    {
+      "bytes": 324184,
+      "path": "build/lean_table_checker/acceleration_v19/packed/modules/GroupChannelFunctionsV19.olean",
+      "sha256": "e20ad7b7475a8bf3e9f8d5fc09930684237ce409c13561b5b2fbf67c495ad8bc"
+    },
+    {
+      "bytes": 170856,
+      "path": "build/lean_table_checker/acceleration_v19/packed/modules/GroupConcatActualV19.olean",
+      "sha256": "8f4853a4e0c3d1a92b99cc208633aacb33286ef0fbdce8b9ea518200e5b84afb"
+    },
+    {
+      "bytes": 378320,
+      "path": "build/lean_table_checker/acceleration_v19/packed/modules/GroupConcatFunctionsV19.olean",
+      "sha256": "a02439982d36562c73407a9393cce5666aa1a971e2724798135469ea5c6174be"
+    },
+    {
+      "bytes": 212128,
+      "path": "build/lean_table_checker/acceleration_v19/packed/modules/HeavyParallel1V19.olean",
+      "sha256": "81ccd0015679eefe013f06b1b9c914e6e00b8056e41bce2c9f4fccd5ef5b7ef8"
+    },
+    {
+      "bytes": 212176,
+      "path": "build/lean_table_checker/acceleration_v19/packed/modules/HeavyParallel8V19.olean",
+      "sha256": "8d77f2d71baacfbb6d2cc41c42cfa656721ff5ebaaf11d5b8e79e1cd06d7b6fb"
+    },
+    {
+      "bytes": 2605840,
+      "path": "build/lean_table_checker/acceleration_v19/packed/modules/JointIndexedFramesMainV16.olean",
+      "sha256": "be1f24304c77b30343ec390ffcaafe7bffa53ecb9b147354683182327e346b93"
+    },
+    {
+      "bytes": 993376,
+      "path": "build/lean_table_checker/acceleration_v19/packed/modules/LaneCachedTensorV19.olean",
+      "sha256": "b26f1022412d9f6eeaf235740b9ac7b33b553764e21a345ed6dbf9617ee8c118"
+    },
+    {
+      "bytes": 44656,
+      "path": "build/lean_table_checker/acceleration_v19/packed/modules/LiteralTensorBindingsV19.olean",
+      "sha256": "f6771d2224865ccda89036907891991fb63d45463ebdc6bbd0539db6a7c27b2c"
+    },
+    {
+      "bytes": 2440136,
+      "path": "build/lean_table_checker/acceleration_v19/packed/modules/LiteralTensorBlockV19.olean",
+      "sha256": "951d8dcd5811d65e16b7d02cb635aab6f2a510a43e6210d2fd434d79148e27cf"
+    },
+    {
+      "bytes": 574584,
+      "path": "build/lean_table_checker/acceleration_v19/packed/modules/LiteralTensorInputsNativeV19.olean",
+      "sha256": "9cdffd258ba41413d59a4b36eb7198171726131e191130fa337fed3a85a91f4a"
+    },
+    {
+      "bytes": 574576,
+      "path": "build/lean_table_checker/acceleration_v19/packed/modules/LiteralTensorInputsV19.olean",
+      "sha256": "256ea646b3bf99a619d382ae897add4dec65683dcd4d399bf70b06c0ec200009"
+    },
+    {
+      "bytes": 258224,
+      "path": "build/lean_table_checker/acceleration_v19/packed/modules/Mahjong/AbsoluteCursor.olean",
+      "sha256": "c8acf6d648ddf5e7ddeff7a0294d14d2b62e48e04875a5b960629f476ff20113"
+    },
+    {
+      "bytes": 1220904,
+      "path": "build/lean_table_checker/acceleration_v19/packed/modules/Mahjong/Base5Coverage.olean",
+      "sha256": "1808585c6c3b9e1cf84b461a0d0f7eacd0ad6f3c404a5823e488e266b235dab9"
+    },
+    {
+      "bytes": 41904,
+      "path": "build/lean_table_checker/acceleration_v19/packed/modules/Mahjong/BindingControlsV17.olean",
+      "sha256": "0260657441bdc1f30f5b320846c71a13de7fee3b257d02c29da8cdd55a74ad7f"
+    },
+    {
+      "bytes": 744256,
+      "path": "build/lean_table_checker/acceleration_v19/packed/modules/Mahjong/BitCompactV19.olean",
+      "sha256": "26186ff05e33aa8b4bb105db3f761eb9e2e9c8a7fd2dd2940b4e6f488473a214"
+    },
+    {
+      "bytes": 74512,
+      "path": "build/lean_table_checker/acceleration_v19/packed/modules/Mahjong/BlockPlanCertifiedRow.olean",
+      "sha256": "aadc02dd7fbc66732f9a63a34c08b1c2e9fab585113c241b3588ff5f21d0c2ff"
+    },
+    {
+      "bytes": 458208,
+      "path": "build/lean_table_checker/acceleration_v19/packed/modules/Mahjong/BlockPlanCheck.olean",
+      "sha256": "e00d8d02fbc73a92700f55e649cf0c10b866132ce77e4c46164a510c202a39dc"
+    },
+    {
+      "bytes": 54936,
+      "path": "build/lean_table_checker/acceleration_v19/packed/modules/Mahjong/BlockPlanFastSource.olean",
+      "sha256": "79c3aed118b7d9f8775d9466eb89b5d78e1a01a283f8a069b3a5bb759da91e5d"
+    },
+    {
+      "bytes": 1211152,
+      "path": "build/lean_table_checker/acceleration_v19/packed/modules/Mahjong/BlockPlanSoundness.olean",
+      "sha256": "6594fe23a04fc641fffc858a4d4c590db8bd5ec1be0609ab315268e343e6f9a0"
+    },
+    {
+      "bytes": 393072,
+      "path": "build/lean_table_checker/acceleration_v19/packed/modules/Mahjong/BlockReachV19.olean",
+      "sha256": "8aed536c184dff7063a19583eb66b704e0151e817b0f686fe0d1054549e05661"
+    },
+    {
+      "bytes": 271208,
+      "path": "build/lean_table_checker/acceleration_v19/packed/modules/Mahjong/BlockWordAddress.olean",
+      "sha256": "d35095e5ca480b60ad489d71a9dba2a32345d7ef054abf001bf54d6a73b37ae7"
+    },
+    {
+      "bytes": 116712,
+      "path": "build/lean_table_checker/acceleration_v19/packed/modules/Mahjong/BorrowedGeneratedCompactHotRow.olean",
+      "sha256": "510a069e38f3b13e4e6a2cf6589922c9ec2427c3c2490817c490d08ba871e163"
+    },
+    {
+      "bytes": 1588168,
+      "path": "build/lean_table_checker/acceleration_v19/packed/modules/Mahjong/BorrowedGeneratedHotPlan.olean",
+      "sha256": "54dbe881b2050e06340efea09d13bfbec35409ce752c18de5dddc637c03de43a"
+    },
+    {
+      "bytes": 256480,
+      "path": "build/lean_table_checker/acceleration_v19/packed/modules/Mahjong/BorrowedNextGeneratedCompactHotRow.olean",
+      "sha256": "4f59202f77fd9724e7c1c8f4b8685e1609fba9a81d40bbae8432b47a5ddcfed6"
+    },
+    {
+      "bytes": 579360,
+      "path": "build/lean_table_checker/acceleration_v19/packed/modules/Mahjong/BorrowedNextGeneratedHotPlan.olean",
+      "sha256": "274e2a6daddb3b1a2033e9cb913f8bc337a60c40a0c61b061a066e9a22a30098"
+    },
+    {
+      "bytes": 75656,
+      "path": "build/lean_table_checker/acceleration_v19/packed/modules/Mahjong/Bridge.olean",
+      "sha256": "8a577808f3a664e79081045b16bf58df7c87adf19af758bd382e869900369346"
+    },
+    {
+      "bytes": 236792,
+      "path": "build/lean_table_checker/acceleration_v19/packed/modules/Mahjong/BucketIndex.olean",
+      "sha256": "db576f685d3edc67c4eb136e1c098f64b7a6df0de37ce4834648eed29a1202f6"
+    },
+    {
+      "bytes": 539200,
+      "path": "build/lean_table_checker/acceleration_v19/packed/modules/Mahjong/CachedPackedCheck.olean",
+      "sha256": "d36f5c72988592fe21e9644ef5b807156a89b4ba3f30cc7be1eae142f81bf812"
+    },
+    {
+      "bytes": 90688,
+      "path": "build/lean_table_checker/acceleration_v19/packed/modules/Mahjong/CachedPackedFast.olean",
+      "sha256": "07a3089396af62dcacb6a883c367b849cf999bcdb28ee741fc234f9a2ab6fd8d"
+    },
+    {
+      "bytes": 155800,
+      "path": "build/lean_table_checker/acceleration_v19/packed/modules/Mahjong/CachedPackedSnapshot.olean",
+      "sha256": "3e7ececeb8684c13260863ddd2ebe9c8706ab7151d08baf7cf83d3b57567121e"
+    },
+    {
+      "bytes": 197024,
+      "path": "build/lean_table_checker/acceleration_v19/packed/modules/Mahjong/CachedProfiles.olean",
+      "sha256": "3b6eaee215c41319f70222ccd7c98b706eb522e5f6026bc0ce31eee53ddfd67d"
+    },
+    {
+      "bytes": 131000,
+      "path": "build/lean_table_checker/acceleration_v19/packed/modules/Mahjong/CachedStandardBounds.olean",
+      "sha256": "5ea18422685490a37ed5a2d7a25adab65c1f3f812ecf227a376afde63d475cf5"
+    },
+    {
+      "bytes": 327624,
+      "path": "build/lean_table_checker/acceleration_v19/packed/modules/Mahjong/CachedTargetModels.olean",
+      "sha256": "982313a19baa77bc6c98a636d535ec578e24db86b8d98fc33dc1b6b4344abd04"
+    },
+    {
+      "bytes": 255800,
+      "path": "build/lean_table_checker/acceleration_v19/packed/modules/Mahjong/CanonicalCoverage.olean",
+      "sha256": "90eba9fb41d7ad3a7fea5ae05db1baefa97a6516eeb111cfcbccaf3c87c8d052"
+    },
+    {
+      "bytes": 513608,
+      "path": "build/lean_table_checker/acceleration_v19/packed/modules/Mahjong/CanonicalInventory.olean",
+      "sha256": "e968adc2068cce1b7f16df786d6c35246b16150d441a25aea9809bea9b603a9d"
+    },
+    {
+      "bytes": 260736,
+      "path": "build/lean_table_checker/acceleration_v19/packed/modules/Mahjong/CapacityComplete.olean",
+      "sha256": "313b21d64b24404c4ec829f34f132ac94e991772ede49137fb81ebc15c428ddb"
+    },
+    {
+      "bytes": 298016,
+      "path": "build/lean_table_checker/acceleration_v19/packed/modules/Mahjong/Certificate.olean",
+      "sha256": "c6dbc86598d2580cb5628a95da15fc94d26dfd2897fcfe872c4313592f064f21"
+    },
+    {
+      "bytes": 512504,
+      "path": "build/lean_table_checker/acceleration_v19/packed/modules/Mahjong/CheckedPlanConstructor.olean",
+      "sha256": "bbfc8f39fd1a1cd7e7b6899eb96f729a2ccef952021269e193a74daf84bfe327"
+    },
+    {
+      "bytes": 141160,
+      "path": "build/lean_table_checker/acceleration_v19/packed/modules/Mahjong/CompactHotRow.olean",
+      "sha256": "b620b2c96edcd8cb549874dec58df02f9ac452b1709099a7460b4f1e99e54cc6"
+    },
+    {
+      "bytes": 869712,
+      "path": "build/lean_table_checker/acceleration_v19/packed/modules/Mahjong/CrossLayerAssemblyV17.olean",
+      "sha256": "ecd40e57ac2a4fa76383e42d98398616aa00196e855f728883c6cefddf76123d"
+    },
+    {
+      "bytes": 884336,
+      "path": "build/lean_table_checker/acceleration_v19/packed/modules/Mahjong/CursorLayouts.olean",
+      "sha256": "dc7596c03312227bd28ab457a2393699922e54a6c048b66cf8a3f8466ea17417"
+    },
+    {
+      "bytes": 131416,
+      "path": "build/lean_table_checker/acceleration_v19/packed/modules/Mahjong/DirectoryCoverage.olean",
+      "sha256": "0751d72e57022e069b2b2531041c1a12eb7231d719a038c8e3ebf0966d894053"
+    },
+    {
+      "bytes": 126616,
+      "path": "build/lean_table_checker/acceleration_v19/packed/modules/Mahjong/DirectoryIndex.olean",
+      "sha256": "501c62913f3c5cbb1a0d2dddc89064ee8c74ee3cd2e25ef6fb71e3677d4fe86e"
+    },
+    {
+      "bytes": 238472,
+      "path": "build/lean_table_checker/acceleration_v19/packed/modules/Mahjong/DirectorySliceBinding.olean",
+      "sha256": "68b2ca3938b9a130f0deafc8ad5375c6dce6975197a5d17fdb2851f40fe3b24d"
+    },
+    {
+      "bytes": 57216,
+      "path": "build/lean_table_checker/acceleration_v19/packed/modules/Mahjong/DownwardClosure.olean",
+      "sha256": "f87e152cd6667ab7a4c5caf9b524058c77ac47840805afc8a3f4097cc13db914"
+    },
+    {
+      "bytes": 395728,
+      "path": "build/lean_table_checker/acceleration_v19/packed/modules/Mahjong/EmptyRootV17.olean",
+      "sha256": "a3b2686efe4ab95ffa82889eec5cd193d772a3b93cf3c4632dd2a564cec47872"
+    },
+    {
+      "bytes": 285840,
+      "path": "build/lean_table_checker/acceleration_v19/packed/modules/Mahjong/EnumerationBlocks.olean",
+      "sha256": "def6573827834c6c8f4b82a14257ae724cb23b595e8b183a047cae1cfcaaf22b"
+    },
+    {
+      "bytes": 90712,
+      "path": "build/lean_table_checker/acceleration_v19/packed/modules/Mahjong/ExactMemoRules.olean",
+      "sha256": "91d9592fc353422c68ac29c1dfb8f9afaef4abea0397ee45ad7df9decd6f817c"
+    },
+    {
+      "bytes": 170248,
+      "path": "build/lean_table_checker/acceleration_v19/packed/modules/Mahjong/ExecutionAssemblyV17.olean",
+      "sha256": "dab675b4f56e8dd631aca23783f8b3c922a4ed9255e8b913756e2957ebb8b1f4"
+    },
+    {
+      "bytes": 194160,
+      "path": "build/lean_table_checker/acceleration_v19/packed/modules/Mahjong/FactorizedRules.olean",
+      "sha256": "3672dad59a6b8b9b8d203c6328c5be2019f203d0a9248b5ca1015cd1015bc416"
+    },
+    {
+      "bytes": 66624,
+      "path": "build/lean_table_checker/acceleration_v19/packed/modules/Mahjong/FastBitRead.olean",
+      "sha256": "c05a489412e8070f4ccb9db7cffb7b7ada045a7952930a053bd4d6fe79090d8a"
+    },
+    {
+      "bytes": 76256,
+      "path": "build/lean_table_checker/acceleration_v19/packed/modules/Mahjong/FastMemoRules.olean",
+      "sha256": "a61dc661ad4083c3eaf42bc07c3843e2c62f12b1ae03c2ba8f9dceb3c58f7f2c"
+    },
+    {
+      "bytes": 97704,
+      "path": "build/lean_table_checker/acceleration_v19/packed/modules/Mahjong/FastOrphans.olean",
+      "sha256": "62d1144f250b0371333e3776d565fd2d3132e94f43d99787b7256d4cbc87723c"
+    },
+    {
+      "bytes": 311224,
+      "path": "build/lean_table_checker/acceleration_v19/packed/modules/Mahjong/FastRuleChecker.olean",
+      "sha256": "8e8091c5b3f50ee7eaed10e4da37d5d1f561eb272d9170de1dd54170f2c882e8"
+    },
+    {
+      "bytes": 108392,
+      "path": "build/lean_table_checker/acceleration_v19/packed/modules/Mahjong/FastSingleWitness.olean",
+      "sha256": "b7441ee218be6655b93952b7861e4d9d21a07a60099fe6220afc6b63e31b6d91"
+    },
+    {
+      "bytes": 305624,
+      "path": "build/lean_table_checker/acceleration_v19/packed/modules/Mahjong/FastWholeInputV17.olean",
+      "sha256": "2f8e307066f5be2caaeae912bdad0e7cf5f58dc89c344317d7b4329ff85c75da"
+    },
+    {
+      "bytes": 509504,
+      "path": "build/lean_table_checker/acceleration_v19/packed/modules/Mahjong/FiniteCertificateV17.olean",
+      "sha256": "0c0d7d1400bf66297d18e57e9b36ce6f531ee752b5fd0be4d3e7da480c435a78"
+    },
+    {
+      "bytes": 271712,
+      "path": "build/lean_table_checker/acceleration_v19/packed/modules/Mahjong/FiniteMetadataV17.olean",
+      "sha256": "33d974ac9cae921fbf239d672ff780af9cbe900564c176e07563b0aef491f286"
+    },
+    {
+      "bytes": 286408,
+      "path": "build/lean_table_checker/acceleration_v19/packed/modules/Mahjong/FiniteWholeInputV17.olean",
+      "sha256": "94b2d7aa16492ae0eec2e078d51f49d694e47bf5dc588f7603744c4964c989c4"
+    },
+    {
+      "bytes": 332608,
+      "path": "build/lean_table_checker/acceleration_v19/packed/modules/Mahjong/FlatPlaneV19.olean",
+      "sha256": "d17c9f7237f3744d8d719219aeab8f8bd6dcbed8c1cc936d2d5f1f97e2043a15"
+    },
+    {
+      "bytes": 315208,
+      "path": "build/lean_table_checker/acceleration_v19/packed/modules/Mahjong/FullSafeData.olean",
+      "sha256": "73dc90af4aac5f6230d6f1f468c624658583e5c32230e37baffe7331c46df396"
+    },
+    {
+      "bytes": 246088,
+      "path": "build/lean_table_checker/acceleration_v19/packed/modules/Mahjong/FullSafeSemantics.olean",
+      "sha256": "39766f359b2123e82d6ebce5ff14d26ffac8439b24b87c1aef2cb5a3e93c8f69"
+    },
+    {
+      "bytes": 278560,
+      "path": "build/lean_table_checker/acceleration_v19/packed/modules/Mahjong/GeneralIndex.olean",
+      "sha256": "9d60c2f417af4d4d2be5b92c433b628c81dd279c61deb993f687f614886a38a5"
+    },
+    {
+      "bytes": 245392,
+      "path": "build/lean_table_checker/acceleration_v19/packed/modules/Mahjong/GeneralLayer.olean",
+      "sha256": "f3b2bd8491a07b91fd31881f857cb2bab38e09d444c3bb71f3f4f1422eb47af5"
+    },
+    {
+      "bytes": 20528,
+      "path": "build/lean_table_checker/acceleration_v19/packed/modules/Mahjong/GeneralOriginalSoundness.olean",
+      "sha256": "293cc694af9daf1405d2c19f85d0b5f6a7b94b0d732aa51ac9791ec73690f399"
+    },
+    {
+      "bytes": 116648,
+      "path": "build/lean_table_checker/acceleration_v19/packed/modules/Mahjong/GeneratedCompactHotRow.olean",
+      "sha256": "8deff631a1c98e73a34c82b046a8ad514f5cb57f343b724c1c290ef3a43acd47"
+    },
+    {
+      "bytes": 2692952,
+      "path": "build/lean_table_checker/acceleration_v19/packed/modules/Mahjong/GeneratedHotPlan.olean",
+      "sha256": "a96814ed840461a2e65dffb2b76e1bf52ed1f0cb7f8d0f448255b8ea2cb1d456"
+    },
+    {
+      "bytes": 78968,
+      "path": "build/lean_table_checker/acceleration_v19/packed/modules/Mahjong/GeneratedLocalCache.olean",
+      "sha256": "59687efab216210adfab30ae133d03efee6455d508c2e1c9031d6171a784b499"
+    },
+    {
+      "bytes": 289672,
+      "path": "build/lean_table_checker/acceleration_v19/packed/modules/Mahjong/GeneratedPlanCheck.olean",
+      "sha256": "08ce9e2ea832a645c5d551d671ee5434fcfd4903a1502e56caf1674618a2c009"
+    },
+    {
+      "bytes": 385848,
+      "path": "build/lean_table_checker/acceleration_v19/packed/modules/Mahjong/Generators.olean",
+      "sha256": "f5d9c975baf69583038bfdfa0bbb820895a700ee91f263ec24a01cf55a391b9f"
+    },
+    {
+      "bytes": 98200,
+      "path": "build/lean_table_checker/acceleration_v19/packed/modules/Mahjong/GlobalAddressDecoder.olean",
+      "sha256": "de40bceaac95bd6b5c0d32c99713cf67c38e1944395a0ad04f218c1ec69fb3ac"
+    },
+    {
+      "bytes": 233512,
+      "path": "build/lean_table_checker/acceleration_v19/packed/modules/Mahjong/GlobalEnumeration.olean",
+      "sha256": "511d891a5f910f846e45f834b20f90cbd26a5483e2964f5af9867a7bf1fdc088"
+    },
+    {
+      "bytes": 423296,
+      "path": "build/lean_table_checker/acceleration_v19/packed/modules/Mahjong/GlobalOrbitDirectory.olean",
+      "sha256": "c6ca5ff4e65cf0838f670243d60ec4f6c6dc5b5c9b588386cc34aa75962917cf"
+    },
+    {
+      "bytes": 834480,
+      "path": "build/lean_table_checker/acceleration_v19/packed/modules/Mahjong/GlobalOrbitKey.olean",
+      "sha256": "10b7961285f591a88176375ebd82e373039f9ae7344e6e655245a5a693f65bfa"
+    },
+    {
+      "bytes": 180200,
+      "path": "build/lean_table_checker/acceleration_v19/packed/modules/Mahjong/GlobalOrbitUniqueness.olean",
+      "sha256": "1a9874f41c8419c6a0c2dda1c5dffbbb668e567359ab97cfe201853c967cf5f7"
+    },
+    {
+      "bytes": 171640,
+      "path": "build/lean_table_checker/acceleration_v19/packed/modules/Mahjong/GlobalSlotRealization.olean",
+      "sha256": "2b8838b68d1f1a897a5af85cf157c807200f112202f67955610a37f9261b48a8"
+    },
+    {
+      "bytes": 143728,
+      "path": "build/lean_table_checker/acceleration_v19/packed/modules/Mahjong/GlobalSuccessorBridge.olean",
+      "sha256": "af43524c75d959bef54f2ec218913d9f36477ef772b49122218d96f010d7ea18"
+    },
+    {
+      "bytes": 338864,
+      "path": "build/lean_table_checker/acceleration_v19/packed/modules/Mahjong/GroupCandidates.olean",
+      "sha256": "d3b1e86daf25c3414c54160160f5e48bd071d2130b0886d13b0ff1a45d30a42c"
+    },
+    {
+      "bytes": 273008,
+      "path": "build/lean_table_checker/acceleration_v19/packed/modules/Mahjong/GroupedCoverage.olean",
+      "sha256": "1606f4efb24599b12d571b99457cac6e75bb03203b6e0cb025d713d2fed049a2"
+    },
+    {
+      "bytes": 443552,
+      "path": "build/lean_table_checker/acceleration_v19/packed/modules/Mahjong/GroupInventory.olean",
+      "sha256": "40b77243d6f664fcfd4fecb892eaa6b8261334428e30c1b06952c0846f50e084"
+    },
+    {
+      "bytes": 144920,
+      "path": "build/lean_table_checker/acceleration_v19/packed/modules/Mahjong/GroupNextCoverage.olean",
+      "sha256": "7290ef87b27fd6a5e9116f45fae3876317975151ee12dfdbb81170c0492f43d3"
+    },
+    {
+      "bytes": 388136,
+      "path": "build/lean_table_checker/acceleration_v19/packed/modules/Mahjong/GuardedByteScanV16.olean",
+      "sha256": "d7b37b08b6218796092e8ef04b0485a885f0e60a7e48ec27e3dd5114886a4b26"
+    },
+    {
+      "bytes": 102960,
+      "path": "build/lean_table_checker/acceleration_v19/packed/modules/Mahjong/GuardedCachedRow.olean",
+      "sha256": "ad16dc8c6c55321618df871c0212397ebf1866e25198fe7cac6b34e669175368"
+    },
+    {
+      "bytes": 183560,
+      "path": "build/lean_table_checker/acceleration_v19/packed/modules/Mahjong/GuardedIndexAccess.olean",
+      "sha256": "973428a388bd147c16cbc98bda2060d3c11741c54d48e64f73247546b995042e"
+    },
+    {
+      "bytes": 229768,
+      "path": "build/lean_table_checker/acceleration_v19/packed/modules/Mahjong/GuardedTargetRef.olean",
+      "sha256": "f5da9dfb876014643dc7f987199ab86e09bb2e87a3ca0822e0afd254b85c82cc"
+    },
+    {
+      "bytes": 288640,
+      "path": "build/lean_table_checker/acceleration_v19/packed/modules/Mahjong/HonorDirectory.olean",
+      "sha256": "19aada90497edcbef7fc0118ce3338fdf4e76fd33b7fde85a31c2ad9f60441ee"
+    },
+    {
+      "bytes": 2589368,
+      "path": "build/lean_table_checker/acceleration_v19/packed/modules/Mahjong/HotBlockPlan.olean",
+      "sha256": "cb18d0b6348625b27dce2792d652b0fe29dc86fa6e20bf0e4889ec8967099a62"
+    },
+    {
+      "bytes": 1164432,
+      "path": "build/lean_table_checker/acceleration_v19/packed/modules/Mahjong/HotWord.olean",
+      "sha256": "3e78352f233e14be73174f0f6cc32f88d1c1104e7ea7b686cd2538a2deb9bf0a"
+    },
+    {
+      "bytes": 369560,
+      "path": "build/lean_table_checker/acceleration_v19/packed/modules/Mahjong/IndexDecoder.olean",
+      "sha256": "926421a5b0fe87890afaff2c6d1b522eb3a3368ccd1ddee7d6eeb48776818a9d"
+    },
+    {
+      "bytes": 127072,
+      "path": "build/lean_table_checker/acceleration_v19/packed/modules/Mahjong/IndexedByteRowInputV16.olean",
+      "sha256": "cc781305acc1d9ad5e13b39d362e3f234af5edc2d9ffe16d5b0ea91b22174240"
+    },
+    {
+      "bytes": 67904,
+      "path": "build/lean_table_checker/acceleration_v19/packed/modules/Mahjong/IndexedByteRowSafeV17.olean",
+      "sha256": "6217267dd7a4885fb9aebe83fe4c154a274427d72fdd9f3357eca89e0ad5bc5b"
+    },
+    {
+      "bytes": 422680,
+      "path": "build/lean_table_checker/acceleration_v19/packed/modules/Mahjong/IndexedByteRowV16.olean",
+      "sha256": "feff571ef5237be7e8ca4c67efe345298ecad97be092c3acd1a917c6426cac81"
+    },
+    {
+      "bytes": 350064,
+      "path": "build/lean_table_checker/acceleration_v19/packed/modules/Mahjong/IndexedByteStreamTransportV16.olean",
+      "sha256": "c389bdfe4b7527c3f10188b3085b24af2f8ea4608e6628c93400eca6fa86d169"
+    },
+    {
+      "bytes": 157968,
+      "path": "build/lean_table_checker/acceleration_v19/packed/modules/Mahjong/IndexedPhysical.olean",
+      "sha256": "683bb7df9c7f6e52b488720f8e12e6518a272ccaec5ae41b1a2020a2f08e1bd7"
+    },
+    {
+      "bytes": 109416,
+      "path": "build/lean_table_checker/acceleration_v19/packed/modules/Mahjong/IndexHelperCheck.olean",
+      "sha256": "32027b944ad7a1da4b4c1f702fa957a51dd1d14060f50cf71214d5811380ad98"
+    },
+    {
+      "bytes": 89064,
+      "path": "build/lean_table_checker/acceleration_v19/packed/modules/Mahjong/IndexInputBounds.olean",
+      "sha256": "4ba9f78fc3b6f0d32b936e5f65453e1920979b746aab250c10ec28435f01369c"
+    },
+    {
+      "bytes": 497192,
+      "path": "build/lean_table_checker/acceleration_v19/packed/modules/Mahjong/IndexLocate.olean",
+      "sha256": "702fc2fceb7121dd0fd0a92f5bb87da2ec8d8da2109c323e3a711153c4b3caa7"
+    },
+    {
+      "bytes": 161024,
+      "path": "build/lean_table_checker/acceleration_v19/packed/modules/Mahjong/IndexOperations.olean",
+      "sha256": "c3637b85c619165e9c80a326ea6e6a053fad534d52139db1a53647eb866bcbca"
+    },
+    {
+      "bytes": 555440,
+      "path": "build/lean_table_checker/acceleration_v19/packed/modules/Mahjong/IndexSearch.olean",
+      "sha256": "1d4ed8a18ced3dc6af287ca66f80d288ac3cdb6a1ec141b5a3a39c5b17b19d75"
+    },
+    {
+      "bytes": 160800,
+      "path": "build/lean_table_checker/acceleration_v19/packed/modules/Mahjong/IndexWordArithmetic.olean",
+      "sha256": "fef853226cf9409f01e3ad323dd4b9b33a3cbf0c1f424c45cbf8719b0e4c4181"
+    },
+    {
+      "bytes": 1071136,
+      "path": "build/lean_table_checker/acceleration_v19/packed/modules/Mahjong/LegacyIndexRefinement.olean",
+      "sha256": "d0ec035701566609cb415519fa9f0b4edbaf50b36eeb5e237cf0ffeacebb037e"
+    },
+    {
+      "bytes": 321168,
+      "path": "build/lean_table_checker/acceleration_v19/packed/modules/Mahjong/LocalCache.olean",
+      "sha256": "866613e33f3c6c8697958569915503e1e281b74658fdbebb6b5c855f22f0c16c"
+    },
+    {
+      "bytes": 75776,
+      "path": "build/lean_table_checker/acceleration_v19/packed/modules/Mahjong/LocalCacheEncoding.olean",
+      "sha256": "67a9c3f402567b8ff2134c80ebe14d4a20d5ab8f6e05afb41d4f1eac4c47f486"
+    },
+    {
+      "bytes": 105752,
+      "path": "build/lean_table_checker/acceleration_v19/packed/modules/Mahjong/LocalSuccessorBridge.olean",
+      "sha256": "78cd8e7634feb109dd1c0bb24691f527a5aa99a3d82ce5026e88ecc6789d0424"
+    },
+    {
+      "bytes": 540000,
+      "path": "build/lean_table_checker/acceleration_v19/packed/modules/Mahjong/LocalSummary.olean",
+      "sha256": "d6455e4226b2719a82e26d9be170c52b0c162beaae189edf97bc87b91fd50cce"
+    },
+    {
+      "bytes": 142080,
+      "path": "build/lean_table_checker/acceleration_v19/packed/modules/Mahjong/LocalSymmetryFrame.olean",
+      "sha256": "46acd70805693a4c69d2c54365274eabe8256afbcbd3faeaaa28fc10160ce215"
+    },
+    {
+      "bytes": 143304,
+      "path": "build/lean_table_checker/acceleration_v19/packed/modules/Mahjong/MaskedLocalBound.olean",
+      "sha256": "9274a1c938f45ec178763d7ca3ee5beb9e7d425c1e2041fd3387047df59d76e6"
+    },
+    {
+      "bytes": 59456,
+      "path": "build/lean_table_checker/acceleration_v19/packed/modules/Mahjong/MaterializedLocal.olean",
+      "sha256": "70635ec01a3baab3447b9c379ce04ec593e851925670bdb5847a66de1d9974de"
+    },
+    {
+      "bytes": 337120,
+      "path": "build/lean_table_checker/acceleration_v19/packed/modules/Mahjong/MemoRules.olean",
+      "sha256": "441bdb5a2e5ddf91b6157788242cc70dd82cc1d02a5bf3d8e9d95c9291f70023"
+    },
+    {
+      "bytes": 9744,
+      "path": "build/lean_table_checker/acceleration_v19/packed/modules/Mahjong/MetadataActualLocalV19.olean",
+      "sha256": "1ca81dcfbfe90abb817751588500a5850f4f8f9dbe846c75aaf41f84ca13f246"
+    },
+    {
+      "bytes": 41832,
+      "path": "build/lean_table_checker/acceleration_v19/packed/modules/Mahjong/MetadataLocalLiteralsV19.olean",
+      "sha256": "cfd96b16fcd845eb5b6fd6fe0375f5803495952564232b8054e5c2a010848ea2"
+    },
+    {
+      "bytes": 107936,
+      "path": "build/lean_table_checker/acceleration_v19/packed/modules/Mahjong/MetadataLocalNatV19.olean",
+      "sha256": "3a575daa8d26e6652dff6f90d8e5dfba9523be92ee30d9bb6edfaba609d6a978"
+    },
+    {
+      "bytes": 21616,
+      "path": "build/lean_table_checker/acceleration_v19/packed/modules/Mahjong/MetadataLocalPagesV19.olean",
+      "sha256": "7d1a014d70a0c0de24623fc39f51f1b275a33c28404142ce8651b812478c113c"
+    },
+    {
+      "bytes": 194384,
+      "path": "build/lean_table_checker/acceleration_v19/packed/modules/Mahjong/MetadataPackedLabelV19.olean",
+      "sha256": "dc70593b308fc5664391b8955fa96e2032d24b19490cb5b7503583e7e34e96b5"
+    },
+    {
+      "bytes": 412704,
+      "path": "build/lean_table_checker/acceleration_v19/packed/modules/Mahjong/MetadataPackedReadsV19.olean",
+      "sha256": "458921f1bbf713f4cebc966b42001761895ce11a4568081a3b1f06c0ebe51bf5"
+    },
+    {
+      "bytes": 1587912,
+      "path": "build/lean_table_checker/acceleration_v19/packed/modules/Mahjong/MetadataPageLiteralsV19.olean",
+      "sha256": "dd9c5d8712f3697336235725cafc8579a40c7caaf3eb7923e8610f7e9e39c8ae"
+    },
+    {
+      "bytes": 38176,
+      "path": "build/lean_table_checker/acceleration_v19/packed/modules/Mahjong/MetadataPagesChunk512V19.olean",
+      "sha256": "a24f31097eab47af5ea1d8e3fa851fb290152a7d4b80cf680d8510c2e1df6337"
+    },
+    {
+      "bytes": 7160,
+      "path": "build/lean_table_checker/acceleration_v19/packed/modules/Mahjong/MetadataPagesGroupsV19.olean",
+      "sha256": "9cdbbb58d14a28bdd54cab888f8e095fbadbbd0dc3d41b419ae40af520f5051d"
+    },
+    {
+      "bytes": 234952,
+      "path": "build/lean_table_checker/acceleration_v19/packed/modules/Mahjong/MetadataPagesV19.olean",
+      "sha256": "e4a6f0116ce937c471df59c826953b17e9657556a13a57ed9d69458676eba47e"
+    },
+    {
+      "bytes": 105328,
+      "path": "build/lean_table_checker/acceleration_v19/packed/modules/Mahjong/MoveEnumeration.olean",
+      "sha256": "5243a2608a6a780183e179cc2351050087d607f7bbe468d6a7616610eef17309"
+    },
+    {
+      "bytes": 522432,
+      "path": "build/lean_table_checker/acceleration_v19/packed/modules/Mahjong/MoveNormalization.olean",
+      "sha256": "9429048a5ae26c4a0c21d787a8e70237b83916d31875f461317e99f313cfb773"
+    },
+    {
+      "bytes": 179200,
+      "path": "build/lean_table_checker/acceleration_v19/packed/modules/Mahjong/MovePlanRefinement.olean",
+      "sha256": "edade3c2315217d7bf834e778a81772c929b6a2b6869469e6320ef650c91bf1d"
+    },
+    {
+      "bytes": 209800,
+      "path": "build/lean_table_checker/acceleration_v19/packed/modules/Mahjong/OrphanPruning.olean",
+      "sha256": "fe687738a726e556648076cd31039ffa37988ac48f418b85a9367309819d27db"
+    },
+    {
+      "bytes": 178840,
+      "path": "build/lean_table_checker/acceleration_v19/packed/modules/Mahjong/PackedInterpretation.olean",
+      "sha256": "44e63d0ebe3a24d65b9efbfdcf8080ff725b1439e1e63bfb912449c90ba34fb4"
+    },
+    {
+      "bytes": 572088,
+      "path": "build/lean_table_checker/acceleration_v19/packed/modules/Mahjong/PackedRules.olean",
+      "sha256": "e8ae6c70d912a3bf56f8f508f8d80236ef0b2c581ce407a88726a73d4329adfc"
+    },
+    {
+      "bytes": 466560,
+      "path": "build/lean_table_checker/acceleration_v19/packed/modules/Mahjong/PairProfile.olean",
+      "sha256": "e7b372a556d7720fdd14e209b25b3891c7d56b1fa47f7915f69810ad10d71c17"
+    },
+    {
+      "bytes": 302832,
+      "path": "build/lean_table_checker/acceleration_v19/packed/modules/Mahjong/PilotActualDataV18.olean",
+      "sha256": "0a022f6db309d2804393bf0a92ea2ba48d0d73f3a789eddb56a8b92ff3ec63ea"
+    },
+    {
+      "bytes": 44896,
+      "path": "build/lean_table_checker/acceleration_v19/packed/modules/Mahjong/PilotActualGameV18.olean",
+      "sha256": "0c7d037ae30abf8dcafd81c57f415f8eaaa56c8a6396180f28348aa428580d8e"
+    },
+    {
+      "bytes": 15920,
+      "path": "build/lean_table_checker/acceleration_v19/packed/modules/Mahjong/PilotClosureV18.olean",
+      "sha256": "a52ab2deaabb448ef4cbf420fc1c3f73823109dbe15e92559da2f734c4753a9d"
+    },
+    {
+      "bytes": 31480,
+      "path": "build/lean_table_checker/acceleration_v19/packed/modules/Mahjong/PilotGameCheckBridgeV18.olean",
+      "sha256": "f4d3fefcf7c6c55397369fea22cd32258c4300a089892e3ae854de15791af395"
+    },
+    {
+      "bytes": 60416,
+      "path": "build/lean_table_checker/acceleration_v19/packed/modules/Mahjong/PilotGameChecksV18.olean",
+      "sha256": "053325ada287138306fca65edfe2cac3992a69ba8e80dd1ada2b43638070b316"
+    },
+    {
+      "bytes": 244328,
+      "path": "build/lean_table_checker/acceleration_v19/packed/modules/Mahjong/PilotGameNode0V18.olean",
+      "sha256": "867b4cbd84f02ad11f64fb1a237327ae3be7d3790d0f5ed6ff07f0abc3fa5af8"
+    },
+    {
+      "bytes": 239328,
+      "path": "build/lean_table_checker/acceleration_v19/packed/modules/Mahjong/PilotGameNode10V18.olean",
+      "sha256": "77f69bddff11a504adae2360bb80c4648e229af12b1bdf5a011688fc895c5724"
+    },
+    {
+      "bytes": 235904,
+      "path": "build/lean_table_checker/acceleration_v19/packed/modules/Mahjong/PilotGameNode2V18.olean",
+      "sha256": "7de7906d4ca5999e552a7364567ef392df33a6a0fdcbcd68d6ea2bc03013612b"
+    },
+    {
+      "bytes": 235456,
+      "path": "build/lean_table_checker/acceleration_v19/packed/modules/Mahjong/PilotGameNode3V18.olean",
+      "sha256": "be21027547dad2235a51efaace97bd81e86d76f903ec542a9a3981f43c77d1c5"
+    },
+    {
+      "bytes": 243320,
+      "path": "build/lean_table_checker/acceleration_v19/packed/modules/Mahjong/PilotGameNode4V18.olean",
+      "sha256": "abb0f607b1377b4e37f927866cbae3fa2432a90dd59a8d26204090e6dcc6973a"
+    },
+    {
+      "bytes": 239704,
+      "path": "build/lean_table_checker/acceleration_v19/packed/modules/Mahjong/PilotGameNode9V18.olean",
+      "sha256": "f9b2b1905fd21e22e4c54937bf7d3573b3c99632a91e144ee0e059a9655021d1"
+    },
+    {
+      "bytes": 409264,
+      "path": "build/lean_table_checker/acceleration_v19/packed/modules/Mahjong/PilotGameV18.olean",
+      "sha256": "79348d1604246be0f4c343d6a70ffdf1fd72de32e2cb3450830f387239af7d15"
+    },
+    {
+      "bytes": 7328,
+      "path": "build/lean_table_checker/acceleration_v19/packed/modules/Mahjong/PilotHarnessV18.olean",
+      "sha256": "c184f8c3f1681392e95cb9150663972a9e17bfcedd72b095e762c9df5360396a"
+    },
+    {
+      "bytes": 5440,
+      "path": "build/lean_table_checker/acceleration_v19/packed/modules/Mahjong/PilotScanBaselineV18.olean",
+      "sha256": "a3b0058d60a4e6c892e224d3d51229d95eb4073bc15f797f832cbd5675d42832"
+    },
+    {
+      "bytes": 12320,
+      "path": "build/lean_table_checker/acceleration_v19/packed/modules/Mahjong/PilotScanCount1V18.olean",
+      "sha256": "8ff5b9ccce21b054171b5006dc0d3bf02999830e2f5bdeee581a35c5420f3558"
+    },
+    {
+      "bytes": 23160,
+      "path": "build/lean_table_checker/acceleration_v19/packed/modules/Mahjong/PilotScanCount32V18.olean",
+      "sha256": "9b75abfceb022971c769d7e25c58665ba033221888a6509279ac199288220348"
+    },
+    {
+      "bytes": 33048,
+      "path": "build/lean_table_checker/acceleration_v19/packed/modules/Mahjong/PilotScanCount56V18.olean",
+      "sha256": "612b217223bbe954dc20d68b0e05403840901f16098a795e72b9630b217c0c46"
+    },
+    {
+      "bytes": 12320,
+      "path": "build/lean_table_checker/acceleration_v19/packed/modules/Mahjong/PilotScanCount8V18.olean",
+      "sha256": "8c99f119bb81b3744b67289c716f402ea4db8f4259c66f83caf1b83b84cb28d5"
+    },
+    {
+      "bytes": 848224,
+      "path": "build/lean_table_checker/acceleration_v19/packed/modules/Mahjong/PilotScanDataV18.olean",
+      "sha256": "769365a4eb0730a4e9a4b87f0401c027e8c050487098640fbc8a2a0b08d3af38"
+    },
+    {
+      "bytes": 400672,
+      "path": "build/lean_table_checker/acceleration_v19/packed/modules/Mahjong/PilotScanV18.olean",
+      "sha256": "39e40d9c5f1104328cb36cb64510bd445f9570e078ad3e3385940645305319a5"
+    },
+    {
+      "bytes": 239312,
+      "path": "build/lean_table_checker/acceleration_v19/packed/modules/Mahjong/PrefixCursor.olean",
+      "sha256": "f36e4c47d3ab0aa438888d15d35776ea82bf92f300c38320500337a0c36f7638"
+    },
+    {
+      "bytes": 30664,
+      "path": "build/lean_table_checker/acceleration_v19/packed/modules/Mahjong/PrefixData.olean",
+      "sha256": "803aafc1cd03a52dcf48b1882498b18406865a6f843432906d42a3a6ce039987"
+    },
+    {
+      "bytes": 459504,
+      "path": "build/lean_table_checker/acceleration_v19/packed/modules/Mahjong/PrefixDirectory.olean",
+      "sha256": "e8b893822afde91f8bf48481a2e860851e02e308b419df6c2c91a49e9c576819"
+    },
+    {
+      "bytes": 232880,
+      "path": "build/lean_table_checker/acceleration_v19/packed/modules/Mahjong/PreloadedRules.olean",
+      "sha256": "41bc396a24301a0f20d9c2a2e4d2c89e489721efb48e5df85b0229041dff9301"
+    },
+    {
+      "bytes": 3475496,
+      "path": "build/lean_table_checker/acceleration_v19/packed/modules/Mahjong/PruningAlgebra.olean",
+      "sha256": "2116f8b0f41dca83c6e4bb1e27c52859dcd5233351283e12d7610717e4dedbdc"
+    },
+    {
+      "bytes": 282496,
+      "path": "build/lean_table_checker/acceleration_v19/packed/modules/Mahjong/PruningData.olean",
+      "sha256": "fddec02b855db1d6b5b465a12e41058a84fbd59915cf13cf17514a556265f947"
+    },
+    {
+      "bytes": 80552,
+      "path": "build/lean_table_checker/acceleration_v19/packed/modules/Mahjong/PruningPackedBridge.olean",
+      "sha256": "19bb947f9e3ebbfe82efd81772d1a7f77df52ac35da1953660e5d917b7e6f20e"
+    },
+    {
+      "bytes": 964368,
+      "path": "build/lean_table_checker/acceleration_v19/packed/modules/Mahjong/PruningSemantics.olean",
+      "sha256": "3f5c3410fbef592f45c963139580588228b515f5192fe104fae15f109b061289"
+    },
+    {
+      "bytes": 211144,
+      "path": "build/lean_table_checker/acceleration_v19/packed/modules/Mahjong/Quotient.olean",
+      "sha256": "c7da4f66030fca8b45715f969a35ad9c606c9730a4473a3128bb83eb2e22a2c5"
+    },
+    {
+      "bytes": 420608,
+      "path": "build/lean_table_checker/acceleration_v19/packed/modules/Mahjong/Ranking.olean",
+      "sha256": "032b47848210aac392e62306887a05a6a0b9c191d06f13033bf7a46d34fb07a0"
+    },
+    {
+      "bytes": 18864,
+      "path": "build/lean_table_checker/acceleration_v19/packed/modules/Mahjong/ReplayClosureV17.olean",
+      "sha256": "a3e2cbbd71ec87558f08171b6476a15514f446021908379e03fbc9eeeea91964"
+    },
+    {
+      "bytes": 290496,
+      "path": "build/lean_table_checker/acceleration_v19/packed/modules/Mahjong/RowScheduleV13.olean",
+      "sha256": "e1830fd85ee6d8fc41f5d3681e7e052d3627325a4f042d41d90f25792300ef4a"
+    },
+    {
+      "bytes": 502992,
+      "path": "build/lean_table_checker/acceleration_v19/packed/modules/Mahjong/RuleChecker.olean",
+      "sha256": "ccdc22810a5ed2052398259d9ab0210757a6414b5f96e87ca64650654e42b70e"
+    },
+    {
+      "bytes": 819056,
+      "path": "build/lean_table_checker/acceleration_v19/packed/modules/Mahjong/Rules.olean",
+      "sha256": "6009ddfdccab178c43d2faa66a493740f10e453d0770ae241694cad60cacf330"
+    },
+    {
+      "bytes": 64856,
+      "path": "build/lean_table_checker/acceleration_v19/packed/modules/Mahjong/RuntimeBindingV17.olean",
+      "sha256": "28983c620bc9da4fb6b005ddcd4a475361c4f20d524131bc9ad84c61d1de5950"
+    },
+    {
+      "bytes": 923400,
+      "path": "build/lean_table_checker/acceleration_v19/packed/modules/Mahjong/RuntimeScanV17.olean",
+      "sha256": "2fd20d4e77fa3739de30d0a5c3ac335f38c8f9123f528aba6cf8dbf88bda81ce"
+    },
+    {
+      "bytes": 332360,
+      "path": "build/lean_table_checker/acceleration_v19/packed/modules/Mahjong/SafeGame.olean",
+      "sha256": "e099c0888e8a04e13210810296833372118df86186f6510a30d558f5260cedad"
+    },
+    {
+      "bytes": 354504,
+      "path": "build/lean_table_checker/acceleration_v19/packed/modules/Mahjong/SafeLayerBound.olean",
+      "sha256": "0afe996c7f645ed11f6ed25290a90966e08d5f5bf2801b60e6effa9f6945918e"
+    },
+    {
+      "bytes": 178896,
+      "path": "build/lean_table_checker/acceleration_v19/packed/modules/Mahjong/ScanFinalV17.olean",
+      "sha256": "a651885c9e1813f281e0cf0109712aea5cb64c2b3ecaad1b125a03275d3a94f0"
+    },
+    {
+      "bytes": 779464,
+      "path": "build/lean_table_checker/acceleration_v19/packed/modules/Mahjong/ScatterV19.olean",
+      "sha256": "40319e7aecc8e6335ab353fe65d16ebb7575f74746ae46e15fb6b70b87f82616"
+    },
+    {
+      "bytes": 58536,
+      "path": "build/lean_table_checker/acceleration_v19/packed/modules/Mahjong/SingleWitness.olean",
+      "sha256": "1bd947230fdf553428c797b6c58f49ec22cf0593043ca94f3eb6400b8ff73850"
+    },
+    {
+      "bytes": 151040,
+      "path": "build/lean_table_checker/acceleration_v19/packed/modules/Mahjong/SortedCoverage.olean",
+      "sha256": "a099743c42790af8bcf504160b7e39fe5df21da2a4ba0894ed69c011704114aa"
+    },
+    {
+      "bytes": 219088,
+      "path": "build/lean_table_checker/acceleration_v19/packed/modules/Mahjong/SourceBlockGuard.olean",
+      "sha256": "d3da449dd5b7f0bc40cac79300524ca9f30de7fe5137836a409234244c0afffe"
+    },
+    {
+      "bytes": 34640,
+      "path": "build/lean_table_checker/acceleration_v19/packed/modules/Mahjong/SparseCompactHotRow.olean",
+      "sha256": "fafc63e3857732db8b6e720b3bf1efbcfdfb58c8b8462b19dc1e0550427222d8"
+    },
+    {
+      "bytes": 266400,
+      "path": "build/lean_table_checker/acceleration_v19/packed/modules/Mahjong/SparseTemplatePlanCheck.olean",
+      "sha256": "5244907f7effc504adf0ee8963e72d72000bb40fead24c8509b8e9e620533070"
+    },
+    {
+      "bytes": 647496,
+      "path": "build/lean_table_checker/acceleration_v19/packed/modules/Mahjong/StandardBoundCertificate.olean",
+      "sha256": "4fc85ab4fcfd7f70b252d410b78b2d9a736f36e1f4ca93fdb8baee0d9ae9ba5f"
+    },
+    {
+      "bytes": 303920,
+      "path": "build/lean_table_checker/acceleration_v19/packed/modules/Mahjong/SuccessorCache.olean",
+      "sha256": "1b099315dbe24a2554fe07cf5307ae55ac7a9003d3644ad09b8ed2679939bb9a"
+    },
+    {
+      "bytes": 324496,
+      "path": "build/lean_table_checker/acceleration_v19/packed/modules/Mahjong/SuitSorting.olean",
+      "sha256": "5f92650434b00195a2cd92fc36a8b17932b93bad8650dea3d7d348cb822f6d7a"
+    },
+    {
+      "bytes": 68304,
+      "path": "build/lean_table_checker/acceleration_v19/packed/modules/Mahjong/SummaryEncoding.olean",
+      "sha256": "10e237207e74997ba3c238785a8ca8a119e55d0c367508b166e7bbc648a0b68c"
+    },
+    {
+      "bytes": 202992,
+      "path": "build/lean_table_checker/acceleration_v19/packed/modules/Mahjong/SummaryRules.olean",
+      "sha256": "c1eabdec92471d18edbb4ea6f27186b871bf34c9e4ab095a0d16d13499ba5029"
+    },
+    {
+      "bytes": 373784,
+      "path": "build/lean_table_checker/acceleration_v19/packed/modules/Mahjong/Symmetry.olean",
+      "sha256": "aabca7123bf366a7c2f22629f50df178ecfe5d576b1a5329c7579714dfcec2af"
+    },
+    {
+      "bytes": 33256,
+      "path": "build/lean_table_checker/acceleration_v19/packed/modules/Mahjong/TemplatePlanCertifiedRow.olean",
+      "sha256": "1fe98c98255ad42dbf97db89b450cd60acc2b81b2ee124a557ed044713b5fc8a"
+    },
+    {
+      "bytes": 434184,
+      "path": "build/lean_table_checker/acceleration_v19/packed/modules/Mahjong/TemplatePlanCheck.olean",
+      "sha256": "abdd53ebb91900ade211cdcb9b919482010c56119935c7a354b399c035eb1fff"
+    },
+    {
+      "bytes": 164200,
+      "path": "build/lean_table_checker/acceleration_v19/packed/modules/Mahjong/TerminalBucket.olean",
+      "sha256": "7d55963e337c6f576b749b7dad736b07d3964c6bbb4c1dbde14c74242c2a2b86"
+    },
+    {
+      "bytes": 70624,
+      "path": "build/lean_table_checker/acceleration_v19/packed/modules/Mahjong/TileCountBridge.olean",
+      "sha256": "d5e87bc58c837db2a836402e231c5d8a23a40e92274d48a23c7cfb0f46a4d449"
+    },
+    {
+      "bytes": 320504,
+      "path": "build/lean_table_checker/acceleration_v19/packed/modules/Mahjong/TripleDirectory.olean",
+      "sha256": "6f6ea678e39c4c8584789a48277e1dbed3cdec02a3c211bdbf48cfa0edcbde36"
+    },
+    {
+      "bytes": 82856,
+      "path": "build/lean_table_checker/acceleration_v19/packed/modules/Mahjong/VerifiedSourceTarget.olean",
+      "sha256": "a6d9f8197c592dfaf6e0ee427d951c96af7e798dcde166a780b7895f4983df93"
+    },
+    {
+      "bytes": 308600,
+      "path": "build/lean_table_checker/acceleration_v19/packed/modules/Mahjong/WeightedBlocks.olean",
+      "sha256": "9253d0ed3d8b235d727f94615a21096149fe9ac3313dae242af0ca210f44154a"
+    },
+    {
+      "bytes": 250192,
+      "path": "build/lean_table_checker/acceleration_v19/packed/modules/Mahjong/WordLimits.olean",
+      "sha256": "201241c998f198694f869b52d5fa4cd280265738bff0a0cf3410254dff6af7f5"
+    },
+    {
+      "bytes": 544576,
+      "path": "build/lean_table_checker/acceleration_v19/packed/modules/Mahjong/WordRank.olean",
+      "sha256": "889fd538f17a5fa6b1689e5755ea4d719831f31be451f8fb5bb36a46b98fa0b9"
+    },
+    {
+      "bytes": 8832,
+      "path": "build/lean_table_checker/acceleration_v19/packed/modules/MainOwnedJointIndexedRows1WorkerV16.olean",
+      "sha256": "f758ba5e416fe089640f0d753e5624d3127b55e5345ff437686db0147e101002"
+    },
+    {
+      "bytes": 1544,
+      "path": "build/lean_table_checker/acceleration_v19/packed/modules/MetadataProofSliceDataV19.olean",
+      "sha256": "e39f4d743f4e314b64824cf46cf65014a91159d6808319baa5fd4f656f3fb5fe"
+    },
+    {
+      "bytes": 3776,
+      "path": "build/lean_table_checker/acceleration_v19/packed/modules/MetadataSliceExportV19.olean",
+      "sha256": "0c34a6ce1347d19427a5042253c348542a865bceb1d95ef2e8c65ea4c6f786a9"
+    },
+    {
+      "bytes": 7392,
+      "path": "build/lean_table_checker/acceleration_v19/packed/modules/MetadataSliceVerifyV19.olean",
+      "sha256": "6715aad4bfabd9711a4c16ed825fe0b6a0b5f8e7e14d02dcb445fbfe9449e6a6"
+    },
+    {
+      "bytes": 22512,
+      "path": "build/lean_table_checker/acceleration_v19/packed/modules/PackedBooleanV19.olean",
+      "sha256": "5923c9aaf1e2f0abe3906abc32614b703cc203887227efa698d9d0f0487eb243"
+    },
+    {
+      "bytes": 18104,
+      "path": "build/lean_table_checker/acceleration_v19/packed/modules/PackedGrammarLemmasV19.olean",
+      "sha256": "114c48a315dbeb5bc043ff66ca356bd21761930a6e41159aa06cdb85f274f283"
+    },
+    {
+      "bytes": 273432,
+      "path": "build/lean_table_checker/acceleration_v19/packed/modules/PackedGrammarV19.olean",
+      "sha256": "43201a9b9e61166d8f6d61c424152707137e6a484fa0f726d02d2ae78593b6b2"
+    },
+    {
+      "bytes": 92312,
+      "path": "build/lean_table_checker/acceleration_v19/packed/modules/PackedLabelSpan.olean",
+      "sha256": "61e9b7a9bdeb9c6aa45f0e1f58ac2793db4ab01ebb599bc2a9484dc352b52d72"
+    },
+    {
+      "bytes": 213296,
+      "path": "build/lean_table_checker/acceleration_v19/packed/modules/PackedLiteralLoaderV19.olean",
+      "sha256": "280356da52ebc7861506dfae7eed17d176cf8cbb8438ae71fca19361bf65387f"
+    },
+    {
+      "bytes": 21616,
+      "path": "build/lean_table_checker/acceleration_v19/packed/modules/PackedMutationControlsV19.olean",
+      "sha256": "3d7a6fd9f10e26bc0d086d34d18dea2b0181273c69723a41522468b0d8c25a0a"
+    },
+    {
+      "bytes": 97264,
+      "path": "build/lean_table_checker/acceleration_v19/packed/modules/PackedRecurrenceV19.olean",
+      "sha256": "d3cade40ef724ca61d74a1ee32f147fccc3d58f98eec96401feea37a85e2da8b"
+    },
+    {
+      "bytes": 1381416,
+      "path": "build/lean_table_checker/acceleration_v19/packed/modules/ParallelBoolean1V19.olean",
+      "sha256": "4e7fc9293ad85e73229c54e5d86e659be10af10c5211d087fc5e02feded69ea6"
+    },
+    {
+      "bytes": 1380288,
+      "path": "build/lean_table_checker/acceleration_v19/packed/modules/ParallelBoolean8V19.olean",
+      "sha256": "42024cbc489d082b0de1fe0017be834f0c63938b4208105614eedd5f5f237a71"
+    },
+    {
+      "bytes": 18480,
+      "path": "build/lean_table_checker/acceleration_v19/packed/modules/PlaneDisjointV19.olean",
+      "sha256": "c61947d89a35f049c40d1561bab4ccc0f0706923c863c3c4b344bc1400956088"
+    },
+    {
+      "bytes": 490600,
+      "path": "build/lean_table_checker/acceleration_v19/packed/modules/ProofKernelSliceV19.olean",
+      "sha256": "324f85d56cf73362a722f617c5a398553e472ecf23222742ecd9a71725ae68b8"
+    },
+    {
+      "bytes": 357568,
+      "path": "build/lean_table_checker/acceleration_v19/packed/modules/ProofSliceCoreThreeV19.olean",
+      "sha256": "d81242b9043da972a7032f1e993b264f7bb534ccdc7b5739a7af11883953a134"
+    },
+    {
+      "bytes": 322128,
+      "path": "build/lean_table_checker/acceleration_v19/packed/modules/ProofSliceCoreV19.olean",
+      "sha256": "66bfe6d40ae0955588c778d83ffffa80d1f1bf2fe221b9fd9f8d9d7c8ba0514b"
+    },
+    {
+      "bytes": 1544,
+      "path": "build/lean_table_checker/acceleration_v19/packed/modules/ProofSliceDataV19.olean",
+      "sha256": "ad33a633b73348f1bb52e13184d246d7169a53a062c707ea489457a3b3f0ef07"
+    },
+    {
+      "bytes": 3600,
+      "path": "build/lean_table_checker/acceleration_v19/packed/modules/ProofSliceExportV19.olean",
+      "sha256": "a2b79fb47fd52af3ae101fb47c2f8d88f65dda75333ad3dd8e6e9244a3601cb7"
+    },
+    {
+      "bytes": 9232,
+      "path": "build/lean_table_checker/acceleration_v19/packed/modules/ProofSliceVerifyV19.olean",
+      "sha256": "a68d7e8374b31934c65b623f23cee663496d8845b5a139991f1b4535528c95e3"
+    },
+    {
+      "bytes": 322160,
+      "path": "build/lean_table_checker/acceleration_v19/packed/modules/ProofSliceWriterV19.olean",
+      "sha256": "ab842582ba5e5f5fe293eadf738c22c479ca58fa459919dc2205d7d272a3c79f"
+    },
+    {
+      "bytes": 13979568,
+      "path": "build/lean_table_checker/acceleration_v19/packed/modules/RawBoundedTensorBlockV19.olean",
+      "sha256": "01e2c668f3b9b44c08a9e8382d1164fca9561c4b63e3e1e171a4847938fe899f"
+    },
+    {
+      "bytes": 9044944,
+      "path": "build/lean_table_checker/acceleration_v19/packed/modules/RawBoundedTensorInputsV19.olean",
+      "sha256": "e4dfbdd902e1404d2f1c26e49b4f15db89d715b424330a788185d55833ec8679"
+    },
+    {
+      "bytes": 407080,
+      "path": "build/lean_table_checker/acceleration_v19/packed/modules/ScalarLocalEncodingV19.olean",
+      "sha256": "7cb2ed2d68f8f1a0b0cededc2e6856a4125b51f47683d4e27b598a7ce54d6708"
+    },
+    {
+      "bytes": 93824,
+      "path": "build/lean_table_checker/acceleration_v19/packed/modules/ScalarSummaryNextV19.olean",
+      "sha256": "0d79e008479699edf9dd178e1a1447d4c5afbd2f0e9f5be0efb8a508de9a6c63"
+    },
+    {
+      "bytes": 16168,
+      "path": "build/lean_table_checker/acceleration_v19/packed/modules/SliceMaskV19.olean",
+      "sha256": "38bbc851917d0ddf6603a558727a259be68676a8edd3d913e0d65ddbb12224a1"
+    },
+    {
+      "bytes": 147512,
+      "path": "build/lean_table_checker/acceleration_v19/packed/modules/SourceMaskCacheV19.olean",
+      "sha256": "462385bd75fff2f24715c0e203bee7c780a28abc400ba4447358d5fd899acb22"
+    },
+    {
+      "bytes": 984296,
+      "path": "build/lean_table_checker/acceleration_v19/packed/modules/StraightCachedTensorV19.olean",
+      "sha256": "0a18d9cdbcb63c87080a6bdb6958204eb1ea5e7a4928180fc041600174b8aa48"
+    },
+    {
+      "bytes": 1041536,
+      "path": "build/lean_table_checker/acceleration_v19/packed/modules/StraightTensorBlockV19.olean",
+      "sha256": "106999f09e348ef19a30e5cc7f6dbb828834b157dc9efc4f5aa3c2c0c5a9497a"
+    },
+    {
+      "bytes": 24000,
+      "path": "build/lean_table_checker/acceleration_v19/packed/modules/TensorBreakdownV19.olean",
+      "sha256": "57c83254bb35b12391da3f642ef7831462347d545bc8009ae43c3175218379f7"
+    },
+    {
+      "bytes": 259464,
+      "path": "build/lean_table_checker/acceleration_v19/packed/modules/TensorReachV19.olean",
+      "sha256": "690c907e7e4cf9fde0ef74896c5d88898d4f3a4764b762a7c89b510b5b8c361d"
+    },
+    {
+      "bytes": 9744,
+      "path": "build/lean_table_checker/acceleration_v19/packed/modules/WholeBlockEvidenceV19.olean",
+      "sha256": "08784c4801d4dc7f1c55c57c7ba73764cf400ee82b395c6dd17f3393fec1af61"
+    }
+  ],
+  "memory_limit_bytes": 3000000000,
+  "meta_plugin": null,
+  "mode": "compile",
+  "module": "DiagonalActualV19",
+  "native_source": null,
+  "peak_job_committed_bytes": 2421665792,
+  "peak_process_pagefile_bytes": 2420461568,
+  "peak_process_working_set_bytes": 1063993344,
+  "plugin_is_untrusted_input_generator": false,
+  "policy_error": null,
+  "published_module": {
+    "bytes": 897744,
+    "path": "build/lean_table_checker/acceleration_v19/packed/modules/DiagonalActualV19.olean",
+    "sha256": "08b0a2a36fa8e1ef12761893aea99b394cffe69f0e4d796f9cbb4956da90b0ad"
+  },
+  "requested_Lean_threads": 1,
+  "returncode": 0,
+  "schema": "ACTUAL_BOUNDED_KERNEL_PILOT_V19",
+  "source": {
+    "bytes": 14564,
+    "path": "build/lean_table_checker/acceleration_v19/packed/source/DiagonalActualV19.lean",
+    "sha256": "3f7e0c68a020c878cb12cba0352e94e97ba5489b6ecc323d439e75b4ffacf598"
+  },
+  "source_executable_import_hashes_unchanged": true,
+  "source_snapshot": {
+    "bytes": 14564,
+    "path": "runs/lean_table_checker/acceleration_20261018_v19/packed/attempts/04bcb99b440e4d1fa22d4beffed8d47c/source_snapshot/DiagonalActualV19.lean",
+    "sha256": "3f7e0c68a020c878cb12cba0352e94e97ba5489b6ecc323d439e75b4ffacf598"
+  },
+  "status": "PASS",
+  "stderr": {
+    "bytes": 690,
+    "path": "runs/lean_table_checker/acceleration_20261018_v19/packed/attempts/04bcb99b440e4d1fa22d4beffed8d47c/stderr.log",
+    "sha256": "c8eca19ba6555145046532e6b380121a01f35843af9836f5e2ce65d7c22845c1"
+  },
+  "stdout": {
+    "bytes": 771,
+    "path": "runs/lean_table_checker/acceleration_20261018_v19/packed/attempts/04bcb99b440e4d1fa22d4beffed8d47c/stdout.log",
+    "sha256": "3fb71200240deedb407c52f1540de4731625d5b10a4fe9ad5659bacbcf4d55f1"
+  },
+  "timed_out": false,
+  "wall_seconds": 49.875
+}

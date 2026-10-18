@@ -1,0 +1,163 @@
+{
+  "actual_empty_game_verified": false,
+  "actual_game_instance": false,
+  "actual_local_certificate_instantiated": false,
+  "actual_root_DAG_instantiated": false,
+  "all_new_compiler_children_exited": true,
+  "compilation": {
+    "bytes": 48362,
+    "path": "runs/lean_table_checker/acceleration_20261018_v19/compression/compilations/3dbda2a1667344dabdcddd77f28bac89/receipt.json",
+    "sha256": "8ee3b7eef1ec65b00bac7041e092eac1577d007bb3fb3c3049cde682e41a235c"
+  },
+  "compiled_module": {
+    "bytes": 350664,
+    "path": "build/lean_table_checker/acceleration_v19/compression/bridge_modules/Mahjong/LocalLayerClosureV19.olean",
+    "sha256": "434e2dbd703dc0b2a15f14aa2a2d160fa523d5fc13b9872e62b366b8eeb4c91e"
+  },
+  "elapsed_seconds": 4.48399999999674,
+  "full_launch_allowed": false,
+  "full_scan_started": false,
+  "next_TargetCorrect_premise_removed": true,
+  "old_global_certificate_required": false,
+  "peak_job_committed_bytes": 958566400,
+  "proof_dependency_fingerprints": [
+    {
+      "axioms": [
+        "propext"
+      ],
+      "name": "Mahjong.LocalLayerClosureV19.source_slot"
+    },
+    {
+      "axioms": [
+        "propext"
+      ],
+      "name": "Mahjong.LocalLayerClosureV19.source_label"
+    },
+    {
+      "axioms": [
+        "propext"
+      ],
+      "name": "Mahjong.LocalLayerClosureV19.source_word"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "name": "Mahjong.LocalLayerClosureV19.source_outside"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "name": "Mahjong.LocalLayerClosureV19.next_correct"
+    },
+    {
+      "axioms": [
+        "propext"
+      ],
+      "name": "Mahjong.LocalLayerClosureV19.rank_unrank_index"
+    },
+    {
+      "axioms": [
+        "Quot.sound",
+        "propext"
+      ],
+      "name": "Mahjong.LocalLayerClosureV19.unrank_bounds"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "name": "Mahjong.LocalLayerClosureV19.checkLayer_each"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "name": "Mahjong.LocalLayerClosureV19.layer_correct"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "name": "Mahjong.LocalLayerClosureV19.empty_correct"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "name": "Mahjong.LocalLayerClosureV19.layers_correct"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "name": "Mahjong.LocalLayerClosureV19.successors_checked"
+    },
+    {
+      "axioms": [
+        "Quot.sound",
+        "propext"
+      ],
+      "name": "Mahjong.LocalLayerClosureV19.unpack_zero"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "name": "Mahjong.LocalLayerClosureV19.root_sound"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "name": "Mahjong.LocalLayerClosureV19.empty_second_player_wins"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "name": "Mahjong.LocalLayerClosureV19.nonempty_terminus_rejected"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "name": "Mahjong.LocalLayerClosureV19.wrong_root_rejected"
+    }
+  ],
+  "schema": "V19_LOCAL_LAYER_EMPTY_GAME_KERNEL_ACCEPTANCE",
+  "source": {
+    "bytes": 16971,
+    "path": "build/lean_table_checker/acceleration_v19/compression/source/Mahjong/LocalLayerClosureV19.lean",
+    "sha256": "5e584e4ad5a6ed1cc5e1a721c6414e42a8c9a4a62a183d888f840d37d7913643"
+  },
+  "source_freeze": {
+    "bytes": 45142,
+    "path": "build/lean_table_checker/acceleration_v19/compression/LOCAL_LAYER_CLOSURE_SOURCE_FREEZE.json",
+    "sha256": "3b5ae691d2552b5ce77dd8ba5e35ed9053e057c83d73b705fbf0b15cc639f2fe"
+  },
+  "status": "PASS_GENERIC_FINITE_LOCAL_LAYER_EMPTY_GAME_CLOSURE_ONLY"
+}

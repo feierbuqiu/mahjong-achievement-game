@@ -1,0 +1,61 @@
+{
+  "CPU_limit_percent": 20,
+  "LEAN_PATH": "<RESEARCH_ROOT>\\build\\lean_table_checker\\kernel_pilot_v18\\modules;<RESEARCH_ROOT>\\build\\lean_table_checker\\end_to_end_v17\\modules",
+  "argv": [
+    "<RESEARCH_ROOT>\\build\\toolchain\\lean-4.33.1-windows\\bin\\leanchecker.exe",
+    "--fresh",
+    "-v",
+    "Mahjong.PilotHarnessV18"
+  ],
+  "caps_readback_confirmed": true,
+  "checked_utc": "2026-10-18T04:23:29.576541+00:00",
+  "child_assigned_before_resume": true,
+  "child_cpu_seconds": 57.859375,
+  "child_exit_confirmed": true,
+  "compiled_module": null,
+  "controller_outside_job": true,
+  "dependency_fingerprints": [],
+  "executable": {
+    "bytes": 115200,
+    "path": "build/toolchain/lean-4.33.1-windows/bin/leanchecker.exe",
+    "sha256": "31b506f83737b7d629fd11699df5aaf88c3b50be23c28219e6b283f0de98f85c"
+  },
+  "final_kernel_empty_theorem": false,
+  "full_launch_allowed": false,
+  "full_scan_started": false,
+  "input_pilot_modules": [
+    {
+      "bytes": 7328,
+      "path": "build/lean_table_checker/kernel_pilot_v18/modules/Mahjong/PilotHarnessV18.olean",
+      "sha256": "c184f8c3f1681392e95cb9150663972a9e17bfcedd72b095e762c9df5360396a"
+    }
+  ],
+  "memory_limit_bytes": 3000000000,
+  "mode": "replay",
+  "module": "Mahjong.PilotHarnessV18",
+  "peak_job_committed_bytes": 998551552,
+  "peak_process_pagefile_bytes": 997343232,
+  "peak_process_working_set_bytes": 758595584,
+  "policy_error": null,
+  "published_module": null,
+  "returncode": 124,
+  "schema": "ACTUAL_BOUNDED_KERNEL_PILOT_V18",
+  "source": {
+    "bytes": 286,
+    "path": "build/lean_table_checker/kernel_pilot_v18/source/Mahjong/PilotHarnessV18.lean",
+    "sha256": "037ae8e87d1d782ff4704255f8cb953ad387c4433d7ef3ad3b5159185c562593"
+  },
+  "status": "FAILED_OR_INCOMPLETE",
+  "stderr": {
+    "bytes": 0,
+    "path": "runs/lean_table_checker/kernel_pilot_20261018_v18/attempts/b67bc86df03d41dba0f25b1c9e5dacae/stderr.log",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "stdout": {
+    "bytes": 0,
+    "path": "runs/lean_table_checker/kernel_pilot_20261018_v18/attempts/b67bc86df03d41dba0f25b1c9e5dacae/stdout.log",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "timed_out": true,
+  "wall_seconds": 60.125
+}

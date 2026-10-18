@@ -1,0 +1,1344 @@
+{
+  "schema": "E2E_V17_INDEPENDENT_SOURCE_AND_NATIVE_REPLAY_BOUNDARY_REVIEW",
+  "status": "SOURCE_REVIEW_COMPLETE_ACTUAL_INSTANCE_AND_FINAL_PROOF_OPEN",
+  "checked_utc": "2026-10-18T03:37:12.772864+00:00",
+  "method": "Read-only small source and existing receipt/log capture. No new kernel verification.",
+  "source_modules": [
+    {
+      "source": {
+        "path": "build/lean_table_checker/end_to_end_v17/source/Mahjong/IndexedByteRowSafeV17.lean",
+        "bytes": 7227,
+        "sha256": "7e18b1a840ecdf6fc3431d42fc016143fa6ea3680903185f961c4317bfa6cb37"
+      },
+      "lexical_noncomment_boundary_tokens": [],
+      "existing_kernel_receipt": {
+        "path": "runs/lean_table_checker/end_to_end_20261018_v17/compilations/9ba5def8d3474729a7dc0d10887320ce/receipt.json",
+        "bytes": 3175,
+        "sha256": "17e112d0f9c73d06d83ce0234d9c4130a87bfe93c3e921330515037c082c5506"
+      },
+      "existing_compiled_module_claim": {
+        "bytes": 67904,
+        "path": "runs/lean_table_checker/end_to_end_20261018_v17/compilations/9ba5def8d3474729a7dc0d10887320ce/modules/Mahjong/IndexedByteRowSafeV17.olean",
+        "sha256": "6217267dd7a4885fb9aebe83fe4c154a274427d72fdd9f3357eca89e0ad5bc5b"
+      },
+      "existing_axiom_log": {
+        "path": "runs/lean_table_checker/end_to_end_20261018_v17/compilations/9ba5def8d3474729a7dc0d10887320ce/stdout.log",
+        "bytes": 97,
+        "sha256": "d7004b4c0bd129c1a8cfbdd2b161eec104b1ea1b6000462473edb881bfefc327"
+      },
+      "selected_print_axioms": [
+        {
+          "name": "Mahjong.IndexedByteRowSafeV17.sound",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        }
+      ]
+    },
+    {
+      "source": {
+        "path": "build/lean_table_checker/end_to_end_v17/source/Mahjong/CrossLayerAssemblyV17.lean",
+        "bytes": 23114,
+        "sha256": "4dae813e08a370d5fbc729e6d24fc367a0bb9b37effc2ae59a9cbe2c0a812ee3"
+      },
+      "lexical_noncomment_boundary_tokens": [],
+      "existing_kernel_receipt": {
+        "path": "runs/lean_table_checker/end_to_end_20261018_v17/compilations/0f2e010b567045d49ca00a89fac3710c/receipt.json",
+        "bytes": 3181,
+        "sha256": "34e4100c19fcccc4b34d8054d86fb2f77f5cdfcc83192aaaa531060d1e46e219"
+      },
+      "existing_compiled_module_claim": {
+        "bytes": 869712,
+        "path": "runs/lean_table_checker/end_to_end_20261018_v17/compilations/0f2e010b567045d49ca00a89fac3710c/modules/Mahjong/CrossLayerAssemblyV17.olean",
+        "sha256": "ecd40e57ac2a4fa76383e42d98398616aa00196e855f728883c6cefddf76123d"
+      },
+      "existing_axiom_log": {
+        "path": "runs/lean_table_checker/end_to_end_20261018_v17/compilations/0f2e010b567045d49ca00a89fac3710c/stdout.log",
+        "bytes": 853,
+        "sha256": "9c4f27ef5f65569f3e4a803d7dace3c78c86bc1f1d44fbff92dac22ea49c8c7f"
+      },
+      "selected_print_axioms": [
+        {
+          "name": "Mahjong.CrossLayerAssemblyV17.checkSpans_each",
+          "axioms": [
+            "propext",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Mahjong.CrossLayerAssemblyV17.checkSpans_disjoint",
+          "axioms": [
+            "propext",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Mahjong.CrossLayerAssemblyV17.sameBucket_sound",
+          "axioms": [
+            "propext",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Mahjong.CrossLayerAssemblyV17.targets_of_next_layer",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Mahjong.CrossLayerAssemblyV17.checked_all_layers_sound",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Mahjong.CrossLayerAssemblyV17.checked_target_correct",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Mahjong.CrossLayerAssemblyV17.checked_empty_normal",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Mahjong.CrossLayerAssemblyV17.checked_empty_second_player_wins",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        }
+      ]
+    },
+    {
+      "source": {
+        "path": "build/lean_table_checker/end_to_end_v17/source/Mahjong/EmptyRootV17.lean",
+        "bytes": 8648,
+        "sha256": "98082229ed97128fd9807c76222f882fba5442caf8598d81769b7803f7ef2d1c"
+      },
+      "lexical_noncomment_boundary_tokens": [],
+      "existing_kernel_receipt": {
+        "path": "runs/lean_table_checker/end_to_end_20261018_v17/compilations/4a07d769f7294aa89b28e7a114018109/receipt.json",
+        "bytes": 3126,
+        "sha256": "794b76b34c0b9765d7fb5bad040deec8be1f9ea17a06d592f2b3b5ee9bc50bb6"
+      },
+      "existing_compiled_module_claim": {
+        "bytes": 395728,
+        "path": "runs/lean_table_checker/end_to_end_20261018_v17/compilations/4a07d769f7294aa89b28e7a114018109/modules/Mahjong/EmptyRootV17.olean",
+        "sha256": "a3b2686efe4ab95ffa82889eec5cd193d772a3b93cf3c4632dd2a564cec47872"
+      },
+      "existing_axiom_log": {
+        "path": "runs/lean_table_checker/end_to_end_20261018_v17/compilations/4a07d769f7294aa89b28e7a114018109/stdout.log",
+        "bytes": 1394,
+        "sha256": "761482b907ce9fc872d08d54d4f6f4c209846c3475cd8ba6732a5418ac569e89"
+      },
+      "selected_print_axioms": [
+        {
+          "name": "Mahjong.EmptyRootV17.facts",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "name": "Mahjong.EmptyRootV17.inside",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "name": "Mahjong.EmptyRootV17.block_zero",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "name": "Mahjong.EmptyRootV17.ids_zero",
+          "axioms": [
+            "propext",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Mahjong.EmptyRootV17.unrank_zero",
+          "axioms": [
+            "propext",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Mahjong.EmptyRootV17.rank_zero",
+          "axioms": [
+            "propext",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Mahjong.EmptyRootV17.pack_empty",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "name": "Mahjong.EmptyRootV17.unpack_zero",
+          "axioms": [
+            "propext",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Mahjong.EmptyRootV17.decode_empty",
+          "axioms": [
+            "propext",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Mahjong.EmptyRootV17.rank_empty",
+          "axioms": [
+            "propext",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Mahjong.EmptyRootV17.checked_root",
+          "axioms": [
+            "propext",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Mahjong.EmptyRootV17.checkP_parts",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "name": "Mahjong.EmptyRootV17.second_player_of_normal",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Mahjong.EmptyRootV17.second_player_of_achievement",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Mahjong.EmptyRootV17.checked_second_player",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Mahjong.EmptyRootV17.observed_decode_empty",
+          "axioms": [
+            "propext",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Mahjong.EmptyRootV17.observed_rank_zero",
+          "axioms": [
+            "propext",
+            "Quot.sound"
+          ]
+        }
+      ]
+    },
+    {
+      "source": {
+        "path": "build/lean_table_checker/end_to_end_v17/source/Mahjong/RuntimeBindingV17.lean",
+        "bytes": 5356,
+        "sha256": "073a5bc91a3bfd4019bddae5fd6918d4e39fa224689c56f1f4d1a9c9182a31b3"
+      },
+      "lexical_noncomment_boundary_tokens": [],
+      "existing_kernel_receipt": {
+        "path": "runs/lean_table_checker/end_to_end_20261018_v17/compilations/2a0c2efeb83045898f032b044d812052/receipt.json",
+        "bytes": 3153,
+        "sha256": "faf65faec22d0a05da298cb0a1bf7a9d66bad735130389e6bb02453db569836f"
+      },
+      "existing_compiled_module_claim": {
+        "bytes": 64856,
+        "path": "runs/lean_table_checker/end_to_end_20261018_v17/compilations/2a0c2efeb83045898f032b044d812052/modules/Mahjong/RuntimeBindingV17.olean",
+        "sha256": "28983c620bc9da4fb6b005ddcd4a475361c4f20d524131bc9ad84c61d1de5950"
+      },
+      "existing_axiom_log": {
+        "path": "runs/lean_table_checker/end_to_end_20261018_v17/compilations/2a0c2efeb83045898f032b044d812052/stdout.log",
+        "bytes": 502,
+        "sha256": "9e425c884372bc0e1d149f93ef1ca8469e7ff9b789c8a59ff825f0dbdb755fa5"
+      },
+      "selected_print_axioms": [
+        {
+          "name": "Mahjong.RuntimeBindingV17.root_binding",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Mahjong.RuntimeBindingV17.sound",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Mahjong.RuntimeBindingV17.certify_isSome",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Mahjong.RuntimeBindingV17.certified_result_sound",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Mahjong.RuntimeBindingV17.rejection",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        }
+      ]
+    },
+    {
+      "source": {
+        "path": "build/lean_table_checker/end_to_end_v17/source/Mahjong/FiniteCertificateV17.lean",
+        "bytes": 13964,
+        "sha256": "feb25a2fa7fa8242d06e4a1e41f1948873a5be558a48666be4d41e112b8866c1"
+      },
+      "lexical_noncomment_boundary_tokens": [],
+      "existing_kernel_receipt": {
+        "path": "runs/lean_table_checker/end_to_end_20261018_v17/compilations/3119ad19c90a4d2194cf678da4c10c8c/receipt.json",
+        "bytes": 3174,
+        "sha256": "b0051dcf545c61c4657fbbe09b9e47a346fafd406ed9e39907676c52a094aa4f"
+      },
+      "existing_compiled_module_claim": {
+        "bytes": 509504,
+        "path": "runs/lean_table_checker/end_to_end_20261018_v17/compilations/3119ad19c90a4d2194cf678da4c10c8c/modules/Mahjong/FiniteCertificateV17.olean",
+        "sha256": "0c0d7d1400bf66297d18e57e9b36ce6f531ee752b5fd0be4d3e7da480c435a78"
+      },
+      "existing_axiom_log": {
+        "path": "runs/lean_table_checker/end_to_end_20261018_v17/compilations/3119ad19c90a4d2194cf678da4c10c8c/stdout.log",
+        "bytes": 411,
+        "sha256": "6acdc62d81770b285b8e77bdc7e82f4e9ceca5ecd4a734500d071871f4178279"
+      },
+      "selected_print_axioms": [
+        {
+          "name": "Mahjong.FiniteCertificateV17.build_binding",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Mahjong.FiniteCertificateV17.sound",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Mahjong.FiniteCertificateV17.groups_fit",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Mahjong.FiniteCertificateV17.enumeration_correct",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        }
+      ]
+    },
+    {
+      "source": {
+        "path": "build/lean_table_checker/end_to_end_v17/source/Mahjong/FiniteMetadataV17.lean",
+        "bytes": 14090,
+        "sha256": "db35b68ff431fe139b48cfdb82fde4ea8368462d5b483d06fe61944e2f101951"
+      },
+      "lexical_noncomment_boundary_tokens": [],
+      "existing_kernel_receipt": {
+        "path": "runs/lean_table_checker/end_to_end_20261018_v17/compilations/0e058414c5654267b4db2509c1863f46/receipt.json",
+        "bytes": 3156,
+        "sha256": "5f2ddba900a7f5121c24d044329f47a5030859ce8ea38c6ec6d8edad27e69a9d"
+      },
+      "existing_compiled_module_claim": {
+        "bytes": 271712,
+        "path": "runs/lean_table_checker/end_to_end_20261018_v17/compilations/0e058414c5654267b4db2509c1863f46/modules/Mahjong/FiniteMetadataV17.olean",
+        "sha256": "33d974ac9cae921fbf239d672ff780af9cbe900564c176e07563b0aef491f286"
+      },
+      "existing_axiom_log": {
+        "path": "runs/lean_table_checker/end_to_end_20261018_v17/compilations/0e058414c5654267b4db2509c1863f46/stdout.log",
+        "bytes": 682,
+        "sha256": "ca2fefba32461f2abacadad38e1489dea4f035240dccc155e752c5b5329c1219"
+      },
+      "selected_print_axioms": [
+        {
+          "name": "Mahjong.FiniteMetadataV17.groupEq",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Mahjong.FiniteMetadataV17.source_facts",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Mahjong.FiniteMetadataV17.sourceGroups",
+          "axioms": [
+            "propext",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Mahjong.FiniteMetadataV17.targetMetadata",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Mahjong.FiniteMetadataV17.successorsChecked",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Mahjong.FiniteMetadataV17.constructedTables_checked",
+          "axioms": [
+            "propext",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Mahjong.FiniteMetadataV17.buildBucketWork",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        }
+      ]
+    },
+    {
+      "source": {
+        "path": "build/lean_table_checker/end_to_end_v17/source/Mahjong/FiniteWholeInputV17.lean",
+        "bytes": 9944,
+        "sha256": "aa131c488ffd3c9073dd87b93537aeb5b52ba872b3e9f33525c76f9725c04b47"
+      },
+      "lexical_noncomment_boundary_tokens": [],
+      "existing_kernel_receipt": {
+        "path": "runs/lean_table_checker/end_to_end_20261018_v17/compilations/07db21c49d434906996b23ed7fbb8809/receipt.json",
+        "bytes": 3167,
+        "sha256": "1e6145b4a72790ac55c2ac97d725527cc040ca294cccb4439837f972e7c1f275"
+      },
+      "existing_compiled_module_claim": {
+        "bytes": 286408,
+        "path": "runs/lean_table_checker/end_to_end_20261018_v17/compilations/07db21c49d434906996b23ed7fbb8809/modules/Mahjong/FiniteWholeInputV17.olean",
+        "sha256": "94b2d7aa16492ae0eec2e078d51f49d694e47bf5dc588f7603744c4964c989c4"
+      },
+      "existing_axiom_log": {
+        "path": "runs/lean_table_checker/end_to_end_20261018_v17/compilations/07db21c49d434906996b23ed7fbb8809/stdout.log",
+        "bytes": 918,
+        "sha256": "43b8aa322065315a5d34264fa2f095f413cf4f791b4b876eb31aff9d040425b4"
+      },
+      "selected_print_axioms": [
+        {
+          "name": "Mahjong.FiniteWholeInputV17.localData_binding",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Mahjong.FiniteWholeInputV17.checked_metadata_cell",
+          "axioms": [
+            "propext",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Mahjong.FiniteWholeInputV17.buildTable",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Mahjong.FiniteWholeInputV17.sound",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Mahjong.FiniteWholeInputV17.accepted_parts",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Mahjong.FiniteWholeInputV17.accepted_sound",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Mahjong.FiniteWholeInputV17.certify_isSome",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Mahjong.FiniteWholeInputV17.certified_result_sound",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Mahjong.FiniteWholeInputV17.rejection",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        }
+      ]
+    },
+    {
+      "source": {
+        "path": "build/lean_table_checker/end_to_end_v17/source/Mahjong/ExecutionAssemblyV17.lean",
+        "bytes": 6106,
+        "sha256": "a63ab0c2058b00415762a0d3ae2c3877065c54067b5fb79c5be2ce3c64c6ecca"
+      },
+      "lexical_noncomment_boundary_tokens": [],
+      "existing_kernel_receipt": {
+        "path": "runs/lean_table_checker/end_to_end_20261018_v17/compilations/04c752cb22bd474280a9ab156c3730c1/receipt.json",
+        "bytes": 3173,
+        "sha256": "7e579c37282aa97110f500758689fb431c3d99d35a5b794cd848878fcf18bbbd"
+      },
+      "existing_compiled_module_claim": {
+        "bytes": 170248,
+        "path": "runs/lean_table_checker/end_to_end_20261018_v17/compilations/04c752cb22bd474280a9ab156c3730c1/modules/Mahjong/ExecutionAssemblyV17.olean",
+        "sha256": "dab675b4f56e8dd631aca23783f8b3c922a4ed9255e8b913756e2957ebb8b1f4"
+      },
+      "existing_axiom_log": {
+        "path": "runs/lean_table_checker/end_to_end_20261018_v17/compilations/04c752cb22bd474280a9ab156c3730c1/stdout.log",
+        "bytes": 528,
+        "sha256": "2d493449b9dbb339cc6e72f338e80b06c8b417c75d9a01c1658485ab80233f9f"
+      },
+      "selected_print_axioms": [
+        {
+          "name": "Mahjong.ExecutionAssemblyV17.targetChecks_cell",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Mahjong.ExecutionAssemblyV17.layer_step",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Mahjong.ExecutionAssemblyV17.all_layers",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Mahjong.ExecutionAssemblyV17.empty_normal",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Mahjong.ExecutionAssemblyV17.empty_second_player_wins",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        }
+      ]
+    },
+    {
+      "source": {
+        "path": "build/lean_table_checker/end_to_end_v17/source/Mahjong/RuntimeScanV17.lean",
+        "bytes": 19422,
+        "sha256": "8707f396d156cf0aa2f3991a76f953276862856a6f8e20f9debbd73ee05b9e3b"
+      },
+      "lexical_noncomment_boundary_tokens": [],
+      "existing_kernel_receipt": {
+        "path": "runs/lean_table_checker/end_to_end_20261018_v17/compilations/8529bb30d76c47e0ab2078b699d8d103/receipt.json",
+        "bytes": 3224,
+        "sha256": "01fb9c39b4cc386f8fb0d197cc1c4cb7c6333dae5a69804c5efc902f1f0872b2"
+      },
+      "existing_compiled_module_claim": {
+        "bytes": 923400,
+        "path": "runs/lean_table_checker/end_to_end_20261018_v17/compilations/8529bb30d76c47e0ab2078b699d8d103/modules/Mahjong/RuntimeScanV17.olean",
+        "sha256": "2fd20d4e77fa3739de30d0a5c3ac335f38c8f9123f528aba6cf8dbf88bda81ce"
+      },
+      "existing_axiom_log": {
+        "path": "runs/lean_table_checker/end_to_end_20261018_v17/compilations/8529bb30d76c47e0ab2078b699d8d103/stdout.log",
+        "bytes": 1287,
+        "sha256": "db9fb2263015b035103c1f4891f31b0e44da1b94c2e15a3969f5d08d86845f24"
+      },
+      "selected_print_axioms": [
+        {
+          "name": "Mahjong.RuntimeScanV17.prepared_row",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Mahjong.RuntimeScanV17.cover_member",
+          "axioms": [
+            "propext",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Mahjong.RuntimeScanV17.scanRuns_each",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Mahjong.RuntimeScanV17.checkRuns_each",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Mahjong.RuntimeScanV17.payload_cover",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Mahjong.RuntimeScanV17.scanFrame_each",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Mahjong.RuntimeScanV17.pureFrame_each",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Mahjong.RuntimeScanV17.pureFrameB_each",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Mahjong.RuntimeScanV17.scanFrame_scanned",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Mahjong.RuntimeScanV17.CheckedFrame.each",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Mahjong.RuntimeScanV17.assembleScanned_each",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Mahjong.RuntimeScanV17.checkActualRow_congr",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Mahjong.RuntimeScanV17.pureFrame_proposals",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        }
+      ]
+    },
+    {
+      "source": {
+        "path": "build/lean_table_checker/end_to_end_v17/source/Mahjong/BindingControlsV17.lean",
+        "bytes": 1706,
+        "sha256": "880c724d6f4deefc6b3dce7fa05de7e303d1e6c4fe84c0f9683b200caf8c1b48"
+      },
+      "lexical_noncomment_boundary_tokens": [],
+      "existing_kernel_receipt": {
+        "path": "runs/lean_table_checker/end_to_end_20261018_v17/compilations/bec34b04711142999b5cd05bd1d4d2ea/receipt.json",
+        "bytes": 3160,
+        "sha256": "5b9c47a6ed47f0c36ac7ea2b99d556fa3c3d42741f9f1d32a38efaacc34452d2"
+      },
+      "existing_compiled_module_claim": {
+        "bytes": 41904,
+        "path": "runs/lean_table_checker/end_to_end_20261018_v17/compilations/bec34b04711142999b5cd05bd1d4d2ea/modules/Mahjong/BindingControlsV17.olean",
+        "sha256": "0260657441bdc1f30f5b320846c71a13de7fee3b257d02c29da8cdd55a74ad7f"
+      },
+      "existing_axiom_log": {
+        "path": "runs/lean_table_checker/end_to_end_20261018_v17/compilations/bec34b04711142999b5cd05bd1d4d2ea/stdout.log",
+        "bytes": 620,
+        "sha256": "7171554d13e80b103cd8801fd7b5c355bc71db803097f848c72a282eac7de6bb"
+      },
+      "selected_print_axioms": [
+        {
+          "name": "Mahjong.BindingControlsV17.different_bits_not_same_bucket",
+          "axioms": [
+            "propext",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Mahjong.BindingControlsV17.different_size_not_same_bucket",
+          "axioms": [
+            "propext",
+            "Quot.sound"
+          ]
+        }
+      ]
+    },
+    {
+      "source": {
+        "path": "build/lean_table_checker/end_to_end_v17/source/Mahjong/ScanFinalV17.lean",
+        "bytes": 6571,
+        "sha256": "8b2e05e1003003c4ab55afc5e5ce281dd1bb26db3c5f27107567a0897bb6a71d"
+      },
+      "lexical_noncomment_boundary_tokens": [],
+      "existing_kernel_receipt": {
+        "path": "runs/lean_table_checker/end_to_end_20261018_v17/compilations/c37b27ca1f3b4800a39f8aee50c2b022/receipt.json",
+        "bytes": 3211,
+        "sha256": "0ffea3a3e9225a06f830ab6abe6c81ea94740887a67613c5a95ef1df106ae75b"
+      },
+      "existing_compiled_module_claim": {
+        "bytes": 178896,
+        "path": "runs/lean_table_checker/end_to_end_20261018_v17/compilations/c37b27ca1f3b4800a39f8aee50c2b022/modules/Mahjong/ScanFinalV17.olean",
+        "sha256": "a651885c9e1813f281e0cf0109712aea5cb64c2b3ecaad1b125a03275d3a94f0"
+      },
+      "existing_axiom_log": {
+        "path": "runs/lean_table_checker/end_to_end_20261018_v17/compilations/c37b27ca1f3b4800a39f8aee50c2b022/stdout.log",
+        "bytes": 473,
+        "sha256": "6ec43a8b4b1894fd8a66bc9ce87df663f8125fe5734527620544a4acbc48d429"
+      },
+      "selected_print_axioms": [
+        {
+          "name": "Mahjong.ScanFinalV17.ranges_each",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Mahjong.ScanFinalV17.checked_rows",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Mahjong.ScanFinalV17.sound",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Mahjong.ScanFinalV17.from_finite_input",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Mahjong.ScanFinalV17.finish_isSome",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        }
+      ]
+    },
+    {
+      "source": {
+        "path": "build/lean_table_checker/end_to_end_v17/source/Mahjong/FastWholeInputV17.lean",
+        "bytes": 9475,
+        "sha256": "0e1108a2b0433b83f693e0648ac45448455abf6df222b53a835925c2c49ef08d"
+      },
+      "lexical_noncomment_boundary_tokens": [],
+      "existing_kernel_receipt": {
+        "path": "runs/lean_table_checker/end_to_end_20261018_v17/compilations/b9a789f5dac54914a572ad1641f4074f/receipt.json",
+        "bytes": 3226,
+        "sha256": "50c9a81b537c793b89d2770c36129372e00095bd46ea8b218f8f7c9cc05bd8ee"
+      },
+      "existing_compiled_module_claim": {
+        "bytes": 305624,
+        "path": "runs/lean_table_checker/end_to_end_20261018_v17/compilations/b9a789f5dac54914a572ad1641f4074f/modules/Mahjong/FastWholeInputV17.olean",
+        "sha256": "2f8e307066f5be2caaeae912bdad0e7cf5f58dc89c344317d7b4329ff85c75da"
+      },
+      "existing_axiom_log": {
+        "path": "runs/lean_table_checker/end_to_end_20261018_v17/compilations/b9a789f5dac54914a572ad1641f4074f/stdout.log",
+        "bytes": 936,
+        "sha256": "6bf5bb3ff4281f07d0bed63f1e6f48acfc24fb6b9479dcaf9fa828515b16213f"
+      },
+      "selected_print_axioms": [
+        {
+          "name": "Mahjong.FastWholeInputV17.checkBucket_parts",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Mahjong.FastWholeInputV17.checkedRanges",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Mahjong.FastWholeInputV17.checkedRanges_chunks",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Mahjong.FastWholeInputV17.checkedRanges_cover",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Mahjong.FastWholeInputV17.buildTrace",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Mahjong.FastWholeInputV17.buildTrace_checks",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Mahjong.FastWholeInputV17.trace_exists",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Mahjong.FastWholeInputV17.finalChecks_of_fast",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Mahjong.FastWholeInputV17.from_finite_input",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        }
+      ]
+    },
+    {
+      "source": {
+        "path": "build/lean_table_checker/end_to_end_v17/source/Mahjong/ReplayClosureV17.lean",
+        "bytes": 4974,
+        "sha256": "b3fb0f6b741bc9b4de171347c6076b0e4722a878bcb8468a247fdcdc53dae40d"
+      },
+      "lexical_noncomment_boundary_tokens": [],
+      "existing_kernel_receipt": {
+        "path": "runs/lean_table_checker/end_to_end_20261018_v17/compilations/293ce61f05bb484e8a9ca79fb29cd4e5/receipt.json",
+        "bytes": 3232,
+        "sha256": "e8a63b17ca0c6dd170d453d60b1b1f841e23da27d1bb9d518c54c928d605407b"
+      },
+      "existing_compiled_module_claim": {
+        "bytes": 18864,
+        "path": "runs/lean_table_checker/end_to_end_20261018_v17/compilations/293ce61f05bb484e8a9ca79fb29cd4e5/modules/Mahjong/ReplayClosureV17.olean",
+        "sha256": "a3e2cbbd71ec87558f08171b6476a15514f446021908379e03fbc9eeeea91964"
+      },
+      "existing_axiom_log": {
+        "path": "runs/lean_table_checker/end_to_end_20261018_v17/compilations/293ce61f05bb484e8a9ca79fb29cd4e5/stdout.log",
+        "bytes": 309,
+        "sha256": "3ef899c1f5019b92b4b88f4d5497170406ae08dcf703cb632aec6ef2de5ec3a8"
+      },
+      "selected_print_axioms": [
+        {
+          "name": "Mahjong.ScanFinalV17.from_finite_input",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Mahjong.FiniteWholeInputV17.accepted_sound",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Mahjong.FastWholeInputV17.from_finite_input",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        }
+      ]
+    }
+  ],
+  "local_toolchain_sources": [
+    {
+      "path": "build/toolchain/lean-4.33.1-windows/src/lean/Lean/Meta/Native.lean",
+      "bytes": 3207,
+      "sha256": "e1d0c6b5be42f492810a12281fc0d8ff4c981e421397c3ec00e165a255ed09c1"
+    },
+    {
+      "path": "build/toolchain/lean-4.33.1-windows/src/lean/Lean/Elab/Tactic/Decide.lean",
+      "bytes": 9135,
+      "sha256": "99e84ce67778157e77d7261aa25b64ed72da16e9d1f60031cf2aa26f5ea6ee68"
+    },
+    {
+      "path": "build/toolchain/lean-4.33.1-windows/src/lean/Lean/Compiler/ImplementedByAttr.lean",
+      "bytes": 3501,
+      "sha256": "fec5d936a52cdbac96173249c9ad2028c2be3a049d380fdc0c84da5b4116640f"
+    },
+    {
+      "path": "build/toolchain/lean-4.33.1-windows/src/lean/Init/Core.lean",
+      "bytes": 102417,
+      "sha256": "8537e234659a281a8f49cc91e2f48c17b6faeacb852d1c4ba3a09b6b5e45ab20"
+    },
+    {
+      "path": "build/toolchain/lean-4.33.1-windows/src/lean/Lean/Replay.lean",
+      "bytes": 7691,
+      "sha256": "5ea88ea9b6c374ad74b8c6f5d36117cec00ec64202aff37f7cff0c6765fb746d"
+    },
+    {
+      "path": "build/toolchain/lean-4.33.1-windows/src/lean/LeanChecker.lean",
+      "bytes": 4785,
+      "sha256": "eb5dee411837629f09c5c18d63cc833d30335a46048bc586642742e90aa65d5f"
+    },
+    {
+      "path": "build/toolchain/lean-4.33.1-windows/src/lean/Lean/Environment.lean",
+      "bytes": 137725,
+      "sha256": "ee364e4788ce0560c87f621eeb3c4c3dfec62e8db4e15e099fd80e6adc533b86"
+    }
+  ],
+  "archived_sources": [
+    {
+      "original": {
+        "path": "build/lean_table_checker/end_to_end_v17/source/Mahjong/IndexedByteRowSafeV17.lean",
+        "bytes": 7227,
+        "sha256": "7e18b1a840ecdf6fc3431d42fc016143fa6ea3680903185f961c4317bfa6cb37"
+      },
+      "archive": {
+        "path": "runs/lean_table_checker/end_to_end_20261018_v17/independent_audit_snapshot/source_snapshot/00_IndexedByteRowSafeV17.lean",
+        "bytes": 7227,
+        "sha256": "7e18b1a840ecdf6fc3431d42fc016143fa6ea3680903185f961c4317bfa6cb37"
+      }
+    },
+    {
+      "original": {
+        "path": "build/lean_table_checker/end_to_end_v17/source/Mahjong/CrossLayerAssemblyV17.lean",
+        "bytes": 23114,
+        "sha256": "4dae813e08a370d5fbc729e6d24fc367a0bb9b37effc2ae59a9cbe2c0a812ee3"
+      },
+      "archive": {
+        "path": "runs/lean_table_checker/end_to_end_20261018_v17/independent_audit_snapshot/source_snapshot/01_CrossLayerAssemblyV17.lean",
+        "bytes": 23114,
+        "sha256": "4dae813e08a370d5fbc729e6d24fc367a0bb9b37effc2ae59a9cbe2c0a812ee3"
+      }
+    },
+    {
+      "original": {
+        "path": "build/lean_table_checker/end_to_end_v17/source/Mahjong/EmptyRootV17.lean",
+        "bytes": 8648,
+        "sha256": "98082229ed97128fd9807c76222f882fba5442caf8598d81769b7803f7ef2d1c"
+      },
+      "archive": {
+        "path": "runs/lean_table_checker/end_to_end_20261018_v17/independent_audit_snapshot/source_snapshot/02_EmptyRootV17.lean",
+        "bytes": 8648,
+        "sha256": "98082229ed97128fd9807c76222f882fba5442caf8598d81769b7803f7ef2d1c"
+      }
+    },
+    {
+      "original": {
+        "path": "build/lean_table_checker/end_to_end_v17/source/Mahjong/RuntimeBindingV17.lean",
+        "bytes": 5356,
+        "sha256": "073a5bc91a3bfd4019bddae5fd6918d4e39fa224689c56f1f4d1a9c9182a31b3"
+      },
+      "archive": {
+        "path": "runs/lean_table_checker/end_to_end_20261018_v17/independent_audit_snapshot/source_snapshot/03_RuntimeBindingV17.lean",
+        "bytes": 5356,
+        "sha256": "073a5bc91a3bfd4019bddae5fd6918d4e39fa224689c56f1f4d1a9c9182a31b3"
+      }
+    },
+    {
+      "original": {
+        "path": "build/lean_table_checker/end_to_end_v17/source/Mahjong/FiniteCertificateV17.lean",
+        "bytes": 13964,
+        "sha256": "feb25a2fa7fa8242d06e4a1e41f1948873a5be558a48666be4d41e112b8866c1"
+      },
+      "archive": {
+        "path": "runs/lean_table_checker/end_to_end_20261018_v17/independent_audit_snapshot/source_snapshot/04_FiniteCertificateV17.lean",
+        "bytes": 13964,
+        "sha256": "feb25a2fa7fa8242d06e4a1e41f1948873a5be558a48666be4d41e112b8866c1"
+      }
+    },
+    {
+      "original": {
+        "path": "build/lean_table_checker/end_to_end_v17/source/Mahjong/FiniteMetadataV17.lean",
+        "bytes": 14090,
+        "sha256": "db35b68ff431fe139b48cfdb82fde4ea8368462d5b483d06fe61944e2f101951"
+      },
+      "archive": {
+        "path": "runs/lean_table_checker/end_to_end_20261018_v17/independent_audit_snapshot/source_snapshot/05_FiniteMetadataV17.lean",
+        "bytes": 14090,
+        "sha256": "db35b68ff431fe139b48cfdb82fde4ea8368462d5b483d06fe61944e2f101951"
+      }
+    },
+    {
+      "original": {
+        "path": "build/lean_table_checker/end_to_end_v17/source/Mahjong/FiniteWholeInputV17.lean",
+        "bytes": 9944,
+        "sha256": "aa131c488ffd3c9073dd87b93537aeb5b52ba872b3e9f33525c76f9725c04b47"
+      },
+      "archive": {
+        "path": "runs/lean_table_checker/end_to_end_20261018_v17/independent_audit_snapshot/source_snapshot/06_FiniteWholeInputV17.lean",
+        "bytes": 9944,
+        "sha256": "aa131c488ffd3c9073dd87b93537aeb5b52ba872b3e9f33525c76f9725c04b47"
+      }
+    },
+    {
+      "original": {
+        "path": "build/lean_table_checker/end_to_end_v17/source/Mahjong/ExecutionAssemblyV17.lean",
+        "bytes": 6106,
+        "sha256": "a63ab0c2058b00415762a0d3ae2c3877065c54067b5fb79c5be2ce3c64c6ecca"
+      },
+      "archive": {
+        "path": "runs/lean_table_checker/end_to_end_20261018_v17/independent_audit_snapshot/source_snapshot/07_ExecutionAssemblyV17.lean",
+        "bytes": 6106,
+        "sha256": "a63ab0c2058b00415762a0d3ae2c3877065c54067b5fb79c5be2ce3c64c6ecca"
+      }
+    },
+    {
+      "original": {
+        "path": "build/lean_table_checker/end_to_end_v17/source/Mahjong/RuntimeScanV17.lean",
+        "bytes": 19422,
+        "sha256": "8707f396d156cf0aa2f3991a76f953276862856a6f8e20f9debbd73ee05b9e3b"
+      },
+      "archive": {
+        "path": "runs/lean_table_checker/end_to_end_20261018_v17/independent_audit_snapshot/source_snapshot/08_RuntimeScanV17.lean",
+        "bytes": 19422,
+        "sha256": "8707f396d156cf0aa2f3991a76f953276862856a6f8e20f9debbd73ee05b9e3b"
+      }
+    },
+    {
+      "original": {
+        "path": "build/lean_table_checker/end_to_end_v17/source/Mahjong/BindingControlsV17.lean",
+        "bytes": 1706,
+        "sha256": "880c724d6f4deefc6b3dce7fa05de7e303d1e6c4fe84c0f9683b200caf8c1b48"
+      },
+      "archive": {
+        "path": "runs/lean_table_checker/end_to_end_20261018_v17/independent_audit_snapshot/source_snapshot/09_BindingControlsV17.lean",
+        "bytes": 1706,
+        "sha256": "880c724d6f4deefc6b3dce7fa05de7e303d1e6c4fe84c0f9683b200caf8c1b48"
+      }
+    },
+    {
+      "original": {
+        "path": "build/lean_table_checker/end_to_end_v17/source/Mahjong/ScanFinalV17.lean",
+        "bytes": 6571,
+        "sha256": "8b2e05e1003003c4ab55afc5e5ce281dd1bb26db3c5f27107567a0897bb6a71d"
+      },
+      "archive": {
+        "path": "runs/lean_table_checker/end_to_end_20261018_v17/independent_audit_snapshot/source_snapshot/10_ScanFinalV17.lean",
+        "bytes": 6571,
+        "sha256": "8b2e05e1003003c4ab55afc5e5ce281dd1bb26db3c5f27107567a0897bb6a71d"
+      }
+    },
+    {
+      "original": {
+        "path": "build/lean_table_checker/end_to_end_v17/source/Mahjong/FastWholeInputV17.lean",
+        "bytes": 9475,
+        "sha256": "0e1108a2b0433b83f693e0648ac45448455abf6df222b53a835925c2c49ef08d"
+      },
+      "archive": {
+        "path": "runs/lean_table_checker/end_to_end_20261018_v17/independent_audit_snapshot/source_snapshot/11_FastWholeInputV17.lean",
+        "bytes": 9475,
+        "sha256": "0e1108a2b0433b83f693e0648ac45448455abf6df222b53a835925c2c49ef08d"
+      }
+    },
+    {
+      "original": {
+        "path": "build/lean_table_checker/end_to_end_v17/source/Mahjong/ReplayClosureV17.lean",
+        "bytes": 4974,
+        "sha256": "b3fb0f6b741bc9b4de171347c6076b0e4722a878bcb8468a247fdcdc53dae40d"
+      },
+      "archive": {
+        "path": "runs/lean_table_checker/end_to_end_20261018_v17/independent_audit_snapshot/source_snapshot/12_ReplayClosureV17.lean",
+        "bytes": 4974,
+        "sha256": "b3fb0f6b741bc9b4de171347c6076b0e4722a878bcb8468a247fdcdc53dae40d"
+      }
+    },
+    {
+      "original": {
+        "path": "build/toolchain/lean-4.33.1-windows/src/lean/Lean/Meta/Native.lean",
+        "bytes": 3207,
+        "sha256": "e1d0c6b5be42f492810a12281fc0d8ff4c981e421397c3ec00e165a255ed09c1"
+      },
+      "archive": {
+        "path": "runs/lean_table_checker/end_to_end_20261018_v17/independent_audit_snapshot/source_snapshot/13_Native.lean",
+        "bytes": 3207,
+        "sha256": "e1d0c6b5be42f492810a12281fc0d8ff4c981e421397c3ec00e165a255ed09c1"
+      }
+    },
+    {
+      "original": {
+        "path": "build/toolchain/lean-4.33.1-windows/src/lean/Lean/Elab/Tactic/Decide.lean",
+        "bytes": 9135,
+        "sha256": "99e84ce67778157e77d7261aa25b64ed72da16e9d1f60031cf2aa26f5ea6ee68"
+      },
+      "archive": {
+        "path": "runs/lean_table_checker/end_to_end_20261018_v17/independent_audit_snapshot/source_snapshot/14_Decide.lean",
+        "bytes": 9135,
+        "sha256": "99e84ce67778157e77d7261aa25b64ed72da16e9d1f60031cf2aa26f5ea6ee68"
+      }
+    },
+    {
+      "original": {
+        "path": "build/toolchain/lean-4.33.1-windows/src/lean/Lean/Compiler/ImplementedByAttr.lean",
+        "bytes": 3501,
+        "sha256": "fec5d936a52cdbac96173249c9ad2028c2be3a049d380fdc0c84da5b4116640f"
+      },
+      "archive": {
+        "path": "runs/lean_table_checker/end_to_end_20261018_v17/independent_audit_snapshot/source_snapshot/15_ImplementedByAttr.lean",
+        "bytes": 3501,
+        "sha256": "fec5d936a52cdbac96173249c9ad2028c2be3a049d380fdc0c84da5b4116640f"
+      }
+    },
+    {
+      "original": {
+        "path": "build/toolchain/lean-4.33.1-windows/src/lean/Init/Core.lean",
+        "bytes": 102417,
+        "sha256": "8537e234659a281a8f49cc91e2f48c17b6faeacb852d1c4ba3a09b6b5e45ab20"
+      },
+      "archive": {
+        "path": "runs/lean_table_checker/end_to_end_20261018_v17/independent_audit_snapshot/source_snapshot/16_Core.lean",
+        "bytes": 102417,
+        "sha256": "8537e234659a281a8f49cc91e2f48c17b6faeacb852d1c4ba3a09b6b5e45ab20"
+      }
+    },
+    {
+      "original": {
+        "path": "build/toolchain/lean-4.33.1-windows/src/lean/Lean/Replay.lean",
+        "bytes": 7691,
+        "sha256": "5ea88ea9b6c374ad74b8c6f5d36117cec00ec64202aff37f7cff0c6765fb746d"
+      },
+      "archive": {
+        "path": "runs/lean_table_checker/end_to_end_20261018_v17/independent_audit_snapshot/source_snapshot/17_Replay.lean",
+        "bytes": 7691,
+        "sha256": "5ea88ea9b6c374ad74b8c6f5d36117cec00ec64202aff37f7cff0c6765fb746d"
+      }
+    },
+    {
+      "original": {
+        "path": "build/toolchain/lean-4.33.1-windows/src/lean/LeanChecker.lean",
+        "bytes": 4785,
+        "sha256": "eb5dee411837629f09c5c18d63cc833d30335a46048bc586642742e90aa65d5f"
+      },
+      "archive": {
+        "path": "runs/lean_table_checker/end_to_end_20261018_v17/independent_audit_snapshot/source_snapshot/18_LeanChecker.lean",
+        "bytes": 4785,
+        "sha256": "eb5dee411837629f09c5c18d63cc833d30335a46048bc586642742e90aa65d5f"
+      }
+    },
+    {
+      "original": {
+        "path": "build/toolchain/lean-4.33.1-windows/src/lean/Lean/Environment.lean",
+        "bytes": 137725,
+        "sha256": "ee364e4788ce0560c87f621eeb3c4c3dfec62e8db4e15e099fd80e6adc533b86"
+      },
+      "archive": {
+        "path": "runs/lean_table_checker/end_to_end_20261018_v17/independent_audit_snapshot/source_snapshot/19_Environment.lean",
+        "bytes": 137725,
+        "sha256": "ee364e4788ce0560c87f621eeb3c4c3dfec62e8db4e15e099fd80e6adc533b86"
+      }
+    }
+  ],
+  "selected_existing_axiom_print_count": 88,
+  "selected_existing_axiom_names": [
+    "Classical.choice",
+    "Quot.sound",
+    "propext"
+  ],
+  "pending_current_source_kernel_receipts": [],
+  "findings": [
+    {
+      "id": "NATIVE_EVALUATION_ADDS_AXIOM",
+      "severity": "BLOCKER_FOR_STANDARD_AXIOMS_ONLY",
+      "status": "CONFIRMED_IN_LOCAL_SOURCE",
+      "path": {
+        "path": "build/toolchain/lean-4.33.1-windows/src/lean/Lean/Meta/Native.lean",
+        "bytes": 3207,
+        "sha256": "e1d0c6b5be42f492810a12281fc0d8ff4c981e421397c3ec00e165a255ed09c1"
+      },
+      "lines": [
+        31,
+        87
+      ],
+      "detail": "nativeEqTrue executes native Bool and adds a fresh axiom. --trust=0 and replay do not reject axiom declarations."
+    },
+    {
+      "id": "ACTUAL_ACCEPTANCE_NOT_INSTANTIATED",
+      "severity": "FINAL_PROOF_BLOCKER",
+      "detail": "No closed actual finite/input/full-row/root acceptance equations were established by this audit."
+    },
+    {
+      "id": "PERSISTENCE_AND_REPLAY_NOT_IMPLEMENTED",
+      "severity": "FINAL_PROOF_BLOCKER",
+      "detail": "Native erases Prop; Option PLift/JSON success cannot be reloaded as a kernel proof. Actual certificate/proof-term persistence remains required."
+    },
+    {
+      "id": "IO_STREAMING_REFINEMENT_NOT_DEPLOYED",
+      "severity": "IMPLEMENTATION_AND_RESOURCE_BLOCKER",
+      "detail": "The pure once-prepare/scan/typed-join lemmas do not prove the frozen production IO driver literally calls them or meets resource/performance limits."
+    },
+    {
+      "id": "NO_SOURCE_SEMANTIC_CYCLE_FOUND",
+      "severity": "REVIEW_OBSERVATION",
+      "detail": "Captured sources bind all seven source/target bucket fields, exact spans, finite 35x184 scope and the empty next layer; metadata constructors expose Bool equations, not semantic assumptions."
+    }
+  ],
+  "no_new_kernel_run": true,
+  "game_rows_executed": 0,
+  "GPU_contexts_started": 0,
+  "Native_processes_started": 0,
+  "WSL_processes_started": 0,
+  "full_scan_started": false,
+  "empty_game_Lean": "NOT_VERIFIED",
+  "full_table_Lean": false,
+  "full_launch_allowed": false,
+  "proof_persistence": "NOT_IMPLEMENTED_OR_VALIDATED_BY_THIS_REVIEW",
+  "actual_native_data_binding": "NOT_ESTABLISHED_BY_JSON_OR_HASH_REFLECTION",
+  "notes": "notes.md"
+}

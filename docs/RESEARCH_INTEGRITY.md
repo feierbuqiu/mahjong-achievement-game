@@ -8,11 +8,13 @@ publication, or a completed formal proof. No affiliation or endorsement by a
 Mahjong organization, university, GitHub, or a proof-assistant project is implied.
 
 The [two English reports](../papers/README.md) are fixed together in v1.0.0.
-That major version fixed the September delivery, with unresolved Lean
-obligations retained. The [October 18 update](../research/2026-10-18/README.md)
-records subsequent acceleration and the conditional expectation of a final
-sub-20-hour campaign. Independent correctness review is in progress and the
-full scan has not started; see [current project status](PROJECT_STATUS.md).
+That release fixed the September delivery. The
+[later October update](../research/2026-10-18-kernel/README.md) records persistent
+kernel-proof research, an actual small closed pilot and narrower compression
+experiments. The actual opening theorem and a practical 20/24-hour end-to-end
+completion bound remain unestablished. Native execution, proof construction,
+saved proof replay and original-game interpretation retain separate scopes;
+see [current project status](PROJECT_STATUS.md).
 
 The rules describe the specific deterministic game in this repository.
 The results are not claims about ordinary multiplayer Mahjong strategy or

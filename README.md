@@ -4,21 +4,19 @@
 
 [![Research checks](https://github.com/feierbuqiu/mahjong-achievement-game/actions/workflows/research.yml/badge.svg)](https://github.com/feierbuqiu/mahjong-achievement-game/actions/workflows/research.yml)
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
-[![Lean opening: NOT_VERIFIED](https://img.shields.io/badge/Lean_opening-NOT__VERIFIED-orange.svg)](research/2026-10-18/README.md)
+[![Lean opening: NOT_VERIFIED](https://img.shields.io/badge/Lean_opening-NOT__VERIFIED-orange.svg)](research/2026-10-18-kernel/README.md)
 
-> **October 18, 2026 — approaching the final verification campaign.** The
-> current working expectation is to finish the remaining compiled-Lean campaign
-> **within 20 hours of an authorized start**. The improved V16 route estimates
-> **13.03 hours for known components, including a 25% margin**.
-> **The full scan has not started; correctness is undergoing independent review.**
-> Final production-cost/admission checks remain outstanding and the user's
-> launch hold remains in force. This is a conditional forecast, not completed
-> verification. Read the [new source and evidence](research/2026-10-18/README.md)
-> and [current project status](docs/PROJECT_STATUS.md).
-> The opening Lean theorem remains **`NOT_VERIFIED`**; the computational result
-> remains a **second-player win**. The immutable
-> [v1.0.0 snapshot](https://github.com/feierbuqiu/mahjong-achievement-game/releases/tag/v1.0.0)
-> preserves the earlier delivery.
+> **Later October 18 update — persistent kernel proofs and certificate compression.**
+> The current goal is a saved, closed Lean proof of the actual original-game
+> empty position, with cold standard-kernel replay. Generic composition theorems
+> and a small actual-data closed pilot have been obtained; compressed numeric
+> and local-metadata certificates are being studied.
+> **The actual opening theorem remains `NOT_VERIFIED`; no reliable 20/24-hour
+> end-to-end completion bound is established.** The earlier 13.03-hour estimate
+> concerns a different, compiled-checker workload and is not a forecast for this
+> proof-certificate route. The legacy whole-table scan remains stopped.
+> Read the [current evidence and source](research/2026-10-18-kernel/README.md)
+> and [project status](docs/PROJECT_STATUS.md).
 
 ## Read the two English papers
 
@@ -45,7 +43,7 @@ The two full-table algorithms share the foundational rule implementation and
 state index. The published September 13 proof package contains eight concrete
 nonempty roots and 1,008 Lean modules with a clean kernel-replay command.
 Later local work accumulated a registry reporting **24,655 certified P states**;
-its complete proof trees are retained outside this public package. The compiled-Lean route has now completed layers 34, 33 and 32, covering
+its complete proof trees are retained outside this public package. The earlier compiled-Lean route completed layers 34, 33 and 32, covering
 **303,054,865 unique rows**; the [October update](research/2026-10-18/README.md)
 records the new layer-32 audit and its retained verifier identities.
 Neither route closes the 10-tile or empty-position theorem. See the
@@ -74,50 +72,52 @@ These computational results and the original English paper are dated September 1
 2026. The [September 14 supplement](research/2026-09-14/README.md) records an
 earlier stage of formal work; [September 15](research/2026-09-15/README.md)
 records later model proofs and the earlier maintainer decision. The
-[October 18 update](research/2026-10-18/README.md) supersedes that outlook
-and records the improved checker, current review and planned final campaign. The paper's partial opening
+[earlier October V16 update](research/2026-10-18/README.md) and
+[later kernel-certificate update](research/2026-10-18-kernel/README.md)
+record successive changes in methods and evidence boundaries. The paper's partial opening
 graph and later local registries describe different searches; their counts
 are neither additive nor a formal-proof completion percentage.
 The [acceptance receipt](results/acceptance.json), [opening queries](results/opening.jsonl),
 and [machine-readable status](RESEARCH_STATUS.json) state their scope.
 
-## Current outlook and contributions
+## Current proof work and contributions
 
-The improved **V16 GPU-assisted compiled-Lean checker** changes the earlier
-feasibility outlook. The current working expectation is a sub-20-hour finish
-for the remaining campaign after independent correctness review and an
-authorized start. It has not started. The selected build records **104 theorem
-fingerprints across a 132-module source closure**; this update publishes the
-source and existing audit logs for inspection.
+The project now studies **saved kernel-checkable certificates**, with the
+actual original-game theorem `SecondPlayerWins Step Win empty` as the target.
+Current results include V17 generic composition, V18 closed proofs for three
+specific nonempty 32-tile roots and captured checker inputs, and V19 certificate
+compression/numeric-layout experiments. The new
+[source and receipt catalogue](research/2026-10-18-kernel/README.md) describes
+what each result establishes and what remains open.
 
-| Current evidence | Value |
-| --- | ---: |
-| Complete compiled-checker layers | 32, 33 and 34 |
-| Unique rows in those layers | 303,054,865 |
-| Remaining planned rows | 778,229,809,437 |
-| V16 known-component estimate including 25% margin | 13.0256 hours |
-| Working finish expectation after an authorized start | Within 20 hours |
-| Full-cost gate and full scan | Not passed / not started |
+| Current result | Exact scope |
+| --- | --- |
+| V17 generic composition | 13 new sources; 145-module fresh kernel replay; actual full input not instantiated |
+| V18 original-game pilot | 11 nodes, two 32-tile P roots and one 32-tile N root |
+| V18 checker pilot | 56 distinct captured rows; saved proof and cold replay |
+| V19 numeric/layout experiments | Supplied finite relations and local metadata; complete original-game binding remains separate |
+| Actual empty-state kernel proof | NOT_VERIFIED |
+| End-to-end completion time | No established 20/24-hour bound |
 
-The known-component screen still excludes six production-cost categories.
-Calibration samples and bounded controls do not establish a full-run time
-bound or complete global certification. The independent review and complete
-prelaunch assessment remain necessary. See the [detailed evidence and trust
-boundary](research/2026-10-18/README.md).
+The earlier V16 estimate of **13.0256 hours including 25% margin** covered
+known components of compiled-checker execution and omitted six production
+costs. Proof construction, persistence, dependency loading, assembly and cold
+kernel replay are a different workload. The previous imminent/sub-20-hour
+finish expectation is superseded. Successful small samples do not establish
+whole-task time, storage or memory feasibility.
 
-The recorded workstation has an **Intel Core i7-10700KF (8 cores / 16 threads),
-32 GiB RAM and an NVIDIA RTX 2070 SUPER**. A GPU now proposes one-byte row
-records; compiled Lean checks the actual obligations. GPU output is untrusted.
-The older CPU-only throughput figures remain historical measurements in the
-[September 14 handoff](research/2026-09-14/README.md).
+The historical compiled checks of layers 32–34 cover 303,054,865 unique rows;
+this is not a count of newly closed kernel-certified global rows. The recorded
+i7-10700KF / 32 GiB / RTX 2070 SUPER machine and its old GPU/native timings
+remain useful context, with their original trust and measurement boundaries.
+The legacy whole-table STOP remains; bounded proof research is a separate activity.
 
-Contributions remain welcome: independent correctness review, a stronger
-kernel-level opening certificate, a shorter mathematical argument, deeper
-verification, alternative approaches, reproducibility improvements and other
-substantive additions. Share a concrete proposal in the
-[issue tracker](https://github.com/feierbuqiu/mahjong-achievement-game/issues).
-Both English papers and the frozen v1.0.0 release remain available; this main
-update records subsequent progress and creates no new release.
+Contributions remain welcome: independent arguments, deeper formal review,
+alternative sparse or compressed certificates, original-game data binding,
+reproducibility improvements and careful performance measurements. Share a
+concrete proposal in the [issue tracker](https://github.com/feierbuqiu/mahjong-achievement-game/issues).
+Both English papers and the immutable v1.0.0 release retain their historical
+scope; current progress is recorded in main.
 
 ## The game
 
@@ -156,8 +156,9 @@ hashes and exact reconstruction commands are included. See [data availability](d
 
 - [Computational research paper](papers/manuscript.md): original full report and appendices.
 - [Lean verification paper](papers/lean-verification/manuscript.md): subsequent formal development and reproduction evidence.
-- [Current project status](docs/PROJECT_STATUS.md): approaching the final campaign; independent review and the conditional 20-hour expectation.
-- [October 18 source and evidence](research/2026-10-18/README.md): V16 checker, GPU/controller sources, complete layer 32, calibration and prelaunch hold.
+- [Current project status](docs/PROJECT_STATUS.md): persistent kernel-proof research, closed pilot and remaining actual-instance/runtime gaps.
+- [Later October kernel-source update](research/2026-10-18-kernel/README.md): V17/V18/V19 sources, saved-proof receipts and precise scope.
+- [Earlier October V16 source and evidence](research/2026-10-18/README.md): historical compiled-checker work, layer 32 and the superseded forecast.
 - [September 15 finite-model status](research/2026-09-15/README.md): finite
   algorithm proofs, bounded tests, remaining obligations, and maintainer scope.
 - [September 14 research handoff](research/2026-09-14/README.md): complete-layer

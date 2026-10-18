@@ -1,0 +1,54 @@
+{
+  "schema": "REGISTERED_METADATA_SIZE_DIAGNOSTIC_V19",
+  "status": "COMPLETE_NONPROOF_DIAGNOSTIC",
+  "registration": {
+    "path": "runs/lean_table_checker/acceleration_20261018_v19/packed/census/c575e92e09714ec7bb604edc706b462c/REGISTRATION.json",
+    "bytes": 899867,
+    "sha256": "7210f74f7dc47c6325029653e7a4d7dde71bb9c163d12c9b59f0f5d62ef25718"
+  },
+  "execution": {
+    "path": "runs/lean_table_checker/acceleration_20261018_v19/packed/attempts/5ec2a117a3db4ba59dbb0b9f8afe948c/receipt.json",
+    "bytes": 63157,
+    "sha256": "1a4158506f3a672d93170352b374c966f7038cc52e2fc250db02737cfb72d572"
+  },
+  "total": {
+    "blocks": 60789499,
+    "colex_rows": 778532864302,
+    "Cartesian_rows": 791647024950,
+    "one_layout_padded_positions": 2060596665832,
+    "max_padded_positions": 16777216,
+    "max_colex_rows": 11999232,
+    "ABC": 59188742,
+    "AAB_ABB": 1594943,
+    "AAA": 5814
+  },
+  "kernel_certificate": false,
+  "source_input_stat_consistency": true,
+  "input_hashes": "Pretest SHA256; immutable-input convention and posttest size/mtime checks",
+  "Cartesian_expansion_ratio": 1.0168447104153497,
+  "one_layout_byte_extent": 257575141321,
+  "three_layout_byte_extent": 772725423963,
+  "counts": {
+    "path": "runs/lean_table_checker/acceleration_20261018_v19/packed/attempts/5ec2a117a3db4ba59dbb0b9f8afe948c/stdout.log",
+    "bytes": 249242,
+    "sha256": "e598f760702f3d49bb824e0bef188cf33bd6e26a70f951f6e151f9f950156759"
+  },
+  "measurements": {
+    "wall_seconds": 7.514999999955762,
+    "child_cpu_seconds": 2.171875,
+    "peak_job_committed_bytes": 526061568
+  },
+  "conclusions": [
+    "Cartesian duplication costs 1.6845 percent in this exact supplied catalog.",
+    "Three full literal layouts exceed current local disk space.",
+    "Maximum supplied whole padded block is 2 MiB, not multi-gigabyte.",
+    "No time bound for Lean certification follows from this census."
+  ],
+  "full_PN_scan_started": false,
+  "final_kernel_empty_theorem": false,
+  "supersedes_byte_rounding_only": {
+    "path": "runs/lean_table_checker/acceleration_20261018_v19/packed/census/c575e92e09714ec7bb604edc706b462c/SUMMARY.json",
+    "bytes": 2027,
+    "sha256": "29afd9fd568827a28982e75ad49edd689ed34835375372516614510c1e0ef10e"
+  }
+}

@@ -1,0 +1,81 @@
+{
+  "CPU_limit_percent": 20,
+  "LEAN_PATH": "<RESEARCH_ROOT>\\runs\\lean_table_checker\\acceleration_20261018_v19\\packed\\bundles\\4e69d565439e4f4aa346602e337718c4\\modules",
+  "argv": [
+    "<RESEARCH_ROOT>\\build\\toolchain\\lean-4.33.1-windows\\bin\\leanchecker.exe",
+    "--fresh",
+    "-v",
+    "GameProofSliceVerifyV19"
+  ],
+  "caps_readback_confirmed": true,
+  "checked_utc": "2026-10-18T06:46:53.018473+00:00",
+  "child_assigned_before_resume": true,
+  "child_cpu_seconds": 49.546875,
+  "child_cwd": "<RESEARCH_ROOT>\\runs\\lean_table_checker\\acceleration_20261018_v19\\packed\\bundles\\4e69d565439e4f4aa346602e337718c4\\replay_cwd",
+  "child_exit_confirmed": true,
+  "child_wall_seconds": 50.53200000000652,
+  "compiled_module": null,
+  "controller_outside_job": true,
+  "dependency_fingerprints": [],
+  "emitted_c": null,
+  "empty_replay_cwd": true,
+  "executable": {
+    "bytes": 115200,
+    "path": "build/toolchain/lean-4.33.1-windows/bin/leanchecker.exe",
+    "sha256": "31b506f83737b7d629fd11699df5aaf88c3b50be23c28219e6b283f0de98f85c"
+  },
+  "final_kernel_empty_theorem": false,
+  "frozen_replay_root": "<RESEARCH_ROOT>\\runs\\lean_table_checker\\acceleration_20261018_v19\\packed\\bundles\\4e69d565439e4f4aa346602e337718c4\\modules",
+  "full_launch_allowed": false,
+  "full_scan_started": false,
+  "input_pilot_modules": [
+    {
+      "bytes": 1544,
+      "path": "runs/lean_table_checker/acceleration_20261018_v19/packed/bundles/4e69d565439e4f4aa346602e337718c4/modules/GameProofSliceDataV19.olean",
+      "sha256": "d7d6a04aeb4cc9a25f48900920c0b446914fec37073c1fe44cf238d4f67f8904"
+    },
+    {
+      "bytes": 6680,
+      "path": "runs/lean_table_checker/acceleration_20261018_v19/packed/bundles/4e69d565439e4f4aa346602e337718c4/modules/GameProofSliceVerifyV19.olean",
+      "sha256": "73badfcea3419e2948825f01e5aac2bb1f05030f291077cc19276fa9df46a8c4"
+    }
+  ],
+  "memory_limit_bytes": 3000000000,
+  "meta_plugin": null,
+  "mode": "replay",
+  "module": "GameProofSliceVerifyV19",
+  "native_source": null,
+  "peak_job_committed_bytes": 661839872,
+  "peak_process_pagefile_bytes": 660594688,
+  "peak_process_working_set_bytes": 623972352,
+  "plugin_is_untrusted_input_generator": false,
+  "policy_error": null,
+  "published_module": null,
+  "requested_Lean_threads": 1,
+  "returncode": 0,
+  "schema": "ACTUAL_BOUNDED_KERNEL_PILOT_V19",
+  "source": {
+    "bytes": 709,
+    "path": "runs/lean_table_checker/acceleration_20261018_v19/packed/bundles/4e69d565439e4f4aa346602e337718c4/source/GameProofSliceVerifyV19.lean",
+    "sha256": "5e19c1129e78481a747109d566a346505f30af6a4dba1e1189377b23b08252d8"
+  },
+  "source_executable_import_hashes_unchanged": true,
+  "source_snapshot": {
+    "bytes": 709,
+    "path": "runs/lean_table_checker/acceleration_20261018_v19/packed/attempts/cabe662ef28b47e990fb97a6f5e020ae/source_snapshot/GameProofSliceVerifyV19.lean",
+    "sha256": "5e19c1129e78481a747109d566a346505f30af6a4dba1e1189377b23b08252d8"
+  },
+  "status": "PASS",
+  "stderr": {
+    "bytes": 0,
+    "path": "runs/lean_table_checker/acceleration_20261018_v19/packed/attempts/cabe662ef28b47e990fb97a6f5e020ae/stderr.log",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "stdout": {
+    "bytes": 47,
+    "path": "runs/lean_table_checker/acceleration_20261018_v19/packed/attempts/cabe662ef28b47e990fb97a6f5e020ae/stdout.log",
+    "sha256": "0c3181d5d477731328c02cf893d04c6a7e137e2652e69429d0a997eb2be9edf2"
+  },
+  "timed_out": false,
+  "wall_seconds": 50.56199999997625
+}

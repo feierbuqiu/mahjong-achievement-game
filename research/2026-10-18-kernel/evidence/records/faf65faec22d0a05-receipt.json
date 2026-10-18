@@ -1,0 +1,60 @@
+{
+  "GPU_contexts": 0,
+  "LEAN_PATH": "<RESEARCH_ROOT>\\build\\lean_table_checker\\end_to_end_v17\\modules;<RESEARCH_ROOT>\\build\\lean_table_checker\\joint_indexed_build_v16\\linux\\b1f377d7b5384300af48ad2508bc46d2\\modules",
+  "argv": [
+    "<RESEARCH_ROOT>\\build\\toolchain\\lean-4.33.1-windows\\bin\\lean.exe",
+    "--trust=0",
+    "-j1",
+    "-M2048",
+    "-R",
+    "<RESEARCH_ROOT>\\build\\lean_table_checker\\end_to_end_v17\\source",
+    "-o",
+    "<RESEARCH_ROOT>\\runs\\lean_table_checker\\end_to_end_20261018_v17\\compilations\\2a0c2efeb83045898f032b044d812052\\modules\\Mahjong\\RuntimeBindingV17.olean",
+    "<RESEARCH_ROOT>\\build\\lean_table_checker\\end_to_end_v17\\source\\Mahjong\\RuntimeBindingV17.lean"
+  ],
+  "checked_utc": "2026-10-18T03:25:46.194969+00:00",
+  "child_exit_confirmed": true,
+  "compiled_module": {
+    "bytes": 64856,
+    "path": "runs/lean_table_checker/end_to_end_20261018_v17/compilations/2a0c2efeb83045898f032b044d812052/modules/Mahjong/RuntimeBindingV17.olean",
+    "sha256": "28983c620bc9da4fb6b005ddcd4a475361c4f20d524131bc9ad84c61d1de5950"
+  },
+  "compiler": {
+    "bytes": 83456,
+    "path": "build/toolchain/lean-4.33.1-windows/bin/lean.exe",
+    "sha256": "af49bacfabaa1fea71332ca0feae0fa1a60912219d5902291adc79f905bffb8d"
+  },
+  "declared_lane_CPU_percent": 20,
+  "declared_lane_memory_bytes": 3000000000,
+  "elapsed_seconds": 3.672000000020489,
+  "empty_game_Lean": "NOT_VERIFIED",
+  "error": null,
+  "full_scan_started": false,
+  "game_rows_executed": 0,
+  "kernel_job_limits_readback_confirmed": true,
+  "kill_on_close": true,
+  "module": "Mahjong.RuntimeBindingV17",
+  "published_module": {
+    "bytes": 64856,
+    "path": "build/lean_table_checker/end_to_end_v17/modules/Mahjong/RuntimeBindingV17.olean",
+    "sha256": "28983c620bc9da4fb6b005ddcd4a475361c4f20d524131bc9ad84c61d1de5950"
+  },
+  "returncode": 0,
+  "schema": "ACTUAL_BOUNDED_V17_LEAN_THEOREM_COMPILATION",
+  "source": {
+    "bytes": 5356,
+    "path": "build/lean_table_checker/end_to_end_v17/source/Mahjong/RuntimeBindingV17.lean",
+    "sha256": "073a5bc91a3bfd4019bddae5fd6918d4e39fa224689c56f1f4d1a9c9182a31b3"
+  },
+  "status": "PASS_KERNEL_COMPILATION_ONLY",
+  "stderr": {
+    "bytes": 0,
+    "path": "runs/lean_table_checker/end_to_end_20261018_v17/compilations/2a0c2efeb83045898f032b044d812052/stderr.log",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "stdout": {
+    "bytes": 502,
+    "path": "runs/lean_table_checker/end_to_end_20261018_v17/compilations/2a0c2efeb83045898f032b044d812052/stdout.log",
+    "sha256": "9e425c884372bc0e1d149f93ef1ca8469e7ff9b789c8a59ff825f0dbdb755fa5"
+  }
+}

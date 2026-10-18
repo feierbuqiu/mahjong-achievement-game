@@ -1,0 +1,1874 @@
+{
+  "actual_game_or_SAFE_metadata_proof": false,
+  "coordinator": {
+    "bytes": 4107,
+    "path": "build/lean_table_checker/acceleration_v19/cartesian_kernel_v19/run_stages.py",
+    "sha256": "0de8cd261fe000303442d827575b42e69122296055340cc93549687adb80d6ba"
+  },
+  "first": 0,
+  "full_table_scan": false,
+  "maximum_job_memory_bytes": 202547200,
+  "modules": 28,
+  "phase": "pn",
+  "plan": {
+    "bytes": 1091897,
+    "path": "build/lean_table_checker/acceleration_v19/cartesian_kernel_v19/PLAN.json",
+    "sha256": "1d16f5d80b1166c1acc0defa5077c7f057f97d243a13e903c40bbcf8cf170bca"
+  },
+  "provided_PN_only": true,
+  "receipts": [
+    {
+      "child_cpu_seconds": 0.296875,
+      "dependency_fingerprints": [
+        {
+          "axioms": [
+            "propext"
+          ],
+          "name": "Mahjong.CartesianPNB00V19.provided_PN"
+        }
+      ],
+      "exclusive_profiler_seconds": {
+        ".olean serialization": 0.013800000000000002,
+        "attribute application": 0.000158,
+        "blocked (unaccounted)": 0.027399999999999997,
+        "elaboration": 0.018600000000000002,
+        "fix level params": 9.09e-05,
+        "import": 0.0508,
+        "initialization": 0.0456,
+        "instantiate metavars": 0.00010499999999999999,
+        "interpretation": 0.09029999999999999,
+        "let-to-have transformation": 6.34e-05,
+        "linting": 0.0029300000000000003,
+        "module linting": 4e-06,
+        "parsing": 0.00289,
+        "process pre-definitions": 0.00264,
+        "share common exprs": 0.00034899999999999997,
+        "tactic execution": 0.000507,
+        "type checking": 0.013800000000000002,
+        "typeclass inference": 0.00511
+      },
+      "module": "Mahjong.CartesianPNB00V19",
+      "peak_job_committed_bytes": 90730496,
+      "published_artifacts": [
+        {
+          "bytes": 1576,
+          "path": "build/lean_table_checker/acceleration_v19/cartesian_kernel_v19/modules/Mahjong/CartesianPNB00V19.ir",
+          "sha256": "f0968f30be4b76b4cfd8725b4a86cbca63dfb1d78634467c823da30c8498ecb5"
+        },
+        {
+          "bytes": 176,
+          "path": "build/lean_table_checker/acceleration_v19/cartesian_kernel_v19/modules/Mahjong/CartesianPNB00V19.ir.sig",
+          "sha256": "ef225f9541b12a568aace0aec11e4d23bad5918b84b70795924a6e5d186701cc"
+        },
+        {
+          "bytes": 14568,
+          "path": "build/lean_table_checker/acceleration_v19/cartesian_kernel_v19/modules/Mahjong/CartesianPNB00V19.olean",
+          "sha256": "336660020786fc007cd7ef64243aa59f35eb86361d2711a3c81e01788698b68b"
+        },
+        {
+          "bytes": 19384,
+          "path": "build/lean_table_checker/acceleration_v19/cartesian_kernel_v19/modules/Mahjong/CartesianPNB00V19.olean.private",
+          "sha256": "531e7d21f0c345afde7a7dcb8ccae854a6d41fe181b3bac23f72d4264fc498d3"
+        },
+        {
+          "bytes": 7800,
+          "path": "build/lean_table_checker/acceleration_v19/cartesian_kernel_v19/modules/Mahjong/CartesianPNB00V19.olean.server",
+          "sha256": "0961f6c34c42812ca50037bd4e42947074484bee3797a8e4f2c3daf19147ed6d"
+        }
+      ],
+      "receipt": {
+        "bytes": 52337,
+        "path": "runs/lean_table_checker/acceleration_20261018_v19/cartesian_kernel_v19/attempts/3f67423e59624fdb8595dabc75d24d6d/receipt.json",
+        "sha256": "2ff449c926c142d004f65caa5d9b4b200a83bc5811aa3e223c1e8cb1174018c2"
+      },
+      "wall_seconds": 1.0
+    },
+    {
+      "child_cpu_seconds": 0.5625,
+      "dependency_fingerprints": [
+        {
+          "axioms": [
+            "propext"
+          ],
+          "name": "Mahjong.CartesianPNB01V19.provided_PN"
+        }
+      ],
+      "exclusive_profiler_seconds": {
+        ".olean serialization": 0.0152,
+        "attribute application": 0.000153,
+        "blocked (unaccounted)": 0.31,
+        "elaboration": 0.0225,
+        "fix level params": 0.00013000000000000002,
+        "import": 0.0573,
+        "initialization": 0.044899999999999995,
+        "instantiate metavars": 0.000111,
+        "interpretation": 0.0907,
+        "let-to-have transformation": 6.6e-05,
+        "linting": 0.00292,
+        "module linting": 4.4e-06,
+        "parsing": 0.00294,
+        "process pre-definitions": 0.00282,
+        "share common exprs": 0.000376,
+        "tactic execution": 0.00047599999999999997,
+        "type checking": 0.297,
+        "typeclass inference": 0.00577
+      },
+      "module": "Mahjong.CartesianPNB01V19",
+      "peak_job_committed_bytes": 193343488,
+      "published_artifacts": [
+        {
+          "bytes": 2184,
+          "path": "build/lean_table_checker/acceleration_v19/cartesian_kernel_v19/modules/Mahjong/CartesianPNB01V19.ir",
+          "sha256": "2cea6927f7b7b86eb58b514b94e9360407fc77599c96a06a10a74afd95ae9d33"
+        },
+        {
+          "bytes": 176,
+          "path": "build/lean_table_checker/acceleration_v19/cartesian_kernel_v19/modules/Mahjong/CartesianPNB01V19.ir.sig",
+          "sha256": "7eba50bf3f6d83e8f4de267c40b7739592bb9d5b8cf1766b7a6c57a4df762fff"
+        },
+        {
+          "bytes": 15176,
+          "path": "build/lean_table_checker/acceleration_v19/cartesian_kernel_v19/modules/Mahjong/CartesianPNB01V19.olean",
+          "sha256": "21b56afd604a50b2e413a21253df7ad3e47c87602d54bfb7ded8df1be58da03a"
+        },
+        {
+          "bytes": 21536,
+          "path": "build/lean_table_checker/acceleration_v19/cartesian_kernel_v19/modules/Mahjong/CartesianPNB01V19.olean.private",
+          "sha256": "b3b39b6012566b65554c1789cec16d9ec64dab9fc5658719db51a7059a79f965"
+        },
+        {
+          "bytes": 7800,
+          "path": "build/lean_table_checker/acceleration_v19/cartesian_kernel_v19/modules/Mahjong/CartesianPNB01V19.olean.server",
+          "sha256": "d35b4a967e04d909a9fdd77b12bc03be88b081c66ff39e3838d0f57bf865ddf8"
+        }
+      ],
+      "receipt": {
+        "bytes": 53263,
+        "path": "runs/lean_table_checker/acceleration_20261018_v19/cartesian_kernel_v19/attempts/53484678055b4c9782cc20cc5802d7d1/receipt.json",
+        "sha256": "fcfc2ba191e746c4bb2c1611efc8dec7fc4c2149d807bde703eba2f0ebbeb6d0"
+      },
+      "wall_seconds": 1.2809999999590218
+    },
+    {
+      "child_cpu_seconds": 0.421875,
+      "dependency_fingerprints": [
+        {
+          "axioms": [
+            "propext"
+          ],
+          "name": "Mahjong.CartesianPNB02V19.provided_PN"
+        }
+      ],
+      "exclusive_profiler_seconds": {
+        ".olean serialization": 0.0166,
+        "attribute application": 0.000158,
+        "blocked (unaccounted)": 0.102,
+        "elaboration": 0.0246,
+        "fix level params": 9.31e-05,
+        "import": 0.056799999999999996,
+        "initialization": 0.0448,
+        "instantiate metavars": 0.000123,
+        "interpretation": 0.09820000000000001,
+        "let-to-have transformation": 6.7e-05,
+        "linting": 0.0030499999999999998,
+        "module linting": 4e-06,
+        "parsing": 0.0031,
+        "process pre-definitions": 0.0028,
+        "share common exprs": 0.00041299999999999996,
+        "tactic execution": 0.00046800000000000005,
+        "type checking": 0.0889,
+        "typeclass inference": 0.006
+      },
+      "module": "Mahjong.CartesianPNB02V19",
+      "peak_job_committed_bytes": 126586880,
+      "published_artifacts": [
+        {
+          "bytes": 2032,
+          "path": "build/lean_table_checker/acceleration_v19/cartesian_kernel_v19/modules/Mahjong/CartesianPNB02V19.ir",
+          "sha256": "a58b99aaace99558fc3a205407384220dabe978ad4905871ceea479ad3f01212"
+        },
+        {
+          "bytes": 176,
+          "path": "build/lean_table_checker/acceleration_v19/cartesian_kernel_v19/modules/Mahjong/CartesianPNB02V19.ir.sig",
+          "sha256": "0a7a56c5292867ac333eddac338c1515d0a02e299d03e2399ef785b1e0c9f570"
+        },
+        {
+          "bytes": 15024,
+          "path": "build/lean_table_checker/acceleration_v19/cartesian_kernel_v19/modules/Mahjong/CartesianPNB02V19.olean",
+          "sha256": "21ab4ea4edffb35849424a87cb57f53efb64fd5e51a432667d5a8c125d795a70"
+        },
+        {
+          "bytes": 21472,
+          "path": "build/lean_table_checker/acceleration_v19/cartesian_kernel_v19/modules/Mahjong/CartesianPNB02V19.olean.private",
+          "sha256": "56b850e1bb0cb5182e5bf0a610c8b7345346bc83429f9a0f2a009a6b50f1b728"
+        },
+        {
+          "bytes": 7800,
+          "path": "build/lean_table_checker/acceleration_v19/cartesian_kernel_v19/modules/Mahjong/CartesianPNB02V19.olean.server",
+          "sha256": "eb596ac48d6e0954179b1c5e5f713bfcc13394f1c6a760308c2cbf268699ffb2"
+        }
+      ],
+      "receipt": {
+        "bytes": 54271,
+        "path": "runs/lean_table_checker/acceleration_20261018_v19/cartesian_kernel_v19/attempts/9041b26886314dbfbbf56324f4976ee1/receipt.json",
+        "sha256": "a9ca7ee7618d8a5b9e8c939351d3d33f1cd1e400397646a69fdceeabd7454edc"
+      },
+      "wall_seconds": 1.0929999999934807
+    },
+    {
+      "child_cpu_seconds": 0.34375,
+      "dependency_fingerprints": [
+        {
+          "axioms": [
+            "propext"
+          ],
+          "name": "Mahjong.CartesianPNB03V19.provided_PN"
+        }
+      ],
+      "exclusive_profiler_seconds": {
+        ".olean serialization": 0.013699999999999999,
+        "attribute application": 0.00013900000000000002,
+        "blocked (unaccounted)": 0.0221,
+        "elaboration": 0.016,
+        "fix level params": 7.87e-05,
+        "import": 0.052,
+        "initialization": 0.054700000000000006,
+        "instantiate metavars": 8.93e-05,
+        "interpretation": 0.09240000000000001,
+        "let-to-have transformation": 5.66e-05,
+        "linting": 0.0023799999999999997,
+        "module linting": 4.3e-06,
+        "parsing": 0.0023599999999999997,
+        "process pre-definitions": 0.00227,
+        "share common exprs": 0.000313,
+        "tactic execution": 0.00044,
+        "type checking": 0.0115,
+        "typeclass inference": 0.004719999999999999
+      },
+      "module": "Mahjong.CartesianPNB03V19",
+      "peak_job_committed_bytes": 90619904,
+      "published_artifacts": [
+        {
+          "bytes": 1576,
+          "path": "build/lean_table_checker/acceleration_v19/cartesian_kernel_v19/modules/Mahjong/CartesianPNB03V19.ir",
+          "sha256": "72b489fe3c3b685e818ebe469578c2d747d005c1b5d432fa03dda800d5fba404"
+        },
+        {
+          "bytes": 176,
+          "path": "build/lean_table_checker/acceleration_v19/cartesian_kernel_v19/modules/Mahjong/CartesianPNB03V19.ir.sig",
+          "sha256": "194eab7927ae1e471f0cf13a375a9f284dbbc406439d8f579fe31fdd4c440351"
+        },
+        {
+          "bytes": 13368,
+          "path": "build/lean_table_checker/acceleration_v19/cartesian_kernel_v19/modules/Mahjong/CartesianPNB03V19.olean",
+          "sha256": "0e11418aad491a878affd99101f49d982c3fb34d907b71914c96df460571305d"
+        },
+        {
+          "bytes": 16936,
+          "path": "build/lean_table_checker/acceleration_v19/cartesian_kernel_v19/modules/Mahjong/CartesianPNB03V19.olean.private",
+          "sha256": "a18c64ee728a8942ba47eee3f89e72194d9d9260c8d4fead68dca94f7255a692"
+        },
+        {
+          "bytes": 6640,
+          "path": "build/lean_table_checker/acceleration_v19/cartesian_kernel_v19/modules/Mahjong/CartesianPNB03V19.olean.server",
+          "sha256": "7304104bf48c9ab016542f82b72c02b0233efa7897a00db340d3b0be415bf4a8"
+        }
+      ],
+      "receipt": {
+        "bytes": 55265,
+        "path": "runs/lean_table_checker/acceleration_20261018_v19/cartesian_kernel_v19/attempts/cf67f22cf0ec4497996e79a42b4f6d1d/receipt.json",
+        "sha256": "8e0f5753e50cd71d83dafb370df6abab412b82c6d967528d9dd8e6326374a62d"
+      },
+      "wall_seconds": 1.0
+    },
+    {
+      "child_cpu_seconds": 0.390625,
+      "dependency_fingerprints": [
+        {
+          "axioms": [
+            "propext"
+          ],
+          "name": "Mahjong.CartesianPNB04V19.provided_PN"
+        }
+      ],
+      "exclusive_profiler_seconds": {
+        ".olean serialization": 0.0167,
+        "attribute application": 0.00014199999999999998,
+        "blocked (unaccounted)": 0.09190000000000001,
+        "elaboration": 0.019899999999999998,
+        "fix level params": 9.900000000000001e-05,
+        "import": 0.056799999999999996,
+        "initialization": 0.0444,
+        "instantiate metavars": 0.0001,
+        "interpretation": 0.095,
+        "let-to-have transformation": 5.97e-05,
+        "linting": 0.00278,
+        "module linting": 4.2e-06,
+        "parsing": 0.00267,
+        "process pre-definitions": 0.00235,
+        "share common exprs": 0.00033,
+        "tactic execution": 0.000451,
+        "type checking": 0.07940000000000001,
+        "typeclass inference": 0.00538
+      },
+      "module": "Mahjong.CartesianPNB04V19",
+      "peak_job_committed_bytes": 110886912,
+      "published_artifacts": [
+        {
+          "bytes": 2032,
+          "path": "build/lean_table_checker/acceleration_v19/cartesian_kernel_v19/modules/Mahjong/CartesianPNB04V19.ir",
+          "sha256": "050b9a6946f597234dd80d0e7beef174f53f1a5315a87bc697521e63aa311cdd"
+        },
+        {
+          "bytes": 176,
+          "path": "build/lean_table_checker/acceleration_v19/cartesian_kernel_v19/modules/Mahjong/CartesianPNB04V19.ir.sig",
+          "sha256": "529b3b890baad52e379bae540d44bb93326343c2eba5e6dcf05bc65566980c6a"
+        },
+        {
+          "bytes": 14304,
+          "path": "build/lean_table_checker/acceleration_v19/cartesian_kernel_v19/modules/Mahjong/CartesianPNB04V19.olean",
+          "sha256": "dd47dd4af52c3dba7c605b896780d896f1cf843b1e0b1414856b66e6e4cd4613"
+        },
+        {
+          "bytes": 20248,
+          "path": "build/lean_table_checker/acceleration_v19/cartesian_kernel_v19/modules/Mahjong/CartesianPNB04V19.olean.private",
+          "sha256": "3f5ed133e27c80754847168a8a96fc5fab8f8298e28128976d9c48dbff800619"
+        },
+        {
+          "bytes": 7104,
+          "path": "build/lean_table_checker/acceleration_v19/cartesian_kernel_v19/modules/Mahjong/CartesianPNB04V19.olean.server",
+          "sha256": "6010095ac89091be1da4a44bdeb4f57f4177ac0f4f5966b31d1e72d04763923b"
+        }
+      ],
+      "receipt": {
+        "bytes": 56250,
+        "path": "runs/lean_table_checker/acceleration_20261018_v19/cartesian_kernel_v19/attempts/d49f7a804858432cb76582ca740b1572/receipt.json",
+        "sha256": "99a7a1125d41532091ad7edd39b66aa1e7f5bbc5d4babfc71df9637ae190f40f"
+      },
+      "wall_seconds": 1.0790000000270084
+    },
+    {
+      "child_cpu_seconds": 0.390625,
+      "dependency_fingerprints": [
+        {
+          "axioms": [
+            "propext"
+          ],
+          "name": "Mahjong.CartesianPNB05V19.provided_PN"
+        }
+      ],
+      "exclusive_profiler_seconds": {
+        ".olean serialization": 0.0173,
+        "attribute application": 0.000155,
+        "blocked (unaccounted)": 0.0987,
+        "elaboration": 0.0192,
+        "fix level params": 8.91e-05,
+        "import": 0.060200000000000004,
+        "initialization": 0.0451,
+        "instantiate metavars": 0.000108,
+        "interpretation": 0.09340000000000001,
+        "let-to-have transformation": 6.31e-05,
+        "linting": 0.00296,
+        "module linting": 4e-06,
+        "parsing": 0.00265,
+        "process pre-definitions": 0.00263,
+        "share common exprs": 0.000352,
+        "tactic execution": 0.00044500000000000003,
+        "type checking": 0.0852,
+        "typeclass inference": 0.00522
+      },
+      "module": "Mahjong.CartesianPNB05V19",
+      "peak_job_committed_bytes": 116457472,
+      "published_artifacts": [
+        {
+          "bytes": 2032,
+          "path": "build/lean_table_checker/acceleration_v19/cartesian_kernel_v19/modules/Mahjong/CartesianPNB05V19.ir",
+          "sha256": "59c45f4abc14d50e1a5572e40d30a6ea8c86ce96cdea95d386399b9e159b3366"
+        },
+        {
+          "bytes": 176,
+          "path": "build/lean_table_checker/acceleration_v19/cartesian_kernel_v19/modules/Mahjong/CartesianPNB05V19.ir.sig",
+          "sha256": "b3b442d3296f8005afa2aacf2760953a307fd735633c2efafb6956e79169f6da"
+        },
+        {
+          "bytes": 15024,
+          "path": "build/lean_table_checker/acceleration_v19/cartesian_kernel_v19/modules/Mahjong/CartesianPNB05V19.olean",
+          "sha256": "f714901574152720641edbd5bcc5fa79b809fa146a639e49cc05e32846e97a86"
+        },
+        {
+          "bytes": 18320,
+          "path": "build/lean_table_checker/acceleration_v19/cartesian_kernel_v19/modules/Mahjong/CartesianPNB05V19.olean.private",
+          "sha256": "cbe6340929d9cf50365b13452f54ec4afe4ca6b1f762f5a5b7e60ce7060473f1"
+        },
+        {
+          "bytes": 7800,
+          "path": "build/lean_table_checker/acceleration_v19/cartesian_kernel_v19/modules/Mahjong/CartesianPNB05V19.olean.server",
+          "sha256": "a1873fbbddda585985a0cc5ee3cf204af6257e57710977c86bab36bb46c1a283"
+        }
+      ],
+      "receipt": {
+        "bytes": 57194,
+        "path": "runs/lean_table_checker/acceleration_20261018_v19/cartesian_kernel_v19/attempts/4e7162175fa64fce9342ddc74599f805/receipt.json",
+        "sha256": "8d6a85ec95a8a113bff9b8c5c568a4d83cea4a9c92a5a8612f6cf3afd110bb48"
+      },
+      "wall_seconds": 1.0790000000270084
+    },
+    {
+      "child_cpu_seconds": 0.3125,
+      "dependency_fingerprints": [
+        {
+          "axioms": [
+            "propext"
+          ],
+          "name": "Mahjong.CartesianPNB06V19.provided_PN"
+        }
+      ],
+      "exclusive_profiler_seconds": {
+        ".olean serialization": 0.013800000000000002,
+        "attribute application": 0.000158,
+        "blocked (unaccounted)": 0.0356,
+        "elaboration": 0.019600000000000003,
+        "fix level params": 9.48e-05,
+        "import": 0.0559,
+        "initialization": 0.044899999999999995,
+        "instantiate metavars": 0.000107,
+        "interpretation": 0.09440000000000001,
+        "let-to-have transformation": 6.7e-05,
+        "linting": 0.00282,
+        "module linting": 4e-06,
+        "parsing": 0.00287,
+        "process pre-definitions": 0.00275,
+        "share common exprs": 0.000375,
+        "tactic execution": 0.000457,
+        "type checking": 0.0229,
+        "typeclass inference": 0.00507
+      },
+      "module": "Mahjong.CartesianPNB06V19",
+      "peak_job_committed_bytes": 98996224,
+      "published_artifacts": [
+        {
+          "bytes": 1880,
+          "path": "build/lean_table_checker/acceleration_v19/cartesian_kernel_v19/modules/Mahjong/CartesianPNB06V19.ir",
+          "sha256": "3a148164e50634b89af21027c712adcc6d3e7d7819b6dfb447bdfa1be10ca4fc"
+        },
+        {
+          "bytes": 176,
+          "path": "build/lean_table_checker/acceleration_v19/cartesian_kernel_v19/modules/Mahjong/CartesianPNB06V19.ir.sig",
+          "sha256": "930cec54c0b303fa1cd19ad72f7ab96c6f67db18c5f6eb4992a01f4c2ca9e061"
+        },
+        {
+          "bytes": 15112,
+          "path": "build/lean_table_checker/acceleration_v19/cartesian_kernel_v19/modules/Mahjong/CartesianPNB06V19.olean",
+          "sha256": "d06bd7106a1c140b4070914e87c0f2707f4f189e6a4d0e4d9b82746548b4c379"
+        },
+        {
+          "bytes": 19208,
+          "path": "build/lean_table_checker/acceleration_v19/cartesian_kernel_v19/modules/Mahjong/CartesianPNB06V19.olean.private",
+          "sha256": "e7191eda526de66ac0d5b5b69e5370031e177c3de708c5fa2fc0225f931f7d39"
+        },
+        {
+          "bytes": 8032,
+          "path": "build/lean_table_checker/acceleration_v19/cartesian_kernel_v19/modules/Mahjong/CartesianPNB06V19.olean.server",
+          "sha256": "171155781a133071646641bd298935c380083ec9acda39cde1b7ce227e0f1d79"
+        }
+      ],
+      "receipt": {
+        "bytes": 58184,
+        "path": "runs/lean_table_checker/acceleration_20261018_v19/cartesian_kernel_v19/attempts/12627ea4e29e44748c754d9dd51e987c/receipt.json",
+        "sha256": "789d2841386112e95ea874d1f817bd036f55b56868920e1f14951d980e0a7d9c"
+      },
+      "wall_seconds": 1.0320000000065193
+    },
+    {
+      "child_cpu_seconds": 0.375,
+      "dependency_fingerprints": [
+        {
+          "axioms": [
+            "propext"
+          ],
+          "name": "Mahjong.CartesianPNB07V19.provided_PN"
+        }
+      ],
+      "exclusive_profiler_seconds": {
+        ".olean serialization": 0.0158,
+        "attribute application": 0.000164,
+        "blocked (unaccounted)": 0.0678,
+        "elaboration": 0.018699999999999998,
+        "fix level params": 8.88e-05,
+        "import": 0.0555,
+        "initialization": 0.05,
+        "instantiate metavars": 9.62e-05,
+        "interpretation": 0.09359999999999999,
+        "let-to-have transformation": 0.000108,
+        "linting": 0.0027400000000000002,
+        "module linting": 3.8e-06,
+        "parsing": 0.0028599999999999997,
+        "process pre-definitions": 0.00261,
+        "share common exprs": 0.00038700000000000003,
+        "tactic execution": 0.000535,
+        "type checking": 0.0557,
+        "typeclass inference": 0.0049299999999999995
+      },
+      "module": "Mahjong.CartesianPNB07V19",
+      "peak_job_committed_bytes": 107032576,
+      "published_artifacts": [
+        {
+          "bytes": 2032,
+          "path": "build/lean_table_checker/acceleration_v19/cartesian_kernel_v19/modules/Mahjong/CartesianPNB07V19.ir",
+          "sha256": "90085e43b13eeda3b506049f5e53065640daf7aec9df4fa9aa83fa3158fd8e02"
+        },
+        {
+          "bytes": 176,
+          "path": "build/lean_table_checker/acceleration_v19/cartesian_kernel_v19/modules/Mahjong/CartesianPNB07V19.ir.sig",
+          "sha256": "3a95c21fca99e1cd4d2ea912812bb609cd5f1aa9ec5c18aebef7b54d75556999"
+        },
+        {
+          "bytes": 14544,
+          "path": "build/lean_table_checker/acceleration_v19/cartesian_kernel_v19/modules/Mahjong/CartesianPNB07V19.olean",
+          "sha256": "70df95bc0455c164bb16f2ae628224e487148279c2cd0ac1f3652339784b3a4d"
+        },
+        {
+          "bytes": 17264,
+          "path": "build/lean_table_checker/acceleration_v19/cartesian_kernel_v19/modules/Mahjong/CartesianPNB07V19.olean.private",
+          "sha256": "dfb748600d491e208e2ad1499354ccc2111ad2aec97bbceb580fbbe7fe20796f"
+        },
+        {
+          "bytes": 7336,
+          "path": "build/lean_table_checker/acceleration_v19/cartesian_kernel_v19/modules/Mahjong/CartesianPNB07V19.olean.server",
+          "sha256": "f2ed497669a29175fb6ab60389ea94d38bdd7831535d95a3693f3fb01699310d"
+        }
+      ],
+      "receipt": {
+        "bytes": 59197,
+        "path": "runs/lean_table_checker/acceleration_20261018_v19/cartesian_kernel_v19/attempts/0602318690744d0bb3eb782df2062771/receipt.json",
+        "sha256": "673c7d3127f2939eb4ced5ea2442da4d169646b1517b6a14f0eda631e7dfc1f3"
+      },
+      "wall_seconds": 1.0619999999762513
+    },
+    {
+      "child_cpu_seconds": 0.34375,
+      "dependency_fingerprints": [
+        {
+          "axioms": [
+            "propext"
+          ],
+          "name": "Mahjong.CartesianPNB08V19.provided_PN"
+        }
+      ],
+      "exclusive_profiler_seconds": {
+        ".olean serialization": 0.0189,
+        "attribute application": 0.000147,
+        "blocked (unaccounted)": 0.045,
+        "elaboration": 0.026699999999999998,
+        "fix level params": 8.939999999999999e-05,
+        "import": 0.053,
+        "initialization": 0.047,
+        "instantiate metavars": 0.000133,
+        "interpretation": 0.0942,
+        "let-to-have transformation": 6.72e-05,
+        "linting": 0.0030299999999999997,
+        "module linting": 4.3e-06,
+        "parsing": 0.00321,
+        "process pre-definitions": 0.00263,
+        "share common exprs": 0.00038700000000000003,
+        "tactic execution": 0.000458,
+        "type checking": 0.032299999999999995,
+        "typeclass inference": 0.00661
+      },
+      "module": "Mahjong.CartesianPNB08V19",
+      "peak_job_committed_bytes": 99741696,
+      "published_artifacts": [
+        {
+          "bytes": 1880,
+          "path": "build/lean_table_checker/acceleration_v19/cartesian_kernel_v19/modules/Mahjong/CartesianPNB08V19.ir",
+          "sha256": "6eb711d52820cd04b936d2165ad20454d05917bc024a93c5c339c6a2edfdb2b4"
+        },
+        {
+          "bytes": 176,
+          "path": "build/lean_table_checker/acceleration_v19/cartesian_kernel_v19/modules/Mahjong/CartesianPNB08V19.ir.sig",
+          "sha256": "854eb6852a9b7b029c63991b067c2629aa1a8e5693f55466fb9672c3e4959514"
+        },
+        {
+          "bytes": 14392,
+          "path": "build/lean_table_checker/acceleration_v19/cartesian_kernel_v19/modules/Mahjong/CartesianPNB08V19.olean",
+          "sha256": "b6f2acdee523db385fa99e303b4bf91058cc08e3a6cc0eb2e2a3f9a86231dfda"
+        },
+        {
+          "bytes": 20728,
+          "path": "build/lean_table_checker/acceleration_v19/cartesian_kernel_v19/modules/Mahjong/CartesianPNB08V19.olean.private",
+          "sha256": "b05569c8c9ac53facf747571384383e2362f589478098ce7ca620601c1d4ec1d"
+        },
+        {
+          "bytes": 7336,
+          "path": "build/lean_table_checker/acceleration_v19/cartesian_kernel_v19/modules/Mahjong/CartesianPNB08V19.olean.server",
+          "sha256": "d964374dd02645f59274364b33040f7f0e0c5cd4bfaf74864b82f73db195ba2b"
+        }
+      ],
+      "receipt": {
+        "bytes": 60164,
+        "path": "runs/lean_table_checker/acceleration_20261018_v19/cartesian_kernel_v19/attempts/316180a303d24db58e89c047636525e2/receipt.json",
+        "sha256": "8fe06a870ad4d19c3333ebb320eb09f7f1387b9429583f4bde86a800058ef75b"
+      },
+      "wall_seconds": 1.0459999999729916
+    },
+    {
+      "child_cpu_seconds": 0.28125,
+      "dependency_fingerprints": [
+        {
+          "axioms": [
+            "propext"
+          ],
+          "name": "Mahjong.CartesianPNB09V19.provided_PN"
+        }
+      ],
+      "exclusive_profiler_seconds": {
+        ".olean serialization": 0.0132,
+        "attribute application": 0.000101,
+        "blocked (unaccounted)": 0.0173,
+        "elaboration": 0.0146,
+        "fix level params": 6.34e-05,
+        "import": 0.0533,
+        "initialization": 0.0453,
+        "instantiate metavars": 7.52e-05,
+        "interpretation": 0.0922,
+        "let-to-have transformation": 4.5900000000000004e-05,
+        "linting": 0.00198,
+        "module linting": 4.2e-06,
+        "parsing": 0.00199,
+        "process pre-definitions": 0.00174,
+        "share common exprs": 0.00026700000000000004,
+        "tactic execution": 0.000428,
+        "type checking": 0.00861,
+        "typeclass inference": 0.0047599999999999995
+      },
+      "module": "Mahjong.CartesianPNB09V19",
+      "peak_job_committed_bytes": 90705920,
+      "published_artifacts": [
+        {
+          "bytes": 1728,
+          "path": "build/lean_table_checker/acceleration_v19/cartesian_kernel_v19/modules/Mahjong/CartesianPNB09V19.ir",
+          "sha256": "449102a9b735f6d1b9e6f4c503ba052b41082a33088818ba94982b7448dddb75"
+        },
+        {
+          "bytes": 176,
+          "path": "build/lean_table_checker/acceleration_v19/cartesian_kernel_v19/modules/Mahjong/CartesianPNB09V19.ir.sig",
+          "sha256": "2e07f66ba1860532335955c7f25bd95ab9524d63e403de86c456cecf60c81be1"
+        },
+        {
+          "bytes": 11840,
+          "path": "build/lean_table_checker/acceleration_v19/cartesian_kernel_v19/modules/Mahjong/CartesianPNB09V19.olean",
+          "sha256": "469658ebc003b7dff519e414059c569b544494a8971e2d2eafaba614acc4e6a2"
+        },
+        {
+          "bytes": 12264,
+          "path": "build/lean_table_checker/acceleration_v19/cartesian_kernel_v19/modules/Mahjong/CartesianPNB09V19.olean.private",
+          "sha256": "421a74dcbda2e06acc4c44375c81b524741ec482497d725d040e56882eee9281"
+        },
+        {
+          "bytes": 5016,
+          "path": "build/lean_table_checker/acceleration_v19/cartesian_kernel_v19/modules/Mahjong/CartesianPNB09V19.olean.server",
+          "sha256": "72fc635d5b4f46cdb7cf1d50845e07dcf3a1c69497fd4c4d1877e34508b6e8de"
+        }
+      ],
+      "receipt": {
+        "bytes": 61107,
+        "path": "runs/lean_table_checker/acceleration_20261018_v19/cartesian_kernel_v19/attempts/ca95aa2bbba6420bb5a5be4f56d82f95/receipt.json",
+        "sha256": "8a469eb5dbf6a0ba552de51617a7b72abb1fc12dd2c8bde2cc725200a15a996e"
+      },
+      "wall_seconds": 1.0
+    },
+    {
+      "child_cpu_seconds": 0.296875,
+      "dependency_fingerprints": [
+        {
+          "axioms": [
+            "propext"
+          ],
+          "name": "Mahjong.CartesianPNB10V19.provided_PN"
+        }
+      ],
+      "exclusive_profiler_seconds": {
+        ".olean serialization": 0.0157,
+        "attribute application": 0.000131,
+        "blocked (unaccounted)": 0.0167,
+        "elaboration": 0.0147,
+        "fix level params": 7.38e-05,
+        "import": 0.0508,
+        "initialization": 0.0495,
+        "instantiate metavars": 8.15e-05,
+        "interpretation": 0.0933,
+        "let-to-have transformation": 5.5100000000000004e-05,
+        "linting": 0.00265,
+        "module linting": 4.4e-06,
+        "parsing": 0.0022299999999999998,
+        "process pre-definitions": 0.00217,
+        "share common exprs": 0.000308,
+        "tactic execution": 0.000415,
+        "type checking": 0.0044800000000000005,
+        "typeclass inference": 0.00445
+      },
+      "module": "Mahjong.CartesianPNB10V19",
+      "peak_job_committed_bytes": 87564288,
+      "published_artifacts": [
+        {
+          "bytes": 1576,
+          "path": "build/lean_table_checker/acceleration_v19/cartesian_kernel_v19/modules/Mahjong/CartesianPNB10V19.ir",
+          "sha256": "c42727ee271c3e807725544f724a662b8f319e4df736c00388c4eefe611bf3cd"
+        },
+        {
+          "bytes": 176,
+          "path": "build/lean_table_checker/acceleration_v19/cartesian_kernel_v19/modules/Mahjong/CartesianPNB10V19.ir.sig",
+          "sha256": "c13249043c9fb6638166311d831dacd536ca0177e9a44b035a9a9a7b657f19d7"
+        },
+        {
+          "bytes": 13128,
+          "path": "build/lean_table_checker/acceleration_v19/cartesian_kernel_v19/modules/Mahjong/CartesianPNB10V19.olean",
+          "sha256": "ad8fea0440123f5f04699d4e4e10f21684f9460b6b0ccbc69cee2d944bf36bbd"
+        },
+        {
+          "bytes": 12992,
+          "path": "build/lean_table_checker/acceleration_v19/cartesian_kernel_v19/modules/Mahjong/CartesianPNB10V19.olean.private",
+          "sha256": "96bccc7573843ebee29c3ae81ed63aab3c040fbb6f0cce3df517d57e40043162"
+        },
+        {
+          "bytes": 6408,
+          "path": "build/lean_table_checker/acceleration_v19/cartesian_kernel_v19/modules/Mahjong/CartesianPNB10V19.olean.server",
+          "sha256": "67b05dba530fd216dbd6260ebb771904ab3633a401cbefd7288946387b8e1335"
+        }
+      ],
+      "receipt": {
+        "bytes": 62105,
+        "path": "runs/lean_table_checker/acceleration_20261018_v19/cartesian_kernel_v19/attempts/fea335677de0477194cbabc99d613a35/receipt.json",
+        "sha256": "7e1f6b2a0ca2cf58e0d905788818fca04f43dfefdbf0974d79958c4191aa9626"
+      },
+      "wall_seconds": 1.0309999999590218
+    },
+    {
+      "child_cpu_seconds": 0.328125,
+      "dependency_fingerprints": [
+        {
+          "axioms": [
+            "propext"
+          ],
+          "name": "Mahjong.CartesianPNB11V19.provided_PN"
+        }
+      ],
+      "exclusive_profiler_seconds": {
+        ".olean serialization": 0.0144,
+        "attribute application": 0.000122,
+        "blocked (unaccounted)": 0.027600000000000003,
+        "elaboration": 0.0233,
+        "fix level params": 7.280000000000001e-05,
+        "import": 0.054299999999999994,
+        "initialization": 0.0444,
+        "instantiate metavars": 0.00011700000000000001,
+        "interpretation": 0.0938,
+        "let-to-have transformation": 5.55e-05,
+        "linting": 0.0023599999999999997,
+        "module linting": 3.6e-06,
+        "parsing": 0.00277,
+        "process pre-definitions": 0.00211,
+        "share common exprs": 0.00033,
+        "tactic execution": 0.000441,
+        "type checking": 0.0173,
+        "typeclass inference": 0.0061600000000000005
+      },
+      "module": "Mahjong.CartesianPNB11V19",
+      "peak_job_committed_bytes": 93061120,
+      "published_artifacts": [
+        {
+          "bytes": 1880,
+          "path": "build/lean_table_checker/acceleration_v19/cartesian_kernel_v19/modules/Mahjong/CartesianPNB11V19.ir",
+          "sha256": "7652bc889b6a28d6573506fdd481ed0ec229a9c5697b651921aeb2721a9b4d85"
+        },
+        {
+          "bytes": 176,
+          "path": "build/lean_table_checker/acceleration_v19/cartesian_kernel_v19/modules/Mahjong/CartesianPNB11V19.ir.sig",
+          "sha256": "c1854e8375b78f66a4a21e380d75c636d43e1a6736fd06d758d2b6b4c005a47f"
+        },
+        {
+          "bytes": 12712,
+          "path": "build/lean_table_checker/acceleration_v19/cartesian_kernel_v19/modules/Mahjong/CartesianPNB11V19.olean",
+          "sha256": "a0f9fc505aac7196a345bb84241a6137fabaa54b07a6048be643faa7b818c600"
+        },
+        {
+          "bytes": 18648,
+          "path": "build/lean_table_checker/acceleration_v19/cartesian_kernel_v19/modules/Mahjong/CartesianPNB11V19.olean.private",
+          "sha256": "b4148a17292ea434855199977e0169243dec86429de3a94ae2eb6417510c6f3c"
+        },
+        {
+          "bytes": 5712,
+          "path": "build/lean_table_checker/acceleration_v19/cartesian_kernel_v19/modules/Mahjong/CartesianPNB11V19.olean.server",
+          "sha256": "046c529739826676bb535eb996696354b3cf8fca12af07319e312234512ef314"
+        }
+      ],
+      "receipt": {
+        "bytes": 63127,
+        "path": "runs/lean_table_checker/acceleration_20261018_v19/cartesian_kernel_v19/attempts/1823a7ac4fde4b9c86a80d6e6a65b614/receipt.json",
+        "sha256": "c2bcea5358708d4cf28203c150650e3b58535ad5cfda1d59df4ea9775fd4f716"
+      },
+      "wall_seconds": 1.0459999999729916
+    },
+    {
+      "child_cpu_seconds": 0.453125,
+      "dependency_fingerprints": [
+        {
+          "axioms": [
+            "propext"
+          ],
+          "name": "Mahjong.CartesianPNB12V19.provided_PN"
+        }
+      ],
+      "exclusive_profiler_seconds": {
+        ".olean serialization": 0.0149,
+        "attribute application": 0.000127,
+        "blocked (unaccounted)": 0.178,
+        "elaboration": 0.02,
+        "fix level params": 7.73e-05,
+        "import": 0.054200000000000005,
+        "initialization": 0.0458,
+        "instantiate metavars": 9.7e-05,
+        "interpretation": 0.09340000000000001,
+        "let-to-have transformation": 5.59e-05,
+        "linting": 0.00275,
+        "module linting": 3.7e-06,
+        "parsing": 0.00252,
+        "process pre-definitions": 0.00216,
+        "share common exprs": 0.00032900000000000003,
+        "tactic execution": 0.00046100000000000004,
+        "type checking": 0.166,
+        "typeclass inference": 0.00549
+      },
+      "module": "Mahjong.CartesianPNB12V19",
+      "peak_job_committed_bytes": 159223808,
+      "published_artifacts": [
+        {
+          "bytes": 1880,
+          "path": "build/lean_table_checker/acceleration_v19/cartesian_kernel_v19/modules/Mahjong/CartesianPNB12V19.ir",
+          "sha256": "a343520b98870a3b424f4e85384ba22fe5befd9dd7edf8bcdc7b6fa67c397e4a"
+        },
+        {
+          "bytes": 176,
+          "path": "build/lean_table_checker/acceleration_v19/cartesian_kernel_v19/modules/Mahjong/CartesianPNB12V19.ir.sig",
+          "sha256": "f4468dd713eddc3b7667ea720112deb58c086b07bd836c8972f1653abe931976"
+        },
+        {
+          "bytes": 13192,
+          "path": "build/lean_table_checker/acceleration_v19/cartesian_kernel_v19/modules/Mahjong/CartesianPNB12V19.olean",
+          "sha256": "788a42556e71e7de509522f0f24a879f4f1d7ba79d3aa43862fef2158ff4d038"
+        },
+        {
+          "bytes": 19672,
+          "path": "build/lean_table_checker/acceleration_v19/cartesian_kernel_v19/modules/Mahjong/CartesianPNB12V19.olean.private",
+          "sha256": "8f3819105ac80e21ea3c73f19c48652e086801a90fa00f99d7d0befaa5b38e60"
+        },
+        {
+          "bytes": 6176,
+          "path": "build/lean_table_checker/acceleration_v19/cartesian_kernel_v19/modules/Mahjong/CartesianPNB12V19.olean.server",
+          "sha256": "f9612024b55b21f5c5705965c89bc1b92c7eeca0996fa07d392b33fe9a7c66d5"
+        }
+      ],
+      "receipt": {
+        "bytes": 64079,
+        "path": "runs/lean_table_checker/acceleration_20261018_v19/cartesian_kernel_v19/attempts/f672c66b9003474185ed3cb1199b220a/receipt.json",
+        "sha256": "3c2136555b21bde81cf157801b346b67256c1fbe01bd3871689f68c8428ce3e0"
+      },
+      "wall_seconds": 1.202999999979511
+    },
+    {
+      "child_cpu_seconds": 0.34375,
+      "dependency_fingerprints": [
+        {
+          "axioms": [
+            "propext"
+          ],
+          "name": "Mahjong.CartesianPNB13V19.provided_PN"
+        }
+      ],
+      "exclusive_profiler_seconds": {
+        ".olean serialization": 0.0136,
+        "attribute application": 0.000134,
+        "blocked (unaccounted)": 0.0381,
+        "elaboration": 0.0245,
+        "fix level params": 8.219999999999999e-05,
+        "import": 0.0544,
+        "initialization": 0.0455,
+        "instantiate metavars": 0.000118,
+        "interpretation": 0.094,
+        "let-to-have transformation": 6.14e-05,
+        "linting": 0.00276,
+        "module linting": 4.4e-06,
+        "parsing": 0.00292,
+        "process pre-definitions": 0.0023599999999999997,
+        "share common exprs": 0.00035499999999999996,
+        "tactic execution": 0.00044,
+        "type checking": 0.026600000000000002,
+        "typeclass inference": 0.00621
+      },
+      "module": "Mahjong.CartesianPNB13V19",
+      "peak_job_committed_bytes": 97320960,
+      "published_artifacts": [
+        {
+          "bytes": 1880,
+          "path": "build/lean_table_checker/acceleration_v19/cartesian_kernel_v19/modules/Mahjong/CartesianPNB13V19.ir",
+          "sha256": "1d8bf1f4714a67943194953cb0bc06182ef220a902554cc471f23762e11f4953"
+        },
+        {
+          "bytes": 176,
+          "path": "build/lean_table_checker/acceleration_v19/cartesian_kernel_v19/modules/Mahjong/CartesianPNB13V19.ir.sig",
+          "sha256": "4c269e3051e087a59a8eebe2c98de84495132ac1432b8f928e442391b6832b0c"
+        },
+        {
+          "bytes": 13672,
+          "path": "build/lean_table_checker/acceleration_v19/cartesian_kernel_v19/modules/Mahjong/CartesianPNB13V19.olean",
+          "sha256": "7a2e8cfda960ec5d85472a8fff311a50aa4d91132781433aaf258dc2d76efba7"
+        },
+        {
+          "bytes": 23608,
+          "path": "build/lean_table_checker/acceleration_v19/cartesian_kernel_v19/modules/Mahjong/CartesianPNB13V19.olean.private",
+          "sha256": "5f7e3310e3ee859e39191b01e71e23489f846e6d38c1bad26951a71d11097394"
+        },
+        {
+          "bytes": 6640,
+          "path": "build/lean_table_checker/acceleration_v19/cartesian_kernel_v19/modules/Mahjong/CartesianPNB13V19.olean.server",
+          "sha256": "e8acfff29a528317d370bb291ba7d8fbbf8da62115f0b8c4824cb11f0f4c100f"
+        }
+      ],
+      "receipt": {
+        "bytes": 65059,
+        "path": "runs/lean_table_checker/acceleration_20261018_v19/cartesian_kernel_v19/attempts/14c622ace9934d40bd28b947689e7d23/receipt.json",
+        "sha256": "917a9a9fc97855d3aae7b70377da1390fc6e1b339c343d25568ce5210ff640a6"
+      },
+      "wall_seconds": 1.077999999979511
+    },
+    {
+      "child_cpu_seconds": 0.359375,
+      "dependency_fingerprints": [
+        {
+          "axioms": [
+            "propext"
+          ],
+          "name": "Mahjong.CartesianPNB14V19.provided_PN"
+        }
+      ],
+      "exclusive_profiler_seconds": {
+        ".olean serialization": 0.0169,
+        "attribute application": 0.00013800000000000002,
+        "blocked (unaccounted)": 0.0371,
+        "elaboration": 0.023,
+        "fix level params": 8.62e-05,
+        "import": 0.0584,
+        "initialization": 0.0458,
+        "instantiate metavars": 0.000111,
+        "interpretation": 0.0932,
+        "let-to-have transformation": 6.36e-05,
+        "linting": 0.00296,
+        "module linting": 4e-06,
+        "parsing": 0.00287,
+        "process pre-definitions": 0.00263,
+        "share common exprs": 0.000376,
+        "tactic execution": 0.0005600000000000001,
+        "type checking": 0.023600000000000003,
+        "typeclass inference": 0.005679999999999999
+      },
+      "module": "Mahjong.CartesianPNB14V19",
+      "peak_job_committed_bytes": 101556224,
+      "published_artifacts": [
+        {
+          "bytes": 2184,
+          "path": "build/lean_table_checker/acceleration_v19/cartesian_kernel_v19/modules/Mahjong/CartesianPNB14V19.ir",
+          "sha256": "1f6d8b55b9a970647bea8df3b530a3229b30e4fe8bd6fabee4805df6fd064b16"
+        },
+        {
+          "bytes": 176,
+          "path": "build/lean_table_checker/acceleration_v19/cartesian_kernel_v19/modules/Mahjong/CartesianPNB14V19.ir.sig",
+          "sha256": "96264ec319db5b0fe5c532acc2ca06549168e51a1db329b58f2c4e7da962fce9"
+        },
+        {
+          "bytes": 14696,
+          "path": "build/lean_table_checker/acceleration_v19/cartesian_kernel_v19/modules/Mahjong/CartesianPNB14V19.olean",
+          "sha256": "c99bb16edc929885969a7d5c107628b06c1e0c015e350d02445a642b02913b2f"
+        },
+        {
+          "bytes": 19888,
+          "path": "build/lean_table_checker/acceleration_v19/cartesian_kernel_v19/modules/Mahjong/CartesianPNB14V19.olean.private",
+          "sha256": "79ec67d274281113df9dd36bf06a47b6daecec58ef9237d40fdcd8619e8aad8f"
+        },
+        {
+          "bytes": 7336,
+          "path": "build/lean_table_checker/acceleration_v19/cartesian_kernel_v19/modules/Mahjong/CartesianPNB14V19.olean.server",
+          "sha256": "64224014160e9dffa89803f6a0a864a9e2548d102b62e75225be5c9241070129"
+        }
+      ],
+      "receipt": {
+        "bytes": 66042,
+        "path": "runs/lean_table_checker/acceleration_20261018_v19/cartesian_kernel_v19/attempts/cac525d63c4942ae9bc610c047016bac/receipt.json",
+        "sha256": "a200a5cef917a608cbdc4b7aea15a1ca470aed8a968a0f6596131a9cc66bb4fc"
+      },
+      "wall_seconds": 1.077999999979511
+    },
+    {
+      "child_cpu_seconds": 0.4375,
+      "dependency_fingerprints": [
+        {
+          "axioms": [
+            "propext"
+          ],
+          "name": "Mahjong.CartesianPNB15V19.provided_PN"
+        }
+      ],
+      "exclusive_profiler_seconds": {
+        ".olean serialization": 0.018,
+        "attribute application": 0.00018099999999999998,
+        "blocked (unaccounted)": 0.0726,
+        "elaboration": 0.0313,
+        "fix level params": 0.000124,
+        "import": 0.062,
+        "initialization": 0.048,
+        "instantiate metavars": 0.00015,
+        "interpretation": 0.0985,
+        "let-to-have transformation": 8.690000000000001e-05,
+        "linting": 0.0034300000000000003,
+        "module linting": 4.4e-06,
+        "parsing": 0.00425,
+        "process pre-definitions": 0.0036,
+        "share common exprs": 0.00047,
+        "tactic execution": 0.0005430000000000001,
+        "type checking": 0.056799999999999996,
+        "typeclass inference": 0.00749
+      },
+      "module": "Mahjong.CartesianPNB15V19",
+      "peak_job_committed_bytes": 104992768,
+      "published_artifacts": [
+        {
+          "bytes": 2184,
+          "path": "build/lean_table_checker/acceleration_v19/cartesian_kernel_v19/modules/Mahjong/CartesianPNB15V19.ir",
+          "sha256": "7226c4daccf1e8cd5512da2a4edbf8a7098d00ea76ccee1730eec264b009aa9b"
+        },
+        {
+          "bytes": 176,
+          "path": "build/lean_table_checker/acceleration_v19/cartesian_kernel_v19/modules/Mahjong/CartesianPNB15V19.ir.sig",
+          "sha256": "2cfd012b7c8da2aa2b104c6e72911b234a97ad1bfb2070f1912d1f322fc70e08"
+        },
+        {
+          "bytes": 15176,
+          "path": "build/lean_table_checker/acceleration_v19/cartesian_kernel_v19/modules/Mahjong/CartesianPNB15V19.olean",
+          "sha256": "dc2b3babfbf8e05e2cd4dd3ca64fb6b2cdcaa37a3539c644010ba71ae6958641"
+        },
+        {
+          "bytes": 21824,
+          "path": "build/lean_table_checker/acceleration_v19/cartesian_kernel_v19/modules/Mahjong/CartesianPNB15V19.olean.private",
+          "sha256": "aaa899f7d2a9af8ba1402fffdb89b3836c30b418162c966eb2e73b35f80a849f"
+        },
+        {
+          "bytes": 7800,
+          "path": "build/lean_table_checker/acceleration_v19/cartesian_kernel_v19/modules/Mahjong/CartesianPNB15V19.olean.server",
+          "sha256": "6987849031b5a8c1d51b6e07d3e3c388c9b7df76c936919cc971773adb812d7a"
+        }
+      ],
+      "receipt": {
+        "bytes": 67035,
+        "path": "runs/lean_table_checker/acceleration_20261018_v19/cartesian_kernel_v19/attempts/b6e3403be4004483aa00e858a353c169/receipt.json",
+        "sha256": "bfba01c09e7c7a69c870bf1a95b947949219e8e727618b6175af22d5c6bc7715"
+      },
+      "wall_seconds": 1.1570000000065193
+    },
+    {
+      "child_cpu_seconds": 0.390625,
+      "dependency_fingerprints": [
+        {
+          "axioms": [
+            "propext"
+          ],
+          "name": "Mahjong.CartesianPNB16V19.provided_PN"
+        }
+      ],
+      "exclusive_profiler_seconds": {
+        ".olean serialization": 0.0145,
+        "attribute application": 0.000179,
+        "blocked (unaccounted)": 0.0974,
+        "elaboration": 0.0224,
+        "fix level params": 0.000101,
+        "import": 0.0587,
+        "initialization": 0.047200000000000006,
+        "instantiate metavars": 0.000118,
+        "interpretation": 0.09490000000000001,
+        "let-to-have transformation": 7.14e-05,
+        "linting": 0.00298,
+        "module linting": 4.4e-06,
+        "parsing": 0.0030800000000000003,
+        "process pre-definitions": 0.00289,
+        "share common exprs": 0.00041999999999999996,
+        "tactic execution": 0.000493,
+        "type checking": 0.0839,
+        "typeclass inference": 0.00595
+      },
+      "module": "Mahjong.CartesianPNB16V19",
+      "peak_job_committed_bytes": 113774592,
+      "published_artifacts": [
+        {
+          "bytes": 2032,
+          "path": "build/lean_table_checker/acceleration_v19/cartesian_kernel_v19/modules/Mahjong/CartesianPNB16V19.ir",
+          "sha256": "2dd13e942423522812f96bacdba5a71ce37fbe8e05c01877e3d865128f4757cd"
+        },
+        {
+          "bytes": 176,
+          "path": "build/lean_table_checker/acceleration_v19/cartesian_kernel_v19/modules/Mahjong/CartesianPNB16V19.ir.sig",
+          "sha256": "9bd6901ef7a91ee07f0f02f1bb4b2a82df856c2f6a3168ba84192466072963b9"
+        },
+        {
+          "bytes": 15504,
+          "path": "build/lean_table_checker/acceleration_v19/cartesian_kernel_v19/modules/Mahjong/CartesianPNB16V19.olean",
+          "sha256": "87220f4b09957f4fbc73a636dfbf3f291b350cae0a799253d61954097ecdd327"
+        },
+        {
+          "bytes": 21000,
+          "path": "build/lean_table_checker/acceleration_v19/cartesian_kernel_v19/modules/Mahjong/CartesianPNB16V19.olean.private",
+          "sha256": "ccb32488486f9315c9b877e71f6c9e62f803f5b4ea545a53eae9a86e72436775"
+        },
+        {
+          "bytes": 8264,
+          "path": "build/lean_table_checker/acceleration_v19/cartesian_kernel_v19/modules/Mahjong/CartesianPNB16V19.olean.server",
+          "sha256": "88d50ccbdb64a7cf9d976944502cb417d9a638bcc1b80369f8c2ec8072019c85"
+        }
+      ],
+      "receipt": {
+        "bytes": 68013,
+        "path": "runs/lean_table_checker/acceleration_20261018_v19/cartesian_kernel_v19/attempts/a2d3cd70e8c64220ad79babfe05ade00/receipt.json",
+        "sha256": "3e48cdfb48f4f3464e005c9f38dcca98cc02367144d0b7428019de5b3a3d2653"
+      },
+      "wall_seconds": 1.2030000000377186
+    },
+    {
+      "child_cpu_seconds": 0.53125,
+      "dependency_fingerprints": [
+        {
+          "axioms": [
+            "propext"
+          ],
+          "name": "Mahjong.CartesianPNB17V19.provided_PN"
+        }
+      ],
+      "exclusive_profiler_seconds": {
+        ".olean serialization": 0.015099999999999999,
+        "attribute application": 0.000124,
+        "blocked (unaccounted)": 0.207,
+        "elaboration": 0.0183,
+        "fix level params": 8.02e-05,
+        "import": 0.0611,
+        "initialization": 0.045899999999999996,
+        "instantiate metavars": 8.989999999999999e-05,
+        "interpretation": 0.0923,
+        "let-to-have transformation": 6.16e-05,
+        "linting": 0.00237,
+        "module linting": 4.4e-06,
+        "parsing": 0.0023,
+        "process pre-definitions": 0.00219,
+        "share common exprs": 0.000316,
+        "tactic execution": 0.000481,
+        "type checking": 0.196,
+        "typeclass inference": 0.00513
+      },
+      "module": "Mahjong.CartesianPNB17V19",
+      "peak_job_committed_bytes": 155877376,
+      "published_artifacts": [
+        {
+          "bytes": 2336,
+          "path": "build/lean_table_checker/acceleration_v19/cartesian_kernel_v19/modules/Mahjong/CartesianPNB17V19.ir",
+          "sha256": "c009c7b1b016612df24c8bcab308296a9acb1475cbdfca89ff2c92b5b559eb2f"
+        },
+        {
+          "bytes": 176,
+          "path": "build/lean_table_checker/acceleration_v19/cartesian_kernel_v19/modules/Mahjong/CartesianPNB17V19.ir.sig",
+          "sha256": "b8668ee0c7593ed0433b0153e220f3b98f2fa4e56e263993411032c987f90c21"
+        },
+        {
+          "bytes": 13648,
+          "path": "build/lean_table_checker/acceleration_v19/cartesian_kernel_v19/modules/Mahjong/CartesianPNB17V19.olean",
+          "sha256": "92f5d45aaef62147f891ed9e2c6326037187cc638534b8fbb623f6c4ba80d6ab"
+        },
+        {
+          "bytes": 15040,
+          "path": "build/lean_table_checker/acceleration_v19/cartesian_kernel_v19/modules/Mahjong/CartesianPNB17V19.olean.private",
+          "sha256": "af0219a7b272db8e8f7cd0b3b39aa2da0ba8706478bb7ecfc909e739f2cade77"
+        },
+        {
+          "bytes": 6176,
+          "path": "build/lean_table_checker/acceleration_v19/cartesian_kernel_v19/modules/Mahjong/CartesianPNB17V19.olean.server",
+          "sha256": "4fdfff23c55ee5355e954e68b7f2a4f01629e1541b2800f921a2e0d59fb1e3de"
+        }
+      ],
+      "receipt": {
+        "bytes": 68960,
+        "path": "runs/lean_table_checker/acceleration_20261018_v19/cartesian_kernel_v19/attempts/fc7edfe1e1b447aba9f1e7f07ceb14fc/receipt.json",
+        "sha256": "85a6c61c68ee1ec36f539ed5da9027575eed93559ae9cc389ad3ff12262702cb"
+      },
+      "wall_seconds": 1.312000000034459
+    },
+    {
+      "child_cpu_seconds": 0.3125,
+      "dependency_fingerprints": [
+        {
+          "axioms": [
+            "propext"
+          ],
+          "name": "Mahjong.CartesianPNB18V19.provided_PN"
+        }
+      ],
+      "exclusive_profiler_seconds": {
+        ".olean serialization": 0.016800000000000002,
+        "attribute application": 0.00015099999999999998,
+        "blocked (unaccounted)": 0.027899999999999998,
+        "elaboration": 0.0169,
+        "fix level params": 7.72e-05,
+        "import": 0.056100000000000004,
+        "initialization": 0.0435,
+        "instantiate metavars": 8.82e-05,
+        "interpretation": 0.0979,
+        "let-to-have transformation": 5.5e-05,
+        "linting": 0.00256,
+        "module linting": 4.2e-06,
+        "parsing": 0.00256,
+        "process pre-definitions": 0.0022,
+        "share common exprs": 0.000277,
+        "tactic execution": 0.00045200000000000004,
+        "type checking": 0.016300000000000002,
+        "typeclass inference": 0.00481
+      },
+      "module": "Mahjong.CartesianPNB18V19",
+      "peak_job_committed_bytes": 94679040,
+      "published_artifacts": [
+        {
+          "bytes": 1880,
+          "path": "build/lean_table_checker/acceleration_v19/cartesian_kernel_v19/modules/Mahjong/CartesianPNB18V19.ir",
+          "sha256": "e472ee581aded6bdb6b7713049aa66b89d5004ef1954612296f5c7beb6abc871"
+        },
+        {
+          "bytes": 176,
+          "path": "build/lean_table_checker/acceleration_v19/cartesian_kernel_v19/modules/Mahjong/CartesianPNB18V19.ir.sig",
+          "sha256": "4942289bbc3d883591482ef094cf582aee7eb55eebd7ef05d26cb89492e976e6"
+        },
+        {
+          "bytes": 13432,
+          "path": "build/lean_table_checker/acceleration_v19/cartesian_kernel_v19/modules/Mahjong/CartesianPNB18V19.olean",
+          "sha256": "4ba2f3376dc44a601d92ccfe96e4b176ebca5cae76a323f38032776538f34e73"
+        },
+        {
+          "bytes": 16200,
+          "path": "build/lean_table_checker/acceleration_v19/cartesian_kernel_v19/modules/Mahjong/CartesianPNB18V19.olean.private",
+          "sha256": "bf5785720886b2a7a0e1a201d65d34c51cf601a5739ad9e60642671c6bc67926"
+        },
+        {
+          "bytes": 6408,
+          "path": "build/lean_table_checker/acceleration_v19/cartesian_kernel_v19/modules/Mahjong/CartesianPNB18V19.olean.server",
+          "sha256": "d50ce9a75b20a33ae7ecfc1c81407a7f775b615608616435cc47aa5bf86f246f"
+        }
+      ],
+      "receipt": {
+        "bytes": 69998,
+        "path": "runs/lean_table_checker/acceleration_20261018_v19/cartesian_kernel_v19/attempts/74adac2c40014c62981293c5598beba8/receipt.json",
+        "sha256": "e6c43459787f078098a1b932444c723d802276a2d82c4d51c63c79d236091bbf"
+      },
+      "wall_seconds": 1.1089999999967404
+    },
+    {
+      "child_cpu_seconds": 0.421875,
+      "dependency_fingerprints": [
+        {
+          "axioms": [
+            "propext"
+          ],
+          "name": "Mahjong.CartesianPNB19V19.provided_PN"
+        }
+      ],
+      "exclusive_profiler_seconds": {
+        ".olean serialization": 0.0182,
+        "attribute application": 0.00015900000000000002,
+        "blocked (unaccounted)": 0.06709999999999999,
+        "elaboration": 0.0294,
+        "fix level params": 9.36e-05,
+        "import": 0.062299999999999994,
+        "initialization": 0.0541,
+        "instantiate metavars": 0.000134,
+        "interpretation": 0.0938,
+        "let-to-have transformation": 6.840000000000001e-05,
+        "linting": 0.00319,
+        "module linting": 5e-06,
+        "parsing": 0.00325,
+        "process pre-definitions": 0.00276,
+        "share common exprs": 0.000416,
+        "tactic execution": 0.000526,
+        "type checking": 0.053,
+        "typeclass inference": 0.00633
+      },
+      "module": "Mahjong.CartesianPNB19V19",
+      "peak_job_committed_bytes": 115118080,
+      "published_artifacts": [
+        {
+          "bytes": 2488,
+          "path": "build/lean_table_checker/acceleration_v19/cartesian_kernel_v19/modules/Mahjong/CartesianPNB19V19.ir",
+          "sha256": "51fea6cc9733ac1a9cc0ffe35cbd3901c753663957793a66651ed7ca9f678e21"
+        },
+        {
+          "bytes": 176,
+          "path": "build/lean_table_checker/acceleration_v19/cartesian_kernel_v19/modules/Mahjong/CartesianPNB19V19.ir.sig",
+          "sha256": "c994c5da599ddbfc90a10f0802c0ddca56aedf37f3b23a3154711dd9873b2f61"
+        },
+        {
+          "bytes": 15720,
+          "path": "build/lean_table_checker/acceleration_v19/cartesian_kernel_v19/modules/Mahjong/CartesianPNB19V19.olean",
+          "sha256": "6472e203836ce3946542be3e7855e2e7fb2ab1f59b4ae2ebacc1fa347405cd8d"
+        },
+        {
+          "bytes": 25240,
+          "path": "build/lean_table_checker/acceleration_v19/cartesian_kernel_v19/modules/Mahjong/CartesianPNB19V19.olean.private",
+          "sha256": "bebf8abf51b9a17ce4a2114a541fbcd1f9a56567913ee584d20b62542cc39fcd"
+        },
+        {
+          "bytes": 8032,
+          "path": "build/lean_table_checker/acceleration_v19/cartesian_kernel_v19/modules/Mahjong/CartesianPNB19V19.olean.server",
+          "sha256": "56ab84375994354dfd517c8d46b981db5909870502b3909155708c088db37c2a"
+        }
+      ],
+      "receipt": {
+        "bytes": 70955,
+        "path": "runs/lean_table_checker/acceleration_20261018_v19/cartesian_kernel_v19/attempts/0e4e6a6ca2ed4afb9be371c49d8bd493/receipt.json",
+        "sha256": "c593d12cf475f97c5316ee5e8467bbb6d9823bbdcd9669c52a9ba5aafc606cd1"
+      },
+      "wall_seconds": 1.1880000000237487
+    },
+    {
+      "child_cpu_seconds": 0.515625,
+      "dependency_fingerprints": [
+        {
+          "axioms": [
+            "propext"
+          ],
+          "name": "Mahjong.CartesianPNB20V19.provided_PN"
+        }
+      ],
+      "exclusive_profiler_seconds": {
+        ".olean serialization": 0.016,
+        "attribute application": 0.000149,
+        "blocked (unaccounted)": 0.223,
+        "elaboration": 0.0181,
+        "fix level params": 8.42e-05,
+        "import": 0.0579,
+        "initialization": 0.044700000000000004,
+        "instantiate metavars": 9.57e-05,
+        "interpretation": 0.101,
+        "let-to-have transformation": 5.99e-05,
+        "linting": 0.00275,
+        "module linting": 4.6e-06,
+        "parsing": 0.00257,
+        "process pre-definitions": 0.0024500000000000004,
+        "share common exprs": 0.000345,
+        "tactic execution": 0.000449,
+        "type checking": 0.21,
+        "typeclass inference": 0.004690000000000001
+      },
+      "module": "Mahjong.CartesianPNB20V19",
+      "peak_job_committed_bytes": 167129088,
+      "published_artifacts": [
+        {
+          "bytes": 2184,
+          "path": "build/lean_table_checker/acceleration_v19/cartesian_kernel_v19/modules/Mahjong/CartesianPNB20V19.ir",
+          "sha256": "9ec805ccb11f945030ee7d21ad3ac8f75dd5d1654b5c5ca4832265db0deba1f0"
+        },
+        {
+          "bytes": 176,
+          "path": "build/lean_table_checker/acceleration_v19/cartesian_kernel_v19/modules/Mahjong/CartesianPNB20V19.ir.sig",
+          "sha256": "bd74ebfedb1c222c48ee8273078e26c1278c2cce2bd5637e6291bfb762f0d635"
+        },
+        {
+          "bytes": 14696,
+          "path": "build/lean_table_checker/acceleration_v19/cartesian_kernel_v19/modules/Mahjong/CartesianPNB20V19.olean",
+          "sha256": "fb85c79f5921f3a5492799051c79987b5fe3da89aa50ceb24761912a1a887dbc"
+        },
+        {
+          "bytes": 17528,
+          "path": "build/lean_table_checker/acceleration_v19/cartesian_kernel_v19/modules/Mahjong/CartesianPNB20V19.olean.private",
+          "sha256": "a26279599cdea777d5c0216f2f8b0f03680a3cf07e6805cdc2796be6acc759fd"
+        },
+        {
+          "bytes": 7336,
+          "path": "build/lean_table_checker/acceleration_v19/cartesian_kernel_v19/modules/Mahjong/CartesianPNB20V19.olean.server",
+          "sha256": "7f57311f03ff51d51cd616a1e089bbac4ca2b3d52a1d3d20d8a0c0213bb5d0cb"
+        }
+      ],
+      "receipt": {
+        "bytes": 71921,
+        "path": "runs/lean_table_checker/acceleration_20261018_v19/cartesian_kernel_v19/attempts/1895a592c6894ae684f7a897ec3b2082/receipt.json",
+        "sha256": "bf1781d4e97867902ba019754070fe1b7d122f210c16450644c5f26355f1f465"
+      },
+      "wall_seconds": 1.3589999999967404
+    },
+    {
+      "child_cpu_seconds": 0.3125,
+      "dependency_fingerprints": [
+        {
+          "axioms": [
+            "propext"
+          ],
+          "name": "Mahjong.CartesianPNB21V19.provided_PN"
+        }
+      ],
+      "exclusive_profiler_seconds": {
+        ".olean serialization": 0.016300000000000002,
+        "attribute application": 0.000149,
+        "blocked (unaccounted)": 0.0417,
+        "elaboration": 0.0172,
+        "fix level params": 8.12e-05,
+        "import": 0.0567,
+        "initialization": 0.048,
+        "instantiate metavars": 9.55e-05,
+        "interpretation": 0.0928,
+        "let-to-have transformation": 5.84e-05,
+        "linting": 0.00242,
+        "module linting": 3.9e-06,
+        "parsing": 0.0024700000000000004,
+        "process pre-definitions": 0.0023,
+        "share common exprs": 0.000309,
+        "tactic execution": 0.000479,
+        "type checking": 0.0304,
+        "typeclass inference": 0.00505
+      },
+      "module": "Mahjong.CartesianPNB21V19",
+      "peak_job_committed_bytes": 96780288,
+      "published_artifacts": [
+        {
+          "bytes": 1880,
+          "path": "build/lean_table_checker/acceleration_v19/cartesian_kernel_v19/modules/Mahjong/CartesianPNB21V19.ir",
+          "sha256": "d9873da5383d4297bc2b4109d505aac104179039f30b802bd544c86a77616175"
+        },
+        {
+          "bytes": 176,
+          "path": "build/lean_table_checker/acceleration_v19/cartesian_kernel_v19/modules/Mahjong/CartesianPNB21V19.ir.sig",
+          "sha256": "99351559e0cc56834ff055bc8bc3de5cb743d06e02d632bd664986caf78a756a"
+        },
+        {
+          "bytes": 13672,
+          "path": "build/lean_table_checker/acceleration_v19/cartesian_kernel_v19/modules/Mahjong/CartesianPNB21V19.olean",
+          "sha256": "e87657fe123cde30bf3acd0a808de0b7b62d7cbfc001f5e121eb4e82298af029"
+        },
+        {
+          "bytes": 17032,
+          "path": "build/lean_table_checker/acceleration_v19/cartesian_kernel_v19/modules/Mahjong/CartesianPNB21V19.olean.private",
+          "sha256": "5779de32efeb866f9e2c2e0b3dc60d53bbfe6460749b104f6870852433ea480d"
+        },
+        {
+          "bytes": 6640,
+          "path": "build/lean_table_checker/acceleration_v19/cartesian_kernel_v19/modules/Mahjong/CartesianPNB21V19.olean.server",
+          "sha256": "1e22596c6d9ea6d022cd096a67ce24ad6c82fe7ce94077a12357de7919e3a7e9"
+        }
+      ],
+      "receipt": {
+        "bytes": 72875,
+        "path": "runs/lean_table_checker/acceleration_20261018_v19/cartesian_kernel_v19/attempts/c609bb229dfe4ee7a3864609519b79ae/receipt.json",
+        "sha256": "e8684098d4d7d27f893d6970bed19cbb846c70c57273a392ea43e2124c8cd8d1"
+      },
+      "wall_seconds": 1.125
+    },
+    {
+      "child_cpu_seconds": 0.328125,
+      "dependency_fingerprints": [
+        {
+          "axioms": [
+            "propext"
+          ],
+          "name": "Mahjong.CartesianPNB22V19.provided_PN"
+        }
+      ],
+      "exclusive_profiler_seconds": {
+        ".olean serialization": 0.0152,
+        "attribute application": 0.000156,
+        "blocked (unaccounted)": 0.0544,
+        "elaboration": 0.020300000000000002,
+        "fix level params": 9.25e-05,
+        "import": 0.0569,
+        "initialization": 0.0455,
+        "instantiate metavars": 0.00010499999999999999,
+        "interpretation": 0.0885,
+        "let-to-have transformation": 6.31e-05,
+        "linting": 0.0029300000000000003,
+        "module linting": 4.3e-06,
+        "parsing": 0.00276,
+        "process pre-definitions": 0.00273,
+        "share common exprs": 0.000377,
+        "tactic execution": 0.00045900000000000004,
+        "type checking": 0.041299999999999996,
+        "typeclass inference": 0.00526
+      },
+      "module": "Mahjong.CartesianPNB22V19",
+      "peak_job_committed_bytes": 104435712,
+      "published_artifacts": [
+        {
+          "bytes": 2184,
+          "path": "build/lean_table_checker/acceleration_v19/cartesian_kernel_v19/modules/Mahjong/CartesianPNB22V19.ir",
+          "sha256": "4ace31cd038b0aea14d47daf40dcd46b830ded721a65db35038ae4131dc52f83"
+        },
+        {
+          "bytes": 176,
+          "path": "build/lean_table_checker/acceleration_v19/cartesian_kernel_v19/modules/Mahjong/CartesianPNB22V19.ir.sig",
+          "sha256": "d7e9b55c0ca1240578eb1c2fb756accf0377b555b541be88d202d2517b4002f4"
+        },
+        {
+          "bytes": 15416,
+          "path": "build/lean_table_checker/acceleration_v19/cartesian_kernel_v19/modules/Mahjong/CartesianPNB22V19.olean",
+          "sha256": "91e7a9e3c1b547b6d988b76bc01be7d6d2787648016101e86a16c180a584a35d"
+        },
+        {
+          "bytes": 16888,
+          "path": "build/lean_table_checker/acceleration_v19/cartesian_kernel_v19/modules/Mahjong/CartesianPNB22V19.olean.private",
+          "sha256": "4cdc392718014407f017fbbc8f33e05f5051db291f3b539f8172a9d2c56c99f2"
+        },
+        {
+          "bytes": 8032,
+          "path": "build/lean_table_checker/acceleration_v19/cartesian_kernel_v19/modules/Mahjong/CartesianPNB22V19.olean.server",
+          "sha256": "e8fd9946db159fdadbb6e047ee9060426eb76aa8c80130ddc4498edb32fb0e2c"
+        }
+      ],
+      "receipt": {
+        "bytes": 73906,
+        "path": "runs/lean_table_checker/acceleration_20261018_v19/cartesian_kernel_v19/attempts/6c4b2a8102314baea3da7639aac268a7/receipt.json",
+        "sha256": "b279931b08758ed57ccd4aaab0624f83be76a26f597fab8b9ce97388f8dbdc5e"
+      },
+      "wall_seconds": 1.125
+    },
+    {
+      "child_cpu_seconds": 0.375,
+      "dependency_fingerprints": [
+        {
+          "axioms": [
+            "propext"
+          ],
+          "name": "Mahjong.CartesianPNB23V19.provided_PN"
+        }
+      ],
+      "exclusive_profiler_seconds": {
+        ".olean serialization": 0.0185,
+        "attribute application": 0.00015,
+        "blocked (unaccounted)": 0.056600000000000004,
+        "elaboration": 0.0222,
+        "fix level params": 9.049999999999999e-05,
+        "import": 0.06559999999999999,
+        "initialization": 0.0469,
+        "instantiate metavars": 0.000107,
+        "interpretation": 0.0945,
+        "let-to-have transformation": 6.44e-05,
+        "linting": 0.0027400000000000002,
+        "module linting": 3.8e-06,
+        "parsing": 0.00276,
+        "process pre-definitions": 0.00261,
+        "share common exprs": 0.00034399999999999996,
+        "tactic execution": 0.00047,
+        "type checking": 0.0444,
+        "typeclass inference": 0.00542
+      },
+      "module": "Mahjong.CartesianPNB23V19",
+      "peak_job_committed_bytes": 114196480,
+      "published_artifacts": [
+        {
+          "bytes": 2640,
+          "path": "build/lean_table_checker/acceleration_v19/cartesian_kernel_v19/modules/Mahjong/CartesianPNB23V19.ir",
+          "sha256": "d3d0bbbf4840f9c9033fa970970919ed1956063db9b4af9d7c4f392f6d1daf59"
+        },
+        {
+          "bytes": 176,
+          "path": "build/lean_table_checker/acceleration_v19/cartesian_kernel_v19/modules/Mahjong/CartesianPNB23V19.ir.sig",
+          "sha256": "feed6525bf79551d93b87b03ebe4a531aea1aff60a716a3255317105789e2233"
+        },
+        {
+          "bytes": 15392,
+          "path": "build/lean_table_checker/acceleration_v19/cartesian_kernel_v19/modules/Mahjong/CartesianPNB23V19.olean",
+          "sha256": "11e78436224e5669a3b3374634a0f0ad92aebda29290bd050bf7ede9f43881eb"
+        },
+        {
+          "bytes": 19448,
+          "path": "build/lean_table_checker/acceleration_v19/cartesian_kernel_v19/modules/Mahjong/CartesianPNB23V19.olean.private",
+          "sha256": "352f652c11f6a7f5b8d957c7877b3ff86757e4d5dd16bec48fa80168fafb1c55"
+        },
+        {
+          "bytes": 7568,
+          "path": "build/lean_table_checker/acceleration_v19/cartesian_kernel_v19/modules/Mahjong/CartesianPNB23V19.olean.server",
+          "sha256": "ca56469d547b9b003a5c93f9347385413d2a1a0eaba4fa04cf19d860164f3da5"
+        }
+      ],
+      "receipt": {
+        "bytes": 74893,
+        "path": "runs/lean_table_checker/acceleration_20261018_v19/cartesian_kernel_v19/attempts/f3e84f49938043b7beb1316d84f55cb4/receipt.json",
+        "sha256": "0c8e6810237c9da0519d3e4b41768779eb6602b5243fa48e8f73494b266d7f20"
+      },
+      "wall_seconds": 1.172000000020489
+    },
+    {
+      "child_cpu_seconds": 0.421875,
+      "dependency_fingerprints": [
+        {
+          "axioms": [
+            "propext"
+          ],
+          "name": "Mahjong.CartesianPNB24V19.provided_PN"
+        }
+      ],
+      "exclusive_profiler_seconds": {
+        ".olean serialization": 0.0165,
+        "attribute application": 0.00014099999999999998,
+        "blocked (unaccounted)": 0.113,
+        "elaboration": 0.0228,
+        "fix level params": 8.609999999999999e-05,
+        "import": 0.0569,
+        "initialization": 0.045,
+        "instantiate metavars": 0.000122,
+        "interpretation": 0.0943,
+        "let-to-have transformation": 7.5e-05,
+        "linting": 0.00285,
+        "module linting": 3.6e-06,
+        "parsing": 0.00279,
+        "process pre-definitions": 0.0025,
+        "share common exprs": 0.000378,
+        "tactic execution": 0.00047099999999999996,
+        "type checking": 0.0999,
+        "typeclass inference": 0.0058200000000000005
+      },
+      "module": "Mahjong.CartesianPNB24V19",
+      "peak_job_committed_bytes": 121700352,
+      "published_artifacts": [
+        {
+          "bytes": 2184,
+          "path": "build/lean_table_checker/acceleration_v19/cartesian_kernel_v19/modules/Mahjong/CartesianPNB24V19.ir",
+          "sha256": "227b9d36de245b81af248e02de1fd4609a19157ec1e9161841b967a6120e7ce0"
+        },
+        {
+          "bytes": 176,
+          "path": "build/lean_table_checker/acceleration_v19/cartesian_kernel_v19/modules/Mahjong/CartesianPNB24V19.ir.sig",
+          "sha256": "4f6d389036ec3b85a6b5d53e2527bdaeb661319ee86ee26af7f9d44aa551248a"
+        },
+        {
+          "bytes": 14696,
+          "path": "build/lean_table_checker/acceleration_v19/cartesian_kernel_v19/modules/Mahjong/CartesianPNB24V19.olean",
+          "sha256": "e1587855ba087336a7fbd601c2b8159e0de629065a40ce5c510ad275e962e5fe"
+        },
+        {
+          "bytes": 21232,
+          "path": "build/lean_table_checker/acceleration_v19/cartesian_kernel_v19/modules/Mahjong/CartesianPNB24V19.olean.private",
+          "sha256": "e0ddae1efd0da0cfdaf49dd94f437563677872afc78d2a0efda56617d04b5594"
+        },
+        {
+          "bytes": 7336,
+          "path": "build/lean_table_checker/acceleration_v19/cartesian_kernel_v19/modules/Mahjong/CartesianPNB24V19.olean.server",
+          "sha256": "7341e438b0014ab0aad12a51348cc144a5dc1370b66ed861927acb1b46f5834d"
+        }
+      ],
+      "receipt": {
+        "bytes": 75864,
+        "path": "runs/lean_table_checker/acceleration_20261018_v19/cartesian_kernel_v19/attempts/31e6faea05474030b0920d4d3874d934/receipt.json",
+        "sha256": "ba6aac7476ba83f60e61ce46804dfea623043a00c29f128240a7c2856aff71b1"
+      },
+      "wall_seconds": 1.2190000000409782
+    },
+    {
+      "child_cpu_seconds": 0.328125,
+      "dependency_fingerprints": [
+        {
+          "axioms": [
+            "propext"
+          ],
+          "name": "Mahjong.CartesianPNB25V19.provided_PN"
+        }
+      ],
+      "exclusive_profiler_seconds": {
+        ".olean serialization": 0.016399999999999998,
+        "attribute application": 0.000145,
+        "blocked (unaccounted)": 0.0263,
+        "elaboration": 0.019,
+        "fix level params": 8.58e-05,
+        "import": 0.060700000000000004,
+        "initialization": 0.0453,
+        "instantiate metavars": 0.000103,
+        "interpretation": 0.09259999999999999,
+        "let-to-have transformation": 6.02e-05,
+        "linting": 0.00279,
+        "module linting": 4.1000000000000006e-06,
+        "parsing": 0.00259,
+        "process pre-definitions": 0.00244,
+        "share common exprs": 0.000328,
+        "tactic execution": 0.000415,
+        "type checking": 0.0134,
+        "typeclass inference": 0.00479
+      },
+      "module": "Mahjong.CartesianPNB25V19",
+      "peak_job_committed_bytes": 101933056,
+      "published_artifacts": [
+        {
+          "bytes": 2488,
+          "path": "build/lean_table_checker/acceleration_v19/cartesian_kernel_v19/modules/Mahjong/CartesianPNB25V19.ir",
+          "sha256": "75cadc620e06f3cf8064f5bfbe0ea1c908636b3420ae0f1a966f02fbce2dcf41"
+        },
+        {
+          "bytes": 176,
+          "path": "build/lean_table_checker/acceleration_v19/cartesian_kernel_v19/modules/Mahjong/CartesianPNB25V19.ir.sig",
+          "sha256": "764cdcb364e09e177497b41ff1d0cd9039ffb7a67b222ad44618e24f33d51f48"
+        },
+        {
+          "bytes": 15240,
+          "path": "build/lean_table_checker/acceleration_v19/cartesian_kernel_v19/modules/Mahjong/CartesianPNB25V19.olean",
+          "sha256": "2894f84d8abca00b4bb68f62262cc516b18bb448f68af53942a38892c955c09b"
+        },
+        {
+          "bytes": 17848,
+          "path": "build/lean_table_checker/acceleration_v19/cartesian_kernel_v19/modules/Mahjong/CartesianPNB25V19.olean.private",
+          "sha256": "926ed9bced371b28bea1e5869209ba00a39fe73a9c1f1b32e5fd2da096b7a149"
+        },
+        {
+          "bytes": 7568,
+          "path": "build/lean_table_checker/acceleration_v19/cartesian_kernel_v19/modules/Mahjong/CartesianPNB25V19.olean.server",
+          "sha256": "c092b7cd404a170607b0a8595a2445a20d8f8561e2606cacbf94999e277229a5"
+        }
+      ],
+      "receipt": {
+        "bytes": 76836,
+        "path": "runs/lean_table_checker/acceleration_20261018_v19/cartesian_kernel_v19/attempts/ac3da4d5575c448181525b3dfeb33c19/receipt.json",
+        "sha256": "1e4f5b437d1b853e0ac435e794907b334e0fe30891248f171ac4cf03f9014e30"
+      },
+      "wall_seconds": 1.125
+    },
+    {
+      "child_cpu_seconds": 0.40625,
+      "dependency_fingerprints": [
+        {
+          "axioms": [
+            "propext"
+          ],
+          "name": "Mahjong.CartesianPNB26V19.provided_PN"
+        }
+      ],
+      "exclusive_profiler_seconds": {
+        ".olean serialization": 0.016,
+        "attribute application": 0.00013000000000000002,
+        "blocked (unaccounted)": 0.111,
+        "elaboration": 0.019600000000000003,
+        "fix level params": 7.89e-05,
+        "import": 0.0583,
+        "initialization": 0.0444,
+        "instantiate metavars": 9.57e-05,
+        "interpretation": 0.0923,
+        "let-to-have transformation": 5.54e-05,
+        "linting": 0.00242,
+        "module linting": 3.7e-06,
+        "parsing": 0.0025099999999999996,
+        "process pre-definitions": 0.00215,
+        "share common exprs": 0.000314,
+        "tactic execution": 0.00046800000000000005,
+        "type checking": 0.1,
+        "typeclass inference": 0.00532
+      },
+      "module": "Mahjong.CartesianPNB26V19",
+      "peak_job_committed_bytes": 119754752,
+      "published_artifacts": [
+        {
+          "bytes": 2184,
+          "path": "build/lean_table_checker/acceleration_v19/cartesian_kernel_v19/modules/Mahjong/CartesianPNB26V19.ir",
+          "sha256": "87a703c20723013720c87786cac10213711a6bbe18061a3b0ca7153b5cdce53f"
+        },
+        {
+          "bytes": 176,
+          "path": "build/lean_table_checker/acceleration_v19/cartesian_kernel_v19/modules/Mahjong/CartesianPNB26V19.ir.sig",
+          "sha256": "5c3e688c2454bb54bc8ac3c12142e7e5efa09166a5875c7b310b97de8a314d61"
+        },
+        {
+          "bytes": 13496,
+          "path": "build/lean_table_checker/acceleration_v19/cartesian_kernel_v19/modules/Mahjong/CartesianPNB26V19.olean",
+          "sha256": "6e012633e64852474af5b241ddc472bb46cec63f4d7a86e02a3236fb87d0772e"
+        },
+        {
+          "bytes": 16928,
+          "path": "build/lean_table_checker/acceleration_v19/cartesian_kernel_v19/modules/Mahjong/CartesianPNB26V19.olean.private",
+          "sha256": "7f3f4d94dfb555feb1db4227b5f81d72e6b6c56ea8c09f0056759855aeaad5a5"
+        },
+        {
+          "bytes": 6176,
+          "path": "build/lean_table_checker/acceleration_v19/cartesian_kernel_v19/modules/Mahjong/CartesianPNB26V19.olean.server",
+          "sha256": "053812b47ea897db6bdaddcd50a87f19a9f4f716d5d72e0dcd56b8db4569804a"
+        }
+      ],
+      "receipt": {
+        "bytes": 77828,
+        "path": "runs/lean_table_checker/acceleration_20261018_v19/cartesian_kernel_v19/attempts/8686baa4531e4d60a3de4196b496e58f/receipt.json",
+        "sha256": "7dfb027fa6fd5621ee95e9070f912055c945229a3514c3910b215a981e6a468c"
+      },
+      "wall_seconds": 1.2179999999934807
+    },
+    {
+      "child_cpu_seconds": 0.71875,
+      "dependency_fingerprints": [
+        {
+          "axioms": [
+            "propext"
+          ],
+          "name": "Mahjong.CartesianPNB27V19.provided_PN"
+        }
+      ],
+      "exclusive_profiler_seconds": {
+        ".olean serialization": 0.0167,
+        "attribute application": 0.000174,
+        "blocked (unaccounted)": 0.361,
+        "elaboration": 0.0304,
+        "fix level params": 9.49e-05,
+        "import": 0.0706,
+        "initialization": 0.0453,
+        "instantiate metavars": 0.00013700000000000002,
+        "interpretation": 0.0947,
+        "let-to-have transformation": 6.75e-05,
+        "linting": 0.00314,
+        "module linting": 3.8e-06,
+        "parsing": 0.00309,
+        "process pre-definitions": 0.00275,
+        "share common exprs": 0.00040899999999999997,
+        "tactic execution": 0.00051,
+        "type checking": 0.348,
+        "typeclass inference": 0.00621
+      },
+      "module": "Mahjong.CartesianPNB27V19",
+      "peak_job_committed_bytes": 202547200,
+      "published_artifacts": [
+        {
+          "bytes": 3096,
+          "path": "build/lean_table_checker/acceleration_v19/cartesian_kernel_v19/modules/Mahjong/CartesianPNB27V19.ir",
+          "sha256": "17ca26ea032e592d6202c85b7486be745fc6942c9cd0d7c3152ab80c3659ce14"
+        },
+        {
+          "bytes": 176,
+          "path": "build/lean_table_checker/acceleration_v19/cartesian_kernel_v19/modules/Mahjong/CartesianPNB27V19.ir.sig",
+          "sha256": "9685ab55ea4147278cf7ca49656356e4a42d6ae38bb87f07a279e2a3ac9c8474"
+        },
+        {
+          "bytes": 16088,
+          "path": "build/lean_table_checker/acceleration_v19/cartesian_kernel_v19/modules/Mahjong/CartesianPNB27V19.olean",
+          "sha256": "9dd9d5def13f3715d53bebc8c61df2e4f8ed8cfb2d8c0c83359b9ccf6c7dc6b0"
+        },
+        {
+          "bytes": 24472,
+          "path": "build/lean_table_checker/acceleration_v19/cartesian_kernel_v19/modules/Mahjong/CartesianPNB27V19.olean.private",
+          "sha256": "890743a05953ca538f5c7d245e4adea9344837385cbc9d4341577b0447924c56"
+        },
+        {
+          "bytes": 7800,
+          "path": "build/lean_table_checker/acceleration_v19/cartesian_kernel_v19/modules/Mahjong/CartesianPNB27V19.olean.server",
+          "sha256": "65fd8b49b49928153ca3c4ebc76c40fc68efce92aababb350655bc76220c83f8"
+        }
+      ],
+      "receipt": {
+        "bytes": 78768,
+        "path": "runs/lean_table_checker/acceleration_20261018_v19/cartesian_kernel_v19/attempts/a6188e7d20dc4e8681082a5696e04732/receipt.json",
+        "sha256": "c60822d60a6cc41b5f8cc750208f67d6970b2c1dbd205611d7607de3971f569a"
+      },
+      "wall_seconds": 1.5
+    }
+  ],
+  "schema": "BOUNDED_CARTESIAN_KERNEL_PHASE_MEASUREMENTS_V19",
+  "status": "PASS_ALL_REQUESTED_MODULES",
+  "sum_child_CPU_seconds": 11.0,
+  "sum_controller_wall_seconds": 31.919999999983702,
+  "wall_seconds": 36.85899999999674
+}

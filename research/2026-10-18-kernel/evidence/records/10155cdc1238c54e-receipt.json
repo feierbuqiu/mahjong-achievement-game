@@ -1,0 +1,81 @@
+{
+  "CPU_limit_percent": 20,
+  "LEAN_PATH": "<RESEARCH_ROOT>\\runs\\lean_table_checker\\acceleration_20261018_v19\\packed\\bundles\\99079639577547e29ad4644f292b7f3e\\modules",
+  "argv": [
+    "<RESEARCH_ROOT>\\build\\toolchain\\lean-4.33.1-windows\\bin\\leanchecker.exe",
+    "--fresh",
+    "-v",
+    "DirectKernelPNVerifyV19"
+  ],
+  "caps_readback_confirmed": true,
+  "checked_utc": "2026-10-18T07:12:45.473869+00:00",
+  "child_assigned_before_resume": true,
+  "child_cpu_seconds": 5.375,
+  "child_cwd": "<RESEARCH_ROOT>\\runs\\lean_table_checker\\acceleration_20261018_v19\\packed\\bundles\\99079639577547e29ad4644f292b7f3e\\replay_cwd",
+  "child_exit_confirmed": true,
+  "child_wall_seconds": 5.51600000000326,
+  "compiled_module": null,
+  "controller_outside_job": true,
+  "dependency_fingerprints": [],
+  "emitted_c": null,
+  "empty_replay_cwd": true,
+  "executable": {
+    "bytes": 115200,
+    "path": "build/toolchain/lean-4.33.1-windows/bin/leanchecker.exe",
+    "sha256": "31b506f83737b7d629fd11699df5aaf88c3b50be23c28219e6b283f0de98f85c"
+  },
+  "final_kernel_empty_theorem": false,
+  "frozen_replay_root": "<RESEARCH_ROOT>\\runs\\lean_table_checker\\acceleration_20261018_v19\\packed\\bundles\\99079639577547e29ad4644f292b7f3e\\modules",
+  "full_launch_allowed": false,
+  "full_scan_started": false,
+  "input_pilot_modules": [
+    {
+      "bytes": 1544,
+      "path": "runs/lean_table_checker/acceleration_20261018_v19/packed/bundles/99079639577547e29ad4644f292b7f3e/modules/DirectKernelPNEvidenceV19.olean",
+      "sha256": "19d3a75fa719dfd8c40cb43a14c91a85b0a4c74285eee32c4d124e692fbde2c4"
+    },
+    {
+      "bytes": 7576,
+      "path": "runs/lean_table_checker/acceleration_20261018_v19/packed/bundles/99079639577547e29ad4644f292b7f3e/modules/DirectKernelPNVerifyV19.olean",
+      "sha256": "b0298a311d5ded6f27fb45e6cd274b85300e535dfbc8fbd8cf3a80c06eb201f3"
+    }
+  ],
+  "memory_limit_bytes": 3000000000,
+  "meta_plugin": null,
+  "mode": "replay",
+  "module": "DirectKernelPNVerifyV19",
+  "native_source": null,
+  "peak_job_committed_bytes": 77352960,
+  "peak_process_pagefile_bytes": 70893568,
+  "peak_process_working_set_bytes": 68108288,
+  "plugin_is_untrusted_input_generator": false,
+  "policy_error": null,
+  "published_module": null,
+  "requested_Lean_threads": 1,
+  "returncode": 0,
+  "schema": "ACTUAL_BOUNDED_KERNEL_PILOT_V19",
+  "source": {
+    "bytes": 520,
+    "path": "runs/lean_table_checker/acceleration_20261018_v19/packed/bundles/99079639577547e29ad4644f292b7f3e/source/DirectKernelPNVerifyV19.lean",
+    "sha256": "f5f36eb111bf72e3a47a8d6e72dd30c8f6dfb469c80a090332773b24e228e795"
+  },
+  "source_executable_import_hashes_unchanged": true,
+  "source_snapshot": {
+    "bytes": 520,
+    "path": "runs/lean_table_checker/acceleration_20261018_v19/packed/attempts/080f7e4925a441d69dcc089706baa0ed/source_snapshot/DirectKernelPNVerifyV19.lean",
+    "sha256": "f5f36eb111bf72e3a47a8d6e72dd30c8f6dfb469c80a090332773b24e228e795"
+  },
+  "status": "PASS",
+  "stderr": {
+    "bytes": 0,
+    "path": "runs/lean_table_checker/acceleration_20261018_v19/packed/attempts/080f7e4925a441d69dcc089706baa0ed/stderr.log",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "stdout": {
+    "bytes": 47,
+    "path": "runs/lean_table_checker/acceleration_20261018_v19/packed/attempts/080f7e4925a441d69dcc089706baa0ed/stdout.log",
+    "sha256": "2de821875f3deeca335b0eefa489b4b1a0a49d05854cd8e8ec09dce23b677d6d"
+  },
+  "timed_out": false,
+  "wall_seconds": 5.532000000006519
+}

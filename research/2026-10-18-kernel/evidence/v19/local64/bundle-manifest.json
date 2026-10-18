@@ -1,0 +1,116 @@
+{
+  "DLL_in_runtime_bundle": false,
+  "STOP_removed": false,
+  "artifacts": [
+    {
+      "bytes": 1544,
+      "path": "runs/lean_table_checker/acceleration_20261018_v19/metadata_pages_v19/local_encoded_v7/bundles/a34e5dd47bcc412e/modules/MetadataEncodedSliceDataV19.olean",
+      "sha256": "0b23c63f26c5a90e0ecdfd5055247c34023343e57df85202f7253f7d8e3dc511"
+    },
+    {
+      "bytes": 7492472,
+      "path": "runs/lean_table_checker/acceleration_20261018_v19/metadata_pages_v19/local_encoded_v7/bundles/a34e5dd47bcc412e/modules/MetadataEncodedSliceDataV19.olean.private",
+      "sha256": "b000beec0904d09fc05e902c8f20051e6ac0de4f75250779469b4406395f635b"
+    },
+    {
+      "bytes": 96,
+      "path": "runs/lean_table_checker/acceleration_20261018_v19/metadata_pages_v19/local_encoded_v7/bundles/a34e5dd47bcc412e/modules/MetadataEncodedSliceDataV19.olean.server",
+      "sha256": "fc798602ced9333e9e5336e8ccfc5121b0734bcb1dcbb4388b6527a278e7120c"
+    },
+    {
+      "bytes": 6648,
+      "path": "runs/lean_table_checker/acceleration_20261018_v19/metadata_pages_v19/local_encoded_v7/bundles/a34e5dd47bcc412e/modules/Mahjong/MetadataEncodedVerifyV19.olean",
+      "sha256": "930421ad41f47e5ffdbf8023a48d353044f5a0ebeefb9a4cd4300d9e44142ccb"
+    }
+  ],
+  "construction_receipts": [
+    {
+      "bytes": 31254,
+      "path": "runs/lean_table_checker/acceleration_20261018_v19/metadata_pages_v19/local_encoded_v7/attempts/feb1851737fa49b38e9b3f77244336bd/receipt.json",
+      "sha256": "20ecf96a5a1c560f797ef4c7ddc04406e303b7229ad943681aa89e3986722938"
+    },
+    {
+      "bytes": 32711,
+      "path": "runs/lean_table_checker/acceleration_20261018_v19/metadata_pages_v19/local_encoded_v7/attempts/cb7497dcd87b4ac099151ecd5890b236/receipt.json",
+      "sha256": "d5efacbaee935d84113fffcb44b67506979273e9c0574d164fccba95e9626141"
+    }
+  ],
+  "expected_custom_modules": [
+    "MetadataEncodedSliceDataV19",
+    "Mahjong.MetadataEncodedVerifyV19"
+  ],
+  "full_LocalCertificate_certified": false,
+  "full_scan_started": false,
+  "new_imports": [
+    "Init.Data.Nat.Bitwise.Basic"
+  ],
+  "original_proof_name_type_value_identical": true,
+  "original_proof_root": "Mahjong.MetadataEncodedOriginalV19.local_rows_original",
+  "raw_input_files_in_runtime_bundle": false,
+  "same_block": 0,
+  "same_count": 64,
+  "same_pages": 9,
+  "same_start": 20000,
+  "saved_artifact_bytes": 7500760,
+  "schema": "ENCODED_LOCAL_METADATA_MINIMAL_KERNEL_PROOF_BUNDLE_V19",
+  "selected_declarations": 1543,
+  "source_archive": [
+    {
+      "bytes": 398,
+      "path": "runs/lean_table_checker/acceleration_20261018_v19/metadata_pages_v19/local_encoded_v7/bundles/a34e5dd47bcc412e/source_archive/source/Mahjong/MetadataActualEncoded8V19.lean",
+      "sha256": "c2722543c9e9ddf0b2300c18af2ca8b183fb4592fe51e6feaba0ea685f2cff2e"
+    },
+    {
+      "bytes": 2088,
+      "path": "runs/lean_table_checker/acceleration_20261018_v19/metadata_pages_v19/local_encoded_v7/bundles/a34e5dd47bcc412e/source_archive/source/Mahjong/MetadataActualEncodedChunk64V19.lean",
+      "sha256": "e843ae5df255bc18af9b14588d03f405d1ee15a08ac9c8056ee16c77e8652aa9"
+    },
+    {
+      "bytes": 1354,
+      "path": "runs/lean_table_checker/acceleration_20261018_v19/metadata_pages_v19/local_encoded_v7/bundles/a34e5dd47bcc412e/source_archive/source/Mahjong/MetadataActualEncodedV19.lean",
+      "sha256": "c29ddbb7b1f3671363e179e1f0e9e6c3c0acbc4c122bff36e1edc90388c3f8b9"
+    },
+    {
+      "bytes": 447,
+      "path": "runs/lean_table_checker/acceleration_20261018_v19/metadata_pages_v19/local_encoded_v7/bundles/a34e5dd47bcc412e/source_archive/source/Mahjong/MetadataEncodedCore8V19.lean",
+      "sha256": "4550e8e64fe435c11a9c783c110fd1a893c5c04b599687681c575eb122b7e39b"
+    },
+    {
+      "bytes": 383,
+      "path": "runs/lean_table_checker/acceleration_20261018_v19/metadata_pages_v19/local_encoded_v7/bundles/a34e5dd47bcc412e/source_archive/source/Mahjong/MetadataEncodedExportV19.lean",
+      "sha256": "2323f2f3fd3c8e2292cdd56880df64fb8b70859f293d22b87a0389f298778f3f"
+    },
+    {
+      "bytes": 971,
+      "path": "runs/lean_table_checker/acceleration_20261018_v19/metadata_pages_v19/local_encoded_v7/bundles/a34e5dd47bcc412e/source_archive/source/Mahjong/MetadataEncodedOriginalV19.lean",
+      "sha256": "07bd17087abd73bf2a0853f425d254ad029450c4368500eebd156f1c3fb2d40e"
+    },
+    {
+      "bytes": 415,
+      "path": "runs/lean_table_checker/acceleration_20261018_v19/metadata_pages_v19/local_encoded_v7/bundles/a34e5dd47bcc412e/source_archive/source/Mahjong/MetadataEncodedRaw8V19.lean",
+      "sha256": "268386e7b2aa45f874024c7afea2b7f59f3d80d1cfc2933049a0c24fb3138d79"
+    },
+    {
+      "bytes": 3762,
+      "path": "runs/lean_table_checker/acceleration_20261018_v19/metadata_pages_v19/local_encoded_v7/bundles/a34e5dd47bcc412e/source_archive/source/Mahjong/MetadataEncodedSliceV19.lean",
+      "sha256": "0b22a9acf35999d99ff7c7f66e29f63f6b5daf537c6142858c11fdc1955708fa"
+    },
+    {
+      "bytes": 426,
+      "path": "runs/lean_table_checker/acceleration_20261018_v19/metadata_pages_v19/local_encoded_v7/bundles/a34e5dd47bcc412e/source_archive/source/Mahjong/MetadataEncodedSummary8V19.lean",
+      "sha256": "aa914efa55fc3565c0c7c16314689d4c8ecd3269eb3b1d207ad79b8e3e29d2ce"
+    },
+    {
+      "bytes": 667,
+      "path": "runs/lean_table_checker/acceleration_20261018_v19/metadata_pages_v19/local_encoded_v7/bundles/a34e5dd47bcc412e/source_archive/source/Mahjong/MetadataEncodedVerifyV19.lean",
+      "sha256": "fbefd96f183e31553bddd4b1261998e9b44d415f5e658da4fcd7aac5c9fa025e"
+    }
+  ],
+  "status": "SAVED_STANDARD_KERNEL_CHECKED_SLICE_AWAITING_COLD_REPLAY",
+  "verifier_module": "Mahjong.MetadataEncodedVerifyV19",
+  "verifier_source": {
+    "bytes": 667,
+    "path": "runs/lean_table_checker/acceleration_20261018_v19/metadata_pages_v19/local_encoded_v7/bundles/a34e5dd47bcc412e/source/Mahjong/MetadataEncodedVerifyV19.lean",
+    "sha256": "fbefd96f183e31553bddd4b1261998e9b44d415f5e658da4fcd7aac5c9fa025e"
+  }
+}

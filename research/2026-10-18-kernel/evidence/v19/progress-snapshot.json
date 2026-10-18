@@ -1,0 +1,97 @@
+{
+  "schema": "ONGOING_STRICT_KERNEL_20H_RESEARCH_STATUS_V19",
+  "updated_utc": "2026-10-18T07:45:53.871088+00:00",
+  "goal_active": true,
+  "user_requested_persistence": true,
+  "full_scan_started": false,
+  "full_launch_allowed": false,
+  "twenty_hour_end_to_end_bound_established": false,
+  "final_kernel_empty_theorem": false,
+  "legacy_campaign_stop": {
+    "path": "runs/lean_table_checker/campaign_indexed_20261018_v16/campaigns/overnight_v16_indexed_r3i/STOP",
+    "bytes": 87,
+    "sha256": "93cb3749c24d6b833faceba6293b3144cd3385a86864944c93561351cbc33b88"
+  },
+  "receipts": {
+    "closed_actual_PN": {
+      "path": "runs/lean_table_checker/acceleration_20261018_v19/packed/attempts/080f7e4925a441d69dcc089706baa0ed/receipt.json",
+      "bytes": 3894,
+      "sha256": "10155cdc1238c54e3225fc39fea723d7e6ce1376dde48aa788e1fc87083d153f"
+    },
+    "candidate_actual_PN": {
+      "path": "runs/lean_table_checker/acceleration_20261018_v19/packed/attempts/e270d77cf628493496a2022da30bac4c/receipt.json",
+      "bytes": 3887,
+      "sha256": "1b27798241bdab78a530247083d281e6a18e58d68071f9bf9d1d7cd84d12256d"
+    },
+    "candidate_false_rejected": {
+      "path": "runs/lean_table_checker/acceleration_20261018_v19/packed/attempts/acc039464844495094b2b9c941cd7f70/receipt.json",
+      "bytes": 3898,
+      "sha256": "f4990cc1a1ba7b9737d33846e9751dfad5d7af678356987d5f52641bbb4c0a18"
+    },
+    "original_game_three_roots": {
+      "path": "runs/lean_table_checker/acceleration_20261018_v19/packed/attempts/cabe662ef28b47e990fb97a6f5e020ae/receipt.json",
+      "bytes": 3898,
+      "sha256": "df00907d6d139d751146cbd293e690a4e2809904e06f973950a9087184f46d74"
+    },
+    "old_metadata_512_and_groups": {
+      "path": "runs/lean_table_checker/acceleration_20261018_v19/packed/attempts/a3083ef04e924014b39c8af680f83af4/receipt.json",
+      "bytes": 3897,
+      "sha256": "9be76620c9ddc9dcc115484940c9dbab3881a29faa6a7fc887968dbb8259f11a"
+    },
+    "diagonal_finite_actual": {
+      "path": "runs/lean_table_checker/acceleration_20261018_v19/packed/attempts/04bcb99b440e4d1fa22d4beffed8d47c/receipt.json",
+      "bytes": 64398,
+      "sha256": "c97bacfccf8f01c97c353c01c8dcb63630d017ae03109266341acaf28b8f092d"
+    }
+  },
+  "measured_components": {
+    "closed_actual_PN": {
+      "status": "PASS",
+      "wall_seconds": 5.532000000006519,
+      "peak_job_committed_bytes": 77352960
+    },
+    "candidate_actual_PN": {
+      "status": "PASS",
+      "wall_seconds": 5.89100000000326,
+      "peak_job_committed_bytes": 77467648
+    },
+    "candidate_false_rejected": {
+      "status": "FAILED_OR_INCOMPLETE",
+      "wall_seconds": 5.14000000001397,
+      "peak_job_committed_bytes": 77377536
+    },
+    "original_game_three_roots": {
+      "status": "PASS",
+      "wall_seconds": 50.56199999997625,
+      "peak_job_committed_bytes": 661839872
+    },
+    "old_metadata_512_and_groups": {
+      "status": "PASS",
+      "wall_seconds": 19.78100000001723,
+      "peak_job_committed_bytes": 419885056
+    },
+    "diagonal_finite_actual": {
+      "status": "PASS",
+      "wall_seconds": 49.875,
+      "peak_job_committed_bytes": 2421665792
+    }
+  },
+  "candidate_control": {
+    "path": "runs/lean_table_checker/acceleration_20261018_v19/packed/candidate_cold_control.json",
+    "bytes": 4860,
+    "sha256": "0932bffe5eabd780bb14cf8485664431192ab70c3c0fd3d029ffddf04a9c0ae5"
+  },
+  "supplied_catalog_size_diagnostic": {
+    "path": "runs/lean_table_checker/acceleration_20261018_v19/packed/census/c575e92e09714ec7bb604edc706b462c/SUMMARY_R2.json",
+    "bytes": 2299,
+    "sha256": "a164e4d61903cdf7719a724eeeed2272d73e95b805e77a1b4e5f6067f94876bb"
+  },
+  "interpretation": "The earlier 13-hour native erased-proof estimate and explicit cold kernel replay are different workloads.",
+  "remaining": [
+    "Actual full local rules/inventory/successor/channel certificates",
+    "Small actual block checkPacked/checkAll assembly, not only PN arithmetic",
+    "Reduce measured larger-channel kernel cost and include preparation amortization",
+    "Bounded memory/disk proof shard assembly and complete final cold replay",
+    "Measured conservative whole-task gate under twenty hours"
+  ]
+}

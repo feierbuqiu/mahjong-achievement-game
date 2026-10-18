@@ -32,11 +32,27 @@ paper-preparation replay receipts concern the same 84-module closure and do
 not add historical P/N coverage. See [project status](PROJECT_STATUS.md)
 for the current outlook and the subsequent October progress.
 
-The latest [formal source](../formal/README.md) contains the complete replay
+The September concrete [formal source](../formal/README.md) contains the complete replay
 closure for the new 12-tile and 14-tile roots, the compressed 20-tile proof,
 and the 757-entry proved registry. These additions belong to the current
 publication; the original signed `v0.1.0` tag continues to identify its earlier
 computational snapshot.
+
+## Later October kernel-certificate materials
+
+The [current kernel-certificate update](../research/2026-10-18-kernel/README.md)
+adds the V17 generic bridges, V18 closed pilot sources, and selected completed
+V19 numeric/layout/local-certificate sources and receipts. It preserves failed
+attempt records and separates original hashes from path-redacted public copies.
+The V17/V18 source-import map reuses the earlier 132-module base; the V19 public
+subset explicitly lists unresolved dependencies and is not a complete portable
+replay bundle. Binary-emitted Nat data, saved .olean module parts, toolchains,
+raw banks and some reconstruction inputs remain outside Git.
+
+Cold-replay sizes and timings describe the original retained bundles. The
+publication helper validates public bytes and receipt consistency; it does not
+rerun the proofs. The [earlier V16 archive](../research/2026-10-18/README.md) and
+its native-execution forecast remain dated evidence for a different workload.
 
 ## October 18 post-release materials
 

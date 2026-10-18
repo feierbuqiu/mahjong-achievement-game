@@ -1,0 +1,81 @@
+{
+  "CPU_limit_percent": 20,
+  "LEAN_PATH": "<RESEARCH_ROOT>\\runs\\lean_table_checker\\acceleration_20261018_v19\\packed\\bundles\\eeadc8859d034c3aad2462e68af5be06\\modules",
+  "argv": [
+    "<RESEARCH_ROOT>\\build\\toolchain\\lean-4.33.1-windows\\bin\\leanchecker.exe",
+    "--fresh",
+    "-v",
+    "CandidateActualVerifyV19"
+  ],
+  "caps_readback_confirmed": true,
+  "checked_utc": "2026-10-18T07:18:18.453258+00:00",
+  "child_assigned_before_resume": true,
+  "child_cpu_seconds": 5.734375,
+  "child_cwd": "<RESEARCH_ROOT>\\runs\\lean_table_checker\\acceleration_20261018_v19\\packed\\bundles\\eeadc8859d034c3aad2462e68af5be06\\replay_cwd",
+  "child_exit_confirmed": true,
+  "child_wall_seconds": 5.875,
+  "compiled_module": null,
+  "controller_outside_job": true,
+  "dependency_fingerprints": [],
+  "emitted_c": null,
+  "empty_replay_cwd": true,
+  "executable": {
+    "bytes": 115200,
+    "path": "build/toolchain/lean-4.33.1-windows/bin/leanchecker.exe",
+    "sha256": "31b506f83737b7d629fd11699df5aaf88c3b50be23c28219e6b283f0de98f85c"
+  },
+  "final_kernel_empty_theorem": false,
+  "frozen_replay_root": "<RESEARCH_ROOT>\\runs\\lean_table_checker\\acceleration_20261018_v19\\packed\\bundles\\eeadc8859d034c3aad2462e68af5be06\\modules",
+  "full_launch_allowed": false,
+  "full_scan_started": false,
+  "input_pilot_modules": [
+    {
+      "bytes": 1544,
+      "path": "runs/lean_table_checker/acceleration_20261018_v19/packed/bundles/eeadc8859d034c3aad2462e68af5be06/modules/CandidateActualDataV19.olean",
+      "sha256": "c92a146174cb5309324d8ae8b7e1d6dd20026415a6638e09acc5b693915ebba8"
+    },
+    {
+      "bytes": 7576,
+      "path": "runs/lean_table_checker/acceleration_20261018_v19/packed/bundles/eeadc8859d034c3aad2462e68af5be06/modules/CandidateActualVerifyV19.olean",
+      "sha256": "f688694e217020c76b8b56ce86e9909e08d0cbba467589c1e778f06fc5703e2b"
+    }
+  ],
+  "memory_limit_bytes": 3000000000,
+  "meta_plugin": null,
+  "mode": "replay",
+  "module": "CandidateActualVerifyV19",
+  "native_source": null,
+  "peak_job_committed_bytes": 77467648,
+  "peak_process_pagefile_bytes": 70537216,
+  "peak_process_working_set_bytes": 67555328,
+  "plugin_is_untrusted_input_generator": false,
+  "policy_error": null,
+  "published_module": null,
+  "requested_Lean_threads": 1,
+  "returncode": 0,
+  "schema": "ACTUAL_BOUNDED_KERNEL_PILOT_V19",
+  "source": {
+    "bytes": 511,
+    "path": "runs/lean_table_checker/acceleration_20261018_v19/packed/bundles/eeadc8859d034c3aad2462e68af5be06/source/CandidateActualVerifyV19.lean",
+    "sha256": "161cea8926c364083a6d7054e869b3589ddd4722de70502291e719a47ce29759"
+  },
+  "source_executable_import_hashes_unchanged": true,
+  "source_snapshot": {
+    "bytes": 511,
+    "path": "runs/lean_table_checker/acceleration_20261018_v19/packed/attempts/e270d77cf628493496a2022da30bac4c/source_snapshot/CandidateActualVerifyV19.lean",
+    "sha256": "161cea8926c364083a6d7054e869b3589ddd4722de70502291e719a47ce29759"
+  },
+  "status": "PASS",
+  "stderr": {
+    "bytes": 0,
+    "path": "runs/lean_table_checker/acceleration_20261018_v19/packed/attempts/e270d77cf628493496a2022da30bac4c/stderr.log",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "stdout": {
+    "bytes": 48,
+    "path": "runs/lean_table_checker/acceleration_20261018_v19/packed/attempts/e270d77cf628493496a2022da30bac4c/stdout.log",
+    "sha256": "64aa99dd619312b4d2db93b72e927582b36fa07726e2ac3255f6568657e6d0df"
+  },
+  "timed_out": false,
+  "wall_seconds": 5.89100000000326
+}

@@ -1,0 +1,1093 @@
+{
+  "actual_game_instance": false,
+  "actual_local_certificate_instantiated": false,
+  "all_new_compiler_children_exited": true,
+  "full_launch_allowed": false,
+  "full_scan_started": false,
+  "modules": [
+    {
+      "compiled_module": {
+        "bytes": 573120,
+        "path": "build/lean_table_checker/acceleration_v19/compression/bridge_modules/Mahjong/LocalCertificateV19.olean",
+        "sha256": "9b839d88119af49493d9d34ef57ac607c7c197cb7bc94919a85bdd5eec62530d"
+      },
+      "elapsed_seconds": 4.452999999979511,
+      "module": "Mahjong.LocalCertificateV19",
+      "peak_job_committed_bytes": 930693120,
+      "proof_dependency_fingerprints": [
+        {
+          "axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ],
+          "name": "Mahjong.LocalCertificateV19.Successors.local_link"
+        },
+        {
+          "axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ],
+          "name": "Mahjong.LocalCertificateV19.Successors.summary_checked"
+        },
+        {
+          "axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ],
+          "name": "Mahjong.LocalCertificateV19.Successors.edge_sound"
+        },
+        {
+          "axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ],
+          "name": "Mahjong.LocalCertificateV19.Successors.edge_complete"
+        },
+        {
+          "axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ],
+          "name": "Mahjong.LocalCertificateV19.Cached.state_eq"
+        },
+        {
+          "axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ],
+          "name": "Mahjong.LocalCertificateV19.Cached.packed_encode"
+        },
+        {
+          "axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ],
+          "name": "Mahjong.LocalCertificateV19.Cached.packed_valid"
+        },
+        {
+          "axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ],
+          "name": "Mahjong.LocalCertificateV19.Cached.retainedB_sound"
+        },
+        {
+          "axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ],
+          "name": "Mahjong.LocalCertificateV19.Cached.raw_inside"
+        },
+        {
+          "axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ],
+          "name": "Mahjong.LocalCertificateV19.Cached.safe_iff"
+        },
+        {
+          "axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ],
+          "name": "Mahjong.LocalCertificateV19.Cached.initial_facts"
+        },
+        {
+          "axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ],
+          "name": "Mahjong.LocalCertificateV19.Cached.ref_sound"
+        },
+        {
+          "axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ],
+          "name": "Mahjong.LocalCertificateV19.Cached.child_edge"
+        },
+        {
+          "axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ],
+          "name": "Mahjong.LocalCertificateV19.Cached.children_complete"
+        },
+        {
+          "axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ],
+          "name": "Mahjong.LocalCertificateV19.Cached.row_sound"
+        },
+        {
+          "axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ],
+          "name": "Mahjong.LocalCertificateV19.Cached.row_original"
+        },
+        {
+          "axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ],
+          "name": "Mahjong.LocalCertificateV19.Cached.single_original"
+        }
+      ],
+      "receipt": {
+        "bytes": 10858,
+        "path": "runs/lean_table_checker/acceleration_20261018_v19/compression/compilations/4b2950e09a03494ca59af67ec6e400b2/receipt.json",
+        "sha256": "7b8df11f5be5a35f24ab7aee83276fb99c88a0ca416473ef2ff5013b7bfb310e"
+      },
+      "source": {
+        "bytes": 21404,
+        "path": "build/lean_table_checker/acceleration_v19/compression/source/Mahjong/LocalCertificateV19.lean",
+        "sha256": "171ec017b89ccb54bd3e88f949e1611116fdaa5bb89d42a3c7cbaefee6d0ea2e"
+      }
+    },
+    {
+      "compiled_module": {
+        "bytes": 380528,
+        "path": "build/lean_table_checker/acceleration_v19/compression/bridge_modules/Mahjong/LocalBlockSoundnessV19.olean",
+        "sha256": "dd2fb1700d43a3c481bd07f23a23359e93d2e9e51ee657a66ffe54f22a50dcb8"
+      },
+      "elapsed_seconds": 4.186999999976251,
+      "module": "Mahjong.LocalBlockSoundnessV19",
+      "peak_job_committed_bytes": 938487808,
+      "proof_dependency_fingerprints": [
+        {
+          "axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ],
+          "name": "Mahjong.LocalBlockSoundnessV19.numeric_member"
+        },
+        {
+          "axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ],
+          "name": "Mahjong.LocalBlockSoundnessV19.id_of_member"
+        },
+        {
+          "axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ],
+          "name": "Mahjong.LocalBlockSoundnessV19.codes_retained"
+        },
+        {
+          "axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ],
+          "name": "Mahjong.LocalBlockSoundnessV19.codes_inside"
+        },
+        {
+          "axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ],
+          "name": "Mahjong.LocalBlockSoundnessV19.codes_retainedB"
+        },
+        {
+          "axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ],
+          "name": "Mahjong.LocalBlockSoundnessV19.raw_of_ids"
+        },
+        {
+          "axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ],
+          "name": "Mahjong.LocalBlockSoundnessV19.safe_of_ids"
+        },
+        {
+          "axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ],
+          "name": "Mahjong.LocalBlockSoundnessV19.rawChild_codes"
+        }
+      ],
+      "receipt": {
+        "bytes": 9216,
+        "path": "runs/lean_table_checker/acceleration_20261018_v19/compression/compilations/3316ba6066bc47f1af1ce1dd6a88cdd7/receipt.json",
+        "sha256": "e252cd8969996f85ad7beccb19b3f17ffec84bd012dd453db5872f7ffb1bc641"
+      },
+      "source": {
+        "bytes": 8569,
+        "path": "build/lean_table_checker/acceleration_v19/compression/source/Mahjong/LocalBlockSoundnessV19.lean",
+        "sha256": "77fd5b59efb8b35d55241893cc71eea4f824f3627af5ae030f16c7d8199e9f7d"
+      }
+    },
+    {
+      "compiled_module": {
+        "bytes": 542184,
+        "path": "build/lean_table_checker/acceleration_v19/compression/bridge_modules/Mahjong/LocalProductStateV19.olean",
+        "sha256": "bdd7cf6d72a0885acf806fb5a91a3a3fb3d8a1a950cd2a7e616f2a23f7a9ccc2"
+      },
+      "elapsed_seconds": 4.48399999999674,
+      "module": "Mahjong.LocalProductStateV19",
+      "peak_job_committed_bytes": 957255680,
+      "proof_dependency_fingerprints": [
+        {
+          "axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ],
+          "name": "Mahjong.LocalProductStateV19.block_parts"
+        },
+        {
+          "axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ],
+          "name": "Mahjong.LocalProductStateV19.ids_facts"
+        },
+        {
+          "axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ],
+          "name": "Mahjong.LocalProductStateV19.rawLabel_at"
+        },
+        {
+          "axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ],
+          "name": "Mahjong.LocalProductStateV19.product_initial"
+        },
+        {
+          "axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ],
+          "name": "Mahjong.LocalProductStateV19.product_safe"
+        },
+        {
+          "axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ],
+          "name": "Mahjong.LocalProductStateV19.rank_bound"
+        },
+        {
+          "axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ],
+          "name": "Mahjong.LocalProductStateV19.unrank_at"
+        },
+        {
+          "axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ],
+          "name": "Mahjong.LocalProductStateV19.rebuild"
+        },
+        {
+          "axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ],
+          "name": "Mahjong.LocalProductStateV19.normalize_inside"
+        },
+        {
+          "axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ],
+          "name": "Mahjong.LocalProductStateV19.mapped_sort_path"
+        },
+        {
+          "axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ],
+          "name": "Mahjong.LocalProductStateV19.normalized_product"
+        },
+        {
+          "axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ],
+          "name": "Mahjong.LocalProductStateV19.child_product"
+        },
+        {
+          "axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ],
+          "name": "Mahjong.LocalProductStateV19.code_group"
+        },
+        {
+          "axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ],
+          "name": "Mahjong.LocalProductStateV19.compare_codes"
+        },
+        {
+          "axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ],
+          "name": "Mahjong.LocalProductStateV19.normalize_codes"
+        },
+        {
+          "axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ],
+          "name": "Mahjong.LocalProductStateV19.idsOfCodes_codes"
+        },
+        {
+          "axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ],
+          "name": "Mahjong.LocalProductStateV19.productTarget_label"
+        },
+        {
+          "axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ],
+          "name": "Mahjong.LocalProductStateV19.reference_product"
+        },
+        {
+          "axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ],
+          "name": "Mahjong.LocalProductStateV19.product_ref_checked"
+        },
+        {
+          "axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ],
+          "name": "Mahjong.LocalProductStateV19.product_label_at"
+        },
+        {
+          "axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ],
+          "name": "Mahjong.LocalProductStateV19.reference_strategy"
+        },
+        {
+          "axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ],
+          "name": "Mahjong.LocalProductStateV19.row_sound"
+        },
+        {
+          "axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ],
+          "name": "Mahjong.LocalProductStateV19.row_original"
+        },
+        {
+          "axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ],
+          "name": "Mahjong.LocalProductStateV19.product_strategy"
+        },
+        {
+          "axioms": [
+            "propext"
+          ],
+          "name": "Mahjong.LocalProductStateV19.finite_stable_sort_controls"
+        }
+      ],
+      "receipt": {
+        "bytes": 12144,
+        "path": "runs/lean_table_checker/acceleration_20261018_v19/compression/compilations/6380afbc9e504e79beba0a4fd491f2a4/receipt.json",
+        "sha256": "9ae558820d2b5cb71893609d66a16c657878671dd86593b20bd131fc9d690d8e"
+      },
+      "source": {
+        "bytes": 29552,
+        "path": "build/lean_table_checker/acceleration_v19/compression/source/Mahjong/LocalProductStateV19.lean",
+        "sha256": "2db5003023663e0e61e6c69c30ad0302a132b26fe60a0c410d6a2943a32e70f2"
+      }
+    },
+    {
+      "compiled_module": {
+        "bytes": 1086312,
+        "path": "build/lean_table_checker/acceleration_v19/compression/bridge_modules/Mahjong/LocalProductTransitionV19.olean",
+        "sha256": "dd2e8973b05fa85667e26daf3e3a3c7b5c41cceeef27f010961c771294858c94"
+      },
+      "elapsed_seconds": 4.98399999999674,
+      "module": "Mahjong.LocalProductTransitionV19",
+      "peak_job_committed_bytes": 973189120,
+      "proof_dependency_fingerprints": [
+        {
+          "axioms": [
+            "Quot.sound",
+            "propext"
+          ],
+          "name": "Mahjong.LocalProductTransitionV19.sort_map"
+        },
+        {
+          "axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ],
+          "name": "Mahjong.LocalProductTransitionV19.tags_bound"
+        },
+        {
+          "axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ],
+          "name": "Mahjong.LocalProductTransitionV19.child_group"
+        },
+        {
+          "axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ],
+          "name": "Mahjong.LocalProductTransitionV19.child_member"
+        },
+        {
+          "axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ],
+          "name": "Mahjong.LocalProductTransitionV19.sort_actual_ids"
+        },
+        {
+          "axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ],
+          "name": "Mahjong.LocalProductTransitionV19.target_members"
+        },
+        {
+          "axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ],
+          "name": "Mahjong.LocalProductTransitionV19.target_block"
+        },
+        {
+          "axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ],
+          "name": "Mahjong.LocalProductTransitionV19.targetCoordinates_insert"
+        },
+        {
+          "axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ],
+          "name": "Mahjong.LocalProductTransitionV19.inserted_bounds"
+        },
+        {
+          "axioms": [
+            "Quot.sound",
+            "propext"
+          ],
+          "name": "Mahjong.LocalProductTransitionV19.inserted_freeIndex"
+        },
+        {
+          "axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ],
+          "name": "Mahjong.LocalProductTransitionV19.plane_target_read"
+        }
+      ],
+      "receipt": {
+        "bytes": 9759,
+        "path": "runs/lean_table_checker/acceleration_20261018_v19/compression/compilations/80a6e0c0738c4d8c998f557b5e491956/receipt.json",
+        "sha256": "5f94856a73d0410f447158e19bec9fc5b172077aa2b08425e1a593360117ef80"
+      },
+      "source": {
+        "bytes": 17012,
+        "path": "build/lean_table_checker/acceleration_v19/compression/source/Mahjong/LocalProductTransitionV19.lean",
+        "sha256": "9c71581aad881ae7bc354476d81fa4ee0fdaee4eaf3bd21e7535fec55f845572"
+      }
+    },
+    {
+      "compiled_module": {
+        "bytes": 1226856,
+        "path": "build/lean_table_checker/acceleration_v19/compression/bridge_modules/Mahjong/LocalProductTensorPlanV19.olean",
+        "sha256": "86e7f6a57559503967f7fa69371c1a7426e2fc2d07452487e7909fe69a1b628b"
+      },
+      "elapsed_seconds": 5.204000000027008,
+      "module": "Mahjong.LocalProductTensorPlanV19",
+      "peak_job_committed_bytes": 992935936,
+      "proof_dependency_fingerprints": [
+        {
+          "axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ],
+          "name": "Mahjong.LocalProductTensorPlanV19.bound_word_facts"
+        },
+        {
+          "axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ],
+          "name": "Mahjong.LocalProductTensorPlanV19.numeric_facts"
+        },
+        {
+          "axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ],
+          "name": "Mahjong.LocalProductTensorPlanV19.numeric_label"
+        },
+        {
+          "axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ],
+          "name": "Mahjong.LocalProductTensorPlanV19.numeric_hit"
+        },
+        {
+          "axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ],
+          "name": "Mahjong.LocalProductTensorPlanV19.numeric_ref"
+        },
+        {
+          "axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ],
+          "name": "Mahjong.LocalProductTensorPlanV19.actual_safe"
+        },
+        {
+          "axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ],
+          "name": "Mahjong.LocalProductTensorPlanV19.source_id_generic"
+        },
+        {
+          "axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ],
+          "name": "Mahjong.LocalProductTensorPlanV19.ids_axis"
+        },
+        {
+          "axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ],
+          "name": "Mahjong.LocalProductTensorPlanV19.actual_source_id"
+        },
+        {
+          "axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ],
+          "name": "Mahjong.LocalProductTensorPlanV19.key_mem"
+        },
+        {
+          "axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ],
+          "name": "Mahjong.LocalProductTensorPlanV19.source_normalized"
+        },
+        {
+          "axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ],
+          "name": "Mahjong.LocalProductTensorPlanV19.source_geometry"
+        },
+        {
+          "axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ],
+          "name": "Mahjong.LocalProductTensorPlanV19.source_label"
+        },
+        {
+          "axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ],
+          "name": "Mahjong.LocalProductTensorPlanV19.source_ref"
+        },
+        {
+          "axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ],
+          "name": "Mahjong.LocalProductTensorPlanV19.honor_facts"
+        },
+        {
+          "axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ],
+          "name": "Mahjong.LocalProductTensorPlanV19.honor_hit"
+        },
+        {
+          "axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ],
+          "name": "Mahjong.LocalProductTensorPlanV19.honor_ref"
+        },
+        {
+          "axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ],
+          "name": "Mahjong.LocalProductTensorPlanV19.plan_facts"
+        },
+        {
+          "axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ],
+          "name": "Mahjong.LocalProductTensorPlanV19.member_bound"
+        },
+        {
+          "axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ],
+          "name": "Mahjong.LocalProductTensorPlanV19.numeric_bounds"
+        },
+        {
+          "axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ],
+          "name": "Mahjong.LocalProductTensorPlanV19.honor_bound"
+        },
+        {
+          "axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ],
+          "name": "Mahjong.LocalProductTensorPlanV19.actual_numeric_key"
+        },
+        {
+          "axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ],
+          "name": "Mahjong.LocalProductTensorPlanV19.actual_honor_key"
+        },
+        {
+          "axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ],
+          "name": "Mahjong.LocalProductTensorPlanV19.actual_numeric_metadata"
+        },
+        {
+          "axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ],
+          "name": "Mahjong.LocalProductTensorPlanV19.actual_honor_metadata"
+        },
+        {
+          "axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ],
+          "name": "Mahjong.LocalProductTensorPlanV19.successor_ref"
+        },
+        {
+          "axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ],
+          "name": "Mahjong.LocalProductTensorPlanV19.checked_planes"
+        },
+        {
+          "axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ],
+          "name": "Mahjong.LocalProductTensorPlanV19.successor_reaches"
+        },
+        {
+          "axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ],
+          "name": "Mahjong.LocalProductTensorPlanV19.reaches_successor"
+        },
+        {
+          "axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ],
+          "name": "Mahjong.LocalProductTensorPlanV19.reach_iff_actual_children"
+        },
+        {
+          "axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ],
+          "name": "Mahjong.LocalProductTensorPlanV19.accepted_each"
+        },
+        {
+          "axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ],
+          "name": "Mahjong.LocalProductTensorPlanV19.packed_normal_strategy"
+        },
+        {
+          "axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ],
+          "name": "Mahjong.LocalProductTensorPlanV19.packed_original_strategy"
+        },
+        {
+          "axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ],
+          "name": "Mahjong.LocalProductTensorPlanV19.source_word_facts"
+        },
+        {
+          "axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ],
+          "name": "Mahjong.LocalProductTensorPlanV19.source_outside_target"
+        },
+        {
+          "axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ],
+          "name": "Mahjong.LocalProductTensorPlanV19.source_in_target_rejected"
+        },
+        {
+          "axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ],
+          "name": "Mahjong.LocalProductTensorPlanV19.missing_numeric_target_rejected"
+        },
+        {
+          "axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ],
+          "name": "Mahjong.LocalProductTensorPlanV19.bad_target_axis_rejected"
+        }
+      ],
+      "receipt": {
+        "bytes": 14765,
+        "path": "runs/lean_table_checker/acceleration_20261018_v19/compression/compilations/0e80fa647a3e43a094fe85a9d9d7af08/receipt.json",
+        "sha256": "5b3517febfe8189f76b9b514187ce17116fadeec21dff80ca3e52677f74d2509"
+      },
+      "source": {
+        "bytes": 54351,
+        "path": "build/lean_table_checker/acceleration_v19/compression/source/Mahjong/LocalProductTensorPlanV19.lean",
+        "sha256": "eac88c39af5f3dbec3dc1d2bb4e7788a52ff1f617fb6952932012b7fb6560e0b"
+      }
+    },
+    {
+      "compiled_module": {
+        "bytes": 708416,
+        "path": "build/lean_table_checker/acceleration_v19/compression/bridge_modules/Mahjong/LocalGroupChannelV19.olean",
+        "sha256": "21430c019f53041d8b362b2ee780b6c30e5c3af4452e0b5c03fdde2814ad2f1f"
+      },
+      "elapsed_seconds": 4.39000000001397,
+      "module": "Mahjong.LocalGroupChannelV19",
+      "peak_job_committed_bytes": 967278592,
+      "proof_dependency_fingerprints": [
+        {
+          "axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ],
+          "name": "Mahjong.LocalGroupChannelV19.tensor_key_iff"
+        },
+        {
+          "axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ],
+          "name": "Mahjong.LocalGroupChannelV19.same_group_safe"
+        },
+        {
+          "axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ],
+          "name": "Mahjong.LocalGroupChannelV19.same_group_tags"
+        },
+        {
+          "axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ],
+          "name": "Mahjong.LocalGroupChannelV19.same_group_block"
+        },
+        {
+          "axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ],
+          "name": "Mahjong.LocalGroupChannelV19.same_group_checkTags"
+        },
+        {
+          "axioms": [
+            "Quot.sound",
+            "propext"
+          ],
+          "name": "Mahjong.LocalGroupChannelV19.representative_facts"
+        },
+        {
+          "axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ],
+          "name": "Mahjong.LocalGroupChannelV19.block_channel_each"
+        },
+        {
+          "axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ],
+          "name": "Mahjong.LocalGroupChannelV19.numeric_checks_from_channels"
+        },
+        {
+          "axioms": [
+            "Quot.sound",
+            "propext"
+          ],
+          "name": "Mahjong.LocalGroupChannelV19.apply_spec"
+        },
+        {
+          "axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ],
+          "name": "Mahjong.LocalGroupChannelV19.pull_move"
+        },
+        {
+          "axioms": [
+            "Quot.sound",
+            "propext"
+          ],
+          "name": "Mahjong.LocalGroupChannelV19.axisReach_bit"
+        },
+        {
+          "axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ],
+          "name": "Mahjong.LocalGroupChannelV19.fastAxisReach_bit"
+        },
+        {
+          "axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ],
+          "name": "Mahjong.LocalGroupChannelV19.channel_axisReach_iff"
+        },
+        {
+          "axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ],
+          "name": "Mahjong.LocalGroupChannelV19.channel_axisReach_eq"
+        },
+        {
+          "axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ],
+          "name": "Mahjong.LocalGroupChannelV19.channel_reach_eq"
+        },
+        {
+          "axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ],
+          "name": "Mahjong.LocalGroupChannelV19.packed_refines"
+        },
+        {
+          "axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ],
+          "name": "Mahjong.LocalGroupChannelV19.packed_each"
+        },
+        {
+          "axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ],
+          "name": "Mahjong.LocalGroupChannelV19.packed_original_strategy"
+        },
+        {
+          "axioms": [
+            "Quot.sound",
+            "propext"
+          ],
+          "name": "Mahjong.LocalGroupChannelV19.wrong_row_rejected"
+        },
+        {
+          "axioms": [
+            "Quot.sound",
+            "propext"
+          ],
+          "name": "Mahjong.LocalGroupChannelV19.bad_move_rejected"
+        }
+      ],
+      "receipt": {
+        "bytes": 11223,
+        "path": "runs/lean_table_checker/acceleration_20261018_v19/compression/compilations/3c026bdbcfad48539fa2bf3ad831d15a/receipt.json",
+        "sha256": "314a9096d612966ce68a7bbd4bdf9c1df31e37724178a5c13ceabd1c8b40d27a"
+      },
+      "source": {
+        "bytes": 35968,
+        "path": "build/lean_table_checker/acceleration_v19/compression/source/Mahjong/LocalGroupChannelV19.lean",
+        "sha256": "37fe0db6ef6ab3566dd067b2762ec1fb3a7188425d8aa2523ad2f9266c3eb24b"
+      }
+    }
+  ],
+  "root_DAG_instantiated": false,
+  "schema": "V19_LOCAL_ONLY_CERTIFICATE_KERNEL_ACCEPTANCE",
+  "source_freeze": {
+    "bytes": 49304,
+    "path": "build/lean_table_checker/acceleration_v19/compression/LOCAL_CERTIFICATE_SOURCE_FREEZE.json",
+    "sha256": "82a16f3cb08782ddf671e609151af9dc5dd2626f4dc3e6c23cd36d115cfd0574"
+  },
+  "status": "PASS_GENERIC_LOCAL_CERTIFICATE_TO_ORIGINAL_STRATEGY_ONLY",
+  "theorem_count": 119
+}
