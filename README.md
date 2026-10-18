@@ -4,19 +4,23 @@
 
 [![Research checks](https://github.com/feierbuqiu/mahjong-achievement-game/actions/workflows/research.yml/badge.svg)](https://github.com/feierbuqiu/mahjong-achievement-game/actions/workflows/research.yml)
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
-[![Lean opening: NOT_VERIFIED](https://img.shields.io/badge/Lean_opening-NOT__VERIFIED-orange.svg)](research/2026-10-18-kernel/README.md)
+[![V17 native: COMPLETE](https://img.shields.io/badge/V17_native-COMPLETE-green.svg)](research/2026-10-19-v17/README.md)
+[![Closed Lean opening: NOT_VERIFIED](https://img.shields.io/badge/Closed_Lean_opening-NOT__VERIFIED-orange.svg)](docs/CLAIMS.md)
 
-> **Later October 18 update — persistent kernel proofs and certificate compression.**
-> The current goal is a saved, closed Lean proof of the actual original-game
-> empty position, with cold standard-kernel replay. Generic composition theorems
-> and a small actual-data closed pilot have been obtained; compressed numeric
-> and local-metadata certificates are being studied.
-> **The actual opening theorem remains `NOT_VERIFIED`; no reliable 20/24-hour
-> end-to-end completion bound is established.** The earlier 13.03-hour estimate
-> concerns a different, compiled-checker workload and is not a forecast for this
-> proof-certificate route. The legacy whole-table scan remains stopped.
-> Read the [current evidence and source](research/2026-10-18-kernel/README.md)
-> and [project status](docs/PROJECT_STATUS.md).
+> **October 19 update — complete V17 native verification.**
+> The Lean kernel proves that six finite Boolean acceptance families imply
+> `SecondPlayerWins Step Win empty`. The same check functions, compiled to
+> native code, accepted the complete actual input: **778,532,864,302 SAFE
+> orbits, all 35 layers, 3,686 buckets and 17,317 frames**, with no old PASS
+> or seed import. The run took about **7.6 hours** on the recorded workstation.
+> **This is a kernel-proved implication plus complete native evaluation;
+> it is not a closed Lean declaration for the actual opening.** Compiler,
+> runtime, OS/hardware, input custody and external bookkeeping remain trusted.
+> A [separate AI review](research/2026-10-19-v17/review/INDEPENDENT_REVIEW.md)
+> reports no defects within its inspected scope; independent execution
+> replication and human peer review have not been completed.
+> Read the [current result and evidence](research/2026-10-19-v17/README.md),
+> [claim boundaries](docs/CLAIMS.md) and [project status](docs/PROJECT_STATUS.md).
 
 ## Read the two English papers
 
@@ -80,44 +84,36 @@ are neither additive nor a formal-proof completion percentage.
 The [acceptance receipt](results/acceptance.json), [opening queries](results/opening.jsonl),
 and [machine-readable status](RESEARCH_STATUS.json) state their scope.
 
-## Current proof work and contributions
+## Verification status and contributions
 
-The project now studies **saved kernel-checkable certificates**, with the
-actual original-game theorem `SecondPlayerWins Step Win empty` as the target.
-Current results include V17 generic composition, V18 closed proofs for three
-specific nonempty 32-tile roots and captured checker inputs, and V19 certificate
-compression/numeric-layout experiments. The new
-[source and receipt catalogue](research/2026-10-18-kernel/README.md) describes
-what each result establishes and what remains open.
-
-| Current result | Exact scope |
+| Result | Scope |
 | --- | --- |
-| V17 generic composition | 13 new sources; 145-module fresh kernel replay; actual full input not instantiated |
-| V18 original-game pilot | 11 nodes, two 32-tile P roots and one 32-tile N root |
-| V18 checker pilot | 56 distinct captured rows; saved proof and cold replay |
-| V19 numeric/layout experiments | Supplied finite relations and local metadata; complete original-game binding remains separate |
-| Actual empty-state kernel proof | NOT_VERIFIED |
-| End-to-end completion time | No established 20/24-hour bound |
+| September C++ computation and full reverse replay | Empty position P; both implementations share foundational rules and index |
+| V17 whole-input implication | Kernel-proved original-game conclusion from six finite acceptance families |
+| Completed V17 native evaluation | All 778,532,864,302 stored labels checked; P/N recurrence and full input/coverage controls accepted |
+| Separate AI cross-check | Saved 17,317-frame ledger and 54,548 cross-layer identity references; no defects found in reviewed scope |
+| Independent execution replication | Not completed |
+| Closed actual-input opening Lean theorem | NOT_VERIFIED |
 
-The earlier V16 estimate of **13.0256 hours including 25% margin** covered
-known components of compiled-checker execution and omitted six production
-costs. Proof construction, persistence, dependency loading, assembly and cold
-kernel replay are a different workload. The previous imminent/sub-20-hour
-finish expectation is superseded. Successful small samples do not establish
-whole-task time, storage or memory feasibility.
+The complete run **checks the historical labels**; it does not regenerate the
+table. A native PASS and a saved kernel proof have different trust boundaries.
+The [evidence guide](docs/EVIDENCE.md) and [reproduction instructions](docs/REPRODUCIBILITY.md)
+explain what readers can inspect or repeat. The 63.46 MB saved-record archive
+is a [separate release asset](research/2026-10-19-v17/assets.json), with hashes
+in Git; the 100.62 GB input set is currently represented by its complete hash map.
 
-The historical compiled checks of layers 32–34 cover 303,054,865 unique rows;
-this is not a count of newly closed kernel-certified global rows. The recorded
-i7-10700KF / 32 GiB / RTX 2070 SUPER machine and its old GPU/native timings
-remain useful context, with their original trust and measurement boundaries.
-The legacy whole-table STOP remains; bounded proof research is a separate activity.
+The earlier [V18/V19 proof-export experiments](research/2026-10-18-kernel/README.md)
+remain useful small/component results. That strict-kernel work was stopped;
+it is not part of the completed native run. The old V16 campaign remains
+stopped. No whole-task time bound for a future closed actual-input proof is claimed.
 
-Contributions remain welcome: independent arguments, deeper formal review,
-alternative sparse or compressed certificates, original-game data binding,
-reproducibility improvements and careful performance measurements. Share a
-concrete proposal in the [issue tracker](https://github.com/feierbuqiu/mahjong-achievement-game/issues).
-Both English papers and the immutable v1.0.0 release retain their historical
-scope; current progress is recorded in main.
+Independent replication on another machine or toolchain, human reading of
+the rules and trusted bookkeeping, alternative proofs, corrections and
+reproducibility improvements remain welcome through the
+[issue tracker](https://github.com/feierbuqiu/mahjong-achievement-game/issues).
+The two existing English papers remain dated reports; a new paper has not
+yet been published. See the [internal-version glossary](docs/INTERNAL_VERSIONS.md)
+for V16/V17/V18/V19 and the distinction from release versions.
 
 ## The game
 
@@ -156,8 +152,10 @@ hashes and exact reconstruction commands are included. See [data availability](d
 
 - [Computational research paper](papers/manuscript.md): original full report and appendices.
 - [Lean verification paper](papers/lean-verification/manuscript.md): subsequent formal development and reproduction evidence.
-- [Current project status](docs/PROJECT_STATUS.md): persistent kernel-proof research, closed pilot and remaining actual-instance/runtime gaps.
-- [Later October kernel-source update](research/2026-10-18-kernel/README.md): V17/V18/V19 sources, saved-proof receipts and precise scope.
+- [Current project status](docs/PROJECT_STATUS.md): completed native verification, explicit trust boundary and remaining replication/proof work.
+- [V17 native completion](research/2026-10-19-v17/README.md): source, recorded checks, separate AI review and hash-pinned evidence asset.
+- [Claim boundaries](docs/CLAIMS.md) and [internal-version glossary](docs/INTERNAL_VERSIONS.md).
+- [Historical October kernel-source update](research/2026-10-18-kernel/README.md): V17/V18/V19 sources, saved-proof receipts and precise scope.
 - [Earlier October V16 source and evidence](research/2026-10-18/README.md): historical compiled-checker work, layer 32 and the superseded forecast.
 - [September 15 finite-model status](research/2026-09-15/README.md): finite
   algorithm proofs, bounded tests, remaining obligations, and maintainer scope.

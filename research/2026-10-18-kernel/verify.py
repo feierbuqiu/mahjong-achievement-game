@@ -129,7 +129,7 @@ def verify():
             not layer['actual_empty_game_verified'] and not layer['actual_local_certificate_instantiated'] and
             layer['next_TargetCorrect_premise_removed'],'Generic/local actual-instance distinction changed')
 
-    current=read(ROOT/'RESEARCH_STATUS.json');outlook=current['verification_outlook']
+    current=read(ROOT/'RESEARCH_STATUS.json');outlook=current['historical_outlooks']['2026-10-18-kernel']
     require(current['opening_outcome']=='P' and current['formal_verification']['empty_game_lean']=='NOT_VERIFIED' and
             not current['formal_verification']['end_to_end_Lean_theorem_published'],'Computational/formal opening conflated')
     require(outlook['completion_time_estimate_hours'] is None and outlook['working_expectation_hours'] is None and

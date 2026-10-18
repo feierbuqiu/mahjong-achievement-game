@@ -8,7 +8,7 @@ The Chinese manuscript, original-language historical notes, large SQLite
 candidate checkpoints, compiler objects and toolchains are excluded.
 
 The [September 14 handoff](../research/2026-09-14/README.md) adds a frozen
-56-module checker source archive, current hardware specifications, selected
+56-module checker source archive, hardware specifications recorded on that date, selected
 compiled-scan receipts and all 47 general-benchmark case receipts. Its
 [manifest](../research/2026-09-14/provenance.json) explicitly identifies retained
 input binaries, controllers and later concrete proof trees. The paused local
@@ -40,7 +40,7 @@ computational snapshot.
 
 ## Later October kernel-certificate materials
 
-The [current kernel-certificate update](../research/2026-10-18-kernel/README.md)
+The [historical kernel-certificate update](../research/2026-10-18-kernel/README.md)
 adds the V17 generic bridges, V18 closed pilot sources, and selected completed
 V19 numeric/layout/local-certificate sources and receipts. It preserves failed
 attempt records and separates original hashes from path-redacted public copies.
@@ -85,15 +85,42 @@ inspectable source/evidence update, not a complete portable GPU campaign.
 - Frozen Lean 4.33.1 source for eight indexed closed nonempty-position roots, historical
   kernel-replay extracts, and a clean source-replay tool. See [formal materials](../formal/README.md).
 
+## October 19 completed V17 native verification
+
+The [current V17 publication](../research/2026-10-19-v17/README.md) adds the
+native-worker/main/replay source, a 148-file source map reusing earlier exact
+sources, the trusted bookkeeping code, recorded build/control evidence and
+the original separate AI review with its Appendix B script. Public JSON copies
+redact identifying paths where necessary and retain original/public hashes.
+
+The **63,456,055-byte saved-record ZIP** is a separate
+[evidence release asset](../research/2026-10-19-v17/assets.json). It contains
+38,329 original files: the ledger, all 17,317 committed frame receipts, all
+17,317 native results, bucket/global records, run manifests, before/after
+input identities and the eight-byte empty-root payload. Every member has a
+hash in its contents manifest. It contains no full input dataset, toolchain,
+native executable, closed actual-input Lean proof or Chinese manuscript.
+The code repository retains the asset size/SHA-256 and a bounded verifier.
+See [artifact policy](ASSETS.md) for download verification and retention rules.
+
+All **11,272 input identities / 100,615,834,170 bytes** are listed in
+[inputs.json](../research/2026-10-19-v17/inputs.json). The actual full dataset
+is **not currently a public download**. Local portable archives were still
+in progress at capture and are not published as completed packages. The
+historical full P/N table is the main part of this input set; it is not an
+additional 97.32 GB to add to the 100.62 GB figure.
+
 ## Retained outside Git
 
-The complete padded table payload is **97,316,623,312 bytes**. It is not included
-in this Git repository or offered as a public download in version 0.1.0.
-No external archive, DOI, or permanent table-hosting service is claimed.
-Historical large search caches, the incomplete opening candidate-graph database,
-and the full Lean working environment are also outside this publication.
-The completed formal source snapshot is included; compiled Lean modules and
-the Lean toolchain binaries are not stored in Git.
+The complete padded P/N table payload is **97,316,623,312 bytes**. It is not
+stored in Git or supplied as a public full-table download by this update.
+The saved-record evidence archive above is much smaller and has a different
+purpose. No external permanent table archive, DOI or completed all-input
+native-reproduction installer is claimed.
+Historical large caches, incomplete candidate-graph databases, most binary
+metadata banks, native/toolchain binaries and the full Lean working environment
+remain outside this publication. Exact source is supplied for the mapped
+modules; selected V19 extracts retain their explicitly incomplete distribution.
 
 The full table is reconstructible using the [documented generator](REPRODUCIBILITY.md).
 Plan for at least 110 GB of free output storage, with additional space for

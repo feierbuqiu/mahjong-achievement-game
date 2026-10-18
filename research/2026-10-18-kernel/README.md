@@ -1,3 +1,9 @@
+> **Historical snapshot.** The [October 19 V17 update](../2026-10-19-v17/README.md)
+> records complete native verification under a kernel-proved implication.
+> This page retains its dated scope; "current", "not started" and runtime
+> forecasts below describe that earlier snapshot. The actual-input closed
+> Lean theorem remains unproved. See [current status](../../docs/PROJECT_STATUS.md).
+
 # Persistent kernel proofs and certificate compression
 
 **Later October 18 update: the current work is proof-certificate research.**

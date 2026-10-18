@@ -68,6 +68,10 @@ def main():
     kernel_progress = importlib.util.module_from_spec(spec)
     spec.loader.exec_module(kernel_progress)
     kernel_progress.verify()
+    spec = importlib.util.spec_from_file_location('native_progress', ROOT / 'research/2026-10-19-v17/verify.py')
+    native_progress = importlib.util.module_from_spec(spec)
+    spec.loader.exec_module(native_progress)
+    native_progress.verify()
     formal = read_json("formal/STATUS.json")
     require(status["formal_verification"]["closed_nonempty_original_game_roots_published"] ==
             len(formal["closed_nonempty_original_game_proofs"]) == 8, "Formal root count mismatch")

@@ -21,3 +21,10 @@ papers/lean-verification/reproduction/** -text whitespace=blank-at-eol,space-bef
 research/2026-10-18/** -text whitespace=blank-at-eol,space-before-tab,cr-at-eol,-blank-at-eof
 # Preserve captured kernel-research sources and historical receipt bytes.
 research/2026-10-18-kernel/** -text whitespace=blank-at-eol,space-before-tab,cr-at-eol,-blank-at-eof
+
+# Preserve byte identities of completed V17 source and run evidence.
+/research/2026-10-19-v17/source/** -text
+/research/2026-10-19-v17/evidence/** -text
+/research/2026-10-19-v17/review/INDEPENDENT_REVIEW.md -text
+# This imported status retains original CRLF bytes for its provenance hash.
+/research/2026-10-19-v17/evidence/v19-stopped.json whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol

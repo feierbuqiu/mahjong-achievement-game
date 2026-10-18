@@ -1,0 +1,4 @@
+'Mahjong.V17NativeWorker.Session.successors' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Mahjong.V17NativeWorker.BucketResult.each' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Mahjong.V17NativeWorker.checkTargetSources_eq' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Mahjong.V17NativeWorker.finishWhole' depends on axioms: [propext, Classical.choice, Quot.sound]

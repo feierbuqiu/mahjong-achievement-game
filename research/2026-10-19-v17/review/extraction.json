@@ -1,0 +1,9 @@
+{
+  "source": "review/INDEPENDENT_REVIEW.md",
+  "source_original_sha256": "de66b0d9671cb46536214ce5b742f4f6845a0863cb4cb03e2ab37d186f2ccd5c",
+  "operation": "Extract the Appendix B Python fenced block verbatim; retain its original script behavior and limitations",
+  "extracted_sha256": "85ca16757985ae02c29d63056d6b60155b3125b1dd0c2fb8f783622fb3473acf",
+  "reviewer_is_AI": true,
+  "human_peer_review": false,
+  "independent_native_replication": false
+}

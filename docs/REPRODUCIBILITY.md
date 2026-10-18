@@ -61,7 +61,7 @@ generation while another memory-intensive computation is using the machine.
 Use a new record directory for the public build. No legacy records are needed:
 
 ```bash
-python3 tools/reproduce.py run push_verify_parallel_v3 --data runs/full/table --verified-dir runs/full/replay --build-id public-v0.1.0 --layers 0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34 --threads 8 --max-seconds 43200
+python3 tools/reproduce.py run push_verify_parallel_v3 --data runs/full/table --verified-dir runs/full/replay --build-id local-reproduction --layers 0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34 --threads 8 --max-seconds 43200
 ```
 
 Repeat after a budget stop using the same unmodified source build and output
@@ -159,10 +159,35 @@ explicit unresolved-import report in source-map.json. The selected source
 archive is not a complete portable cold-replay installer. Original object
 hashes identify retained binaries; public extracts have separate hashes.
 
-The old 13.0256-hour native screen is not a bound for persistent proof
-construction, assembly and cold replay. No 20/24-hour whole-task gate has
-passed. A publication update does not authorize a whole-table launch or
-release the existing STOP.
+## Completed V17 native run and saved evidence
+
+The [October 19 package](../research/2026-10-19-v17/README.md) supersedes earlier
+"not started" descriptions for V17 native evaluation. It supplies a complete
+148-file source map, the native worker and bookkeeping sources, small receipts,
+the full 11,272-file input hash map and a separate saved-record archive.
+
+```bash
+python3 research/2026-10-19-v17/verify.py
+python3 research/2026-10-19-v17/prepare_sources.py --output build/v17-source
+# After downloading the asset named in research/2026-10-19-v17/assets.json:
+python3 research/2026-10-19-v17/verify.py --archive /path/to/mahjong-v17-native-evidence-20261019.zip
+```
+
+These commands do not execute Lean or a game scan. The first checks public
+bytes and recorded scopes; the second assembles exact source bytes without
+overwriting an existing folder; the third hashes the asset and every member,
+recomputes ledger entry hashes and exact coverage, and checks all native
+result/acceptance and cross-layer identity links. It does not rerun the native
+checker or rehash unavailable full inputs. The original separate review script
+is also supplied verbatim, with its original workspace/input requirements.
+
+The archived operations scripts are historical source, not a one-command
+portable full-run installer. The 100.62 GB full input set, original native
+binary and complete GPU/runtime environment are not distributed in this
+evidence asset. Hashes alone do not make those files available. Existing
+C++ commands reconstruct the P/N table; they do not reconstruct all V17
+finite metadata banks. Independent native execution therefore remains an
+open replication task. The 7.6-hour observation is not a future time bound.
 
 Include the commit/tag, operating system, CPU, RAM, compiler version, build
 flags, exact input and command, elapsed time, peak memory, exit code, output
