@@ -1,0 +1,66 @@
+{
+  "CPU_limit_percent": 20,
+  "LEAN_PATH": "<RESEARCH_ROOT>\\build\\lean_table_checker\\kernel_pilot_v18\\modules;<RESEARCH_ROOT>\\build\\lean_table_checker\\end_to_end_v17\\modules",
+  "argv": [
+    "<RESEARCH_ROOT>\\build\\toolchain\\lean-4.33.1-windows\\bin\\lean.exe",
+    "--trust=0",
+    "-j1",
+    "-M2048",
+    "-R",
+    "<RESEARCH_ROOT>\\build\\lean_table_checker\\kernel_pilot_v18\\source",
+    "-o",
+    "<RESEARCH_ROOT>\\runs\\lean_table_checker\\kernel_pilot_20261018_v18\\attempts\\676fb011b6544f8590baebb18ac4cdbb\\modules\\Mahjong\\PilotScanV18.olean",
+    "<RESEARCH_ROOT>\\build\\lean_table_checker\\kernel_pilot_v18\\source\\Mahjong\\PilotScanV18.lean"
+  ],
+  "caps_readback_confirmed": true,
+  "checked_utc": "2026-10-18T04:24:42.725671+00:00",
+  "child_assigned_before_resume": true,
+  "child_cpu_seconds": 1.890625,
+  "child_exit_confirmed": true,
+  "compiled_module": null,
+  "controller_outside_job": true,
+  "dependency_fingerprints": [],
+  "executable": {
+    "bytes": 83456,
+    "path": "build/toolchain/lean-4.33.1-windows/bin/lean.exe",
+    "sha256": "af49bacfabaa1fea71332ca0feae0fa1a60912219d5902291adc79f905bffb8d"
+  },
+  "final_kernel_empty_theorem": false,
+  "full_launch_allowed": false,
+  "full_scan_started": false,
+  "input_pilot_modules": [
+    {
+      "bytes": 7328,
+      "path": "build/lean_table_checker/kernel_pilot_v18/modules/Mahjong/PilotHarnessV18.olean",
+      "sha256": "c184f8c3f1681392e95cb9150663972a9e17bfcedd72b095e762c9df5360396a"
+    }
+  ],
+  "memory_limit_bytes": 3000000000,
+  "mode": "compile",
+  "module": "Mahjong.PilotScanV18",
+  "peak_job_committed_bytes": 456040448,
+  "peak_process_pagefile_bytes": 454803456,
+  "peak_process_working_set_bytes": 73457664,
+  "policy_error": null,
+  "published_module": null,
+  "returncode": 1,
+  "schema": "ACTUAL_BOUNDED_KERNEL_PILOT_V18",
+  "source": {
+    "bytes": 7788,
+    "path": "build/lean_table_checker/kernel_pilot_v18/source/Mahjong/PilotScanV18.lean",
+    "sha256": "720e137670a207b0f3041e6693cb3f6d5637033c0ddcbefec17855f7e81d0c98"
+  },
+  "status": "FAILED_OR_INCOMPLETE",
+  "stderr": {
+    "bytes": 0,
+    "path": "runs/lean_table_checker/kernel_pilot_20261018_v18/attempts/676fb011b6544f8590baebb18ac4cdbb/stderr.log",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "stdout": {
+    "bytes": 404,
+    "path": "runs/lean_table_checker/kernel_pilot_20261018_v18/attempts/676fb011b6544f8590baebb18ac4cdbb/stdout.log",
+    "sha256": "a98b42cd573cf1946bbd6d684f34300cb2e5e554188deae6542b837f11a177f9"
+  },
+  "timed_out": false,
+  "wall_seconds": 1.9209999999729916
+}

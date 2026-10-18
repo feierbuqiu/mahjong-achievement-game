@@ -137,22 +137,32 @@ second command uses Lean 4.33.1, fresh project objects, trust level 0, one
 thread and a 3 GiB heap limit per compiler process. It checks mathematical
 source; it does not execute native workers or read the historical P/N table.
 The native operational test harness and inputs are retained outside Git.
-The [October 18 publication](../research/2026-10-18/README.md) supersedes the
-earlier decision to stop pursuing the campaign. The new full scan is awaiting
-independent correctness review and has not started. Its selected source and
-receipts can be checked without starting Lean or hardware work:
+The [earlier October V16 archive](../research/2026-10-18/README.md) is a dated
+compiled-checker snapshot. Its read-only checker remains available. The
+[later kernel-certificate publication](../research/2026-10-18-kernel/README.md)
+supplies V17/V18 source mappings and selected completed V19 source/receipts:
 
 ```bash
-python3 research/2026-10-18/verify.py
+python3 research/2026-10-18-kernel/verify.py
 ```
 
-This command reads public files and checks recorded identities/arithmetic.
-It does not launch the new campaign. The selected controller/GPU source is
-an inspection archive, not a complete portable campaign distribution; large
-inputs and executables are retained outside Git. Future execution requires
-independent review, fresh full-input/resource/cost acceptance and explicit
-release of the user hold. The sub-20-hour finish remains a conditional
-expectation, not a verified all-in runtime bound.
+This checks public hashes, import mappings, selected recorded scope flags and
+arithmetic. It invokes no Lean, compiler, GPU, WSL, scheduler or whole-table
+job. The kernel-check statements in the report refer to retained historical
+receipts, not a new replay by this helper. Existing Lean CI replays the older
+concrete proof package; it does not replay every new V19 experiment.
+
+The V17/V18 mapped source-import closure is supplied using the earlier
+132-module base. V19 includes binary-emitted data and exported dependency
+slices whose full reconstruction inputs are retained outside Git. See the
+explicit unresolved-import report in source-map.json. The selected source
+archive is not a complete portable cold-replay installer. Original object
+hashes identify retained binaries; public extracts have separate hashes.
+
+The old 13.0256-hour native screen is not a bound for persistent proof
+construction, assembly and cold replay. No 20/24-hour whole-task gate has
+passed. A publication update does not authorize a whole-table launch or
+release the existing STOP.
 
 Include the commit/tag, operating system, CPU, RAM, compiler version, build
 flags, exact input and command, elapsed time, peak memory, exit code, output

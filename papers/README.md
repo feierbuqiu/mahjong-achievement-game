@@ -1,13 +1,13 @@
 # English research papers
 
-Both reports by **feierbuqiu** were published in **v1.0.0** and retain their dated text. Read them together: the first develops the computational result; the second explains the subsequent Lean work and remaining obligations. The [October 18 source/evidence update](../research/2026-10-18/README.md) records newer progress beyond these papers.
+Both reports by **feierbuqiu** were published in **v1.0.0** and retain their dated text. Read them together: the first develops the computational result; the second explains the subsequent Lean work and remaining obligations. The [later October kernel-certificate update](../research/2026-10-18-kernel/README.md) records subsequent methods, results and remaining gaps.
 
 | English report | Date | Contents |
 | --- | --- | --- |
 | **[Mahjong Achievement on a Shared Table: A Computational Second-Player Win and Partial Lean Certification](manuscript.md)** | 13 September 2026 | Rules, mathematical arguments, exhaustive computation, early concrete Lean proofs and seven appendices |
 | **[Lean Verification of the Mahjong Achievement Game: Strategy Certificates, Enumeration, and Retrograde Models](lean-verification/manuscript.md)** | 15 September 2026 | Later strategy certification, finite models, compiled checks, implementation tests, proof boundaries and reproduction commands |
 
-The computational conclusion is a second-player win. The end-to-end opening Lean theorem remains **`NOT_VERIFIED`**. Version 1 marks completion of this research delivery, not a complete formal proof. The improved V16 route is now approaching a final compiled-Lean campaign with a conditional sub-20-hour finish expectation. The full scan has not started, and correctness is undergoing independent review. Deeper or alternative contributions remain welcome. See [project status](../docs/PROJECT_STATUS.md).
+The computational conclusion is a second-player win. The end-to-end opening Lean theorem remains **`NOT_VERIFIED`**. Version 1 marks completion of this research delivery, not a complete formal proof. Current work targets persistent kernel certificates and compression. Generic bridges and a small actual-data closed pilot are recorded; the actual opening instance and a reliable 20/24-hour whole-task bound remain open. Deeper and alternative contributions remain welcome. See [project status](../docs/PROJECT_STATUS.md).
 
 ## Supporting material
 

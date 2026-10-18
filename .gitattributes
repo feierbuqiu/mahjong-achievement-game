@@ -19,3 +19,5 @@ papers/lean-verification/reproduction/** -text whitespace=blank-at-eol,space-bef
 *.pub text eol=lf
 # Preserve the frozen October source and historical receipt bytes.
 research/2026-10-18/** -text whitespace=blank-at-eol,space-before-tab,cr-at-eol,-blank-at-eof
+# Preserve captured kernel-research sources and historical receipt bytes.
+research/2026-10-18-kernel/** -text whitespace=blank-at-eol,space-before-tab,cr-at-eol,-blank-at-eof

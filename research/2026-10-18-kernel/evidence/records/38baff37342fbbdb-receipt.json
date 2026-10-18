@@ -1,0 +1,90 @@
+{
+  "CPU_limit_percent": 20,
+  "LEAN_PATH": "<RESEARCH_ROOT>\\runs\\lean_table_checker\\acceleration_20261018_v19\\metadata_pages_v19\\local_encoded_v7\\bundles\\128bd5f990a941a9802322ddcbf055c8\\modules",
+  "argv": [
+    "<RESEARCH_ROOT>\\build\\toolchain\\lean-4.33.1-windows\\bin\\leanchecker.exe",
+    "--fresh",
+    "-v",
+    "Mahjong.MetadataEncodedVerifyV19"
+  ],
+  "caps_readback_confirmed": true,
+  "checked_utc": "2026-10-18T07:44:02.603104+00:00",
+  "child_assigned_before_resume": true,
+  "child_cpu_seconds": 4.5,
+  "child_cwd": "build/lean_table_checker/acceleration_v19/metadata_pages_v19/local_encoded_v7/empty/7c23aed8bc524d42be20b552ed97f055",
+  "child_exit_confirmed": true,
+  "child_wall_seconds": 4.577999999979511,
+  "compiled_module": null,
+  "controller_outside_job": true,
+  "dependency_fingerprints": [],
+  "empty_replay_cwd": true,
+  "exclusive_profiler_seconds": {},
+  "executable": {
+    "bytes": 115200,
+    "path": "build/toolchain/lean-4.33.1-windows/bin/leanchecker.exe",
+    "sha256": "31b506f83737b7d629fd11699df5aaf88c3b50be23c28219e6b283f0de98f85c"
+  },
+  "final_kernel_empty_theorem": false,
+  "frozen_replay_root": "<RESEARCH_ROOT>\\runs\\lean_table_checker\\acceleration_20261018_v19\\metadata_pages_v19\\local_encoded_v7\\bundles\\128bd5f990a941a9802322ddcbf055c8\\modules",
+  "full_launch_allowed": false,
+  "full_scan_started": false,
+  "input_pilot_modules": [
+    {
+      "bytes": 6648,
+      "path": "runs/lean_table_checker/acceleration_20261018_v19/metadata_pages_v19/local_encoded_v7/bundles/128bd5f990a941a9802322ddcbf055c8/modules/Mahjong/MetadataEncodedVerifyV19.olean",
+      "sha256": "930421ad41f47e5ffdbf8023a48d353044f5a0ebeefb9a4cd4300d9e44142ccb"
+    },
+    {
+      "bytes": 1544,
+      "path": "runs/lean_table_checker/acceleration_20261018_v19/metadata_pages_v19/local_encoded_v7/bundles/128bd5f990a941a9802322ddcbf055c8/modules/MetadataEncodedSliceDataV19.olean",
+      "sha256": "0b23c63f26c5a90e0ecdfd5055247c34023343e57df85202f7253f7d8e3dc511"
+    },
+    {
+      "bytes": 7492472,
+      "path": "runs/lean_table_checker/acceleration_20261018_v19/metadata_pages_v19/local_encoded_v7/bundles/128bd5f990a941a9802322ddcbf055c8/modules/MetadataEncodedSliceDataV19.olean.private",
+      "sha256": "b000beec0904d09fc05e902c8f20051e6ac0de4f75250779469b4406395f635b"
+    },
+    {
+      "bytes": 96,
+      "path": "runs/lean_table_checker/acceleration_20261018_v19/metadata_pages_v19/local_encoded_v7/bundles/128bd5f990a941a9802322ddcbf055c8/modules/MetadataEncodedSliceDataV19.olean.server",
+      "sha256": "fc798602ced9333e9e5336e8ccfc5121b0734bcb1dcbb4388b6527a278e7120c"
+    }
+  ],
+  "kernel_numeral_limit_overridden": false,
+  "literal_input_files": [],
+  "memory_limit_bytes": 3000000000,
+  "mode": "replay",
+  "module": "Mahjong.MetadataEncodedVerifyV19",
+  "peak_job_committed_bytes": 77443072,
+  "peak_process_pagefile_bytes": 46198784,
+  "peak_process_working_set_bytes": 53649408,
+  "policy_error": null,
+  "published_artifacts": [],
+  "published_module": null,
+  "returncode": 1,
+  "schema": "ACTUAL_BOUNDED_ENCODED_LOCAL_SAFE_PARTIAL_METADATA_KERNEL_V19",
+  "source": {
+    "bytes": 667,
+    "path": "runs/lean_table_checker/acceleration_20261018_v19/metadata_pages_v19/local_encoded_v7/bundles/128bd5f990a941a9802322ddcbf055c8/source/Mahjong/MetadataEncodedVerifyV19.lean",
+    "sha256": "fbefd96f183e31553bddd4b1261998e9b44d415f5e658da4fcd7aac5c9fa025e"
+  },
+  "source_executable_import_hashes_unchanged": true,
+  "source_snapshot": {
+    "bytes": 667,
+    "path": "runs/lean_table_checker/acceleration_20261018_v19/metadata_pages_v19/local_encoded_v7/attempts/7c23aed8bc524d42be20b552ed97f055/source_snapshot/Mahjong/MetadataEncodedVerifyV19.lean",
+    "sha256": "fbefd96f183e31553bddd4b1261998e9b44d415f5e658da4fcd7aac5c9fa025e"
+  },
+  "status": "FAILED_OR_INCOMPLETE",
+  "stderr": {
+    "bytes": 306,
+    "path": "runs/lean_table_checker/acceleration_20261018_v19/metadata_pages_v19/local_encoded_v7/attempts/7c23aed8bc524d42be20b552ed97f055/stderr.log",
+    "sha256": "d9c1590f3d93a74435edff67ab10b686a79f3356f1c353666f93849c8857427d"
+  },
+  "stdout": {
+    "bytes": 56,
+    "path": "runs/lean_table_checker/acceleration_20261018_v19/metadata_pages_v19/local_encoded_v7/attempts/7c23aed8bc524d42be20b552ed97f055/stdout.log",
+    "sha256": "72985be7a2ea963a3069c287039680a218367c4f7264c554968c88186f2e58ff"
+  },
+  "timed_out": false,
+  "wall_seconds": 4.64000000001397
+}

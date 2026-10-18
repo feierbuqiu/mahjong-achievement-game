@@ -1,0 +1,56 @@
+{
+  "schema": "MJ_PERSISTENT_KERNEL_RESEARCH_STATUS_V1",
+  "date": "2026-10-18",
+  "goal": "Closed Lean SecondPlayerWins Step Win empty for the actual original game, with saved proof dependencies and cold standard-kernel replay",
+  "phase": "PERSISTENT_KERNEL_CERTIFICATE_AND_COMPRESSION_RESEARCH",
+  "actual_empty_game_Lean": "NOT_VERIFIED",
+  "full_table_kernel_certificate": false,
+  "full_scan_started": false,
+  "legacy_STOP_preserved": true,
+  "completion_time_estimate_hours": null,
+  "twenty_hour_end_to_end_bound_established": false,
+  "twenty_four_hour_full_run_admitted": false,
+  "historical_native_known_component_hours": 13.025598036171749,
+  "native_estimate_is_current_kernel_proof_forecast": false,
+  "historical_compiled_layer_rows": 303054865,
+  "current_kernel_work": {
+    "v17": {
+      "new_source_modules": 13,
+      "project_closure_fresh_replayed": 145,
+      "recorded_replay_seconds": 123.078,
+      "generic_composition": true,
+      "actual_full_input_acceptance": "NOT_VERIFIED"
+    },
+    "v18": {
+      "small_pilot_closed": true,
+      "original_game_nodes": 11,
+      "original_game_start_tile_count": 32,
+      "original_game_P_roots": 2,
+      "original_game_N_roots": 1,
+      "hot_checker_distinct_rows": 56,
+      "hot_checker_P_rows": 41,
+      "hot_checker_N_rows": 15,
+      "scalar_scans_overlap": true,
+      "cold_replay_seconds": 176.562,
+      "additional_global_layer_certification": 0
+    },
+    "v19": {
+      "status": "RECORDED_COMPONENT_EXPERIMENTS_AND_GENERIC_BRIDGES",
+      "supplied_numeric_cartesian_sample_blocks": 28,
+      "supplied_numeric_cartesian_coordinates": 1077270,
+      "original_colex_sample_rows": 1035129,
+      "provided_numeric_relations_are_complete_original_game_semantics": false,
+      "local_metadata_sample_rows": 64,
+      "local_metadata_pages": 9,
+      "actual_whole_local_certificate_instantiated": false,
+      "global_numeric_helper_sample_blocks": 3,
+      "global_numeric_helper_coordinates": 125772
+    },
+    "final_kernel_empty_theorem": false,
+    "twenty_hour_end_to_end_bound_established": false,
+    "source_evidence": "research/2026-10-18-kernel/README.md"
+  },
+  "publication_only": true,
+  "new_Lean_or_native_or_GPU_jobs_started_for_publication": false,
+  "V19_public_source_subset_is_complete_portable_replay": false
+}

@@ -132,12 +132,13 @@ def verify():
     bundle = read(BASE / 'evidence/proof-bundle.json')
     require(bundle['total_kernel_proof_count'] == 104 and bundle['actual_game_rows'] == 0 and not bundle['GPU_trusted'], 'Build scope mismatch')
     current = read(ROOT / 'RESEARCH_STATUS.json')
-    formal = current['formal_verification']
+    # This verifier preserves the earlier V16 snapshot and its then-current outlook.
+    formal = current['historical_progress']['2026-10-18-v16']
     require(formal['compiled_checker_complete_layer_rows'] == total and
             set(formal['compiled_checker_complete_layers']) == {32,33,34} and
             formal['current_checker']['selected_recorded_theorems'] == 104 and
             not formal['general_full_scan_launched'] and formal['empty_game_lean'] == 'NOT_VERIFIED', 'Current status mismatch')
-    expectation = current['verification_outlook']
+    expectation = current['historical_outlooks']['2026-10-18-v16']
     require(expectation['working_expectation_hours'] == 20 and
             not expectation['guaranteed_completion'] and not expectation['full_cost_gate_passed'] and
             expectation['independent_review_status'] == 'IN_PROGRESS' and

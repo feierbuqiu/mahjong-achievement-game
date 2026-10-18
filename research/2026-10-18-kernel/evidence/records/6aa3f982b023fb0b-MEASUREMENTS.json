@@ -1,0 +1,900 @@
+{
+  "first": 0,
+  "full_launch_allowed": false,
+  "peak_job_memory_bytes": 628588544,
+  "plan": {
+    "bytes": 98076,
+    "path": "build/lean_table_checker/acceleration_v19/cartesian_global_helpers_v19/PLAN.json",
+    "sha256": "aca5d959d184f06119cfc9414469250745ff1989626c09b18a51e696132ef68e"
+  },
+  "provided_numeric_PN_only": true,
+  "records": [
+    {
+      "CPU_seconds": 0.328125,
+      "block_id": null,
+      "fingerprints": [
+        {
+          "axioms": [],
+          "name": "Mahjong.GlobalHelperChannel000V19.marker"
+        }
+      ],
+      "function": 0,
+      "kernel_seconds": 0.0017,
+      "module": "Mahjong.GlobalHelperChannel000V19",
+      "peak_job_memory_bytes": 83148800,
+      "receipt": {
+        "bytes": 26010,
+        "path": "runs/lean_table_checker/acceleration_20261018_v19/cartesian_global_helpers_v19/attempts/4b5e9ea0c1f94a3b95634686bd014716/receipt.json",
+        "sha256": "0ba5314c0622b849d95c3ddc43f316dbe0390def3221612f8be4a022d756cd59"
+      },
+      "status": "PASS",
+      "wall_seconds": 0.6410000000032596
+    },
+    {
+      "CPU_seconds": 0.375,
+      "block_id": null,
+      "fingerprints": [
+        {
+          "axioms": [],
+          "name": "Mahjong.GlobalHelperChannel001V19.marker"
+        }
+      ],
+      "function": 1,
+      "kernel_seconds": 0.004070000000000001,
+      "module": "Mahjong.GlobalHelperChannel001V19",
+      "peak_job_memory_bytes": 87748608,
+      "receipt": {
+        "bytes": 27066,
+        "path": "runs/lean_table_checker/acceleration_20261018_v19/cartesian_global_helpers_v19/attempts/7c710dd5796f409595167718c89cb156/receipt.json",
+        "sha256": "6a2c9b34601321f8a5a6062010865c1520f9d79cad6295ad00c894c00c509ecc"
+      },
+      "status": "PASS",
+      "wall_seconds": 0.7350000000442378
+    },
+    {
+      "CPU_seconds": 0.28125,
+      "block_id": null,
+      "fingerprints": [
+        {
+          "axioms": [],
+          "name": "Mahjong.GlobalHelperChannel002V19.marker"
+        }
+      ],
+      "function": 2,
+      "kernel_seconds": 0.000616,
+      "module": "Mahjong.GlobalHelperChannel002V19",
+      "peak_job_memory_bytes": 80244736,
+      "receipt": {
+        "bytes": 28088,
+        "path": "runs/lean_table_checker/acceleration_20261018_v19/cartesian_global_helpers_v19/attempts/ffb7968bb68944c1930db96810d09f60/receipt.json",
+        "sha256": "67985ccde301bef96b2d023072e6b5f44e877b8c48decb6ed316d0eb4736d742"
+      },
+      "status": "PASS",
+      "wall_seconds": 0.6089999999967404
+    },
+    {
+      "CPU_seconds": 0.515625,
+      "block_id": null,
+      "fingerprints": [
+        {
+          "axioms": [],
+          "name": "Mahjong.GlobalHelperChannel003V19.marker"
+        }
+      ],
+      "function": 3,
+      "kernel_seconds": 0.0075899999999999995,
+      "module": "Mahjong.GlobalHelperChannel003V19",
+      "peak_job_memory_bytes": 97538048,
+      "receipt": {
+        "bytes": 29147,
+        "path": "runs/lean_table_checker/acceleration_20261018_v19/cartesian_global_helpers_v19/attempts/0d3f9d92b70b4000a1edc8bfd5220924/receipt.json",
+        "sha256": "66d2b06428ee66fab467fe7d19dfd4494e9aeb95edb41c48d50d8e75f8f8601e"
+      },
+      "status": "PASS",
+      "wall_seconds": 0.8910000000032596
+    },
+    {
+      "CPU_seconds": 0.796875,
+      "block_id": null,
+      "fingerprints": [
+        {
+          "axioms": [],
+          "name": "Mahjong.GlobalHelperChannel004V19.marker"
+        }
+      ],
+      "function": 4,
+      "kernel_seconds": 0.0123,
+      "module": "Mahjong.GlobalHelperChannel004V19",
+      "peak_job_memory_bytes": 109850624,
+      "receipt": {
+        "bytes": 30182,
+        "path": "runs/lean_table_checker/acceleration_20261018_v19/cartesian_global_helpers_v19/attempts/176172f915a643849cda03b1ed1f125b/receipt.json",
+        "sha256": "d1cb60c6eb1d9a9d4c467dd9ccb946bcc0671543211c0a6e911fbf9856297bca"
+      },
+      "status": "PASS",
+      "wall_seconds": 1.0940000000409782
+    },
+    {
+      "CPU_seconds": 0.375,
+      "block_id": null,
+      "fingerprints": [
+        {
+          "axioms": [],
+          "name": "Mahjong.GlobalHelperChannel005V19.marker"
+        }
+      ],
+      "function": 5,
+      "kernel_seconds": 0.0028,
+      "module": "Mahjong.GlobalHelperChannel005V19",
+      "peak_job_memory_bytes": 87040000,
+      "receipt": {
+        "bytes": 31256,
+        "path": "runs/lean_table_checker/acceleration_20261018_v19/cartesian_global_helpers_v19/attempts/12265ac709cf4c65bc83fe4f130b439f/receipt.json",
+        "sha256": "a7b88bfbe202892f17ac9a8705d08dd43e98c8e970262de54cbd0ac0369816d9"
+      },
+      "status": "PASS",
+      "wall_seconds": 0.7190000000409782
+    },
+    {
+      "CPU_seconds": 0.28125,
+      "block_id": null,
+      "fingerprints": [
+        {
+          "axioms": [],
+          "name": "Mahjong.GlobalHelperChannel006V19.marker"
+        }
+      ],
+      "function": 6,
+      "kernel_seconds": 0.00035099999999999997,
+      "module": "Mahjong.GlobalHelperChannel006V19",
+      "peak_job_memory_bytes": 79073280,
+      "receipt": {
+        "bytes": 32306,
+        "path": "runs/lean_table_checker/acceleration_20261018_v19/cartesian_global_helpers_v19/attempts/3fdca8fa5c2049819ddffe7139d04636/receipt.json",
+        "sha256": "5cd960e7b7ee323bf7352e7c5ed3d63fc2a24fda765e97445c96f471d4c692a2"
+      },
+      "status": "PASS",
+      "wall_seconds": 0.6400000000139698
+    },
+    {
+      "CPU_seconds": 1.0,
+      "block_id": null,
+      "fingerprints": [
+        {
+          "axioms": [],
+          "name": "Mahjong.GlobalHelperChannel007V19.marker"
+        }
+      ],
+      "function": 7,
+      "kernel_seconds": 0.0179,
+      "module": "Mahjong.GlobalHelperChannel007V19",
+      "peak_job_memory_bytes": 150937600,
+      "receipt": {
+        "bytes": 33344,
+        "path": "runs/lean_table_checker/acceleration_20261018_v19/cartesian_global_helpers_v19/attempts/6e6dc95c37d945689099660d111295eb/receipt.json",
+        "sha256": "b68754e5ad4530bb15ba19db51ec2883f9df0422c035e4dd7bb5fd8edcca94eb"
+      },
+      "status": "PASS",
+      "wall_seconds": 1.2969999999622814
+    },
+    {
+      "CPU_seconds": 0.28125,
+      "block_id": null,
+      "fingerprints": [
+        {
+          "axioms": [],
+          "name": "Mahjong.GlobalHelperChannel008V19.marker"
+        }
+      ],
+      "function": 8,
+      "kernel_seconds": 0.000841,
+      "module": "Mahjong.GlobalHelperChannel008V19",
+      "peak_job_memory_bytes": 80785408,
+      "receipt": {
+        "bytes": 34399,
+        "path": "runs/lean_table_checker/acceleration_20261018_v19/cartesian_global_helpers_v19/attempts/7a5618d8559845b39a0818f14172fa1a/receipt.json",
+        "sha256": "ecb1b8800b7f9ff8e5e9663718ebc084a746388430a520ba4f907bd8dfa164ad"
+      },
+      "status": "PASS",
+      "wall_seconds": 0.6720000000204891
+    },
+    {
+      "CPU_seconds": 0.265625,
+      "block_id": null,
+      "fingerprints": [
+        {
+          "axioms": [],
+          "name": "Mahjong.GlobalHelperChannel009V19.marker"
+        }
+      ],
+      "function": 9,
+      "kernel_seconds": 0.000422,
+      "module": "Mahjong.GlobalHelperChannel009V19",
+      "peak_job_memory_bytes": 79155200,
+      "receipt": {
+        "bytes": 35426,
+        "path": "runs/lean_table_checker/acceleration_20261018_v19/cartesian_global_helpers_v19/attempts/662952dd68c943e8a6b2651e89b9c688/receipt.json",
+        "sha256": "3842a3619daf6113c19f86cbcfe4f6425470192c2548894d80188088f951fdee"
+      },
+      "status": "PASS",
+      "wall_seconds": 0.6560000000172295
+    },
+    {
+      "CPU_seconds": 0.328125,
+      "block_id": null,
+      "fingerprints": [
+        {
+          "axioms": [],
+          "name": "Mahjong.GlobalHelperChannel010V19.marker"
+        }
+      ],
+      "function": 10,
+      "kernel_seconds": 0.00114,
+      "module": "Mahjong.GlobalHelperChannel010V19",
+      "peak_job_memory_bytes": 82006016,
+      "receipt": {
+        "bytes": 36515,
+        "path": "runs/lean_table_checker/acceleration_20261018_v19/cartesian_global_helpers_v19/attempts/e20504dccb6c4a159e96ab2b8ba62a51/receipt.json",
+        "sha256": "519fe6d6fb33bb27ae166f594c91f9d139f0ca91a7fb7903754deebdee001d9c"
+      },
+      "status": "PASS",
+      "wall_seconds": 0.6719999999622814
+    },
+    {
+      "CPU_seconds": 0.28125,
+      "block_id": null,
+      "fingerprints": [
+        {
+          "axioms": [],
+          "name": "Mahjong.GlobalHelperChannel011V19.marker"
+        }
+      ],
+      "function": 11,
+      "kernel_seconds": 0.0011899999999999999,
+      "module": "Mahjong.GlobalHelperChannel011V19",
+      "peak_job_memory_bytes": 82001920,
+      "receipt": {
+        "bytes": 37575,
+        "path": "runs/lean_table_checker/acceleration_20261018_v19/cartesian_global_helpers_v19/attempts/2fd0f8d3a92a402d9a457036423795de/receipt.json",
+        "sha256": "8447f89fbed7671e953b5671622e3a2ec3d87ad67458b93b52d72622d493eb8e"
+      },
+      "status": "PASS",
+      "wall_seconds": 0.6869999999762513
+    },
+    {
+      "CPU_seconds": 0.859375,
+      "block_id": null,
+      "fingerprints": [
+        {
+          "axioms": [],
+          "name": "Mahjong.GlobalHelperChannel012V19.marker"
+        }
+      ],
+      "function": 12,
+      "kernel_seconds": 0.0141,
+      "module": "Mahjong.GlobalHelperChannel012V19",
+      "peak_job_memory_bytes": 112406528,
+      "receipt": {
+        "bytes": 38607,
+        "path": "runs/lean_table_checker/acceleration_20261018_v19/cartesian_global_helpers_v19/attempts/d67137ac8a5049f490983ae5613d0bfb/receipt.json",
+        "sha256": "2c6f0a34f6032837a3abf4fa54f6c5418e1f80f1dd099eaeeaeb3795e97a385f"
+      },
+      "status": "PASS",
+      "wall_seconds": 1.2189999999827705
+    },
+    {
+      "CPU_seconds": 0.25,
+      "block_id": null,
+      "fingerprints": [
+        {
+          "axioms": [],
+          "name": "Mahjong.GlobalHelperChannel013V19.marker"
+        }
+      ],
+      "function": 13,
+      "kernel_seconds": 0.000621,
+      "module": "Mahjong.GlobalHelperChannel013V19",
+      "peak_job_memory_bytes": 80076800,
+      "receipt": {
+        "bytes": 39639,
+        "path": "runs/lean_table_checker/acceleration_20261018_v19/cartesian_global_helpers_v19/attempts/ecc8ddb82f21436db4dcbd0b89d17544/receipt.json",
+        "sha256": "f66411abefec8141650c5c625e7a5682926aba32d885bbf2907a4dff11bc736e"
+      },
+      "status": "PASS",
+      "wall_seconds": 0.6869999999762513
+    },
+    {
+      "CPU_seconds": 2.984375,
+      "block_id": null,
+      "fingerprints": [
+        {
+          "axioms": [],
+          "name": "Mahjong.GlobalHelperChannel014V19.marker"
+        }
+      ],
+      "function": 14,
+      "kernel_seconds": 0.0696,
+      "module": "Mahjong.GlobalHelperChannel014V19",
+      "peak_job_memory_bytes": 311910400,
+      "receipt": {
+        "bytes": 40658,
+        "path": "runs/lean_table_checker/acceleration_20261018_v19/cartesian_global_helpers_v19/attempts/4e8391a2c92b490cb2e6e841da35dfcd/receipt.json",
+        "sha256": "47c55cdaf9583f8cdf13548d050ac6909663bc9d174b555d55a05e5ab10496e6"
+      },
+      "status": "PASS",
+      "wall_seconds": 3.2810000000172295
+    },
+    {
+      "CPU_seconds": 6.421875,
+      "block_id": null,
+      "fingerprints": [
+        {
+          "axioms": [],
+          "name": "Mahjong.GlobalHelperChannel015V19.marker"
+        }
+      ],
+      "function": 15,
+      "kernel_seconds": 0.176,
+      "module": "Mahjong.GlobalHelperChannel015V19",
+      "peak_job_memory_bytes": 628588544,
+      "receipt": {
+        "bytes": 41698,
+        "path": "runs/lean_table_checker/acceleration_20261018_v19/cartesian_global_helpers_v19/attempts/d8e41df7f07c4840aeb1c54700d6bf60/receipt.json",
+        "sha256": "90b66c675038c2e66222320eadefee3f11c5ddbcf9adcb37a4937d481ff8008c"
+      },
+      "status": "PASS",
+      "wall_seconds": 6.76600000000326
+    },
+    {
+      "CPU_seconds": 4.578125,
+      "block_id": null,
+      "fingerprints": [
+        {
+          "axioms": [],
+          "name": "Mahjong.GlobalHelperChannel016V19.marker"
+        }
+      ],
+      "function": 16,
+      "kernel_seconds": 0.113,
+      "module": "Mahjong.GlobalHelperChannel016V19",
+      "peak_job_memory_bytes": 451534848,
+      "receipt": {
+        "bytes": 42736,
+        "path": "runs/lean_table_checker/acceleration_20261018_v19/cartesian_global_helpers_v19/attempts/bbee9d418d0148538470e37a84999f6f/receipt.json",
+        "sha256": "a77c36e1455250318f6a754a0650aec478453b78fde45354f889d889c5a4daf5"
+      },
+      "status": "PASS",
+      "wall_seconds": 4.969000000040978
+    },
+    {
+      "CPU_seconds": 1.390625,
+      "block_id": null,
+      "fingerprints": [
+        {
+          "axioms": [],
+          "name": "Mahjong.GlobalHelperChannel017V19.marker"
+        }
+      ],
+      "function": 17,
+      "kernel_seconds": 0.0281,
+      "module": "Mahjong.GlobalHelperChannel017V19",
+      "peak_job_memory_bytes": 158425088,
+      "receipt": {
+        "bytes": 43836,
+        "path": "runs/lean_table_checker/acceleration_20261018_v19/cartesian_global_helpers_v19/attempts/9519a2ece71d42a9839c21b165ed1082/receipt.json",
+        "sha256": "73fea08e0bdedd4846491264fcb9641151f8a03fc8f7d0d952248ac5f19d9883"
+      },
+      "status": "PASS",
+      "wall_seconds": 1.797000000020489
+    },
+    {
+      "CPU_seconds": 0.296875,
+      "block_id": null,
+      "fingerprints": [
+        {
+          "axioms": [],
+          "name": "Mahjong.GlobalHelperChannel018V19.marker"
+        }
+      ],
+      "function": 18,
+      "kernel_seconds": 0.0005989999999999999,
+      "module": "Mahjong.GlobalHelperChannel018V19",
+      "peak_job_memory_bytes": 79941632,
+      "receipt": {
+        "bytes": 44858,
+        "path": "runs/lean_table_checker/acceleration_20261018_v19/cartesian_global_helpers_v19/attempts/b03baa1e341a4104a0190d95951c21e1/receipt.json",
+        "sha256": "2fe367a9cde0159020e88a8f8472bc5eb56e707ecc6c06dc7f187af1541f54dc"
+      },
+      "status": "PASS",
+      "wall_seconds": 0.7810000000172295
+    },
+    {
+      "CPU_seconds": 0.484375,
+      "block_id": null,
+      "fingerprints": [
+        {
+          "axioms": [],
+          "name": "Mahjong.GlobalHelperChannel019V19.marker"
+        }
+      ],
+      "function": 19,
+      "kernel_seconds": 0.005889999999999999,
+      "module": "Mahjong.GlobalHelperChannel019V19",
+      "peak_job_memory_bytes": 93925376,
+      "receipt": {
+        "bytes": 45952,
+        "path": "runs/lean_table_checker/acceleration_20261018_v19/cartesian_global_helpers_v19/attempts/54daf06537d5400d8053a06ca102b6ee/receipt.json",
+        "sha256": "86251ac98d8f698cdc262f9919c585dff9f8d2e30a2e2548fbd8edb1d1944b79"
+      },
+      "status": "PASS",
+      "wall_seconds": 0.9530000000377186
+    },
+    {
+      "CPU_seconds": 0.3125,
+      "block_id": null,
+      "fingerprints": [
+        {
+          "axioms": [],
+          "name": "Mahjong.GlobalHelperChannel020V19.marker"
+        }
+      ],
+      "function": 20,
+      "kernel_seconds": 0.00209,
+      "module": "Mahjong.GlobalHelperChannel020V19",
+      "peak_job_memory_bytes": 84598784,
+      "receipt": {
+        "bytes": 47015,
+        "path": "runs/lean_table_checker/acceleration_20261018_v19/cartesian_global_helpers_v19/attempts/4e650b1ae4cd47eea2f7fccc2c9354ae/receipt.json",
+        "sha256": "c99034084fa2f5e86d74f64aca17a99fdfb50149515f3db972feca7faa127891"
+      },
+      "status": "PASS",
+      "wall_seconds": 0.8120000000344589
+    },
+    {
+      "CPU_seconds": 0.4375,
+      "block_id": null,
+      "fingerprints": [
+        {
+          "axioms": [],
+          "name": "Mahjong.GlobalHelperChannel100V19.marker"
+        }
+      ],
+      "function": 100,
+      "kernel_seconds": 0.00475,
+      "module": "Mahjong.GlobalHelperChannel100V19",
+      "peak_job_memory_bytes": 92286976,
+      "receipt": {
+        "bytes": 47996,
+        "path": "runs/lean_table_checker/acceleration_20261018_v19/cartesian_global_helpers_v19/attempts/ba4db80586ee43c8964a312331380634/receipt.json",
+        "sha256": "d7fd675b7c8155fbf5b9503beea4f4720cf2eeef942a032ee10d9b9278d6ad30"
+      },
+      "status": "PASS",
+      "wall_seconds": 0.9220000000204891
+    },
+    {
+      "CPU_seconds": 0.359375,
+      "block_id": null,
+      "fingerprints": [
+        {
+          "axioms": [],
+          "name": "Mahjong.GlobalHelperChannel101V19.marker"
+        }
+      ],
+      "function": 101,
+      "kernel_seconds": 0.00322,
+      "module": "Mahjong.GlobalHelperChannel101V19",
+      "peak_job_memory_bytes": 88502272,
+      "receipt": {
+        "bytes": 49014,
+        "path": "runs/lean_table_checker/acceleration_20261018_v19/cartesian_global_helpers_v19/attempts/332d5d520c694ec98962adc51e40330f/receipt.json",
+        "sha256": "36e7b84a9043b3577394b5c2a896023b659fc3fc2aa6cd902bd4bf30e91fc2ed"
+      },
+      "status": "PASS",
+      "wall_seconds": 0.875
+    },
+    {
+      "CPU_seconds": 0.90625,
+      "block_id": null,
+      "fingerprints": [
+        {
+          "axioms": [],
+          "name": "Mahjong.GlobalHelperChannel104V19.marker"
+        }
+      ],
+      "function": 104,
+      "kernel_seconds": 0.016399999999999998,
+      "module": "Mahjong.GlobalHelperChannel104V19",
+      "peak_job_memory_bytes": 149164032,
+      "receipt": {
+        "bytes": 50103,
+        "path": "runs/lean_table_checker/acceleration_20261018_v19/cartesian_global_helpers_v19/attempts/c3fde51816754a9fa1a23842f6744dbc/receipt.json",
+        "sha256": "6f600c4e5fb802a0b33e3702b454c3da335c004c3f06a6c8f7f87bc660f02fe4"
+      },
+      "status": "PASS",
+      "wall_seconds": 1.375
+    },
+    {
+      "CPU_seconds": 0.640625,
+      "block_id": null,
+      "fingerprints": [
+        {
+          "axioms": [],
+          "name": "Mahjong.GlobalHelperChannel105V19.marker"
+        }
+      ],
+      "function": 105,
+      "kernel_seconds": 0.00958,
+      "module": "Mahjong.GlobalHelperChannel105V19",
+      "peak_job_memory_bytes": 102526976,
+      "receipt": {
+        "bytes": 51124,
+        "path": "runs/lean_table_checker/acceleration_20261018_v19/cartesian_global_helpers_v19/attempts/1fe9901fe7a04e9ebf18f1a570e80923/receipt.json",
+        "sha256": "d20b20e6cfd08e160ddc4e0fc04f140141ca1374b5f8261bfe531fd95434624f"
+      },
+      "status": "PASS",
+      "wall_seconds": 1.1410000000032596
+    },
+    {
+      "CPU_seconds": 0.296875,
+      "block_id": null,
+      "fingerprints": [
+        {
+          "axioms": [],
+          "name": "Mahjong.GlobalHelperChannel248V19.marker"
+        }
+      ],
+      "function": 248,
+      "kernel_seconds": 0.00107,
+      "module": "Mahjong.GlobalHelperChannel248V19",
+      "peak_job_memory_bytes": 81539072,
+      "receipt": {
+        "bytes": 52227,
+        "path": "runs/lean_table_checker/acceleration_20261018_v19/cartesian_global_helpers_v19/attempts/21a74a4102874f8da98cdd9b7bd9b328/receipt.json",
+        "sha256": "5fa7a4861839687b1af49cc9162502bbc42b987ae4f3bb5fa62c9108eefde6f2"
+      },
+      "status": "PASS",
+      "wall_seconds": 0.7970000000204891
+    },
+    {
+      "CPU_seconds": 0.28125,
+      "block_id": null,
+      "fingerprints": [
+        {
+          "axioms": [],
+          "name": "Mahjong.GlobalHelperChannel249V19.marker"
+        }
+      ],
+      "function": 249,
+      "kernel_seconds": 0.00051,
+      "module": "Mahjong.GlobalHelperChannel249V19",
+      "peak_job_memory_bytes": 79261696,
+      "receipt": {
+        "bytes": 53271,
+        "path": "runs/lean_table_checker/acceleration_20261018_v19/cartesian_global_helpers_v19/attempts/d87ad5d29eda450da98129327935163a/receipt.json",
+        "sha256": "9156beb118ba53e5aa3917506617818af34993a27fe79e90097cff2073b9e2d7"
+      },
+      "status": "PASS",
+      "wall_seconds": 0.7809999999590218
+    },
+    {
+      "CPU_seconds": 0.28125,
+      "block_id": null,
+      "fingerprints": [
+        {
+          "axioms": [],
+          "name": "Mahjong.GlobalHelperChannel250V19.marker"
+        }
+      ],
+      "function": 250,
+      "kernel_seconds": 0.0005560000000000001,
+      "module": "Mahjong.GlobalHelperChannel250V19",
+      "peak_job_memory_bytes": 79876096,
+      "receipt": {
+        "bytes": 54342,
+        "path": "runs/lean_table_checker/acceleration_20261018_v19/cartesian_global_helpers_v19/attempts/605705575e9349c5ab4dcb5bf89d4b77/receipt.json",
+        "sha256": "6d918092d057090ac2a6faa4fcd10b77dc78003cdb51aff420f53657f8de45eb"
+      },
+      "status": "PASS",
+      "wall_seconds": 0.7970000000204891
+    },
+    {
+      "CPU_seconds": 3.109375,
+      "block_id": null,
+      "fingerprints": [
+        {
+          "axioms": [],
+          "name": "Mahjong.GlobalHelperChannel251V19.marker"
+        }
+      ],
+      "function": 251,
+      "kernel_seconds": 0.0654,
+      "module": "Mahjong.GlobalHelperChannel251V19",
+      "peak_job_memory_bytes": 295006208,
+      "receipt": {
+        "bytes": 55316,
+        "path": "runs/lean_table_checker/acceleration_20261018_v19/cartesian_global_helpers_v19/attempts/825f93cad00046ebb29970eb662b9e6a/receipt.json",
+        "sha256": "51c310e2f278ae8bf336e19fcb7685c6071421860d09444ba2f92a77544d63f9"
+      },
+      "status": "PASS",
+      "wall_seconds": 3.4679999999934807
+    },
+    {
+      "CPU_seconds": 4.421875,
+      "block_id": null,
+      "fingerprints": [
+        {
+          "axioms": [],
+          "name": "Mahjong.GlobalHelperChannel252V19.marker"
+        }
+      ],
+      "function": 252,
+      "kernel_seconds": 0.104,
+      "module": "Mahjong.GlobalHelperChannel252V19",
+      "peak_job_memory_bytes": 450568192,
+      "receipt": {
+        "bytes": 56337,
+        "path": "runs/lean_table_checker/acceleration_20261018_v19/cartesian_global_helpers_v19/attempts/6e4c801ad2404ddb8c97661ffe9eff7e/receipt.json",
+        "sha256": "bf3458d76e628d754c0c68cc7caffb1055ac396bf196fee3c8406ca238eee78c"
+      },
+      "status": "PASS",
+      "wall_seconds": 4.8439999999827705
+    },
+    {
+      "CPU_seconds": 0.390625,
+      "block_id": null,
+      "fingerprints": [
+        {
+          "axioms": [],
+          "name": "Mahjong.GlobalHelperChannel253V19.marker"
+        }
+      ],
+      "function": 253,
+      "kernel_seconds": 0.00287,
+      "module": "Mahjong.GlobalHelperChannel253V19",
+      "peak_job_memory_bytes": 86650880,
+      "receipt": {
+        "bytes": 57406,
+        "path": "runs/lean_table_checker/acceleration_20261018_v19/cartesian_global_helpers_v19/attempts/52787bb01cde4563be9fe4d84b6705d7/receipt.json",
+        "sha256": "3b7d3bde4b2d2da0ea09d916e5e58a718f20d33f6ed2aa7b28393573fe672ae0"
+      },
+      "status": "PASS",
+      "wall_seconds": 0.9209999999729916
+    },
+    {
+      "CPU_seconds": 3.203125,
+      "block_id": null,
+      "fingerprints": [
+        {
+          "axioms": [],
+          "name": "Mahjong.GlobalHelperChannel254V19.marker"
+        }
+      ],
+      "function": 254,
+      "kernel_seconds": 0.0723,
+      "module": "Mahjong.GlobalHelperChannel254V19",
+      "peak_job_memory_bytes": 303443968,
+      "receipt": {
+        "bytes": 58450,
+        "path": "runs/lean_table_checker/acceleration_20261018_v19/cartesian_global_helpers_v19/attempts/d36a203ceb5e4ae3aba9317d1076bd09/receipt.json",
+        "sha256": "1e2fe977985586fb56986c4ae94ab85b8c0643e8b64c6419445993c40e1c66a8"
+      },
+      "status": "PASS",
+      "wall_seconds": 3.562999999965541
+    },
+    {
+      "CPU_seconds": 1.96875,
+      "block_id": null,
+      "fingerprints": [
+        {
+          "axioms": [],
+          "name": "Mahjong.GlobalHelperChannel255V19.marker"
+        }
+      ],
+      "function": 255,
+      "kernel_seconds": 0.0426,
+      "module": "Mahjong.GlobalHelperChannel255V19",
+      "peak_job_memory_bytes": 190849024,
+      "receipt": {
+        "bytes": 59496,
+        "path": "runs/lean_table_checker/acceleration_20261018_v19/cartesian_global_helpers_v19/attempts/6d3584fc638145d6a349182539a60d0d/receipt.json",
+        "sha256": "6c39001988d40a1662dfcac02dbd455fee3ab0d9662b5bd0689c023a9567b584"
+      },
+      "status": "PASS",
+      "wall_seconds": 2.4689999999827705
+    },
+    {
+      "CPU_seconds": 2.125,
+      "block_id": null,
+      "fingerprints": [
+        {
+          "axioms": [],
+          "name": "Mahjong.GlobalHelperChannel256V19.marker"
+        }
+      ],
+      "function": 256,
+      "kernel_seconds": 0.0461,
+      "module": "Mahjong.GlobalHelperChannel256V19",
+      "peak_job_memory_bytes": 197439488,
+      "receipt": {
+        "bytes": 60533,
+        "path": "runs/lean_table_checker/acceleration_20261018_v19/cartesian_global_helpers_v19/attempts/a9e1c732c39042c0a86780474fb94533/receipt.json",
+        "sha256": "8068d9216e19da1542cf644064ac0b512bfc321e8d3682ee372cb6e3c8d2e84d"
+      },
+      "status": "PASS",
+      "wall_seconds": 2.625
+    },
+    {
+      "CPU_seconds": 3.859375,
+      "block_id": null,
+      "fingerprints": [
+        {
+          "axioms": [],
+          "name": "Mahjong.GlobalHelperChannel257V19.marker"
+        }
+      ],
+      "function": 257,
+      "kernel_seconds": 0.0901,
+      "module": "Mahjong.GlobalHelperChannel257V19",
+      "peak_job_memory_bytes": 335699968,
+      "receipt": {
+        "bytes": 61625,
+        "path": "runs/lean_table_checker/acceleration_20261018_v19/cartesian_global_helpers_v19/attempts/f7663369409f4b76a9e4546266bce697/receipt.json",
+        "sha256": "9df74d0872985115d9768d7c7888f69e08c812100f008119213b3c75fcba3139"
+      },
+      "status": "PASS",
+      "wall_seconds": 4.35999999998603
+    },
+    {
+      "CPU_seconds": 1.984375,
+      "block_id": null,
+      "fingerprints": [
+        {
+          "axioms": [],
+          "name": "Mahjong.GlobalHelperChannel258V19.marker"
+        }
+      ],
+      "function": 258,
+      "kernel_seconds": 0.0434,
+      "module": "Mahjong.GlobalHelperChannel258V19",
+      "peak_job_memory_bytes": 189784064,
+      "receipt": {
+        "bytes": 62660,
+        "path": "runs/lean_table_checker/acceleration_20261018_v19/cartesian_global_helpers_v19/attempts/db78882744e04ec0ac0fe148d685c5ca/receipt.json",
+        "sha256": "3e46d0f25d30d8226f58326837eaf0552e2d3dbd8630158452954e5b04728eb7"
+      },
+      "status": "PASS",
+      "wall_seconds": 2.547000000020489
+    },
+    {
+      "CPU_seconds": 0.3125,
+      "block_id": null,
+      "fingerprints": [
+        {
+          "axioms": [],
+          "name": "Mahjong.GlobalHelperChannel259V19.marker"
+        }
+      ],
+      "function": 259,
+      "kernel_seconds": 0.0019399999999999999,
+      "module": "Mahjong.GlobalHelperChannel259V19",
+      "peak_job_memory_bytes": 83542016,
+      "receipt": {
+        "bytes": 63726,
+        "path": "runs/lean_table_checker/acceleration_20261018_v19/cartesian_global_helpers_v19/attempts/35a7c904731a47caa7ab0a6c40ee9d46/receipt.json",
+        "sha256": "3a3d14572bb17ccaa731c28b0d52b2b0430b419d134ae0ca131b32c8ee6caf8b"
+      },
+      "status": "PASS",
+      "wall_seconds": 0.9540000000270084
+    },
+    {
+      "CPU_seconds": 1.53125,
+      "block_id": null,
+      "fingerprints": [
+        {
+          "axioms": [],
+          "name": "Mahjong.GlobalHelperChannel260V19.marker"
+        }
+      ],
+      "function": 260,
+      "kernel_seconds": 0.032799999999999996,
+      "module": "Mahjong.GlobalHelperChannel260V19",
+      "peak_job_memory_bytes": 195231744,
+      "receipt": {
+        "bytes": 64816,
+        "path": "runs/lean_table_checker/acceleration_20261018_v19/cartesian_global_helpers_v19/attempts/d14c7c31e5be4a869f2a9ecae0acec9f/receipt.json",
+        "sha256": "c3193f5c54b1837d9cd7ee05e2bdfd53898b1d3638807ff38e72715e20f12987"
+      },
+      "status": "PASS",
+      "wall_seconds": 2.1089999999967404
+    },
+    {
+      "CPU_seconds": 0.828125,
+      "block_id": null,
+      "fingerprints": [
+        {
+          "axioms": [],
+          "name": "Mahjong.GlobalHelperChannel261V19.marker"
+        }
+      ],
+      "function": 261,
+      "kernel_seconds": 0.0134,
+      "module": "Mahjong.GlobalHelperChannel261V19",
+      "peak_job_memory_bytes": 111521792,
+      "receipt": {
+        "bytes": 65867,
+        "path": "runs/lean_table_checker/acceleration_20261018_v19/cartesian_global_helpers_v19/attempts/205f3584395a4ca4b2f03094e7cd3827/receipt.json",
+        "sha256": "9f0c0b7435a61a869786c96a6dc1f1d8d913f34a873dfcfe7efb7e65fbac1b7d"
+      },
+      "status": "PASS",
+      "wall_seconds": 1.4380000000237487
+    },
+    {
+      "CPU_seconds": 1.875,
+      "block_id": null,
+      "fingerprints": [
+        {
+          "axioms": [],
+          "name": "Mahjong.GlobalHelperChannel262V19.marker"
+        }
+      ],
+      "function": 262,
+      "kernel_seconds": 0.041299999999999996,
+      "module": "Mahjong.GlobalHelperChannel262V19",
+      "peak_job_memory_bytes": 201129984,
+      "receipt": {
+        "bytes": 66868,
+        "path": "runs/lean_table_checker/acceleration_20261018_v19/cartesian_global_helpers_v19/attempts/cd095e54aaf143629aec456841b89e94/receipt.json",
+        "sha256": "8a66dd9192cf451af6bdf9325dd42ddc470b96f80e211484b25a9f966cee38b9"
+      },
+      "status": "PASS",
+      "wall_seconds": 2.452999999979511
+    },
+    {
+      "CPU_seconds": 0.5625,
+      "block_id": null,
+      "fingerprints": [
+        {
+          "axioms": [],
+          "name": "Mahjong.GlobalHelperChannel263V19.marker"
+        }
+      ],
+      "function": 263,
+      "kernel_seconds": 0.00786,
+      "module": "Mahjong.GlobalHelperChannel263V19",
+      "peak_job_memory_bytes": 98885632,
+      "receipt": {
+        "bytes": 67934,
+        "path": "runs/lean_table_checker/acceleration_20261018_v19/cartesian_global_helpers_v19/attempts/e99a99777f4c4f07a2dcf1bbd3bff1cc/receipt.json",
+        "sha256": "02fa347b1c54382599e87e25209e5d9a0c23c9ff99f90dc6285d3685cf9d812f"
+      },
+      "status": "PASS",
+      "wall_seconds": 1.202999999979511
+    },
+    {
+      "CPU_seconds": 0.78125,
+      "block_id": null,
+      "fingerprints": [
+        {
+          "axioms": [],
+          "name": "Mahjong.GlobalHelperChannel264V19.marker"
+        }
+      ],
+      "function": 264,
+      "kernel_seconds": 0.0106,
+      "module": "Mahjong.GlobalHelperChannel264V19",
+      "peak_job_memory_bytes": 105373696,
+      "receipt": {
+        "bytes": 68998,
+        "path": "runs/lean_table_checker/acceleration_20261018_v19/cartesian_global_helpers_v19/attempts/710300c0bad04227b840bf6b04dc496d/receipt.json",
+        "sha256": "86bf1312f90640695a9c45d723ba0ed667e6f08abd7dc2b28f51f6b3643feffd"
+      },
+      "status": "PASS",
+      "wall_seconds": 1.3429999999934807
+    }
+  ],
+  "schema": "ACTUAL_SMALL_NAMED_GLOBAL_HELPER_DAG_MEASUREMENTS_V19",
+  "stage": "libraries",
+  "sum_kernel_seconds": 1.071676,
+  "sum_wall_seconds": 71.56300000014016,
+  "whole_phase_wall_seconds": 79.40600000001723
+}

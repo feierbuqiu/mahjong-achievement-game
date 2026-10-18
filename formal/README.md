@@ -1,13 +1,14 @@
 # Lean verification progress
 
-> **October 18, 2026:** the improved V16 route is approaching a planned final
-> compiled-Lean campaign, with a conditional working expectation within 20 hours
-> of an authorized start. **The full scan has not started; correctness is under
-> independent review.** The opening remains `NOT_VERIFIED`. See the
-> [current source and evidence](../research/2026-10-18/README.md) and
+> **Later October 18 update:** the current work targets saved, closed kernel
+> certificates and compression. Generic composition and a small actual-data
+> pilot have succeeded; the actual empty-state theorem remains `NOT_VERIFIED`.
+> No 20/24-hour whole-task bound is established. Read the
+> [current source/evidence](../research/2026-10-18-kernel/README.md) and
 > [project status](../docs/PROJECT_STATUS.md).
-> This page documents the historical September 13 concrete-proof package;
-> its 1,008-module source replay is distinct from the new 132-module V16 archive.
+> This page describes the older September concrete-proof package. Its eight
+> indexed roots and 1,008-module replay are separate from the later pilot;
+> no aggregate novel-root count is inferred across those packages.
 
 **Eight concrete nonempty roots are indexed, including the new 12- and 14-tile strategies.
 The empty-position Lean theorem remains `NOT_VERIFIED`.**

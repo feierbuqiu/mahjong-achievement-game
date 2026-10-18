@@ -1,3 +1,8 @@
+> **Earlier V16 snapshot; current outlook superseded.** The
+> [later kernel-certificate update](../2026-10-18-kernel/README.md) targets saved
+> proofs and cold kernel replay. The native 13.0256-hour estimate below does not
+> estimate that workload; no current 20/24-hour completion bound is established.
+
 # Approaching the final verification campaign
 
 **18 October 2026: the project is approaching its final computational

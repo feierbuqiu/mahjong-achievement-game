@@ -1,0 +1,607 @@
+{
+  "PN_table_read": false,
+  "STOP_removed": false,
+  "all_owned_children_confirmed_exited": true,
+  "axiom_whitelist": [
+    "Classical.choice",
+    "Quot.sound",
+    "propext"
+  ],
+  "bundle_artifact_bytes": 7500760,
+  "bundle_manifest": {
+    "bytes": 6099,
+    "path": "runs/lean_table_checker/acceleration_20261018_v19/metadata_pages_v19/local_encoded_v7/bundles/a34e5dd47bcc412e/manifest.json",
+    "sha256": "8d24610fe08e0da551896166b00e2fbe81bf4b81c52fd82ac993ab02b80974c8"
+  },
+  "closed_original_statement": "Mahjong.MetadataEncodedOriginalV19.local_rows_original",
+  "cold_child_cpu_seconds": 8.84375,
+  "cold_child_wall_seconds": 8.90700000000652,
+  "cold_empty_cwd_no_raw_files_no_DLL": true,
+  "cold_peak_job_commit_bytes": 179605504,
+  "cold_peak_process_RSS_bytes": 142417920,
+  "cold_receipt": {
+    "bytes": 4631,
+    "path": "runs/lean_table_checker/acceleration_20261018_v19/metadata_pages_v19/local_encoded_v7/attempts/1431e93a93ba45349ca7adde34008fa4/receipt.json",
+    "sha256": "937e5d0e8efb6c86b3ed42c51384a287355df5ccaaf00fd1ab75118280ad67f3"
+  },
+  "component_processes_do_not_share_kernel_cache_and_are_not_additive": true,
+  "encoded_generic_source": {
+    "bytes": 8050,
+    "path": "build/lean_table_checker/acceleration_v19/compression/source/Mahjong/EncodedMeldRecurrenceV19.lean",
+    "sha256": "4a78e2c3b47eaa277f28f1c4e0d8bb3bfee82a42de7e54aff1911a3d19d210c8"
+  },
+  "exact_original_partial_ByteArray_obligations": [
+    "LocalCache.checkRow",
+    "LocalSummary.checkRow",
+    "FullSafeData.checkRow"
+  ],
+  "full_LocalCertificate_certified": false,
+  "full_launch_permission": false,
+  "full_scan_started": false,
+  "game_conclusion_proved": false,
+  "independent8_component_kernel_seconds": {
+    "core": 0.0591,
+    "raw": 0.072,
+    "summary": 0.0489
+  },
+  "measured_speedup_vs_next": 1.123193392980041,
+  "new_original_metadata_bytes_read": 0,
+  "next_baseline_freeze": {
+    "bytes": 6406,
+    "path": "runs/lean_table_checker/acceleration_20261018_v19/metadata_pages_v19/local_next_v6/sealed/ec2918d10fc7455e9bd88dddac07d1a3/FREEZE.json",
+    "sha256": "a92bde894fbd10ff7bad83a8e1f2d090bbba7a11ddc020a90c9d5f7574a2f088"
+  },
+  "next_baseline_kernel_seconds_64": 1.632,
+  "no_cache_Checked_SAFE_or_strategy_hypothesis": true,
+  "no_old64_acceptance_proof_reused": true,
+  "numeric_kernel_seconds_64": 1.453,
+  "observations": [
+    {
+      "child_cpu_seconds": 3.21875,
+      "child_wall_seconds": 3.2040000000270084,
+      "fingerprints": [
+        {
+          "axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ],
+          "name": "Mahjong.MetadataEncodedOriginalV19.local_rows_original"
+        }
+      ],
+      "kernel_typechecking_seconds": 0.000442,
+      "mode": "compile",
+      "module": "Mahjong.MetadataEncodedOriginalV19",
+      "peak_job_committed_bytes": 899371008,
+      "peak_process_working_set_bytes": 458297344,
+      "published_artifacts": [
+        {
+          "bytes": 14424,
+          "path": "build/lean_table_checker/acceleration_v19/metadata_pages_v19/local_encoded_v7/modules/Mahjong/MetadataEncodedOriginalV19.olean",
+          "sha256": "fee58143d2834875a4172ffd9560ac0e9902d336c0c4ecd67da40543c7074a02"
+        }
+      ],
+      "receipt": {
+        "bytes": 30920,
+        "path": "runs/lean_table_checker/acceleration_20261018_v19/metadata_pages_v19/local_encoded_v7/attempts/0ad11009de2c42afae6cb1439f99a906/receipt.json",
+        "sha256": "412025e9e739a6fd8c5f205a06e05aab2a71c21b76d07044e4e9a6ef68c4d6ad"
+      },
+      "source": {
+        "bytes": 971,
+        "path": "build/lean_table_checker/acceleration_v19/metadata_pages_v19/local_encoded_v7/source/Mahjong/MetadataEncodedOriginalV19.lean",
+        "sha256": "07bd17087abd73bf2a0853f425d254ad029450c4368500eebd156f1c3fb2d40e"
+      },
+      "stderr": {
+        "bytes": 109369,
+        "path": "runs/lean_table_checker/acceleration_20261018_v19/metadata_pages_v19/local_encoded_v7/attempts/0ad11009de2c42afae6cb1439f99a906/stderr.log",
+        "sha256": "bc83ab6971cbfebf20f98b6fd0a64e7d109dc66896be1c25beb8de73921a6ff8"
+      },
+      "stdout": {
+        "bytes": 9660,
+        "path": "runs/lean_table_checker/acceleration_20261018_v19/metadata_pages_v19/local_encoded_v7/attempts/0ad11009de2c42afae6cb1439f99a906/stdout.log",
+        "sha256": "8d76171bd8cfbb0558b4f9decc9aafbdc80840cfced9e0f72456c428f3b89166"
+      }
+    },
+    {
+      "child_cpu_seconds": 4.578125,
+      "child_wall_seconds": 4.60899999999674,
+      "fingerprints": [
+        {
+          "axioms": [
+            "propext"
+          ],
+          "name": "Mahjong.MetadataActualEncodedChunk64V19.local_rows_accepted"
+        }
+      ],
+      "kernel_typechecking_seconds": 1.28,
+      "mode": "compile",
+      "module": "Mahjong.MetadataActualEncodedChunk64V19",
+      "peak_job_committed_bytes": 1123606528,
+      "peak_process_working_set_bytes": 676319232,
+      "published_artifacts": [
+        {
+          "bytes": 25024,
+          "path": "build/lean_table_checker/acceleration_v19/metadata_pages_v19/local_encoded_v7/modules/Mahjong/MetadataActualEncodedChunk64V19.olean",
+          "sha256": "2eb9362129d3ff083b0a34787ef546353f83a0a6f1522c80a06a5ff06ba085a9"
+        }
+      ],
+      "receipt": {
+        "bytes": 30600,
+        "path": "runs/lean_table_checker/acceleration_20261018_v19/metadata_pages_v19/local_encoded_v7/attempts/0c5d2466bb5648c49c1c4f03cfa89543/receipt.json",
+        "sha256": "b6c0c0194cd1bb44cd9ed2d0c18e26c297705bff1c041d6cf759b4fb4fb00ec8"
+      },
+      "source": {
+        "bytes": 2088,
+        "path": "build/lean_table_checker/acceleration_v19/metadata_pages_v19/local_encoded_v7/source/Mahjong/MetadataActualEncodedChunk64V19.lean",
+        "sha256": "e843ae5df255bc18af9b14588d03f405d1ee15a08ac9c8056ee16c77e8652aa9"
+      },
+      "stderr": {
+        "bytes": 109571,
+        "path": "runs/lean_table_checker/acceleration_20261018_v19/metadata_pages_v19/local_encoded_v7/attempts/0c5d2466bb5648c49c1c4f03cfa89543/stderr.log",
+        "sha256": "2a4572d114eb5ea6663ee7af5a77265fa23db60d89a380d4c0ffe609a6a41e01"
+      },
+      "stdout": {
+        "bytes": 13624,
+        "path": "runs/lean_table_checker/acceleration_20261018_v19/metadata_pages_v19/local_encoded_v7/attempts/0c5d2466bb5648c49c1c4f03cfa89543/stdout.log",
+        "sha256": "2ab2ec25123a9788d7d836682fc3b04ab96e65f1868ff839504e60977e2ecbdc"
+      }
+    },
+    {
+      "child_cpu_seconds": 8.84375,
+      "child_wall_seconds": 8.90700000000652,
+      "fingerprints": [],
+      "kernel_typechecking_seconds": null,
+      "mode": "replay",
+      "module": "Mahjong.MetadataEncodedVerifyV19",
+      "peak_job_committed_bytes": 179605504,
+      "peak_process_working_set_bytes": 142417920,
+      "published_artifacts": [],
+      "receipt": {
+        "bytes": 4631,
+        "path": "runs/lean_table_checker/acceleration_20261018_v19/metadata_pages_v19/local_encoded_v7/attempts/1431e93a93ba45349ca7adde34008fa4/receipt.json",
+        "sha256": "937e5d0e8efb6c86b3ed42c51384a287355df5ccaaf00fd1ab75118280ad67f3"
+      },
+      "source": {
+        "bytes": 667,
+        "path": "runs/lean_table_checker/acceleration_20261018_v19/metadata_pages_v19/local_encoded_v7/bundles/a34e5dd47bcc412e/source/Mahjong/MetadataEncodedVerifyV19.lean",
+        "sha256": "fbefd96f183e31553bddd4b1261998e9b44d415f5e658da4fcd7aac5c9fa025e"
+      },
+      "stderr": {
+        "bytes": 0,
+        "path": "runs/lean_table_checker/acceleration_20261018_v19/metadata_pages_v19/local_encoded_v7/attempts/1431e93a93ba45349ca7adde34008fa4/stderr.log",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "stdout": {
+        "bytes": 56,
+        "path": "runs/lean_table_checker/acceleration_20261018_v19/metadata_pages_v19/local_encoded_v7/attempts/1431e93a93ba45349ca7adde34008fa4/stdout.log",
+        "sha256": "72985be7a2ea963a3069c287039680a218367c4f7264c554968c88186f2e58ff"
+      }
+    },
+    {
+      "child_cpu_seconds": 3.21875,
+      "child_wall_seconds": 3.2189999999827705,
+      "fingerprints": [
+        {
+          "axioms": [
+            "propext"
+          ],
+          "name": "Mahjong.MetadataEncodedRaw8V19.rows_accepted"
+        }
+      ],
+      "kernel_typechecking_seconds": 0.072,
+      "mode": "compile",
+      "module": "Mahjong.MetadataEncodedRaw8V19",
+      "peak_job_committed_bytes": 910241792,
+      "peak_process_working_set_bytes": 470028288,
+      "published_artifacts": [
+        {
+          "bytes": 7600,
+          "path": "build/lean_table_checker/acceleration_v19/metadata_pages_v19/local_encoded_v7/modules/Mahjong/MetadataEncodedRaw8V19.olean",
+          "sha256": "6afd107e1605643f998ae3ad2346259c04e2c5c2107880eb790cd784543f09ad"
+        }
+      ],
+      "receipt": {
+        "bytes": 30253,
+        "path": "runs/lean_table_checker/acceleration_20261018_v19/metadata_pages_v19/local_encoded_v7/attempts/1c5eca9361d3451b88f88596b8dd7f37/receipt.json",
+        "sha256": "7b71b1f4227b1d97516f1838b98b37014614407669db9317e1d61f0bd0690aaa"
+      },
+      "source": {
+        "bytes": 415,
+        "path": "build/lean_table_checker/acceleration_v19/metadata_pages_v19/local_encoded_v7/source/Mahjong/MetadataEncodedRaw8V19.lean",
+        "sha256": "268386e7b2aa45f874024c7afea2b7f59f3d80d1cfc2933049a0c24fb3138d79"
+      },
+      "stderr": {
+        "bytes": 109412,
+        "path": "runs/lean_table_checker/acceleration_20261018_v19/metadata_pages_v19/local_encoded_v7/attempts/1c5eca9361d3451b88f88596b8dd7f37/stderr.log",
+        "sha256": "c77d5bdc1b7b874830222e2557c6d330ab0d82891c60ffc2b00922a6625d942d"
+      },
+      "stdout": {
+        "bytes": 1580,
+        "path": "runs/lean_table_checker/acceleration_20261018_v19/metadata_pages_v19/local_encoded_v7/attempts/1c5eca9361d3451b88f88596b8dd7f37/stdout.log",
+        "sha256": "42b2157a15e57ff5af71f07161e5ad2cbcf15d70b7aa28092336b285ec4e1d67"
+      }
+    },
+    {
+      "child_cpu_seconds": 6.4375,
+      "child_wall_seconds": 6.48399999999674,
+      "fingerprints": [
+        {
+          "axioms": [],
+          "name": "MetadataEncodedSliceV19.exporter_is_not_a_proof_premise"
+        }
+      ],
+      "kernel_typechecking_seconds": 0.0038,
+      "mode": "compile",
+      "module": "Mahjong.MetadataEncodedSliceV19",
+      "peak_job_committed_bytes": 2266791936,
+      "peak_process_working_set_bytes": 904667136,
+      "published_artifacts": [
+        {
+          "bytes": 491416,
+          "path": "build/lean_table_checker/acceleration_v19/metadata_pages_v19/local_encoded_v7/modules/Mahjong/MetadataEncodedSliceV19.olean",
+          "sha256": "9b88422a8ee3aa0ffcef29340ed57486d6c227757a1aca2909c95ebd2e14d9ce"
+        }
+      ],
+      "receipt": {
+        "bytes": 31266,
+        "path": "runs/lean_table_checker/acceleration_20261018_v19/metadata_pages_v19/local_encoded_v7/attempts/20ef2a84cf5742dfb54cb3f0c3ace973/receipt.json",
+        "sha256": "cb99cda2bd3499ce67e168b41803f9f93ddcf64dfb48d2510623ef9fcdacafdb"
+      },
+      "source": {
+        "bytes": 3762,
+        "path": "build/lean_table_checker/acceleration_v19/metadata_pages_v19/local_encoded_v7/source/Mahjong/MetadataEncodedSliceV19.lean",
+        "sha256": "0b22a9acf35999d99ff7c7f66e29f63f6b5daf537c6142858c11fdc1955708fa"
+      },
+      "stderr": {
+        "bytes": 122973,
+        "path": "runs/lean_table_checker/acceleration_20261018_v19/metadata_pages_v19/local_encoded_v7/attempts/20ef2a84cf5742dfb54cb3f0c3ace973/stderr.log",
+        "sha256": "9cefb3a8110a674e1b77a31820816aa02714702ce5fb3b923f49a13b06605692"
+      },
+      "stdout": {
+        "bytes": 21295,
+        "path": "runs/lean_table_checker/acceleration_20261018_v19/metadata_pages_v19/local_encoded_v7/attempts/20ef2a84cf5742dfb54cb3f0c3ace973/stdout.log",
+        "sha256": "d4071658e8809efa52fbb7709e8520fc1f3086542e889399262517078bd133ca"
+      }
+    },
+    {
+      "child_cpu_seconds": 3.25,
+      "child_wall_seconds": 3.25,
+      "fingerprints": [
+        {
+          "axioms": [
+            "propext"
+          ],
+          "name": "Mahjong.MetadataEncodedSummary8V19.rows_accepted"
+        }
+      ],
+      "kernel_typechecking_seconds": 0.0489,
+      "mode": "compile",
+      "module": "Mahjong.MetadataEncodedSummary8V19",
+      "peak_job_committed_bytes": 906113024,
+      "peak_process_working_set_bytes": 465829888,
+      "published_artifacts": [
+        {
+          "bytes": 7840,
+          "path": "build/lean_table_checker/acceleration_v19/metadata_pages_v19/local_encoded_v7/modules/Mahjong/MetadataEncodedSummary8V19.olean",
+          "sha256": "17956a82bc5351fe9bec4f028ef0644c4303d2960bba578120a130689d4627f6"
+        }
+      ],
+      "receipt": {
+        "bytes": 30081,
+        "path": "runs/lean_table_checker/acceleration_20261018_v19/metadata_pages_v19/local_encoded_v7/attempts/7ceadfed0b9f47b9acb26e25b79df411/receipt.json",
+        "sha256": "578be8928f9ea039019f852d53b22c1f47d7de948fe1764003b645a2762d768f"
+      },
+      "source": {
+        "bytes": 426,
+        "path": "build/lean_table_checker/acceleration_v19/metadata_pages_v19/local_encoded_v7/source/Mahjong/MetadataEncodedSummary8V19.lean",
+        "sha256": "aa914efa55fc3565c0c7c16314689d4c8ecd3269eb3b1d207ad79b8e3e29d2ce"
+      },
+      "stderr": {
+        "bytes": 109416,
+        "path": "runs/lean_table_checker/acceleration_20261018_v19/metadata_pages_v19/local_encoded_v7/attempts/7ceadfed0b9f47b9acb26e25b79df411/stderr.log",
+        "sha256": "8981e9ba65b4e2b0696bd5e62c0efda1d28260bcdcbb8f9f7bd40ea1f432d94a"
+      },
+      "stdout": {
+        "bytes": 1585,
+        "path": "runs/lean_table_checker/acceleration_20261018_v19/metadata_pages_v19/local_encoded_v7/attempts/7ceadfed0b9f47b9acb26e25b79df411/stdout.log",
+        "sha256": "2eab26d4ae69952340a5ae7de06e74941af37a2a52025a9bce6069c225dc29bd"
+      }
+    },
+    {
+      "child_cpu_seconds": 3.296875,
+      "child_wall_seconds": 3.344000000040978,
+      "fingerprints": [
+        {
+          "axioms": [
+            "propext"
+          ],
+          "name": "Mahjong.MetadataActualEncoded8V19.local_rows_accepted"
+        }
+      ],
+      "kernel_typechecking_seconds": 0.173,
+      "mode": "compile",
+      "module": "Mahjong.MetadataActualEncoded8V19",
+      "peak_job_committed_bytes": 926879744,
+      "peak_process_working_set_bytes": 486916096,
+      "published_artifacts": [
+        {
+          "bytes": 6976,
+          "path": "build/lean_table_checker/acceleration_v19/metadata_pages_v19/local_encoded_v7/modules/Mahjong/MetadataActualEncoded8V19.olean",
+          "sha256": "5ea05fe75a118720b39ea48568041989e4951e7ad2e26d6ea888c929ce596043"
+        }
+      ],
+      "receipt": {
+        "bytes": 29507,
+        "path": "runs/lean_table_checker/acceleration_20261018_v19/metadata_pages_v19/local_encoded_v7/attempts/9dc7663164964e8fa524edfcf22bb915/receipt.json",
+        "sha256": "a2f4cd48aa9b8dd9e995aa96e4ef780133c542537ef2d2234068c7beb3b54fe5"
+      },
+      "source": {
+        "bytes": 398,
+        "path": "build/lean_table_checker/acceleration_v19/metadata_pages_v19/local_encoded_v7/source/Mahjong/MetadataActualEncoded8V19.lean",
+        "sha256": "c2722543c9e9ddf0b2300c18af2ca8b183fb4592fe51e6feaba0ea685f2cff2e"
+      },
+      "stderr": {
+        "bytes": 109421,
+        "path": "runs/lean_table_checker/acceleration_20261018_v19/metadata_pages_v19/local_encoded_v7/attempts/9dc7663164964e8fa524edfcf22bb915/stderr.log",
+        "sha256": "a190e6457cf9f49a78f0ce245b78ff5744b67cc6ea40fa5e33f1b5eb82a1348d"
+      },
+      "stdout": {
+        "bytes": 1546,
+        "path": "runs/lean_table_checker/acceleration_20261018_v19/metadata_pages_v19/local_encoded_v7/attempts/9dc7663164964e8fa524edfcf22bb915/stdout.log",
+        "sha256": "0bb3739e118123c4e7cfd9f8008c57cf24b40e285b362e611386c191d073b563"
+      }
+    },
+    {
+      "child_cpu_seconds": 3.3125,
+      "child_wall_seconds": 3.3280000000377186,
+      "fingerprints": [
+        {
+          "axioms": [
+            "propext"
+          ],
+          "name": "Mahjong.MetadataEncodedCore8V19.rows_accepted"
+        }
+      ],
+      "kernel_typechecking_seconds": 0.0591,
+      "mode": "compile",
+      "module": "Mahjong.MetadataEncodedCore8V19",
+      "peak_job_committed_bytes": 908836864,
+      "peak_process_working_set_bytes": 468590592,
+      "published_artifacts": [
+        {
+          "bytes": 8544,
+          "path": "build/lean_table_checker/acceleration_v19/metadata_pages_v19/local_encoded_v7/modules/Mahjong/MetadataEncodedCore8V19.olean",
+          "sha256": "ae562dd7cd5637a29b9434294db910f6f4d88701659ce1838284a17916c4d60d"
+        }
+      ],
+      "receipt": {
+        "bytes": 29762,
+        "path": "runs/lean_table_checker/acceleration_20261018_v19/metadata_pages_v19/local_encoded_v7/attempts/ae48aeaf1cea45059098d47018297687/receipt.json",
+        "sha256": "a55087dfd9ea0ce1966149490b1e89c71fd142fb20384092252279a022e31b5a"
+      },
+      "source": {
+        "bytes": 447,
+        "path": "build/lean_table_checker/acceleration_v19/metadata_pages_v19/local_encoded_v7/source/Mahjong/MetadataEncodedCore8V19.lean",
+        "sha256": "4550e8e64fe435c11a9c783c110fd1a893c5c04b599687681c575eb122b7e39b"
+      },
+      "stderr": {
+        "bytes": 109392,
+        "path": "runs/lean_table_checker/acceleration_20261018_v19/metadata_pages_v19/local_encoded_v7/attempts/ae48aeaf1cea45059098d47018297687/stderr.log",
+        "sha256": "e72de7ad15df2895eb03594bb830c2c8d33ff24e613f185f2056a850eb2ca2c0"
+      },
+      "stdout": {
+        "bytes": 1583,
+        "path": "runs/lean_table_checker/acceleration_20261018_v19/metadata_pages_v19/local_encoded_v7/attempts/ae48aeaf1cea45059098d47018297687/stdout.log",
+        "sha256": "1a38e6d5b8fc32e125d044988b73a06e5d6b7426b7566f34de7a69287fe73625"
+      }
+    },
+    {
+      "child_cpu_seconds": 3.171875,
+      "child_wall_seconds": 3.2030000000377186,
+      "fingerprints": [
+        {
+          "axioms": [
+            "Quot.sound",
+            "propext"
+          ],
+          "name": "Mahjong.MetadataActualEncodedV19.row_eq"
+        },
+        {
+          "axioms": [
+            "Quot.sound",
+            "propext"
+          ],
+          "name": "Mahjong.MetadataActualEncodedV19.checkSpan_eq"
+        }
+      ],
+      "kernel_typechecking_seconds": 0.00787,
+      "mode": "compile",
+      "module": "Mahjong.MetadataActualEncodedV19",
+      "peak_job_committed_bytes": 900464640,
+      "peak_process_working_set_bytes": 460980224,
+      "published_artifacts": [
+        {
+          "bytes": 39232,
+          "path": "build/lean_table_checker/acceleration_v19/metadata_pages_v19/local_encoded_v7/modules/Mahjong/MetadataActualEncodedV19.olean",
+          "sha256": "4069584be4ed8f4766f6f8fbe121a8964ad35d7715f6ce98e2dee377f9bdde7e"
+        }
+      ],
+      "receipt": {
+        "bytes": 29413,
+        "path": "runs/lean_table_checker/acceleration_20261018_v19/metadata_pages_v19/local_encoded_v7/attempts/b6fa9b9a143b41eb978fbf6e6f40c226/receipt.json",
+        "sha256": "9ac2a60348c35f9de8eacc75b5151858930cefceba5550cb36cbd07d3e6689fa"
+      },
+      "source": {
+        "bytes": 1354,
+        "path": "build/lean_table_checker/acceleration_v19/metadata_pages_v19/local_encoded_v7/source/Mahjong/MetadataActualEncodedV19.lean",
+        "sha256": "c29ddbb7b1f3671363e179e1f0e9e6c3c0acbc4c122bff36e1edc90388c3f8b9"
+      },
+      "stderr": {
+        "bytes": 109418,
+        "path": "runs/lean_table_checker/acceleration_20261018_v19/metadata_pages_v19/local_encoded_v7/attempts/b6fa9b9a143b41eb978fbf6e6f40c226/stderr.log",
+        "sha256": "51e8483a1545a88ab38d9d216572dfe2454a17e4a2d9b3eef7bcb8ab6658140d"
+      },
+      "stdout": {
+        "bytes": 6325,
+        "path": "runs/lean_table_checker/acceleration_20261018_v19/metadata_pages_v19/local_encoded_v7/attempts/b6fa9b9a143b41eb978fbf6e6f40c226/stdout.log",
+        "sha256": "fe77a01bcc1ad2807aa3ccd6a4c5048374468bb132274b6c762e8217e1297bbb"
+      }
+    },
+    {
+      "child_cpu_seconds": 0.390625,
+      "child_wall_seconds": 0.4380000000237487,
+      "fingerprints": [
+        {
+          "axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ],
+          "name": "Mahjong.MetadataEncodedOriginalV19.local_rows_original"
+        },
+        {
+          "axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ],
+          "name": "Mahjong.MetadataEncodedVerifyV19.original_finite_statement"
+        }
+      ],
+      "kernel_typechecking_seconds": 9.03e-05,
+      "mode": "compile",
+      "module": "Mahjong.MetadataEncodedVerifyV19",
+      "peak_job_committed_bytes": 95690752,
+      "peak_process_working_set_bytes": 94158848,
+      "published_artifacts": [
+        {
+          "bytes": 6648,
+          "path": "build/lean_table_checker/acceleration_v19/metadata_pages_v19/local_encoded_v7/modules/Mahjong/MetadataEncodedVerifyV19.olean",
+          "sha256": "930421ad41f47e5ffdbf8023a48d353044f5a0ebeefb9a4cd4300d9e44142ccb"
+        }
+      ],
+      "receipt": {
+        "bytes": 32711,
+        "path": "runs/lean_table_checker/acceleration_20261018_v19/metadata_pages_v19/local_encoded_v7/attempts/cb7497dcd87b4ac099151ecd5890b236/receipt.json",
+        "sha256": "d5efacbaee935d84113fffcb44b67506979273e9c0574d164fccba95e9626141"
+      },
+      "source": {
+        "bytes": 667,
+        "path": "build/lean_table_checker/acceleration_v19/metadata_pages_v19/local_encoded_v7/source/Mahjong/MetadataEncodedVerifyV19.lean",
+        "sha256": "fbefd96f183e31553bddd4b1261998e9b44d415f5e658da4fcd7aac5c9fa025e"
+      },
+      "stderr": {
+        "bytes": 48491,
+        "path": "runs/lean_table_checker/acceleration_20261018_v19/metadata_pages_v19/local_encoded_v7/attempts/cb7497dcd87b4ac099151ecd5890b236/stderr.log",
+        "sha256": "373e43ee88dc7f9b55a968a4bfe00e1477bae312000a37c15072234bc8f4fd91"
+      },
+      "stdout": {
+        "bytes": 1238,
+        "path": "runs/lean_table_checker/acceleration_20261018_v19/metadata_pages_v19/local_encoded_v7/attempts/cb7497dcd87b4ac099151ecd5890b236/stdout.log",
+        "sha256": "6a9d1b2a1353ce444f1e201cb384466ea2ea8e92018a9fcaa970516baec3392d"
+      }
+    },
+    {
+      "child_cpu_seconds": 10.46875,
+      "child_wall_seconds": 10.5,
+      "fingerprints": [
+        {
+          "axioms": [],
+          "name": "Mahjong.MetadataEncodedExportV19.selection_is_not_a_semantic_premise"
+        }
+      ],
+      "kernel_typechecking_seconds": 2.79e-05,
+      "mode": "compile",
+      "module": "Mahjong.MetadataEncodedExportV19",
+      "peak_job_committed_bytes": 2359541760,
+      "peak_process_working_set_bytes": 979349504,
+      "published_artifacts": [
+        {
+          "bytes": 3696,
+          "path": "build/lean_table_checker/acceleration_v19/metadata_pages_v19/local_encoded_v7/modules/Mahjong/MetadataEncodedExportV19.olean",
+          "sha256": "02fb79f33c00f50b947f38667b04dd3b6f5390e1752a63f63debae628b58ae54"
+        }
+      ],
+      "receipt": {
+        "bytes": 31254,
+        "path": "runs/lean_table_checker/acceleration_20261018_v19/metadata_pages_v19/local_encoded_v7/attempts/feb1851737fa49b38e9b3f77244336bd/receipt.json",
+        "sha256": "20ecf96a5a1c560f797ef4c7ddc04406e303b7229ad943681aa89e3986722938"
+      },
+      "source": {
+        "bytes": 383,
+        "path": "build/lean_table_checker/acceleration_v19/metadata_pages_v19/local_encoded_v7/source/Mahjong/MetadataEncodedExportV19.lean",
+        "sha256": "2323f2f3fd3c8e2292cdd56880df64fb8b70859f293d22b87a0389f298778f3f"
+      },
+      "stderr": {
+        "bytes": 122968,
+        "path": "runs/lean_table_checker/acceleration_20261018_v19/metadata_pages_v19/local_encoded_v7/attempts/feb1851737fa49b38e9b3f77244336bd/stderr.log",
+        "sha256": "89d07bc9cc42e536156d8cb941d7110c0b65d965e0f71763d84597d5796662de"
+      },
+      "stdout": {
+        "bytes": 1280,
+        "path": "runs/lean_table_checker/acceleration_20261018_v19/metadata_pages_v19/local_encoded_v7/attempts/feb1851737fa49b38e9b3f77244336bd/stdout.log",
+        "sha256": "399c4bdf7c8c4de90525980a3ef96a44d84fe88b48c003228bfc5611bd2fe6bc"
+      }
+    }
+  ],
+  "old_long_path_failure_preserved": [
+    {
+      "child_cpu_seconds": 4.5,
+      "child_wall_seconds": 4.577999999979511,
+      "fingerprints": [],
+      "kernel_typechecking_seconds": null,
+      "mode": "replay",
+      "module": "Mahjong.MetadataEncodedVerifyV19",
+      "peak_job_committed_bytes": 77443072,
+      "peak_process_working_set_bytes": 53649408,
+      "published_artifacts": [],
+      "receipt": {
+        "bytes": 4754,
+        "path": "runs/lean_table_checker/acceleration_20261018_v19/metadata_pages_v19/local_encoded_v7/attempts/7c23aed8bc524d42be20b552ed97f055/receipt.json",
+        "sha256": "38baff37342fbbdb6c7ff82b9a72f877bbbf201329a9e5c8cb9e3023cd69b5b6"
+      },
+      "source": {
+        "bytes": 667,
+        "path": "runs/lean_table_checker/acceleration_20261018_v19/metadata_pages_v19/local_encoded_v7/bundles/128bd5f990a941a9802322ddcbf055c8/source/Mahjong/MetadataEncodedVerifyV19.lean",
+        "sha256": "fbefd96f183e31553bddd4b1261998e9b44d415f5e658da4fcd7aac5c9fa025e"
+      },
+      "status": "PRESERVED_LONG_PATH_OPEN_FAILURE_NO_MATHEMATICAL_PASS",
+      "stderr": {
+        "bytes": 306,
+        "path": "runs/lean_table_checker/acceleration_20261018_v19/metadata_pages_v19/local_encoded_v7/attempts/7c23aed8bc524d42be20b552ed97f055/stderr.log",
+        "sha256": "d9c1590f3d93a74435edff67ab10b686a79f3356f1c353666f93849c8857427d"
+      },
+      "stdout": {
+        "bytes": 56,
+        "path": "runs/lean_table_checker/acceleration_20261018_v19/metadata_pages_v19/local_encoded_v7/attempts/7c23aed8bc524d42be20b552ed97f055/stdout.log",
+        "sha256": "72985be7a2ea963a3069c287039680a218367c4f7264c554968c88186f2e58ff"
+      }
+    }
+  ],
+  "ordinary_leanchecker_fresh": true,
+  "original_baseline_kernel_seconds_64": 11.5,
+  "original_capture": {
+    "bytes": 47148,
+    "path": "build/lean_table_checker/acceleration_v19/metadata_pages_v19/local_safe_v4/capture.json",
+    "sha256": "1069d607687884e486e7a82f658d7ae0ee8bd161f367dbd8ea99cb932a1a73d8"
+  },
+  "partial_getter_outside_frozen_pages_returns_zero": true,
+  "preparation": {
+    "bytes": 55649,
+    "path": "build/lean_table_checker/acceleration_v19/metadata_pages_v19/local_encoded_v7/preparation.json",
+    "sha256": "ec5e5c383905c5e8cdfe4fe570e90efc1e90427cf6c05fd5bb839a4d9caa17bf"
+  },
+  "same_block": 0,
+  "same_count": 64,
+  "same_pages": 9,
+  "same_start": 20000,
+  "scalar_baseline_kernel_seconds_64": 3.224,
+  "schema": "ACTUAL_ENCODED_LOCAL_METADATA_KERNEL_AND_COLD_REPLAY_V19",
+  "slice_preparation": {
+    "bytes": 1387,
+    "path": "build/lean_table_checker/acceleration_v19/metadata_pages_v19/local_encoded_v7/slice_preparation.json",
+    "sha256": "62fd1fd08a4376b93c6d26d6ebb158e87498eb28762756fab71456f2cba93e50"
+  },
+  "status": "PASS_SAME64_ENCODED_NUMERICAL_ORIGINAL_OBLIGATION_AND_STANDARD_FRESH_KERNEL",
+  "unchanged_original_declarations_in_slice": 1543
+}

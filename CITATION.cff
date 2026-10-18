@@ -39,9 +39,9 @@ abstract: >-
   a deterministic two-player shared-pool Mahjong achievement game. Complete
   SAFE-state retrograde analysis and reverse replay classify the empty position
   as a second-player win; both algorithms share rules and indexing. Partial
-  Lean certification, finite algorithm models and bounded implementation tests
-  are included. The opening Lean theorem remains NOT_VERIFIED. Post-release
-  V16 development targets a sub-20-hour verification finish; the full campaign
-  has not started and independent correctness review is in progress. Version
-  and date above identify the last immutable release; cite the exact commit
-  for subsequent October material.
+  Lean certification, finite algorithm models and bounded tests are included.
+  Current work studies persistent kernel certificates and compression, with
+  generic composition and a small actual-data closed pilot. The actual opening
+  Lean theorem remains NOT_VERIFIED; no end-to-end 20/24-hour completion bound
+  is established. Version and date above identify the last immutable release;
+  cite the exact commit for subsequent research material.

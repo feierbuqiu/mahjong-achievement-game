@@ -1,0 +1,115 @@
+{
+  "schema": "UNTRUSTED_CANDIDATE_STANDARD_KERNEL_GATE_V19",
+  "status": "POSITIVE_ACCEPTED_AND_FALSE_CANDIDATE_REJECTED",
+  "producer_is_not_proof_validation": true,
+  "proof_checked_only_at_ordinary_cold_gate": true,
+  "source_rows": 16224,
+  "scope": "Complete supplied-plane PN only; no game SAFE/global closure",
+  "proof_writer_source": {
+    "path": "build/lean_table_checker/acceleration_v19/packed/source/CandidateBoolWriterV19.lean",
+    "bytes": 3736,
+    "sha256": "3e341ee53bccd93fa30dff2341ae96c204919a00c623b6122d95c515553990e8"
+  },
+  "receipts": {
+    "producer": {
+      "path": "runs/lean_table_checker/acceleration_20261018_v19/packed/attempts/d6cfb76de9db4eb78349e2412b72aa15/receipt.json",
+      "bytes": 60725,
+      "sha256": "7c6758fa4da17f5bbdb378766ec1d8882a5f5f4cbc305c1c660c901c53413a31"
+    },
+    "positive_cold": {
+      "path": "runs/lean_table_checker/acceleration_20261018_v19/packed/attempts/e270d77cf628493496a2022da30bac4c/receipt.json",
+      "bytes": 3887,
+      "sha256": "1b27798241bdab78a530247083d281e6a18e58d68071f9bf9d1d7cd84d12256d"
+    },
+    "negative_producer": {
+      "path": "runs/lean_table_checker/acceleration_20261018_v19/packed/attempts/dae0a884e0144c92b4294356bc4cf378/receipt.json",
+      "bytes": 61623,
+      "sha256": "25498b698d3775eb46ef83fb7d1df71d0bdbb9030c558f009345f92157a65d01"
+    },
+    "negative_cold": {
+      "path": "runs/lean_table_checker/acceleration_20261018_v19/packed/attempts/acc039464844495094b2b9c941cd7f70/receipt.json",
+      "bytes": 3898,
+      "sha256": "f4990cc1a1ba7b9737d33846e9751dfad5d7af678356987d5f52641bbb4c0a18"
+    }
+  },
+  "measurements": {
+    "producer": {
+      "wall_seconds": 8.73399999999674,
+      "peak_job_committed_bytes": 2284277760,
+      "returncode": 0
+    },
+    "positive_cold": {
+      "wall_seconds": 5.89100000000326,
+      "peak_job_committed_bytes": 77467648,
+      "returncode": 0
+    },
+    "negative_producer": {
+      "wall_seconds": 8.15600000001723,
+      "peak_job_committed_bytes": 2282000384,
+      "returncode": 0
+    },
+    "negative_cold": {
+      "wall_seconds": 5.14000000001397,
+      "peak_job_committed_bytes": 77377536,
+      "returncode": 1
+    }
+  },
+  "positive_saved_module_bytes": 303512,
+  "negative_artifacts_quarantined": [
+    {
+      "original": {
+        "path": "build/lean_table_checker/acceleration_v19/packed/modules/CandidateFalseDataV19.olean",
+        "bytes": 1544,
+        "sha256": "133c7a919d307f4cfac50e137de7e815e6e864c30d97a2bb232369d7844f581e"
+      },
+      "quarantined": {
+        "path": "runs/lean_table_checker/acceleration_20261018_v19/packed/negative_controls/candidate_false/modules/CandidateFalseDataV19.olean",
+        "bytes": 1544,
+        "sha256": "133c7a919d307f4cfac50e137de7e815e6e864c30d97a2bb232369d7844f581e"
+      }
+    },
+    {
+      "original": {
+        "path": "build/lean_table_checker/acceleration_v19/packed/modules/CandidateFalseDataV19.olean.private",
+        "bytes": 2752,
+        "sha256": "f770433ce56b750a5c7461139a2f76c80bf5f2613a8148f80791b9eaa4849a25"
+      },
+      "quarantined": {
+        "path": "runs/lean_table_checker/acceleration_20261018_v19/packed/negative_controls/candidate_false/modules/CandidateFalseDataV19.olean.private",
+        "bytes": 2752,
+        "sha256": "f770433ce56b750a5c7461139a2f76c80bf5f2613a8148f80791b9eaa4849a25"
+      }
+    },
+    {
+      "original": {
+        "path": "build/lean_table_checker/acceleration_v19/packed/modules/CandidateFalseDataV19.olean.server",
+        "bytes": 96,
+        "sha256": "c981b4541f56c8f54a2d31bb1bb74d6211ff759e2eb796c59e5a5185eb79abe2"
+      },
+      "quarantined": {
+        "path": "runs/lean_table_checker/acceleration_20261018_v19/packed/negative_controls/candidate_false/modules/CandidateFalseDataV19.olean.server",
+        "bytes": 96,
+        "sha256": "c981b4541f56c8f54a2d31bb1bb74d6211ff759e2eb796c59e5a5185eb79abe2"
+      }
+    },
+    {
+      "original": {
+        "path": "build/lean_table_checker/acceleration_v19/packed/modules/CandidateFalseVerifyV19.olean",
+        "bytes": 3304,
+        "sha256": "324f802fccfc083c7987cffdb499d7ff196a4dde1cdf762473c1536cef80a0fb"
+      },
+      "quarantined": {
+        "path": "runs/lean_table_checker/acceleration_20261018_v19/packed/negative_controls/candidate_false/modules/CandidateFalseVerifyV19.olean",
+        "bytes": 3304,
+        "sha256": "324f802fccfc083c7987cffdb499d7ff196a4dde1cdf762473c1536cef80a0fb"
+      }
+    }
+  ],
+  "standard_kernel_executable": {
+    "bytes": 115200,
+    "path": "build/toolchain/lean-4.33.1-windows/bin/leanchecker.exe",
+    "sha256": "31b506f83737b7d629fd11699df5aaf88c3b50be23c28219e6b283f0de98f85c"
+  },
+  "final_kernel_empty_theorem": false,
+  "full_scan_started": false
+}

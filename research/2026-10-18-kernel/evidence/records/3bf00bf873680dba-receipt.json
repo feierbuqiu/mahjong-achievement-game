@@ -1,0 +1,73 @@
+{
+  "CPU_limit_percent": 20,
+  "LEAN_PATH": "<RESEARCH_ROOT>\\build\\lean_table_checker\\kernel_pilot_v18\\modules;<RESEARCH_ROOT>\\build\\lean_table_checker\\end_to_end_v17\\modules",
+  "argv": [
+    "<RESEARCH_ROOT>\\build\\toolchain\\lean-4.33.1-windows\\bin\\lean.exe",
+    "--trust=0",
+    "-j1",
+    "-M2048",
+    "-R",
+    "<RESEARCH_ROOT>\\build\\lean_table_checker\\kernel_pilot_v18\\source",
+    "-o",
+    "<RESEARCH_ROOT>\\runs\\lean_table_checker\\kernel_pilot_20261018_v18\\attempts\\4a94afa133624e039189cd01e3c41484\\modules\\Mahjong\\PilotHarnessV18.olean",
+    "<RESEARCH_ROOT>\\build\\lean_table_checker\\kernel_pilot_v18\\source\\Mahjong\\PilotHarnessV18.lean"
+  ],
+  "caps_readback_confirmed": true,
+  "checked_utc": "2026-10-18T04:22:23.098941+00:00",
+  "child_assigned_before_resume": true,
+  "child_cpu_seconds": 4.25,
+  "child_exit_confirmed": true,
+  "compiled_module": {
+    "bytes": 7328,
+    "path": "runs/lean_table_checker/kernel_pilot_20261018_v18/attempts/4a94afa133624e039189cd01e3c41484/modules/Mahjong/PilotHarnessV18.olean",
+    "sha256": "c184f8c3f1681392e95cb9150663972a9e17bfcedd72b095e762c9df5360396a"
+  },
+  "controller_outside_job": true,
+  "dependency_fingerprints": [
+    {
+      "axioms": [],
+      "name": "Mahjong.PilotHarnessV18.arithmetic_control"
+    }
+  ],
+  "executable": {
+    "bytes": 83456,
+    "path": "build/toolchain/lean-4.33.1-windows/bin/lean.exe",
+    "sha256": "af49bacfabaa1fea71332ca0feae0fa1a60912219d5902291adc79f905bffb8d"
+  },
+  "final_kernel_empty_theorem": false,
+  "full_launch_allowed": false,
+  "full_scan_started": false,
+  "input_pilot_modules": [],
+  "memory_limit_bytes": 3000000000,
+  "mode": "compile",
+  "module": "Mahjong.PilotHarnessV18",
+  "peak_job_committed_bytes": 876572672,
+  "peak_process_pagefile_bytes": 875327488,
+  "peak_process_working_set_bytes": 448229376,
+  "policy_error": null,
+  "published_module": {
+    "bytes": 7328,
+    "path": "build/lean_table_checker/kernel_pilot_v18/modules/Mahjong/PilotHarnessV18.olean",
+    "sha256": "c184f8c3f1681392e95cb9150663972a9e17bfcedd72b095e762c9df5360396a"
+  },
+  "returncode": 0,
+  "schema": "ACTUAL_BOUNDED_KERNEL_PILOT_V18",
+  "source": {
+    "bytes": 286,
+    "path": "build/lean_table_checker/kernel_pilot_v18/source/Mahjong/PilotHarnessV18.lean",
+    "sha256": "037ae8e87d1d782ff4704255f8cb953ad387c4433d7ef3ad3b5159185c562593"
+  },
+  "status": "PASS",
+  "stderr": {
+    "bytes": 0,
+    "path": "runs/lean_table_checker/kernel_pilot_20261018_v18/attempts/4a94afa133624e039189cd01e3c41484/stderr.log",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "stdout": {
+    "bytes": 75,
+    "path": "runs/lean_table_checker/kernel_pilot_20261018_v18/attempts/4a94afa133624e039189cd01e3c41484/stdout.log",
+    "sha256": "f9c6f2b61e3eeb6bf9fbaee159be209a26fdf55557fc0348fd6d836b6d446644"
+  },
+  "timed_out": false,
+  "wall_seconds": 6.514999999955762
+}

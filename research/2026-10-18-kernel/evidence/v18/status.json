@@ -1,0 +1,964 @@
+{
+  "V18_closure_construction_cpu_seconds_sum": 119.8125,
+  "V18_closure_construction_wall_seconds_sum": 125.78300000005402,
+  "V18_closure_module_bytes": 3584792,
+  "V18_declared_source_import_closure": [
+    "Mahjong.PilotActualDataV18",
+    "Mahjong.PilotActualGameV18",
+    "Mahjong.PilotClosureV18",
+    "Mahjong.PilotGameCheckBridgeV18",
+    "Mahjong.PilotGameChecksV18",
+    "Mahjong.PilotGameNode0V18",
+    "Mahjong.PilotGameNode10V18",
+    "Mahjong.PilotGameNode2V18",
+    "Mahjong.PilotGameNode3V18",
+    "Mahjong.PilotGameNode4V18",
+    "Mahjong.PilotGameNode9V18",
+    "Mahjong.PilotGameV18",
+    "Mahjong.PilotScanCount56V18",
+    "Mahjong.PilotScanDataV18",
+    "Mahjong.PilotScanV18"
+  ],
+  "bundle_manifest": {
+    "bytes": 120486,
+    "path": "runs/lean_table_checker/kernel_pilot_20261018_v18/bundles/fb92822a7dba4b33b147e5005769327f/manifest.json",
+    "sha256": "5856e58805cc8404d878049bf8fcd4cc1e880e1528186431689e6226eeb6057d"
+  },
+  "checked_utc": "2026-10-18T04:50:41.568779+00:00",
+  "closed_theorem_axioms": {
+    "Mahjong.PilotClosureV18.actual_game_closed": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "Mahjong.PilotClosureV18.actual_scalar_scans_closed": [
+      "Quot.sound",
+      "propext"
+    ],
+    "Mahjong.PilotClosureV18.original_hot_checker_closed": [
+      "Quot.sound",
+      "propext"
+    ]
+  },
+  "construction_receipts": [
+    {
+      "child_cpu_seconds": 4.0,
+      "mode": "compile",
+      "module": "Mahjong.PilotActualDataV18",
+      "peak_job_committed_bytes": 883871744,
+      "peak_process_working_set_bytes": 469151744,
+      "policy_error": null,
+      "published_module": {
+        "bytes": 302832,
+        "path": "build/lean_table_checker/kernel_pilot_v18/modules/Mahjong/PilotActualDataV18.olean",
+        "sha256": "0a022f6db309d2804393bf0a92ea2ba48d0d73f3a789eddb56a8b92ff3ec63ea"
+      },
+      "receipt": {
+        "bytes": 37293,
+        "path": "runs/lean_table_checker/kernel_pilot_20261018_v18/bundles/fb92822a7dba4b33b147e5005769327f/receipts/ef5bf297e8d34fcda40bc5bd990c7936/receipt.json",
+        "sha256": "2f53052349e365f05d345cab56b0fc8659a82ac58de2d173cd09f477106a8e08"
+      },
+      "returncode": 0,
+      "source": {
+        "bytes": 3052,
+        "path": "build/lean_table_checker/kernel_pilot_v18/source/Mahjong/PilotActualDataV18.lean",
+        "sha256": "cdcd54e55cbb758e779eee31ea208b4e4ccac6cc011d0097f0d2a4fc779e4b92"
+      },
+      "status": "PASS",
+      "timed_out": false,
+      "wall_seconds": 4.421999999962281
+    },
+    {
+      "child_cpu_seconds": 3.671875,
+      "mode": "compile",
+      "module": "Mahjong.PilotActualGameV18",
+      "peak_job_committed_bytes": 951775232,
+      "peak_process_working_set_bytes": 488599552,
+      "policy_error": null,
+      "published_module": {
+        "bytes": 44896,
+        "path": "build/lean_table_checker/kernel_pilot_v18/modules/Mahjong/PilotActualGameV18.olean",
+        "sha256": "0c7d037ae30abf8dcafd81c57f415f8eaaa56c8a6396180f28348aa428580d8e"
+      },
+      "receipt": {
+        "bytes": 41006,
+        "path": "runs/lean_table_checker/kernel_pilot_20261018_v18/bundles/fb92822a7dba4b33b147e5005769327f/receipts/77ac68b0d3c24d0cb0b62468a41b0fbb/receipt.json",
+        "sha256": "5f260dccef015339dfc3e0a2e264e4d111203bdea513fa17c2e5d36ea82ee778"
+      },
+      "returncode": 0,
+      "source": {
+        "bytes": 2133,
+        "path": "build/lean_table_checker/kernel_pilot_v18/source/Mahjong/PilotActualGameV18.lean",
+        "sha256": "9ba8d33a9e86a06c9717c7af9f668523a9cf5f2f09763ecd7c6ae0846edfed39"
+      },
+      "status": "PASS",
+      "timed_out": false,
+      "wall_seconds": 4.062000000034459
+    },
+    {
+      "child_cpu_seconds": 3.796875,
+      "mode": "compile",
+      "module": "Mahjong.PilotClosureV18",
+      "peak_job_committed_bytes": 927920128,
+      "peak_process_working_set_bytes": 470085632,
+      "policy_error": null,
+      "published_module": {
+        "bytes": 15920,
+        "path": "build/lean_table_checker/kernel_pilot_v18/modules/Mahjong/PilotClosureV18.olean",
+        "sha256": "a52ab2deaabb448ef4cbf420fc1c3f73823109dbe15e92559da2f734c4753a9d"
+      },
+      "receipt": {
+        "bytes": 40636,
+        "path": "runs/lean_table_checker/kernel_pilot_20261018_v18/bundles/fb92822a7dba4b33b147e5005769327f/receipts/9659b1b4e359485cb55d42587b2cffe2/receipt.json",
+        "sha256": "86f462b96230960661ffee59120d885b1d7fab9b73c2a92dad48d436881a6927"
+      },
+      "returncode": 0,
+      "source": {
+        "bytes": 1788,
+        "path": "build/lean_table_checker/kernel_pilot_v18/source/Mahjong/PilotClosureV18.lean",
+        "sha256": "83b9b8a0beeab7c9ac13a192a1c3207d81f2d7647140babf98a5f20d5ce9896d"
+      },
+      "status": "PASS",
+      "timed_out": false,
+      "wall_seconds": 4.172000000020489
+    },
+    {
+      "child_cpu_seconds": 3.578125,
+      "mode": "compile",
+      "module": "Mahjong.PilotGameCheckBridgeV18",
+      "peak_job_committed_bytes": 883601408,
+      "peak_process_working_set_bytes": 454025216,
+      "policy_error": null,
+      "published_module": {
+        "bytes": 31480,
+        "path": "build/lean_table_checker/kernel_pilot_v18/modules/Mahjong/PilotGameCheckBridgeV18.olean",
+        "sha256": "f4d3fefcf7c6c55397369fea22cd32258c4300a089892e3ae854de15791af395"
+      },
+      "receipt": {
+        "bytes": 39166,
+        "path": "runs/lean_table_checker/kernel_pilot_20261018_v18/bundles/fb92822a7dba4b33b147e5005769327f/receipts/9fc84bb1e6474aa0bff2c6ec31a7f6a5/receipt.json",
+        "sha256": "b64ea06bb13ac5e7bfbb96c39a120444021d99d4fa1994a98e24df63eef8b34c"
+      },
+      "returncode": 0,
+      "source": {
+        "bytes": 2953,
+        "path": "build/lean_table_checker/kernel_pilot_v18/source/Mahjong/PilotGameCheckBridgeV18.lean",
+        "sha256": "9a3af97c0b918c3e2f4c3ad05c681c4b021ab6d52f3ef3e42c86cf92a3eec34c"
+      },
+      "status": "PASS",
+      "timed_out": false,
+      "wall_seconds": 3.9369999999762513
+    },
+    {
+      "child_cpu_seconds": 4.84375,
+      "mode": "compile",
+      "module": "Mahjong.PilotGameChecksV18",
+      "peak_job_committed_bytes": 1111994368,
+      "peak_process_working_set_bytes": 663908352,
+      "policy_error": null,
+      "published_module": {
+        "bytes": 60416,
+        "path": "build/lean_table_checker/kernel_pilot_v18/modules/Mahjong/PilotGameChecksV18.olean",
+        "sha256": "053325ada287138306fca65edfe2cac3992a69ba8e80dd1ada2b43638070b316"
+      },
+      "receipt": {
+        "bytes": 40131,
+        "path": "runs/lean_table_checker/kernel_pilot_20261018_v18/bundles/fb92822a7dba4b33b147e5005769327f/receipts/f07552db44654644a6d220cab8d8a12f/receipt.json",
+        "sha256": "135d83d48964b0f6ab4e3df68ea1f48dd4611ffdecb0d604f5200fa9f403b336"
+      },
+      "returncode": 0,
+      "source": {
+        "bytes": 3733,
+        "path": "build/lean_table_checker/kernel_pilot_v18/source/Mahjong/PilotGameChecksV18.lean",
+        "sha256": "6a349b79cd12ecdc3890bf5d059e0e41e018624f1bb2fc21cd98e89880f5699b"
+      },
+      "status": "PASS",
+      "timed_out": false,
+      "wall_seconds": 5.157000000006519
+    },
+    {
+      "child_cpu_seconds": 12.796875,
+      "mode": "compile",
+      "module": "Mahjong.PilotGameNode0V18",
+      "peak_job_committed_bytes": 1718030336,
+      "peak_process_working_set_bytes": 1272958976,
+      "policy_error": null,
+      "published_module": {
+        "bytes": 244328,
+        "path": "build/lean_table_checker/kernel_pilot_v18/modules/Mahjong/PilotGameNode0V18.olean",
+        "sha256": "867b4cbd84f02ad11f64fb1a237327ae3be7d3790d0f5ed6ff07f0abc3fa5af8"
+      },
+      "receipt": {
+        "bytes": 39679,
+        "path": "runs/lean_table_checker/kernel_pilot_20261018_v18/bundles/fb92822a7dba4b33b147e5005769327f/receipts/710049a8bf99408980ef712fc34c6454/receipt.json",
+        "sha256": "c0c10cbb672d3021ea9380a33ad89073cf53756fb23bd6ee782ee0a905fb9366"
+      },
+      "returncode": 0,
+      "source": {
+        "bytes": 17102,
+        "path": "build/lean_table_checker/kernel_pilot_v18/source/Mahjong/PilotGameNode0V18.lean",
+        "sha256": "043d9d6987f21955d4ef4a1cf8001b5d4a0ff549b4a5a3232e07be26194c1bfa"
+      },
+      "status": "PASS",
+      "timed_out": false,
+      "wall_seconds": 13.063000000023749
+    },
+    {
+      "child_cpu_seconds": 12.421875,
+      "mode": "compile",
+      "module": "Mahjong.PilotGameNode10V18",
+      "peak_job_committed_bytes": 1700847616,
+      "peak_process_working_set_bytes": 1255858176,
+      "policy_error": null,
+      "published_module": {
+        "bytes": 239328,
+        "path": "build/lean_table_checker/kernel_pilot_v18/modules/Mahjong/PilotGameNode10V18.olean",
+        "sha256": "77f69bddff11a504adae2360bb80c4648e229af12b1bdf5a011688fc895c5724"
+      },
+      "receipt": {
+        "bytes": 38795,
+        "path": "runs/lean_table_checker/kernel_pilot_20261018_v18/bundles/fb92822a7dba4b33b147e5005769327f/receipts/1f4f2a1b4581433e9c62ccb4e3651e62/receipt.json",
+        "sha256": "f3670a079899b3956c79c66d026f20885f54bcc0e7e5170fc97e4b203abce260"
+      },
+      "returncode": 0,
+      "source": {
+        "bytes": 17471,
+        "path": "build/lean_table_checker/kernel_pilot_v18/source/Mahjong/PilotGameNode10V18.lean",
+        "sha256": "cd05aa5b68f1aa5f9239497219c0441308e553f4141fb2461cab7716a1ebe953"
+      },
+      "status": "PASS",
+      "timed_out": false,
+      "wall_seconds": 13.077999999979511
+    },
+    {
+      "child_cpu_seconds": 8.859375,
+      "mode": "compile",
+      "module": "Mahjong.PilotGameNode2V18",
+      "peak_job_committed_bytes": 1472176128,
+      "peak_process_working_set_bytes": 1027317760,
+      "policy_error": null,
+      "published_module": {
+        "bytes": 235904,
+        "path": "build/lean_table_checker/kernel_pilot_v18/modules/Mahjong/PilotGameNode2V18.olean",
+        "sha256": "7de7906d4ca5999e552a7364567ef392df33a6a0fdcbcd68d6ea2bc03013612b"
+      },
+      "receipt": {
+        "bytes": 39231,
+        "path": "runs/lean_table_checker/kernel_pilot_20261018_v18/bundles/fb92822a7dba4b33b147e5005769327f/receipts/f045a27c8efb47019b9f2a26d05e4adf/receipt.json",
+        "sha256": "7539195ef9409e640cebbb145c7a1ec58c8b574996e7c0905ba94f034ed928a9"
+      },
+      "returncode": 0,
+      "source": {
+        "bytes": 16981,
+        "path": "build/lean_table_checker/kernel_pilot_v18/source/Mahjong/PilotGameNode2V18.lean",
+        "sha256": "0ae12d0291145bacedd1ddb6709eaa451d1502a2345e566d21dbddbc4fb41753"
+      },
+      "status": "PASS",
+      "timed_out": false,
+      "wall_seconds": 9.438000000023749
+    },
+    {
+      "child_cpu_seconds": 9.0,
+      "mode": "compile",
+      "module": "Mahjong.PilotGameNode3V18",
+      "peak_job_committed_bytes": 1481535488,
+      "peak_process_working_set_bytes": 1027428352,
+      "policy_error": null,
+      "published_module": {
+        "bytes": 235456,
+        "path": "build/lean_table_checker/kernel_pilot_v18/modules/Mahjong/PilotGameNode3V18.olean",
+        "sha256": "be21027547dad2235a51efaace97bd81e86d76f903ec542a9a3981f43c77d1c5"
+      },
+      "receipt": {
+        "bytes": 39225,
+        "path": "runs/lean_table_checker/kernel_pilot_20261018_v18/bundles/fb92822a7dba4b33b147e5005769327f/receipts/a43716fa808f4ca386234fc9155f9e07/receipt.json",
+        "sha256": "2e52836ffb7c86c2d2650ed768837be4feed6716bc4944e9b68f8f97cd96db65"
+      },
+      "returncode": 0,
+      "source": {
+        "bytes": 16953,
+        "path": "build/lean_table_checker/kernel_pilot_v18/source/Mahjong/PilotGameNode3V18.lean",
+        "sha256": "4c75fb623ac996f0aa2c661a20491d99906ca06a11aa5918e62c4fce1b22c8c4"
+      },
+      "status": "PASS",
+      "timed_out": false,
+      "wall_seconds": 9.328000000037719
+    },
+    {
+      "child_cpu_seconds": 12.546875,
+      "mode": "compile",
+      "module": "Mahjong.PilotGameNode4V18",
+      "peak_job_committed_bytes": 1666732032,
+      "peak_process_working_set_bytes": 1222049792,
+      "policy_error": null,
+      "published_module": {
+        "bytes": 243320,
+        "path": "build/lean_table_checker/kernel_pilot_v18/modules/Mahjong/PilotGameNode4V18.olean",
+        "sha256": "abb0f607b1377b4e37f927866cbae3fa2432a90dd59a8d26204090e6dcc6973a"
+      },
+      "receipt": {
+        "bytes": 39665,
+        "path": "runs/lean_table_checker/kernel_pilot_20261018_v18/bundles/fb92822a7dba4b33b147e5005769327f/receipts/5e386a97a6a64f44a3c86e7dd4ef6ed8/receipt.json",
+        "sha256": "20de410531ac8d0d564db17133f0213686ae40699437ee8debb65cbf28f09815"
+      },
+      "returncode": 0,
+      "source": {
+        "bytes": 17229,
+        "path": "build/lean_table_checker/kernel_pilot_v18/source/Mahjong/PilotGameNode4V18.lean",
+        "sha256": "ca8f280c5997728a916b684c30ebcbe7f563e1e546361f69b8c661a00606c599"
+      },
+      "status": "PASS",
+      "timed_out": false,
+      "wall_seconds": 13.0
+    },
+    {
+      "child_cpu_seconds": 12.890625,
+      "mode": "compile",
+      "module": "Mahjong.PilotGameNode9V18",
+      "peak_job_committed_bytes": 1716981760,
+      "peak_process_working_set_bytes": 1272016896,
+      "policy_error": null,
+      "published_module": {
+        "bytes": 239704,
+        "path": "build/lean_table_checker/kernel_pilot_v18/modules/Mahjong/PilotGameNode9V18.olean",
+        "sha256": "f9b2b1905fd21e22e4c54937bf7d3573b3c99632a91e144ee0e059a9655021d1"
+      },
+      "receipt": {
+        "bytes": 38785,
+        "path": "runs/lean_table_checker/kernel_pilot_20261018_v18/bundles/fb92822a7dba4b33b147e5005769327f/receipts/9838f09541184445931ab74d32c8aa14/receipt.json",
+        "sha256": "65ddbcb52c182dd4e60ac54849d09a39992acf6b4b05c52088cc1bc9f6f12ba6"
+      },
+      "returncode": 0,
+      "source": {
+        "bytes": 17339,
+        "path": "build/lean_table_checker/kernel_pilot_v18/source/Mahjong/PilotGameNode9V18.lean",
+        "sha256": "f2f3c3b83a1382250b9077978de94b49188d76e8d9f6bb188045af6227e740ff"
+      },
+      "status": "PASS",
+      "timed_out": false,
+      "wall_seconds": 13.34399999998277
+    },
+    {
+      "child_cpu_seconds": 4.203125,
+      "mode": "compile",
+      "module": "Mahjong.PilotGameV18",
+      "peak_job_committed_bytes": 891379712,
+      "peak_process_working_set_bytes": 478482432,
+      "policy_error": null,
+      "published_module": {
+        "bytes": 409264,
+        "path": "build/lean_table_checker/kernel_pilot_v18/modules/Mahjong/PilotGameV18.olean",
+        "sha256": "79348d1604246be0f4c343d6a70ffdf1fd72de32e2cb3450830f387239af7d15"
+      },
+      "receipt": {
+        "bytes": 38038,
+        "path": "runs/lean_table_checker/kernel_pilot_20261018_v18/bundles/fb92822a7dba4b33b147e5005769327f/receipts/c992b387d4cf480186806cbe568b19b2/receipt.json",
+        "sha256": "49d86308107c314671d7119a4476f41b1d3f67fa30dd46665ca941779fc32f7e"
+      },
+      "returncode": 0,
+      "source": {
+        "bytes": 9476,
+        "path": "build/lean_table_checker/kernel_pilot_v18/source/Mahjong/PilotGameV18.lean",
+        "sha256": "b4aa6e96660d87f5af7b1104cbf170940b29628517f7384b20e691ca42222bbf"
+      },
+      "status": "PASS",
+      "timed_out": false,
+      "wall_seconds": 4.657000000006519
+    },
+    {
+      "child_cpu_seconds": 4.25,
+      "mode": "compile",
+      "module": "Mahjong.PilotHarnessV18",
+      "peak_job_committed_bytes": 876572672,
+      "peak_process_working_set_bytes": 448229376,
+      "policy_error": null,
+      "published_module": {
+        "bytes": 7328,
+        "path": "build/lean_table_checker/kernel_pilot_v18/modules/Mahjong/PilotHarnessV18.olean",
+        "sha256": "c184f8c3f1681392e95cb9150663972a9e17bfcedd72b095e762c9df5360396a"
+      },
+      "receipt": {
+        "bytes": 3438,
+        "path": "runs/lean_table_checker/kernel_pilot_20261018_v18/bundles/fb92822a7dba4b33b147e5005769327f/receipts/4a94afa133624e039189cd01e3c41484/receipt.json",
+        "sha256": "3bf00bf873680dba13a77380f20ee97ec9542e66ba4a36da1e78f6b873ce8f4b"
+      },
+      "returncode": 0,
+      "source": {
+        "bytes": 286,
+        "path": "build/lean_table_checker/kernel_pilot_v18/source/Mahjong/PilotHarnessV18.lean",
+        "sha256": "037ae8e87d1d782ff4704255f8cb953ad387c4433d7ef3ad3b5159185c562593"
+      },
+      "status": "PASS",
+      "timed_out": false,
+      "wall_seconds": 6.514999999955762
+    },
+    {
+      "child_cpu_seconds": 3.875,
+      "mode": "compile",
+      "module": "Mahjong.PilotScanBaselineV18",
+      "peak_job_committed_bytes": 924196864,
+      "peak_process_working_set_bytes": 467120128,
+      "policy_error": null,
+      "published_module": {
+        "bytes": 5440,
+        "path": "build/lean_table_checker/kernel_pilot_v18/modules/Mahjong/PilotScanBaselineV18.olean",
+        "sha256": "a3b0058d60a4e6c892e224d3d51229d95eb4073bc15f797f832cbd5675d42832"
+      },
+      "receipt": {
+        "bytes": 36418,
+        "path": "runs/lean_table_checker/kernel_pilot_20261018_v18/bundles/fb92822a7dba4b33b147e5005769327f/receipts/78e7c17f24a1451985db1999aba2c553/receipt.json",
+        "sha256": "3c699a2d84157d56e31d473b9d4af1e5b3b4ae436812fc26fd40301a5704c40a"
+      },
+      "returncode": 0,
+      "source": {
+        "bytes": 376,
+        "path": "build/lean_table_checker/kernel_pilot_v18/source/Mahjong/PilotScanBaselineV18.lean",
+        "sha256": "40219e044ae6a0765d5809debabf94b65125a7f55870d33c7427b21c60f09ca4"
+      },
+      "status": "PASS",
+      "timed_out": false,
+      "wall_seconds": 4.187999999965541
+    },
+    {
+      "child_cpu_seconds": 4.5,
+      "mode": "compile",
+      "module": "Mahjong.PilotScanCount1V18",
+      "peak_job_committed_bytes": 1048293376,
+      "peak_process_working_set_bytes": 586256384,
+      "policy_error": null,
+      "published_module": {
+        "bytes": 12320,
+        "path": "build/lean_table_checker/kernel_pilot_v18/modules/Mahjong/PilotScanCount1V18.olean",
+        "sha256": "8ff5b9ccce21b054171b5006dc0d3bf02999830e2f5bdeee581a35c5420f3558"
+      },
+      "receipt": {
+        "bytes": 36960,
+        "path": "runs/lean_table_checker/kernel_pilot_20261018_v18/bundles/fb92822a7dba4b33b147e5005769327f/receipts/92234043af774f818058a07f18bf54d3/receipt.json",
+        "sha256": "4928ecf2cc564a95ac38e93a839bb76d6e2ac6276db472ce2df15ac82d008749"
+      },
+      "returncode": 0,
+      "source": {
+        "bytes": 746,
+        "path": "build/lean_table_checker/kernel_pilot_v18/source/Mahjong/PilotScanCount1V18.lean",
+        "sha256": "943ee66f01c4e1bf47feaa260753dd739a2dcda5cecb440adad415dfc86e9ac8"
+      },
+      "status": "PASS",
+      "timed_out": false,
+      "wall_seconds": 4.860000000044238
+    },
+    {
+      "child_cpu_seconds": 14.515625,
+      "mode": "compile",
+      "module": "Mahjong.PilotScanCount32V18",
+      "peak_job_committed_bytes": 1746804736,
+      "peak_process_working_set_bytes": 1256124416,
+      "policy_error": null,
+      "published_module": {
+        "bytes": 23160,
+        "path": "build/lean_table_checker/kernel_pilot_v18/modules/Mahjong/PilotScanCount32V18.olean",
+        "sha256": "9b75abfceb022971c769d7e25c58665ba033221888a6509279ac199288220348"
+      },
+      "receipt": {
+        "bytes": 38074,
+        "path": "runs/lean_table_checker/kernel_pilot_20261018_v18/bundles/fb92822a7dba4b33b147e5005769327f/receipts/5eb8d91d219f4520846de4462e76cc04/receipt.json",
+        "sha256": "143da660b6fb926bec0543a5a01e35ae9314d2aba289eb3092d97cf4c187b89e"
+      },
+      "returncode": 0,
+      "source": {
+        "bytes": 1479,
+        "path": "build/lean_table_checker/kernel_pilot_v18/source/Mahjong/PilotScanCount32V18.lean",
+        "sha256": "1be67241f3b0669c10963c4038102f62cb229ddd05613086ff0edb850c4ee493"
+      },
+      "status": "PASS",
+      "timed_out": false,
+      "wall_seconds": 14.922000000020489
+    },
+    {
+      "child_cpu_seconds": 17.4375,
+      "mode": "compile",
+      "module": "Mahjong.PilotScanCount56V18",
+      "peak_job_committed_bytes": 2015694848,
+      "peak_process_working_set_bytes": 1520824320,
+      "policy_error": null,
+      "published_module": {
+        "bytes": 33048,
+        "path": "build/lean_table_checker/kernel_pilot_v18/modules/Mahjong/PilotScanCount56V18.olean",
+        "sha256": "612b217223bbe954dc20d68b0e05403840901f16098a795e72b9630b217c0c46"
+      },
+      "receipt": {
+        "bytes": 38938,
+        "path": "runs/lean_table_checker/kernel_pilot_20261018_v18/bundles/fb92822a7dba4b33b147e5005769327f/receipts/87d5d82a29d1432b993f9f3bd7f0eb5c/receipt.json",
+        "sha256": "147c798ed496b7cad0ab69b1953b538d1d4ba3ae6e70fb4b782a098f0101b94a"
+      },
+      "returncode": 0,
+      "source": {
+        "bytes": 2211,
+        "path": "build/lean_table_checker/kernel_pilot_v18/source/Mahjong/PilotScanCount56V18.lean",
+        "sha256": "91f4afd11294621b7980f8beea31ec78fb0d025b06d315ee73a841f150c4f9b4"
+      },
+      "status": "PASS",
+      "timed_out": false,
+      "wall_seconds": 17.84399999998277
+    },
+    {
+      "child_cpu_seconds": 6.84375,
+      "mode": "compile",
+      "module": "Mahjong.PilotScanCount8V18",
+      "peak_job_committed_bytes": 1552605184,
+      "peak_process_working_set_bytes": 1088704512,
+      "policy_error": null,
+      "published_module": {
+        "bytes": 12320,
+        "path": "build/lean_table_checker/kernel_pilot_v18/modules/Mahjong/PilotScanCount8V18.olean",
+        "sha256": "8c99f119bb81b3744b67289c716f402ea4db8f4259c66f83caf1b83b84cb28d5"
+      },
+      "receipt": {
+        "bytes": 37188,
+        "path": "runs/lean_table_checker/kernel_pilot_20261018_v18/bundles/fb92822a7dba4b33b147e5005769327f/receipts/fd8a9c6904b24939a14343d2812f7340/receipt.json",
+        "sha256": "e0aaf4439de06c0a6bde90ffe53e5adc9908e0c7b4cb1f8485793a0aef9ef9b8"
+      },
+      "returncode": 0,
+      "source": {
+        "bytes": 746,
+        "path": "build/lean_table_checker/kernel_pilot_v18/source/Mahjong/PilotScanCount8V18.lean",
+        "sha256": "5bb8136cde16cb32fbb2831067861fc6c9a3c5a60141a354979c236ef415e0ca"
+      },
+      "status": "PASS",
+      "timed_out": false,
+      "wall_seconds": 7.186999999976251
+    },
+    {
+      "child_cpu_seconds": 4.4375,
+      "mode": "compile",
+      "module": "Mahjong.PilotScanDataV18",
+      "peak_job_committed_bytes": 939098112,
+      "peak_process_working_set_bytes": 499593216,
+      "policy_error": null,
+      "published_module": {
+        "bytes": 848224,
+        "path": "build/lean_table_checker/kernel_pilot_v18/modules/Mahjong/PilotScanDataV18.olean",
+        "sha256": "769365a4eb0730a4e9a4b87f0401c027e8c050487098640fbc8a2a0b08d3af38"
+      },
+      "receipt": {
+        "bytes": 36172,
+        "path": "runs/lean_table_checker/kernel_pilot_20261018_v18/bundles/fb92822a7dba4b33b147e5005769327f/receipts/1af2827975494508b6fa84c1c70a71f3/receipt.json",
+        "sha256": "d5cd91e5565155bb4bd8aad79c4e09c9591a8557514a5eb77fb55d46f8d9fad3"
+      },
+      "returncode": 0,
+      "source": {
+        "bytes": 13506,
+        "path": "build/lean_table_checker/kernel_pilot_v18/source/Mahjong/PilotScanDataV18.lean",
+        "sha256": "733bc89b2b07421a9fe6884d728645029df1d3c75a993dfdf1e25f67f568ea53"
+      },
+      "status": "PASS",
+      "timed_out": false,
+      "wall_seconds": 4.76500000001397
+    },
+    {
+      "child_cpu_seconds": 5.328125,
+      "mode": "compile",
+      "module": "Mahjong.PilotScanV18",
+      "peak_job_committed_bytes": 1050980352,
+      "peak_process_working_set_bytes": 604372992,
+      "policy_error": null,
+      "published_module": {
+        "bytes": 400672,
+        "path": "build/lean_table_checker/kernel_pilot_v18/modules/Mahjong/PilotScanV18.olean",
+        "sha256": "39e40d9c5f1104328cb36cb64510bd445f9570e078ad3e3385940645305319a5"
+      },
+      "receipt": {
+        "bytes": 37044,
+        "path": "runs/lean_table_checker/kernel_pilot_20261018_v18/bundles/fb92822a7dba4b33b147e5005769327f/receipts/873fe4f06851477e9c26f0cb8cc8700a/receipt.json",
+        "sha256": "97ebedf87ac47305ecebe2948a7e5da3724fb23a7d0a9ae87ed8688d7650519d"
+      },
+      "returncode": 0,
+      "source": {
+        "bytes": 8346,
+        "path": "build/lean_table_checker/kernel_pilot_v18/source/Mahjong/PilotScanV18.lean",
+        "sha256": "cf09d11582e5425f566612fa30bc97254486d9452db0e618dc9fe765db4bb6c9"
+      },
+      "status": "PASS",
+      "timed_out": false,
+      "wall_seconds": 5.51600000000326
+    }
+  ],
+  "exact_scope": {
+    "N_rows": 15,
+    "N_start_rows": [
+      35
+    ],
+    "P_rows": 41,
+    "P_start_rows": [
+      50,
+      55
+    ],
+    "original_game_nodes": 11,
+    "original_game_start_tile_count": 32,
+    "original_hot_checker_distinct_rows": 56,
+    "samples_overlap": true,
+    "scalar_scanned_rows": [
+      0,
+      35
+    ]
+  },
+  "exploratory_failures": [
+    {
+      "child_cpu_seconds": 3.9375,
+      "false_proposition_rejected_by_lean": true,
+      "mode": "compile",
+      "module": "Mahjong.PilotRejectCoverV18",
+      "peak_job_committed_bytes": 867434496,
+      "peak_process_working_set_bytes": 434180096,
+      "policy_error": null,
+      "published_module": null,
+      "receipt": {
+        "bytes": 36090,
+        "path": "runs/lean_table_checker/kernel_pilot_20261018_v18/attempts/23675e4b17264157b92f8473a92f9c79/receipt.json",
+        "sha256": "f96d863407a357d4007bca5d48eed86f537d1d75aec4724270b239fb1d97cf22"
+      },
+      "returncode": 1,
+      "source": {
+        "bytes": 411,
+        "path": "build/lean_table_checker/kernel_pilot_v18/source/Mahjong/PilotRejectCoverV18.lean",
+        "sha256": "62c9c39e46144b5c63be0d7da6c09fa8d2608b922ff087e362f14733d5b26625"
+      },
+      "status": "FAILED_OR_INCOMPLETE",
+      "timed_out": false,
+      "wall_seconds": 4.469000000040978
+    },
+    {
+      "child_cpu_seconds": 68.859375,
+      "mode": "compile",
+      "module": "Mahjong.PilotActualGameV18",
+      "peak_job_committed_bytes": 3033489408,
+      "peak_process_working_set_bytes": 2560716800,
+      "policy_error": null,
+      "published_module": null,
+      "receipt": {
+        "bytes": 37429,
+        "path": "runs/lean_table_checker/kernel_pilot_20261018_v18/attempts/40757d4a7fe94443881179251a15703c/receipt.json",
+        "sha256": "e21a493603c8cf8210a26e39e633a00aeb9507b0d1b53d4a4c4b0c71fc47f6dc"
+      },
+      "returncode": 1,
+      "source": {
+        "bytes": 2109,
+        "path": "build/lean_table_checker/kernel_pilot_v18/source/Mahjong/PilotActualGameV18.lean",
+        "sha256": "393f0880e7fc4c74a2602294986c5c0172de370518a46cd0cfe5ae658b46db9c"
+      },
+      "status": "FAILED_OR_INCOMPLETE",
+      "timed_out": false,
+      "wall_seconds": 69.39100000000326
+    },
+    {
+      "child_cpu_seconds": 3.9375,
+      "mode": "compile",
+      "module": "Mahjong.PilotGameV18",
+      "peak_job_committed_bytes": 880041984,
+      "peak_process_working_set_bytes": 461586432,
+      "policy_error": null,
+      "published_module": null,
+      "receipt": {
+        "bytes": 35619,
+        "path": "runs/lean_table_checker/kernel_pilot_20261018_v18/attempts/597dfe4751004ec2b473940c02c68859/receipt.json",
+        "sha256": "070d8813c9a1bba8d775ada2ef093553bcf30e852be742f4ae145abf1d51e51c"
+      },
+      "returncode": 1,
+      "source": {
+        "bytes": 9429,
+        "path": "build/lean_table_checker/kernel_pilot_v18/source/Mahjong/PilotGameV18.lean",
+        "sha256": "80d35facf3971866e76ef0a8611eeb9a1c5840e1f3938a64c914496c45f3a873"
+      },
+      "status": "FAILED_OR_INCOMPLETE",
+      "timed_out": false,
+      "wall_seconds": 4.23399999999674
+    },
+    {
+      "child_cpu_seconds": 1.890625,
+      "mode": "compile",
+      "module": "Mahjong.PilotScanV18",
+      "peak_job_committed_bytes": 456040448,
+      "peak_process_working_set_bytes": 73457664,
+      "policy_error": null,
+      "published_module": null,
+      "receipt": {
+        "bytes": 3121,
+        "path": "runs/lean_table_checker/kernel_pilot_20261018_v18/attempts/676fb011b6544f8590baebb18ac4cdbb/receipt.json",
+        "sha256": "7a9eb61c408e362c2e95ff4b29b7fbc96aa67e109706be31b0d52844f6ce9203"
+      },
+      "returncode": 1,
+      "source": {
+        "bytes": 7788,
+        "path": "build/lean_table_checker/kernel_pilot_v18/source/Mahjong/PilotScanV18.lean",
+        "sha256": "720e137670a207b0f3041e6693cb3f6d5637033c0ddcbefec17855f7e81d0c98"
+      },
+      "status": "FAILED_OR_INCOMPLETE",
+      "timed_out": false,
+      "wall_seconds": 1.9209999999729916
+    },
+    {
+      "child_cpu_seconds": 4.140625,
+      "false_proposition_rejected_by_lean": true,
+      "mode": "compile",
+      "module": "Mahjong.PilotRejectLabelV18",
+      "peak_job_committed_bytes": 915836928,
+      "peak_process_working_set_bytes": 456212480,
+      "policy_error": null,
+      "published_module": null,
+      "receipt": {
+        "bytes": 36081,
+        "path": "runs/lean_table_checker/kernel_pilot_20261018_v18/attempts/726e6cbfe8594e50a2094a53d0e116a4/receipt.json",
+        "sha256": "09b5eb5d07554a36fc1c3a7fe5575fa29d93bf2147ab80df13eaab25c496c6d0"
+      },
+      "returncode": 1,
+      "source": {
+        "bytes": 685,
+        "path": "build/lean_table_checker/kernel_pilot_v18/source/Mahjong/PilotRejectLabelV18.lean",
+        "sha256": "94884d0ac588da00b6bc6d6fc6a0449d9ed220b78d91714f3223c10fbe0baa81"
+      },
+      "status": "FAILED_OR_INCOMPLETE",
+      "timed_out": false,
+      "wall_seconds": 4.703000000037719
+    },
+    {
+      "child_cpu_seconds": 4.1875,
+      "mode": "compile",
+      "module": "Mahjong.PilotScanV18",
+      "peak_job_committed_bytes": 919326720,
+      "peak_process_working_set_bytes": 467410944,
+      "policy_error": null,
+      "published_module": null,
+      "receipt": {
+        "bytes": 35273,
+        "path": "runs/lean_table_checker/kernel_pilot_20261018_v18/attempts/756e873e4d23442e838fe2694fdb1e31/receipt.json",
+        "sha256": "a0d5602f3236ca26ba753b66e899a3cfd8be49deb92f50f30c3e9af26a922b81"
+      },
+      "returncode": 1,
+      "source": {
+        "bytes": 7788,
+        "path": "build/lean_table_checker/kernel_pilot_v18/source/Mahjong/PilotScanV18.lean",
+        "sha256": "720e137670a207b0f3041e6693cb3f6d5637033c0ddcbefec17855f7e81d0c98"
+      },
+      "status": "FAILED_OR_INCOMPLETE",
+      "timed_out": false,
+      "wall_seconds": 4.4060000000172295
+    },
+    {
+      "child_cpu_seconds": 45.359375,
+      "mode": "compile",
+      "module": "Mahjong.PilotGameChecksV18",
+      "peak_job_committed_bytes": 2636288000,
+      "peak_process_working_set_bytes": 2148392960,
+      "policy_error": null,
+      "published_module": null,
+      "receipt": {
+        "bytes": 37418,
+        "path": "runs/lean_table_checker/kernel_pilot_20261018_v18/attempts/78be8c8a3a3c4797b6278fbf1aaa7b1a/receipt.json",
+        "sha256": "5b9924c718514b580db55c103de932fba659dc6fa0b37cfeff5f0e8d0ebce36d"
+      },
+      "returncode": 1,
+      "source": {
+        "bytes": 605,
+        "path": "build/lean_table_checker/kernel_pilot_v18/source/Mahjong/PilotGameChecksV18.lean",
+        "sha256": "6d94629aa767838014f746c2ed8728649297e9d31970eaca1d2405cd2b4b95cd"
+      },
+      "status": "FAILED_OR_INCOMPLETE",
+      "timed_out": false,
+      "wall_seconds": 45.875
+    },
+    {
+      "child_cpu_seconds": 4.046875,
+      "mode": "compile",
+      "module": "Mahjong.PilotGameV18",
+      "peak_job_committed_bytes": 879583232,
+      "peak_process_working_set_bytes": 461746176,
+      "policy_error": null,
+      "published_module": null,
+      "receipt": {
+        "bytes": 35620,
+        "path": "runs/lean_table_checker/kernel_pilot_20261018_v18/attempts/826e5a1dbc7e4d4ca2fd81dd92f2e807/receipt.json",
+        "sha256": "fc6c986ee686aa28ce81ccfd75238ccc24fb12422b164deedf37da725453650a"
+      },
+      "returncode": 1,
+      "source": {
+        "bytes": 9439,
+        "path": "build/lean_table_checker/kernel_pilot_v18/source/Mahjong/PilotGameV18.lean",
+        "sha256": "b9a9a0c24f70b7ad70ae9e7ab6e1c0654fa6a28b2fb883f3a53929a3fc5ea7ed"
+      },
+      "status": "FAILED_OR_INCOMPLETE",
+      "timed_out": false,
+      "wall_seconds": 4.35899999999674
+    },
+    {
+      "child_cpu_seconds": 57.859375,
+      "mode": "replay",
+      "module": "Mahjong.PilotHarnessV18",
+      "peak_job_committed_bytes": 998551552,
+      "peak_process_working_set_bytes": 758595584,
+      "policy_error": null,
+      "published_module": null,
+      "receipt": {
+        "bytes": 2561,
+        "path": "runs/lean_table_checker/kernel_pilot_20261018_v18/attempts/b67bc86df03d41dba0f25b1c9e5dacae/receipt.json",
+        "sha256": "7a07d01cd6140cc356fa6cee112f22959437a8f76644a3fffd2a4f3868f134e6"
+      },
+      "returncode": 124,
+      "source": {
+        "bytes": 286,
+        "path": "build/lean_table_checker/kernel_pilot_v18/source/Mahjong/PilotHarnessV18.lean",
+        "sha256": "037ae8e87d1d782ff4704255f8cb953ad387c4433d7ef3ad3b5159185c562593"
+      },
+      "status": "FAILED_OR_INCOMPLETE",
+      "timed_out": true,
+      "wall_seconds": 60.125
+    },
+    {
+      "child_cpu_seconds": 0.09375,
+      "mode": "compile",
+      "module": "Mahjong.PilotGameCheckBridgeV18",
+      "peak_job_committed_bytes": 40214528,
+      "peak_process_working_set_bytes": 46989312,
+      "policy_error": null,
+      "published_module": null,
+      "receipt": {
+        "bytes": 37962,
+        "path": "runs/lean_table_checker/kernel_pilot_20261018_v18/attempts/be3c810a41464f01a93f740ddfda339a/receipt.json",
+        "sha256": "007eb4702c0d8adf12c69ffe356aaf2435e51e5b53060faf8ceae477aecc95f6"
+      },
+      "returncode": 1,
+      "source": {
+        "bytes": 3009,
+        "path": "build/lean_table_checker/kernel_pilot_v18/source/Mahjong/PilotGameCheckBridgeV18.lean",
+        "sha256": "ca32f3b8b41382873aaf368abcd7ff9e09403021c79cbbaac950c3f8dff04496"
+      },
+      "status": "FAILED_OR_INCOMPLETE",
+      "timed_out": false,
+      "wall_seconds": 0.43799999996554106
+    },
+    {
+      "child_cpu_seconds": 11.796875,
+      "mode": "compile",
+      "module": "Mahjong.PilotGameChecksV18",
+      "peak_job_committed_bytes": 1945681920,
+      "peak_process_working_set_bytes": 1489108992,
+      "policy_error": null,
+      "published_module": null,
+      "receipt": {
+        "bytes": 37946,
+        "path": "runs/lean_table_checker/kernel_pilot_20261018_v18/attempts/e044e75c72244f72a024b9628ab20e9a/receipt.json",
+        "sha256": "c23d4656f6adad1c06286b3ce4442d73068f6b44081497e19975816573d707a0"
+      },
+      "returncode": 1,
+      "source": {
+        "bytes": 23589,
+        "path": "build/lean_table_checker/kernel_pilot_v18/source/Mahjong/PilotGameChecksV18.lean",
+        "sha256": "fccf307a64371237f4964200f8bdf68d01f8893e0465d4c44fa8bca4a3b1416e"
+      },
+      "status": "FAILED_OR_INCOMPLETE",
+      "timed_out": false,
+      "wall_seconds": 11.90600000001723
+    }
+  ],
+  "extrapolation_is_not_a_bound_or_a_global_runtime_prediction": true,
+  "final_kernel_empty_theorem": false,
+  "frozen_cold_replay": {
+    "child_cpu_seconds": 175.40625,
+    "mode": "replay",
+    "module": "Mahjong.PilotClosureV18",
+    "peak_job_committed_bytes": 1589190656,
+    "peak_process_working_set_bytes": 1327865856,
+    "policy_error": null,
+    "published_module": null,
+    "receipt": {
+      "bytes": 47596,
+      "path": "runs/lean_table_checker/kernel_pilot_20261018_v18/attempts/90dd086fec074a54889ea9fb2442a447/receipt.json",
+      "sha256": "215e4a9822a6a385a8e69df1603cb3fb1cacc411a43e3759a5e2dddcd5a63181"
+    },
+    "returncode": 0,
+    "source": {
+      "bytes": 1788,
+      "path": "runs/lean_table_checker/kernel_pilot_20261018_v18/bundles/fb92822a7dba4b33b147e5005769327f/source/Mahjong/PilotClosureV18.lean",
+      "sha256": "83b9b8a0beeab7c9ac13a192a1c3207d81f2d7647140babf98a5f20d5ce9896d"
+    },
+    "status": "PASS",
+    "timed_out": false,
+    "wall_seconds": 176.56200000003446
+  },
+  "full_24h_required_rows_per_second": 9010797.040532408,
+  "full_launch_allowed": false,
+  "full_scan_started": false,
+  "full_table_24h_admitted": false,
+  "full_v17_input_instantiated": false,
+  "ideal_16_lane_gap_factor": 124294.44159914089,
+  "ideal_16_lane_sample_rate": 72.49557522123894,
+  "known_limitations": [
+    "The strategy conclusions are for explicit nonempty 32-tile positions, not empty.",
+    "The 56 hot-row proofs use captured read footprints, not a complete V17 input certificate.",
+    "The sparse original-game checker and the V17 hot checker are different functions.",
+    "SHA manifests bind bytes operationally; they are not logical acceptance proofs.",
+    "No full-table or 24-hour launch is authorized by this pilot."
+  ],
+  "negative_controls": [
+    {
+      "child_cpu_seconds": 3.9375,
+      "false_proposition_rejected_by_lean": true,
+      "mode": "compile",
+      "module": "Mahjong.PilotRejectCoverV18",
+      "peak_job_committed_bytes": 867434496,
+      "peak_process_working_set_bytes": 434180096,
+      "policy_error": null,
+      "published_module": null,
+      "receipt": {
+        "bytes": 36090,
+        "path": "runs/lean_table_checker/kernel_pilot_20261018_v18/attempts/23675e4b17264157b92f8473a92f9c79/receipt.json",
+        "sha256": "f96d863407a357d4007bca5d48eed86f537d1d75aec4724270b239fb1d97cf22"
+      },
+      "returncode": 1,
+      "source": {
+        "bytes": 411,
+        "path": "build/lean_table_checker/kernel_pilot_v18/source/Mahjong/PilotRejectCoverV18.lean",
+        "sha256": "62c9c39e46144b5c63be0d7da6c09fa8d2608b922ff087e362f14733d5b26625"
+      },
+      "status": "FAILED_OR_INCOMPLETE",
+      "timed_out": false,
+      "wall_seconds": 4.469000000040978
+    },
+    {
+      "child_cpu_seconds": 4.140625,
+      "false_proposition_rejected_by_lean": true,
+      "mode": "compile",
+      "module": "Mahjong.PilotRejectLabelV18",
+      "peak_job_committed_bytes": 915836928,
+      "peak_process_working_set_bytes": 456212480,
+      "policy_error": null,
+      "published_module": null,
+      "receipt": {
+        "bytes": 36081,
+        "path": "runs/lean_table_checker/kernel_pilot_20261018_v18/attempts/726e6cbfe8594e50a2094a53d0e116a4/receipt.json",
+        "sha256": "09b5eb5d07554a36fc1c3a7fe5575fa29d93bf2147ab80df13eaab25c496c6d0"
+      },
+      "returncode": 1,
+      "source": {
+        "bytes": 685,
+        "path": "build/lean_table_checker/kernel_pilot_v18/source/Mahjong/PilotRejectLabelV18.lean",
+        "sha256": "94884d0ac588da00b6bc6d6fc6a0449d9ed220b78d91714f3223c10fbe0baa81"
+      },
+      "status": "FAILED_OR_INCOMPLETE",
+      "timed_out": false,
+      "wall_seconds": 4.703000000037719
+    }
+  ],
+  "pilot_module_bytes": 3645360,
+  "sample_incremental_cpu_rows_per_second": 4.530973451327434,
+  "sample_incremental_wall_rows_per_second": 4.504081824150384,
+  "saved_module_bytes": 57788336,
+  "schema": "SMALL_ACTUAL_CLOSED_KERNEL_PILOT_V18",
+  "small_pilot_closed": true,
+  "source_bytes": 153906,
+  "total_global_rows": 778532864302,
+  "user_hold": {
+    "bytes": 87,
+    "path": "runs/lean_table_checker/campaign_indexed_20261018_v16/campaigns/overnight_v16_indexed_r3i/STOP",
+    "sha256": "93cb3749c24d6b833faceba6293b3144cd3385a86864944c93561351cbc33b88"
+  },
+  "wall_sum_is_not_parallel_elapsed_seconds": true
+}

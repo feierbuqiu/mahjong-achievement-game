@@ -1,0 +1,459 @@
+{
+  "CPU_limit_readback_confirmed": true,
+  "GPU_contexts": 0,
+  "LEAN_PATH": "<RESEARCH_ROOT>\\build\\lean_table_checker\\acceleration_v19\\compression\\bridge_modules;<RESEARCH_ROOT>\\build\\lean_table_checker\\end_to_end_v17\\modules",
+  "actual_Mahjong_inputs_instantiated": false,
+  "actual_input_instantiation_not_claimed": true,
+  "argv": [
+    "<RESEARCH_ROOT>\\build\\toolchain\\lean-4.33.1-windows\\bin\\lean.exe",
+    "--trust=0",
+    "-j1",
+    "-M2048",
+    "-R",
+    "<RESEARCH_ROOT>\\build\\lean_table_checker\\acceleration_v19\\compression\\source",
+    "-o",
+    "<RESEARCH_ROOT>\\runs\\lean_table_checker\\acceleration_20261018_v19\\compression\\compilations\\0e80fa647a3e43a094fe85a9d9d7af08\\modules\\Mahjong\\LocalProductTensorPlanV19.olean",
+    "<RESEARCH_ROOT>\\build\\lean_table_checker\\acceleration_v19\\compression\\source\\Mahjong\\LocalProductTensorPlanV19.lean"
+  ],
+  "checked_utc": "2026-10-18T07:18:01.870658+00:00",
+  "child_exit_confirmed": true,
+  "compiled_module": {
+    "bytes": 1226856,
+    "path": "runs/lean_table_checker/acceleration_20261018_v19/compression/compilations/0e80fa647a3e43a094fe85a9d9d7af08/modules/Mahjong/LocalProductTensorPlanV19.olean",
+    "sha256": "86e7f6a57559503967f7fa69371c1a7426e2fc2d07452487e7909fe69a1b628b"
+  },
+  "compiler": {
+    "bytes": 83456,
+    "path": "build/toolchain/lean-4.33.1-windows/bin/lean.exe",
+    "sha256": "af49bacfabaa1fea71332ca0feae0fa1a60912219d5902291adc79f905bffb8d"
+  },
+  "declared_lane_CPU_percent": 20,
+  "declared_lane_memory_bytes": 3000000000,
+  "dependency_modules": [
+    {
+      "bytes": 744256,
+      "path": "build/lean_table_checker/acceleration_v19/compression/bridge_modules/Mahjong/BitCompactV19.olean",
+      "sha256": "26186ff05e33aa8b4bb105db3f761eb9e2e9c8a7fd2dd2940b4e6f488473a214"
+    },
+    {
+      "bytes": 97264,
+      "path": "build/lean_table_checker/acceleration_v19/compression/bridge_modules/PackedRecurrenceV19.olean",
+      "sha256": "d3cade40ef724ca61d74a1ee32f147fccc3d58f98eec96401feea37a85e2da8b"
+    },
+    {
+      "bytes": 332608,
+      "path": "build/lean_table_checker/acceleration_v19/compression/bridge_modules/Mahjong/FlatPlaneV19.olean",
+      "sha256": "d17c9f7237f3744d8d719219aeab8f8bd6dcbed8c1cc936d2d5f1f97e2043a15"
+    },
+    {
+      "bytes": 779464,
+      "path": "build/lean_table_checker/acceleration_v19/compression/bridge_modules/Mahjong/ScatterV19.olean",
+      "sha256": "40319e7aecc8e6335ab353fe65d16ebb7575f74746ae46e15fb6b70b87f82616"
+    },
+    {
+      "bytes": 393072,
+      "path": "build/lean_table_checker/acceleration_v19/compression/bridge_modules/Mahjong/BlockReachV19.olean",
+      "sha256": "8aed536c184dff7063a19583eb66b704e0151e817b0f686fe0d1054549e05661"
+    },
+    {
+      "bytes": 54936,
+      "path": "build/lean_table_checker/acceleration_v19/compression/bridge_modules/Mahjong/BlockPlanFastSource.olean",
+      "sha256": "79c3aed118b7d9f8775d9466eb89b5d78e1a01a283f8a069b3a5bb759da91e5d"
+    },
+    {
+      "bytes": 1211152,
+      "path": "build/lean_table_checker/acceleration_v19/compression/bridge_modules/Mahjong/BlockPlanSoundness.olean",
+      "sha256": "6594fe23a04fc641fffc858a4d4c590db8bd5ec1be0609ab315268e343e6f9a0"
+    },
+    {
+      "bytes": 622272,
+      "path": "build/lean_table_checker/acceleration_v19/compression/bridge_modules/Mahjong/PackedPlanBridgeV19.olean",
+      "sha256": "362cec6cf186a7248fb66adcaee69d3fd4969a50d7588fd05e12ecbf305ba47e"
+    },
+    {
+      "bytes": 1173152,
+      "path": "build/lean_table_checker/acceleration_v19/compression/bridge_modules/Mahjong/StrictTargetGeometryV19.olean",
+      "sha256": "8f5cc5d6b41361f9da29e7a7948ccf8a780e06c9d42772321c9ed95c972383f7"
+    },
+    {
+      "bytes": 410144,
+      "path": "build/lean_table_checker/acceleration_v19/compression/bridge_modules/Mahjong/NatLabelLayerV19.olean",
+      "sha256": "c41796f81d695fab7463c328a2f4688e0b25b1b04031be10d8f27a4e1aadcab9"
+    },
+    {
+      "bytes": 191856,
+      "path": "build/lean_table_checker/acceleration_v19/compression/bridge_modules/Mahjong/PadTensorV19.olean",
+      "sha256": "17290b8e7fb5fc38309096d8bb4f2f08033030547c6c3c88466352ce471632f8"
+    },
+    {
+      "bytes": 1345648,
+      "path": "build/lean_table_checker/acceleration_v19/compression/bridge_modules/Mahjong/BitIndexGeometryV19.olean",
+      "sha256": "5c84466ba2f884630c8bfb4bb0da50625beab5666551d73d1bebfede183ed3b1"
+    },
+    {
+      "bytes": 259464,
+      "path": "build/lean_table_checker/acceleration_v19/compression/bridge_modules/TensorReachV19.olean",
+      "sha256": "690c907e7e4cf9fde0ef74896c5d88898d4f3a4764b762a7c89b510b5b8c361d"
+    },
+    {
+      "bytes": 1031912,
+      "path": "build/lean_table_checker/acceleration_v19/compression/bridge_modules/Mahjong/TensorLayoutSemanticsV19.olean",
+      "sha256": "8c5914bc1b6b8a2ae06287be9e87f15a2f5566d68a89ddec446b38f3abf405a2"
+    },
+    {
+      "bytes": 656736,
+      "path": "build/lean_table_checker/acceleration_v19/compression/bridge_modules/Mahjong/GroupProductStateV19.olean",
+      "sha256": "962be591c9a74f03c3ba0cfa421c76575696fb39b736454fabd9094407bb3384"
+    },
+    {
+      "bytes": 1088816,
+      "path": "build/lean_table_checker/acceleration_v19/compression/bridge_modules/Mahjong/ProductTransitionGeometryV19.olean",
+      "sha256": "3b3208d0d3c05c0a8fa1d64c16ee5fe248e8032cf0c9f8c7bdb56b72b5ae7fb9"
+    }
+  ],
+  "elapsed_seconds": 5.204000000027008,
+  "empty_game_Lean": "NOT_VERIFIED",
+  "error": null,
+  "full_scan_started": false,
+  "game_rows_executed": 0,
+  "kernel_job_limits_readback_confirmed": true,
+  "kill_on_close": true,
+  "memory_limit_readback_confirmed": true,
+  "module": "Mahjong.LocalProductTensorPlanV19",
+  "peak_job_committed_bytes": 992935936,
+  "proof_dependency_fingerprints": [
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "name": "Mahjong.LocalProductTensorPlanV19.bound_word_facts"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "name": "Mahjong.LocalProductTensorPlanV19.numeric_facts"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "name": "Mahjong.LocalProductTensorPlanV19.numeric_label"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "name": "Mahjong.LocalProductTensorPlanV19.numeric_hit"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "name": "Mahjong.LocalProductTensorPlanV19.numeric_ref"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "name": "Mahjong.LocalProductTensorPlanV19.actual_safe"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "name": "Mahjong.LocalProductTensorPlanV19.source_id_generic"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "name": "Mahjong.LocalProductTensorPlanV19.ids_axis"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "name": "Mahjong.LocalProductTensorPlanV19.actual_source_id"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "name": "Mahjong.LocalProductTensorPlanV19.key_mem"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "name": "Mahjong.LocalProductTensorPlanV19.source_normalized"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "name": "Mahjong.LocalProductTensorPlanV19.source_geometry"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "name": "Mahjong.LocalProductTensorPlanV19.source_label"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "name": "Mahjong.LocalProductTensorPlanV19.source_ref"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "name": "Mahjong.LocalProductTensorPlanV19.honor_facts"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "name": "Mahjong.LocalProductTensorPlanV19.honor_hit"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "name": "Mahjong.LocalProductTensorPlanV19.honor_ref"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "name": "Mahjong.LocalProductTensorPlanV19.plan_facts"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "name": "Mahjong.LocalProductTensorPlanV19.member_bound"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "name": "Mahjong.LocalProductTensorPlanV19.numeric_bounds"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "name": "Mahjong.LocalProductTensorPlanV19.honor_bound"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "name": "Mahjong.LocalProductTensorPlanV19.actual_numeric_key"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "name": "Mahjong.LocalProductTensorPlanV19.actual_honor_key"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "name": "Mahjong.LocalProductTensorPlanV19.actual_numeric_metadata"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "name": "Mahjong.LocalProductTensorPlanV19.actual_honor_metadata"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "name": "Mahjong.LocalProductTensorPlanV19.successor_ref"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "name": "Mahjong.LocalProductTensorPlanV19.checked_planes"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "name": "Mahjong.LocalProductTensorPlanV19.successor_reaches"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "name": "Mahjong.LocalProductTensorPlanV19.reaches_successor"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "name": "Mahjong.LocalProductTensorPlanV19.reach_iff_actual_children"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "name": "Mahjong.LocalProductTensorPlanV19.accepted_each"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "name": "Mahjong.LocalProductTensorPlanV19.packed_normal_strategy"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "name": "Mahjong.LocalProductTensorPlanV19.packed_original_strategy"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "name": "Mahjong.LocalProductTensorPlanV19.source_word_facts"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "name": "Mahjong.LocalProductTensorPlanV19.source_outside_target"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "name": "Mahjong.LocalProductTensorPlanV19.source_in_target_rejected"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "name": "Mahjong.LocalProductTensorPlanV19.missing_numeric_target_rejected"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "name": "Mahjong.LocalProductTensorPlanV19.bad_target_axis_rejected"
+    }
+  ],
+  "published_module": {
+    "bytes": 1226856,
+    "path": "build/lean_table_checker/acceleration_v19/compression/bridge_modules/Mahjong/LocalProductTensorPlanV19.olean",
+    "sha256": "86e7f6a57559503967f7fa69371c1a7426e2fc2d07452487e7909fe69a1b628b"
+  },
+  "returncode": 0,
+  "schema": "ACTUAL_BOUNDED_V19_COMPRESSION_THEOREM_COMPILATION",
+  "source": {
+    "bytes": 54351,
+    "path": "build/lean_table_checker/acceleration_v19/compression/source/Mahjong/LocalProductTensorPlanV19.lean",
+    "sha256": "eac88c39af5f3dbec3dc1d2bb4e7788a52ff1f617fb6952932012b7fb6560e0b"
+  },
+  "source_and_imported_math_oleans_readlocked_until_child_exit": true,
+  "source_snapshot": {
+    "bytes": 54351,
+    "path": "runs/lean_table_checker/acceleration_20261018_v19/compression/compilations/0e80fa647a3e43a094fe85a9d9d7af08/source_snapshot.lean",
+    "sha256": "eac88c39af5f3dbec3dc1d2bb4e7788a52ff1f617fb6952932012b7fb6560e0b"
+  },
+  "status": "PASS_KERNEL_COMPILATION_ONLY",
+  "stderr": {
+    "bytes": 0,
+    "path": "runs/lean_table_checker/acceleration_20261018_v19/compression/compilations/0e80fa647a3e43a094fe85a9d9d7af08/stderr.log",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "stdout": {
+    "bytes": 4244,
+    "path": "runs/lean_table_checker/acceleration_20261018_v19/compression/compilations/0e80fa647a3e43a094fe85a9d9d7af08/stdout.log",
+    "sha256": "52493d32c34f18c66ffed72494b330fad2cec46416051a641528cf1740bb4f96"
+  }
+}

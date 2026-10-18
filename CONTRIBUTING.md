@@ -4,11 +4,11 @@ Thank you for helping make this result inspectable and reproducible.
 Use English for repository documentation, issues, pull requests, and commit
 messages. Keep changes focused and explain any effect on the research claim.
 
-The [current project status](docs/PROJECT_STATUS.md) records a planned final
-compiled-Lean campaign with a conditional sub-20-hour expectation. The full
-scan is awaiting independent correctness review and has not started. Deeper
-formal results, independent arguments, alternative methods, corrections and
-reproducibility improvements remain welcome.
+The [current project status](docs/PROJECT_STATUS.md) concerns persistent kernel
+certificates and compression. Generic composition and a small closed actual-data
+pilot are recorded; the actual opening instance and reliable whole-task time
+bound remain open. Independent arguments, deeper formal review, alternative
+certificate designs, corrections and reproducibility work remain welcome.
 
 ## Workflow
 

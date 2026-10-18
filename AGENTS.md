@@ -3,22 +3,24 @@
 Read README.md, RESEARCH_STATUS.json, docs/RULES.md, docs/EVIDENCE.md, and
 docs/REPRODUCIBILITY.md before changing research claims or algorithms.
 
-- The published computational opening result is P (second-player win), with
-  complete reverse replay. Read research/2026-10-18/README.md and docs/PROJECT_STATUS.md
-  for the current V16 progress. Complete compiled checks cover layers 32–34,
-  303,054,865 unique rows. The full campaign has not started and its correctness
-  is under independent review. The sub-20-hour finish is a conditional working
-  expectation; 13.0256 hours includes 25% margin on known costs, while six
-  production costs and final admission remain unresolved. The opening theorem
-  is NOT_VERIFIED. Keep compiled execution and a closed kernel proof distinct.
-  The October outlook supersedes the earlier decision to stop active work;
-  v1.0.0 remains an immutable historical snapshot. Do not rewrite its papers.
-  Preserve the user's STOP. A publication/status request does not authorize
-  new research jobs, compiler/GPU/WSL runs, seal/authority creation, schedules,
-  compute provisioning or a full scan. Read-only file/receipt checks are appropriate.
-  Existing bounded CI replays of the older published proof package remain distinct
-  from the held V16 full campaign. Do not confuse historical UNKNOWN with the
-  recorded computational result.
+- The recorded computational opening result is P (second-player win), with
+  full reverse replay sharing the rules/index. The actual empty-game Lean
+  theorem remains NOT_VERIFIED. Read research/2026-10-18-kernel/README.md and
+  docs/PROJECT_STATUS.md for the current persistent-kernel-certificate work.
+  V17 generic composition, V18 closed nonempty actual-data proofs and V19
+  numeric/layout components retain different scopes. The historical compiled
+  layers 32–34 total 303,054,865 rows; these are not new closed kernel certificates.
+  The old 13.0256-hour native screen is a different workload. No reliable
+  20/24-hour end-to-end construction/persistence/assembly/replay bound exists.
+  Do not repeat the superseded imminent-finish forecast. General closure
+  theorems are available; the actual whole input/certificate is uninstantiated.
+  Respect the legacy whole-table STOP. This publication request authorizes
+  source/receipt inspection and required publication CI, not new research runs,
+  Lean/GPU/Native/WSL launches, schedules, compute provisioning or authority changes.
+  Existing bounded CI replays concern the older published proof package.
+  Keep source-only V19 extracts distinct from a complete portable replay bundle.
+  Preserve both dated papers and immutable releases. Historical UNKNOWN is not
+  a new computational classification, and component PASS is not an opening proof.
 - Keep the shared-pool rules, seven distinct pairs, all physical numeric
   additions, and the stated symmetry group unchanged unless explicitly asked.
 - UNKNOWN/timeouts are never P. N does not mean SG=1. Static winning profiles
