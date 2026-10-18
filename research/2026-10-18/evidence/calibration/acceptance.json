@@ -1,0 +1,840 @@
+{
+  "GPU_context_READY": {
+    "Lean_rows_verified": 0,
+    "device_output_scratch_bytes": 8388608,
+    "event": "SESSION_READY",
+    "fixed_hash_seconds": 0.6124748000000011,
+    "fixed_identity": {
+      "baseline_source_suffix_sha256": "b2d0cba8398e5db524969ffd4fef32dcd682f94d42d72c1abfae7d025f53483e",
+      "combined_source_sha256": "db89a6ad84b9ec0ad4f89c72a35f4c953ab35715520f4ce2f10080e0302ab609",
+      "device_output_scratch_bytes": 8388608,
+      "fixed_device_bytes": 15775712,
+      "implementation_revision": "INDEXED_ACTUAL_NEXT_BYTE_BOUNDED_8MI_SCRATCH_V16",
+      "indexed_byte_layout": {
+        "N_actual_next_list_index_modulus": 32,
+        "N_axis_divisor": 32,
+        "N_less_than": 128,
+        "P_exact": 128,
+        "error": 255,
+        "record_bytes": 1,
+        "source_coordinates_transmitted": false
+      },
+      "input_files": {
+        "build/lean_table_checker/cached_checker_v2/gpu_source_packets.py": {
+          "bytes": 7890,
+          "sha256": "c88ad619b3cbf9bef581caa9b987d0e39cce37385ce40f6035d2ab63b11535e2"
+        },
+        "build/lean_table_checker/gpu_indexed_byte_v16/worker.py": {
+          "bytes": 29179,
+          "sha256": "adce9593d5dbbb7937abf6f392d751ad551e189af7daa6b8c6f5bea87584404f"
+        },
+        "build/lean_table_checker/gpu_spike_v1/deps/libnvrtc-builtins.so.12.4": {
+          "bytes": 5343112,
+          "sha256": "4425561a319da07bbde0dc180a90422e351b364c3dc4f6a3ea1e69925d62db72"
+        },
+        "build/lean_table_checker/gpu_spike_v1/deps/libnvrtc.so.12": {
+          "bytes": 60418376,
+          "sha256": "466d6f14d6cfde99838a132cfa7a23f90ba08acfadaa4d9e4c9defe1277f7bf1"
+        },
+        "build/lean_table_checker/gpu_spike_v1/deps/receipt.json": {
+          "bytes": 722,
+          "sha256": "fd886dcec753f4be5d5c9db8cea475895661cb39f624fb8b3f9b46065ef395de"
+        },
+        "build/lean_table_checker/gpu_spike_v1/gpu_benchmark.py": {
+          "bytes": 14195,
+          "sha256": "57ef41eee392b67c82cc8a7687b6944cdb61aee8999f60f44d276ab93111d066"
+        },
+        "build/lean_table_checker/gpu_spike_v1/rows.cu": {
+          "bytes": 5256,
+          "sha256": "060508cfb0ffa8898d0e409e2d442e724ccf4408b81433056c9c37ed280cf566"
+        },
+        "build/lean_table_checker/gpu_stream_v4/worker_compact.py": {
+          "bytes": 35157,
+          "sha256": "fdffc1efcd34be5f700febb21934ade1a38c4a7bd544f4f5ebe8276c5c83865c"
+        },
+        "runs/lean_table_checker/campaign_20261018_v4/index/catalog.tsv": {
+          "bytes": 78505,
+          "sha256": "88865fcb26f9f6ea1f90ab24bd4812e8ab16e5e3135b34f94ed5db1dbc40f0dd"
+        },
+        "runs/lean_table_checker/campaign_20261018_v4/index/groups.bin": {
+          "bytes": 8832,
+          "sha256": "4ca1c640965a22aed5f613f8a00fd763be155c53017fb23f4d86ee106f00fc14"
+        },
+        "runs/lean_table_checker/campaign_20261018_v4/index/numeric.bin": {
+          "bytes": 1580112,
+          "sha256": "a215363f5bb88aa8bcda9482ca7c284c154abf35c61d9839814572dd1cc86475"
+        },
+        "runs/lean_table_checker/gpu_spike_20261018_v1/acceptance.json": {
+          "bytes": 36730,
+          "sha256": "268182262b09a773827266685fec4054d5f1ca28ed8c6a5558d64b0790a2d063"
+        },
+        "runs/lean_table_checker/successor_cache_v1/inputs/honors.bin": {
+          "bytes": 4416,
+          "sha256": "be4021e18695126ce5244ab76a6293aa22ff0d7496d4fef4a0615a53e21a4ce6"
+        },
+        "runs/lean_table_checker/successor_cache_v1/inputs/numeric.bin": {
+          "bytes": 5793744,
+          "sha256": "30a20eb9f484f1b92cca96a5613756fca0668c509d5391c57ae49b84115c3cb3"
+        }
+      },
+      "manifest_sha256": "fad3bbe38c3b2eb7d3fc11dfaa4c69f7963f8022a973e1902bd4b8b173b79ef9",
+      "max_count": 67108864,
+      "maximum_host_proposal_bytes": 67108864,
+      "original_evaluate_source_sha256": "060508cfb0ffa8898d0e409e2d442e724ccf4408b81433056c9c37ed280cf566",
+      "ptx_sha256": "40e2f44b6bd66a6faba9d771a0140a4866880b1cf152511039cef8e780db7571",
+      "record_bytes": 1,
+      "schema": "UNTRUSTED_FIXED_INDEXED_BYTE_CUDA_CONTEXT_V16",
+      "scratch_rows": 8388608,
+      "transport": "indexed_actual_next_byte_v16"
+    },
+    "fixed_identity_sha256": "676f3b9abf6f539ccb38ade7e4b7470b0eb71e5e58b16ee5b6a508b205f31307",
+    "fixed_initialization_seconds": 1.8614890000000024,
+    "fixed_nvrtc_seconds": 0.4113227999999971,
+    "fixed_upload_seconds": 0.048507699999998266,
+    "implementation_revision": "INDEXED_ACTUAL_NEXT_BYTE_BOUNDED_8MI_SCRATCH_V16",
+    "max_count": 67108864,
+    "record_bytes": 1,
+    "resources": {
+      "GPU_context_closed": false,
+      "allocated_device_bytes": 15775712,
+      "declared_device_bytes": 15775712,
+      "device_cap_bytes": 6000000000,
+      "device_output_scratch_bytes": 8388608,
+      "global_device_cap_bytes": 7000000000,
+      "global_device_free_reserve_bytes": 1000000000,
+      "global_device_used_bytes": 1141571584,
+      "host_rss_cap_bytes": 3000000000,
+      "implementation_revision": "INDEXED_ACTUAL_NEXT_BYTE_BOUNDED_8MI_SCRATCH_V16",
+      "maximum_proposal_rows": 67108864,
+      "peak_host_rss_bytes": 206745600,
+      "record_bytes": 1,
+      "scratch_rows": 8388608,
+      "streamed_input_buffer_bytes": 33554432,
+      "transport": "indexed_actual_next_byte_v16"
+    },
+    "schema": "GPU_CROSS_BUCKET_INDEXED_BYTE_PROTOCOL_V16",
+    "scratch_rows": 8388608,
+    "session_token": "e9f1c7920cdd44548af52b4a075e75f4",
+    "transport": "indexed_actual_next_byte_v16"
+  },
+  "GPU_implementation_revision": "INDEXED_ACTUAL_NEXT_BYTE_BOUNDED_8MI_SCRATCH_V16",
+  "GPU_module_sha256": "adce9593d5dbbb7937abf6f392d751ad551e189af7daa6b8c6f5bea87584404f",
+  "TargetCorrect_registry_entries_added": 0,
+  "accounting_model": {
+    "bytes": 22755,
+    "path": "build/lean_table_checker/cost_large_frames_v14/registered_cost_model.py",
+    "sha256": "fb161b78a5617223f6f77d7e28b0ca11ca4c743fd9229591631976678fadac37"
+  },
+  "actual_frames_rechecked": 107,
+  "actual_indexed_byte_proposal_extents_verified": true,
+  "actual_resource_stability_basis": {
+    "maximum_complete_native_restart_seconds_by_bank_class": {
+      "0": 1.157526679,
+      "1": 1.4809847220000023,
+      "2": 3.106300095000009,
+      "3": 6.972040584000013
+    },
+    "maximum_epoch_first_plan_phase_seconds_by_bank_class": {
+      "0": 0.246325154,
+      "1": 0.269978114,
+      "2": 0.265443861,
+      "3": 0.223052394
+    },
+    "minimum_validated_full_epoch_frames_by_bank_class": {
+      "0": 10,
+      "1": 16,
+      "2": 16,
+      "3": 16
+    },
+    "profile_epoch_cap": 16
+  },
+  "all_owned_UUID_caches_confirmed_absent": true,
+  "all_owned_services_confirmed_exited": true,
+  "all_source_packed_labels_equal": true,
+  "all_worker_PN_and_partition_receipts_verified": true,
+  "cases": [
+    {
+      "case_id": "stratum_00",
+      "measurements": {
+        "bytes": 29176,
+        "path": "runs/lean_table_checker/calibration_indexed_20261018_v16/sample_7a5fb81f30dd/stratum_00.measurements.json",
+        "sha256": "76a44b8f0ab7e2f9ca7dbf1b26a638018ad03b088cdedb2114369a9919dd5bfa"
+      },
+      "normalized": {
+        "bytes": 32458,
+        "path": "runs/lean_table_checker/calibration_indexed_20261018_v16/sample_7a5fb81f30dd/cases/stratum_00.json",
+        "sha256": "1f71e8ab57d2097c0494040e721bca32220378c699ee580fe540cbfb3f9ceee0"
+      },
+      "raw_for_frozen_model": {
+        "bytes": 51919,
+        "path": "runs/lean_table_checker/calibration_indexed_20261018_v16/sample_7a5fb81f30dd/cases/stratum_00.model_raw.json",
+        "sha256": "464098f1927b290a82a9804d5af86d93b5e7839297edd327a5a879b0516a99d2"
+      }
+    },
+    {
+      "case_id": "stratum_01",
+      "measurements": {
+        "bytes": 29817,
+        "path": "runs/lean_table_checker/calibration_indexed_20261018_v16/sample_7a5fb81f30dd/stratum_01.measurements.json",
+        "sha256": "669880154b330e9437973d4f9532376245e83efe614721e2d25c8135723dd2cd"
+      },
+      "normalized": {
+        "bytes": 34194,
+        "path": "runs/lean_table_checker/calibration_indexed_20261018_v16/sample_7a5fb81f30dd/cases/stratum_01.json",
+        "sha256": "a7668c88311e5fdb60f000b184107dd409b8d0c72baa55bbebaed2dd19b7750a"
+      },
+      "raw_for_frozen_model": {
+        "bytes": 48409,
+        "path": "runs/lean_table_checker/calibration_indexed_20261018_v16/sample_7a5fb81f30dd/cases/stratum_01.model_raw.json",
+        "sha256": "22a427db49c9bd20352768bbc31090a97af2f7364d540323428699726bb3a7e4"
+      }
+    },
+    {
+      "case_id": "stratum_02",
+      "measurements": {
+        "bytes": 29143,
+        "path": "runs/lean_table_checker/calibration_indexed_20261018_v16/sample_7a5fb81f30dd/stratum_02.measurements.json",
+        "sha256": "c0b492b78cd742492e4f44852e599cffd76a45b33354d39197f18e468ae2e64d"
+      },
+      "normalized": {
+        "bytes": 32493,
+        "path": "runs/lean_table_checker/calibration_indexed_20261018_v16/sample_7a5fb81f30dd/cases/stratum_02.json",
+        "sha256": "1cb311c7343725aa0119419c2ee0a38f3e9e05cd4e3a232d431f68b8e08d44c3"
+      },
+      "raw_for_frozen_model": {
+        "bytes": 50686,
+        "path": "runs/lean_table_checker/calibration_indexed_20261018_v16/sample_7a5fb81f30dd/cases/stratum_02.model_raw.json",
+        "sha256": "49f8ecadfebbee0723d91b1e958df07a2300260ba6d42fcd4fb1a89fb9040a1d"
+      }
+    },
+    {
+      "case_id": "stratum_03",
+      "measurements": {
+        "bytes": 29112,
+        "path": "runs/lean_table_checker/calibration_indexed_20261018_v16/sample_7a5fb81f30dd/stratum_03.measurements.json",
+        "sha256": "dbd8432d72a31c883e0de448a25023209f08e16f8e7009a8870a343e1ff1303c"
+      },
+      "normalized": {
+        "bytes": 32491,
+        "path": "runs/lean_table_checker/calibration_indexed_20261018_v16/sample_7a5fb81f30dd/cases/stratum_03.json",
+        "sha256": "8e98fae42524546f4d71f0beadd843ca0bb749a15e943d2bd7a1a1d8dea24f26"
+      },
+      "raw_for_frozen_model": {
+        "bytes": 48422,
+        "path": "runs/lean_table_checker/calibration_indexed_20261018_v16/sample_7a5fb81f30dd/cases/stratum_03.model_raw.json",
+        "sha256": "76af2b41cf4035608b6993a763e05fdd69ae6077b63e11e378915e2693802181"
+      }
+    },
+    {
+      "case_id": "stratum_04",
+      "measurements": {
+        "bytes": 29237,
+        "path": "runs/lean_table_checker/calibration_indexed_20261018_v16/sample_7a5fb81f30dd/stratum_04.measurements.json",
+        "sha256": "e01877ed4359701bab0e1991ccfe9240be64ccd636fc43661744b718720d37e9"
+      },
+      "normalized": {
+        "bytes": 32453,
+        "path": "runs/lean_table_checker/calibration_indexed_20261018_v16/sample_7a5fb81f30dd/cases/stratum_04.json",
+        "sha256": "3ea54492407a0fb559d87fc51b32ce6834da6fe5fe8ff79f359292e54687383a"
+      },
+      "raw_for_frozen_model": {
+        "bytes": 55391,
+        "path": "runs/lean_table_checker/calibration_indexed_20261018_v16/sample_7a5fb81f30dd/cases/stratum_04.model_raw.json",
+        "sha256": "0319f1456ef26c9f126b2d233c13fcab3717b72289c3536867422b59cfc85273"
+      }
+    },
+    {
+      "case_id": "stratum_05",
+      "measurements": {
+        "bytes": 28515,
+        "path": "runs/lean_table_checker/calibration_indexed_20261018_v16/sample_7a5fb81f30dd/stratum_05.measurements.json",
+        "sha256": "9272229a8d12bf99ea63c08948fea1f16a4de4b958989bc3f9ce17ded08f0e67"
+      },
+      "normalized": {
+        "bytes": 30792,
+        "path": "runs/lean_table_checker/calibration_indexed_20261018_v16/sample_7a5fb81f30dd/cases/stratum_05.json",
+        "sha256": "e460deef132c44f2469a95ae14f77932aff9bd5dd374833f366790e311881869"
+      },
+      "raw_for_frozen_model": {
+        "bytes": 57091,
+        "path": "runs/lean_table_checker/calibration_indexed_20261018_v16/sample_7a5fb81f30dd/cases/stratum_05.model_raw.json",
+        "sha256": "9a36e81f24114caa714a31eba2997878c1e5af0c623bad23dbc9b2c2ef3c815f"
+      }
+    },
+    {
+      "case_id": "stratum_06",
+      "measurements": {
+        "bytes": 29941,
+        "path": "runs/lean_table_checker/calibration_indexed_20261018_v16/sample_7a5fb81f30dd/stratum_06.measurements.json",
+        "sha256": "adf5484b900265e5b4cf0dafd719b40915ac91b81295b18782c109876f1b2d6e"
+      },
+      "normalized": {
+        "bytes": 34166,
+        "path": "runs/lean_table_checker/calibration_indexed_20261018_v16/sample_7a5fb81f30dd/cases/stratum_06.json",
+        "sha256": "e304c2c579713aaee796ceff99e34a6004ca7ffcb74c3d618c44d9f2d6a52a49"
+      },
+      "raw_for_frozen_model": {
+        "bytes": 51982,
+        "path": "runs/lean_table_checker/calibration_indexed_20261018_v16/sample_7a5fb81f30dd/cases/stratum_06.model_raw.json",
+        "sha256": "51b3295b91b96aa4c78977c9d5105cf5153f614eda22a21394606b7084181720"
+      }
+    },
+    {
+      "case_id": "stratum_07",
+      "measurements": {
+        "bytes": 29240,
+        "path": "runs/lean_table_checker/calibration_indexed_20261018_v16/sample_7a5fb81f30dd/stratum_07.measurements.json",
+        "sha256": "62eb06f96968288cc32c3d744a96ea5fd580cf12c8b51f5c07e26ca81b8af7ec"
+      },
+      "normalized": {
+        "bytes": 32475,
+        "path": "runs/lean_table_checker/calibration_indexed_20261018_v16/sample_7a5fb81f30dd/cases/stratum_07.json",
+        "sha256": "08f9a473c57b0a68388518c688c91b7f150bb6514d372ad4e0a7d76eb99e40f3"
+      },
+      "raw_for_frozen_model": {
+        "bytes": 56641,
+        "path": "runs/lean_table_checker/calibration_indexed_20261018_v16/sample_7a5fb81f30dd/cases/stratum_07.model_raw.json",
+        "sha256": "fe6a05f961fa9d228e64f44427fb1ff778b98f039f4a252c4eb0fa19caf28234"
+      }
+    },
+    {
+      "case_id": "stratum_08",
+      "measurements": {
+        "bytes": 28541,
+        "path": "runs/lean_table_checker/calibration_indexed_20261018_v16/sample_7a5fb81f30dd/stratum_08.measurements.json",
+        "sha256": "3808583c26b6fae3140f86678a8f6663c083fa463fe62a1f3b5e70d0b9fc9f91"
+      },
+      "normalized": {
+        "bytes": 30762,
+        "path": "runs/lean_table_checker/calibration_indexed_20261018_v16/sample_7a5fb81f30dd/cases/stratum_08.json",
+        "sha256": "37e25dde096c1c0289bd1d300fdf0aa4b26f9abbb41910c23e14bdf82da2d93f"
+      },
+      "raw_for_frozen_model": {
+        "bytes": 57076,
+        "path": "runs/lean_table_checker/calibration_indexed_20261018_v16/sample_7a5fb81f30dd/cases/stratum_08.model_raw.json",
+        "sha256": "f17c171173d3dd150e09506e1799f0df1a337af3f6ecc9c6adaa4301a97f4951"
+      }
+    },
+    {
+      "case_id": "stratum_09",
+      "measurements": {
+        "bytes": 29955,
+        "path": "runs/lean_table_checker/calibration_indexed_20261018_v16/sample_7a5fb81f30dd/stratum_09.measurements.json",
+        "sha256": "518a21a17e5557482f64043ccf0e49b2951e2cb1c1e5e348416447eabb477600"
+      },
+      "normalized": {
+        "bytes": 34196,
+        "path": "runs/lean_table_checker/calibration_indexed_20261018_v16/sample_7a5fb81f30dd/cases/stratum_09.json",
+        "sha256": "182ae5f10539db94b021cfa4373acaea57ffd88f6b8d6286c9b004aa1f587da2"
+      },
+      "raw_for_frozen_model": {
+        "bytes": 51986,
+        "path": "runs/lean_table_checker/calibration_indexed_20261018_v16/sample_7a5fb81f30dd/cases/stratum_09.model_raw.json",
+        "sha256": "76adbb555d70c7daf27d8cc80a52b2c43343ad9d70d4a406f2bab7e92e3ea5b4"
+      }
+    },
+    {
+      "case_id": "stratum_10",
+      "measurements": {
+        "bytes": 30005,
+        "path": "runs/lean_table_checker/calibration_indexed_20261018_v16/sample_7a5fb81f30dd/stratum_10.measurements.json",
+        "sha256": "104c9c1b109f4c24678b405050644683f1e4e799b77110764160881a06b46738"
+      },
+      "normalized": {
+        "bytes": 34144,
+        "path": "runs/lean_table_checker/calibration_indexed_20261018_v16/sample_7a5fb81f30dd/cases/stratum_10.json",
+        "sha256": "fdfce5b0939ba5ebcbb668541ba703e5a7e553f9a49803ce3813400426d3b2c2"
+      },
+      "raw_for_frozen_model": {
+        "bytes": 57065,
+        "path": "runs/lean_table_checker/calibration_indexed_20261018_v16/sample_7a5fb81f30dd/cases/stratum_10.model_raw.json",
+        "sha256": "2ef16692782c63bec309bf688ac1633c07ac7f4cafdf949c2c9a1f7853065804"
+      }
+    },
+    {
+      "case_id": "stratum_11",
+      "measurements": {
+        "bytes": 29241,
+        "path": "runs/lean_table_checker/calibration_indexed_20261018_v16/sample_7a5fb81f30dd/stratum_11.measurements.json",
+        "sha256": "f85a7e295ed0755c7213f3aa52bbb1272ebdf354fa504c89ced03ee9ae9da635"
+      },
+      "normalized": {
+        "bytes": 32471,
+        "path": "runs/lean_table_checker/calibration_indexed_20261018_v16/sample_7a5fb81f30dd/cases/stratum_11.json",
+        "sha256": "26f0ce6d4184165973e9107667a367d39abd1622e4a543b88d8bcce12661d5eb"
+      },
+      "raw_for_frozen_model": {
+        "bytes": 56986,
+        "path": "runs/lean_table_checker/calibration_indexed_20261018_v16/sample_7a5fb81f30dd/cases/stratum_11.model_raw.json",
+        "sha256": "ffd07633bb16775adcb48c6b12e7e430f2c8de6a41110296e21a7d2d7e7b29b5"
+      }
+    },
+    {
+      "case_id": "stratum_12",
+      "measurements": {
+        "bytes": 30766,
+        "path": "runs/lean_table_checker/calibration_indexed_20261018_v16/sample_7a5fb81f30dd/stratum_12.measurements.json",
+        "sha256": "890c272cbc191027588df15b3169553c0b87ee64e27184bba75abd94a858e0e0"
+      },
+      "normalized": {
+        "bytes": 35908,
+        "path": "runs/lean_table_checker/calibration_indexed_20261018_v16/sample_7a5fb81f30dd/cases/stratum_12.json",
+        "sha256": "9ccf35699dd9ce471d3ffee95f5ae443980a83fd9774a9efa2daa5ccd6bfccbb"
+      },
+      "raw_for_frozen_model": {
+        "bytes": 54571,
+        "path": "runs/lean_table_checker/calibration_indexed_20261018_v16/sample_7a5fb81f30dd/cases/stratum_12.model_raw.json",
+        "sha256": "2d8c0fbf386c68cf2ac9b94c4cf6ad4ab31e5fee0b164cb382ba0cf86121817d"
+      }
+    },
+    {
+      "case_id": "stratum_13",
+      "measurements": {
+        "bytes": 29941,
+        "path": "runs/lean_table_checker/calibration_indexed_20261018_v16/sample_7a5fb81f30dd/stratum_13.measurements.json",
+        "sha256": "1cd75d4b3319445cf98ffb401366fa4cbbf50178ebd280750da216a2e322d0d2"
+      },
+      "normalized": {
+        "bytes": 34147,
+        "path": "runs/lean_table_checker/calibration_indexed_20261018_v16/sample_7a5fb81f30dd/cases/stratum_13.json",
+        "sha256": "2679c3961076b66ee8fcc918b180ee76f99706cf511cda2ed77af6738802c58c"
+      },
+      "raw_for_frozen_model": {
+        "bytes": 56980,
+        "path": "runs/lean_table_checker/calibration_indexed_20261018_v16/sample_7a5fb81f30dd/cases/stratum_13.model_raw.json",
+        "sha256": "b086017f3d6daa0cd801110e5afdf77b2d790c5e35e0c255acb474c73d34c7ca"
+      }
+    },
+    {
+      "case_id": "stratum_14",
+      "measurements": {
+        "bytes": 29295,
+        "path": "runs/lean_table_checker/calibration_indexed_20261018_v16/sample_7a5fb81f30dd/stratum_14.measurements.json",
+        "sha256": "6da974acf338d3c2d4f4d71acc076517a055e4a925627c5dbbb7306e3b0f2a24"
+      },
+      "normalized": {
+        "bytes": 32481,
+        "path": "runs/lean_table_checker/calibration_indexed_20261018_v16/sample_7a5fb81f30dd/cases/stratum_14.json",
+        "sha256": "0ce4f363e72e3132a993ca71ede34b483864f9a0a49f23aab091835c3ce5aba8"
+      },
+      "raw_for_frozen_model": {
+        "bytes": 57023,
+        "path": "runs/lean_table_checker/calibration_indexed_20261018_v16/sample_7a5fb81f30dd/cases/stratum_14.model_raw.json",
+        "sha256": "5f8211e90504f93290212c574097e258fa25f1b8ffb020432614d854cba708c7"
+      }
+    },
+    {
+      "case_id": "stratum_15",
+      "measurements": {
+        "bytes": 30027,
+        "path": "runs/lean_table_checker/calibration_indexed_20261018_v16/sample_7a5fb81f30dd/stratum_15.measurements.json",
+        "sha256": "d97176c025c9a02074af3573bd525ad47cb826feb6836dab77713d1448bbd494"
+      },
+      "normalized": {
+        "bytes": 34174,
+        "path": "runs/lean_table_checker/calibration_indexed_20261018_v16/sample_7a5fb81f30dd/cases/stratum_15.json",
+        "sha256": "485cd59568ef2d88eddad4e2b35e47d4cf345fc68f3911b387fefcaa17e31ae3"
+      },
+      "raw_for_frozen_model": {
+        "bytes": 56620,
+        "path": "runs/lean_table_checker/calibration_indexed_20261018_v16/sample_7a5fb81f30dd/cases/stratum_15.model_raw.json",
+        "sha256": "f0642c180efe87de98748a550887dedb2e2c1a352c399f41c71573d01794701f"
+      }
+    },
+    {
+      "case_id": "stratum_16",
+      "measurements": {
+        "bytes": 29282,
+        "path": "runs/lean_table_checker/calibration_indexed_20261018_v16/sample_7a5fb81f30dd/stratum_16.measurements.json",
+        "sha256": "02b99fc793c8572aea69145b679ccb6d08ddd8ac8f4992d86310658c95ad7fdd"
+      },
+      "normalized": {
+        "bytes": 32473,
+        "path": "runs/lean_table_checker/calibration_indexed_20261018_v16/sample_7a5fb81f30dd/cases/stratum_16.json",
+        "sha256": "71ce81dc6fcd8c9adcba8634a84d25a60a1055218a639c214cb1807cace85775"
+      },
+      "raw_for_frozen_model": {
+        "bytes": 57088,
+        "path": "runs/lean_table_checker/calibration_indexed_20261018_v16/sample_7a5fb81f30dd/cases/stratum_16.model_raw.json",
+        "sha256": "70944d18b0c2f4bc03bfbb5ca58de827a90ef94dfff7e94673d3ca9af0d377a3"
+      }
+    },
+    {
+      "case_id": "stratum_17",
+      "measurements": {
+        "bytes": 29173,
+        "path": "runs/lean_table_checker/calibration_indexed_20261018_v16/sample_7a5fb81f30dd/stratum_17.measurements.json",
+        "sha256": "187b6c11892ac520269e840a84c329c756fe3d169210002901f43370140fc430"
+      },
+      "normalized": {
+        "bytes": 32481,
+        "path": "runs/lean_table_checker/calibration_indexed_20261018_v16/sample_7a5fb81f30dd/cases/stratum_17.json",
+        "sha256": "686ee47f066a0d9f1181c1b2cd416323c26171ffc73f22866b6c3f1302d69fc0"
+      },
+      "raw_for_frozen_model": {
+        "bytes": 56901,
+        "path": "runs/lean_table_checker/calibration_indexed_20261018_v16/sample_7a5fb81f30dd/cases/stratum_17.model_raw.json",
+        "sha256": "7b0418d421aa1192a2be53e7c9f3463fbe399bb618f5801b2b4291f2c7a2a775"
+      }
+    },
+    {
+      "case_id": "stratum_18",
+      "measurements": {
+        "bytes": 30751,
+        "path": "runs/lean_table_checker/calibration_indexed_20261018_v16/sample_7a5fb81f30dd/stratum_18.measurements.json",
+        "sha256": "c335d6b98a0fd93527c973481633cdd9d19df8bb925a08e77ab4a51f7ac23fa9"
+      },
+      "normalized": {
+        "bytes": 35836,
+        "path": "runs/lean_table_checker/calibration_indexed_20261018_v16/sample_7a5fb81f30dd/cases/stratum_18.json",
+        "sha256": "9fd0e47bc2a217a1a97fb440ea1d9b25f0571d1f9406e714725194620a7dae5c"
+      },
+      "raw_for_frozen_model": {
+        "bytes": 55767,
+        "path": "runs/lean_table_checker/calibration_indexed_20261018_v16/sample_7a5fb81f30dd/cases/stratum_18.model_raw.json",
+        "sha256": "31ab4ce708e99726cb8556d7fb2af3897adb53c6859006f85d110322a744ffdd"
+      }
+    },
+    {
+      "case_id": "stratum_19",
+      "measurements": {
+        "bytes": 29323,
+        "path": "runs/lean_table_checker/calibration_indexed_20261018_v16/sample_7a5fb81f30dd/stratum_19.measurements.json",
+        "sha256": "9b7e2db05b59ce79b074bd3c80677a2c6a99b4ab01a020a337bb830243712e60"
+      },
+      "normalized": {
+        "bytes": 32506,
+        "path": "runs/lean_table_checker/calibration_indexed_20261018_v16/sample_7a5fb81f30dd/cases/stratum_19.json",
+        "sha256": "b2a89a7725c1e9e8b9dc604a835d190d87edcbb5534770051f61993c2bdefbc6"
+      },
+      "raw_for_frozen_model": {
+        "bytes": 57100,
+        "path": "runs/lean_table_checker/calibration_indexed_20261018_v16/sample_7a5fb81f30dd/cases/stratum_19.model_raw.json",
+        "sha256": "c6b620f1ad4f8f0efb9ec0374dd51a9d9e487dc3b9ac4b7127e23290d33ff11a"
+      }
+    },
+    {
+      "case_id": "stratum_20",
+      "measurements": {
+        "bytes": 28560,
+        "path": "runs/lean_table_checker/calibration_indexed_20261018_v16/sample_7a5fb81f30dd/stratum_20.measurements.json",
+        "sha256": "9bc79533c89af4218b32066fc1f08ec11711c273e266427a4f081cedaf78862a"
+      },
+      "normalized": {
+        "bytes": 30738,
+        "path": "runs/lean_table_checker/calibration_indexed_20261018_v16/sample_7a5fb81f30dd/cases/stratum_20.json",
+        "sha256": "06bae05d47b52314efa8d6db2b83edd90a07e262654dce37a70fd3a716a90e71"
+      },
+      "raw_for_frozen_model": {
+        "bytes": 57118,
+        "path": "runs/lean_table_checker/calibration_indexed_20261018_v16/sample_7a5fb81f30dd/cases/stratum_20.model_raw.json",
+        "sha256": "b7f14419e98ea5c7582243a352bc078a0fa166769ed52b7bbdc737650a6c98f9"
+      }
+    },
+    {
+      "case_id": "stratum_21",
+      "measurements": {
+        "bytes": 29285,
+        "path": "runs/lean_table_checker/calibration_indexed_20261018_v16/sample_7a5fb81f30dd/stratum_21.measurements.json",
+        "sha256": "120956175e1f9621ac63ac5a7b28ee21f69663b50fadaec16e6bd6eeab8484a7"
+      },
+      "normalized": {
+        "bytes": 32483,
+        "path": "runs/lean_table_checker/calibration_indexed_20261018_v16/sample_7a5fb81f30dd/cases/stratum_21.json",
+        "sha256": "0c79155a3afbcd58f535db1eb9d8bb0441da73628649201aade7df7f2651af52"
+      },
+      "raw_for_frozen_model": {
+        "bytes": 57043,
+        "path": "runs/lean_table_checker/calibration_indexed_20261018_v16/sample_7a5fb81f30dd/cases/stratum_21.model_raw.json",
+        "sha256": "50c38face58fb3365de5c9f7d38e241b0b90af055f5523b8f4afa6c0c0623b12"
+      }
+    },
+    {
+      "case_id": "stratum_22",
+      "measurements": {
+        "bytes": 30017,
+        "path": "runs/lean_table_checker/calibration_indexed_20261018_v16/sample_7a5fb81f30dd/stratum_22.measurements.json",
+        "sha256": "9ec1fdeafe6cb6ab50f123417425d66cd9e7cc1cd9e823045255645e8f5daaca"
+      },
+      "normalized": {
+        "bytes": 34172,
+        "path": "runs/lean_table_checker/calibration_indexed_20261018_v16/sample_7a5fb81f30dd/cases/stratum_22.json",
+        "sha256": "bf234eee16251590c4502a1221d12048904c9d97903dd64cb6a17dfa9ca36378"
+      },
+      "raw_for_frozen_model": {
+        "bytes": 57038,
+        "path": "runs/lean_table_checker/calibration_indexed_20261018_v16/sample_7a5fb81f30dd/cases/stratum_22.model_raw.json",
+        "sha256": "841c21951170d94854a323d7046c4c7cc831610a88781512210de93a4eb75c63"
+      }
+    },
+    {
+      "case_id": "stratum_23",
+      "measurements": {
+        "bytes": 28540,
+        "path": "runs/lean_table_checker/calibration_indexed_20261018_v16/sample_7a5fb81f30dd/stratum_23.measurements.json",
+        "sha256": "12564d8e99aaa58bb9cefb2122318f85839d3d14c29521da406424c71e56f1e9"
+      },
+      "normalized": {
+        "bytes": 30763,
+        "path": "runs/lean_table_checker/calibration_indexed_20261018_v16/sample_7a5fb81f30dd/cases/stratum_23.json",
+        "sha256": "e4011cf9fc7be2c9b3f712df743fcea1dc283c645ef1a32045a308d4cc93dde8"
+      },
+      "raw_for_frozen_model": {
+        "bytes": 57072,
+        "path": "runs/lean_table_checker/calibration_indexed_20261018_v16/sample_7a5fb81f30dd/cases/stratum_23.model_raw.json",
+        "sha256": "dadbeab05305b4257805b0f39f91aa61bfffde2193d804361ba0cebe7bb36586"
+      }
+    },
+    {
+      "case_id": "stratum_24",
+      "measurements": {
+        "bytes": 22008,
+        "path": "runs/lean_table_checker/calibration_indexed_20261018_v16/sample_7a5fb81f30dd/stratum_24.measurements.json",
+        "sha256": "9d79283c5e8b26f372279c9c5dea28c79f7f13142bc16b00c53bdd4351407397"
+      },
+      "normalized": {
+        "bytes": 33783,
+        "path": "runs/lean_table_checker/calibration_indexed_20261018_v16/sample_7a5fb81f30dd/cases/stratum_24.json",
+        "sha256": "3f28395483c82d84939bed7a7444b2f32561f92661d989b6a63bd32e135130fb"
+      },
+      "raw_for_frozen_model": {
+        "bytes": 17859,
+        "path": "runs/lean_table_checker/calibration_indexed_20261018_v16/sample_7a5fb81f30dd/cases/stratum_24.model_raw.json",
+        "sha256": "c1968442ecf9e85c5a269f739b9a4f955e3b2c4525865fb2bfec0b3efafe3073"
+      }
+    },
+    {
+      "case_id": "stratum_25",
+      "measurements": {
+        "bytes": 29227,
+        "path": "runs/lean_table_checker/calibration_indexed_20261018_v16/sample_7a5fb81f30dd/stratum_25.measurements.json",
+        "sha256": "071bd19e897c105c4ba559b5dfa2e22a938b38774a116ac2e34da1cd35bbe8a9"
+      },
+      "normalized": {
+        "bytes": 32475,
+        "path": "runs/lean_table_checker/calibration_indexed_20261018_v16/sample_7a5fb81f30dd/cases/stratum_25.json",
+        "sha256": "6af0bd6b0370e4be1e6dad55063828f93a9a9c15ad628666806a224aa5d957cf"
+      },
+      "raw_for_frozen_model": {
+        "bytes": 56157,
+        "path": "runs/lean_table_checker/calibration_indexed_20261018_v16/sample_7a5fb81f30dd/cases/stratum_25.model_raw.json",
+        "sha256": "7e307fa39164f39399ad56294dc3a2c18d4e9db08dfd869b90fd0aeb53a0725a"
+      }
+    },
+    {
+      "case_id": "stratum_26",
+      "measurements": {
+        "bytes": 29270,
+        "path": "runs/lean_table_checker/calibration_indexed_20261018_v16/sample_7a5fb81f30dd/stratum_26.measurements.json",
+        "sha256": "dd705e8308fb68999c290e90b443c6375271d36913875d19aa3e8f2e63d472fa"
+      },
+      "normalized": {
+        "bytes": 32459,
+        "path": "runs/lean_table_checker/calibration_indexed_20261018_v16/sample_7a5fb81f30dd/cases/stratum_26.json",
+        "sha256": "257397690055d141cb9192757aa499142e08cf99d8e2fdce1ea941670f3c350d"
+      },
+      "raw_for_frozen_model": {
+        "bytes": 57034,
+        "path": "runs/lean_table_checker/calibration_indexed_20261018_v16/sample_7a5fb81f30dd/cases/stratum_26.model_raw.json",
+        "sha256": "3f687806b568713c83c0e0da888ba84e05dc904cce8ef4ebea05a6ad29058145"
+      }
+    },
+    {
+      "case_id": "stratum_27",
+      "measurements": {
+        "bytes": 25933,
+        "path": "runs/lean_table_checker/calibration_indexed_20261018_v16/sample_7a5fb81f30dd/stratum_27.measurements.json",
+        "sha256": "3b7cde744c47322e6abae261f1806bc916524ae8ebfa6a96dbc80cd09d69f7e3"
+      },
+      "normalized": {
+        "bytes": 33952,
+        "path": "runs/lean_table_checker/calibration_indexed_20261018_v16/sample_7a5fb81f30dd/cases/stratum_27.json",
+        "sha256": "18e047008dfdc4649a896f5af3c72cd49b5b0b237f1654765f39566344004f5d"
+      },
+      "raw_for_frozen_model": {
+        "bytes": 34604,
+        "path": "runs/lean_table_checker/calibration_indexed_20261018_v16/sample_7a5fb81f30dd/cases/stratum_27.model_raw.json",
+        "sha256": "93f16e4cd36cc1b610331b70c558e69714d75e78d380b0749bbb94c7c4943e49"
+      }
+    },
+    {
+      "case_id": "stress_high_P",
+      "measurements": {
+        "bytes": 21249,
+        "path": "runs/lean_table_checker/calibration_indexed_20261018_v16/sample_7a5fb81f30dd/stress_high_P.measurements.json",
+        "sha256": "b96e1805cb3e300f9d6f744ccfb0bc322fc433bf569ca8132dff4066dd593df0"
+      },
+      "normalized": {
+        "bytes": 32070,
+        "path": "runs/lean_table_checker/calibration_indexed_20261018_v16/sample_7a5fb81f30dd/cases/stress_high_P.json",
+        "sha256": "9535c1d8eeeb29414f9f53c425042d1b7df4b2986331b91536e807d5dbce3fe9"
+      },
+      "raw_for_frozen_model": {
+        "bytes": 16996,
+        "path": "runs/lean_table_checker/calibration_indexed_20261018_v16/sample_7a5fb81f30dd/cases/stress_high_P.model_raw.json",
+        "sha256": "ef6bcddf9e4b1bfc51e62b77acd90915fe850ac343507b6042980ddd4bcfd1a1"
+      }
+    },
+    {
+      "case_id": "stress_low_P",
+      "measurements": {
+        "bytes": 25143,
+        "path": "runs/lean_table_checker/calibration_indexed_20261018_v16/sample_7a5fb81f30dd/stress_low_P.measurements.json",
+        "sha256": "96ed94c7d2940e6816a0ce270e3523997ffa1a3e50c84465262fad41606d5c97"
+      },
+      "normalized": {
+        "bytes": 32335,
+        "path": "runs/lean_table_checker/calibration_indexed_20261018_v16/sample_7a5fb81f30dd/cases/stress_low_P.json",
+        "sha256": "56882e277f6a488dff89d379e7cf49a8066cbed52dd0a8caad15f166fbc3225b"
+      },
+      "raw_for_frozen_model": {
+        "bytes": 32224,
+        "path": "runs/lean_table_checker/calibration_indexed_20261018_v16/sample_7a5fb81f30dd/cases/stress_low_P.model_raw.json",
+        "sha256": "2ab6ac1864e80dd9ebde7a624d04db4265ce5bbdda6692beeefe18c9b17f2ba8"
+      }
+    },
+    {
+      "case_id": "stress_honor_quad",
+      "measurements": {
+        "bytes": 25291,
+        "path": "runs/lean_table_checker/calibration_indexed_20261018_v16/sample_7a5fb81f30dd/stress_honor_quad.measurements.json",
+        "sha256": "d5947bce14e0de9a51cfc353925dee785266d2c3e78b18d7886db7691a9c5341"
+      },
+      "normalized": {
+        "bytes": 32323,
+        "path": "runs/lean_table_checker/calibration_indexed_20261018_v16/sample_7a5fb81f30dd/cases/stress_honor_quad.json",
+        "sha256": "5a5ada7d70af9ad4cb6dbb2d132ebb8f69e94c7a9375c6da4cdd7f5e0c4ddb8c"
+      },
+      "raw_for_frozen_model": {
+        "bytes": 38322,
+        "path": "runs/lean_table_checker/calibration_indexed_20261018_v16/sample_7a5fb81f30dd/cases/stress_honor_quad.model_raw.json",
+        "sha256": "c0ffe1c02ce00a902ecb2731ab367b602ff5f7dbb100d919038cd82def6b2196"
+      }
+    },
+    {
+      "case_id": "stress_max_GPU_bank",
+      "measurements": {
+        "bytes": 85313,
+        "path": "runs/lean_table_checker/calibration_indexed_20261018_v16/sample_7a5fb81f30dd/stress_max_GPU_bank.measurements.json",
+        "sha256": "8b2f05c7574bc69a540b72f8d9a68cd89efccff669e15380da230efe954ff32c"
+      },
+      "normalized": {
+        "bytes": 38447,
+        "path": "runs/lean_table_checker/calibration_indexed_20261018_v16/sample_7a5fb81f30dd/cases/stress_max_GPU_bank.json",
+        "sha256": "5a2784aa9288ce9dc47dbfdf4309a3d6322ab715be1599c3cdfd3bf6402f5e75"
+      },
+      "raw_for_frozen_model": {
+        "bytes": 319249,
+        "path": "runs/lean_table_checker/calibration_indexed_20261018_v16/sample_7a5fb81f30dd/cases/stress_max_GPU_bank.model_raw.json",
+        "sha256": "e3951e62213dca679d6a26791dbe2e6bbb3d9db086fb0f9bb0f0b236445196d4"
+      }
+    },
+    {
+      "case_id": "stress_max_full_templates",
+      "measurements": {
+        "bytes": 26043,
+        "path": "runs/lean_table_checker/calibration_indexed_20261018_v16/sample_7a5fb81f30dd/stress_max_full_templates.measurements.json",
+        "sha256": "91232863779ff29eb5e7eea6eecf2bbd0ccdb403835ca63c8230714d3542759e"
+      },
+      "normalized": {
+        "bytes": 34036,
+        "path": "runs/lean_table_checker/calibration_indexed_20261018_v16/sample_7a5fb81f30dd/cases/stress_max_full_templates.json",
+        "sha256": "047c603b8bfed00bce0be17cbe6bffbaa48d5e9af399075a0a46f0cbd00e6263"
+      },
+      "raw_for_frozen_model": {
+        "bytes": 37086,
+        "path": "runs/lean_table_checker/calibration_indexed_20261018_v16/sample_7a5fb81f30dd/cases/stress_max_full_templates.model_raw.json",
+        "sha256": "2d35eaba583f547e9392f523a8ccab58e879cb5fb20728c6a6e5352623733f71"
+      }
+    },
+    {
+      "case_id": "stress_max_source_blocks",
+      "measurements": {
+        "bytes": 24574,
+        "path": "runs/lean_table_checker/calibration_indexed_20261018_v16/sample_7a5fb81f30dd/stress_max_source_blocks.measurements.json",
+        "sha256": "4a6354162a177e2f34826195a46fe468894df5e087d2bb957d02c7f06ff77eb4"
+      },
+      "normalized": {
+        "bytes": 30635,
+        "path": "runs/lean_table_checker/calibration_indexed_20261018_v16/sample_7a5fb81f30dd/cases/stress_max_source_blocks.json",
+        "sha256": "d7331577603047de49a05e337db98570f69dffcfab5792383f421e42a72df8df"
+      },
+      "raw_for_frozen_model": {
+        "bytes": 37592,
+        "path": "runs/lean_table_checker/calibration_indexed_20261018_v16/sample_7a5fb81f30dd/cases/stress_max_source_blocks.model_raw.json",
+        "sha256": "d6c3b21974f5117134f8610224b26f78c97769fcb0e6eb8c51a34989a36d5e1d"
+      }
+    }
+  ],
+  "checker_kind": "PROVED_BORROWED_NEXT_GLOBAL_NEXT_GENERATED_PLAN_V12",
+  "complete_case_count": 34,
+  "conditional_performance_only": true,
+  "conditional_rows_rechecked": 5843582753,
+  "full_campaign_started": false,
+  "full_launch_allowed": false,
+  "full_table_Lean": "NOT_VERIFIED",
+  "geometry": {
+    "bytes": 15274080,
+    "path": "runs/lean_table_checker/cost_large_frames_20261018_v14/exact_geometry_v14.json",
+    "sha256": "da673ce731235f5e6a92cd15cf21a94e3d2b78c3b9d90a7271eb9c1dfde05fac"
+  },
+  "global_cleanup_seconds_reserved": 120,
+  "hard_invocation_seconds": 2400,
+  "kernel_memory_events": {
+    "high": "0",
+    "low": "0",
+    "max": "0",
+    "oom": "0",
+    "oom_group_kill": "0",
+    "oom_kill": "0"
+  },
+  "peak_Linux_scope_bytes": 10598559744,
+  "production_increment": null,
+  "profile": {
+    "bytes": 563091,
+    "path": "runs/lean_table_checker/calibration_indexed_20261018_v16/sample_7a5fb81f30dd/profile.json",
+    "sha256": "cdbcff9be06ac2e5e450c73041d79f3ef92306e7bf8724cd9cdc382e1f8f3990"
+  },
+  "pure_kernel_theorem_count": 104,
+  "registration": {
+    "bytes": 5703,
+    "path": "runs/lean_table_checker/cost_indexed_frames_20261018_v16/PREREGISTRATION.json",
+    "sha256": "4ef9a6f0684641e9e0b6f7b4f5d6fd122e40c6493d4124e95d2c6a5ca8927f27"
+  },
+  "resource_admission_registration": {
+    "bytes": 5041,
+    "path": "runs/lean_table_checker/calibration_large_20261018_v14_rss_v2/RESOURCE_ADMISSION_REGISTRATION.json",
+    "sha256": "ab8c1c3872e97b191c6743455b28894e62e87aa6a48ccc7fba39d2c952c72725"
+  },
+  "resource_matrix_acceptance": {
+    "bytes": 641123,
+    "path": "runs/lean_table_checker/linux_bridge_resource_indexed_20261018_v16/rounds1_38fe3103df9a/acceptance.json",
+    "sha256": "9230b1bc0bcecaac3aa6686c868c0b3d9824c8cb8493be3bd9c10914d835da9e"
+  },
+  "resource_source_revision": "V16_INDEXED_BYTE_RSS_CAP_RESOURCE_REVISION",
+  "row_rounds": 1,
+  "row_schedule_kind": "PROVED_CONTIGUOUS_PARTITION_STRIDED_FIXED_ROUNDS_V13",
+  "sample_plan": {
+    "bytes": 120808,
+    "path": "runs/lean_table_checker/cost_large_frames_20261018_v14/sample_plan_v14_threads12.json",
+    "sha256": "60d5baf4dc9e7329d29a8c5c3795cbf75768c89ac4a6342896545ecfb5143ba0"
+  },
+  "schema": "ACTUAL_REGISTERED_JOINT_INDEXED_34CASE_CALIBRATION_ACCEPTANCE_V16",
+  "scope_lifecycle": {
+    "bytes": 13684,
+    "path": "runs/lean_table_checker/calibration_indexed_20261018_v16/sample_7a5fb81f30dd/s/client.session.json",
+    "sha256": "4febb869cce492f4807b480ba4606af868b9a35d391424faf9d34ea37069852b"
+  },
+  "setup_hash_seconds": 84.0,
+  "setup_lock_seconds": 0.4220000000204891,
+  "source_freeze_sha256": "afa39f5b4798060e51480b766ab8623b6b1a1e94b104c1306778372d06be4d01",
+  "status": "PASS_ACTUAL_REGISTERED_JOINT_INDEXED_34CASE_CALIBRATION_V16",
+  "threads": 12,
+  "tiny_acceptance": {
+    "bytes": 106147,
+    "path": "runs/lean_table_checker/linux_bridge_test_indexed_20261018_v16/tiny_rounds1_4143672ccef9/normalized_receipt.json",
+    "sha256": "035cf1a5bc641a7b0d991b107569a1de4c80e2572a5f1d8024b1c585ebb5e949"
+  },
+  "total_invocation_seconds": 796.2810000000172,
+  "worker_executable_sha256": "da0877df4d5be177516a405c93b62cac457a04ea40e479010fc70588a44438c6"
+}

@@ -8,9 +8,11 @@ publication, or a completed formal proof. No affiliation or endorsement by a
 Mahjong organization, university, GitHub, or a proof-assistant project is implied.
 
 The [two English reports](../papers/README.md) are fixed together in v1.0.0.
-This major version marks completion of the maintainer's current research
-delivery, with the unresolved Lean obligations retained. The
-[maintenance policy](PROJECT_STATUS.md) does not promise routine new research.
+That major version fixed the September delivery, with unresolved Lean
+obligations retained. The [October 18 update](../research/2026-10-18/README.md)
+records subsequent acceleration and the conditional expectation of a final
+sub-20-hour campaign. Independent correctness review is in progress and the
+full scan has not started; see [current project status](PROJECT_STATUS.md).
 
 The rules describe the specific deterministic game in this repository.
 The results are not claims about ordinary multiplayer Mahjong strategy or

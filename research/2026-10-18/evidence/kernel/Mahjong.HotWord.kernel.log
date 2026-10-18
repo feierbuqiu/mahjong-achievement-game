@@ -1,0 +1,3 @@
+'Mahjong.HotWord.address_ofView' depends on axioms: [propext]
+'Mahjong.HotWord.sortAddress_eq' depends on axioms: [propext, Quot.sound]
+'Mahjong.HotWord.childAddress_eq' depends on axioms: [propext, Quot.sound]

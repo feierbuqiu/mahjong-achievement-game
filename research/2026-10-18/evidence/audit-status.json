@@ -1,0 +1,69 @@
+{
+  "STOP_retained": "runs/lean_table_checker/campaign_indexed_20261018_v16/campaigns/overnight_v16_indexed_r3i/STOP",
+  "active_invocation_reservation": null,
+  "all_owned_services_confirmed_exited": true,
+  "captured_utc": "2026-10-18T02:50:46.321324+00:00",
+  "carried_old_preflight_seconds": 1103.7339999999385,
+  "certified_unique_seed_rows": 303054865,
+  "clean_from_scratch_manifest": "NOT_PREPARED_PREPARED_MANIFEST_REUSES_TRUE32_33_34_SEEDS",
+  "complete_global_layers_added_by_calibration": 0,
+  "cumulative_preflight_charge_seconds": 1258.4839999999385,
+  "empty_game_Lean": "NOT_VERIFIED",
+  "expected_inputs": {
+    "bytes": 4559137,
+    "path": "runs/lean_table_checker/prelaunch_audit_20261018/EXPECTED_INPUTS.json",
+    "sha256": "796efe070c9fc088f0f6f4866c7c45becef919397029ad5c1a07d417355fa9d6"
+  },
+  "explicit_user_release_required": true,
+  "final_16h_cost_gate": "NOT_EVALUATED_AND_NOT_PASSED",
+  "full_20h_completion": "NOT_ESTABLISHED",
+  "full_scan_started": false,
+  "full_table_Lean": "NOT_VERIFIED",
+  "kernel_closed_empty_state_theorem": false,
+  "kernel_theorems_in_selected_build": 104,
+  "last_zero_row_preflight": "STOPPED_BY_USER_DURING_INPUT_HASHING",
+  "most_recent_user_stop_wall_seconds": 154.75,
+  "new_full_campaign_native_rows": 0,
+  "new_phasezero_complete": false,
+  "no_compiler_Native_GPU_WSL_or_scheduler_started_by_documentation_capture": true,
+  "old_notifications_reenabled": false,
+  "pause_state_snapshots": [
+    {
+      "bytes": 745,
+      "path": "runs/lean_table_checker/prelaunch_audit_20261018/captured_pause_state/budget.json",
+      "sha256": "40220565d4be3e9d23bf86045b3953b8e8fafbce4b1c124e9afb0bc12f359669"
+    },
+    {
+      "bytes": 628,
+      "path": "runs/lean_table_checker/prelaunch_audit_20261018/captured_pause_state/checkpoint.json",
+      "sha256": "1cf6a46ae97d8123e08521ad2730e98e20f027cdc0300f0e47c7a35058d1e512"
+    },
+    {
+      "bytes": 825,
+      "path": "runs/lean_table_checker/prelaunch_audit_20261018/captured_pause_state/settlement.json",
+      "sha256": "ad0e055e27b80738bd8282af4d0eb4e858c9e8492c4e5ded5a300d3aaf7f6ae7"
+    },
+    {
+      "bytes": 494,
+      "path": "runs/lean_table_checker/prelaunch_audit_20261018/captured_pause_state/cleanup.json",
+      "sha256": "b31c17aa3a6ca1d4a80cc4068732701200984517c1e924a6e9ad453f56e9135f"
+    }
+  ],
+  "pending_rows_in_prepared_manifest": 778229809437,
+  "phase": "PAUSED_BY_USER_FOR_INDEPENDENT_LEAN_REVIEW",
+  "prepared_trust_boundary": "compiled Lean + explicit finite premises + audited Python/OS coverage and IO + compiler/runtime",
+  "schema": "USER_REQUESTED_PRELAUNCH_LEAN_INDEPENDENT_AUDIT_HOLD_V16",
+  "selected_manifest": {
+    "bytes": 3717975,
+    "path": "runs/lean_table_checker/campaign_indexed_20261018_v16/campaigns/overnight_v16_indexed_r3i/manifest.json",
+    "sha256": "d0debc3e9fb18183a1320c297b0274c6deaae7a4482fcafc4d7668973706f13a"
+  },
+  "task_absence_checked_by_Root_UTC": "2026-10-18T02:47:28Z",
+  "total_SAFE_orbit_rows": 778532864302,
+  "true_seed_layers": [
+    32,
+    33,
+    34
+  ],
+  "whole_table_one_shot_task_registered": false
+}

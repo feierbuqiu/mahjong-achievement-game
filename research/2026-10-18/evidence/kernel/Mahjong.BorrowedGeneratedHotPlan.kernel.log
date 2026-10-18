@@ -1,0 +1,11 @@
+'Mahjong.BorrowedGeneratedHotPlan.readGroup_eq' does not depend on any axioms
+'Mahjong.BorrowedGeneratedHotPlan.toV10_build' depends on axioms: [propext]
+'Mahjong.BorrowedGeneratedHotPlan.pointP_eq' depends on axioms: [propext, Quot.sound]
+'Mahjong.BorrowedGeneratedHotPlan.pointN_eq' depends on axioms: [propext, Quot.sound]
+'Mahjong.BorrowedGeneratedHotPlan.allNext_eq' depends on axioms: [propext, Quot.sound]
+'Mahjong.BorrowedGeneratedHotPlan.anyNext_eq' depends on axioms: [propext, Quot.sound]
+'Mahjong.BorrowedGeneratedHotPlan.singleNext_eq' depends on axioms: [propext, Quot.sound]
+'Mahjong.BorrowedGeneratedHotPlan.row_eq' depends on axioms: [propext, Quot.sound]
+'Mahjong.BorrowedGeneratedHotPlan.single_eq' depends on axioms: [propext, Quot.sound]
+'Mahjong.BorrowedGeneratedHotPlan.row_build' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Mahjong.BorrowedGeneratedHotPlan.single_build' depends on axioms: [propext, Classical.choice, Quot.sound]

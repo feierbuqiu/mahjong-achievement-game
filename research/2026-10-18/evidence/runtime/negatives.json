@@ -1,0 +1,395 @@
+{
+  "all_owned_services_confirmed_exited": true,
+  "backend": "linux_fused_joint_indexed_byte_checked_constructor_native_cache_v16",
+  "campaigns": [
+    {
+      "all_owned_services_confirmed_exited": true,
+      "bucket_timings": [],
+      "charged_invocation_wall_seconds": 134.0,
+      "checkpoint": {
+        "bytes": 1245,
+        "path": "runs/lean_table_checker/campaign_indexed_20261018_v16/campaigns/gngv3_0143n/checkpoint.json",
+        "sha256": "f3519884d6e52f19cd82e33eff745042b7a3042a03b42066aff006ea72464538"
+      },
+      "committed_frames": 0,
+      "committed_rows": 0,
+      "frame_timings": [],
+      "invocation_receipts": [
+        {
+          "bytes": 1958,
+          "path": "runs/lean_table_checker/campaign_indexed_20261018_v16/campaigns/gngv3_0143n/invocations/5e52d741a43f4d64846dcf44d095beb1.json",
+          "sha256": "9417a0b3a0773f64a1f7099c852c229eafb81275f0c30e4f1bea44ab91f8887c"
+        }
+      ],
+      "manifest": {
+        "bytes": 3198178,
+        "path": "runs/lean_table_checker/campaign_indexed_20261018_v16/campaigns/gngv3_0143n/manifest.json",
+        "sha256": "9c3370847d10381ef1a1f17acb8d883c15d67bc581189cf6753673aa1e707db2"
+      },
+      "name": "gngv3_0143n",
+      "revalidation_timings": [
+        {
+          "bytes": 0,
+          "path": "runs/lean_table_checker/campaign_indexed_20261018_v16/campaigns/gngv3_0143n/revalidation_timings/5e52d741a43f4d64846dcf44d095beb1.jsonl",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        }
+      ],
+      "scope_timings": [
+        {
+          "bytes": 1363,
+          "path": "runs/lean_table_checker/campaign_indexed_20261018_v16/campaigns/gngv3_0143n/scope_timings/fused_1792287925413607800_confirmed_close_1792287937496277400.json",
+          "sha256": "0e8f751ba09397e016072929fc291d68dc2cb3fd6162a88b3bf33b3f19c994d8"
+        },
+        {
+          "bytes": 1317,
+          "path": "runs/lean_table_checker/campaign_indexed_20261018_v16/campaigns/gngv3_0143n/scope_timings/fused_1792287925413607800_construct_1792287934842184800.json",
+          "sha256": "0953da4fc5dacf5abd3c72e6877568ceff2528ebc47d93cc4283091977bad992"
+        }
+      ],
+      "state": "PAUSED_ERROR_NO_UNCHECKED_PROGRESS_COMMITTED"
+    },
+    {
+      "all_owned_services_confirmed_exited": true,
+      "bucket_timings": [],
+      "charged_invocation_wall_seconds": 133.5779999999795,
+      "checkpoint": {
+        "bytes": 1152,
+        "path": "runs/lean_table_checker/campaign_indexed_20261018_v16/campaigns/gngv3_0143p/checkpoint.json",
+        "sha256": "09e8cbe26bed227980771758ad1ceea0a4f5bb41846d5a69d6f59cda266947be"
+      },
+      "committed_frames": 0,
+      "committed_rows": 0,
+      "frame_timings": [],
+      "invocation_receipts": [
+        {
+          "bytes": 1958,
+          "path": "runs/lean_table_checker/campaign_indexed_20261018_v16/campaigns/gngv3_0143p/invocations/43d8b431f40e4cc48b391f2e62b35c22.json",
+          "sha256": "0fcfec4fd6a672f01a73a79cb86e35cf25c2842753a5123b597b23e16bb55381"
+        }
+      ],
+      "manifest": {
+        "bytes": 3198182,
+        "path": "runs/lean_table_checker/campaign_indexed_20261018_v16/campaigns/gngv3_0143p/manifest.json",
+        "sha256": "d8ae81c90952364a3cf4f3bf9e2ce9b452a81a62fe8a95970b8e94364dcc8700"
+      },
+      "name": "gngv3_0143p",
+      "revalidation_timings": [
+        {
+          "bytes": 0,
+          "path": "runs/lean_table_checker/campaign_indexed_20261018_v16/campaigns/gngv3_0143p/revalidation_timings/43d8b431f40e4cc48b391f2e62b35c22.jsonl",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        }
+      ],
+      "scope_timings": [
+        {
+          "bytes": 1363,
+          "path": "runs/lean_table_checker/campaign_indexed_20261018_v16/campaigns/gngv3_0143p/scope_timings/fused_1792288107941202900_confirmed_close_1792288120001648400.json",
+          "sha256": "b5b5bdf7e57c12b752a52639641e0257a2fa9b967769eeeb8b27413172b1cbfc"
+        },
+        {
+          "bytes": 1316,
+          "path": "runs/lean_table_checker/campaign_indexed_20261018_v16/campaigns/gngv3_0143p/scope_timings/fused_1792288107941202900_construct_1792288117214423800.json",
+          "sha256": "fff40dd9945ec7453c7de8bfc145b8c8f3d0b30e7bb832f60cd178a7cfc82046"
+        }
+      ],
+      "state": "PAUSED_ERROR_NO_UNCHECKED_PROGRESS_COMMITTED"
+    },
+    {
+      "all_owned_services_confirmed_exited": true,
+      "bucket_timings": [],
+      "charged_invocation_wall_seconds": 121.51500000001397,
+      "checkpoint": {
+        "bytes": 856,
+        "path": "runs/lean_table_checker/campaign_indexed_20261018_v16/campaigns/gngv3_0143t/checkpoint.json",
+        "sha256": "fd82f22ae42ce9f31d0c763ce2ce2ff536ff83f2d2e99989758875fc4574853e"
+      },
+      "committed_frames": 0,
+      "committed_rows": 0,
+      "frame_timings": [],
+      "invocation_receipts": [
+        {
+          "bytes": 1958,
+          "path": "runs/lean_table_checker/campaign_indexed_20261018_v16/campaigns/gngv3_0143t/invocations/854ea629cb5f47e7b85c66a727fe15e0.json",
+          "sha256": "4ab680b283ec20e30d331674a9e8dac2adfcea545918ffbb1e390ba2ce6ffee3"
+        }
+      ],
+      "manifest": {
+        "bytes": 3198168,
+        "path": "runs/lean_table_checker/campaign_indexed_20261018_v16/campaigns/gngv3_0143t/manifest.json",
+        "sha256": "e1c198b3b4a2eeaf58fe7007c7733b24b9d25609fdbbb3257d3e8e92ee7a1432"
+      },
+      "name": "gngv3_0143t",
+      "revalidation_timings": [
+        {
+          "bytes": 0,
+          "path": "runs/lean_table_checker/campaign_indexed_20261018_v16/campaigns/gngv3_0143t/revalidation_timings/854ea629cb5f47e7b85c66a727fe15e0.jsonl",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        }
+      ],
+      "scope_timings": [],
+      "state": "PAUSED_ERROR_NO_UNCHECKED_PROGRESS_COMMITTED"
+    }
+  ],
+  "cases": [
+    {
+      "description": "Actual bad_N_index_zero_commit rejected with zero committed rows and owned cleanup confirmed",
+      "id": "bad_N_index_zero_commit",
+      "status": "PASS_ACTUAL"
+    },
+    {
+      "description": "Actual bad_packed_zero_commit rejected with zero committed rows and owned cleanup confirmed",
+      "id": "bad_packed_zero_commit",
+      "status": "PASS_ACTUAL"
+    },
+    {
+      "description": "Actual missing_tail_zero_commit rejected with zero committed rows and owned cleanup confirmed",
+      "id": "missing_tail_zero_commit",
+      "status": "PASS_ACTUAL"
+    }
+  ],
+  "cleanup_reserve_inside_each_invocation_seconds": 60,
+  "deferred": null,
+  "full_campaign_started": false,
+  "full_launch_allowed": false,
+  "full_table_Lean": "NOT_VERIFIED",
+  "maximum_individual_invocation_seconds": 300,
+  "name": "gngv3_0143",
+  "normal_phase_window_seconds": 600.0,
+  "outer_harness_creates_no_Job": true,
+  "phase": "negatives",
+  "plan_constructor_kind": "PROVED_ONCE_CHECKED_TEMPLATE_CONSTRUCTOR_V16",
+  "pure_kernel_theorem_count": 104,
+  "record_bytes": 1,
+  "row_checker_kind": "PROVED_INDEXED_NEXT_BYTE_SCALAR_SCAN_V16",
+  "schema": "ACTUAL_INDEXED_BYTE_PRODUCTION_CONTROLLER_BOUNDED_PHASE_V16",
+  "simulated_error_is_not_power_loss_or_forced_kill": true,
+  "small_plan_serial_template_threshold": 4096,
+  "source_binding": {
+    "build/lean_table_checker/campaign_indexed_v16/assemble_worker_gate.py": {
+      "bytes": 8598,
+      "sha256": "a8dafbfbe7b20a3fc072618b8b96c197ed95d92b98548f14637f329fd6d2aa97"
+    },
+    "build/lean_table_checker/campaign_indexed_v16/cache_transport.py": {
+      "bytes": 9088,
+      "sha256": "c9bc98c8ea47cdf6f5c1ba0eb9e062e8c2cc7ddae54b9c6b6a1185b78aa7a674"
+    },
+    "build/lean_table_checker/campaign_indexed_v16/campaign.py": {
+      "bytes": 43718,
+      "sha256": "19c2f7420939c3bb706f9e6de6801218503eccdc8654ffb24c6ddcb6074078ec"
+    },
+    "build/lean_table_checker/campaign_indexed_v16/campaign_io.py": {
+      "bytes": 3477,
+      "sha256": "354b1934609734f593f38aa70e8e07178909bdc122f358df71484e62360feb09"
+    },
+    "build/lean_table_checker/campaign_indexed_v16/collect_fees.py": {
+      "bytes": 10248,
+      "sha256": "06caabfb77bee441f6357a60a8ab23bc25824f88788515e583cfbd12f6ece9b9"
+    },
+    "build/lean_table_checker/campaign_indexed_v16/compact_transport.py": {
+      "bytes": 18932,
+      "sha256": "abc9570c04d0a1967951ace2e6060d6af3745c1d1e1be9e3f807e33c5f5f7723"
+    },
+    "build/lean_table_checker/campaign_indexed_v16/cost_gate.py": {
+      "bytes": 12478,
+      "sha256": "ced153af2541465a549d80216a5d05493d2cc11f8127a8b0869af4320e0a49f3"
+    },
+    "build/lean_table_checker/campaign_indexed_v16/finite_premises.py": {
+      "bytes": 4950,
+      "sha256": "e4f64e79de03a7c6c6c559c3da02844d2193cef7f1255da4e4fc7c8aa3b55aaa"
+    },
+    "build/lean_table_checker/campaign_indexed_v16/frame_planner.py": {
+      "bytes": 8646,
+      "sha256": "276644a6296dfb9296a8122a6b7954c8c842af075d673fd38fe58321c6b9e259"
+    },
+    "build/lean_table_checker/campaign_indexed_v16/frame_registry.py": {
+      "bytes": 5092,
+      "sha256": "b16a5ab418c84b6bf19e72a5d4de294eb6ccf5e956e270af67fed17c11bf6f38"
+    },
+    "build/lean_table_checker/campaign_indexed_v16/fused_transport.py": {
+      "bytes": 19475,
+      "sha256": "ba5fb47b6c54c2581dea5f98505b8c7b6b95181dbaad68e9fa281d4b3a7d2345"
+    },
+    "build/lean_table_checker/campaign_indexed_v16/indexed_runtime.py": {
+      "bytes": 2997,
+      "sha256": "2170e3ecc730f4daaf354f8d570b4d442692b59f426b72fb036fbdb91e07d319"
+    },
+    "build/lean_table_checker/campaign_indexed_v16/input_snapshot.py": {
+      "bytes": 4269,
+      "sha256": "fbd0febd2dda136b3a9348751f5521e625439713d18b61563d537e21b252c763"
+    },
+    "build/lean_table_checker/campaign_indexed_v16/integration_contract.py": {
+      "bytes": 12047,
+      "sha256": "9ecf6f6b54640700038f2b601f9ceb643b0f709924190628fa81fec683e868c3"
+    },
+    "build/lean_table_checker/campaign_indexed_v16/invocation_budget.py": {
+      "bytes": 5328,
+      "sha256": "576c0c92929fefb41ed25f066284f25a076df89a928b9149c7a51d075f470a22"
+    },
+    "build/lean_table_checker/campaign_indexed_v16/keep_awake.py": {
+      "bytes": 817,
+      "sha256": "4ceeaac0cd908fb710b64ca537dae8b5c4b1a633051c0af10a9497d9c8a02102"
+    },
+    "build/lean_table_checker/campaign_indexed_v16/launch_campaign.py": {
+      "bytes": 19246,
+      "sha256": "ae496d00399dec047dd5aed0eba2922c280b94ddec90e9037f895e1b6e93fe82"
+    },
+    "build/lean_table_checker/campaign_indexed_v16/ledger.py": {
+      "bytes": 13955,
+      "sha256": "6765d0d08f228bb19a618342fda94f0c0f9aea8e14a672fe9c00684d8d313ba2"
+    },
+    "build/lean_table_checker/campaign_indexed_v16/linux_worker_gate.py": {
+      "bytes": 35345,
+      "sha256": "b7ff32268c66d1295d6f616d9dab91cb2012d672b593ce7cf4b56448b8653175"
+    },
+    "build/lean_table_checker/campaign_indexed_v16/local_reports.py": {
+      "bytes": 3817,
+      "sha256": "6fade6f73e55c37ab4546bc4e7778fad6caa48912f040f35544eb05f4bc69dae"
+    },
+    "build/lean_table_checker/campaign_indexed_v16/path_guard.py": {
+      "bytes": 1145,
+      "sha256": "8d4ae7bd5b0deb7a77dd17c95635fc38cd9727d6f9188c0aaf0f322a6eba69bd"
+    },
+    "build/lean_table_checker/campaign_indexed_v16/prepare_full_queue.py": {
+      "bytes": 3996,
+      "sha256": "353648e53297a89bf1763de63260bb30970b2ebc3422a02b00f928d016b3cbfb"
+    },
+    "build/lean_table_checker/campaign_indexed_v16/prepare_source_plan.py": {
+      "bytes": 13039,
+      "sha256": "8e669ab1b7f5b95922be0db7f4821c139883afdff2de40d41df7a42b99dc8c13"
+    },
+    "build/lean_table_checker/campaign_indexed_v16/prior_import.py": {
+      "bytes": 7988,
+      "sha256": "9c4bcd7bc38f1bc4509b5c8adcf39631d529f4665fd0f60c62af6aed598f4b86"
+    },
+    "build/lean_table_checker/campaign_indexed_v16/production_metrics.py": {
+      "bytes": 2141,
+      "sha256": "f81d513087e62c8abd1ed8992ba49e2fdf30f1b63a4eef977d391d45789cb3ae"
+    },
+    "build/lean_table_checker/campaign_indexed_v16/resource_job.py": {
+      "bytes": 5507,
+      "sha256": "a845264b41c14f58b806bd8dad1b24245b8c00a32a5f560337a101f3f33a371a"
+    },
+    "build/lean_table_checker/campaign_indexed_v16/run_functional.py": {
+      "bytes": 16675,
+      "sha256": "73993fcb0edd985fbfca752bea91bb7c0aa0d229b855ad845ec116f7a51738f3"
+    },
+    "build/lean_table_checker/campaign_indexed_v16/runner.py": {
+      "bytes": 27271,
+      "sha256": "091d78531e154c0293b237d9371fa17182e7d23c292725e87cb83aa28471df08"
+    },
+    "build/lean_table_checker/campaign_indexed_v16/scope_lifecycle.py": {
+      "bytes": 2835,
+      "sha256": "bc10467d220cf1d31f42c1d703742efbc4fc514729d5f30550a936f85565661c"
+    },
+    "build/lean_table_checker/campaign_indexed_v16/span_policy.py": {
+      "bytes": 6420,
+      "sha256": "1f355fb00fc0bcfdd5146ecb3c4fc98faa3d0f7908ea03b4f140b4869d59f3b8"
+    },
+    "build/lean_table_checker/campaign_indexed_v16/stop_unreceipted.py": {
+      "bytes": 2455,
+      "sha256": "c33de77faa4780cdb47864af9288964a53f15463f76ca9dfc6a59f844abc3a22"
+    },
+    "build/lean_table_checker/campaign_indexed_v16/test_contract.py": {
+      "bytes": 9721,
+      "sha256": "96c361be3ed04ca67335af7ac3e9b21c56b8376adb9a65e6d7bbf9277c61ad47"
+    },
+    "build/lean_table_checker/campaign_indexed_v16/test_epoch_controls.py": {
+      "bytes": 8128,
+      "sha256": "73e1c1f04944db162ba4bc5c1847100859d6803d92e1715c5c344338b7ba3413"
+    },
+    "build/lean_table_checker/campaign_indexed_v16/test_linux_worker_gate.py": {
+      "bytes": 8192,
+      "sha256": "2b7037fc318b99ed5c060fdeff48d02a0ef7bf70dbccd4b3ec54b6d4aee6084f"
+    },
+    "build/lean_table_checker/campaign_indexed_v16/worker_gate.py": {
+      "bytes": 7026,
+      "sha256": "17545650690c486484070b6619b5cacd8ac73df6c6cf588a93d5cec27e822dc8"
+    }
+  },
+  "status": "PASS_ACTUAL_BOUNDED_INDEXED_BYTE_PRODUCTION_PHASE_V16",
+  "steps": [
+    {
+      "label": "plan_gngv3_0143n",
+      "log": {
+        "bytes": 110,
+        "path": "runs/lean_table_checker/campaign_indexed_20261018_v16/functional/negatives_0513751a/plan_gngv3_0143n.log",
+        "sha256": "a301c21f8abbce7a7f34f58f88ab84da3125b181580adc40f2c0c280cdb3843c"
+      },
+      "returncode": 0,
+      "wall_seconds": 48.10999999998603
+    },
+    {
+      "label": "seed_gngv3_0143n",
+      "log": {
+        "bytes": 52,
+        "path": "runs/lean_table_checker/campaign_indexed_20261018_v16/functional/negatives_0513751a/seed_gngv3_0143n.log",
+        "sha256": "966e45b7cacc00fd75cd9843d216c3a3cf4115ead0622f743a78287c9d50edb9"
+      },
+      "returncode": 0,
+      "wall_seconds": 0.6870000000344589
+    },
+    {
+      "label": "bad_N_index_zero_commit",
+      "log": {
+        "bytes": 303,
+        "path": "runs/lean_table_checker/campaign_indexed_20261018_v16/functional/negatives_0513751a/bad_N_index_zero_commit.log",
+        "sha256": "d4b7f95c55204d5878ac098d78e566717199863d60bdeb2ed122ecc6b31deca1"
+      },
+      "returncode": 1,
+      "wall_seconds": 134.26600000000326
+    },
+    {
+      "label": "plan_gngv3_0143p",
+      "log": {
+        "bytes": 110,
+        "path": "runs/lean_table_checker/campaign_indexed_20261018_v16/functional/negatives_0513751a/plan_gngv3_0143p.log",
+        "sha256": "a301c21f8abbce7a7f34f58f88ab84da3125b181580adc40f2c0c280cdb3843c"
+      },
+      "returncode": 0,
+      "wall_seconds": 47.92200000002049
+    },
+    {
+      "label": "seed_gngv3_0143p",
+      "log": {
+        "bytes": 52,
+        "path": "runs/lean_table_checker/campaign_indexed_20261018_v16/functional/negatives_0513751a/seed_gngv3_0143p.log",
+        "sha256": "966e45b7cacc00fd75cd9843d216c3a3cf4115ead0622f743a78287c9d50edb9"
+      },
+      "returncode": 0,
+      "wall_seconds": 0.7029999999795109
+    },
+    {
+      "label": "bad_packed_zero_commit",
+      "log": {
+        "bytes": 303,
+        "path": "runs/lean_table_checker/campaign_indexed_20261018_v16/functional/negatives_0513751a/bad_packed_zero_commit.log",
+        "sha256": "925e17d72e67b75b4b0a936bfcc4ac3a44742487ae2642d2b3a9b3aaefbab22e"
+      },
+      "returncode": 1,
+      "wall_seconds": 133.8279999999795
+    },
+    {
+      "label": "plan_gngv3_0143t",
+      "log": {
+        "bytes": 110,
+        "path": "runs/lean_table_checker/campaign_indexed_20261018_v16/functional/negatives_0513751a/plan_gngv3_0143t.log",
+        "sha256": "a301c21f8abbce7a7f34f58f88ab84da3125b181580adc40f2c0c280cdb3843c"
+      },
+      "returncode": 0,
+      "wall_seconds": 48.64100000000326
+    },
+    {
+      "label": "missing_tail_zero_commit",
+      "log": {
+        "bytes": 303,
+        "path": "runs/lean_table_checker/campaign_indexed_20261018_v16/functional/negatives_0513751a/missing_tail_zero_commit.log",
+        "sha256": "88fa48cdbf7d5da6a60ab813733cba7f0cebca896a541339cce85a4cf462cd51"
+      },
+      "returncode": 1,
+      "wall_seconds": 121.78099999995902
+    }
+  ],
+  "threads": 12,
+  "transport": "indexed_actual_next_byte_v16",
+  "wall_seconds": 536.1410000000033
+}

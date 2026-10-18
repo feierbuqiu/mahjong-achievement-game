@@ -158,7 +158,8 @@ def verify():
     status = read(ROOT / 'RESEARCH_STATUS.json')
     # The dated evidence remains valid when the maintainer's current plans change.
     require(status['formal_verification']['empty_game_lean'] == 'NOT_VERIFIED' and
-            status['formal_verification']['compiled_checker_complete_layer_rows'] == 22512356,
+            status['historical_progress']['2026-09-15']['compiled_checker_complete_layer_rows'] == 22512356 and
+            status['formal_verification']['compiled_checker_complete_layer_rows'] >= 22512356,
             'Homepage status mismatch')
     return dict(status='PASS_PUBLIC_HANDOFF', artifacts=len(by_path), checker_source_modules=len(sources),
                 benchmark_cases=len(cases), evaluations=745472, unique_sampled_slots=unique,

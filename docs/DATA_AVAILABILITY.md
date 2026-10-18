@@ -30,13 +30,31 @@ ZIP as a separate asset; its [identity and scope](../papers/lean-verification/co
 distinguish it from the full source ZIP and Git history bundle. The two new
 paper-preparation replay receipts concern the same 84-module closure and do
 not add historical P/N coverage. See [project status](PROJECT_STATUS.md)
-for the completed stage and future maintenance scope.
+for the current outlook and the subsequent October progress.
 
 The latest [formal source](../formal/README.md) contains the complete replay
 closure for the new 12-tile and 14-tile roots, the compressed 20-tile proof,
 and the 757-entry proved registry. These additions belong to the current
 publication; the original signed `v0.1.0` tag continues to identify its earlier
 computational snapshot.
+
+## October 18 post-release materials
+
+The [October update](../research/2026-10-18/README.md) adds the 132 linked V16
+Lean sources, 104 selected recorded theorem/axiom fingerprints and their
+existing logs, selected controller/cost-model/GPU source, all 34 calibration
+cases, resource and production-control receipts, and the layer-32 audit.
+Its [provenance](../research/2026-10-18/provenance.json) separates original
+hashes from public hashes after private-path removal and one English display
+translation. This publication performs no new Lean or whole-table run.
+
+The supplied campaign plan and receipt indexes also name retained inputs.
+Those references do not imply that the 97.32 GB table, executable workers,
+compiled objects, complete finite-input banks or all historical evidence
+files are downloadable here. The full local expected-input inventory names
+23,905 items / 100,500,253,135 bytes; it is retained separately. Original-language
+audit documents are catalogued and summarized in English. This is an
+inspectable source/evidence update, not a complete portable GPU campaign.
 
 ## Included in this repository
 

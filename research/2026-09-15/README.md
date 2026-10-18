@@ -1,3 +1,6 @@
+> **Historical 2026-09-15 snapshot.** The [October 18 update](../2026-10-18/README.md)
+> records later V16 acceleration, independent review and the unstarted final campaign.
+
 # Lean status: September 15, 2026
 
 **The maintainer will not undertake further end-to-end or full-scale Lean

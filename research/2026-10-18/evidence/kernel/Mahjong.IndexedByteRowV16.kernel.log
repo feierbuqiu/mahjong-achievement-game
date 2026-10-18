@@ -1,0 +1,6 @@
+'Mahjong.IndexedByteRowV16.singleIndex_refines' depends on axioms: [propext, Quot.sound]
+'Mahjong.IndexedByteRowV16.numericIndex_refines' depends on axioms: [propext, Quot.sound]
+'Mahjong.IndexedByteRowV16.atIndex_refines' depends on axioms: [propext, Quot.sound]
+'Mahjong.IndexedByteRowV16.p_refines' depends on axioms: [propext, Quot.sound]
+'Mahjong.IndexedByteRowV16.n_refines' depends on axioms: [propext, Quot.sound]
+'Mahjong.IndexedByteRowV16.original' depends on axioms: [propext, Classical.choice, Quot.sound]

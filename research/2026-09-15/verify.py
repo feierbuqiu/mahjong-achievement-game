@@ -91,7 +91,8 @@ def verify():
                 hashlib.sha256(data).hexdigest() == fragment['sha256'] and
                 data == (BASE / 'source/fragments' / Path(fragment['fragment']).name).read_bytes(),
                 f"C++ source correspondence mismatch: {fragment['name']}")
-    current = read(ROOT / 'RESEARCH_STATUS.json')['formal_verification']
+    # This verifier authenticates the dated September evidence, not later progress.
+    current = read(ROOT / 'RESEARCH_STATUS.json')['historical_progress']['2026-09-15']
     require(current['empty_game_lean'] == acceptance['empty_game_Lean'] and
             current['compiled_checker_complete_layer_rows'] == acceptance['existing_pn_unique_rows'] == 22512356 and
             current['latest_new_historical_pn_rows'] == acceptance['new_pn_rows'] and

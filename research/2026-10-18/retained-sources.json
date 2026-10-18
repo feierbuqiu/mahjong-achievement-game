@@ -1,0 +1,54 @@
+{
+  "schema": "MJ_OCTOBER_RETAINED_SOURCE_CATALOGUE_V1",
+  "sources": [
+    {
+      "original_path": "runs/lean_table_checker/prelaunch_audit_20261018/README.md",
+      "bytes": 5058,
+      "sha256": "ae2bb089bcd4a018893182b2d89c9a6d733efd9f9cb2a34790ba8161e35acba5",
+      "public_copy": false,
+      "reason": "Retained original-language audit document or large expected-input identity catalogue; English summary supplied separately"
+    },
+    {
+      "original_path": "runs/lean_table_checker/prelaunch_audit_20261018/AUDITOR_BRIEF.md",
+      "bytes": 2523,
+      "sha256": "8acb0f69ac5047805ecd371587e0d6bbab3ab67cf4665ebe645707db9374e773",
+      "public_copy": false,
+      "reason": "Retained original-language audit document or large expected-input identity catalogue; English summary supplied separately"
+    },
+    {
+      "original_path": "runs/lean_table_checker/prelaunch_audit_20261018/independent_audit_scope.md",
+      "bytes": 21266,
+      "sha256": "9e72087f9e43b8119d8c33c89f43f09774b3a0210603a430b61812cb1f7f4eb6",
+      "public_copy": false,
+      "reason": "Retained original-language audit document or large expected-input identity catalogue; English summary supplied separately"
+    },
+    {
+      "original_path": "runs/lean_table_checker/prelaunch_audit_20261018/proof_review_notes.md",
+      "bytes": 12329,
+      "sha256": "9080f49cf9849ee2ce48aedb396e0cc6ce6dcf7fbb7ca9c2bcc3c2a4efd3b74f",
+      "public_copy": false,
+      "reason": "Retained original-language audit document or large expected-input identity catalogue; English summary supplied separately"
+    },
+    {
+      "original_path": "runs/lean_table_checker/prelaunch_audit_20261018/reproducibility_and_launch_hold.md",
+      "bytes": 18848,
+      "sha256": "a6f488ba5376c1b689ef7e4149405f36ad35f6908200d2348c13e113ab7575c6",
+      "public_copy": false,
+      "reason": "Retained original-language audit document or large expected-input identity catalogue; English summary supplied separately"
+    },
+    {
+      "original_path": "runs/lean_table_checker/prelaunch_audit_20261018/EXPECTED_INPUTS.json",
+      "bytes": 4559137,
+      "sha256": "796efe070c9fc088f0f6f4866c7c45becef919397029ad5c1a07d417355fa9d6",
+      "public_copy": false,
+      "reason": "Retained original-language audit document or large expected-input identity catalogue; English summary supplied separately"
+    },
+    {
+      "original_path": "runs/lean_table_checker/prelaunch_audit_20261018/PACKAGE_MANIFEST.json",
+      "bytes": 4070,
+      "sha256": "74818a96169e67b6a454e3b864ae7c4cebfd6f30332fb97e0adb20625b4e3f22",
+      "public_copy": false,
+      "reason": "Retained original-language audit document or large expected-input identity catalogue; English summary supplied separately"
+    }
+  ]
+}

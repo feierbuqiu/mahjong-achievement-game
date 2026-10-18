@@ -4,9 +4,11 @@ Thank you for helping make this result inspectable and reproducible.
 Use English for repository documentation, issues, pull requests, and commit
 messages. Keep changes focused and explain any effect on the research claim.
 
-The [v1.0.0 delivery](docs/PROJECT_STATUS.md) closes the maintainer's active
-research phase. Substantive new findings, necessary corrections and reproducibility
-improvements remain welcome, but routine progress or a review schedule is not promised.
+The [current project status](docs/PROJECT_STATUS.md) records a planned final
+compiled-Lean campaign with a conditional sub-20-hour expectation. The full
+scan is awaiting independent correctness review and has not started. Deeper
+formal results, independent arguments, alternative methods, corrections and
+reproducibility improvements remain welcome.
 
 ## Workflow
 

@@ -1,0 +1,7 @@
+'Mahjong.TemplatePlanCheck.expectedSafe_key' depends on axioms: [propext, Quot.sound]
+'Mahjong.TemplatePlanCheck.shadowChild_key' depends on axioms: [propext]
+'Mahjong.TemplatePlanCheck.edge_from_template' depends on axioms: [propext, Quot.sound]
+'Mahjong.TemplatePlanCheck.cached_edge_sound' depends on axioms: [propext, Quot.sound]
+'Mahjong.TemplatePlanCheck.row_refines' depends on axioms: [propext, Quot.sound]
+'Mahjong.TemplatePlanCheck.span_refines' depends on axioms: [propext]
+'Mahjong.TemplatePlanCheck.checkPlan_refines' depends on axioms: [propext, Quot.sound]

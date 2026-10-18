@@ -1,0 +1,10 @@
+/var/tmp/mahjong-lean-large-frame-build-v14-73df6bcd78ff4f4faa341a76f66dce55/source/Mahjong/BorrowedNextGeneratedCompactHotRow.lean:33:36: warning: This simp argument is unused:
+  ↓reduceIte
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [check, Bool.and_eq_true] at accepted
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+'Mahjong.BorrowedNextGeneratedCompactHotRow.p_refines' depends on axioms: [propext, Quot.sound]
+'Mahjong.BorrowedNextGeneratedCompactHotRow.n_refines' depends on axioms: [propext, Quot.sound]
+'Mahjong.BorrowedNextGeneratedCompactHotRow.original' depends on axioms: [propext, Classical.choice, Quot.sound]

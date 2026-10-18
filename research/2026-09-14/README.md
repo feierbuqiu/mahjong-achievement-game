@@ -1,3 +1,6 @@
+> **Historical 2026-09-14 snapshot.** The [October 18 update](../2026-10-18/README.md)
+> records later V16 acceleration, independent review and the unstarted final campaign.
+
 # Research handoff: personal Lean work paused
 
 **September 14, 2026.** The maintainer has put personal end-to-end Lean

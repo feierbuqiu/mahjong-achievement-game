@@ -1,0 +1,4 @@
+'Mahjong.CheckedPlanConstructor.prepareEdge_sound' depends on axioms: [propext]
+'Mahjong.CheckedPlanConstructor.layoutKey_sound' depends on axioms: [propext, Quot.sound]
+'Mahjong.CheckedPlanConstructor.preparePlan_sound' depends on axioms: [propext, Quot.sound]
+'Mahjong.CheckedPlanConstructor.preparePlan_refines' depends on axioms: [propext, Quot.sound]
