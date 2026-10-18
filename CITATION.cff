@@ -35,13 +35,13 @@ keywords:
   - computational mathematics
   - Lean formalization
 abstract: >-
-  Research software, two English reports and computational/formal evidence for
-  a deterministic two-player shared-pool Mahjong achievement game. Complete
+  Research software, two dated English reports and computational/formal evidence
+  for a deterministic two-player shared-pool Mahjong achievement game. Complete
   SAFE-state retrograde analysis and reverse replay classify the empty position
-  as a second-player win; both algorithms share rules and indexing. Partial
-  Lean certification, finite algorithm models and bounded tests are included.
-  Current work studies persistent kernel certificates and compression, with
-  generic composition and a small actual-data closed pilot. The actual opening
-  Lean theorem remains NOT_VERIFIED; no end-to-end 20/24-hour completion bound
-  is established. Version and date above identify the last immutable release;
-  cite the exact commit for subsequent research material.
+  as a second-player win. The October 2026 V17 run evaluates all six finite
+  acceptance families on all 778,532,864,302 stored labels under a kernel-proved
+  original-game implication. Native execution and external bookkeeping remain
+  trusted; no closed actual-input opening Lean declaration or independent
+  execution replication is claimed. A separate AI source/record review is supplied.
+  Version and date above identify the immutable software release, not subsequent
+  evidence-asset records; cite the exact commit for current research material.

@@ -1,0 +1,61 @@
+{
+  "schema": "V19_STRICT_KERNEL_RESEARCH_STOPPED_BY_USER_TARGET_REVISION",
+  "updated_utc": "2026-10-18T08:36:04.868114+00:00",
+  "prior_status": {
+    "path": "runs/lean_table_checker/acceleration_20261018_v19/packed/CURRENT_STATUS.json",
+    "bytes": 4280,
+    "sha256": "da33d6e3610168a7138c93327daf0356798c967896a51722b48d46170d5f8287"
+  },
+  "branch_seals": [
+    {
+      "path": "build/lean_table_checker/acceleration_v19/cartesian_nolet_full28_v19/SOURCE_FREEZE.json",
+      "bytes": 297816,
+      "sha256": "51c02bbd7d29f39f7b57676539bd7957d1ca0053d17e01dc7c2a52007ad20c33"
+    },
+    {
+      "path": "build/lean_table_checker/acceleration_v19/cartesian_cached_layout_v19/SOURCE_FREEZE.json",
+      "bytes": 26523,
+      "sha256": "2052a4ca84f8ee8bad7e865f50a3cd1dd5bf625a7dbebf2fb623c410d183f736"
+    },
+    {
+      "path": "build/lean_table_checker/acceleration_v19/cartesian_cached_full402_v19/SOURCE_FREEZE_INCOMPLETE.json",
+      "bytes": 79472,
+      "sha256": "ec4e206791abcffb2c0577e28345400f278e307fc9451e0c7b1e9eeabee1475e"
+    },
+    {
+      "path": "build/lean_table_checker/acceleration_v19/canonical_inventory_v19/SOURCE_FREEZE.json",
+      "bytes": 72425,
+      "sha256": "6da6aa857e7c57cc6bcaf52b8802882d463ba70f5543f11df026f80438a66f76"
+    },
+    {
+      "path": "build/lean_table_checker/acceleration_v19/compression/CANONICAL_PAD_SOURCE_FREEZE.json",
+      "bytes": 50753,
+      "sha256": "f1e8dd38c3fd7197e855746ea7cca1bf0fdb30210ba184c1cdef5cb91049ca6c"
+    },
+    {
+      "path": "runs/lean_table_checker/acceleration_20261018_v19/kernel_batch/sparse_nat_v19/compressed_sealed/e53829ccc7234239/FREEZE.json",
+      "bytes": 4814,
+      "sha256": "e0489bfc3e13fd7b8c8ca196bb97cd35a77db6788cf782381cc27b362b05a41d"
+    }
+  ],
+  "user_direction": "Stop strict whole-table proof-export optimization; use frozen V17 kernel implication plus native evaluation.",
+  "strict_kernel_search_active": false,
+  "goal_achieved": false,
+  "twenty_hour_strict_bound_established": false,
+  "final_kernel_empty_theorem": false,
+  "full_scan_started": false,
+  "full_launch_allowed": false,
+  "stop": {
+    "path": "runs/lean_table_checker/campaign_indexed_20261018_v16/campaigns/overnight_v16_indexed_r3i/STOP",
+    "bytes": 87,
+    "sha256": "93cb3749c24d6b833faceba6293b3144cd3385a86864944c93561351cbc33b88"
+  },
+  "v17_sources_modified": false,
+  "v19_results_to_be_mixed_into_v17_runtime": false,
+  "unfinished_work": [
+    "Full 402-word cached layout numerical contracts/replay",
+    "Full local certificate actual data",
+    "Full canonical padded checker instantiation",
+    "Strict whole-table saved proof and empty-root closed theorem"
+  ]
+}

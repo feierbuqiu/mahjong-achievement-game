@@ -1,0 +1,7 @@
+'Mahjong.BindingControlsV17.root_projection_accepts' does not depend on any axioms
+'Mahjong.BindingControlsV17.root_n_bit_rejected' does not depend on any axioms
+'Mahjong.BindingControlsV17.missing_padded_bits_rejected' does not depend on any axioms
+'Mahjong.BindingControlsV17.nonempty_code_rejected' does not depend on any axioms
+'Mahjong.BindingControlsV17.missing_directory_rejected' does not depend on any axioms
+'Mahjong.BindingControlsV17.different_bits_not_same_bucket' depends on axioms: [propext, Quot.sound]
+'Mahjong.BindingControlsV17.different_size_not_same_bucket' depends on axioms: [propext, Quot.sound]

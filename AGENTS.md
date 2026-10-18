@@ -3,24 +3,23 @@
 Read README.md, RESEARCH_STATUS.json, docs/RULES.md, docs/EVIDENCE.md, and
 docs/REPRODUCIBILITY.md before changing research claims or algorithms.
 
-- The recorded computational opening result is P (second-player win), with
-  full reverse replay sharing the rules/index. The actual empty-game Lean
-  theorem remains NOT_VERIFIED. Read research/2026-10-18-kernel/README.md and
-  docs/PROJECT_STATUS.md for the current persistent-kernel-certificate work.
-  V17 generic composition, V18 closed nonempty actual-data proofs and V19
-  numeric/layout components retain different scopes. The historical compiled
-  layers 32–34 total 303,054,865 rows; these are not new closed kernel certificates.
-  The old 13.0256-hour native screen is a different workload. No reliable
-  20/24-hour end-to-end construction/persistence/assembly/replay bound exists.
-  Do not repeat the superseded imminent-finish forecast. General closure
-  theorems are available; the actual whole input/certificate is uninstantiated.
-  Respect the legacy whole-table STOP. This publication request authorizes
-  source/receipt inspection and required publication CI, not new research runs,
-  Lean/GPU/Native/WSL launches, schedules, compute provisioning or authority changes.
-  Existing bounded CI replays concern the older published proof package.
-  Keep source-only V19 extracts distinct from a complete portable replay bundle.
-  Preserve both dated papers and immutable releases. Historical UNKNOWN is not
-  a new computational classification, and component PASS is not an opening proof.
+- Read research/2026-10-19-v17/README.md, docs/PROJECT_STATUS.md and
+  docs/CLAIMS.md for current scope. The fixed V17 native run is COMPLETE:
+  778,532,864,302 rows, all 35 layers, 3,686 buckets, 17,317 frames, six finite
+  acceptance families, no old PASS/seed import. The claim is a kernel-proved
+  implication plus native evaluation; the actual empty-game closed Lean
+  declaration remains NOT_VERIFIED. Compiler/runtime/OS/hardware, IO/input
+  custody and external bookkeeping remain trusted. The separate AI review
+  reran no Lean/native computation and is not human peer review or independent
+  execution replication. V18/V19 strict proof export was stopped; the legacy
+  V16 STOP remains. Do not confuse those holds with the completed V17 run.
+  No future strict-kernel runtime bound is established. Publication work
+  permits read-only source/receipt inspection, packaging and required CI,
+  not new local research scans, Lean/GPU/Native/WSL launches or schedules.
+  Preserve both dated manuscripts and immutable releases; the evidence-asset
+  tag is separate from semantic software releases. In-progress .part archives
+  are not finished packages. Keep retained full inputs distinct from hashes
+  and saved-record archives. Version labels are defined in docs/INTERNAL_VERSIONS.md.
 - Keep the shared-pool rules, seven distinct pairs, all physical numeric
   additions, and the stated symmetry group unchanged unless explicitly asked.
 - UNKNOWN/timeouts are never P. N does not mean SG=1. Static winning profiles

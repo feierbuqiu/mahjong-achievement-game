@@ -6,10 +6,12 @@
 Enumeration, and Retrograde Models* — **feierbuqiu**, 15 September 2026.
 
 This paper is published alongside the [September 13 computational paper](../manuscript.md)
-in **v1.0.0**, which fixed the September delivery. The [later October update](../../research/2026-10-18-kernel/README.md) records
-persistent kernel-certificate research, a closed small actual-data pilot and
-compression experiments. The opening proof and a practical whole-task bound
-remain open. This dated paper retains its original text.
+in **v1.0.0**, which fixed the September delivery. The
+[October 19 V17 update](../../research/2026-10-19-v17/README.md) records complete
+native verification under a kernel-proved implication, with an explicit
+execution/bookkeeping trust boundary. A closed actual-input Lean declaration
+and independent execution replication remain open. This dated paper retains
+its original text; a new paper has not yet been published.
 It explains the later concrete strategy bank, compiled checks of layers 33/34,
 finite enumeration and algorithm proofs, implementation tests, and remaining
 obligations. It preserves the computational second-player conclusion and the

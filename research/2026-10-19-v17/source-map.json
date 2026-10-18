@@ -1,0 +1,2012 @@
+{
+  "schema": "MJ_V17_NATIVE_SOURCE_MAP_V1",
+  "source_modules": 148,
+  "proof_basis_modules": 145,
+  "new_application_and_replay_sources": 3,
+  "replay_entry": "V17ComputeReplay",
+  "replay_entry_source_import_closure_count": 146,
+  "historical_leanchecker_reported_import_modules": 145,
+  "module_count_note": "Source files, entry-point reachable imports and historical leanchecker-reported counts have different scopes.",
+  "modules": [
+    {
+      "module": "CompactStreamTransport",
+      "original_path": "build/lean_table_checker/v17_compute_finish_20261018/frozen_source/CompactStreamTransport.lean",
+      "bytes": 3752,
+      "sha256": "2198b9370e8149dea1ce49f486054bb743d947faea160293128a37f832fb72a4",
+      "public_path": "research/2026-10-18/lean/CompactStreamTransport.lean",
+      "reused": true
+    },
+    {
+      "module": "JointIndexedFramesMainV16",
+      "original_path": "build/lean_table_checker/v17_compute_finish_20261018/frozen_source/JointIndexedFramesMainV16.lean",
+      "bytes": 40216,
+      "sha256": "20235775406089ca749440fb5fff29ef556446cc45592dc8cde653479a3b36d5",
+      "public_path": "research/2026-10-18/lean/JointIndexedFramesMainV16.lean",
+      "reused": true
+    },
+    {
+      "module": "Mahjong.AbsoluteCursor",
+      "original_path": "build/lean_table_checker/v17_compute_finish_20261018/frozen_source/Mahjong/AbsoluteCursor.lean",
+      "bytes": 2830,
+      "sha256": "15183b4828b31fafdba7b78e985f5c590997b5592ae0e72fbcb0117ac8a96c93",
+      "public_path": "research/2026-10-18/lean/Mahjong/AbsoluteCursor.lean",
+      "reused": true
+    },
+    {
+      "module": "Mahjong.Base5Coverage",
+      "original_path": "build/lean_table_checker/v17_compute_finish_20261018/frozen_source/Mahjong/Base5Coverage.lean",
+      "bytes": 15244,
+      "sha256": "506f42a9823360e58cbc892cf97df130f565de7a0812ccc4350f8ebfe1b9a19a",
+      "public_path": "research/2026-10-18/lean/Mahjong/Base5Coverage.lean",
+      "reused": true
+    },
+    {
+      "module": "Mahjong.BindingControlsV17",
+      "original_path": "runs/lean_table_checker/v17_compute_finish_20261018/native_builds/1060b5998a014be594e54ba64d3671d5/phase_finalize_9a88469a8585/binding_controls/source/Mahjong/BindingControlsV17.lean",
+      "bytes": 1706,
+      "sha256": "880c724d6f4deefc6b3dce7fa05de7e303d1e6c4fe84c0f9683b200caf8c1b48",
+      "public_path": "research/2026-10-18-kernel/source/v17/Mahjong/BindingControlsV17.lean",
+      "reused": true
+    },
+    {
+      "module": "Mahjong.BlockPlanCertifiedRow",
+      "original_path": "build/lean_table_checker/v17_compute_finish_20261018/frozen_source/Mahjong/BlockPlanCertifiedRow.lean",
+      "bytes": 6770,
+      "sha256": "0bbd3212234105fd40228e05edebebd9efbd78d218229495d6e884bd38a91333",
+      "public_path": "research/2026-10-18/lean/Mahjong/BlockPlanCertifiedRow.lean",
+      "reused": true
+    },
+    {
+      "module": "Mahjong.BlockPlanCheck",
+      "original_path": "build/lean_table_checker/v17_compute_finish_20261018/frozen_source/Mahjong/BlockPlanCheck.lean",
+      "bytes": 6780,
+      "sha256": "ecda874d870a569cd563ae13f5be18dd478bed9851f7d96b60f634d646555972",
+      "public_path": "research/2026-10-18/lean/Mahjong/BlockPlanCheck.lean",
+      "reused": true
+    },
+    {
+      "module": "Mahjong.BlockPlanFastSource",
+      "original_path": "build/lean_table_checker/v17_compute_finish_20261018/frozen_source/Mahjong/BlockPlanFastSource.lean",
+      "bytes": 2529,
+      "sha256": "8879342b17fbb115604eaa601aa424d3a400390a8b7249d208b3c9256a1cf578",
+      "public_path": "research/2026-10-18/lean/Mahjong/BlockPlanFastSource.lean",
+      "reused": true
+    },
+    {
+      "module": "Mahjong.BlockPlanSoundness",
+      "original_path": "build/lean_table_checker/v17_compute_finish_20261018/frozen_source/Mahjong/BlockPlanSoundness.lean",
+      "bytes": 38338,
+      "sha256": "39946bd4c718ffd1b9d5307197b67dde5c0eb10b4d0727e067e5fadd266b7f3d",
+      "public_path": "research/2026-10-18/lean/Mahjong/BlockPlanSoundness.lean",
+      "reused": true
+    },
+    {
+      "module": "Mahjong.BlockWordAddress",
+      "original_path": "build/lean_table_checker/v17_compute_finish_20261018/frozen_source/Mahjong/BlockWordAddress.lean",
+      "bytes": 4564,
+      "sha256": "5fe513fba418a298eeefbc02923c70a720f4c5939de23596f149b782d043c03d",
+      "public_path": "research/2026-10-18/lean/Mahjong/BlockWordAddress.lean",
+      "reused": true
+    },
+    {
+      "module": "Mahjong.BorrowedGeneratedCompactHotRow",
+      "original_path": "build/lean_table_checker/v17_compute_finish_20261018/frozen_source/Mahjong/BorrowedGeneratedCompactHotRow.lean",
+      "bytes": 5514,
+      "sha256": "7a3690516d94e87c633578204b7f0e315d499c6e9058c41b1d81967a12309b15",
+      "public_path": "research/2026-10-18/lean/Mahjong/BorrowedGeneratedCompactHotRow.lean",
+      "reused": true
+    },
+    {
+      "module": "Mahjong.BorrowedGeneratedHotPlan",
+      "original_path": "build/lean_table_checker/v17_compute_finish_20261018/frozen_source/Mahjong/BorrowedGeneratedHotPlan.lean",
+      "bytes": 12213,
+      "sha256": "22c81409eff08ee52ebdf625c93451e3c3af7c8b03dec222c4f4568e0506740a",
+      "public_path": "research/2026-10-18/lean/Mahjong/BorrowedGeneratedHotPlan.lean",
+      "reused": true
+    },
+    {
+      "module": "Mahjong.BorrowedNextGeneratedCompactHotRow",
+      "original_path": "build/lean_table_checker/v17_compute_finish_20261018/frozen_source/Mahjong/BorrowedNextGeneratedCompactHotRow.lean",
+      "bytes": 5578,
+      "sha256": "634663b8d86dbafb04b318e882de498bcb224d745156d64a5accf31ade1e2f0c",
+      "public_path": "research/2026-10-18/lean/Mahjong/BorrowedNextGeneratedCompactHotRow.lean",
+      "reused": true
+    },
+    {
+      "module": "Mahjong.BorrowedNextGeneratedHotPlan",
+      "original_path": "build/lean_table_checker/v17_compute_finish_20261018/frozen_source/Mahjong/BorrowedNextGeneratedHotPlan.lean",
+      "bytes": 15017,
+      "sha256": "2ba6ff53c234d8fd1184733449927d22db6ea9db020d73d3f5e4a3dd6fd48240",
+      "public_path": "research/2026-10-18/lean/Mahjong/BorrowedNextGeneratedHotPlan.lean",
+      "reused": true
+    },
+    {
+      "module": "Mahjong.Bridge",
+      "original_path": "build/lean_table_checker/v17_compute_finish_20261018/frozen_source/Mahjong/Bridge.lean",
+      "bytes": 3818,
+      "sha256": "85cf93200015cf06e41abab841f80e14b7ae726d2984923ef78140e33c7c3b3b",
+      "public_path": "research/2026-10-18/lean/Mahjong/Bridge.lean",
+      "reused": true
+    },
+    {
+      "module": "Mahjong.BucketIndex",
+      "original_path": "build/lean_table_checker/v17_compute_finish_20261018/frozen_source/Mahjong/BucketIndex.lean",
+      "bytes": 3406,
+      "sha256": "00f04246ed000c3aad499522f02f2826d7523fd017ed6c5da6d0841f2394152c",
+      "public_path": "research/2026-10-18/lean/Mahjong/BucketIndex.lean",
+      "reused": true
+    },
+    {
+      "module": "Mahjong.CachedPackedCheck",
+      "original_path": "build/lean_table_checker/v17_compute_finish_20261018/frozen_source/Mahjong/CachedPackedCheck.lean",
+      "bytes": 15917,
+      "sha256": "63d17bcde14159ce5f555eac5e7d9b33fe0dc1ef1c0b4fa122cb731a8970d6a9",
+      "public_path": "research/2026-10-18/lean/Mahjong/CachedPackedCheck.lean",
+      "reused": true
+    },
+    {
+      "module": "Mahjong.CachedPackedFast",
+      "original_path": "build/lean_table_checker/v17_compute_finish_20261018/frozen_source/Mahjong/CachedPackedFast.lean",
+      "bytes": 2013,
+      "sha256": "0c556613dd33fc691da5cbbfe4ab3685ce6b21418b95746f594cf451e31a84c3",
+      "public_path": "research/2026-10-18/lean/Mahjong/CachedPackedFast.lean",
+      "reused": true
+    },
+    {
+      "module": "Mahjong.CachedPackedSnapshot",
+      "original_path": "build/lean_table_checker/v17_compute_finish_20261018/frozen_source/Mahjong/CachedPackedSnapshot.lean",
+      "bytes": 1957,
+      "sha256": "d1baef4c281d8925d25a9ecdd7c7368b5cb445e307057f14feca11537382c5be",
+      "public_path": "research/2026-10-18/lean/Mahjong/CachedPackedSnapshot.lean",
+      "reused": true
+    },
+    {
+      "module": "Mahjong.CachedProfiles",
+      "original_path": "build/lean_table_checker/v17_compute_finish_20261018/frozen_source/Mahjong/CachedProfiles.lean",
+      "bytes": 1149,
+      "sha256": "d17b8d2a647ba72052bcde3b0d58ca442cf0d995f9dfffde28c09df451f04fe7",
+      "public_path": "research/2026-10-18/lean/Mahjong/CachedProfiles.lean",
+      "reused": true
+    },
+    {
+      "module": "Mahjong.CachedStandardBounds",
+      "original_path": "build/lean_table_checker/v17_compute_finish_20261018/frozen_source/Mahjong/CachedStandardBounds.lean",
+      "bytes": 3976,
+      "sha256": "0cf17fd72fc0f6c7b8380c88290edc6c99bcd8f32ad48795dfb43822970efe07",
+      "public_path": "research/2026-10-18/lean/Mahjong/CachedStandardBounds.lean",
+      "reused": true
+    },
+    {
+      "module": "Mahjong.CachedTargetModels",
+      "original_path": "build/lean_table_checker/v17_compute_finish_20261018/frozen_source/Mahjong/CachedTargetModels.lean",
+      "bytes": 9626,
+      "sha256": "35e8549810e9b37f8b740de0faa9cfa29ca3978520e34551f75b2fdb5dce75f4",
+      "public_path": "research/2026-10-18/lean/Mahjong/CachedTargetModels.lean",
+      "reused": true
+    },
+    {
+      "module": "Mahjong.CanonicalCoverage",
+      "original_path": "build/lean_table_checker/v17_compute_finish_20261018/frozen_source/Mahjong/CanonicalCoverage.lean",
+      "bytes": 9739,
+      "sha256": "6d471f2c05d95bf64d999293353391b114b87c3154ce9f345ae4fbbdae70bbdb",
+      "public_path": "research/2026-10-18/lean/Mahjong/CanonicalCoverage.lean",
+      "reused": true
+    },
+    {
+      "module": "Mahjong.CanonicalInventory",
+      "original_path": "build/lean_table_checker/v17_compute_finish_20261018/frozen_source/Mahjong/CanonicalInventory.lean",
+      "bytes": 10164,
+      "sha256": "d5c5f12fdb6782c0f12961eb8cb7b4e86f1d9ba4f0646e8e83d7a992d44b0525",
+      "public_path": "research/2026-10-18/lean/Mahjong/CanonicalInventory.lean",
+      "reused": true
+    },
+    {
+      "module": "Mahjong.CapacityComplete",
+      "original_path": "build/lean_table_checker/v17_compute_finish_20261018/frozen_source/Mahjong/CapacityComplete.lean",
+      "bytes": 4649,
+      "sha256": "9fc64ad58c1f03520bbb36b29a751a292d84f481f6a76a69aa14ac9165efee77",
+      "public_path": "research/2026-10-18/lean/Mahjong/CapacityComplete.lean",
+      "reused": true
+    },
+    {
+      "module": "Mahjong.Certificate",
+      "original_path": "build/lean_table_checker/v17_compute_finish_20261018/frozen_source/Mahjong/Certificate.lean",
+      "bytes": 6561,
+      "sha256": "fe76075239fdeb621c020c5ad03b4c34fde9cec5edfc5845cfe6b72fc067f0e2",
+      "public_path": "research/2026-10-18/lean/Mahjong/Certificate.lean",
+      "reused": true
+    },
+    {
+      "module": "Mahjong.CheckedPlanConstructor",
+      "original_path": "build/lean_table_checker/v17_compute_finish_20261018/frozen_source/Mahjong/CheckedPlanConstructor.lean",
+      "bytes": 11380,
+      "sha256": "824278af4901cc8d280d22331666f1e1fb9c95e11c62031d09b79f63fff5e764",
+      "public_path": "research/2026-10-18/lean/Mahjong/CheckedPlanConstructor.lean",
+      "reused": true
+    },
+    {
+      "module": "Mahjong.CompactHotRow",
+      "original_path": "build/lean_table_checker/v17_compute_finish_20261018/frozen_source/Mahjong/CompactHotRow.lean",
+      "bytes": 4478,
+      "sha256": "c6e452768c9afd954c60a331425615e6490dc4e7bca562999c11b06355ac4715",
+      "public_path": "research/2026-10-18/lean/Mahjong/CompactHotRow.lean",
+      "reused": true
+    },
+    {
+      "module": "Mahjong.CrossLayerAssemblyV17",
+      "original_path": "build/lean_table_checker/v17_compute_finish_20261018/frozen_source/Mahjong/CrossLayerAssemblyV17.lean",
+      "bytes": 23114,
+      "sha256": "4dae813e08a370d5fbc729e6d24fc367a0bb9b37effc2ae59a9cbe2c0a812ee3",
+      "public_path": "research/2026-10-18-kernel/source/v17/Mahjong/CrossLayerAssemblyV17.lean",
+      "reused": true
+    },
+    {
+      "module": "Mahjong.CursorLayouts",
+      "original_path": "build/lean_table_checker/v17_compute_finish_20261018/frozen_source/Mahjong/CursorLayouts.lean",
+      "bytes": 8557,
+      "sha256": "fe29e5a5745b543b9f88ffc4a64f2cce831ea98b6bd1f1a52592f7744a43f584",
+      "public_path": "research/2026-10-18/lean/Mahjong/CursorLayouts.lean",
+      "reused": true
+    },
+    {
+      "module": "Mahjong.DirectoryCoverage",
+      "original_path": "build/lean_table_checker/v17_compute_finish_20261018/frozen_source/Mahjong/DirectoryCoverage.lean",
+      "bytes": 3918,
+      "sha256": "101a99c33968786b733fe212de2767173ba2155fdf1da6b8e8add7c653411914",
+      "public_path": "research/2026-10-18/lean/Mahjong/DirectoryCoverage.lean",
+      "reused": true
+    },
+    {
+      "module": "Mahjong.DirectoryIndex",
+      "original_path": "build/lean_table_checker/v17_compute_finish_20261018/frozen_source/Mahjong/DirectoryIndex.lean",
+      "bytes": 3959,
+      "sha256": "8a803dc1d553451e58cf32b42c5d732762cf0ccdfd9b22e7ae035fac3874a403",
+      "public_path": "research/2026-10-18/lean/Mahjong/DirectoryIndex.lean",
+      "reused": true
+    },
+    {
+      "module": "Mahjong.DirectorySliceBinding",
+      "original_path": "build/lean_table_checker/v17_compute_finish_20261018/frozen_source/Mahjong/DirectorySliceBinding.lean",
+      "bytes": 4147,
+      "sha256": "facb9874a50c2f3eca001026dc47539756da6c2dbd5375888e1f7d3dcf7b8d23",
+      "public_path": "research/2026-10-18/lean/Mahjong/DirectorySliceBinding.lean",
+      "reused": true
+    },
+    {
+      "module": "Mahjong.DownwardClosure",
+      "original_path": "build/lean_table_checker/v17_compute_finish_20261018/frozen_source/Mahjong/DownwardClosure.lean",
+      "bytes": 1542,
+      "sha256": "c72614c8945974da9253f43ab00719923b340a54caa6102689b5a8c05771fef5",
+      "public_path": "research/2026-10-18/lean/Mahjong/DownwardClosure.lean",
+      "reused": true
+    },
+    {
+      "module": "Mahjong.EmptyRootV17",
+      "original_path": "build/lean_table_checker/v17_compute_finish_20261018/frozen_source/Mahjong/EmptyRootV17.lean",
+      "bytes": 8648,
+      "sha256": "98082229ed97128fd9807c76222f882fba5442caf8598d81769b7803f7ef2d1c",
+      "public_path": "research/2026-10-18-kernel/source/v17/Mahjong/EmptyRootV17.lean",
+      "reused": true
+    },
+    {
+      "module": "Mahjong.EnumerationBlocks",
+      "original_path": "build/lean_table_checker/v17_compute_finish_20261018/frozen_source/Mahjong/EnumerationBlocks.lean",
+      "bytes": 6052,
+      "sha256": "7e9f169918b597282039d11abe1937e3c6fea7b5acb361ef3b1a01769a393a6f",
+      "public_path": "research/2026-10-18/lean/Mahjong/EnumerationBlocks.lean",
+      "reused": true
+    },
+    {
+      "module": "Mahjong.ExactMemoRules",
+      "original_path": "build/lean_table_checker/v17_compute_finish_20261018/frozen_source/Mahjong/ExactMemoRules.lean",
+      "bytes": 2580,
+      "sha256": "80f81a5c5ab106db5750387e973064c4a73fffd1f9f8f796f99a4512e993d5cc",
+      "public_path": "research/2026-10-18/lean/Mahjong/ExactMemoRules.lean",
+      "reused": true
+    },
+    {
+      "module": "Mahjong.ExecutionAssemblyV17",
+      "original_path": "build/lean_table_checker/v17_compute_finish_20261018/frozen_source/Mahjong/ExecutionAssemblyV17.lean",
+      "bytes": 6106,
+      "sha256": "a63ab0c2058b00415762a0d3ae2c3877065c54067b5fb79c5be2ce3c64c6ecca",
+      "public_path": "research/2026-10-18-kernel/source/v17/Mahjong/ExecutionAssemblyV17.lean",
+      "reused": true
+    },
+    {
+      "module": "Mahjong.FactorizedRules",
+      "original_path": "build/lean_table_checker/v17_compute_finish_20261018/frozen_source/Mahjong/FactorizedRules.lean",
+      "bytes": 3468,
+      "sha256": "9b11a1b87ab4de6173fe7ab4f62a733704d9591d0d1f7d8b541603ab8a4512f8",
+      "public_path": "research/2026-10-18/lean/Mahjong/FactorizedRules.lean",
+      "reused": true
+    },
+    {
+      "module": "Mahjong.FastBitRead",
+      "original_path": "build/lean_table_checker/v17_compute_finish_20261018/frozen_source/Mahjong/FastBitRead.lean",
+      "bytes": 2200,
+      "sha256": "6a742e664d92d3f4e09fd2eb97c4f442ddec62b4da7eb1f2f2faf55fa90190ee",
+      "public_path": "research/2026-10-18/lean/Mahjong/FastBitRead.lean",
+      "reused": true
+    },
+    {
+      "module": "Mahjong.FastMemoRules",
+      "original_path": "build/lean_table_checker/v17_compute_finish_20261018/frozen_source/Mahjong/FastMemoRules.lean",
+      "bytes": 1754,
+      "sha256": "69d478fffa14d7679738d9548d1152959e6fe41cfdf8153ea462f12e6e00c2d6",
+      "public_path": "research/2026-10-18/lean/Mahjong/FastMemoRules.lean",
+      "reused": true
+    },
+    {
+      "module": "Mahjong.FastOrphans",
+      "original_path": "build/lean_table_checker/v17_compute_finish_20261018/frozen_source/Mahjong/FastOrphans.lean",
+      "bytes": 1932,
+      "sha256": "8ca1bf4c7ae162a3c46dc0697c14b4894ef95929032559cfd9ef29a809050824",
+      "public_path": "research/2026-10-18/lean/Mahjong/FastOrphans.lean",
+      "reused": true
+    },
+    {
+      "module": "Mahjong.FastRuleChecker",
+      "original_path": "build/lean_table_checker/v17_compute_finish_20261018/frozen_source/Mahjong/FastRuleChecker.lean",
+      "bytes": 7672,
+      "sha256": "554b4712cc2c734af54a6dced186f51d818eb6096b5e856af3bd912edc5fe8c3",
+      "public_path": "research/2026-10-18/lean/Mahjong/FastRuleChecker.lean",
+      "reused": true
+    },
+    {
+      "module": "Mahjong.FastSingleWitness",
+      "original_path": "build/lean_table_checker/v17_compute_finish_20261018/frozen_source/Mahjong/FastSingleWitness.lean",
+      "bytes": 3189,
+      "sha256": "7905bd8c070766bf6a3aaee13decc3c9fa4ed4a1877c8b23e9577f6ab963f192",
+      "public_path": "research/2026-10-18/lean/Mahjong/FastSingleWitness.lean",
+      "reused": true
+    },
+    {
+      "module": "Mahjong.FastWholeInputV17",
+      "original_path": "build/lean_table_checker/v17_compute_finish_20261018/frozen_source/Mahjong/FastWholeInputV17.lean",
+      "bytes": 9475,
+      "sha256": "0e1108a2b0433b83f693e0648ac45448455abf6df222b53a835925c2c49ef08d",
+      "public_path": "research/2026-10-18-kernel/source/v17/Mahjong/FastWholeInputV17.lean",
+      "reused": true
+    },
+    {
+      "module": "Mahjong.FiniteCertificateV17",
+      "original_path": "build/lean_table_checker/v17_compute_finish_20261018/frozen_source/Mahjong/FiniteCertificateV17.lean",
+      "bytes": 13964,
+      "sha256": "feb25a2fa7fa8242d06e4a1e41f1948873a5be558a48666be4d41e112b8866c1",
+      "public_path": "research/2026-10-18-kernel/source/v17/Mahjong/FiniteCertificateV17.lean",
+      "reused": true
+    },
+    {
+      "module": "Mahjong.FiniteMetadataV17",
+      "original_path": "build/lean_table_checker/v17_compute_finish_20261018/frozen_source/Mahjong/FiniteMetadataV17.lean",
+      "bytes": 14090,
+      "sha256": "db35b68ff431fe139b48cfdb82fde4ea8368462d5b483d06fe61944e2f101951",
+      "public_path": "research/2026-10-18-kernel/source/v17/Mahjong/FiniteMetadataV17.lean",
+      "reused": true
+    },
+    {
+      "module": "Mahjong.FiniteWholeInputV17",
+      "original_path": "build/lean_table_checker/v17_compute_finish_20261018/frozen_source/Mahjong/FiniteWholeInputV17.lean",
+      "bytes": 9944,
+      "sha256": "aa131c488ffd3c9073dd87b93537aeb5b52ba872b3e9f33525c76f9725c04b47",
+      "public_path": "research/2026-10-18-kernel/source/v17/Mahjong/FiniteWholeInputV17.lean",
+      "reused": true
+    },
+    {
+      "module": "Mahjong.FullSafeData",
+      "original_path": "build/lean_table_checker/v17_compute_finish_20261018/frozen_source/Mahjong/FullSafeData.lean",
+      "bytes": 8434,
+      "sha256": "54c1bfb891d61e330380ff67306595632fa57d37acd349da69e04e6e8900c1b1",
+      "public_path": "research/2026-10-18/lean/Mahjong/FullSafeData.lean",
+      "reused": true
+    },
+    {
+      "module": "Mahjong.FullSafeSemantics",
+      "original_path": "build/lean_table_checker/v17_compute_finish_20261018/frozen_source/Mahjong/FullSafeSemantics.lean",
+      "bytes": 5395,
+      "sha256": "b500cee364c694842fa6157da9c83a7a7f5f8ebe1675432d243cc754163aebab",
+      "public_path": "research/2026-10-18/lean/Mahjong/FullSafeSemantics.lean",
+      "reused": true
+    },
+    {
+      "module": "Mahjong.GeneralIndex",
+      "original_path": "build/lean_table_checker/v17_compute_finish_20261018/frozen_source/Mahjong/GeneralIndex.lean",
+      "bytes": 4842,
+      "sha256": "395dda4ed2921c2aa3ace77874770c3122262ded99e367bfd61f99d2f4c100d4",
+      "public_path": "research/2026-10-18/lean/Mahjong/GeneralIndex.lean",
+      "reused": true
+    },
+    {
+      "module": "Mahjong.GeneralLayer",
+      "original_path": "build/lean_table_checker/v17_compute_finish_20261018/frozen_source/Mahjong/GeneralLayer.lean",
+      "bytes": 6297,
+      "sha256": "4e15da52ab68c26056b67aeae80a24ce9d628de44ec30fa8ce5a3f1af5f95272",
+      "public_path": "research/2026-10-18/lean/Mahjong/GeneralLayer.lean",
+      "reused": true
+    },
+    {
+      "module": "Mahjong.GeneralOriginalSoundness",
+      "original_path": "build/lean_table_checker/v17_compute_finish_20261018/frozen_source/Mahjong/GeneralOriginalSoundness.lean",
+      "bytes": 1546,
+      "sha256": "9aef35d31a1a5ebd45a9ef6edf4ca3b03910ec98bad55e84ecb83dffd3330f90",
+      "public_path": "research/2026-10-18/lean/Mahjong/GeneralOriginalSoundness.lean",
+      "reused": true
+    },
+    {
+      "module": "Mahjong.GeneratedCompactHotRow",
+      "original_path": "build/lean_table_checker/v17_compute_finish_20261018/frozen_source/Mahjong/GeneratedCompactHotRow.lean",
+      "bytes": 5386,
+      "sha256": "919c1daaa87b0435be0d3bcb28c451c0a5ec4882d24268cf86a1dc095422d4be",
+      "public_path": "research/2026-10-18/lean/Mahjong/GeneratedCompactHotRow.lean",
+      "reused": true
+    },
+    {
+      "module": "Mahjong.GeneratedHotPlan",
+      "original_path": "build/lean_table_checker/v17_compute_finish_20261018/frozen_source/Mahjong/GeneratedHotPlan.lean",
+      "bytes": 11081,
+      "sha256": "63cbcc684493b693e60662767fa24b057996acf77e6fcdf589ffc4429ec368ce",
+      "public_path": "research/2026-10-18/lean/Mahjong/GeneratedHotPlan.lean",
+      "reused": true
+    },
+    {
+      "module": "Mahjong.GeneratedLocalCache",
+      "original_path": "build/lean_table_checker/v17_compute_finish_20261018/frozen_source/Mahjong/GeneratedLocalCache.lean",
+      "bytes": 1418,
+      "sha256": "dbd9ede261ffd403868e69441fe9adce38e37c636475ad8ebaa10814336c396e",
+      "public_path": "research/2026-10-18/lean/Mahjong/GeneratedLocalCache.lean",
+      "reused": true
+    },
+    {
+      "module": "Mahjong.GeneratedPlanCheck",
+      "original_path": "build/lean_table_checker/v17_compute_finish_20261018/frozen_source/Mahjong/GeneratedPlanCheck.lean",
+      "bytes": 8231,
+      "sha256": "26f8581f0b36621f4e3ae42fb5a2adae875539ac56917be56fcf7024282fb062",
+      "public_path": "research/2026-10-18/lean/Mahjong/GeneratedPlanCheck.lean",
+      "reused": true
+    },
+    {
+      "module": "Mahjong.Generators",
+      "original_path": "build/lean_table_checker/v17_compute_finish_20261018/frozen_source/Mahjong/Generators.lean",
+      "bytes": 7736,
+      "sha256": "3b84f3b6a6705083410c0854faa8fc9815bd7229838da21a94693f3bdc0a6c1e",
+      "public_path": "research/2026-10-18/lean/Mahjong/Generators.lean",
+      "reused": true
+    },
+    {
+      "module": "Mahjong.GlobalAddressDecoder",
+      "original_path": "build/lean_table_checker/v17_compute_finish_20261018/frozen_source/Mahjong/GlobalAddressDecoder.lean",
+      "bytes": 3436,
+      "sha256": "bbd7067eb05ed672dfadc3394b2fa7bd78bba07dec9cd03bc61603e442c8f6e7",
+      "public_path": "research/2026-10-18/lean/Mahjong/GlobalAddressDecoder.lean",
+      "reused": true
+    },
+    {
+      "module": "Mahjong.GlobalEnumeration",
+      "original_path": "build/lean_table_checker/v17_compute_finish_20261018/frozen_source/Mahjong/GlobalEnumeration.lean",
+      "bytes": 5174,
+      "sha256": "f776505585e3d77447bed55889b86ff7f025f4fb859468d45638ec0ea3d6568f",
+      "public_path": "research/2026-10-18/lean/Mahjong/GlobalEnumeration.lean",
+      "reused": true
+    },
+    {
+      "module": "Mahjong.GlobalOrbitDirectory",
+      "original_path": "build/lean_table_checker/v17_compute_finish_20261018/frozen_source/Mahjong/GlobalOrbitDirectory.lean",
+      "bytes": 10802,
+      "sha256": "9c5bd2725883488b3b4f490c9ad56b375e8e87d4b26b3865f0afa6cca84c0ddb",
+      "public_path": "research/2026-10-18/lean/Mahjong/GlobalOrbitDirectory.lean",
+      "reused": true
+    },
+    {
+      "module": "Mahjong.GlobalOrbitKey",
+      "original_path": "build/lean_table_checker/v17_compute_finish_20261018/frozen_source/Mahjong/GlobalOrbitKey.lean",
+      "bytes": 6994,
+      "sha256": "e2311c00629129feee096e64b9a61d3baa76f14838c362fafb00778c17d2ce83",
+      "public_path": "research/2026-10-18/lean/Mahjong/GlobalOrbitKey.lean",
+      "reused": true
+    },
+    {
+      "module": "Mahjong.GlobalOrbitUniqueness",
+      "original_path": "build/lean_table_checker/v17_compute_finish_20261018/frozen_source/Mahjong/GlobalOrbitUniqueness.lean",
+      "bytes": 8277,
+      "sha256": "cbd1fc53184cb8465920a4593de5db36d140d266579eed41cbcabe665fcee590",
+      "public_path": "research/2026-10-18/lean/Mahjong/GlobalOrbitUniqueness.lean",
+      "reused": true
+    },
+    {
+      "module": "Mahjong.GlobalSlotRealization",
+      "original_path": "build/lean_table_checker/v17_compute_finish_20261018/frozen_source/Mahjong/GlobalSlotRealization.lean",
+      "bytes": 9070,
+      "sha256": "b520180b8b3caea043c6eef77d921d32e09cf1d072eac288024d74e41afc91ac",
+      "public_path": "research/2026-10-18/lean/Mahjong/GlobalSlotRealization.lean",
+      "reused": true
+    },
+    {
+      "module": "Mahjong.GlobalSuccessorBridge",
+      "original_path": "build/lean_table_checker/v17_compute_finish_20261018/frozen_source/Mahjong/GlobalSuccessorBridge.lean",
+      "bytes": 5954,
+      "sha256": "de4d69844429c6d7b468c12edbcae52712215077c1b60b28a8272b2466be6ae4",
+      "public_path": "research/2026-10-18/lean/Mahjong/GlobalSuccessorBridge.lean",
+      "reused": true
+    },
+    {
+      "module": "Mahjong.GroupCandidates",
+      "original_path": "build/lean_table_checker/v17_compute_finish_20261018/frozen_source/Mahjong/GroupCandidates.lean",
+      "bytes": 5730,
+      "sha256": "40e0e16bbd1c785600ee3ce146b843cb95d91e630f011d350b1606c95dd93061",
+      "public_path": "research/2026-10-18/lean/Mahjong/GroupCandidates.lean",
+      "reused": true
+    },
+    {
+      "module": "Mahjong.GroupInventory",
+      "original_path": "build/lean_table_checker/v17_compute_finish_20261018/frozen_source/Mahjong/GroupInventory.lean",
+      "bytes": 5849,
+      "sha256": "e474ff46717367e10b8988f875237162113f34d56841ac30aee5eadfa6a8f8eb",
+      "public_path": "research/2026-10-18/lean/Mahjong/GroupInventory.lean",
+      "reused": true
+    },
+    {
+      "module": "Mahjong.GroupNextCoverage",
+      "original_path": "build/lean_table_checker/v17_compute_finish_20261018/frozen_source/Mahjong/GroupNextCoverage.lean",
+      "bytes": 3262,
+      "sha256": "b57ee64490e1df6f943119a837af03b64ef36f70987e3db009c5b575d0a7fa2c",
+      "public_path": "research/2026-10-18/lean/Mahjong/GroupNextCoverage.lean",
+      "reused": true
+    },
+    {
+      "module": "Mahjong.GroupedCoverage",
+      "original_path": "build/lean_table_checker/v17_compute_finish_20261018/frozen_source/Mahjong/GroupedCoverage.lean",
+      "bytes": 6918,
+      "sha256": "720dc2eb4a15f2366625fef3685ebe2cc8558d68f6dbba79742d7e6e231cb50f",
+      "public_path": "research/2026-10-18/lean/Mahjong/GroupedCoverage.lean",
+      "reused": true
+    },
+    {
+      "module": "Mahjong.GuardedByteScanV16",
+      "original_path": "build/lean_table_checker/v17_compute_finish_20261018/frozen_source/Mahjong/GuardedByteScanV16.lean",
+      "bytes": 2887,
+      "sha256": "08a3975f03036b546e23464032fc548b9e6390e4bd279f37f73529e27e6b32cb",
+      "public_path": "research/2026-10-18/lean/Mahjong/GuardedByteScanV16.lean",
+      "reused": true
+    },
+    {
+      "module": "Mahjong.GuardedCachedRow",
+      "original_path": "build/lean_table_checker/v17_compute_finish_20261018/frozen_source/Mahjong/GuardedCachedRow.lean",
+      "bytes": 7697,
+      "sha256": "ec2403df35b767f4fe4ad6672f59be471db02ba77c3070090268e51262e05ba9",
+      "public_path": "research/2026-10-18/lean/Mahjong/GuardedCachedRow.lean",
+      "reused": true
+    },
+    {
+      "module": "Mahjong.GuardedIndexAccess",
+      "original_path": "build/lean_table_checker/v17_compute_finish_20261018/frozen_source/Mahjong/GuardedIndexAccess.lean",
+      "bytes": 6143,
+      "sha256": "17698652b107d72a939828661868e68d94e7229e7d8d3049593eedd12fd42670",
+      "public_path": "research/2026-10-18/lean/Mahjong/GuardedIndexAccess.lean",
+      "reused": true
+    },
+    {
+      "module": "Mahjong.GuardedTargetRef",
+      "original_path": "build/lean_table_checker/v17_compute_finish_20261018/frozen_source/Mahjong/GuardedTargetRef.lean",
+      "bytes": 7710,
+      "sha256": "24ace7ff60f21fc9980f82e929c912f66b5b3651a9c125a85f1f29bfb836e0ea",
+      "public_path": "research/2026-10-18/lean/Mahjong/GuardedTargetRef.lean",
+      "reused": true
+    },
+    {
+      "module": "Mahjong.HonorDirectory",
+      "original_path": "build/lean_table_checker/v17_compute_finish_20261018/frozen_source/Mahjong/HonorDirectory.lean",
+      "bytes": 5108,
+      "sha256": "dc7c2195176551859be317c1af4681664de193a27c4fb3ab4f84d29c22b33798",
+      "public_path": "research/2026-10-18/lean/Mahjong/HonorDirectory.lean",
+      "reused": true
+    },
+    {
+      "module": "Mahjong.HotBlockPlan",
+      "original_path": "build/lean_table_checker/v17_compute_finish_20261018/frozen_source/Mahjong/HotBlockPlan.lean",
+      "bytes": 7312,
+      "sha256": "b9b408ab6b18f57e0d256b30958b8aaffbe2d770bac35137c4d5df2537ca7e00",
+      "public_path": "research/2026-10-18/lean/Mahjong/HotBlockPlan.lean",
+      "reused": true
+    },
+    {
+      "module": "Mahjong.HotWord",
+      "original_path": "build/lean_table_checker/v17_compute_finish_20261018/frozen_source/Mahjong/HotWord.lean",
+      "bytes": 3504,
+      "sha256": "521b7f63b90ce72390c744c26401394215a64c71dacac51ac1825157a07cea86",
+      "public_path": "research/2026-10-18/lean/Mahjong/HotWord.lean",
+      "reused": true
+    },
+    {
+      "module": "Mahjong.IndexDecoder",
+      "original_path": "build/lean_table_checker/v17_compute_finish_20261018/frozen_source/Mahjong/IndexDecoder.lean",
+      "bytes": 6782,
+      "sha256": "86414f581fb54e25577ac9319ffb4a282a9edbe63f02c6a896ff32abce132f78",
+      "public_path": "research/2026-10-18/lean/Mahjong/IndexDecoder.lean",
+      "reused": true
+    },
+    {
+      "module": "Mahjong.IndexHelperCheck",
+      "original_path": "build/lean_table_checker/v17_compute_finish_20261018/frozen_source/Mahjong/IndexHelperCheck.lean",
+      "bytes": 1909,
+      "sha256": "a5a0986bb3060edcd9af48771e9b5302ec103ba099b9d9bb28386aa1808c4fdc",
+      "public_path": "research/2026-10-18/lean/Mahjong/IndexHelperCheck.lean",
+      "reused": true
+    },
+    {
+      "module": "Mahjong.IndexInputBounds",
+      "original_path": "build/lean_table_checker/v17_compute_finish_20261018/frozen_source/Mahjong/IndexInputBounds.lean",
+      "bytes": 1104,
+      "sha256": "f4d6e635fae4fbf4f40cbb09cb7427c08a4a8594798ba8c0b6b446bbbf03e1d4",
+      "public_path": "research/2026-10-18/lean/Mahjong/IndexInputBounds.lean",
+      "reused": true
+    },
+    {
+      "module": "Mahjong.IndexLocate",
+      "original_path": "build/lean_table_checker/v17_compute_finish_20261018/frozen_source/Mahjong/IndexLocate.lean",
+      "bytes": 3889,
+      "sha256": "a7cb8ed4148a8cc6d14586cbf3b32256771fb64f25a7dcb15bce46be85ff5185",
+      "public_path": "research/2026-10-18/lean/Mahjong/IndexLocate.lean",
+      "reused": true
+    },
+    {
+      "module": "Mahjong.IndexOperations",
+      "original_path": "build/lean_table_checker/v17_compute_finish_20261018/frozen_source/Mahjong/IndexOperations.lean",
+      "bytes": 4661,
+      "sha256": "383884617c417a60b703e23eb023f17aec3c40933923248355e2076d6fe449d1",
+      "public_path": "research/2026-10-18/lean/Mahjong/IndexOperations.lean",
+      "reused": true
+    },
+    {
+      "module": "Mahjong.IndexSearch",
+      "original_path": "build/lean_table_checker/v17_compute_finish_20261018/frozen_source/Mahjong/IndexSearch.lean",
+      "bytes": 4051,
+      "sha256": "1c11f2b2a615b6f1f420b0dd6c49dff6c5b1a972f72dc87fa4ba6c36acfa912e",
+      "public_path": "research/2026-10-18/lean/Mahjong/IndexSearch.lean",
+      "reused": true
+    },
+    {
+      "module": "Mahjong.IndexWordArithmetic",
+      "original_path": "build/lean_table_checker/v17_compute_finish_20261018/frozen_source/Mahjong/IndexWordArithmetic.lean",
+      "bytes": 2673,
+      "sha256": "3f378e71d70bcdffdd9ef950de078c488f54c9724b878723c604effbd5f49656",
+      "public_path": "research/2026-10-18/lean/Mahjong/IndexWordArithmetic.lean",
+      "reused": true
+    },
+    {
+      "module": "Mahjong.IndexedByteRowInputV16",
+      "original_path": "build/lean_table_checker/v17_compute_finish_20261018/frozen_source/Mahjong/IndexedByteRowInputV16.lean",
+      "bytes": 3458,
+      "sha256": "eff6eb7461a51a1d29de038fa74887f8865861f3fd0badd45d0d602d2a006665",
+      "public_path": "research/2026-10-18/lean/Mahjong/IndexedByteRowInputV16.lean",
+      "reused": true
+    },
+    {
+      "module": "Mahjong.IndexedByteRowSafeV17",
+      "original_path": "build/lean_table_checker/v17_compute_finish_20261018/frozen_source/Mahjong/IndexedByteRowSafeV17.lean",
+      "bytes": 7227,
+      "sha256": "7e18b1a840ecdf6fc3431d42fc016143fa6ea3680903185f961c4317bfa6cb37",
+      "public_path": "research/2026-10-18-kernel/source/v17/Mahjong/IndexedByteRowSafeV17.lean",
+      "reused": true
+    },
+    {
+      "module": "Mahjong.IndexedByteRowV16",
+      "original_path": "build/lean_table_checker/v17_compute_finish_20261018/frozen_source/Mahjong/IndexedByteRowV16.lean",
+      "bytes": 10564,
+      "sha256": "b3e7b59ad237db593ed05acc4bcb8d1b9bb20030f5ce98134c24af6ea6015407",
+      "public_path": "research/2026-10-18/lean/Mahjong/IndexedByteRowV16.lean",
+      "reused": true
+    },
+    {
+      "module": "Mahjong.IndexedByteStreamTransportV16",
+      "original_path": "build/lean_table_checker/v17_compute_finish_20261018/frozen_source/Mahjong/IndexedByteStreamTransportV16.lean",
+      "bytes": 3869,
+      "sha256": "1481eb5f823e469c5b5a21759e8094ebabf337fa4eee8dabf6391e88c6a1bdc0",
+      "public_path": "research/2026-10-18/lean/Mahjong/IndexedByteStreamTransportV16.lean",
+      "reused": true
+    },
+    {
+      "module": "Mahjong.IndexedPhysical",
+      "original_path": "build/lean_table_checker/v17_compute_finish_20261018/frozen_source/Mahjong/IndexedPhysical.lean",
+      "bytes": 5220,
+      "sha256": "0dd73822289760dcad98f6c7339c931f5ab36101288f10bd49f5a02f16dc4794",
+      "public_path": "research/2026-10-18/lean/Mahjong/IndexedPhysical.lean",
+      "reused": true
+    },
+    {
+      "module": "Mahjong.LegacyIndexRefinement",
+      "original_path": "build/lean_table_checker/v17_compute_finish_20261018/frozen_source/Mahjong/LegacyIndexRefinement.lean",
+      "bytes": 14855,
+      "sha256": "bccb9f0bd2ea6381ac235875e5558c27d360dce17ce70ced0492e49780791b0b",
+      "public_path": "research/2026-10-18/lean/Mahjong/LegacyIndexRefinement.lean",
+      "reused": true
+    },
+    {
+      "module": "Mahjong.LocalCache",
+      "original_path": "build/lean_table_checker/v17_compute_finish_20261018/frozen_source/Mahjong/LocalCache.lean",
+      "bytes": 5475,
+      "sha256": "fce37db5ae9809160ff1644fd0f98f5b6233523a519692f94e1a81c762118a1e",
+      "public_path": "research/2026-10-18/lean/Mahjong/LocalCache.lean",
+      "reused": true
+    },
+    {
+      "module": "Mahjong.LocalCacheEncoding",
+      "original_path": "build/lean_table_checker/v17_compute_finish_20261018/frozen_source/Mahjong/LocalCacheEncoding.lean",
+      "bytes": 675,
+      "sha256": "5ef800f8fd4a5470b5278ea5d2d6cbf42d9e7097cffc1df392cf72477b719722",
+      "public_path": "research/2026-10-18/lean/Mahjong/LocalCacheEncoding.lean",
+      "reused": true
+    },
+    {
+      "module": "Mahjong.LocalSuccessorBridge",
+      "original_path": "build/lean_table_checker/v17_compute_finish_20261018/frozen_source/Mahjong/LocalSuccessorBridge.lean",
+      "bytes": 6096,
+      "sha256": "e02d78aca106bafd9aef3d340b1441fc390df613a5785cb0da177e9d2fd62d53",
+      "public_path": "research/2026-10-18/lean/Mahjong/LocalSuccessorBridge.lean",
+      "reused": true
+    },
+    {
+      "module": "Mahjong.LocalSummary",
+      "original_path": "build/lean_table_checker/v17_compute_finish_20261018/frozen_source/Mahjong/LocalSummary.lean",
+      "bytes": 8979,
+      "sha256": "0a00c132270888dca015ceaf51b27cacc90b7e9e637080ac26cb2ec61704c5f3",
+      "public_path": "research/2026-10-18/lean/Mahjong/LocalSummary.lean",
+      "reused": true
+    },
+    {
+      "module": "Mahjong.LocalSymmetryFrame",
+      "original_path": "build/lean_table_checker/v17_compute_finish_20261018/frozen_source/Mahjong/LocalSymmetryFrame.lean",
+      "bytes": 4353,
+      "sha256": "f830dd062b374527eb5dfe6a0aa5f880edcfde4ea81eba7e218ab27388cb9201",
+      "public_path": "research/2026-10-18/lean/Mahjong/LocalSymmetryFrame.lean",
+      "reused": true
+    },
+    {
+      "module": "Mahjong.MaskedLocalBound",
+      "original_path": "build/lean_table_checker/v17_compute_finish_20261018/frozen_source/Mahjong/MaskedLocalBound.lean",
+      "bytes": 5396,
+      "sha256": "ebacf4ced36cda91bfe91ef2e452de9ddeef34685bc1965edad310a2136ac321",
+      "public_path": "research/2026-10-18/lean/Mahjong/MaskedLocalBound.lean",
+      "reused": true
+    },
+    {
+      "module": "Mahjong.MaterializedLocal",
+      "original_path": "build/lean_table_checker/v17_compute_finish_20261018/frozen_source/Mahjong/MaterializedLocal.lean",
+      "bytes": 1242,
+      "sha256": "3d3c744cfe80742bc275f2de6d7a8ab5bbc5cf21470d3bb9a09e07dc29398bfa",
+      "public_path": "research/2026-10-18/lean/Mahjong/MaterializedLocal.lean",
+      "reused": true
+    },
+    {
+      "module": "Mahjong.MemoRules",
+      "original_path": "build/lean_table_checker/v17_compute_finish_20261018/frozen_source/Mahjong/MemoRules.lean",
+      "bytes": 5286,
+      "sha256": "7fa78466adda06d34ac030dc749c332141b1f76b58177b1f94bd41611bdc290f",
+      "public_path": "research/2026-10-18/lean/Mahjong/MemoRules.lean",
+      "reused": true
+    },
+    {
+      "module": "Mahjong.MoveEnumeration",
+      "original_path": "build/lean_table_checker/v17_compute_finish_20261018/frozen_source/Mahjong/MoveEnumeration.lean",
+      "bytes": 2937,
+      "sha256": "73bcdaf1a48d4f6e7bccfa1f7c5813555a1c11a29f1d81fe351fc86f57668552",
+      "public_path": "research/2026-10-18/lean/Mahjong/MoveEnumeration.lean",
+      "reused": true
+    },
+    {
+      "module": "Mahjong.MoveNormalization",
+      "original_path": "build/lean_table_checker/v17_compute_finish_20261018/frozen_source/Mahjong/MoveNormalization.lean",
+      "bytes": 6441,
+      "sha256": "4edfc6227af50be08f88a27c5a5c973a70d97d84d7497399b3e4e829799cd824",
+      "public_path": "research/2026-10-18/lean/Mahjong/MoveNormalization.lean",
+      "reused": true
+    },
+    {
+      "module": "Mahjong.MovePlanRefinement",
+      "original_path": "build/lean_table_checker/v17_compute_finish_20261018/frozen_source/Mahjong/MovePlanRefinement.lean",
+      "bytes": 7890,
+      "sha256": "dc5811b07848ea8f68a358efd66c3acd19c68ebe23d76c9963f389645aaf61e8",
+      "public_path": "research/2026-10-18/lean/Mahjong/MovePlanRefinement.lean",
+      "reused": true
+    },
+    {
+      "module": "Mahjong.OrphanPruning",
+      "original_path": "build/lean_table_checker/v17_compute_finish_20261018/frozen_source/Mahjong/OrphanPruning.lean",
+      "bytes": 6265,
+      "sha256": "574b0821e5ec19a1ac783b47e8fb0d6efa3ed83e8b9d2ee26b2e4595c6f459ac",
+      "public_path": "research/2026-10-18/lean/Mahjong/OrphanPruning.lean",
+      "reused": true
+    },
+    {
+      "module": "Mahjong.PackedInterpretation",
+      "original_path": "build/lean_table_checker/v17_compute_finish_20261018/frozen_source/Mahjong/PackedInterpretation.lean",
+      "bytes": 872,
+      "sha256": "463c83026cfc47eb201cbd029ff290ab11453b1e9a0a73a29b1f3b1791797a3e",
+      "public_path": "research/2026-10-18/lean/Mahjong/PackedInterpretation.lean",
+      "reused": true
+    },
+    {
+      "module": "Mahjong.PackedRules",
+      "original_path": "build/lean_table_checker/v17_compute_finish_20261018/frozen_source/Mahjong/PackedRules.lean",
+      "bytes": 7481,
+      "sha256": "908c4dac5dc4c9d9be0cafe6117ac07c24e672b116114793a7c3482840d0b98d",
+      "public_path": "research/2026-10-18/lean/Mahjong/PackedRules.lean",
+      "reused": true
+    },
+    {
+      "module": "Mahjong.PairProfile",
+      "original_path": "build/lean_table_checker/v17_compute_finish_20261018/frozen_source/Mahjong/PairProfile.lean",
+      "bytes": 5349,
+      "sha256": "1f413904789e03998275bebfac78b32713e8f8c9fff41dc8d89ce633ded3d4a8",
+      "public_path": "research/2026-10-18/lean/Mahjong/PairProfile.lean",
+      "reused": true
+    },
+    {
+      "module": "Mahjong.PrefixCursor",
+      "original_path": "build/lean_table_checker/v17_compute_finish_20261018/frozen_source/Mahjong/PrefixCursor.lean",
+      "bytes": 3190,
+      "sha256": "17b9c6a271b92b07ee1b989e36180dd5e959999d6da638f936248ce447c46a95",
+      "public_path": "research/2026-10-18/lean/Mahjong/PrefixCursor.lean",
+      "reused": true
+    },
+    {
+      "module": "Mahjong.PrefixData",
+      "original_path": "build/lean_table_checker/v17_compute_finish_20261018/frozen_source/Mahjong/PrefixData.lean",
+      "bytes": 1357,
+      "sha256": "7ea1cd09fda00c06aa7c00e7b8fca0391f66c2c77eb290484e25a173150edb2b",
+      "public_path": "research/2026-10-18/lean/Mahjong/PrefixData.lean",
+      "reused": true
+    },
+    {
+      "module": "Mahjong.PrefixDirectory",
+      "original_path": "build/lean_table_checker/v17_compute_finish_20261018/frozen_source/Mahjong/PrefixDirectory.lean",
+      "bytes": 4706,
+      "sha256": "aa0c887b143b0481bcac6fc9736a9f8a1c635e5a9b6323eef6c7ad3e10156380",
+      "public_path": "research/2026-10-18/lean/Mahjong/PrefixDirectory.lean",
+      "reused": true
+    },
+    {
+      "module": "Mahjong.PreloadedRules",
+      "original_path": "build/lean_table_checker/v17_compute_finish_20261018/frozen_source/Mahjong/PreloadedRules.lean",
+      "bytes": 1504,
+      "sha256": "40fa1f5b77c4eeb038c857ef8d4e5ecb2620a1b46781e54be9b82fda4e47c310",
+      "public_path": "research/2026-10-18/lean/Mahjong/PreloadedRules.lean",
+      "reused": true
+    },
+    {
+      "module": "Mahjong.PruningAlgebra",
+      "original_path": "build/lean_table_checker/v17_compute_finish_20261018/frozen_source/Mahjong/PruningAlgebra.lean",
+      "bytes": 10859,
+      "sha256": "02ce608a5ef1adbaf9fd045e3ec9784387523d5065961ac82bd55d8a790f2f30",
+      "public_path": "research/2026-10-18/lean/Mahjong/PruningAlgebra.lean",
+      "reused": true
+    },
+    {
+      "module": "Mahjong.PruningData",
+      "original_path": "build/lean_table_checker/v17_compute_finish_20261018/frozen_source/Mahjong/PruningData.lean",
+      "bytes": 6094,
+      "sha256": "c5f0f8ca03ecd1c0cfc7417580a4c2c6d631ccaa0cc375c428f8dad2131bb5d9",
+      "public_path": "research/2026-10-18/lean/Mahjong/PruningData.lean",
+      "reused": true
+    },
+    {
+      "module": "Mahjong.PruningPackedBridge",
+      "original_path": "build/lean_table_checker/v17_compute_finish_20261018/frozen_source/Mahjong/PruningPackedBridge.lean",
+      "bytes": 4489,
+      "sha256": "0bdd3eb12cc3fee461dffcae269a884dade5a83c1e73e5f2526200c1fd70d394",
+      "public_path": "research/2026-10-18/lean/Mahjong/PruningPackedBridge.lean",
+      "reused": true
+    },
+    {
+      "module": "Mahjong.PruningSemantics",
+      "original_path": "build/lean_table_checker/v17_compute_finish_20261018/frozen_source/Mahjong/PruningSemantics.lean",
+      "bytes": 13298,
+      "sha256": "dde88fe1eeb57852364c7459df4bac1334ac7f3d832a36fc54e465e2dcb2e99b",
+      "public_path": "research/2026-10-18/lean/Mahjong/PruningSemantics.lean",
+      "reused": true
+    },
+    {
+      "module": "Mahjong.Quotient",
+      "original_path": "build/lean_table_checker/v17_compute_finish_20261018/frozen_source/Mahjong/Quotient.lean",
+      "bytes": 6611,
+      "sha256": "e773937b3bd60c496ce0fc07f69ba5a8e99b6c8fdeb18d3a638cb9713096f168",
+      "public_path": "research/2026-10-18/lean/Mahjong/Quotient.lean",
+      "reused": true
+    },
+    {
+      "module": "Mahjong.Ranking",
+      "original_path": "build/lean_table_checker/v17_compute_finish_20261018/frozen_source/Mahjong/Ranking.lean",
+      "bytes": 5157,
+      "sha256": "4f813ecf734791d79f012f231b55a6239f8ebf448318bf3b15085624b671c76c",
+      "public_path": "research/2026-10-18/lean/Mahjong/Ranking.lean",
+      "reused": true
+    },
+    {
+      "module": "Mahjong.ReplayClosureV17",
+      "original_path": "build/lean_table_checker/v17_compute_finish_20261018/frozen_source/Mahjong/ReplayClosureV17.lean",
+      "bytes": 4974,
+      "sha256": "b3fb0f6b741bc9b4de171347c6076b0e4722a878bcb8468a247fdcdc53dae40d",
+      "public_path": "research/2026-10-18-kernel/source/v17/Mahjong/ReplayClosureV17.lean",
+      "reused": true
+    },
+    {
+      "module": "Mahjong.RowScheduleV13",
+      "original_path": "build/lean_table_checker/v17_compute_finish_20261018/frozen_source/Mahjong/RowScheduleV13.lean",
+      "bytes": 5309,
+      "sha256": "66571a74ad60d93e7e09f059bcf7e1a58bddbbed45830aaacf3b6e623c9caa41",
+      "public_path": "research/2026-10-18/lean/Mahjong/RowScheduleV13.lean",
+      "reused": true
+    },
+    {
+      "module": "Mahjong.RuleChecker",
+      "original_path": "build/lean_table_checker/v17_compute_finish_20261018/frozen_source/Mahjong/RuleChecker.lean",
+      "bytes": 11177,
+      "sha256": "2efa76dd77726d5a269d95e2726dd53e5c6010ecdd37131d8db5fda05cae6a7c",
+      "public_path": "research/2026-10-18/lean/Mahjong/RuleChecker.lean",
+      "reused": true
+    },
+    {
+      "module": "Mahjong.Rules",
+      "original_path": "build/lean_table_checker/v17_compute_finish_20261018/frozen_source/Mahjong/Rules.lean",
+      "bytes": 12885,
+      "sha256": "5b7a4cc92126dbfde43a945414ea756b23e60479800c921f4bb6ac5b31ff4eb3",
+      "public_path": "research/2026-10-18/lean/Mahjong/Rules.lean",
+      "reused": true
+    },
+    {
+      "module": "Mahjong.RuntimeBindingV17",
+      "original_path": "build/lean_table_checker/v17_compute_finish_20261018/frozen_source/Mahjong/RuntimeBindingV17.lean",
+      "bytes": 5356,
+      "sha256": "073a5bc91a3bfd4019bddae5fd6918d4e39fa224689c56f1f4d1a9c9182a31b3",
+      "public_path": "research/2026-10-18-kernel/source/v17/Mahjong/RuntimeBindingV17.lean",
+      "reused": true
+    },
+    {
+      "module": "Mahjong.RuntimeScanV17",
+      "original_path": "build/lean_table_checker/v17_compute_finish_20261018/frozen_source/Mahjong/RuntimeScanV17.lean",
+      "bytes": 19422,
+      "sha256": "8707f396d156cf0aa2f3991a76f953276862856a6f8e20f9debbd73ee05b9e3b",
+      "public_path": "research/2026-10-18-kernel/source/v17/Mahjong/RuntimeScanV17.lean",
+      "reused": true
+    },
+    {
+      "module": "Mahjong.SafeGame",
+      "original_path": "build/lean_table_checker/v17_compute_finish_20261018/frozen_source/Mahjong/SafeGame.lean",
+      "bytes": 12473,
+      "sha256": "ef01a38bb161cabe4446274ae744c27bd0936129d1501ce66d35137c3be41028",
+      "public_path": "research/2026-10-18/lean/Mahjong/SafeGame.lean",
+      "reused": true
+    },
+    {
+      "module": "Mahjong.SafeLayerBound",
+      "original_path": "build/lean_table_checker/v17_compute_finish_20261018/frozen_source/Mahjong/SafeLayerBound.lean",
+      "bytes": 6724,
+      "sha256": "b7a0c43d9bfae4956e9267642d6a456012dafe799ec81bac96745723155998c5",
+      "public_path": "research/2026-10-18/lean/Mahjong/SafeLayerBound.lean",
+      "reused": true
+    },
+    {
+      "module": "Mahjong.ScanFinalV17",
+      "original_path": "build/lean_table_checker/v17_compute_finish_20261018/frozen_source/Mahjong/ScanFinalV17.lean",
+      "bytes": 6571,
+      "sha256": "8b2e05e1003003c4ab55afc5e5ce281dd1bb26db3c5f27107567a0897bb6a71d",
+      "public_path": "research/2026-10-18-kernel/source/v17/Mahjong/ScanFinalV17.lean",
+      "reused": true
+    },
+    {
+      "module": "Mahjong.SingleWitness",
+      "original_path": "build/lean_table_checker/v17_compute_finish_20261018/frozen_source/Mahjong/SingleWitness.lean",
+      "bytes": 2147,
+      "sha256": "2686db3a79a0e1a4c0ab66cb313a5a8b8b8f47e03f411bb7b1984b307bc2a7a8",
+      "public_path": "research/2026-10-18/lean/Mahjong/SingleWitness.lean",
+      "reused": true
+    },
+    {
+      "module": "Mahjong.SortedCoverage",
+      "original_path": "build/lean_table_checker/v17_compute_finish_20261018/frozen_source/Mahjong/SortedCoverage.lean",
+      "bytes": 5164,
+      "sha256": "80d0151c76006f4f48dd5d99c9948f63599e10b8b0fe138c18eff39e1017b4bb",
+      "public_path": "research/2026-10-18/lean/Mahjong/SortedCoverage.lean",
+      "reused": true
+    },
+    {
+      "module": "Mahjong.SourceBlockGuard",
+      "original_path": "build/lean_table_checker/v17_compute_finish_20261018/frozen_source/Mahjong/SourceBlockGuard.lean",
+      "bytes": 4681,
+      "sha256": "915a11898cb006807fa81a172fa560a83fc36c86d5609da8b36abd41541d45ff",
+      "public_path": "research/2026-10-18/lean/Mahjong/SourceBlockGuard.lean",
+      "reused": true
+    },
+    {
+      "module": "Mahjong.SparseCompactHotRow",
+      "original_path": "build/lean_table_checker/v17_compute_finish_20261018/frozen_source/Mahjong/SparseCompactHotRow.lean",
+      "bytes": 3461,
+      "sha256": "c4882aeede7aa4e4adff79727aff313203eb1637279ceafef75a163b84d4f0ac",
+      "public_path": "research/2026-10-18/lean/Mahjong/SparseCompactHotRow.lean",
+      "reused": true
+    },
+    {
+      "module": "Mahjong.SparseTemplatePlanCheck",
+      "original_path": "build/lean_table_checker/v17_compute_finish_20261018/frozen_source/Mahjong/SparseTemplatePlanCheck.lean",
+      "bytes": 6113,
+      "sha256": "afd55c375f710cb6be8ad7c0b8eec9687bea6b0bc138c81ff9214656136f075a",
+      "public_path": "research/2026-10-18/lean/Mahjong/SparseTemplatePlanCheck.lean",
+      "reused": true
+    },
+    {
+      "module": "Mahjong.StandardBoundCertificate",
+      "original_path": "build/lean_table_checker/v17_compute_finish_20261018/frozen_source/Mahjong/StandardBoundCertificate.lean",
+      "bytes": 10585,
+      "sha256": "573fcd4d4486e6c4cf324b3af201dbce58d3d9d4261c8fb3c6ef91a6e392d89d",
+      "public_path": "research/2026-10-18/lean/Mahjong/StandardBoundCertificate.lean",
+      "reused": true
+    },
+    {
+      "module": "Mahjong.SuccessorCache",
+      "original_path": "build/lean_table_checker/v17_compute_finish_20261018/frozen_source/Mahjong/SuccessorCache.lean",
+      "bytes": 6403,
+      "sha256": "19d0dda44a15237fb426492b932ebf00f866a6db5e88e6e5061b603e28b6d93b",
+      "public_path": "research/2026-10-18/lean/Mahjong/SuccessorCache.lean",
+      "reused": true
+    },
+    {
+      "module": "Mahjong.SuitSorting",
+      "original_path": "build/lean_table_checker/v17_compute_finish_20261018/frozen_source/Mahjong/SuitSorting.lean",
+      "bytes": 4906,
+      "sha256": "4fc6453b2f6716ab110127b0ef622a49a746111a51406933009c25e231951c88",
+      "public_path": "research/2026-10-18/lean/Mahjong/SuitSorting.lean",
+      "reused": true
+    },
+    {
+      "module": "Mahjong.SummaryEncoding",
+      "original_path": "build/lean_table_checker/v17_compute_finish_20261018/frozen_source/Mahjong/SummaryEncoding.lean",
+      "bytes": 766,
+      "sha256": "23399b8c1f2c941858253745732011c0532cf7080f3b7678df9afea68d21bc37",
+      "public_path": "research/2026-10-18/lean/Mahjong/SummaryEncoding.lean",
+      "reused": true
+    },
+    {
+      "module": "Mahjong.SummaryRules",
+      "original_path": "build/lean_table_checker/v17_compute_finish_20261018/frozen_source/Mahjong/SummaryRules.lean",
+      "bytes": 2210,
+      "sha256": "396686bbe2b117606eb61d38df0ad25281fc501aca533a1b83fbec83c54addba",
+      "public_path": "research/2026-10-18/lean/Mahjong/SummaryRules.lean",
+      "reused": true
+    },
+    {
+      "module": "Mahjong.Symmetry",
+      "original_path": "build/lean_table_checker/v17_compute_finish_20261018/frozen_source/Mahjong/Symmetry.lean",
+      "bytes": 13671,
+      "sha256": "86549f48fc15afeddcda9da02884849f2bb6dd49a9211962fab75607585ed74a",
+      "public_path": "research/2026-10-18/lean/Mahjong/Symmetry.lean",
+      "reused": true
+    },
+    {
+      "module": "Mahjong.TemplatePlanCertifiedRow",
+      "original_path": "build/lean_table_checker/v17_compute_finish_20261018/frozen_source/Mahjong/TemplatePlanCertifiedRow.lean",
+      "bytes": 4577,
+      "sha256": "9dd8a481b8dcbf8c4abca526b37ff719dfe7e5dcf1b96deca18e2ad939218fe6",
+      "public_path": "research/2026-10-18/lean/Mahjong/TemplatePlanCertifiedRow.lean",
+      "reused": true
+    },
+    {
+      "module": "Mahjong.TemplatePlanCheck",
+      "original_path": "build/lean_table_checker/v17_compute_finish_20261018/frozen_source/Mahjong/TemplatePlanCheck.lean",
+      "bytes": 8122,
+      "sha256": "b0367900afa1cdaf8a2f86271c96346172198503de778c2c80638775bb8df9cb",
+      "public_path": "research/2026-10-18/lean/Mahjong/TemplatePlanCheck.lean",
+      "reused": true
+    },
+    {
+      "module": "Mahjong.TerminalBucket",
+      "original_path": "build/lean_table_checker/v17_compute_finish_20261018/frozen_source/Mahjong/TerminalBucket.lean",
+      "bytes": 3449,
+      "sha256": "19ed504c598335f4bd712edf772b38ac8281e9ed259bc8bbe79553eea8c1afce",
+      "public_path": "research/2026-10-18/lean/Mahjong/TerminalBucket.lean",
+      "reused": true
+    },
+    {
+      "module": "Mahjong.TileCountBridge",
+      "original_path": "build/lean_table_checker/v17_compute_finish_20261018/frozen_source/Mahjong/TileCountBridge.lean",
+      "bytes": 2686,
+      "sha256": "645c7abbca59dab0a3e419106f74b4450eebd7744ac908ff64a46f25fef83fd6",
+      "public_path": "research/2026-10-18/lean/Mahjong/TileCountBridge.lean",
+      "reused": true
+    },
+    {
+      "module": "Mahjong.TripleDirectory",
+      "original_path": "build/lean_table_checker/v17_compute_finish_20261018/frozen_source/Mahjong/TripleDirectory.lean",
+      "bytes": 4938,
+      "sha256": "55dc792cf8e3981f1fd35da0bf5e06a76e6d3fc40fcb7c3342437dc00ed23f7e",
+      "public_path": "research/2026-10-18/lean/Mahjong/TripleDirectory.lean",
+      "reused": true
+    },
+    {
+      "module": "Mahjong.V17NativeWorker",
+      "original_path": "runs/lean_table_checker/v17_compute_finish_20261018/native_builds/1060b5998a014be594e54ba64d3671d5/phase_finalize_9a88469a8585/00_Mahjong.V17NativeWorker/source/Mahjong/V17NativeWorker.lean",
+      "bytes": 13624,
+      "sha256": "dadc722410875249f7d308c71c16ee7d1c71ebeb3e3fa3b9b078f63c9c02d6cb",
+      "public_path": "research/2026-10-19-v17/source/Mahjong/V17NativeWorker.lean",
+      "reused": false
+    },
+    {
+      "module": "Mahjong.VerifiedSourceTarget",
+      "original_path": "build/lean_table_checker/v17_compute_finish_20261018/frozen_source/Mahjong/VerifiedSourceTarget.lean",
+      "bytes": 7424,
+      "sha256": "f90cc4c0ea464c630dd3d75bdb1042cc921b74bf5052866a407c0e31f1ad2a46",
+      "public_path": "research/2026-10-18/lean/Mahjong/VerifiedSourceTarget.lean",
+      "reused": true
+    },
+    {
+      "module": "Mahjong.WeightedBlocks",
+      "original_path": "build/lean_table_checker/v17_compute_finish_20261018/frozen_source/Mahjong/WeightedBlocks.lean",
+      "bytes": 4518,
+      "sha256": "4d8d94d436d2d9f4abd62c786abdb61f27eb9eae60cedb09404545afaccf94c7",
+      "public_path": "research/2026-10-18/lean/Mahjong/WeightedBlocks.lean",
+      "reused": true
+    },
+    {
+      "module": "Mahjong.WordLimits",
+      "original_path": "build/lean_table_checker/v17_compute_finish_20261018/frozen_source/Mahjong/WordLimits.lean",
+      "bytes": 4134,
+      "sha256": "5993ea3a69a00ca3e5b076ab42c3b6c4bbe760de599687c97b340feeff07032f",
+      "public_path": "research/2026-10-18/lean/Mahjong/WordLimits.lean",
+      "reused": true
+    },
+    {
+      "module": "Mahjong.WordRank",
+      "original_path": "build/lean_table_checker/v17_compute_finish_20261018/frozen_source/Mahjong/WordRank.lean",
+      "bytes": 6796,
+      "sha256": "5c3ad1fb55667f19ce2ab596ca77fa5861d8ebadb12a354bd1951427f3f47116",
+      "public_path": "research/2026-10-18/lean/Mahjong/WordRank.lean",
+      "reused": true
+    },
+    {
+      "module": "MainOwnedJointIndexedRows1WorkerV16",
+      "original_path": "build/lean_table_checker/v17_compute_finish_20261018/frozen_source/MainOwnedJointIndexedRows1WorkerV16.lean",
+      "bytes": 112,
+      "sha256": "8077936f36171d784ca57fdd895bb382fbe650f8644acc3ffb9ade8ee8138235",
+      "public_path": "research/2026-10-18/lean/MainOwnedJointIndexedRows1WorkerV16.lean",
+      "reused": true
+    },
+    {
+      "module": "PackedLabelSpan",
+      "original_path": "build/lean_table_checker/v17_compute_finish_20261018/frozen_source/PackedLabelSpan.lean",
+      "bytes": 1021,
+      "sha256": "df595ec9efe661f545ab7e365f3bf7f537107be849920e87b2ccf66e321e13bd",
+      "public_path": "research/2026-10-18/lean/PackedLabelSpan.lean",
+      "reused": true
+    },
+    {
+      "module": "V17ComputeMain",
+      "original_path": "runs/lean_table_checker/v17_compute_finish_20261018/native_builds/1060b5998a014be594e54ba64d3671d5/phase_finalize_9a88469a8585/01_V17ComputeMain/source/V17ComputeMain.lean",
+      "bytes": 26709,
+      "sha256": "19b87459bb70cf264089986a1d92f2e06757ad6c66f1674eadacf5fb12eee9ac",
+      "public_path": "research/2026-10-19-v17/source/V17ComputeMain.lean",
+      "reused": false
+    },
+    {
+      "module": "V17ComputeReplay",
+      "original_path": "runs/lean_table_checker/v17_compute_finish_20261018/native_builds/1060b5998a014be594e54ba64d3671d5/phase_finalize_9a88469a8585/replay_root/source/V17ComputeReplay.lean",
+      "bytes": 4659,
+      "sha256": "2b2fd2d612c21839867c4019c4eb86c5a697b4f7664e8710f84336cdd859055c",
+      "public_path": "research/2026-10-19-v17/source/V17ComputeReplay.lean",
+      "reused": false
+    }
+  ],
+  "dependencies": {
+    "CompactStreamTransport": [],
+    "JointIndexedFramesMainV16": [
+      "Mahjong.BlockPlanFastSource",
+      "Mahjong.BlockPlanSoundness",
+      "Mahjong.TemplatePlanCertifiedRow",
+      "Mahjong.GeneratedPlanCheck",
+      "Mahjong.CheckedPlanConstructor",
+      "Mahjong.IndexedByteRowV16",
+      "Mahjong.GuardedByteScanV16",
+      "Mahjong.GeneratedLocalCache",
+      "Mahjong.MaterializedLocal",
+      "Mahjong.CompactHotRow",
+      "Mahjong.IndexedByteStreamTransportV16",
+      "PackedLabelSpan",
+      "Mahjong.RowScheduleV13",
+      "Mahjong.IndexedByteRowInputV16"
+    ],
+    "Mahjong.AbsoluteCursor": [
+      "Mahjong.CursorLayouts"
+    ],
+    "Mahjong.Base5Coverage": [
+      "Mahjong.FullSafeData"
+    ],
+    "Mahjong.BindingControlsV17": [
+      "Mahjong.RuntimeBindingV17"
+    ],
+    "Mahjong.BlockPlanCertifiedRow": [
+      "Mahjong.BlockPlanSoundness",
+      "Mahjong.BlockPlanFastSource"
+    ],
+    "Mahjong.BlockPlanCheck": [
+      "Mahjong.BlockWordAddress",
+      "Mahjong.CachedTargetModels",
+      "Mahjong.MovePlanRefinement"
+    ],
+    "Mahjong.BlockPlanFastSource": [
+      "Mahjong.BlockPlanCheck",
+      "Mahjong.SourceBlockGuard"
+    ],
+    "Mahjong.BlockPlanSoundness": [
+      "Mahjong.BlockPlanCheck"
+    ],
+    "Mahjong.BlockWordAddress": [
+      "Mahjong.GuardedIndexAccess"
+    ],
+    "Mahjong.BorrowedGeneratedCompactHotRow": [
+      "Mahjong.BorrowedGeneratedHotPlan",
+      "Mahjong.CompactHotRow"
+    ],
+    "Mahjong.BorrowedGeneratedHotPlan": [
+      "Mahjong.GeneratedHotPlan"
+    ],
+    "Mahjong.BorrowedNextGeneratedCompactHotRow": [
+      "Mahjong.BorrowedNextGeneratedHotPlan",
+      "Mahjong.CompactHotRow"
+    ],
+    "Mahjong.BorrowedNextGeneratedHotPlan": [
+      "Mahjong.BorrowedGeneratedHotPlan",
+      "Mahjong.GeneratedLocalCache"
+    ],
+    "Mahjong.Bridge": [
+      "Mahjong.Rules",
+      "Mahjong.SafeGame",
+      "Mahjong.Certificate",
+      "Mahjong.Quotient"
+    ],
+    "Mahjong.BucketIndex": [
+      "Mahjong.PackedRules"
+    ],
+    "Mahjong.CachedPackedCheck": [
+      "Mahjong.GlobalSuccessorBridge",
+      "Mahjong.GeneralLayer",
+      "Mahjong.FastSingleWitness",
+      "Mahjong.SuitSorting"
+    ],
+    "Mahjong.CachedPackedFast": [
+      "Mahjong.CachedPackedCheck"
+    ],
+    "Mahjong.CachedPackedSnapshot": [
+      "Mahjong.CachedPackedFast"
+    ],
+    "Mahjong.CachedProfiles": [
+      "Mahjong.PackedRules"
+    ],
+    "Mahjong.CachedStandardBounds": [
+      "Mahjong.StandardBoundCertificate",
+      "Mahjong.MaskedLocalBound"
+    ],
+    "Mahjong.CachedTargetModels": [
+      "Mahjong.VerifiedSourceTarget"
+    ],
+    "Mahjong.CanonicalCoverage": [
+      "Mahjong.CanonicalInventory"
+    ],
+    "Mahjong.CanonicalInventory": [
+      "Mahjong.LocalSymmetryFrame"
+    ],
+    "Mahjong.CapacityComplete": [
+      "Mahjong.FactorizedRules",
+      "Mahjong.FastOrphans"
+    ],
+    "Mahjong.Certificate": [
+      "Mahjong.SafeGame"
+    ],
+    "Mahjong.CheckedPlanConstructor": [
+      "Mahjong.GeneratedPlanCheck"
+    ],
+    "Mahjong.CompactHotRow": [
+      "Mahjong.TemplatePlanCertifiedRow"
+    ],
+    "Mahjong.CrossLayerAssemblyV17": [
+      "Mahjong.IndexedByteRowSafeV17",
+      "Mahjong.RowScheduleV13"
+    ],
+    "Mahjong.CursorLayouts": [
+      "Mahjong.WeightedBlocks"
+    ],
+    "Mahjong.DirectoryCoverage": [
+      "Mahjong.GroupedCoverage",
+      "Mahjong.HonorDirectory"
+    ],
+    "Mahjong.DirectoryIndex": [
+      "Mahjong.IndexOperations",
+      "Mahjong.HonorDirectory"
+    ],
+    "Mahjong.DirectorySliceBinding": [
+      "Mahjong.DirectoryIndex",
+      "Mahjong.PrefixData"
+    ],
+    "Mahjong.DownwardClosure": [
+      "Mahjong.Bridge"
+    ],
+    "Mahjong.EmptyRootV17": [
+      "Mahjong.Base5Coverage",
+      "Mahjong.BucketIndex",
+      "Mahjong.TerminalBucket",
+      "Mahjong.Bridge"
+    ],
+    "Mahjong.EnumerationBlocks": [
+      "Mahjong.Ranking"
+    ],
+    "Mahjong.ExactMemoRules": [
+      "Mahjong.FastMemoRules",
+      "Mahjong.CapacityComplete"
+    ],
+    "Mahjong.ExecutionAssemblyV17": [
+      "Mahjong.RuntimeBindingV17"
+    ],
+    "Mahjong.FactorizedRules": [
+      "Mahjong.CachedStandardBounds"
+    ],
+    "Mahjong.FastBitRead": [
+      "Mahjong.TerminalBucket"
+    ],
+    "Mahjong.FastMemoRules": [
+      "Mahjong.MemoRules",
+      "Mahjong.FastOrphans"
+    ],
+    "Mahjong.FastOrphans": [
+      "Mahjong.RuleChecker"
+    ],
+    "Mahjong.FastRuleChecker": [
+      "Mahjong.MoveEnumeration"
+    ],
+    "Mahjong.FastSingleWitness": [
+      "Mahjong.SingleWitness",
+      "Mahjong.FullSafeData"
+    ],
+    "Mahjong.FastWholeInputV17": [
+      "Mahjong.ScanFinalV17",
+      "Mahjong.FiniteWholeInputV17"
+    ],
+    "Mahjong.FiniteCertificateV17": [
+      "Mahjong.GlobalEnumeration",
+      "Mahjong.WordLimits"
+    ],
+    "Mahjong.FiniteMetadataV17": [
+      "Mahjong.CrossLayerAssemblyV17",
+      "Mahjong.FiniteCertificateV17",
+      "Mahjong.CheckedPlanConstructor"
+    ],
+    "Mahjong.FiniteWholeInputV17": [
+      "Mahjong.FiniteMetadataV17",
+      "Mahjong.RuntimeBindingV17"
+    ],
+    "Mahjong.FullSafeData": [
+      "Mahjong.FullSafeSemantics",
+      "Mahjong.PruningPackedBridge"
+    ],
+    "Mahjong.FullSafeSemantics": [
+      "Mahjong.OrphanPruning"
+    ],
+    "Mahjong.GeneralIndex": [
+      "Mahjong.GeneralLayer",
+      "Mahjong.BucketIndex",
+      "Mahjong.LocalCacheEncoding",
+      "Mahjong.TerminalBucket"
+    ],
+    "Mahjong.GeneralLayer": [
+      "Mahjong.PreloadedRules",
+      "Mahjong.Generators",
+      "Mahjong.Bridge",
+      "Mahjong.PackedInterpretation"
+    ],
+    "Mahjong.GeneralOriginalSoundness": [
+      "Mahjong.GeneralIndex"
+    ],
+    "Mahjong.GeneratedCompactHotRow": [
+      "Mahjong.GeneratedHotPlan",
+      "Mahjong.CompactHotRow"
+    ],
+    "Mahjong.GeneratedHotPlan": [
+      "Mahjong.GeneratedPlanCheck",
+      "Mahjong.HotBlockPlan",
+      "Mahjong.CachedPackedSnapshot"
+    ],
+    "Mahjong.GeneratedLocalCache": [
+      "Mahjong.CachedPackedSnapshot"
+    ],
+    "Mahjong.GeneratedPlanCheck": [
+      "Mahjong.GroupNextCoverage"
+    ],
+    "Mahjong.Generators": [
+      "Mahjong.Symmetry"
+    ],
+    "Mahjong.GlobalAddressDecoder": [
+      "Mahjong.GlobalOrbitDirectory",
+      "Mahjong.IndexDecoder"
+    ],
+    "Mahjong.GlobalEnumeration": [
+      "Mahjong.GlobalSlotRealization"
+    ],
+    "Mahjong.GlobalOrbitDirectory": [
+      "Mahjong.GlobalOrbitUniqueness",
+      "Mahjong.DirectoryCoverage"
+    ],
+    "Mahjong.GlobalOrbitKey": [
+      "Mahjong.SortedCoverage"
+    ],
+    "Mahjong.GlobalOrbitUniqueness": [
+      "Mahjong.GlobalOrbitKey"
+    ],
+    "Mahjong.GlobalSlotRealization": [
+      "Mahjong.IndexedPhysical"
+    ],
+    "Mahjong.GlobalSuccessorBridge": [
+      "Mahjong.LocalSuccessorBridge",
+      "Mahjong.GlobalEnumeration"
+    ],
+    "Mahjong.GroupCandidates": [
+      "Mahjong.GroupInventory"
+    ],
+    "Mahjong.GroupInventory": [
+      "Mahjong.CanonicalInventory",
+      "Mahjong.EnumerationBlocks"
+    ],
+    "Mahjong.GroupNextCoverage": [
+      "Mahjong.SparseTemplatePlanCheck"
+    ],
+    "Mahjong.GroupedCoverage": [
+      "Mahjong.SortedCoverage",
+      "Mahjong.SafeLayerBound",
+      "Mahjong.WeightedBlocks"
+    ],
+    "Mahjong.GuardedByteScanV16": [
+      "Mahjong.IndexedByteRowV16"
+    ],
+    "Mahjong.GuardedCachedRow": [
+      "Mahjong.CachedPackedCheck",
+      "Mahjong.GuardedIndexAccess"
+    ],
+    "Mahjong.GuardedIndexAccess": [
+      "Mahjong.WordRank",
+      "Mahjong.PrefixData"
+    ],
+    "Mahjong.GuardedTargetRef": [
+      "Mahjong.LegacyIndexRefinement",
+      "Mahjong.CachedPackedFast"
+    ],
+    "Mahjong.HonorDirectory": [
+      "Mahjong.TripleDirectory"
+    ],
+    "Mahjong.HotBlockPlan": [
+      "Mahjong.HotWord",
+      "Mahjong.FastBitRead",
+      "Mahjong.BlockPlanCertifiedRow"
+    ],
+    "Mahjong.HotWord": [
+      "Mahjong.BlockPlanCheck"
+    ],
+    "Mahjong.IndexDecoder": [
+      "Mahjong.IndexSearch",
+      "Mahjong.WeightedBlocks"
+    ],
+    "Mahjong.IndexHelperCheck": [
+      "Mahjong.IndexSearch",
+      "Mahjong.GroupInventory"
+    ],
+    "Mahjong.IndexInputBounds": [
+      "Mahjong.IndexDecoder"
+    ],
+    "Mahjong.IndexLocate": [
+      "Mahjong.PrefixDirectory"
+    ],
+    "Mahjong.IndexOperations": [
+      "Mahjong.IndexDecoder",
+      "Mahjong.AbsoluteCursor",
+      "Mahjong.PrefixCursor"
+    ],
+    "Mahjong.IndexSearch": [
+      "Mahjong.Ranking"
+    ],
+    "Mahjong.IndexWordArithmetic": [
+      "Mahjong.IndexOperations"
+    ],
+    "Mahjong.IndexedByteRowInputV16": [
+      "Mahjong.RowScheduleV13"
+    ],
+    "Mahjong.IndexedByteRowSafeV17": [
+      "Mahjong.IndexedByteRowV16"
+    ],
+    "Mahjong.IndexedByteRowV16": [
+      "Mahjong.BorrowedNextGeneratedCompactHotRow"
+    ],
+    "Mahjong.IndexedByteStreamTransportV16": [],
+    "Mahjong.IndexedPhysical": [
+      "Mahjong.GlobalAddressDecoder"
+    ],
+    "Mahjong.LegacyIndexRefinement": [
+      "Mahjong.GuardedIndexAccess",
+      "Mahjong.BucketIndex",
+      "Mahjong.IndexInputBounds"
+    ],
+    "Mahjong.LocalCache": [
+      "Mahjong.MaskedLocalBound"
+    ],
+    "Mahjong.LocalCacheEncoding": [
+      "Mahjong.LocalCache"
+    ],
+    "Mahjong.LocalSuccessorBridge": [
+      "Mahjong.SuccessorCache"
+    ],
+    "Mahjong.LocalSummary": [
+      "Mahjong.PairProfile",
+      "Mahjong.LocalCache"
+    ],
+    "Mahjong.LocalSymmetryFrame": [
+      "Mahjong.Base5Coverage",
+      "Mahjong.Generators"
+    ],
+    "Mahjong.MaskedLocalBound": [
+      "Mahjong.StandardBoundCertificate"
+    ],
+    "Mahjong.MaterializedLocal": [
+      "Mahjong.CachedPackedSnapshot"
+    ],
+    "Mahjong.MemoRules": [
+      "Mahjong.LocalCache",
+      "Mahjong.FactorizedRules"
+    ],
+    "Mahjong.MoveEnumeration": [
+      "Mahjong.RuleChecker"
+    ],
+    "Mahjong.MoveNormalization": [
+      "Mahjong.GlobalOrbitKey",
+      "Mahjong.SuccessorCache"
+    ],
+    "Mahjong.MovePlanRefinement": [
+      "Mahjong.MoveNormalization",
+      "Mahjong.GroupInventory",
+      "Mahjong.IndexWordArithmetic"
+    ],
+    "Mahjong.OrphanPruning": [
+      "Mahjong.PruningSemantics"
+    ],
+    "Mahjong.PackedInterpretation": [
+      "Mahjong.PackedRules"
+    ],
+    "Mahjong.PackedRules": [
+      "Mahjong.SummaryRules"
+    ],
+    "Mahjong.PairProfile": [
+      "Mahjong.CapacityComplete",
+      "Mahjong.MemoRules"
+    ],
+    "Mahjong.PrefixCursor": [
+      "Mahjong.IndexLocate"
+    ],
+    "Mahjong.PrefixData": [
+      "Mahjong.PrefixDirectory"
+    ],
+    "Mahjong.PrefixDirectory": [
+      "Mahjong.WeightedBlocks"
+    ],
+    "Mahjong.PreloadedRules": [
+      "Mahjong.CachedProfiles"
+    ],
+    "Mahjong.PruningAlgebra": [],
+    "Mahjong.PruningData": [
+      "Mahjong.PruningSemantics",
+      "Mahjong.SummaryEncoding"
+    ],
+    "Mahjong.PruningPackedBridge": [
+      "Mahjong.PruningData",
+      "Mahjong.PackedRules"
+    ],
+    "Mahjong.PruningSemantics": [
+      "Mahjong.PruningAlgebra",
+      "Mahjong.SummaryRules",
+      "Mahjong.DownwardClosure"
+    ],
+    "Mahjong.Quotient": [
+      "Mahjong.SafeGame"
+    ],
+    "Mahjong.Ranking": [],
+    "Mahjong.ReplayClosureV17": [
+      "CompactStreamTransport",
+      "JointIndexedFramesMainV16",
+      "Mahjong.AbsoluteCursor",
+      "Mahjong.Base5Coverage",
+      "Mahjong.BlockPlanCertifiedRow",
+      "Mahjong.BlockPlanCheck",
+      "Mahjong.BlockPlanFastSource",
+      "Mahjong.BlockPlanSoundness",
+      "Mahjong.BlockWordAddress",
+      "Mahjong.BorrowedGeneratedCompactHotRow",
+      "Mahjong.BorrowedGeneratedHotPlan",
+      "Mahjong.BorrowedNextGeneratedCompactHotRow",
+      "Mahjong.BorrowedNextGeneratedHotPlan",
+      "Mahjong.Bridge",
+      "Mahjong.BucketIndex",
+      "Mahjong.CachedPackedCheck",
+      "Mahjong.CachedPackedFast",
+      "Mahjong.CachedPackedSnapshot",
+      "Mahjong.CachedProfiles",
+      "Mahjong.CachedStandardBounds",
+      "Mahjong.CachedTargetModels",
+      "Mahjong.CanonicalCoverage",
+      "Mahjong.CanonicalInventory",
+      "Mahjong.CapacityComplete",
+      "Mahjong.Certificate",
+      "Mahjong.CheckedPlanConstructor",
+      "Mahjong.CompactHotRow",
+      "Mahjong.CursorLayouts",
+      "Mahjong.DirectoryCoverage",
+      "Mahjong.DirectoryIndex",
+      "Mahjong.DirectorySliceBinding",
+      "Mahjong.DownwardClosure",
+      "Mahjong.EnumerationBlocks",
+      "Mahjong.ExactMemoRules",
+      "Mahjong.FactorizedRules",
+      "Mahjong.FastBitRead",
+      "Mahjong.FastMemoRules",
+      "Mahjong.FastOrphans",
+      "Mahjong.FastRuleChecker",
+      "Mahjong.FastSingleWitness",
+      "Mahjong.FullSafeData",
+      "Mahjong.FullSafeSemantics",
+      "Mahjong.GeneralIndex",
+      "Mahjong.GeneralLayer",
+      "Mahjong.GeneralOriginalSoundness",
+      "Mahjong.GeneratedCompactHotRow",
+      "Mahjong.GeneratedHotPlan",
+      "Mahjong.GeneratedLocalCache",
+      "Mahjong.GeneratedPlanCheck",
+      "Mahjong.Generators",
+      "Mahjong.GlobalAddressDecoder",
+      "Mahjong.GlobalEnumeration",
+      "Mahjong.GlobalOrbitDirectory",
+      "Mahjong.GlobalOrbitKey",
+      "Mahjong.GlobalOrbitUniqueness",
+      "Mahjong.GlobalSlotRealization",
+      "Mahjong.GlobalSuccessorBridge",
+      "Mahjong.GroupCandidates",
+      "Mahjong.GroupInventory",
+      "Mahjong.GroupNextCoverage",
+      "Mahjong.GroupedCoverage",
+      "Mahjong.GuardedByteScanV16",
+      "Mahjong.GuardedCachedRow",
+      "Mahjong.GuardedIndexAccess",
+      "Mahjong.GuardedTargetRef",
+      "Mahjong.HonorDirectory",
+      "Mahjong.HotBlockPlan",
+      "Mahjong.HotWord",
+      "Mahjong.IndexDecoder",
+      "Mahjong.IndexHelperCheck",
+      "Mahjong.IndexInputBounds",
+      "Mahjong.IndexLocate",
+      "Mahjong.IndexOperations",
+      "Mahjong.IndexSearch",
+      "Mahjong.IndexWordArithmetic",
+      "Mahjong.IndexedByteRowInputV16",
+      "Mahjong.IndexedByteRowV16",
+      "Mahjong.IndexedByteStreamTransportV16",
+      "Mahjong.IndexedPhysical",
+      "Mahjong.LegacyIndexRefinement",
+      "Mahjong.LocalCache",
+      "Mahjong.LocalCacheEncoding",
+      "Mahjong.LocalSuccessorBridge",
+      "Mahjong.LocalSummary",
+      "Mahjong.LocalSymmetryFrame",
+      "Mahjong.MaskedLocalBound",
+      "Mahjong.MaterializedLocal",
+      "Mahjong.MemoRules",
+      "Mahjong.MoveEnumeration",
+      "Mahjong.MoveNormalization",
+      "Mahjong.MovePlanRefinement",
+      "Mahjong.OrphanPruning",
+      "Mahjong.PackedInterpretation",
+      "Mahjong.PackedRules",
+      "Mahjong.PairProfile",
+      "Mahjong.PrefixCursor",
+      "Mahjong.PrefixData",
+      "Mahjong.PrefixDirectory",
+      "Mahjong.PreloadedRules",
+      "Mahjong.PruningAlgebra",
+      "Mahjong.PruningData",
+      "Mahjong.PruningPackedBridge",
+      "Mahjong.PruningSemantics",
+      "Mahjong.Quotient",
+      "Mahjong.Ranking",
+      "Mahjong.RowScheduleV13",
+      "Mahjong.RuleChecker",
+      "Mahjong.Rules",
+      "Mahjong.SafeGame",
+      "Mahjong.SafeLayerBound",
+      "Mahjong.SingleWitness",
+      "Mahjong.SortedCoverage",
+      "Mahjong.SourceBlockGuard",
+      "Mahjong.SparseCompactHotRow",
+      "Mahjong.SparseTemplatePlanCheck",
+      "Mahjong.StandardBoundCertificate",
+      "Mahjong.SuccessorCache",
+      "Mahjong.SuitSorting",
+      "Mahjong.SummaryEncoding",
+      "Mahjong.SummaryRules",
+      "Mahjong.Symmetry",
+      "Mahjong.TemplatePlanCertifiedRow",
+      "Mahjong.TemplatePlanCheck",
+      "Mahjong.TerminalBucket",
+      "Mahjong.TileCountBridge",
+      "Mahjong.TripleDirectory",
+      "Mahjong.VerifiedSourceTarget",
+      "Mahjong.WeightedBlocks",
+      "Mahjong.WordLimits",
+      "Mahjong.WordRank",
+      "MainOwnedJointIndexedRows1WorkerV16",
+      "PackedLabelSpan",
+      "Mahjong.BindingControlsV17",
+      "Mahjong.CrossLayerAssemblyV17",
+      "Mahjong.EmptyRootV17",
+      "Mahjong.ExecutionAssemblyV17",
+      "Mahjong.FiniteCertificateV17",
+      "Mahjong.FiniteMetadataV17",
+      "Mahjong.FiniteWholeInputV17",
+      "Mahjong.IndexedByteRowSafeV17",
+      "Mahjong.RuntimeBindingV17",
+      "Mahjong.RuntimeScanV17",
+      "Mahjong.ScanFinalV17",
+      "Mahjong.FastWholeInputV17"
+    ],
+    "Mahjong.RowScheduleV13": [],
+    "Mahjong.RuleChecker": [
+      "Mahjong.Rules",
+      "Mahjong.SafeGame"
+    ],
+    "Mahjong.Rules": [],
+    "Mahjong.RuntimeBindingV17": [
+      "Mahjong.CrossLayerAssemblyV17",
+      "Mahjong.EmptyRootV17"
+    ],
+    "Mahjong.RuntimeScanV17": [
+      "Mahjong.CrossLayerAssemblyV17",
+      "Mahjong.CheckedPlanConstructor",
+      "Mahjong.GuardedByteScanV16"
+    ],
+    "Mahjong.SafeGame": [],
+    "Mahjong.SafeLayerBound": [
+      "Mahjong.TileCountBridge"
+    ],
+    "Mahjong.ScanFinalV17": [
+      "Mahjong.RuntimeScanV17",
+      "Mahjong.ExecutionAssemblyV17",
+      "Mahjong.FiniteWholeInputV17"
+    ],
+    "Mahjong.SingleWitness": [
+      "Mahjong.GeneralOriginalSoundness"
+    ],
+    "Mahjong.SortedCoverage": [
+      "Mahjong.SuitSorting",
+      "Mahjong.GroupInventory"
+    ],
+    "Mahjong.SourceBlockGuard": [
+      "Mahjong.BlockWordAddress"
+    ],
+    "Mahjong.SparseCompactHotRow": [
+      "Mahjong.SparseTemplatePlanCheck",
+      "Mahjong.CompactHotRow"
+    ],
+    "Mahjong.SparseTemplatePlanCheck": [
+      "Mahjong.TemplatePlanCheck"
+    ],
+    "Mahjong.StandardBoundCertificate": [
+      "Mahjong.FastRuleChecker"
+    ],
+    "Mahjong.SuccessorCache": [
+      "Mahjong.CanonicalCoverage"
+    ],
+    "Mahjong.SuitSorting": [
+      "Mahjong.CanonicalCoverage"
+    ],
+    "Mahjong.SummaryEncoding": [
+      "Mahjong.LocalSummary",
+      "Mahjong.LocalCacheEncoding"
+    ],
+    "Mahjong.SummaryRules": [
+      "Mahjong.LocalSummary",
+      "Mahjong.ExactMemoRules"
+    ],
+    "Mahjong.Symmetry": [
+      "Mahjong.Rules",
+      "Mahjong.Quotient"
+    ],
+    "Mahjong.TemplatePlanCertifiedRow": [
+      "Mahjong.TemplatePlanCheck",
+      "Mahjong.HotBlockPlan"
+    ],
+    "Mahjong.TemplatePlanCheck": [
+      "Mahjong.BlockPlanCheck"
+    ],
+    "Mahjong.TerminalBucket": [
+      "Mahjong.BucketIndex",
+      "Mahjong.Bridge"
+    ],
+    "Mahjong.TileCountBridge": [
+      "Mahjong.CanonicalCoverage"
+    ],
+    "Mahjong.TripleDirectory": [
+      "Mahjong.WeightedBlocks"
+    ],
+    "Mahjong.V17NativeWorker": [
+      "Mahjong.FastWholeInputV17"
+    ],
+    "Mahjong.VerifiedSourceTarget": [
+      "Mahjong.GuardedTargetRef",
+      "Mahjong.GuardedCachedRow"
+    ],
+    "Mahjong.WeightedBlocks": [
+      "Mahjong.GroupCandidates"
+    ],
+    "Mahjong.WordLimits": [
+      "Mahjong.IndexWordArithmetic",
+      "Mahjong.IndexHelperCheck",
+      "Mahjong.DirectorySliceBinding"
+    ],
+    "Mahjong.WordRank": [
+      "Mahjong.WordLimits"
+    ],
+    "MainOwnedJointIndexedRows1WorkerV16": [
+      "JointIndexedFramesMainV16"
+    ],
+    "PackedLabelSpan": [],
+    "V17ComputeMain": [
+      "Mahjong.V17NativeWorker",
+      "JointIndexedFramesMainV16"
+    ],
+    "V17ComputeReplay": [
+      "Mahjong.Ranking",
+      "Mahjong.IndexSearch",
+      "Mahjong.PruningAlgebra",
+      "Mahjong.Rules",
+      "Mahjong.SafeGame",
+      "Mahjong.RuleChecker",
+      "Mahjong.MoveEnumeration",
+      "Mahjong.FastRuleChecker",
+      "Mahjong.StandardBoundCertificate",
+      "Mahjong.MaskedLocalBound",
+      "Mahjong.CachedStandardBounds",
+      "Mahjong.FactorizedRules",
+      "Mahjong.FastOrphans",
+      "Mahjong.CapacityComplete",
+      "Mahjong.LocalCache",
+      "Mahjong.MemoRules",
+      "Mahjong.PairProfile",
+      "Mahjong.LocalSummary",
+      "Mahjong.FastMemoRules",
+      "Mahjong.ExactMemoRules",
+      "Mahjong.SummaryRules",
+      "Mahjong.Certificate",
+      "Mahjong.Quotient",
+      "Mahjong.Bridge",
+      "Mahjong.DownwardClosure",
+      "Mahjong.PruningSemantics",
+      "Mahjong.OrphanPruning",
+      "Mahjong.FullSafeSemantics",
+      "Mahjong.LocalCacheEncoding",
+      "Mahjong.SummaryEncoding",
+      "Mahjong.PruningData",
+      "Mahjong.PackedRules",
+      "Mahjong.PruningPackedBridge",
+      "Mahjong.FullSafeData",
+      "Mahjong.Base5Coverage",
+      "Mahjong.Symmetry",
+      "Mahjong.Generators",
+      "Mahjong.LocalSymmetryFrame",
+      "Mahjong.CanonicalInventory",
+      "Mahjong.EnumerationBlocks",
+      "Mahjong.GroupInventory",
+      "Mahjong.GroupCandidates",
+      "Mahjong.WeightedBlocks",
+      "Mahjong.IndexDecoder",
+      "Mahjong.CursorLayouts",
+      "Mahjong.AbsoluteCursor",
+      "Mahjong.PrefixDirectory",
+      "Mahjong.IndexLocate",
+      "Mahjong.PrefixCursor",
+      "Mahjong.IndexOperations",
+      "Mahjong.IndexWordArithmetic",
+      "Mahjong.IndexHelperCheck",
+      "Mahjong.TripleDirectory",
+      "Mahjong.HonorDirectory",
+      "Mahjong.DirectoryIndex",
+      "Mahjong.PrefixData",
+      "Mahjong.DirectorySliceBinding",
+      "Mahjong.WordLimits",
+      "Mahjong.WordRank",
+      "Mahjong.GuardedIndexAccess",
+      "Mahjong.BlockWordAddress",
+      "Mahjong.BucketIndex",
+      "Mahjong.IndexInputBounds",
+      "Mahjong.LegacyIndexRefinement",
+      "Mahjong.CanonicalCoverage",
+      "Mahjong.SuccessorCache",
+      "Mahjong.LocalSuccessorBridge",
+      "Mahjong.SuitSorting",
+      "Mahjong.SortedCoverage",
+      "Mahjong.GlobalOrbitKey",
+      "Mahjong.GlobalOrbitUniqueness",
+      "Mahjong.TileCountBridge",
+      "Mahjong.SafeLayerBound",
+      "Mahjong.GroupedCoverage",
+      "Mahjong.DirectoryCoverage",
+      "Mahjong.GlobalOrbitDirectory",
+      "Mahjong.GlobalAddressDecoder",
+      "Mahjong.IndexedPhysical",
+      "Mahjong.GlobalSlotRealization",
+      "Mahjong.GlobalEnumeration",
+      "Mahjong.GlobalSuccessorBridge",
+      "Mahjong.CachedProfiles",
+      "Mahjong.PreloadedRules",
+      "Mahjong.PackedInterpretation",
+      "Mahjong.GeneralLayer",
+      "Mahjong.TerminalBucket",
+      "Mahjong.GeneralIndex",
+      "Mahjong.GeneralOriginalSoundness",
+      "Mahjong.SingleWitness",
+      "Mahjong.FastSingleWitness",
+      "Mahjong.CachedPackedCheck",
+      "Mahjong.CachedPackedFast",
+      "Mahjong.GuardedTargetRef",
+      "Mahjong.GuardedCachedRow",
+      "Mahjong.VerifiedSourceTarget",
+      "Mahjong.CachedTargetModels",
+      "Mahjong.MoveNormalization",
+      "Mahjong.MovePlanRefinement",
+      "Mahjong.BlockPlanCheck",
+      "Mahjong.SourceBlockGuard",
+      "Mahjong.BlockPlanFastSource",
+      "Mahjong.BlockPlanSoundness",
+      "Mahjong.TemplatePlanCheck",
+      "Mahjong.HotWord",
+      "Mahjong.FastBitRead",
+      "Mahjong.BlockPlanCertifiedRow",
+      "Mahjong.HotBlockPlan",
+      "Mahjong.TemplatePlanCertifiedRow",
+      "Mahjong.CachedPackedSnapshot",
+      "Mahjong.MaterializedLocal",
+      "Mahjong.CompactHotRow",
+      "CompactStreamTransport",
+      "PackedLabelSpan",
+      "Mahjong.SparseTemplatePlanCheck",
+      "Mahjong.SparseCompactHotRow",
+      "Mahjong.GeneratedLocalCache",
+      "Mahjong.GroupNextCoverage",
+      "Mahjong.GeneratedPlanCheck",
+      "Mahjong.GeneratedHotPlan",
+      "Mahjong.GeneratedCompactHotRow",
+      "Mahjong.BorrowedGeneratedHotPlan",
+      "Mahjong.BorrowedGeneratedCompactHotRow",
+      "Mahjong.BorrowedNextGeneratedHotPlan",
+      "Mahjong.BorrowedNextGeneratedCompactHotRow",
+      "Mahjong.RowScheduleV13",
+      "Mahjong.CheckedPlanConstructor",
+      "Mahjong.IndexedByteRowV16",
+      "Mahjong.GuardedByteScanV16",
+      "Mahjong.IndexedByteRowInputV16",
+      "Mahjong.IndexedByteStreamTransportV16",
+      "JointIndexedFramesMainV16",
+      "Mahjong.BindingControlsV17",
+      "Mahjong.CrossLayerAssemblyV17",
+      "Mahjong.EmptyRootV17",
+      "Mahjong.ExecutionAssemblyV17",
+      "Mahjong.FastWholeInputV17",
+      "Mahjong.FiniteCertificateV17",
+      "Mahjong.FiniteMetadataV17",
+      "Mahjong.FiniteWholeInputV17",
+      "Mahjong.IndexedByteRowSafeV17",
+      "Mahjong.RuntimeBindingV17",
+      "Mahjong.RuntimeScanV17",
+      "Mahjong.ScanFinalV17",
+      "Mahjong.V17NativeWorker",
+      "V17ComputeMain"
+    ]
+  },
+  "unresolved_project_imports": []
+}

@@ -1,13 +1,14 @@
-> **Earlier V16 snapshot; current outlook superseded.** The
-> [later kernel-certificate update](../2026-10-18-kernel/README.md) targets saved
-> proofs and cold kernel replay. The native 13.0256-hour estimate below does not
-> estimate that workload; no current 20/24-hour completion bound is established.
+> **Historical snapshot.** The [October 19 V17 update](../2026-10-19-v17/README.md)
+> records complete native verification under a kernel-proved implication.
+> This page retains its dated scope; "current", "not started" and runtime
+> forecasts below describe that earlier snapshot. The actual-input closed
+> Lean theorem remains unproved. See [current status](../../docs/PROJECT_STATUS.md).
 
 # Approaching the final verification campaign
 
-**18 October 2026: the project is approaching its final computational
-verification stage. The maintainer's current working expectation is to finish
-the remaining campaign within 20 hours of an authorized start.** The V16
+**Historical V16 outlook, 18 October 2026 (superseded): the maintainer then
+expected the remaining compiled campaign to finish within 20 hours of an
+authorized start. This was a conditional forecast, not an accepted full-cost bound.** The V16
 GPU-assisted route brings the measured known-component estimate to
 **13.0256 hours including a 25% margin**. This is a substantial improvement over
 the September checker and supersedes the earlier decision to stop pursuing
@@ -93,7 +94,7 @@ premises of the compiled checking chain.
 
 Even a successful future full scan would retain the Lean compiler/runtime,
 the finite premises and the reviewed Python/OS coverage and IO boundary.
-There is currently no Lean-kernel finalizer combining the entire historical
+At this V16 snapshot there was no Lean-kernel finalizer combining the entire historical
 table into a closed opening proof term. The intended near-term finish is the
 complete compiled-Lean verification campaign within its declared trust
 boundary. A stronger kernel-level opening certificate, an independent

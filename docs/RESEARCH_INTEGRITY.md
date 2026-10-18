@@ -7,14 +7,15 @@ public release is not represented as a peer-reviewed article, an institutional
 publication, or a completed formal proof. No affiliation or endorsement by a
 Mahjong organization, university, GitHub, or a proof-assistant project is implied.
 
-The [two English reports](../papers/README.md) are fixed together in v1.0.0.
-That release fixed the September delivery. The
-[later October update](../research/2026-10-18-kernel/README.md) records persistent
-kernel-proof research, an actual small closed pilot and narrower compression
-experiments. The actual opening theorem and a practical 20/24-hour end-to-end
-completion bound remain unestablished. Native execution, proof construction,
-saved proof replay and original-game interpretation retain separate scopes;
-see [current project status](PROJECT_STATUS.md).
+The [two English reports](../papers/README.md) remain fixed in v1.0.0. The
+[October 19 update](../research/2026-10-19-v17/README.md) records complete
+native evaluation of the frozen V17 finite checks under a kernel-proved
+implication. The actual-input opening Lean declaration remains NOT_VERIFIED.
+Native execution and external bookkeeping are explicitly trusted; see
+[claim boundaries](CLAIMS.md). The separately supplied review identifies
+its reviewer as another AI. It is read-only source/record inspection with a
+ledger cross-check, not independent execution replication or human peer review.
+No independent replication, contest acceptance or institutional endorsement is claimed.
 
 The rules describe the specific deterministic game in this repository.
 The results are not claims about ordinary multiplayer Mahjong strategy or

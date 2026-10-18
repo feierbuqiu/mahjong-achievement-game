@@ -1,5 +1,8 @@
-> **Historical 2026-09-15 snapshot.** The [later October update](../2026-10-18-kernel/README.md)
-> records persistent kernel proofs, a small closed pilot and remaining gaps.
+> **Historical snapshot.** The [October 19 V17 update](../2026-10-19-v17/README.md)
+> records complete native verification under a kernel-proved implication.
+> This page retains its dated scope; "current", "not started" and runtime
+> forecasts below describe that earlier snapshot. The actual-input closed
+> Lean theorem remains unproved. See [current status](../../docs/PROJECT_STATUS.md).
 
 # Lean status: September 15, 2026
 

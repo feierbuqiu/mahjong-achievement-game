@@ -25,35 +25,36 @@ rules, index, recurrence, implementation, and stored values.
 | V17 generic kernel composition | Finite-acceptance hypotheses connect to original-game strategies and root | Actual full-input acceptance not instantiated |
 | V18 closed actual-data pilot | Three nonempty 32-tile game roots and separate finite checker equalities; saved proof cold replay | Not the empty opening or complete V17 input |
 | V19 compression and layout experiments | Supplied numeric relations, partial local metadata and generic bridges | Not complete actual SAFE/game semantics or a global runtime bound |
+| V17 complete native verification | Six finite acceptance families evaluated on all 35 layers / 778,532,864,302 stored labels | Compiler/runtime, IO/input custody and external bookkeeping trusted; no closed actual-input Lean declaration |
+| Separate AI review | 17,317-frame ledger, 54,548 target identity references, 62-file input sample; no problems reported in inspected scope | No Lean/native rerun, no full input rehash, no human peer review |
 | SSH/GitHub signatures | A commit or tag was signed by the identified key | Does not prove its scientific claims |
 
-## Formal verification
+## Current V17 verification
 
-The actual original-game empty-state Lean theorem is **not published**.
-The [later October update](../research/2026-10-18-kernel/README.md) records the
-shift to persistent kernel proofs and certificate compression. V17 provides
-generic composition; V18 provides a closed, saved and cold-replayed small
-actual-data pilot. V19 numeric/layout and local-metadata experiments retain
-their narrower conclusions. General finalization bridges now exist, but the
-actual whole certificate and opening instance remain unfinished.
+The [completed V17 run](../research/2026-10-19-v17/README.md) evaluates all six
+finite acceptance families of a kernel-proved whole-input implication on the
+complete actual table. It covers all 778,532,864,302 rows, with no old PASS or
+seed import. It is stronger than the earlier partial compiled-layer milestone.
+It remains **native execution under an explicit trust boundary**: it is not a
+closed Lean declaration for these actual input bytes.
 
-The earlier V16 native estimate is a different workload. No end-to-end 20/24-hour
-proof-construction/persistence/replay bound has been established. The legacy
-whole-table scan remains stopped. Recorded compiled-layer coverage, supplied
-numeric recurrences, closed nonempty game strategies and an actual closed
-opening theorem must remain separate. See [current status](PROJECT_STATUS.md).
+A [separate AI review](../research/2026-10-19-v17/review/INDEPENDENT_REVIEW.md)
+reports no defect within its inspected scope and independently checks the
+saved ledger/identity graph. It did not rerun Lean/native code or rehash the
+whole input set. The finalizer was inspected line by line; most other trusted
+bookkeeping files were not. This is not human peer review or independent
+execution replication. See [claim boundaries](CLAIMS.md).
 
-This repository now indexes closed original-game proofs for eight specific
-nonempty states with 12, 14, 20, 28, 30, 32, and 34 tiles, with Lean 4.33.1 source and a clean
-kernel replay. Their exact physical states, theorem names, allowed axioms,
-and reproducible audit commands are listed in [formal status](../formal/README.md).
-The opening candidate graph remains partial. Generic reduction lemmas,
-executable checks, or a theorem that assumes an external checker succeeded
-do not by themselves close the opening theorem.
+The September formal package separately indexes eight closed nonempty roots;
+V18 adds a small actual-data pilot with a different scope. No aggregate novel-root
+count is inferred. The actual original-game empty-state Lean declaration is
+still **not published**. A hypothetical closed proof must retain the actual
+finite premises through proof construction, saving and cold kernel replay.
 
-The intended chain connects the original legal-move and winning predicates,
-the SAFE reduction, symmetry/index correctness, complete successor coverage,
-and checked concrete computational evidence. See [formal status](../formal/README.md).
+V18/V19 strict proof-export experiments are stopped and remain historical
+component evidence. Their performance limits do not invalidate the separately
+completed V17 native computation and do not establish a future strict-kernel
+deadline. The old V16 STOP remains unchanged. See [current status](PROJECT_STATUS.md).
 
 ## Provenance
 

@@ -1,0 +1,830 @@
+{
+  "STOP_removed": false,
+  "actual_full_input_acceptance": "NOT_EVALUATED",
+  "actual_game_rows": 0,
+  "baseline": {
+    "bytes": 133761,
+    "path": "runs/lean_table_checker/v17_compute_finish_20261018/BASELINE.json",
+    "sha256": "6dd21a8d52497738ad87ca93bc942ff5e678936f721b6cf4b0687022a74fdd0f"
+  },
+  "excluded_historical_modules": [
+    "MainOwnedJointIndexedRows1WorkerV16",
+    "Mahjong.ReplayClosureV17"
+  ],
+  "executable": {
+    "bytes": 121190888,
+    "path": "build/lean_table_checker/v17_compute_finish_20261018/native/1060b5998a014be594e54ba64d3671d5/V17ComputeMain",
+    "sha256": "775e05d2601e30847b14b017cb542ea23a8b629d8ebd403aa07bd5942b78f667"
+  },
+  "link": {
+    "CPU_seconds": 1.1839169999999999,
+    "argv": [
+      "<LINUX_TOOLCHAIN_ROOT>/toolchain/lean-4.33.1-linux/bin/leanc",
+      "-O3",
+      "-Wl,--threads=4",
+      "-o",
+      "<LINUX_TOOLCHAIN_ROOT>/v17_native_1060b5998a014be594e54ba64d3671d5/bin/V17ComputeMain",
+      "<LINUX_TOOLCHAIN_ROOT>/v17_native_1060b5998a014be594e54ba64d3671d5/objects/base/Mahjong/Ranking.o",
+      "<LINUX_TOOLCHAIN_ROOT>/v17_native_1060b5998a014be594e54ba64d3671d5/objects/base/Mahjong/IndexSearch.o",
+      "<LINUX_TOOLCHAIN_ROOT>/v17_native_1060b5998a014be594e54ba64d3671d5/objects/base/Mahjong/PruningAlgebra.o",
+      "<LINUX_TOOLCHAIN_ROOT>/v17_native_1060b5998a014be594e54ba64d3671d5/objects/base/Mahjong/Rules.o",
+      "<LINUX_TOOLCHAIN_ROOT>/v17_native_1060b5998a014be594e54ba64d3671d5/objects/base/Mahjong/SafeGame.o",
+      "<LINUX_TOOLCHAIN_ROOT>/v17_native_1060b5998a014be594e54ba64d3671d5/objects/base/Mahjong/RuleChecker.o",
+      "<LINUX_TOOLCHAIN_ROOT>/v17_native_1060b5998a014be594e54ba64d3671d5/objects/base/Mahjong/MoveEnumeration.o",
+      "<LINUX_TOOLCHAIN_ROOT>/v17_native_1060b5998a014be594e54ba64d3671d5/objects/base/Mahjong/FastRuleChecker.o",
+      "<LINUX_TOOLCHAIN_ROOT>/v17_native_1060b5998a014be594e54ba64d3671d5/objects/base/Mahjong/StandardBoundCertificate.o",
+      "<LINUX_TOOLCHAIN_ROOT>/v17_native_1060b5998a014be594e54ba64d3671d5/objects/base/Mahjong/MaskedLocalBound.o",
+      "<LINUX_TOOLCHAIN_ROOT>/v17_native_1060b5998a014be594e54ba64d3671d5/objects/base/Mahjong/CachedStandardBounds.o",
+      "<LINUX_TOOLCHAIN_ROOT>/v17_native_1060b5998a014be594e54ba64d3671d5/objects/base/Mahjong/FactorizedRules.o",
+      "<LINUX_TOOLCHAIN_ROOT>/v17_native_1060b5998a014be594e54ba64d3671d5/objects/base/Mahjong/FastOrphans.o",
+      "<LINUX_TOOLCHAIN_ROOT>/v17_native_1060b5998a014be594e54ba64d3671d5/objects/base/Mahjong/CapacityComplete.o",
+      "<LINUX_TOOLCHAIN_ROOT>/v17_native_1060b5998a014be594e54ba64d3671d5/objects/base/Mahjong/LocalCache.o",
+      "<LINUX_TOOLCHAIN_ROOT>/v17_native_1060b5998a014be594e54ba64d3671d5/objects/base/Mahjong/MemoRules.o",
+      "<LINUX_TOOLCHAIN_ROOT>/v17_native_1060b5998a014be594e54ba64d3671d5/objects/base/Mahjong/PairProfile.o",
+      "<LINUX_TOOLCHAIN_ROOT>/v17_native_1060b5998a014be594e54ba64d3671d5/objects/base/Mahjong/LocalSummary.o",
+      "<LINUX_TOOLCHAIN_ROOT>/v17_native_1060b5998a014be594e54ba64d3671d5/objects/base/Mahjong/FastMemoRules.o",
+      "<LINUX_TOOLCHAIN_ROOT>/v17_native_1060b5998a014be594e54ba64d3671d5/objects/base/Mahjong/ExactMemoRules.o",
+      "<LINUX_TOOLCHAIN_ROOT>/v17_native_1060b5998a014be594e54ba64d3671d5/objects/base/Mahjong/SummaryRules.o",
+      "<LINUX_TOOLCHAIN_ROOT>/v17_native_1060b5998a014be594e54ba64d3671d5/objects/base/Mahjong/Certificate.o",
+      "<LINUX_TOOLCHAIN_ROOT>/v17_native_1060b5998a014be594e54ba64d3671d5/objects/base/Mahjong/Quotient.o",
+      "<LINUX_TOOLCHAIN_ROOT>/v17_native_1060b5998a014be594e54ba64d3671d5/objects/base/Mahjong/Bridge.o",
+      "<LINUX_TOOLCHAIN_ROOT>/v17_native_1060b5998a014be594e54ba64d3671d5/objects/base/Mahjong/DownwardClosure.o",
+      "<LINUX_TOOLCHAIN_ROOT>/v17_native_1060b5998a014be594e54ba64d3671d5/objects/base/Mahjong/PruningSemantics.o",
+      "<LINUX_TOOLCHAIN_ROOT>/v17_native_1060b5998a014be594e54ba64d3671d5/objects/base/Mahjong/OrphanPruning.o",
+      "<LINUX_TOOLCHAIN_ROOT>/v17_native_1060b5998a014be594e54ba64d3671d5/objects/base/Mahjong/FullSafeSemantics.o",
+      "<LINUX_TOOLCHAIN_ROOT>/v17_native_1060b5998a014be594e54ba64d3671d5/objects/base/Mahjong/LocalCacheEncoding.o",
+      "<LINUX_TOOLCHAIN_ROOT>/v17_native_1060b5998a014be594e54ba64d3671d5/objects/base/Mahjong/SummaryEncoding.o",
+      "<LINUX_TOOLCHAIN_ROOT>/v17_native_1060b5998a014be594e54ba64d3671d5/objects/base/Mahjong/PruningData.o",
+      "<LINUX_TOOLCHAIN_ROOT>/v17_native_1060b5998a014be594e54ba64d3671d5/objects/base/Mahjong/PackedRules.o",
+      "<LINUX_TOOLCHAIN_ROOT>/v17_native_1060b5998a014be594e54ba64d3671d5/objects/base/Mahjong/PruningPackedBridge.o",
+      "<LINUX_TOOLCHAIN_ROOT>/v17_native_1060b5998a014be594e54ba64d3671d5/objects/base/Mahjong/FullSafeData.o",
+      "<LINUX_TOOLCHAIN_ROOT>/v17_native_1060b5998a014be594e54ba64d3671d5/objects/base/Mahjong/Base5Coverage.o",
+      "<LINUX_TOOLCHAIN_ROOT>/v17_native_1060b5998a014be594e54ba64d3671d5/objects/base/Mahjong/Symmetry.o",
+      "<LINUX_TOOLCHAIN_ROOT>/v17_native_1060b5998a014be594e54ba64d3671d5/objects/base/Mahjong/Generators.o",
+      "<LINUX_TOOLCHAIN_ROOT>/v17_native_1060b5998a014be594e54ba64d3671d5/objects/base/Mahjong/LocalSymmetryFrame.o",
+      "<LINUX_TOOLCHAIN_ROOT>/v17_native_1060b5998a014be594e54ba64d3671d5/objects/base/Mahjong/CanonicalInventory.o",
+      "<LINUX_TOOLCHAIN_ROOT>/v17_native_1060b5998a014be594e54ba64d3671d5/objects/base/Mahjong/EnumerationBlocks.o",
+      "<LINUX_TOOLCHAIN_ROOT>/v17_native_1060b5998a014be594e54ba64d3671d5/objects/base/Mahjong/GroupInventory.o",
+      "<LINUX_TOOLCHAIN_ROOT>/v17_native_1060b5998a014be594e54ba64d3671d5/objects/base/Mahjong/GroupCandidates.o",
+      "<LINUX_TOOLCHAIN_ROOT>/v17_native_1060b5998a014be594e54ba64d3671d5/objects/base/Mahjong/WeightedBlocks.o",
+      "<LINUX_TOOLCHAIN_ROOT>/v17_native_1060b5998a014be594e54ba64d3671d5/objects/base/Mahjong/IndexDecoder.o",
+      "<LINUX_TOOLCHAIN_ROOT>/v17_native_1060b5998a014be594e54ba64d3671d5/objects/base/Mahjong/CursorLayouts.o",
+      "<LINUX_TOOLCHAIN_ROOT>/v17_native_1060b5998a014be594e54ba64d3671d5/objects/base/Mahjong/AbsoluteCursor.o",
+      "<LINUX_TOOLCHAIN_ROOT>/v17_native_1060b5998a014be594e54ba64d3671d5/objects/base/Mahjong/PrefixDirectory.o",
+      "<LINUX_TOOLCHAIN_ROOT>/v17_native_1060b5998a014be594e54ba64d3671d5/objects/base/Mahjong/IndexLocate.o",
+      "<LINUX_TOOLCHAIN_ROOT>/v17_native_1060b5998a014be594e54ba64d3671d5/objects/base/Mahjong/PrefixCursor.o",
+      "<LINUX_TOOLCHAIN_ROOT>/v17_native_1060b5998a014be594e54ba64d3671d5/objects/base/Mahjong/IndexOperations.o",
+      "<LINUX_TOOLCHAIN_ROOT>/v17_native_1060b5998a014be594e54ba64d3671d5/objects/base/Mahjong/IndexWordArithmetic.o",
+      "<LINUX_TOOLCHAIN_ROOT>/v17_native_1060b5998a014be594e54ba64d3671d5/objects/base/Mahjong/IndexHelperCheck.o",
+      "<LINUX_TOOLCHAIN_ROOT>/v17_native_1060b5998a014be594e54ba64d3671d5/objects/base/Mahjong/TripleDirectory.o",
+      "<LINUX_TOOLCHAIN_ROOT>/v17_native_1060b5998a014be594e54ba64d3671d5/objects/base/Mahjong/HonorDirectory.o",
+      "<LINUX_TOOLCHAIN_ROOT>/v17_native_1060b5998a014be594e54ba64d3671d5/objects/base/Mahjong/DirectoryIndex.o",
+      "<LINUX_TOOLCHAIN_ROOT>/v17_native_1060b5998a014be594e54ba64d3671d5/objects/base/Mahjong/PrefixData.o",
+      "<LINUX_TOOLCHAIN_ROOT>/v17_native_1060b5998a014be594e54ba64d3671d5/objects/base/Mahjong/DirectorySliceBinding.o",
+      "<LINUX_TOOLCHAIN_ROOT>/v17_native_1060b5998a014be594e54ba64d3671d5/objects/base/Mahjong/WordLimits.o",
+      "<LINUX_TOOLCHAIN_ROOT>/v17_native_1060b5998a014be594e54ba64d3671d5/objects/base/Mahjong/WordRank.o",
+      "<LINUX_TOOLCHAIN_ROOT>/v17_native_1060b5998a014be594e54ba64d3671d5/objects/base/Mahjong/GuardedIndexAccess.o",
+      "<LINUX_TOOLCHAIN_ROOT>/v17_native_1060b5998a014be594e54ba64d3671d5/objects/base/Mahjong/BlockWordAddress.o",
+      "<LINUX_TOOLCHAIN_ROOT>/v17_native_1060b5998a014be594e54ba64d3671d5/objects/base/Mahjong/BucketIndex.o",
+      "<LINUX_TOOLCHAIN_ROOT>/v17_native_1060b5998a014be594e54ba64d3671d5/objects/base/Mahjong/IndexInputBounds.o",
+      "<LINUX_TOOLCHAIN_ROOT>/v17_native_1060b5998a014be594e54ba64d3671d5/objects/base/Mahjong/LegacyIndexRefinement.o",
+      "<LINUX_TOOLCHAIN_ROOT>/v17_native_1060b5998a014be594e54ba64d3671d5/objects/base/Mahjong/CanonicalCoverage.o",
+      "<LINUX_TOOLCHAIN_ROOT>/v17_native_1060b5998a014be594e54ba64d3671d5/objects/base/Mahjong/SuccessorCache.o",
+      "<LINUX_TOOLCHAIN_ROOT>/v17_native_1060b5998a014be594e54ba64d3671d5/objects/base/Mahjong/LocalSuccessorBridge.o",
+      "<LINUX_TOOLCHAIN_ROOT>/v17_native_1060b5998a014be594e54ba64d3671d5/objects/base/Mahjong/SuitSorting.o",
+      "<LINUX_TOOLCHAIN_ROOT>/v17_native_1060b5998a014be594e54ba64d3671d5/objects/base/Mahjong/SortedCoverage.o",
+      "<LINUX_TOOLCHAIN_ROOT>/v17_native_1060b5998a014be594e54ba64d3671d5/objects/base/Mahjong/GlobalOrbitKey.o",
+      "<LINUX_TOOLCHAIN_ROOT>/v17_native_1060b5998a014be594e54ba64d3671d5/objects/base/Mahjong/GlobalOrbitUniqueness.o",
+      "<LINUX_TOOLCHAIN_ROOT>/v17_native_1060b5998a014be594e54ba64d3671d5/objects/base/Mahjong/TileCountBridge.o",
+      "<LINUX_TOOLCHAIN_ROOT>/v17_native_1060b5998a014be594e54ba64d3671d5/objects/base/Mahjong/SafeLayerBound.o",
+      "<LINUX_TOOLCHAIN_ROOT>/v17_native_1060b5998a014be594e54ba64d3671d5/objects/base/Mahjong/GroupedCoverage.o",
+      "<LINUX_TOOLCHAIN_ROOT>/v17_native_1060b5998a014be594e54ba64d3671d5/objects/base/Mahjong/DirectoryCoverage.o",
+      "<LINUX_TOOLCHAIN_ROOT>/v17_native_1060b5998a014be594e54ba64d3671d5/objects/base/Mahjong/GlobalOrbitDirectory.o",
+      "<LINUX_TOOLCHAIN_ROOT>/v17_native_1060b5998a014be594e54ba64d3671d5/objects/base/Mahjong/GlobalAddressDecoder.o",
+      "<LINUX_TOOLCHAIN_ROOT>/v17_native_1060b5998a014be594e54ba64d3671d5/objects/base/Mahjong/IndexedPhysical.o",
+      "<LINUX_TOOLCHAIN_ROOT>/v17_native_1060b5998a014be594e54ba64d3671d5/objects/base/Mahjong/GlobalSlotRealization.o",
+      "<LINUX_TOOLCHAIN_ROOT>/v17_native_1060b5998a014be594e54ba64d3671d5/objects/base/Mahjong/GlobalEnumeration.o",
+      "<LINUX_TOOLCHAIN_ROOT>/v17_native_1060b5998a014be594e54ba64d3671d5/objects/base/Mahjong/GlobalSuccessorBridge.o",
+      "<LINUX_TOOLCHAIN_ROOT>/v17_native_1060b5998a014be594e54ba64d3671d5/objects/base/Mahjong/CachedProfiles.o",
+      "<LINUX_TOOLCHAIN_ROOT>/v17_native_1060b5998a014be594e54ba64d3671d5/objects/base/Mahjong/PreloadedRules.o",
+      "<LINUX_TOOLCHAIN_ROOT>/v17_native_1060b5998a014be594e54ba64d3671d5/objects/base/Mahjong/PackedInterpretation.o",
+      "<LINUX_TOOLCHAIN_ROOT>/v17_native_1060b5998a014be594e54ba64d3671d5/objects/base/Mahjong/GeneralLayer.o",
+      "<LINUX_TOOLCHAIN_ROOT>/v17_native_1060b5998a014be594e54ba64d3671d5/objects/base/Mahjong/TerminalBucket.o",
+      "<LINUX_TOOLCHAIN_ROOT>/v17_native_1060b5998a014be594e54ba64d3671d5/objects/base/Mahjong/GeneralIndex.o",
+      "<LINUX_TOOLCHAIN_ROOT>/v17_native_1060b5998a014be594e54ba64d3671d5/objects/base/Mahjong/GeneralOriginalSoundness.o",
+      "<LINUX_TOOLCHAIN_ROOT>/v17_native_1060b5998a014be594e54ba64d3671d5/objects/base/Mahjong/SingleWitness.o",
+      "<LINUX_TOOLCHAIN_ROOT>/v17_native_1060b5998a014be594e54ba64d3671d5/objects/base/Mahjong/FastSingleWitness.o",
+      "<LINUX_TOOLCHAIN_ROOT>/v17_native_1060b5998a014be594e54ba64d3671d5/objects/base/Mahjong/CachedPackedCheck.o",
+      "<LINUX_TOOLCHAIN_ROOT>/v17_native_1060b5998a014be594e54ba64d3671d5/objects/base/Mahjong/CachedPackedFast.o",
+      "<LINUX_TOOLCHAIN_ROOT>/v17_native_1060b5998a014be594e54ba64d3671d5/objects/base/Mahjong/GuardedTargetRef.o",
+      "<LINUX_TOOLCHAIN_ROOT>/v17_native_1060b5998a014be594e54ba64d3671d5/objects/base/Mahjong/GuardedCachedRow.o",
+      "<LINUX_TOOLCHAIN_ROOT>/v17_native_1060b5998a014be594e54ba64d3671d5/objects/base/Mahjong/VerifiedSourceTarget.o",
+      "<LINUX_TOOLCHAIN_ROOT>/v17_native_1060b5998a014be594e54ba64d3671d5/objects/base/Mahjong/CachedTargetModels.o",
+      "<LINUX_TOOLCHAIN_ROOT>/v17_native_1060b5998a014be594e54ba64d3671d5/objects/base/Mahjong/MoveNormalization.o",
+      "<LINUX_TOOLCHAIN_ROOT>/v17_native_1060b5998a014be594e54ba64d3671d5/objects/base/Mahjong/MovePlanRefinement.o",
+      "<LINUX_TOOLCHAIN_ROOT>/v17_native_1060b5998a014be594e54ba64d3671d5/objects/base/Mahjong/BlockPlanCheck.o",
+      "<LINUX_TOOLCHAIN_ROOT>/v17_native_1060b5998a014be594e54ba64d3671d5/objects/base/Mahjong/SourceBlockGuard.o",
+      "<LINUX_TOOLCHAIN_ROOT>/v17_native_1060b5998a014be594e54ba64d3671d5/objects/base/Mahjong/BlockPlanFastSource.o",
+      "<LINUX_TOOLCHAIN_ROOT>/v17_native_1060b5998a014be594e54ba64d3671d5/objects/base/Mahjong/BlockPlanSoundness.o",
+      "<LINUX_TOOLCHAIN_ROOT>/v17_native_1060b5998a014be594e54ba64d3671d5/objects/base/Mahjong/TemplatePlanCheck.o",
+      "<LINUX_TOOLCHAIN_ROOT>/v17_native_1060b5998a014be594e54ba64d3671d5/objects/base/Mahjong/HotWord.o",
+      "<LINUX_TOOLCHAIN_ROOT>/v17_native_1060b5998a014be594e54ba64d3671d5/objects/base/Mahjong/FastBitRead.o",
+      "<LINUX_TOOLCHAIN_ROOT>/v17_native_1060b5998a014be594e54ba64d3671d5/objects/base/Mahjong/BlockPlanCertifiedRow.o",
+      "<LINUX_TOOLCHAIN_ROOT>/v17_native_1060b5998a014be594e54ba64d3671d5/objects/base/Mahjong/HotBlockPlan.o",
+      "<LINUX_TOOLCHAIN_ROOT>/v17_native_1060b5998a014be594e54ba64d3671d5/objects/base/Mahjong/TemplatePlanCertifiedRow.o",
+      "<LINUX_TOOLCHAIN_ROOT>/v17_native_1060b5998a014be594e54ba64d3671d5/objects/base/Mahjong/CachedPackedSnapshot.o",
+      "<LINUX_TOOLCHAIN_ROOT>/v17_native_1060b5998a014be594e54ba64d3671d5/objects/base/Mahjong/MaterializedLocal.o",
+      "<LINUX_TOOLCHAIN_ROOT>/v17_native_1060b5998a014be594e54ba64d3671d5/objects/base/Mahjong/CompactHotRow.o",
+      "<LINUX_TOOLCHAIN_ROOT>/v17_native_1060b5998a014be594e54ba64d3671d5/objects/base/CompactStreamTransport.o",
+      "<LINUX_TOOLCHAIN_ROOT>/v17_native_1060b5998a014be594e54ba64d3671d5/objects/base/PackedLabelSpan.o",
+      "<LINUX_TOOLCHAIN_ROOT>/v17_native_1060b5998a014be594e54ba64d3671d5/objects/base/Mahjong/SparseTemplatePlanCheck.o",
+      "<LINUX_TOOLCHAIN_ROOT>/v17_native_1060b5998a014be594e54ba64d3671d5/objects/base/Mahjong/SparseCompactHotRow.o",
+      "<LINUX_TOOLCHAIN_ROOT>/v17_native_1060b5998a014be594e54ba64d3671d5/objects/base/Mahjong/GeneratedLocalCache.o",
+      "<LINUX_TOOLCHAIN_ROOT>/v17_native_1060b5998a014be594e54ba64d3671d5/objects/base/Mahjong/GroupNextCoverage.o",
+      "<LINUX_TOOLCHAIN_ROOT>/v17_native_1060b5998a014be594e54ba64d3671d5/objects/base/Mahjong/GeneratedPlanCheck.o",
+      "<LINUX_TOOLCHAIN_ROOT>/v17_native_1060b5998a014be594e54ba64d3671d5/objects/base/Mahjong/GeneratedHotPlan.o",
+      "<LINUX_TOOLCHAIN_ROOT>/v17_native_1060b5998a014be594e54ba64d3671d5/objects/base/Mahjong/GeneratedCompactHotRow.o",
+      "<LINUX_TOOLCHAIN_ROOT>/v17_native_1060b5998a014be594e54ba64d3671d5/objects/base/Mahjong/BorrowedGeneratedHotPlan.o",
+      "<LINUX_TOOLCHAIN_ROOT>/v17_native_1060b5998a014be594e54ba64d3671d5/objects/base/Mahjong/BorrowedGeneratedCompactHotRow.o",
+      "<LINUX_TOOLCHAIN_ROOT>/v17_native_1060b5998a014be594e54ba64d3671d5/objects/base/Mahjong/BorrowedNextGeneratedHotPlan.o",
+      "<LINUX_TOOLCHAIN_ROOT>/v17_native_1060b5998a014be594e54ba64d3671d5/objects/base/Mahjong/BorrowedNextGeneratedCompactHotRow.o",
+      "<LINUX_TOOLCHAIN_ROOT>/v17_native_1060b5998a014be594e54ba64d3671d5/objects/base/Mahjong/RowScheduleV13.o",
+      "<LINUX_TOOLCHAIN_ROOT>/v17_native_1060b5998a014be594e54ba64d3671d5/objects/base/Mahjong/CheckedPlanConstructor.o",
+      "<LINUX_TOOLCHAIN_ROOT>/v17_native_1060b5998a014be594e54ba64d3671d5/objects/base/Mahjong/IndexedByteRowV16.o",
+      "<LINUX_TOOLCHAIN_ROOT>/v17_native_1060b5998a014be594e54ba64d3671d5/objects/base/Mahjong/GuardedByteScanV16.o",
+      "<LINUX_TOOLCHAIN_ROOT>/v17_native_1060b5998a014be594e54ba64d3671d5/objects/base/Mahjong/IndexedByteRowInputV16.o",
+      "<LINUX_TOOLCHAIN_ROOT>/v17_native_1060b5998a014be594e54ba64d3671d5/objects/base/Mahjong/IndexedByteStreamTransportV16.o",
+      "<LINUX_TOOLCHAIN_ROOT>/v17_native_1060b5998a014be594e54ba64d3671d5/objects/base/JointIndexedFramesMainV16.o",
+      "<LINUX_TOOLCHAIN_ROOT>/v17_native_1060b5998a014be594e54ba64d3671d5/objects/Mahjong/IndexedByteRowSafeV17.o",
+      "<LINUX_TOOLCHAIN_ROOT>/v17_native_1060b5998a014be594e54ba64d3671d5/objects/Mahjong/CrossLayerAssemblyV17.o",
+      "<LINUX_TOOLCHAIN_ROOT>/v17_native_1060b5998a014be594e54ba64d3671d5/objects/Mahjong/RuntimeScanV17.o",
+      "<LINUX_TOOLCHAIN_ROOT>/v17_native_1060b5998a014be594e54ba64d3671d5/objects/Mahjong/EmptyRootV17.o",
+      "<LINUX_TOOLCHAIN_ROOT>/v17_native_1060b5998a014be594e54ba64d3671d5/objects/Mahjong/RuntimeBindingV17.o",
+      "<LINUX_TOOLCHAIN_ROOT>/v17_native_1060b5998a014be594e54ba64d3671d5/objects/Mahjong/ExecutionAssemblyV17.o",
+      "<LINUX_TOOLCHAIN_ROOT>/v17_native_1060b5998a014be594e54ba64d3671d5/objects/Mahjong/FiniteCertificateV17.o",
+      "<LINUX_TOOLCHAIN_ROOT>/v17_native_1060b5998a014be594e54ba64d3671d5/objects/Mahjong/FiniteMetadataV17.o",
+      "<LINUX_TOOLCHAIN_ROOT>/v17_native_1060b5998a014be594e54ba64d3671d5/objects/Mahjong/FiniteWholeInputV17.o",
+      "<LINUX_TOOLCHAIN_ROOT>/v17_native_1060b5998a014be594e54ba64d3671d5/objects/Mahjong/ScanFinalV17.o",
+      "<LINUX_TOOLCHAIN_ROOT>/v17_native_1060b5998a014be594e54ba64d3671d5/objects/Mahjong/FastWholeInputV17.o",
+      "<LINUX_TOOLCHAIN_ROOT>/v17_native_1060b5998a014be594e54ba64d3671d5/objects/Mahjong/V17NativeWorker.o",
+      "<LINUX_TOOLCHAIN_ROOT>/v17_native_1060b5998a014be594e54ba64d3671d5/objects/V17ComputeMain.o"
+    ],
+    "child_exit_confirmed": true,
+    "cwd": "<LINUX_TOOLCHAIN_ROOT>/v17_native_1060b5998a014be594e54ba64d3671d5",
+    "failure": null,
+    "hard_deadline_seconds": 300,
+    "minimum_observed_system_MemAvailable_bytes": 15532134400,
+    "physical_free_reserve_bytes": 1000000000,
+    "returncode": 0,
+    "sampled_process_group_peak_RSS_bytes": 941490176,
+    "stderr": {
+      "bytes": 0,
+      "path": "runs/lean_table_checker/v17_compute_finish_20261018/native_builds/1060b5998a014be594e54ba64d3671d5/phase_finalize_9a88469a8585/link/stderr.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "stdout": {
+      "bytes": 0,
+      "path": "runs/lean_table_checker/v17_compute_finish_20261018/native_builds/1060b5998a014be594e54ba64d3671d5/phase_finalize_9a88469a8585/link/stdout.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "system_memory_after": {
+      "Committed_AS_bytes": 741990400,
+      "MemAvailable_bytes": 15825788928,
+      "MemTotal_bytes": 16716283904,
+      "SwapFree_bytes": 4294967296
+    },
+    "system_memory_before": {
+      "Committed_AS_bytes": 741990400,
+      "MemAvailable_bytes": 15900389376,
+      "MemTotal_bytes": 16716283904,
+      "SwapFree_bytes": 4294967296
+    },
+    "unexpected_process_group_remainder": false,
+    "wait4_maxrss_bytes": 896512000,
+    "wall_seconds": 0.986944900000001
+  },
+  "modules": [
+    {
+      "axioms": [
+        {
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ],
+          "name": "Mahjong.V17NativeWorker.Session.successors"
+        },
+        {
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ],
+          "name": "Mahjong.V17NativeWorker.BucketResult.each"
+        },
+        {
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ],
+          "name": "Mahjong.V17NativeWorker.checkTargetSources_eq"
+        },
+        {
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ],
+          "name": "Mahjong.V17NativeWorker.finishWhole"
+        }
+      ],
+      "kernel": {
+        "CPU_seconds": 1.229085,
+        "argv": [
+          "<LINUX_TOOLCHAIN_ROOT>/toolchain/lean-4.33.1-linux/bin/lean",
+          "--trust=0",
+          "-Ddebug.skipKernelTC=false",
+          "-j1",
+          "-R",
+          "<LINUX_TOOLCHAIN_ROOT>/v17_native_1060b5998a014be594e54ba64d3671d5/source",
+          "-o",
+          "<LINUX_TOOLCHAIN_ROOT>/v17_native_1060b5998a014be594e54ba64d3671d5/modules/Mahjong/V17NativeWorker.olean",
+          "-c",
+          "<LINUX_TOOLCHAIN_ROOT>/v17_native_1060b5998a014be594e54ba64d3671d5/c/Mahjong/V17NativeWorker.c",
+          "<LINUX_TOOLCHAIN_ROOT>/v17_native_1060b5998a014be594e54ba64d3671d5/source/Mahjong/V17NativeWorker.lean"
+        ],
+        "child_exit_confirmed": true,
+        "cwd": "<LINUX_TOOLCHAIN_ROOT>/v17_native_1060b5998a014be594e54ba64d3671d5",
+        "failure": null,
+        "hard_deadline_seconds": 300,
+        "minimum_observed_system_MemAvailable_bytes": 15802163200,
+        "physical_free_reserve_bytes": 1000000000,
+        "returncode": 0,
+        "sampled_process_group_peak_RSS_bytes": 851906560,
+        "stderr": {
+          "bytes": 0,
+          "path": "runs/lean_table_checker/v17_compute_finish_20261018/native_builds/1060b5998a014be594e54ba64d3671d5/phase_finalize_9a88469a8585/00_Mahjong.V17NativeWorker/kernel/stderr.log",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        "stdout": {
+          "bytes": 411,
+          "path": "runs/lean_table_checker/v17_compute_finish_20261018/native_builds/1060b5998a014be594e54ba64d3671d5/phase_finalize_9a88469a8585/00_Mahjong.V17NativeWorker/kernel/stdout.log",
+          "sha256": "59d90ba710601be2e75d9376f9de2319244939ef781e23544ede1a0987c2ebdb"
+        },
+        "system_memory_after": {
+          "Committed_AS_bytes": 1062371328,
+          "MemAvailable_bytes": 15821479936,
+          "MemTotal_bytes": 16716283904,
+          "SwapFree_bytes": 4294967296
+        },
+        "system_memory_before": {
+          "Committed_AS_bytes": 1062572032,
+          "MemAvailable_bytes": 15926894592,
+          "MemTotal_bytes": 16716283904,
+          "SwapFree_bytes": 4294967296
+        },
+        "unexpected_process_group_remainder": false,
+        "wait4_maxrss_bytes": 852119552,
+        "wall_seconds": 2.7977504
+      },
+      "module": "Mahjong.V17NativeWorker",
+      "native": {
+        "CPU_seconds": 0.297695,
+        "argv": [
+          "<LINUX_TOOLCHAIN_ROOT>/toolchain/lean-4.33.1-linux/bin/leanc",
+          "-O3",
+          "-DNDEBUG",
+          "-c",
+          "<LINUX_TOOLCHAIN_ROOT>/v17_native_1060b5998a014be594e54ba64d3671d5/c/Mahjong/V17NativeWorker.c",
+          "-o",
+          "<LINUX_TOOLCHAIN_ROOT>/v17_native_1060b5998a014be594e54ba64d3671d5/objects/Mahjong/V17NativeWorker.o"
+        ],
+        "child_exit_confirmed": true,
+        "cwd": "<LINUX_TOOLCHAIN_ROOT>/v17_native_1060b5998a014be594e54ba64d3671d5",
+        "failure": null,
+        "hard_deadline_seconds": 300,
+        "minimum_observed_system_MemAvailable_bytes": 15899774976,
+        "physical_free_reserve_bytes": 1000000000,
+        "returncode": 0,
+        "sampled_process_group_peak_RSS_bytes": 184582144,
+        "stderr": {
+          "bytes": 0,
+          "path": "runs/lean_table_checker/v17_compute_finish_20261018/native_builds/1060b5998a014be594e54ba64d3671d5/phase_finalize_9a88469a8585/00_Mahjong.V17NativeWorker/native/stderr.log",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        "stdout": {
+          "bytes": 0,
+          "path": "runs/lean_table_checker/v17_compute_finish_20261018/native_builds/1060b5998a014be594e54ba64d3671d5/phase_finalize_9a88469a8585/00_Mahjong.V17NativeWorker/native/stdout.log",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        "system_memory_after": {
+          "Committed_AS_bytes": 901230592,
+          "MemAvailable_bytes": 15925903360,
+          "MemTotal_bytes": 16716283904,
+          "SwapFree_bytes": 4294967296
+        },
+        "system_memory_before": {
+          "Committed_AS_bytes": 1062653952,
+          "MemAvailable_bytes": 15928958976,
+          "MemTotal_bytes": 16716283904,
+          "SwapFree_bytes": 4294967296
+        },
+        "unexpected_process_group_remainder": false,
+        "wait4_maxrss_bytes": 97554432,
+        "wall_seconds": 0.37438390000000066
+      },
+      "published": {
+        "c": {
+          "bytes": 92420,
+          "path": "build/lean_table_checker/v17_compute_finish_20261018/native/1060b5998a014be594e54ba64d3671d5/c/Mahjong/V17NativeWorker.c",
+          "sha256": "7b6efd4de86aace34574f12e6faeccfe814ba69ee28dd3cf6f7853c88d68bfda"
+        },
+        "modules": {
+          "bytes": 509224,
+          "path": "build/lean_table_checker/v17_compute_finish_20261018/native/1060b5998a014be594e54ba64d3671d5/modules/Mahjong/V17NativeWorker.olean",
+          "sha256": "4ca394b4f71273212ac344bd8cef82999f257e27a42f47f424869b5bf5fb64c1"
+        },
+        "objects": {
+          "bytes": 78600,
+          "path": "build/lean_table_checker/v17_compute_finish_20261018/native/1060b5998a014be594e54ba64d3671d5/objects/Mahjong/V17NativeWorker.o",
+          "sha256": "0188739ebf9079dd7763972fe77e9e2969f4adec79e5f8e73581547d32c840a2"
+        }
+      },
+      "source": {
+        "bytes": 13624,
+        "path": "<LINUX_TOOLCHAIN_ROOT>/v17_native_1060b5998a014be594e54ba64d3671d5/source/Mahjong/V17NativeWorker.lean",
+        "sha256": "dadc722410875249f7d308c71c16ee7d1c71ebeb3e3fa3b9b078f63c9c02d6cb"
+      },
+      "source_snapshot": {
+        "bytes": 13624,
+        "path": "runs/lean_table_checker/v17_compute_finish_20261018/native_builds/1060b5998a014be594e54ba64d3671d5/phase_finalize_9a88469a8585/00_Mahjong.V17NativeWorker/source/Mahjong/V17NativeWorker.lean",
+        "sha256": "dadc722410875249f7d308c71c16ee7d1c71ebeb3e3fa3b9b078f63c9c02d6cb"
+      }
+    },
+    {
+      "axioms": [],
+      "kernel": {
+        "CPU_seconds": 1.547288,
+        "argv": [
+          "<LINUX_TOOLCHAIN_ROOT>/toolchain/lean-4.33.1-linux/bin/lean",
+          "--trust=0",
+          "-Ddebug.skipKernelTC=false",
+          "-j1",
+          "-R",
+          "<LINUX_TOOLCHAIN_ROOT>/v17_native_1060b5998a014be594e54ba64d3671d5/source",
+          "-o",
+          "<LINUX_TOOLCHAIN_ROOT>/v17_native_1060b5998a014be594e54ba64d3671d5/modules/V17ComputeMain.olean",
+          "-c",
+          "<LINUX_TOOLCHAIN_ROOT>/v17_native_1060b5998a014be594e54ba64d3671d5/c/V17ComputeMain.c",
+          "<LINUX_TOOLCHAIN_ROOT>/v17_native_1060b5998a014be594e54ba64d3671d5/source/V17ComputeMain.lean"
+        ],
+        "child_exit_confirmed": true,
+        "cwd": "<LINUX_TOOLCHAIN_ROOT>/v17_native_1060b5998a014be594e54ba64d3671d5",
+        "failure": null,
+        "hard_deadline_seconds": 300,
+        "minimum_observed_system_MemAvailable_bytes": 15781502976,
+        "physical_free_reserve_bytes": 1000000000,
+        "returncode": 0,
+        "sampled_process_group_peak_RSS_bytes": 895619072,
+        "stderr": {
+          "bytes": 0,
+          "path": "runs/lean_table_checker/v17_compute_finish_20261018/native_builds/1060b5998a014be594e54ba64d3671d5/phase_finalize_9a88469a8585/01_V17ComputeMain/kernel/stderr.log",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        "stdout": {
+          "bytes": 0,
+          "path": "runs/lean_table_checker/v17_compute_finish_20261018/native_builds/1060b5998a014be594e54ba64d3671d5/phase_finalize_9a88469a8585/01_V17ComputeMain/kernel/stdout.log",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        "system_memory_after": {
+          "Committed_AS_bytes": 902795264,
+          "MemAvailable_bytes": 15909720064,
+          "MemTotal_bytes": 16716283904,
+          "SwapFree_bytes": 4294967296
+        },
+        "system_memory_before": {
+          "Committed_AS_bytes": 902787072,
+          "MemAvailable_bytes": 15942156288,
+          "MemTotal_bytes": 16716283904,
+          "SwapFree_bytes": 4294967296
+        },
+        "unexpected_process_group_remainder": false,
+        "wait4_maxrss_bytes": 895025152,
+        "wall_seconds": 1.5961640999999993
+      },
+      "module": "V17ComputeMain",
+      "native": {
+        "CPU_seconds": 2.1876949999999997,
+        "argv": [
+          "<LINUX_TOOLCHAIN_ROOT>/toolchain/lean-4.33.1-linux/bin/leanc",
+          "-O3",
+          "-DNDEBUG",
+          "-c",
+          "<LINUX_TOOLCHAIN_ROOT>/v17_native_1060b5998a014be594e54ba64d3671d5/c/V17ComputeMain.c",
+          "-o",
+          "<LINUX_TOOLCHAIN_ROOT>/v17_native_1060b5998a014be594e54ba64d3671d5/objects/V17ComputeMain.o"
+        ],
+        "child_exit_confirmed": true,
+        "cwd": "<LINUX_TOOLCHAIN_ROOT>/v17_native_1060b5998a014be594e54ba64d3671d5",
+        "failure": null,
+        "hard_deadline_seconds": 300,
+        "minimum_observed_system_MemAvailable_bytes": 15792283648,
+        "physical_free_reserve_bytes": 1000000000,
+        "returncode": 0,
+        "sampled_process_group_peak_RSS_bytes": 207167488,
+        "stderr": {
+          "bytes": 0,
+          "path": "runs/lean_table_checker/v17_compute_finish_20261018/native_builds/1060b5998a014be594e54ba64d3671d5/phase_finalize_9a88469a8585/01_V17ComputeMain/native/stderr.log",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        "stdout": {
+          "bytes": 0,
+          "path": "runs/lean_table_checker/v17_compute_finish_20261018/native_builds/1060b5998a014be594e54ba64d3671d5/phase_finalize_9a88469a8585/01_V17ComputeMain/native/stdout.log",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        "system_memory_after": {
+          "Committed_AS_bytes": 741875712,
+          "MemAvailable_bytes": 15885156352,
+          "MemTotal_bytes": 16716283904,
+          "SwapFree_bytes": 4294967296
+        },
+        "system_memory_before": {
+          "Committed_AS_bytes": 902795264,
+          "MemAvailable_bytes": 15929929728,
+          "MemTotal_bytes": 16716283904,
+          "SwapFree_bytes": 4294967296
+        },
+        "unexpected_process_group_remainder": false,
+        "wait4_maxrss_bytes": 109588480,
+        "wall_seconds": 2.2144986000000006
+      },
+      "published": {
+        "c": {
+          "bytes": 620819,
+          "path": "build/lean_table_checker/v17_compute_finish_20261018/native/1060b5998a014be594e54ba64d3671d5/c/V17ComputeMain.c",
+          "sha256": "b51d1a3ca52f242cda751f0dc064b71fa689769631c0ed12cb105191d1ccb803"
+        },
+        "modules": {
+          "bytes": 2035432,
+          "path": "build/lean_table_checker/v17_compute_finish_20261018/native/1060b5998a014be594e54ba64d3671d5/modules/V17ComputeMain.olean",
+          "sha256": "2384f797c545b06810876b4389f3c7fd523e2353492f6f3f538bb244c64fc821"
+        },
+        "objects": {
+          "bytes": 379312,
+          "path": "build/lean_table_checker/v17_compute_finish_20261018/native/1060b5998a014be594e54ba64d3671d5/objects/V17ComputeMain.o",
+          "sha256": "5a7144743550cda00444fce0021fab3e5e5c9c956f2952945fde1b8a863142cb"
+        }
+      },
+      "source": {
+        "bytes": 26709,
+        "path": "<LINUX_TOOLCHAIN_ROOT>/v17_native_1060b5998a014be594e54ba64d3671d5/source/V17ComputeMain.lean",
+        "sha256": "19b87459bb70cf264089986a1d92f2e06757ad6c66f1674eadacf5fb12eee9ac"
+      },
+      "source_snapshot": {
+        "bytes": 26709,
+        "path": "runs/lean_table_checker/v17_compute_finish_20261018/native_builds/1060b5998a014be594e54ba64d3671d5/phase_finalize_9a88469a8585/01_V17ComputeMain/source/V17ComputeMain.lean",
+        "sha256": "19b87459bb70cf264089986a1d92f2e06757ad6c66f1674eadacf5fb12eee9ac"
+      }
+    },
+    {
+      "axioms": [
+        {
+          "axioms": [],
+          "name": "Mahjong.BindingControlsV17.root_projection_accepts"
+        },
+        {
+          "axioms": [],
+          "name": "Mahjong.BindingControlsV17.root_n_bit_rejected"
+        },
+        {
+          "axioms": [],
+          "name": "Mahjong.BindingControlsV17.missing_padded_bits_rejected"
+        },
+        {
+          "axioms": [],
+          "name": "Mahjong.BindingControlsV17.nonempty_code_rejected"
+        },
+        {
+          "axioms": [],
+          "name": "Mahjong.BindingControlsV17.missing_directory_rejected"
+        },
+        {
+          "axioms": [
+            "propext",
+            "Quot.sound"
+          ],
+          "name": "Mahjong.BindingControlsV17.different_bits_not_same_bucket"
+        },
+        {
+          "axioms": [
+            "propext",
+            "Quot.sound"
+          ],
+          "name": "Mahjong.BindingControlsV17.different_size_not_same_bucket"
+        }
+      ],
+      "kernel": {
+        "CPU_seconds": 1.2279,
+        "argv": [
+          "<LINUX_TOOLCHAIN_ROOT>/toolchain/lean-4.33.1-linux/bin/lean",
+          "--trust=0",
+          "-Ddebug.skipKernelTC=false",
+          "-j1",
+          "-R",
+          "<LINUX_TOOLCHAIN_ROOT>/v17_native_1060b5998a014be594e54ba64d3671d5/source",
+          "-o",
+          "<LINUX_TOOLCHAIN_ROOT>/v17_native_1060b5998a014be594e54ba64d3671d5/modules/Mahjong/BindingControlsV17.olean",
+          "-c",
+          "<LINUX_TOOLCHAIN_ROOT>/v17_native_1060b5998a014be594e54ba64d3671d5/c/Mahjong/BindingControlsV17.c",
+          "<LINUX_TOOLCHAIN_ROOT>/v17_native_1060b5998a014be594e54ba64d3671d5/source/Mahjong/BindingControlsV17.lean"
+        ],
+        "child_exit_confirmed": true,
+        "cwd": "<LINUX_TOOLCHAIN_ROOT>/v17_native_1060b5998a014be594e54ba64d3671d5",
+        "failure": null,
+        "hard_deadline_seconds": 300,
+        "minimum_observed_system_MemAvailable_bytes": 15756480512,
+        "physical_free_reserve_bytes": 1000000000,
+        "returncode": 0,
+        "sampled_process_group_peak_RSS_bytes": 851460096,
+        "stderr": {
+          "bytes": 0,
+          "path": "runs/lean_table_checker/v17_compute_finish_20261018/native_builds/1060b5998a014be594e54ba64d3671d5/phase_finalize_9a88469a8585/binding_controls/kernel/stderr.log",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        "stdout": {
+          "bytes": 620,
+          "path": "runs/lean_table_checker/v17_compute_finish_20261018/native_builds/1060b5998a014be594e54ba64d3671d5/phase_finalize_9a88469a8585/binding_controls/kernel/stdout.log",
+          "sha256": "7171554d13e80b103cd8801fd7b5c355bc71db803097f848c72a282eac7de6bb"
+        },
+        "system_memory_after": {
+          "Committed_AS_bytes": 741986304,
+          "MemAvailable_bytes": 15903117312,
+          "MemTotal_bytes": 16716283904,
+          "SwapFree_bytes": 4294967296
+        },
+        "system_memory_before": {
+          "Committed_AS_bytes": 741986304,
+          "MemAvailable_bytes": 15884443648,
+          "MemTotal_bytes": 16716283904,
+          "SwapFree_bytes": 4294967296
+        },
+        "unexpected_process_group_remainder": false,
+        "wait4_maxrss_bytes": 862543872,
+        "wall_seconds": 1.2874841999999997
+      },
+      "module": "Mahjong.BindingControlsV17",
+      "native": {
+        "CPU_seconds": 0.083322,
+        "argv": [
+          "<LINUX_TOOLCHAIN_ROOT>/toolchain/lean-4.33.1-linux/bin/leanc",
+          "-O3",
+          "-DNDEBUG",
+          "-c",
+          "<LINUX_TOOLCHAIN_ROOT>/v17_native_1060b5998a014be594e54ba64d3671d5/c/Mahjong/BindingControlsV17.c",
+          "-o",
+          "<LINUX_TOOLCHAIN_ROOT>/v17_native_1060b5998a014be594e54ba64d3671d5/objects/Mahjong/BindingControlsV17.o"
+        ],
+        "child_exit_confirmed": true,
+        "cwd": "<LINUX_TOOLCHAIN_ROOT>/v17_native_1060b5998a014be594e54ba64d3671d5",
+        "failure": null,
+        "hard_deadline_seconds": 300,
+        "minimum_observed_system_MemAvailable_bytes": 15888207872,
+        "physical_free_reserve_bytes": 1000000000,
+        "returncode": 0,
+        "sampled_process_group_peak_RSS_bytes": 165433344,
+        "stderr": {
+          "bytes": 0,
+          "path": "runs/lean_table_checker/v17_compute_finish_20261018/native_builds/1060b5998a014be594e54ba64d3671d5/phase_finalize_9a88469a8585/binding_controls/native/stderr.log",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        "stdout": {
+          "bytes": 0,
+          "path": "runs/lean_table_checker/v17_compute_finish_20261018/native_builds/1060b5998a014be594e54ba64d3671d5/phase_finalize_9a88469a8585/binding_controls/native/stdout.log",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        "system_memory_after": {
+          "Committed_AS_bytes": 741986304,
+          "MemAvailable_bytes": 15904481280,
+          "MemTotal_bytes": 16716283904,
+          "SwapFree_bytes": 4294967296
+        },
+        "system_memory_before": {
+          "Committed_AS_bytes": 741986304,
+          "MemAvailable_bytes": 15903117312,
+          "MemTotal_bytes": 16716283904,
+          "SwapFree_bytes": 4294967296
+        },
+        "unexpected_process_group_remainder": false,
+        "wait4_maxrss_bytes": 97570816,
+        "wall_seconds": 0.10760860000000072
+      },
+      "published": {
+        "c": {
+          "bytes": 2568,
+          "path": "build/lean_table_checker/v17_compute_finish_20261018/native/1060b5998a014be594e54ba64d3671d5/c/Mahjong/BindingControlsV17.c",
+          "sha256": "b285d1ee95bb1433f42be29f96d1d41ba1f892db792643b4e7884236db5c245d"
+        },
+        "modules": {
+          "bytes": 41904,
+          "path": "build/lean_table_checker/v17_compute_finish_20261018/native/1060b5998a014be594e54ba64d3671d5/modules/Mahjong/BindingControlsV17.olean",
+          "sha256": "0260657441bdc1f30f5b320846c71a13de7fee3b257d02c29da8cdd55a74ad7f"
+        },
+        "objects": {
+          "bytes": 2992,
+          "path": "build/lean_table_checker/v17_compute_finish_20261018/native/1060b5998a014be594e54ba64d3671d5/objects/Mahjong/BindingControlsV17.o",
+          "sha256": "8676e82c6ac14de76606f6f10fac66d0931b46258ef7130ab4ab2d4f22783482"
+        }
+      },
+      "source": {
+        "bytes": 1706,
+        "path": "<LINUX_TOOLCHAIN_ROOT>/v17_native_1060b5998a014be594e54ba64d3671d5/source/Mahjong/BindingControlsV17.lean",
+        "sha256": "880c724d6f4deefc6b3dce7fa05de7e303d1e6c4fe84c0f9683b200caf8c1b48"
+      },
+      "source_snapshot": {
+        "bytes": 1706,
+        "path": "runs/lean_table_checker/v17_compute_finish_20261018/native_builds/1060b5998a014be594e54ba64d3671d5/phase_finalize_9a88469a8585/binding_controls/source/Mahjong/BindingControlsV17.lean",
+        "sha256": "880c724d6f4deefc6b3dce7fa05de7e303d1e6c4fe84c0f9683b200caf8c1b48"
+      }
+    },
+    {
+      "axioms": [
+        {
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ],
+          "name": "Mahjong.FastWholeInputV17.from_finite_input"
+        }
+      ],
+      "kernel": {
+        "CPU_seconds": 0.302929,
+        "argv": [
+          "<LINUX_TOOLCHAIN_ROOT>/toolchain/lean-4.33.1-linux/bin/lean",
+          "--trust=0",
+          "-Ddebug.skipKernelTC=false",
+          "-j1",
+          "-R",
+          "<LINUX_TOOLCHAIN_ROOT>/v17_native_1060b5998a014be594e54ba64d3671d5/source",
+          "-o",
+          "<LINUX_TOOLCHAIN_ROOT>/v17_native_1060b5998a014be594e54ba64d3671d5/modules/V17ComputeReplay.olean",
+          "-c",
+          "<LINUX_TOOLCHAIN_ROOT>/v17_native_1060b5998a014be594e54ba64d3671d5/c/V17ComputeReplay.c",
+          "<LINUX_TOOLCHAIN_ROOT>/v17_native_1060b5998a014be594e54ba64d3671d5/source/V17ComputeReplay.lean"
+        ],
+        "child_exit_confirmed": true,
+        "cwd": "<LINUX_TOOLCHAIN_ROOT>/v17_native_1060b5998a014be594e54ba64d3671d5",
+        "failure": null,
+        "hard_deadline_seconds": 300,
+        "minimum_observed_system_MemAvailable_bytes": 15822131200,
+        "physical_free_reserve_bytes": 1000000000,
+        "returncode": 0,
+        "sampled_process_group_peak_RSS_bytes": 825171968,
+        "stderr": {
+          "bytes": 0,
+          "path": "runs/lean_table_checker/v17_compute_finish_20261018/native_builds/1060b5998a014be594e54ba64d3671d5/phase_finalize_9a88469a8585/replay_root/kernel/stderr.log",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        "stdout": {
+          "bytes": 105,
+          "path": "runs/lean_table_checker/v17_compute_finish_20261018/native_builds/1060b5998a014be594e54ba64d3671d5/phase_finalize_9a88469a8585/replay_root/kernel/stdout.log",
+          "sha256": "a37aaaa149ea9f02f70ac3c5486acb492ef5c6f9419ddf42b9c570ea002749c4"
+        },
+        "system_memory_after": {
+          "Committed_AS_bytes": 741990400,
+          "MemAvailable_bytes": 15914094592,
+          "MemTotal_bytes": 16716283904,
+          "SwapFree_bytes": 4294967296
+        },
+        "system_memory_before": {
+          "Committed_AS_bytes": 741990400,
+          "MemAvailable_bytes": 15904124928,
+          "MemTotal_bytes": 16716283904,
+          "SwapFree_bytes": 4294967296
+        },
+        "unexpected_process_group_remainder": false,
+        "wait4_maxrss_bytes": 849113088,
+        "wall_seconds": 0.3641576999999998
+      },
+      "module": "V17ComputeReplay",
+      "native": {
+        "CPU_seconds": 0.153449,
+        "argv": [
+          "<LINUX_TOOLCHAIN_ROOT>/toolchain/lean-4.33.1-linux/bin/leanc",
+          "-O3",
+          "-DNDEBUG",
+          "-c",
+          "<LINUX_TOOLCHAIN_ROOT>/v17_native_1060b5998a014be594e54ba64d3671d5/c/V17ComputeReplay.c",
+          "-o",
+          "<LINUX_TOOLCHAIN_ROOT>/v17_native_1060b5998a014be594e54ba64d3671d5/objects/V17ComputeReplay.o"
+        ],
+        "child_exit_confirmed": true,
+        "cwd": "<LINUX_TOOLCHAIN_ROOT>/v17_native_1060b5998a014be594e54ba64d3671d5",
+        "failure": null,
+        "hard_deadline_seconds": 300,
+        "minimum_observed_system_MemAvailable_bytes": 15900876800,
+        "physical_free_reserve_bytes": 1000000000,
+        "returncode": 0,
+        "sampled_process_group_peak_RSS_bytes": 178225152,
+        "stderr": {
+          "bytes": 0,
+          "path": "runs/lean_table_checker/v17_compute_finish_20261018/native_builds/1060b5998a014be594e54ba64d3671d5/phase_finalize_9a88469a8585/replay_root/native/stderr.log",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        "stdout": {
+          "bytes": 0,
+          "path": "runs/lean_table_checker/v17_compute_finish_20261018/native_builds/1060b5998a014be594e54ba64d3671d5/phase_finalize_9a88469a8585/replay_root/native/stdout.log",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        "system_memory_after": {
+          "Committed_AS_bytes": 741990400,
+          "MemAvailable_bytes": 15900618752,
+          "MemTotal_bytes": 16716283904,
+          "SwapFree_bytes": 4294967296
+        },
+        "system_memory_before": {
+          "Committed_AS_bytes": 741990400,
+          "MemAvailable_bytes": 15914233856,
+          "MemTotal_bytes": 16716283904,
+          "SwapFree_bytes": 4294967296
+        },
+        "unexpected_process_group_remainder": false,
+        "wait4_maxrss_bytes": 97550336,
+        "wall_seconds": 0.21063700000000019
+      },
+      "published": {
+        "c": {
+          "bytes": 33299,
+          "path": "build/lean_table_checker/v17_compute_finish_20261018/native/1060b5998a014be594e54ba64d3671d5/c/V17ComputeReplay.c",
+          "sha256": "e2b0e432bf991e3dd94606c5e530172cf558550e0d6001524d4a5d214c89747f"
+        },
+        "modules": {
+          "bytes": 18232,
+          "path": "build/lean_table_checker/v17_compute_finish_20261018/native/1060b5998a014be594e54ba64d3671d5/modules/V17ComputeReplay.olean",
+          "sha256": "be4267e70db7c18f006bd3af106c3082b580e9200eb999ef375e6d59e204cc46"
+        },
+        "objects": {
+          "bytes": 25952,
+          "path": "build/lean_table_checker/v17_compute_finish_20261018/native/1060b5998a014be594e54ba64d3671d5/objects/V17ComputeReplay.o",
+          "sha256": "13b05e5ce2bc40d86b4eb6737633730b5e8456d788b66532d61b86b07f1f1323"
+        }
+      },
+      "source": {
+        "bytes": 4659,
+        "path": "<LINUX_TOOLCHAIN_ROOT>/v17_native_1060b5998a014be594e54ba64d3671d5/source/V17ComputeReplay.lean",
+        "sha256": "2b2fd2d612c21839867c4019c4eb86c5a697b4f7664e8710f84336cdd859055c"
+      },
+      "source_snapshot": {
+        "bytes": 4659,
+        "path": "runs/lean_table_checker/v17_compute_finish_20261018/native_builds/1060b5998a014be594e54ba64d3671d5/phase_finalize_9a88469a8585/replay_root/source/V17ComputeReplay.lean",
+        "sha256": "2b2fd2d612c21839867c4019c4eb86c5a697b4f7664e8710f84336cdd859055c"
+      }
+    }
+  ],
+  "reason": "Old global main conflicts with new entry; all mathematical sources/theorems retained.",
+  "replay": {
+    "CPU_seconds": 114.52027,
+    "argv": [
+      "<LINUX_TOOLCHAIN_ROOT>/toolchain/lean-4.33.1-linux/bin/leanchecker",
+      "--fresh",
+      "-v",
+      "V17ComputeReplay"
+    ],
+    "child_exit_confirmed": true,
+    "cwd": "<LINUX_TOOLCHAIN_ROOT>/v17_native_1060b5998a014be594e54ba64d3671d5/empty_cold_cwd",
+    "failure": null,
+    "hard_deadline_seconds": 300,
+    "minimum_observed_system_MemAvailable_bytes": 15367577600,
+    "physical_free_reserve_bytes": 1000000000,
+    "returncode": 0,
+    "sampled_process_group_peak_RSS_bytes": 1392345088,
+    "stderr": {
+      "bytes": 0,
+      "path": "runs/lean_table_checker/v17_compute_finish_20261018/native_builds/1060b5998a014be594e54ba64d3671d5/phase_finalize_9a88469a8585/cold_replay/stderr.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "stdout": {
+      "bytes": 40,
+      "path": "runs/lean_table_checker/v17_compute_finish_20261018/native_builds/1060b5998a014be594e54ba64d3671d5/phase_finalize_9a88469a8585/cold_replay/stdout.log",
+      "sha256": "e979ccae091f3b3d9ced7b15e8f602755f000fa60571298f1c72c20e34b59157"
+    },
+    "system_memory_after": {
+      "Committed_AS_bytes": 733544448,
+      "MemAvailable_bytes": 16020045824,
+      "MemTotal_bytes": 16716283904,
+      "SwapFree_bytes": 4294967296
+    },
+    "system_memory_before": {
+      "Committed_AS_bytes": 734838784,
+      "MemAvailable_bytes": 15843569664,
+      "MemTotal_bytes": 16716283904,
+      "SwapFree_bytes": 4294967296
+    },
+    "unexpected_process_group_remainder": false,
+    "wait4_maxrss_bytes": 1392050176,
+    "wall_seconds": 114.643794581
+  },
+  "schema": "V17_NATIVE_WORKER_AND_FROZEN_MATH_COLD_BUILD",
+  "status": "PASS_NATIVE_LINK_AND_STANDARD_FRESH_IMPLICATION_ONLY"
+}

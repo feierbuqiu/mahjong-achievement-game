@@ -4,11 +4,13 @@ Thank you for helping make this result inspectable and reproducible.
 Use English for repository documentation, issues, pull requests, and commit
 messages. Keep changes focused and explain any effect on the research claim.
 
-The [current project status](docs/PROJECT_STATUS.md) concerns persistent kernel
-certificates and compression. Generic composition and a small closed actual-data
-pilot are recorded; the actual opening instance and reliable whole-task time
-bound remain open. Independent arguments, deeper formal review, alternative
-certificate designs, corrections and reproducibility work remain welcome.
+The [current project status](docs/PROJECT_STATUS.md) records complete V17
+native verification under a kernel-proved implication. A closed actual-input
+Lean theorem and independent execution replication remain open. Replication
+on a different stack, human rules/bookkeeping review, alternative proofs,
+corrections and reproducibility improvements are particularly useful.
+Use the [claim boundaries](docs/CLAIMS.md) and [version glossary](docs/INTERNAL_VERSIONS.md)
+to identify the exact scope of a contribution.
 
 ## Workflow
 

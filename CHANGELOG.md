@@ -1,5 +1,22 @@
 # Changelog
 
+## 2026-10-19 — Complete V17 native verification and publication cleanup
+
+- Publish the completed all-layer V17 native result: 778,532,864,302 SAFE
+  orbits, 3,686 nonempty buckets, 17,317 frames, all six acceptance families,
+  no old PASS/seed import, and matching before/after input identities.
+- State the precise evidence level: a kernel-proved whole-input implication
+  plus native evaluation. No closed actual-input Lean declaration or independent
+  execution replication is claimed. Publish the separate AI review with its
+  limitations and independent saved-ledger cross-check.
+- Add the 148-file source map, native and bookkeeping source, input hashes,
+  coverage summaries, source assembly helper and full saved-record verifier.
+- Keep the 63.46 MB ledger/receipt graph in a separate hash-pinned evidence
+  asset; preserve v1.0.0 and both dated English manuscript bodies unchanged.
+- Update current links, separate stopped V18/V19 strict proof-export work
+  from the completed V17 run, and define internal version labels. No new
+  research execution or new paper is part of this publication update.
+
 ## Unreleased - later 2026-10-18 kernel-certificate update
 
 - Publish V17 generic composition, V18 saved/cold-replayed actual-data pilot,

@@ -1,0 +1,27 @@
+{
+  "schema": "MJ_V17_PUBLIC_ASSETS_V1",
+  "release_tag": "evidence-v17-native-20261019",
+  "release_url": "https://github.com/feierbuqiu/mahjong-achievement-game/releases/tag/evidence-v17-native-20261019",
+  "assets": [
+    {
+      "name": "mahjong-v17-native-evidence-20261019.zip",
+      "bytes": 63456055,
+      "sha256": "5e68d6382c6e68fd525cd52defdb1969007aaaeddd24d5fe8afabc299057bdc4",
+      "url": "https://github.com/feierbuqiu/mahjong-achievement-game/releases/download/evidence-v17-native-20261019/mahjong-v17-native-evidence-20261019.zip",
+      "payload_files": 38329,
+      "uncompressed_payload_bytes": 145559336,
+      "native_frame_results": 17317,
+      "bucket_ready_records": 3686,
+      "global_ready_records": 1,
+      "contents_manifest_sha256": "4fb4837feccb1c7eaab6bdc5b821fe6656193372049ef19bc9714b9a55f5a84e",
+      "original_bytes_preserved": true
+    }
+  ],
+  "full_input_dataset": {
+    "bytes": 100615834170,
+    "files": 11272,
+    "published": false,
+    "hash_manifest": "inputs.json"
+  },
+  "unfinished_local_package_archives_published": false
+}
