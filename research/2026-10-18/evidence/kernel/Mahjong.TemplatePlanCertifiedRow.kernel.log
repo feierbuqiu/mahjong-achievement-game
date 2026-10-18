@@ -1,0 +1,2 @@
+'Mahjong.TemplatePlanCertifiedRow.row_original' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Mahjong.TemplatePlanCertifiedRow.single_original' depends on axioms: [propext, Classical.choice, Quot.sound]

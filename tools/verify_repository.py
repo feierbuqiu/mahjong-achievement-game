@@ -58,6 +58,12 @@ def main():
     check_snapshot()
     verify_paper()
     verify_lean_supplement()
+    # Validate the newer publication without starting Lean or compute services.
+    import importlib.util
+    spec = importlib.util.spec_from_file_location('october_progress', ROOT / 'research/2026-10-18/verify.py')
+    october = importlib.util.module_from_spec(spec)
+    spec.loader.exec_module(october)
+    october.verify()
     formal = read_json("formal/STATUS.json")
     require(status["formal_verification"]["closed_nonempty_original_game_roots_published"] ==
             len(formal["closed_nonempty_original_game_proofs"]) == 8, "Formal root count mismatch")

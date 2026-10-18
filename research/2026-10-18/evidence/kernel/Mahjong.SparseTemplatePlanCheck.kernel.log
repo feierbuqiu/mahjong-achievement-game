@@ -1,0 +1,4 @@
+'Mahjong.SparseTemplatePlanCheck.checked_entry' depends on axioms: [propext, Quot.sound]
+'Mahjong.SparseTemplatePlanCheck.cached_edge_sound' depends on axioms: [propext, Quot.sound]
+'Mahjong.SparseTemplatePlanCheck.row_refines' depends on axioms: [propext, Quot.sound]
+'Mahjong.SparseTemplatePlanCheck.checkPlan_refines' depends on axioms: [propext, Quot.sound]

@@ -137,9 +137,22 @@ second command uses Lean 4.33.1, fresh project objects, trust level 0, one
 thread and a 3 GiB heap limit per compiler process. It checks mathematical
 source; it does not execute native workers or read the historical P/N table.
 The native operational test harness and inputs are retained outside Git.
-The maintainer will not undertake further end-to-end or full-scale Lean
-closure verification; these commands remain available to independent
-contributors. Reports, corrections and contributed results can still be published.
+The [October 18 publication](../research/2026-10-18/README.md) supersedes the
+earlier decision to stop pursuing the campaign. The new full scan is awaiting
+independent correctness review and has not started. Its selected source and
+receipts can be checked without starting Lean or hardware work:
+
+```bash
+python3 research/2026-10-18/verify.py
+```
+
+This command reads public files and checks recorded identities/arithmetic.
+It does not launch the new campaign. The selected controller/GPU source is
+an inspection archive, not a complete portable campaign distribution; large
+inputs and executables are retained outside Git. Future execution requires
+independent review, fresh full-input/resource/cost acceptance and explicit
+release of the user hold. The sub-20-hour finish remains a conditional
+expectation, not a verified all-in runtime bound.
 
 Include the commit/tag, operating system, CPU, RAM, compiler version, build
 flags, exact input and command, elapsed time, peak memory, exit code, output

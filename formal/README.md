@@ -1,15 +1,13 @@
 # Lean verification progress
 
-> **v1.0.0, September 15, 2026:** the maintainer will not undertake further end-to-end
-> or full-scale Lean closure verification.** The opening remains `NOT_VERIFIED`.
-> The [current status](../research/2026-09-15/README.md) adds finite algorithm
-> proofs and bounded synthetic C++ tests, with zero new historical P/N coverage.
-> The [new English Lean paper](../papers/lean-verification/manuscript.md) is
-> published alongside the [original report](../papers/manuscript.md). The
-> [major release](../docs/PROJECT_STATUS.md) fixes this body of work and closes
-> the maintainer's active phase; justified new results and corrections remain
-> welcome. This page documents the historical
-> September 13 concrete-proof package, whose replay and CI remain available.
+> **October 18, 2026:** the improved V16 route is approaching a planned final
+> compiled-Lean campaign, with a conditional working expectation within 20 hours
+> of an authorized start. **The full scan has not started; correctness is under
+> independent review.** The opening remains `NOT_VERIFIED`. See the
+> [current source and evidence](../research/2026-10-18/README.md) and
+> [project status](../docs/PROJECT_STATUS.md).
+> This page documents the historical September 13 concrete-proof package;
+> its 1,008-module source replay is distinct from the new 132-module V16 archive.
 
 **Eight concrete nonempty roots are indexed, including the new 12- and 14-tile strategies.
 The empty-position Lean theorem remains `NOT_VERIFIED`.**

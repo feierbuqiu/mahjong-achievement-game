@@ -1,0 +1,6 @@
+'Mahjong.GeneratedPlanCheck.edge_template' depends on axioms: [propext]
+'Mahjong.GeneratedPlanCheck.key_sound' depends on axioms: [propext]
+'Mahjong.GeneratedPlanCheck.edge_sound' depends on axioms: [propext, Quot.sound]
+'Mahjong.GeneratedPlanCheck.row_refines' depends on axioms: [propext, Quot.sound]
+'Mahjong.GeneratedPlanCheck.span_of_each' depends on axioms: [propext, Quot.sound]
+'Mahjong.GeneratedPlanCheck.checkPlan_refines' depends on axioms: [propext, Quot.sound]

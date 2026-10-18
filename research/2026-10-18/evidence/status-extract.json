@@ -1,0 +1,139 @@
+{
+  "schema": "LEAN_COMPILED_TABLE_ROUTE_V1",
+  "utc": "2026-10-18T02:54:01.957357+00:00",
+  "phase": "PAUSED_BY_USER_FOR_INDEPENDENT_LEAN_REVIEW",
+  "compute_paused_by_user": true,
+  "full_launch_allowed": false,
+  "current_primary_target_hours": 20,
+  "completed_actual_layers": [
+    34,
+    33,
+    32
+  ],
+  "new_route_global_slots_checked": 303054865,
+  "full_table_native_run": "PARTIAL_LAYERS_34_33_32_COMPLETE",
+  "empty_game_Lean": "NOT_VERIFIED",
+  "full_table_formal_certification": false,
+  "joint_indexed_v16": {
+    "actual_REV3_runtime_acceptances": [
+      {
+        "bytes": 13420,
+        "path": "runs/lean_table_checker/campaign_indexed_20261018_v16/functional/chain_08fae150/acceptance.json",
+        "sha256": "2922b39bc6fe91dc0bdad4d2a14c8e1443ae527688b0a7be0eb8f2703fc7e6cc"
+      },
+      {
+        "bytes": 13988,
+        "path": "runs/lean_table_checker/campaign_indexed_20261018_v16/functional/crash_ce857cb9/acceptance.json",
+        "sha256": "6e3bc372936fa72c61ce6dd9aca34421c02f036341f850fe68fb12b4d24abbb3"
+      },
+      {
+        "bytes": 16869,
+        "path": "runs/lean_table_checker/campaign_indexed_20261018_v16/functional/negatives_0513751a/acceptance.json",
+        "sha256": "b66cc4a43f3a97d45820809e2884691728fcd3537c2a82d7399429f967d0f544"
+      },
+      {
+        "bytes": 12617,
+        "path": "runs/lean_table_checker/campaign_indexed_20261018_v16/functional/prefix31_69e24700/acceptance.json",
+        "sha256": "5d056101d58b5d7fc71c2ff99c9feb85d0d15386565785072cce3f730bf61e20"
+      }
+    ],
+    "actual_compiler_envelope": {
+      "bytes": 596,
+      "path": "runs/lean_table_checker/joint_indexed_build_20261018_v16/b_b1f377d7b5384300af48ad2508bc46d2/envelope_result.json",
+      "sha256": "0dc86c766aaf8be69035f7c9b50a79f14f41205b2018c52234472f98315e40be"
+    },
+    "actual_joint_proof_count": 104,
+    "actual_linux_native": {
+      "bytes": 121156240,
+      "path": "build/lean_table_checker/joint_indexed_build_v16/linux/b1f377d7b5384300af48ad2508bc46d2/bin/MainOwnedJointIndexedRows1WorkerV16",
+      "sha256": "da0877df4d5be177516a405c93b62cac457a04ea40e479010fc70588a44438c6"
+    },
+    "actual_negative_cases": 6,
+    "actual_positive_rows": 62,
+    "additional_production_fees": "MEASURED_RAW_FOUR_REV3_PHASES; NEW_FULL_SETUP_AND_FINAL_COST_EVALUATION_PENDING",
+    "calibration_acceptance": {
+      "bytes": 38933,
+      "path": "runs/lean_table_checker/calibration_indexed_20261018_v16/sample_7a5fb81f30dd/acceptance.json",
+      "sha256": "de80a0f635cbccb3de0a9e894a1496d303e014dc4915281a727db2e38830a5e6"
+    },
+    "conditional_tests_add_no_completed_global_layer": true,
+    "final_time_gate": "NOT_EVALUATED_OR_PASSED",
+    "full_launch_allowed": false,
+    "full_run_started": false,
+    "independent_original_source_review": {
+      "bytes": 1322691,
+      "path": "runs/lean_table_checker/indexed_matrix_review_20261018_v16/actual34_independent_source_review.json",
+      "sha256": "78a260e5ee39b17dd13abab8183574b5699a05d88b4e6058c0953636eb039fb3"
+    },
+    "known_components_with25percent_margin_hours": 13.025598036171749,
+    "known_cost_screen": {
+      "bytes": 191016,
+      "path": "runs/lean_table_checker/calibration_indexed_20261018_v16/sample_7a5fb81f30dd/known_cost_screen.json",
+      "sha256": "abfdce1aee3e4b2ce8cc616c579ba33fa2d1536cd58e6df5609d42af7d6933cd"
+    },
+    "new_V16_speed_and_all_bank_resources": "MEASURED_ACTUAL34_CASES_AND83_RESOURCE_FRAMES",
+    "prelaunch_user_hold": true,
+    "previous_V15_additional_production_fees": "UNKNOWN_NOT_ZERO",
+    "previous_V15_known_components_hours_with25percent_margin": 23.3007,
+    "proof_bundle": {
+      "bytes": 246768,
+      "path": "runs/lean_table_checker/joint_indexed_build_20261018_v16/b_b1f377d7b5384300af48ad2508bc46d2/proof_bundle.json",
+      "sha256": "b8d0c30b4ccee996b04b25d4355363b2f06bd0a551bd86902967b6dfdb698a7b"
+    },
+    "resource_acceptance": {
+      "bytes": 641123,
+      "path": "runs/lean_table_checker/linux_bridge_resource_indexed_20261018_v16/rounds1_38fe3103df9a/acceptance.json",
+      "sha256": "9230b1bc0bcecaac3aa6686c868c0b3d9824c8cb8493be3bd9c10914d835da9e"
+    },
+    "runtime_revision2": {
+      "bytes": 9588,
+      "path": "runs/lean_table_checker/campaign_indexed_20261018_v16/runtime_source_v2_1792286124150127800/SOURCE_FREEZE_RUNTIME_V16_REVISION2.json",
+      "sha256": "348099fe0ae1d94a7468a7d6660bdc5b3dc0df06190ff746e1c5b9af7863cf2c"
+    },
+    "runtime_revision3": {
+      "bytes": 10426,
+      "path": "runs/lean_table_checker/campaign_indexed_20261018_v16/runtime_source_v3_1792287810764182100/SOURCE_FREEZE_RUNTIME_V16_REVISION3.json",
+      "sha256": "2b1ac1d9882e5e700b89d61858a8eb47bc562b7c4178f3cdcfa7de03538b6f4c"
+    },
+    "tiny_acceptance": {
+      "bytes": 106147,
+      "path": "runs/lean_table_checker/linux_bridge_test_indexed_20261018_v16/tiny_rounds1_4143672ccef9/normalized_receipt.json",
+      "sha256": "035cf1a5bc641a7b0d991b107569a1de4c80e2572a5f1d8024b1c585ebb5e949"
+    }
+  },
+  "prelaunch_independent_audit": {
+    "STOP_retained": "runs/lean_table_checker/campaign_indexed_20261018_v16/campaigns/overnight_v16_indexed_r3i/STOP",
+    "actual_four_bounded_runtime_controls": "PASS",
+    "clean_all_layers_from_scratch_manifest": "NOT_PREPARED",
+    "cumulative_preflight_charge_seconds": 1258.4839999999385,
+    "current_new_manifest_complete_phasezero": false,
+    "current_runtime": "REVISION3",
+    "document": "runs/lean_table_checker/prelaunch_audit_20261018/README.md",
+    "document_package_manifest": {
+      "bytes": 4070,
+      "path": "runs/lean_table_checker/prelaunch_audit_20261018/PACKAGE_MANIFEST.json",
+      "sha256": "74818a96169e67b6a454e3b864ae7c4cebfd6f30332fb97e0adb20625b4e3f22"
+    },
+    "evidence_index": {
+      "bytes": 32806,
+      "path": "runs/lean_table_checker/prelaunch_audit_20261018/EVIDENCE_INDEX.json",
+      "sha256": "d4b1a4b27ed4d61e32bf1862dae9f77ba9be4f893a8751d112742c49ec9d44fb"
+    },
+    "final_time_gate": "NOT_EVALUATED_OR_PASSED",
+    "full_20h_completion": "NOT_ESTABLISHED",
+    "new_full_campaign_native_rows": 0,
+    "prepared_manifest_reuses_seed_rows": 303054865,
+    "previous_mutable_status_snapshot": {
+      "bytes": 48296,
+      "path": "runs/lean_table_checker/prelaunch_audit_20261018/previous_mutable_status_snapshot.json",
+      "sha256": "1189f75c040cdf7e04ffbb5f29107f5cf060c7eb38031b720c9bd216beadc018"
+    },
+    "status_snapshot": {
+      "bytes": 3101,
+      "path": "runs/lean_table_checker/prelaunch_audit_20261018/AUDIT_STATUS.json",
+      "sha256": "58b005ec1bb207d12e49279ee71264f90b9cf00437a697685fa42d7ee5bbfeb1"
+    },
+    "whole_table_one_shot_task_registered": false
+  },
+  "next_work": "Read the independent audit package; preserve STOP. No compilation, benchmark, seal or whole-table run until the user explicitly releases the hold."
+}

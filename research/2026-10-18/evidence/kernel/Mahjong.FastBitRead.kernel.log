@@ -1,0 +1,5 @@
+'Mahjong.FastBitRead.byte_bit' depends on axioms: [propext, Quot.sound]
+'Mahjong.FastBitRead.labelPNat_eq' depends on axioms: [propext, Quot.sound]
+'Mahjong.FastBitRead.byte_index64' depends on axioms: [propext]
+'Mahjong.FastBitRead.byte_shift64' depends on axioms: [propext]
+'Mahjong.FastBitRead.labelP64_eq' depends on axioms: [propext, Quot.sound]

@@ -1,5 +1,22 @@
 # Changelog
 
+## Unreleased - 2026-10-18
+
+- Publish V16 source and existing evidence: 132 linked Lean modules, 104
+  selected recorded theorem fingerprints/axiom logs, GPU and controller code,
+  all 34 calibration cases, resource and production controls, and prelaunch state.
+- Record complete layer 32 (280,542,509 unique rows); complete layers 32–34
+  together cover 303,054,865 rows. Conditional samples add no complete layers.
+- Replace the earlier stopped-work outlook with an approaching-final-campaign
+  status and conditional finish expectation within 20 hours of an authorized
+  start. Known costs including 25% margin total 13.0256 hours; six production
+  costs and final admission remain unresolved.
+- Keep the full scan unstarted and the user hold intact while correctness is
+  independently reviewed. Do not claim complete table certification or a closed
+  Lean opening theorem. Welcome deeper verification and alternative contributions.
+- Preserve both dated English papers and the immutable v1.0.0 release. Update
+  current documentation, citation context and status metadata; create no new release.
+
 ## 1.0.0 - 2026-09-15
 
 - Publish the English Lean verification paper alongside the original English

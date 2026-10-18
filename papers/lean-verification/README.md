@@ -6,7 +6,10 @@
 Enumeration, and Retrograde Models* — **feierbuqiu**, 15 September 2026.
 
 This paper is published alongside the [September 13 computational paper](../manuscript.md)
-in **v1.0.0**, the release closing the maintainer's active research phase.
+in **v1.0.0**, which fixed the September delivery. The
+[October update](../../research/2026-10-18/README.md) supplies later source and
+evidence: a planned sub-20-hour campaign, not yet started and under independent
+correctness review. This dated paper retains its original text.
 It explains the later concrete strategy bank, compiled checks of layers 33/34,
 finite enumeration and algorithm proofs, implementation tests, and remaining
 obligations. It preserves the computational second-player conclusion and the

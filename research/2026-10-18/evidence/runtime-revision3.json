@@ -1,0 +1,231 @@
+{
+  "actual_Native_GPU_WSL_or_compiler_processes_started_by_snapshot": 0,
+  "actual_game_rows_in_source_controls": 0,
+  "actual_source_branch_controls": 19,
+  "actual_tiny_request_bound": 512,
+  "all_four_functional_phases_must_use_this_exact_source_and_fresh_names": true,
+  "allowed_source_delta": [
+    {
+      "new": {
+        "bytes": 19475,
+        "sha256": "ba5fb47b6c54c2581dea5f98505b8c7b6b95181dbaad68e9fa281d4b3a7d2345"
+      },
+      "old": {
+        "bytes": 19409,
+        "sha256": "8341b566e9d7442a760009e1e1a0109a384f793b8df871ebf653fbb9f71b3fff"
+      },
+      "path": "build/lean_table_checker/campaign_indexed_v16/fused_transport.py"
+    },
+    {
+      "new": {
+        "bytes": 27271,
+        "sha256": "091d78531e154c0293b237d9371fa17182e7d23c292725e87cb83aa28471df08"
+      },
+      "old": {
+        "bytes": 27257,
+        "sha256": "3526cb41bb48d4063cb06f36a4a5ba0509254b0cc2affb8abd7110c66796ee52"
+      },
+      "path": "build/lean_table_checker/campaign_indexed_v16/runner.py"
+    }
+  ],
+  "backend": "linux_fused_joint_indexed_byte_checked_constructor_native_cache_v16",
+  "contract_controls": 60,
+  "epoch_controls": 29,
+  "files": {
+    "build/lean_table_checker/campaign_indexed_v16/DERIVATION.md": {
+      "bytes": 3527,
+      "sha256": "e60da9ad0b444d91c2f58c7c5f3f43f2fa3bec4a01dfe924900f6bd5f9539608"
+    },
+    "build/lean_table_checker/campaign_indexed_v16/WORKER_GATE.md": {
+      "bytes": 3739,
+      "sha256": "2dce78b5963fe57f0a28390cbf0b5bd632993db8076b6fc1734a2f6861e13cc4"
+    },
+    "build/lean_table_checker/campaign_indexed_v16/assemble_worker_gate.py": {
+      "bytes": 8598,
+      "sha256": "a8dafbfbe7b20a3fc072618b8b96c197ed95d92b98548f14637f329fd6d2aa97"
+    },
+    "build/lean_table_checker/campaign_indexed_v16/cache_transport.py": {
+      "bytes": 9088,
+      "sha256": "c9bc98c8ea47cdf6f5c1ba0eb9e062e8c2cc7ddae54b9c6b6a1185b78aa7a674"
+    },
+    "build/lean_table_checker/campaign_indexed_v16/campaign.py": {
+      "bytes": 43718,
+      "sha256": "19c2f7420939c3bb706f9e6de6801218503eccdc8654ffb24c6ddcb6074078ec"
+    },
+    "build/lean_table_checker/campaign_indexed_v16/campaign_io.py": {
+      "bytes": 3477,
+      "sha256": "354b1934609734f593f38aa70e8e07178909bdc122f358df71484e62360feb09"
+    },
+    "build/lean_table_checker/campaign_indexed_v16/collect_fees.py": {
+      "bytes": 10248,
+      "sha256": "06caabfb77bee441f6357a60a8ab23bc25824f88788515e583cfbd12f6ece9b9"
+    },
+    "build/lean_table_checker/campaign_indexed_v16/compact_transport.py": {
+      "bytes": 18932,
+      "sha256": "abc9570c04d0a1967951ace2e6060d6af3745c1d1e1be9e3f807e33c5f5f7723"
+    },
+    "build/lean_table_checker/campaign_indexed_v16/cost_gate.py": {
+      "bytes": 12478,
+      "sha256": "ced153af2541465a549d80216a5d05493d2cc11f8127a8b0869af4320e0a49f3"
+    },
+    "build/lean_table_checker/campaign_indexed_v16/finite_premises.py": {
+      "bytes": 4950,
+      "sha256": "e4f64e79de03a7c6c6c559c3da02844d2193cef7f1255da4e4fc7c8aa3b55aaa"
+    },
+    "build/lean_table_checker/campaign_indexed_v16/frame_planner.py": {
+      "bytes": 8646,
+      "sha256": "276644a6296dfb9296a8122a6b7954c8c842af075d673fd38fe58321c6b9e259"
+    },
+    "build/lean_table_checker/campaign_indexed_v16/frame_registry.py": {
+      "bytes": 5092,
+      "sha256": "b16a5ab418c84b6bf19e72a5d4de294eb6ccf5e956e270af67fed17c11bf6f38"
+    },
+    "build/lean_table_checker/campaign_indexed_v16/fused_transport.py": {
+      "bytes": 19475,
+      "sha256": "ba5fb47b6c54c2581dea5f98505b8c7b6b95181dbaad68e9fa281d4b3a7d2345"
+    },
+    "build/lean_table_checker/campaign_indexed_v16/indexed_runtime.py": {
+      "bytes": 2997,
+      "sha256": "2170e3ecc730f4daaf354f8d570b4d442692b59f426b72fb036fbdb91e07d319"
+    },
+    "build/lean_table_checker/campaign_indexed_v16/input_snapshot.py": {
+      "bytes": 4269,
+      "sha256": "fbd0febd2dda136b3a9348751f5521e625439713d18b61563d537e21b252c763"
+    },
+    "build/lean_table_checker/campaign_indexed_v16/integration_contract.py": {
+      "bytes": 12047,
+      "sha256": "9ecf6f6b54640700038f2b601f9ceb643b0f709924190628fa81fec683e868c3"
+    },
+    "build/lean_table_checker/campaign_indexed_v16/invocation_budget.py": {
+      "bytes": 5328,
+      "sha256": "576c0c92929fefb41ed25f066284f25a076df89a928b9149c7a51d075f470a22"
+    },
+    "build/lean_table_checker/campaign_indexed_v16/keep_awake.py": {
+      "bytes": 817,
+      "sha256": "4ceeaac0cd908fb710b64ca537dae8b5c4b1a633051c0af10a9497d9c8a02102"
+    },
+    "build/lean_table_checker/campaign_indexed_v16/launch_campaign.py": {
+      "bytes": 19246,
+      "sha256": "ae496d00399dec047dd5aed0eba2922c280b94ddec90e9037f895e1b6e93fe82"
+    },
+    "build/lean_table_checker/campaign_indexed_v16/ledger.py": {
+      "bytes": 13955,
+      "sha256": "6765d0d08f228bb19a618342fda94f0c0f9aea8e14a672fe9c00684d8d313ba2"
+    },
+    "build/lean_table_checker/campaign_indexed_v16/linux_worker_gate.py": {
+      "bytes": 35345,
+      "sha256": "b7ff32268c66d1295d6f616d9dab91cb2012d672b593ce7cf4b56448b8653175"
+    },
+    "build/lean_table_checker/campaign_indexed_v16/local_reports.py": {
+      "bytes": 3817,
+      "sha256": "6fade6f73e55c37ab4546bc4e7778fad6caa48912f040f35544eb05f4bc69dae"
+    },
+    "build/lean_table_checker/campaign_indexed_v16/path_guard.py": {
+      "bytes": 1145,
+      "sha256": "8d4ae7bd5b0deb7a77dd17c95635fc38cd9727d6f9188c0aaf0f322a6eba69bd"
+    },
+    "build/lean_table_checker/campaign_indexed_v16/prepare_full_queue.py": {
+      "bytes": 3996,
+      "sha256": "353648e53297a89bf1763de63260bb30970b2ebc3422a02b00f928d016b3cbfb"
+    },
+    "build/lean_table_checker/campaign_indexed_v16/prepare_source_plan.py": {
+      "bytes": 13039,
+      "sha256": "8e669ab1b7f5b95922be0db7f4821c139883afdff2de40d41df7a42b99dc8c13"
+    },
+    "build/lean_table_checker/campaign_indexed_v16/prior_import.py": {
+      "bytes": 7988,
+      "sha256": "9c4bcd7bc38f1bc4509b5c8adcf39631d529f4665fd0f60c62af6aed598f4b86"
+    },
+    "build/lean_table_checker/campaign_indexed_v16/production_metrics.py": {
+      "bytes": 2141,
+      "sha256": "f81d513087e62c8abd1ed8992ba49e2fdf30f1b63a4eef977d391d45789cb3ae"
+    },
+    "build/lean_table_checker/campaign_indexed_v16/resource_job.py": {
+      "bytes": 5507,
+      "sha256": "a845264b41c14f58b806bd8dad1b24245b8c00a32a5f560337a101f3f33a371a"
+    },
+    "build/lean_table_checker/campaign_indexed_v16/run_functional.py": {
+      "bytes": 16675,
+      "sha256": "73993fcb0edd985fbfca752bea91bb7c0aa0d229b855ad845ec116f7a51738f3"
+    },
+    "build/lean_table_checker/campaign_indexed_v16/runner.py": {
+      "bytes": 27271,
+      "sha256": "091d78531e154c0293b237d9371fa17182e7d23c292725e87cb83aa28471df08"
+    },
+    "build/lean_table_checker/campaign_indexed_v16/scope_lifecycle.py": {
+      "bytes": 2835,
+      "sha256": "bc10467d220cf1d31f42c1d703742efbc4fc514729d5f30550a936f85565661c"
+    },
+    "build/lean_table_checker/campaign_indexed_v16/span_policy.py": {
+      "bytes": 6420,
+      "sha256": "1f355fb00fc0bcfdd5146ecb3c4fc98faa3d0f7908ea03b4f140b4869d59f3b8"
+    },
+    "build/lean_table_checker/campaign_indexed_v16/stop_unreceipted.py": {
+      "bytes": 2455,
+      "sha256": "c33de77faa4780cdb47864af9288964a53f15463f76ca9dfc6a59f844abc3a22"
+    },
+    "build/lean_table_checker/campaign_indexed_v16/test_contract.py": {
+      "bytes": 9721,
+      "sha256": "96c361be3ed04ca67335af7ac3e9b21c56b8376adb9a65e6d7bbf9277c61ad47"
+    },
+    "build/lean_table_checker/campaign_indexed_v16/test_epoch_controls.py": {
+      "bytes": 8128,
+      "sha256": "73e1c1f04944db162ba4bc5c1847100859d6803d92e1715c5c344338b7ba3413"
+    },
+    "build/lean_table_checker/campaign_indexed_v16/test_linux_worker_gate.py": {
+      "bytes": 8192,
+      "sha256": "2b7037fc318b99ed5c060fdeff48d02a0ef7bf70dbccd4b3ec54b6d4aee6084f"
+    },
+    "build/lean_table_checker/campaign_indexed_v16/worker_gate.py": {
+      "bytes": 7026,
+      "sha256": "17545650690c486484070b6619b5cacd8ac73df6c6cf588a93d5cec27e822dc8"
+    }
+  },
+  "full_launch_allowed": false,
+  "future_full_manifest_requires_new_name": "overnight_v16_indexed_r3",
+  "new_actual_byte_corruption_still_inside_original_Bridge": true,
+  "old_8byte_packet_corruption_unreachable_on_actual_fused_1byte_path": true,
+  "old_partial_or_PASS_revision2_functionals_not_same_source_evidence": true,
+  "ordinary_profile_duration_and_full_frame_path_unchanged": true,
+  "original_source_bits_read": 0,
+  "previous_runtime_source_freeze": {
+    "bytes": 9588,
+    "path": "runs/lean_table_checker/campaign_indexed_20261018_v16/runtime_source_v2_1792286124150127800/SOURCE_FREEZE_RUNTIME_V16_REVISION2.json",
+    "sha256": "348099fe0ae1d94a7468a7d6660bdc5b3dc0df06190ff746e1c5b9af7863cf2c"
+  },
+  "pure_kernel_theorem_count": 104,
+  "record_bytes": 1,
+  "runtime_controls": 40,
+  "schema": "JOINT_INDEXED_BYTE_PRODUCTION_CONTROLLER_RUNTIME_SOURCE_FREEZE_V16",
+  "sealer_hidden_host_native_proof_GPU_worker_and_bounded_gate_sources_unchanged": true,
+  "source_controls": [
+    {
+      "bytes": 3985,
+      "path": "runs/lean_table_checker/campaign_indexed_20261018_v16/revision3_controls/1792287734900194100/controls.json",
+      "sha256": "a6532b0d026cce1d47ce66e991bf5cc2c75212bba7215889e69fc6c452bc72aa"
+    },
+    {
+      "bytes": 11660,
+      "path": "runs/lean_table_checker/campaign_indexed_20261018_v16/source_runtime_controls/1792287735147704200/controls.json",
+      "sha256": "861825ce16345a544e59ad74d7c6b0b638b33201bf4f06e43477c19cae91fc47"
+    },
+    {
+      "bytes": 6710,
+      "path": "runs/lean_table_checker/campaign_indexed_20261018_v16/source_controls_1792287735747425000.json",
+      "sha256": "2f2e9b4532f30c9c4228883ae791ddd75ec003c0e8849c5e78347b3ac5675e4b"
+    },
+    {
+      "bytes": 5229,
+      "path": "runs/lean_table_checker/campaign_indexed_20261018_v16/pure_controls/epoch_1792287735869388800.json",
+      "sha256": "405545be38e0ef8b460d50fcda36a9260527c0a6046a032005e15282ad7670ce"
+    }
+  ],
+  "source_file_count": 37,
+  "source_revision": "INDEXED_NEGATIVE_ONLY_BRIDGE_AND_BOUNDED60_DOMAIN_REVISION3",
+  "source_snapshot_custody": "All current sources and controls share-read-only through snapshot save",
+  "span_protocol": "fused_linux_v16_joint_indexed_byte_checked_constructor_native_cache",
+  "status": "SOURCE_AST_AND_SMALL_CONTROLS_ONLY_WAIT_FRESH_ALL4_FUNCTIONAL_PHASES",
+  "threads": 12,
+  "tiny_negative_only_max_seconds": 60,
+  "transport": "indexed_actual_next_byte_v16"
+}

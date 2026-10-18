@@ -1,0 +1,1576 @@
+{
+  "TargetCorrect_registry_entries_added": 0,
+  "accounting_contract": "ENTIRE_NATIVE_EPOCH_FIRST_PLAN_PLUS_ALL_STEADY_T_INDEXED_V16",
+  "backend": "linux_fused_joint_indexed_byte_checked_constructor_native_cache_v16",
+  "bucket_cold_seconds": 4.125,
+  "bucket_total_seconds": 9.46899999998277,
+  "case_id": "stratum_16",
+  "conditional_performance_only": true,
+  "final_native_shutdown_seconds": 0.057281799999998384,
+  "frames": [
+    {
+      "count": 67108864,
+      "first_block_templates": 21,
+      "frame_templates": 116603,
+      "native_epoch": 17,
+      "native_lifecycle": {
+        "RSS_before_bytes": 530710528,
+        "native_epochs": 17,
+        "native_io_policy": {
+          "native_max_frames_per_epoch": 16,
+          "pipe_capacity_bytes": 1048576
+        },
+        "ready_seconds": 0.0,
+        "rotated": false,
+        "shutdown_seconds": 0.0,
+        "stdin_pipe_capacity": {
+          "actual_capacity_bytes": 1048576,
+          "capacity_get_confirmed": true,
+          "configuration_seconds": 8.200000024771725e-06,
+          "configured_by_uid": 1000,
+          "default_capacity_bytes": 65536,
+          "requested_capacity_bytes": 1048576,
+          "set_return_capacity_bytes": 1048576
+        },
+        "total_seconds": 0.0
+      },
+      "plan_edges": 4553731,
+      "proposal": {
+        "GPU_trusted_for_soundness": false,
+        "Lean_rows_verified": 0,
+        "actual_chunk_count": 8,
+        "chunks": [
+          {
+            "compact_bytes": 8388608,
+            "copy_seconds": 0.0015702000000032967,
+            "count": 8388608,
+            "enclosing_chunk_wall_seconds": 0.24746849799998927,
+            "host_byte_offset": 0,
+            "host_row_offset": 0,
+            "indexed_bytes": 8388608,
+            "kernel_seconds": 0.24382249450683594,
+            "start": 373520322
+          },
+          {
+            "compact_bytes": 8388608,
+            "copy_seconds": 0.0015510999999719388,
+            "count": 8388608,
+            "enclosing_chunk_wall_seconds": 0.022309199999995144,
+            "host_byte_offset": 8388608,
+            "host_row_offset": 8388608,
+            "indexed_bytes": 8388608,
+            "kernel_seconds": 0.020590848922729492,
+            "start": 381908930
+          },
+          {
+            "compact_bytes": 8388608,
+            "copy_seconds": 0.0016281999999705477,
+            "count": 8388608,
+            "enclosing_chunk_wall_seconds": 0.021487100000001647,
+            "host_byte_offset": 16777216,
+            "host_row_offset": 16777216,
+            "indexed_bytes": 8388608,
+            "kernel_seconds": 0.019734432220458984,
+            "start": 390297538
+          },
+          {
+            "compact_bytes": 8388608,
+            "copy_seconds": 0.0014132000000017797,
+            "count": 8388608,
+            "enclosing_chunk_wall_seconds": 0.02074589999995169,
+            "host_byte_offset": 25165824,
+            "host_row_offset": 25165824,
+            "indexed_bytes": 8388608,
+            "kernel_seconds": 0.019237823486328125,
+            "start": 398686146
+          },
+          {
+            "compact_bytes": 8388608,
+            "copy_seconds": 0.0013705999999729102,
+            "count": 8388608,
+            "enclosing_chunk_wall_seconds": 0.0211947999999893,
+            "host_byte_offset": 33554432,
+            "host_row_offset": 33554432,
+            "indexed_bytes": 8388608,
+            "kernel_seconds": 0.019700319290161132,
+            "start": 407074754
+          },
+          {
+            "compact_bytes": 8388608,
+            "copy_seconds": 0.0016064000000142187,
+            "count": 8388608,
+            "enclosing_chunk_wall_seconds": 0.020168699000009838,
+            "host_byte_offset": 41943040,
+            "host_row_offset": 41943040,
+            "indexed_bytes": 8388608,
+            "kernel_seconds": 0.018445375442504883,
+            "start": 415463362
+          },
+          {
+            "compact_bytes": 8388608,
+            "copy_seconds": 0.0014295999999944797,
+            "count": 8388608,
+            "enclosing_chunk_wall_seconds": 0.019170600000052218,
+            "host_byte_offset": 50331648,
+            "host_row_offset": 50331648,
+            "indexed_bytes": 8388608,
+            "kernel_seconds": 0.0175599365234375,
+            "start": 423851970
+          },
+          {
+            "compact_bytes": 8388608,
+            "copy_seconds": 0.0013902999999686472,
+            "count": 8388608,
+            "enclosing_chunk_wall_seconds": 0.018424799999991137,
+            "host_byte_offset": 58720256,
+            "host_row_offset": 58720256,
+            "indexed_bytes": 8388608,
+            "kernel_seconds": 0.016907487869262695,
+            "start": 432240578
+          }
+        ],
+        "combined_kernel_seconds": 0.3759987182617188,
+        "compact_bytes": 67108864,
+        "completed_spans": 1,
+        "copy_seconds": 0.011959599999897819,
+        "copy_timing_policy": "SUM_CHUNK_DTOH_AND_GUARD_WALL_HOST_ALLOCATION_SEPARATE",
+        "count": 67108864,
+        "device_output_scratch_bytes": 8388608,
+        "endianness": "little",
+        "fixed_identity_sha256": "676f3b9abf6f539ccb38ade7e4b7470b0eb71e5e58b16ee5b6a508b205f31307",
+        "generation": 17,
+        "gpu_flags_trusted": false,
+        "honor": 73,
+        "host_allocation_seconds": 0.019109399999990728,
+        "host_output_buffer_allocations": 1,
+        "identity_sha256": "b27884940b73b2fde219b533f23e44e390c3c20721ed7d5eaa8984d23d57df1b",
+        "implementation_revision": "INDEXED_ACTUAL_NEXT_BYTE_BOUNDED_8MI_SCRATCH_V16",
+        "indexed_bytes": 67108864,
+        "intermediate_chunk_host_buffers": 0,
+        "layer": 26,
+        "locked_manifest_sha256": "1b1dc73d7fdd41236e695a96686bdd75c3b5c5b9901f12db0772b7337f2721ab",
+        "mode": 1,
+        "native_actual_next_membership_required": true,
+        "native_actual_source_r_guard_required": true,
+        "payload_hashed": false,
+        "payload_saved_to_disk": false,
+        "per_row_timing_or_sampling_added": false,
+        "process_owner": {
+          "implementation_revision": "INDEXED_ACTUAL_NEXT_BYTE_BOUNDED_8MI_SCRATCH_V16",
+          "launch_kind": "IMPORTED_API",
+          "pid": 430,
+          "process_state": "S",
+          "schema": "OWNED_CROSS_BUCKET_GPU_INDEXED_BYTE_PROCESS_V16",
+          "script": "build/lean_table_checker/gpu_indexed_byte_v16/worker.py",
+          "script_sha256": "adce9593d5dbbb7937abf6f392d751ad551e189af7daa6b8c6f5bea87584404f",
+          "session_token": "e9f1c7920cdd44548af52b4a075e75f4",
+          "start_ticks": 484
+        },
+        "proposal_work_seconds": 0.4120587970000429,
+        "record_bytes": 1,
+        "resources": {
+          "GPU_context_closed": false,
+          "allocated_device_bytes": 298950472,
+          "declared_device_bytes": 298950472,
+          "device_cap_bytes": 6000000000,
+          "device_output_scratch_bytes": 8388608,
+          "global_device_cap_bytes": 7000000000,
+          "global_device_free_reserve_bytes": 1000000000,
+          "global_device_used_bytes": 1428881408,
+          "host_rss_cap_bytes": 3000000000,
+          "implementation_revision": "INDEXED_ACTUAL_NEXT_BYTE_BOUNDED_8MI_SCRATCH_V16",
+          "maximum_proposal_rows": 67108864,
+          "peak_host_rss_bytes": 423362560,
+          "record_bytes": 1,
+          "scratch_rows": 8388608,
+          "streamed_input_buffer_bytes": 33554432,
+          "transport": "indexed_actual_next_byte_v16"
+        },
+        "schema": "UNTRUSTED_CROSS_BUCKET_INDEXED_BYTE_PROPOSAL_V16",
+        "scratch_rows": 8388608,
+        "session_completed_spans": 49,
+        "session_token": "e9f1c7920cdd44548af52b4a075e75f4",
+        "source_coordinates_transmitted": false,
+        "start": 373520322,
+        "status": "STREAMED_NOT_LEAN_CERTIFIED",
+        "transport": "indexed_actual_next_byte_v16"
+      },
+      "root_frame_timings": {
+        "root_RPC_wall_seconds": 1.9369999999762513,
+        "root_complete_frame_wall_seconds": 2.0939999999827705,
+        "root_complete_packed_bytes_compare_seconds": 0.0,
+        "root_evidence_binding_hash_seconds": 0.01600000000325963,
+        "root_finite_work_and_timer_validation_seconds": 0.0,
+        "root_frame_wall_before_timing_receipt_seconds": 2.077999999979511,
+        "root_native_packed_file_read_seconds": 0.0,
+        "root_native_result_and_packed_fsync_seconds": 0.0,
+        "root_original_source_bitspan_read_extract_seconds": 0.0470000000204891,
+        "root_packed_popcount_and_PN_seconds": 0.06299999996554106,
+        "root_prefix_atomic_ledger_seconds": 0.0,
+        "root_reply_atomic_save_seconds": 0.015000000013969839,
+        "root_result_JSON_read_seconds": 0.0,
+        "root_timing_receipt_save_and_hash_seconds": 0.01600000000325963
+      },
+      "template_work": {
+        "actual_plan_templates": 116603,
+        "all_SAFE_and_unsafe_keys_counted": true,
+        "first_block_templates": 21,
+        "templates": 116603
+      },
+      "transport_timing": {
+        "bridge_span_total_wall_seconds": 1.9332804850000116,
+        "native_envelope_schema": "NATIVE_INDEXED_BYTE_SPAN_WALL_ENVELOPES_V16",
+        "native_span_total_wall_seconds": 1.516821987999947,
+        "overlaps_native_payload_read_and_GPU_prefetch": true,
+        "payload_was_prefetched": false,
+        "payload_write_includes_header_footer_flush": true,
+        "payload_write_wall_seconds": 0.050375300000041534,
+        "prefetch_wait_wall_seconds": 0.4123771970000121,
+        "profile": "WALL_ENVELOPES_INDEXED_BYTE_V16_1",
+        "receive_response_includes_Lean_core_and_save": true,
+        "receive_response_wall_seconds": 1.461976887999981,
+        "schema": "FUSED_LINUX_INDEXED_BYTE_FRAME_WALL_ENVELOPES_V16",
+        "these_nested_envelopes_must_not_be_added_to_native_core": true
+      },
+      "worker": {
+        "N_rows": 45932837,
+        "P_rows": 21176027,
+        "actual_successors_all_checked": true,
+        "checked_rows": 67108864,
+        "child_roundtrips": 0,
+        "compact_bytes": 67108864,
+        "compact_word_mode": false,
+        "constructor_build_and_check_task_sum_ns": 1160355588,
+        "count": 67108864,
+        "effective_work_ns": 1279757990,
+        "frame_block_cap": 8192,
+        "frame_full_templates_without_reuse": 116603,
+        "frame_template_cap": 500000,
+        "frame_template_count_includes_SAFE_and_unsafe": true,
+        "full_table_Lean": "NOT_VERIFIED",
+        "gpu_source_packet_mode": false,
+        "gpu_witness_mode": true,
+        "honor": 73,
+        "hot_ns": 1144223791,
+        "hot_snapshot_build_ns": 51851600,
+        "indexed_byte_mode": true,
+        "input_fragment_count": 12,
+        "input_fragment_max_bytes": 5592406,
+        "input_memory_lifetime": "MAIN_PIECE_OWNERS_UNTIL_ALL_TASKS_JOIN_V16",
+        "label_bytes": 8388608,
+        "label_format": "PACKED_LSB0",
+        "label_padding_bits": 0,
+        "label_valid_bits": 67108864,
+        "large_frame_policy": "BOUNDED_64MI_ROWS_COMPLETE_T_INDEXED_BYTE_V16",
+        "layer": 26,
+        "load_ns": 836474494,
+        "metadata_check_ns": 70800300,
+        "native_epoch_frame_cap": 16,
+        "payload_end_bytes": 24,
+        "per_row_timing_or_sampling_added": false,
+        "phase_diagnostics": "STDERR_JSONL",
+        "plan_blocks": 5696,
+        "plan_build_ns": 52193800,
+        "plan_check_ns": 1160355588,
+        "plan_check_ns_includes_constructor_build": true,
+        "plan_checker_kind": "PROVED_BORROWED_NEXT_GLOBAL_NEXT_GENERATED_PLAN_V12",
+        "plan_component_timing": "PARALLEL_TASK_SUMS_NOT_WALL",
+        "plan_constructor_kind": "PROVED_ONCE_CHECKED_TEMPLATE_CONSTRUCTOR_V16",
+        "plan_edges": 4553731,
+        "plan_phase_wall_ns": 135534199,
+        "plan_prepare_workers": 12,
+        "plan_rows": 525956,
+        "plan_templates": 116603,
+        "plans_reused": 0,
+        "producer_cache_hits": 4437128,
+        "proposal_load_ns": 48337100,
+        "pure_checker_theorem_fingerprints": 104,
+        "raw_plan_build_ns": 342200,
+        "raw_plan_build_ns_is_context_only": true,
+        "reference_ns": 46263899,
+        "reference_policy": "ONCE_FIRST_SPAN_PER_BUCKET_DIAGNOSTIC",
+        "reference_rows": 64,
+        "resident_count_cap": 67108864,
+        "resident_mode": true,
+        "row_checker_kind": "PROVED_INDEXED_NEXT_BYTE_SCALAR_SCAN_V16",
+        "row_partition_checked": true,
+        "row_partition_chunks": 12,
+        "row_rounds": 1,
+        "row_scan_ns": 1144223791,
+        "row_schedule_kind": "PROVED_CONTIGUOUS_PARTITION_STRIDED_FIXED_ROUNDS_V13",
+        "row_worker_diagnostics": [
+          {
+            "N_rows": 4173147,
+            "P_rows": 1419258,
+            "assigned_rows": 5592405,
+            "chunk_count": 1,
+            "chunks": [
+              {
+                "chunk": 0,
+                "count": 5592405,
+                "first": 373520322
+              }
+            ],
+            "nonempty_chunks": 1,
+            "source_cursor_initializations": 417,
+            "wall_ns": 951808493,
+            "worker": 0
+          },
+          {
+            "N_rows": 4082558,
+            "P_rows": 1509847,
+            "assigned_rows": 5592405,
+            "chunk_count": 1,
+            "chunks": [
+              {
+                "chunk": 1,
+                "count": 5592405,
+                "first": 379112727
+              }
+            ],
+            "nonempty_chunks": 1,
+            "source_cursor_initializations": 201,
+            "wall_ns": 893488693,
+            "worker": 1
+          },
+          {
+            "N_rows": 4138576,
+            "P_rows": 1453830,
+            "assigned_rows": 5592406,
+            "chunk_count": 1,
+            "chunks": [
+              {
+                "chunk": 2,
+                "count": 5592406,
+                "first": 384705132
+              }
+            ],
+            "nonempty_chunks": 1,
+            "source_cursor_initializations": 137,
+            "wall_ns": 821906694,
+            "worker": 2
+          },
+          {
+            "N_rows": 4151383,
+            "P_rows": 1441022,
+            "assigned_rows": 5592405,
+            "chunk_count": 1,
+            "chunks": [
+              {
+                "chunk": 3,
+                "count": 5592405,
+                "first": 390297538
+              }
+            ],
+            "nonempty_chunks": 1,
+            "source_cursor_initializations": 203,
+            "wall_ns": 900209693,
+            "worker": 3
+          },
+          {
+            "N_rows": 4138045,
+            "P_rows": 1454360,
+            "assigned_rows": 5592405,
+            "chunk_count": 1,
+            "chunks": [
+              {
+                "chunk": 4,
+                "count": 5592405,
+                "first": 395889943
+              }
+            ],
+            "nonempty_chunks": 1,
+            "source_cursor_initializations": 245,
+            "wall_ns": 938225393,
+            "worker": 4
+          },
+          {
+            "N_rows": 3909352,
+            "P_rows": 1683054,
+            "assigned_rows": 5592406,
+            "chunk_count": 1,
+            "chunks": [
+              {
+                "chunk": 5,
+                "count": 5592406,
+                "first": 401482348
+              }
+            ],
+            "nonempty_chunks": 1,
+            "source_cursor_initializations": 203,
+            "wall_ns": 1043544992,
+            "worker": 5
+          },
+          {
+            "N_rows": 3938167,
+            "P_rows": 1654238,
+            "assigned_rows": 5592405,
+            "chunk_count": 1,
+            "chunks": [
+              {
+                "chunk": 6,
+                "count": 5592405,
+                "first": 407074754
+              }
+            ],
+            "nonempty_chunks": 1,
+            "source_cursor_initializations": 229,
+            "wall_ns": 939365593,
+            "worker": 6
+          },
+          {
+            "N_rows": 3987537,
+            "P_rows": 1604868,
+            "assigned_rows": 5592405,
+            "chunk_count": 1,
+            "chunks": [
+              {
+                "chunk": 7,
+                "count": 5592405,
+                "first": 412667159
+              }
+            ],
+            "nonempty_chunks": 1,
+            "source_cursor_initializations": 275,
+            "wall_ns": 906818793,
+            "worker": 7
+          },
+          {
+            "N_rows": 3477973,
+            "P_rows": 2114433,
+            "assigned_rows": 5592406,
+            "chunk_count": 1,
+            "chunks": [
+              {
+                "chunk": 8,
+                "count": 5592406,
+                "first": 418259564
+              }
+            ],
+            "nonempty_chunks": 1,
+            "source_cursor_initializations": 902,
+            "wall_ns": 1006608692,
+            "worker": 8
+          },
+          {
+            "N_rows": 3163792,
+            "P_rows": 2428613,
+            "assigned_rows": 5592405,
+            "chunk_count": 1,
+            "chunks": [
+              {
+                "chunk": 9,
+                "count": 5592405,
+                "first": 423851970
+              }
+            ],
+            "nonempty_chunks": 1,
+            "source_cursor_initializations": 1915,
+            "wall_ns": 1143837691,
+            "worker": 9
+          },
+          {
+            "N_rows": 3339631,
+            "P_rows": 2252774,
+            "assigned_rows": 5592405,
+            "chunk_count": 1,
+            "chunks": [
+              {
+                "chunk": 10,
+                "count": 5592405,
+                "first": 429444375
+              }
+            ],
+            "nonempty_chunks": 1,
+            "source_cursor_initializations": 452,
+            "wall_ns": 1085077892,
+            "worker": 10
+          },
+          {
+            "N_rows": 3432676,
+            "P_rows": 2159730,
+            "assigned_rows": 5592406,
+            "chunk_count": 1,
+            "chunks": [
+              {
+                "chunk": 11,
+                "count": 5592406,
+                "first": 435036780
+              }
+            ],
+            "nonempty_chunks": 1,
+            "source_cursor_initializations": 528,
+            "wall_ns": 1071677292,
+            "worker": 11
+          }
+        ],
+        "runtime_task_mode": "REGULAR_POOL",
+        "save_ns": 101040400,
+        "scan_includes_plan_build_and_check": true,
+        "scan_ns": 1279757990,
+        "schema": "PACKED_INDEXED_BYTE_FRAME_LEAN_PERSISTENT_SPAN_V16",
+        "shared_load_attributed_ns": 788137394,
+        "shared_load_ns": 788137394,
+        "small_plan_serial_template_threshold": 4096,
+        "source_block_cover_checked": true,
+        "source_decode_calls": 5707,
+        "source_decode_calls_kind": "ONCE_PER_CHECKED_SOURCE_BLOCK_RUN",
+        "source_r_guard_every_row": true,
+        "source_roundtrips": 0,
+        "start": 373520322,
+        "status": "PASS_COMPILED_LEAN_PACKED_INDEXED_BYTE_FRAME_PERSISTENT_SPAN_V16",
+        "stream_payload_read_ns": 48337100,
+        "template_plan_checker": true,
+        "threads": 12,
+        "transport": "indexed_actual_next_byte_v16",
+        "work_ns": 1279757990,
+        "worker_nonempty_chunk_initializations": 12
+      }
+    },
+    {
+      "count": 67108864,
+      "first_block_templates": 29,
+      "frame_templates": 135250,
+      "native_epoch": 17,
+      "native_lifecycle": {
+        "RSS_before_bytes": 634429440,
+        "native_epochs": 17,
+        "native_io_policy": {
+          "native_max_frames_per_epoch": 16,
+          "pipe_capacity_bytes": 1048576
+        },
+        "ready_seconds": 0.0,
+        "rotated": false,
+        "shutdown_seconds": 0.0,
+        "stdin_pipe_capacity": {
+          "actual_capacity_bytes": 1048576,
+          "capacity_get_confirmed": true,
+          "configuration_seconds": 8.200000024771725e-06,
+          "configured_by_uid": 1000,
+          "default_capacity_bytes": 65536,
+          "requested_capacity_bytes": 1048576,
+          "set_return_capacity_bytes": 1048576
+        },
+        "total_seconds": 0.0
+      },
+      "plan_edges": 4665334,
+      "proposal": {
+        "GPU_trusted_for_soundness": false,
+        "Lean_rows_verified": 0,
+        "actual_chunk_count": 8,
+        "chunks": [
+          {
+            "compact_bytes": 8388608,
+            "copy_seconds": 0.0031879000000003543,
+            "count": 8388608,
+            "enclosing_chunk_wall_seconds": 0.018904700000007324,
+            "host_byte_offset": 0,
+            "host_row_offset": 0,
+            "indexed_bytes": 8388608,
+            "kernel_seconds": 0.015485440254211426,
+            "start": 440629186
+          },
+          {
+            "compact_bytes": 8388608,
+            "copy_seconds": 0.0022892000000069856,
+            "count": 8388608,
+            "enclosing_chunk_wall_seconds": 0.016324199999985467,
+            "host_byte_offset": 8388608,
+            "host_row_offset": 8388608,
+            "indexed_bytes": 8388608,
+            "kernel_seconds": 0.01383296012878418,
+            "start": 449017794
+          },
+          {
+            "compact_bytes": 8388608,
+            "copy_seconds": 0.0019257999999808817,
+            "count": 8388608,
+            "enclosing_chunk_wall_seconds": 0.01575950000000148,
+            "host_byte_offset": 16777216,
+            "host_row_offset": 16777216,
+            "indexed_bytes": 8388608,
+            "kernel_seconds": 0.013638815879821777,
+            "start": 457406402
+          },
+          {
+            "compact_bytes": 8388608,
+            "copy_seconds": 0.0014927000000284352,
+            "count": 8388608,
+            "enclosing_chunk_wall_seconds": 0.015300099000000955,
+            "host_byte_offset": 25165824,
+            "host_row_offset": 25165824,
+            "indexed_bytes": 8388608,
+            "kernel_seconds": 0.013685343742370605,
+            "start": 465795010
+          },
+          {
+            "compact_bytes": 8388608,
+            "copy_seconds": 0.0018354000000044834,
+            "count": 8388608,
+            "enclosing_chunk_wall_seconds": 0.016129200000023047,
+            "host_byte_offset": 33554432,
+            "host_row_offset": 33554432,
+            "indexed_bytes": 8388608,
+            "kernel_seconds": 0.014176992416381836,
+            "start": 474183618
+          },
+          {
+            "compact_bytes": 8388608,
+            "copy_seconds": 0.0016197999999576496,
+            "count": 8388608,
+            "enclosing_chunk_wall_seconds": 0.016118900000037684,
+            "host_byte_offset": 41943040,
+            "host_row_offset": 41943040,
+            "indexed_bytes": 8388608,
+            "kernel_seconds": 0.014318400382995606,
+            "start": 482572226
+          },
+          {
+            "compact_bytes": 8388608,
+            "copy_seconds": 0.0015698999999926855,
+            "count": 8388608,
+            "enclosing_chunk_wall_seconds": 0.016075499999999465,
+            "host_byte_offset": 50331648,
+            "host_row_offset": 50331648,
+            "indexed_bytes": 8388608,
+            "kernel_seconds": 0.01432262420654297,
+            "start": 490960834
+          },
+          {
+            "compact_bytes": 8388608,
+            "copy_seconds": 0.0015976999999907093,
+            "count": 8388608,
+            "enclosing_chunk_wall_seconds": 0.016703000000006796,
+            "host_byte_offset": 58720256,
+            "host_row_offset": 58720256,
+            "indexed_bytes": 8388608,
+            "kernel_seconds": 0.014983039855957031,
+            "start": 499349442
+          }
+        ],
+        "combined_kernel_seconds": 0.11444361686706543,
+        "compact_bytes": 67108864,
+        "completed_spans": 2,
+        "copy_seconds": 0.015518399999962185,
+        "copy_timing_policy": "SUM_CHUNK_DTOH_AND_GUARD_WALL_HOST_ALLOCATION_SEPARATE",
+        "count": 67108864,
+        "device_output_scratch_bytes": 8388608,
+        "endianness": "little",
+        "fixed_identity_sha256": "676f3b9abf6f539ccb38ade7e4b7470b0eb71e5e58b16ee5b6a508b205f31307",
+        "generation": 17,
+        "gpu_flags_trusted": false,
+        "honor": 73,
+        "host_allocation_seconds": 0.02024740000001657,
+        "host_output_buffer_allocations": 1,
+        "identity_sha256": "b27884940b73b2fde219b533f23e44e390c3c20721ed7d5eaa8984d23d57df1b",
+        "implementation_revision": "INDEXED_ACTUAL_NEXT_BYTE_BOUNDED_8MI_SCRATCH_V16",
+        "indexed_bytes": 67108864,
+        "intermediate_chunk_host_buffers": 0,
+        "layer": 26,
+        "locked_manifest_sha256": "1b1dc73d7fdd41236e695a96686bdd75c3b5c5b9901f12db0772b7337f2721ab",
+        "mode": 1,
+        "native_actual_next_membership_required": true,
+        "native_actual_source_r_guard_required": true,
+        "payload_hashed": false,
+        "payload_saved_to_disk": false,
+        "per_row_timing_or_sampling_added": false,
+        "process_owner": {
+          "implementation_revision": "INDEXED_ACTUAL_NEXT_BYTE_BOUNDED_8MI_SCRATCH_V16",
+          "launch_kind": "IMPORTED_API",
+          "pid": 430,
+          "process_state": "S",
+          "schema": "OWNED_CROSS_BUCKET_GPU_INDEXED_BYTE_PROCESS_V16",
+          "script": "build/lean_table_checker/gpu_indexed_byte_v16/worker.py",
+          "script_sha256": "adce9593d5dbbb7937abf6f392d751ad551e189af7daa6b8c6f5bea87584404f",
+          "session_token": "e9f1c7920cdd44548af52b4a075e75f4",
+          "start_ticks": 484
+        },
+        "proposal_work_seconds": 0.1538811990000113,
+        "record_bytes": 1,
+        "resources": {
+          "GPU_context_closed": false,
+          "allocated_device_bytes": 298950472,
+          "declared_device_bytes": 298950472,
+          "device_cap_bytes": 6000000000,
+          "device_output_scratch_bytes": 8388608,
+          "global_device_cap_bytes": 7000000000,
+          "global_device_free_reserve_bytes": 1000000000,
+          "global_device_used_bytes": 1428881408,
+          "host_rss_cap_bytes": 3000000000,
+          "implementation_revision": "INDEXED_ACTUAL_NEXT_BYTE_BOUNDED_8MI_SCRATCH_V16",
+          "maximum_proposal_rows": 67108864,
+          "peak_host_rss_bytes": 423362560,
+          "record_bytes": 1,
+          "scratch_rows": 8388608,
+          "streamed_input_buffer_bytes": 33554432,
+          "transport": "indexed_actual_next_byte_v16"
+        },
+        "schema": "UNTRUSTED_CROSS_BUCKET_INDEXED_BYTE_PROPOSAL_V16",
+        "scratch_rows": 8388608,
+        "session_completed_spans": 50,
+        "session_token": "e9f1c7920cdd44548af52b4a075e75f4",
+        "source_coordinates_transmitted": false,
+        "start": 440629186,
+        "status": "STREAMED_NOT_LEAN_CERTIFIED",
+        "transport": "indexed_actual_next_byte_v16"
+      },
+      "root_frame_timings": {
+        "root_RPC_wall_seconds": 1.5459999999729916,
+        "root_complete_frame_wall_seconds": 1.702999999979511,
+        "root_complete_packed_bytes_compare_seconds": 0.0,
+        "root_evidence_binding_hash_seconds": 0.01600000000325963,
+        "root_finite_work_and_timer_validation_seconds": 0.0,
+        "root_frame_wall_before_timing_receipt_seconds": 1.6869999999762513,
+        "root_native_packed_file_read_seconds": 0.0,
+        "root_native_result_and_packed_fsync_seconds": 0.014999999955762178,
+        "root_original_source_bitspan_read_extract_seconds": 0.03200000000651926,
+        "root_packed_popcount_and_PN_seconds": 0.062000000034458935,
+        "root_prefix_atomic_ledger_seconds": 0.0,
+        "root_reply_atomic_save_seconds": 0.01600000000325963,
+        "root_result_JSON_read_seconds": 0.0,
+        "root_timing_receipt_save_and_hash_seconds": 0.01600000000325963
+      },
+      "template_work": {
+        "actual_plan_templates": 135221,
+        "all_SAFE_and_unsafe_keys_counted": true,
+        "first_block_templates": 29,
+        "templates": 135250
+      },
+      "transport_timing": {
+        "bridge_span_total_wall_seconds": 1.5444906879999962,
+        "native_envelope_schema": "NATIVE_INDEXED_BYTE_SPAN_WALL_ENVELOPES_V16",
+        "native_span_total_wall_seconds": 1.5398077879999619,
+        "overlaps_native_payload_read_and_GPU_prefetch": true,
+        "payload_was_prefetched": true,
+        "payload_write_includes_header_footer_flush": true,
+        "payload_write_wall_seconds": 0.045486799999991945,
+        "prefetch_wait_wall_seconds": 5.7999999967250915e-06,
+        "profile": "WALL_ENVELOPES_INDEXED_BYTE_V16_1",
+        "receive_response_includes_Lean_core_and_save": true,
+        "receive_response_wall_seconds": 1.489819988000022,
+        "schema": "FUSED_LINUX_INDEXED_BYTE_FRAME_WALL_ENVELOPES_V16",
+        "these_nested_envelopes_must_not_be_added_to_native_core": true
+      },
+      "worker": {
+        "N_rows": 43095946,
+        "P_rows": 24012918,
+        "actual_successors_all_checked": true,
+        "checked_rows": 67108864,
+        "child_roundtrips": 0,
+        "compact_bytes": 67108864,
+        "compact_word_mode": false,
+        "constructor_build_and_check_task_sum_ns": 1490116089,
+        "count": 67108864,
+        "effective_work_ns": 1368311589,
+        "frame_block_cap": 8192,
+        "frame_full_templates_without_reuse": 135250,
+        "frame_template_cap": 500000,
+        "frame_template_count_includes_SAFE_and_unsafe": true,
+        "full_table_Lean": "NOT_VERIFIED",
+        "gpu_source_packet_mode": false,
+        "gpu_witness_mode": true,
+        "honor": 73,
+        "hot_ns": 1221877790,
+        "hot_snapshot_build_ns": 67458799,
+        "indexed_byte_mode": true,
+        "input_fragment_count": 12,
+        "input_fragment_max_bytes": 5592406,
+        "input_memory_lifetime": "MAIN_PIECE_OWNERS_UNTIL_ALL_TASKS_JOIN_V16",
+        "label_bytes": 8388608,
+        "label_format": "PACKED_LSB0",
+        "label_padding_bits": 0,
+        "label_valid_bits": 67108864,
+        "large_frame_policy": "BOUNDED_64MI_ROWS_COMPLETE_T_INDEXED_BYTE_V16",
+        "layer": 26,
+        "load_ns": 44390300,
+        "metadata_check_ns": 0,
+        "native_epoch_frame_cap": 16,
+        "payload_end_bytes": 24,
+        "per_row_timing_or_sampling_added": false,
+        "phase_diagnostics": "STDERR_JSONL",
+        "plan_blocks": 6543,
+        "plan_build_ns": 67922999,
+        "plan_check_ns": 1490116089,
+        "plan_check_ns_includes_constructor_build": true,
+        "plan_checker_kind": "PROVED_BORROWED_NEXT_GLOBAL_NEXT_GENERATED_PLAN_V12",
+        "plan_component_timing": "PARALLEL_TASK_SUMS_NOT_WALL",
+        "plan_constructor_kind": "PROVED_ONCE_CHECKED_TEMPLATE_CONSTRUCTOR_V16",
+        "plan_edges": 4662566,
+        "plan_phase_wall_ns": 146433799,
+        "plan_prepare_workers": 12,
+        "plan_rows": 537371,
+        "plan_templates": 135221,
+        "plans_reused": 1,
+        "producer_cache_hits": 4527345,
+        "proposal_load_ns": 44390300,
+        "pure_checker_theorem_fingerprints": 104,
+        "raw_plan_build_ns": 464200,
+        "raw_plan_build_ns_is_context_only": true,
+        "reference_ns": 1600,
+        "reference_policy": "ONCE_FIRST_SPAN_PER_BUCKET_DIAGNOSTIC",
+        "reference_rows": 0,
+        "resident_count_cap": 67108864,
+        "resident_mode": true,
+        "row_checker_kind": "PROVED_INDEXED_NEXT_BYTE_SCALAR_SCAN_V16",
+        "row_partition_checked": true,
+        "row_partition_chunks": 12,
+        "row_rounds": 1,
+        "row_scan_ns": 1221877790,
+        "row_schedule_kind": "PROVED_CONTIGUOUS_PARTITION_STRIDED_FIXED_ROUNDS_V13",
+        "row_worker_diagnostics": [
+          {
+            "N_rows": 3422390,
+            "P_rows": 2170015,
+            "assigned_rows": 5592405,
+            "chunk_count": 1,
+            "chunks": [
+              {
+                "chunk": 0,
+                "count": 5592405,
+                "first": 440629186
+              }
+            ],
+            "nonempty_chunks": 1,
+            "source_cursor_initializations": 458,
+            "wall_ns": 1172629290,
+            "worker": 0
+          },
+          {
+            "N_rows": 3609826,
+            "P_rows": 1982579,
+            "assigned_rows": 5592405,
+            "chunk_count": 1,
+            "chunks": [
+              {
+                "chunk": 1,
+                "count": 5592405,
+                "first": 446221591
+              }
+            ],
+            "nonempty_chunks": 1,
+            "source_cursor_initializations": 815,
+            "wall_ns": 1172624690,
+            "worker": 1
+          },
+          {
+            "N_rows": 3626915,
+            "P_rows": 1965491,
+            "assigned_rows": 5592406,
+            "chunk_count": 1,
+            "chunks": [
+              {
+                "chunk": 2,
+                "count": 5592406,
+                "first": 451813996
+              }
+            ],
+            "nonempty_chunks": 1,
+            "source_cursor_initializations": 364,
+            "wall_ns": 1148987691,
+            "worker": 2
+          },
+          {
+            "N_rows": 3388553,
+            "P_rows": 2203852,
+            "assigned_rows": 5592405,
+            "chunk_count": 1,
+            "chunks": [
+              {
+                "chunk": 3,
+                "count": 5592405,
+                "first": 457406402
+              }
+            ],
+            "nonempty_chunks": 1,
+            "source_cursor_initializations": 405,
+            "wall_ns": 1221493690,
+            "worker": 3
+          },
+          {
+            "N_rows": 3540575,
+            "P_rows": 2051830,
+            "assigned_rows": 5592405,
+            "chunk_count": 1,
+            "chunks": [
+              {
+                "chunk": 4,
+                "count": 5592405,
+                "first": 462998807
+              }
+            ],
+            "nonempty_chunks": 1,
+            "source_cursor_initializations": 511,
+            "wall_ns": 1189960990,
+            "worker": 4
+          },
+          {
+            "N_rows": 3749975,
+            "P_rows": 1842431,
+            "assigned_rows": 5592406,
+            "chunk_count": 1,
+            "chunks": [
+              {
+                "chunk": 5,
+                "count": 5592406,
+                "first": 468591212
+              }
+            ],
+            "nonempty_chunks": 1,
+            "source_cursor_initializations": 279,
+            "wall_ns": 1119034291,
+            "worker": 5
+          },
+          {
+            "N_rows": 3423400,
+            "P_rows": 2169005,
+            "assigned_rows": 5592405,
+            "chunk_count": 1,
+            "chunks": [
+              {
+                "chunk": 6,
+                "count": 5592405,
+                "first": 474183618
+              }
+            ],
+            "nonempty_chunks": 1,
+            "source_cursor_initializations": 420,
+            "wall_ns": 1179875590,
+            "worker": 6
+          },
+          {
+            "N_rows": 3796535,
+            "P_rows": 1795870,
+            "assigned_rows": 5592405,
+            "chunk_count": 1,
+            "chunks": [
+              {
+                "chunk": 7,
+                "count": 5592405,
+                "first": 479776023
+              }
+            ],
+            "nonempty_chunks": 1,
+            "source_cursor_initializations": 866,
+            "wall_ns": 970127992,
+            "worker": 7
+          },
+          {
+            "N_rows": 3497792,
+            "P_rows": 2094614,
+            "assigned_rows": 5592406,
+            "chunk_count": 1,
+            "chunks": [
+              {
+                "chunk": 8,
+                "count": 5592406,
+                "first": 485368428
+              }
+            ],
+            "nonempty_chunks": 1,
+            "source_cursor_initializations": 624,
+            "wall_ns": 1121700191,
+            "worker": 8
+          },
+          {
+            "N_rows": 3674461,
+            "P_rows": 1917944,
+            "assigned_rows": 5592405,
+            "chunk_count": 1,
+            "chunks": [
+              {
+                "chunk": 9,
+                "count": 5592405,
+                "first": 490960834
+              }
+            ],
+            "nonempty_chunks": 1,
+            "source_cursor_initializations": 601,
+            "wall_ns": 1081491691,
+            "worker": 9
+          },
+          {
+            "N_rows": 3619410,
+            "P_rows": 1972995,
+            "assigned_rows": 5592405,
+            "chunk_count": 1,
+            "chunks": [
+              {
+                "chunk": 10,
+                "count": 5592405,
+                "first": 496553239
+              }
+            ],
+            "nonempty_chunks": 1,
+            "source_cursor_initializations": 547,
+            "wall_ns": 1179738990,
+            "worker": 10
+          },
+          {
+            "N_rows": 3746114,
+            "P_rows": 1846292,
+            "assigned_rows": 5592406,
+            "chunk_count": 1,
+            "chunks": [
+              {
+                "chunk": 11,
+                "count": 5592406,
+                "first": 502145644
+              }
+            ],
+            "nonempty_chunks": 1,
+            "source_cursor_initializations": 664,
+            "wall_ns": 1126822291,
+            "worker": 11
+          }
+        ],
+        "runtime_task_mode": "REGULAR_POOL",
+        "save_ns": 95211799,
+        "scan_includes_plan_build_and_check": true,
+        "scan_ns": 1368311589,
+        "schema": "PACKED_INDEXED_BYTE_FRAME_LEAN_PERSISTENT_SPAN_V16",
+        "shared_load_attributed_ns": 0,
+        "shared_load_ns": 788137394,
+        "small_plan_serial_template_threshold": 4096,
+        "source_block_cover_checked": true,
+        "source_decode_calls": 6554,
+        "source_decode_calls_kind": "ONCE_PER_CHECKED_SOURCE_BLOCK_RUN",
+        "source_r_guard_every_row": true,
+        "source_roundtrips": 0,
+        "start": 440629186,
+        "status": "PASS_COMPILED_LEAN_PACKED_INDEXED_BYTE_FRAME_PERSISTENT_SPAN_V16",
+        "stream_payload_read_ns": 44390300,
+        "template_plan_checker": true,
+        "threads": 12,
+        "transport": "indexed_actual_next_byte_v16",
+        "work_ns": 1368311589,
+        "worker_nonempty_chunk_initializations": 12
+      }
+    },
+    {
+      "count": 67108864,
+      "first_block_templates": 31,
+      "frame_templates": 87668,
+      "native_epoch": 17,
+      "native_lifecycle": {
+        "RSS_before_bytes": 648925184,
+        "native_epochs": 17,
+        "native_io_policy": {
+          "native_max_frames_per_epoch": 16,
+          "pipe_capacity_bytes": 1048576
+        },
+        "ready_seconds": 0.0,
+        "rotated": false,
+        "shutdown_seconds": 0.0,
+        "stdin_pipe_capacity": {
+          "actual_capacity_bytes": 1048576,
+          "capacity_get_confirmed": true,
+          "configuration_seconds": 8.200000024771725e-06,
+          "configured_by_uid": 1000,
+          "default_capacity_bytes": 65536,
+          "requested_capacity_bytes": 1048576,
+          "set_return_capacity_bytes": 1048576
+        },
+        "total_seconds": 0.0
+      },
+      "plan_edges": 3000600,
+      "proposal": {
+        "GPU_trusted_for_soundness": false,
+        "Lean_rows_verified": 0,
+        "actual_chunk_count": 8,
+        "chunks": [
+          {
+            "compact_bytes": 8388608,
+            "copy_seconds": 0.0027924000000325577,
+            "count": 8388608,
+            "enclosing_chunk_wall_seconds": 0.01902189999998427,
+            "host_byte_offset": 0,
+            "host_row_offset": 0,
+            "indexed_bytes": 8388608,
+            "kernel_seconds": 0.015958144187927247,
+            "start": 507738050
+          },
+          {
+            "compact_bytes": 8388608,
+            "copy_seconds": 0.005260599999985516,
+            "count": 8388608,
+            "enclosing_chunk_wall_seconds": 0.021536299999979747,
+            "host_byte_offset": 8388608,
+            "host_row_offset": 8388608,
+            "indexed_bytes": 8388608,
+            "kernel_seconds": 0.01608662414550781,
+            "start": 516126658
+          },
+          {
+            "compact_bytes": 8388608,
+            "copy_seconds": 0.0017343999999752668,
+            "count": 8388608,
+            "enclosing_chunk_wall_seconds": 0.018103999000004478,
+            "host_byte_offset": 16777216,
+            "host_row_offset": 16777216,
+            "indexed_bytes": 8388608,
+            "kernel_seconds": 0.016030656814575196,
+            "start": 524515266
+          },
+          {
+            "compact_bytes": 8388608,
+            "copy_seconds": 0.0017490000000179862,
+            "count": 8388608,
+            "enclosing_chunk_wall_seconds": 0.016392100000018672,
+            "host_byte_offset": 25165824,
+            "host_row_offset": 25165824,
+            "indexed_bytes": 8388608,
+            "kernel_seconds": 0.014481632232666016,
+            "start": 532903874
+          },
+          {
+            "compact_bytes": 8388608,
+            "copy_seconds": 0.0019334000000412743,
+            "count": 8388608,
+            "enclosing_chunk_wall_seconds": 0.016866300000003775,
+            "host_byte_offset": 33554432,
+            "host_row_offset": 33554432,
+            "indexed_bytes": 8388608,
+            "kernel_seconds": 0.014759488105773926,
+            "start": 541292482
+          },
+          {
+            "compact_bytes": 8388608,
+            "copy_seconds": 0.0019338999999831685,
+            "count": 8388608,
+            "enclosing_chunk_wall_seconds": 0.016923800000029132,
+            "host_byte_offset": 41943040,
+            "host_row_offset": 41943040,
+            "indexed_bytes": 8388608,
+            "kernel_seconds": 0.014502880096435546,
+            "start": 549681090
+          },
+          {
+            "compact_bytes": 8388608,
+            "copy_seconds": 0.006063399999959529,
+            "count": 8388608,
+            "enclosing_chunk_wall_seconds": 0.020768900000007307,
+            "host_byte_offset": 50331648,
+            "host_row_offset": 50331648,
+            "indexed_bytes": 8388608,
+            "kernel_seconds": 0.014006879806518555,
+            "start": 558069698
+          },
+          {
+            "compact_bytes": 8388608,
+            "copy_seconds": 0.0017947999999705644,
+            "count": 8388608,
+            "enclosing_chunk_wall_seconds": 0.016346999999996115,
+            "host_byte_offset": 58720256,
+            "host_row_offset": 58720256,
+            "indexed_bytes": 8388608,
+            "kernel_seconds": 0.014357919692993165,
+            "start": 566458306
+          }
+        ],
+        "combined_kernel_seconds": 0.12018422508239747,
+        "compact_bytes": 67108864,
+        "completed_spans": 3,
+        "copy_seconds": 0.023261899999965863,
+        "copy_timing_policy": "SUM_CHUNK_DTOH_AND_GUARD_WALL_HOST_ALLOCATION_SEPARATE",
+        "count": 67108864,
+        "device_output_scratch_bytes": 8388608,
+        "endianness": "little",
+        "fixed_identity_sha256": "676f3b9abf6f539ccb38ade7e4b7470b0eb71e5e58b16ee5b6a508b205f31307",
+        "generation": 17,
+        "gpu_flags_trusted": false,
+        "honor": 73,
+        "host_allocation_seconds": 0.020381200000031185,
+        "host_output_buffer_allocations": 1,
+        "identity_sha256": "b27884940b73b2fde219b533f23e44e390c3c20721ed7d5eaa8984d23d57df1b",
+        "implementation_revision": "INDEXED_ACTUAL_NEXT_BYTE_BOUNDED_8MI_SCRATCH_V16",
+        "indexed_bytes": 67108864,
+        "intermediate_chunk_host_buffers": 0,
+        "layer": 26,
+        "locked_manifest_sha256": "1b1dc73d7fdd41236e695a96686bdd75c3b5c5b9901f12db0772b7337f2721ab",
+        "mode": 1,
+        "native_actual_next_membership_required": true,
+        "native_actual_source_r_guard_required": true,
+        "payload_hashed": false,
+        "payload_saved_to_disk": false,
+        "per_row_timing_or_sampling_added": false,
+        "process_owner": {
+          "implementation_revision": "INDEXED_ACTUAL_NEXT_BYTE_BOUNDED_8MI_SCRATCH_V16",
+          "launch_kind": "IMPORTED_API",
+          "pid": 430,
+          "process_state": "S",
+          "schema": "OWNED_CROSS_BUCKET_GPU_INDEXED_BYTE_PROCESS_V16",
+          "script": "build/lean_table_checker/gpu_indexed_byte_v16/worker.py",
+          "script_sha256": "adce9593d5dbbb7937abf6f392d751ad551e189af7daa6b8c6f5bea87584404f",
+          "session_token": "e9f1c7920cdd44548af52b4a075e75f4",
+          "start_ticks": 484
+        },
+        "proposal_work_seconds": 0.16949169899999106,
+        "record_bytes": 1,
+        "resources": {
+          "GPU_context_closed": false,
+          "allocated_device_bytes": 298950472,
+          "declared_device_bytes": 298950472,
+          "device_cap_bytes": 6000000000,
+          "device_output_scratch_bytes": 8388608,
+          "global_device_cap_bytes": 7000000000,
+          "global_device_free_reserve_bytes": 1000000000,
+          "global_device_used_bytes": 1428881408,
+          "host_rss_cap_bytes": 3000000000,
+          "implementation_revision": "INDEXED_ACTUAL_NEXT_BYTE_BOUNDED_8MI_SCRATCH_V16",
+          "maximum_proposal_rows": 67108864,
+          "peak_host_rss_bytes": 423362560,
+          "record_bytes": 1,
+          "scratch_rows": 8388608,
+          "streamed_input_buffer_bytes": 33554432,
+          "transport": "indexed_actual_next_byte_v16"
+        },
+        "schema": "UNTRUSTED_CROSS_BUCKET_INDEXED_BYTE_PROPOSAL_V16",
+        "scratch_rows": 8388608,
+        "session_completed_spans": 51,
+        "session_token": "e9f1c7920cdd44548af52b4a075e75f4",
+        "source_coordinates_transmitted": false,
+        "start": 507738050,
+        "status": "STREAMED_NOT_LEAN_CERTIFIED",
+        "transport": "indexed_actual_next_byte_v16"
+      },
+      "root_frame_timings": {
+        "root_RPC_wall_seconds": 1.3280000000377186,
+        "root_complete_frame_wall_seconds": 1.4679999999934807,
+        "root_complete_packed_bytes_compare_seconds": 0.0,
+        "root_evidence_binding_hash_seconds": 0.01600000000325963,
+        "root_finite_work_and_timer_validation_seconds": 0.0,
+        "root_frame_wall_before_timing_receipt_seconds": 1.4530000000377186,
+        "root_native_packed_file_read_seconds": 0.0,
+        "root_native_result_and_packed_fsync_seconds": 0.015000000013969839,
+        "root_original_source_bitspan_read_extract_seconds": 0.030999999959021807,
+        "root_packed_popcount_and_PN_seconds": 0.06300000002374873,
+        "root_prefix_atomic_ledger_seconds": 0.0,
+        "root_reply_atomic_save_seconds": 0.0,
+        "root_result_JSON_read_seconds": 0.0,
+        "root_timing_receipt_save_and_hash_seconds": 0.014999999955762178
+      },
+      "template_work": {
+        "actual_plan_templates": 87637,
+        "all_SAFE_and_unsafe_keys_counted": true,
+        "first_block_templates": 31,
+        "templates": 87668
+      },
+      "transport_timing": {
+        "bridge_span_total_wall_seconds": 1.3234047889999943,
+        "native_envelope_schema": "NATIVE_INDEXED_BYTE_SPAN_WALL_ENVELOPES_V16",
+        "native_span_total_wall_seconds": 1.319040488999974,
+        "overlaps_native_payload_read_and_GPU_prefetch": true,
+        "payload_was_prefetched": true,
+        "payload_write_includes_header_footer_flush": true,
+        "payload_write_wall_seconds": 0.026314399999989746,
+        "prefetch_wait_wall_seconds": 5.199999975502578e-06,
+        "profile": "WALL_ENVELOPES_INDEXED_BYTE_V16_1",
+        "receive_response_includes_Lean_core_and_save": true,
+        "receive_response_wall_seconds": 1.2884552890000123,
+        "schema": "FUSED_LINUX_INDEXED_BYTE_FRAME_WALL_ENVELOPES_V16",
+        "these_nested_envelopes_must_not_be_added_to_native_core": true
+      },
+      "worker": {
+        "N_rows": 47291004,
+        "P_rows": 19817860,
+        "actual_successors_all_checked": true,
+        "checked_rows": 67108864,
+        "child_roundtrips": 0,
+        "compact_bytes": 67108864,
+        "compact_word_mode": false,
+        "constructor_build_and_check_task_sum_ns": 942267688,
+        "count": 67108864,
+        "effective_work_ns": 1173687690,
+        "frame_block_cap": 8192,
+        "frame_full_templates_without_reuse": 87668,
+        "frame_template_cap": 500000,
+        "frame_template_count_includes_SAFE_and_unsafe": true,
+        "full_table_Lean": "NOT_VERIFIED",
+        "gpu_source_packet_mode": false,
+        "gpu_witness_mode": true,
+        "honor": 73,
+        "hot_ns": 1082727991,
+        "hot_snapshot_build_ns": 42053500,
+        "indexed_byte_mode": true,
+        "input_fragment_count": 12,
+        "input_fragment_max_bytes": 5592406,
+        "input_memory_lifetime": "MAIN_PIECE_OWNERS_UNTIL_ALL_TASKS_JOIN_V16",
+        "label_bytes": 8388608,
+        "label_format": "PACKED_LSB0",
+        "label_padding_bits": 0,
+        "label_valid_bits": 67108864,
+        "large_frame_policy": "BOUNDED_64MI_ROWS_COMPLETE_T_INDEXED_BYTE_V16",
+        "layer": 26,
+        "load_ns": 25273500,
+        "metadata_check_ns": 0,
+        "native_epoch_frame_cap": 16,
+        "payload_end_bytes": 24,
+        "per_row_timing_or_sampling_added": false,
+        "phase_diagnostics": "STDERR_JSONL",
+        "plan_blocks": 3853,
+        "plan_build_ns": 42287400,
+        "plan_check_ns": 942267688,
+        "plan_check_ns_includes_constructor_build": true,
+        "plan_checker_kind": "PROVED_BORROWED_NEXT_GLOBAL_NEXT_GENERATED_PLAN_V12",
+        "plan_component_timing": "PARALLEL_TASK_SUMS_NOT_WALL",
+        "plan_constructor_kind": "PROVED_ONCE_CHECKED_TEMPLATE_CONSTRUCTOR_V16",
+        "plan_edges": 2998564,
+        "plan_phase_wall_ns": 90959699,
+        "plan_prepare_workers": 12,
+        "plan_rows": 342886,
+        "plan_templates": 87637,
+        "plans_reused": 1,
+        "producer_cache_hits": 2910927,
+        "proposal_load_ns": 25273500,
+        "pure_checker_theorem_fingerprints": 104,
+        "raw_plan_build_ns": 233900,
+        "raw_plan_build_ns_is_context_only": true,
+        "reference_ns": 1500,
+        "reference_policy": "ONCE_FIRST_SPAN_PER_BUCKET_DIAGNOSTIC",
+        "reference_rows": 0,
+        "resident_count_cap": 67108864,
+        "resident_mode": true,
+        "row_checker_kind": "PROVED_INDEXED_NEXT_BYTE_SCALAR_SCAN_V16",
+        "row_partition_checked": true,
+        "row_partition_chunks": 12,
+        "row_rounds": 1,
+        "row_scan_ns": 1082727991,
+        "row_schedule_kind": "PROVED_CONTIGUOUS_PARTITION_STRIDED_FIXED_ROUNDS_V13",
+        "row_worker_diagnostics": [
+          {
+            "N_rows": 3903702,
+            "P_rows": 1688703,
+            "assigned_rows": 5592405,
+            "chunk_count": 1,
+            "chunks": [
+              {
+                "chunk": 0,
+                "count": 5592405,
+                "first": 507738050
+              }
+            ],
+            "nonempty_chunks": 1,
+            "source_cursor_initializations": 369,
+            "wall_ns": 998576192,
+            "worker": 0
+          },
+          {
+            "N_rows": 3781695,
+            "P_rows": 1810710,
+            "assigned_rows": 5592405,
+            "chunk_count": 1,
+            "chunks": [
+              {
+                "chunk": 1,
+                "count": 5592405,
+                "first": 513330455
+              }
+            ],
+            "nonempty_chunks": 1,
+            "source_cursor_initializations": 476,
+            "wall_ns": 1035066292,
+            "worker": 1
+          },
+          {
+            "N_rows": 3896165,
+            "P_rows": 1696241,
+            "assigned_rows": 5592406,
+            "chunk_count": 1,
+            "chunks": [
+              {
+                "chunk": 2,
+                "count": 5592406,
+                "first": 518922860
+              }
+            ],
+            "nonempty_chunks": 1,
+            "source_cursor_initializations": 404,
+            "wall_ns": 1082326791,
+            "worker": 2
+          },
+          {
+            "N_rows": 3933008,
+            "P_rows": 1659397,
+            "assigned_rows": 5592405,
+            "chunk_count": 1,
+            "chunks": [
+              {
+                "chunk": 3,
+                "count": 5592405,
+                "first": 524515266
+              }
+            ],
+            "nonempty_chunks": 1,
+            "source_cursor_initializations": 271,
+            "wall_ns": 1018577492,
+            "worker": 3
+          },
+          {
+            "N_rows": 3857482,
+            "P_rows": 1734923,
+            "assigned_rows": 5592405,
+            "chunk_count": 1,
+            "chunks": [
+              {
+                "chunk": 4,
+                "count": 5592405,
+                "first": 530107671
+              }
+            ],
+            "nonempty_chunks": 1,
+            "source_cursor_initializations": 383,
+            "wall_ns": 1019195092,
+            "worker": 4
+          },
+          {
+            "N_rows": 4130476,
+            "P_rows": 1461930,
+            "assigned_rows": 5592406,
+            "chunk_count": 1,
+            "chunks": [
+              {
+                "chunk": 5,
+                "count": 5592406,
+                "first": 535700076
+              }
+            ],
+            "nonempty_chunks": 1,
+            "source_cursor_initializations": 442,
+            "wall_ns": 968550592,
+            "worker": 5
+          },
+          {
+            "N_rows": 4147519,
+            "P_rows": 1444886,
+            "assigned_rows": 5592405,
+            "chunk_count": 1,
+            "chunks": [
+              {
+                "chunk": 6,
+                "count": 5592405,
+                "first": 541292482
+              }
+            ],
+            "nonempty_chunks": 1,
+            "source_cursor_initializations": 404,
+            "wall_ns": 981215892,
+            "worker": 6
+          },
+          {
+            "N_rows": 4134770,
+            "P_rows": 1457635,
+            "assigned_rows": 5592405,
+            "chunk_count": 1,
+            "chunks": [
+              {
+                "chunk": 7,
+                "count": 5592405,
+                "first": 546884887
+              }
+            ],
+            "nonempty_chunks": 1,
+            "source_cursor_initializations": 439,
+            "wall_ns": 961600592,
+            "worker": 7
+          },
+          {
+            "N_rows": 4162114,
+            "P_rows": 1430292,
+            "assigned_rows": 5592406,
+            "chunk_count": 1,
+            "chunks": [
+              {
+                "chunk": 8,
+                "count": 5592406,
+                "first": 552477292
+              }
+            ],
+            "nonempty_chunks": 1,
+            "source_cursor_initializations": 314,
+            "wall_ns": 888904293,
+            "worker": 8
+          },
+          {
+            "N_rows": 3718789,
+            "P_rows": 1873616,
+            "assigned_rows": 5592405,
+            "chunk_count": 1,
+            "chunks": [
+              {
+                "chunk": 9,
+                "count": 5592405,
+                "first": 558069698
+              }
+            ],
+            "nonempty_chunks": 1,
+            "source_cursor_initializations": 107,
+            "wall_ns": 1022524192,
+            "worker": 9
+          },
+          {
+            "N_rows": 3947460,
+            "P_rows": 1644945,
+            "assigned_rows": 5592405,
+            "chunk_count": 1,
+            "chunks": [
+              {
+                "chunk": 10,
+                "count": 5592405,
+                "first": 563662103
+              }
+            ],
+            "nonempty_chunks": 1,
+            "source_cursor_initializations": 132,
+            "wall_ns": 1031635992,
+            "worker": 10
+          },
+          {
+            "N_rows": 3677824,
+            "P_rows": 1914582,
+            "assigned_rows": 5592406,
+            "chunk_count": 1,
+            "chunks": [
+              {
+                "chunk": 11,
+                "count": 5592406,
+                "first": 569254508
+              }
+            ],
+            "nonempty_chunks": 1,
+            "source_cursor_initializations": 123,
+            "wall_ns": 1005162292,
+            "worker": 11
+          }
+        ],
+        "runtime_task_mode": "REGULAR_POOL",
+        "save_ns": 94457400,
+        "scan_includes_plan_build_and_check": true,
+        "scan_ns": 1173687690,
+        "schema": "PACKED_INDEXED_BYTE_FRAME_LEAN_PERSISTENT_SPAN_V16",
+        "shared_load_attributed_ns": 0,
+        "shared_load_ns": 788137394,
+        "small_plan_serial_template_threshold": 4096,
+        "source_block_cover_checked": true,
+        "source_decode_calls": 3864,
+        "source_decode_calls_kind": "ONCE_PER_CHECKED_SOURCE_BLOCK_RUN",
+        "source_r_guard_every_row": true,
+        "source_roundtrips": 0,
+        "start": 507738050,
+        "status": "PASS_COMPILED_LEAN_PACKED_INDEXED_BYTE_FRAME_PERSISTENT_SPAN_V16",
+        "stream_payload_read_ns": 25273500,
+        "template_plan_checker": true,
+        "threads": 12,
+        "transport": "indexed_actual_next_byte_v16",
+        "work_ns": 1173687690,
+        "worker_nonempty_chunk_initializations": 12
+      }
+    }
+  ],
+  "honor": 73,
+  "initial_usable_native_READY_seconds": 1.1377042909999773,
+  "layer": 26,
+  "profile_sha256": "cdbcff9be06ac2e5e450c73041d79f3ef92306e7bf8724cd9cdc382e1f8f3990",
+  "root_bucket_leave_wall_seconds": 0.07900000002700835,
+  "schema": "ACTUAL_JOINT_INDEXED_REGISTERED_CALIBRATION_MEASUREMENTS_V16",
+  "worker_executable_sha256": "da0877df4d5be177516a405c93b62cac457a04ea40e479010fc70588a44438c6"
+}

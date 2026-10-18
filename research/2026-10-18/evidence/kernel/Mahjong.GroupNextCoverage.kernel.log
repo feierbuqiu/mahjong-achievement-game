@@ -1,0 +1,2 @@
+'Mahjong.GroupNextCoverage.checked_group' depends on axioms: [propext, Quot.sound]
+'Mahjong.GroupNextCoverage.covered' depends on axioms: [propext, Quot.sound]

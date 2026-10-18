@@ -1,0 +1,20 @@
+/var/tmp/codex-mahjong-linux-v5-3f03f7ff3f494a6c857f9a9353ced44d/build/source/Mahjong/HotBlockPlan.lean:120:5: warning: Variable name `ctx` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _ctx
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+/var/tmp/codex-mahjong-linux-v5-3f03f7ff3f494a6c857f9a9353ced44d/build/source/Mahjong/HotBlockPlan.lean:134:5: warning: Variable name `ctx` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _ctx
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+'Mahjong.HotBlockPlan.label_ofEdge' depends on axioms: [propext, Quot.sound]
+'Mahjong.HotBlockPlan.allEdges_map' depends on axioms: [propext, Quot.sound]
+'Mahjong.HotBlockPlan.anyEdges_map' depends on axioms: [propext, Quot.sound]
+'Mahjong.HotBlockPlan.singleEdges_map' depends on axioms: [propext, Quot.sound]
+'Mahjong.HotBlockPlan.getCache_build' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Mahjong.HotBlockPlan.rows_build' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Mahjong.HotBlockPlan.row_build' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Mahjong.HotBlockPlan.single_build' depends on axioms: [propext, Classical.choice, Quot.sound]

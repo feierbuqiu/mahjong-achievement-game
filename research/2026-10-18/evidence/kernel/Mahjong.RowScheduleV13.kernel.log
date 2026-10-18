@@ -1,0 +1,6 @@
+'Mahjong.RowScheduleV13.checkCover_covers' depends on axioms: [propext, Quot.sound]
+'Mahjong.RowScheduleV13.checkCover_total' depends on axioms: [propext, Quot.sound]
+'Mahjong.RowScheduleV13.checked_assignment' depends on axioms: [propext, Quot.sound]
+'Mahjong.RowScheduleV13.checked_assignment_unique' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Mahjong.RowScheduleV13.scheduled_all_rows' depends on axioms: [propext, Quot.sound]
+'Mahjong.RowScheduleV13.checked_total_rows' depends on axioms: [propext, Quot.sound]

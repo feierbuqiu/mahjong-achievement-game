@@ -1,0 +1,18 @@
+{
+  "counters": {
+    "cgroup.events": "populated 0\nfrozen 0",
+    "cpu.max": "200000 100000",
+    "memory.events": "low 0\nhigh 0\nmax 0\noom 0\noom_kill 0\noom_group_kill 0",
+    "memory.max": "3999997952",
+    "memory.peak": "2025529344"
+  },
+  "elapsed_seconds": 28.120702296999998,
+  "failure_reason": null,
+  "global_settings_changed": false,
+  "kernel_empty_confirmed": true,
+  "returncode": 0,
+  "schema": "ACTUAL_JOINT_INDEXED_COMPILER_SCOPE_V16",
+  "scope": "mahjong-joint-indexed-build-v16-b1f377d7b5384300af48ad2508bc46d2",
+  "scope_removed": true,
+  "total_deadline_seconds": 300
+}

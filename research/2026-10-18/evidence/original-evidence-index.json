@@ -1,0 +1,652 @@
+{
+  "captured_utc": "2026-10-18T02:50:46.321324+00:00",
+  "large_expected_input_manifest": {
+    "bytes": 4559137,
+    "path": "runs/lean_table_checker/prelaunch_audit_20261018/EXPECTED_INPUTS.json",
+    "sha256": "796efe070c9fc088f0f6f4866c7c45becef919397029ad5c1a07d417355fa9d6"
+  },
+  "meaning": "Primary small evidence hashes and pause snapshots; not a mathematical proof or completed whole-table certificate",
+  "no_live_current_campaign_budget_checkpoint_progress_dependency": true,
+  "records": [
+    {
+      "bytes": 6870,
+      "category": "historical_format_boundaries",
+      "checked_in_this_capture": "SHA256_OF_ACTUAL_SMALL_FILE_UNDER_RETAINED_READLOCK",
+      "path": "CHECKPOINTS.md",
+      "sha256": "7f52dd4acb5e5a37d3cb72e14913d4cceac23f0b428f64a220b459c75c22d2ff"
+    },
+    {
+      "bytes": 14340,
+      "category": "historical_rules_handoff",
+      "checked_in_this_capture": "SHA256_OF_ACTUAL_SMALL_FILE_UNDER_RETAINED_READLOCK",
+      "path": "RESEARCH_HANDOFF.md",
+      "sha256": "ccffa3765355d1ffbd31a8d11ed68ea6ce1e1b66b0aa6a245b4d22620e1929cd"
+    },
+    {
+      "bytes": 6576,
+      "category": "historical_rules_handoff",
+      "checked_in_this_capture": "SHA256_OF_ACTUAL_SMALL_FILE_UNDER_RETAINED_READLOCK",
+      "path": "START_HERE.md",
+      "sha256": "e8513cd0f710870ea632a577204311a222928c2639b0a8c18f540871c4d936c0"
+    },
+    {
+      "bytes": 8598,
+      "category": "same_frozen_REV3_controller_source",
+      "checked_in_this_capture": "SHA256_OF_ACTUAL_SMALL_FILE_UNDER_RETAINED_READLOCK",
+      "path": "build/lean_table_checker/campaign_indexed_v16/assemble_worker_gate.py",
+      "sha256": "a8dafbfbe7b20a3fc072618b8b96c197ed95d92b98548f14637f329fd6d2aa97"
+    },
+    {
+      "bytes": 9088,
+      "category": "same_frozen_REV3_controller_source",
+      "checked_in_this_capture": "SHA256_OF_ACTUAL_SMALL_FILE_UNDER_RETAINED_READLOCK",
+      "path": "build/lean_table_checker/campaign_indexed_v16/cache_transport.py",
+      "sha256": "c9bc98c8ea47cdf6f5c1ba0eb9e062e8c2cc7ddae54b9c6b6a1185b78aa7a674"
+    },
+    {
+      "bytes": 43718,
+      "category": "same_frozen_REV3_controller_source",
+      "checked_in_this_capture": "SHA256_OF_ACTUAL_SMALL_FILE_UNDER_RETAINED_READLOCK",
+      "path": "build/lean_table_checker/campaign_indexed_v16/campaign.py",
+      "sha256": "19c2f7420939c3bb706f9e6de6801218503eccdc8654ffb24c6ddcb6074078ec"
+    },
+    {
+      "bytes": 3477,
+      "category": "same_frozen_REV3_controller_source",
+      "checked_in_this_capture": "SHA256_OF_ACTUAL_SMALL_FILE_UNDER_RETAINED_READLOCK",
+      "path": "build/lean_table_checker/campaign_indexed_v16/campaign_io.py",
+      "sha256": "354b1934609734f593f38aa70e8e07178909bdc122f358df71484e62360feb09"
+    },
+    {
+      "bytes": 10248,
+      "category": "same_frozen_REV3_controller_source",
+      "checked_in_this_capture": "SHA256_OF_ACTUAL_SMALL_FILE_UNDER_RETAINED_READLOCK",
+      "path": "build/lean_table_checker/campaign_indexed_v16/collect_fees.py",
+      "sha256": "06caabfb77bee441f6357a60a8ab23bc25824f88788515e583cfbd12f6ece9b9"
+    },
+    {
+      "bytes": 18932,
+      "category": "same_frozen_REV3_controller_source",
+      "checked_in_this_capture": "SHA256_OF_ACTUAL_SMALL_FILE_UNDER_RETAINED_READLOCK",
+      "path": "build/lean_table_checker/campaign_indexed_v16/compact_transport.py",
+      "sha256": "abc9570c04d0a1967951ace2e6060d6af3745c1d1e1be9e3f807e33c5f5f7723"
+    },
+    {
+      "bytes": 12478,
+      "category": "same_frozen_REV3_controller_source",
+      "checked_in_this_capture": "SHA256_OF_ACTUAL_SMALL_FILE_UNDER_RETAINED_READLOCK",
+      "path": "build/lean_table_checker/campaign_indexed_v16/cost_gate.py",
+      "sha256": "ced153af2541465a549d80216a5d05493d2cc11f8127a8b0869af4320e0a49f3"
+    },
+    {
+      "bytes": 4950,
+      "category": "same_frozen_REV3_controller_source",
+      "checked_in_this_capture": "SHA256_OF_ACTUAL_SMALL_FILE_UNDER_RETAINED_READLOCK",
+      "path": "build/lean_table_checker/campaign_indexed_v16/finite_premises.py",
+      "sha256": "e4f64e79de03a7c6c6c559c3da02844d2193cef7f1255da4e4fc7c8aa3b55aaa"
+    },
+    {
+      "bytes": 8646,
+      "category": "same_frozen_REV3_controller_source",
+      "checked_in_this_capture": "SHA256_OF_ACTUAL_SMALL_FILE_UNDER_RETAINED_READLOCK",
+      "path": "build/lean_table_checker/campaign_indexed_v16/frame_planner.py",
+      "sha256": "276644a6296dfb9296a8122a6b7954c8c842af075d673fd38fe58321c6b9e259"
+    },
+    {
+      "bytes": 5092,
+      "category": "same_frozen_REV3_controller_source",
+      "checked_in_this_capture": "SHA256_OF_ACTUAL_SMALL_FILE_UNDER_RETAINED_READLOCK",
+      "path": "build/lean_table_checker/campaign_indexed_v16/frame_registry.py",
+      "sha256": "b16a5ab418c84b6bf19e72a5d4de294eb6ccf5e956e270af67fed17c11bf6f38"
+    },
+    {
+      "bytes": 19475,
+      "category": "same_frozen_REV3_controller_source",
+      "checked_in_this_capture": "SHA256_OF_ACTUAL_SMALL_FILE_UNDER_RETAINED_READLOCK",
+      "path": "build/lean_table_checker/campaign_indexed_v16/fused_transport.py",
+      "sha256": "ba5fb47b6c54c2581dea5f98505b8c7b6b95181dbaad68e9fa281d4b3a7d2345"
+    },
+    {
+      "bytes": 2997,
+      "category": "same_frozen_REV3_controller_source",
+      "checked_in_this_capture": "SHA256_OF_ACTUAL_SMALL_FILE_UNDER_RETAINED_READLOCK",
+      "path": "build/lean_table_checker/campaign_indexed_v16/indexed_runtime.py",
+      "sha256": "2170e3ecc730f4daaf354f8d570b4d442692b59f426b72fb036fbdb91e07d319"
+    },
+    {
+      "bytes": 4269,
+      "category": "same_frozen_REV3_controller_source",
+      "checked_in_this_capture": "SHA256_OF_ACTUAL_SMALL_FILE_UNDER_RETAINED_READLOCK",
+      "path": "build/lean_table_checker/campaign_indexed_v16/input_snapshot.py",
+      "sha256": "fbd0febd2dda136b3a9348751f5521e625439713d18b61563d537e21b252c763"
+    },
+    {
+      "bytes": 12047,
+      "category": "same_frozen_REV3_controller_source",
+      "checked_in_this_capture": "SHA256_OF_ACTUAL_SMALL_FILE_UNDER_RETAINED_READLOCK",
+      "path": "build/lean_table_checker/campaign_indexed_v16/integration_contract.py",
+      "sha256": "9ecf6f6b54640700038f2b601f9ceb643b0f709924190628fa81fec683e868c3"
+    },
+    {
+      "bytes": 5328,
+      "category": "same_frozen_REV3_controller_source",
+      "checked_in_this_capture": "SHA256_OF_ACTUAL_SMALL_FILE_UNDER_RETAINED_READLOCK",
+      "path": "build/lean_table_checker/campaign_indexed_v16/invocation_budget.py",
+      "sha256": "576c0c92929fefb41ed25f066284f25a076df89a928b9149c7a51d075f470a22"
+    },
+    {
+      "bytes": 817,
+      "category": "same_frozen_REV3_controller_source",
+      "checked_in_this_capture": "SHA256_OF_ACTUAL_SMALL_FILE_UNDER_RETAINED_READLOCK",
+      "path": "build/lean_table_checker/campaign_indexed_v16/keep_awake.py",
+      "sha256": "4ceeaac0cd908fb710b64ca537dae8b5c4b1a633051c0af10a9497d9c8a02102"
+    },
+    {
+      "bytes": 19246,
+      "category": "same_frozen_REV3_controller_source",
+      "checked_in_this_capture": "SHA256_OF_ACTUAL_SMALL_FILE_UNDER_RETAINED_READLOCK",
+      "path": "build/lean_table_checker/campaign_indexed_v16/launch_campaign.py",
+      "sha256": "ae496d00399dec047dd5aed0eba2922c280b94ddec90e9037f895e1b6e93fe82"
+    },
+    {
+      "bytes": 13955,
+      "category": "same_frozen_REV3_controller_source",
+      "checked_in_this_capture": "SHA256_OF_ACTUAL_SMALL_FILE_UNDER_RETAINED_READLOCK",
+      "path": "build/lean_table_checker/campaign_indexed_v16/ledger.py",
+      "sha256": "6765d0d08f228bb19a618342fda94f0c0f9aea8e14a672fe9c00684d8d313ba2"
+    },
+    {
+      "bytes": 35345,
+      "category": "same_frozen_REV3_controller_source",
+      "checked_in_this_capture": "SHA256_OF_ACTUAL_SMALL_FILE_UNDER_RETAINED_READLOCK",
+      "path": "build/lean_table_checker/campaign_indexed_v16/linux_worker_gate.py",
+      "sha256": "b7ff32268c66d1295d6f616d9dab91cb2012d672b593ce7cf4b56448b8653175"
+    },
+    {
+      "bytes": 3817,
+      "category": "same_frozen_REV3_controller_source",
+      "checked_in_this_capture": "SHA256_OF_ACTUAL_SMALL_FILE_UNDER_RETAINED_READLOCK",
+      "path": "build/lean_table_checker/campaign_indexed_v16/local_reports.py",
+      "sha256": "6fade6f73e55c37ab4546bc4e7778fad6caa48912f040f35544eb05f4bc69dae"
+    },
+    {
+      "bytes": 1145,
+      "category": "same_frozen_REV3_controller_source",
+      "checked_in_this_capture": "SHA256_OF_ACTUAL_SMALL_FILE_UNDER_RETAINED_READLOCK",
+      "path": "build/lean_table_checker/campaign_indexed_v16/path_guard.py",
+      "sha256": "8d4ae7bd5b0deb7a77dd17c95635fc38cd9727d6f9188c0aaf0f322a6eba69bd"
+    },
+    {
+      "bytes": 3996,
+      "category": "same_frozen_REV3_controller_source",
+      "checked_in_this_capture": "SHA256_OF_ACTUAL_SMALL_FILE_UNDER_RETAINED_READLOCK",
+      "path": "build/lean_table_checker/campaign_indexed_v16/prepare_full_queue.py",
+      "sha256": "353648e53297a89bf1763de63260bb30970b2ebc3422a02b00f928d016b3cbfb"
+    },
+    {
+      "bytes": 13039,
+      "category": "same_frozen_REV3_controller_source",
+      "checked_in_this_capture": "SHA256_OF_ACTUAL_SMALL_FILE_UNDER_RETAINED_READLOCK",
+      "path": "build/lean_table_checker/campaign_indexed_v16/prepare_source_plan.py",
+      "sha256": "8e669ab1b7f5b95922be0db7f4821c139883afdff2de40d41df7a42b99dc8c13"
+    },
+    {
+      "bytes": 7988,
+      "category": "same_frozen_REV3_controller_source",
+      "checked_in_this_capture": "SHA256_OF_ACTUAL_SMALL_FILE_UNDER_RETAINED_READLOCK",
+      "path": "build/lean_table_checker/campaign_indexed_v16/prior_import.py",
+      "sha256": "9c4bcd7bc38f1bc4509b5c8adcf39631d529f4665fd0f60c62af6aed598f4b86"
+    },
+    {
+      "bytes": 2141,
+      "category": "same_frozen_REV3_controller_source",
+      "checked_in_this_capture": "SHA256_OF_ACTUAL_SMALL_FILE_UNDER_RETAINED_READLOCK",
+      "path": "build/lean_table_checker/campaign_indexed_v16/production_metrics.py",
+      "sha256": "f81d513087e62c8abd1ed8992ba49e2fdf30f1b63a4eef977d391d45789cb3ae"
+    },
+    {
+      "bytes": 5507,
+      "category": "same_frozen_REV3_controller_source",
+      "checked_in_this_capture": "SHA256_OF_ACTUAL_SMALL_FILE_UNDER_RETAINED_READLOCK",
+      "path": "build/lean_table_checker/campaign_indexed_v16/resource_job.py",
+      "sha256": "a845264b41c14f58b806bd8dad1b24245b8c00a32a5f560337a101f3f33a371a"
+    },
+    {
+      "bytes": 16675,
+      "category": "same_frozen_REV3_controller_source",
+      "checked_in_this_capture": "SHA256_OF_ACTUAL_SMALL_FILE_UNDER_RETAINED_READLOCK",
+      "path": "build/lean_table_checker/campaign_indexed_v16/run_functional.py",
+      "sha256": "73993fcb0edd985fbfca752bea91bb7c0aa0d229b855ad845ec116f7a51738f3"
+    },
+    {
+      "bytes": 27271,
+      "category": "same_frozen_REV3_controller_source",
+      "checked_in_this_capture": "SHA256_OF_ACTUAL_SMALL_FILE_UNDER_RETAINED_READLOCK",
+      "path": "build/lean_table_checker/campaign_indexed_v16/runner.py",
+      "sha256": "091d78531e154c0293b237d9371fa17182e7d23c292725e87cb83aa28471df08"
+    },
+    {
+      "bytes": 2835,
+      "category": "same_frozen_REV3_controller_source",
+      "checked_in_this_capture": "SHA256_OF_ACTUAL_SMALL_FILE_UNDER_RETAINED_READLOCK",
+      "path": "build/lean_table_checker/campaign_indexed_v16/scope_lifecycle.py",
+      "sha256": "bc10467d220cf1d31f42c1d703742efbc4fc514729d5f30550a936f85565661c"
+    },
+    {
+      "bytes": 6420,
+      "category": "same_frozen_REV3_controller_source",
+      "checked_in_this_capture": "SHA256_OF_ACTUAL_SMALL_FILE_UNDER_RETAINED_READLOCK",
+      "path": "build/lean_table_checker/campaign_indexed_v16/span_policy.py",
+      "sha256": "1f355fb00fc0bcfdd5146ecb3c4fc98faa3d0f7908ea03b4f140b4869d59f3b8"
+    },
+    {
+      "bytes": 2455,
+      "category": "same_frozen_REV3_controller_source",
+      "checked_in_this_capture": "SHA256_OF_ACTUAL_SMALL_FILE_UNDER_RETAINED_READLOCK",
+      "path": "build/lean_table_checker/campaign_indexed_v16/stop_unreceipted.py",
+      "sha256": "c33de77faa4780cdb47864af9288964a53f15463f76ca9dfc6a59f844abc3a22"
+    },
+    {
+      "bytes": 9721,
+      "category": "same_frozen_REV3_controller_source",
+      "checked_in_this_capture": "SHA256_OF_ACTUAL_SMALL_FILE_UNDER_RETAINED_READLOCK",
+      "path": "build/lean_table_checker/campaign_indexed_v16/test_contract.py",
+      "sha256": "96c361be3ed04ca67335af7ac3e9b21c56b8376adb9a65e6d7bbf9277c61ad47"
+    },
+    {
+      "bytes": 8128,
+      "category": "same_frozen_REV3_controller_source",
+      "checked_in_this_capture": "SHA256_OF_ACTUAL_SMALL_FILE_UNDER_RETAINED_READLOCK",
+      "path": "build/lean_table_checker/campaign_indexed_v16/test_epoch_controls.py",
+      "sha256": "73e1c1f04944db162ba4bc5c1847100859d6803d92e1715c5c344338b7ba3413"
+    },
+    {
+      "bytes": 8192,
+      "category": "same_frozen_REV3_controller_source",
+      "checked_in_this_capture": "SHA256_OF_ACTUAL_SMALL_FILE_UNDER_RETAINED_READLOCK",
+      "path": "build/lean_table_checker/campaign_indexed_v16/test_linux_worker_gate.py",
+      "sha256": "2b7037fc318b99ed5c060fdeff48d02a0ef7bf70dbccd4b3ec54b6d4aee6084f"
+    },
+    {
+      "bytes": 7026,
+      "category": "same_frozen_REV3_controller_source",
+      "checked_in_this_capture": "SHA256_OF_ACTUAL_SMALL_FILE_UNDER_RETAINED_READLOCK",
+      "path": "build/lean_table_checker/campaign_indexed_v16/worker_gate.py",
+      "sha256": "17545650690c486484070b6619b5cacd8ac73df6c6cf588a93d5cec27e822dc8"
+    },
+    {
+      "bytes": 34584,
+      "category": "explicit_finite_premise_contract",
+      "checked_in_this_capture": "SHA256_OF_ACTUAL_SMALL_FILE_UNDER_RETAINED_READLOCK",
+      "path": "build/lean_table_checker/final_chain_review_v12/evidence_closure.py",
+      "sha256": "0a88c3d676a81f6b36e02618e846757428edc86c1e5c6630cb59f5ec2a1c23b3"
+    },
+    {
+      "bytes": 2212,
+      "category": "independent_final_reviewer_source",
+      "checked_in_this_capture": "SHA256_OF_ACTUAL_SMALL_FILE_UNDER_RETAINED_READLOCK",
+      "path": "build/lean_table_checker/indexed_start_review_v16/SOURCE_FREEZE.json",
+      "sha256": "839b743b4e8848dfc13c58bdb5c49c075964ae529baca973edf6faa8c0841b57"
+    },
+    {
+      "bytes": 26037,
+      "category": "independent_final_cost_reproduction_not_yet_executed",
+      "checked_in_this_capture": "SHA256_OF_ACTUAL_SMALL_FILE_UNDER_RETAINED_READLOCK",
+      "path": "build/lean_table_checker/indexed_start_review_v16/review_final_cost.py",
+      "sha256": "c3a390a6992d50095821f369c81bb26e4a460eae92698de4b9d595848487c6b1"
+    },
+    {
+      "bytes": 3766,
+      "category": "complete_actual_evidence_replay_source",
+      "checked_in_this_capture": "SHA256_OF_ACTUAL_SMALL_FILE_UNDER_RETAINED_READLOCK",
+      "path": "build/lean_table_checker/integration_indexed_v16/REPLAY_SOURCE_FREEZE.json",
+      "sha256": "5e638acda9e4cac323e576d4178cff42018c958a982345970f2fe9148795bf3d"
+    },
+    {
+      "bytes": 2385,
+      "category": "frozen_final_gating_source",
+      "checked_in_this_capture": "SHA256_OF_ACTUAL_SMALL_FILE_UNDER_RETAINED_READLOCK",
+      "path": "build/lean_table_checker/integration_indexed_v16/SOURCE_FREEZE.json",
+      "sha256": "e4a46ca59a62d5640eb5f05013b3ae67bfadf4c0fde29f0f2e999a2629d9fa8b"
+    },
+    {
+      "bytes": 73364,
+      "category": "final_gating_and_finite_premise_operator",
+      "checked_in_this_capture": "SHA256_OF_ACTUAL_SMALL_FILE_UNDER_RETAINED_READLOCK",
+      "path": "build/lean_table_checker/integration_indexed_v16/seal_start.py",
+      "sha256": "cf3480e72f6e7133cf0a86346b1c08050cca767fa0761a5f3418be92916d2d21"
+    },
+    {
+      "bytes": 2485,
+      "category": "selected_compilation_pipeline",
+      "checked_in_this_capture": "SHA256_OF_ACTUAL_SMALL_FILE_UNDER_RETAINED_READLOCK",
+      "path": "build/lean_table_checker/joint_indexed_build_v16/SOURCE_FREEZE.json",
+      "sha256": "af9101bdb67baa4c10006f414278703f096ca5362824ed31f645ba33a14c1846"
+    },
+    {
+      "bytes": 4287,
+      "category": "current_selected_Lean_source",
+      "checked_in_this_capture": "SHA256_OF_ACTUAL_SMALL_FILE_UNDER_RETAINED_READLOCK",
+      "path": "build/lean_table_checker/joint_indexed_checker_v16/SOURCE_FREEZE.json",
+      "sha256": "5c6f53d941d67635c7945bb2540d7c7dd5bb4e3ae5250c3ebe2a6a6c47407bd2"
+    },
+    {
+      "bytes": 40216,
+      "category": "selected_joint_Lean_source",
+      "checked_in_this_capture": "SHA256_OF_ACTUAL_SMALL_FILE_UNDER_RETAINED_READLOCK",
+      "path": "build/lean_table_checker/joint_indexed_checker_v16/source/JointIndexedFramesMainV16.lean",
+      "sha256": "20235775406089ca749440fb5fff29ef556446cc45592dc8cde653479a3b36d5"
+    },
+    {
+      "bytes": 11380,
+      "category": "selected_joint_Lean_source",
+      "checked_in_this_capture": "SHA256_OF_ACTUAL_SMALL_FILE_UNDER_RETAINED_READLOCK",
+      "path": "build/lean_table_checker/joint_indexed_checker_v16/source/Mahjong/CheckedPlanConstructor.lean",
+      "sha256": "824278af4901cc8d280d22331666f1e1fb9c95e11c62031d09b79f63fff5e764"
+    },
+    {
+      "bytes": 2887,
+      "category": "selected_joint_Lean_source",
+      "checked_in_this_capture": "SHA256_OF_ACTUAL_SMALL_FILE_UNDER_RETAINED_READLOCK",
+      "path": "build/lean_table_checker/joint_indexed_checker_v16/source/Mahjong/GuardedByteScanV16.lean",
+      "sha256": "08a3975f03036b546e23464032fc548b9e6390e4bd279f37f73529e27e6b32cb"
+    },
+    {
+      "bytes": 3458,
+      "category": "selected_joint_Lean_source",
+      "checked_in_this_capture": "SHA256_OF_ACTUAL_SMALL_FILE_UNDER_RETAINED_READLOCK",
+      "path": "build/lean_table_checker/joint_indexed_checker_v16/source/Mahjong/IndexedByteRowInputV16.lean",
+      "sha256": "eff6eb7461a51a1d29de038fa74887f8865861f3fd0badd45d0d602d2a006665"
+    },
+    {
+      "bytes": 10564,
+      "category": "selected_joint_Lean_source",
+      "checked_in_this_capture": "SHA256_OF_ACTUAL_SMALL_FILE_UNDER_RETAINED_READLOCK",
+      "path": "build/lean_table_checker/joint_indexed_checker_v16/source/Mahjong/IndexedByteRowV16.lean",
+      "sha256": "b3e7b59ad237db593ed05acc4bcb8d1b9bb20030f5ce98134c24af6ea6015407"
+    },
+    {
+      "bytes": 3869,
+      "category": "selected_joint_Lean_source",
+      "checked_in_this_capture": "SHA256_OF_ACTUAL_SMALL_FILE_UNDER_RETAINED_READLOCK",
+      "path": "build/lean_table_checker/joint_indexed_checker_v16/source/Mahjong/IndexedByteStreamTransportV16.lean",
+      "sha256": "1481eb5f823e469c5b5a21759e8094ebabf337fa4eee8dabf6391e88c6a1bdc0"
+    },
+    {
+      "bytes": 112,
+      "category": "selected_joint_Lean_source",
+      "checked_in_this_capture": "SHA256_OF_ACTUAL_SMALL_FILE_UNDER_RETAINED_READLOCK",
+      "path": "build/lean_table_checker/joint_indexed_checker_v16/source/MainOwnedJointIndexedRows1WorkerV16.lean",
+      "sha256": "8077936f36171d784ca57fdd895bb382fbe650f8644acc3ffb9ade8ee8138235"
+    },
+    {
+      "bytes": 11380,
+      "category": "prepared_one_shot_host_not_registered",
+      "checked_in_this_capture": "SHA256_OF_ACTUAL_SMALL_FILE_UNDER_RETAINED_READLOCK",
+      "path": "build/lean_table_checker/service_host_v16/service_host.py",
+      "sha256": "36613a4d1ebd7422713a34840b90d2a9e65be006e68777e790c5487df6f979b2"
+    },
+    {
+      "bytes": 2133,
+      "category": "historical_migration_validation",
+      "checked_in_this_capture": "SHA256_OF_ACTUAL_SMALL_FILE_UNDER_RETAINED_READLOCK",
+      "path": "migration/VALIDATION.md",
+      "sha256": "e09990ea0ef56f23ed0cafb3c3e7f01b3699dc26eeff520338080547af8e2b9c"
+    },
+    {
+      "bytes": 38933,
+      "category": "actual34_cases_107_frames_conditional",
+      "checked_in_this_capture": "SHA256_OF_ACTUAL_SMALL_FILE_UNDER_RETAINED_READLOCK",
+      "path": "runs/lean_table_checker/calibration_indexed_20261018_v16/sample_7a5fb81f30dd/acceptance.json",
+      "sha256": "de80a0f635cbccb3de0a9e894a1496d303e014dc4915281a727db2e38830a5e6"
+    },
+    {
+      "bytes": 191016,
+      "category": "known_components_only_not_full_gate",
+      "checked_in_this_capture": "SHA256_OF_ACTUAL_SMALL_FILE_UNDER_RETAINED_READLOCK",
+      "path": "runs/lean_table_checker/calibration_indexed_20261018_v16/sample_7a5fb81f30dd/known_cost_screen.json",
+      "sha256": "abfdce1aee3e4b2ce8cc616c579ba33fa2d1536cd58e6df5609d42af7d6933cd"
+    },
+    {
+      "bytes": 563091,
+      "category": "registered_actual_profile",
+      "checked_in_this_capture": "SHA256_OF_ACTUAL_SMALL_FILE_UNDER_RETAINED_READLOCK",
+      "path": "runs/lean_table_checker/calibration_indexed_20261018_v16/sample_7a5fb81f30dd/profile.json",
+      "sha256": "cdbcff9be06ac2e5e450c73041d79f3ef92306e7bf8724cd9cdc382e1f8f3990"
+    },
+    {
+      "bytes": 5203554,
+      "category": "prior_successful_actual_once_hash_not_current_full_run",
+      "checked_in_this_capture": "SHA256_OF_ACTUAL_SMALL_FILE_UNDER_RETAINED_READLOCK",
+      "path": "runs/lean_table_checker/campaign_indexed_20261018_v16/campaigns/overnight_v16_indexed_r3/parent_inputs/a37f61e9b886405fa29d9313b6ccfa9e.json",
+      "sha256": "219d7dd7e02c7d6ff404af2d961885db12541df945b9c7069a29a7517e53a9e5"
+    },
+    {
+      "bytes": 825,
+      "category": "immutable_user_stop_settlement",
+      "checked_in_this_capture": "SHA256_OF_ACTUAL_SMALL_FILE_UNDER_RETAINED_READLOCK",
+      "path": "runs/lean_table_checker/campaign_indexed_20261018_v16/campaigns/overnight_v16_indexed_r3i/budget_events/6140a007cd724cc89b253e6b3e53f82f.settled.json",
+      "sha256": "ad0e055e27b80738bd8282af4d0eb4e858c9e8492c4e5ded5a300d3aaf7f6ae7"
+    },
+    {
+      "bytes": 3717975,
+      "category": "planned_manifest_not_start_authority",
+      "checked_in_this_capture": "SHA256_OF_ACTUAL_SMALL_FILE_UNDER_RETAINED_READLOCK",
+      "path": "runs/lean_table_checker/campaign_indexed_20261018_v16/campaigns/overnight_v16_indexed_r3i/manifest.json",
+      "sha256": "d0debc3e9fb18183a1320c297b0274c6deaae7a4482fcafc4d7668973706f13a"
+    },
+    {
+      "bytes": 494,
+      "category": "actual_cleanup_after_user_stop",
+      "checked_in_this_capture": "SHA256_OF_ACTUAL_SMALL_FILE_UNDER_RETAINED_READLOCK",
+      "path": "runs/lean_table_checker/campaign_indexed_20261018_v16/campaigns/overnight_v16_indexed_r3i/preflight_failures/6140a007cd724cc89b253e6b3e53f82f.json",
+      "sha256": "b31c17aa3a6ca1d4a80cc4068732701200984517c1e924a6e9ad453f56e9135f"
+    },
+    {
+      "bytes": 16771,
+      "category": "actual_production_fee_observations",
+      "checked_in_this_capture": "SHA256_OF_ACTUAL_SMALL_FILE_UNDER_RETAINED_READLOCK",
+      "path": "runs/lean_table_checker/campaign_indexed_20261018_v16/fee_observations/da7ebf45e02a/observations.json",
+      "sha256": "0d4fca9acf82109ca998aa008eb7802a63cbf97099c0226c7821b0b42d401ae1"
+    },
+    {
+      "bytes": 13420,
+      "category": "actual_REV3_bounded_runtime_control",
+      "checked_in_this_capture": "SHA256_OF_ACTUAL_SMALL_FILE_UNDER_RETAINED_READLOCK",
+      "path": "runs/lean_table_checker/campaign_indexed_20261018_v16/functional/chain_08fae150/acceptance.json",
+      "sha256": "2922b39bc6fe91dc0bdad4d2a14c8e1443ae527688b0a7be0eb8f2703fc7e6cc"
+    },
+    {
+      "bytes": 13988,
+      "category": "actual_REV3_bounded_runtime_control",
+      "checked_in_this_capture": "SHA256_OF_ACTUAL_SMALL_FILE_UNDER_RETAINED_READLOCK",
+      "path": "runs/lean_table_checker/campaign_indexed_20261018_v16/functional/crash_ce857cb9/acceptance.json",
+      "sha256": "6e3bc372936fa72c61ce6dd9aca34421c02f036341f850fe68fb12b4d24abbb3"
+    },
+    {
+      "bytes": 16869,
+      "category": "actual_REV3_bounded_runtime_control",
+      "checked_in_this_capture": "SHA256_OF_ACTUAL_SMALL_FILE_UNDER_RETAINED_READLOCK",
+      "path": "runs/lean_table_checker/campaign_indexed_20261018_v16/functional/negatives_0513751a/acceptance.json",
+      "sha256": "b66cc4a43f3a97d45820809e2884691728fcd3537c2a82d7399429f967d0f544"
+    },
+    {
+      "bytes": 12617,
+      "category": "actual_REV3_bounded_runtime_control",
+      "checked_in_this_capture": "SHA256_OF_ACTUAL_SMALL_FILE_UNDER_RETAINED_READLOCK",
+      "path": "runs/lean_table_checker/campaign_indexed_20261018_v16/functional/prefix31_69e24700/acceptance.json",
+      "sha256": "5d056101d58b5d7fc71c2ff99c9feb85d0d15386565785072cce3f730bf61e20"
+    },
+    {
+      "bytes": 392843,
+      "category": "bounded_worker_gate_not_full_start_authority",
+      "checked_in_this_capture": "SHA256_OF_ACTUAL_SMALL_FILE_UNDER_RETAINED_READLOCK",
+      "path": "runs/lean_table_checker/campaign_indexed_20261018_v16/linux_worker_gate.json",
+      "sha256": "98a83a3df69413558ba1b8111be6ade756e88e6c88789c064917aa2b46b97a44"
+    },
+    {
+      "bytes": 7720179,
+      "category": "explicit_finite_premise_contract",
+      "checked_in_this_capture": "SHA256_OF_ACTUAL_SMALL_FILE_UNDER_RETAINED_READLOCK",
+      "path": "runs/lean_table_checker/final_chain_review_20261018_v12/staged_v2/finite_premise_closure.json",
+      "sha256": "11829edce1deb31d473be13e1d04dde3081b344f03b9d5caf80782844d677416"
+    },
+    {
+      "bytes": 1322691,
+      "category": "actual107_raw_source_independent_replay",
+      "checked_in_this_capture": "SHA256_OF_ACTUAL_SMALL_FILE_UNDER_RETAINED_READLOCK",
+      "path": "runs/lean_table_checker/indexed_matrix_review_20261018_v16/actual34_independent_source_review.json",
+      "sha256": "78a260e5ee39b17dd13abab8183574b5699a05d88b4e6058c0953636eb039fb3"
+    },
+    {
+      "bytes": 25107,
+      "category": "actual_negative_control_causes",
+      "checked_in_this_capture": "SHA256_OF_ACTUAL_SMALL_FILE_UNDER_RETAINED_READLOCK",
+      "path": "runs/lean_table_checker/indexed_negative_review_20261018_v16/genuine_rev3_negative_causes.json",
+      "sha256": "29a1a5c106d157915c057f3f0af6c3c76732240e59cf4b88a064521decfab16c"
+    },
+    {
+      "bytes": 24970,
+      "category": "independent_actual_new_manifest_and_debit_review",
+      "checked_in_this_capture": "SHA256_OF_ACTUAL_SMALL_FILE_UNDER_RETAINED_READLOCK",
+      "path": "runs/lean_table_checker/indexed_start_review_20261018_v16/manifest_derivation_1792291517891573500.json",
+      "sha256": "63ba7af53bf26918544454dddbb9f91d1e3b21536fca11b455c3e9f3a24a8b1a"
+    },
+    {
+      "bytes": 4080,
+      "category": "historical_preflight_debit_preserved",
+      "checked_in_this_capture": "SHA256_OF_ACTUAL_SMALL_FILE_UNDER_RETAINED_READLOCK",
+      "path": "runs/lean_table_checker/integration_indexed_20261018_v16/planning_integral_0244/conservative_charge_origin.json",
+      "sha256": "8c3dd5eb4fe5011d086b23c41ba72521c6fcbd784a0a2cb58330039b939a0ee8"
+    },
+    {
+      "bytes": 1500,
+      "category": "explicit_manifest_derivation_not_validation",
+      "checked_in_this_capture": "SHA256_OF_ACTUAL_SMALL_FILE_UNDER_RETAINED_READLOCK",
+      "path": "runs/lean_table_checker/integration_indexed_20261018_v16/planning_integral_0244/derivation.json",
+      "sha256": "52c1e2f28d790879c91b93a26c6bc433e17957f8b967d9228b0e247897819c65"
+    },
+    {
+      "bytes": 1998,
+      "category": "historical_capacity_not_current_admission",
+      "checked_in_this_capture": "SHA256_OF_ACTUAL_SMALL_FILE_UNDER_RETAINED_READLOCK",
+      "path": "runs/lean_table_checker/integration_indexed_20261018_v16/r3_final_0237/capacity.json",
+      "sha256": "90770e3eadcf991be7855d2c9c7a055fd02287c8329a7479c3b04f6e2216e093"
+    },
+    {
+      "bytes": 5328,
+      "category": "failed_readiness_no_authority",
+      "checked_in_this_capture": "SHA256_OF_ACTUAL_SMALL_FILE_UNDER_RETAINED_READLOCK",
+      "path": "runs/lean_table_checker/integration_indexed_20261018_v16/r3_final_0237/sequence_receipt.json",
+      "sha256": "8983afa46609e8f159b1394608e71854cbb77e29ea864955ad1bd32de609fb85"
+    },
+    {
+      "bytes": 72035,
+      "category": "actual104_kernel_and_generated_C_review",
+      "checked_in_this_capture": "SHA256_OF_ACTUAL_SMALL_FILE_UNDER_RETAINED_READLOCK",
+      "path": "runs/lean_table_checker/joint_indexed_build_20261018_v16/actual104_kernel_C_review_1792283729925106300.json",
+      "sha256": "dabc72bf268f1cf250c4f05510648f2f2b7e7bd0b2e5ff060bb6d14dd86a3c13"
+    },
+    {
+      "bytes": 225716,
+      "category": "compiled_Lean_build_receipt",
+      "checked_in_this_capture": "SHA256_OF_ACTUAL_SMALL_FILE_UNDER_RETAINED_READLOCK",
+      "path": "runs/lean_table_checker/joint_indexed_build_20261018_v16/b_b1f377d7b5384300af48ad2508bc46d2/LinuxJointIndexedCompactWorker.build.json",
+      "sha256": "08562b37b30fa474e943c06742fa6a2ddeade27e5d7ba6e7a000bdbb54e5d751"
+    },
+    {
+      "bytes": 246768,
+      "category": "actual104_proof_bundle_build_only",
+      "checked_in_this_capture": "SHA256_OF_ACTUAL_SMALL_FILE_UNDER_RETAINED_READLOCK",
+      "path": "runs/lean_table_checker/joint_indexed_build_20261018_v16/b_b1f377d7b5384300af48ad2508bc46d2/proof_bundle.json",
+      "sha256": "b8d0c30b4ccee996b04b25d4355363b2f06bd0a551bd86902967b6dfdb698a7b"
+    },
+    {
+      "bytes": 641123,
+      "category": "actual83_resource_frames_conditional",
+      "checked_in_this_capture": "SHA256_OF_ACTUAL_SMALL_FILE_UNDER_RETAINED_READLOCK",
+      "path": "runs/lean_table_checker/linux_bridge_resource_indexed_20261018_v16/rounds1_38fe3103df9a/acceptance.json",
+      "sha256": "9230b1bc0bcecaac3aa6686c868c0b3d9824c8cb8493be3bd9c10914d835da9e"
+    },
+    {
+      "bytes": 1365,
+      "category": "selected_Native_identity",
+      "checked_in_this_capture": "SHA256_OF_ACTUAL_SMALL_FILE_UNDER_RETAINED_READLOCK",
+      "path": "runs/lean_table_checker/linux_bridge_test_indexed_20261018_v16/native_candidate.json",
+      "sha256": "09f7f31d49a514c3279fabc6223c282ba6ca88653c492664e13555f40f78c104"
+    },
+    {
+      "bytes": 106147,
+      "category": "actual_tiny_and_negative_controls",
+      "checked_in_this_capture": "SHA256_OF_ACTUAL_SMALL_FILE_UNDER_RETAINED_READLOCK",
+      "path": "runs/lean_table_checker/linux_bridge_test_indexed_20261018_v16/tiny_rounds1_4143672ccef9/normalized_receipt.json",
+      "sha256": "035cf1a5bc641a7b0d991b107569a1de4c80e2572a5f1d8024b1c585ebb5e949"
+    },
+    {
+      "bytes": 3101,
+      "category": "immutable_audit_snapshot",
+      "checked_in_this_capture": "NEW_IMMUTABLE_CAPTURE",
+      "path": "runs/lean_table_checker/prelaunch_audit_20261018/AUDIT_STATUS.json",
+      "sha256": "58b005ec1bb207d12e49279ee71264f90b9cf00437a697685fa42d7ee5bbfeb1"
+    },
+    {
+      "bytes": 4559137,
+      "category": "immutable_audit_snapshot",
+      "checked_in_this_capture": "NEW_IMMUTABLE_CAPTURE",
+      "path": "runs/lean_table_checker/prelaunch_audit_20261018/EXPECTED_INPUTS.json",
+      "sha256": "796efe070c9fc088f0f6f4866c7c45becef919397029ad5c1a07d417355fa9d6"
+    },
+    {
+      "bytes": 745,
+      "category": "immutable_audit_snapshot",
+      "checked_in_this_capture": "NEW_IMMUTABLE_CAPTURE",
+      "path": "runs/lean_table_checker/prelaunch_audit_20261018/captured_pause_state/budget.json",
+      "sha256": "40220565d4be3e9d23bf86045b3953b8e8fafbce4b1c124e9afb0bc12f359669"
+    },
+    {
+      "bytes": 628,
+      "category": "immutable_audit_snapshot",
+      "checked_in_this_capture": "NEW_IMMUTABLE_CAPTURE",
+      "path": "runs/lean_table_checker/prelaunch_audit_20261018/captured_pause_state/checkpoint.json",
+      "sha256": "1cf6a46ae97d8123e08521ad2730e98e20f027cdc0300f0e47c7a35058d1e512"
+    },
+    {
+      "bytes": 494,
+      "category": "immutable_audit_snapshot",
+      "checked_in_this_capture": "NEW_IMMUTABLE_CAPTURE",
+      "path": "runs/lean_table_checker/prelaunch_audit_20261018/captured_pause_state/cleanup.json",
+      "sha256": "b31c17aa3a6ca1d4a80cc4068732701200984517c1e924a6e9ad453f56e9135f"
+    },
+    {
+      "bytes": 825,
+      "category": "immutable_audit_snapshot",
+      "checked_in_this_capture": "NEW_IMMUTABLE_CAPTURE",
+      "path": "runs/lean_table_checker/prelaunch_audit_20261018/captured_pause_state/settlement.json",
+      "sha256": "ad0e055e27b80738bd8282af4d0eb4e858c9e8492c4e5ded5a300d3aaf7f6ae7"
+    },
+    {
+      "bytes": 1449,
+      "category": "reviewed_hidden_host",
+      "checked_in_this_capture": "SHA256_OF_ACTUAL_SMALL_FILE_UNDER_RETAINED_READLOCK",
+      "path": "runs/lean_table_checker/service_host_20261018_v16/source_1792286292984462600/SOURCE_FREEZE.json",
+      "sha256": "fdcd6cf84b3da91ad537303e58c58bea40b58fda7e8558f1526d0474cde6f17f"
+    },
+    {
+      "bytes": 1369,
+      "category": "actual_detached_probe_only",
+      "checked_in_this_capture": "SHA256_OF_ACTUAL_SMALL_FILE_UNDER_RETAINED_READLOCK",
+      "path": "runs/lean_table_checker/service_host_20261018_v16/source_1792286292984462600/hidden_host_basis.json",
+      "sha256": "31313aa333a6d90d30d2f96680569abfb75cbc77e05e718bd83a8b444921574c"
+    },
+    {
+      "bytes": 8955,
+      "category": "historical_formalization_gaps",
+      "checked_in_this_capture": "SHA256_OF_ACTUAL_SMALL_FILE_UNDER_RETAINED_READLOCK",
+      "path": "runs/lean_verification/final_review.md",
+      "sha256": "fe0ab3c7095314b0f272591c5b8651b9a324b9517e0683452bf240da5b80d756"
+    }
+  ],
+  "records_count": 91,
+  "schema": "PRELAUNCH_AUDIT_PRIMARY_SMALL_EVIDENCE_INDEX_V16",
+  "source_data_not_rehashed_in_this_capture": true
+}
