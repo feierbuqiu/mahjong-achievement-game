@@ -9,6 +9,9 @@ native verification under a kernel-proved implication. A closed actual-input
 Lean theorem and independent execution replication remain open. Replication
 on a different stack, human rules/bookkeeping review, alternative proofs,
 corrections and reproducibility improvements are particularly useful.
+The [latest working paper](papers/trust-verification/manuscript.md) includes
+later numerical/game components and same-host reproduction evidence; further
+external review is pending. No whole-kernel completion deadline is claimed.
 Use the [claim boundaries](docs/CLAIMS.md) and [version glossary](docs/INTERNAL_VERSIONS.md)
 to identify the exact scope of a contribution.
 

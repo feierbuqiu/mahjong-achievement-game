@@ -27,6 +27,13 @@ The 100.62 GB actual input dataset and the original native/toolchain binaries
 are not part of this asset. The code repository supplies their identities
 where recorded; a digest is not a download service. See [data availability](DATA_AVAILABILITY.md).
 
+## Later local archives
+
+The [working paper delivery descriptor](../papers/trust-verification/delivery.json)
+identifies three completed local archives and selected validation receipts.
+They are not added to Git or uploaded as release assets by this update.
+The existing signed evidence asset and v1.0.0 remain unchanged.
+
 ## Publication rules
 
 - Preserve existing signed tags and immutable releases. Publish a corrected

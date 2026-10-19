@@ -1,0 +1,29 @@
+{
+  "status": "PASS_CLOSED_ACTUAL_GAME_PROOF_AB_AND_COLD_REPLAY",
+  "wall_seconds": 166.71415897899988,
+  "variants": [
+    {
+      "mode": "foundation_Init_only",
+      "construction_wall_seconds": 31.133564617000047,
+      "replay": {
+        "name": "fresh",
+        "returncode": 0,
+        "wall_seconds": 114.600500291,
+        "peak_RSS_bytes": 1066545152
+      },
+      "certificate_bytes": 6146624,
+      "mathematical_modules": 24,
+      "new_modules": 24,
+      "changed_proof_bodies": {},
+      "theorem_statements_unchanged": true,
+      "physical_nodes": 11,
+      "closed_32_tile_roots": 3,
+      "empty_game_proved": false,
+      "actual_SAFE_flip_rejected": true,
+      "scratch": "/var/tmp/mahjong-closed-game-8c639b1042c6429db3745938f7a1aad0/foundation_Init_only"
+    }
+  ],
+  "full_table_scan": false,
+  "empty_game_proved": false,
+  "construction_ratio": null
+}

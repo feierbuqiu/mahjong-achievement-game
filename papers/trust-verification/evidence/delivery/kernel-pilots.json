@@ -1,0 +1,44 @@
+{
+  "status": "PASS_EXTRACTED_PORTABLE_PURE_KERNEL_PILOTS",
+  "archive_sha256": "e4bbdc9c00f1c3c40434f8d00893ca347a69519fda25772712533d141129d5dc",
+  "archive_bytes": 21136243,
+  "scratch": "/var/tmp/mahjong-kernel-share-606cef58b7424a49827b3ec756a643db",
+  "wall_seconds": 179.22789236599988,
+  "lanes": [
+    {
+      "status": "PASS_STANDARD_FRESH_KERNEL_REPLAY",
+      "lane": "packed",
+      "scope": "Numerical layout and PN components only; actual SAFE/addressing and empty game are unproved.",
+      "wall_seconds": 88.75129035199984,
+      "peak_RSS_bytes": 785555456,
+      "returncode": 0,
+      "game_Native_or_GPU_started": false,
+      "empty_game_proved": false
+    },
+    {
+      "status": "PASS_STANDARD_FRESH_KERNEL_REPLAY",
+      "lane": "game",
+      "scope": "Three closed original-game strategies at 32-tile positions, 11 physical nodes; not the empty position.",
+      "wall_seconds": 176.80904832300007,
+      "peak_RSS_bytes": 1382748160,
+      "returncode": 0,
+      "game_Native_or_GPU_started": false,
+      "empty_game_proved": false
+    },
+    {
+      "status": "PASS_STANDARD_FRESH_KERNEL_REPLAY",
+      "lane": "game-slim",
+      "scope": "Same closed 32-tile games after an import-only foundation fork; not the empty position.",
+      "wall_seconds": 127.46121762500002,
+      "peak_RSS_bytes": 1068597248,
+      "returncode": 0,
+      "game_Native_or_GPU_started": false,
+      "empty_game_proved": false
+    }
+  ],
+  "empty_game_proved": false,
+  "full_table_scan": false,
+  "game_Native_or_GPU_started": false,
+  "independently_extracted": true,
+  "source_or_input_generation_during_replay": false
+}

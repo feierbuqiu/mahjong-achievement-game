@@ -1,5 +1,21 @@
 # Changelog
 
+## 2026-10-19 — Working trust/verification paper and later component evidence
+
+- Publish the third English report, *Trust and Formal Verification in the
+  Mahjong Achievement Game*, as a working main-branch manuscript awaiting
+  future user-supplied external review. Create no new release, tag or freeze.
+- Preserve five display and eleven inline formulas, equation numbering,
+  numerical tables, exact theorem type, physical states and bibliography while
+  adapting GitHub math and resource links. Preserve the September paper bodies.
+- Publish selected later packed/game/import-variant and portable-validation
+  records, with explicit limits. The completed 28-block / 402-word numerical
+  sample is not a complete actual-game certificate. Same-host tests are not
+  second-machine or second complete all-layer execution.
+- Update all current entry points and citation/status metadata. Identify the
+  completed local delivery archives by hashes, without advertising nonexistent
+  public downloads or uploading new release assets.
+
 ## 2026-10-19 — Complete V17 native verification and publication cleanup
 
 - Publish the completed all-layer V17 native result: 778,532,864,302 SAFE

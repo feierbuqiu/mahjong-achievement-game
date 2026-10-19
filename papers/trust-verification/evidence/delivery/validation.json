@@ -1,0 +1,171 @@
+{
+  "archive_receipts": {
+    "mahjong_v17_core_r4.tar.zst": {
+      "archive": "mahjong_v17_core_r4.tar.zst",
+      "bytes": 1407097086,
+      "full_table_recomputed": false,
+      "input_bytes": 5021617870,
+      "member_count": 73899,
+      "schema": "MAHJONG_PORTABLE_ARCHIVE_RECEIPT_V1",
+      "sha256": "45673cf14ffedd3a85367f29508ad7587ef370a90aace2ec2f4e00c82a38c24e",
+      "status": "PASS_ARCHIVED_EXACT_BYTES",
+      "wall_seconds": 50.364330757999994
+    },
+    "mahjong_v17_full_inputs.tar.zst": {
+      "archive": "mahjong_v17_full_inputs.tar.zst",
+      "bytes": 8087887655,
+      "full_table_recomputed": false,
+      "input_bytes": 100615834170,
+      "member_count": 11272,
+      "schema": "MAHJONG_PORTABLE_ARCHIVE_RECEIPT_V1",
+      "sha256": "afa51a9e7202e2e2ae5381534b5d93c64bed6e155c9bd39306ee621d53bd933e",
+      "status": "PASS_ARCHIVED_EXACT_BYTES",
+      "wall_seconds": 2081.861167256
+    }
+  },
+  "cold_kernel_replay_seconds": 108.35577785199996,
+  "full_input_archive_roundtrip": {
+    "files": 11272,
+    "game_rows_recomputed": 0,
+    "input_bytes": 100615834170,
+    "original_input_files_modified": false,
+    "peak_RSS_bytes": 83558400,
+    "schema": "V17_FULL_INPUT_ARCHIVE_STREAM_ROUNDTRIP_V1",
+    "status": "PASS_FULL_INPUT_ARCHIVE_STREAM_ROUNDTRIP",
+    "wall_seconds": 396.85822018499994
+  },
+  "independent_second_machine_test_performed": false,
+  "kernel_scope": "Frozen implication and generic checker correctness; not actual full-input acceptance as a closed theorem.",
+  "original_ELF_peak_RSS_bytes": 8325414912,
+  "original_ELF_small_control_seconds": 530.737992964,
+  "packaging_dependency_precheck": {
+    "changed_nonmathematical_members": [
+      "packaging_source/archive_bundle.py",
+      "packaging_source/make_archive.py",
+      "packaging_source/operations/cold_validation.py",
+      "packaging_source/operations/repackage_from_cold.py",
+      "packaging_source/operations/seal_delivery.py",
+      "packaging_source/prepare.py",
+      "packaging_source/test_archive.py",
+      "packaging_source/unpack.py",
+      "reproduce.py",
+      "workspace/runs/lean_table_checker/v17_compute_finish_20261018/full_native_20261018_01/catalog_all35.tsv"
+    ],
+    "exact_catalog_alias": {
+      "bytes": 118103,
+      "sha256": "49b5b521006438a24483f3a9c2795ae4cbbad5163cc1bbf13ba018b095f77d9f"
+    },
+    "full_table_recomputed": false,
+    "old_catalog_and_current_catalog_identical": true,
+    "original_math_and_native_bytes_modified": false,
+    "status": "PASS_MISSING_DEPENDENCY_PRECHECK_AND_EXACT_ALIAS_REPAIR"
+  },
+  "privacy_review": {
+    "bytes_checked": 221905868,
+    "matched_files": [],
+    "status": "PASS_NO_ORIGINAL_ACCOUNT_PATH_IN_PACKAGED_TEXT",
+    "text_files_checked": 56151,
+    "wall_seconds": 1.2062225839999883
+  },
+  "production_full_table_recomputed": false,
+  "real_member_tamper_test": {
+    "changed_only_temporary_extracted_metadata": true,
+    "full_table_recomputed": false,
+    "original_production_artifacts_modified": false,
+    "status": "PASS_REAL_MEMBER_TAMPER_REJECTED_AND_EXACTLY_RESTORED"
+  },
+  "rebuilt_ELF_identity": {
+    "bytes": 121191056,
+    "sha256": "353cf032601978e5cca85340243bed8d6cbdeaf6fcfc08c964880d2524ef5ce2"
+  },
+  "rebuilt_ELF_peak_RSS_bytes": 8437444608,
+  "rebuilt_ELF_small_control_seconds": 516.224149705,
+  "schema": "V17_PORTABLE_DELIVERY_AND_COLD_TEST_V1",
+  "source_project_modules": 149,
+  "status": "PASS_PORTABLE_SMALL_COLD_REPRODUCTION",
+  "validation": {
+    "archive_identity": {
+      "bytes": 1407097086,
+      "sha256": "45673cf14ffedd3a85367f29508ad7587ef370a90aace2ec2f4e00c82a38c24e"
+    },
+    "cold_execution_wall_seconds": 1251.9976054,
+    "full_table_recomputed": false,
+    "historical_ELF_real_small_controls": true,
+    "original_all35_execution_evidence_audited": true,
+    "portable_GPU_56_row_path_tested": true,
+    "schema": "V17_PORTABLE_REAL_COLD_REPRODUCTION_V1",
+    "scratch": "/var/tmp/mahjong-v17-cold-8cd863a1fc8d4f7ab9e4c46708f395de",
+    "source_rebuilt_ELF_real_small_controls": true,
+    "source_recompiled_from_zero_project_oleans": true,
+    "stages": [
+      {
+        "returncode": 0,
+        "stage": "UNPACK_FRESH_DIRECTORY",
+        "stderr_identity": {
+          "bytes": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        "stdout_identity": {
+          "bytes": 125,
+          "sha256": "fc9d64981203cb9de6bde220b94938332470050975818800c1f064c81495133a"
+        },
+        "wall_seconds": 40.03229752300001
+      },
+      {
+        "returncode": 0,
+        "stage": "VERIFY_EXTRACTED_MEMBER_HASHES",
+        "stderr_identity": {
+          "bytes": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        "stdout_identity": {
+          "bytes": 661,
+          "sha256": "78b367efd1edb5d2da172575438d011280612b8e32446aa0d048d662a8ece63b"
+        },
+        "wall_seconds": 20.02286883100001
+      },
+      {
+        "returncode": 0,
+        "stage": "COLD_SOURCE_NATIVE_KERNEL_AND_REAL_CONTROLS",
+        "stderr_identity": {
+          "bytes": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        "stdout_identity": {
+          "bytes": 19954,
+          "sha256": "b8281b9f3ad06cd76e056d4b665f87a8bff0e911e79a6cad5ac837c41a6570da"
+        },
+        "wall_seconds": 1260.7574040490001
+      },
+      {
+        "returncode": 0,
+        "stage": "VERIFY_HISTORICAL_ALL35_EXECUTION_EVIDENCE",
+        "stderr_identity": {
+          "bytes": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        "stdout_identity": {
+          "bytes": 738,
+          "sha256": "6cbbe7a9814a1ee5630bc653c01d82997e501f76e9d0b85466563f9a50b2c6da"
+        },
+        "wall_seconds": 20.02275606499984
+      },
+      {
+        "returncode": 0,
+        "stage": "PORTABLE_GPU_56_ROW_REEXECUTION",
+        "stderr_identity": {
+          "bytes": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        "stdout_identity": {
+          "bytes": 705,
+          "sha256": "152114c8fcaae846dab106d26bcb4c632e2c77b610d9001f92dda20e82018799"
+        },
+        "wall_seconds": 540.3281467319998
+      }
+    ],
+    "standard_fresh_kernel_replay": true,
+    "status": "PASS",
+    "total_wall_seconds": 1948.5324240559999
+  }
+}

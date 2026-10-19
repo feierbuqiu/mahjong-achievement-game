@@ -1,0 +1,85 @@
+{
+  "archive_identity": {
+    "bytes": 1407097086,
+    "sha256": "45673cf14ffedd3a85367f29508ad7587ef370a90aace2ec2f4e00c82a38c24e"
+  },
+  "cold_execution_wall_seconds": 1251.9976054,
+  "full_table_recomputed": false,
+  "historical_ELF_real_small_controls": true,
+  "original_all35_execution_evidence_audited": true,
+  "portable_GPU_56_row_path_tested": true,
+  "schema": "V17_PORTABLE_REAL_COLD_REPRODUCTION_V1",
+  "scratch": "/var/tmp/mahjong-v17-cold-8cd863a1fc8d4f7ab9e4c46708f395de",
+  "source_rebuilt_ELF_real_small_controls": true,
+  "source_recompiled_from_zero_project_oleans": true,
+  "stages": [
+    {
+      "returncode": 0,
+      "stage": "UNPACK_FRESH_DIRECTORY",
+      "stderr_identity": {
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "stdout_identity": {
+        "bytes": 125,
+        "sha256": "fc9d64981203cb9de6bde220b94938332470050975818800c1f064c81495133a"
+      },
+      "wall_seconds": 40.03229752300001
+    },
+    {
+      "returncode": 0,
+      "stage": "VERIFY_EXTRACTED_MEMBER_HASHES",
+      "stderr_identity": {
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "stdout_identity": {
+        "bytes": 661,
+        "sha256": "78b367efd1edb5d2da172575438d011280612b8e32446aa0d048d662a8ece63b"
+      },
+      "wall_seconds": 20.02286883100001
+    },
+    {
+      "returncode": 0,
+      "stage": "COLD_SOURCE_NATIVE_KERNEL_AND_REAL_CONTROLS",
+      "stderr_identity": {
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "stdout_identity": {
+        "bytes": 19954,
+        "sha256": "b8281b9f3ad06cd76e056d4b665f87a8bff0e911e79a6cad5ac837c41a6570da"
+      },
+      "wall_seconds": 1260.7574040490001
+    },
+    {
+      "returncode": 0,
+      "stage": "VERIFY_HISTORICAL_ALL35_EXECUTION_EVIDENCE",
+      "stderr_identity": {
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "stdout_identity": {
+        "bytes": 738,
+        "sha256": "6cbbe7a9814a1ee5630bc653c01d82997e501f76e9d0b85466563f9a50b2c6da"
+      },
+      "wall_seconds": 20.02275606499984
+    },
+    {
+      "returncode": 0,
+      "stage": "PORTABLE_GPU_56_ROW_REEXECUTION",
+      "stderr_identity": {
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "stdout_identity": {
+        "bytes": 705,
+        "sha256": "152114c8fcaae846dab106d26bcb4c632e2c77b610d9001f92dda20e82018799"
+      },
+      "wall_seconds": 540.3281467319998
+    }
+  ],
+  "standard_fresh_kernel_replay": true,
+  "status": "PASS",
+  "total_wall_seconds": 1948.5324240559999
+}

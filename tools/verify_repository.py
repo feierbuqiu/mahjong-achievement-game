@@ -10,6 +10,7 @@ from urllib.parse import unquote
 from verify_lean import check_snapshot
 from verify_paper import verify as verify_paper
 from verify_lean_supplement import verify as verify_lean_supplement
+from verify_trust_supplement import verify as verify_trust_supplement
 
 ROOT = Path(__file__).resolve().parents[1]
 
@@ -58,6 +59,7 @@ def main():
     check_snapshot()
     verify_paper()
     verify_lean_supplement()
+    verify_trust_supplement()
     # Validate the newer publication without starting Lean or compute services.
     import importlib.util
     spec = importlib.util.spec_from_file_location('october_progress', ROOT / 'research/2026-10-18/verify.py')
@@ -112,7 +114,8 @@ def main():
         data = path.read_text(encoding="utf-8-sig")
         language_text = data
         if rel in {"papers/manuscript.md", "papers/evidence/reference_verification.md",
-                   "papers/lean-verification/manuscript.md", "papers/lean-verification/reference_verification.md"}:
+                   "papers/lean-verification/manuscript.md", "papers/lean-verification/reference_verification.md",
+                   "papers/trust-verification/manuscript.md", "papers/trust-verification/reference_verification.md"}:
             # Preserve the author's original source credit and bibliographic title.
             for proper_name in ["\u96f6\u4e4b\u5ba1\u5224\u8005", "\u5446\u997c\u95ee\u9898"]:
                 language_text = language_text.replace(proper_name, "")

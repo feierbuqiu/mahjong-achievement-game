@@ -105,18 +105,44 @@ See [artifact policy](ASSETS.md) for download verification and retention rules.
 
 All **11,272 input identities / 100,615,834,170 bytes** are listed in
 [inputs.json](../research/2026-10-19-v17/inputs.json). The actual full dataset
-is **not currently a public download**. Local portable archives were still
-in progress at capture and are not published as completed packages. The
+is **not currently a public download**. That dated update captured packaging in progress. Completed local delivery
+archives and same-host tests now exist, as described below; no new download
+assets are published by the working-paper update. The
 historical full P/N table is the main part of this input set; it is not an
 additional 97.32 GB to add to the 100.62 GB figure.
+
+## Working trust paper and completed local delivery
+
+The [October 19 trust supplement](../papers/trust-verification/README.md)
+publishes the third English report, its audits, selected later kernel/portable
+receipts, numerical certificate identities and a linked evidence catalogue.
+Its [provenance](../papers/trust-verification/provenance.json) records math/link
+transformations and distinguishes the imported final manuscript from an older
+authoring document-review receipt.
+
+Three completed local archives are identified in [delivery.json](../papers/trust-verification/delivery.json):
+the 1,407,097,086-byte core, 8,087,887,655-byte full-input archive and
+21,136,243-byte saved-pilot archive. Their validation receipts report
+same-host clean extraction, source/native rebuilding, small controls and
+saved-object replay. **These three archives are not publicly hosted by this
+update.** Archive identities and selected readable records are supplied;
+the full payloads, toolchain/native binaries and saved objects remain local.
+No broken download link is substituted for missing hosting.
+
+The 233 mathematical source / 40 generated data modules of the packed pilot
+and its 134,862,920 certificate bytes describe the retained 273-module closure.
+The selected reports/source-binding inventory in Git are not that complete
+saved-object replay distribution. A future data publication can supply the
+actual packages after review and a separate release decision.
 
 ## Retained outside Git
 
 The complete padded P/N table payload is **97,316,623,312 bytes**. It is not
 stored in Git or supplied as a public full-table download by this update.
 The saved-record evidence archive above is much smaller and has a different
-purpose. No external permanent table archive, DOI or completed all-input
-native-reproduction installer is claimed.
+purpose. No external permanent table archive, DOI or public all-input
+native-reproduction installer is claimed. The validated installer exists locally,
+with its public availability described above.
 Historical large caches, incomplete candidate-graph databases, most binary
 metadata banks, native/toolchain binaries and the full Lean working environment
 remain outside this publication. Exact source is supplied for the mapped

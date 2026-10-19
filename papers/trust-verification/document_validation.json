@@ -1,0 +1,49 @@
+{
+  "schema": "ACADEMIC_MANUSCRIPT_DOCUMENT_REVIEW_V1",
+  "date": "2026-10-19",
+  "author": "feierbuqiu",
+  "sha256": "c336786aba4977df33b7cca8921d17c9d4e6fe7d56be24d0ff94896a067fbb49",
+  "bytes": 71598,
+  "lines": 556,
+  "approx_words": 9703,
+  "abstract_words": 230,
+  "references": 11,
+  "all_reference_families_cited": true,
+  "links": 47,
+  "local_links": 25,
+  "missing_local_links": [],
+  "code_blocks": 6,
+  "code_fences_balanced": true,
+  "display_equations": 5,
+  "inline_math_spans": 11,
+  "display_delimiters_balanced": true,
+  "inline_delimiters_balanced": true,
+  "exact_whole_input_type_matches_source": true,
+  "root_states": [
+    {
+      "counts": "1101101011101101101101101104441100",
+      "tiles": 32
+    },
+    {
+      "counts": "1101101101101101101101101104441100",
+      "tiles": 32
+    },
+    {
+      "counts": "1101101011101101011101101104441100",
+      "tiles": 32
+    }
+  ],
+  "outcome_count_identity": true,
+  "directory_count_identity": true,
+  "packed_closure_identity": true,
+  "native_input_bytes_identity": true,
+  "date_only_subtitle": true,
+  "ai_model_declaration": true,
+  "placeholders": [],
+  "replacement_characters": 0,
+  "scope": "Document structure, source signature, citation correspondence and selected arithmetic; no new proof execution",
+  "status": "PASS_DOCUMENT_REVIEW",
+  "previous_english_sha256": "5d250b672eedeea19bfccfd6748577d93c7f4350e1cca71e79a7140279e33f5a",
+  "editorial_update": "Source received with GPT 6.1 Sol capitalisation. Its only differences from the previously reviewed manuscript are the two model-name capitalisation changes; mathematical text is unchanged.",
+  "ai_model_name": "OpenAI GPT 6.1 Sol"
+}

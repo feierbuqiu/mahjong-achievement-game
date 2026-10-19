@@ -2,8 +2,8 @@
   "schema": "MJ_PUBLIC_RESEARCH_STATUS_V1",
   "snapshot_date": "2026-10-19",
   "computational_result_date": "2026-09-13",
-  "maintainer_research_status": "FIXED_V17_KERNEL_IMPLICATION_PLUS_COMPLETE_NATIVE_EVALUATION",
-  "research_handoff": "research/2026-10-19-v17/README.md",
+  "maintainer_research_status": "COMPLETE_V17_NATIVE_CHECKS_WITH_PERSISTENT_COMPONENT_PROOFS_AND_LOCAL_PORTABLE_DELIVERY",
+  "research_handoff": "papers/trust-verification/README.md",
   "hardware_receipt": "research/2026-09-14/hardware.json",
   "opening_outcome": "P",
   "winner_from_empty": "second_player",
@@ -105,7 +105,7 @@
   "acceptance_receipt": "results/acceptance.json",
   "paper": {
     "primary_language": "en",
-    "manuscript": "papers/manuscript.md",
+    "manuscript": "papers/trust-verification/manuscript.md",
     "evidence_catalogue": "papers/evidence/README.md",
     "chinese_manuscript_published": false,
     "lean_supplement": "papers/lean-verification/manuscript.md",
@@ -120,19 +120,38 @@
         "date": "2026-09-15",
         "title": "Lean Verification of the Mahjong Achievement Game: Strategy Certificates, Enumeration, and Retrograde Models",
         "manuscript": "papers/lean-verification/manuscript.md"
+      },
+      {
+        "date": "2026-10-19",
+        "title": "Trust and Formal Verification in the Mahjong Achievement Game: Complete Native Checking and Progress towards End-to-End Kernel Proofs",
+        "manuscript": "papers/trust-verification/manuscript.md",
+        "status": "WORKING_MANUSCRIPT_NOT_RELEASED"
       }
     ],
-    "companion_identity": "papers/lean-verification/companion.json"
+    "companion_identity": "papers/lean-verification/companion.json",
+    "primary_manuscript": "papers/trust-verification/manuscript.md",
+    "latest_report": {
+      "date": "2026-10-19",
+      "title": "Trust and Formal Verification in the Mahjong Achievement Game: Complete Native Checking and Progress towards End-to-End Kernel Proofs",
+      "manuscript": "papers/trust-verification/manuscript.md",
+      "overview": "papers/trust-verification/README.md",
+      "status": "WORKING_MANUSCRIPT_ON_MAIN_AWAITING_FURTHER_REVIEW",
+      "frozen": false,
+      "release": null,
+      "external_review_of_this_manuscript": "PENDING_FUTURE_USER_SUPPLIED_REVIEW"
+    },
+    "original_computational_manuscript": "papers/manuscript.md",
+    "source_evidence_catalogue": "papers/trust-verification/evidence-catalogue.md"
   },
-  "current_lean_progress": "research/2026-10-19-v17/README.md",
-  "repository_development_status": "NATIVE_VERIFICATION_COMPLETE_INDEPENDENT_EXECUTION_REPLICATION_OPEN",
+  "current_lean_progress": "papers/trust-verification/README.md",
+  "repository_development_status": "WORKING_TRUST_PAPER_AND_SCOPED_KERNEL_COMPONENT_PROGRESS",
   "current_work_frozen": false,
   "maintainer_scope": {
     "decision_date": "2026-10-19",
     "further_end_to_end_full_scale_verification_planned": false,
     "accepts_expert_and_compute_contributions": true,
-    "status_note": "The separately authorized V17 full native verification is complete. Strict whole-table proof export is stopped. Current effort is evidence publication and preparation of a later paper; independent replication, human review and deeper alternatives remain welcome.",
-    "separate_lean_progress_report": "PUBLISHED_WITH_V1_0_0",
+    "status_note": "Complete V17 native checking remains the whole-game evidence. Later bounded numeric/game proof pilots and local portable delivery are recorded. The new English manuscript is a working main-branch edition, awaiting future user-supplied review; no freeze or release is authorized by this update.",
+    "separate_lean_progress_report": "THREE_ENGLISH_REPORTS_LATEST_IS_WORKING_TRUST_SUPPLEMENT",
     "routine_progress_followup_planned": true,
     "further_work_condition": "No automatic new run; independent replication, corrections and further proof work may be proposed with exact scope and resources"
   },
@@ -318,8 +337,8 @@
   },
   "verification_outlook": {
     "as_of": "2026-10-19",
-    "current_workstream": "COMPLETED_FIXED_V17_NATIVE_VERIFICATION_AND_REPRODUCTION_PUBLICATION",
-    "current_goal": "Publish exact scope and evidence; invite independent replication and human rules/bookkeeping review",
+    "current_workstream": "WORKING_PAPER_PUBLICATION_AND_SCOPED_COMPONENT_PROOFS",
+    "current_goal": "Publish the working trust supplement; await user-supplied external review; independent replication and actual packed-game semantic closure remain future work",
     "working_expectation_hours": null,
     "completion_time_estimate_hours": null,
     "completion_time_status": "NO_FUTURE_STRICT_KERNEL_RUNTIME_BOUND",
@@ -336,21 +355,21 @@
     "full_launch_allowed": false,
     "pause_retained": true,
     "explicit_resume_required": true,
-    "hold_scope": "Legacy V16 STOP and stopped V18/V19 strict proof-export research; neither denies completion of separately authorized V17 native run",
+    "hold_scope": "No new full-table native or strict-kernel campaign; older optimization STOP remains historical. Later bounded component experiments and same-host delivery tests are separately recorded.",
     "independent_review_status": "SEPARATE_AI_SOURCE_AND_LEDGER_REVIEW_COMPLETE_NO_INDEPENDENT_EXECUTION_REPLICATION",
-    "bounded_kernel_experiments_have_run": true
+    "bounded_kernel_experiments_have_run": true,
+    "bounded_component_work_after_native_completion_recorded": true
   },
   "current_update": {
     "date": "2026-10-19",
-    "kind": "completed_v17_native_verification_evidence_and_documentation",
-    "new_release_created": true,
-    "previous_immutable_release": "v1.0.0",
+    "kind": "working_trust_paper_publication_and_component_status_update",
+    "new_release_created": false,
+    "new_tag_created": false,
+    "current_work_frozen": false,
+    "previous_immutable_software_release": "v1.0.0",
+    "previous_evidence_asset_tag": "evidence-v17-native-20261019",
     "Chinese_manuscripts_published": false,
-    "artifact_release_tag": "evidence-v17-native-20261019",
-    "software_release_unchanged": "v1.0.0",
-    "note": "A separate evidence-asset record distributes the large saved ledger; no new paper or semantic software release is claimed.",
-    "new_software_release_created": false,
-    "release_kind": "SEPARATE_SAVED_EVIDENCE_ASSET_RECORD_NOT_A_NEW_SEMANTIC_VERSION"
+    "external_review_pending_user": true
   },
   "historical_outlooks": {
     "2026-10-18-v16": {
@@ -579,5 +598,74 @@
   },
   "terminology_document": "docs/INTERNAL_VERSIONS.md",
   "claim_boundaries_document": "docs/CLAIMS.md",
-  "shared_trust_dependencies_scope": "September forward/reverse C++ algorithms only; current V17 trust boundary is listed in native_verification"
+  "shared_trust_dependencies_scope": "September forward/reverse C++ algorithms only; current V17 trust boundary is listed in native_verification",
+  "post_native_kernel_work": {
+    "date": "2026-10-19",
+    "source_paper": "papers/trust-verification/manuscript.md",
+    "packed": {
+      "status": "PASS_FRESH_COMPLETE_FIXED_SAMPLE_KERNEL_COMPONENTS",
+      "blocks": 28,
+      "words": 402,
+      "layout_equalities": 1234,
+      "arbitrary_input_layout_equivalences": 601,
+      "colex_rows": 1035129,
+      "Cartesian_coordinates": 1077270,
+      "project_module_closure": 273,
+      "mathematical_source_modules": 233,
+      "generated_data_modules": 40,
+      "construction_and_replay_seconds": 132.205101013,
+      "fresh_replay_seconds": 61.828391958,
+      "sampled_peak_RSS_bytes": 737734656,
+      "certificate_bytes": 134862920,
+      "actual_SAFE_or_target_lookup_closed": false,
+      "empty_game_proved": false,
+      "evidence": "papers/trust-verification/evidence/packed/report.json"
+    },
+    "game": {
+      "physical_nodes": 11,
+      "highlighted_nonempty_32_tile_roots": 3,
+      "project_module_closure": 24,
+      "baseline_construction_seconds": 20.34807278599999,
+      "baseline_replay_seconds": 128.85217995899995,
+      "direct_refl_construction_seconds": 34.21159003900004,
+      "direct_refl_replay_seconds": 140.99251180500005,
+      "source_conclusions_unchanged": true,
+      "earliest_formal_opening_depth_improved": false,
+      "empty_game_proved": false
+    },
+    "import_only_variant": {
+      "modules": 24,
+      "fresh_replay_seconds": 114.600500291,
+      "original_game_definitions_and_target_proofs_preserved": true
+    },
+    "component_proofs_joined_to_actual_empty_game": false,
+    "full_table_rerun": false,
+    "pure_kernel_completion_bound_established": false
+  },
+  "portable_reproduction": {
+    "status": "VALIDATED_LOCAL_DELIVERY_WITH_SAME_HOST_COLD_TESTS",
+    "availability": "papers/trust-verification/delivery.json",
+    "archives_publicly_hosted": false,
+    "source_project_modules": 149,
+    "cold_test_total_seconds": 1948.5324240559999,
+    "generic_kernel_replay_seconds": 108.35577785199996,
+    "selected_bucket_rows": 56,
+    "selected_bucket_P_rows": 41,
+    "selected_bucket_N_rows": 15,
+    "original_and_rebuilt_native_controls_passed": true,
+    "full_input_archive_files": 11272,
+    "full_input_archive_expanded_bytes": 100615834170,
+    "full_input_roundtrip_hash_check_recorded": true,
+    "saved_kernel_lanes": [
+      "packed",
+      "game",
+      "game-slim"
+    ],
+    "same_host_relocated_extractions": true,
+    "independent_second_physical_machine_test": false,
+    "new_all_layer_native_execution": false,
+    "packaged_packed_source_reconstruction_executed_by_recipient_test": false,
+    "toolchain": "Lean 4.33.1 Linux x86_64; Windows/WSL host",
+    "macOS_ARM_or_native_Windows_wrappers_validated": false
+  }
 }

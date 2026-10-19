@@ -28,3 +28,7 @@ research/2026-10-18-kernel/** -text whitespace=blank-at-eol,space-before-tab,cr-
 /research/2026-10-19-v17/review/INDEPENDENT_REVIEW.md -text
 # This imported status retains original CRLF bytes for its provenance hash.
 /research/2026-10-19-v17/evidence/v19-stopped.json whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol
+
+# Preserve original selected trust-paper receipts and archival source bytes.
+/papers/trust-verification/evidence/** -text whitespace=blank-at-eol,space-before-tab,cr-at-eol,-blank-at-eof
+/papers/trust-verification/*.json -text whitespace=blank-at-eol,space-before-tab,cr-at-eol,-blank-at-eof

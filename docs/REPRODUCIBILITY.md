@@ -186,8 +186,33 @@ portable full-run installer. The 100.62 GB full input set, original native
 binary and complete GPU/runtime environment are not distributed in this
 evidence asset. Hashes alone do not make those files available. Existing
 C++ commands reconstruct the P/N table; they do not reconstruct all V17
-finite metadata banks. Independent native execution therefore remains an
-open replication task. The 7.6-hour observation is not a future time bound.
+finite metadata banks. The subsequent local delivery supplies a tested same-host reconstruction
+path, documented below. Independent native execution on another machine and
+a second complete all-layer run remain open replication tasks. The 7.6-hour observation is not a future time bound.
+
+## Later local portable delivery and saved-proof components
+
+The [working trust paper](../papers/trust-verification/manuscript.md) and its
+[reproduction audit](../papers/trust-verification/reproducibility_evidence.md)
+record a completed same-host portable build/test path. It compiles 149 sources,
+rebuilds the native executable, fresh-replays the generic proof, exercises
+original/rebuilt small controls and runs one complete 56-row bucket. A separate
+archive replays the packed/game/game-slim saved-proof lanes.
+
+Those commands require the local archives named in [delivery.json](../papers/trust-verification/delivery.json).
+Their hashes and selected validation records are public, but the archives
+are not public downloads in this update. Do not try the paper's archive
+extraction commands with the smaller native saved-evidence ZIP. The packed
+source-construction command was not run by the recipient test; saved-object
+replay is the completed operation. No second full native run or second
+physical-machine test is claimed.
+
+```bash
+python3 tools/verify_trust_supplement.py
+```
+
+This additional public check validates paper formulas, references, distributed
+bytes and scoped receipts. It starts no research execution or large input read.
 
 Include the commit/tag, operating system, CPU, RAM, compiler version, build
 flags, exact input and command, elapsed time, peak memory, exit code, output
