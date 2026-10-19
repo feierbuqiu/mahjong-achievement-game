@@ -23,6 +23,8 @@ Use the exact source hash, run identity and claim scope alongside a label.
 | `full_native_20261018_02` | Completed V17 production run | 17,317 frames, all 35 layers, no old PASS/seed import |
 | V18 | Saved, cold-replayed strict-kernel small actual-data pilot | 11 original-game nodes, three nonempty 32-tile roots; separate 56-row checker sample |
 | V19 | Strict-kernel proof compression, numeric/layout and local-certificate experiments | Component results only; stopped by a change of target; not used to strengthen the V17 runtime claim |
+| `kernel_exploration_20261019` / `packed_05` | Later bounded persistent-proof work, separate from the stopped whole-table V19 optimization | Complete 28-block numerical sample, game/import variants; see the [working trust paper](../papers/trust-verification/manuscript.md) |
+| `portable_repro_20261019/package_02` | Completed local core, full-input and saved-pilot delivery | Same-host extraction/rebuild/replay; archive hosting and independent-machine execution are separate |
 | Cartesian row / colex row | A padded product-layout coordinate / an original indexed table row | Distinct denominators; a supplied numeric relation is not automatically a complete SAFE/game statement |
 | Frame / bucket / cell | A row interval / one nonempty `(layer,honor)` table / one of all 35 × 184 possible pairs | The completed run has 17,317 frames, 3,686 nonempty buckets and 6,440 cells |
 | P / N / UNKNOWN | Player to move loses / wins / result not established | An N label does not specify a Sprague–Grundy value; timeouts remain UNKNOWN |

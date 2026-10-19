@@ -1,0 +1,1177 @@
+{
+  "Mahjong.CartesianChannels00V19": {
+    "bytes": 33439,
+    "original": "build/lean_table_checker/acceleration_v19/cartesian_nolet_full28_v19/source/Mahjong/CartesianChannels00V19.lean",
+    "sha256": "a024d8b473548bb922a4bdcb4b21a72e786800606702736e13e0519810fed372"
+  },
+  "Mahjong.CartesianChannels01V19": {
+    "bytes": 38395,
+    "original": "build/lean_table_checker/acceleration_v19/cartesian_nolet_full28_v19/source/Mahjong/CartesianChannels01V19.lean",
+    "sha256": "688a1872971276bf92a539981897c81f5bfda724959e659d5cf4e58780327c47"
+  },
+  "Mahjong.CartesianChannels02V19": {
+    "bytes": 75305,
+    "original": "build/lean_table_checker/acceleration_v19/cartesian_nolet_full28_v19/source/Mahjong/CartesianChannels02V19.lean",
+    "sha256": "4f8970d26a67f13d3c4b580d4152be4cf72e34297ccb2f28eba9c0c8d0860fa8"
+  },
+  "Mahjong.CartesianChannels03V19": {
+    "bytes": 54937,
+    "original": "build/lean_table_checker/acceleration_v19/cartesian_nolet_full28_v19/source/Mahjong/CartesianChannels03V19.lean",
+    "sha256": "49f0bd668235a439cb91b62d9dc8988b48628a5bf313d8b7ef016dbca05560f8"
+  },
+  "Mahjong.CartesianChannels04V19": {
+    "bytes": 48256,
+    "original": "build/lean_table_checker/acceleration_v19/cartesian_nolet_full28_v19/source/Mahjong/CartesianChannels04V19.lean",
+    "sha256": "30c1fdf9d01b881d4609d4d31f17f32b5e4d497af25a3f6107bcb44c40517ad6"
+  },
+  "Mahjong.CartesianChannels05V19": {
+    "bytes": 65271,
+    "original": "build/lean_table_checker/acceleration_v19/cartesian_nolet_full28_v19/source/Mahjong/CartesianChannels05V19.lean",
+    "sha256": "66bcb23160f26427363da393d8ade61d5577bc24487cbd7c222fa80fd6a3ad39"
+  },
+  "Mahjong.CartesianChannels06V19": {
+    "bytes": 42200,
+    "original": "build/lean_table_checker/acceleration_v19/cartesian_nolet_full28_v19/source/Mahjong/CartesianChannels06V19.lean",
+    "sha256": "a33fd83d67a2f12a31665916fd39a0ed666adb03fb11d87d84ab1bb22f5cb6b4"
+  },
+  "Mahjong.CartesianChannels07V19": {
+    "bytes": 56067,
+    "original": "build/lean_table_checker/acceleration_v19/cartesian_nolet_full28_v19/source/Mahjong/CartesianChannels07V19.lean",
+    "sha256": "a5e33f8f0fe3fd51604963642d37dba2440af2ff317a90108f864fa20c040337"
+  },
+  "Mahjong.CartesianChannels08V19": {
+    "bytes": 64508,
+    "original": "build/lean_table_checker/acceleration_v19/cartesian_nolet_full28_v19/source/Mahjong/CartesianChannels08V19.lean",
+    "sha256": "8331a00eff557ef59928607a3fa1daac3d02cf188cc5db7b66a90f74a265df90"
+  },
+  "Mahjong.CartesianChannels09V19": {
+    "bytes": 54947,
+    "original": "build/lean_table_checker/acceleration_v19/cartesian_nolet_full28_v19/source/Mahjong/CartesianChannels09V19.lean",
+    "sha256": "391b9cd9550e7d17a40a856e603d8da2bb6a98803198e32d69adbcfc7ca2531c"
+  },
+  "Mahjong.CartesianChannels10V19": {
+    "bytes": 64303,
+    "original": "build/lean_table_checker/acceleration_v19/cartesian_nolet_full28_v19/source/Mahjong/CartesianChannels10V19.lean",
+    "sha256": "a6f7105d3b485fcc5769a1cbcc6c952eaa9ba231d76f752aa397e3bbcccb773f"
+  },
+  "Mahjong.CartesianChannels11V19": {
+    "bytes": 60307,
+    "original": "build/lean_table_checker/acceleration_v19/cartesian_nolet_full28_v19/source/Mahjong/CartesianChannels11V19.lean",
+    "sha256": "0f49f27908a567fafb6f932dfbbb1da948461bad6169181f14e0a9e448304ba1"
+  },
+  "Mahjong.CartesianChannels12V19": {
+    "bytes": 51060,
+    "original": "build/lean_table_checker/acceleration_v19/cartesian_nolet_full28_v19/source/Mahjong/CartesianChannels12V19.lean",
+    "sha256": "3b77d1a7538f8331731df30ffa17fb2cd47f16f754555347bfdadfe4dad51780"
+  },
+  "Mahjong.CartesianChannels13V19": {
+    "bytes": 64489,
+    "original": "build/lean_table_checker/acceleration_v19/cartesian_nolet_full28_v19/source/Mahjong/CartesianChannels13V19.lean",
+    "sha256": "a890c80425e82efc58740f1d360db8d6270986954866324f86011fd849ae8dc3"
+  },
+  "Mahjong.CartesianChannels14V19": {
+    "bytes": 54201,
+    "original": "build/lean_table_checker/acceleration_v19/cartesian_nolet_full28_v19/source/Mahjong/CartesianChannels14V19.lean",
+    "sha256": "1b70cba56c01e268f5cb1aae2089414ec0b79dcf6469fe56877f080fdb4239e5"
+  },
+  "Mahjong.CartesianChannels15V19": {
+    "bytes": 64028,
+    "original": "build/lean_table_checker/acceleration_v19/cartesian_nolet_full28_v19/source/Mahjong/CartesianChannels15V19.lean",
+    "sha256": "e0e61e7c73f9f15689430ab4d75ff68aae916ed1b24900e48e989ea341291aa6"
+  },
+  "Mahjong.CartesianChannels16V19": {
+    "bytes": 46132,
+    "original": "build/lean_table_checker/acceleration_v19/cartesian_nolet_full28_v19/source/Mahjong/CartesianChannels16V19.lean",
+    "sha256": "2a3921782d334da6a6c90f220f3f80846f1158ff4dc4cfb79ec8e90c5dd82e65"
+  },
+  "Mahjong.CartesianChannels17V19": {
+    "bytes": 65123,
+    "original": "build/lean_table_checker/acceleration_v19/cartesian_nolet_full28_v19/source/Mahjong/CartesianChannels17V19.lean",
+    "sha256": "9ca2b19887a65954fc3d40c24b6f03b47d9d1d71a04b7e7a12882943c7114fa1"
+  },
+  "Mahjong.CartesianChannels18V19": {
+    "bytes": 24906,
+    "original": "build/lean_table_checker/acceleration_v19/cartesian_nolet_full28_v19/source/Mahjong/CartesianChannels18V19.lean",
+    "sha256": "ea053b4a90e150320355c99cffaeafa5b299e6db7d23f94e036b7fcfc60f3631"
+  },
+  "Mahjong.CartesianChannels19V19": {
+    "bytes": 81523,
+    "original": "build/lean_table_checker/acceleration_v19/cartesian_nolet_full28_v19/source/Mahjong/CartesianChannels19V19.lean",
+    "sha256": "33b2a140d46aeab667a7f372077db64b3db2e342ba70bd53fe4f7e4081faa29f"
+  },
+  "Mahjong.CartesianChannels20V19": {
+    "bytes": 61627,
+    "original": "build/lean_table_checker/acceleration_v19/cartesian_nolet_full28_v19/source/Mahjong/CartesianChannels20V19.lean",
+    "sha256": "d6376681ba425f0a753cb92fe6aefce3ae889ca434bd5a397425b21e892696b3"
+  },
+  "Mahjong.CartesianChannels21V19": {
+    "bytes": 60984,
+    "original": "build/lean_table_checker/acceleration_v19/cartesian_nolet_full28_v19/source/Mahjong/CartesianChannels21V19.lean",
+    "sha256": "1c116fc5127a521568b5a491a67bb3ebce3db3361239b580632ea86b545662e0"
+  },
+  "Mahjong.CartesianChannels22V19": {
+    "bytes": 43402,
+    "original": "build/lean_table_checker/acceleration_v19/cartesian_nolet_full28_v19/source/Mahjong/CartesianChannels22V19.lean",
+    "sha256": "1f4760f2e7ea2e79b55c118390fcb859af5108c0e7d879f62ec62f246343f738"
+  },
+  "Mahjong.CartesianChannels23V19": {
+    "bytes": 64961,
+    "original": "build/lean_table_checker/acceleration_v19/cartesian_nolet_full28_v19/source/Mahjong/CartesianChannels23V19.lean",
+    "sha256": "506330d814496909d2efdce16e105e494fc6b20a5535c62ea5ff5ae04cbad6e4"
+  },
+  "Mahjong.CartesianChannels24V19": {
+    "bytes": 42058,
+    "original": "build/lean_table_checker/acceleration_v19/cartesian_nolet_full28_v19/source/Mahjong/CartesianChannels24V19.lean",
+    "sha256": "3cde4e89f113f39b6ab0c39b493bd8b9d88bcca5fb1c7211d9eba1bcc1d2013e"
+  },
+  "Mahjong.CartesianChannels25V19": {
+    "bytes": 24648,
+    "original": "build/lean_table_checker/acceleration_v19/cartesian_nolet_full28_v19/source/Mahjong/CartesianChannels25V19.lean",
+    "sha256": "e1d4fde28ee2ed330e04495b59c932f1dac87a9ba4b90c4bfc2a57bb7a6deb7c"
+  },
+  "Mahjong.CartesianChannels26V19": {
+    "bytes": 42484,
+    "original": "build/lean_table_checker/acceleration_v19/cartesian_nolet_full28_v19/source/Mahjong/CartesianChannels26V19.lean",
+    "sha256": "f9ae34d5e237b453f8c91861ff6fe6189bc5219200a7391ad9622710cf283604"
+  },
+  "Mahjong.CartesianChannels27V19": {
+    "bytes": 33780,
+    "original": "build/lean_table_checker/acceleration_v19/cartesian_nolet_full28_v19/source/Mahjong/CartesianChannels27V19.lean",
+    "sha256": "3cb2da89fcfd4bd71d45f5a1a77dc37842cc6e8736c52d3819026f9e86abe54e"
+  },
+  "Mahjong.CartesianChannels28V19": {
+    "bytes": 51141,
+    "original": "build/lean_table_checker/acceleration_v19/cartesian_nolet_full28_v19/source/Mahjong/CartesianChannels28V19.lean",
+    "sha256": "8ec539052d17a86ccf5cba41399e9d102d5a33a262b468aa14f0df6851035270"
+  },
+  "Mahjong.CartesianChannels29V19": {
+    "bytes": 57802,
+    "original": "build/lean_table_checker/acceleration_v19/cartesian_nolet_full28_v19/source/Mahjong/CartesianChannels29V19.lean",
+    "sha256": "d4034754d9974993250d41f9fbf8cc516c0e88b11c5ac31516ff7ad687f1bb17"
+  },
+  "Mahjong.CartesianChannels30V19": {
+    "bytes": 24892,
+    "original": "build/lean_table_checker/acceleration_v19/cartesian_nolet_full28_v19/source/Mahjong/CartesianChannels30V19.lean",
+    "sha256": "45840c56ba4eb2429685533356361938a02bbddb01b61505fd9ea40a9bdd751d"
+  },
+  "Mahjong.CartesianChannels31V19": {
+    "bytes": 48279,
+    "original": "build/lean_table_checker/acceleration_v19/cartesian_nolet_full28_v19/source/Mahjong/CartesianChannels31V19.lean",
+    "sha256": "7b6e706443c3f406acef71c9f36381e47273c50c5ca2d0bcefad832f1b9ccd04"
+  },
+  "Mahjong.CartesianChannels32V19": {
+    "bytes": 46536,
+    "original": "build/lean_table_checker/acceleration_v19/cartesian_nolet_full28_v19/source/Mahjong/CartesianChannels32V19.lean",
+    "sha256": "6f9daa3889b851fb477e892d1bb589eb220d9f60bdebe29f1e8b215648671f27"
+  },
+  "Mahjong.CartesianChannels33V19": {
+    "bytes": 30846,
+    "original": "build/lean_table_checker/acceleration_v19/cartesian_nolet_full28_v19/source/Mahjong/CartesianChannels33V19.lean",
+    "sha256": "7c9743e466d23bfa311cec9aeeef5f2064ee0c76aa5cdbf2f7d225e05627b2ab"
+  },
+  "Mahjong.CartesianMathV19": {
+    "bytes": 1619,
+    "original": "build/lean_table_checker/acceleration_v19/cartesian_nolet_full28_v19/source/Mahjong/CartesianMathV19.lean",
+    "sha256": "7575bd7b8b49556b339bf2412a0db12a8be6c65ae627ab3d295e7a0ffde9b253"
+  },
+  "Mahjong.FullLayoutEquivalence000V19": {
+    "bytes": 3254,
+    "original": "build/lean_table_checker/acceleration_v19/cartesian_cached_full402_v19/source/Mahjong/FullLayoutEquivalence000V19.lean",
+    "sha256": "b8a50fa06c9ac1b870fb6d31735b549c00802f3d36b69b85aec2f42c98ca9505"
+  },
+  "Mahjong.FullLayoutEquivalence001V19": {
+    "bytes": 3381,
+    "original": "build/lean_table_checker/acceleration_v19/cartesian_cached_full402_v19/source/Mahjong/FullLayoutEquivalence001V19.lean",
+    "sha256": "26f06ee10434bd34b81a852ad80d49aa5fdca0c65706ac24e719736394ac3e02"
+  },
+  "Mahjong.FullLayoutEquivalence002V19": {
+    "bytes": 3294,
+    "original": "build/lean_table_checker/acceleration_v19/cartesian_cached_full402_v19/source/Mahjong/FullLayoutEquivalence002V19.lean",
+    "sha256": "126e913013a567259475b3c7f5fa6734af54896693cf41f35b5bb6948214fb80"
+  },
+  "Mahjong.FullLayoutEquivalence003V19": {
+    "bytes": 3381,
+    "original": "build/lean_table_checker/acceleration_v19/cartesian_cached_full402_v19/source/Mahjong/FullLayoutEquivalence003V19.lean",
+    "sha256": "5f71110d754a78f63238d521c34d38c99c5a4db6cd3c164e7a46fd93fda0d257"
+  },
+  "Mahjong.FullLayoutEquivalence004V19": {
+    "bytes": 3291,
+    "original": "build/lean_table_checker/acceleration_v19/cartesian_cached_full402_v19/source/Mahjong/FullLayoutEquivalence004V19.lean",
+    "sha256": "a336601b4809598d2cf05f420a5dc90d126a711a77cc6cada050d46ca7b3005c"
+  },
+  "Mahjong.FullLayoutEquivalence005V19": {
+    "bytes": 3380,
+    "original": "build/lean_table_checker/acceleration_v19/cartesian_cached_full402_v19/source/Mahjong/FullLayoutEquivalence005V19.lean",
+    "sha256": "41ea6948bfb425aa82191b6f3c42f22636f7102bd3e2543ce7b65c073151ef81"
+  },
+  "Mahjong.FullLayoutEquivalence006V19": {
+    "bytes": 3285,
+    "original": "build/lean_table_checker/acceleration_v19/cartesian_cached_full402_v19/source/Mahjong/FullLayoutEquivalence006V19.lean",
+    "sha256": "f78472b8865668f485e3a4b7db2be0abb3976630e12221501370038d741bee73"
+  },
+  "Mahjong.FullLayoutEquivalence007V19": {
+    "bytes": 3378,
+    "original": "build/lean_table_checker/acceleration_v19/cartesian_cached_full402_v19/source/Mahjong/FullLayoutEquivalence007V19.lean",
+    "sha256": "d85a32bee2449ae6a301f77ec3b2008e71e3fd2bbc5d983ec9d7f608e6636ace"
+  },
+  "Mahjong.FullLayoutEquivalence008V19": {
+    "bytes": 3310,
+    "original": "build/lean_table_checker/acceleration_v19/cartesian_cached_full402_v19/source/Mahjong/FullLayoutEquivalence008V19.lean",
+    "sha256": "b226f3796af377ba1e42e7ed5fc9570ae2222342ba66bf7aab9e6ac3e3533b28"
+  },
+  "Mahjong.FullLayoutEquivalence009V19": {
+    "bytes": 3409,
+    "original": "build/lean_table_checker/acceleration_v19/cartesian_cached_full402_v19/source/Mahjong/FullLayoutEquivalence009V19.lean",
+    "sha256": "231f80562ae8991fb1664cd3a4ed28307a3596202283225960b70a85bb6ccfc0"
+  },
+  "Mahjong.FullLayoutEquivalence010V19": {
+    "bytes": 3316,
+    "original": "build/lean_table_checker/acceleration_v19/cartesian_cached_full402_v19/source/Mahjong/FullLayoutEquivalence010V19.lean",
+    "sha256": "4601a29959a0355a41cf84894bf3fd252696a9dc0e53064ec31d522618dc02aa"
+  },
+  "Mahjong.FullLayoutEquivalence011V19": {
+    "bytes": 3416,
+    "original": "build/lean_table_checker/acceleration_v19/cartesian_cached_full402_v19/source/Mahjong/FullLayoutEquivalence011V19.lean",
+    "sha256": "603ffa3fb41e0a1c70d56e7c585b7ba5ec62ddae68a87a9e1b87a2c342dac3ba"
+  },
+  "Mahjong.FullLayoutEquivalence012V19": {
+    "bytes": 3309,
+    "original": "build/lean_table_checker/acceleration_v19/cartesian_cached_full402_v19/source/Mahjong/FullLayoutEquivalence012V19.lean",
+    "sha256": "8e9ca4036f12ad0c9b663201c6003547f5e8544ce1a857337ab278d80f419499"
+  },
+  "Mahjong.FullLayoutEquivalence013V19": {
+    "bytes": 3404,
+    "original": "build/lean_table_checker/acceleration_v19/cartesian_cached_full402_v19/source/Mahjong/FullLayoutEquivalence013V19.lean",
+    "sha256": "bd170fd215892e461c0fc69a225b85f24f789a639b7b41d4c0725f357be344d7"
+  },
+  "Mahjong.FullLayoutEquivalence014V19": {
+    "bytes": 3317,
+    "original": "build/lean_table_checker/acceleration_v19/cartesian_cached_full402_v19/source/Mahjong/FullLayoutEquivalence014V19.lean",
+    "sha256": "48af1f93052801ca964ef0de7a655c0eec7ad4a2c7a8389b2be833516f6f4e9f"
+  },
+  "Mahjong.FullLayoutEquivalence015V19": {
+    "bytes": 3414,
+    "original": "build/lean_table_checker/acceleration_v19/cartesian_cached_full402_v19/source/Mahjong/FullLayoutEquivalence015V19.lean",
+    "sha256": "5883c2ed101d5ecf1223721af21291cc5984c5ad11612b4238cf512abf37baa8"
+  },
+  "Mahjong.FullLayoutEquivalence016V19": {
+    "bytes": 3318,
+    "original": "build/lean_table_checker/acceleration_v19/cartesian_cached_full402_v19/source/Mahjong/FullLayoutEquivalence016V19.lean",
+    "sha256": "df574a8154b95a2f7de05e7f06fc699081723d4d4be648a4f52e3093dcabd6e0"
+  },
+  "Mahjong.FullLayoutEquivalence017V19": {
+    "bytes": 3417,
+    "original": "build/lean_table_checker/acceleration_v19/cartesian_cached_full402_v19/source/Mahjong/FullLayoutEquivalence017V19.lean",
+    "sha256": "5e99c7cdcd71588ffce7c1f97e7f0d4bce3bad53bbc870d97507d28dd6433c99"
+  },
+  "Mahjong.FullLayoutEquivalence018V19": {
+    "bytes": 3325,
+    "original": "build/lean_table_checker/acceleration_v19/cartesian_cached_full402_v19/source/Mahjong/FullLayoutEquivalence018V19.lean",
+    "sha256": "6c0c7f78cc72c16ff14d7821a73691aeda9d6be0e02db051774ba36dc0793997"
+  },
+  "Mahjong.FullLayoutEquivalence019V19": {
+    "bytes": 3414,
+    "original": "build/lean_table_checker/acceleration_v19/cartesian_cached_full402_v19/source/Mahjong/FullLayoutEquivalence019V19.lean",
+    "sha256": "dee8faaebef39777b05b3d5244fa1ffc17df670b66f1b85381474df33edd4d83"
+  },
+  "Mahjong.FullLayoutEquivalence020V19": {
+    "bytes": 3324,
+    "original": "build/lean_table_checker/acceleration_v19/cartesian_cached_full402_v19/source/Mahjong/FullLayoutEquivalence020V19.lean",
+    "sha256": "ae4c019f5cfbaa71dd2f328bce0a65b39cae2f31743c8ac358dc19428c059317"
+  },
+  "Mahjong.FullLayoutEquivalence021V19": {
+    "bytes": 3324,
+    "original": "build/lean_table_checker/acceleration_v19/cartesian_cached_full402_v19/source/Mahjong/FullLayoutEquivalence021V19.lean",
+    "sha256": "07fa7af90e2092cde9177d3acaad4e7988862228f49fe7305855f559cfe25c62"
+  },
+  "Mahjong.FullLayoutEquivalence022V19": {
+    "bytes": 3420,
+    "original": "build/lean_table_checker/acceleration_v19/cartesian_cached_full402_v19/source/Mahjong/FullLayoutEquivalence022V19.lean",
+    "sha256": "20f1b0cd1ce04fddeeb77783d46dbd6bf6915010cb7b0093c4a13c6ffebc9069"
+  },
+  "Mahjong.FullLayoutEquivalence023V19": {
+    "bytes": 3321,
+    "original": "build/lean_table_checker/acceleration_v19/cartesian_cached_full402_v19/source/Mahjong/FullLayoutEquivalence023V19.lean",
+    "sha256": "4cf3836225445b861a47a26e5b1ab699e1b6fbb269251e0588f4e6a512461cc7"
+  },
+  "Mahjong.FullLayoutEquivalence024V19": {
+    "bytes": 3412,
+    "original": "build/lean_table_checker/acceleration_v19/cartesian_cached_full402_v19/source/Mahjong/FullLayoutEquivalence024V19.lean",
+    "sha256": "e86b429786f93c311dca4000e1995dbfd0686ab662f96064ad2bbfa72be5fa9b"
+  },
+  "Mahjong.FullLayoutEquivalence025V19": {
+    "bytes": 3320,
+    "original": "build/lean_table_checker/acceleration_v19/cartesian_cached_full402_v19/source/Mahjong/FullLayoutEquivalence025V19.lean",
+    "sha256": "7b9bd21d041c95e8c9e356793a69304024d0e95ea5b975d8df4eb4679563724d"
+  },
+  "Mahjong.FullLayoutEquivalence026V19": {
+    "bytes": 3418,
+    "original": "build/lean_table_checker/acceleration_v19/cartesian_cached_full402_v19/source/Mahjong/FullLayoutEquivalence026V19.lean",
+    "sha256": "9ae72e71375b3b9d554dfbf19c5e37d1b6b8fba0ff8ebf1b7c8745fb284b3e55"
+  },
+  "Mahjong.FullLayoutEquivalence027V19": {
+    "bytes": 3321,
+    "original": "build/lean_table_checker/acceleration_v19/cartesian_cached_full402_v19/source/Mahjong/FullLayoutEquivalence027V19.lean",
+    "sha256": "3d1653946957a3b252516e383694630b4b2b32a1c7c55a5fc49ef1a76e39b9b4"
+  },
+  "Mahjong.FullLayoutEquivalence028V19": {
+    "bytes": 4813,
+    "original": "build/lean_table_checker/acceleration_v19/cartesian_cached_full402_v19/source/Mahjong/FullLayoutEquivalence028V19.lean",
+    "sha256": "5ed12781e9c74ab3e5741ffc00ccd84e289d5d0be7776d45e5ae1e3b5c290504"
+  },
+  "Mahjong.FullLayoutEquivalence029V19": {
+    "bytes": 6031,
+    "original": "build/lean_table_checker/acceleration_v19/cartesian_cached_full402_v19/source/Mahjong/FullLayoutEquivalence029V19.lean",
+    "sha256": "5b4c0d98782bffb21cd312769038ac11204493e263a0a7d349569392e28f9c9f"
+  },
+  "Mahjong.FullLayoutEquivalence030V19": {
+    "bytes": 6173,
+    "original": "build/lean_table_checker/acceleration_v19/cartesian_cached_full402_v19/source/Mahjong/FullLayoutEquivalence030V19.lean",
+    "sha256": "46b8f7ab468f41ea8d8f91560d74c92b524312075b34ff4232760f1e27560430"
+  },
+  "Mahjong.FullLayoutEquivalence031V19": {
+    "bytes": 5796,
+    "original": "build/lean_table_checker/acceleration_v19/cartesian_cached_full402_v19/source/Mahjong/FullLayoutEquivalence031V19.lean",
+    "sha256": "cce38bad8576b72a853212a9a53f4c2633b64c051a69912f7e56134ca100f096"
+  },
+  "Mahjong.FullLayoutEquivalence032V19": {
+    "bytes": 5981,
+    "original": "build/lean_table_checker/acceleration_v19/cartesian_cached_full402_v19/source/Mahjong/FullLayoutEquivalence032V19.lean",
+    "sha256": "9a8735f3e77906ed0d36f09f7477befc33a47e6552911771a727e0fe52896f54"
+  },
+  "Mahjong.FullLayoutEquivalence033V19": {
+    "bytes": 5962,
+    "original": "build/lean_table_checker/acceleration_v19/cartesian_cached_full402_v19/source/Mahjong/FullLayoutEquivalence033V19.lean",
+    "sha256": "b761d348e44410471d73c00a9f7df58e71d17e559944b45d8f8d6e7be4d8823b"
+  },
+  "Mahjong.FullLayoutEquivalence034V19": {
+    "bytes": 6330,
+    "original": "build/lean_table_checker/acceleration_v19/cartesian_cached_full402_v19/source/Mahjong/FullLayoutEquivalence034V19.lean",
+    "sha256": "f8ecefb3f185f086c14a8bdf34015898b99ea70eadcd5b5387f0c9148a084b0d"
+  },
+  "Mahjong.FullLayoutEquivalence035V19": {
+    "bytes": 6309,
+    "original": "build/lean_table_checker/acceleration_v19/cartesian_cached_full402_v19/source/Mahjong/FullLayoutEquivalence035V19.lean",
+    "sha256": "fc68568ca8aa4b6cadf36ba53bf33586b5802b2908c04896e6d241e3eb877d4d"
+  },
+  "Mahjong.FullLayoutEquivalence036V19": {
+    "bytes": 6195,
+    "original": "build/lean_table_checker/acceleration_v19/cartesian_cached_full402_v19/source/Mahjong/FullLayoutEquivalence036V19.lean",
+    "sha256": "483055c7caf234c5ac55953843b57f7b090933ba63179ae69dcf3062fd95d0cc"
+  },
+  "Mahjong.FullLayoutEquivalence037V19": {
+    "bytes": 5395,
+    "original": "build/lean_table_checker/acceleration_v19/cartesian_cached_full402_v19/source/Mahjong/FullLayoutEquivalence037V19.lean",
+    "sha256": "ce81e69274036ef00be9a90ca5b957769cd5b4e11bde8b6ae718cf9f7296b34f"
+  },
+  "Mahjong.FullLayoutEquivalence038V19": {
+    "bytes": 5579,
+    "original": "build/lean_table_checker/acceleration_v19/cartesian_cached_full402_v19/source/Mahjong/FullLayoutEquivalence038V19.lean",
+    "sha256": "eb9c62b1ff03f61ebb1be84a2349c1b6739634046501b8f256a50baf6a96dae9"
+  },
+  "Mahjong.FullLayoutEquivalence039V19": {
+    "bytes": 6196,
+    "original": "build/lean_table_checker/acceleration_v19/cartesian_cached_full402_v19/source/Mahjong/FullLayoutEquivalence039V19.lean",
+    "sha256": "cc6aa538ca3bf2f052ad0bb853baa9cc94c2504183de647762cf43e58661984b"
+  },
+  "Mahjong.FullLayoutEquivalence040V19": {
+    "bytes": 5246,
+    "original": "build/lean_table_checker/acceleration_v19/cartesian_cached_full402_v19/source/Mahjong/FullLayoutEquivalence040V19.lean",
+    "sha256": "d3af2d09768168b5094fe00427512383fe7084b81243cb60faa6617ab57c025f"
+  },
+  "Mahjong.FullLayoutEquivalence041V19": {
+    "bytes": 5951,
+    "original": "build/lean_table_checker/acceleration_v19/cartesian_cached_full402_v19/source/Mahjong/FullLayoutEquivalence041V19.lean",
+    "sha256": "0479dd07f8394a5b55c71409a3311d52df11e574a18b66f72520126a84e73be9"
+  },
+  "Mahjong.FullLayoutEquivalence042V19": {
+    "bytes": 6109,
+    "original": "build/lean_table_checker/acceleration_v19/cartesian_cached_full402_v19/source/Mahjong/FullLayoutEquivalence042V19.lean",
+    "sha256": "c24388868a240bef99a3608daaf39fa8348caf852509f3375050794b62e60dec"
+  },
+  "Mahjong.FullLayoutEquivalence043V19": {
+    "bytes": 6452,
+    "original": "build/lean_table_checker/acceleration_v19/cartesian_cached_full402_v19/source/Mahjong/FullLayoutEquivalence043V19.lean",
+    "sha256": "1be045285ddf9e98cfbb73766338503012fbdf12bb61b1629bdf2785588084b8"
+  },
+  "Mahjong.FullLayoutEquivalence044V19": {
+    "bytes": 6551,
+    "original": "build/lean_table_checker/acceleration_v19/cartesian_cached_full402_v19/source/Mahjong/FullLayoutEquivalence044V19.lean",
+    "sha256": "0b089e196bcc83123d99461b6f9c273cdc5c63140417171015f523fc35a20dd8"
+  },
+  "Mahjong.FullLayoutEquivalence045V19": {
+    "bytes": 5956,
+    "original": "build/lean_table_checker/acceleration_v19/cartesian_cached_full402_v19/source/Mahjong/FullLayoutEquivalence045V19.lean",
+    "sha256": "bbb673c982ba41986248d60b4ccde35fb8c4e28d1e8beb8c6203dd96a54a0feb"
+  },
+  "Mahjong.FullLayoutEquivalence046V19": {
+    "bytes": 6331,
+    "original": "build/lean_table_checker/acceleration_v19/cartesian_cached_full402_v19/source/Mahjong/FullLayoutEquivalence046V19.lean",
+    "sha256": "c99de26e79b720dddff208500b40e6161b09ef5d02ae7f7257c25e4e8acbb202"
+  },
+  "Mahjong.FullLayoutEquivalence047V19": {
+    "bytes": 5964,
+    "original": "build/lean_table_checker/acceleration_v19/cartesian_cached_full402_v19/source/Mahjong/FullLayoutEquivalence047V19.lean",
+    "sha256": "269acf1525e1ff3f4a335bcb737b069d921b73de20ad5b28a0ffeccdcb514d0e"
+  },
+  "Mahjong.FullLayoutEquivalence048V19": {
+    "bytes": 6413,
+    "original": "build/lean_table_checker/acceleration_v19/cartesian_cached_full402_v19/source/Mahjong/FullLayoutEquivalence048V19.lean",
+    "sha256": "d1e33cf58d9dd0426341692380349b93a3b0e005feaf0c08a1053a03fc93af22"
+  },
+  "Mahjong.FullLayoutEquivalence049V19": {
+    "bytes": 6375,
+    "original": "build/lean_table_checker/acceleration_v19/cartesian_cached_full402_v19/source/Mahjong/FullLayoutEquivalence049V19.lean",
+    "sha256": "ae4ae39c3037b4981d8c7b5f9fa759007d184ca3069bf545a2adf1ecea0773b8"
+  },
+  "Mahjong.FullLayoutEquivalence050V19": {
+    "bytes": 940,
+    "original": "build/lean_table_checker/acceleration_v19/cartesian_cached_full402_v19/source/Mahjong/FullLayoutEquivalence050V19.lean",
+    "sha256": "cf066a36d720072a835f7e1d41ab76fcc8b42f3978db94a88befefe27c181642"
+  },
+  "Mahjong.FullLayoutFunctions000V19": {
+    "bytes": 57980,
+    "original": "build/lean_table_checker/acceleration_v19/cartesian_cached_full402_v19/source/Mahjong/FullLayoutFunctions000V19.lean",
+    "sha256": "0747a62448c2314de400c574fb41abfcb1cad50deda18b1804db97ae522f1226"
+  },
+  "Mahjong.FullLayoutFunctions001V19": {
+    "bytes": 57555,
+    "original": "build/lean_table_checker/acceleration_v19/cartesian_cached_full402_v19/source/Mahjong/FullLayoutFunctions001V19.lean",
+    "sha256": "5641e5886f2889c444855c8b2883bb49d0b78d371fde6fde31144b5a602b4877"
+  },
+  "Mahjong.FullLayoutFunctions002V19": {
+    "bytes": 59521,
+    "original": "build/lean_table_checker/acceleration_v19/cartesian_cached_full402_v19/source/Mahjong/FullLayoutFunctions002V19.lean",
+    "sha256": "59b978811ec98d1b555b9ca843f65f093e67fe06d075f7a4d108eb017662686c"
+  },
+  "Mahjong.FullLayoutFunctions003V19": {
+    "bytes": 58863,
+    "original": "build/lean_table_checker/acceleration_v19/cartesian_cached_full402_v19/source/Mahjong/FullLayoutFunctions003V19.lean",
+    "sha256": "a1e2af3c22265889a7f68486bf43dba2d678682db2c76c2ef545e3373f0c33b3"
+  },
+  "Mahjong.FullLayoutFunctions004V19": {
+    "bytes": 57716,
+    "original": "build/lean_table_checker/acceleration_v19/cartesian_cached_full402_v19/source/Mahjong/FullLayoutFunctions004V19.lean",
+    "sha256": "6617c7e64ac3440cf6c8952145e49b35bde87007952975cf72dd9a155df41097"
+  },
+  "Mahjong.FullLayoutFunctions005V19": {
+    "bytes": 58529,
+    "original": "build/lean_table_checker/acceleration_v19/cartesian_cached_full402_v19/source/Mahjong/FullLayoutFunctions005V19.lean",
+    "sha256": "de7026b3030cd60dfde618268fb0b8b10e91935317cb46ec0ab917c49754f33b"
+  },
+  "Mahjong.FullLayoutFunctions006V19": {
+    "bytes": 57472,
+    "original": "build/lean_table_checker/acceleration_v19/cartesian_cached_full402_v19/source/Mahjong/FullLayoutFunctions006V19.lean",
+    "sha256": "5419e0fe7fab9c25e2e05ab111d8b25a5a18d857a48a4b5c7e0d5dad4f937dbb"
+  },
+  "Mahjong.FullLayoutFunctions007V19": {
+    "bytes": 58115,
+    "original": "build/lean_table_checker/acceleration_v19/cartesian_cached_full402_v19/source/Mahjong/FullLayoutFunctions007V19.lean",
+    "sha256": "506792cd98e7bc7ffd798d1410e29a94827420b1d3d3a2eeedacfa36cb426162"
+  },
+  "Mahjong.FullLayoutFunctions008V19": {
+    "bytes": 59941,
+    "original": "build/lean_table_checker/acceleration_v19/cartesian_cached_full402_v19/source/Mahjong/FullLayoutFunctions008V19.lean",
+    "sha256": "ecd6c619e6cf612988ea562dc77b3c4b4e5c648322fec739cf726f04167b807f"
+  },
+  "Mahjong.FullLayoutFunctions009V19": {
+    "bytes": 58180,
+    "original": "build/lean_table_checker/acceleration_v19/cartesian_cached_full402_v19/source/Mahjong/FullLayoutFunctions009V19.lean",
+    "sha256": "eabd55e8ee7aa6e4bdff10b35806a077f94b2f3db5101656d5232da406b8d3a3"
+  },
+  "Mahjong.FullLayoutFunctions010V19": {
+    "bytes": 59589,
+    "original": "build/lean_table_checker/acceleration_v19/cartesian_cached_full402_v19/source/Mahjong/FullLayoutFunctions010V19.lean",
+    "sha256": "b7fdeeca35723213f2c73ea15efd9c79db9746ba611d5c9397f6574e9fa02598"
+  },
+  "Mahjong.FullLayoutFunctions011V19": {
+    "bytes": 58524,
+    "original": "build/lean_table_checker/acceleration_v19/cartesian_cached_full402_v19/source/Mahjong/FullLayoutFunctions011V19.lean",
+    "sha256": "8300b86e4197d229718e37f2bfdc4b16acca157fe2a6aa30ac30498d790965cb"
+  },
+  "Mahjong.FullLayoutFunctions012V19": {
+    "bytes": 60395,
+    "original": "build/lean_table_checker/acceleration_v19/cartesian_cached_full402_v19/source/Mahjong/FullLayoutFunctions012V19.lean",
+    "sha256": "87366695f029a41680d05dd914a4ae19dbf258206a016f1dec82d9d03d6d5a32"
+  },
+  "Mahjong.FullLayoutFunctions013V19": {
+    "bytes": 57646,
+    "original": "build/lean_table_checker/acceleration_v19/cartesian_cached_full402_v19/source/Mahjong/FullLayoutFunctions013V19.lean",
+    "sha256": "99e18d64d73edcc9a5b8e7a4b97ff79d4268071e485cc316b7b43d656571fbad"
+  },
+  "Mahjong.FullLayoutFunctions014V19": {
+    "bytes": 59871,
+    "original": "build/lean_table_checker/acceleration_v19/cartesian_cached_full402_v19/source/Mahjong/FullLayoutFunctions014V19.lean",
+    "sha256": "c378ee95e35e3d2550ce39b1d86a65ece34b3627cec6db8a60c10189dbe7c712"
+  },
+  "Mahjong.FullLayoutFunctions015V19": {
+    "bytes": 58069,
+    "original": "build/lean_table_checker/acceleration_v19/cartesian_cached_full402_v19/source/Mahjong/FullLayoutFunctions015V19.lean",
+    "sha256": "69038bad1e4cc3b00e7c8d4ebd47a6c5a35f31678228ae2ee4931f660af95474"
+  },
+  "Mahjong.FullLayoutFunctions016V19": {
+    "bytes": 57763,
+    "original": "build/lean_table_checker/acceleration_v19/cartesian_cached_full402_v19/source/Mahjong/FullLayoutFunctions016V19.lean",
+    "sha256": "ec09d69d935913547decb4d153c4b8a19f41fd85e280e42c99a8e5c6a0a153ab"
+  },
+  "Mahjong.FullLayoutFunctions017V19": {
+    "bytes": 57408,
+    "original": "build/lean_table_checker/acceleration_v19/cartesian_cached_full402_v19/source/Mahjong/FullLayoutFunctions017V19.lean",
+    "sha256": "c58e8a6ebc2c895daa72adf88b61bf16bab353b5496f7112cff5241a650fc44b"
+  },
+  "Mahjong.FullLayoutFunctions018V19": {
+    "bytes": 58056,
+    "original": "build/lean_table_checker/acceleration_v19/cartesian_cached_full402_v19/source/Mahjong/FullLayoutFunctions018V19.lean",
+    "sha256": "c6b8d6331a5ef52c3fe88c36d346a9bcdd80cfb0c04eea6b939bb2511cfa46a9"
+  },
+  "Mahjong.FullLayoutFunctions019V19": {
+    "bytes": 21879,
+    "original": "build/lean_table_checker/acceleration_v19/cartesian_cached_full402_v19/source/Mahjong/FullLayoutFunctions019V19.lean",
+    "sha256": "fc8e1d967ead69e85d208e4a8d67978bda7015c7542aede2d1d70cc85e767bde"
+  },
+  "Mahjong.FullLayoutLiteralLoaderV19": {
+    "bytes": 10358,
+    "original": "build/lean_table_checker/acceleration_v19/cartesian_cached_full402_v19/source/Mahjong/FullLayoutLiteralLoaderV19.lean",
+    "sha256": "1cb096f5c76f05e83086af2c7c43c31e8170798427cd0cf7d4db5568d233851d"
+  },
+  "Mahjong.FullLayoutNumericB00V19": {
+    "bytes": 4135,
+    "original": "build/lean_table_checker/acceleration_v19/cartesian_cached_full402_v19/source/Mahjong/FullLayoutNumericB00V19.lean",
+    "sha256": "21af8e35dc1e02de315df87ec98d68321744c6f304fd87d8b9d327eda58f0f74"
+  },
+  "Mahjong.FullLayoutNumericB01V19": {
+    "bytes": 5991,
+    "original": "build/lean_table_checker/acceleration_v19/cartesian_cached_full402_v19/source/Mahjong/FullLayoutNumericB01V19.lean",
+    "sha256": "1ebf1db3f2078e15f27ca5cb49999b755469e1be361bda940fa69098027ed403"
+  },
+  "Mahjong.FullLayoutNumericB02V19": {
+    "bytes": 8390,
+    "original": "build/lean_table_checker/acceleration_v19/cartesian_cached_full402_v19/source/Mahjong/FullLayoutNumericB02V19.lean",
+    "sha256": "f5ad6ddcea637ace28a369a52e96a32b4c9a8761a40611e877877ffe6ee16825"
+  },
+  "Mahjong.FullLayoutNumericB03V19": {
+    "bytes": 3601,
+    "original": "build/lean_table_checker/acceleration_v19/cartesian_cached_full402_v19/source/Mahjong/FullLayoutNumericB03V19.lean",
+    "sha256": "de64bb570f4a0505e0c243c928e28cf38d97ebfaa868be667c900ad06c6e678e"
+  },
+  "Mahjong.FullLayoutNumericB04V19": {
+    "bytes": 5900,
+    "original": "build/lean_table_checker/acceleration_v19/cartesian_cached_full402_v19/source/Mahjong/FullLayoutNumericB04V19.lean",
+    "sha256": "c923df34dec1f54e4775e3392d08b61d2a1fc907af418833037767db52dfa32e"
+  },
+  "Mahjong.FullLayoutNumericB05V19": {
+    "bytes": 4051,
+    "original": "build/lean_table_checker/acceleration_v19/cartesian_cached_full402_v19/source/Mahjong/FullLayoutNumericB05V19.lean",
+    "sha256": "4b6c89441587d8464436742a2a0e604e8cc370191f3cb8c3cff85d6b90108a1c"
+  },
+  "Mahjong.FullLayoutNumericB06V19": {
+    "bytes": 3929,
+    "original": "build/lean_table_checker/acceleration_v19/cartesian_cached_full402_v19/source/Mahjong/FullLayoutNumericB06V19.lean",
+    "sha256": "0813bb137e1bd25d826b4222fc3ae3741251973167f21eeb1d0c1a91a7b27601"
+  },
+  "Mahjong.FullLayoutNumericB07V19": {
+    "bytes": 2834,
+    "original": "build/lean_table_checker/acceleration_v19/cartesian_cached_full402_v19/source/Mahjong/FullLayoutNumericB07V19.lean",
+    "sha256": "8972653a6eb60b60cf88216e4fe435be60e2b6ad4d55e606d96149ca8b4436c1"
+  },
+  "Mahjong.FullLayoutNumericB08V19": {
+    "bytes": 8872,
+    "original": "build/lean_table_checker/acceleration_v19/cartesian_cached_full402_v19/source/Mahjong/FullLayoutNumericB08V19.lean",
+    "sha256": "39bad662d7cc2fa4083acbd4343d740b42b4c9259f61aea9c37e24c8960ef7ac"
+  },
+  "Mahjong.FullLayoutNumericB09V19": {
+    "bytes": 3685,
+    "original": "build/lean_table_checker/acceleration_v19/cartesian_cached_full402_v19/source/Mahjong/FullLayoutNumericB09V19.lean",
+    "sha256": "b2e384d4bb0215ade5da2f8a592fc9eb8603e11f136a484538a1c8dfaad5c270"
+  },
+  "Mahjong.FullLayoutNumericB10V19": {
+    "bytes": 2170,
+    "original": "build/lean_table_checker/acceleration_v19/cartesian_cached_full402_v19/source/Mahjong/FullLayoutNumericB10V19.lean",
+    "sha256": "91ebc8bd4f97bb71a9b422a7a4da88c630e2df2fb7d1bf3d0f74e84a50d9e3ef"
+  },
+  "Mahjong.FullLayoutNumericB11V19": {
+    "bytes": 7938,
+    "original": "build/lean_table_checker/acceleration_v19/cartesian_cached_full402_v19/source/Mahjong/FullLayoutNumericB11V19.lean",
+    "sha256": "860550589e3044ab7291fa67a48372f3457cb4818b6bdc60ba8106ed16e2388a"
+  },
+  "Mahjong.FullLayoutNumericB12V19": {
+    "bytes": 7561,
+    "original": "build/lean_table_checker/acceleration_v19/cartesian_cached_full402_v19/source/Mahjong/FullLayoutNumericB12V19.lean",
+    "sha256": "c39e052bc243b6235d300bec4c18a87248eea5002bb04d10161f8c2965d80ed7"
+  },
+  "Mahjong.FullLayoutNumericB13V19": {
+    "bytes": 11422,
+    "original": "build/lean_table_checker/acceleration_v19/cartesian_cached_full402_v19/source/Mahjong/FullLayoutNumericB13V19.lean",
+    "sha256": "11c2751df14030fd6946eed353a3a1dbdbe137c96bcc9c5fd80cf17359ca6540"
+  },
+  "Mahjong.FullLayoutNumericB14V19": {
+    "bytes": 7929,
+    "original": "build/lean_table_checker/acceleration_v19/cartesian_cached_full402_v19/source/Mahjong/FullLayoutNumericB14V19.lean",
+    "sha256": "13ce27a29cc664b92ef2bd2b320bd2297991b5b3f947ef296148c0222f5398c9"
+  },
+  "Mahjong.FullLayoutNumericB15V19": {
+    "bytes": 9201,
+    "original": "build/lean_table_checker/acceleration_v19/cartesian_cached_full402_v19/source/Mahjong/FullLayoutNumericB15V19.lean",
+    "sha256": "61f29e5dd3ac522630bf9d33c7a6cce087509feff1f6a0b91bf397fc3ae45a55"
+  },
+  "Mahjong.FullLayoutNumericB16V19": {
+    "bytes": 5138,
+    "original": "build/lean_table_checker/acceleration_v19/cartesian_cached_full402_v19/source/Mahjong/FullLayoutNumericB16V19.lean",
+    "sha256": "f17ece6fa00d4ee45c84005882397a9d6e2465b5fac2ab2e6eb9ea2a320e8f44"
+  },
+  "Mahjong.FullLayoutNumericB17V19": {
+    "bytes": 4755,
+    "original": "build/lean_table_checker/acceleration_v19/cartesian_cached_full402_v19/source/Mahjong/FullLayoutNumericB17V19.lean",
+    "sha256": "64f267c84ed34c5ae8f547407377aefb443aa4e45a6abf910ad5ec8a26afd555"
+  },
+  "Mahjong.FullLayoutNumericB18V19": {
+    "bytes": 3709,
+    "original": "build/lean_table_checker/acceleration_v19/cartesian_cached_full402_v19/source/Mahjong/FullLayoutNumericB18V19.lean",
+    "sha256": "3a0c02461dd16c2cceeb01a419e03ee1c5a8c97e46a2f244a2af1f243e6f69fe"
+  },
+  "Mahjong.FullLayoutNumericB19V19": {
+    "bytes": 10472,
+    "original": "build/lean_table_checker/acceleration_v19/cartesian_cached_full402_v19/source/Mahjong/FullLayoutNumericB19V19.lean",
+    "sha256": "ac7b94552c00d26af0ea6f8429ba855453f17434c3861872271e5b771a5e81c8"
+  },
+  "Mahjong.FullLayoutNumericB20V19": {
+    "bytes": 3279,
+    "original": "build/lean_table_checker/acceleration_v19/cartesian_cached_full402_v19/source/Mahjong/FullLayoutNumericB20V19.lean",
+    "sha256": "3b3e24429dce3188bef3923d46fd3b9a64d46910040eca97cccf8f7f84fd7f06"
+  },
+  "Mahjong.FullLayoutNumericB21V19": {
+    "bytes": 3808,
+    "original": "build/lean_table_checker/acceleration_v19/cartesian_cached_full402_v19/source/Mahjong/FullLayoutNumericB21V19.lean",
+    "sha256": "6564a5064bf19e5dd6c3328d6a04438899b464bc0aaf2dbb0c661eec344bbea2"
+  },
+  "Mahjong.FullLayoutNumericB22V19": {
+    "bytes": 3944,
+    "original": "build/lean_table_checker/acceleration_v19/cartesian_cached_full402_v19/source/Mahjong/FullLayoutNumericB22V19.lean",
+    "sha256": "5b9d917d3fda8c4a300d3862e925b7cd6b7694845a80012920411d22ed6da760"
+  },
+  "Mahjong.FullLayoutNumericB23V19": {
+    "bytes": 5047,
+    "original": "build/lean_table_checker/acceleration_v19/cartesian_cached_full402_v19/source/Mahjong/FullLayoutNumericB23V19.lean",
+    "sha256": "aa28b701a547ab3c368181958bf4eece40f3ed64515f0b7274be1fe0696be290"
+  },
+  "Mahjong.FullLayoutNumericB24V19": {
+    "bytes": 7314,
+    "original": "build/lean_table_checker/acceleration_v19/cartesian_cached_full402_v19/source/Mahjong/FullLayoutNumericB24V19.lean",
+    "sha256": "bc21aed0a9ab1794c2e400e41eaa9b9b0a02a04dcfe4158332c47738d63221d4"
+  },
+  "Mahjong.FullLayoutNumericB25V19": {
+    "bytes": 3605,
+    "original": "build/lean_table_checker/acceleration_v19/cartesian_cached_full402_v19/source/Mahjong/FullLayoutNumericB25V19.lean",
+    "sha256": "8e8afc577d42c06b9cbc134d3363aeea9e9c238b65e076457b20d1c0ac1b70ad"
+  },
+  "Mahjong.FullLayoutNumericB26V19": {
+    "bytes": 6849,
+    "original": "build/lean_table_checker/acceleration_v19/cartesian_cached_full402_v19/source/Mahjong/FullLayoutNumericB26V19.lean",
+    "sha256": "3eb1369648bff8b897efc1ca43a4acc13ec4b96bbf82105cc92a88ea536073ab"
+  },
+  "Mahjong.FullLayoutNumericB27V19": {
+    "bytes": 9475,
+    "original": "build/lean_table_checker/acceleration_v19/cartesian_cached_full402_v19/source/Mahjong/FullLayoutNumericB27V19.lean",
+    "sha256": "3c7dff1e7b190b0333167a23dcf571e314baf3e956f88d16c38e9ba53b831722"
+  },
+  "Mahjong.FullLayoutPagedWriterV19": {
+    "bytes": 1264,
+    "original": "build/lean_table_checker/acceleration_v19/cartesian_cached_full402_v19/source/Mahjong/FullLayoutPagedWriterV19.lean",
+    "sha256": "0b25c647bd0de2384b9986e4504c352e844367603a29394cefe39afcbc1ec22f"
+  },
+  "Mahjong.FullLayoutStepV19": {
+    "bytes": 857,
+    "original": "build/lean_table_checker/acceleration_v19/cartesian_cached_full402_v19/source/Mahjong/FullLayoutStepV19.lean",
+    "sha256": "66ed69e24c4c88a579f238329bfe36a56a113b0af73575799f85134b71909aba"
+  },
+  "Mahjong.NatDataWriterV19": {
+    "bytes": 5119,
+    "original": "build/lean_table_checker/acceleration_v19/nat_dag_loader_v19/source/Mahjong/NatDataWriterV19.lean",
+    "sha256": "fb5066b6ea6724afb9600b70f692ccc41f3e5737f95b7e8c73e5babd482c3031"
+  },
+  "Mahjong.NoletFullChannels00V19": {
+    "bytes": 38407,
+    "original": "build/lean_table_checker/acceleration_v19/cartesian_nolet_full28_v19/source/Mahjong/NoletFullChannels00V19.lean",
+    "sha256": "e93f7f2d9ebfec0a3a86b92c19aa191ec0032e6051ea200109ec7c533401de77"
+  },
+  "Mahjong.NoletFullChannels01V19": {
+    "bytes": 30791,
+    "original": "build/lean_table_checker/acceleration_v19/cartesian_nolet_full28_v19/source/Mahjong/NoletFullChannels01V19.lean",
+    "sha256": "8f88cb866803c0e5ec9953ce3f6ae50c9d30c857e8e1fd95c068c6cfd57219d3"
+  },
+  "Mahjong.NoletFullChannels02V19": {
+    "bytes": 90322,
+    "original": "build/lean_table_checker/acceleration_v19/cartesian_nolet_full28_v19/source/Mahjong/NoletFullChannels02V19.lean",
+    "sha256": "2fc6f4e54b985628e5168b322e65b271359ed1ac0ede533f43b3100c18844084"
+  },
+  "Mahjong.NoletFullChannels03V19": {
+    "bytes": 68624,
+    "original": "build/lean_table_checker/acceleration_v19/cartesian_nolet_full28_v19/source/Mahjong/NoletFullChannels03V19.lean",
+    "sha256": "2fed35e2f4f54a0e1d01ac326fed58830bb427ab47a076ce3f75211aa82ce74c"
+  },
+  "Mahjong.NoletFullChannels04V19": {
+    "bytes": 52894,
+    "original": "build/lean_table_checker/acceleration_v19/cartesian_nolet_full28_v19/source/Mahjong/NoletFullChannels04V19.lean",
+    "sha256": "e4704475b65f2e8fcec20a6c10073a2d68e1a5ce0f2af588016485d7da1435bf"
+  },
+  "Mahjong.NoletFullChannels05V19": {
+    "bytes": 61109,
+    "original": "build/lean_table_checker/acceleration_v19/cartesian_nolet_full28_v19/source/Mahjong/NoletFullChannels05V19.lean",
+    "sha256": "f5fda06c76b3895d4911bb660a9596e969708d7893e34b9380daf82656646349"
+  },
+  "Mahjong.NoletFullChannels06V19": {
+    "bytes": 46460,
+    "original": "build/lean_table_checker/acceleration_v19/cartesian_nolet_full28_v19/source/Mahjong/NoletFullChannels06V19.lean",
+    "sha256": "b991971ad2f59d86c5659fde86b15e44593c58d36c8fee6d27fd294328fce215"
+  },
+  "Mahjong.NoletFullChannels07V19": {
+    "bytes": 64866,
+    "original": "build/lean_table_checker/acceleration_v19/cartesian_nolet_full28_v19/source/Mahjong/NoletFullChannels07V19.lean",
+    "sha256": "eb842c5afb8d6e9d3b4b8e0ba8fb07253659cbccd8383740e726ac4889bcd1b9"
+  },
+  "Mahjong.NoletFullChannels08V19": {
+    "bytes": 65177,
+    "original": "build/lean_table_checker/acceleration_v19/cartesian_nolet_full28_v19/source/Mahjong/NoletFullChannels08V19.lean",
+    "sha256": "8c8768297483ba9c7908e75fbe34c17f243d8aa7c0d01af857caa1e2000bbd3b"
+  },
+  "Mahjong.NoletFullChannels09V19": {
+    "bytes": 22104,
+    "original": "build/lean_table_checker/acceleration_v19/cartesian_nolet_full28_v19/source/Mahjong/NoletFullChannels09V19.lean",
+    "sha256": "61063fb405442970ecfb06b90d9fa4a18e8a3a058a883fe15d05af250dbefc34"
+  },
+  "Mahjong.NoletFullChannels10V19": {
+    "bytes": 49725,
+    "original": "build/lean_table_checker/acceleration_v19/cartesian_nolet_full28_v19/source/Mahjong/NoletFullChannels10V19.lean",
+    "sha256": "f0f27f8c8115db26cc87d1b0f0007ed37d81f9d4fc115c15675e8be5679f375f"
+  },
+  "Mahjong.NoletFullChannels11V19": {
+    "bytes": 61839,
+    "original": "build/lean_table_checker/acceleration_v19/cartesian_nolet_full28_v19/source/Mahjong/NoletFullChannels11V19.lean",
+    "sha256": "439873992a2c2864d1d80769a93d541efaaebe28d8ae286298fee2562e816bff"
+  },
+  "Mahjong.NoletFullChannels12V19": {
+    "bytes": 64033,
+    "original": "build/lean_table_checker/acceleration_v19/cartesian_nolet_full28_v19/source/Mahjong/NoletFullChannels12V19.lean",
+    "sha256": "ade4adf8fe03d946cf90b7d90a0e8df213511b11a061aa756fa12d00ff78fad9"
+  },
+  "Mahjong.NoletFullChannels13V19": {
+    "bytes": 52132,
+    "original": "build/lean_table_checker/acceleration_v19/cartesian_nolet_full28_v19/source/Mahjong/NoletFullChannels13V19.lean",
+    "sha256": "d08bb995a555f9ef68ce225c1337c607922dfbe77fd5b3d47e67ec5812212a2b"
+  },
+  "Mahjong.NoletFullChannels14V19": {
+    "bytes": 53882,
+    "original": "build/lean_table_checker/acceleration_v19/cartesian_nolet_full28_v19/source/Mahjong/NoletFullChannels14V19.lean",
+    "sha256": "28118372e05d59a61a583f008e7e9864b568b71c2da7b4b266e712ddac9bf5c4"
+  },
+  "Mahjong.NoletFullChannels15V19": {
+    "bytes": 61694,
+    "original": "build/lean_table_checker/acceleration_v19/cartesian_nolet_full28_v19/source/Mahjong/NoletFullChannels15V19.lean",
+    "sha256": "2ad4f4cdc0e830e236af671a868d9066b87791e8ba431d13645437f6981ecb37"
+  },
+  "Mahjong.NoletFullChannels16V19": {
+    "bytes": 53252,
+    "original": "build/lean_table_checker/acceleration_v19/cartesian_nolet_full28_v19/source/Mahjong/NoletFullChannels16V19.lean",
+    "sha256": "c5274bd9593d8bd4f90fc72c47316ed59400a46c0d87059cf9c5e7023bd0b803"
+  },
+  "Mahjong.NoletFullChannels17V19": {
+    "bytes": 51014,
+    "original": "build/lean_table_checker/acceleration_v19/cartesian_nolet_full28_v19/source/Mahjong/NoletFullChannels17V19.lean",
+    "sha256": "b8093beaca354685710e9b771fb402c294cd61c3a901298200f36ed6404bba3f"
+  },
+  "Mahjong.NoletFullChannels18V19": {
+    "bytes": 26306,
+    "original": "build/lean_table_checker/acceleration_v19/cartesian_nolet_full28_v19/source/Mahjong/NoletFullChannels18V19.lean",
+    "sha256": "1afe505d37b54f4b9372c22a87dc55381fdc8fb81f37b7d83f9120c60046fb56"
+  },
+  "Mahjong.NoletFullChannels19V19": {
+    "bytes": 50795,
+    "original": "build/lean_table_checker/acceleration_v19/cartesian_nolet_full28_v19/source/Mahjong/NoletFullChannels19V19.lean",
+    "sha256": "4433bd7890d3164ed722d4f0becee2ddee5fb8dd946ee8721ec17d8a37970340"
+  },
+  "Mahjong.NoletFullChannels20V19": {
+    "bytes": 23320,
+    "original": "build/lean_table_checker/acceleration_v19/cartesian_nolet_full28_v19/source/Mahjong/NoletFullChannels20V19.lean",
+    "sha256": "728ebc204481132297284e616be26a43cf474323ba0b2959e99685ee2a2d1150"
+  },
+  "Mahjong.NoletFullChannels21V19": {
+    "bytes": 97451,
+    "original": "build/lean_table_checker/acceleration_v19/cartesian_nolet_full28_v19/source/Mahjong/NoletFullChannels21V19.lean",
+    "sha256": "ed695a8bdb2c6f87af584f0a726142b7239735e327ddedb232f25ced639230a1"
+  },
+  "Mahjong.NoletFullChannels22V19": {
+    "bytes": 64224,
+    "original": "build/lean_table_checker/acceleration_v19/cartesian_nolet_full28_v19/source/Mahjong/NoletFullChannels22V19.lean",
+    "sha256": "9c26940f071eda19288a6eb9a0dfcf6a61a99693525e8e0bbc7d7561a231b2ef"
+  },
+  "Mahjong.NoletFullChannels23V19": {
+    "bytes": 60361,
+    "original": "build/lean_table_checker/acceleration_v19/cartesian_nolet_full28_v19/source/Mahjong/NoletFullChannels23V19.lean",
+    "sha256": "71bdc80377e4895f47e2e914153d4374679864e3805cbb3709a3b9735be4d4cb"
+  },
+  "Mahjong.NoletFullChannels24V19": {
+    "bytes": 40506,
+    "original": "build/lean_table_checker/acceleration_v19/cartesian_nolet_full28_v19/source/Mahjong/NoletFullChannels24V19.lean",
+    "sha256": "f22492108e1dc7c13810bf262046f1d2579760fff9236909baccccdaf4ae0fb1"
+  },
+  "Mahjong.NoletFullChannels25V19": {
+    "bytes": 65378,
+    "original": "build/lean_table_checker/acceleration_v19/cartesian_nolet_full28_v19/source/Mahjong/NoletFullChannels25V19.lean",
+    "sha256": "e893ae308797641eb877f0d48f77f9e9c99d1a1eae82358d57385f45854df9f8"
+  },
+  "Mahjong.NoletFullChannels26V19": {
+    "bytes": 49309,
+    "original": "build/lean_table_checker/acceleration_v19/cartesian_nolet_full28_v19/source/Mahjong/NoletFullChannels26V19.lean",
+    "sha256": "ef480cd72a7f70b6d980ea597e8680e120fa0a00e3e6d06699238166539df241"
+  },
+  "Mahjong.NoletFullChannels27V19": {
+    "bytes": 64028,
+    "original": "build/lean_table_checker/acceleration_v19/cartesian_nolet_full28_v19/source/Mahjong/NoletFullChannels27V19.lean",
+    "sha256": "e8018fc0caadad5f354689b931e51545024fd0fd66a6bb8ab08d3d09077262f0"
+  },
+  "Mahjong.NoletFullChannels28V19": {
+    "bytes": 32462,
+    "original": "build/lean_table_checker/acceleration_v19/cartesian_nolet_full28_v19/source/Mahjong/NoletFullChannels28V19.lean",
+    "sha256": "051e2144048b2de8f2bba922599bc115f44f157c57fbde871770ce401b843915"
+  },
+  "Mahjong.NoletFullChannels29V19": {
+    "bytes": 64193,
+    "original": "build/lean_table_checker/acceleration_v19/cartesian_nolet_full28_v19/source/Mahjong/NoletFullChannels29V19.lean",
+    "sha256": "472242fb74fdd5c316eaaaaa85d66c25a261da0ec34ec4d44891dee8466c762c"
+  },
+  "Mahjong.NoletFullChannels30V19": {
+    "bytes": 62237,
+    "original": "build/lean_table_checker/acceleration_v19/cartesian_nolet_full28_v19/source/Mahjong/NoletFullChannels30V19.lean",
+    "sha256": "f1e257691fabba2f6e8f4f2e924e24d2d9e5d2281331bf50bf24a933bb29558a"
+  },
+  "Mahjong.NoletFullChannels31V19": {
+    "bytes": 61312,
+    "original": "build/lean_table_checker/acceleration_v19/cartesian_nolet_full28_v19/source/Mahjong/NoletFullChannels31V19.lean",
+    "sha256": "ae9f99733c3a0ff4ebac2a6c6142da48519f4af808a74d8c97aee07737bd8c6e"
+  },
+  "Mahjong.NoletFullChannels32V19": {
+    "bytes": 46201,
+    "original": "build/lean_table_checker/acceleration_v19/cartesian_nolet_full28_v19/source/Mahjong/NoletFullChannels32V19.lean",
+    "sha256": "dd569bdf48d7bff6972222f3acb0de96cb983966bbd8132b30ea64306ab3a219"
+  },
+  "Mahjong.NoletFullChannels33V19": {
+    "bytes": 29696,
+    "original": "build/lean_table_checker/acceleration_v19/cartesian_nolet_full28_v19/source/Mahjong/NoletFullChannels33V19.lean",
+    "sha256": "a28ffc9034cad50e5855ae97bf4fd6e26af9efbeba03d0fba26b6329b9cce226"
+  },
+  "Mahjong.NoletFullCutV19": {
+    "bytes": 536,
+    "original": "build/lean_table_checker/acceleration_v19/cartesian_nolet_full28_v19/source/Mahjong/NoletFullCutV19.lean",
+    "sha256": "c7f9c458b3cb7bb3321be6ac6d75f975b1bcef15e7311a6801af06beb47e17f7"
+  },
+  "Mahjong.NoletFullExact00V19": {
+    "bytes": 7378,
+    "original": "build/lean_table_checker/acceleration_v19/cartesian_nolet_full28_v19/source/Mahjong/NoletFullExact00V19.lean",
+    "sha256": "b84cba22390f905932c8bd7d0aace6dec5f35b5960cf28aed788ff6b44aaef06"
+  },
+  "Mahjong.NoletFullExact01V19": {
+    "bytes": 951,
+    "original": "build/lean_table_checker/acceleration_v19/cartesian_nolet_full28_v19/source/Mahjong/NoletFullExact01V19.lean",
+    "sha256": "6a5c1006f50b2a607c44af85c33de8feba511ea6d9d9c5e49f16386610c1cb29"
+  },
+  "Mahjong.NoletFullExact02V19": {
+    "bytes": 951,
+    "original": "build/lean_table_checker/acceleration_v19/cartesian_nolet_full28_v19/source/Mahjong/NoletFullExact02V19.lean",
+    "sha256": "50d34e5a3afac1b3d92c9e9ad098e43b64af98b7053403fb0a5b981a51564d7f"
+  },
+  "Mahjong.NoletFullExact03V19": {
+    "bytes": 951,
+    "original": "build/lean_table_checker/acceleration_v19/cartesian_nolet_full28_v19/source/Mahjong/NoletFullExact03V19.lean",
+    "sha256": "42132a0db89c3e6b19f537140f368b27a5c54c9609d29ba7b0721807f9f7dfca"
+  },
+  "Mahjong.NoletFullExact04V19": {
+    "bytes": 10931,
+    "original": "build/lean_table_checker/acceleration_v19/cartesian_nolet_full28_v19/source/Mahjong/NoletFullExact04V19.lean",
+    "sha256": "0a72fdf7120debe21557bd6e68a8beee7944f05072cb304dfb22ec5ec4dfa2a1"
+  },
+  "Mahjong.NoletFullExact05V19": {
+    "bytes": 3446,
+    "original": "build/lean_table_checker/acceleration_v19/cartesian_nolet_full28_v19/source/Mahjong/NoletFullExact05V19.lean",
+    "sha256": "29feccf8d688d103e03a0f83d684215e9da39124219f5132df0cc83207a77d73"
+  },
+  "Mahjong.NoletFullExact06V19": {
+    "bytes": 4533,
+    "original": "build/lean_table_checker/acceleration_v19/cartesian_nolet_full28_v19/source/Mahjong/NoletFullExact06V19.lean",
+    "sha256": "ef974493b36f54888b5b8b29394dfef6db3904c6e0582646a79dda697bdf0c77"
+  },
+  "Mahjong.NoletFullExact07V19": {
+    "bytes": 2947,
+    "original": "build/lean_table_checker/acceleration_v19/cartesian_nolet_full28_v19/source/Mahjong/NoletFullExact07V19.lean",
+    "sha256": "8ecc5b919802d1c7b4f0ddce9b96bbfbdc34ce5f3360c619c3ca0321b2258020"
+  },
+  "Mahjong.NoletFullExact08V19": {
+    "bytes": 4444,
+    "original": "build/lean_table_checker/acceleration_v19/cartesian_nolet_full28_v19/source/Mahjong/NoletFullExact08V19.lean",
+    "sha256": "551c02f98655ce441a5d03968a60bd4e3f0d9678c3cc47f14c6bd751a9b04cfd"
+  },
+  "Mahjong.NoletFullExact09V19": {
+    "bytes": 1949,
+    "original": "build/lean_table_checker/acceleration_v19/cartesian_nolet_full28_v19/source/Mahjong/NoletFullExact09V19.lean",
+    "sha256": "354ec02ecbe19ada9e38e102035bca975c88304184e7b3df65ff81316bad2193"
+  },
+  "Mahjong.NoletFullExact10V19": {
+    "bytes": 951,
+    "original": "build/lean_table_checker/acceleration_v19/cartesian_nolet_full28_v19/source/Mahjong/NoletFullExact10V19.lean",
+    "sha256": "56b11821a9413d4a98b821c3ca03bb9a25564866c2d663ba95cb99ec54b4c255"
+  },
+  "Mahjong.NoletFullExact11V19": {
+    "bytes": 6440,
+    "original": "build/lean_table_checker/acceleration_v19/cartesian_nolet_full28_v19/source/Mahjong/NoletFullExact11V19.lean",
+    "sha256": "f470ceaa3e4576305130da22f252acae3b37d532c27f111310188b6ec10ecc68"
+  },
+  "Mahjong.NoletFullExact12V19": {
+    "bytes": 11537,
+    "original": "build/lean_table_checker/acceleration_v19/cartesian_nolet_full28_v19/source/Mahjong/NoletFullExact12V19.lean",
+    "sha256": "9708c9d8ee0d9e663c358c3aec57227069ec5ff284ef7ce302444c62d01a5425"
+  },
+  "Mahjong.NoletFullExact13V19": {
+    "bytes": 9631,
+    "original": "build/lean_table_checker/acceleration_v19/cartesian_nolet_full28_v19/source/Mahjong/NoletFullExact13V19.lean",
+    "sha256": "76c65ff1241d5c094ec34849a6d93d4908fe902798ea130a22b70b3ec62ab02e"
+  },
+  "Mahjong.NoletFullExact14V19": {
+    "bytes": 1462,
+    "original": "build/lean_table_checker/acceleration_v19/cartesian_nolet_full28_v19/source/Mahjong/NoletFullExact14V19.lean",
+    "sha256": "7f0b074801b78fdd0f4053658cef1654f1af1cae2e508de3b947c261a9bff458"
+  },
+  "Mahjong.NoletFullExact15V19": {
+    "bytes": 7106,
+    "original": "build/lean_table_checker/acceleration_v19/cartesian_nolet_full28_v19/source/Mahjong/NoletFullExact15V19.lean",
+    "sha256": "0e56c1c0b7031f55a588c6a67f765298e8b49ce167be07b19ebd22a4994eef75"
+  },
+  "Mahjong.NoletFullExact16V19": {
+    "bytes": 11562,
+    "original": "build/lean_table_checker/acceleration_v19/cartesian_nolet_full28_v19/source/Mahjong/NoletFullExact16V19.lean",
+    "sha256": "9543616c336984b85ccff3c027c79d88cea90252e788fef779c6e7cc6fc3b0a3"
+  },
+  "Mahjong.NoletFullExact17V19": {
+    "bytes": 6512,
+    "original": "build/lean_table_checker/acceleration_v19/cartesian_nolet_full28_v19/source/Mahjong/NoletFullExact17V19.lean",
+    "sha256": "b9ea149327ad2f6365b639f94978567e3cddacb74fce455d05be17b78ad8c874"
+  },
+  "Mahjong.NoletFullExact18V19": {
+    "bytes": 957,
+    "original": "build/lean_table_checker/acceleration_v19/cartesian_nolet_full28_v19/source/Mahjong/NoletFullExact18V19.lean",
+    "sha256": "f2abbfb134b143abb7c89f2214023bfd982e2edec8976e5d22466d5b97c9e542"
+  },
+  "Mahjong.NoletFullExact19V19": {
+    "bytes": 3571,
+    "original": "build/lean_table_checker/acceleration_v19/cartesian_nolet_full28_v19/source/Mahjong/NoletFullExact19V19.lean",
+    "sha256": "db152c5780ec5d45a7619e266458fcd27f16a7423c223312c36cf4f28e35e9eb"
+  },
+  "Mahjong.NoletFullExact20V19": {
+    "bytes": 957,
+    "original": "build/lean_table_checker/acceleration_v19/cartesian_nolet_full28_v19/source/Mahjong/NoletFullExact20V19.lean",
+    "sha256": "d1b46b7e0374efe3534c7abf1cf43cca5d316aff30717ade2f3abb0961922390"
+  },
+  "Mahjong.NoletFullExact21V19": {
+    "bytes": 957,
+    "original": "build/lean_table_checker/acceleration_v19/cartesian_nolet_full28_v19/source/Mahjong/NoletFullExact21V19.lean",
+    "sha256": "33eed80ec7e14982c1be60ac55df85967d0322db4689da27a44d9553ff1e4303"
+  },
+  "Mahjong.NoletFullExact22V19": {
+    "bytes": 12572,
+    "original": "build/lean_table_checker/acceleration_v19/cartesian_nolet_full28_v19/source/Mahjong/NoletFullExact22V19.lean",
+    "sha256": "9d12212f52435037ca61728762789222965a2c088885e330525c810337a2c8ca"
+  },
+  "Mahjong.NoletFullExact23V19": {
+    "bytes": 4492,
+    "original": "build/lean_table_checker/acceleration_v19/cartesian_nolet_full28_v19/source/Mahjong/NoletFullExact23V19.lean",
+    "sha256": "23a5cf4c843aa908aa08badfe34ac7c2301096f951d98dc3048aae29d589a1e8"
+  },
+  "Mahjong.NoletFullExact24V19": {
+    "bytes": 7522,
+    "original": "build/lean_table_checker/acceleration_v19/cartesian_nolet_full28_v19/source/Mahjong/NoletFullExact24V19.lean",
+    "sha256": "2a9ac28fd6898fdf0a5f9ca52d67f1af55443db2be9a6be1386bd6b94b62df37"
+  },
+  "Mahjong.NoletFullExact25V19": {
+    "bytes": 2472,
+    "original": "build/lean_table_checker/acceleration_v19/cartesian_nolet_full28_v19/source/Mahjong/NoletFullExact25V19.lean",
+    "sha256": "c397d085ae80c796c60df2d9978f22cd344726491baa83bce7f565fe1a7ab518"
+  },
+  "Mahjong.NoletFullExact26V19": {
+    "bytes": 9037,
+    "original": "build/lean_table_checker/acceleration_v19/cartesian_nolet_full28_v19/source/Mahjong/NoletFullExact26V19.lean",
+    "sha256": "5f468a8f478d624eefe9cd27a0838b694d86ad929c475afec8e92e1bdf1203b6"
+  },
+  "Mahjong.NoletFullExact27V19": {
+    "bytes": 3066,
+    "original": "build/lean_table_checker/acceleration_v19/cartesian_nolet_full28_v19/source/Mahjong/NoletFullExact27V19.lean",
+    "sha256": "7e4a557ed75894a379dd748350c1c490952072f399bf9c2b0c86a48722ac02a6"
+  },
+  "Mahjong.NoletFullExact28V19": {
+    "bytes": 957,
+    "original": "build/lean_table_checker/acceleration_v19/cartesian_nolet_full28_v19/source/Mahjong/NoletFullExact28V19.lean",
+    "sha256": "1c35871d1fbb4c7fa6e31343296fc4b7c00cdb57638476048611c67b05aadf30"
+  },
+  "Mahjong.NoletFullExact29V19": {
+    "bytes": 1462,
+    "original": "build/lean_table_checker/acceleration_v19/cartesian_nolet_full28_v19/source/Mahjong/NoletFullExact29V19.lean",
+    "sha256": "691512590f62cf8deb23c062dbc37745cc1eec5b670791af7761a9e6b2f35724"
+  },
+  "Mahjong.NoletFullExact30V19": {
+    "bytes": 1462,
+    "original": "build/lean_table_checker/acceleration_v19/cartesian_nolet_full28_v19/source/Mahjong/NoletFullExact30V19.lean",
+    "sha256": "0837df9d943dc5ee472d87d8f0668a7d70b085c6747515f58f7258ff055a7471"
+  },
+  "Mahjong.NoletFullExact31V19": {
+    "bytes": 1551,
+    "original": "build/lean_table_checker/acceleration_v19/cartesian_nolet_full28_v19/source/Mahjong/NoletFullExact31V19.lean",
+    "sha256": "a3f765273db531893cc5f21e6276fcf2a05a3ff38c22e2d1c2fe5ae431ff7ba9"
+  },
+  "Mahjong.NoletFullExact32V19": {
+    "bytes": 2472,
+    "original": "build/lean_table_checker/acceleration_v19/cartesian_nolet_full28_v19/source/Mahjong/NoletFullExact32V19.lean",
+    "sha256": "3d9299257ba18266d9bddb1584bd694b293a33a52156cba90b4cbe0930b6911d"
+  },
+  "Mahjong.NoletFullExact33V19": {
+    "bytes": 1967,
+    "original": "build/lean_table_checker/acceleration_v19/cartesian_nolet_full28_v19/source/Mahjong/NoletFullExact33V19.lean",
+    "sha256": "46148a4b0986a26ebbf4ea789b701aff2058c43ee16697c334c640a927e59b7b"
+  },
+  "Mahjong.NoletFullPNB00V19": {
+    "bytes": 5073,
+    "original": "build/lean_table_checker/acceleration_v19/cartesian_nolet_full28_v19/source/Mahjong/NoletFullPNB00V19.lean",
+    "sha256": "0ab8759fc38fa6c0afb8a52b08e6f8795b51e19e415be30e7828b45123f97de5"
+  },
+  "Mahjong.NoletFullPNB01V19": {
+    "bytes": 5881,
+    "original": "build/lean_table_checker/acceleration_v19/cartesian_nolet_full28_v19/source/Mahjong/NoletFullPNB01V19.lean",
+    "sha256": "3cee130c8f89079888a0ac2ebd7130fc2d79ed7a2ae4155f6d4d06299eac2b57"
+  },
+  "Mahjong.NoletFullPNB02V19": {
+    "bytes": 6388,
+    "original": "build/lean_table_checker/acceleration_v19/cartesian_nolet_full28_v19/source/Mahjong/NoletFullPNB02V19.lean",
+    "sha256": "4bfd102b9eecf8bf39f4f7a5174730a40f62b00331667908adb51b87b78434d2"
+  },
+  "Mahjong.NoletFullPNB03V19": {
+    "bytes": 4393,
+    "original": "build/lean_table_checker/acceleration_v19/cartesian_nolet_full28_v19/source/Mahjong/NoletFullPNB03V19.lean",
+    "sha256": "9af005448d1c7d4a7b6eb5f5615ffd0e2816202ee9db0f86c119eff383a97e1d"
+  },
+  "Mahjong.NoletFullPNB04V19": {
+    "bytes": 5286,
+    "original": "build/lean_table_checker/acceleration_v19/cartesian_nolet_full28_v19/source/Mahjong/NoletFullPNB04V19.lean",
+    "sha256": "342364b77a58edb2ac8329db73706d454f2c68ce60ad8dd74e9bbe2816f84700"
+  },
+  "Mahjong.NoletFullPNB05V19": {
+    "bytes": 5299,
+    "original": "build/lean_table_checker/acceleration_v19/cartesian_nolet_full28_v19/source/Mahjong/NoletFullPNB05V19.lean",
+    "sha256": "2edaf92ed6bd8321c150a506377aaf7f90698229def295bcbeb662b1b895ef8a"
+  },
+  "Mahjong.NoletFullPNB06V19": {
+    "bytes": 5312,
+    "original": "build/lean_table_checker/acceleration_v19/cartesian_nolet_full28_v19/source/Mahjong/NoletFullPNB06V19.lean",
+    "sha256": "ca808a7d6020ef609b4554998d4bbf85780fe0d7f0df0cf21e651f1e24859f81"
+  },
+  "Mahjong.NoletFullPNB07V19": {
+    "bytes": 4765,
+    "original": "build/lean_table_checker/acceleration_v19/cartesian_nolet_full28_v19/source/Mahjong/NoletFullPNB07V19.lean",
+    "sha256": "f5605d884f04b4cd03f1cf0066ea1d46aebce795bc1c69cb824e08f3684ff763"
+  },
+  "Mahjong.NoletFullPNB08V19": {
+    "bytes": 6831,
+    "original": "build/lean_table_checker/acceleration_v19/cartesian_nolet_full28_v19/source/Mahjong/NoletFullPNB08V19.lean",
+    "sha256": "07e8cf85e69472bf70e216faad9fe31c2d2def73e7cd57723e5e5c5a759f5caa"
+  },
+  "Mahjong.NoletFullPNB09V19": {
+    "bytes": 3839,
+    "original": "build/lean_table_checker/acceleration_v19/cartesian_nolet_full28_v19/source/Mahjong/NoletFullPNB09V19.lean",
+    "sha256": "da998f319f7ffdb5f4aa955768ae772c33800a60d606c34e4811020dcba365eb"
+  },
+  "Mahjong.NoletFullPNB10V19": {
+    "bytes": 3996,
+    "original": "build/lean_table_checker/acceleration_v19/cartesian_nolet_full28_v19/source/Mahjong/NoletFullPNB10V19.lean",
+    "sha256": "6515d8d42f2d156c166f8d25ae4a36a39f99072f80fc1e201209e83f476b9a2c"
+  },
+  "Mahjong.NoletFullPNB11V19": {
+    "bytes": 5737,
+    "original": "build/lean_table_checker/acceleration_v19/cartesian_nolet_full28_v19/source/Mahjong/NoletFullPNB11V19.lean",
+    "sha256": "3402e825682609d806bd66f35d2f9f18f91016b82744636dbdaf0e19f11632ac"
+  },
+  "Mahjong.NoletFullPNB12V19": {
+    "bytes": 5148,
+    "original": "build/lean_table_checker/acceleration_v19/cartesian_nolet_full28_v19/source/Mahjong/NoletFullPNB12V19.lean",
+    "sha256": "1563590f7ca81582e59ecb3f422307658797fc4e10fe7957f6baf4efd16b913a"
+  },
+  "Mahjong.NoletFullPNB13V19": {
+    "bytes": 6273,
+    "original": "build/lean_table_checker/acceleration_v19/cartesian_nolet_full28_v19/source/Mahjong/NoletFullPNB13V19.lean",
+    "sha256": "a8e262d49c1069d42b3189cc726d0b9f8632f281de860e1f6efe6cad5bc15387"
+  },
+  "Mahjong.NoletFullPNB14V19": {
+    "bytes": 6020,
+    "original": "build/lean_table_checker/acceleration_v19/cartesian_nolet_full28_v19/source/Mahjong/NoletFullPNB14V19.lean",
+    "sha256": "ca2d12c03e36cfe38bed31a568da774e2b0c5f3a3e7ff4e8fbd62765c26a8520"
+  },
+  "Mahjong.NoletFullPNB15V19": {
+    "bytes": 6592,
+    "original": "build/lean_table_checker/acceleration_v19/cartesian_nolet_full28_v19/source/Mahjong/NoletFullPNB15V19.lean",
+    "sha256": "91f4bb63393460fbabc5edb6f8a62ec2b214ca9a53dcb5f512ef4fda5f60cb48"
+  },
+  "Mahjong.NoletFullPNB16V19": {
+    "bytes": 5875,
+    "original": "build/lean_table_checker/acceleration_v19/cartesian_nolet_full28_v19/source/Mahjong/NoletFullPNB16V19.lean",
+    "sha256": "31b44ea7782933cf5be03bedf5ff3dc8830f8a05c3b8bef67c8954ea9027fb03"
+  },
+  "Mahjong.NoletFullPNB17V19": {
+    "bytes": 4736,
+    "original": "build/lean_table_checker/acceleration_v19/cartesian_nolet_full28_v19/source/Mahjong/NoletFullPNB17V19.lean",
+    "sha256": "951c09398950a077433c45633769ce6ffb9439794c8e7d57e0a928daf0ae79af"
+  },
+  "Mahjong.NoletFullPNB18V19": {
+    "bytes": 4285,
+    "original": "build/lean_table_checker/acceleration_v19/cartesian_nolet_full28_v19/source/Mahjong/NoletFullPNB18V19.lean",
+    "sha256": "8ee9a97581b543635ad97179dd6d35041c1c10496766a197be1d2b2e26b851d8"
+  },
+  "Mahjong.NoletFullPNB19V19": {
+    "bytes": 7108,
+    "original": "build/lean_table_checker/acceleration_v19/cartesian_nolet_full28_v19/source/Mahjong/NoletFullPNB19V19.lean",
+    "sha256": "5d4bb194e3cdc45c7844c0526e92a8b25d2fb127d1d179bbbb771017f33e1662"
+  },
+  "Mahjong.NoletFullPNB20V19": {
+    "bytes": 4927,
+    "original": "build/lean_table_checker/acceleration_v19/cartesian_nolet_full28_v19/source/Mahjong/NoletFullPNB20V19.lean",
+    "sha256": "ddcf07a69425bbc1c8d07086fc91e50260e62ec62d741c8015b14a52e421b507"
+  },
+  "Mahjong.NoletFullPNB21V19": {
+    "bytes": 4526,
+    "original": "build/lean_table_checker/acceleration_v19/cartesian_nolet_full28_v19/source/Mahjong/NoletFullPNB21V19.lean",
+    "sha256": "5de8bf340973bfeb1dc10334a2ce23412b86942f770efff7addf44916abf2c08"
+  },
+  "Mahjong.NoletFullPNB22V19": {
+    "bytes": 5407,
+    "original": "build/lean_table_checker/acceleration_v19/cartesian_nolet_full28_v19/source/Mahjong/NoletFullPNB22V19.lean",
+    "sha256": "ad4990d23fd776f4abe80563b32ba87155debd9a2232e9c86439b32cca981f9f"
+  },
+  "Mahjong.NoletFullPNB23V19": {
+    "bytes": 5692,
+    "original": "build/lean_table_checker/acceleration_v19/cartesian_nolet_full28_v19/source/Mahjong/NoletFullPNB23V19.lean",
+    "sha256": "b31a726fa94abcc3ee25deae369f10900cf1c43ea08dcb51b38bc305ecc4bc0e"
+  },
+  "Mahjong.NoletFullPNB24V19": {
+    "bytes": 5879,
+    "original": "build/lean_table_checker/acceleration_v19/cartesian_nolet_full28_v19/source/Mahjong/NoletFullPNB24V19.lean",
+    "sha256": "26ab214e4e0a1d1a03117dc297b7599580b209b3f47d83368667d1710d1d8098"
+  },
+  "Mahjong.NoletFullPNB25V19": {
+    "bytes": 5309,
+    "original": "build/lean_table_checker/acceleration_v19/cartesian_nolet_full28_v19/source/Mahjong/NoletFullPNB25V19.lean",
+    "sha256": "95fb555710a72d345c4b18bf8b85713a4e22c601d007f782a2fe7400efeae2e6"
+  },
+  "Mahjong.NoletFullPNB26V19": {
+    "bytes": 5017,
+    "original": "build/lean_table_checker/acceleration_v19/cartesian_nolet_full28_v19/source/Mahjong/NoletFullPNB26V19.lean",
+    "sha256": "7e796666918b68b34d86b17a66b874d09b0e52158e8dbd978be3e4528c783675"
+  },
+  "Mahjong.NoletFullPNB27V19": {
+    "bytes": 7057,
+    "original": "build/lean_table_checker/acceleration_v19/cartesian_nolet_full28_v19/source/Mahjong/NoletFullPNB27V19.lean",
+    "sha256": "6f8a11d1b557634fb892158c95e6e250a72380a5a3ee5ec830c8d7fa2f69a403"
+  }
+}

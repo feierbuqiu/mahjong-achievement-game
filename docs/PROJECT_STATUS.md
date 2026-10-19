@@ -1,4 +1,4 @@
-# Current status: complete V17 native verification
+# Current status: working trust paper and completed scoped results
 
 **As of 19 October 2026, the fixed V17 native verification is complete.**
 The empty position is accepted as **P (second player wins)**, with the claim
@@ -13,7 +13,28 @@ No earlier PASS records or seeds were imported. The input identity maps
 before and after the run agree. The recorded timers are about 7.6 hours for
 this run; they are measurements, not guarantees for another machine or workload.
 
-## What this establishes
+## Latest paper and subsequent component evidence
+
+The [new English trust/verification supplement](../papers/trust-verification/manuscript.md)
+is published as a working main-branch manuscript. It awaits later user-supplied
+external review; no new release, tag or freeze is performed.
+
+Later bounded work completed the 28-block / 402-word numerical pilot, with
+1,234 layout equalities and a 273-module saved-proof closure. Fresh replay
+took 61.828 seconds. It proves specified numerical equations; actual SAFE,
+complete target addressing and the game-semantic join remain missing.
+The eleven-node physical-game pilot and its import/proof-style variants
+retain the same three highlighted nonempty 32-tile conclusions.
+
+A complete local delivery now exists: core/toolchain/source, all historical
+inputs and optional saved pilots. A same-host clean extraction/rebuild and
+selected-bucket test passed, as did all three saved-proof lanes. These are
+not a second complete native run or second physical-machine replication.
+The [delivery descriptor](../papers/trust-verification/delivery.json) lists
+their identities; **the three local archives are not public downloads here**.
+This supersedes the earlier statement that packaging was still incomplete.
+
+## What the whole-input result establishes
 
 The saved records report acceptance of the base finite data, successor lists,
 per-bucket metadata, row/frame checks with exact cover, cross-layer byte
@@ -49,9 +70,10 @@ bookkeeping remain explicit parts of the trust boundary.
 - Human review of the formal rules and the remaining trusted bookkeeping.
 - A closed Lean theorem for the actual input, if a practical proof-construction,
   persistence and cold-replay method becomes available.
-- Publication of a new paper. The two existing English papers retain their dates.
+- Further review and revision of the new working manuscript. The two September papers retain their dates.
 
-Strict V18/V19 whole-table proof-export research has been stopped. The legacy
+The earlier V18/V19 whole-table proof-export optimization was stopped.
+Later bounded numeric/game experiments and local-delivery tests are recorded separately in the new paper. The legacy
 V16 STOP remains in place; the separately authorized V17 run completed without
 removing it. No future strict-kernel completion deadline is established, and
 this repository publication launches no new research job. Deeper proofs,
@@ -62,9 +84,11 @@ alternative approaches, corrections and replication contributions remain welcome
 Small source, input hashes and summaries live in Git. The full saved ledger,
 all committed frame receipts and native frame-result records are distributed
 as a [hash-pinned evidence asset](../research/2026-10-19-v17/assets.json).
-The full input dataset is not yet a public download. In-progress local `.part`
-archives are not published as completed reproduction packages.
+The full input dataset is not a public download. Completed local archives
+and their same-host validation now exist, with public identity/scope records;
+the archives themselves are not uploaded by this update.
 
 The immutable [v1.0.0 release](https://github.com/feierbuqiu/mahjong-achievement-game/releases/tag/v1.0.0)
-and both dated manuscripts remain unchanged. The separate evidence-asset tag
-is not a new software version or a new paper. See [data availability](DATA_AVAILABILITY.md).
+and the two September manuscripts remain unchanged. The existing separate
+evidence-asset tag is preserved. The new paper is a working edition on main;
+this update creates no tag or release. See [data availability](DATA_AVAILABILITY.md).

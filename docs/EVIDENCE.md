@@ -27,6 +27,8 @@ rules, index, recurrence, implementation, and stored values.
 | V19 compression and layout experiments | Supplied numeric relations, partial local metadata and generic bridges | Not complete actual SAFE/game semantics or a global runtime bound |
 | V17 complete native verification | Six finite acceptance families evaluated on all 35 layers / 778,532,864,302 stored labels | Compiler/runtime, IO/input custody and external bookkeeping trusted; no closed actual-input Lean declaration |
 | Separate AI review | 17,317-frame ledger, 54,548 target identity references, 62-file input sample; no problems reported in inspected scope | No Lean/native rerun, no full input rehash, no human peer review |
+| Later packed numerical certificate | Saved equations for 28 fixed blocks / 402 words, 1,234 layout equalities and a 273-module fresh replay | No complete actual SAFE/target-address/game join; numerical coordinates are not newly certified game positions |
+| Same-host portable tests | 149-source/native reconstruction, small controls and selected 56-row execution; separately extracted saved pilots | No second all-layer native execution or second physical machine; complete archives remain local |
 | SSH/GitHub signatures | A commit or tag was signed by the identified key | Does not prove its scientific claims |
 
 ## Current V17 verification
@@ -51,8 +53,9 @@ count is inferred. The actual original-game empty-state Lean declaration is
 still **not published**. A hypothetical closed proof must retain the actual
 finite premises through proof construction, saving and cold kernel replay.
 
-V18/V19 strict proof-export experiments are stopped and remain historical
-component evidence. Their performance limits do not invalidate the separately
+The earlier V18/V19 whole-table optimization was stopped. Later bounded
+component work completed the numerical sample and nonempty-game variants;
+the [new paper](../papers/trust-verification/manuscript.md) gives their exact scopes. Their performance limits do not invalidate the separately
 completed V17 native computation and do not establish a future strict-kernel
 deadline. The old V16 STOP remains unchanged. See [current status](PROJECT_STATUS.md).
 

@@ -18,6 +18,12 @@ See the [completed run](../research/2026-10-19-v17/README.md) and
 | The measured 7.6-hour run guarantees the time of a new run or a future strict-kernel proof | **Not supported** |
 | A signature, SHA-256 match or green CI proves the mathematical result | **False**; each authenticates or checks a narrower artifact/operation |
 
+The [new working paper](../papers/trust-verification/manuscript.md) adds later
+fixed numerical proof and same-host delivery results. A 273-module numerical
+closure is not an actual-game empty proof. Completed local archive preparation
+and same-host tests are not public data hosting or independent-machine replication.
+Further external review of this manuscript is pending.
+
 ## Suggested wording
 
 > The Lean kernel proves that if six finite Boolean acceptance families hold,

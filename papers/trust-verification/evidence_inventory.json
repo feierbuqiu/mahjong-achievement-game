@@ -1,0 +1,137 @@
+{
+  "schema": "PAPER_PRIMARY_EVIDENCE_IDENTITIES_V1",
+  "date": "2026-10-19",
+  "scope": "Selected source and retained record identity; no research execution or full input scan",
+  "records": [
+    {
+      "path": "runs/lean_table_checker/v17_compute_finish_20261018/full_native_20261018_02/FINAL.json",
+      "bytes": 1017,
+      "sha256": "413ced59dcfcc2825f6b17503e8690f895b6d9f0219ddb2eb4ce43cf992c957e"
+    },
+    {
+      "path": "runs/lean_table_checker/v17_compute_finish_20261018/full_native_20261018_02/MANIFEST.json",
+      "bytes": 1787496,
+      "sha256": "bf46a286a78e7f1c8ba62611ac841c89e463542589acb443e15e53d9b66b76ed"
+    },
+    {
+      "path": "runs/lean_table_checker/v17_compute_finish_20261018/full_native_20261018_02/PLAN.json",
+      "bytes": 3306441,
+      "sha256": "bc9b6f02c66b4556b1e9a189d9950d95b994f5bb82170736aa09b1abe0e71baa"
+    },
+    {
+      "path": "runs/lean_table_checker/v17_compute_finish_20261018/full_native_20261018_02/RUNTIME.json",
+      "bytes": 55378,
+      "sha256": "4a274d7dac9fbc924777973984119dc47b5317ec457cc20531b03051c6b3ada6"
+    },
+    {
+      "path": "runs/lean_table_checker/v17_compute_finish_20261018/full_native_20261018_02/ledger.jsonl",
+      "bytes": 10793673,
+      "sha256": "255d3bf5fd74208bcac6d8b68b6804a52d4c1661b5afc2789994a8b270c12f4d"
+    },
+    {
+      "path": "runs/lean_table_checker/end_to_end_20261018_v17/PROOF_STATUS.json",
+      "bytes": 38530,
+      "sha256": "c32c34c2941836a203cb2909c51ca3680da375d1104e183eb00a48b92fc9b4e9"
+    },
+    {
+      "path": "runs/lean_table_checker/kernel_pilot_20261018_v18/PILOT_STATUS.json",
+      "bytes": 39838,
+      "sha256": "4402bee8f02d720e84b70fc224ae5ee793aec00f5d5e614e8168f4bd0f5b530b"
+    },
+    {
+      "path": "runs/lean_table_checker/kernel_exploration_20261019/packed_05/REPORT.json",
+      "bytes": 1164,
+      "sha256": "57043889402740d65d9cf4e21e589d39bcb66ac46b2a1c6bd905fe34b884b721"
+    },
+    {
+      "path": "runs/lean_table_checker/kernel_exploration_20261019/packed_05/certificate_manifest.json",
+      "bytes": 126545,
+      "sha256": "853df813fee7d42c89334a8358b0084ca8cdf3a9030b7d7f633e7049a4d60d97"
+    },
+    {
+      "path": "runs/lean_table_checker/kernel_exploration_20261019/game_01/REPORT.json",
+      "bytes": 1752,
+      "sha256": "2f687d52441dc9314bcc2a0ce3ca02c766cb63517b49967748d9feabdcbc31f3"
+    },
+    {
+      "path": "runs/lean_table_checker/kernel_exploration_20261019/game_slim_01/REPORT.json",
+      "bytes": 883,
+      "sha256": "3b4b1f6161542533cadddfa5991fc840a9aa2663a9634101bc852230422a9830"
+    },
+    {
+      "path": "runs/lean_table_checker/kernel_exploration_20261019/profile_packed_01/REPORT.json",
+      "bytes": 10273,
+      "sha256": "73e7107a27bbf5ac3b64c553635597305c4325cf720574c93719871e32b3d0ac"
+    },
+    {
+      "path": "runs/lean_table_checker/portable_repro_20261019/package_02/cold_test_03/REPORT.json",
+      "bytes": 2782,
+      "sha256": "59f9873c093ed335de35212f9c15a3f27447a41b5b1b7621510879d3c63f9be3"
+    },
+    {
+      "path": "runs/lean_table_checker/portable_repro_20261019/package_02/deliverables/VALIDATION_REPORT.json",
+      "bytes": 6428,
+      "sha256": "4009d3d8018fba4229c1a1cae52ff89292fd8eaadbf999d28c77b66433ecd206"
+    },
+    {
+      "path": "runs/lean_table_checker/portable_repro_20261019/package_02/deliverables/KERNEL_PILOTS_COLD_REPORT.json",
+      "bytes": 1635,
+      "sha256": "537839a925a28b73e429d4bb6f3cf67344f8b99be92f76fe111b1cc2fe7df8f6"
+    },
+    {
+      "path": "runs/lean_table_checker/portable_repro_20261019/package_02/deliverables/LATEST_PROGRESS.json",
+      "bytes": 21588,
+      "sha256": "a84490658b913a8fd4c42e4c508dfb94ea02722ebe8d17da0e558717676c59ad"
+    },
+    {
+      "path": "runs/lean_table_checker/portable_repro_20261019/package_02/deliverables/SHA256SUMS",
+      "bytes": 1084,
+      "sha256": "6046bc7341ef38271b1fef5b704479d07272daec9cf85467bed784f590d3d954"
+    },
+    {
+      "path": "runs/lean_table_checker/portable_repro_20261019/package_02/deliverables/REPRODUCTION_AND_KERNEL_PROGRESS.md",
+      "bytes": 8890,
+      "sha256": "057ccd377f22176478f0422ba5b6aaefcfcabc03084d77cdaf325f44aa688635"
+    },
+    {
+      "path": "runs/lean_table_checker/independent_review_claude_20261019/INDEPENDENT_REVIEW.md",
+      "bytes": 35368,
+      "sha256": "de66b0d9671cb46536214ce5b742f4f6845a0863cb4cb03e2ab37d186f2ccd5c"
+    },
+    {
+      "path": "build/lean_table_checker/end_to_end_v17/source/Mahjong/FastWholeInputV17.lean",
+      "bytes": 9475,
+      "sha256": "0e1108a2b0433b83f693e0648ac45448455abf6df222b53a835925c2c49ef08d"
+    },
+    {
+      "path": "build/lean_table_checker/kernel_pilot_v18/source/Mahjong/PilotActualGameV18.lean",
+      "bytes": 2133,
+      "sha256": "9ba8d33a9e86a06c9717c7af9f668523a9cf5f2f09763ecd7c6ae0846edfed39"
+    },
+    {
+      "path": "runs/publication_native_20261019/published-update-receipt.json",
+      "bytes": 2259,
+      "sha256": "0c1c26e52f02b78abbc8eba9d79fcfb28d16dbdccd9d3cf632ac4352754788c9"
+    },
+    {
+      "path": "runs/paper_20260913/manuscript.md",
+      "bytes": 117039,
+      "sha256": "f1d521177f2270e4340703faddaa6f9426108e939cd19cfeb71b4f2fc5fbe2e5"
+    },
+    {
+      "path": "runs/lean_supplement_20260915/manuscript.md",
+      "bytes": 81657,
+      "sha256": "ddfa77cc571f9fa36623ae605c74a39156d96af9cd41db2640f6501c841db6e5"
+    },
+    {
+      "path": "runs/lean_trust_supplement_20261019/native_record_audit.py",
+      "bytes": 8860,
+      "sha256": "fe506e98de029b61896e62b51ed53b4f98d086c9912fa2ae7c0295e1da0433ad"
+    },
+    {
+      "path": "runs/lean_trust_supplement_20261019/native_record_audit.json",
+      "bytes": 9201,
+      "sha256": "80a962e5bc71f8729b1a249c713048fc14f9130565ba3a0cd45664e88313c834"
+    }
+  ]
+}

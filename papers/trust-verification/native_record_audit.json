@@ -1,0 +1,392 @@
+{
+  "schema": "PAPER_READ_ONLY_SAVED_V17_RECORD_AUDIT_V1",
+  "observed_utc": "2026-10-18T23:27:19.822122+00:00",
+  "scope": "Saved-record arithmetic, bindings and hash checks only; no Lean/native/GPU/compiler execution; no full input rehash",
+  "problems": [],
+  "problem_count": 0,
+  "records_read": 38323,
+  "totals": {
+    "rows": 778532864302,
+    "P": 203051492021,
+    "N": 575481372281,
+    "frames": 17317,
+    "native_wall_ns": 14610333236399,
+    "native_plan_ns": 1471104206740,
+    "native_scan_ns": 12298804689334,
+    "payload_read_ns": 817493796443,
+    "helper_wall_seconds": 17710.799751821934
+  },
+  "rows_sum_plan": 778532864302,
+  "cells": 6440,
+  "nonempty_buckets": 3686,
+  "empty_cells": 2754,
+  "unique_frame_keys": 17317,
+  "session_ids": [
+    "032a785eb75940aba28b930fdf0e026e"
+  ],
+  "cross_layer_identity_references": 54548,
+  "first_commit_utc": "2026-10-18T10:31:23.053180+00:00",
+  "last_commit_utc": "2026-10-18T17:46:30.528607+00:00",
+  "layer_totals": {
+    "0": {
+      "rows": 1,
+      "P": 1,
+      "N": 0,
+      "frames": 1,
+      "nonempty_buckets": 1
+    },
+    "1": {
+      "rows": 6,
+      "P": 0,
+      "N": 6,
+      "frames": 2,
+      "nonempty_buckets": 2
+    },
+    "2": {
+      "rows": 47,
+      "P": 14,
+      "N": 33,
+      "frames": 4,
+      "nonempty_buckets": 4
+    },
+    "3": {
+      "rows": 298,
+      "P": 46,
+      "N": 252,
+      "frames": 7,
+      "nonempty_buckets": 7
+    },
+    "4": {
+      "rows": 1725,
+      "P": 404,
+      "N": 1321,
+      "frames": 12,
+      "nonempty_buckets": 12
+    },
+    "5": {
+      "rows": 8967,
+      "P": 1679,
+      "N": 7288,
+      "frames": 18,
+      "nonempty_buckets": 18
+    },
+    "6": {
+      "rows": 42793,
+      "P": 11159,
+      "N": 31634,
+      "frames": 27,
+      "nonempty_buckets": 27
+    },
+    "7": {
+      "rows": 187376,
+      "P": 34632,
+      "N": 152744,
+      "frames": 38,
+      "nonempty_buckets": 38
+    },
+    "8": {
+      "rows": 760493,
+      "P": 187425,
+      "N": 573068,
+      "frames": 52,
+      "nonempty_buckets": 52
+    },
+    "9": {
+      "rows": 2874880,
+      "P": 531639,
+      "N": 2343241,
+      "frames": 69,
+      "nonempty_buckets": 68
+    },
+    "10": {
+      "rows": 10187475,
+      "P": 2248838,
+      "N": 7938637,
+      "frames": 90,
+      "nonempty_buckets": 87
+    },
+    "11": {
+      "rows": 34006368,
+      "P": 5951610,
+      "N": 28054758,
+      "frames": 115,
+      "nonempty_buckets": 107
+    },
+    "12": {
+      "rows": 107440638,
+      "P": 21282781,
+      "N": 86157857,
+      "frames": 150,
+      "nonempty_buckets": 130
+    },
+    "13": {
+      "rows": 321356083,
+      "P": 52530670,
+      "N": 268825413,
+      "frames": 192,
+      "nonempty_buckets": 148
+    },
+    "14": {
+      "rows": 903209000,
+      "P": 172931755,
+      "N": 730277245,
+      "frames": 250,
+      "nonempty_buckets": 163
+    },
+    "15": {
+      "rows": 2346950750,
+      "P": 387779363,
+      "N": 1959171387,
+      "frames": 322,
+      "nonempty_buckets": 170
+    },
+    "16": {
+      "rows": 5544554559,
+      "P": 1146615962,
+      "N": 4397938597,
+      "frames": 418,
+      "nonempty_buckets": 174
+    },
+    "17": {
+      "rows": 11780250236,
+      "P": 2127213505,
+      "N": 9653036731,
+      "frames": 556,
+      "nonempty_buckets": 173
+    },
+    "18": {
+      "rows": 22376865721,
+      "P": 5169175844,
+      "N": 17207689877,
+      "frames": 753,
+      "nonempty_buckets": 173
+    },
+    "19": {
+      "rows": 37804625883,
+      "P": 7545862761,
+      "N": 30258763122,
+      "frames": 1006,
+      "nonempty_buckets": 173
+    },
+    "20": {
+      "rows": 56566252124,
+      "P": 14418956851,
+      "N": 42147295273,
+      "frames": 1287,
+      "nonempty_buckets": 173
+    },
+    "21": {
+      "rows": 75050088557,
+      "P": 16379219048,
+      "N": 58670869509,
+      "frames": 1540,
+      "nonempty_buckets": 172
+    },
+    "22": {
+      "rows": 89127184893,
+      "P": 24583507136,
+      "N": 64543677757,
+      "frames": 1699,
+      "nonempty_buckets": 170
+    },
+    "23": {
+      "rows": 96268928092,
+      "P": 22390373365,
+      "N": 73878554727,
+      "frames": 1734,
+      "nonempty_buckets": 167
+    },
+    "24": {
+      "rows": 96065224588,
+      "P": 27864862842,
+      "N": 68200361746,
+      "frames": 1667,
+      "nonempty_buckets": 163
+    },
+    "25": {
+      "rows": 88982128123,
+      "P": 21663176175,
+      "N": 67318951948,
+      "frames": 1509,
+      "nonempty_buckets": 160
+    },
+    "26": {
+      "rows": 75440492234,
+      "P": 22885068257,
+      "N": 52555423977,
+      "frames": 1279,
+      "nonempty_buckets": 158
+    },
+    "27": {
+      "rows": 56645165793,
+      "P": 14906959805,
+      "N": 41738205988,
+      "frames": 986,
+      "nonempty_buckets": 157
+    },
+    "28": {
+      "rows": 35949118771,
+      "P": 11937273296,
+      "N": 24011845475,
+      "frames": 671,
+      "nonempty_buckets": 153
+    },
+    "29": {
+      "rows": 18221731480,
+      "P": 5735300814,
+      "N": 12486430666,
+      "frames": 403,
+      "nonempty_buckets": 143
+    },
+    "30": {
+      "rows": 6893983233,
+      "P": 2718161072,
+      "N": 4175822161,
+      "frames": 220,
+      "nonempty_buckets": 126
+    },
+    "31": {
+      "rows": 1786188250,
+      "P": 805422067,
+      "N": 980766183,
+      "frames": 120,
+      "nonempty_buckets": 99
+    },
+    "32": {
+      "rows": 280542509,
+      "P": 116909120,
+      "N": 163633389,
+      "frames": 70,
+      "nonempty_buckets": 68
+    },
+    "33": {
+      "rows": 21924455,
+      "P": 13354184,
+      "N": 8570271,
+      "frames": 37,
+      "nonempty_buckets": 37
+    },
+    "34": {
+      "rows": 587901,
+      "P": 587901,
+      "N": 0,
+      "frames": 13,
+      "nonempty_buckets": 13
+    }
+  },
+  "input_files": 11272,
+  "input_bytes": 100615834170,
+  "input_roles": {
+    "unverified historical source labels": {
+      "files": 3686,
+      "bytes": 97316623312
+    },
+    "untrusted proposer extent metadata; not imported acceptance": {
+      "files": 3686,
+      "bytes": 945460
+    },
+    "original catalog": {
+      "files": 1,
+      "bytes": 78505
+    },
+    "common index_root": {
+      "files": 4,
+      "bytes": 9713944
+    },
+    "source directory": {
+      "files": 3686,
+      "bytes": 1945263968
+    },
+    "common inventory_root": {
+      "files": 4,
+      "bytes": 8652440
+    },
+    "common raw_root": {
+      "files": 2,
+      "bytes": 24375000
+    },
+    "finite bound entries": {
+      "files": 5,
+      "bytes": 4528
+    },
+    "finite bound lookup": {
+      "files": 5,
+      "bytes": 1310720
+    },
+    "finite honor directory": {
+      "files": 184,
+      "bytes": 1215996060
+    },
+    "finite triple keys": {
+      "files": 1,
+      "bytes": 38398860
+    },
+    "finite triple labels": {
+      "files": 1,
+      "bytes": 38398860
+    },
+    "common successor_root": {
+      "files": 2,
+      "bytes": 5798160
+    },
+    "common cache_root": {
+      "files": 4,
+      "bytes": 10156250
+    },
+    "new complete all35 catalog": {
+      "files": 1,
+      "bytes": 118103
+    }
+  },
+  "before_after_maps_equal": true,
+  "prior_full_hash": 281.25,
+  "current_pre_hash_new_bytes": 118103,
+  "current_pre_hash_reused_bytes": 100615716067,
+  "report_count": 3700,
+  "memory_sample_count": 3700,
+  "minimum_available_sample": {
+    "N_rows": 17331689867,
+    "P_rows": 9181660207,
+    "all_cells": 6440,
+    "closed_actual_input_Lean_declaration": false,
+    "committed_frames": 826,
+    "complete_nonempty_buckets": 458,
+    "current_bucket": "n29_h152",
+    "current_frame": null,
+    "elapsed_this_invocation_seconds": 1714.1720000000205,
+    "empty_cells": 2754,
+    "error": null,
+    "model_calls": 0,
+    "nonempty_buckets": 3686,
+    "notifications": false,
+    "old_PASS_or_seed_imported": false,
+    "percent": 3.405553097334017,
+    "physical_memory": {
+      "available": 2334924800,
+      "percent": 93.2,
+      "swap_diagnostic_error": null,
+      "swap_used": 409108480,
+      "total": 34253983744
+    },
+    "pool_threads": 12,
+    "proposal_frame_row_limit": 67108864,
+    "remaining_rows": 752019514228,
+    "schema": "V17_LOCAL_PROGRESS_V1",
+    "stage": "OPEN_ACTUAL_BUCKET",
+    "status": "RUNNING",
+    "total_rows": 778532864302,
+    "updated_utc": "2026-10-18T10:50:23.398178+00:00",
+    "verified_rows": 26513350074
+  },
+  "maximum_observed_swap_bytes": 1724686336,
+  "report_pool_threads": [
+    12
+  ],
+  "sept15_complete_rows": 22512356,
+  "additional_distinct_rows_beyond_sept15": 778510351946,
+  "full_to_sept15_ratio": 34582.46948040445,
+  "sept15_percent": 0.0028916384949508375,
+  "final_sha256": "413ced59dcfcc2825f6b17503e8690f895b6d9f0219ddb2eb4ce43cf992c957e",
+  "manifest_sha256": "bf46a286a78e7f1c8ba62611ac841c89e463542589acb443e15e53d9b66b76ed",
+  "ledger_sha256": "255d3bf5fd74208bcac6d8b68b6804a52d4c1661b5afc2789994a8b270c12f4d"
+}

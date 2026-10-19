@@ -11,7 +11,8 @@ in **v1.0.0**, which fixed the September delivery. The
 native verification under a kernel-proved implication, with an explicit
 execution/bookkeeping trust boundary. A closed actual-input Lean declaration
 and independent execution replication remain open. This dated paper retains
-its original text; a new paper has not yet been published.
+its original text. The [new working trust supplement](../trust-verification/manuscript.md)
+now records later proof-component and local-delivery results.
 It explains the later concrete strategy bank, compiled checks of layers 33/34,
 finite enumeration and algorithm proofs, implementation tests, and remaining
 obligations. It preserves the computational second-player conclusion and the

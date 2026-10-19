@@ -19,21 +19,37 @@
 > A [separate AI review](research/2026-10-19-v17/review/INDEPENDENT_REVIEW.md)
 > reports no defects within its inspected scope; independent execution
 > replication and human peer review have not been completed.
-> Read the [current result and evidence](research/2026-10-19-v17/README.md),
+> The [new working paper](papers/trust-verification/manuscript.md) adds
+> later proof-component and local-reproduction evidence.
+> Read the [completed native result](research/2026-10-19-v17/README.md),
 > [claim boundaries](docs/CLAIMS.md) and [project status](docs/PROJECT_STATUS.md).
 
-## Read the two English papers
+## Latest English paper
 
-| English report by feierbuqiu | Date | Focus |
+**[Trust and Formal Verification in the Mahjong Achievement Game: Complete Native Checking and Progress towards End-to-End Kernel Proofs](papers/trust-verification/manuscript.md)**
+
+feierbuqiu — 19 October 2026. **Working manuscript on `main`; not frozen or released.**
+
+The new supplement explains the complete native result, its trust boundary,
+persistent nonempty-game and numerical proof components, and completed local
+portable-delivery tests. The numerical pilot covers 28 fixed blocks / 402
+words and 1,234 layout equalities, with a 273-module fresh replay; it does not
+certify those coordinates as complete original-game positions. The physical
+11-node pilot and numerical sample have not been joined into an actual empty-game
+kernel proof. A new external review of this manuscript is pending.
+
+| English report by feierbuqiu | Date | Scope |
 | --- | --- | --- |
-| [Mahjong Achievement on a Shared Table: A Computational Second-Player Win and Partial Lean Certification](papers/manuscript.md) | September 13, 2026 | Rules, mathematical arguments, exhaustive computation and early Lean milestones |
-| [Lean Verification of the Mahjong Achievement Game: Strategy Certificates, Enumeration, and Retrograde Models](papers/lean-verification/manuscript.md) | September 15, 2026 | Later certification, finite algorithm models, bounded tests and reproducibility |
+| [Trust and Formal Verification](papers/trust-verification/manuscript.md) | 19 October 2026 | Current working supplement: complete native checking, saved component proofs, trust and local reproduction |
+| [Lean Verification: Strategy Certificates, Enumeration, and Retrograde Models](papers/lean-verification/manuscript.md) | 15 September 2026 | Dated formal and finite-model report, preserved in v1.0.0 |
+| [Mahjong Achievement on a Shared Table](papers/manuscript.md) | 13 September 2026 | Original computational second-player result and early Lean milestones, preserved in v1.0.0 |
 
-The reports are presented together, with GitHub-compatible mathematical
-formatting. See the [paper collection](papers/README.md),
-[original evidence catalogue](papers/evidence/README.md),
-[Lean paper and companion replay package](papers/lean-verification/README.md),
-and [changelog](CHANGELOG.md). Chinese manuscripts are excluded from the release.
+The papers use GitHub-compatible mathematical formatting. The new paper's
+[overview](papers/trust-verification/README.md), [evidence catalogue](papers/trust-verification/evidence-catalogue.md)
+and [delivery availability](papers/trust-verification/delivery.json) distinguish
+public material from validated local archives. All three reports remain
+accessible in the [paper collection](papers/README.md). Chinese manuscripts
+are excluded. No new tag or release is created by this update.
 
 ## Result
 
@@ -103,16 +119,18 @@ is a [separate release asset](research/2026-10-19-v17/assets.json), with hashes
 in Git; the 100.62 GB input set is currently represented by its complete hash map.
 
 The earlier [V18/V19 proof-export experiments](research/2026-10-18-kernel/README.md)
-remain useful small/component results. That strict-kernel work was stopped;
-it is not part of the completed native run. The old V16 campaign remains
+remain dated small/component results. Later bounded component work completed
+the fixed numerical sample and further nonempty-game proof trials; see the
+[new paper](papers/trust-verification/manuscript.md). These are separate from
+the completed native run. The old V16 campaign remains
 stopped. No whole-task time bound for a future closed actual-input proof is claimed.
 
 Independent replication on another machine or toolchain, human reading of
 the rules and trusted bookkeeping, alternative proofs, corrections and
 reproducibility improvements remain welcome through the
 [issue tracker](https://github.com/feierbuqiu/mahjong-achievement-game/issues).
-The two existing English papers remain dated reports; a new paper has not
-yet been published. See the [internal-version glossary](docs/INTERNAL_VERSIONS.md)
+The two September English papers remain dated reports. The new October
+paper is a working main-branch manuscript, awaiting further external review. See the [internal-version glossary](docs/INTERNAL_VERSIONS.md)
 for V16/V17/V18/V19 and the distinction from release versions.
 
 ## The game
@@ -150,6 +168,7 @@ hashes and exact reconstruction commands are included. See [data availability](d
 
 ## Research materials
 
+- [Current trust and verification paper](papers/trust-verification/manuscript.md): whole-game evidence, persistent components and tested local delivery.
 - [Computational research paper](papers/manuscript.md): original full report and appendices.
 - [Lean verification paper](papers/lean-verification/manuscript.md): subsequent formal development and reproduction evidence.
 - [Current project status](docs/PROJECT_STATUS.md): completed native verification, explicit trust boundary and remaining replication/proof work.

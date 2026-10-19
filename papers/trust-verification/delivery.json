@@ -1,0 +1,37 @@
+{
+  "schema": "MJ_TRUST_PAPER_LOCAL_DELIVERY_AVAILABILITY_V1",
+  "archives": [
+    {
+      "name": "mahjong_v17_core.tar.zst",
+      "bytes": 1407097086,
+      "sha256": "45673cf14ffedd3a85367f29508ad7587ef370a90aace2ec2f4e00c82a38c24e",
+      "availability": "VALIDATED_LOCAL_DELIVERY_NOT_PUBLICLY_HOSTED",
+      "download_url": null,
+      "hash_source": "Retained delivery SHA256SUMS and validation receipts",
+      "sha256_rehashed_for_this_publication": false
+    },
+    {
+      "name": "mahjong_v17_full_inputs.tar.zst",
+      "bytes": 8087887655,
+      "sha256": "afa51a9e7202e2e2ae5381534b5d93c64bed6e155c9bd39306ee621d53bd933e",
+      "availability": "VALIDATED_LOCAL_DELIVERY_NOT_PUBLICLY_HOSTED",
+      "download_url": null,
+      "hash_source": "Retained delivery SHA256SUMS and validation receipts",
+      "sha256_rehashed_for_this_publication": false,
+      "expanded_input_bytes": 100615834170
+    },
+    {
+      "name": "mahjong_kernel_pilots.tar.zst",
+      "bytes": 21136243,
+      "sha256": "e4bbdc9c00f1c3c40434f8d00893ca347a69519fda25772712533d141129d5dc",
+      "availability": "VALIDATED_LOCAL_DELIVERY_NOT_PUBLICLY_HOSTED",
+      "download_url": null,
+      "hash_source": "Retained delivery SHA256SUMS and validation receipts",
+      "sha256_rehashed_for_this_publication": true
+    }
+  ],
+  "new_release_created": false,
+  "archived_files_uploaded_in_this_update": false,
+  "public_downloads_unchanged": true,
+  "limits": "Same-host extraction/rebuild and selected-bucket controls; no second whole-table run or second physical machine"
+}

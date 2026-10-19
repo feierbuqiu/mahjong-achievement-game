@@ -1,0 +1,55 @@
+{
+  "status": "PASS_CLOSED_ACTUAL_GAME_PROOF_AB_AND_COLD_REPLAY",
+  "wall_seconds": 356.754789837,
+  "variants": [
+    {
+      "mode": "baseline",
+      "construction_wall_seconds": 20.34807278599999,
+      "replay": {
+        "name": "fresh",
+        "returncode": 0,
+        "wall_seconds": 128.85217995899995,
+        "peak_RSS_bytes": 1383059456
+      },
+      "certificate_bytes": 6115880,
+      "mathematical_modules": 24,
+      "new_modules": 11,
+      "changed_proof_bodies": {},
+      "theorem_statements_unchanged": true,
+      "physical_nodes": 11,
+      "closed_32_tile_roots": 3,
+      "empty_game_proved": false,
+      "actual_SAFE_flip_rejected": true,
+      "scratch": "/var/tmp/mahjong-closed-game-9ddc581014af426b8119b553392ee8d8/baseline"
+    },
+    {
+      "mode": "direct_boolean_refl",
+      "construction_wall_seconds": 34.21159003900004,
+      "replay": {
+        "name": "fresh",
+        "returncode": 0,
+        "wall_seconds": 140.99251180500005,
+        "peak_RSS_bytes": 1382977536
+      },
+      "certificate_bytes": 6110768,
+      "mathematical_modules": 24,
+      "new_modules": 11,
+      "changed_proof_bodies": {
+        "Mahjong.PilotGameChecksV18": 5,
+        "Mahjong.PilotGameNode0V18": 1,
+        "Mahjong.PilotGameNode10V18": 1,
+        "Mahjong.PilotGameNode4V18": 1,
+        "Mahjong.PilotGameNode9V18": 1
+      },
+      "theorem_statements_unchanged": true,
+      "physical_nodes": 11,
+      "closed_32_tile_roots": 3,
+      "empty_game_proved": false,
+      "actual_SAFE_flip_rejected": true,
+      "scratch": "/var/tmp/mahjong-closed-game-9ddc581014af426b8119b553392ee8d8/direct_boolean_refl"
+    }
+  ],
+  "full_table_scan": false,
+  "empty_game_proved": false,
+  "construction_ratio": 0.5947713264073339
+}

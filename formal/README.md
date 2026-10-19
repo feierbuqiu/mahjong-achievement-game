@@ -7,6 +7,10 @@
 > eight-root / 1,008-module concrete-proof package, separate from V17 native
 > verification and V18/V19 component experiments.
 
+The [latest trust supplement](../papers/trust-verification/manuscript.md)
+records later saved-proof experiments and local-delivery tests. The numerical
+and physical-game component scopes remain distinct.
+
 **Eight concrete nonempty roots are indexed, including the new 12- and 14-tile strategies.
 The empty-position Lean theorem remains `NOT_VERIFIED`.**
 

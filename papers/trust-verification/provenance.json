@@ -1,0 +1,259 @@
+{
+  "schema": "MJ_TRUST_PAPER_PUBLICATION_V1",
+  "created_utc": "2026-10-19T00:26:44.738695+00:00",
+  "primary_language": "en",
+  "chinese_manuscript_published": false,
+  "publication_status": "WORKING_MANUSCRIPT_ON_MAIN_AWAITING_FURTHER_REVIEW",
+  "current_work_frozen": false,
+  "new_release_created": false,
+  "new_tag_created": false,
+  "original_manuscript_sha256": "c336786aba4977df33b7cca8921d17c9d4e6fe7d56be24d0ff94896a067fbb49",
+  "published_manuscript_sha256": "ccc919b5e5a8ace6d1b7e0476e55e13f2815d703ab94b89acc88b60a04c7c2e4",
+  "prior_document_review_sha256": "c336786aba4977df33b7cca8921d17c9d4e6fe7d56be24d0ff94896a067fbb49",
+  "prior_document_review_matches_imported_manuscript": true,
+  "prior_document_review_note": "The retained authoring receipt names an earlier draft; publication checks pin the imported final source and independently check its formula/table/link invariants.",
+  "artifacts": [
+    {
+      "original_path": "runs/lean_trust_supplement_20261019/native_record_audit.py",
+      "original_bytes": 8860,
+      "original_sha256": "fe506e98de029b61896e62b51ed53b4f98d086c9912fa2ae7c0295e1da0433ad",
+      "published_path": "native_record_audit.py",
+      "published_bytes": 8860,
+      "published_sha256": "fe506e98de029b61896e62b51ed53b4f98d086c9912fa2ae7c0295e1da0433ad",
+      "transformations": []
+    },
+    {
+      "original_path": "runs/lean_trust_supplement_20261019/native_record_audit.json",
+      "original_bytes": 9201,
+      "original_sha256": "80a962e5bc71f8729b1a249c713048fc14f9130565ba3a0cd45664e88313c834",
+      "published_path": "native_record_audit.json",
+      "published_bytes": 9201,
+      "published_sha256": "80a962e5bc71f8729b1a249c713048fc14f9130565ba3a0cd45664e88313c834",
+      "transformations": []
+    },
+    {
+      "original_path": "runs/lean_trust_supplement_20261019/reproducibility_read_only_receipt.json",
+      "original_bytes": 2561,
+      "original_sha256": "5b61502b6c67cc38e8f2835ed72eb53bfdfe160f75091792f948bde844c1bf1c",
+      "published_path": "reproducibility_read_only_receipt.json",
+      "published_bytes": 2561,
+      "published_sha256": "5b61502b6c67cc38e8f2835ed72eb53bfdfe160f75091792f948bde844c1bf1c",
+      "transformations": []
+    },
+    {
+      "original_path": "runs/lean_trust_supplement_20261019/evidence_inventory.json",
+      "original_bytes": 5875,
+      "original_sha256": "f6fa2be2898ebc9e5dfff54b0bf497071a5cd2ac2a87b943c1e4e057b5621ab6",
+      "published_path": "evidence_inventory.json",
+      "published_bytes": 5875,
+      "published_sha256": "f6fa2be2898ebc9e5dfff54b0bf497071a5cd2ac2a87b943c1e4e057b5621ab6",
+      "transformations": []
+    },
+    {
+      "original_path": "runs/lean_trust_supplement_20261019/document_validation.json",
+      "original_bytes": 1675,
+      "original_sha256": "62209fcb4a0eddafc7a31d845a456990e24372578e83fe3c8cbba73cd1589478",
+      "published_path": "document_validation.json",
+      "published_bytes": 1675,
+      "published_sha256": "62209fcb4a0eddafc7a31d845a456990e24372578e83fe3c8cbba73cd1589478",
+      "transformations": []
+    },
+    {
+      "original_path": "build/lean_table_checker/kernel_pilot_v18/source/Mahjong/PilotActualGameV18.lean",
+      "original_bytes": 2133,
+      "original_sha256": "9ba8d33a9e86a06c9717c7af9f668523a9cf5f2f09763ecd7c6ae0846edfed39",
+      "published_path": "evidence/game/PilotActualGameV18.lean",
+      "published_bytes": 2133,
+      "published_sha256": "9ba8d33a9e86a06c9717c7af9f668523a9cf5f2f09763ecd7c6ae0846edfed39",
+      "transformations": []
+    },
+    {
+      "original_path": "runs/lean_table_checker/kernel_exploration_20261019/game_01/REPORT.json",
+      "original_bytes": 1752,
+      "original_sha256": "2f687d52441dc9314bcc2a0ce3ca02c766cb63517b49967748d9feabdcbc31f3",
+      "published_path": "evidence/game/report.json",
+      "published_bytes": 1752,
+      "published_sha256": "2f687d52441dc9314bcc2a0ce3ca02c766cb63517b49967748d9feabdcbc31f3",
+      "transformations": []
+    },
+    {
+      "original_path": "runs/lean_table_checker/kernel_exploration_20261019/game_slim_01/REPORT.json",
+      "original_bytes": 883,
+      "original_sha256": "3b4b1f6161542533cadddfa5991fc840a9aa2663a9634101bc852230422a9830",
+      "published_path": "evidence/game/slim-report.json",
+      "published_bytes": 883,
+      "published_sha256": "3b4b1f6161542533cadddfa5991fc840a9aa2663a9634101bc852230422a9830",
+      "transformations": []
+    },
+    {
+      "original_path": "runs/lean_table_checker/kernel_exploration_20261019/packed_05/REPORT.json",
+      "original_bytes": 1164,
+      "original_sha256": "57043889402740d65d9cf4e21e589d39bcb66ac46b2a1c6bd905fe34b884b721",
+      "published_path": "evidence/packed/report.json",
+      "published_bytes": 1164,
+      "published_sha256": "57043889402740d65d9cf4e21e589d39bcb66ac46b2a1c6bd905fe34b884b721",
+      "transformations": []
+    },
+    {
+      "original_path": "runs/lean_table_checker/kernel_exploration_20261019/packed_05/certificate_manifest.json",
+      "original_bytes": 126545,
+      "original_sha256": "853df813fee7d42c89334a8358b0084ca8cdf3a9030b7d7f633e7049a4d60d97",
+      "published_path": "evidence/packed/certificate-manifest.json",
+      "published_bytes": 126545,
+      "published_sha256": "853df813fee7d42c89334a8358b0084ca8cdf3a9030b7d7f633e7049a4d60d97",
+      "transformations": []
+    },
+    {
+      "original_path": "runs/lean_table_checker/kernel_exploration_20261019/packed_05/source_bindings.json",
+      "original_bytes": 64839,
+      "original_sha256": "680b8db0243a2ec9839e354f19e0fc52f51325570d842b8d2131ac88d2a0a93f",
+      "published_path": "evidence/packed/source-bindings.json",
+      "published_bytes": 64839,
+      "published_sha256": "680b8db0243a2ec9839e354f19e0fc52f51325570d842b8d2131ac88d2a0a93f",
+      "transformations": []
+    },
+    {
+      "original_path": "runs/lean_table_checker/kernel_exploration_20261019/profile_packed_01/REPORT.json",
+      "original_bytes": 10273,
+      "original_sha256": "73e7107a27bbf5ac3b64c553635597305c4325cf720574c93719871e32b3d0ac",
+      "published_path": "evidence/packed/profile.json",
+      "published_bytes": 10273,
+      "published_sha256": "73e7107a27bbf5ac3b64c553635597305c4325cf720574c93719871e32b3d0ac",
+      "transformations": []
+    },
+    {
+      "original_path": "runs/lean_table_checker/portable_repro_20261019/package_02/cold_test_03/REPORT.json",
+      "original_bytes": 2782,
+      "original_sha256": "59f9873c093ed335de35212f9c15a3f27447a41b5b1b7621510879d3c63f9be3",
+      "published_path": "evidence/delivery/cold-test.json",
+      "published_bytes": 2782,
+      "published_sha256": "59f9873c093ed335de35212f9c15a3f27447a41b5b1b7621510879d3c63f9be3",
+      "transformations": []
+    },
+    {
+      "original_path": "runs/lean_table_checker/portable_repro_20261019/package_02/deliverables/KERNEL_PILOTS_COLD_REPORT.json",
+      "original_bytes": 1635,
+      "original_sha256": "537839a925a28b73e429d4bb6f3cf67344f8b99be92f76fe111b1cc2fe7df8f6",
+      "published_path": "evidence/delivery/kernel-pilots.json",
+      "published_bytes": 1635,
+      "published_sha256": "537839a925a28b73e429d4bb6f3cf67344f8b99be92f76fe111b1cc2fe7df8f6",
+      "transformations": []
+    },
+    {
+      "original_path": "runs/lean_table_checker/portable_repro_20261019/package_02/deliverables/LATEST_PROGRESS.json",
+      "original_bytes": 21588,
+      "original_sha256": "a84490658b913a8fd4c42e4c508dfb94ea02722ebe8d17da0e558717676c59ad",
+      "published_path": "evidence/delivery/progress.json",
+      "published_bytes": 21588,
+      "published_sha256": "a84490658b913a8fd4c42e4c508dfb94ea02722ebe8d17da0e558717676c59ad",
+      "transformations": []
+    },
+    {
+      "original_path": "runs/lean_table_checker/portable_repro_20261019/package_02/deliverables/PORTABILITY_NOTES.md",
+      "original_bytes": 1676,
+      "original_sha256": "8bc10d24d2fa3a145c2a708ffac4d1d974b452f62626299f4ba6cb2b015dada3",
+      "published_path": "evidence/delivery/portability.md",
+      "published_bytes": 1676,
+      "published_sha256": "8bc10d24d2fa3a145c2a708ffac4d1d974b452f62626299f4ba6cb2b015dada3",
+      "transformations": []
+    },
+    {
+      "original_path": "runs/lean_table_checker/portable_repro_20261019/package_02/deliverables/REPRODUCTION_AND_KERNEL_PROGRESS.md",
+      "original_bytes": 8890,
+      "original_sha256": "057ccd377f22176478f0422ba5b6aaefcfcabc03084d77cdaf325f44aa688635",
+      "published_path": "evidence/delivery/progress.md",
+      "published_bytes": 8890,
+      "published_sha256": "057ccd377f22176478f0422ba5b6aaefcfcabc03084d77cdaf325f44aa688635",
+      "transformations": []
+    },
+    {
+      "original_path": "runs/lean_table_checker/portable_repro_20261019/package_02/deliverables/SHA256SUMS",
+      "original_bytes": 1084,
+      "original_sha256": "6046bc7341ef38271b1fef5b704479d07272daec9cf85467bed784f590d3d954",
+      "published_path": "evidence/delivery/SHA256SUMS",
+      "published_bytes": 1084,
+      "published_sha256": "6046bc7341ef38271b1fef5b704479d07272daec9cf85467bed784f590d3d954",
+      "transformations": []
+    },
+    {
+      "original_path": "runs/lean_table_checker/portable_repro_20261019/package_02/deliverables/VALIDATION_REPORT.json",
+      "original_bytes": 6428,
+      "original_sha256": "4009d3d8018fba4229c1a1cae52ff89292fd8eaadbf999d28c77b66433ecd206",
+      "published_path": "evidence/delivery/validation.json",
+      "published_bytes": 6428,
+      "published_sha256": "4009d3d8018fba4229c1a1cae52ff89292fd8eaadbf999d28c77b66433ecd206",
+      "transformations": []
+    },
+    {
+      "original_path": "runs/lean_table_checker/portable_repro_20261019/package_02/deliverables/unpack.py",
+      "original_bytes": 1762,
+      "original_sha256": "084727a0543334cd3396faf8e4b9a46d6bf8f8f2c015c138d2ad4f8884fa8c4b",
+      "published_path": "evidence/delivery/unpack.py",
+      "published_bytes": 1762,
+      "published_sha256": "084727a0543334cd3396faf8e4b9a46d6bf8f8f2c015c138d2ad4f8884fa8c4b",
+      "transformations": []
+    },
+    {
+      "original_path": "runs/publication_native_20261019/published-update-receipt.json",
+      "original_bytes": 2259,
+      "original_sha256": "0c1c26e52f02b78abbc8eba9d79fcfb28d16dbdccd9d3cf632ac4352754788c9",
+      "published_path": "evidence/prior-publication.json",
+      "published_bytes": 2259,
+      "published_sha256": "0c1c26e52f02b78abbc8eba9d79fcfb28d16dbdccd9d3cf632ac4352754788c9",
+      "transformations": []
+    },
+    {
+      "original_path": "runs/lean_trust_supplement_20261019/manuscript.md",
+      "original_bytes": 71598,
+      "original_sha256": "c336786aba4977df33b7cca8921d17c9d4e6fe7d56be24d0ff94896a067fbb49",
+      "published_path": "manuscript.md",
+      "published_bytes": 71773,
+      "published_sha256": "ccc919b5e5a8ace6d1b7e0476e55e13f2815d703ab94b89acc88b60a04c7c2e4",
+      "transformations": [
+        "Convert display and inline math to GitHub math fences and backtick-dollar syntax",
+        "Use upright math function names and visible equation numbers to preserve existing GitHub layout compatibility",
+        "Resolve all local resource links to public copies or an explicit availability catalogue",
+        "Add a working-edition/local-delivery notice and remove implied accompanying-release wording"
+      ]
+    },
+    {
+      "original_path": "runs/lean_trust_supplement_20261019/kernel_evidence.md",
+      "original_bytes": 32652,
+      "original_sha256": "c4584c09637f12188be680089cc47bcceab68695ac38842e6a13cbd8981fed32",
+      "published_path": "kernel_evidence.md",
+      "published_bytes": 32652,
+      "published_sha256": "c4584c09637f12188be680089cc47bcceab68695ac38842e6a13cbd8981fed32",
+      "transformations": []
+    },
+    {
+      "original_path": "runs/lean_trust_supplement_20261019/native_evidence.md",
+      "original_bytes": 30508,
+      "original_sha256": "3b0c930b7ed9cadad921a3d82ecd981634ec570a04d72c56a23de2277e5a2dee",
+      "published_path": "native_evidence.md",
+      "published_bytes": 30526,
+      "published_sha256": "52efef3d0b80f66f8c7134d0b70b734f6144b09cd9001a0d0f0f718b2b4d0d49",
+      "transformations": [
+        "Resolve research-root links and any legacy math delimiters for the public edition; preserve recorded audit scope"
+      ]
+    },
+    {
+      "original_path": "runs/lean_trust_supplement_20261019/reproducibility_evidence.md",
+      "original_bytes": 26954,
+      "original_sha256": "dd5970ebd2cdf161cd4a30720c8cc5f5770ef236fc0518cd88b85e740aee9f43",
+      "published_path": "reproducibility_evidence.md",
+      "published_bytes": 26954,
+      "published_sha256": "dd5970ebd2cdf161cd4a30720c8cc5f5770ef236fc0518cd88b85e740aee9f43",
+      "transformations": []
+    },
+    {
+      "original_path": "runs/lean_trust_supplement_20261019/reference_verification.md",
+      "original_bytes": 4454,
+      "original_sha256": "98a21463c3d4202833965110fc95be76dde018238b86b7eea2a557b21fbe4782",
+      "published_path": "reference_verification.md",
+      "published_bytes": 4454,
+      "published_sha256": "98a21463c3d4202833965110fc95be76dde018238b86b7eea2a557b21fbe4782",
+      "transformations": []
+    }
+  ],
+  "new_Lean_native_GPU_or_full_scan_started": false
+}

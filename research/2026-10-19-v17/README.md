@@ -136,10 +136,14 @@ bytes and relative research paths, including all frame/native results,
 bucket/global records, manifests and before/after input identity maps.
 It includes only the eight-byte empty-root payload from the full input set.
 
+This dated native-evidence publication predates the completed local portable
+delivery. The [new working paper](../../papers/trust-verification/manuscript.md)
+now records its successful same-host tests and [current availability](../../papers/trust-verification/delivery.json).
 The full 100.62 GB input dataset, original native binary, toolchain and GPU
 environment are **not** supplied by this saved-record asset. The complete
 input hash map does not itself provide those inputs. Local `.part` packages
-were unfinished at capture and are excluded. See [data availability](../../docs/DATA_AVAILABILITY.md)
+were unfinished at this earlier capture and were excluded; complete local
+archives now exist, but are not newly hosted by the working-paper update. See [data availability](../../docs/DATA_AVAILABILITY.md)
 and [artifact policy](../../docs/ASSETS.md).
 
 ```bash
@@ -169,4 +173,5 @@ Independent execution on another stack, human rule/bookkeeping review,
 alternative arguments and corrections are welcome. A closed actual-input
 Lean proof remains future work with no established timeline. The two dated
 English papers and immutable v1.0.0 retain their original contents; the
-maintainer's forthcoming paper has not been published here.
+maintainer's [new trust paper](../../papers/trust-verification/manuscript.md) is
+a working edition on main, without a new freeze or release.

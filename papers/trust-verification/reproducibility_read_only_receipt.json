@@ -1,0 +1,83 @@
+{
+  "status": "PASS_SMALL_READ_ONLY_HASH_CONSISTENCY",
+  "audit_scope": "Mapped public Lean sources and delivery members smaller than 32 MiB only; no Lean/native/compiler/GPU run, no full input read, no large archive rehash.",
+  "mapped_public_sources_checked": 148,
+  "source_bytes": 998419,
+  "small_delivery_members": [
+    {
+      "name": "START_HERE.txt",
+      "bytes": 754,
+      "sha256": "acaef7d444141900580645be154456567776de65bf4ddd54415c710f5c5780a9",
+      "pass": true
+    },
+    {
+      "name": "VALIDATION_REPORT.json",
+      "bytes": 6428,
+      "sha256": "4009d3d8018fba4229c1a1cae52ff89292fd8eaadbf999d28c77b66433ecd206",
+      "pass": true
+    },
+    {
+      "name": "VERIFICATION_LOGS.zip",
+      "bytes": 26892,
+      "sha256": "a69d4d1bd5bbb0862334da96a7f2bb42b429762f21458fcc833974f84bc96d6f",
+      "pass": true
+    },
+    {
+      "name": "unpack.py",
+      "bytes": 1762,
+      "sha256": "084727a0543334cd3396faf8e4b9a46d6bf8f8f2c015c138d2ad4f8884fa8c4b",
+      "pass": true
+    },
+    {
+      "name": "PORTABILITY_NOTES.md",
+      "bytes": 1676,
+      "sha256": "8bc10d24d2fa3a145c2a708ffac4d1d974b452f62626299f4ba6cb2b015dada3",
+      "pass": true
+    },
+    {
+      "name": "mahjong_kernel_pilots.tar.zst",
+      "bytes": 21136243,
+      "sha256": "e4bbdc9c00f1c3c40434f8d00893ca347a69519fda25772712533d141129d5dc",
+      "pass": true
+    },
+    {
+      "name": "KERNEL_PILOTS_COLD_REPORT.json",
+      "bytes": 1635,
+      "sha256": "537839a925a28b73e429d4bb6f3cf67344f8b99be92f76fe111b1cc2fe7df8f6",
+      "pass": true
+    },
+    {
+      "name": "LATEST_PROGRESS.json",
+      "bytes": 21588,
+      "sha256": "a84490658b913a8fd4c42e4c508dfb94ea02722ebe8d17da0e558717676c59ad",
+      "pass": true
+    },
+    {
+      "name": "REPRODUCTION_AND_KERNEL_PROGRESS.md",
+      "bytes": 8890,
+      "sha256": "057ccd377f22176478f0422ba5b6aaefcfcabc03084d77cdaf325f44aa688635",
+      "pass": true
+    },
+    {
+      "name": "KERNEL_RESEARCH_TOOLS.zip",
+      "bytes": 24740,
+      "sha256": "a01c22fd72a35c3be6a2c0f915e875ec03eb567a088403b73c26f62ca16d70d2",
+      "pass": true
+    }
+  ],
+  "skipped_large_archive_hashes": [
+    {
+      "name": "mahjong_v17_core.tar.zst",
+      "bytes": 1407097086,
+      "sha256_rechecked": false
+    },
+    {
+      "name": "mahjong_v17_full_inputs.tar.zst",
+      "bytes": 8087887655,
+      "sha256_rechecked": false
+    }
+  ],
+  "total_bytes_hashed": 22229027,
+  "failures": [],
+  "elapsed_seconds": 0.15700000000651926
+}

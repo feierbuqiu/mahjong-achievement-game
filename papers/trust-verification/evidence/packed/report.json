@@ -1,0 +1,33 @@
+{
+  "Cartesian_coordinates": 1077270,
+  "actual_colex_rows": 1035129,
+  "blocks": 28,
+  "certificate_bytes": 134862920,
+  "closed_actual_SAFE_or_target_lookup": false,
+  "empty_game_proved": false,
+  "extrapolation_covers": "Fixed-sample numerical layout and PN components only; local finite certificate, complete actual addressing and final original-game assembly are excluded.",
+  "full_table_scan": false,
+  "generic_optimized_function_equalities_checked": true,
+  "layout_equalities": 1234,
+  "mathematical_modules": 273,
+  "raw_words": 402,
+  "real_flipped_label_rejected": true,
+  "replay": {
+    "name": "fresh_final",
+    "peak_RSS_bytes": 737734656,
+    "returncode": 0,
+    "stderr": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "stdout": {
+      "bytes": 54,
+      "sha256": "ac52a434eada30e9b52ccf70a21a8fe2bbe220b4a85f042e7ca71fef966350e3"
+    },
+    "wall_seconds": 61.828391958
+  },
+  "saved_PN_proof": true,
+  "scratch": "/var/tmp/mahjong-pure-e56c177da5954448a95c9f0ae4622972",
+  "status": "PASS_FRESH_COMPLETE_FIXED_SAMPLE_KERNEL_COMPONENTS",
+  "wall_seconds": 132.205101013
+}

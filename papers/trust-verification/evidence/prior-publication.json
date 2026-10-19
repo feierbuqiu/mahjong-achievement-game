@@ -1,0 +1,61 @@
+{
+  "status": "PASS_PUBLISHED_V17_NATIVE_UPDATE",
+  "main_commit": "e75911f700d4e5e1b39df53273e9dde698bf4901",
+  "source_commit": "3c295e4b5010e6a5add3565bba746226e10f1b14",
+  "main_and_source_verified": true,
+  "main_tree_equals_tested_source": true,
+  "PR": {
+    "mergeCommit": {
+      "oid": "e75911f700d4e5e1b39df53273e9dde698bf4901"
+    },
+    "mergedAt": "2026-10-18T21:12:00Z",
+    "state": "MERGED",
+    "url": "https://github.com/feierbuqiu/mahjong-achievement-game/pull/11"
+  },
+  "required_checks": [
+    {
+      "link": "https://github.com/feierbuqiu/mahjong-achievement-game/actions/runs/39166585087/job/117790689567",
+      "name": "C++ smoke (ubuntu-latest)",
+      "state": "SUCCESS"
+    },
+    {
+      "link": "https://github.com/feierbuqiu/mahjong-achievement-game/actions/runs/39166585087/job/117790689569",
+      "name": "C++ smoke (windows-latest)",
+      "state": "SUCCESS"
+    },
+    {
+      "link": "https://github.com/feierbuqiu/mahjong-achievement-game/actions/runs/39166585087/job/117790689636",
+      "name": "Repository checks",
+      "state": "SUCCESS"
+    }
+  ],
+  "public_main_files_byte_verified": [
+    "README.md",
+    "RESEARCH_STATUS.json",
+    "docs/PROJECT_STATUS.md",
+    "docs/CLAIMS.md",
+    "docs/INTERNAL_VERSIONS.md",
+    "docs/DATA_AVAILABILITY.md",
+    "research/2026-10-19-v17/README.md",
+    "research/2026-10-19-v17/assets.json",
+    "CITATION.cff"
+  ],
+  "evidence_release": {
+    "id": 416715610,
+    "tag": "evidence-v17-native-20261019",
+    "url": "https://github.com/feierbuqiu/mahjong-achievement-game/releases/tag/evidence-v17-native-20261019",
+    "immutable": true
+  },
+  "evidence_asset": {
+    "name": "mahjong-v17-native-evidence-20261019.zip",
+    "bytes": 63456055,
+    "digest": "sha256:5e68d6382c6e68fd525cd52defdb1969007aaaeddd24d5fe8afabc299057bdc4",
+    "url": "https://github.com/feierbuqiu/mahjong-achievement-game/releases/download/evidence-v17-native-20261019/mahjong-v17-native-evidence-20261019.zip"
+  },
+  "signed_evidence_tag_verified": true,
+  "semantic_latest_release_unchanged": "v1.0.0",
+  "closed_actual_input_Lean_declaration": false,
+  "independent_execution_replication": false,
+  "local_checkout_clean": true,
+  "new_local_research_jobs_started_for_publication": false
+}

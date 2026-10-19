@@ -7,7 +7,10 @@ public release is not represented as a peer-reviewed article, an institutional
 publication, or a completed formal proof. No affiliation or endorsement by a
 Mahjong organization, university, GitHub, or a proof-assistant project is implied.
 
-The [two English reports](../papers/README.md) remain fixed in v1.0.0. The
+The two September English reports remain fixed in v1.0.0. The
+[new October trust supplement](../papers/trust-verification/manuscript.md) is
+a working main-branch edition, awaiting further user-supplied external review.
+It is not frozen or accompanied by a new release. The
 [October 19 update](../research/2026-10-19-v17/README.md) records complete
 native evaluation of the frozen V17 finite checks under a kernel-proved
 implication. The actual-input opening Lean declaration remains NOT_VERIFIED.

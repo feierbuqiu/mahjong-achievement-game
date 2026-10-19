@@ -11,7 +11,7 @@ docs/REPRODUCIBILITY.md before changing research claims or algorithms.
   declaration remains NOT_VERIFIED. Compiler/runtime/OS/hardware, IO/input
   custody and external bookkeeping remain trusted. The separate AI review
   reran no Lean/native computation and is not human peer review or independent
-  execution replication. V18/V19 strict proof export was stopped; the legacy
+  execution replication. Earlier whole-table V18/V19 optimization was stopped; the legacy
   V16 STOP remains. Do not confuse those holds with the completed V17 run.
   No future strict-kernel runtime bound is established. Publication work
   permits read-only source/receipt inspection, packaging and required CI,
@@ -20,6 +20,13 @@ docs/REPRODUCIBILITY.md before changing research claims or algorithms.
   tag is separate from semantic software releases. In-progress .part archives
   are not finished packages. Keep retained full inputs distinct from hashes
   and saved-record archives. Version labels are defined in docs/INTERNAL_VERSIONS.md.
+- The current primary report is papers/trust-verification/manuscript.md.
+  It is a working main-branch paper, pending later user-supplied external review.
+  This update must create no tag/release and must not freeze current work.
+  Later packed_05 proofs cover numerical equations only (28 blocks, 402 words,
+  1,234 layout equalities; 273 modules), without the complete actual-game join.
+  Local portable archives passed same-host tests but are not public downloads.
+  Preserve the distinction from second-machine/full execution replication.
 - Keep the shared-pool rules, seven distinct pairs, all physical numeric
   additions, and the stated symmetry group unchanged unless explicitly asked.
 - UNKNOWN/timeouts are never P. N does not mean SG=1. Static winning profiles
