@@ -38,6 +38,9 @@ def verify():
             current['release']['tag'] == 'v2.0.0', 'Release/freeze status differs')
     native = current['native_verification']
     require(native['rows'] == 778532864302 and
+            native['actual_full_input_acceptance'] == 'COMPLETE_NATIVE_COMPONENT_COVERAGE_WITH_EXTERNAL_ASSEMBLY_AND_CUSTODY' and
+            native['whole_input_native_Boolean_premises_all_evaluated_over_one_Candidate'] is False and
+            'six_acceptance_families_complete' not in native and
             native['whole_input_typed_finishWhole_executed'] is False and
             native['bucket_exactCoverage_gated_in_historical_production'] is False and
             native['cross_layer_independent_native_read_identity_check'] is False and
