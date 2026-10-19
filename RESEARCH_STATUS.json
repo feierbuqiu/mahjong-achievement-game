@@ -32,7 +32,7 @@
     "0": "N"
   },
   "formal_verification": {
-    "status": "kernel_implication_proved_all_actual_inputs_natively_checked_no_closed_actual_input_declaration",
+    "status": "kernel_implication_proved_native_component_run_complete_external_assembly",
     "previous_pause_date": "2026-09-14",
     "empty_game_lean": "NOT_VERIFIED",
     "ten_tile_winner_lean": "NOT_VERIFIED",
@@ -49,7 +49,7 @@
     ],
     "progress_receipt": "formal/STATUS.json",
     "lean_toolchain": "leanprover/lean4:v4.33.1",
-    "note": "Frozen V17 kernel implication plus native evaluation of all six finite acceptance families on all 35 layers is complete. A closed actual-input Lean declaration is not published. Native execution and external bookkeeping remain trusted. V18/V19 strict proof-export research is stopped and separate; independent native replication remains open.",
+    "note": "The V17 component-native run covers every recorded row. Whole-input assembly, exact cover and cross-layer input identity retain external bookkeeping and custody assumptions. No closed actual-input opening Lean declaration or independent execution replication is published.",
     "later_local_registry_recorded_P_states": 24655,
     "later_local_registry_full_proof_trees_published": false,
     "compiled_checker_complete_layers": [
@@ -86,7 +86,7 @@
       "new_complete_historical_rows_since_v1_0_0": 280542509,
       "compiled_checker_source_modules_in_supplement": 56
     },
-    "compiled_checker_scope_note": "The 303,054,865 rows in layers 32\u201334 are historical compiled-checker coverage. They are not new closed kernel certificates for the V17\u2013V19 route.",
+    "compiled_checker_scope_note": "The 303,054,865 rows in layers 32–34 are historical compiled-checker coverage. They are not new closed kernel certificates for the V17–V19 route.",
     "generic_kernel_composition_available": true,
     "actual_whole_input_instantiated": false,
     "persistent_small_actual_pilot_closed": true,
@@ -114,18 +114,22 @@
       {
         "date": "2026-09-13",
         "title": "Mahjong Achievement on a Shared Table: A Computational Second-Player Win and Partial Lean Certification",
-        "manuscript": "papers/manuscript.md"
+        "manuscript": "papers/manuscript.md",
+        "frozen": true
       },
       {
         "date": "2026-09-15",
         "title": "Lean Verification of the Mahjong Achievement Game: Strategy Certificates, Enumeration, and Retrograde Models",
-        "manuscript": "papers/lean-verification/manuscript.md"
+        "manuscript": "papers/lean-verification/manuscript.md",
+        "frozen": true
       },
       {
         "date": "2026-10-19",
         "title": "Trust and Formal Verification in the Mahjong Achievement Game: Complete Native Checking and Progress towards End-to-End Kernel Proofs",
         "manuscript": "papers/trust-verification/manuscript.md",
-        "status": "WORKING_MANUSCRIPT_NOT_RELEASED"
+        "status": "FROZEN_PUBLISHED_WITH_REPOSITORY_ERRATA",
+        "frozen": true,
+        "release": "v2.0.0"
       }
     ],
     "companion_identity": "papers/lean-verification/companion.json",
@@ -135,32 +139,37 @@
       "title": "Trust and Formal Verification in the Mahjong Achievement Game: Complete Native Checking and Progress towards End-to-End Kernel Proofs",
       "manuscript": "papers/trust-verification/manuscript.md",
       "overview": "papers/trust-verification/README.md",
-      "status": "WORKING_MANUSCRIPT_ON_MAIN_AWAITING_FURTHER_REVIEW",
-      "frozen": false,
-      "release": null,
-      "external_review_of_this_manuscript": "PENDING_FUTURE_USER_SUPPLIED_REVIEW"
+      "status": "FROZEN_PUBLISHED_WITH_REPOSITORY_ERRATA",
+      "frozen": true,
+      "release": "v2.0.0",
+      "external_review_of_this_manuscript": "SEPARATE_AI_SOURCE_REVIEW_SUPPLIED_NO_HUMAN_PEER_REVIEW"
     },
     "original_computational_manuscript": "papers/manuscript.md",
-    "source_evidence_catalogue": "papers/trust-verification/evidence-catalogue.md"
+    "source_evidence_catalogue": "papers/trust-verification/evidence-catalogue.md",
+    "frozen": true,
+    "release": "v2.0.0",
+    "freeze_manifest": "papers/FREEZE.json",
+    "errata": "docs/PAPER_ERRATA.md",
+    "scientific_bodies_revised": false
   },
   "current_lean_progress": "papers/trust-verification/README.md",
-  "repository_development_status": "WORKING_TRUST_PAPER_AND_SCOPED_KERNEL_COMPONENT_PROGRESS",
-  "current_work_frozen": false,
+  "repository_development_status": "FROZEN_V2_PUBLICATION_WITH_CORRECTIONS_AND_SCOPED_COMPONENT_RESULTS",
+  "current_work_frozen": true,
   "maintainer_scope": {
     "decision_date": "2026-10-19",
     "further_end_to_end_full_scale_verification_planned": false,
     "accepts_expert_and_compute_contributions": true,
-    "status_note": "Complete V17 native checking remains the whole-game evidence. Later bounded numeric/game proof pilots and local portable delivery are recorded. The new English manuscript is a working main-branch edition, awaiting future user-supplied review; no freeze or release is authorized by this update.",
-    "separate_lean_progress_report": "THREE_ENGLISH_REPORTS_LATEST_IS_WORKING_TRUST_SUPPLEMENT",
-    "routine_progress_followup_planned": true,
+    "status_note": "Three papers are frozen. Repository corrections and supplementary evidence clarify external assembly, custody and privacy; no new execution or opening kernel proof is claimed.",
+    "separate_lean_progress_report": "THREE_FROZEN_ENGLISH_REPORTS_WITH_REPOSITORY_ERRATA",
+    "routine_progress_followup_planned": false,
     "further_work_condition": "No automatic new run; independent replication, corrections and further proof work may be proposed with exact scope and resources"
   },
   "release": {
-    "version": "1.0.0",
-    "tag": "v1.0.0",
-    "date": "2026-09-15",
-    "url": "https://github.com/feierbuqiu/mahjong-achievement-game/releases/tag/v1.0.0",
-    "scope": "Immutable delivery of the current English papers, source, public evidence and reproduction materials; not completion of the opening Lean theorem."
+    "version": "2.0.0",
+    "tag": "v2.0.0",
+    "date": "2026-10-19",
+    "url": "https://github.com/feierbuqiu/mahjong-achievement-game/releases/tag/v2.0.0",
+    "scope": "Frozen research publication, privacy corrections, supplementary retained evidence; no new solver or proof result"
   },
   "repository_archived": false,
   "project_status_document": "docs/PROJECT_STATUS.md",
@@ -271,7 +280,7 @@
       }
     },
     "2026-10-18-kernel": {
-      "status": "kernel_implication_proved_all_actual_inputs_natively_checked_no_closed_actual_input_declaration",
+      "status": "actual_opening_not_verified_persistent_kernel_certificate_research",
       "previous_pause_date": "2026-09-14",
       "empty_game_lean": "NOT_VERIFIED",
       "ten_tile_winner_lean": "NOT_VERIFIED",
@@ -288,7 +297,7 @@
       ],
       "progress_receipt": "formal/STATUS.json",
       "lean_toolchain": "leanprover/lean4:v4.33.1",
-      "note": "Frozen V17 kernel implication plus native evaluation of all six finite acceptance families on all 35 layers is complete. A closed actual-input Lean declaration is not published. Native execution and external bookkeeping remain trusted. V18/V19 strict proof-export research is stopped and separate; independent native replication remains open.",
+      "note": "V17 generic original-game composition and a V18 saved/cold-replayed small actual-data pilot are recorded. V19 studies compressed numeric/layout and local-metadata certificates. The actual empty-game theorem, actual whole-certificate instance and end-to-end 20/24-hour bound remain unestablished. Historical native-row coverage, supplied-plane arithmetic and closed original-game statements retain separate scopes.",
       "later_local_registry_recorded_P_states": 24655,
       "later_local_registry_full_proof_trees_published": false,
       "compiled_checker_source_modules_in_supplement": 56,
@@ -302,10 +311,10 @@
       "general_benchmark_unique_sampled_slots": 356352,
       "general_full_scan_launched": false,
       "whole_campaign_aggregation_complete": false,
-      "latest_receipt": "research/2026-10-19-v17/evidence/final.json",
+      "latest_receipt": "research/2026-10-18-kernel/status.json",
       "source_modules": 1008,
-      "latest_receipt_utc": "2026-10-18T17:56:53.715184+00:00",
-      "latest_progress_source_modules": 148,
+      "latest_receipt_utc": null,
+      "latest_progress_source_modules": 165,
       "universal_whole_cpp_refinement": "NOT_VERIFIED",
       "fully_instantiated_whole_solver_kernel_certificate": "NOT_CONSTRUCTED",
       "historical_output_formally_bound": false,
@@ -325,20 +334,17 @@
         "kernel_closed_opening_theorem": false,
         "aggregation_boundary": "Compiled Lean + explicit finite premises + reviewed Python/OS coverage and IO + compiler/runtime"
       },
-      "compiled_checker_scope_note": "The 303,054,865 rows in layers 32\u201334 are historical compiled-checker coverage. They are not new closed kernel certificates for the V17\u2013V19 route.",
+      "compiled_checker_scope_note": "The 303,054,865 rows in layers 32–34 are historical compiled-checker coverage. They are not new closed kernel certificates for the V17–V19 route.",
       "generic_kernel_composition_available": true,
       "actual_whole_input_instantiated": false,
       "persistent_small_actual_pilot_closed": true,
-      "latest_progress_source_modules_scope": "145 frozen mathematical/base source files plus three native-worker/main/replay files; replay-entry reachable source closure is 146",
-      "actual_whole_input_natively_evaluated": true,
-      "actual_whole_input_instantiated_scope": "No closed Lean proof term for the actual whole input; complete actual input was evaluated by compiled check functions",
-      "historical_output_natively_checked_against_kernel_proved_checks": true
+      "latest_progress_source_modules_scope": "V18 source bundle plus reused V17/V16 base; not an aggregate theorem or V19-module count"
     }
   },
   "verification_outlook": {
     "as_of": "2026-10-19",
-    "current_workstream": "WORKING_PAPER_PUBLICATION_AND_SCOPED_COMPONENT_PROOFS",
-    "current_goal": "Publish the working trust supplement; await user-supplied external review; independent replication and actual packed-game semantic closure remain future work",
+    "current_workstream": "FROZEN_V2_RESEARCH_PUBLICATION",
+    "current_goal": "Preserve the v2.0.0 publication; welcome independently supported corrections, replication and deeper proofs",
     "working_expectation_hours": null,
     "completion_time_estimate_hours": null,
     "completion_time_status": "NO_FUTURE_STRICT_KERNEL_RUNTIME_BOUND",
@@ -362,14 +368,14 @@
   },
   "current_update": {
     "date": "2026-10-19",
-    "kind": "working_trust_paper_publication_and_component_status_update",
-    "new_release_created": false,
-    "new_tag_created": false,
-    "current_work_frozen": false,
+    "kind": "v2_privacy_evidence_and_repository_corrections",
+    "new_release_created": true,
+    "new_tag_created": true,
+    "current_work_frozen": true,
     "previous_immutable_software_release": "v1.0.0",
-    "previous_evidence_asset_tag": "evidence-v17-native-20261019",
-    "Chinese_manuscripts_published": false,
-    "external_review_pending_user": true
+    "new_research_execution_started": false,
+    "Chinese_manuscript_published": false,
+    "review_response": "docs/REVIEW_RESPONSE.md"
   },
   "historical_outlooks": {
     "2026-10-18-v16": {
@@ -571,10 +577,18 @@
       "Lean/native compiler, runtime, OS and hardware",
       "IO/input adapter, scheduling, input custody and external bookkeeping"
     ],
-    "GPU_role": "Untrusted proposals; native finite checks remain required"
+    "GPU_role": "Untrusted proposals; native finite checks remain required",
+    "interpretation": "Complete decomposed component run with external assembly; not one native evaluation of all whole-input premises.",
+    "whole_input_typed_finishWhole_executed": false,
+    "bucket_exactCoverage_gated_in_historical_production": false,
+    "recorded_true_bucket_close_events": 3686,
+    "cross_layer_independent_native_read_identity_check": false,
+    "declared_reference_comparisons_are_deterministic_bookkeeping": true,
+    "v2_offline_record_audit": "research/2026-10-19-v2/evidence/saved-record-audit.json",
+    "correction_notice": "docs/REVIEW_RESPONSE.md"
   },
   "independent_review": {
-    "kind": "SEPARATE_AI_READ_ONLY_SOURCE_AND_RECORDED_EVIDENCE_REVIEW",
+    "kind": "SEPARATE_AI_READ_ONLY_SOURCE_AND_RECORDED_EVIDENCE_REVIEW_WITH_ERRATA",
     "reviewer_as_named_in_report": "Claude (Anthropic), model claude-opus-5-5",
     "date": "2026-10-19",
     "report": "research/2026-10-19-v17/review/INDEPENDENT_REVIEW.md",
@@ -585,7 +599,7 @@
     "sampled_input_files_rehashed": 62,
     "sampled_input_bytes_rehashed": 81370822,
     "sampled_hash_mismatches": 0,
-    "defects_found_within_reviewed_scope": 0,
+    "original_report_defects_found_within_reviewed_scope": 0,
     "human_peer_review": false,
     "Lean_or_native_rerun_by_reviewer": false,
     "full_input_rehash_by_reviewer": false,
@@ -594,7 +608,11 @@
       "Only finalizer reviewed line by line among trusted Python bookkeeping files",
       "Kernel/build claims assessed from receipts, not re-executed",
       "Execution evidence still comes from one machine/toolchain"
-    ]
+    ],
+    "original_verdict_is_historical_not_current_endorsement": true,
+    "errata": "research/2026-10-19-v17/review/ERRATA.md",
+    "independent_cross_layer_read_identity_established": false,
+    "later_review_uses_same_declared_model_identifier": true
   },
   "terminology_document": "docs/INTERNAL_VERSIONS.md",
   "claim_boundaries_document": "docs/CLAIMS.md",

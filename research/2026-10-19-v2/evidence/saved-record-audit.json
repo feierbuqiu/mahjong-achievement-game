@@ -1,0 +1,23 @@
+{
+  "status": "PASS_V2_SAVED_RECORD_AND_CUSTODY_AUDIT",
+  "frames": 17317,
+  "rows": 778532864302,
+  "bucket_close_events": 3686,
+  "all_recorded_close_exactCoverage_flags_true": true,
+  "historical_production_gated_exactCoverage": false,
+  "root_preflight_records": 1,
+  "root_preflight_accepts_game_rows": false,
+  "resource_reports": 3700,
+  "physical_memory_samples": 3700,
+  "minimum_available_physical_bytes": 2334924800,
+  "known_swap_samples": 3700,
+  "maximum_known_swap_bytes": 1724686336,
+  "reused_input_files": 11271,
+  "reused_input_bytes": 100615716067,
+  "newly_hashed_invocation_bytes": 118103,
+  "privacy_members_checked": 46203,
+  "declared_cross_layer_references": 54548,
+  "cross_layer_reads_independently_hashed": false,
+  "transformed_archive_members": 24,
+  "scope": "Offline saved-record audit only. Custody and runtime assertions are recorded evidence, not independent OS verification, full-input rehash, native execution or an opening kernel proof."
+}

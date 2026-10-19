@@ -26,6 +26,8 @@ jobs:
         with:
           python-version: '3.12'
       - run: python tools/verify_repository.py
+      - run: python tools/test_privacy_guard.py
+      - run: python tools/test_native_evidence_audit.py
       - run: python research/2026-09-14/verify.py
       - run: python research/2026-09-15/verify.py
   cpp:

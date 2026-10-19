@@ -23,5 +23,12 @@
     "published": false,
     "hash_manifest": "inputs.json"
   },
-  "unfinished_local_package_archives_published": false
+  "unfinished_local_package_archives_published": false,
+  "historical_asset_exclusions": [
+    "ROOT_PREFLIGHT.json",
+    "bucket-close events",
+    "INPUTS_BEFORE pointer and custody handover/prior identities",
+    "resource reports"
+  ],
+  "supplemented_in_v2": "../2026-10-19-v2/assets.json"
 }

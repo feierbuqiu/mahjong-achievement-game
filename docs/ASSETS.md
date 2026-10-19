@@ -1,3 +1,5 @@
+> **v2.0.0 correction:** Read [claim boundaries](CLAIMS.md) and [paper errata](PAPER_ERRATA.md). The production whole-input assembly/identity boundary is narrower than older wording. Papers are frozen; current private paths are redacted.
+
 # Evidence assets and retention
 
 Small source, exact input identities, summaries and citation metadata belong
@@ -29,7 +31,7 @@ where recorded; a digest is not a download service. See [data availability](DATA
 
 ## Later local archives
 
-The [working paper delivery descriptor](../papers/trust-verification/delivery.json)
+The [local delivery descriptor](../papers/trust-verification/delivery.json)
 identifies three completed local archives and selected validation receipts.
 They are not added to Git or uploaded as release assets by this update.
 The existing signed evidence asset and v1.0.0 remain unchanged.
@@ -52,3 +54,7 @@ The existing signed evidence asset and v1.0.0 remain unchanged.
 
 GitHub hosting is an access route, not a claim of permanent archival custody
 or a DOI. Cite the signed commit, asset digest and relevant report date.
+
+## v2 publication assets
+
+The [v2 descriptor](../research/2026-10-19-v2/assets.json) pins the expanded saved-record ZIP. It preserves original/public hashes after path redaction. Scan every source/evidence ZIP with `tools/privacy_guard.py` before upload. v2 supplies the sanitized current source tree, without a full Git-history bundle. Earlier immutable assets remain unchanged. See [privacy policy](PRIVACY.md).

@@ -4,11 +4,11 @@
   "primary_language": "en",
   "chinese_manuscript_published": false,
   "publication_status": "WORKING_MANUSCRIPT_ON_MAIN_AWAITING_FURTHER_REVIEW",
-  "current_work_frozen": false,
-  "new_release_created": false,
-  "new_tag_created": false,
+  "current_work_frozen": true,
+  "new_release_created": true,
+  "new_tag_created": true,
   "original_manuscript_sha256": "c336786aba4977df33b7cca8921d17c9d4e6fe7d56be24d0ff94896a067fbb49",
-  "published_manuscript_sha256": "ccc919b5e5a8ace6d1b7e0476e55e13f2815d703ab94b89acc88b60a04c7c2e4",
+  "published_manuscript_sha256": "1284d6d5198e6f731d082fc9747fccff5e960a3c2849380f1922d8c1add2ab43",
   "prior_document_review_sha256": "c336786aba4977df33b7cca8921d17c9d4e6fe7d56be24d0ff94896a067fbb49",
   "prior_document_review_matches_imported_manuscript": true,
   "prior_document_review_note": "The retained authoring receipt names an earlier draft; publication checks pin the imported final source and independently check its formula/table/link invariants.",
@@ -207,13 +207,14 @@
       "original_bytes": 71598,
       "original_sha256": "c336786aba4977df33b7cca8921d17c9d4e6fe7d56be24d0ff94896a067fbb49",
       "published_path": "manuscript.md",
-      "published_bytes": 71773,
-      "published_sha256": "ccc919b5e5a8ace6d1b7e0476e55e13f2815d703ab94b89acc88b60a04c7c2e4",
+      "published_bytes": 71364,
+      "published_sha256": "1284d6d5198e6f731d082fc9747fccff5e960a3c2849380f1922d8c1add2ab43",
       "transformations": [
         "Convert display and inline math to GitHub math fences and backtick-dollar syntax",
         "Use upright math function names and visible equation numbers to preserve existing GitHub layout compatibility",
         "Resolve all local resource links to public copies or an explicit availability catalogue",
-        "Add a working-edition/local-delivery notice and remove implied accompanying-release wording"
+        "Add a working-edition/local-delivery notice and remove implied accompanying-release wording",
+        "Remove the working-edition publication notice for v2.0.0; scientific text unchanged"
       ]
     },
     {
@@ -255,5 +256,11 @@
       "transformations": []
     }
   ],
-  "new_Lean_native_GPU_or_full_scan_started": false
+  "new_Lean_native_GPU_or_full_scan_started": false,
+  "frozen_in_release": "v2.0.0",
+  "paper_scientific_body_revised": false,
+  "original_working_publication": {
+    "commit": "d290627b5564cc4537e649b9c9d0ffdaf3ee9554",
+    "new_release_created": false
+  }
 }

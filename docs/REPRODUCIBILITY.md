@@ -1,3 +1,5 @@
+> **v2.0.0 correction:** Read [claim boundaries](CLAIMS.md) and [paper errata](PAPER_ERRATA.md). The production whole-input assembly/identity boundary is narrower than older wording. Papers are frozen; current private paths are redacted.
+
 # Reproduction guide
 
 ## Requirements
@@ -105,7 +107,7 @@ are not cold replay timings.
 
 ## English paper and document checks
 
-Read both [English papers](../papers/README.md) directly on GitHub. Run
+Read the three [English papers](../papers/README.md) directly on GitHub. Run
 `python3 tools/verify_paper.py` to check its published hash, all 370 preserved
 formulas, equation tags, tables, and evidence links. The source catalogue
 explicitly identifies historical attachments not included in this publication.
@@ -192,7 +194,7 @@ a second complete all-layer run remain open replication tasks. The 7.6-hour obse
 
 ## Later local portable delivery and saved-proof components
 
-The [working trust paper](../papers/trust-verification/manuscript.md) and its
+The [frozen trust paper](../papers/trust-verification/manuscript.md) and its
 [reproduction audit](../papers/trust-verification/reproducibility_evidence.md)
 record a completed same-host portable build/test path. It compiles 149 sources,
 rebuilds the native executable, fresh-replays the generic proof, exercises
@@ -218,3 +220,18 @@ Include the commit/tag, operating system, CPU, RAM, compiler version, build
 flags, exact input and command, elapsed time, peak memory, exit code, output
 hashes, and final coverage. Keep complete runs separate from partial runs and
 same-code checks separate from implementations with independent rule logic.
+
+## v2 saved-record reproduction
+
+Download the asset identified by [the v2 descriptor](../research/2026-10-19-v2/assets.json), then run:
+
+```bash
+python3 tools/audit_native_evidence.py --archive /path/to/mahjong-v17-records-v2.0.0.zip
+python3 tools/privacy_guard.py --archive /path/to/mahjong-v17-records-v2.0.0.zip
+```
+
+This reconstructs the saved ledger/coverage graph and checks all close events,
+the preflight scope, custody handover and resource inventory. It reads no full
+input table and starts no research worker. Custody claims are historical
+records, not an independent OS audit. The archival paper audit script remains
+frozen with its original workspace requirements.

@@ -1,0 +1,43 @@
+{
+  "schema": "V2_ADDITIONAL_TRUST_BOUNDARY_SOURCES",
+  "artifacts": [
+    {
+      "original_path": "build/lean_table_checker/read_lock_footprint_v13/shared_read_locks.py",
+      "original_bytes": 1676,
+      "original_sha256": "66fc89d40ef604d0ae7c57ffcd4995b36cc24686b771f81b10d7051e4241f78d",
+      "published_path": "research/2026-10-19-v17/source/legacy/shared_read_locks.py",
+      "published_bytes": 1676,
+      "published_sha256": "66fc89d40ef604d0ae7c57ffcd4995b36cc24686b771f81b10d7051e4241f78d",
+      "transformations": []
+    },
+    {
+      "original_path": "build/lean_table_checker/gpu_indexed_byte_receipt_v16/rules.py",
+      "original_bytes": 7584,
+      "original_sha256": "9160915678016c51c74c87d1cb28cb9a1b5c9c14cfeaf094973d755ba0268f2a",
+      "published_path": "research/2026-10-19-v17/source/legacy/gpu_receipt_rules.py",
+      "published_bytes": 7584,
+      "published_sha256": "9160915678016c51c74c87d1cb28cb9a1b5c9c14cfeaf094973d755ba0268f2a",
+      "transformations": []
+    },
+    {
+      "original_path": "build/lean_table_checker/gpu_spike_v1/deps/receipt.json",
+      "original_bytes": 722,
+      "original_sha256": "fd886dcec753f4be5d5c9db8cea475895661cb39f624fb8b3f9b46065ef395de",
+      "published_path": "research/2026-10-19-v17/source/legacy/gpu_dependency_receipt.json",
+      "published_bytes": 722,
+      "published_sha256": "fd886dcec753f4be5d5c9db8cea475895661cb39f624fb8b3f9b46065ef395de",
+      "transformations": []
+    },
+    {
+      "original_path": "build/lean_table_checker/v17_compute_finish_20261018/input_custody_handoff.py",
+      "original_bytes": 24481,
+      "original_sha256": "dcea6f724d530a69e63aa9621c2aeef38a8c0a516617215c904fe3cf7126e57a",
+      "published_path": "research/2026-10-19-v17/source/legacy/input_custody_handoff.py",
+      "published_bytes": 24481,
+      "published_sha256": "dcea6f724d530a69e63aa9621c2aeef38a8c0a516617215c904fe3cf7126e57a",
+      "transformations": []
+    }
+  ],
+  "original_operations_sources_unchanged": true,
+  "source_only_not_a_portable_runtime": true
+}

@@ -7,18 +7,20 @@ public release is not represented as a peer-reviewed article, an institutional
 publication, or a completed formal proof. No affiliation or endorsement by a
 Mahjong organization, university, GitHub, or a proof-assistant project is implied.
 
-The two September English reports remain fixed in v1.0.0. The
-[new October trust supplement](../papers/trust-verification/manuscript.md) is
-a working main-branch edition, awaiting further user-supplied external review.
-It is not frozen or accompanied by a new release. The
-[October 19 update](../research/2026-10-19-v17/README.md) records complete
-native evaluation of the frozen V17 finite checks under a kernel-proved
-implication. The actual-input opening Lean declaration remains NOT_VERIFIED.
-Native execution and external bookkeeping are explicitly trusted; see
-[claim boundaries](CLAIMS.md). The separately supplied review identifies
-its reviewer as another AI. It is read-only source/record inspection with a
-ledger cross-check, not independent execution replication or human peer review.
+The three English reports and their associated audit memos are frozen in
+v2.0.0. Scientific bodies are preserved, with known interpretation issues in
+[PAPER_ERRATA.md](PAPER_ERRATA.md). The V17 native-component run covers the
+recorded full table; whole-input assembly, exact cover and input identity
+retain the boundaries in [CLAIMS.md](CLAIMS.md). An actual closed opening Lean
+declaration remains NOT_VERIFIED. Both supplied review reports are AI
+inspections, with the same declared model identifier. The earlier report has
+a factual erratum. Neither supplies human peer review or independent execution.
 No independent replication, contest acceptance or institutional endorsement is claimed.
+
+Historical stage gates were skipped under continuous owner authorization,
+as disclosed in the earlier AI report. This release records that deviation;
+it does not retrospectively certify a completed gate. New records and source
+copies improve inspectability without changing historical execution.
 
 The rules describe the specific deterministic game in this repository.
 The results are not claims about ordinary multiplayer Mahjong strategy or
@@ -45,6 +47,18 @@ and reproducible checks are the basis for evaluating claims.
 Contributors should describe material AI assistance where it affects a proof,
 algorithm, implementation, or interpretation. Contributors remain responsible
 for the material they submit; tools are not listed as scholarly authors.
+
+Model names in the published papers are transcribed author declarations:
+"GPT-6 Astra" in the September reports and "GPT 6.1 Sol" in the October paper.
+One older memo uses the variant "GPT-6Astra". They are retained rather than
+silently normalized. Both review reports declare Claude (Anthropic), model
+`claude-opus-5-5`. v2 repository maintenance used OpenAI Codex assistance.
+These names/dates do not independently authenticate the actual model served.
+The maintainer remains responsible for published interpretations.
+
+The [privacy policy](PRIVACY.md) requires raw/decoded-string and archive-content
+checks. Identifying workstation prefixes are removed from current copies;
+original/public hashes are separate and old history is preserved.
 
 ## Authorship and citation
 

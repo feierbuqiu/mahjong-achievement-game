@@ -5,7 +5,6 @@ from collections import defaultdict
 import hashlib
 import json
 from pathlib import Path, PurePosixPath
-import re
 import sys
 import zipfile
 
@@ -32,9 +31,9 @@ def load(path):return json.loads(Path(path).read_text(encoding='utf-8-sig'))
 def canonical(value):return json.dumps(value,sort_keys=True,separators=(',',':'),ensure_ascii=False,allow_nan=False).encode()
 
 
-def verify_archive(path):
+def verify_archive(path, descriptor=None):
     """Recompute the full saved ledger/receipt graph, not the game recurrence."""
-    descriptor=load(BASE/'assets.json')['assets'][0]
+    if descriptor is None:descriptor=load(BASE/'assets.json')['assets'][0]
     need(Path(path).stat().st_size==descriptor['bytes'] and sha(path)==descriptor['sha256'],'Archive SHA-256/size mismatch')
     with zipfile.ZipFile(path) as z:
         names=z.namelist()
@@ -133,7 +132,9 @@ def verify_archive(path):
             need((row['size'],row['rows'],row['frames'],row['P'],row['N'])==(cells[k]['size'],cursor[k],fr,pc,nc),'Git/asset coverage summary differs')
     return dict(status='PASS_SAVED_NATIVE_EVIDENCE_GRAPH',frames=17317,rows=TOTAL,nonempty_buckets=3686,
         cross_layer_target_references=54548,problems=0,
-        scope='Saved record hashes, exact coverage and identity links; no native/Lean execution, full-input rehash or independent game replication')
+        exact_cover_method='Python reconstruction of frame cursor ranges',
+        target_reference_method='Declared identity graph only; not independently observed reads',
+        scope='Saved record hashes, Python exact cover and declared identity links; no native/Lean execution, full-input rehash or independent game replication')
 
 
 def verify():

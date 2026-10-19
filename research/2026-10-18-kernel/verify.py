@@ -9,7 +9,7 @@ import re
 BASE=Path(__file__).resolve().parent
 ROOT=BASE.parents[1]
 ALLOWED={'propext','Classical.choice','Quot.sound'}
-PRIVATE=re.compile(r'(?:[A-Za-z]:[\\/](?:Users|home)[\\/]|/mnt/[a-z]/Users/|/home/[^/\s]+/|/Users/[^/\s]+/)')
+PRIVATE = re.compile('(?:[A-Za-z]:[\\\\/]+(?:Users|home)[\\\\/]+[A-Za-z0-9][A-Za-z0-9_.-]*|/mnt/[a-z]/Users/[A-Za-z0-9][A-Za-z0-9_.-]*|/(?:home|Users)/[A-Za-z0-9][A-Za-z0-9_.-]*)', re.I)
 
 
 def require(value,message):

@@ -4,52 +4,44 @@
 
 [![Research checks](https://github.com/feierbuqiu/mahjong-achievement-game/actions/workflows/research.yml/badge.svg)](https://github.com/feierbuqiu/mahjong-achievement-game/actions/workflows/research.yml)
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
-[![V17 native: COMPLETE](https://img.shields.io/badge/V17_native-COMPLETE-green.svg)](research/2026-10-19-v17/README.md)
-[![Closed Lean opening: NOT_VERIFIED](https://img.shields.io/badge/Closed_Lean_opening-NOT__VERIFIED-orange.svg)](docs/CLAIMS.md)
+[![V17 component run: COMPLETE](https://img.shields.io/badge/V17_component_run-COMPLETE-blue.svg)](research/2026-10-19-v17/README.md)
+[![Opening kernel proof: NOT_VERIFIED](https://img.shields.io/badge/Opening_kernel_proof-NOT__VERIFIED-lightgrey.svg)](docs/CLAIMS.md)
 
-> **October 19 update — complete V17 native verification.**
-> The Lean kernel proves that six finite Boolean acceptance families imply
-> `SecondPlayerWins Step Win empty`. The same check functions, compiled to
-> native code, accepted the complete actual input: **778,532,864,302 SAFE
-> orbits, all 35 layers, 3,686 buckets and 17,317 frames**, with no old PASS
-> or seed import. The run took about **7.6 hours** on the recorded workstation.
-> **This is a kernel-proved implication plus complete native evaluation;
-> it is not a closed Lean declaration for the actual opening.** Compiler,
-> runtime, OS/hardware, input custody and external bookkeeping remain trusted.
-> A [separate AI review](research/2026-10-19-v17/review/INDEPENDENT_REVIEW.md)
-> reports no defects within its inspected scope; independent execution
-> replication and human peer review have not been completed.
-> The [new working paper](papers/trust-verification/manuscript.md) adds
-> later proof-component and local-reproduction evidence.
-> Read the [completed native result](research/2026-10-19-v17/README.md),
-> [claim boundaries](docs/CLAIMS.md) and [project status](docs/PROJECT_STATUS.md).
+> **v2.0.0: frozen research publication with privacy and evidence corrections.**
+> The recorded empty position is **P: the second player wins** under the stated
+> computational trust boundary. The Lean kernel proves a generic implication;
+> native component checks processed **778,532,864,302 recorded SAFE orbits,
+> all 35 layers, 3,686 buckets and 17,317 frames**. Whole-input assembly and
+> coverage retain Python bookkeeping; cross-layer identity relies on fixed
+> paths, recorded input custody and before/after hashes. Production did not call
+> the typed `finishWhole` route or gate the emitted native `exactCoverage` flag.
+> v2 publishes and audits all 3,686 retained true close events, without changing
+> what that historical controller required. **An actual closed opening Lean
+> proof and independent execution replication remain unfinished.**
+> Read the [corrections](docs/REVIEW_RESPONSE.md), [claim boundaries](docs/CLAIMS.md)
+> and [new evidence package](research/2026-10-19-v2/README.md).
 
 ## Latest English paper
 
 **[Trust and Formal Verification in the Mahjong Achievement Game: Complete Native Checking and Progress towards End-to-End Kernel Proofs](papers/trust-verification/manuscript.md)**
 
-feierbuqiu — 19 October 2026. **Working manuscript on `main`; not frozen or released.**
+feierbuqiu, 19 October 2026. **Published text frozen in v2.0.0.**
+Read it with the [repository errata](docs/PAPER_ERRATA.md): some original
+production-check wording is stronger than the implemented execution route.
+The scientific text and associated audit memos are preserved; only its former
+working-edition notice has been removed. [FREEZE.json](papers/FREEZE.json)
+pins the paper identities.
 
-The new supplement explains the complete native result, its trust boundary,
-persistent nonempty-game and numerical proof components, and completed local
-portable-delivery tests. The numerical pilot covers 28 fixed blocks / 402
-words and 1,234 layout equalities, with a 273-module fresh replay; it does not
-certify those coordinates as complete original-game positions. The physical
-11-node pilot and numerical sample have not been joined into an actual empty-game
-kernel proof. A new external review of this manuscript is pending.
-
-| English report by feierbuqiu | Date | Scope |
+| English report | Date | Scope |
 | --- | --- | --- |
-| [Trust and Formal Verification](papers/trust-verification/manuscript.md) | 19 October 2026 | Current working supplement: complete native checking, saved component proofs, trust and local reproduction |
-| [Lean Verification: Strategy Certificates, Enumeration, and Retrograde Models](papers/lean-verification/manuscript.md) | 15 September 2026 | Dated formal and finite-model report, preserved in v1.0.0 |
-| [Mahjong Achievement on a Shared Table](papers/manuscript.md) | 13 September 2026 | Original computational second-player result and early Lean milestones, preserved in v1.0.0 |
+| [Trust and Formal Verification](papers/trust-verification/manuscript.md) | 19 October 2026 | Native-component evidence, trust, persistent components and same-host local delivery; read with v2 errata |
+| [Lean Verification: Strategy Certificates, Enumeration, and Retrograde Models](papers/lean-verification/manuscript.md) | 15 September 2026 | Dated formal and finite-model report, unchanged from v1.0.0 |
+| [Mahjong Achievement on a Shared Table](papers/manuscript.md) | 13 September 2026 | Original computation and early Lean milestones, unchanged from v1.0.0 |
 
-The papers use GitHub-compatible mathematical formatting. The new paper's
-[overview](papers/trust-verification/README.md), [evidence catalogue](papers/trust-verification/evidence-catalogue.md)
-and [delivery availability](papers/trust-verification/delivery.json) distinguish
-public material from validated local archives. All three reports remain
-accessible in the [paper collection](papers/README.md). Chinese manuscripts
-are excluded. No new tag or release is created by this update.
+All three English reports use GitHub-compatible mathematics. Chinese
+manuscripts are excluded. The [paper collection](papers/README.md) supplies
+their evidence catalogues; [data availability](docs/DATA_AVAILABILITY.md)
+distinguishes public records from retained local archives and full inputs.
 
 ## Result
 
@@ -66,7 +58,10 @@ Later local work accumulated a registry reporting **24,655 certified P states**;
 its complete proof trees are retained outside this public package. The earlier compiled-Lean route completed layers 34, 33 and 32, covering
 **303,054,865 unique rows**; the [October update](research/2026-10-18/README.md)
 records the new layer-32 audit and its retained verifier identities.
-Neither route closes the 10-tile or empty-position theorem. See the
+These earlier routes do not close the 10-tile or empty-position theorem.
+The later V17 component-native run covers the full recorded table, under the
+additional assembly/custody boundaries above; it still is not a closed opening
+kernel proof. See the
 [complete-layer receipts](research/2026-09-14/README.md),
 [published nonempty proofs](formal/README.md), and [evidence boundaries](docs/EVIDENCE.md).
 
@@ -104,34 +99,31 @@ and [machine-readable status](RESEARCH_STATUS.json) state their scope.
 
 | Result | Scope |
 | --- | --- |
-| September C++ computation and full reverse replay | Empty position P; both implementations share foundational rules and index |
-| V17 whole-input implication | Kernel-proved original-game conclusion from six finite acceptance families |
-| Completed V17 native evaluation | All 778,532,864,302 stored labels checked; P/N recurrence and full input/coverage controls accepted |
-| Separate AI cross-check | Saved 17,317-frame ledger and 54,548 cross-layer identity references; no defects found in reviewed scope |
-| Independent execution replication | Not completed |
-| Closed actual-input opening Lean theorem | NOT_VERIFIED |
+| September computation and full reverse replay | Empty P; two algorithms share foundational rules and index |
+| V17 generic implication | Kernel-proved original-game conclusion under six finite acceptance families |
+| V17 native component run | All recorded rows processed; external whole-input assembly, cover and custody remain trusted |
+| v2 offline record audit | Full saved ledger, 3,686 true close events, root preflight, handover and 3,700 resource reports checked; no new native execution |
+| Separate AI reports | Source/record inspection with corrections; same declared model identifier; no human review or independent execution |
+| Closed actual-input opening kernel proof | **NOT_VERIFIED** |
+| Independent full execution / second physical machine | **Not completed** |
 
-The complete run **checks the historical labels**; it does not regenerate the
-table. A native PASS and a saved kernel proof have different trust boundaries.
-The [evidence guide](docs/EVIDENCE.md) and [reproduction instructions](docs/REPRODUCIBILITY.md)
-explain what readers can inspect or repeat. The 63.46 MB saved-record archive
-is a [separate release asset](research/2026-10-19-v17/assets.json), with hashes
-in Git; the 100.62 GB input set is currently represented by its complete hash map.
+The run checks historical labels; it does not independently regenerate them.
+It took about 7.6 hours on the recorded workstation, not a promised future
+runtime. Frozen native/operations sources are retained as evidence of what ran.
+The [v2 saved-record asset](research/2026-10-19-v2/assets.json) supplements the
+older narrower asset; neither includes the full 100.62 GB input set.
 
-The earlier [V18/V19 proof-export experiments](research/2026-10-18-kernel/README.md)
-remain dated small/component results. Later bounded component work completed
-the fixed numerical sample and further nonempty-game proof trials; see the
-[new paper](papers/trust-verification/manuscript.md). These are separate from
-the completed native run. The old V16 campaign remains
-stopped. No whole-task time bound for a future closed actual-input proof is claimed.
+Later numerical proofs cover 28 fixed blocks / 402 words, 1,234 layout
+equalities and a 273-module fresh replay. Their 1,035,129 colex coordinates
+are not that many certified original-game states. The 11-node physical pilot
+and numerical sample have not been joined into an opening proof. Same-host
+portable tests do not establish a second-machine reproduction.
 
-Independent replication on another machine or toolchain, human reading of
-the rules and trusted bookkeeping, alternative proofs, corrections and
-reproducibility improvements remain welcome through the
-[issue tracker](https://github.com/feierbuqiu/mahjong-achievement-game/issues).
-The two September English papers remain dated reports. The new October
-paper is a working main-branch manuscript, awaiting further external review. See the [internal-version glossary](docs/INTERNAL_VERSIONS.md)
-for V16/V17/V18/V19 and the distinction from release versions.
+This version is frozen. Contributions with independent replication, alternative
+arguments, deeper proofs or necessary corrections remain welcome. See the
+[maintenance scope](docs/MAINTENANCE.md), [current status](docs/PROJECT_STATUS.md)
+and [internal-version glossary](docs/INTERNAL_VERSIONS.md). No new computation
+or global strict-kernel completion deadline is promised.
 
 ## The game
 

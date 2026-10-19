@@ -20,16 +20,16 @@
     {
       "name": "operational-compile",
       "command": [
-        "C:\\Users\\YJ\\OneDrive - The University of Sydney (Students)\\Desktop\\mahjong_research\\build\\toolchain\\w64devkit\\bin\\g++.exe",
+        "<research-root>\\build\\toolchain\\w64devkit\\bin\\g++.exe",
         "-std=c++17",
         "-O3",
         "-DNDEBUG",
         "-I",
-        "C:\\Users\\YJ\\OneDrive - The University of Sydney (Students)\\Desktop\\mahjong_research\\build\\compat",
-        "C:\\Users\\YJ\\OneDrive - The University of Sydney (Students)\\Desktop\\mahjong_research\\build\\lean_table_checker\\retro_operational_probe.cpp",
+        "<research-root>\\build\\compat",
+        "<research-root>\\build\\lean_table_checker\\retro_operational_probe.cpp",
         "-lpsapi",
         "-o",
-        "C:\\Users\\YJ\\OneDrive - The University of Sydney (Students)\\Desktop\\mahjong_research\\build\\lean_table_checker\\retro_operational_probe.exe"
+        "<research-root>\\build\\lean_table_checker\\retro_operational_probe.exe"
       ],
       "log_sha256": "8ed672de5f99bda26ec2ab86f9c2cc933a15dab164d0dfa10024ca0b36bcbb31",
       "wall_seconds": 8.311999999976251
@@ -37,9 +37,9 @@
     {
       "name": "operational-inventory",
       "command": [
-        "C:\\Users\\YJ\\OneDrive - The University of Sydney (Students)\\Desktop\\mahjong_research\\build\\lean_table_checker\\retro_operational_probe.exe",
+        "<research-root>\\build\\lean_table_checker\\retro_operational_probe.exe",
         "inventory",
-        "C:\\Users\\YJ\\OneDrive - The University of Sydney (Students)\\Desktop\\mahjong_research\\runs\\lean_table_checker\\optimized_retro_v1\\inventory"
+        "<research-root>\\runs\\lean_table_checker\\optimized_retro_v1\\inventory"
       ],
       "log_sha256": "f0a39c10a72cb86e48b0269e6fea26d44745832c4520a592b9789a022ba290de",
       "wall_seconds": 1.5940000000409782
@@ -47,9 +47,9 @@
     {
       "name": "operational-exercise",
       "command": [
-        "C:\\Users\\YJ\\OneDrive - The University of Sydney (Students)\\Desktop\\mahjong_research\\build\\lean_table_checker\\retro_operational_probe.exe",
+        "<research-root>\\build\\lean_table_checker\\retro_operational_probe.exe",
         "exercise",
-        "C:\\Users\\YJ\\OneDrive - The University of Sydney (Students)\\Desktop\\mahjong_research\\runs\\lean_table_checker\\optimized_retro_v1\\operational"
+        "<research-root>\\runs\\lean_table_checker\\optimized_retro_v1\\operational"
       ],
       "log_sha256": "a8420b992c7a6ff5aec13d97a8ad1436c1cb1e970b58e09dd1937ae55bd1bd64",
       "wall_seconds": 10.73499999998603

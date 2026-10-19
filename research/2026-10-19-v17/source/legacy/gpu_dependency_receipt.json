@@ -1,0 +1,14 @@
+{
+  "package": "nvidia-cuda-nvrtc-cu12",
+  "version": "12.4.127",
+  "source": "https://pypi.org/pypi/nvidia-cuda-nvrtc-cu12/12.4.127/json",
+  "wheel_url": "https://files.pythonhosted.org/packages/2c/14/91ae57cd4db3f9ef7aa99f4019cfa8d54cb4caa7e00975df6467e9725a9f/nvidia_cuda_nvrtc_cu12-12.4.127-py3-none-manylinux2014_x86_64.whl",
+  "wheel_sha256": "a178759ebb095827bd30ef56598ec182b85547f1508941a3d560eb7ea1fbf338",
+  "download_bytes": 24640306,
+  "files": {
+    "libnvrtc-builtins.so.12.4": "4425561a319da07bbde0dc180a90422e351b364c3dc4f6a3ea1e69925d62db72",
+    "libnvrtc.so.12": "466d6f14d6cfde99838a132cfa7a23f90ba08acfadaa4d9e4c9defe1277f7bf1"
+  },
+  "system_install": false,
+  "driver_install": false
+}

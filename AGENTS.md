@@ -5,8 +5,8 @@ docs/REPRODUCIBILITY.md before changing research claims or algorithms.
 
 - Read research/2026-10-19-v17/README.md, docs/PROJECT_STATUS.md and
   docs/CLAIMS.md for current scope. The fixed V17 native run is COMPLETE:
-  778,532,864,302 rows, all 35 layers, 3,686 buckets, 17,317 frames, six finite
-  acceptance families, no old PASS/seed import. The claim is a kernel-proved
+  778,532,864,302 rows, all 35 layers, 3,686 buckets, 17,317 frames, decomposed native components with external assembly; the six finite
+  theorem hypotheses are not one instantiated native whole-input acceptance, no old PASS/seed import. The claim is a kernel-proved
   implication plus native evaluation; the actual empty-game closed Lean
   declaration remains NOT_VERIFIED. Compiler/runtime/OS/hardware, IO/input
   custody and external bookkeeping remain trusted. The separate AI review
@@ -21,8 +21,13 @@ docs/REPRODUCIBILITY.md before changing research claims or algorithms.
   are not finished packages. Keep retained full inputs distinct from hashes
   and saved-record archives. Version labels are defined in docs/INTERNAL_VERSIONS.md.
 - The current primary report is papers/trust-verification/manuscript.md.
-  It is a working main-branch paper, pending later user-supplied external review.
-  This update must create no tag/release and must not freeze current work.
+  All three scientific manuscript bodies are frozen in v2.0.0.
+  Read docs/PAPER_ERRATA.md and docs/REVIEW_RESPONSE.md before reusing claims.
+  The working-edition notice alone was removed; later corrections belong in errata.
+  v2.0.0 is an authorized signed release; preserve all older tags and releases.
+  Cross-layer identity relies on custody; production did not gate native exactCoverage.
+  The v2 offline auditor checks all 3,686 retained true close events and custody records.
+  Run tools/privacy_guard.py before publishing files or release ZIPs; it scans JSON strings too.
   Later packed_05 proofs cover numerical equations only (28 blocks, 402 words,
   1,234 layout equalities; 273 modules), without the complete actual-game join.
   Local portable archives passed same-host tests but are not public downloads.

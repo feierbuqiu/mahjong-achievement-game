@@ -1,94 +1,71 @@
-# Current status: working trust paper and completed scoped results
+# Current status: v2.0.0 frozen publication
 
-**As of 19 October 2026, the fixed V17 native verification is complete.**
-The empty position is accepted as **P (second player wins)**, with the claim
-class **kernel-proved whole-input implication plus native evaluation**.
-The actual-input opening Lean declaration remains **`NOT_VERIFIED`**.
+**19 October 2026.** The empty-position result remains P, supporting a
+second-player win under the stated computational trust boundary. This release
+adds publication corrections, privacy checks and retained evidence. It adds
+no new search, native run or actual-input opening kernel proof.
 
-The Lean kernel checks a theorem concluding `SecondPlayerWins Step Win empty`
-from six finite Boolean acceptance families. A single compiled native build
-evaluated those functions on the complete actual input: 778,532,864,302 SAFE
-orbits in layers 0–34, 3,686 nonempty buckets and 17,317 committed frames.
-No earlier PASS records or seeds were imported. The input identity maps
-before and after the run agree. The recorded timers are about 7.6 hours for
-this run; they are measurements, not guarantees for another machine or workload.
+## Computation and formal proof
 
-## Latest paper and subsequent component evidence
+- The September forward computation and reverse replay cover all
+  778,532,864,302 SAFE symmetry orbits, with zero replay mismatches.
+- The generic V17 implication is kernel-proved. Its completed native-component
+  run processed 35 layers, 3,686 buckets and 17,317 frames without old PASS/seed
+  import. P/N totals are 203,051,492,021 / 575,481,372,281.
+- Production used decomposed adapter functions and Python assembly. It did
+  not execute `finishWhole` for one concrete typed input. Cross-layer identity
+  rests on fixed paths, input-custody assertions and before/after hash maps.
+- Native bucket-close `exactCoverage` was emitted but not gated by the
+  historical controller. The v2 saved-record auditor checks all 3,686 retained
+  true close events, frame ranges and custody handover offline.
+- A closed saved empty-position Lean declaration remains **NOT_VERIFIED**.
+  Independent full execution and a second physical-machine test remain absent.
 
-The [new English trust/verification supplement](../papers/trust-verification/manuscript.md)
-is published as a working main-branch manuscript. It awaits later user-supplied
-external review; no new release, tag or freeze is performed.
+See [claim boundaries](CLAIMS.md), the [review response](REVIEW_RESPONSE.md)
+and [new records](../research/2026-10-19-v2/README.md).
 
-Later bounded work completed the 28-block / 402-word numerical pilot, with
-1,234 layout equalities and a 273-module saved-proof closure. Fresh replay
-took 61.828 seconds. It proves specified numerical equations; actual SAFE,
-complete target addressing and the game-semantic join remain missing.
-The eleven-node physical-game pilot and its import/proof-style variants
-retain the same three highlighted nonempty 32-tile conclusions.
+## Later bounded components
 
-A complete local delivery now exists: core/toolchain/source, all historical
-inputs and optional saved pilots. A same-host clean extraction/rebuild and
-selected-bucket test passed, as did all three saved-proof lanes. These are
-not a second complete native run or second physical-machine replication.
-The [delivery descriptor](../papers/trust-verification/delivery.json) lists
-their identities; **the three local archives are not public downloads here**.
-This supersedes the earlier statement that packaging was still incomplete.
+The numerical `packed_05` sample has 28 blocks, 402 words, 1,234 layout
+equalities, 601 arbitrary-input layout equivalences and a 273-module project
+closure. Its 1,035,129 colex rows / 1,077,270 Cartesian coordinates describe
+numeric layouts, not newly established original-game strategies. Actual SAFE
+and target-address obligations and the complete game join remain missing.
 
-## What the whole-input result establishes
+The 11-node physical pilot supports three highlighted nonempty 32-tile roots.
+Later variants preserve their definitions/conclusions; no improved earliest
+opening depth or aggregate count of novel roots is inferred. Neither pilot
+proves the empty opening.
 
-The saved records report acceptance of the base finite data, successor lists,
-per-bucket metadata, row/frame checks with exact cover, cross-layer byte
-identity and empty-root P check. Their counts are P = 203,051,492,021 and
-N = 575,481,372,281. This checks the stored September table; it does not
-regenerate it or convert every native result into a persisted Lean proof.
+Local portable archives passed same-host extraction, source/native rebuild,
+small controls, one 56-row bucket and selected saved-object replay. The
+three complete archives remain local; public hashes are not downloads.
+There was no second all-layer native run or second physical machine.
 
-See the [current source/evidence](../research/2026-10-19-v17/README.md),
-[machine-readable status](../RESEARCH_STATUS.json), [claim table](CLAIMS.md)
-and [version glossary](INTERNAL_VERSIONS.md). The old compiled-checker total
-of 303,054,865 rows is a historical V16 milestone; it is not the current
-all-layer native coverage or a count of closed kernel certificates.
+## Review, papers and privacy
 
-## Independent cross-check and remaining trust
+All [three English papers](../papers/README.md) and listed audit memos are
+frozen by [FREEZE.json](../papers/FREEZE.json). Their scientific text is
+unchanged. The latest paper's working-edition notice alone was removed.
+[Repository errata](PAPER_ERRATA.md) state the known interpretation and
+bibliographic limitations outside the published papers.
 
-A [separate AI review](../research/2026-10-19-v17/review/INDEPENDENT_REVIEW.md)
-reports no defect within its inspected scope. Its own script checked the
-17,317-frame ledger, every native frame-result binding, exact bucket cover,
-54,548 cross-layer identity references and the root bit. A seeded sample of
-62 input files (81,370,822 bytes) had no hash mismatch.
+Both supplied reviews are AI source/record inspections. The later report
+declares the same model identifier as the earlier one and corrects factual
+errors in it. They are not human peer review or independent execution.
+Current public copies redact identifying workstation paths and separate
+original/public hashes. History is preserved, as explained in [PRIVACY.md](PRIVACY.md).
 
-The reviewer did not rerun Lean or the native checker, did not hash all
-100.62 GB, and reviewed only the finalizer line by line among the trusted
-Python bookkeeping files. This is independent source/record inspection by
-another AI, **not independent execution replication or human peer review**.
-The execution stack, faithful rule modeling, IO/input custody and external
-bookkeeping remain explicit parts of the trust boundary.
+## Availability and continuation
 
-## Remaining work
+The [v2 saved-record asset](../research/2026-10-19-v2/assets.json) supplies
+46,202 payload files, including records missing from the earlier 63.46 MB
+asset. The full 100.62 GB inputs, native executable, full toolchain and large
+local portable archives are not public downloads.
 
-- Independent replication with a different machine, compiler or toolchain,
-  starting with base/successor/root checks and clearly specified frame coverage.
-- Human review of the formal rules and the remaining trusted bookkeeping.
-- A closed Lean theorem for the actual input, if a practical proof-construction,
-  persistence and cold-replay method becomes available.
-- Further review and revision of the new working manuscript. The two September papers retain their dates.
-
-The earlier V18/V19 whole-table proof-export optimization was stopped.
-Later bounded numeric/game experiments and local-delivery tests are recorded separately in the new paper. The legacy
-V16 STOP remains in place; the separately authorized V17 run completed without
-removing it. No future strict-kernel completion deadline is established, and
-this repository publication launches no new research job. Deeper proofs,
-alternative approaches, corrections and replication contributions remain welcome.
-
-## Availability and releases
-
-Small source, input hashes and summaries live in Git. The full saved ledger,
-all committed frame receipts and native frame-result records are distributed
-as a [hash-pinned evidence asset](../research/2026-10-19-v17/assets.json).
-The full input dataset is not a public download. Completed local archives
-and their same-host validation now exist, with public identity/scope records;
-the archives themselves are not uploaded by this update.
-
-The immutable [v1.0.0 release](https://github.com/feierbuqiu/mahjong-achievement-game/releases/tag/v1.0.0)
-and the two September manuscripts remain unchanged. The existing separate
-evidence-asset tag is preserved. The new paper is a working edition on main;
-this update creates no tag or release. See [data availability](DATA_AVAILABILITY.md).
+v2.0.0 is a frozen publication milestone, not a claim that every verification
+goal is complete. Earlier tags/releases remain unchanged. The maintainer is
+concluding the present phase; independent replication, deeper formal results,
+alternative proofs and necessary corrections remain welcome. No automatic
+research campaign or strict-kernel completion deadline is planned. The legacy
+whole-table STOP remains. See [maintenance](MAINTENANCE.md).

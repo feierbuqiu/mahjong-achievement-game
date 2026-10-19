@@ -1,3 +1,5 @@
+> **v2.0.0 correction:** Read [claim boundaries](CLAIMS.md) and [paper errata](PAPER_ERRATA.md). The production whole-input assembly/identity boundary is narrower than older wording. Papers are frozen; current private paths are redacted.
+
 # Evidence and limitations
 
 ## Published computational claim
@@ -25,24 +27,25 @@ rules, index, recurrence, implementation, and stored values.
 | V17 generic kernel composition | Finite-acceptance hypotheses connect to original-game strategies and root | Actual full-input acceptance not instantiated |
 | V18 closed actual-data pilot | Three nonempty 32-tile game roots and separate finite checker equalities; saved proof cold replay | Not the empty opening or complete V17 input |
 | V19 compression and layout experiments | Supplied numeric relations, partial local metadata and generic bridges | Not complete actual SAFE/game semantics or a global runtime bound |
-| V17 complete native verification | Six finite acceptance families evaluated on all 35 layers / 778,532,864,302 stored labels | Compiler/runtime, IO/input custody and external bookkeeping trusted; no closed actual-input Lean declaration |
-| Separate AI review | 17,317-frame ledger, 54,548 target identity references, 62-file input sample; no problems reported in inspected scope | No Lean/native rerun, no full input rehash, no human peer review |
+| V17 complete native verification | Native components cover all 35 layers / 778,532,864,302 recorded labels; external whole-input assembly | Compiler/runtime, IO/input custody and external bookkeeping trusted; no closed actual-input Lean declaration |
+| Separate AI review | 17,317-frame ledger, 54,548 deterministic declared references, 62-file input sample; original verdict qualified by a factual erratum | No independent read-identity observation, Lean/native rerun, full input rehash or human peer review |
 | Later packed numerical certificate | Saved equations for 28 fixed blocks / 402 words, 1,234 layout equalities and a 273-module fresh replay | No complete actual SAFE/target-address/game join; numerical coordinates are not newly certified game positions |
 | Same-host portable tests | 149-source/native reconstruction, small controls and selected 56-row execution; separately extracted saved pilots | No second all-layer native execution or second physical machine; complete archives remain local |
 | SSH/GitHub signatures | A commit or tag was signed by the identified key | Does not prove its scientific claims |
 
 ## Current V17 verification
 
-The [completed V17 run](../research/2026-10-19-v17/README.md) evaluates all six
-finite acceptance families of a kernel-proved whole-input implication on the
-complete actual table. It covers all 778,532,864,302 rows, with no old PASS or
+The [completed V17 run](../research/2026-10-19-v17/README.md) evaluates decomposed
+native components over every recorded row, with external assembly of the
+whole-input premises. Production did not call `finishWhole`, independently
+compare cross-session reads, or gate the native bucket-close Boolean. It covers all 778,532,864,302 rows, with no old PASS or
 seed import. It is stronger than the earlier partial compiled-layer milestone.
 It remains **native execution under an explicit trust boundary**: it is not a
 closed Lean declaration for these actual input bytes.
 
 A [separate AI review](../research/2026-10-19-v17/review/INDEPENDENT_REVIEW.md)
-reports no defect within its inspected scope and independently checks the
-saved ledger/identity graph. It did not rerun Lean/native code or rehash the
+retains an original no-defect verdict that is qualified by the [factual erratum](../research/2026-10-19-v17/review/ERRATA.md). Its script checks saved
+ledger cover and deterministic declared-identity references, not independent reads. It did not rerun Lean/native code or rehash the
 whole input set. The finalizer was inspected line by line; most other trusted
 bookkeeping files were not. This is not human peer review or independent
 execution replication. See [claim boundaries](CLAIMS.md).
@@ -86,7 +89,7 @@ the later registry's retained concrete proof trees.
 
 The [September 15 manifest](../research/2026-09-15/provenance.json) publishes
 the 84-module dependency closure of the finite algorithm entry point and
-selected receipts without byte changes. Its historical acceptance record
+selected receipts; the v2 operational copy is path-redacted with separate hashes. Its historical acceptance record
 references 5,329 local evidence files; only the explicitly listed publication
 subset is supplied. All original digests were rechecked locally for this
 publication. A public hash/receipt check covers the supplied subset, and the

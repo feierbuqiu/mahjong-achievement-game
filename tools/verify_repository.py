@@ -11,6 +11,8 @@ from verify_lean import check_snapshot
 from verify_paper import verify as verify_paper
 from verify_lean_supplement import verify as verify_lean_supplement
 from verify_trust_supplement import verify as verify_trust_supplement
+from verify_v2_snapshot import verify as verify_v2_snapshot
+from privacy_guard import check_files as check_privacy_files
 
 ROOT = Path(__file__).resolve().parents[1]
 
@@ -60,6 +62,7 @@ def main():
     verify_paper()
     verify_lean_supplement()
     verify_trust_supplement()
+    verify_v2_snapshot()
     # Validate the newer publication without starting Lean or compute services.
     import importlib.util
     spec = importlib.util.spec_from_file_location('october_progress', ROOT / 'research/2026-10-18/verify.py')
@@ -115,22 +118,25 @@ def main():
         language_text = data
         if rel in {"papers/manuscript.md", "papers/evidence/reference_verification.md",
                    "papers/lean-verification/manuscript.md", "papers/lean-verification/reference_verification.md",
-                   "papers/trust-verification/manuscript.md", "papers/trust-verification/reference_verification.md"}:
+                   "papers/trust-verification/manuscript.md", "papers/trust-verification/reference_verification.md",
+                   "docs/reviews/2026-10-19-ai-review.md"}:
             # Preserve the author's original source credit and bibliographic title.
             for proper_name in ["\u96f6\u4e4b\u5ba1\u5224\u8005", "\u5446\u997c\u95ee\u9898"]:
                 language_text = language_text.replace(proper_name, "")
         require(not re.search(r"[\u3400-\u4dbf\u4e00-\u9fff]", language_text), f"Non-English CJK content: {rel}")
-        require(not re.search(r"[A-Za-z]:[\\/](?:Users|home)[\\/]", data), f"Private workstation path: {rel}")
         require(not re.search(r"-----BEGIN (?:OPENSSH |RSA |EC )?PRIVATE KEY-----|gh[pousr]_[A-Za-z0-9]{30,}", data), f"Potential secret: {rel}")
         if path.suffix == ".md":
-            for target in re.findall(r"\]\(([^\s)]+)\)", data):
+            # Literal regexes/code examples are not rendered Markdown links.
+            link_text = re.sub(r"(`+).*?\1", "", data, flags=re.S)
+            for target in re.findall(r"\]\(([^\s)]+)\)", link_text):
                 if re.match(r"[a-zA-Z]+:", target) or target.startswith("#"):
                     continue
                 target = unquote(target.split("#", 1)[0])
                 require((path.parent / target).exists(), f"Broken local link in {rel}: {target}")
+    privacy_files = check_privacy_files()
     print(json.dumps({"status": "PASS", "distributed_artifacts_hashed": len(hashed),
                       "replay_buckets": len(rows), "SAFE_states": expected, "historical_matches": len(checks),
-                      "files_checked": len(files), "lean_source_modules": formal["source_modules"],
+                      "files_checked": len(files), "privacy_files_checked": privacy_files, "lean_source_modules": formal["source_modules"],
                       "scope": "Published artifact and receipt consistency; no external table replay or Lean kernel replay"}))
 
 
