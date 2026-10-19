@@ -1,11 +1,12 @@
-# Complete V17 native verification
+# Complete V17 native-component run
 
 **19 October 2026.** The Lean kernel proves a whole-input implication:
 if six finite Boolean acceptance families are true, then
-`SecondPlayerWins Step Win empty` holds for the original game. The same
-check functions, compiled to native code, accepted the complete actual input.
+`SecondPlayerWins Step Win empty` holds for the original game. Natively compiled adapter components processed every recorded input row.
+Whole-input assembly, exact coverage and cross-layer identity retain external
+bookkeeping and custody assumptions; see the [v2 corrections](../../docs/REVIEW_RESPONSE.md).
 
-**Evidence level: kernel-proved implication plus native evaluation.**
+**Evidence level: kernel-proved implication, native components and external assembly.**
 This is not a closed Lean declaration about the actual table. Native
 compiler/runtime, OS/hardware, faithful rule modeling, input custody and
 external bookkeeping remain trusted. Independent execution replication
@@ -58,8 +59,8 @@ limits are not claimed as the enforcement policy of this later run.
 | Base finite data | `FiniteCertificateV17.checks`: local caches, inventories, groups, layer bounds, directories, layout and word limits |
 | Successor lists | `FiniteMetadataV17.checkSuccessors`, once per native session |
 | Per-bucket metadata | `checkSource`, `checkBank`, `GroupNextCoverage.check`, for all 3,686 buckets |
-| Frames and exact cover | `RuntimeScanV17.prepare`, `scanFragment`, `assembleScanned`; finite range checks plus external exact-cover bookkeeping |
-| Cross-layer target identity | `CrossLayerAssemblyV17.checkTargets`; native byte checks plus immutable file/hash binding and seven-field comparison by bookkeeping |
+| Frames and exact cover | `RuntimeScanV17.prepare`, `scanFragment`, `assembleScanned`; native frame checks plus external cursor cover; production did not gate the native close Boolean. v2 checks all retained close flags offline |
+| Cross-layer target identity | `CrossLayerAssemblyV17.checkTargets`; equal-root comparison reuses `loaded`; actual cross-session identity relies on custody/fixed paths/hash maps. Seven-field declarations are deterministic bookkeeping |
 | Empty root and P bit | `EmptyRootV17.checkP`, for bucket `(0,0)` |
 
 The whole implication is
@@ -71,23 +72,25 @@ acceptance equations rather than assuming arbitrary row correctness,
 
 The typed in-process whole-input `finishWhole` route was not used for the
 production table. Assembly is external. In-process target loading uses the
-same file roots, so cross-layer identity depends on immutable inputs and
-their hash binding as well as the native check. This is an explicit part
+same file roots and reuses the loaded object, so the comparison supplies no
+independent read-identity detection in production. Cross-layer identity relies
+on fixed paths, recorded deny-write/delete custody and before/after hash maps.
+The 54,548 declared-reference equalities are deterministic from one manifest. This is an explicit part
 of the trust boundary, not a closed kernel derivation of the actual input.
 
 ## Separate AI review and controls
 
-The original [independent review report](review/INDEPENDENT_REVIEW.md) identifies
+The original [separate AI report](review/INDEPENDENT_REVIEW.md), read with its [factual erratum](review/ERRATA.md), identifies
 its reviewer as Claude (Anthropic), model `claude-opus-5-5`. It states that the
 reviewer did not author or modify the implementation and conducted read-only
 inspection. Its separate ledger script reports:
 
 - 17,317 committed receipts and native-result bindings checked;
 - exact contiguous coverage of all 3,686 nonempty buckets;
-- 54,548 cross-layer target references, zero identity mismatches;
+- 54,548 declared cross-layer references, zero bookkeeping differences; these are not independent read observations;
 - an empty-root bit of 1 (P), matching the input identity map;
 - 62 sampled input files / 81,370,822 bytes rehashed, zero mismatches;
-- no defect found within the inspected source/record scope.
+- an original no-defect verdict, now qualified by the [later corrections](review/ERRATA.md).
 
 The reviewer did **not** rerun Lean, `leanchecker`, the native checker or GPU;
 it assessed build/replay claims from receipts. It did not rehash the full
@@ -106,6 +109,9 @@ it does not replace the original report or claim a new independent game run.
 [Six native controls](evidence/native-controls.json) accepted the positive
 full bucket and rejected a flipped source bit, deleted final row, swapped
 target identity, truncated source payload and incorrect catalog honor.
+The deleted-row case observes a native Boolean production did not gate; the
+changed-target case uses distinct roots rather than the production equal-root
+configuration. The controls do not establish the stronger production claims.
 [Thirty-six transport](evidence/transport-controls.json) and
 [22 bookkeeping](evidence/bookkeeper-controls.json) cases are mocked controls,
 not operating-system crash/recovery tests. The first production attempt
@@ -125,7 +131,11 @@ This publication did not execute those tools again.
 
 The [source/operations archive](source/ops) contains the historical bookkeeping
 implementation. It is supplied for inspection, not represented as a fully
-portable installer. `prepare_sources.py` assembles the mapped Lean bytes in
+portable installer. The [additional dependency mapping](../2026-10-19-v2/dependencies.json)
+now supplies the read-lock helper, GPU receipt rules/package receipt and custody
+handover source for inspection. Operations require additional runtime support
+including `psutil`; standard-library-only claims apply to public verifiers.
+`prepare_sources.py` assembles the mapped Lean bytes in
 a new directory without compiling or running them.
 
 The full saved ledger and frame evidence live in a **63,456,055-byte ZIP**
@@ -133,17 +143,19 @@ with **38,329 original files**, supplied as a
 [separate evidence release asset](https://github.com/feierbuqiu/mahjong-achievement-game/releases/tag/evidence-v17-native-20261019).
 Git retains [asset size and SHA-256](assets.json). The asset preserves original
 bytes and relative research paths, including all frame/native results,
-bucket/global records, manifests and before/after input identity maps.
+bucket-ready/global records, manifests and the embedded before/after maps.
+It omits bucket-close events, root preflight, the before-map pointer/handover
+and resource reports. These omissions are now supplied by the [v2 asset](../2026-10-19-v2/assets.json).
 It includes only the eight-byte empty-root payload from the full input set.
 
 This dated native-evidence publication predates the completed local portable
-delivery. The [new working paper](../../papers/trust-verification/manuscript.md)
+delivery. The [frozen paper](../../papers/trust-verification/manuscript.md)
 now records its successful same-host tests and [current availability](../../papers/trust-verification/delivery.json).
 The full 100.62 GB input dataset, original native binary, toolchain and GPU
 environment are **not** supplied by this saved-record asset. The complete
 input hash map does not itself provide those inputs. Local `.part` packages
 were unfinished at this earlier capture and were excluded; complete local
-archives now exist, but are not newly hosted by the working-paper update. See [data availability](../../docs/DATA_AVAILABILITY.md)
+archives now exist, but are not newly hosted by v2.0.0. See [data availability](../../docs/DATA_AVAILABILITY.md)
 and [artifact policy](../../docs/ASSETS.md).
 
 ```bash
@@ -155,8 +167,8 @@ python3 research/2026-10-19-v17/verify.py --archive /path/to/mahjong-v17-native-
 
 The first command validates public hashes, source mappings and recorded
 scopes. The second copies exact source only. The last verifies asset/member
-hashes, ledger entry hashes, frame/native result bindings, six scoped flags,
-exact coverage, root and cross-layer identities. It does **not** re-evaluate
+hashes, ledger entry hashes, frame/native result bindings and recorded flags,
+Python cursor cover, the root and declared cross-layer references. It does **not** re-evaluate
 the game recurrence, rerun Lean/native code, or rehash the unavailable full
 inputs. All three use the Python standard library.
 
@@ -174,4 +186,8 @@ alternative arguments and corrections are welcome. A closed actual-input
 Lean proof remains future work with no established timeline. The two dated
 English papers and immutable v1.0.0 retain their original contents; the
 maintainer's [new trust paper](../../papers/trust-verification/manuscript.md) is
-a working edition on main, without a new freeze or release.
+frozen in v2.0.0. Its scientific text is preserved; read the [paper errata](../../docs/PAPER_ERRATA.md).
+
+## v2 saved-record audit and process note
+
+The [v2 auditor](../../tools/audit_native_evidence.py) verifies all 3,686 retained true close flags, root preflight, custody handover and 3,700 resource reports without starting research code. It does not change historical production gates. Historical stage gates were skipped under continuous owner authorization as reported by the original AI review; this is recorded in the project history.

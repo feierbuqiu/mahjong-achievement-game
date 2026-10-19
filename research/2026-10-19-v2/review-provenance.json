@@ -1,0 +1,14 @@
+{
+  "source_name": "peer_review_2026-10-19.md",
+  "original_sha256": "fa5b91764cfccca771be140cc1797651a9cd241b2e88377a0a8036eb7459339a",
+  "published_path": "docs/reviews/2026-10-19-ai-review.md",
+  "published_sha256": "3fdbb8096860174cc1ce7cd1a2a2d171fae65dfbf2ba17f93b87c2c3e5a77a58",
+  "transformations": [
+    "Replace identifying workstation prefixes with public placeholders"
+  ],
+  "declared_author": "Claude (Anthropic), model claude-opus-5-5",
+  "same_declared_model_as_previous_review": true,
+  "human_peer_review": false,
+  "independent_execution_replication": false,
+  "review_suggestions_are_not_maintainer_instructions": true
+}

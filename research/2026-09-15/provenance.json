@@ -43,9 +43,11 @@
       "original_bytes": 75690,
       "original_sha256": "fa760557c6d61c30c57e0685cb01e49abc8757fe2a2186fdb6f39d4911094283",
       "published_path": "evidence/operational-acceptance.json",
-      "published_bytes": 75690,
-      "published_sha256": "fa760557c6d61c30c57e0685cb01e49abc8757fe2a2186fdb6f39d4911094283",
-      "transformations": []
+      "published_bytes": 75106,
+      "published_sha256": "c208dcd4732f4ee550f9680a4bf9aa5c3547f9d98db504cabf168b985121a9ec",
+      "transformations": [
+        "Redact identifying workstation root paths for v2.0.0; preserve original acceptance hash"
+      ]
     },
     {
       "original_path": "runs/lean_table_checker/optimized_retro_v1/operational-binding.json",
@@ -884,5 +886,6 @@
       "published_sha256": "7062ce60d59c150661d998cfc54201c4aca873ff7924a0392ee94c7155928e93",
       "transformations": []
     }
-  ]
+  ],
+  "privacy_correction_release": "v2.0.0"
 }

@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Check the working English trust paper, GitHub math and recorded evidence scopes."""
+"""Check the frozen English trust paper, GitHub math and recorded evidence scopes."""
 import hashlib
 import json
 import math
@@ -22,7 +22,7 @@ def near(a,b):need(math.isclose(a,b,rel_tol=1e-10,abs_tol=1e-6),'Recorded arithm
 def verify():
     provenance=read(BASE/'provenance.json');expected=read(BASE/'equations.json')
     need(provenance['primary_language']=='en' and not provenance['chinese_manuscript_published'],'English-only scope changed')
-    need(not provenance['current_work_frozen'] and not provenance['new_release_created'] and not provenance['new_tag_created'],'Working publication/freeze boundary changed')
+    need(provenance['current_work_frozen'] and provenance['frozen_in_release']=='v2.0.0','Paper freeze boundary changed')
     need(not provenance['new_Lean_native_GPU_or_full_scan_started'],'Publication research-execution boundary changed')
     need(sha(BASE/'manuscript.md')==provenance['published_manuscript_sha256'] and
          expected['original_manuscript_sha256']==provenance['original_manuscript_sha256'],'Manuscript identity differs')
@@ -98,16 +98,17 @@ def verify():
     need(all(x['returncode']==0 and not x['empty_game_proved'] and not x['game_Native_or_GPU_started'] for x in pilots['lanes']),'Saved-pilot replay incomplete')
     current=read(ROOT/'RESEARCH_STATUS.json')
     need(current['paper']['primary_manuscript']=='papers/trust-verification/manuscript.md' and len(current['paper']['reports'])==3,'Current paper entry differs')
-    need(not current['current_work_frozen'] and not current['current_update']['new_release_created'] and not current['current_update']['new_tag_created'],'Current publication/freeze state differs')
+    need(current['current_work_frozen'] and current['release']['tag']=='v2.0.0' and
+         current['current_update']['new_release_created'] and current['current_update']['new_tag_created'],'Current publication/freeze state differs')
     need(current['formal_verification']['empty_game_lean']=='NOT_VERIFIED' and
          not current['formal_verification']['end_to_end_Lean_theorem_published'],'Component and whole-game proofs conflated')
     near(current['portable_reproduction']['generic_kernel_replay_seconds'],validation['cold_kernel_replay_seconds'])
     need(current['portable_reproduction']['archives_publicly_hosted'] is False and
          not current['portable_reproduction']['independent_second_physical_machine_test'],'Local delivery and public replication conflated')
-    return dict(status='PASS_WORKING_TRUST_SUPPLEMENT',formulas=16,display_formulas=5,inline_formulas=11,auxiliary_display_formulas=3,
+    return dict(status='PASS_FROZEN_TRUST_SUPPLEMENT',formulas=16,display_formulas=5,inline_formulas=11,auxiliary_display_formulas=3,
         bibliography_entries=11,artifacts=len(paths),evidence_entries=len(sources),paper_local_links_checked=links,
         recorded_packed_modules=273,recorded_portable_source_modules=149,
-        new_release_created=False,current_work_frozen=False,
+        frozen_release='v2.0.0',current_work_frozen=True,
         scope='Paper byte/formula/link and selected recorded-scope consistency; no new mathematical proof, research execution or independent review')
 
 

@@ -7,8 +7,8 @@ authors:
     website: "https://github.com/feierbuqiu"
 repository-code: "https://github.com/feierbuqiu/mahjong-achievement-game"
 url: "https://github.com/feierbuqiu/mahjong-achievement-game"
-version: 1.0.0
-date-released: 2026-09-15
+version: 2.0.0
+date-released: 2026-10-19
 license: MIT
 references:
   - type: report
@@ -34,8 +34,8 @@ references:
     year: 2026
     month: 10
     date-published: 2026-10-19
-    url: "https://github.com/feierbuqiu/mahjong-achievement-game/blob/main/papers/trust-verification/manuscript.md"
-    notes: "Working manuscript on main; not frozen or released; cite an exact commit."
+    url: "https://github.com/feierbuqiu/mahjong-achievement-game/blob/v2.0.0/papers/trust-verification/manuscript.md"
+    notes: "Frozen published text in v2.0.0; read docs/PAPER_ERRATA.md for repository corrections."
 keywords:
   - combinatorial games
   - mahjong
@@ -44,15 +44,16 @@ keywords:
   - computational mathematics
   - Lean formalization
 abstract: >-
-  Research software, three English reports (the latest is a working manuscript) and computational/formal evidence
+  Research software, three frozen English reports and computational/formal evidence
   for a deterministic two-player shared-pool Mahjong achievement game. Complete
   SAFE-state retrograde analysis and reverse replay classify the empty position
-  as a second-player win. The October 2026 V17 run evaluates all six finite
-  acceptance families on all 778,532,864,302 stored labels under a kernel-proved
-  original-game implication. Native execution and external bookkeeping remain
+  as a second-player win. The October 2026 V17 run covers all 778,532,864,302 stored labels using
+  natively compiled component checks. Whole-input assembly, exact coverage
+  and cross-layer input identity retain external bookkeeping and custody
+  assumptions under the generic kernel-proved implication. Native execution and external bookkeeping remain
   trusted; no closed actual-input opening Lean declaration or independent
   execution replication is claimed. A separate AI source/record review is supplied. Later fixed numerical/game
-  proof pilots and same-host local-delivery tests are reported, with further
-  manuscript review pending and no new release created.
-  Version and date above identify the immutable software release, not subsequent
-  evidence-asset records; cite the exact commit for current research material.
+  proof pilots and same-host local-delivery tests are reported, with v2 repository corrections and supplementary retained records.
+  Version and date identify the v2.0.0 research publication. This release
+  adds privacy and evidence corrections; it does not claim a new game result
+  or a closed opening Lean proof.

@@ -52,5 +52,24 @@ Release tags are annotated and signed. Signature verification establishes
 artifact attribution, not the mathematical correctness of the result or
 completion of Lean verification.
 
+## Verify the v2 release files
+
+The release supplies `SHA256SUMS` and its SSH signature, `SHA256SUMS.sig`.
+After independently authenticating the maintainer public key, place it beside
+the downloaded assets as `maintainer-signing-key.pub`. On a POSIX shell:
+
+```bash
+printf '%s ' '77802380+feierbuqiu@users.noreply.github.com namespaces="file"' > release-allowed-signers
+cat maintainer-signing-key.pub >> release-allowed-signers
+ssh-keygen -Y verify -f release-allowed-signers -I 77802380+feierbuqiu@users.noreply.github.com -n file -s SHA256SUMS.sig < SHA256SUMS
+sha256sum --check SHA256SUMS
+```
+
+The checksum signature uses namespace `file`; Git commit/tag signatures use
+namespace `git`. `SNAPSHOT.json` is covered by the signed checksum list and
+identifies the exact tagged commit, source-tree comparison and check scope.
+The source ZIP contains the sanitized current tree, without Git history.
+The saved-record ZIP contains no full input dataset or actual opening proof.
+
 Official references: [GitHub signature verification](https://docs.github.com/en/authentication/managing-commit-signature-verification/about-commit-signature-verification)
 and [configuring Git signing](https://docs.github.com/en/authentication/managing-commit-signature-verification/telling-git-about-your-signing-key).

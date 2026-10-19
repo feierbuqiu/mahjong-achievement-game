@@ -1,6 +1,8 @@
+> **v2.0.0 correction:** Read [claim boundaries](CLAIMS.md) and [paper errata](PAPER_ERRATA.md). The production whole-input assembly/identity boundary is narrower than older wording. Papers are frozen; current private paths are redacted.
+
 # Data availability
 
-Both [English research papers](../papers/README.md), their English audit memos,
+The two September [English research papers](../papers/README.md), their English audit memos,
 and selected progress/reproduction receipts are distributed with v1.0.0.
 The [paper source catalogue](../papers/evidence/README.md) separates public
 copies from retained historical sources and records original/public hashes.
@@ -17,7 +19,7 @@ proof replay still covers the eight indexed roots below.
 
 The [September 15 status update](../research/2026-09-15/README.md) supplies
 84 Lean modules forming the dependency closure of the finite algorithm
-entry point, selected unmodified acceptance/build/test records, seven C++
+entry point, selected acceptance/build/test records (one public operational copy is path-redacted in v2), seven C++
 source fragments, and a hash/receipt checker with optional fresh kernel replay.
 Its [manifest](../research/2026-09-15/provenance.json) identifies every public
 copy. The 5,329 files named by the original local acceptance record are not
@@ -96,8 +98,9 @@ redact identifying paths where necessary and retain original/public hashes.
 The **63,456,055-byte saved-record ZIP** is a separate
 [evidence release asset](../research/2026-10-19-v17/assets.json). It contains
 38,329 original files: the ledger, all 17,317 committed frame receipts, all
-17,317 native results, bucket/global records, run manifests, before/after
-input identities and the eight-byte empty-root payload. Every member has a
+17,317 native results, bucket-ready/global records, run manifests, embedded
+input maps and the eight-byte root payload. It omits close events, root
+preflight, the before-pointer/custody handover and resource reports; v2 adds them. Every member has a
 hash in its contents manifest. It contains no full input dataset, toolchain,
 native executable, closed actual-input Lean proof or Chinese manuscript.
 The code repository retains the asset size/SHA-256 and a bounded verifier.
@@ -107,11 +110,11 @@ All **11,272 input identities / 100,615,834,170 bytes** are listed in
 [inputs.json](../research/2026-10-19-v17/inputs.json). The actual full dataset
 is **not currently a public download**. That dated update captured packaging in progress. Completed local delivery
 archives and same-host tests now exist, as described below; no new download
-assets are published by the working-paper update. The
+assets are published by the initial paper update. The
 historical full P/N table is the main part of this input set; it is not an
 additional 97.32 GB to add to the 100.62 GB figure.
 
-## Working trust paper and completed local delivery
+## Frozen trust paper and local delivery
 
 The [October 19 trust supplement](../papers/trust-verification/README.md)
 publishes the third English report, its audits, selected later kernel/portable
@@ -169,3 +172,7 @@ Do not interpret an absent, partial, incompatible, or corrupt bucket as P.
 The publication checksum manifest validates the **distributed artifacts**.
 The table manifest validates the **external payload files**. Neither operation
 alone checks the P/N recurrence.
+
+## v2 frozen publication and supplementary records
+
+All three papers are now frozen, with corrections outside their scientific bodies. The [v2 asset](../research/2026-10-19-v2/assets.json) contains 46,202 payload files plus its manifest, including 3,686 close events, one root preflight, custody handover/prior identities, runtime records and 3,700 resource reports. It retains all older base records. Twenty-four added members have identifying prefixes redacted, with original/public hashes separated. The [additional trust-boundary source](../research/2026-10-19-v2/dependencies.json) is in Git. The full 100.62 GB dataset and the three large local portable archives remain unavailable as public downloads.

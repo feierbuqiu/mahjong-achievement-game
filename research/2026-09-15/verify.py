@@ -38,11 +38,19 @@ def verify():
         rel = item['published_path']
         path = (BASE / rel).resolve()
         require(path.is_relative_to(BASE) and rel not in copies, f'Invalid artifact path: {rel}')
-        require(path.stat().st_size == item['published_bytes'] == item['original_bytes'] and
-                sha(path) == item['published_sha256'] == item['original_sha256'] and
-                not item['transformations'], f'Artifact changed: {rel}')
+        require(path.stat().st_size == item['published_bytes'] and
+                sha(path) == item['published_sha256'], f'Public artifact changed: {rel}')
+        if item['transformations']:
+            require(rel == 'evidence/operational-acceptance.json' and
+                    item['transformations'] == ['Redact identifying workstation root paths for v2.0.0; preserve original acceptance hash'] and
+                    provenance['privacy_correction_release'] == 'v2.0.0',
+                    f'Unexpected publication transformation: {rel}')
+        else:
+            require(item['published_bytes'] == item['original_bytes'] and
+                    item['published_sha256'] == item['original_sha256'],
+                    f'Unrecorded artifact transformation: {rel}')
         if item['original_path'] in acceptance['evidence_files']:
-            require(sha(path) == acceptance['evidence_files'][item['original_path']],
+            require(item['original_sha256'] == acceptance['evidence_files'][item['original_path']],
                     f'Acceptance binding mismatch: {rel}')
         copies[rel] = item
     sources = {p.relative_to(BASE).as_posix() for p in (BASE / 'lean').rglob('*.lean')}

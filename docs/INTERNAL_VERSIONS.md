@@ -40,3 +40,7 @@ totals across overlapping proof packages.
 Chronological snapshots retain old forecasts and holds as evidence. Use
 [current status](PROJECT_STATUS.md) to resolve their present meaning and
 [claim boundaries](CLAIMS.md) to choose wording for an external report.
+
+## Software release v2.0.0
+
+This publication version freezes three papers and adds repository corrections, privacy checks and supplementary saved records. It is not a new Lean internal version, new table computation or proof-completion claim. See [review response](REVIEW_RESPONSE.md).

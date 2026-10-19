@@ -1,5 +1,19 @@
 # Changelog
 
+## v2.0.0 - 2026-10-19
+
+- Freeze the three English scientific manuscript bodies and associated audit memos. Remove only the October paper's editorial working-edition notice; record identities in `papers/FREEZE.json`.
+- Correct current V17 descriptions: component-native execution with external assembly; equal-root target comparisons add no independent read detection; historical production did not gate native `exactCoverage`.
+- Preserve the original AI report and add an erratum. Publish the later supplied, path-redacted AI review with its same-model disclosure, response and primary-source reading notes. No human review or independent execution is claimed.
+- Publish the expanded saved-record asset: all base records plus root preflight, 3,686 close events, custody handover/prior identities, runtime records and all 3,700 resource reports. Offline checks verify all close flags as true without changing historical gates.
+- Add the previously missing read-lock helper, GPU receipt rules/package receipt and custody-handover source with original/public hashes. Preserve frozen operations/mathematical code.
+- Redact eight identifying September receipt paths and 24 additional archive members. Inspect raw/JSON-decoded text and ZIP contents; add regression tests and CI checks. Preserve old commits/tags/assets; omit a Git-history bundle from this release.
+- Restore the October 18 historical status object from `c7a0833`. Restore its dated V16 README body behind a separate supersession banner, correcting earlier unlogged editorial body changes.
+- Disclose the historical stage-gate deviation, qualify older hardware/timing claims, update citation/release metadata and public repository entry points.
+- No new Lean/native/GPU/WSL/full-table research execution, solver result or actual-input opening proof is included. Earlier releases remain unchanged.
+
+Earlier entries describe their own dates. Their stronger production-check wording and pending working-paper status are superseded by the v2 corrections above.
+
 ## 2026-10-19 — Working trust/verification paper and later component evidence
 
 - Publish the third English report, *Trust and Formal Verification in the

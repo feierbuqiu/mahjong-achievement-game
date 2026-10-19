@@ -1,0 +1,102 @@
+{
+  "schema": "FROZEN_PAPER_PUBLICATION_V2",
+  "release": "v2.0.0",
+  "date": "2026-10-19",
+  "prior_publication_commit": "d290627b5564cc4537e649b9c9d0ffdaf3ee9554",
+  "papers": [
+    {
+      "path": "papers/manuscript.md",
+      "sha256": "375b7444ab9f7de5cb01053232c7d637aab873bbcc8a0416ed1da88f5c001dea",
+      "bytes": 117375,
+      "prior_published_sha256": "375b7444ab9f7de5cb01053232c7d637aab873bbcc8a0416ed1da88f5c001dea",
+      "changes": [],
+      "scientific_body_sha256": "375b7444ab9f7de5cb01053232c7d637aab873bbcc8a0416ed1da88f5c001dea",
+      "scientific_text_changed": false
+    },
+    {
+      "path": "papers/lean-verification/manuscript.md",
+      "sha256": "79d9945471e5564a8ac8551a62086b1c1770a7a0694a4301ba383bae2f2655e6",
+      "bytes": 82602,
+      "prior_published_sha256": "79d9945471e5564a8ac8551a62086b1c1770a7a0694a4301ba383bae2f2655e6",
+      "changes": [],
+      "scientific_body_sha256": "79d9945471e5564a8ac8551a62086b1c1770a7a0694a4301ba383bae2f2655e6",
+      "scientific_text_changed": false
+    },
+    {
+      "path": "papers/trust-verification/manuscript.md",
+      "sha256": "1284d6d5198e6f731d082fc9747fccff5e960a3c2849380f1922d8c1add2ab43",
+      "bytes": 71364,
+      "prior_published_sha256": "ccc919b5e5a8ace6d1b7e0476e55e13f2815d703ab94b89acc88b60a04c7c2e4",
+      "changes": [
+        "Remove working-edition notice only"
+      ],
+      "scientific_body_sha256": "1284d6d5198e6f731d082fc9747fccff5e960a3c2849380f1922d8c1add2ab43",
+      "scientific_text_changed": false
+    }
+  ],
+  "associated_audit_memos": [
+    {
+      "path": "papers/evidence/computational_evidence.md",
+      "sha256": "813214cf097151ebe87781120279717d321d6252bf57cfda0f9a95137a76c31e",
+      "bytes": 47387
+    },
+    {
+      "path": "papers/evidence/lean_evidence.md",
+      "sha256": "18a5d44b2c7be70f3a0ea055f5f5e2eb94b7e874a05e549601b04b5b5630407c",
+      "bytes": 35622
+    },
+    {
+      "path": "papers/evidence/mathematical_evidence.md",
+      "sha256": "79b78824047dacdf3f54b70aeb6b04f812cf37a3600623cfea9167b0d60605fd",
+      "bytes": 63132
+    },
+    {
+      "path": "papers/evidence/reference_verification.md",
+      "sha256": "c9dd157c9f003d4c9f081c3060825890a097c1e7c8066759fec932a09cc71936",
+      "bytes": 6893
+    },
+    {
+      "path": "papers/lean-verification/empirical_evidence.md",
+      "sha256": "d9e911eb9ca048fc1033eac9343f65127b40b07580b00687827794fa009ea9ce",
+      "bytes": 30009
+    },
+    {
+      "path": "papers/lean-verification/formal_evidence.md",
+      "sha256": "594f1d2217547ad4742329ebd06ebee92f6f10abf942904e5dca6c439fad4ee1",
+      "bytes": 36683
+    },
+    {
+      "path": "papers/lean-verification/reference_verification.md",
+      "sha256": "adde09950a789a5f44e844793b7eb098fb7a4babc786339d34e9ea0eb4eb10d5",
+      "bytes": 3497
+    },
+    {
+      "path": "papers/lean-verification/reproduction_evidence.md",
+      "sha256": "2ea96281ab2c7a0c7f90a13c9c1c1522407601b03a4947da43633cf6f08ebe29",
+      "bytes": 25251
+    },
+    {
+      "path": "papers/trust-verification/kernel_evidence.md",
+      "sha256": "c4584c09637f12188be680089cc47bcceab68695ac38842e6a13cbd8981fed32",
+      "bytes": 32652
+    },
+    {
+      "path": "papers/trust-verification/native_evidence.md",
+      "sha256": "52efef3d0b80f66f8c7134d0b70b734f6144b09cd9001a0d0f0f718b2b4d0d49",
+      "bytes": 30526
+    },
+    {
+      "path": "papers/trust-verification/reference_verification.md",
+      "sha256": "98a21463c3d4202833965110fc95be76dde018238b86b7eea2a557b21fbe4782",
+      "bytes": 4454
+    },
+    {
+      "path": "papers/trust-verification/reproducibility_evidence.md",
+      "sha256": "dd5970ebd2cdf161cd4a30720c8cc5f5770ef236fc0518cd88b85e740aee9f43",
+      "bytes": 26954
+    }
+  ],
+  "removed_publication_notice_sha256": "be1ecb67024aa5b641bb94dd77d68f2d4dc4a706d11b1267f7f52ffd7116d73b",
+  "corrections": "docs/PAPER_ERRATA.md",
+  "policy": "Scientific bodies and cited audit memos are frozen; repository errata carry subsequent corrections."
+}

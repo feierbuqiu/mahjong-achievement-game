@@ -1,3 +1,5 @@
+> **v2.0.0 correction:** Read [claim boundaries](../docs/CLAIMS.md) and [paper errata](../docs/PAPER_ERRATA.md). The production whole-input assembly/identity boundary is narrower than older wording. Papers are frozen; current private paths are redacted.
+
 # Lean verification progress
 
 > **October 19 update:** complete V17 native evaluation now supports the

@@ -32,3 +32,5 @@ research/2026-10-18-kernel/** -text whitespace=blank-at-eol,space-before-tab,cr-
 # Preserve original selected trust-paper receipts and archival source bytes.
 /papers/trust-verification/evidence/** -text whitespace=blank-at-eol,space-before-tab,cr-at-eol,-blank-at-eof
 /papers/trust-verification/*.json -text whitespace=blank-at-eol,space-before-tab,cr-at-eol,-blank-at-eof
+
+/research/2026-10-19-v17/source/legacy/** -text whitespace=blank-at-eol,space-before-tab,cr-at-eol,-blank-at-eof

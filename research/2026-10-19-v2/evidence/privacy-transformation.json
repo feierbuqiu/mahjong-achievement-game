@@ -1,0 +1,8 @@
+{
+  "path": "research/2026-09-15/evidence/operational-acceptance.json",
+  "original_sha256": "fa760557c6d61c30c57e0685cb01e49abc8757fe2a2186fdb6f39d4911094283",
+  "published_sha256": "c208dcd4732f4ee550f9680a4bf9aa5c3547f9d98db504cabf168b985121a9ec",
+  "identifying_paths_redacted": 8,
+  "historical_commits_and_releases_rewritten": false,
+  "transform": "Replace the identifying research-root prefix with <research-root>; preserve result fields."
+}
